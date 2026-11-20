@@ -176,7 +176,7 @@
 						<property name="val">on</property>
 						<property name="cur">$VAR[Wiz_AddonOn_script_tinyppi]</property>
 						<property name="more">$ADDON[skin.aeon.fuse 32768]</property>
-						<onclick condition="!System.HasAddon(script.tinyppi)">Skin.ToggleSetting(aeon.wiz.add.script.tinyppi)</onclick>
+						<onclick condition="!System.HasAddon(script.tinyppi) + String.Contains(System.OSVersionInfo,CoreELEC)">Skin.ToggleSetting(aeon.wiz.add.script.tinyppi)</onclick>
 					</item>
 					<item>
 						<label>Copacetic Fonts (Inter)</label>

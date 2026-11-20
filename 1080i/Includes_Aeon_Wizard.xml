@@ -714,6 +714,7 @@
 		<value>off</value>
 	</variable>
 	<variable name="Wiz_Addon_script_tinyppi">
+		<value condition="!System.HasAddon(script.tinyppi) + !String.Contains(System.OSVersionInfo,CoreELEC)">$ADDON[skin.aeon.fuse 32820]</value>
 		<value condition="System.HasAddon(script.tinyppi)">$LOCALIZE[35257]</value>
 		<value condition="Skin.HasSetting(aeon.wiz.add.script.tinyppi)">$ADDON[skin.aeon.fuse 32792]</value>
 		<value>$ADDON[skin.aeon.fuse 32765]</value>

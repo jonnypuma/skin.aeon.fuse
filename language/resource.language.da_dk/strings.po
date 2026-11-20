@@ -7207,3 +7207,7 @@ msgstr "Ingen regler – opret en fra et program i guiden"
 msgctxt "#32819"
 msgid "New"
 msgstr "Ny"
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr "Kun CoreELEC"

@@ -7207,3 +7207,7 @@ msgstr "没有规则 – 在节目指南中从节目设定"
 msgctxt "#32819"
 msgid "New"
 msgstr "新"
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr "仅限 CoreELEC"

@@ -7207,3 +7207,7 @@ msgstr "ルールなし – 番組表の番組から設定できます"
 msgctxt "#32819"
 msgid "New"
 msgstr "新着"
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr "CoreELEC専用"

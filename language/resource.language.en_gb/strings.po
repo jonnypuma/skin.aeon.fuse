@@ -7208,3 +7208,7 @@ msgstr ""
 msgctxt "#32819"
 msgid "New"
 msgstr ""
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr ""

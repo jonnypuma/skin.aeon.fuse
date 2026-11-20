@@ -7207,3 +7207,7 @@ msgstr "Правил нет – создайте из передачи в тел
 msgctxt "#32819"
 msgid "New"
 msgstr "Новое"
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr "Только CoreELEC"

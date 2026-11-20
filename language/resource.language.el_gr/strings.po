@@ -7207,3 +7207,7 @@ msgstr "Κανένας κανόνας – ορίστε έναν από πρόγ�
 msgctxt "#32819"
 msgid "New"
 msgstr "Νέο"
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr "Μόνο CoreELEC"

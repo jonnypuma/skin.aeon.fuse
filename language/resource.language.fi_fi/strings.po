@@ -7207,3 +7207,7 @@ msgstr "Ei sääntöjä – luo sellainen oppaan ohjelmasta"
 msgctxt "#32819"
 msgid "New"
 msgstr "Uusi"
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr "Vain CoreELEC"

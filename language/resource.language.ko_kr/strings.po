@@ -7207,3 +7207,7 @@ msgstr "규칙 없음 – 편성표의 프로그램에서 설정하세요"
 msgctxt "#32819"
 msgid "New"
 msgstr "새 항목"
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr "CoreELEC 전용"

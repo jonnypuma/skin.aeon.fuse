@@ -7207,3 +7207,7 @@ msgstr "Inga regler – skapa en från ett program i guiden"
 msgctxt "#32819"
 msgid "New"
 msgstr "Ny"
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr "Endast CoreELEC"

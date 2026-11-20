@@ -7207,3 +7207,7 @@ msgstr "Sin reglas: crea una desde un programa de la guía"
 msgctxt "#32819"
 msgid "New"
 msgstr "Nuevo"
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr "Solo CoreELEC"

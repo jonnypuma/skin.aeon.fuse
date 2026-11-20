@@ -7207,3 +7207,7 @@ msgstr "Žádná pravidla – nastavte je u pořadu v průvodci"
 msgctxt "#32819"
 msgid "New"
 msgstr "Nové"
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr "Jen pro CoreELEC"

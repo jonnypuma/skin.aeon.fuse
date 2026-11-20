@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="skin.aeon.fuse" version="0.56.53" name="Aeon Fuse" provider-name="Skippy-McSkipface">
+<addon id="skin.aeon.fuse" version="0.56.54" name="Aeon Fuse" provider-name="Skippy-McSkipface">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 		<import addon="script.skinvariables" version="2.1.21"/>
@@ -13,7 +13,6 @@
 		<import addon="script.karmamole.helper" optional="true"/>
 		<import addon="service.skippy" optional="true"/>
 		<import addon="service.trickplay" optional="true"/>
-		<import addon="script.tinyppi" optional="true"/>
 		<import addon="resource.images.studios.white" optional="true"/>
 		<import addon="resource.images.recordlabels.white" optional="true"/>
 		<import addon="resource.images.languageflags.colour" optional="true"/>

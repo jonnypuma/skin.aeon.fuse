@@ -7207,3 +7207,7 @@ msgstr "Keine Regeln – lege eine bei einer Sendung im TV-Programm an"
 msgctxt "#32819"
 msgid "New"
 msgstr "Neu"
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr "Nur CoreELEC"

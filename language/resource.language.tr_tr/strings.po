@@ -7207,3 +7207,7 @@ msgstr "Kural yok – rehberdeki bir programdan oluşturun"
 msgctxt "#32819"
 msgid "New"
 msgstr "Yeni"
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr "Yalnızca CoreELEC"

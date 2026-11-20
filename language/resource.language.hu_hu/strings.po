@@ -7207,3 +7207,7 @@ msgstr "Nincs szabály – hozz létre egyet egy műsornál"
 msgctxt "#32819"
 msgid "New"
 msgstr "Új"
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr "Csak CoreELEC"

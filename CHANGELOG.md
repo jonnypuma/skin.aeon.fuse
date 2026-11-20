@@ -1,5 +1,11 @@
 # Aeon Fuse changelog
 
+## 0.56.54
+- TinyPPI is a CoreELEC tool: addon.xml no longer imports it (Kodi for Windows listed it among the skin's
+  dependencies); in the setup wizard and Skin settings > System > Recommended add-ons it now says "CoreELEC only" off
+  CoreELEC and is not installed or counted there (helper 0.3.124; _src/tinyppi_05654.py after wizard_05640.py).
+  String 32820.
+
 ## 0.56.53
 - Live TV in the Fused Glass style (canvas round 8; _src/fgslivetv_05653.py, helper 0.3.123): the guide has eight day
   chips over the grid (the day in view gold, a dot where a timer is set, OK jumps the grid to that day) and the

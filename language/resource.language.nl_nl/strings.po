@@ -7207,3 +7207,7 @@ msgstr "Geen regels – maak er een vanuit een programma in de gids"
 msgctxt "#32819"
 msgid "New"
 msgstr "Nieuw"
+
+msgctxt "#32820"
+msgid "CoreELEC only"
+msgstr "Alleen CoreELEC"

@@ -1,6 +1,10 @@
-# Aeon Fuse
-
-**Project page:** [jonnypuma.github.io/#/skin.aeon.fuse](https://jonnypuma.github.io/#/skin.aeon.fuse) · **All add-ons and apps by jonnypuma:** [jonnypuma.github.io](https://jonnypuma.github.io/)
+<div align="center">
+  <img src="https://jonnypuma.github.io/assets/skin.aeon.fuse/icon.webp" width="140" alt="Aeon Fuse">
+  <h1>Aeon Fuse</h1>
+  <p><b>The look of Aeon 2 with ideas from Arctic Fuse, built on the Glass skin.</b><br>
+  A Kodi skin by <a href="https://github.com/jonnypuma">jonnypuma</a>. Work in progress.</p>
+  <p><a href="https://jonnypuma.github.io/#/skin.aeon.fuse"><b>Project page</b></a> · <a href="https://jonnypuma.github.io/"><b>All add-ons and apps by jonnypuma</b></a> · <a href="https://jonnypuma.github.io/#install"><b>Install from the Skippy Repo</b></a></p>
+</div>
 
 This skin is an attempt to merge the design ideas and style of Aeon 2 concept skin with design elements and ideas from the Arctic Fuse 3 skin. Work in progress.
 
@@ -9,6 +13,46 @@ Aeon Fuse brings together the look of Aeon 2 and ideas from Arctic Fuse (hence t
 A Kodi skin: Glass, restyled after the Aeon 2 concept. Three looks (the solid **Aeon** theme with 51 palettes, the
 frosted **Glass** theme, and **Fused Glass**, its redesign with rounded frosted panels and white focus, in progress), library views built around the Aeon 2 list and walls, a Home screen with a spotlight and
 widget rows, and its own screensaver.
+
+## Screenshots
+
+All taken on a CoreELEC box with the skin as built. Click a picture for the full size; there are more on the <a href="https://jonnypuma.github.io/#/skin.aeon.fuse">project page</a>.
+
+<h3 align="center">Libraries</h3>
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top"><a href="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/aeon_movies_list.webp"><img src="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/t/aeon_movies_list.webp" alt="Movies, List view (Aeon theme)"></a><br><sub>Movies, List view (Aeon theme)</sub></td>
+    <td width="50%" align="center" valign="top"><a href="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/fg_movies_520.webp"><img src="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/t/fg_movies_520.webp" alt="Movies, poster wall (Fused Glass)"></a><br><sub>Movies, poster wall (Fused Glass)</sub></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top"><a href="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/fg_shows_523.webp"><img src="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/t/fg_shows_523.webp" alt="TV shows, Showcase (Fused Glass)"></a><br><sub>TV shows, Showcase (Fused Glass)</sub></td>
+    <td width="50%" align="center" valign="top"><a href="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/fg_episodes_538.webp"><img src="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/t/fg_episodes_538.webp" alt="A season, Episode combined (Fused Glass)"></a><br><sub>A season, Episode combined (Fused Glass)</sub></td>
+  </tr>
+</table>
+
+<h3 align="center">Home, widgets, planner and screensaver</h3>
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top"><a href="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/home_01_movies.webp"><img src="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/t/home_01_movies.webp" alt="Home with the spotlight"></a><br><sub>Home with the spotlight</sub></td>
+    <td width="50%" align="center" valign="top"><a href="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/widgets_fg_home_tv.webp"><img src="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/t/widgets_fg_home_tv.webp" alt="A widget row with its spotlight and media chips"></a><br><sub>A widget row with its spotlight and media chips</sub></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top"><a href="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/planner_watching.webp"><img src="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/t/planner_watching.webp" alt="Planner, Week view: You're on S3 E3"></a><br><sub>Planner, Week view: You're on S3 E3</sub></td>
+    <td width="50%" align="center" valign="top"><a href="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/screensaver.webp"><img src="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/t/screensaver.webp" alt="The screensaver"></a><br><sub>The screensaver</sub></td>
+  </tr>
+</table>
+
+<h3 align="center">Player and menus</h3>
+<table>
+  <tr>
+    <td width="50%" align="center" valign="top"><a href="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/music_strip_player.webp"><img src="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/t/music_strip_player.webp" alt="Now playing opened from the library strip"></a><br><sub>Now playing opened from the library strip</sub></td>
+    <td width="50%" align="center" valign="top"><a href="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/player_info.webp"><img src="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/t/player_info.webp" alt="Player information page with media chips and ratings"></a><br><sub>Player information page with media chips and ratings</sub></td>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top"><a href="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/menus_fg_context.webp"><img src="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/t/menus_fg_context.webp" alt="Context menu on a film"></a><br><sub>Context menu on a film</sub></td>
+    <td width="50%" align="center" valign="top"><a href="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/menus_fg_skin_appearance.webp"><img src="https://jonnypuma.github.io/assets/skin.aeon.fuse/aeon/t/menus_fg_skin_appearance.webp" alt="Skin settings, Theme & Style"></a><br><sub>Skin settings, Theme & Style</sub></td>
+  </tr>
+</table>
 
 ## Add-ons
 

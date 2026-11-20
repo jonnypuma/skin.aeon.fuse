@@ -69,7 +69,7 @@ All taken on a CoreELEC box with the skin as built. Click a picture for the full
 
 | Add-on | For | Where to get it |
 | --- | --- | --- |
-| `script.skinvariables` (Skin Variables, 2.1.21 or newer) | The Home menu items, widget rows and submenus | Kodi repository (built in). Newer builds: jamal2362, Bald. Brings `script.module.jurialmunkey` with it. |
+| `script.skinvariables` (Skin Variables, 2.1.21 or newer) | The Home menu items, widget rows and submenus | Kodi repository (built in). Newer builds: jamal2362. Brings `script.module.jurialmunkey` with it. |
 
 ### Optional: each adds its feature when installed
 
@@ -87,7 +87,7 @@ All taken on a CoreELEC box with the skin as built. Click a picture for the full
 | `resource.images.recordlabels.white` | Record label logos | Kodi repository |
 | `resource.images.languageflags.colour` | Language flags in the video info | Kodi repository |
 | `resource.fonts.copacetic` | The "Inter (Copacetic)" font set | Kodi repository |
-| `resource.font.robotocjksc` | The "Roboto CJKSC" font set (Chinese / Japanese / Korean) | jamal2362 (also Bald, jurialmunkey) |
+| `resource.font.robotocjksc` | The "Roboto CJKSC" font set (Chinese / Japanese / Korean) | jamal2362 (also jurialmunkey) |
 | `script.mcfontface` (McFontFace) | The "McFontface Inter / Open Sans / Lato" font sets | Not in a repository: <https://github.com/pannal/script.mcfontface/releases> |
 | `visualization.waveform` (Waveform) | Kodi's own waveform, if Aeon Fuse Waveform Visualizer is not used | Kodi repository |
 | `service.coreelec.settings` / `service.libreelec.settings` | The CoreELEC / LibreELEC entry in the System menu | Part of CoreELEC / LibreELEC |
@@ -103,7 +103,6 @@ Add-ons > Install from zip file (allow unknown sources first, Settings > System 
 | Skippy Repo (jonnypuma) | <https://raw.githubusercontent.com/jonnypuma/repository.skippyrepo/main/zips/repository.skippyrepo/repository.skippyrepo-1.0.4.zip> |
 | KarmaMole's Kodi Skins | <https://karmamole.github.io/kodi-skins/repository.karmamole/repository.karmamole-1.0.6.zip> |
 | jurialmunkey | <https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/repository.jurialmunkey/repository.jurialmunkey-3.6.zip> |
-| Bald | <https://dangerouslaser.github.io/skin.bald/kodi/repository.bald/repository.bald-1.2.0.zip> |
 
 (Versions of 12 November 2026; a repository updates itself once installed.)
 

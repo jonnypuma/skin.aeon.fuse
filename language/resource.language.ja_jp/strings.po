@@ -7175,3 +7175,35 @@ msgstr "未再生"
 msgctxt "#32811"
 msgid "Played"
 msgstr "再生済み"
+
+msgctxt "#32812"
+msgid "timers in the next five days"
+msgstr "件のタイマー（今後5日間）"
+
+msgctxt "#32813"
+msgid "Next in {0}"
+msgstr "次は{0}後"
+
+msgctxt "#32814"
+msgid "{0} set to record"
+msgstr "録画予定 {0}"
+
+msgctxt "#32815"
+msgid "Nothing set – pick a programme in the guide"
+msgstr "予定なし – 番組表から番組を選んでください"
+
+msgctxt "#32816"
+msgid "No timers set"
+msgstr "タイマーなし"
+
+msgctxt "#32817"
+msgid "Rules set timers for you"
+msgstr "ルールが自動でタイマーを設定"
+
+msgctxt "#32818"
+msgid "No timer rules – set one from a programme in the guide"
+msgstr "ルールなし – 番組表の番組から設定できます"
+
+msgctxt "#32819"
+msgid "New"
+msgstr "新着"

@@ -7175,3 +7175,35 @@ msgstr "Aldrig afspillet"
 msgctxt "#32811"
 msgid "Played"
 msgstr "Afspillet"
+
+msgctxt "#32812"
+msgid "timers in the next five days"
+msgstr "timere de næste fem dage"
+
+msgctxt "#32813"
+msgid "Next in {0}"
+msgstr "Næste om {0}"
+
+msgctxt "#32814"
+msgid "{0} set to record"
+msgstr "{0} sat til optagelse"
+
+msgctxt "#32815"
+msgid "Nothing set – pick a programme in the guide"
+msgstr "Intet sat – vælg et program i guiden"
+
+msgctxt "#32816"
+msgid "No timers set"
+msgstr "Ingen timere sat"
+
+msgctxt "#32817"
+msgid "Rules set timers for you"
+msgstr "Regler sætter timere for dig"
+
+msgctxt "#32818"
+msgid "No timer rules – set one from a programme in the guide"
+msgstr "Ingen regler – opret en fra et program i guiden"
+
+msgctxt "#32819"
+msgid "New"
+msgstr "Ny"

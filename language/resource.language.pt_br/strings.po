@@ -7175,3 +7175,35 @@ msgstr "Nunca tocado"
 msgctxt "#32811"
 msgid "Played"
 msgstr "Tocado"
+
+msgctxt "#32812"
+msgid "timers in the next five days"
+msgstr "agendamentos nos próximos cinco dias"
+
+msgctxt "#32813"
+msgid "Next in {0}"
+msgstr "Próximo em {0}"
+
+msgctxt "#32814"
+msgid "{0} set to record"
+msgstr "{0} para gravar"
+
+msgctxt "#32815"
+msgid "Nothing set – pick a programme in the guide"
+msgstr "Nada agendado – escolha um programa no guia"
+
+msgctxt "#32816"
+msgid "No timers set"
+msgstr "Nenhum agendamento"
+
+msgctxt "#32817"
+msgid "Rules set timers for you"
+msgstr "Regras agendam para você"
+
+msgctxt "#32818"
+msgid "No timer rules – set one from a programme in the guide"
+msgstr "Nenhuma regra – crie uma a partir de um programa no guia"
+
+msgctxt "#32819"
+msgid "New"
+msgstr "Novo"

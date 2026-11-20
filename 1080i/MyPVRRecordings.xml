@@ -21,7 +21,8 @@
 			<param name="group_label" value="$INFO[Control.GetLabel(30)]"/>
 			<param name="options" value="Misc_PVROptions_Recordings"/>
 		</include>
-		<include content="Misc_PVRList">
+		<include content="FGS_Recordings" condition="$EXP[FGS]"/>
+		<include content="Misc_PVRList" condition="!$EXP[FGS]">
 			<param name="label2" value="$INFO[ListItem.Label2]"/>
 			<param name="empty_label" value="$ADDON[skin.aeon.fuse 32357]"/>
 		</include>

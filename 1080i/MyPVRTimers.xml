@@ -10,6 +10,7 @@
 	<!-- 0.39.3: opened with Left / Right on the area tabs: the focus stays on the tabs -->
 	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.pvrnav)) + [Window.IsActive(TVTimerRules) | Window.IsActive(RadioTimerRules)]">SetFocus(104)</onload>
 	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.pvrnav)) + ![Window.IsActive(TVTimerRules) | Window.IsActive(RadioTimerRules)]">SetFocus(103)</onload>
+	<onload condition="$EXP[FGS] + String.IsEmpty(Window(Home).Property(aeon.pvrnav))">AlarmClock(fgstmfocus,SetFocus(50,1,absolute),00:00,silent)</onload>
 	<onload>ClearProperty(aeon.pvrnav,home)</onload>
 	<menucontrol>9000</menucontrol>
 	<backgroundcolor>ff000000</backgroundcolor>
@@ -21,6 +22,7 @@
 			<param name="title" value="$VAR[Misc_PVRTimersTitle]"/>
 			<param name="options" value="Misc_PVROptions_Timers"/>
 		</include>
+		<control type="group"><animation effect="slide" end="0,-3000" time="0" condition="[$EXP[FGS] + [Window.IsActive(TVTimers) | Window.IsActive(TVTimerRules)]]">Conditional</animation>
 		<include content="Misc_PVRList">
 			<param name="label2" value="$INFO[ListItem.Date]"/>
 			<param name="empty_label" value="$ADDON[skin.aeon.fuse 32359]"/>
@@ -34,5 +36,8 @@
 			<textcolor>$VAR[AG_Ink3]</textcolor>
 			<label>$INFO[PVR.NextTimer]</label>
 		</control>
+		</control>
+		<include condition="$EXP[FGS]">FGS_TimersWeek</include>
+		<include condition="$EXP[FGS]">FGS_TimerRules</include>
 	</controls>
 </window>

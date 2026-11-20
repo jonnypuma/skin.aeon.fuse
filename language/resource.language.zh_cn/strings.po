@@ -7175,3 +7175,35 @@ msgstr "从未播放"
 msgctxt "#32811"
 msgid "Played"
 msgstr "已播放"
+
+msgctxt "#32812"
+msgid "timers in the next five days"
+msgstr "个定时（未来五天）"
+
+msgctxt "#32813"
+msgid "Next in {0}"
+msgstr "下一个：{0}后"
+
+msgctxt "#32814"
+msgid "{0} set to record"
+msgstr "{0} 待录制"
+
+msgctxt "#32815"
+msgid "Nothing set – pick a programme in the guide"
+msgstr "没有定时 – 在节目指南中选择节目"
+
+msgctxt "#32816"
+msgid "No timers set"
+msgstr "没有定时"
+
+msgctxt "#32817"
+msgid "Rules set timers for you"
+msgstr "规则为你设定定时"
+
+msgctxt "#32818"
+msgid "No timer rules – set one from a programme in the guide"
+msgstr "没有规则 – 在节目指南中从节目设定"
+
+msgctxt "#32819"
+msgid "New"
+msgstr "新"

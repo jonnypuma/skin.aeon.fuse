@@ -7175,3 +7175,35 @@ msgstr "Aldrig spelad"
 msgctxt "#32811"
 msgid "Played"
 msgstr "Spelad"
+
+msgctxt "#32812"
+msgid "timers in the next five days"
+msgstr "timer de kommande fem dagarna"
+
+msgctxt "#32813"
+msgid "Next in {0}"
+msgstr "Nästa om {0}"
+
+msgctxt "#32814"
+msgid "{0} set to record"
+msgstr "{0} att spela in"
+
+msgctxt "#32815"
+msgid "Nothing set – pick a programme in the guide"
+msgstr "Inget planerat – välj ett program i guiden"
+
+msgctxt "#32816"
+msgid "No timers set"
+msgstr "Inga timer"
+
+msgctxt "#32817"
+msgid "Rules set timers for you"
+msgstr "Regler ställer in timer åt dig"
+
+msgctxt "#32818"
+msgid "No timer rules – set one from a programme in the guide"
+msgstr "Inga regler – skapa en från ett program i guiden"
+
+msgctxt "#32819"
+msgid "New"
+msgstr "Ny"

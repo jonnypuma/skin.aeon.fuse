@@ -7175,3 +7175,35 @@ msgstr "Nooit afgespeeld"
 msgctxt "#32811"
 msgid "Played"
 msgstr "Afgespeeld"
+
+msgctxt "#32812"
+msgid "timers in the next five days"
+msgstr "timers in de komende vijf dagen"
+
+msgctxt "#32813"
+msgid "Next in {0}"
+msgstr "Volgende over {0}"
+
+msgctxt "#32814"
+msgid "{0} set to record"
+msgstr "{0} gepland om op te nemen"
+
+msgctxt "#32815"
+msgid "Nothing set – pick a programme in the guide"
+msgstr "Niets gepland – kies een programma in de gids"
+
+msgctxt "#32816"
+msgid "No timers set"
+msgstr "Geen timers ingesteld"
+
+msgctxt "#32817"
+msgid "Rules set timers for you"
+msgstr "Regels stellen timers voor je in"
+
+msgctxt "#32818"
+msgid "No timer rules – set one from a programme in the guide"
+msgstr "Geen regels – maak er een vanuit een programma in de gids"
+
+msgctxt "#32819"
+msgid "New"
+msgstr "Nieuw"

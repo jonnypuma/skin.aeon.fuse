@@ -7175,3 +7175,35 @@ msgstr "재생한 적 없음"
 msgctxt "#32811"
 msgid "Played"
 msgstr "재생함"
+
+msgctxt "#32812"
+msgid "timers in the next five days"
+msgstr "개의 타이머 (앞으로 5일)"
+
+msgctxt "#32813"
+msgid "Next in {0}"
+msgstr "다음: {0} 후"
+
+msgctxt "#32814"
+msgid "{0} set to record"
+msgstr "녹화 예정 {0}"
+
+msgctxt "#32815"
+msgid "Nothing set – pick a programme in the guide"
+msgstr "예약 없음 – 편성표에서 프로그램을 고르세요"
+
+msgctxt "#32816"
+msgid "No timers set"
+msgstr "설정된 타이머 없음"
+
+msgctxt "#32817"
+msgid "Rules set timers for you"
+msgstr "규칙이 타이머를 대신 설정합니다"
+
+msgctxt "#32818"
+msgid "No timer rules – set one from a programme in the guide"
+msgstr "규칙 없음 – 편성표의 프로그램에서 설정하세요"
+
+msgctxt "#32819"
+msgid "New"
+msgstr "새 항목"

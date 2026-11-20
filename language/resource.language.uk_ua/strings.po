@@ -7175,3 +7175,35 @@ msgstr "Жодного разу не відтворено"
 msgctxt "#32811"
 msgid "Played"
 msgstr "Відтворено"
+
+msgctxt "#32812"
+msgid "timers in the next five days"
+msgstr "таймерів на найближчі п’ять днів"
+
+msgctxt "#32813"
+msgid "Next in {0}"
+msgstr "Наступний через {0}"
+
+msgctxt "#32814"
+msgid "{0} set to record"
+msgstr "{0} до запису"
+
+msgctxt "#32815"
+msgid "Nothing set – pick a programme in the guide"
+msgstr "Нічого не заплановано – виберіть передачу в телегіді"
+
+msgctxt "#32816"
+msgid "No timers set"
+msgstr "Таймери не задано"
+
+msgctxt "#32817"
+msgid "Rules set timers for you"
+msgstr "Правила ставлять таймери за вас"
+
+msgctxt "#32818"
+msgid "No timer rules – set one from a programme in the guide"
+msgstr "Правил немає – створіть із передачі в телегіді"
+
+msgctxt "#32819"
+msgid "New"
+msgstr "Нове"

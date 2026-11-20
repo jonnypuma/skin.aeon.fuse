@@ -1,6 +1,22 @@
 # Aeon Fuse changelog
 
 ## 0.56.53
+- Live TV in the Fused Glass style (canvas round 8; _src/fgslivetv_05653.py, helper 0.3.123): the guide has eight day
+  chips over the grid (the day in view gold, a dot where a timer is set, OK jumps the grid to that day) and the
+  programme's line gets its day in words; Recordings become cards like the library (art, NEW, how far you got, channel
+  logo); Search shows the search as a big field and each result with its day, time and channel logo; Timer rules show
+  each rule as a card with what it catches as a sentence, and New rule / Edit / Activate-Deactivate / Delete as cells.
+  TV Timers and Timer rules draw on the normal Live TV background (the old list, its card and the sort row slide out
+  of view; no dark page); reminders gold, series violet, recordings red; "No timers set"; even hour steps.
+  Strings 32817-32819.
+- TV Timers as the week in lanes of time (canvas round 7, idea B; _src/fgstimers_05653.py, helper 0.3.122): in the
+  Fused Glass style the timers page shows how many timers the next five days hold, when the next one starts and how
+  much is set to record, then a lane per day (today first) with each timer placed and sized by its time (red =
+  recording, gold = series, outline = reminder, faded when disabled) and a gold line for now; New timer, Edit,
+  Activate / Deactivate, Delete and Hide disabled as cells at the foot. Kodi's list stays the focus (Up / Down walk
+  the timers, the block of the focused one is white). Timer rules and the radio pages keep today's page. Strings
+  32812-32816. Today's list (also Recordings, Search) no longer runs into its scroll bar, which shows only with more
+  than one page.
 - Sort and show only now also for TV shows, albums and artists (user: "the same style"): the sorts Kodi accepts for each
   list (shows: Title, Year, Date added, Rating, My rating, Last played, Episodes; albums: Album, Artist, Artist / Year,
   Year, Rating, My rating, Date added, Last played, Play count; artists: Artist, Date added) and their filters (shows:

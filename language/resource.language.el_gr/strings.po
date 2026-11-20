@@ -7175,3 +7175,35 @@ msgstr "Δεν έχει παιχτεί"
 msgctxt "#32811"
 msgid "Played"
 msgstr "Έχει παιχτεί"
+
+msgctxt "#32812"
+msgid "timers in the next five days"
+msgstr "χρονοδιακόπτες τις επόμενες πέντε ημέρες"
+
+msgctxt "#32813"
+msgid "Next in {0}"
+msgstr "Επόμενος σε {0}"
+
+msgctxt "#32814"
+msgid "{0} set to record"
+msgstr "{0} για εγγραφή"
+
+msgctxt "#32815"
+msgid "Nothing set – pick a programme in the guide"
+msgstr "Τίποτα – επιλέξτε πρόγραμμα στον οδηγό"
+
+msgctxt "#32816"
+msgid "No timers set"
+msgstr "Δεν υπάρχουν χρονοδιακόπτες"
+
+msgctxt "#32817"
+msgid "Rules set timers for you"
+msgstr "Οι κανόνες ορίζουν χρονοδιακόπτες για εσάς"
+
+msgctxt "#32818"
+msgid "No timer rules – set one from a programme in the guide"
+msgstr "Κανένας κανόνας – ορίστε έναν από πρόγραμμα στον οδηγό"
+
+msgctxt "#32819"
+msgid "New"
+msgstr "Νέο"

@@ -929,6 +929,7 @@
 				<left>subnav_left</left>
 				<top>misc_nav2_top</top>
 				<animation effect="slide" end="$PARAM[fg_subnav_slide]" time="0" condition="Skin.HasSetting(aeon.fglass)">Conditional</animation>
+				<animation effect="slide" end="0,-3000" time="0" condition="[$EXP[FGS] + [Window.IsActive(TVTimers) | Window.IsActive(TVTimerRules)]]">Conditional</animation>
 				<visible>!Skin.HasSetting(aeon.fglass) | $PARAM[fg_subnav]</visible>
 				<width>1500</width>
 				<height>subnav_h</height>
@@ -1399,10 +1400,10 @@
 					<top>misc_pvr_top</top>
 					<width>1174</width>
 					<height>misc_pvr_list_h</height>
-					<onup>9001</onup>
-					<ondown>50</ondown>
+					<onup condition="$EXP[FGS] + Window.IsActive(TVTimers)">103</onup><onup condition="$EXP[FGS] + Window.IsActive(TVTimerRules)">104</onup><onup condition="![$EXP[FGS] + Window.IsActive(TVTimers)] + ![$EXP[FGS] + Window.IsActive(TVTimerRules)]">9001</onup>
+					<ondown condition="$EXP[FGS] + Window.IsActive(TVTimers)">9050</ondown><ondown condition="$EXP[FGS] + Window.IsActive(TVTimerRules)">9060</ondown><ondown condition="![$EXP[FGS] + Window.IsActive(TVTimers)] + ![$EXP[FGS] + Window.IsActive(TVTimerRules)]">50</ondown>
 					<onleft>noop</onleft>
-					<onright>60</onright>
+					<onright condition="$EXP[FGS] + Window.IsActive(TVTimers)">9050</onright><onright condition="$EXP[FGS] + Window.IsActive(TVTimerRules)">9060</onright><onright condition="![$EXP[FGS] + Window.IsActive(TVTimers)] + ![$EXP[FGS] + Window.IsActive(TVTimerRules)]">60</onright>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime tween="cubic" easing="out">200</scrolltime>
 					<viewtype label="535">list</viewtype>

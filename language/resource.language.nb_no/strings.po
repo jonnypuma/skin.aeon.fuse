@@ -7175,3 +7175,35 @@ msgstr "Aldri spilt"
 msgctxt "#32811"
 msgid "Played"
 msgstr "Spilt"
+
+msgctxt "#32812"
+msgid "timers in the next five days"
+msgstr "opptak de neste fem dagene"
+
+msgctxt "#32813"
+msgid "Next in {0}"
+msgstr "Neste om {0}"
+
+msgctxt "#32814"
+msgid "{0} set to record"
+msgstr "{0} satt til opptak"
+
+msgctxt "#32815"
+msgid "Nothing set – pick a programme in the guide"
+msgstr "Ingenting satt – velg et program i guiden"
+
+msgctxt "#32816"
+msgid "No timers set"
+msgstr "Ingen timere satt"
+
+msgctxt "#32817"
+msgid "Rules set timers for you"
+msgstr "Regler setter timere for deg"
+
+msgctxt "#32818"
+msgid "No timer rules – set one from a programme in the guide"
+msgstr "Ingen regler – lag en fra et program i guiden"
+
+msgctxt "#32819"
+msgid "New"
+msgstr "Ny"

@@ -7175,3 +7175,35 @@ msgstr "Még nem játszott"
 msgctxt "#32811"
 msgid "Played"
 msgstr "Lejátszott"
+
+msgctxt "#32812"
+msgid "timers in the next five days"
+msgstr "időzítő a következő öt napban"
+
+msgctxt "#32813"
+msgid "Next in {0}"
+msgstr "Következő {0} múlva"
+
+msgctxt "#32814"
+msgid "{0} set to record"
+msgstr "{0} felvételre ütemezve"
+
+msgctxt "#32815"
+msgid "Nothing set – pick a programme in the guide"
+msgstr "Nincs semmi – válassz műsort a műsorújságban"
+
+msgctxt "#32816"
+msgid "No timers set"
+msgstr "Nincs időzítő"
+
+msgctxt "#32817"
+msgid "Rules set timers for you"
+msgstr "A szabályok időzítenek helyetted"
+
+msgctxt "#32818"
+msgid "No timer rules – set one from a programme in the guide"
+msgstr "Nincs szabály – hozz létre egyet egy műsornál"
+
+msgctxt "#32819"
+msgid "New"
+msgstr "Új"

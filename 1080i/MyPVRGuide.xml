@@ -130,5 +130,6 @@
 				<autoscroll delay="6000" time="3000" repeat="10000">true</autoscroll>  <!-- standard Kodi plot scroll: wait 6s, roll, pause 10s, repeat -->
 			</control>
 		</control>
+		<include condition="$EXP[FGS]">FGS_GuideDays</include>
 	</controls>
 </window>

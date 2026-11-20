@@ -102,7 +102,6 @@ Add-ons > Install from zip file (allow unknown sources first, Settings > System 
 | jamal2362 (CE-Repo) | <https://raw.githubusercontent.com/CE-Repo/repository.jamal2362/main/addons/zips/repository.jamal2362/repository.jamal2362-4.0.zip> |
 | Skippy Repo (jonnypuma) | <https://raw.githubusercontent.com/jonnypuma/repository.skippyrepo/main/zips/repository.skippyrepo/repository.skippyrepo-1.0.4.zip> |
 | KarmaMole's Kodi Skins | <https://karmamole.github.io/kodi-skins/repository.karmamole/repository.karmamole-1.0.6.zip> |
-| Kodinerds | <https://repo.kodinerds.net/addons/repository.kodinerds/repository.kodinerds-7.0.1.9.zip> |
 | jurialmunkey | <https://raw.githubusercontent.com/jurialmunkey/repository.jurialmunkey/master/repo/zips/repository.jurialmunkey/repository.jurialmunkey-3.6.zip> |
 | Bald | <https://dangerouslaser.github.io/skin.bald/kodi/repository.bald/repository.bald-1.2.0.zip> |
 

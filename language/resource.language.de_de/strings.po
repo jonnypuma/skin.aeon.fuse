@@ -1,0 +1,7177 @@
+# Kodi add-on strings - skin.aeon.fuse (de_de)
+msgid ""
+msgstr ""
+"Project-Id-Version: skin.aeon.fuse\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#31010"
+msgid "Sort"
+msgstr "Sortierung"
+
+msgctxt "#31011"
+msgid "View"
+msgstr "Ansicht"
+
+msgctxt "#31012"
+msgid "Nothing here"
+msgstr "Hier ist nichts"
+
+msgctxt "#31013"
+msgid "Working"
+msgstr "Arbeite"
+
+msgctxt "#31014"
+msgid "Up / down to page, OK to close"
+msgstr "Hoch / Runter blättert, OK schließt"
+
+msgctxt "#31015"
+msgid "Muted"
+msgstr "Stumm"
+
+msgctxt "#31016"
+msgid "Buffering"
+msgstr "Puffern"
+
+msgctxt "#31017"
+msgid "Now playing"
+msgstr "Läuft gerade"
+
+msgctxt "#31018"
+msgid "Next:"
+msgstr "Als Nächstes:"
+
+msgctxt "#31019"
+msgid "Home"
+msgstr "Start"
+
+msgctxt "#31020"
+msgid "System"
+msgstr "System"
+
+msgctxt "#31021"
+msgid "Skin settings"
+msgstr "Skin-Einstellungen"
+
+msgctxt "#31022"
+msgid "Power"
+msgstr "Ein/Aus"
+
+msgctxt "#31024"
+msgid "Aeon Fuse"
+msgstr "Aeon Fuse"
+
+msgctxt "#31025"
+msgid "Skin settings holds Aeon Fuse's own options. To switch skins: Interface > Skin > Skin."
+msgstr "Die Skin-Einstellungen enthalten die eigenen Optionen von Aeon Fuse. Skin wechseln: Oberfläche > Skin > Skin."
+
+msgctxt "#31030"
+msgid "Ends"
+msgstr "Endet"
+
+msgctxt "#31040"
+msgid "Symbols"
+msgstr "Symbole"
+
+msgctxt "#31041"
+msgid "Caps"
+msgstr "Großbuchst."
+
+msgctxt "#31042"
+msgid "Shift"
+msgstr "Umschalt"
+
+msgctxt "#31043"
+msgid "Space"
+msgstr "Leerzeichen"
+
+msgctxt "#31044"
+msgid "Delete"
+msgstr "Löschen"
+
+msgctxt "#31045"
+msgid "Queue"
+msgstr "Warteschlange"
+
+msgctxt "#31046"
+msgid "Cover showcase"
+msgstr "Cover-Schaufenster"
+
+msgctxt "#31047"
+msgid "03  Performance"
+msgstr "03  Leistung"
+
+msgctxt "#31048"
+msgid "Pause"
+msgstr "Pause"
+
+msgctxt "#31050"
+msgid "Palette"
+msgstr "Palette"
+
+msgctxt "#31051"
+msgid "Slightly rounded corners"
+msgstr "Leicht abgerundete Ecken"
+
+msgctxt "#31052"
+msgid "Focus outline"
+msgstr "Fokusrahmen"
+
+msgctxt "#31053"
+msgid "Artwork background"
+msgstr "Bild-Hintergrund"
+
+msgctxt "#31054"
+msgid "Trailer button"
+msgstr "Trailer-Taste"
+
+msgctxt "#31055"
+msgid "Watched indicators"
+msgstr "Gesehen-Markierungen"
+
+msgctxt "#31056"
+msgid "Spotlight rotation"
+msgstr "Spotlight-Wechsel"
+
+msgctxt "#31057"
+msgid "Newest row on Home"
+msgstr "Neueste Reihe auf der Startseite"
+
+msgctxt "#31058"
+msgid "Reduce motion"
+msgstr "Bewegung verringern"
+
+msgctxt "#31059"
+msgid "Reset all skin settings"
+msgstr "Alle Skin-Einstellungen zurücksetzen"
+
+msgctxt "#31060"
+msgid "Signal"
+msgstr "Signal"
+
+msgctxt "#31061"
+msgid "Cobalt"
+msgstr "Kobalt"
+
+msgctxt "#31062"
+msgid "Mint"
+msgstr "Mint"
+
+msgctxt "#31063"
+msgid "Amber"
+msgstr "Bernstein"
+
+msgctxt "#31064"
+msgid "Rose"
+msgstr "Rosé"
+
+msgctxt "#31065"
+msgid "Ice"
+msgstr "Eis"
+
+msgctxt "#31066"
+msgid "Bone"
+msgstr "Knochen"
+
+msgctxt "#31070"
+msgid "Thin"
+msgstr "Dünn"
+
+msgctxt "#31071"
+msgid "Medium"
+msgstr "Mittel"
+
+msgctxt "#31072"
+msgid "Off"
+msgstr "Aus"
+
+msgctxt "#31075"
+msgid "Faint"
+msgstr "Schwach"
+
+msgctxt "#31076"
+msgid "Soft"
+msgstr "Weich"
+
+msgctxt "#31077"
+msgid "Visible"
+msgstr "Sichtbar"
+
+msgctxt "#31080"
+msgid "Both"
+msgstr "Beides"
+
+msgctxt "#31081"
+msgid "Unwatched only"
+msgstr "Nur ungesehene"
+
+msgctxt "#31082"
+msgid "Watched only"
+msgstr "Nur gesehene"
+
+msgctxt "#31085"
+msgid "Date added"
+msgstr "Hinzugefügt am"
+
+msgctxt "#31086"
+msgid "Release date"
+msgstr "Erscheinungsdatum"
+
+msgctxt "#31087"
+msgid "Both rows"
+msgstr "Beide Reihen"
+
+msgctxt "#31100"
+msgid "Spotlight / unwatched / top rated"
+msgstr "Spotlight / ungesehen / top bewertet"
+
+msgctxt "#31101"
+msgid "Year"
+msgstr "Jahr"
+
+msgctxt "#31102"
+msgid "Runtime"
+msgstr "Laufzeit"
+
+msgctxt "#31103"
+msgid "Rating"
+msgstr "Bewertung"
+
+msgctxt "#31104"
+msgid "Rated"
+msgstr "Freigabe"
+
+msgctxt "#31105"
+msgid "Details"
+msgstr "Details"
+
+msgctxt "#31106"
+msgid "Fig. 01: random pick, unwatched, rated 7.5+"
+msgstr "Abb. 01: Zufallsauswahl, ungesehen, Bewertung 7,5+"
+
+msgctxt "#31107"
+msgid "No unwatched films rated 7.5+ yet"
+msgstr "Noch keine ungesehenen Filme mit Bewertung 7,5+"
+
+msgctxt "#31110"
+msgid "Newest additions"
+msgstr "Neueste Zugänge"
+
+msgctxt "#31111"
+msgid "Sorted by date added ↓"
+msgstr "Sortiert nach Hinzufügedatum ↓"
+
+msgctxt "#31112"
+msgid "Newest releases"
+msgstr "Neueste Veröffentlichungen"
+
+msgctxt "#31113"
+msgid "Sorted by release date ↓"
+msgstr "Sortiert nach Erscheinungsdatum ↓"
+
+msgctxt "#31114"
+msgid "films"
+msgstr "Filme"
+
+msgctxt "#31120"
+msgid "Seek  ◀ ▶"
+msgstr "Spulen  ◀ ▶"
+
+msgctxt "#31121"
+msgid "Previous"
+msgstr "Zurück"
+
+msgctxt "#31122"
+msgid "Rewind"
+msgstr "Zurückspulen"
+
+msgctxt "#31123"
+msgid "Play / pause"
+msgstr "Wiedergabe / Pause"
+
+msgctxt "#31124"
+msgid "Stop"
+msgstr "Stopp"
+
+msgctxt "#31125"
+msgid "Forward"
+msgstr "Vorspulen"
+
+msgctxt "#31126"
+msgid "Next"
+msgstr "Weiter"
+
+msgctxt "#31127"
+msgid "Subtitles"
+msgstr "Untertitel"
+
+msgctxt "#31128"
+msgid "Audio"
+msgstr "Audio"
+
+msgctxt "#31129"
+msgid "Video settings"
+msgstr "Videoeinstellungen"
+
+msgctxt "#31318"
+msgid "Visualiser presets"
+msgstr "Visualisierungs-Voreinstellungen"
+
+msgctxt "#31319"
+msgid "OK, then ← for presets"
+msgstr "OK, dann ← für Vorlagen"
+
+msgctxt "#31900"
+msgid "Aeon Fuse (Figtree)"
+msgstr "Aeon Fuse (Figtree)"
+
+msgctxt "#31901"
+msgid "Arial (wider script coverage)"
+msgstr "Arial (mehr Schriftsysteme)"
+
+msgctxt "#31902"
+msgid "Episode code"
+msgstr "Episodencode"
+
+msgctxt "#31200"
+msgid "Aeon Fuse settings"
+msgstr "Aeon-Fuse-Einstellungen"
+
+msgctxt "#31201"
+msgid "Live TV"
+msgstr "Live-TV"
+
+msgctxt "#31202"
+msgid "Media"
+msgstr "Medien"
+
+msgctxt "#31203"
+msgid "Update library"
+msgstr "Bibliothek aktualisieren"
+
+msgctxt "#31204"
+msgid "Library"
+msgstr "Bibliothek"
+
+msgctxt "#31205"
+msgid "Clean library"
+msgstr "Bibliothek bereinigen"
+
+msgctxt "#31206"
+msgid "More"
+msgstr "Mehr"
+
+msgctxt "#31207"
+msgid "Add-on"
+msgstr "Add-on"
+
+msgctxt "#31208"
+msgid "About this setting"
+msgstr "Über diese Einstellung"
+
+msgctxt "#31209"
+msgid "Timer"
+msgstr "Timer"
+
+msgctxt "#31210"
+msgid "Left / right: channel group"
+msgstr "Links / Rechts: Sendergruppe"
+
+msgctxt "#31211"
+msgid "Add group"
+msgstr "Gruppe hinzufügen"
+
+msgctxt "#31212"
+msgid "Rename group"
+msgstr "Gruppe umbenennen"
+
+msgctxt "#31213"
+msgid "Delete group"
+msgstr "Gruppe löschen"
+
+msgctxt "#31214"
+msgid "Jump through the guide  ·  Back to close"
+msgstr "Durch den Programmführer springen  ·  Zurück schließt"
+
+msgctxt "#31215"
+msgid "Playing on this Shield"
+msgstr "Läuft auf diesem Shield"
+
+msgctxt "#31216"
+msgid "OK or Back closes"
+msgstr "OK oder Zurück schließt"
+
+msgctxt "#31217"
+msgid "Find subtitles"
+msgstr "Untertitel suchen"
+
+msgctxt "#31218"
+msgid "Service"
+msgstr "Dienst"
+
+msgctxt "#31219"
+msgid "Status"
+msgstr "Status"
+
+msgctxt "#31220"
+msgid "This file already has subtitle tracks"
+msgstr "Diese Datei hat bereits Untertitelspuren"
+
+msgctxt "#31221"
+msgid "Sync = timed to your file"
+msgstr "Sync = auf Ihre Datei abgestimmt"
+
+msgctxt "#31222"
+msgid "No subtitles listed yet. Pick a service or search manually."
+msgstr "Noch keine Untertitel aufgelistet. Dienst wählen oder manuell suchen."
+
+msgctxt "#31223"
+msgid "Order:"
+msgstr "Reihenfolge:"
+
+msgctxt "#31224"
+msgid "Nothing has happened yet."
+msgstr "Bisher ist nichts passiert."
+
+msgctxt "#31225"
+msgid "Back to continue"
+msgstr "Zurück zum Fortfahren"
+
+msgctxt "#31226"
+msgid "Nothing to choose"
+msgstr "Nichts zur Auswahl"
+
+msgctxt "#31227"
+msgid "Browse the whole library instead."
+msgstr "Stattdessen die ganze Bibliothek durchsuchen."
+
+msgctxt "#31228"
+msgid "See all"
+msgstr "Alle ansehen"
+
+msgctxt "#31229"
+msgid "No shows in progress. Start one from Shows."
+msgstr "Keine angefangenen Serien. Starten Sie eine unter Serien."
+
+msgctxt "#31230"
+msgid "Nothing here."
+msgstr "Hier ist nichts."
+
+msgctxt "#31231"
+msgid "PVR & Live TV settings"
+msgstr "PVR- & Live-TV-Einstellungen"
+
+msgctxt "#31232"
+msgid "Up one level"
+msgstr "Ebene höher"
+
+msgctxt "#31233"
+msgid "Nothing else is known about this one yet."
+msgstr "Mehr ist über diesen Titel noch nicht bekannt."
+
+msgctxt "#31234"
+msgid "Up and down scroll  ·  Back closes"
+msgstr "Hoch und runter blättert  ·  Zurück schließt"
+
+msgctxt "#31235"
+msgid "Up next"
+msgstr "Als Nächstes"
+
+msgctxt "#31236"
+msgid "The last one in the queue"
+msgstr "Der letzte in der Warteschlange"
+
+msgctxt "#31237"
+msgid "Sync"
+msgstr "Sync"
+
+msgctxt "#31238"
+msgid "No matches"
+msgstr "Keine Treffer"
+
+msgctxt "#31239"
+msgid "Searching"
+msgstr "Suche läuft"
+
+msgctxt "#31240"
+msgid "Films, shows, albums, artists"
+msgstr "Filme, Serien, Alben, Interpreten"
+
+msgctxt "#31241"
+msgid "OK to type  ·  Down for results  ·  Back to close"
+msgstr "OK zum Tippen  ·  Runter zu den Ergebnissen  ·  Zurück schließt"
+
+msgctxt "#31242"
+msgid "Films and shows match on title, albums on album name, artists on name. Library only."
+msgstr "Filme und Serien nach Titel, Alben nach Albumname, Interpreten nach Name. Nur Bibliothek."
+
+msgctxt "#31243"
+msgid "Offsets apply to this film only. Choosing an offset hides this panel so you can sync against the picture."
+msgstr "Versätze gelten nur für diesen Film. Ein Versatz blendet dieses Feld aus, damit Sie am Bild abgleichen können."
+
+msgctxt "#31244"
+msgid "More for this title"
+msgstr "Mehr zu diesem Titel"
+
+msgctxt "#31245"
+msgid "Back"
+msgstr "Zurück"
+
+msgctxt "#31246"
+msgid "Unwatched only is on: choose the pill above to show everything."
+msgstr "„Nur ungesehene“ ist an: die Schaltfläche oben wählen, um alles zu zeigen."
+
+msgctxt "#31247"
+msgid "Left and right to seek  ·  Down returns"
+msgstr "Links und rechts spulen  ·  Runter kehrt zurück"
+
+msgctxt "#31248"
+msgid "Choose Albums, Artists, Songs or Genres above."
+msgstr "Oben Alben, Interpreten, Titel oder Genres wählen."
+
+msgctxt "#31249"
+msgid "Playlist"
+msgstr "Wiedergabeliste"
+
+msgctxt "#31250"
+msgid "Empty. Pick songs or albums on the left and press OK to add them."
+msgstr "Leer. Links Titel oder Alben wählen und mit OK hinzufügen."
+
+msgctxt "#31251"
+msgid "The queue is empty"
+msgstr "Die Warteschlange ist leer"
+
+msgctxt "#31252"
+msgid "No weather yet."
+msgstr "Noch kein Wetter."
+
+msgctxt "#31253"
+msgid "Choose a weather service under Settings, Services, Weather."
+msgstr "Einen Wetterdienst unter Einstellungen, Dienste, Wetter wählen."
+
+msgctxt "#31254"
+msgid "The next few days"
+msgstr "Die nächsten Tage"
+
+msgctxt "#31255"
+msgid "Look, behaviour, home menu"
+msgstr "Aussehen, Verhalten, Hauptmenü"
+
+msgctxt "#31256"
+msgid "Playback, subtitles"
+msgstr "Wiedergabe, Untertitel"
+
+msgctxt "#31257"
+msgid "Library, files"
+msgstr "Bibliothek, Dateien"
+
+msgctxt "#31258"
+msgid "Skin, region"
+msgstr "Skin, Region"
+
+msgctxt "#31259"
+msgid "Installed, updates"
+msgstr "Installiert, Updates"
+
+msgctxt "#31260"
+msgid "Remote, sharing"
+msgstr "Fernbedienung, Freigabe"
+
+msgctxt "#31261"
+msgid "Display, audio"
+msgstr "Anzeige, Audio"
+
+msgctxt "#31262"
+msgid "Sources, files"
+msgstr "Quellen, Dateien"
+
+msgctxt "#31263"
+msgid "Hardware, storage"
+msgstr "Hardware, Speicher"
+
+msgctxt "#31264"
+msgid "Event log"
+msgstr "Ereignisprotokoll"
+
+msgctxt "#31265"
+msgid "Recent events"
+msgstr "Letzte Ereignisse"
+
+msgctxt "#31266"
+msgid "Users"
+msgstr "Benutzer"
+
+msgctxt "#31267"
+msgid "Not used"
+msgstr "Nicht verwendet"
+
+msgctxt "#31268"
+msgid "Controllers"
+msgstr "Controller"
+
+msgctxt "#31269"
+msgid "This box"
+msgstr "Dieses Gerät"
+
+msgctxt "#31270"
+msgid "Login screen"
+msgstr "Anmeldebildschirm"
+
+msgctxt "#31271"
+msgid "Auto login"
+msgstr "Automatische Anmeldung"
+
+msgctxt "#31272"
+msgid "Options"
+msgstr "Optionen"
+
+msgctxt "#31273"
+msgid "Order direction"
+msgstr "Sortierrichtung"
+
+msgctxt "#31274"
+msgid "Select a rule to edit it. Use the context menu to delete a rule."
+msgstr "Regel wählen, um sie zu bearbeiten. Zum Löschen das Kontextmenü verwenden."
+
+msgctxt "#31275"
+msgid "Value"
+msgstr "Wert"
+
+msgctxt "#31276"
+msgid "No chapters or bookmarks yet. Create one with the first button."
+msgstr "Noch keine Kapitel oder Lesezeichen. Mit der ersten Taste eines anlegen."
+
+msgctxt "#31277"
+msgid "OK jumps there  ·  Back closes"
+msgstr "OK springt dorthin  ·  Zurück schließt"
+
+msgctxt "#31300"
+msgid "Order"
+msgstr "Reihenfolge"
+
+msgctxt "#31301"
+msgid "Watched"
+msgstr "Gesehen"
+
+msgctxt "#31302"
+msgid "Search"
+msgstr "Suche"
+
+msgctxt "#31303"
+msgid "Stop updating"
+msgstr "Aktualisierung stoppen"
+
+msgctxt "#31304"
+msgid "Library settings"
+msgstr "Bibliothekseinstellungen"
+
+msgctxt "#31305"
+msgid "Music"
+msgstr "Musik"
+
+msgctxt "#31306"
+msgid "Update"
+msgstr "Aktualisieren"
+
+msgctxt "#31307"
+msgid "Clean"
+msgstr "Bereinigen"
+
+msgctxt "#31308"
+msgid "Collections"
+msgstr "Sammlungen"
+
+msgctxt "#31309"
+msgid "Films and shows"
+msgstr "Filme und Serien"
+
+msgctxt "#31310"
+msgid "No, keep it as it is"
+msgstr "Nein, so lassen"
+
+msgctxt "#31311"
+msgid "Yes, clean it now"
+msgstr "Ja, jetzt bereinigen"
+
+msgctxt "#31312"
+msgid "Grid"
+msgstr "Raster"
+
+msgctxt "#31313"
+msgid "Wall"
+msgstr "Wand"
+
+msgctxt "#31314"
+msgid "Episodes"
+msgstr "Episoden"
+
+msgctxt "#31315"
+msgid "List"
+msgstr "Liste"
+
+msgctxt "#31316"
+msgid "OK to reset"
+msgstr "OK zum Zurücksetzen"
+
+msgctxt "#31317"
+msgid "Press OK again to reset everything"
+msgstr "Erneut OK drücken, um alles zurückzusetzen"
+
+msgctxt "#31320"
+msgid "Spotlight"
+msgstr "Spotlight"
+
+msgctxt "#31321"
+msgid "Wide"
+msgstr "Breit"
+
+msgctxt "#31322"
+msgid "Time"
+msgstr "Zeit"
+
+msgctxt "#31323"
+msgid "No runtime"
+msgstr "Keine Laufzeit"
+
+msgctxt "#31324"
+msgid "Now"
+msgstr "Jetzt"
+
+msgctxt "#31325"
+msgid "+1 h"
+msgstr "+1 h"
+
+msgctxt "#31326"
+msgid "+2 h"
+msgstr "+2 h"
+
+msgctxt "#31327"
+msgid "+3 h"
+msgstr "+3 h"
+
+msgctxt "#31328"
+msgid "+4 h"
+msgstr "+4 h"
+
+msgctxt "#31329"
+msgid "Rows"
+msgstr "Reihen"
+
+msgctxt "#31330"
+msgid "Main menu"
+msgstr "Hauptmenü"
+
+msgctxt "#31331"
+msgid "Films"
+msgstr "Filme"
+
+msgctxt "#31332"
+msgid "Shows"
+msgstr "Serien"
+
+msgctxt "#31333"
+msgid "Music"
+msgstr "Musik"
+
+msgctxt "#31334"
+msgid "Search"
+msgstr "Suche"
+
+msgctxt "#31335"
+msgid "Pill, hero and film cards"
+msgstr "Pille, Hero und Filmkarten"
+
+msgctxt "#31336"
+msgid "Pill and the Next up card"
+msgstr "Pille und Als-Nächstes-Karte"
+
+msgctxt "#31337"
+msgid "Pill in the top line"
+msgstr "Pille in der oberen Zeile"
+
+msgctxt "#31338"
+msgid "Which pills the top line shows. Hidden pills disappear on Home and in the libraries; the rest close up. For now and the gear (system menu, settings) always stay, so you can always come back here.[CR][CR]Up / Down picks a group, Right enters it."
+msgstr "Welche Pillen die obere Zeile zeigt. Ausgeblendete Pillen verschwinden auf der Startseite und in den Bibliotheken; die übrigen rücken auf. „Für jetzt“ und das Zahnrad (Systemmenü, Einstellungen) bleiben immer, damit Sie hierher zurückfinden.[CR][CR]Hoch / Runter wählt eine Gruppe, Rechts öffnet sie."
+
+msgctxt "#31339"
+msgid "Films also takes the hero and the film cards off For now; Shows takes the Next up card. The libraries themselves stay: Search finds them, and the system menu has Files."
+msgstr "Filme nimmt auch den Hero und die Filmkarten aus „Für jetzt“; Serien die Als-Nächstes-Karte. Die Bibliotheken selbst bleiben: Die Suche findet sie, und das Systemmenü hat Dateien."
+
+msgctxt "#31340"
+msgid "Show"
+msgstr "Zeigen"
+
+msgctxt "#31341"
+msgid "Hide"
+msgstr "Verbergen"
+
+msgctxt "#31342"
+msgid "View, sort, filter…"
+msgstr "Ansicht, Sortierung, Filter…"
+
+msgctxt "#31940"
+msgid "Custom rows"
+msgstr "Eigene Reihen"
+
+msgctxt "#31941"
+msgid "Row 1"
+msgstr "Reihe 1"
+
+msgctxt "#31942"
+msgid "Row 2"
+msgstr "Reihe 2"
+
+msgctxt "#31943"
+msgid "Row 3"
+msgstr "Reihe 3"
+
+msgctxt "#31944"
+msgid "Not set"
+msgstr "Nicht festgelegt"
+
+msgctxt "#31945"
+msgid "Add-on, playlist or library…"
+msgstr "Add-on, Wiedergabeliste oder Bibliothek…"
+
+msgctxt "#31946"
+msgid "A favourite…"
+msgstr "Ein Favorit…"
+
+msgctxt "#31947"
+msgid "Rename…"
+msgstr "Umbenennen…"
+
+msgctxt "#31948"
+msgid "Clear"
+msgstr "Leeren"
+
+msgctxt "#31949"
+msgid "This favourite opens no folder"
+msgstr "Dieser Favorit öffnet keinen Ordner"
+
+msgctxt "#31950"
+msgid "Add up to three rows of your own to Home: a folder of an add-on (for example JellyCon's Continue Watching), a smart playlist, a library node or a favourite that opens a folder. A row shows only when it has something in it.[CR][CR]OK opens the row's options: choose what it shows, rename it or clear it."
+msgstr "Bis zu drei eigene Reihen auf der Startseite: ein Ordner eines Add-ons (zum Beispiel „Weiterschauen“ von JellyCon), eine intelligente Wiedergabeliste, ein Bibliotheksknoten oder ein Favorit, der einen Ordner öffnet. Eine Reihe erscheint nur, wenn sie etwas enthält.[CR][CR]OK öffnet die Optionen der Reihe: festlegen, was sie zeigt, umbenennen oder leeren."
+
+msgctxt "#31951"
+msgid "Custom row"
+msgstr "Eigene Reihe"
+
+msgctxt "#31952"
+msgid "Loading…"
+msgstr "Lädt…"
+
+msgctxt "#31953"
+msgid "1 item"
+msgstr "1 Eintrag"
+
+msgctxt "#31954"
+msgid "items"
+msgstr "Einträge"
+
+msgctxt "#31955"
+msgid "Add-on · playlist · library · favourite"
+msgstr "Add-on · Wiedergabeliste · Bibliothek · Favorit"
+
+msgctxt "#31956"
+msgid "The add-on of this favourite isn't installed"
+msgstr "Das Add-on dieses Favoriten ist nicht installiert"
+
+msgctxt "#31957"
+msgid "Rows of your own on Home: an add-on folder, a playlist, a library node or a favourite. OK opens the row's options."
+msgstr "Eigene Reihen auf der Startseite: ein Add-on-Ordner, eine Wiedergabeliste, ein Bibliotheksknoten oder ein Favorit. OK öffnet die Optionen der Reihe."
+
+msgctxt "#31980"
+msgid "Custom menu items"
+msgstr "Eigene Menüpunkte"
+
+msgctxt "#31981"
+msgid "Menu item 1"
+msgstr "Menüpunkt 1"
+
+msgctxt "#31982"
+msgid "Menu item 2"
+msgstr "Menüpunkt 2"
+
+msgctxt "#31983"
+msgid "Menu item 3"
+msgstr "Menüpunkt 3"
+
+msgctxt "#31984"
+msgid "Put up to three add-ons, favourites or library folders on the main menu, after the skin's own items. An item shows only while its add-on is installed.[CR][CR]OK opens the item's options: choose what it opens, rename it or clear it."
+msgstr "Bis zu drei Add-ons, Favoriten oder Bibliotheksordner ins Hauptmenü legen, nach den eigenen Punkten des Skins. Ein Punkt erscheint nur, solange sein Add-on installiert ist.[CR][CR]OK öffnet die Optionen des Punkts: festlegen, was er öffnet, umbenennen oder leeren."
+
+msgctxt "#31985"
+msgid "Add-on · favourite · library · folder"
+msgstr "Add-on · Favorit · Bibliothek · Ordner"
+
+msgctxt "#31986"
+msgid "Opens"
+msgstr "Öffnet"
+
+msgctxt "#31987"
+msgid "Menu item"
+msgstr "Menüpunkt"
+
+msgctxt "#31988"
+msgid "add-on not installed"
+msgstr "Add-on nicht installiert"
+
+msgctxt "#31989"
+msgid "Add-on"
+msgstr "Add-on"
+
+msgctxt "#31990"
+msgid "Playlist"
+msgstr "Wiedergabeliste"
+
+msgctxt "#31991"
+msgid "Library"
+msgstr "Bibliothek"
+
+msgctxt "#31992"
+msgid "Folder"
+msgstr "Ordner"
+
+msgctxt "#31993"
+msgid "Shortcut"
+msgstr "Verknüpfung"
+
+msgctxt "#31994"
+msgid "Your own items on the main menu: an add-on, a favourite, a library node or a folder. OK opens the item's options."
+msgstr "Eigene Punkte im Hauptmenü: ein Add-on, ein Favorit, ein Bibliotheksknoten oder ein Ordner. OK öffnet die Optionen des Punkts."
+
+msgctxt "#31995"
+msgid "OK to open"
+msgstr "OK zum Öffnen"
+
+msgctxt "#31540"
+msgid "View settings"
+msgstr "Ansichtseinstellungen"
+
+msgctxt "#31541"
+msgid "Ratings"
+msgstr "Bewertungen"
+
+msgctxt "#31542"
+msgid "Media info"
+msgstr "Medieninfo"
+
+msgctxt "#31543"
+msgid "Backdrop"
+msgstr "Kulisse"
+
+msgctxt "#31544"
+msgid "Reset"
+msgstr "Zurücksetzen"
+
+msgctxt "#31545"
+msgid "Global settings"
+msgstr "Globale Einstellungen"
+
+msgctxt "#31546"
+msgid "Default"
+msgstr "Standard"
+
+msgctxt "#31547"
+msgid "On"
+msgstr "An"
+
+msgctxt "#31548"
+msgid "Off"
+msgstr "Aus"
+
+msgctxt "#31549"
+msgid "Neutral"
+msgstr "Neutral"
+
+msgctxt "#31550"
+msgid "Fanart"
+msgstr "Fanart"
+
+msgctxt "#31551"
+msgid "Colors"
+msgstr "Farben"
+
+msgctxt "#31000"
+msgid "Kodi"
+msgstr "Kodi"
+
+msgctxt "#31001"
+msgid "ULTRA HD"
+msgstr "ULTRA HD"
+
+msgctxt "#31002"
+msgid "The pages that Up opens above this home menu item. Pick one, then use the buttons on the right."
+msgstr "Die Seiten, die „Hoch“ über diesem Hauptmenüpunkt öffnet. Einen wählen, dann die Tasten rechts nutzen."
+
+msgctxt "#31003"
+msgid "+  Add item"
+msgstr "+  Eintrag hinzufügen"
+
+msgctxt "#31004"
+msgid "Rename"
+msgstr "Umbenennen"
+
+msgctxt "#31005"
+msgid "Select source"
+msgstr "Quelle wählen"
+
+msgctxt "#31006"
+msgid "Sort by"
+msgstr "Sortieren nach"
+
+msgctxt "#31007"
+msgid "Reverse order"
+msgstr "Umgekehrte Reihenfolge"
+
+msgctxt "#31008"
+msgid "Items in list"
+msgstr "Einträge in der Liste"
+
+msgctxt "#31009"
+msgid "Seconds per item"
+msgstr "Sekunden pro Eintrag"
+
+msgctxt "#31023"
+msgid "Autoscroll on / off"
+msgstr "Autoscroll an / aus"
+
+msgctxt "#31026"
+msgid "Hide / show"
+msgstr "Aus- / einblenden"
+
+msgctxt "#31027"
+msgid "Move up"
+msgstr "Nach oben"
+
+msgctxt "#31028"
+msgid "Move down"
+msgstr "Nach unten"
+
+msgctxt "#31029"
+msgid "Add list..."
+msgstr "Liste hinzufügen..."
+
+msgctxt "#31031"
+msgid "Add folder items..."
+msgstr "Ordnereinträge hinzufügen..."
+
+msgctxt "#31032"
+msgid "Restore defaults"
+msgstr "Standard wiederherstellen"
+
+msgctxt "#31033"
+msgid "The categories and rows shown under this home menu item (for Power: its actions)."
+msgstr "Die Kategorien und Reihen unter diesem Hauptmenüpunkt (bei Ein/Aus: seine Aktionen)."
+
+msgctxt "#31034"
+msgid "Items in row"
+msgstr "Einträge in der Reihe"
+
+msgctxt "#31035"
+msgid "Artwork type"
+msgstr "Bildart"
+
+msgctxt "#31036"
+msgid "The full-screen widget pages that Up opens above this item: on or off, autoscroll, and the defaults for every list in them."
+msgstr "Die Vollbild-Widgetseiten, die „Hoch“ über diesem Punkt öffnet: an oder aus, Autoscroll und die Standards für jede Liste darin."
+
+msgctxt "#31037"
+msgid "Widget (Up key after Spotlight)"
+msgstr "Widget (Taste Hoch nach dem Spotlight)"
+
+msgctxt "#31038"
+msgid "Autoscroll"
+msgstr "Autoscroll"
+
+msgctxt "#31039"
+msgid "Items per list"
+msgstr "Einträge pro Liste"
+
+msgctxt "#31049"
+msgid "The big Netflix-style spotlight above this item on Home: a rotating list of titles with fanart, logo, details and Play."
+msgstr "Das große Spotlight im Netflix-Stil über diesem Punkt der Startseite: wechselnde Titel mit Fanart, Logo, Details und Abspielen."
+
+msgctxt "#31067"
+msgid "Label"
+msgstr "Bezeichnung"
+
+msgctxt "#31068"
+msgid "Path"
+msgstr "Pfad"
+
+msgctxt "#31069"
+msgid "Items"
+msgstr "Einträge"
+
+msgctxt "#31073"
+msgid "Widget screen options"
+msgstr "Optionen der Widgetseiten"
+
+msgctxt "#31074"
+msgid "Library background (Aeon)"
+msgstr "Bibliothekshintergrund (Aeon)"
+
+msgctxt "#31078"
+msgid "Choose a view"
+msgstr "Ansicht wählen"
+
+msgctxt "#31079"
+msgid "Left / Right to look, OK to switch"
+msgstr "Links / Rechts schauen, OK wechselt"
+
+msgctxt "#31083"
+msgid "Fanart list"
+msgstr "Fanart-Liste"
+
+msgctxt "#31084"
+msgid "Rows with A-Z keys"
+msgstr "Zeilen mit A–Z-Tasten"
+
+msgctxt "#31088"
+msgid "Artist wall"
+msgstr "Interpretenwand"
+
+msgctxt "#31089"
+msgid "Cover grid"
+msgstr "Cover-Raster"
+
+msgctxt "#31090"
+msgid "Album wall"
+msgstr "Albenwand"
+
+msgctxt "#31091"
+msgid "Song wall"
+msgstr "Titelwand"
+
+msgctxt "#31092"
+msgid "Artist showcase"
+msgstr "Interpreten-Schaufenster"
+
+msgctxt "#31093"
+msgid "Big covers in a row"
+msgstr "Große Cover in einer Reihe"
+
+msgctxt "#31094"
+msgid "Album showcase"
+msgstr "Alben-Schaufenster"
+
+msgctxt "#31095"
+msgid "Song showcase"
+msgstr "Titel-Schaufenster"
+
+msgctxt "#31096"
+msgid "Artist rows"
+msgstr "Interpretenreihen"
+
+msgctxt "#31097"
+msgid "Rows with covers"
+msgstr "Reihen mit Covern"
+
+msgctxt "#31098"
+msgid "Album list"
+msgstr "Albenliste"
+
+msgctxt "#31099"
+msgid "Song list"
+msgstr "Titelliste"
+
+msgctxt "#31108"
+msgid "Compact song rows"
+msgstr "Kompakte Titelreihen"
+
+msgctxt "#31109"
+msgid "Fanart wall"
+msgstr "Fanart-Wand"
+
+msgctxt "#31115"
+msgid "Portrait grid"
+msgstr "Hochformat-Raster"
+
+msgctxt "#31116"
+msgid "Fanart and A-Z keys"
+msgstr "Fanart und A–Z-Tasten"
+
+msgctxt "#31117"
+msgid "Show posters"
+msgstr "Poster zeigen"
+
+msgctxt "#31118"
+msgid "Posters"
+msgstr "Poster"
+
+msgctxt "#31119"
+msgid "Season posters"
+msgstr "Staffelposter"
+
+msgctxt "#31130"
+msgid "Poster wall"
+msgstr "Posterwand"
+
+msgctxt "#31131"
+msgid "Episode wall"
+msgstr "Episodenwand"
+
+msgctxt "#31132"
+msgid "Landscape artwork"
+msgstr "Querformat-Bilder"
+
+msgctxt "#31133"
+msgid "Landscape wall"
+msgstr "Querformat-Wand"
+
+msgctxt "#31134"
+msgid "Square wall"
+msgstr "Quadratwand"
+
+msgctxt "#31135"
+msgid "Square tiles"
+msgstr "Quadratische Kacheln"
+
+msgctxt "#31136"
+msgid "Cards"
+msgstr "Karten"
+
+msgctxt "#31137"
+msgid "Artwork with details"
+msgstr "Bilder mit Details"
+
+msgctxt "#31138"
+msgid "Showcase"
+msgstr "Schaufenster"
+
+msgctxt "#31139"
+msgid "One big poster"
+msgstr "Ein großes Poster"
+
+msgctxt "#31140"
+msgid "Banner list"
+msgstr "Bannerliste"
+
+msgctxt "#31141"
+msgid "Wide banner rows"
+msgstr "Breite Bannerreihen"
+
+msgctxt "#31142"
+msgid "Compact list"
+msgstr "Kompakte Liste"
+
+msgctxt "#31143"
+msgid "Dense rows with poster"
+msgstr "Dichte Reihen mit Poster"
+
+msgctxt "#31144"
+msgid "Episode list"
+msgstr "Episodenliste"
+
+msgctxt "#31145"
+msgid "Rows with thumbs"
+msgstr "Reihen mit Vorschaubildern"
+
+msgctxt "#31146"
+msgid "Season list combined 3"
+msgstr "Staffelliste kombiniert 3"
+
+msgctxt "#31147"
+msgid "Rows with posters"
+msgstr "Reihen mit Postern"
+
+msgctxt "#31148"
+msgid "Low list"
+msgstr "Flache Liste"
+
+msgctxt "#31149"
+msgid "Rows over fanart"
+msgstr "Reihen über Fanart"
+
+msgctxt "#31150"
+msgid "Version"
+msgstr "Version"
+
+msgctxt "#31151"
+msgid "Type"
+msgstr "Typ"
+
+msgctxt "#31152"
+msgid "Installed"
+msgstr "Installiert"
+
+msgctxt "#31153"
+msgid "Updated"
+msgstr "Aktualisiert"
+
+msgctxt "#31154"
+msgid "Channel"
+msgstr "Sender"
+
+msgctxt "#31155"
+msgid "Other"
+msgstr "Sonstige"
+
+msgctxt "#31156"
+msgid "Jump to now"
+msgstr "Zu jetzt springen"
+
+msgctxt "#31157"
+msgid "Choose channel"
+msgstr "Sender wählen"
+
+msgctxt "#31158"
+msgid "Choose channel group"
+msgstr "Sendergruppe wählen"
+
+msgctxt "#31159"
+msgid "Choose date"
+msgstr "Datum wählen"
+
+msgctxt "#31160"
+msgid "Recordings"
+msgstr "Aufnahmen"
+
+msgctxt "#31161"
+msgid "Timers"
+msgstr "Timer"
+
+msgctxt "#31162"
+msgid "Timer rules"
+msgstr "Timer-Regeln"
+
+msgctxt "#31163"
+msgid "Search guide"
+msgstr "Programmführer durchsuchen"
+
+msgctxt "#31164"
+msgid "Return to guide"
+msgstr "Zurück zum Programmführer"
+
+msgctxt "#31165"
+msgid "Exit guide"
+msgstr "Programmführer verlassen"
+
+msgctxt "#31166"
+msgid "Band"
+msgstr "Band"
+
+msgctxt "#31167"
+msgid "Artist"
+msgstr "Interpret"
+
+msgctxt "#31168"
+msgid "Title"
+msgstr "Titel"
+
+msgctxt "#31169"
+msgid "Composer"
+msgstr "Komponist"
+
+msgctxt "#31170"
+msgid "Conductor"
+msgstr "Dirigent"
+
+msgctxt "#31171"
+msgid "Album"
+msgstr "Album"
+
+msgctxt "#31172"
+msgid "Comment"
+msgstr "Kommentar"
+
+msgctxt "#31173"
+msgid "Studio  ·  hotline"
+msgstr "Studio  ·  Hotline"
+
+msgctxt "#31174"
+msgid "Studio phone"
+msgstr "Studio-Telefon"
+
+msgctxt "#31175"
+msgid "Studio email"
+msgstr "Studio-E-Mail"
+
+msgctxt "#31176"
+msgid "Studio SMS"
+msgstr "Studio-SMS"
+
+msgctxt "#31177"
+msgid "Hotline phone"
+msgstr "Hotline-Telefon"
+
+msgctxt "#31178"
+msgid "Hotline email"
+msgstr "Hotline-E-Mail"
+
+msgctxt "#31179"
+msgid "Programme"
+msgstr "Sendung"
+
+msgctxt "#31180"
+msgid "Style"
+msgstr "Stil"
+
+msgctxt "#31181"
+msgid "Station"
+msgstr "Sender"
+
+msgctxt "#31182"
+msgid "Host"
+msgstr "Moderation"
+
+msgctxt "#31183"
+msgid "Editorial"
+msgstr "Redaktion"
+
+msgctxt "#31184"
+msgid "Website"
+msgstr "Website"
+
+msgctxt "#31185"
+msgid "Radiotext"
+msgstr "Radiotext"
+
+msgctxt "#31186"
+msgid "ENDS"
+msgstr "ENDET"
+
+msgctxt "#31187"
+msgid "Search manually…"
+msgstr "Manuell suchen…"
+
+msgctxt "#31189"
+msgid "TRUEHD  7.1"
+msgstr "TRUEHD  7.1"
+
+msgctxt "#31190"
+msgid "Some stories never end."
+msgstr "Manche Geschichten enden nie."
+
+msgctxt "#31191"
+msgid "A retired detective is pulled back into a case he thought was closed, and the closer he looks the less of it makes sense."
+msgstr "Ein pensionierter Ermittler wird in einen Fall zurückgezogen, den er für abgeschlossen hielt, und je genauer er hinsieht, desto weniger ergibt er Sinn."
+
+msgctxt "#31194"
+msgid "Trakt 78"
+msgstr "Trakt 78"
+
+msgctxt "#31195"
+msgid "Controls stay hidden when you pause."
+msgstr "Die Steuerung bleibt beim Pausieren verborgen."
+
+msgctxt "#31196"
+msgid "Controls open 1 second after you pause."
+msgstr "Die Steuerung öffnet sich 1 Sekunde nach dem Pausieren."
+
+msgctxt "#31197"
+msgid "Controls open 3 seconds after you pause."
+msgstr "Die Steuerung öffnet sich 3 Sekunden nach dem Pausieren."
+
+msgctxt "#31198"
+msgid "Controls open 5 seconds after you pause."
+msgstr "Die Steuerung öffnet sich 5 Sekunden nach dem Pausieren."
+
+msgctxt "#31199"
+msgid "Controls open 2 seconds after you pause."
+msgstr "Die Steuerung öffnet sich 2 Sekunden nach dem Pausieren."
+
+msgctxt "#31278"
+msgid "Play"
+msgstr "Abspielen"
+
+msgctxt "#31279"
+msgid "More information"
+msgstr "Mehr Informationen"
+
+msgctxt "#31295"
+msgid "NOW ON TV"
+msgstr "JETZT IM TV"
+
+msgctxt "#31296"
+msgid "PRESS UP FOR THE FULL GUIDE"
+msgstr "HOCH FÜR DEN GANZEN PROGRAMMFÜHRER"
+
+msgctxt "#31297"
+msgid "NO LYRICS FOR THIS SONG"
+msgstr "KEIN LIEDTEXT FÜR DIESES LIED"
+
+msgctxt "#31298"
+msgid "Artists"
+msgstr "Interpreten"
+
+msgctxt "#31299"
+msgid "Albums"
+msgstr "Alben"
+
+msgctxt "#31343"
+msgid "Songs"
+msgstr "Titel"
+
+msgctxt "#31344"
+msgid "Genres"
+msgstr "Genres"
+
+msgctxt "#31345"
+msgid "Menu: view, sort"
+msgstr "Menü: Ansicht, Sortierung"
+
+msgctxt "#31346"
+msgid "MUSIC LIBRARY"
+msgstr "MUSIKBIBLIOTHEK"
+
+msgctxt "#31347"
+msgid "SUBTITLES"
+msgstr "UNTERTITEL"
+
+msgctxt "#31348"
+msgid "AUDIO"
+msgstr "AUDIO"
+
+msgctxt "#31349"
+msgid "VIDEO"
+msgstr "VIDEO"
+
+msgctxt "#31350"
+msgid "CHAPTERS"
+msgstr "KAPITEL"
+
+msgctxt "#31351"
+msgid "INFO"
+msgstr "INFO"
+
+msgctxt "#31352"
+msgid "STATS"
+msgstr "STATISTIK"
+
+msgctxt "#31353"
+msgid "TV SHOWS"
+msgstr "SERIEN"
+
+msgctxt "#31354"
+msgid "MOVIES"
+msgstr "FILME"
+
+msgctxt "#31355"
+msgid "BUFFERING"
+msgstr "PUFFERN"
+
+msgctxt "#31356"
+msgid "PAUSED"
+msgstr "PAUSIERT"
+
+msgctxt "#31357"
+msgid "ADDED"
+msgstr "HINZUGEFÜGT"
+
+msgctxt "#31358"
+msgid "Custom path"
+msgstr "Eigener Pfad"
+
+msgctxt "#31359"
+msgid "Recently added"
+msgstr "Kürzlich hinzugefügt"
+
+msgctxt "#31360"
+msgid "Recently watched"
+msgstr "Kürzlich gesehen"
+
+msgctxt "#31361"
+msgid "In progress"
+msgstr "Angefangen"
+
+msgctxt "#31362"
+msgid "Top rated"
+msgstr "Top bewertet"
+
+msgctxt "#31363"
+msgid "All movies"
+msgstr "Alle Filme"
+
+msgctxt "#31364"
+msgid "Unwatched shows"
+msgstr "Ungesehene Serien"
+
+msgctxt "#31365"
+msgid "Random shows"
+msgstr "Zufällige Serien"
+
+msgctxt "#31366"
+msgid "Top rated shows"
+msgstr "Top bewertete Serien"
+
+msgctxt "#31367"
+msgid "All shows"
+msgstr "Alle Serien"
+
+msgctxt "#31368"
+msgid "Recently played"
+msgstr "Kürzlich gespielt"
+
+msgctxt "#31369"
+msgid "Random albums"
+msgstr "Zufällige Alben"
+
+msgctxt "#31370"
+msgid "Shut down"
+msgstr "Herunterfahren"
+
+msgctxt "#31371"
+msgid "Reboot to Android"
+msgstr "Neustart in Android"
+
+msgctxt "#31372"
+msgid "Quit Kodi"
+msgstr "Kodi beenden"
+
+msgctxt "#31373"
+msgid "Update video library"
+msgstr "Videobibliothek aktualisieren"
+
+msgctxt "#31374"
+msgid "Update music library"
+msgstr "Musikbibliothek aktualisieren"
+
+msgctxt "#31375"
+msgid "Clean video library"
+msgstr "Videobibliothek bereinigen"
+
+msgctxt "#31376"
+msgid "Clean music library"
+msgstr "Musikbibliothek bereinigen"
+
+msgctxt "#31377"
+msgid "Power menu"
+msgstr "Ein/Aus-Menü"
+
+msgctxt "#31378"
+msgid "TV shows"
+msgstr "Serien"
+
+msgctxt "#31379"
+msgid "MUSIC"
+msgstr "MUSIK"
+
+msgctxt "#31380"
+msgid "LISTEN"
+msgstr "HÖREN"
+
+msgctxt "#31381"
+msgid "WATCH"
+msgstr "SCHAUEN"
+
+msgctxt "#31382"
+msgid "Latest added"
+msgstr "Zuletzt hinzugefügt"
+
+msgctxt "#31383"
+msgid "Last played"
+msgstr "Zuletzt gespielt"
+
+msgctxt "#31384"
+msgid "Movies, TV shows, Music or Power"
+msgstr "Filme, Serien, Musik oder Ein/Aus"
+
+msgctxt "#31385"
+msgid "Position 1 is the first page you reach with Up"
+msgstr "Position 1 ist die erste Seite, die Sie mit Hoch erreichen"
+
+msgctxt "#31386"
+msgid "What this position shows. Off hides it"
+msgstr "Was diese Position zeigt. Aus blendet sie aus"
+
+msgctxt "#31387"
+msgid "OK types a name, Left clears it"
+msgstr "OK tippt einen Namen, Links löscht ihn"
+
+msgctxt "#31388"
+msgid "Used when Category = Custom path (a library path, playlist or add-on folder)"
+msgstr "Gilt bei Kategorie = Eigener Pfad (Bibliothekspfad, Wiedergabeliste oder Add-on-Ordner)"
+
+msgctxt "#31389"
+msgid "How many items the page cycles through (default 15)"
+msgstr "Wie viele Einträge die Seite durchläuft (Standard 15)"
+
+msgctxt "#31390"
+msgid "Order of the items on this page"
+msgstr "Reihenfolge der Einträge auf dieser Seite"
+
+msgctxt "#31391"
+msgid "Flip the sort order"
+msgstr "Sortierung umkehren"
+
+msgctxt "#31392"
+msgid "Step through the items by itself"
+msgstr "Selbstständig durch die Einträge gehen"
+
+msgctxt "#31393"
+msgid "Seconds each item stays (default 10)"
+msgstr "Sekunden pro Eintrag (Standard 10)"
+
+msgctxt "#31394"
+msgid "SERIES PREMIERE"
+msgstr "SERIENSTART"
+
+msgctxt "#31395"
+msgid "SEASON PREMIERE"
+msgstr "STAFFELSTART"
+
+msgctxt "#31396"
+msgid "SERIES FINALE"
+msgstr "SERIENFINALE"
+
+msgctxt "#31397"
+msgid "SEASON FINALE"
+msgstr "STAFFELFINALE"
+
+msgctxt "#31398"
+msgid "Movie sets"
+msgstr "Filmsammlungen"
+
+msgctxt "#31399"
+msgid "Autoscroll off"
+msgstr "Autoscroll aus"
+
+msgctxt "#31400"
+msgid "Random movies"
+msgstr "Zufällige Filme"
+
+msgctxt "#31401"
+msgid "Recently added movies"
+msgstr "Kürzlich hinzugefügte Filme"
+
+msgctxt "#31402"
+msgid "Recently played movies"
+msgstr "Kürzlich gespielte Filme"
+
+msgctxt "#31403"
+msgid "Top rated movies"
+msgstr "Top bewertete Filme"
+
+msgctxt "#31404"
+msgid "Most played movies"
+msgstr "Meistgespielte Filme"
+
+msgctxt "#31405"
+msgid "Newest movies"
+msgstr "Neueste Filme"
+
+msgctxt "#31406"
+msgid "Title movies"
+msgstr "Filme nach Titel"
+
+msgctxt "#31407"
+msgid "Recently added shows"
+msgstr "Kürzlich hinzugefügte Serien"
+
+msgctxt "#31408"
+msgid "Recently played shows"
+msgstr "Kürzlich gespielte Serien"
+
+msgctxt "#31409"
+msgid "Most played shows"
+msgstr "Meistgespielte Serien"
+
+msgctxt "#31410"
+msgid "Newest shows"
+msgstr "Neueste Serien"
+
+msgctxt "#31411"
+msgid "Title shows"
+msgstr "Serien nach Titel"
+
+msgctxt "#31412"
+msgid "Recently added albums"
+msgstr "Kürzlich hinzugefügte Alben"
+
+msgctxt "#31413"
+msgid "Recently played albums"
+msgstr "Kürzlich gespielte Alben"
+
+msgctxt "#31414"
+msgid "Top rated albums"
+msgstr "Top bewertete Alben"
+
+msgctxt "#31415"
+msgid "Most played albums"
+msgstr "Meistgespielte Alben"
+
+msgctxt "#31416"
+msgid "Newest albums"
+msgstr "Neueste Alben"
+
+msgctxt "#31417"
+msgid "Title albums"
+msgstr "Alben nach Titel"
+
+msgctxt "#31418"
+msgid "FULL HD"
+msgstr "FULL HD"
+
+msgctxt "#31419"
+msgid "DOLBY VISION"
+msgstr "DOLBY VISION"
+
+msgctxt "#31420"
+msgid "TRUEHD ATMOS"
+msgstr "TRUEHD ATMOS"
+
+msgctxt "#31421"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31422"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31423"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31424"
+msgid "TRUEHD"
+msgstr "TRUEHD"
+
+msgctxt "#31425"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31426"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31427"
+msgid "FLAC"
+msgstr "FLAC"
+
+msgctxt "#31428"
+msgid "ALAC"
+msgstr "ALAC"
+
+msgctxt "#31429"
+msgid "OPUS"
+msgstr "OPUS"
+
+msgctxt "#31430"
+msgid "VORBIS"
+msgstr "VORBIS"
+
+msgctxt "#31431"
+msgid "RATED NC-17"
+msgstr "FREIGABE NC-17"
+
+msgctxt "#31432"
+msgid "RATED PG-13"
+msgstr "FREIGABE PG-13"
+
+msgctxt "#31433"
+msgid "RATED PG"
+msgstr "FREIGABE PG"
+
+msgctxt "#31434"
+msgid "RATED R"
+msgstr "FREIGABE R"
+
+msgctxt "#31435"
+msgid "RATED G"
+msgstr "FREIGABE G"
+
+msgctxt "#31436"
+msgid "RATED TV-MA"
+msgstr "FREIGABE TV-MA"
+
+msgctxt "#31437"
+msgid "RATED TV-14"
+msgstr "FREIGABE TV-14"
+
+msgctxt "#31438"
+msgid "RATED TV-PG"
+msgstr "FREIGABE TV-PG"
+
+msgctxt "#31439"
+msgid "RATED TV-Y7"
+msgstr "FREIGABE TV-Y7"
+
+msgctxt "#31440"
+msgid "RATED TV-Y"
+msgstr "FREIGABE TV-Y"
+
+msgctxt "#31441"
+msgid "RATED TV-G"
+msgstr "FREIGABE TV-G"
+
+msgctxt "#31442"
+msgid "ULTRA"
+msgstr "ULTRA"
+
+msgctxt "#31443"
+msgid "FULL"
+msgstr "FULL"
+
+msgctxt "#31444"
+msgid "READY"
+msgstr "READY"
+
+msgctxt "#31445"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31446"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31447"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31448"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31449"
+msgid "MEDIA"
+msgstr "MEDIEN"
+
+msgctxt "#31450"
+msgid "RATING"
+msgstr "BEWERTUNG"
+
+msgctxt "#31451"
+msgid "CERTIFICATION"
+msgstr "ALTERSFREIGABE"
+
+msgctxt "#31452"
+msgid "CREDITS"
+msgstr "MITWIRKENDE"
+
+msgctxt "#31453"
+msgid "FIRST AIRED"
+msgstr "ERSTSENDUNG"
+
+msgctxt "#31454"
+msgid "STUDIO"
+msgstr "STUDIO"
+
+msgctxt "#31455"
+msgid "GENRE"
+msgstr "GENRE"
+
+msgctxt "#31456"
+msgid "CAST"
+msgstr "BESETZUNG"
+
+msgctxt "#31457"
+msgid "HD READY"
+msgstr "HD READY"
+
+msgctxt "#31458"
+msgid "BOXED SET"
+msgstr "BOX-SET"
+
+msgctxt "#31459"
+msgid "* ALL SEASONS"
+msgstr "* ALLE STAFFELN"
+
+msgctxt "#31460"
+msgid "For now"
+msgstr "Für jetzt"
+
+msgctxt "#31461"
+msgid "Kept all day"
+msgstr "Den ganzen Tag behalten"
+
+msgctxt "#31462"
+msgid "Past midnight"
+msgstr "Nach Mitternacht"
+
+msgctxt "#31463"
+msgid "Still up?"
+msgstr "Noch wach?"
+
+msgctxt "#31464"
+msgid "Nearly bedtime."
+msgstr "Bald Schlafenszeit."
+
+msgctxt "#31465"
+msgid "Good evening."
+msgstr "Guten Abend."
+
+msgctxt "#31466"
+msgid "Good afternoon."
+msgstr "Guten Tag."
+
+msgctxt "#31467"
+msgid "Good morning."
+msgstr "Guten Morgen."
+
+msgctxt "#31468"
+msgid "Short ones: under 100 minutes"
+msgstr "Kurze: unter 100 Minuten"
+
+msgctxt "#31469"
+msgid "The evening is yours"
+msgstr "Der Abend gehört Ihnen"
+
+msgctxt "#31470"
+msgid "A free afternoon: something long"
+msgstr "Ein freier Nachmittag: etwas Langes"
+
+msgctxt "#31471"
+msgid "Plenty of aeon left"
+msgstr "Noch jede Menge Zeit"
+
+msgctxt "#31472"
+msgid "Sunday morning: take it slow"
+msgstr "Sonntagmorgen: ganz in Ruhe"
+
+msgctxt "#31473"
+msgid "A slow start: something light"
+msgstr "Ein langsamer Start: etwas Leichtes"
+
+msgctxt "#31474"
+msgid "Needs a weather add-on in Kodi's settings"
+msgstr "Braucht ein Wetter-Add-on in den Kodi-Einstellungen"
+
+msgctxt "#31475"
+msgid "From the weather add-on set in Kodi"
+msgstr "Vom in Kodi eingestellten Wetter-Add-on"
+
+msgctxt "#31476"
+msgid "Tropical storm"
+msgstr "Tropensturm"
+
+msgctxt "#31477"
+msgid "Severe storms"
+msgstr "Schwere Gewitter"
+
+msgctxt "#31478"
+msgid "Rain and snow"
+msgstr "Regen und Schnee"
+
+msgctxt "#31479"
+msgid "Rain and sleet"
+msgstr "Regen und Graupel"
+
+msgctxt "#31480"
+msgid "Snow and sleet"
+msgstr "Schnee und Graupel"
+
+msgctxt "#31481"
+msgid "Freezing drizzle"
+msgstr "Gefrierender Nieselregen"
+
+msgctxt "#31482"
+msgid "Freezing rain"
+msgstr "Gefrierender Regen"
+
+msgctxt "#31483"
+msgid "Snow flurries"
+msgstr "Schneegestöber"
+
+msgctxt "#31484"
+msgid "Light snow"
+msgstr "Leichter Schneefall"
+
+msgctxt "#31485"
+msgid "Blowing snow"
+msgstr "Schneetreiben"
+
+msgctxt "#31486"
+msgid "Mostly cloudy"
+msgstr "Überwiegend bewölkt"
+
+msgctxt "#31487"
+msgid "Partly cloudy"
+msgstr "Teilweise bewölkt"
+
+msgctxt "#31488"
+msgid "Rain and hail"
+msgstr "Regen und Hagel"
+
+msgctxt "#31489"
+msgid "Isolated storms"
+msgstr "Vereinzelte Gewitter"
+
+msgctxt "#31490"
+msgid "Scattered storms"
+msgstr "Verstreute Gewitter"
+
+msgctxt "#31491"
+msgid "Scattered showers"
+msgstr "Vereinzelte Schauer"
+
+msgctxt "#31492"
+msgid "Heavy snow"
+msgstr "Starker Schneefall"
+
+msgctxt "#31493"
+msgid "Snow showers"
+msgstr "Schneeschauer"
+
+msgctxt "#31494"
+msgid "More under 100 minutes"
+msgstr "Mehr unter 100 Minuten"
+
+msgctxt "#31495"
+msgid "Sunday morning: documentaries"
+msgstr "Sonntagmorgen: Dokumentationen"
+
+msgctxt "#31496"
+msgid "Morning shorts: under 100 minutes"
+msgstr "Kurz am Morgen: unter 100 Minuten"
+
+msgctxt "#31497"
+msgid "A long afternoon film"
+msgstr "Ein langer Nachmittagsfilm"
+
+msgctxt "#31498"
+msgid "Top rated, still unwatched"
+msgstr "Top bewertet, noch ungesehen"
+
+msgctxt "#31499"
+msgid "Tonight's top rated"
+msgstr "Die Top-Bewerteten heute Abend"
+
+msgctxt "#31500"
+msgid "Before bed"
+msgstr "Vor dem Schlafengehen"
+
+msgctxt "#31501"
+msgid "This morning"
+msgstr "Heute Morgen"
+
+msgctxt "#31502"
+msgid "This afternoon"
+msgstr "Heute Nachmittag"
+
+msgctxt "#31503"
+msgid "Later today"
+msgstr "Später heute"
+
+msgctxt "#31504"
+msgid "One more episode"
+msgstr "Noch eine Folge"
+
+msgctxt "#31505"
+msgid "Next up"
+msgstr "Als Nächstes"
+
+msgctxt "#31506"
+msgid "It's snowing: something long"
+msgstr "Es schneit: etwas Langes"
+
+msgctxt "#31507"
+msgid "Still raining: under an hour"
+msgstr "Es regnet noch: unter einer Stunde"
+
+msgctxt "#31508"
+msgid "It's raining: something long"
+msgstr "Es regnet: etwas Langes"
+
+msgctxt "#31509"
+msgid "Just added"
+msgstr "Gerade hinzugefügt"
+
+msgctxt "#31510"
+msgid "Download subtitles"
+msgstr "Untertitel herunterladen"
+
+msgctxt "#31511"
+msgid "Subtitle settings"
+msgstr "Untertiteleinstellungen"
+
+msgctxt "#31512"
+msgid "What's new"
+msgstr "Was ist neu"
+
+msgctxt "#31513"
+msgid "Nothing to suggest right now."
+msgstr "Gerade kein Vorschlag."
+
+msgctxt "#31514"
+msgid "Clean library?"
+msgstr "Bibliothek bereinigen?"
+
+msgctxt "#31515"
+msgid "Music videos"
+msgstr "Musikvideos"
+
+msgctxt "#31516"
+msgid "Kodi takes out the songs, albums and artists it can no longer find. Your files stay where they are."
+msgstr "Kodi entfernt die Titel, Alben und Interpreten, die es nicht mehr findet. Ihre Dateien bleiben, wo sie sind."
+
+msgctxt "#31517"
+msgid "Kodi takes out the films, shows and episodes it can no longer find. Your files stay where they are."
+msgstr "Kodi entfernt die Filme, Serien und Episoden, die es nicht mehr findet. Ihre Dateien bleiben, wo sie sind."
+
+msgctxt "#31518"
+msgid "Add-on settings"
+msgstr "Add-on-Einstellungen"
+
+msgctxt "#31519"
+msgid "Get more"
+msgstr "Mehr holen"
+
+msgctxt "#31520"
+msgid "Slideshow"
+msgstr "Diashow"
+
+msgctxt "#31521"
+msgid "Recursive slideshow"
+msgstr "Rekursive Diashow"
+
+msgctxt "#31522"
+msgid "Randomise"
+msgstr "Zufällig"
+
+msgctxt "#31523"
+msgid "Edited  locked"
+msgstr "Bearbeitet  gesperrt"
+
+msgctxt "#31524"
+msgid "Shuffle  ·  Repeat one"
+msgstr "Zufall  ·  Eins wiederholen"
+
+msgctxt "#31525"
+msgid "Shuffle  ·  Repeat all"
+msgstr "Zufall  ·  Alle wiederholen"
+
+msgctxt "#31526"
+msgid "Repeat one"
+msgstr "Eins wiederholen"
+
+msgctxt "#31527"
+msgid "Repeat all"
+msgstr "Alle wiederholen"
+
+msgctxt "#31528"
+msgid "Video queue"
+msgstr "Video-Warteschlange"
+
+msgctxt "#31529"
+msgid "Shuffle: on"
+msgstr "Zufall: an"
+
+msgctxt "#31530"
+msgid "Shuffle: off"
+msgstr "Zufall: aus"
+
+msgctxt "#31531"
+msgid "Play all"
+msgstr "Alle abspielen"
+
+msgctxt "#31532"
+msgid "Shuffle"
+msgstr "Zufall"
+
+msgctxt "#31533"
+msgid "Refresh"
+msgstr "Aktualisieren"
+
+msgctxt "#31534"
+msgid "Added"
+msgstr "Hinzugefügt"
+
+msgctxt "#31535"
+msgid "Plays"
+msgstr "Wiedergaben"
+
+msgctxt "#31536"
+msgid "Mood"
+msgstr "Stimmung"
+
+msgctxt "#31537"
+msgid "Album info"
+msgstr "Albuminfo"
+
+msgctxt "#31538"
+msgid "Artist info"
+msgstr "Interpreteninfo"
+
+msgctxt "#31539"
+msgid "About the artist"
+msgstr "Über den Interpreten"
+
+msgctxt "#31552"
+msgid "About the song"
+msgstr "Über den Titel"
+
+msgctxt "#31553"
+msgid "About the album"
+msgstr "Über das Album"
+
+msgctxt "#31554"
+msgid "OK reads all of it"
+msgstr "OK liest alles"
+
+msgctxt "#31555"
+msgid "Up returns to the buttons"
+msgstr "Hoch führt zurück zu den Tasten"
+
+msgctxt "#31556"
+msgid "Right for the full story"
+msgstr "Rechts für die ganze Geschichte"
+
+msgctxt "#31557"
+msgid "Shuffle on"
+msgstr "Zufall an"
+
+msgctxt "#31558"
+msgid "Music video"
+msgstr "Musikvideo"
+
+msgctxt "#31559"
+msgid "HEVC"
+msgstr "HEVC"
+
+msgctxt "#31560"
+msgid "Dolby Vision"
+msgstr "Dolby Vision"
+
+msgctxt "#31561"
+msgid "TrueHD Atmos"
+msgstr "TrueHD Atmos"
+
+msgctxt "#31562"
+msgid "DD+ Atmos"
+msgstr "DD+ Atmos"
+
+msgctxt "#31563"
+msgid "Video"
+msgstr "Video"
+
+msgctxt "#31564"
+msgid "Chapters"
+msgstr "Kapitel"
+
+msgctxt "#31565"
+msgid "Info"
+msgstr "Info"
+
+msgctxt "#31566"
+msgid "Stats"
+msgstr "Statistik"
+
+msgctxt "#31567"
+msgid "Sleeping after this"
+msgstr "Schläft danach"
+
+msgctxt "#31568"
+msgid "Sleep after this"
+msgstr "Danach schlafen"
+
+msgctxt "#31569"
+msgid "1 RESULT"
+msgstr "1 ERGEBNIS"
+
+msgctxt "#31575"
+msgid "Colors, backdrop and the look of the settings screens."
+msgstr "Farben, Hintergrund und das Aussehen der Einstellungsseiten."
+
+msgctxt "#31576"
+msgid "Show a dimmed copy of the last fanart you looked at behind the settings screens."
+msgstr "Eine abgedunkelte Kopie der zuletzt gesehenen Fanart hinter den Einstellungsseiten zeigen."
+
+msgctxt "#31577"
+msgid "Background of the A-Z / scroll bar strip in the library views: dark (default) or white like Aeon 2."
+msgstr "Hintergrund der A–Z- / Scrollleiste in den Bibliotheksansichten: dunkel (Standard) oder weiß wie bei Aeon 2."
+
+msgctxt "#31578"
+msgid "Aeon style: neutral (flat dark), the faint fanart, or a color that follows the artwork and fades between titles. Override it per home menu item (Edit spotlight)."
+msgstr "Aeon-Stil: neutral (flach dunkel), die blasse Fanart oder eine Farbe, die dem Bild folgt und zwischen Titeln überblendet. Pro Hauptmenüpunkt änderbar (Spotlight bearbeiten)."
+
+msgctxt "#31579"
+msgid "Aeon: flat dark panels and a white highlight bar (like the Aeon 2 list). Aeon Glass: translucent panels and a soft highlight. Applies to every library view."
+msgstr "Aeon: flache dunkle Felder und ein weißer Fokusbalken (wie die Aeon-2-Liste). Aeon Glass: durchscheinende Felder und eine weiche Markierung. Gilt für jede Bibliotheksansicht."
+
+msgctxt "#31580"
+msgid "Where the music that is playing shows on Home: Slot (lower left, default), Corner (top left), Line (above the menu) or Bar (bottom)."
+msgstr "Wo die laufende Musik auf der Startseite erscheint: Slot (unten links, Standard), Ecke (oben links), Zeile (über dem Menü) oder Leiste (unten)."
+
+msgctxt "#31581"
+msgid "How visible the fanart backdrop is."
+msgstr "Wie sichtbar der Fanart-Hintergrund ist."
+
+msgctxt "#31582"
+msgid "Tags, plot text and logos in the movie and episode views."
+msgstr "Tags, Handlungstext und Logos in den Film- und Episodenansichten."
+
+msgctxt "#31583"
+msgid "Resolution and video codec in the tag line under a film or episode."
+msgstr "Auflösung und Videocodec in der Tagzeile unter einem Film oder einer Episode."
+
+msgctxt "#31584"
+msgid "Shows HDR10, HLG or Dolby Vision in the tag line when the file has it."
+msgstr "Zeigt HDR10, HLG oder Dolby Vision in der Tagzeile, wenn die Datei es hat."
+
+msgctxt "#31585"
+msgid "Audio codec and channel count in the tag line."
+msgstr "Audiocodec und Kanalzahl in der Tagzeile."
+
+msgctxt "#31586"
+msgid "What the text under a film shows: the full plot, or the tagline when the film has one."
+msgstr "Was der Text unter einem Film zeigt: die ganze Handlung oder den Slogan, wenn der Film einen hat."
+
+msgctxt "#31587"
+msgid "Long plots scroll by themselves after a few seconds."
+msgstr "Lange Handlungen scrollen nach einigen Sekunden von selbst."
+
+msgctxt "#31588"
+msgid "The studio logo beside seasons and episodes (needs the studio logos resource add-on)."
+msgstr "Das Studiologo neben Staffeln und Episoden (braucht das Ressourcen-Add-on mit Studiologos)."
+
+msgctxt "#31589"
+msgid "Which rating sources show, and whether the score is colored."
+msgstr "Welche Bewertungsquellen erscheinen und ob die Punktzahl farbig ist."
+
+msgctxt "#31590"
+msgid "Green from 7, amber from 5, red below."
+msgstr "Grün ab 7, Bernstein ab 5, darunter Rot."
+
+msgctxt "#31591"
+msgid "Shows the IMDb score when the library has one. Several sources can be on at once."
+msgstr "Zeigt die IMDb-Wertung, wenn die Bibliothek eine hat. Mehrere Quellen können gleichzeitig an sein."
+
+msgctxt "#31592"
+msgid "Shows the TMDb score when the library has one."
+msgstr "Zeigt die TMDb-Wertung, wenn die Bibliothek eine hat."
+
+msgctxt "#31593"
+msgid "Shows the Tomatometer when your scraper or TMDb Helper provides it."
+msgstr "Zeigt das Tomatometer, wenn Ihr Scraper oder TMDb Helper es liefert."
+
+msgctxt "#31594"
+msgid "Shows the Trakt score when it is in the library."
+msgstr "Zeigt die Trakt-Wertung, wenn sie in der Bibliothek ist."
+
+msgctxt "#31595"
+msgid "Seek bar, pause behaviour and the Back button."
+msgstr "Suchleiste, Pausenverhalten und die Zurück-Taste."
+
+msgctxt "#31596"
+msgid "What the right-hand time of the seek bar shows: the total length, the time left, or when it ends."
+msgstr "Was die rechte Zeit der Suchleiste zeigt: die Gesamtlänge, die Restzeit oder wann es endet."
+
+msgctxt "#31597"
+msgid "The player controls open by themselves when you pause."
+msgstr "Die Wiedergabesteuerung öffnet sich beim Pausieren von selbst."
+
+msgctxt "#31598"
+msgid "How long after pausing the controls open."
+msgstr "Wie lange nach dem Pausieren die Steuerung öffnet."
+
+msgctxt "#31599"
+msgid "Back goes up one level, or straight to the home screen."
+msgstr "Zurück geht eine Ebene höher oder direkt zur Startseite."
+
+msgctxt "#31600"
+msgid "Extra fanart and the artist slideshow."
+msgstr "Zusätzliche Fanart und die Interpreten-Diashow."
+
+msgctxt "#31601"
+msgid "Home and the library cycle through a film or show's extra fanart. Needs extra fanart in the library (fanart1, fanart2 ...)."
+msgstr "Startseite und Bibliothek wechseln durch die zusätzliche Fanart eines Films oder einer Serie. Braucht zusätzliche Fanart in der Bibliothek (fanart1, fanart2 ...)."
+
+msgctxt "#31602"
+msgid "How long each fanart image stays."
+msgstr "Wie lange jedes Fanart-Bild bleibt."
+
+msgctxt "#31603"
+msgid "Now playing shows the Artist Slideshow add-on pictures of the artist (needs script.artistslideshow)."
+msgstr "„Läuft gerade“ zeigt die Interpretenbilder des Add-ons Artist Slideshow (braucht script.artistslideshow)."
+
+msgctxt "#31604"
+msgid "What the full-screen widget pages (Up on a home item) show."
+msgstr "Was die Vollbild-Widgetseiten (Hoch auf einem Hauptmenüpunkt) zeigen."
+
+msgctxt "#31605"
+msgid "Resolution, codec, HDR and audio tags on the full-screen widget pages (the choices under Details apply)."
+msgstr "Auflösungs-, Codec-, HDR- und Audio-Tags auf den Vollbild-Widgetseiten (es gelten die Optionen unter Details)."
+
+msgctxt "#31606"
+msgid "The rating line, with the sources you chose under Ratings, on the full-screen widget pages."
+msgstr "Die Bewertungszeile mit den unter Bewertungen gewählten Quellen auf den Vollbild-Widgetseiten."
+
+msgctxt "#31607"
+msgid "The studio logo, or the network logo for episodes, on the full-screen widget pages (needs the studio logos add-on)."
+msgstr "Das Studiologo oder bei Episoden das Senderlogo auf den Vollbild-Widgetseiten (braucht das Studiologo-Add-on)."
+
+msgctxt "#31608"
+msgid "Watched markers on posters, the trailer button and logos instead of titles."
+msgstr "Gesehen-Markierungen auf Postern, die Trailer-Taste und Logos statt Titeln."
+
+msgctxt "#31609"
+msgid "How the playback controls behave."
+msgstr "Wie sich die Wiedergabesteuerung verhält."
+
+msgctxt "#31610"
+msgid "Fonts for each part of the skin, calmer animations, and a way back to the default settings."
+msgstr "Schriften für jeden Teil des Skins, ruhigere Animationen und ein Weg zurück zu den Standardeinstellungen."
+
+msgctxt "#31611"
+msgid "Unwatched: a small dot. Watched: a check disc. Shows add the number of unwatched episodes."
+msgstr "Ungesehen: ein kleiner Punkt. Gesehen: ein Häkchen. Serien zeigen zusätzlich die Zahl ungesehener Episoden."
+
+msgctxt "#31612"
+msgid "Shows a Trailer button next to Play when a film has a trailer link (played through the YouTube add-on)."
+msgstr "Zeigt neben Abspielen eine Trailer-Taste, wenn ein Film einen Trailer-Link hat (abgespielt über das YouTube-Add-on)."
+
+msgctxt "#31613"
+msgid "How long the playback controls stay up after your last button press. They stay while paused and while a menu is open."
+msgstr "Wie lange die Wiedergabesteuerung nach dem letzten Tastendruck sichtbar bleibt. Bei Pause und offenem Menü bleibt sie."
+
+msgctxt "#31614"
+msgid "Where the subtitle and audio offset strip appears while you sync. Top keeps bottom subtitles in view."
+msgstr "Wo die Untertitel- und Audioversatz-Leiste beim Abgleichen erscheint. Oben lässt Untertitel unten sichtbar."
+
+msgctxt "#31615"
+msgid "Replaces zooms, slides and the rain with short fades. Focus changes stay instant."
+msgstr "Ersetzt Zooms, Gleiten und den Regen durch kurze Überblendungen. Fokuswechsel bleiben sofort."
+
+msgctxt "#31616"
+msgid "Puts every skin setting back to its default and reloads the skin. Press OK twice to confirm."
+msgstr "Setzt jede Skin-Einstellung auf den Standard zurück und lädt den Skin neu. Zum Bestätigen zweimal OK drücken."
+
+msgctxt "#31617"
+msgid "Aeon Fuse options. Kodi's settings live under Settings; switch skins in Settings > Interface > Skin."
+msgstr "Optionen von Aeon Fuse. Die Kodi-Einstellungen liegen unter Einstellungen; Skin wechseln unter Einstellungen > Oberfläche > Skin."
+
+msgctxt "#31618"
+msgid "Resume"
+msgstr "Fortsetzen"
+
+msgctxt "#31619"
+msgid "From start"
+msgstr "Von Anfang an"
+
+msgctxt "#31620"
+msgid "Browse"
+msgstr "Durchsuchen"
+
+msgctxt "#31621"
+msgid "Trailer"
+msgstr "Trailer"
+
+msgctxt "#31622"
+msgid "Collection"
+msgstr "Sammlung"
+
+msgctxt "#31623"
+msgid "More by the director"
+msgstr "Mehr vom Regisseur"
+
+msgctxt "#31624"
+msgid "Versions"
+msgstr "Versionen"
+
+msgctxt "#31625"
+msgid "Extras"
+msgstr "Extras"
+
+msgctxt "#31626"
+msgid "Choose art"
+msgstr "Bild wählen"
+
+msgctxt "#31627"
+msgid "Choose fanart"
+msgstr "Fanart wählen"
+
+msgctxt "#31628"
+msgid "Films in this collection"
+msgstr "Filme dieser Sammlung"
+
+msgctxt "#31629"
+msgid "OK reads the whole story"
+msgstr "OK liest die ganze Handlung"
+
+msgctxt "#31630"
+msgid "Up or Back returns to the buttons"
+msgstr "Hoch oder Zurück führt zu den Tasten"
+
+msgctxt "#31631"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31632"
+msgid "No story written for this one yet."
+msgstr "Für diesen Titel gibt es noch keine Handlung."
+
+msgctxt "#31633"
+msgid "Shows in progress"
+msgstr "Angefangene Serien"
+
+msgctxt "#31635"
+msgid "A collection: OK opens its films."
+msgstr "Eine Sammlung: OK öffnet ihre Filme."
+
+msgctxt "#31636"
+msgid "Nothing left: a good time for something new."
+msgstr "Nichts mehr übrig: Zeit für etwas Neues."
+
+msgctxt "#31637"
+msgid "Ending at"
+msgstr "Endet um"
+
+msgctxt "#31638"
+msgid "PRESETS"
+msgstr "VOREINSTELLUNGEN"
+
+msgctxt "#31639"
+msgid "LYRICS"
+msgstr "LIEDTEXT"
+
+msgctxt "#31640"
+msgid "No guide data. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "Keine Programmdaten. Ein PVR-Client-Add-on in den PVR- & Live-TV-Einstellungen aktivieren."
+
+msgctxt "#31641"
+msgid "Feels like"
+msgstr "Gefühlt"
+
+msgctxt "#31642"
+msgid "Humidity"
+msgstr "Luftfeuchtigkeit"
+
+msgctxt "#31643"
+msgid "Wind"
+msgstr "Wind"
+
+msgctxt "#31644"
+msgid "Precipitation"
+msgstr "Niederschlag"
+
+msgctxt "#31645"
+msgid "UV index"
+msgstr "UV-Index"
+
+msgctxt "#31646"
+msgid "Sunrise"
+msgstr "Sonnenaufgang"
+
+msgctxt "#31647"
+msgid "Sunset"
+msgstr "Sonnenuntergang"
+
+msgctxt "#31648"
+msgid "Next location"
+msgstr "Nächster Ort"
+
+msgctxt "#31649"
+msgid "Skin"
+msgstr "Skin"
+
+msgctxt "#31650"
+msgid "Address"
+msgstr "Adresse"
+
+msgctxt "#31651"
+msgid "Screen"
+msgstr "Bildschirm"
+
+msgctxt "#31652"
+msgid "Aeon Fuse options: look, details, ratings, behaviour, backgrounds and the home menu (order, widgets, submenus)."
+msgstr "Optionen von Aeon Fuse: Aussehen, Details, Bewertungen, Verhalten, Hintergründe und das Hauptmenü (Reihenfolge, Widgets, Untermenüs)."
+
+msgctxt "#31653"
+msgid "Video and music playback, refresh-rate matching, subtitle languages and look, discs."
+msgstr "Video- und Musikwiedergabe, Bildwiederholrate, Untertitelsprachen und -aussehen, Discs."
+
+msgctxt "#31654"
+msgid "Library behaviour, scrapers, file lists, artwork and what OK does on an item."
+msgstr "Bibliotheksverhalten, Scraper, Dateilisten, Bilder und was OK auf einem Eintrag macht."
+
+msgctxt "#31655"
+msgid "Skin, colors, fonts, region and language, screensaver. Switch to another skin here: Skin > Skin."
+msgstr "Skin, Farben, Schriften, Region und Sprache, Bildschirmschoner. Hier zu einem anderen Skin wechseln: Skin > Skin."
+
+msgctxt "#31656"
+msgid "Browse, update, configure or install add-ons."
+msgstr "Add-ons durchsuchen, aktualisieren, einrichten oder installieren."
+
+msgctxt "#31657"
+msgid "Web server and JSON-RPC control, UPnP, AirPlay, Zeroconf, SMB client."
+msgstr "Webserver und JSON-RPC-Steuerung, UPnP, AirPlay, Zeroconf, SMB-Client."
+
+msgctxt "#31658"
+msgid "Display, audio output and passthrough, input, power saving, logging."
+msgstr "Anzeige, Audioausgabe und Passthrough, Eingabe, Energiesparen, Protokoll."
+
+msgctxt "#31659"
+msgid "Copy, move and delete files; add network sources."
+msgstr "Dateien kopieren, verschieben und löschen; Netzwerkquellen hinzufügen."
+
+msgctxt "#31660"
+msgid "Kodi version, video renderer, storage, network and hardware details."
+msgstr "Kodi-Version, Video-Renderer, Speicher, Netzwerk und Hardwaredetails."
+
+msgctxt "#31661"
+msgid "What Kodi has done recently: scans, add-on updates, errors."
+msgstr "Was Kodi zuletzt getan hat: Scans, Add-on-Updates, Fehler."
+
+msgctxt "#31662"
+msgid "Profiles and the login screen."
+msgstr "Profile und der Anmeldebildschirm."
+
+msgctxt "#31663"
+msgid "Live TV and PVR."
+msgstr "Live-TV und PVR."
+
+msgctxt "#31664"
+msgid "Games and controllers."
+msgstr "Spiele und Controller."
+
+msgctxt "#31665"
+msgid "Dark"
+msgstr "Dunkel"
+
+msgctxt "#31666"
+msgid "White"
+msgstr "Weiß"
+
+msgctxt "#31667"
+msgid "Menu"
+msgstr "Menü"
+
+msgctxt "#31668"
+msgid "Position"
+msgstr "Position"
+
+msgctxt "#31669"
+msgid "Category"
+msgstr "Kategorie"
+
+msgctxt "#31670"
+msgid "Hold time"
+msgstr "Haltezeit"
+
+msgctxt "#31671"
+msgid "Pick an item, then use the buttons on the right. Add item puts a new one at the end."
+msgstr "Eintrag wählen, dann die Tasten rechts. Eintrag hinzufügen setzt einen neuen ans Ende."
+
+msgctxt "#31672"
+msgid "Light"
+msgstr "Leicht"
+
+msgctxt "#31673"
+msgid "Strong"
+msgstr "Stark"
+
+msgctxt "#31674"
+msgid "Slot"
+msgstr "Slot"
+
+msgctxt "#31675"
+msgid "Corner"
+msgstr "Ecke"
+
+msgctxt "#31676"
+msgid "Line"
+msgstr "Zeile"
+
+msgctxt "#31677"
+msgid "Bar"
+msgstr "Leiste"
+
+msgctxt "#31678"
+msgid "Aeon"
+msgstr "Aeon"
+
+msgctxt "#31679"
+msgid "Aeon Glass"
+msgstr "Aeon Glass"
+
+msgctxt "#31680"
+msgid "Color"
+msgstr "Farbe"
+
+msgctxt "#31681"
+msgid "PREVIEW"
+msgstr "VORSCHAU"
+
+msgctxt "#31682"
+msgid "LIBRARY LISTS"
+msgstr "BIBLIOTHEKSLISTEN"
+
+msgctxt "#31683"
+msgid "Focused row"
+msgstr "Fokussierte Zeile"
+
+msgctxt "#31684"
+msgid "Other row"
+msgstr "Andere Zeile"
+
+msgctxt "#31685"
+msgid "MUSIC PLAYING"
+msgstr "MUSIK LÄUFT"
+
+msgctxt "#31686"
+msgid "SAMPLE"
+msgstr "BEISPIEL"
+
+msgctxt "#31687"
+msgid "BACKDROP"
+msgstr "HINTERGRUND"
+
+msgctxt "#31688"
+msgid "SCREENSAVER"
+msgstr "BILDSCHIRMSCHONER"
+
+msgctxt "#31689"
+msgid "TITLE"
+msgstr "TITEL"
+
+msgctxt "#31690"
+msgid "Plot"
+msgstr "Inhalt"
+
+msgctxt "#31691"
+msgid "Tagline"
+msgstr "Slogan"
+
+msgctxt "#31692"
+msgid "TAG LINE"
+msgstr "TAGZEILE"
+
+msgctxt "#31693"
+msgid "UNDER THE TITLE"
+msgstr "UNTER DEM TITEL"
+
+msgctxt "#31694"
+msgid "PLOT TEXT"
+msgstr "HANDLUNGSTEXT"
+
+msgctxt "#31695"
+msgid "Long plots scroll slowly by themselves, so you can read them without a button press."
+msgstr "Lange Handlungen scrollen langsam von selbst, sodass Sie sie ohne Tastendruck lesen können."
+
+msgctxt "#31696"
+msgid "The studio logo shows beside a season or episode when the studio logos add-on is installed."
+msgstr "Das Studiologo erscheint neben einer Staffel oder Episode, wenn das Studiologo-Add-on installiert ist."
+
+msgctxt "#31697"
+msgid "THEME SONG"
+msgstr "TITELMELODIE"
+
+msgctxt "#31699"
+msgid "Plays while a movie or show is selected, if its folder has a theme file."
+msgstr "Spielt, während ein Film oder eine Serie gewählt ist, wenn ihr Ordner eine Theme-Datei hat."
+
+msgctxt "#31700"
+msgid "Total"
+msgstr "Gesamt"
+
+msgctxt "#31701"
+msgid "Left"
+msgstr "Rest"
+
+msgctxt "#31702"
+msgid "Ends at"
+msgstr "Endet um"
+
+msgctxt "#31703"
+msgid "SEEK BAR"
+msgstr "SUCHLEISTE"
+
+msgctxt "#31704"
+msgid "ON PAUSE"
+msgstr "BEI PAUSE"
+
+msgctxt "#31705"
+msgid "BACK BUTTON"
+msgstr "ZURÜCK-TASTE"
+
+msgctxt "#31706"
+msgid "Pressing Back in a library list goes up one level, or straight to the home screen if you choose Home."
+msgstr "Zurück in einer Bibliotheksliste geht eine Ebene höher oder mit „Startseite“ direkt zur Startseite."
+
+msgctxt "#31707"
+msgid "PLAYER CONTROLS"
+msgstr "PLAYERSTEUERUNG"
+
+msgctxt "#31708"
+msgid "Needs disc art for the album or movie."
+msgstr "Braucht Disc-Art für das Album oder den Film."
+
+msgctxt "#31709"
+msgid "FANART"
+msgstr "FANART"
+
+msgctxt "#31710"
+msgid "NOW PLAYING"
+msgstr "LÄUFT GERADE"
+
+msgctxt "#31711"
+msgid "Pictures of the artist from the Artist Slideshow add-on fade in behind the album cover."
+msgstr "Bilder des Interpreten aus dem Add-on Artist Slideshow blenden hinter dem Albumcover ein."
+
+msgctxt "#31712"
+msgid "Slide"
+msgstr "Gleiten"
+
+msgctxt "#31713"
+msgid "Fade"
+msgstr "Blende"
+
+msgctxt "#31714"
+msgid "Cut"
+msgstr "Schnitt"
+
+msgctxt "#31715"
+msgid "MEDIA INFO"
+msgstr "MEDIENINFO"
+
+msgctxt "#31716"
+msgid "STUDIO / NETWORK"
+msgstr "STUDIO / SENDER"
+
+msgctxt "#31717"
+msgid "The logo of the studio, or of the network for episodes, under the date ring."
+msgstr "Das Logo des Studios oder bei Episoden des Senders unter dem Datumsring."
+
+msgctxt "#31718"
+msgid "SPOTLIGHT"
+msgstr "SPOTLIGHT"
+
+msgctxt "#31719"
+msgid "Selected item:"
+msgstr "Gewählter Eintrag:"
+
+msgctxt "#31720"
+msgid "Set path / content"
+msgstr "Pfad / Inhalt festlegen"
+
+msgctxt "#31721"
+msgid "Edit widgets"
+msgstr "Widgets bearbeiten"
+
+msgctxt "#31722"
+msgid "Edit submenu"
+msgstr "Untermenü bearbeiten"
+
+msgctxt "#31723"
+msgid "Edit spotlight"
+msgstr "Spotlight bearbeiten"
+
+msgctxt "#31724"
+msgid "Restore default order"
+msgstr "Standard-Reihenfolge"
+
+msgctxt "#31725"
+msgid "Theme & style"
+msgstr "Theme & Stil"
+
+msgctxt "#31726"
+msgid "Look"
+msgstr "Aussehen"
+
+msgctxt "#31727"
+msgid "Player"
+msgstr "Player"
+
+msgctxt "#31728"
+msgid "Music player"
+msgstr "Musikplayer"
+
+msgctxt "#31729"
+msgid "Backgrounds"
+msgstr "Hintergründe"
+
+msgctxt "#31730"
+msgid "Widget & Spotlight screens"
+msgstr "Widget- & Spotlight-Seiten"
+
+msgctxt "#31731"
+msgid "System"
+msgstr "System"
+
+msgctxt "#31732"
+msgid "Home menu"
+msgstr "Hauptmenü"
+
+msgctxt "#31733"
+msgid "Auto"
+msgstr "Auto"
+
+msgctxt "#31734"
+msgid "Morning"
+msgstr "Morgen"
+
+msgctxt "#31735"
+msgid "Afternoon"
+msgstr "Nachmittag"
+
+msgctxt "#31736"
+msgid "Evening"
+msgstr "Abend"
+
+msgctxt "#31737"
+msgid "Night"
+msgstr "Nacht"
+
+msgctxt "#31738"
+msgid "Bedtime"
+msgstr "Schlafenszeit"
+
+msgctxt "#31739"
+msgid "Countdown and fits-before rows"
+msgstr "Countdown- und Passt-noch-Reihen"
+
+msgctxt "#31740"
+msgid "Weather row and rain"
+msgstr "Wetterreihe und Regen"
+
+msgctxt "#31741"
+msgid "Borrowed color"
+msgstr "Geliehene Farbe"
+
+msgctxt "#31742"
+msgid "The focused film tints the light"
+msgstr "Der fokussierte Film färbt das Licht"
+
+msgctxt "#31743"
+msgid "Dots and checks on posters"
+msgstr "Punkte und Häkchen auf Postern"
+
+msgctxt "#31744"
+msgid "Unwatched"
+msgstr "Ungesehen"
+
+msgctxt "#31745"
+msgid "Only when a film has a trailer"
+msgstr "Nur wenn ein Film einen Trailer hat"
+
+msgctxt "#31746"
+msgid "Logos instead of titles"
+msgstr "Logos statt Titeln"
+
+msgctxt "#31747"
+msgid "Clearlogos in the OSD, screensaver and Now playing"
+msgstr "Clearlogos im OSD, Bildschirmschoner und „Läuft gerade“"
+
+msgctxt "#31748"
+msgid "Library side strip"
+msgstr "Seitenleiste der Bibliothek"
+
+msgctxt "#31749"
+msgid "OSD auto-hide"
+msgstr "OSD automatisch ausblenden"
+
+msgctxt "#31750"
+msgid "Controls close by themselves"
+msgstr "Steuerung schließt sich selbst"
+
+msgctxt "#31751"
+msgid "Subtitle offset strip"
+msgstr "Leiste für den Untertitelversatz"
+
+msgctxt "#31752"
+msgid "Subtitle / audio sync strip"
+msgstr "Untertitel- / Audio-Sync-Leiste"
+
+msgctxt "#31753"
+msgid "Top"
+msgstr "Oben"
+
+msgctxt "#31754"
+msgid "Bottom"
+msgstr "Unten"
+
+msgctxt "#31755"
+msgid "Fades instead of zooms and slides"
+msgstr "Überblenden statt Zoomen und Gleiten"
+
+msgctxt "#31756"
+msgid "Back to the defaults"
+msgstr "Zurück zum Standard"
+
+msgctxt "#31757"
+msgid "Needs a PVR add-on"
+msgstr "Braucht ein PVR-Add-on"
+
+msgctxt "#31758"
+msgid "Power and library actions (Home sub-menu)"
+msgstr "Ein/Aus- und Bibliotheksaktionen (Untermenü der Startseite)"
+
+msgctxt "#31759"
+msgid "Spotlight: menu item 1"
+msgstr "Spotlight: Menüpunkt 1"
+
+msgctxt "#31760"
+msgid "Featured slider for this item (needs a library or add-on folder)"
+msgstr "Slider (braucht einen Bibliotheks- oder Add-on-Ordner)"
+
+msgctxt "#31761"
+msgid "Spotlight: menu item 2"
+msgstr "Spotlight: Menüpunkt 2"
+
+msgctxt "#31762"
+msgid "Spotlight: menu item 3"
+msgstr "Spotlight: Menüpunkt 3"
+
+msgctxt "#31763"
+msgid "Fanart Menu Backdrop"
+msgstr "Fanart-Menühintergrund"
+
+msgctxt "#31764"
+msgid "Menu Backdrop Strength"
+msgstr "Stärke des Menühintergrunds"
+
+msgctxt "#31765"
+msgid "Now playing on Home"
+msgstr "„Läuft gerade“ auf der Startseite"
+
+msgctxt "#31766"
+msgid "Theme"
+msgstr "Design"
+
+msgctxt "#31767"
+msgid "Library background"
+msgstr "Bibliothekshintergrund"
+
+msgctxt "#31768"
+msgid "Screensaver background"
+msgstr "Bildschirmschoner-Hintergrund"
+
+msgctxt "#31769"
+msgid "Resolution and codec"
+msgstr "Auflösung und Codec"
+
+msgctxt "#31770"
+msgid "HDR tag"
+msgstr "HDR-Tag"
+
+msgctxt "#31771"
+msgid "Audio codec and channels"
+msgstr "Audiocodec und Kanäle"
+
+msgctxt "#31772"
+msgid "Plotline"
+msgstr "Handlungszeile"
+
+msgctxt "#31773"
+msgid "Autoscroll plot text"
+msgstr "Handlungstext automatisch scrollen"
+
+msgctxt "#31774"
+msgid "Studio logo"
+msgstr "Studiologo"
+
+msgctxt "#31775"
+msgid "Theme songs"
+msgstr "Titelmelodien"
+
+msgctxt "#31776"
+msgid "Color the rating"
+msgstr "Bewertung einfärben"
+
+msgctxt "#31777"
+msgid "IMDb rating"
+msgstr "IMDb-Wertung"
+
+msgctxt "#31778"
+msgid "TMDb rating"
+msgstr "TMDb-Wertung"
+
+msgctxt "#31779"
+msgid "Rotten Tomatoes"
+msgstr "Rotten Tomatoes"
+
+msgctxt "#31780"
+msgid "Trakt rating"
+msgstr "Trakt-Wertung"
+
+msgctxt "#31781"
+msgid "Seek bar time"
+msgstr "Zeit der Suchleiste"
+
+msgctxt "#31782"
+msgid "Controls on pause"
+msgstr "Steuerung bei Pause"
+
+msgctxt "#31783"
+msgid "Delay before they open"
+msgstr "Verzögerung vor dem Öffnen"
+
+msgctxt "#31784"
+msgid "Back button in the library"
+msgstr "Zurück-Taste in der Bibliothek"
+
+msgctxt "#31785"
+msgid "Show poster on OSD controls"
+msgstr "Poster bei den OSD-Bedienelementen anzeigen"
+
+msgctxt "#31786"
+msgid "Spinning disc art"
+msgstr "Drehende Disc-Art"
+
+msgctxt "#31787"
+msgid "Cycle extra fanart"
+msgstr "Zusätzliche Fanart wechseln"
+
+msgctxt "#31788"
+msgid "Seconds between images"
+msgstr "Sekunden zwischen Bildern"
+
+msgctxt "#31789"
+msgid "Artist slideshow"
+msgstr "Interpreten-Diashow"
+
+msgctxt "#31790"
+msgid "Studio / network"
+msgstr "Studio / Sender"
+
+msgctxt "#31791"
+msgid "Home spotlight: background"
+msgstr "Spotlight der Startseite: Hintergrund"
+
+msgctxt "#31792"
+msgid "Home spotlight: transition"
+msgstr "Spotlight der Startseite: Übergang"
+
+msgctxt "#31793"
+msgid "Rules"
+msgstr "Regeln"
+
+msgctxt "#31800"
+msgid "Settings strip"
+msgstr "Einstellungsleiste"
+
+msgctxt "#31801"
+msgid "Overlay"
+msgstr "Überlagert"
+
+msgctxt "#31802"
+msgid "Permanent"
+msgstr "Dauerhaft"
+
+msgctxt "#31803"
+msgid "Box colors from artwork"
+msgstr "Boxfarben aus dem Bild"
+
+msgctxt "#31804"
+msgid "Show clock on OSD"
+msgstr "Uhr im OSD anzeigen"
+
+msgctxt "#31805"
+msgid "Show weather on OSD"
+msgstr "Wetter im OSD anzeigen"
+
+msgctxt "#31806"
+msgid "Lyrics style"
+msgstr "Liedtext-Stil"
+
+msgctxt "#31807"
+msgid "Lines"
+msgstr "Zeilen"
+
+msgctxt "#31808"
+msgid "Words"
+msgstr "Wörter"
+
+msgctxt "#31280"
+msgid "VERSION"
+msgstr "VERSION"
+
+msgctxt "#31281"
+msgid "SYSTEM"
+msgstr "SYSTEM"
+
+msgctxt "#31282"
+msgid "HARDWARE"
+msgstr "HARDWARE"
+
+msgctxt "#31283"
+msgid "LIBRARY"
+msgstr "BIBLIOTHEK"
+
+msgctxt "#31574"
+msgid "Build"
+msgstr "Build"
+
+msgctxt "#31634"
+msgid "Name"
+msgstr "Name"
+
+msgctxt "#31698"
+msgid "Profile"
+msgstr "Profil"
+
+msgctxt "#31794"
+msgid "Uptime"
+msgstr "Laufzeit"
+
+msgctxt "#31795"
+msgid "Total uptime"
+msgstr "Gesamtlaufzeit"
+
+msgctxt "#31796"
+msgid "IP address"
+msgstr "IP-Adresse"
+
+msgctxt "#31797"
+msgid "MAC address"
+msgstr "MAC-Adresse"
+
+msgctxt "#31798"
+msgid "Internet"
+msgstr "Internet"
+
+msgctxt "#31799"
+msgid "CPU usage"
+msgstr "CPU-Auslastung"
+
+msgctxt "#31809"
+msgid "Memory"
+msgstr "Speicher"
+
+msgctxt "#31810"
+msgid "Used"
+msgstr "Belegt"
+
+msgctxt "#31811"
+msgid "CPU temperature"
+msgstr "CPU-Temperatur"
+
+msgctxt "#31812"
+msgid "GPU temperature"
+msgstr "GPU-Temperatur"
+
+msgctxt "#31813"
+msgid "Movies"
+msgstr "Filme"
+
+msgctxt "#31814"
+msgid "Lyrics take focus"
+msgstr "Liedtext erhält den Fokus"
+
+msgctxt "#31815"
+msgid "Artist list"
+msgstr "Interpretenliste"
+
+msgctxt "#31816"
+msgid "Artist wall (covers)"
+msgstr "Interpretenwand (Cover)"
+
+msgctxt "#31817"
+msgid "Album wall (fanart)"
+msgstr "Albenwand (Fanart)"
+
+msgctxt "#31824"
+msgid "LIBRARY VIEW"
+msgstr "BIBLIOTHEKSANSICHT"
+
+msgctxt "#31825"
+msgid "Overlay: the strip slides in with Left or the Menu key. Permanent: it is always there. View settings can set this per view."
+msgstr "Überlagernd: Die Leiste gleitet mit Links oder der Menütaste herein. Dauerhaft: Sie ist immer da. Ansichtseinstellungen können das pro Ansicht festlegen."
+
+msgctxt "#31826"
+msgid "BOXES"
+msgstr "BOXEN"
+
+msgctxt "#31827"
+msgid "On: the clock and count boxes take the color of the poster or cover in focus (needs the KarmaMole helper)."
+msgstr "An: Uhr- und Zähler-Box nehmen die Farbe des fokussierten Posters oder Covers an (braucht den KarmaMole-Helper)."
+
+msgctxt "#31828"
+msgid "The controls close by themselves after this many seconds without a key press."
+msgstr "Die Steuerung schließt sich nach so vielen Sekunden ohne Tastendruck von selbst."
+
+msgctxt "#31829"
+msgid "SYNC STRIP"
+msgstr "SYNC-LEISTE"
+
+msgctxt "#31830"
+msgid "Where the subtitle / audio offset strip sits while you adjust it."
+msgstr "Wo die Untertitel- / Audioversatz-Leiste beim Einstellen sitzt."
+
+msgctxt "#31831"
+msgid "Clock box at the top right of the player controls."
+msgstr "Uhr-Box oben rechts auf der Wiedergabesteuerung."
+
+msgctxt "#31832"
+msgid "Weather box under the clock (needs a weather add-on)."
+msgstr "Wetter-Box unter der Uhr (braucht ein Wetter-Add-on)."
+
+msgctxt "#31833"
+msgid "BIG"
+msgstr "GROSS"
+
+msgctxt "#31834"
+msgid "COLORED"
+msgstr "FARBIG"
+
+msgctxt "#31835"
+msgid "WORDS"
+msgstr "WÖRTER"
+
+msgctxt "#31836"
+msgid "Lines: the current line between its neighbours. Words: the animated lyrics of Estuary MOD V2 (needs that skin installed for its fonts)."
+msgstr "Zeilen: die aktuelle Zeile zwischen ihren Nachbarn. Wörter: der animierte Liedtext von Estuary MOD V2 (braucht diesen Skin installiert für seine Schriften)."
+
+msgctxt "#31837"
+msgid "Off: OK opens the music controls. On: Up / Down pick a line, OK jumps to it; Back lets go of the lines and the lyrics keep running."
+msgstr "Aus: OK öffnet die Musiksteuerung. An: Hoch / Runter wählt eine Zeile, OK springt dorthin; Zurück lässt die Zeilen los, und der Liedtext läuft weiter."
+
+msgctxt "#31818"
+msgid "Words style placement"
+msgstr "Platzierung des Wörter-Stils"
+
+msgctxt "#31819"
+msgid "Full screen"
+msgstr "Vollbild"
+
+msgctxt "#31820"
+msgid "On the cover"
+msgstr "Auf dem Cover"
+
+msgctxt "#31821"
+msgid "Home vignette"
+msgstr "Vignette auf der Startseite"
+
+msgctxt "#31822"
+msgid "Fonts"
+msgstr "Schriften"
+
+msgctxt "#31823"
+msgid "Own family for Home, library, headings, settings, player"
+msgstr "Eigene Familie für Startseite, Bibliothek, Überschriften, Einstellungen, Player"
+
+msgctxt "#31838"
+msgid "Fonts per section"
+msgstr "Schriften pro Bereich"
+
+msgctxt "#31839"
+msgid "Follow the font set"
+msgstr "Dem Schriftsatz folgen"
+
+msgctxt "#31840"
+msgid "Headings"
+msgstr "Überschriften"
+
+msgctxt "#31841"
+msgid "Settings pages"
+msgstr "Einstellungsseiten"
+
+msgctxt "#31842"
+msgid "Player"
+msgstr "Player"
+
+msgctxt "#31843"
+msgid "Font for: %s"
+msgstr "Schrift für: %s"
+
+msgctxt "#31844"
+msgid "not installed"
+msgstr "nicht installiert"
+
+msgctxt "#31845"
+msgid "Plots, biographies and hints look like this. The quick brown fox jumps over the lazy dog. 0123456789"
+msgstr "Handlungen, Biografien und Hinweise sehen so aus. Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich. 0123456789"
+
+msgctxt "#31846"
+msgid "Preview"
+msgstr "Vorschau"
+
+msgctxt "#31847"
+msgid "Categories"
+msgstr "Kategorien"
+
+msgctxt "#31848"
+msgid "Show weather on screensaver"
+msgstr "Wetter im Bildschirmschoner anzeigen"
+
+msgctxt "#31849"
+msgid "Temperature and conditions in the top right corner"
+msgstr "Temperatur und Wetterlage oben rechts"
+
+msgctxt "#31850"
+msgid "Videos · Music · Discs · Pictures · Language · Subtitles"
+msgstr "Videos · Musik · Discs · Bilder · Sprache · Untertitel"
+
+msgctxt "#31851"
+msgid "Library · General · Videos · Music · Pictures"
+msgstr "Bibliothek · Allgemein · Videos · Musik · Bilder"
+
+msgctxt "#31852"
+msgid "Skin · Regional · Screensaver · Master lock · Startup"
+msgstr "Skin · Regional · Bildschirmschoner · Master-Sperre · Start"
+
+msgctxt "#31853"
+msgid "General · Control · UPnP / DLNA · AirPlay · Weather"
+msgstr "Allgemein · Steuerung · UPnP / DLNA · AirPlay · Wetter"
+
+msgctxt "#31854"
+msgid "Display · Audio · Input · Internet access · Power saving · Add-ons · Logging"
+msgstr "Anzeige · Audio · Eingabe · Internetzugang · Energiesparen · Add-ons · Protokoll"
+
+msgctxt "#31855"
+msgid "General · Channels · Guide · Playback · Recording · Reminders"
+msgstr "Allgemein · Sender · Programmführer · Wiedergabe · Aufnahme · Erinnerungen"
+
+msgctxt "#31856"
+msgid "Home menu position"
+msgstr "Position des Hauptmenüs"
+
+msgctxt "#31857"
+msgid "Middle"
+msgstr "Mitte"
+
+msgctxt "#31858"
+msgid "Low"
+msgstr "Tief"
+
+msgctxt "#31859"
+msgid "General · Achievements"
+msgstr "Allgemein · Erfolge"
+
+msgctxt "#31860"
+msgid "Show clock on screensaver"
+msgstr "Uhr im Bildschirmschoner anzeigen"
+
+msgctxt "#31861"
+msgid "Poster / thumbnail"
+msgstr "Poster / Vorschaubild"
+
+msgctxt "#31862"
+msgid "Season and episode counts"
+msgstr "Staffel- und Episodenzahlen"
+
+msgctxt "#31863"
+msgid "Watched status"
+msgstr "Gesehen-Status"
+
+msgctxt "#31864"
+msgid "The Long Way Home"
+msgstr "Der lange Weg nach Hause"
+
+msgctxt "#31865"
+msgid "2019 | DRAMA / ADVENTURE"
+msgstr "2019 | DRAMA / ABENTEUER"
+
+msgctxt "#31866"
+msgid "Northern Lights"
+msgstr "Nordlichter"
+
+msgctxt "#31867"
+msgid "2023 | DOCUMENTARY"
+msgstr "2023 | DOKUMENTARFILM"
+
+msgctxt "#31868"
+msgid "A Quiet Harbour"
+msgstr "Ein stiller Hafen"
+
+msgctxt "#31869"
+msgid "1998 | CRIME / THRILLER"
+msgstr "1998 | KRIMI / THRILLER"
+
+msgctxt "#31188"
+msgid "Item"
+msgstr "Eintrag"
+
+msgctxt "#31192"
+msgid "Screenshots"
+msgstr "Bildschirmfotos"
+
+msgctxt "#31193"
+msgid "Picture details"
+msgstr "Bilddetails"
+
+msgctxt "#31284"
+msgid "EPG"
+msgstr "EPG"
+
+msgctxt "#31285"
+msgid "Tools"
+msgstr "Werkzeuge"
+
+msgctxt "#31286"
+msgid "Who is watching?"
+msgstr "Wer schaut?"
+
+msgctxt "#31287"
+msgid "Playlist editor"
+msgstr "Wiedergabelisten-Editor"
+
+msgctxt "#31288"
+msgid "Flix"
+msgstr "Flix"
+
+msgctxt "#31289"
+msgid "Fanart with one row"
+msgstr "Fanart mit einer Reihe"
+
+msgctxt "#31290"
+msgid "Combined"
+msgstr "Kombiniert"
+
+msgctxt "#31291"
+msgid "A row over its contents"
+msgstr "Eine Reihe über ihrem Inhalt"
+
+msgctxt "#31292"
+msgid "Circles"
+msgstr "Kreise"
+
+msgctxt "#31293"
+msgid "Round portraits"
+msgstr "Runde Porträts"
+
+msgctxt "#31294"
+msgid "Planner"
+msgstr "Planer"
+
+msgctxt "#31570"
+msgid "Episodes by date"
+msgstr "Episoden nach Datum"
+
+msgctxt "#31571"
+msgid "Recommended"
+msgstr "Empfohlen"
+
+msgctxt "#31572"
+msgid "Similar titles"
+msgstr "Ähnliche Titel"
+
+msgctxt "#31573"
+msgid "Information"
+msgstr "Informationen"
+
+msgctxt "#31870"
+msgid "Plot hidden until you have watched it."
+msgstr "Handlung verborgen, bis Sie es gesehen haben."
+
+msgctxt "#31871"
+msgid "More options"
+msgstr "Weitere Optionen"
+
+msgctxt "#31872"
+msgid "Spoilers, pause and language flags"
+msgstr "Spoiler, Pause und Sprachflaggen"
+
+msgctxt "#31873"
+msgid "Hide spoilers of unwatched episodes"
+msgstr "Spoiler ungesehener Episoden verbergen"
+
+msgctxt "#31874"
+msgid "Seek bar while paused"
+msgstr "Suchleiste bei Pause"
+
+msgctxt "#31875"
+msgid "Show language flags on OSD"
+msgstr "Sprachflaggen im OSD anzeigen"
+
+msgctxt "#31876"
+msgid "Always"
+msgstr "Immer"
+
+msgctxt "#31877"
+msgid "5 seconds"
+msgstr "5 Sekunden"
+
+msgctxt "#31878"
+msgid "Never"
+msgstr "Nie"
+
+msgctxt "#31879"
+msgid "Stacked row on Home"
+msgstr "Gestapelte Reihe auf der Startseite"
+
+msgctxt "#31880"
+msgid "Kiosk mode (lock views)"
+msgstr "Kioskmodus (Ansichten sperren)"
+
+msgctxt "#31881"
+msgid "Last login"
+msgstr "Letzte Anmeldung"
+
+msgctxt "#31882"
+msgid "Cinema mode: trailers before a film"
+msgstr "Kinomodus: Trailer vor einem Film"
+
+msgctxt "#31883"
+msgid "1 trailer"
+msgstr "1 Trailer"
+
+msgctxt "#31884"
+msgid "2 trailers"
+msgstr "2 Trailer"
+
+msgctxt "#31885"
+msgid "3 trailers"
+msgstr "3 Trailer"
+
+msgctxt "#31886"
+msgid "Reviews"
+msgstr "Rezensionen"
+
+msgctxt "#31887"
+msgid "Top tracks"
+msgstr "Top-Titel"
+
+msgctxt "#31888"
+msgid "Similar artists"
+msgstr "Ähnliche Interpreten"
+
+msgctxt "#31889"
+msgid "Not in your library"
+msgstr "Fehlt"
+
+msgctxt "#31890"
+msgid "Artist page: look up on Deezer"
+msgstr "Interpretenseite: bei Deezer nachschlagen"
+
+msgctxt "#31891"
+msgid "Progress line on posters"
+msgstr "Fortschrittslinie auf Postern"
+
+msgctxt "#31892"
+msgid "Play trailers automatically"
+msgstr "Trailer automatisch abspielen"
+
+msgctxt "#31893"
+msgid "Nothing planned"
+msgstr "Nichts geplant"
+
+msgctxt "#31894"
+msgid "View"
+msgstr "Ansicht"
+
+msgctxt "#31895"
+msgid "Week starts"
+msgstr "Woche beginnt"
+
+msgctxt "#31896"
+msgid "Show"
+msgstr "Zeigen"
+
+msgctxt "#31897"
+msgid "Day"
+msgstr "Tag"
+
+msgctxt "#31898"
+msgid "Week"
+msgstr "Woche"
+
+msgctxt "#31899"
+msgid "Home spotlight"
+msgstr "Spotlight der Startseite"
+
+msgctxt "#31903"
+msgid "Days ahead"
+msgstr "Tage voraus"
+
+msgctxt "#31904"
+msgid "What is coming, shown one title at a time while the Planner is focused on Home. It starts with today."
+msgstr "Was kommt, Titel für Titel gezeigt, solange der Planer auf der Startseite fokussiert ist. Es beginnt mit heute."
+
+msgctxt "#31905"
+msgid "Disable"
+msgstr "Deaktivieren"
+
+msgctxt "#31906"
+msgid "Enable"
+msgstr "Aktivieren"
+
+msgctxt "#31907"
+msgid "Empty"
+msgstr "Leer"
+
+msgctxt "#31908"
+msgid "Choose type"
+msgstr "Typ wählen"
+
+msgctxt "#31909"
+msgid "Custom item"
+msgstr "Eigener Eintrag"
+
+msgctxt "#31910"
+msgid "Empty position"
+msgstr "Leere Position"
+
+msgctxt "#31911"
+msgid "Type of position"
+msgstr "Art der Position"
+
+msgctxt "#31912"
+msgid "All ten custom items are in use. Free one first."
+msgstr "Alle zehn eigenen Einträge sind belegt. Zuerst einen freigeben."
+
+msgctxt "#31913"
+msgid "Channel group"
+msgstr "Sendergruppe"
+
+msgctxt "#31914"
+msgid "Watched last"
+msgstr "Zuletzt gesehen"
+
+msgctxt "#31915"
+msgid "None"
+msgstr "Keine"
+
+msgctxt "#31916"
+msgid "No channel group"
+msgstr "Keine Sendergruppe"
+
+msgctxt "#31917"
+msgid "With Live TV focused on Home: Up reaches the channels watched last, Right there shows the channel group chosen here. OK plays a channel."
+msgstr "Wenn Live-TV auf der Startseite fokussiert ist: Hoch erreicht die zuletzt gesehenen Sender, Rechts dort zeigt die hier gewählte Sendergruppe. OK spielt einen Sender ab."
+
+msgctxt "#31918"
+msgid "UP: CHANNELS   |   OK: GUIDE"
+msgstr "HOCH: SENDER   |   OK: PROGRAMMFÜHRER"
+
+msgctxt "#31919"
+msgid "OK: WATCH   |   LEFT: WATCHED LAST"
+msgstr "OK: ANSEHEN   |   LINKS: ZULETZT GESEHEN"
+
+msgctxt "#31920"
+msgid "OK: WATCH   |   RIGHT: CHANNEL GROUP"
+msgstr "OK: ANSEHEN   |   RECHTS: SENDERGRUPPE"
+
+msgctxt "#31921"
+msgid "OK: WATCH"
+msgstr "OK: ANSEHEN"
+
+msgctxt "#31922"
+msgid "LEFT / RIGHT: OTHER TITLES   |   DOWN: MENU"
+msgstr "LINKS / RECHTS: ANDERE TITEL   |   RUNTER: MENÜ"
+
+msgctxt "#31923"
+msgid "Coming up"
+msgstr "Demnächst"
+
+msgctxt "#31924"
+msgid "Not in your library yet."
+msgstr "Noch nicht in Ihrer Bibliothek."
+
+msgctxt "#31925"
+msgid "On"
+msgstr "An"
+
+msgctxt "#31926"
+msgid "Unwatched episodes show no thumbnail and no plot until you have seen them."
+msgstr "Ungesehene Episoden zeigen kein Vorschaubild und keine Handlung, bis Sie sie gesehen haben."
+
+msgctxt "#31927"
+msgid "Top tracks and similar artists on the artist page come from Deezer (needs internet). Off: only your library."
+msgstr "Top-Titel und ähnliche Interpreten auf der Interpretenseite kommen von Deezer (braucht Internet). Aus: nur Ihre Bibliothek."
+
+msgctxt "#31928"
+msgid "When the seek bar shows while a film is paused: always, for 5 seconds, or never."
+msgstr "Wann die Suchleiste erscheint, während ein Film pausiert: immer, für 5 Sekunden oder nie."
+
+msgctxt "#31929"
+msgid "Flags of the audio and subtitle languages on the player controls."
+msgstr "Flaggen der Audio- und Untertitelsprachen auf der Wiedergabesteuerung."
+
+msgctxt "#31930"
+msgid "Trailers of other films play before the film you start: none, 1, 2 or 3."
+msgstr "Trailer anderer Filme laufen vor dem gestarteten Film: keiner, 1, 2 oder 3."
+
+msgctxt "#31931"
+msgid "A thin line under posters shows how much of a film, show or season you have watched."
+msgstr "Eine dünne Linie unter Postern zeigt, wie viel eines Films, einer Serie oder Staffel Sie gesehen haben."
+
+msgctxt "#31932"
+msgid "A strip of small posters under the plot when a set or a show is in focus in the rows on Home."
+msgstr "Ein Streifen kleiner Poster unter der Handlung, wenn eine Sammlung oder Serie in den Reihen der Startseite fokussiert ist."
+
+msgctxt "#31933"
+msgid "Locks the library views: no view settings and no left-hand settings strip."
+msgstr "Sperrt die Bibliotheksansichten: keine Ansichtseinstellungen und keine linke Einstellungsleiste."
+
+msgctxt "#31934"
+msgid "The library background takes the palette only with the Neutral backdrop. The highlight, boxes and strips follow it with every backdrop.[CR][CR]Use the Neutral backdrop in the libraries?"
+msgstr "Der Bibliothekshintergrund übernimmt die Palette nur mit dem neutralen Hintergrund. Markierung, Boxen und Leisten folgen ihr bei jedem Hintergrund.[CR][CR]Den neutralen Hintergrund in den Bibliotheken verwenden?"
+
+msgctxt "#31935"
+msgid "Keep the backdrop"
+msgstr "Hintergrund behalten"
+
+msgctxt "#31936"
+msgid "Use Neutral"
+msgstr "Neutral verwenden"
+
+msgctxt "#31937"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages. The library background takes it with the Neutral backdrop only."
+msgstr "Farbe der Markierung, der Boxen, der Leisten und der Einstellungsseiten. Der Bibliothekshintergrund übernimmt sie nur mit dem neutralen Hintergrund."
+
+msgctxt "#31938"
+msgid "Words"
+msgstr "Wörter"
+
+msgctxt "#31939"
+msgid "Lines"
+msgstr "Zeilen"
+
+msgctxt "#31958"
+msgid "Skippy: the skin's skip button"
+msgstr "Skippy: die Überspringen-Taste des Skins"
+
+msgctxt "#31959"
+msgid "On: during a segment Skippy asks about (Ask), the player shows a Skip button in the skin's look; OK skips, Back hides it. Off: Skippy opens its own dialog. In Fused Glass, Up next at the end of an episode is the skin's too."
+msgstr "An: Bei einem Segment, zu dem Skippy fragt (Fragen), zeigt der Player eine Überspringen-Taste im Stil des Skins; OK überspringt, Zurück blendet sie aus. Aus: Skippy öffnet seinen eigenen Dialog. In Fused Glass kommt auch „Als Nächstes“ am Ende einer Folge vom Skin."
+
+msgctxt "#31960"
+msgid "Skippy: segment line in the player"
+msgstr "Skippy: Segmentzeile im Player"
+
+msgctxt "#31961"
+msgid "Between the times on the player controls: the segment playing and the time left (Intro · 0:42 left), or the next segment and when it starts."
+msgstr "Zwischen den Zeiten der Wiedergabesteuerung: das laufende Segment und die Restzeit (Intro · 0:42 übrig) oder das nächste Segment und wann es beginnt."
+
+msgctxt "#31962"
+msgid "Skippy: up next in the player"
+msgstr "Skippy: Als Nächstes im Player"
+
+msgctxt "#31963"
+msgid "Top right of the player controls: the next episode Skippy found, with its picture. Skippy's own next-episode prompt is not affected."
+msgstr "Oben rechts auf der Wiedergabesteuerung: die nächste Episode, die Skippy gefunden hat, mit Bild. Skippys eigener Hinweis auf die nächste Episode bleibt unberührt."
+
+msgctxt "#31964"
+msgid "Skip"
+msgstr "Überspringen"
+
+msgctxt "#31965"
+msgid "left"
+msgstr "übrig"
+
+msgctxt "#31966"
+msgid "at"
+msgstr "um"
+
+msgctxt "#31967"
+msgid "Memory hand-back"
+msgstr "Speicherrückgabe"
+
+msgctxt "#31968"
+msgid "Linux boxes (CoreELEC, LibreELEC): Kodi keeps memory it has finished with. The helper hands it back to the system after a pause in key presses, or when free RAM gets low. Not on Windows."
+msgstr "Linux-Geräte (CoreELEC, LibreELEC): Kodi behält Speicher, den es nicht mehr braucht. Der Helper gibt ihn nach einer Tastenpause oder bei knappem freiem RAM an das System zurück. Nicht unter Windows."
+
+msgctxt "#31969"
+msgid "Pause before hand-back"
+msgstr "Pause vor der Rückgabe"
+
+msgctxt "#31970"
+msgid "After a pause: seconds without a key press (2-30), not during a video. When free RAM is low: the least free memory the box keeps; within 256 MB of it the hand-back waits for a pause, below it it happens at once."
+msgstr "Nach einer Pause: Sekunden ohne Tastendruck (2-30), nicht während eines Videos. Bei knappem RAM: der freie Speicher, den das Gerät mindestens behält; innerhalb von 256 MB davon wartet die Rückgabe auf eine Pause, darunter geschieht sie sofort."
+
+msgctxt "#31971"
+msgid "Minimum free RAM"
+msgstr "Minimaler freier RAM"
+
+msgctxt "#31972"
+msgid "Adds Clean library to the context menu in the libraries and on Home: entries whose files are gone are removed (it asks first)."
+msgstr "Fügt „Bibliothek bereinigen“ zum Kontextmenü in den Bibliotheken und auf der Startseite hinzu: Einträge, deren Dateien fehlen, werden entfernt (es fragt vorher)."
+
+msgctxt "#31973"
+msgid "Network · Connections · Updates · Hardware · Services"
+msgstr "Netzwerk · Verbindungen · Updates · Hardware · Dienste"
+
+msgctxt "#31974"
+msgid "The box"
+msgstr "Das Gerät"
+
+msgctxt "#31975"
+msgid "The box's own settings: network and Wi-Fi, updates, hardware, services such as SSH and Samba."
+msgstr "Die eigenen Einstellungen des Geräts: Netzwerk und WLAN, Updates, Hardware, Dienste wie SSH und Samba."
+
+msgctxt "#31976"
+msgid "Restart Kodi"
+msgstr "Kodi neu starten"
+
+msgctxt "#31977"
+msgid "Widget screens: media info"
+msgstr "Widgetseiten: Medieninfo"
+
+msgctxt "#31978"
+msgid "Widget screens: ratings"
+msgstr "Widgetseiten: Bewertungen"
+
+msgctxt "#31979"
+msgid "Widget screens: studio / network"
+msgstr "Widgetseiten: Studio / Sender"
+
+msgctxt "#31996"
+msgid "The background of the spotlight at the top of Home. Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "Der Hintergrund des Spotlights oben auf der Startseite. Fanart: die Fanart des Titels. Neutral: dunkel. Farbe: ein weiches Farbbild, das der KarmaMole-Helper aus dem Bild erzeugt (bis es fertig ist, erscheint die Fanart)."
+
+msgctxt "#31997"
+msgid "How the spotlight at the top of Home moves on to the next title: fade, slide or cut."
+msgstr "Wie das Spotlight oben auf der Startseite zum nächsten Titel wechselt: Überblenden, Gleiten oder Schnitt."
+
+msgctxt "#31998"
+msgid "Widget screens: background"
+msgstr "Widgetseiten: Hintergrund"
+
+msgctxt "#31999"
+msgid "The background of the full-screen widget pages (Up on a title on Home). Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "Der Hintergrund der Vollbild-Widgetseiten (Hoch auf einem Titel der Startseite). Fanart: die Fanart des Titels. Neutral: dunkel. Farbe: ein weiches Farbbild, das der KarmaMole-Helper aus dem Bild erzeugt (bis es fertig ist, erscheint die Fanart)."
+
+msgctxt "#32000"
+msgid "creator of the Aeon 2 concept"
+msgstr "Schöpfer des Aeon-2-Konzepts"
+
+msgctxt "#32001"
+msgid "1 of 1 episode watched"
+msgstr "1 von 1 Episode gesehen"
+
+msgctxt "#32002"
+msgid "on"
+msgstr "bei"
+
+msgctxt "#32003"
+msgid "9:00 PM"
+msgstr "21:00"
+
+msgctxt "#32004"
+msgid "9:30 PM"
+msgstr "21:30"
+
+msgctxt "#32005"
+msgid "10:00 PM"
+msgstr "22:00"
+
+msgctxt "#32006"
+msgid "10:30 PM"
+msgstr "22:30"
+
+msgctxt "#32007"
+msgid "11:00 PM"
+msgstr "23:00"
+
+msgctxt "#32008"
+msgid "11:30 PM"
+msgstr "23:30"
+
+msgctxt "#32009"
+msgid "12:00 AM"
+msgstr "0:00"
+
+msgctxt "#32010"
+msgid "12:30 AM"
+msgstr "0:30"
+
+msgctxt "#32011"
+msgid "1:00 AM"
+msgstr "1:00"
+
+msgctxt "#32012"
+msgid "1:30 AM"
+msgstr "1:30"
+
+msgctxt "#32013"
+msgid "2:00 AM"
+msgstr "2:00"
+
+msgctxt "#32015"
+msgid "Repositories checked"
+msgstr "Quellen geprüft"
+
+msgctxt "#32016"
+msgid "Close Kodi"
+msgstr "Kodi schließen"
+
+msgctxt "#32017"
+msgid "Back to the profile screen"
+msgstr "Zurück zum Profilbildschirm"
+
+msgctxt "#32018"
+msgid "Kodi only, the system keeps running"
+msgstr "Nur Kodi, das System läuft weiter"
+
+msgctxt "#32019"
+msgid "Restart the whole system"
+msgstr "Das ganze System neu starten"
+
+msgctxt "#32020"
+msgid "Restart into Android"
+msgstr "In Android neu starten"
+
+msgctxt "#32021"
+msgid "Switch the system off"
+msgstr "Das System ausschalten"
+
+msgctxt "#32022"
+msgid "By"
+msgstr "Von"
+
+msgctxt "#32023"
+msgid "Running time"
+msgstr "Laufzeit"
+
+msgctxt "#32024"
+msgid "min"
+msgstr "Min."
+
+msgctxt "#32025"
+msgid "Widgets"
+msgstr "Widgets"
+
+msgctxt "#32026"
+msgid "hidden"
+msgstr "ausgeblendet"
+
+msgctxt "#32027"
+msgid "Hold"
+msgstr "Halten"
+
+msgctxt "#32028"
+msgid "Update the list"
+msgstr "Liste aktualisieren"
+
+msgctxt "#32029"
+msgid "Update now"
+msgstr "Jetzt aktualisieren"
+
+msgctxt "#32030"
+msgid "ARTISTS"
+msgstr "INTERPRETEN"
+
+msgctxt "#32031"
+msgid "ALBUMS"
+msgstr "ALBEN"
+
+msgctxt "#32032"
+msgid "SONGS"
+msgstr "TITEL"
+
+msgctxt "#32033"
+msgid "Widget screens"
+msgstr "Widgetseiten"
+
+msgctxt "#32034"
+msgid "Hide plot and thumb"
+msgstr "Handlung und Bild ausblenden"
+
+msgctxt "#32035"
+msgid "Start"
+msgstr "Start"
+
+msgctxt "#32036"
+msgid "A handful of short steps"
+msgstr "Ein paar kurze Schritte"
+
+msgctxt "#32037"
+msgid "Backdrop, look, Home menu, libraries and motion."
+msgstr "Hintergrund, Aussehen, Hauptmenü, Bibliotheken und Bewegung."
+
+msgctxt "#32038"
+msgid "Skip setup"
+msgstr "Einrichtung überspringen"
+
+msgctxt "#32039"
+msgid "Keep the defaults for now"
+msgstr "Vorerst die Standards behalten"
+
+msgctxt "#32040"
+msgid "Run the setup any time: Skin settings > Motion, memory, reset > Setup wizard."
+msgstr "Die Einrichtung jederzeit starten: Skin-Einstellungen > Bewegung, RAM, Reset > Einrichtungsassistent."
+
+msgctxt "#32041"
+msgid "A calm backdrop in a palette of your choice"
+msgstr "Ein ruhiger Hintergrund in einer Palette Ihrer Wahl"
+
+msgctxt "#32042"
+msgid "A dark, even background in the colours of the palette you pick next."
+msgstr "Ein dunkler, gleichmäßiger Hintergrund in den Farben der Palette, die Sie als Nächstes wählen."
+
+msgctxt "#32043"
+msgid "The focused title's fanart, dimmed"
+msgstr "Die Fanart des fokussierten Titels, abgedunkelt"
+
+msgctxt "#32044"
+msgid "The artwork of the focused title fills the background, dimmed so text stays readable."
+msgstr "Das Bild des fokussierten Titels füllt den Hintergrund, abgedunkelt, damit Text lesbar bleibt."
+
+msgctxt "#32045"
+msgid "A tint taken from the artwork"
+msgstr "Ein Farbton aus dem Bild"
+
+msgctxt "#32046"
+msgid "A deep colour taken from the focused title's artwork."
+msgstr "Eine kräftige Farbe aus dem Bild des fokussierten Titels."
+
+msgctxt "#32047"
+msgid "The palette shows after Kodi restarts at the end of the setup."
+msgstr "Die Palette erscheint, nachdem Kodi am Ende der Einrichtung neu startet."
+
+msgctxt "#32048"
+msgid "Solid panels, palettes"
+msgstr "Feste Felder, Paletten"
+
+msgctxt "#32049"
+msgid "The classic Aeon look: calm, solid surfaces and a white or coloured focus bar."
+msgstr "Der klassische Aeon-Look: ruhige, feste Flächen und ein weißer oder farbiger Fokusbalken."
+
+msgctxt "#32050"
+msgid "Aeon with glass menus, no palettes"
+msgstr "Aeon mit Glasmenüs, ohne Paletten"
+
+msgctxt "#32051"
+msgid "Panels of frosted glass over the fanart; the focus bar is a soft light."
+msgstr "Felder aus Milchglas über der Fanart; der Fokusbalken ist ein weiches Licht."
+
+msgctxt "#32052"
+msgid "As the skin theme"
+msgstr "Wie das Skin-Thema"
+
+msgctxt "#32053"
+msgid "Flat rows with rules"
+msgstr "Flache Zeilen mit Linien"
+
+msgctxt "#32054"
+msgid "The menus of the Aeon or Aeon Glass theme you picked."
+msgstr "Die Menüs des gewählten Aeon- oder Aeon Glass-Themas."
+
+msgctxt "#32055"
+msgid "Rounded cards, like this setup"
+msgstr "Abgerundete Karten wie in dieser Einrichtung"
+
+msgctxt "#32056"
+msgid "Every row a soft card, the focused one solid; no rule lines."
+msgstr "Jede Zeile eine weiche Karte, die fokussierte gefüllt; keine Trennlinien."
+
+msgctxt "#32057"
+msgid "OK switches Movies on or off."
+msgstr "OK schaltet Filme ein oder aus."
+
+msgctxt "#32058"
+msgid "OK switches TV shows on or off."
+msgstr "OK schaltet Serien ein oder aus."
+
+msgctxt "#32059"
+msgid "OK switches Music on or off."
+msgstr "OK schaltet Musik ein oder aus."
+
+msgctxt "#32060"
+msgid "OK switches Live TV on or off."
+msgstr "OK schaltet Live-TV ein oder aus."
+
+msgctxt "#32061"
+msgid "OK switches Search on or off."
+msgstr "OK schaltet Suche ein oder aus."
+
+msgctxt "#32062"
+msgid "OK switches Movie sets on or off."
+msgstr "OK schaltet Filmsammlungen ein oder aus."
+
+msgctxt "#32063"
+msgid "OK switches Favourites on or off."
+msgstr "OK schaltet Favoriten ein oder aus."
+
+msgctxt "#32064"
+msgid "OK switches Pictures on or off."
+msgstr "OK schaltet Bilder ein oder aus."
+
+msgctxt "#32065"
+msgid "OK switches Add-ons on or off."
+msgstr "OK schaltet Add-ons ein oder aus."
+
+msgctxt "#32066"
+msgid "OK switches Weather on or off."
+msgstr "OK schaltet Wetter ein oder aus."
+
+msgctxt "#32067"
+msgid "OK switches Planner on or off."
+msgstr "OK schaltet Planer ein oder aus."
+
+msgctxt "#32068"
+msgid "OK switches Files on or off."
+msgstr "OK schaltet Dateien ein oder aus."
+
+msgctxt "#32069"
+msgid "OK switches Settings on or off."
+msgstr "OK schaltet Einstellungen ein oder aus."
+
+msgctxt "#32070"
+msgid "OK switches Power on or off."
+msgstr "OK schaltet Ein/Aus ein oder aus."
+
+msgctxt "#32071"
+msgid "Continue"
+msgstr "Weiter"
+
+msgctxt "#32072"
+msgid "Next step"
+msgstr "Nächster Schritt"
+
+msgctxt "#32073"
+msgid "On to the Home menu position."
+msgstr "Weiter zur Position des Hauptmenüs."
+
+msgctxt "#32074"
+msgid "The spotlight above, a row of posters below"
+msgstr "Oben das Spotlight, darunter eine Reihe Poster"
+
+msgctxt "#32075"
+msgid "The menu across the middle of the screen with a widget row underneath."
+msgstr "Das Menü quer über die Bildschirmmitte, darunter eine Widget-Reihe."
+
+msgctxt "#32076"
+msgid "A taller spotlight, the menu near the bottom"
+msgstr "Ein höheres Spotlight, das Menü weit unten"
+
+msgctxt "#32077"
+msgid "More room for the spotlight; the menu sits low on the screen."
+msgstr "Mehr Platz für das Spotlight; das Menü sitzt tief auf dem Bildschirm."
+
+msgctxt "#32078"
+msgid "The artwork of the spotlight title"
+msgstr "Das Bild des Spotlight-Titels"
+
+msgctxt "#32079"
+msgid "Fanart of the title in the spotlight, with a soft fade from the left."
+msgstr "Fanart des Titels im Spotlight, von links weich ausgeblendet."
+
+msgctxt "#32080"
+msgid "A colour taken from the artwork"
+msgstr "Eine Farbe aus dem Bild"
+
+msgctxt "#32081"
+msgid "A warm or cool tint drawn from the title's artwork."
+msgstr "Ein warmer oder kühler Farbton aus dem Bild des Titels."
+
+msgctxt "#32082"
+msgid "A quiet dark background"
+msgstr "Ein ruhiger dunkler Hintergrund"
+
+msgctxt "#32083"
+msgid "No artwork behind the spotlight text."
+msgstr "Kein Bild hinter dem Spotlight-Text."
+
+msgctxt "#32084"
+msgid "One picture dissolves into the next"
+msgstr "Ein Bild geht in das nächste über"
+
+msgctxt "#32085"
+msgid "A soft cross-fade."
+msgstr "Eine weiche Überblendung."
+
+msgctxt "#32086"
+msgid "The next one pushes in from the right"
+msgstr "Das nächste schiebt sich von rechts herein"
+
+msgctxt "#32087"
+msgid "A sideways slide, like turning a page."
+msgstr "Ein seitliches Gleiten wie beim Umblättern."
+
+msgctxt "#32088"
+msgid "Straight to the next"
+msgstr "Direkt zum nächsten"
+
+msgctxt "#32089"
+msgid "No animation: the next title appears at once."
+msgstr "Keine Animation: Der nächste Titel erscheint sofort."
+
+msgctxt "#32090"
+msgid "The colour of the artwork"
+msgstr "Die Farbe des Bildes"
+
+msgctxt "#32091"
+msgid "The boxes take a deep colour from the focused title's artwork."
+msgstr "Die Boxen nehmen eine tiefe Farbe aus dem Bild des fokussierten Titels."
+
+msgctxt "#32092"
+msgid "The palette's box colour"
+msgstr "Die Boxfarbe der Palette"
+
+msgctxt "#32093"
+msgid "Always the same calm colour of the palette."
+msgstr "Immer dieselbe ruhige Farbe der Palette."
+
+msgctxt "#32094"
+msgid "A window onto the fanart"
+msgstr "Ein Fenster auf die Fanart"
+
+msgctxt "#32095"
+msgid "Each box shows the part of the fanart behind it, darkened for the clock."
+msgstr "Jede Box zeigt den Teil der Fanart dahinter, für die Uhr abgedunkelt."
+
+msgctxt "#32096"
+msgid "As the backdrop"
+msgstr "Wie der Hintergrund"
+
+msgctxt "#32097"
+msgid "Follow the library backdrop"
+msgstr "Dem Bibliothekshintergrund folgen"
+
+msgctxt "#32098"
+msgid "Neutral, fanart or colour, whatever the library backdrop is."
+msgstr "Neutral, Fanart oder Farbe, je nach Bibliothekshintergrund."
+
+msgctxt "#32099"
+msgid "Dots, checks and progress bars"
+msgstr "Punkte, Häkchen und Fortschrittsbalken"
+
+msgctxt "#32100"
+msgid "Unwatched titles get a dot, watched ones a check, started ones a progress bar."
+msgstr "Ungesehene Titel bekommen einen Punkt, gesehene ein Häkchen, begonnene einen Fortschrittsbalken."
+
+msgctxt "#32101"
+msgid "Dots and progress bars"
+msgstr "Punkte und Fortschrittsbalken"
+
+msgctxt "#32102"
+msgid "Only what is still to watch is marked."
+msgstr "Nur was noch zu sehen ist, wird markiert."
+
+msgctxt "#32103"
+msgid "Checks on what you have seen"
+msgstr "Häkchen bei Gesehenem"
+
+msgctxt "#32104"
+msgid "Only finished titles are marked."
+msgstr "Nur fertig gesehene Titel werden markiert."
+
+msgctxt "#32105"
+msgid "Clean posters"
+msgstr "Saubere Poster"
+
+msgctxt "#32106"
+msgid "No markers at all."
+msgstr "Überhaupt keine Markierungen."
+
+msgctxt "#32107"
+msgid "Logos"
+msgstr "Logos"
+
+msgctxt "#32108"
+msgid "The artwork's clear logo"
+msgstr "Das ClearLogo des Bildmaterials"
+
+msgctxt "#32109"
+msgid "Clear logos from the artwork, text where a title has none."
+msgstr "ClearLogos aus dem Bildmaterial, Text, wo ein Titel keines hat."
+
+msgctxt "#32110"
+msgid "Plain text"
+msgstr "Nur Text"
+
+msgctxt "#32111"
+msgid "Always the name in the skin's own font."
+msgstr "Immer der Name in der Schrift des Skins."
+
+msgctxt "#32112"
+msgid "FULL HD, 4K, aspect ratio"
+msgstr "FULL HD, 4K, Seitenverhältnis"
+
+msgctxt "#32113"
+msgid "OK switches the resolution chips on or off."
+msgstr "OK schaltet die Auflösungs-Chips ein oder aus."
+
+msgctxt "#32114"
+msgid "SDR, HDR10, Dolby Vision profile"
+msgstr "SDR, HDR10, Dolby-Vision-Profil"
+
+msgctxt "#32115"
+msgid "OK switches the HDR chips on or off."
+msgstr "OK schaltet die HDR-Chips ein oder aus."
+
+msgctxt "#32116"
+msgid "Codec and channels"
+msgstr "Codec und Kanäle"
+
+msgctxt "#32117"
+msgid "OK switches the audio chips on or off."
+msgstr "OK schaltet die Audio-Chips ein oder aus."
+
+msgctxt "#32118"
+msgid "On to the extra fanart."
+msgstr "Weiter zur zusätzlichen Fanart."
+
+msgctxt "#32119"
+msgid "Take turns"
+msgstr "Abwechseln"
+
+msgctxt "#32120"
+msgid "Every extra fanart in a slow cycle"
+msgstr "Jede zusätzliche Fanart in langsamem Wechsel"
+
+msgctxt "#32121"
+msgid "The background changes picture every few seconds (Skin settings > Backgrounds sets how often)."
+msgstr "Der Hintergrund wechselt alle paar Sekunden das Bild (wie oft, legt Skin-Einstellungen > Hintergründe fest)."
+
+msgctxt "#32122"
+msgid "One picture"
+msgstr "Ein Bild"
+
+msgctxt "#32123"
+msgid "Only the main fanart"
+msgstr "Nur die Haupt-Fanart"
+
+msgctxt "#32124"
+msgid "The background stays on the main fanart."
+msgstr "Der Hintergrund bleibt auf der Haupt-Fanart."
+
+msgctxt "#32125"
+msgid "Hide them"
+msgstr "Verbergen"
+
+msgctxt "#32126"
+msgid "No thumbnail or plot until watched"
+msgstr "Kein Vorschaubild und keine Handlung bis gesehen"
+
+msgctxt "#32127"
+msgid "Unwatched episodes show a blurred picture and no plot."
+msgstr "Ungesehene Episoden zeigen ein unscharfes Bild und keine Handlung."
+
+msgctxt "#32128"
+msgid "Show them"
+msgstr "Anzeigen"
+
+msgctxt "#32129"
+msgid "Thumbnails and plots for all"
+msgstr "Vorschaubilder und Handlung für alle"
+
+msgctxt "#32130"
+msgid "Every episode shows its picture and plot."
+msgstr "Jede Episode zeigt ihr Bild und ihre Handlung."
+
+msgctxt "#32131"
+msgid "Full motion"
+msgstr "Volle Bewegung"
+
+msgctxt "#32132"
+msgid "Smooth slides and fades"
+msgstr "Weiches Gleiten und Überblenden"
+
+msgctxt "#32133"
+msgid "Rows slide in one after another, dialogs glide open."
+msgstr "Reihen gleiten nacheinander herein, Dialoge öffnen sich gleitend."
+
+msgctxt "#32134"
+msgid "Everything appears at once"
+msgstr "Alles erscheint sofort"
+
+msgctxt "#32135"
+msgid "No slides or zooms: calmer, and lighter on slow boxes."
+msgstr "Kein Gleiten oder Zoomen: ruhiger und leichter für langsame Boxen."
+
+msgctxt "#32136"
+msgid "When free RAM is low"
+msgstr "Wenn der freie RAM knapp wird"
+
+msgctxt "#32137"
+msgid "Recommended: below 1 GB free"
+msgstr "Empfohlen: unter 1 GB frei"
+
+msgctxt "#32138"
+msgid "Kodi hands memory back when the free RAM drops below the minimum (Skin settings can change it)."
+msgstr "Kodi gibt Speicher zurück, wenn der freie RAM unter das Minimum fällt (in den Skin-Einstellungen änderbar)."
+
+msgctxt "#32139"
+msgid "After a pause"
+msgstr "Nach einer Pause"
+
+msgctxt "#32140"
+msgid "A few seconds after the last key press"
+msgstr "Ein paar Sekunden nach dem letzten Tastendruck"
+
+msgctxt "#32141"
+msgid "Kodi hands memory back whenever the remote has been quiet for a moment."
+msgstr "Kodi gibt Speicher zurück, sobald die Fernbedienung einen Moment ruht."
+
+msgctxt "#32142"
+msgid "Finish"
+msgstr "Fertig"
+
+msgctxt "#32143"
+msgid "Change something"
+msgstr "Etwas ändern"
+
+msgctxt "#32144"
+msgid "Go back to the previous step."
+msgstr "Zurück zum vorigen Schritt."
+
+msgctxt "#32145"
+msgid "Huge thanks and credit go out to the following"
+msgstr "Ein großes Dankeschön geht an"
+
+msgctxt "#32146"
+msgid "The Kodi development team"
+msgstr "Das Kodi-Entwicklerteam"
+
+msgctxt "#32147"
+msgid "OK  choose      BACK  previous step"
+msgstr "OK  auswählen      ZURÜCK  vorheriger Schritt"
+
+msgctxt "#32148"
+msgid "version"
+msgstr "Version"
+
+msgctxt "#32149"
+msgid "by"
+msgstr "von"
+
+msgctxt "#32150"
+msgid "now"
+msgstr "jetzt"
+
+msgctxt "#32151"
+msgid "night"
+msgstr "Nacht"
+
+msgctxt "#32152"
+msgid "evening"
+msgstr "Abend"
+
+msgctxt "#32153"
+msgid "afternoon"
+msgstr "Nachmittag"
+
+msgctxt "#32154"
+msgid "morning"
+msgstr "Morgen"
+
+msgctxt "#32158"
+msgid "until midnight"
+msgstr "bis Mitternacht"
+
+msgctxt "#32159"
+msgid "tornado"
+msgstr "Tornado"
+
+msgctxt "#32160"
+msgid "tropical storm"
+msgstr "Tropensturm"
+
+msgctxt "#32161"
+msgid "hurricane"
+msgstr "Hurrikan"
+
+msgctxt "#32162"
+msgid "severe storms"
+msgstr "schwere Gewitter"
+
+msgctxt "#32163"
+msgid "thunderstorms"
+msgstr "Gewitter"
+
+msgctxt "#32164"
+msgid "rain and snow"
+msgstr "Regen und Schnee"
+
+msgctxt "#32165"
+msgid "rain and sleet"
+msgstr "Regen und Schneeregen"
+
+msgctxt "#32166"
+msgid "snow and sleet"
+msgstr "Schnee und Schneeregen"
+
+msgctxt "#32167"
+msgid "freezing drizzle"
+msgstr "gefrierender Nieselregen"
+
+msgctxt "#32168"
+msgid "drizzle"
+msgstr "Nieselregen"
+
+msgctxt "#32169"
+msgid "freezing rain"
+msgstr "gefrierender Regen"
+
+msgctxt "#32170"
+msgid "showers"
+msgstr "Schauer"
+
+msgctxt "#32171"
+msgid "snow flurries"
+msgstr "Schneegestöber"
+
+msgctxt "#32172"
+msgid "light snow"
+msgstr "leichter Schneefall"
+
+msgctxt "#32173"
+msgid "blowing snow"
+msgstr "Schneetreiben"
+
+msgctxt "#32174"
+msgid "snow"
+msgstr "Schnee"
+
+msgctxt "#32175"
+msgid "hail"
+msgstr "Hagel"
+
+msgctxt "#32176"
+msgid "sleet"
+msgstr "Schneeregen"
+
+msgctxt "#32177"
+msgid "dust"
+msgstr "Staub"
+
+msgctxt "#32178"
+msgid "fog"
+msgstr "Nebel"
+
+msgctxt "#32179"
+msgid "haze"
+msgstr "Dunst"
+
+msgctxt "#32180"
+msgid "smoke"
+msgstr "Rauch"
+
+msgctxt "#32181"
+msgid "blustery"
+msgstr "stürmisch"
+
+msgctxt "#32182"
+msgid "windy"
+msgstr "windig"
+
+msgctxt "#32183"
+msgid "cold"
+msgstr "kalt"
+
+msgctxt "#32184"
+msgid "cloudy"
+msgstr "bewölkt"
+
+msgctxt "#32185"
+msgid "mostly cloudy"
+msgstr "überwiegend bewölkt"
+
+msgctxt "#32186"
+msgid "partly cloudy"
+msgstr "teilweise bewölkt"
+
+msgctxt "#32187"
+msgid "clear"
+msgstr "klar"
+
+msgctxt "#32188"
+msgid "sunny"
+msgstr "sonnig"
+
+msgctxt "#32189"
+msgid "fair"
+msgstr "heiter"
+
+msgctxt "#32190"
+msgid "rain and hail"
+msgstr "Regen und Hagel"
+
+msgctxt "#32191"
+msgid "hot"
+msgstr "heiß"
+
+msgctxt "#32192"
+msgid "isolated storms"
+msgstr "vereinzelte Gewitter"
+
+msgctxt "#32193"
+msgid "scattered storms"
+msgstr "örtliche Gewitter"
+
+msgctxt "#32194"
+msgid "scattered showers"
+msgstr "örtliche Schauer"
+
+msgctxt "#32195"
+msgid "heavy snow"
+msgstr "starker Schneefall"
+
+msgctxt "#32196"
+msgid "snow showers"
+msgstr "Schneeschauer"
+
+msgctxt "#32197"
+msgid "thundershowers"
+msgstr "Gewitterschauer"
+
+msgctxt "#32198"
+msgid "Blustery"
+msgstr "Stürmisch"
+
+msgctxt "#32199"
+msgid "Hot"
+msgstr "Heiß"
+
+msgctxt "#32200"
+msgid "Fits before midnight"
+msgstr "Passt vor Mitternacht"
+
+msgctxt "#32201"
+msgid "fits before midnight"
+msgstr "passt vor Mitternacht"
+
+msgctxt "#32202"
+msgid "under 100 minutes"
+msgstr "unter 100 Minuten"
+
+msgctxt "#32203"
+msgid "something light"
+msgstr "etwas Leichtes"
+
+msgctxt "#32204"
+msgid "a long one"
+msgstr "etwas Langes"
+
+msgctxt "#32205"
+msgid "highly rated"
+msgstr "hoch bewertet"
+
+msgctxt "#32206"
+msgid "right at midnight"
+msgstr "genau um Mitternacht"
+
+msgctxt "#32207"
+msgid "past midnight"
+msgstr "nach Mitternacht"
+
+msgctxt "#32208"
+msgid "before midnight"
+msgstr "vor Mitternacht"
+
+msgctxt "#32209"
+msgid "kbps"
+msgstr "kbit/s"
+
+msgctxt "#32210"
+msgid "ch"
+msgstr "Kan."
+
+msgctxt "#32211"
+msgid "bit"
+msgstr "Bit"
+
+msgctxt "#32212"
+msgid "kHz"
+msgstr "kHz"
+
+msgctxt "#32213"
+msgid "Hz"
+msgstr "Hz"
+
+msgctxt "#32214"
+msgid "TRACK"
+msgstr "TITEL"
+
+msgctxt "#32215"
+msgid "FROM THE ALBUM"
+msgstr "AUS DEM ALBUM"
+
+msgctxt "#32216"
+msgid "Released in"
+msgstr "Erschienen"
+
+msgctxt "#32217"
+msgid "Record label"
+msgstr "Label"
+
+msgctxt "#32218"
+msgid "Alphabetical"
+msgstr "Alphabetisch"
+
+msgctxt "#32219"
+msgid "Reversed"
+msgstr "Umgekehrt"
+
+msgctxt "#32220"
+msgid "MINS"
+msgstr "MIN."
+
+msgctxt "#32221"
+msgid "RATED"
+msgstr "FREIGABE"
+
+msgctxt "#32222"
+msgid "NOT RATED"
+msgstr "OHNE FREIGABE"
+
+msgctxt "#32223"
+msgid "AN ALBUM BY"
+msgstr "EIN ALBUM VON"
+
+msgctxt "#32224"
+msgid "RELEASED IN"
+msgstr "ERSCHIENEN"
+
+msgctxt "#32225"
+msgid "A TV SHOW"
+msgstr "EINE SERIE"
+
+msgctxt "#32226"
+msgid "FIRST AIRED IN"
+msgstr "ERSTAUSSTRAHLUNG"
+
+msgctxt "#32227"
+msgid "A MOVIE BY"
+msgstr "EIN FILM VON"
+
+msgctxt "#32228"
+msgid "Active"
+msgstr "Aktiv"
+
+msgctxt "#32229"
+msgid "FORMED"
+msgstr "GEGRÜNDET"
+
+msgctxt "#32230"
+msgid "DISBANDED"
+msgstr "AUFGELÖST"
+
+msgctxt "#32231"
+msgid "BORN"
+msgstr "GEBOREN"
+
+msgctxt "#32232"
+msgid "DIED"
+msgstr "GESTORBEN"
+
+msgctxt "#32233"
+msgid "Refresh information"
+msgstr "Informationen aktualisieren"
+
+msgctxt "#32234"
+msgid "Take screenshot"
+msgstr "Screenshot aufnehmen"
+
+msgctxt "#32235"
+msgid "Switch off"
+msgstr "Ausschalten"
+
+msgctxt "#32236"
+msgid "Switch on"
+msgstr "Einschalten"
+
+msgctxt "#32237"
+msgid "Written by"
+msgstr "Drehbuch:"
+
+msgctxt "#32238"
+msgid "Directed by"
+msgstr "Regie:"
+
+msgctxt "#32239"
+msgid "SET"
+msgstr "SAMMLUNG"
+
+msgctxt "#32240"
+msgid "VOTES"
+msgstr "STIMMEN"
+
+msgctxt "#32241"
+msgid "EPISODES"
+msgstr "EPISODEN"
+
+msgctxt "#32242"
+msgid "UNWATCHED"
+msgstr "UNGESEHEN"
+
+msgctxt "#32243"
+msgid "Setup"
+msgstr "Einrichtung"
+
+msgctxt "#32244"
+msgid "Libraries"
+msgstr "Bibliotheken"
+
+msgctxt "#32245"
+msgid "Motion"
+msgstr "Bewegung"
+
+msgctxt "#32246"
+msgid "Welcome to Aeon Fuse"
+msgstr "Willkommen bei Aeon Fuse"
+
+msgctxt "#32247"
+msgid "Library backdrop"
+msgstr "Bibliothekshintergrund"
+
+msgctxt "#32248"
+msgid "Pick a palette"
+msgstr "Palette wählen"
+
+msgctxt "#32249"
+msgid "Skin theme"
+msgstr "Skin-Thema"
+
+msgctxt "#32250"
+msgid "Skin style"
+msgstr "Skin-Stil"
+
+msgctxt "#32251"
+msgid "Home menu items"
+msgstr "Einträge des Hauptmenüs"
+
+msgctxt "#32252"
+msgid "Spotlight transition"
+msgstr "Spotlight-Übergang"
+
+msgctxt "#32253"
+msgid "Corner boxes"
+msgstr "Eckboxen"
+
+msgctxt "#32254"
+msgid "Titles or logos"
+msgstr "Titel oder Logos"
+
+msgctxt "#32255"
+msgid "Extra fanart"
+msgstr "Zusätzliche Fanart"
+
+msgctxt "#32256"
+msgid "Spoilers"
+msgstr "Spoiler"
+
+msgctxt "#32257"
+msgid "All set"
+msgstr "Alles bereit"
+
+msgctxt "#32258"
+msgid "A few quick choices make the skin yours. Every step shows a preview, and everything can be changed later in Skin settings."
+msgstr "Ein paar schnelle Entscheidungen machen den Skin zu Ihrem. Jeder Schritt zeigt eine Vorschau, und alles lässt sich später in den Skin-Einstellungen ändern."
+
+msgctxt "#32259"
+msgid "What fills the space behind the library views. With Neutral the next step lets you pick a palette."
+msgstr "Was den Raum hinter den Bibliotheksansichten füllt. Mit Neutral können Sie im nächsten Schritt eine Palette wählen."
+
+msgctxt "#32260"
+msgid "The palette colours the neutral backdrop, the focus bar, the boxes and the strips (Aeon theme)."
+msgstr "Die Palette färbt den neutralen Hintergrund, den Fokusbalken, die Boxen und die Leisten (Aeon-Thema)."
+
+msgctxt "#32261"
+msgid "Aeon draws solid panels with a bright focus bar. Aeon Glass lets the artwork shine through frosted panels."
+msgstr "Aeon zeichnet feste Felder mit hellem Fokusbalken. Aeon Glass lässt das Bildmaterial durch mattierte Felder scheinen."
+
+msgctxt "#32262"
+msgid "How settings, dialogs and side menus look: the skin theme's own menus, or Fuse, the rounded cards of this setup."
+msgstr "Wie Einstellungen, Dialoge und Seitenmenüs aussehen: die eigenen Menüs des Skin-Themas oder Fuse, die abgerundeten Karten dieser Einrichtung."
+
+msgctxt "#32263"
+msgid "Switch the items you want on the Home menu. Order, custom items (three are always free) and their lists: Skin settings > Home menu."
+msgstr "Schalten Sie die gewünschten Einträge im Hauptmenü ein. Reihenfolge, eigene Einträge (drei sind immer frei) und ihre Listen: Skin-Einstellungen > Hauptmenü."
+
+msgctxt "#32264"
+msgid "Where the main menu sits on the Home screen."
+msgstr "Wo das Hauptmenü auf der Startseite sitzt."
+
+msgctxt "#32265"
+msgid "The backdrop of the spotlight at the top of Home."
+msgstr "Der Hintergrund des Spotlights oben auf der Startseite."
+
+msgctxt "#32266"
+msgid "How one spotlight title gives way to the next."
+msgstr "Wie ein Spotlight-Titel dem nächsten Platz macht."
+
+msgctxt "#32267"
+msgid "The clock box, the item count and the strip boxes in the corners of the library."
+msgstr "Die Uhrbox, die Anzahl der Einträge und die Leistenboxen in den Ecken der Bibliothek."
+
+msgctxt "#32268"
+msgid "Small markers on posters: a dot for unwatched, a check for watched, a bar for in progress."
+msgstr "Kleine Markierungen auf Postern: ein Punkt für ungesehen, ein Häkchen für gesehen, ein Balken für begonnen."
+
+msgctxt "#32269"
+msgid "Show a title's clear logo where the skin has room for it, or its name in plain text."
+msgstr "Das ClearLogo eines Titels zeigen, wo der Skin Platz dafür hat, oder seinen Namen als Text."
+
+msgctxt "#32270"
+msgid "The chips under a title in the libraries and on the information page. Switch the ones you want."
+msgstr "Die Chips unter einem Titel in den Bibliotheken und auf der Infoseite. Schalten Sie die gewünschten ein."
+
+msgctxt "#32271"
+msgid "Titles with more than one fanart can take turns showing them in the background."
+msgstr "Titel mit mehr als einer Fanart können sie abwechselnd im Hintergrund zeigen."
+
+msgctxt "#32272"
+msgid "Unwatched episodes can keep their thumbnail and plot to themselves."
+msgstr "Ungesehene Episoden können ihr Vorschaubild und ihre Handlung für sich behalten."
+
+msgctxt "#32273"
+msgid "Slides and fades when views, menus and dialogs open."
+msgstr "Gleiten und Überblenden, wenn Ansichten, Menüs und Dialoge sich öffnen."
+
+msgctxt "#32274"
+msgid "On small boxes Kodi keeps memory it no longer uses. The skin's helper can hand it back to the system."
+msgstr "Auf kleinen Boxen behält Kodi Speicher, den es nicht mehr braucht. Der Helper des Skins kann ihn an das System zurückgeben."
+
+msgctxt "#32275"
+msgid "Your choices are saved. Run the setup again any time from Skin settings > Motion, memory, reset."
+msgstr "Ihre Auswahl ist gespeichert. Die Einrichtung jederzeit wieder starten: Skin-Einstellungen > Bewegung, RAM, Reset."
+
+msgctxt "#32276"
+msgid "Kodi restarts to show the new look"
+msgstr "Kodi startet neu, um den neuen Look zu zeigen"
+
+msgctxt "#32277"
+msgid "Then restart Kodi once"
+msgstr "Danach Kodi einmal neu starten"
+
+msgctxt "#32278"
+msgid "Close the setup"
+msgstr "Einrichtung schließen"
+
+msgctxt "#32279"
+msgid "A new theme or palette needs Kodi to start again; it takes a few seconds."
+msgstr "Ein neues Thema oder eine neue Palette braucht einen Neustart von Kodi; das dauert ein paar Sekunden."
+
+msgctxt "#32280"
+msgid "The new look shows at once. Restart Kodi when you can: until then some settings may read wrong."
+msgstr "Der neue Look erscheint sofort. Starten Sie Kodi neu, sobald es passt: Bis dahin zeigen manche Einstellungen eventuell falsche Werte."
+
+msgctxt "#32281"
+msgid "Enjoy Aeon Fuse."
+msgstr "Viel Freude mit Aeon Fuse."
+
+msgctxt "#32282"
+msgid "ends"
+msgstr "Ende"
+
+msgctxt "#32283"
+msgid "Nothing unwatched fits before midnight tonight."
+msgstr "Nichts Ungesehenes passt heute noch vor Mitternacht."
+
+msgctxt "#32285"
+msgid "of"
+msgstr "von"
+
+msgctxt "#32286"
+msgid "watched"
+msgstr "gesehen"
+
+msgctxt "#32287"
+msgid "unwatched"
+msgstr "ungesehen"
+
+msgctxt "#32288"
+msgid "Nothing unwatched fits this slot. Try Films for everything."
+msgstr "Nichts Ungesehenes passt in dieses Zeitfenster. Unter Filme gibt es alles."
+
+msgctxt "#32289"
+msgid "Nothing here yet."
+msgstr "Hier ist noch nichts."
+
+msgctxt "#32290"
+msgid "Current"
+msgstr "Aktuell"
+
+msgctxt "#32291"
+msgid "Rec"
+msgstr "Aufn."
+
+msgctxt "#32292"
+msgid "Remind"
+msgstr "Erinnern"
+
+msgctxt "#32293"
+msgid "Archive"
+msgstr "Archiv"
+
+msgctxt "#32294"
+msgid "Edited"
+msgstr "Bearbeitet"
+
+msgctxt "#32295"
+msgid "About"
+msgstr "Über"
+
+msgctxt "#32296"
+msgid "Group"
+msgstr "Gruppe"
+
+msgctxt "#32297"
+msgid "Nothing here yet"
+msgstr "Hier ist noch nichts"
+
+msgctxt "#32298"
+msgid "Tracklist"
+msgstr "Titelliste"
+
+msgctxt "#32299"
+msgid "born"
+msgstr "geboren"
+
+msgctxt "#32300"
+msgid "formed"
+msgstr "gegründet"
+
+msgctxt "#32301"
+msgid "minutes of music"
+msgstr "Minuten Musik"
+
+msgctxt "#32302"
+msgid "Start now, done by"
+msgstr "Jetzt starten, fertig um"
+
+msgctxt "#32303"
+msgid "The music stops at"
+msgstr "Die Musik endet um"
+
+msgctxt "#32304"
+msgid "OK for the controls."
+msgstr "OK für die Steuerung."
+
+msgctxt "#32305"
+msgid "Go to"
+msgstr "Gehe zu"
+
+msgctxt "#32306"
+msgid "Sleeps when this ends  ·  bedtime"
+msgstr "Ruht, wenn dies endet  ·  Schlafenszeit"
+
+msgctxt "#32307"
+msgid "RESULTS"
+msgstr "ERGEBNISSE"
+
+msgctxt "#32308"
+msgid "track"
+msgstr "Titel"
+
+msgctxt "#32309"
+msgid "tracks"
+msgstr "Titel"
+
+msgctxt "#32310"
+msgid "option"
+msgstr "Option"
+
+msgctxt "#32311"
+msgid "options"
+msgstr "Optionen"
+
+msgctxt "#32312"
+msgid "item"
+msgstr "Eintrag"
+
+msgctxt "#32313"
+msgid "album in your library"
+msgstr "Album in Ihrer Bibliothek"
+
+msgctxt "#32314"
+msgid "albums in your library"
+msgstr "Alben in Ihrer Bibliothek"
+
+msgctxt "#32315"
+msgid "film"
+msgstr "Film"
+
+msgctxt "#32316"
+msgid "person"
+msgstr "Person"
+
+msgctxt "#32317"
+msgid "people"
+msgstr "Personen"
+
+msgctxt "#32318"
+msgid "episode"
+msgstr "Episode"
+
+msgctxt "#32319"
+msgid "episodes"
+msgstr "Episoden"
+
+msgctxt "#32320"
+msgid "film watched"
+msgstr "Film gesehen"
+
+msgctxt "#32321"
+msgid "films watched"
+msgstr "Filme gesehen"
+
+msgctxt "#32322"
+msgid "episode watched"
+msgstr "Episode gesehen"
+
+msgctxt "#32323"
+msgid "episodes watched"
+msgstr "Episoden gesehen"
+
+msgctxt "#32324"
+msgid "Midnight"
+msgstr "Mitternacht"
+
+msgctxt "#32325"
+msgid "The extra items Aeon Fuse adds to Kodi's context menu: which of them show and in what order."
+msgstr "Die zusätzlichen Einträge, die Aeon Fuse dem Kontextmenü von Kodi hinzufügt: welche erscheinen und in welcher Reihenfolge."
+
+msgctxt "#32326"
+msgid "Kodi lists these after its own items (and before those of other add-ons that come later). Pick one, then use the buttons on the right."
+msgstr "Kodi zeigt sie nach den eigenen Einträgen (und vor denen später folgender Add-ons). Wählen Sie einen aus und nutzen Sie dann die Tasten rechts."
+
+msgctxt "#32327"
+msgid "Shows or hides the selected item in the context menu."
+msgstr "Zeigt oder verbirgt den gewählten Eintrag im Kontextmenü."
+
+msgctxt "#32328"
+msgid "Moves the selected item one place up in the context menu."
+msgstr "Schiebt den gewählten Eintrag im Kontextmenü eine Stelle nach oben."
+
+msgctxt "#32329"
+msgid "Moves the selected item one place down in the context menu."
+msgstr "Schiebt den gewählten Eintrag im Kontextmenü eine Stelle nach unten."
+
+msgctxt "#32330"
+msgid "The backdrop of the widget screens (Up on a Home item) slowly zooms in with every title. Reduce motion stops it too."
+msgstr "Der Hintergrund der Widgetseiten (Hoch auf einem Eintrag der Startseite) zoomt bei jedem Titel langsam heran. Bewegung verringern stoppt das ebenfalls."
+
+msgctxt "#32331"
+msgid "A font family for each part of the skin: Home, the libraries, headings, the settings pages and the player."
+msgstr "Eine Schriftfamilie für jeden Teil des Skins: Startseite, Bibliotheken, Überschriften, Einstellungsseiten und Player."
+
+msgctxt "#32332"
+msgid "Film"
+msgstr "Film"
+
+msgctxt "#32333"
+msgid "Resume now: done by"
+msgstr "Jetzt fortsetzen: fertig um"
+
+msgctxt "#32334"
+msgid "Start now: ends"
+msgstr "Jetzt starten: Ende"
+
+msgctxt "#32336"
+msgid "Down for the films"
+msgstr "Runter für die Filme"
+
+msgctxt "#32337"
+msgid "Down for the cast"
+msgstr "Runter für die Besetzung"
+
+msgctxt "#32338"
+msgid "Story"
+msgstr "Handlung"
+
+msgctxt "#32339"
+msgid "split"
+msgstr "getrennt"
+
+msgctxt "#32340"
+msgid "died"
+msgstr "gestorben"
+
+msgctxt "#32341"
+msgid "Resume at"
+msgstr "Fortsetzen bei"
+
+msgctxt "#32342"
+msgid "added"
+msgstr "hinzugefügt"
+
+msgctxt "#32343"
+msgid "season"
+msgstr "Staffel"
+
+msgctxt "#32344"
+msgid "seasons"
+msgstr "Staffeln"
+
+msgctxt "#32345"
+msgid "Aired"
+msgstr "Ausgestrahlt"
+
+msgctxt "#32346"
+msgid "Resume now and you're done by"
+msgstr "Jetzt fortsetzen und Sie sind fertig um"
+
+msgctxt "#32347"
+msgid "Start now and it ends at"
+msgstr "Jetzt starten und es endet um"
+
+msgctxt "#32348"
+msgid "after midnight"
+msgstr "nach Mitternacht"
+
+msgctxt "#32349"
+msgid "Start now and you're done by"
+msgstr "Jetzt starten und Sie sind fertig um"
+
+msgctxt "#32350"
+msgid "still to watch"
+msgstr "noch zu sehen"
+
+msgctxt "#32351"
+msgid "aired"
+msgstr "ausgestrahlt"
+
+msgctxt "#32352"
+msgid "rated"
+msgstr "bewertet"
+
+msgctxt "#32353"
+msgid "With"
+msgstr "Mit"
+
+msgctxt "#32354"
+msgid "Progress"
+msgstr "Fortschritt"
+
+msgctxt "#32355"
+msgid "to watch"
+msgstr "zu sehen"
+
+msgctxt "#32356"
+msgid "No channels. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "Keine Sender. Aktivieren Sie ein PVR-Client-Add-on in den Einstellungen für PVR & Live-TV."
+
+msgctxt "#32357"
+msgid "No recordings."
+msgstr "Keine Aufnahmen."
+
+msgctxt "#32358"
+msgid "No results."
+msgstr "Keine Ergebnisse."
+
+msgctxt "#32359"
+msgid "No timers."
+msgstr "Keine Timer."
+
+msgctxt "#32360"
+msgid "updated"
+msgstr "aktualisiert"
+
+msgctxt "#32361"
+msgid "Setup wizard"
+msgstr "Einrichtungsassistent"
+
+msgctxt "#32362"
+msgid "Theme, palette, backgrounds, Home"
+msgstr "Thema, Palette, Hintergründe, Startseite"
+
+msgctxt "#32363"
+msgid "Widget screens: slow zoom"
+msgstr "Widgetseiten: langsamer Zoom"
+
+msgctxt "#32364"
+msgid "Kodi shows these after its own items, in this order (items of other add-ons can follow). Update and Clean library show in the libraries and on Home, Refresh information on films, shows, episodes and music videos, Take screenshot everywhere."
+msgstr "Kodi zeigt sie nach den eigenen Einträgen in dieser Reihenfolge (Einträge anderer Add-ons können folgen). Bibliothek aktualisieren und bereinigen erscheinen in den Bibliotheken und auf der Startseite, Informationen aktualisieren bei Filmen, Serien, Episoden und Musikvideos, Screenshot aufnehmen überall."
+
+msgctxt "#32365"
+msgid "PICTURE"
+msgstr "BILD"
+
+msgctxt "#32366"
+msgid "Smart playlist"
+msgstr "Intelligente Wiedergabeliste"
+
+msgctxt "#32367"
+msgid "Source"
+msgstr "Quelle"
+
+msgctxt "#32368"
+msgid "fps"
+msgstr "fps"
+
+msgctxt "#32369"
+msgid "AR"
+msgstr "AR"
+
+msgctxt "#32370"
+msgid "Dynamic range"
+msgstr "Dynamikbereich"
+
+msgctxt "#32371"
+msgid "Decoder"
+msgstr "Decoder"
+
+msgctxt "#32372"
+msgid "Pixel format"
+msgstr "Pixelformat"
+
+msgctxt "#32373"
+msgid "Deinterlace"
+msgstr "Deinterlacing"
+
+msgctxt "#32374"
+msgid "Display"
+msgstr "Anzeige"
+
+msgctxt "#32375"
+msgid "Audio output"
+msgstr "Audioausgabe"
+
+msgctxt "#32376"
+msgid "Interface"
+msgstr "Oberfläche"
+
+msgctxt "#32377"
+msgid "memory"
+msgstr "Speicher"
+
+msgctxt "#32378"
+msgid "FILE"
+msgstr "DATEI"
+
+msgctxt "#32379"
+msgid "SIZE"
+msgstr "GRÖSSE"
+
+msgctxt "#32380"
+msgid "TAKEN"
+msgstr "AUFGENOMMEN"
+
+msgctxt "#32381"
+msgid "STATE"
+msgstr "STATUS"
+
+msgctxt "#32382"
+msgid "until bedtime"
+msgstr "bis zur Schlafenszeit"
+
+msgctxt "#32383"
+msgid "Fits before bedtime"
+msgstr "Passt vor der Schlafenszeit"
+
+msgctxt "#32384"
+msgid "fits before bedtime"
+msgstr "passt vor der Schlafenszeit"
+
+msgctxt "#32385"
+msgid "Nothing unwatched fits before bedtime tonight."
+msgstr "Nichts Ungesehenes passt heute noch vor die Schlafenszeit."
+
+msgctxt "#32386"
+msgid "right at your bedtime"
+msgstr "genau zu Ihrer Schlafenszeit"
+
+msgctxt "#32387"
+msgid "past your bedtime"
+msgstr "nach Ihrer Schlafenszeit"
+
+msgctxt "#32388"
+msgid "before your bedtime"
+msgstr "vor Ihrer Schlafenszeit"
+
+msgctxt "#32389"
+msgid "after your bedtime"
+msgstr "nach Ihrer Schlafenszeit"
+
+msgctxt "#32390"
+msgid "Continuing"
+msgstr "Fortlaufend"
+
+msgctxt "#32391"
+msgid "Ended"
+msgstr "Beendet"
+
+msgctxt "#32392"
+msgid "Cancelled"
+msgstr "Abgesetzt"
+
+msgctxt "#32393"
+msgid "In production"
+msgstr "In Produktion"
+
+msgctxt "#32394"
+msgid "Planned"
+msgstr "Geplant"
+
+msgctxt "#32395"
+msgid "Upcoming"
+msgstr "Demnächst"
+
+msgctxt "#32396"
+msgid "Pilot"
+msgstr "Pilotfolge"
+
+msgctxt "#32397"
+msgid "Now playing in"
+msgstr "Läuft gerade in"
+
+msgctxt "#32398"
+msgid "Films of a set"
+msgstr "Filme einer Reihe"
+
+msgctxt "#32399"
+msgid "Versions of a film"
+msgstr "Versionen eines Films"
+
+msgctxt "#32400"
+msgid "Grid"
+msgstr "Raster"
+
+msgctxt "#32401"
+msgid "One at a time"
+msgstr "Einzeln"
+
+msgctxt "#32402"
+msgid "Fused Glass"
+msgstr "Fused Glass"
+
+msgctxt "#32403"
+msgid "Next hours"
+msgstr "Nächste Stunden"
+
+msgctxt "#32404"
+msgid "This week"
+msgstr "Diese Woche"
+
+msgctxt "#32405"
+msgid "No weather yet. Choose a weather service in Settings > Services > Weather."
+msgstr "Noch kein Wetter. Wähle einen Wetterdienst unter Einstellungen > Dienste > Wetter."
+
+msgctxt "#32406"
+msgid "Recent searches"
+msgstr "Letzte Suchen"
+
+msgctxt "#32407"
+msgid "In Fused Glass the music playing always sits beside the clock on Home; this setting is for the other themes."
+msgstr "In Fused Glass steht die laufende Musik auf der Startseite immer neben der Uhr; diese Einstellung gilt für die anderen Themen."
+
+msgctxt "#32408"
+msgid "Focus highlight"
+msgstr "Fokusmarkierung"
+
+msgctxt "#32409"
+msgid "Pill"
+msgstr "Pille"
+
+msgctxt "#32410"
+msgid "Flat"
+msgstr "Flach"
+
+msgctxt "#32411"
+msgid "Frosted"
+msgstr "Milchglas"
+
+msgctxt "#32412"
+msgid "Outline"
+msgstr "Umriss"
+
+msgctxt "#32413"
+msgid "Tight"
+msgstr "Eng"
+
+msgctxt "#32414"
+msgid "How the item in focus is marked in lists and menus. Changing it reloads the skin."
+msgstr "Wie das ausgewählte Element in Listen und Menüs markiert wird. Eine Änderung lädt den Skin neu."
+
+msgctxt "#32415"
+msgid "Navigation animation"
+msgstr "Navigationsanimation"
+
+msgctxt "#32416"
+msgid "Pop"
+msgstr "Pop"
+
+msgctxt "#32417"
+msgid "Grow"
+msgstr "Wachsen"
+
+msgctxt "#32418"
+msgid "Fade"
+msgstr "Blende"
+
+msgctxt "#32419"
+msgid "Glow"
+msgstr "Glühen"
+
+msgctxt "#32420"
+msgid "Nudge"
+msgstr "Stups"
+
+msgctxt "#32421"
+msgid "Lift"
+msgstr "Heben"
+
+msgctxt "#32422"
+msgid "How the highlight moves when it lands on an item. Pop is the default."
+msgstr "Wie sich die Markierung bewegt, wenn sie auf einem Eintrag landet. Standard ist Pop."
+
+msgctxt "#32423"
+msgid "Font combination"
+msgstr "Schriftkombination"
+
+msgctxt "#32424"
+msgid "A heading and text font combination, shown before you pick it, or your own font for each part of the skin."
+msgstr "Eine Kombination aus Überschrift- und Textschrift mit Vorschau oder eine eigene Schrift für jeden Teil des Skins."
+
+msgctxt "#32425"
+msgid "Home menu: only the focused item's name"
+msgstr "Hauptmenü: nur der Name des gewählten Eintrags"
+
+msgctxt "#32426"
+msgid "On: the other items of the Home menu show only their icon and the focused item shows its name."
+msgstr "An: die übrigen Einträge des Hauptmenüs zeigen nur ihr Symbol, der gewählte Eintrag seinen Namen."
+
+msgctxt "#32427"
+msgid "Segment skip button placement"
+msgstr "Platzierung der Segment-Überspringen-Taste"
+
+msgctxt "#32428"
+msgid "Tab"
+msgstr "Lasche"
+
+msgctxt "#32429"
+msgid "Glass"
+msgstr "Glas"
+
+msgctxt "#32430"
+msgid "How the skip button sits on the player controls and the small seek bar: a white tab on the card's edge, or a capsule of the card's glass above it."
+msgstr "Wie der Überspringen-Knopf auf der Player-Steuerung und der kleinen Suchleiste sitzt: eine weiße Lasche am Rand der Karte oder eine Kapsel aus dem Glas der Karte darüber."
+
+msgctxt "#32431"
+msgid "Available in library"
+msgstr "In der Bibliothek verfügbar"
+
+msgctxt "#32432"
+msgid "In library"
+msgstr "In der Bibliothek"
+
+msgctxt "#32433"
+msgid "Random %s"
+msgstr "Zufällige %s"
+
+msgctxt "#32434"
+msgid "Recently added %s"
+msgstr "Kürzlich hinzugefügte %s"
+
+msgctxt "#32435"
+msgid "Recently played %s"
+msgstr "Kürzlich gespielte %s"
+
+msgctxt "#32436"
+msgid "Top rated %s"
+msgstr "Top bewertete %s"
+
+msgctxt "#32437"
+msgid "Most played %s"
+msgstr "Meistgespielte %s"
+
+msgctxt "#32438"
+msgid "Newest %s"
+msgstr "Neueste %s"
+
+msgctxt "#32439"
+msgid "%s by title"
+msgstr "%s nach Titel"
+
+msgctxt "#32440"
+msgid "Scroll through channels"
+msgstr "Durch Sender blättern"
+
+msgctxt "#32441"
+msgid "Auto-fix art with the wrong shape"
+msgstr "Falsch geformte Bilder korrigieren"
+
+msgctxt "#32442"
+msgid "Check library art now"
+msgstr "Bibliotheksbilder jetzt prüfen"
+
+msgctxt "#32443"
+msgid "Library art"
+msgstr "Bibliotheksbilder"
+
+msgctxt "#32444"
+msgid "Now uses a picture from the same folder that fits"
+msgstr "Verwendet jetzt ein passendes Bild aus demselben Ordner"
+
+msgctxt "#32445"
+msgid "Wrong shape, nothing in the folder fits"
+msgstr "Falsche Form, nichts im Ordner passt"
+
+msgctxt "#32446"
+msgid "Every picture has the right shape."
+msgstr "Alle Bilder haben die richtige Form."
+
+msgctxt "#32447"
+msgid "Fixed in the library: %d"
+msgstr "In der Bibliothek korrigiert: %d"
+
+msgctxt "#32448"
+msgid "After a refresh or a library scan, a poster, banner, landscape or fanart of the wrong shape is replaced by a picture of the same name in the same folder that fits. Your files stay as they are."
+msgstr "Nach einer Aktualisierung oder einem Bibliotheksscan wird ein Poster, Banner, Landschaftsbild oder Fanart mit falscher Form durch ein passendes Bild gleichen Namens aus demselben Ordner ersetzt. Ihre Dateien bleiben unverändert."
+
+msgctxt "#32449"
+msgid "Checks every picture Kodi has shown and fixes what it can. A list shows what was replaced and what is still the wrong shape."
+msgstr "Prüft jedes Bild, das Kodi angezeigt hat, und korrigiert, was möglich ist. Eine Liste zeigt, was ersetzt wurde und was noch die falsche Form hat."
+
+msgctxt "#32450"
+msgid "Slot left empty: the skin shows the show's picture until season art is added"
+msgstr "Feld leer gelassen: Der Skin zeigt das Bild der Serie, bis Staffelbilder hinzukommen"
+
+msgctxt "#32451"
+msgid "Only Kodi's library changed. Your files are untouched."
+msgstr "Nur die Kodi-Bibliothek wurde geändert. Ihre Dateien bleiben unberührt."
+
+msgctxt "#32452"
+msgid "Mosaic"
+msgstr "Mosaik"
+
+msgctxt "#32453"
+msgid "Ledger"
+msgstr "Tabelle"
+
+msgctxt "#32454"
+msgid "Bridge"
+msgstr "Brücke"
+
+msgctxt "#32455"
+msgid "Tab slab"
+msgstr "Reiter"
+
+msgctxt "#32456"
+msgid "How the menus join their boxes: Mosaic, Ledger, Bridge or Tab slab. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "Wie die Menüs ihre Boxen verbinden: Mosaik, Tabelle, Brücke oder Reiter. Fuse nutzt abgerundete Karten und braucht einen Neustart von Kodi."
+
+msgctxt "#32457"
+msgid "Aeon Glass keeps its own menus. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "Aeon Glass behält seine eigenen Menüs. Fuse nutzt abgerundete Karten und braucht einen Neustart von Kodi."
+
+msgctxt "#32458"
+msgid "Library options"
+msgstr "Bibliotheksoptionen"
+
+msgctxt "#32459"
+msgid "Strip"
+msgstr "Leiste"
+
+msgctxt "#32460"
+msgid "Box"
+msgstr "Box"
+
+msgctxt "#32461"
+msgid "Left at the edge of a view or the Menu key opens the side strip, or a big box in the menu style."
+msgstr "Links am Rand einer Ansicht oder die Menütaste öffnet die Seitenleiste oder eine große Box im Menüstil."
+
+msgctxt "#32462"
+msgid "Skippy: skip button style"
+msgstr "Skippy: Stil der Überspringen-Taste"
+
+msgctxt "#32463"
+msgid "Box pair"
+msgstr "Boxpaar"
+
+msgctxt "#32464"
+msgid "Clock dock"
+msgstr "An der Uhr"
+
+msgctxt "#32465"
+msgid "Aeon theme: a palette tile and a label box at the bottom right (above the player controls when they are open), or a row at the top right that ends in the clock box."
+msgstr "Aeon-Thema: eine Farbkachel und ein Textfeld unten rechts (über der Player-Steuerung, wenn sie offen ist) oder eine Reihe oben rechts, die an der Uhrbox endet."
+
+msgctxt "#32466"
+msgid "Use the palette for"
+msgstr "Palette verwenden für"
+
+msgctxt "#32467"
+msgid "Menus and library views"
+msgstr "Menüs und Bibliotheksansichten"
+
+msgctxt "#32468"
+msgid "Menus only"
+msgstr "Nur Menüs"
+
+msgctxt "#32469"
+msgid "Library views only"
+msgstr "Nur Bibliotheksansichten"
+
+msgctxt "#32470"
+msgid "Colors: the colour of the artwork; in the library with the Neutral backdrop and a palette other than Aeon, the palette's own darker box colour. Neutral: always the palette's box colour. Fanart: a window onto the fanart. Backdrop: as the library backdrop. View settings sets it per view."
+msgstr "Farben: die Farbe des Bildes; in der Bibliothek mit neutralem Hintergrund und einer anderen Palette als Aeon die eigene, dunklere Boxfarbe der Palette. Neutral: immer die Boxfarbe der Palette. Fanart: ein Fenster auf das Fanart. Hintergrund: wie der Bibliothekshintergrund. Die Ansichtseinstellungen legen es je Ansicht fest."
+
+msgctxt "#32471"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages, for the menus and the library views, the menus only or the library views only. The library background takes it with the Neutral backdrop only."
+msgstr "Farbe der Markierung, der Boxen, der Leisten und der Einstellungsseiten, für Menüs und Bibliotheksansichten, nur für Menüs oder nur für Bibliotheksansichten. Der Bibliothekshintergrund übernimmt sie nur mit neutralem Hintergrund."
+
+msgctxt "#32472"
+msgid "Band under the Home menu"
+msgstr "Band unter dem Hauptmenü"
+
+msgctxt "#32473"
+msgid "A dark band from the Home menu down to the bottom of the screen, with a thin line on top, over the spotlight pictures. It follows the menu: middle or low."
+msgstr "Ein dunkles Band vom Hauptmenü bis zum unteren Bildrand mit einer feinen Linie oben, über den Spotlight-Bildern. Es folgt dem Menü: mittig oder unten."
+
+msgctxt "#32474"
+msgid "Toasts expand from clock pill"
+msgstr "Hinweise klappen aus der Uhr-Kapsel auf"
+
+msgctxt "#32475"
+msgid "A notification widens the clock pill to the left and shows itself in it, instead of a capsule of its own. Library views and full-screen video keep the capsule."
+msgstr "Eine Meldung verbreitert die Uhr-Kapsel nach links und erscheint darin statt in einer eigenen Kapsel. Bibliotheksansichten und Vollbildvideo behalten die Kapsel."
+
+msgctxt "#32476"
+msgid "Clearlogo in Now playing"
+msgstr "Clearlogo bei Aktuelle Wiedergabe"
+
+msgctxt "#32477"
+msgid "Live"
+msgstr "Live"
+
+msgctxt "#32478"
+msgid "Fused Glass player: the clearlogo of the show or film in the Now playing pill at the top left, instead of its title. Off: the title."
+msgstr "Fused-Glass-Player: das Clearlogo der Serie oder des Films in der Kapsel „Aktuelle Wiedergabe“ oben links statt des Titels. Aus: der Titel."
+
+msgctxt "#32479"
+msgid "Overview"
+msgstr "Übersicht"
+
+msgctxt "#32480"
+msgid "File and season"
+msgstr "Datei und Staffel"
+
+msgctxt "#32481"
+msgid "In this file"
+msgstr "In dieser Datei"
+
+msgctxt "#32482"
+msgid "File"
+msgstr "Datei"
+
+msgctxt "#32483"
+msgid "Size"
+msgstr "Größe"
+
+msgctxt "#32484"
+msgid "Playing on"
+msgstr "Wiedergabe auf"
+
+msgctxt "#32485"
+msgid "Cast photos in the information screen"
+msgstr "Darstellerfotos im Infobildschirm"
+
+msgctxt "#32486"
+msgid "Fused Glass player: the information screen shows the cast as round photos with the name and the character under each, in one row you scroll through. Off: the names as chips."
+msgstr "Fused-Glass-Player: Der Infobildschirm zeigt die Darsteller als runde Fotos mit Name und Rolle darunter, in einer Reihe zum Durchblättern. Aus: die Namen als Chips."
+
+msgctxt "#32487"
+msgid "Up"
+msgstr "Auf"
+
+msgctxt "#32488"
+msgid "Down"
+msgstr "Ab"
+
+msgctxt "#32489"
+msgid "Kodi running for"
+msgstr "Kodi läuft seit"
+
+msgctxt "#32490"
+msgid "Box up for"
+msgstr "Box läuft seit"
+
+msgctxt "#32491"
+msgid "Nothing is playing"
+msgstr "Es läuft nichts"
+
+msgctxt "#32492"
+msgid "Sleep"
+msgstr "Ruhezustand"
+
+msgctxt "#32493"
+msgid "Restart Kodi"
+msgstr "Kodi neu starten"
+
+msgctxt "#32495"
+msgid "Reboot to Android"
+msgstr "In Android neu starten"
+
+msgctxt "#32496"
+msgid "Shut down"
+msgstr "Ausschalten"
+
+msgctxt "#32497"
+msgid "OK again to confirm"
+msgstr "Zum Bestätigen noch einmal OK"
+
+msgctxt "#32498"
+msgid "Log off"
+msgstr "Abmelden"
+
+msgctxt "#32499"
+msgid "Exit Kodi"
+msgstr "Kodi beenden"
+
+msgctxt "#32500"
+msgid "When this ends"
+msgstr "Wenn das hier endet"
+
+msgctxt "#32501"
+msgid "min"
+msgstr "Min."
+
+msgctxt "#32502"
+msgid "Health"
+msgstr "Zustand"
+
+msgctxt "#32503"
+msgid "All good"
+msgstr "Alles in Ordnung"
+
+msgctxt "#32504"
+msgid "Running warm"
+msgstr "Läuft warm"
+
+msgctxt "#32505"
+msgid "Memory almost full"
+msgstr "Speicher fast voll"
+
+msgctxt "#32506"
+msgid "Processor"
+msgstr "Prozessor"
+
+msgctxt "#32507"
+msgid "Shortcuts"
+msgstr "Verknüpfungen"
+
+msgctxt "#32508"
+msgid "Recently used add-ons"
+msgstr "Zuletzt benutzte Add-ons"
+
+msgctxt "#32509"
+msgid "Library jobs"
+msgstr "Bibliotheksaufgaben"
+
+msgctxt "#32510"
+msgid "All episodes"
+msgstr "Alle Folgen"
+
+msgctxt "#32511"
+msgid "to the tile"
+msgstr "zur Kachel"
+
+msgctxt "#32512"
+msgid "{n} min left"
+msgstr "noch {n} Min."
+
+msgctxt "#32513"
+msgid "{episode} airs {date}"
+msgstr "{episode} läuft am {date}"
+
+msgctxt "#32514"
+msgid "{n} more waiting in season {season}"
+msgstr "{n} weitere warten in Staffel {season}"
+
+msgctxt "#32515"
+msgid "1 more waiting in season {season}"
+msgstr "1 weitere wartet in Staffel {season}"
+
+msgctxt "#32516"
+msgid "Search your library"
+msgstr "Bibliothek durchsuchen"
+
+msgctxt "#32517"
+msgid "Films, shows, episodes, music, people"
+msgstr "Filme, Serien, Folgen, Musik, Personen"
+
+msgctxt "#32518"
+msgid "You're on {episode}"
+msgstr "Du bist bei {episode}"
+
+msgctxt "#32519"
+msgid "Last search:"
+msgstr "Letzte Suche:"
+
+msgctxt "#32520"
+msgid "Also search"
+msgstr "Auch suchen"
+
+msgctxt "#32521"
+msgid "TMDb, not in the library"
+msgstr "TMDb, nicht in der Bibliothek"
+
+msgctxt "#32522"
+msgid "People"
+msgstr "Personen"
+
+msgctxt "#32523"
+msgid "Online"
+msgstr "Online"
+
+msgctxt "#32524"
+msgid "Next 7 days"
+msgstr "Nächste 7 Tage"
+
+msgctxt "#32525"
+msgid "Shows you watch"
+msgstr "Serien, die du schaust"
+
+msgctxt "#32526"
+msgid "View settings"
+msgstr "Ansichtseinstellungen"
+
+msgctxt "#32527"
+msgid "Background"
+msgstr "Hintergrund"
+
+msgctxt "#32528"
+msgid "Nothing out"
+msgstr "Nichts erscheint"
+
+msgctxt "#32529"
+msgid "{n} this week"
+msgstr "{n} diese Woche"
+
+msgctxt "#32530"
+msgid "1 episode"
+msgstr "1 Folge"
+
+msgctxt "#32531"
+msgid "{n} episodes"
+msgstr "{n} Folgen"
+
+msgctxt "#32532"
+msgid "1 film"
+msgstr "1 Film"
+
+msgctxt "#32533"
+msgid "{n} films"
+msgstr "{n} Filme"
+
+msgctxt "#32534"
+msgid "Week: seven days side by side. Day: one day at a time."
+msgstr "Woche: sieben Tage nebeneinander. Tag: ein Tag nach dem anderen."
+
+msgctxt "#32535"
+msgid "Episodes, films or both."
+msgstr "Folgen, Filme oder beides."
+
+msgctxt "#32536"
+msgid "Only the episodes of shows you have watched before."
+msgstr "Nur Folgen von Serien, die du schon geschaut hast."
+
+msgctxt "#32537"
+msgid "Colors: the colours of the selected title's artwork. Neutral: plain. Fanart: the picture itself."
+msgstr "Farben: die Farben des Bildes des gewählten Titels. Neutral: schlicht. Fanart: das Bild selbst."
+
+msgctxt "#32538"
+msgid "The first day of a week. Today: always the next seven days."
+msgstr "Der erste Tag einer Woche. Heute: immer die nächsten sieben Tage."
+
+msgctxt "#32539"
+msgid "This week"
+msgstr "Diese Woche"
+
+msgctxt "#32540"
+msgid "Next week"
+msgstr "Nächste Woche"
+
+msgctxt "#32541"
+msgid "{n} in progress"
+msgstr "{n} angefangen"
+
+msgctxt "#32542"
+msgid "{n} unwatched"
+msgstr "{n} ungesehen"
+
+msgctxt "#32543"
+msgid "All watched"
+msgstr "Alles gesehen"
+
+msgctxt "#32544"
+msgid "Episode combined"
+msgstr "Folgen kombiniert"
+
+msgctxt "#32545"
+msgid "Season buttons, the episodes in a card and the one in focus beside it"
+msgstr "Staffel-Knöpfe, die Folgen in einer Karte und die gewählte daneben"
+
+msgctxt "#32546"
+msgid "{time} of {total}"
+msgstr "{time} von {total}"
+
+msgctxt "#32547"
+msgid "Frost"
+msgstr "Frost"
+
+msgctxt "#32548"
+msgid "Raised"
+msgstr "Erhaben"
+
+msgctxt "#32549"
+msgid "Clear"
+msgstr "Klar"
+
+msgctxt "#32550"
+msgid "Library view theme"
+msgstr "Thema der Bibliothek"
+
+msgctxt "#32551"
+msgid "The glass of the frosted panels: library views, Home panels and the Home bar. Menus and dialogs follow Menu theme. Frost: lighter. Raised: lit rim, deep shadow. Clear: thin, no blur. Dark: darker."
+msgstr "Das Glas der Milchglasflächen: Bibliotheksansichten, Startseiten-Felder und die Startleiste. Menüs und Dialoge folgen dem Menüthema. Frost: heller. Erhaben: heller Rand, tiefer Schatten. Klar: dünn. Dunkel: dunkler."
+
+msgctxt "#32552"
+msgid "Earlier days"
+msgstr "Frühere Tage"
+
+msgctxt "#32553"
+msgid "Also show what aired on the days of this week before today (episodes in your library)."
+msgstr "Auch zeigen, was an den Tagen dieser Woche vor heute lief (Folgen in der Bibliothek)."
+
+msgctxt "#32554"
+msgid "Menu names in capitals"
+msgstr "Menünamen in Großbuchstaben"
+
+msgctxt "#32555"
+msgid "Fused Glass: the Home menu names in capital letters instead of sentence case."
+msgstr "Fused Glass: die Namen im Hauptmenü in Großbuchstaben."
+
+msgctxt "#32556"
+msgid "In cinemas now"
+msgstr "Jetzt im Kino"
+
+msgctxt "#32557"
+msgid "Airing today"
+msgstr "Läuft heute"
+
+msgctxt "#32558"
+msgid "Airing tomorrow"
+msgstr "Läuft morgen"
+
+msgctxt "#32559"
+msgid "Save lyrics next to the song"
+msgstr "Songtexte neben dem Lied speichern"
+
+msgctxt "#32560"
+msgid "Lyrics that CU LRC Lyrics finds are also saved as a file next to the song (.lrc or .txt), so they are there next time and for other players. The music folder must be writable."
+msgstr "Songtexte, die CU LRC Lyrics findet, werden auch als Datei neben dem Lied gespeichert (.lrc oder .txt), damit sie beim nächsten Mal und für andere Player da sind. Der Musikordner muss beschreibbar sein."
+
+msgctxt "#32561"
+msgid "Home spotlight: recently watched sets"
+msgstr "Spotlight: zuletzt gesehene Sammlungen"
+
+msgctxt "#32562"
+msgid "The spotlight of a Home item that shows movie sets (Sets, for example) lists the sets you watched last, newest first. Off: all sets, as its spotlight settings say."
+msgstr "Der Spotlight eines Startseiten-Eintrags mit Filmsammlungen (etwa Sammlungen) zeigt die zuletzt gesehenen Sammlungen, die neueste zuerst. Aus: alle Sammlungen wie in seinen Spotlight-Einstellungen."
+
+msgctxt "#32563"
+msgid "Progress rings"
+msgstr "Fortschrittsringe"
+
+msgctxt "#32564"
+msgid "Season list combined 1"
+msgstr "Staffelliste kombiniert 1"
+
+msgctxt "#32565"
+msgid "Seasons, episodes, facts"
+msgstr "Staffeln, Folgen, Infos"
+
+msgctxt "#32566"
+msgid "Season list combined 2"
+msgstr "Staffelliste kombiniert 2"
+
+msgctxt "#32567"
+msgid "Poster with episode stills"
+msgstr "Poster mit Folgenbildern"
+
+msgctxt "#32568"
+msgid "Smooth song progress"
+msgstr "Flüssiger Liedfortschritt"
+
+msgctxt "#32569"
+msgid "Fused Glass Now playing: the song's progress behind the waveform glides instead of jumping 1 % at a time. Uses a little more processor time while the screen is open."
+msgstr "Aktuelle Wiedergabe in Fused Glass: Der Fortschritt des Lieds hinter der Wellenform gleitet, statt in 1-%-Schritten zu springen. Braucht etwas mehr Prozessorzeit, solange die Ansicht offen ist."
+
+msgctxt "#32570"
+msgid "Progress bar updates per second"
+msgstr "Balkenaktualisierungen pro Sekunde"
+
+msgctxt "#32571"
+msgid "Screen"
+msgstr "Bildschirm"
+
+msgctxt "#32572"
+msgid "How often a second Smooth song progress moves the fill. Screen: as often as Kodi draws the screen. Fewer updates use less processor time; on a long song even 10 looks smooth."
+msgstr "Wie oft pro Sekunde der flüssige Liedfortschritt die Füllung bewegt. Bildschirm: so oft, wie Kodi das Bild zeichnet. Weniger Aktualisierungen brauchen weniger Prozessorzeit; bei langen Liedern wirkt schon 10 flüssig."
+
+msgctxt "#32590"
+msgid "Season poster wall combined"
+msgstr "Staffelposter-Wand kombiniert"
+
+msgctxt "#32573"
+msgid "Dark"
+msgstr "Dunkel"
+
+msgctxt "#32574"
+msgid "Dark: dark panels. Clear: thin glass that shows more of the backdrop. Frost: light frosted glass over the blurred backdrop. Fused Glass: the System screen's menus, full screen with thin rules and a white bar on the row in focus; Kodi starts again."
+msgstr "Dunkel: dunkle Flächen. Klar: dünnes Glas, das mehr vom Hintergrund zeigt. Frost: helles Milchglas über dem unscharfen Hintergrund. Fused Glass: die Menüs des System-Bildschirms, bildschirmfüllend mit feinen Linien und einem weißen Balken an der fokussierten Zeile; Kodi startet neu."
+
+msgctxt "#32575"
+msgid "Home bar"
+msgstr "Startleiste"
+
+msgctxt "#32576"
+msgid "Bar"
+msgstr "Leiste"
+
+msgctxt "#32577"
+msgid "Keys"
+msgstr "Tasten"
+
+msgctxt "#32578"
+msgid "Shelf"
+msgstr "Band"
+
+msgctxt "#32579"
+msgid "Frosted glass behind the Home menu, in the material chosen under Look. Bar: one capsule. Keys: glass under each icon. Shelf: a band across the screen."
+msgstr "Milchglas hinter dem Hauptmenü im unter Aussehen gewählten Material. Leiste: eine Kapsel. Tasten: Glas unter jedem Symbol. Band: über die ganze Breite."
+
+msgctxt "#32591"
+msgid "Add item"
+msgstr "Eintrag hinzufügen"
+
+msgctxt "#32592"
+msgid "Puts a new item at the end of the menu: one of the skin's items that is not on it yet, or a custom item with its own path, Spotlight and lists.[CR][CR]OK opens the list of types."
+msgstr "Setzt einen neuen Eintrag ans Ende des Menüs: einen Eintrag des Skins, der noch fehlt, oder einen eigenen Eintrag mit eigenem Pfad, Spotlight und Listen.[CR][CR]OK öffnet die Liste der Arten."
+
+msgctxt "#32593"
+msgid "Reload EPG"
+msgstr "EPG neu laden"
+
+msgctxt "#32594"
+msgid "Aeon accent colour"
+msgstr "Aeon-Akzentfarbe"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "Gold"
+
+msgctxt "#32596"
+msgid "Slate"
+msgstr "Schiefer"
+
+msgctxt "#32597"
+msgid "Teal"
+msgstr "Petrol"
+
+msgctxt "#32598"
+msgid "Moss"
+msgstr "Moos"
+
+msgctxt "#32599"
+msgid "Side"
+msgstr "Seitlich"
+
+msgctxt "#32600"
+msgid "Vignette shape"
+msgstr "Vignettenform"
+
+msgctxt "#32601"
+msgid "Round"
+msgstr "Rund"
+
+msgctxt "#32602"
+msgid "Round darkens the edges all round. Side darkens the screen from the left and fades out to the right, under the Home text. The row above sets how strong it is."
+msgstr "Rund dunkelt die Ränder rundum ab. Seitlich dunkelt den Bildschirm von links ab und läuft nach rechts aus, unter dem Text der Startseite. Die Zeile darüber legt die Stärke fest."
+
+msgctxt "#32603"
+msgid "Heavy"
+msgstr "Intensiv"
+
+msgctxt "#32604"
+msgid "All themes"
+msgstr "Alle Themen"
+
+msgctxt "#32605"
+msgid "Next episode"
+msgstr "Nächste Folge"
+
+msgctxt "#32606"
+msgid "{t} left"
+msgstr "noch {t}"
+
+msgctxt "#32607"
+msgid "Home menu underline"
+msgstr "Unterstrich im Home-Menü"
+
+msgctxt "#32608"
+msgid "Library fanart look"
+msgstr "Fanart-Look der Bibliothek"
+
+msgctxt "#32609"
+msgid "Dimmed"
+msgstr "Abgedunkelt"
+
+msgctxt "#32610"
+msgid "Ratings shown as"
+msgstr "Bewertungen anzeigen als"
+
+msgctxt "#32611"
+msgid "Text"
+msgstr "Text"
+
+msgctxt "#32612"
+msgid "The accent line under the focused Home menu item, as in Fused Glass."
+msgstr "Die Akzentlinie unter dem gewählten Eintrag im Home-Menü, wie in Fused Glass."
+
+msgctxt "#32613"
+msgid "The fanart behind the library views: dimmed under a dark veil, or light with a frosted colour tint."
+msgstr "Das Fanart hinter den Bibliotheksansichten: abgedunkelt unter einem dunklen Schleier oder hell mit einem frostigen Farbton."
+
+msgctxt "#32614"
+msgid "Show the rating providers as their icons or as their names."
+msgstr "Bewertungsanbieter als ihre Symbole oder als ihre Namen anzeigen."
+
+msgctxt "#32615"
+msgid "Media info from sidecars"
+msgstr "Medieninfo aus Begleitdateien"
+
+msgctxt "#32616"
+msgid "Off: only what Kodi's library knows (the chips above). On: also the source (UHD Remux, Blu-ray, WEB-DL, DVD...), the edition, the audio and subtitle tracks and the chapters, read from a mediainfo sidecar next to each video file: <name>.cmm_mediainfo.xml from Curator Media Manager (used first) or <name>-mediainfo.xml from tinyMediaManager. Without sidecars nothing extra shows."
+msgstr "Aus: nur was Kodis Bibliothek weiß (die Chips oben). Ein: auch die Quelle (UHD Remux, Blu-ray, WEB-DL, DVD...), die Fassung, Ton- und Untertitelspuren und Kapitel aus einer Mediainfo-Datei neben jeder Videodatei: <Name>.cmm_mediainfo.xml von Curator Media Manager (zuerst) oder <Name>-mediainfo.xml von tinyMediaManager. Ohne diese Dateien erscheint nichts zusätzlich."
+
+msgctxt "#32617"
+msgid "Commentary"
+msgstr "Kommentar"
+
+msgctxt "#32618"
+msgid "Chapters"
+msgstr "Kapitel"
+
+msgctxt "#32619"
+msgid "In cinemas now: films from"
+msgstr "Jetzt im Kino: Filme aus"
+
+msgctxt "#32620"
+msgid "Everywhere"
+msgstr "Überall"
+
+msgctxt "#32621"
+msgid "In cinemas now (the screensaver and the widgets) is what TMDb Helper's country has in cinemas: the United States unless TMDb Helper's language is set to another country. Pick your country to keep only films made in the United States or there; Everywhere keeps them all."
+msgstr "Jetzt im Kino (Bildschirmschoner und Widgets) zeigt, was im Land von TMDb Helper im Kino läuft: in den USA, sofern die Sprache von TMDb Helper nicht auf ein anderes Land gestellt ist. Wählen Sie Ihr Land, um nur Filme aus den USA oder von dort zu behalten; Überall behält alle."
+
+msgctxt "#32622"
+msgid "Getting Home ready"
+msgstr "Startseite wird vorbereitet"
+
+msgctxt "#32623"
+msgid "Home rows"
+msgstr "Zeilen der Startseite"
+
+msgctxt "#32624"
+msgid "OK or Back skips"
+msgstr "OK oder Zurück überspringt"
+
+msgctxt "#32625"
+msgid "Live TV guide"
+msgstr "TV-Programm"
+
+msgctxt "#32626"
+msgid "Tint"
+msgstr "Tönung"
+
+msgctxt "#32627"
+msgid "Picture"
+msgstr "Bild"
+
+msgctxt "#32628"
+msgid "blurred"
+msgstr "unscharf"
+
+msgctxt "#32629"
+msgid "Newest folder"
+msgstr "Neuester Ordner"
+
+msgctxt "#32630"
+msgid "Folders, newest first"
+msgstr "Ordner, neueste zuerst"
+
+msgctxt "#32631"
+msgid "photos"
+msgstr "Fotos"
+
+msgctxt "#32632"
+msgid "photo"
+msgstr "Foto"
+
+msgctxt "#32633"
+msgid "videos"
+msgstr "Videos"
+
+msgctxt "#32634"
+msgid "video"
+msgstr "Video"
+
+msgctxt "#32635"
+msgid "OK plays the folder as a slideshow · Down for the folders"
+msgstr "OK zeigt den Ordner als Diashow · Runter für die Ordner"
+
+msgctxt "#32636"
+msgid "All pictures"
+msgstr "Alle Bilder"
+
+msgctxt "#32637"
+msgid "sources"
+msgstr "Quellen"
+
+msgctxt "#32638"
+msgid "source"
+msgstr "Quelle"
+
+msgctxt "#32639"
+msgid "No pictures yet"
+msgstr "Noch keine Bilder"
+
+msgctxt "#32640"
+msgid "Add a folder of photos as a picture source in the Pictures window. OK opens it."
+msgstr "Füge im Fenster Bilder einen Ordner mit Fotos als Bildquelle hinzu. OK öffnet es."
+
+msgctxt "#32641"
+msgid "Photos"
+msgstr "Fotos"
+
+msgctxt "#32642"
+msgid "OK opens the photo · Up for sort, slideshow and view"
+msgstr "OK öffnet das Foto · Hoch für Sortierung, Diashow und Ansicht"
+
+msgctxt "#32643"
+msgid "View"
+msgstr "Ansicht"
+
+msgctxt "#32644"
+msgid "waits until loading is done"
+msgstr "wartet, bis alles geladen ist"
+
+msgctxt "#32645"
+msgid "Media info chips"
+msgstr "Medieninfo-Chips"
+
+msgctxt "#32646"
+msgid "Which chips the information page, Home and the library panels show. The sidecar chips need Media info from sidecars."
+msgstr "Welche Chips die Infoseite, Home und die Bibliotheksfelder zeigen. Die Sidecar-Chips brauchen Medieninfo aus Sidecars."
+
+msgctxt "#32647"
+msgid "Resolution"
+msgstr "Auflösung"
+
+msgctxt "#32648"
+msgid "Aspect ratio"
+msgstr "Seitenverhältnis"
+
+msgctxt "#32649"
+msgid "HDR and Dolby Vision"
+msgstr "HDR und Dolby Vision"
+
+msgctxt "#32650"
+msgid "Dolby Vision profile"
+msgstr "Dolby-Vision-Profil"
+
+msgctxt "#32651"
+msgid "Audio format"
+msgstr "Tonformat"
+
+msgctxt "#32652"
+msgid "Audio channels"
+msgstr "Tonkanäle"
+
+msgctxt "#32653"
+msgid "Source format (sidecar)"
+msgstr "Quellformat (Sidecar)"
+
+msgctxt "#32654"
+msgid "Container (sidecar)"
+msgstr "Container (Sidecar)"
+
+msgctxt "#32655"
+msgid "Bit rate (sidecar)"
+msgstr "Bitrate (Sidecar)"
+
+msgctxt "#32656"
+msgid "File size (sidecar)"
+msgstr "Dateigröße (Sidecar)"
+
+msgctxt "#32657"
+msgid "Subtitles (sidecar)"
+msgstr "Untertitel (Sidecar)"
+
+msgctxt "#32658"
+msgid "Chapters (sidecar)"
+msgstr "Kapitel (Sidecar)"
+
+msgctxt "#32659"
+msgid "Commentary (sidecar)"
+msgstr "Kommentar (Sidecar)"
+
+msgctxt "#32660"
+msgid "3D (sidecar)"
+msgstr "3D (Sidecar)"
+
+msgctxt "#32661"
+msgid "chapters"
+msgstr "Kapitel"
+
+msgctxt "#32662"
+msgid "commentary"
+msgstr "Kommentar"
+
+msgctxt "#32663"
+msgid "Combine multi-episode files into a single row in library"
+msgstr "Dateien mit mehreren Folgen in der Bibliothek zu einer Zeile zusammenfassen"
+
+msgctxt "#32664"
+msgid "Episodes stored in one video file (a double episode, three cartoons) show as one row: 1–2, one title, the file's running time. The season's list then comes from Aeon Fuse Helper."
+msgstr "Folgen in einer Videodatei (eine Doppelfolge, drei Cartoons) erscheinen als eine Zeile: 1–2, ein Titel, die Laufzeit der Datei. Die Liste der Staffel kommt dann von Aeon Fuse Helper."
+
+msgctxt "#32665"
+msgid "Video source (sidecar)"
+msgstr "Videoquelle (Sidecar)"
+
+msgctxt "#32666"
+msgid "Video codec (sidecar)"
+msgstr "Videocodec (Sidecar)"
+
+msgctxt "#32667"
+msgid "Version (sidecar)"
+msgstr "Fassung (Sidecar)"
+
+msgctxt "#32668"
+msgid "Panel shadow"
+msgstr "Panelschatten"
+
+msgctxt "#32669"
+msgid "How high the glass panels seem to float: their shadow grows and drops. Mild: close to the page. Medium: as before. Strong: higher. Heavy: highest."
+msgstr "Wie hoch die Glasflächen zu schweben scheinen: ihr Schatten wird größer und tiefer. Mild: nah an der Seite. Mittel: wie bisher. Stark: höher. Kräftig: am höchsten."
+
+msgctxt "#32670"
+msgid "Mild"
+msgstr "Mild"
+
+msgctxt "#32671"
+msgid "Heavy"
+msgstr "Schwer"
+
+msgctxt "#32672"
+msgid "Expert settings"
+msgstr "Experteneinstellungen"
+
+msgctxt "#32673"
+msgid "Shows the rows below for fine-tuning the glass panels and the fanart behind the library views."
+msgstr "Zeigt die Zeilen darunter zur Feinabstimmung der Glasflächen und des Fanarts hinter den Bibliotheksansichten."
+
+msgctxt "#32674"
+msgid "Panel opacity"
+msgstr "Deckkraft der Flächen"
+
+msgctxt "#32675"
+msgid "How solid the glass panels are, around the Skin style's own value. -2: most see-through. +2: most solid."
+msgstr "Wie dicht die Glasflächen sind, um den Wert des Skin-Stils herum. -2: am durchsichtigsten. +2: am dichtesten."
+
+msgctxt "#32676"
+msgid "Panel blur"
+msgstr "Unschärfe der Flächen"
+
+msgctxt "#32677"
+msgid "How strongly the panels blur the picture behind them. Off: no blur."
+msgstr "Wie stark die Flächen das Bild dahinter verwischen. Aus: keine Unschärfe."
+
+msgctxt "#32678"
+msgid "Panel tint"
+msgstr "Tönung der Flächen"
+
+msgctxt "#32679"
+msgid "The colour of the panels' glass, around the Skin style's own. -2: darkest. +2: lightest frost."
+msgstr "Die Farbe des Glases, um die des Skin-Stils herum. -2: am dunkelsten. +2: hellster Frost."
+
+msgctxt "#32680"
+msgid "Library fanart opacity"
+msgstr "Fanart-Deckkraft der Bibliothek"
+
+msgctxt "#32681"
+msgid "How much of the fanart behind the library views shows, on top of Backdrop strength. -2: faintest. +2: strongest."
+msgstr "Wie viel vom Fanart hinter den Bibliotheksansichten zu sehen ist, zusätzlich zur Hintergrundstärke. -2: am schwächsten. +2: am stärksten."
+
+msgctxt "#32682"
+msgid "Library fanart blur"
+msgstr "Fanart-Unschärfe der Bibliothek"
+
+msgctxt "#32683"
+msgid "Blurs the fanart behind the library views: -2 a little, +2 the most; 0 is the default. Off: sharp."
+msgstr "Zeichnet den Fanart hinter den Bibliotheksansichten weich: -2 ein wenig, +2 am stärksten; 0 ist der Standard. Aus: scharf."
+
+msgctxt "#32684"
+msgid "Library fanart tint"
+msgstr "Fanart-Tönung der Bibliothek"
+
+msgctxt "#32685"
+msgid "The colour tint of the Frosted fanart look. Off: no tint."
+msgstr "Der Farbton des Fanart-Looks Frost. Aus: keine Tönung."
+
+msgctxt "#32686"
+msgid "Reset expert settings"
+msgstr "Experteneinstellungen zurücksetzen"
+
+msgctxt "#32687"
+msgid "Puts every expert setting back to its default."
+msgstr "Setzt alle Experteneinstellungen auf ihren Standard zurück."
+
+msgctxt "#32688"
+msgid "Expert settings are back to their defaults."
+msgstr "Die Experteneinstellungen sind wieder auf Standard."
+
+msgctxt "#32689"
+msgid "Menu background"
+msgstr "Menühintergrund"
+
+msgctxt "#32690"
+msgid "Screen"
+msgstr "Bildschirm"
+
+msgctxt "#32691"
+msgid "Menus and dialogs in the Fused Glass style. Fanart: the item's fanart behind them. Screen: the screen they opened on, dimmed."
+msgstr "Menüs und Dialoge im Fused-Glass-Stil. Fanart: das Fanart des Eintrags dahinter. Bildschirm: der Bildschirm, auf dem sie geöffnet wurden, abgedunkelt."
+
+msgctxt "#32692"
+msgid "OK runs it  ·  Back closes"
+msgstr "OK führt aus  ·  Zurück schließt"
+
+msgctxt "#32693"
+msgid "OK chooses  ·  Back closes"
+msgstr "OK wählt  ·  Zurück schließt"
+
+msgctxt "#32694"
+msgid "Its own library views and menus: rounded glass cards with soft shadows float over the artwork, in Dark, Clear, Frost or the Fused Glass style."
+msgstr "Eigene Bibliotheksansichten und Menüs: abgerundete Glaskarten mit weichen Schatten schweben über den Bildern, im Stil Dunkel, Klar, Frost oder Fused Glass."
+
+msgctxt "#32695"
+msgid "Use the defaults"
+msgstr "Standardwerte verwenden"
+
+msgctxt "#32696"
+msgid "The chosen theme as it comes, at once. Everything can be changed later in Skin settings."
+msgstr "Das gewählte Theme, wie es ist, sofort. Alles lässt sich später in den Skin-Einstellungen ändern."
+
+msgctxt "#32697"
+msgid "Customise"
+msgstr "Anpassen"
+
+msgctxt "#32698"
+msgid "Go through the look, libraries, Home and backgrounds page by page. Every row shows a preview of its choice."
+msgstr "Aussehen, Bibliotheken, Startseite und Hintergründe Seite für Seite durchgehen. Jede Zeile zeigt eine Vorschau ihrer Wahl."
+
+msgctxt "#32699"
+msgid "Keep my current settings"
+msgstr "Aktuelle Einstellungen behalten"
+
+msgctxt "#32700"
+msgid "Leave every setting as it is: only the theme you picked changes."
+msgstr "Alle Einstellungen bleiben, wie sie sind: nur das gewählte Theme ändert sich."
+
+msgctxt "#32701"
+msgid "Aeon with glass menus: the same layout and library views as Aeon, with see-through glass menus and dialogs instead of solid ones. No palettes."
+msgstr "Aeon mit Glasmenüs: dasselbe Layout und dieselben Bibliotheksansichten wie Aeon, mit durchscheinenden Glasmenüs und -dialogen statt fester. Keine Paletten."
+
+msgctxt "#32702"
+msgid "The Planner of upcoming episodes and films, online rows and extra ratings."
+msgstr "Der Planer mit kommenden Folgen und Filmen, Online-Reihen und weiteren Bewertungen."
+
+msgctxt "#32703"
+msgid "The Next up row: the next episode of every show you are watching."
+msgstr "Die Reihe „Als Nächstes“: die nächste Folge jeder Serie, die du schaust."
+
+msgctxt "#32704"
+msgid "Lyrics on the Now playing screen, line by line or word by word."
+msgstr "Songtexte auf dem Bildschirm „Läuft gerade“, Zeile für Zeile oder Wort für Wort."
+
+msgctxt "#32705"
+msgid "Artist pictures behind the Now playing screen."
+msgstr "Künstlerbilder hinter dem Bildschirm „Läuft gerade“."
+
+msgctxt "#32706"
+msgid "Box colours taken from the artwork."
+msgstr "Boxfarben aus den Bildern."
+
+msgctxt "#32707"
+msgid "Skip intro, recap and credits buttons in the player."
+msgstr "Schaltflächen zum Überspringen von Intro, Rückblick und Abspann im Player."
+
+msgctxt "#32708"
+msgid "Thumbnail previews on the seek bar."
+msgstr "Vorschaubilder auf der Suchleiste."
+
+msgctxt "#32709"
+msgid "Studio and network logos in the libraries and on the information page."
+msgstr "Logos von Studios und Sendern in den Bibliotheken und auf der Infoseite."
+
+msgctxt "#32710"
+msgid "Record label logos for albums."
+msgstr "Logos der Plattenlabels für Alben."
+
+msgctxt "#32711"
+msgid "Language flags in the video information."
+msgstr "Sprachflaggen in den Videoinformationen."
+
+msgctxt "#32712"
+msgid "The skin's own screensaver: library pictures with a slow zoom and slide, and what is playing."
+msgstr "Der eigene Bildschirmschoner des Skins: Bilder aus der Bibliothek mit langsamem Zoom und Schwenk und was gerade läuft."
+
+msgctxt "#32713"
+msgid "Aeon: solid panels in a palette you pick. Aeon Glass: the same Aeon layout and views with glass menus, no palettes. Fused Glass: its own library views, rounded glass cards over the artwork."
+msgstr "Aeon: feste Flächen in einer Palette deiner Wahl. Aeon Glass: dasselbe Aeon-Layout und dieselben Ansichten mit Glasmenüs, ohne Paletten. Fused Glass: eigene Bibliotheksansichten, abgerundete Glaskarten über den Bildern."
+
+msgctxt "#32714"
+msgid "Its own views, glass cards"
+msgstr "Eigene Ansichten, Glaskarten"
+
+msgctxt "#32715"
+msgid "Take the theme as it comes, or go through its look step by step. Everything can be changed later in Skin settings."
+msgstr "Das Theme so nehmen, wie es ist, oder sein Aussehen Schritt für Schritt einstellen. Alles lässt sich später in den Skin-Einstellungen ändern."
+
+msgctxt "#32716"
+msgid "How the settings strip of the library views shows: over the view (Overlay) or always beside it (Permanent)."
+msgstr "Wie die Einstellungsleiste der Bibliotheksansichten erscheint: über der Ansicht (Überlagernd) oder immer daneben (Dauerhaft)."
+
+msgctxt "#32717"
+msgid "How much the edges of the Home screen darken behind the menu and the text."
+msgstr "Wie stark die Ränder der Startseite hinter dem Menü und dem Text abgedunkelt werden."
+
+msgctxt "#32718"
+msgid "The colour of the clock box and the corner boxes with the Aeon palette."
+msgstr "Die Farbe der Uhrbox und der Eckboxen mit der Aeon-Palette."
+
+msgctxt "#32719"
+msgid "Optional add-ons that give the skin more to show. Install the ones you want; the rest can wait."
+msgstr "Optionale Add-ons, mit denen der Skin mehr zeigen kann. Installiere die gewünschten; der Rest kann warten."
+
+msgctxt "#32720"
+msgid "The disc art spinning beside the poster on the player controls: for videos, for music, for both, or off."
+msgstr "Das sich drehende Disc-Bild neben dem Poster bei den Player-Bedienelementen: für Videos, für Musik, für beides oder aus."
+
+msgctxt "#32721"
+msgid "What the text under a title shows in every library view: the plot, the tagline (when there is one) or both."
+msgstr "Was der Text unter einem Titel in allen Bibliotheksansichten zeigt: die Handlung, den Slogan (falls vorhanden) oder beides."
+
+msgctxt "#32722"
+msgid "Libraries"
+msgstr "Bibliotheken"
+
+msgctxt "#32723"
+msgid "Information"
+msgstr "Informationen"
+
+msgctxt "#32724"
+msgid "Screensaver & backdrops"
+msgstr "Bildschirmschoner & Hintergründe"
+
+msgctxt "#32725"
+msgid "Export skin settings"
+msgstr "Skin-Einstellungen exportieren"
+
+msgctxt "#32726"
+msgid "Import skin settings"
+msgstr "Skin-Einstellungen importieren"
+
+msgctxt "#32727"
+msgid "Save"
+msgstr "Speichern"
+
+msgctxt "#32728"
+msgid "Load"
+msgstr "Laden"
+
+msgctxt "#32729"
+msgid "Saves every Aeon Fuse setting, with the theme, palette and fonts, to a file in a folder you pick."
+msgstr "Speichert alle Aeon-Fuse-Einstellungen mit Theme, Palette und Schriften in einer Datei in einem Ordner deiner Wahl."
+
+msgctxt "#32730"
+msgid "Loads a file saved with Export skin settings. Your current skin settings are replaced."
+msgstr "Lädt eine mit „Skin-Einstellungen exportieren“ gespeicherte Datei. Deine aktuellen Skin-Einstellungen werden ersetzt."
+
+msgctxt "#32731"
+msgid "Folder for the settings file"
+msgstr "Ordner für die Einstellungsdatei"
+
+msgctxt "#32732"
+msgid "Settings file to load"
+msgstr "Zu ladende Einstellungsdatei"
+
+msgctxt "#32733"
+msgid "Saved: %s"
+msgstr "Gespeichert: %s"
+
+msgctxt "#32734"
+msgid "Load the settings saved on %s? Your current skin settings are replaced."
+msgstr "Die am %s gespeicherten Einstellungen laden? Deine aktuellen Skin-Einstellungen werden ersetzt."
+
+msgctxt "#32735"
+msgid "This file does not hold Aeon Fuse settings."
+msgstr "Diese Datei enthält keine Aeon-Fuse-Einstellungen."
+
+msgctxt "#32736"
+msgid "The file could not be written."
+msgstr "Die Datei konnte nicht geschrieben werden."
+
+msgctxt "#32737"
+msgid "Kodi restarts to apply them."
+msgstr "Kodi startet neu, um sie anzuwenden."
+
+msgctxt "#32738"
+msgid "The skin reloads; restart Kodi afterwards so every setting is read again."
+msgstr "Der Skin wird neu geladen; starte Kodi danach neu, damit alle Einstellungen neu gelesen werden."
+
+msgctxt "#32739"
+msgid "These settings are already in use."
+msgstr "Diese Einstellungen sind bereits aktiv."
+
+msgctxt "#32740"
+msgid "Soft"
+msgstr "Sanft"
+
+msgctxt "#32741"
+msgid "Home gradient"
+msgstr "Verlauf auf der Startseite"
+
+msgctxt "#32742"
+msgid "Beside the clock"
+msgstr "Neben der Uhr"
+
+msgctxt "#32743"
+msgid "Left corner"
+msgstr "Linke Ecke"
+
+msgctxt "#32744"
+msgid "The fade from the bottom of the screen up to the Home menu: off, soft (the look so far) or strong."
+msgstr "Der Verlauf vom unteren Bildschirmrand bis zum Hauptmenü: aus, sanft (wie bisher) oder stark."
+
+msgctxt "#32745"
+msgid "Where the Now playing capsule sits on Home while music plays: beside the clock or in the lower left corner."
+msgstr "Wo die Kapsel „Läuft gerade“ auf der Startseite sitzt, während Musik läuft: neben der Uhr oder unten links."
+
+msgctxt "#32746"
+msgid "How the skip button sits on the player controls: a white tab on their top edge, or a glass capsule above them."
+msgstr "Wie die Überspringen-Taste an der Player-Steuerung sitzt: als weißer Reiter an ihrer Oberkante oder als Glaskapsel darüber."
+
+msgctxt "#32747"
+msgid "How strongly the picture behind the menus and dialogs is blurred. Off: sharp, as before."
+msgstr "Wie stark das Bild hinter Menüs und Dialogen verschwimmt. Aus: scharf, wie bisher."
+
+msgctxt "#32748"
+msgid "Left / Right: choose an option. OK: set it. Up, Down or Back: keep the one in use."
+msgstr "Links / Rechts: Option wählen. OK: übernehmen. Hoch, Runter oder Zurück: die aktuelle behalten."
+
+msgctxt "#32749"
+msgid "Start on"
+msgstr "Starten auf"
+
+msgctxt "#32750"
+msgid "The Home menu item that has the focus when Kodi starts, once the splash has gone."
+msgstr "Der Eintrag des Hauptmenüs, der beim Start von Kodi den Fokus hat, sobald der Startbildschirm weg ist."
+
+msgctxt "#32751"
+msgid "Ratings shown in"
+msgstr "Bewertungen anzeigen in"
+
+msgctxt "#32752"
+msgid "Media info shown in"
+msgstr "Medieninfos anzeigen in"
+
+msgctxt "#32753"
+msgid "Library views"
+msgstr "Bibliotheksansichten"
+
+msgctxt "#32754"
+msgid "Information pages"
+msgstr "Informationsseiten"
+
+msgctxt "#32755"
+msgid "Widget & Spotlight screens"
+msgstr "Widget- und Spotlight-Bildschirme"
+
+msgctxt "#32756"
+msgid "Home spotlights"
+msgstr "Spotlights im Hauptmenü"
+
+msgctxt "#32757"
+msgid "Player info"
+msgstr "Player-Infos"
+
+msgctxt "#32758"
+msgid "Screensaver"
+msgstr "Bildschirmschoner"
+
+msgctxt "#32759"
+msgid "Live TV"
+msgstr "Live-TV"
+
+msgctxt "#32760"
+msgid "Where the ratings (IMDb, TMDb, Rotten Tomatoes, Trakt) appear. OK opens the list: tick the places."
+msgstr "Wo die Bewertungen (IMDb, TMDb, Rotten Tomatoes, Trakt) erscheinen. OK öffnet die Liste: die Orte ankreuzen."
+
+msgctxt "#32761"
+msgid "Where the media info chips (resolution, HDR, audio ...) appear. OK opens the list: tick the places. Which chips: Media info chips."
+msgstr "Wo die Medieninfo-Chips (Auflösung, HDR, Audio ...) erscheinen. OK öffnet die Liste: die Orte ankreuzen. Welche Chips: Medieninfo-Chips."
+
+msgctxt "#32762"
+msgid "Recommended add-ons"
+msgstr "Empfohlene Add-ons"
+
+msgctxt "#32764"
+msgid "Installed"
+msgstr "Installiert"
+
+msgctxt "#32765"
+msgid "Not installed"
+msgstr "Nicht installiert"
+
+msgctxt "#32766"
+msgid "%s needs the %s repository. Install that repository first?"
+msgstr "%s braucht die Quelle %s. Diese Quelle zuerst installieren?"
+
+msgctxt "#32767"
+msgid "White weather icons for the weather forecast."
+msgstr "Weiße Wettersymbole für die Vorhersage."
+
+msgctxt "#32768"
+msgid "The playback info button in the video controls."
+msgstr "Die Taste für Wiedergabeinfos in der Videosteuerung."
+
+msgctxt "#32769"
+msgid "The Inter (Copacetic) font set."
+msgstr "Die Schriftart Inter (Copacetic)."
+
+msgctxt "#32770"
+msgid "The Roboto CJKSC font set for Chinese, Japanese and Korean."
+msgstr "Die Schriftart Roboto CJKSC für Chinesisch, Japanisch und Koreanisch."
+
+msgctxt "#32771"
+msgid "Update and clean on another Kodi"
+msgstr "Auf einem anderen Kodi aktualisieren und bereinigen"
+
+msgctxt "#32772"
+msgid "Address"
+msgstr "Adresse"
+
+msgctxt "#32773"
+msgid "User name"
+msgstr "Benutzername"
+
+msgctxt "#32774"
+msgid "Password"
+msgstr "Passwort"
+
+msgctxt "#32775"
+msgid "Test connection"
+msgstr "Verbindung testen"
+
+msgctxt "#32776"
+msgid "Library update and clean from this skin (Home, the library panel, the context menu) go to another Kodi, a headless one for instance, instead of this one."
+msgstr "Bibliothek aktualisieren und bereinigen aus diesem Skin (Hauptmenü, Bibliotheksleiste, Kontextmenü) geht an ein anderes Kodi, etwa ein Headless-Kodi, statt an dieses."
+
+msgctxt "#32777"
+msgid "The other Kodi's web address and port, for example http://192.168.10.10:8080 (there: Settings > Services > Control > Allow remote control via HTTP)."
+msgstr "Webadresse und Port des anderen Kodi, z. B. http://192.168.10.10:8080 (dort: Einstellungen > Dienste > Steuerung > Fernsteuerung über HTTP erlauben)."
+
+msgctxt "#32778"
+msgid "The web server user name and password of the other Kodi."
+msgstr "Benutzername und Passwort des Webservers des anderen Kodi."
+
+msgctxt "#32779"
+msgid "Asks the other Kodi for its version: checks the address, user name and password."
+msgstr "Fragt das andere Kodi nach seiner Version: prüft Adresse, Benutzername und Passwort."
+
+msgctxt "#32780"
+msgid "Not set"
+msgstr "Nicht gesetzt"
+
+msgctxt "#32781"
+msgid "Library update sent"
+msgstr "Bibliotheksaktualisierung gesendet"
+
+msgctxt "#32782"
+msgid "Library clean sent"
+msgstr "Bibliotheksbereinigung gesendet"
+
+msgctxt "#32783"
+msgid "Could not reach %s: %s"
+msgstr "%s nicht erreichbar: %s"
+
+msgctxt "#32784"
+msgid "%s answers: %s"
+msgstr "%s antwortet: %s"
+
+msgctxt "#32785"
+msgid "Wrong user name or password"
+msgstr "Falscher Benutzername oder falsches Passwort"
+
+msgctxt "#32786"
+msgid "Library update finished"
+msgstr "Bibliotheksaktualisierung fertig"
+
+msgctxt "#32789"
+msgid "Failed"
+msgstr "Fehlgeschlagen"
+
+msgctxt "#32790"
+msgid "Could not install the repository"
+msgstr "Quelle konnte nicht installiert werden"
+
+msgctxt "#32791"
+msgid "Pick the add-ons you want: OK ticks one, Next installs the ticked ones while you go on. The picture shows what each adds. Later: Skin settings > System > Recommended add-ons."
+msgstr "Wähle die Add-ons, die du möchtest: OK hakt eins an, Weiter installiert die angehakten, während du weitermachst. Das Bild zeigt, was jedes hinzufügt. Später: Skin-Einstellungen > System > Empfohlene Add-ons."
+
+msgctxt "#32792"
+msgid "Will be installed"
+msgstr "Wird installiert"
+
+msgctxt "#32793"
+msgid "Installs the ticked add-ons"
+msgstr "Installiert die angehakten Add-ons"
+
+msgctxt "#32794"
+msgid "Installed: %s"
+msgstr "Installiert: %s"
+
+msgctxt "#32795"
+msgid "Delete %s? Its name, path, icon, widgets and submenu are removed; the items below it move up one place."
+msgstr "%s löschen? Name, Pfad, Symbol, Widgets und Untermenü werden entfernt; die Einträge darunter rücken eine Stelle nach oben."
+
+msgctxt "#32796"
+msgid "Custom items only"
+msgstr "Nur eigene Einträge"
+
+msgctxt "#32797"
+msgid "A calm, thin waveform on the Now playing card, drawn in the skin's own box and smoothed so loud passages do not spike. The build for this device is installed."
+msgstr "Eine ruhige, dünne Wellenform auf der Wiedergabe-Karte, im Rahmen des Skins gezeichnet und geglättet, damit laute Stellen nicht ausschlagen. Die Version für dieses Gerät wird installiert."
+
+msgctxt "#32798"
+msgid "More by the artist"
+msgstr "Mehr vom Interpreten"
+
+msgctxt "#32799"
+msgid "Intermission at"
+msgstr "Pause bei"
+
+msgctxt "#32800"
+msgid "Your languages"
+msgstr "Ihre Sprachen"
+
+msgctxt "#32801"
+msgid "All others"
+msgstr "Alle anderen"
+
+msgctxt "#32802"
+msgid "In your library"
+msgstr "In deiner Mediathek"
+
+msgctxt "#32803"
+msgid "Sort and show"
+msgstr "Sortieren und anzeigen"
+
+msgctxt "#32804"
+msgid "Sort by"
+msgstr "Sortieren nach"
+
+msgctxt "#32805"
+msgid "Show only"
+msgstr "Nur anzeigen"
+
+msgctxt "#32806"
+msgid "OK again flips the order"
+msgstr "Erneut OK kehrt die Reihenfolge um"
+
+msgctxt "#32807"
+msgid "Several versions"
+msgstr "Mehrere Versionen"
+
+msgctxt "#32808"
+msgid "Decade"
+msgstr "Jahrzehnt"
+
+msgctxt "#32809"
+msgid "Clear all"
+msgstr "Alle aufheben"
+
+msgctxt "#32810"
+msgid "Never played"
+msgstr "Nie abgespielt"
+
+msgctxt "#32811"
+msgid "Played"
+msgstr "Abgespielt"

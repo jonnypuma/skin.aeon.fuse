@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Palette "Mind" of Aeon Fuse (from the SABnzbd scheme Mind): only the colours that differ from defaults.xml. -->
+<colors>
+    <!-- 0.40.4: palette "Mind" for the menus only: library views keep the Aeon colours (lib_ names of defaults.xml) -->
+    <color name="aeon_white">ffe4d800</color>
+    <color name="aeon_accent">ffe4d800</color>
+    <color name="aeon_onbar">ff21200d</color>
+    <color name="aeon_onbar_cc">cc21200d</color>
+    <color name="aeon_onbar_bb">bb21200d</color>
+    <color name="aeon_onbar_aa">aa21200d</color>
+    <color name="aeon_onbar_99">9921200d</color>
+    <color name="aeon_onaccent">ff21200d</color>
+    <color name="aeon_box">ff5d5501</color>
+    <color name="aeon_sbbar">88e4d800</color>
+    <color name="x_column">26e4d800</color>
+    <color name="x_ground">ff30231c</color>
+    <color name="x_panel">ff1d0e07</color>
+    <color name="x_surface">ff1d0e07</color>
+    <color name="x_raised">ff2a1c16</color>
+    <color name="x_line">ff473c36</color>
+    <color name="x_line2">ff574c47</color>
+    <color name="x_accent">ffe4d800</color>
+    <color name="x_accenttext">ffe4d800</color>
+    <color name="x_onaccent">ff21200d</color>
+    <color name="x_deep">ff1d0e07</color>
+    <color name="x_deep_f0">f01d0e07</color>
+    <color name="x_deep_e6">e61d0e07</color>
+    <color name="x_deep_cc">cc1d0e07</color>
+    <color name="x_deep_8c">8c1d0e07</color>
+</colors>

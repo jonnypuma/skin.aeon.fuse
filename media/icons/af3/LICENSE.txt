@@ -1,0 +1,13 @@
+Icons in this folder (media/icons/af3) are copied unchanged from Arctic Fuse 3 (skin.arctic.fuse.3, CE-MOD build,
+folder extras/icons) by jurialmunkey: https://github.com/jurialmunkey
+
+They are NOT covered by Aeon Fuse's GPL-2.0-or-later licence. They stay under the licence of Arctic Fuse 3:
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 License.
+To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
+or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+Many of the glyphs are drawn from Font Awesome Free (https://fontawesome.com), icons under CC BY 4.0.
+Brand and service logos remain the trademarks of their owners.
+
+Aeon Fuse uses them only as optional Home menu icons (Skin settings > Home menu > Icon).

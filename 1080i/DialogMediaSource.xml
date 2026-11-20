@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Add / edit media source (SPEC 5: Minimal, AG_GenericDialog). Builder F, M4.
+	Kodi id contract (Estuary Omega DialogMediaSource.xml / GUIDialogMediaSource): heading 2,
+	path list 10 + scrollbar 60, buttons 11 browse / 13 add path / 14 remove path in grouplist 9000,
+	name edit 12, buttons 18 OK / 19 cancel in grouplist 9001.
+-->
+<window>
+	<defaultcontrol>10</defaultcontrol>
+	<include>Anim_DialogOpenClose</include>
+	<controls>
+		<include condition="!$EXP[FGS]">MS_Classic</include>
+		<include condition="$EXP[FGS]">FGS_MediaSource3</include><!-- 0.56.53 fgsmediasource -->
+	</controls>
+</window>

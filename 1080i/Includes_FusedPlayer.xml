@@ -1,0 +1,1571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Fused Glass player card (0.41.0, mockups: skin.glass/mockups/fused-glass-refinements, boards PlayerOSD / PlayerLogo /
+	PlayerDisc / PlayerDiscSteps). Chosen at load time by Aeon_OSD (Includes_Aeon_OSD.xml) when aeon.fglass is on; the
+	Aeon / Glass player (Aeon_OSD_Classic) is untouched.
+	Same Kodi id contract as the classic one: 602 play/pause (default), 603 stop, 600 / 607 previous / next, 601 / 606
+	rewind / forward, 70046 subtitles, 70049 audio, 70048 video, 70044 chapters, 70043 info, 70051 stats, 70052 tinyPPI,
+	87 seek bar, 88 skip button. Left buttons in grouplist 201, right buttons in grouplist 202 (group 200).
+	Geometry: card 96..1824 x 752..1042 (r32). The controls column starts at 388 (card + 292) in every case; the poster
+	(156 x 234) sits centred in front of it (164) or, with disc art, at 124 with the disc (150) sliding out to its right.
+-->
+<includes>
+	<expression name="Aeon_OSDDisc">[String.IsEqual(Skin.String(aeon.osd.discart),both) | [String.IsEqual(Skin.String(aeon.osd.discart),video) + Player.HasVideo] | [String.IsEqual(Skin.String(aeon.osd.discart),music) + Player.HasAudio]]</expression>
+	<expression name="FG_OSDHasDisc">$EXP[Aeon_OSDDisc] + [!String.IsEmpty(Player.Art(discart)) | !String.IsEmpty(Player.Art(album.discart))]</expression>
+	<expression name="FG_OSDLive">[Pvr.IsPlayingTv | Pvr.IsPlayingRadio]</expression>
+	<expression name="FG_NPLogo">Skin.HasSetting(aeon.osd.nplogo) + $EXP[Aeon_OSD_HasLogo]</expression>
+	<!-- the logo for the Now playing pill: the helper's trimmed copy of it (logocache.py, aeon.osd.logo) once it exists -->
+	<variable name="FG_OSDLogo">
+		<value condition="!$EXP[Aeon_OSD_Trailer] + !String.IsEmpty(Window(Home).Property(aeon.osd.logo)) + !String.IsEmpty(Player.Art(tvshow.clearlogo)) + String.IsEqual(Window(Home).Property(aeon.osd.logo.src),Player.Art(tvshow.clearlogo))">$INFO[Window(Home).Property(aeon.osd.logo)]</value>
+		<value condition="!$EXP[Aeon_OSD_Trailer] + !String.IsEmpty(Window(Home).Property(aeon.osd.logo)) + String.IsEmpty(Player.Art(tvshow.clearlogo)) + !String.IsEmpty(Player.Art(clearlogo)) + String.IsEqual(Window(Home).Property(aeon.osd.logo.src),Player.Art(clearlogo))">$INFO[Window(Home).Property(aeon.osd.logo)]</value>
+		<value>$VAR[Aeon_OSD_Logo]</value>
+	</variable>
+
+	<!-- the card's small line over the title: Season 3 · Episode 1 / channel / year and genre -->
+	<variable name="FG_OSDKick">
+		<value condition="$EXP[Aeon_OSD_Trailer]">[UPPERCASE]$LOCALIZE[20410][/UPPERCASE]</value>
+		<value condition="$EXP[FG_OSDLive]">[UPPERCASE]$INFO[VideoPlayer.ChannelNumberLabel,,  ·  ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Genre,  ·  ][/UPPERCASE]</value>
+		<value condition="!String.IsEmpty(VideoPlayer.TVShowTitle) + !String.IsEmpty(VideoPlayer.Episode)">[UPPERCASE]$INFO[VideoPlayer.Season,$LOCALIZE[20373] ,  ·  ]$LOCALIZE[20359] $INFO[VideoPlayer.Episode][/UPPERCASE]</value>
+		<value>[UPPERCASE]$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre,  ·  ][/UPPERCASE]</value>
+	</variable>
+	<variable name="FG_OSDCardTitle">
+		<value condition="$EXP[Aeon_OSD_Trailer]">$INFO[Window(Home).Property(aeon.tr.title)]</value>
+		<value>$INFO[VideoPlayer.Title]</value>
+	</variable>
+	<!-- the end time in the clock pill: when the film / episode ends, or when the Live TV programme does -->
+	<variable name="FG_OSDEnds">
+		<value condition="$EXP[FG_OSDLive] + !String.IsEmpty(VideoPlayer.EndTime)">$INFO[VideoPlayer.EndTime]</value>
+		<value>$INFO[Player.FinishTime(HH:mm)]</value>
+	</variable>
+	<variable name="FG_OSDTimeL">
+		<value condition="$EXP[FG_OSDLive] + !String.IsEmpty(VideoPlayer.StartTime)">$INFO[VideoPlayer.StartTime]</value>
+		<value>$INFO[Player.Time]</value>
+	</variable>
+	<variable name="FG_OSDTimeR">
+		<value condition="$EXP[FG_OSDLive] + !String.IsEmpty(VideoPlayer.EndTime)">$INFO[VideoPlayer.EndTime]</value>
+		<value>$VAR[Aeon_OSD_Total]</value>
+	</variable>
+	<!-- the middle of the time row: chapter, then Skippy (the segment playing, or the next one) -->
+	<variable name="FG_OSDChapter">
+		<value condition="$EXP[OSD_HasChapters]">$LOCALIZE[21396] $INFO[Player.Chapter] / $INFO[Player.ChapterCount]</value>
+		<value condition="!Integer.IsGreater(Player.ChapterCount,1) + $EXP[OSD_HasSkChapters]">$LOCALIZE[21396] $INFO[Window(Home).Property(aeon.sk.part)] / $INFO[Window(Home).Property(aeon.sk.count)]</value>
+	</variable>
+	<expression name="FG_SkippyNow">!Skin.HasSetting(aeon.skippy.noline) + !String.IsEmpty(Window(Home).Property(Skippy.Segment.Type)) + !String.IsEqual(Window(Home).Property(Skippy.Segment.TypeId),main)</expression>
+	<expression name="FG_SkippyNext">!Skin.HasSetting(aeon.skippy.noline) + [String.IsEmpty(Window(Home).Property(Skippy.Segment.Type)) | String.IsEqual(Window(Home).Property(Skippy.Segment.TypeId),main)] + !String.IsEmpty(Window(Home).Property(Skippy.Segment.Next.Type))</expression>
+
+	<!-- ============================================================ top left: Now playing pill (as tall as the clock pill).
+	     Text (default): NOW PLAYING | TITLE. Skin settings > Seek bar / OSD > Clearlogo in Now playing: the logo instead.
+	     Two buttons with the same label and font are exactly as wide: one draws the frost, the other the edge and the text. -->
+	<include name="FG_NowPill">
+		<control type="group">
+			<left>96</left><top>40</top>
+			<animation type="WindowOpen" tween="cubic" easing="out" delay="300" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="slide" start="0,-40" end="0,0" time="300"/><effect type="fade" start="0" end="100" time="300"/></animation>
+			<control type="group">
+				<visible>!$EXP[FG_NPLogo]</visible>
+				<control type="button">
+					<width min="200" max="1180">auto</width><height>64</height>
+					<label>[COLOR 00ffffff][UPPERCASE]$LOCALIZE[31017]   |   [B]$VAR[Aeon_OSD_Title][/B][/UPPERCASE][/COLOR]</label>
+					<font>pl_ui_22</font><textoffsetx>28</textoffsetx><aligny>center</aligny>
+					<texturenofocus border="32" colordiffuse="$VAR[FG_Frost]">fg/r32.png</texturenofocus><texturefocus border="32" colordiffuse="$VAR[FG_Frost]">fg/r32.png</texturefocus>
+					<enable>false</enable>
+				</control>
+				<control type="button">
+					<width min="200" max="1180">auto</width><height>64</height>
+					<label>[UPPERCASE][COLOR a8ffffff]$LOCALIZE[31017][/COLOR]   [COLOR 38ffffff]|[/COLOR]   [B]$VAR[Aeon_OSD_Title][/B][/UPPERCASE]</label>
+					<font>pl_ui_22</font><textoffsetx>28</textoffsetx><aligny>center</aligny>
+					<textcolor>ffffffff</textcolor><disabledcolor>ffffffff</disabledcolor>
+					<texturenofocus border="32" colordiffuse="$VAR[FG_Edge]">fg/e32.png</texturenofocus><texturefocus border="32" colordiffuse="$VAR[FG_Edge]">fg/e32.png</texturefocus>
+					<enable>false</enable>
+				</control>
+			</control>
+			<!-- clearlogo (trimmed by the helper): a fixed 580 px pill; the kicker sizes the left part, the logo has a
+			     300 x 44 box (kept aspect, left) -->
+			<control type="group">
+				<visible>$EXP[FG_NPLogo]</visible>
+				<control type="image"><width>580</width><height>64</height><texture border="32" colordiffuse="$VAR[FG_Frost]">fg/r32.png</texture></control>
+				<control type="image"><width>580</width><height>64</height><texture border="32" colordiffuse="$VAR[FG_Edge]">fg/e32.png</texture></control>
+				<control type="grouplist">
+					<left>28</left><width>540</width><height>64</height>
+					<orientation>horizontal</orientation><itemgap>18</itemgap><usecontrolcoords>true</usecontrolcoords>
+					<control type="label"><width max="200">auto</width><height>64</height><aligny>center</aligny><font>pl_ui_22</font><textcolor>a8ffffff</textcolor><label>[UPPERCASE]$LOCALIZE[31017][/UPPERCASE]</label></control>
+					<control type="image"><top>18</top><width>1</width><height>28</height><texture colordiffuse="38ffffff">common/white.png</texture></control>
+					<control type="image"><top>10</top><width>300</width><height>44</height><aspectratio align="left" aligny="center">keep</aspectratio><texture background="true">$VAR[FG_OSDLogo]</texture></control>
+				</control>
+			</control>
+		</control>
+	</include>
+
+	<!-- ============================================================ top right: the clock pill with the end time in it -->
+	<include name="FG_ClockCapsuleEnds">
+		<control type="group">
+			<animation type="WindowOpen" tween="cubic" easing="out" delay="300" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="slide" start="0,-40" end="0,0" time="300"/><effect type="fade" start="0" end="100" time="300"/></animation>
+			<control type="group">
+				<visible>$EXP[AG_HasWeather]</visible>
+				<left>1404</left><top>40</top>
+				<control type="image"><width>420</width><height>64</height><texture border="32" colordiffuse="$VAR[FG_Frost]">fg/r32.png</texture></control>
+				<control type="image"><width>420</width><height>64</height><texture border="32" colordiffuse="$VAR[FG_Edge]">fg/e32.png</texture></control>
+				<control type="label"><left>24</left><width>96</width><height>64</height><aligny>center</aligny><align>center</align><font>hm_ui_30_semibold</font><textcolor>ffffffff</textcolor><label>$INFO[System.Time(HH:mm)]</label></control>
+				<control type="image"><left>132</left><top>18</top><width>1</width><height>28</height><texture colordiffuse="33ffffff">common/white.png</texture></control>
+				<control type="label"><left>140</left><width>156</width><height>64</height><aligny>center</aligny><align>center</align><font>pl_ui_24_semibold</font><textcolor>ffffffff</textcolor><label>[COLOR a8ffffff][UPPERCASE]$LOCALIZE[31186][/UPPERCASE][/COLOR]  $VAR[FG_OSDEnds]</label></control>
+				<control type="image"><left>304</left><top>18</top><width>1</width><height>28</height><texture colordiffuse="33ffffff">common/white.png</texture></control>
+				<control type="image"><left>318</left><top>16</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">$VAR[AG_WeatherIcon]</texture></control>
+				<control type="label"><left>352</left><width>58</width><height>64</height><aligny>center</aligny><align>center</align><font>hm_ui_24</font><textcolor>dbffffff</textcolor><label>$INFO[Weather.Temperature]</label></control>
+			</control>
+			<control type="group">
+				<visible>!$EXP[AG_HasWeather]</visible>
+				<left>1512</left><top>40</top>
+				<control type="image"><width>312</width><height>64</height><texture border="32" colordiffuse="$VAR[FG_Frost]">fg/r32.png</texture></control>
+				<control type="image"><width>312</width><height>64</height><texture border="32" colordiffuse="$VAR[FG_Edge]">fg/e32.png</texture></control>
+				<control type="label"><left>24</left><width>96</width><height>64</height><aligny>center</aligny><align>center</align><font>hm_ui_30_semibold</font><textcolor>ffffffff</textcolor><label>$INFO[System.Time(HH:mm)]</label></control>
+				<control type="image"><left>132</left><top>18</top><width>1</width><height>28</height><texture colordiffuse="33ffffff">common/white.png</texture></control>
+				<control type="label"><left>140</left><width>156</width><height>64</height><aligny>center</aligny><align>center</align><font>pl_ui_24_semibold</font><textcolor>ffffffff</textcolor><label>[COLOR a8ffffff][UPPERCASE]$LOCALIZE[31186][/UPPERCASE][/COLOR]  $VAR[FG_OSDEnds]</label></control>
+			</control>
+		</control>
+	</include>
+
+	<!-- ============================================================ round buttons of the card (64, focused: white 76 with
+	     dark ink and what it does under it). params: id, icon, label, onclick, onclick2, visible, active,
+	     isz / il / it (icon size and place; tinyPPI's icon is a small disc in a big picture) -->
+	<include name="FG_OSDRoundBtn">
+		<param name="visible">true</param>
+		<param name="label"></param>
+		<param name="onclick2">noop</param>
+		<param name="active">false</param>
+		<param name="isz">34</param>
+		<param name="il">23</param>
+		<param name="it">21</param>
+		<definition>
+			<control type="group">
+				<width>80</width><height>110</height>
+				<visible>$PARAM[visible]</visible>
+				<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus($PARAM[id])</visible></control>
+				<control type="button" id="$PARAM[id]">
+					<left>2</left><top>0</top><width>76</width><height>76</height>
+					<label></label>
+					<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+					<onclick>$PARAM[onclick]</onclick>
+					<onclick>$PARAM[onclick2]</onclick>
+					<onup condition="Player.SeekEnabled">87</onup>
+					<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+					<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+				</control>
+				<control type="image"><left>$PARAM[il]</left><top>$PARAM[it]</top><width>$PARAM[isz]</width><height>$PARAM[isz]</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">$PARAM[icon]</texture><visible>!Control.HasFocus($PARAM[id])</visible></control>
+				<control type="image"><left>$PARAM[il]</left><top>$PARAM[it]</top><width>$PARAM[isz]</width><height>$PARAM[isz]</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">$PARAM[icon]</texture><visible>Control.HasFocus($PARAM[id])</visible></control>
+				<!-- the option is on: a short line under the circle -->
+				<control type="image"><left>30</left><top>76</top><width>20</width><height>4</height><texture colordiffuse="ffffffff">fg/pill4.png</texture><visible>[$PARAM[active]] + !Control.HasFocus($PARAM[id])</visible></control>
+				<control type="label">
+					<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+					<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+					<scroll>true</scroll>
+					<label>[UPPERCASE]$PARAM[label][/UPPERCASE]</label>
+					<visible>Control.HasFocus($PARAM[id])</visible>
+				</control>
+			</control>
+		</definition>
+	</include>
+
+	<!-- the two button groups: transport on the left (from 388), the panels on the right (to 1792). Each grouplist reaches
+	     the screen edge so the label under its outer button is not cut off. Left from the first button goes to the last
+	     one on the right and back. -->
+	<include name="FG_OSDRow">
+		<!-- written by _src/fg_osdrow.py (0.45.1): every button moves Left / Right itself, past the hidden ones -->
+		<control type="group" id="200">
+			<left>0</left><top>926</top><width>1920</width><height>110</height>
+			<control type="grouplist" id="201">
+				<left>0</left><top>0</top><width>1150</width><height>110</height>
+				<orientation>horizontal</orientation><itemgap>0</itemgap><usecontrolcoords>true</usecontrolcoords>
+				<control type="group"><width>380</width><height>110</height></control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>$EXP[FG_OSDLive]</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(610)</visible></control>
+					<control type="button" id="610">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>Action(ChannelDown)</onclick>
+						<onright condition="[$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">600</onright><onright condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">601</onright><onright condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift]">602</onright><onright condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">606</onright><onright condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">611</onright><onright condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">607</onright><onright condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">612</onright><onright condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]]">603</onright>
+						<onleft condition="[System.AddonIsEnabled(script.tinyppi)]">70052</onleft><onleft condition="![System.AddonIsEnabled(script.tinyppi)] + [!System.AddonIsEnabled(script.tinyppi)]">70051</onleft><onleft condition="![System.AddonIsEnabled(script.tinyppi)] + ![!System.AddonIsEnabled(script.tinyppi)]">70043</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/chevron_down.png</texture><visible>!Control.HasFocus(610)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/chevron_down.png</texture><visible>Control.HasFocus(610)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE][B]$LOCALIZE[19029] -[/B][/UPPERCASE]</label>
+						<visible>Control.HasFocus(610)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(600)</visible></control>
+					<control type="button" id="600">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>PlayerControl(Previous)</onclick>
+						<onright condition="[Player.SeekEnabled + !$EXP[FG_OSDLive]]">601</onright><onright condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift]">602</onright><onright condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">606</onright><onright condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">611</onright><onright condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">607</onright><onright condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">612</onright><onright condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]]">603</onright>
+						<onleft condition="[$EXP[FG_OSDLive]]">610</onleft><onleft condition="![$EXP[FG_OSDLive]] + [System.AddonIsEnabled(script.tinyppi)]">70052</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + [!System.AddonIsEnabled(script.tinyppi)]">70051</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + ![!System.AddonIsEnabled(script.tinyppi)]">70043</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/prev.png</texture><visible>!Control.HasFocus(600)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/prev.png</texture><visible>Control.HasFocus(600)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE][B]$LOCALIZE[31121][/B][/UPPERCASE]</label>
+						<visible>Control.HasFocus(600)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>Player.SeekEnabled + !$EXP[FG_OSDLive]</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(601)</visible></control>
+					<control type="button" id="601">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>PlayerControl(Rewind)</onclick>
+						<onright condition="[[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift]">602</onright><onright condition="![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">606</onright><onright condition="![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">611</onright><onright condition="![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">607</onright><onright condition="![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">612</onright><onright condition="![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]]">603</onright>
+						<onleft condition="[$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">600</onleft><onleft condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">610</onleft><onleft condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [System.AddonIsEnabled(script.tinyppi)]">70052</onleft><onleft condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + [!System.AddonIsEnabled(script.tinyppi)]">70051</onleft><onleft condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + ![!System.AddonIsEnabled(script.tinyppi)]">70043</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/rewind.png</texture><visible>!Control.HasFocus(601)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/rewind.png</texture><visible>Control.HasFocus(601)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE][B]$LOCALIZE[31122][/B][/UPPERCASE]</label>
+						<visible>Control.HasFocus(601)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(602)</visible></control>
+					<control type="button" id="602">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>PlayerControl(Play)</onclick>
+						<onright condition="[Player.SeekEnabled + !$EXP[FG_OSDLive]]">606</onright><onright condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">611</onright><onright condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">607</onright><onright condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">612</onright><onright condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]]">603</onright>
+						<onleft condition="[Player.SeekEnabled + !$EXP[FG_OSDLive]]">601</onleft><onleft condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">600</onleft><onleft condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">610</onleft><onleft condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [System.AddonIsEnabled(script.tinyppi)]">70052</onleft><onleft condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + [!System.AddonIsEnabled(script.tinyppi)]">70051</onleft><onleft condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + ![!System.AddonIsEnabled(script.tinyppi)]">70043</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">$VAR[Aeon_OSD_Play]</texture><visible>!Control.HasFocus(602)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">$VAR[Aeon_OSD_Play]</texture><visible>Control.HasFocus(602)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE]$VAR[Aeon_OSD_LblPlay][/UPPERCASE]</label>
+						<visible>Control.HasFocus(602)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>Player.SeekEnabled + !$EXP[FG_OSDLive]</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(606)</visible></control>
+					<control type="button" id="606">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>PlayerControl(Forward)</onclick>
+						<onright condition="[$EXP[FG_OSDLive]]">611</onright><onright condition="![$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">607</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">612</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]]">603</onright>
+						<onleft condition="[[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift]">602</onleft><onleft condition="![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">601</onleft><onleft condition="![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">600</onleft><onleft condition="![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">610</onleft><onleft condition="![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [System.AddonIsEnabled(script.tinyppi)]">70052</onleft><onleft condition="![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + [!System.AddonIsEnabled(script.tinyppi)]">70051</onleft><onleft condition="![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + ![!System.AddonIsEnabled(script.tinyppi)]">70043</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/forward.png</texture><visible>!Control.HasFocus(606)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/forward.png</texture><visible>Control.HasFocus(606)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE][B]$LOCALIZE[31125][/B][/UPPERCASE]</label>
+						<visible>Control.HasFocus(606)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>$EXP[FG_OSDLive]</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(611)</visible></control>
+					<control type="button" id="611">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>Action(ChannelUp)</onclick>
+						<onright condition="[$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">607</onright><onright condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">612</onright><onright condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]]">603</onright>
+						<onleft condition="[Player.SeekEnabled + !$EXP[FG_OSDLive]]">606</onleft><onleft condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift]">602</onleft><onleft condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">601</onleft><onleft condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">600</onleft><onleft condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">610</onleft><onleft condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [System.AddonIsEnabled(script.tinyppi)]">70052</onleft><onleft condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + [!System.AddonIsEnabled(script.tinyppi)]">70051</onleft><onleft condition="![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + ![!System.AddonIsEnabled(script.tinyppi)]">70043</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/chevron_up.png</texture><visible>!Control.HasFocus(611)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/chevron_up.png</texture><visible>Control.HasFocus(611)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE][B]$LOCALIZE[19029] +[/B][/UPPERCASE]</label>
+						<visible>Control.HasFocus(611)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(607)</visible></control>
+					<control type="button" id="607">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>PlayerControl(Next)</onclick>
+						<onright condition="[$EXP[FG_OSDLive]]">612</onright><onright condition="![$EXP[FG_OSDLive]]">603</onright>
+						<onleft condition="[$EXP[FG_OSDLive]]">611</onleft><onleft condition="![$EXP[FG_OSDLive]] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">606</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift]">602</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">601</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">600</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">610</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [System.AddonIsEnabled(script.tinyppi)]">70052</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + [!System.AddonIsEnabled(script.tinyppi)]">70051</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + ![!System.AddonIsEnabled(script.tinyppi)]">70043</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/next.png</texture><visible>!Control.HasFocus(607)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/next.png</texture><visible>Control.HasFocus(607)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE][B]$LOCALIZE[31126][/B][/UPPERCASE]</label>
+						<visible>Control.HasFocus(607)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>$EXP[FG_OSDLive]</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(612)</visible></control>
+					<control type="button" id="612">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>PlayerControl(Record)</onclick>
+						<onright>603</onright>
+						<onleft condition="[$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">607</onleft><onleft condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">611</onleft><onleft condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">606</onleft><onleft condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift]">602</onleft><onleft condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">601</onleft><onleft condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">600</onleft><onleft condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">610</onleft><onleft condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [System.AddonIsEnabled(script.tinyppi)]">70052</onleft><onleft condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + [!System.AddonIsEnabled(script.tinyppi)]">70051</onleft><onleft condition="![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + ![!System.AddonIsEnabled(script.tinyppi)]">70043</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>29</left><top>27</top><width>22</width><height>22</height><aspectratio>keep</aspectratio><texture colordiffuse="ffe5484d">fg/circle.png</texture><visible>!Control.HasFocus(612)</visible></control>
+					<control type="image"><left>29</left><top>27</top><width>22</width><height>22</height><aspectratio>keep</aspectratio><texture colordiffuse="ffe5484d">fg/circle.png</texture><visible>Control.HasFocus(612)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE][B]$LOCALIZE[264][/B][/UPPERCASE]</label>
+						<visible>Control.HasFocus(612)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>true</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(603)</visible></control>
+					<control type="button" id="603">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>PlayerControl(Stop)</onclick>
+						<onright>70046</onright>
+						<onleft condition="[$EXP[FG_OSDLive]]">612</onleft><onleft condition="![$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">607</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">611</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">606</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift]">602</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">601</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">600</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">610</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [System.AddonIsEnabled(script.tinyppi)]">70052</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + [!System.AddonIsEnabled(script.tinyppi)]">70051</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![System.AddonIsEnabled(script.tinyppi)] + ![!System.AddonIsEnabled(script.tinyppi)]">70043</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/stop.png</texture><visible>!Control.HasFocus(603)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/stop.png</texture><visible>Control.HasFocus(603)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE][B]$LOCALIZE[31124][/B][/UPPERCASE]</label>
+						<visible>Control.HasFocus(603)</visible>
+					</control>
+				</control>
+			</control>
+			<control type="grouplist" id="202">
+				<left>770</left><top>0</top><width>1150</width><height>110</height>
+				<orientation>horizontal</orientation><align>right</align><itemgap>0</itemgap><usecontrolcoords>true</usecontrolcoords>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>true</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(70046)</visible></control>
+					<control type="button" id="70046">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
+						<onright>70049</onright>
+						<onleft>603</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/subtitles.png</texture><visible>!Control.HasFocus(70046)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/subtitles.png</texture><visible>Control.HasFocus(70046)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE]$VAR[Aeon_OSD_LblSubs][/UPPERCASE]</label>
+						<visible>Control.HasFocus(70046)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>true</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(70049)</visible></control>
+					<control type="button" id="70049">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>ActivateWindow(osdaudiosettings)</onclick>
+						<onright condition="[!$EXP[FG_OSDLive]]">70048</onright><onright condition="![!$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">70053</onright><onright condition="![!$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">70054</onright><onright condition="![!$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">70055</onright><onright condition="![!$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]]">70044</onright><onright condition="![!$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]]">70043</onright>
+						<onleft>70046</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/audio.png</texture><visible>!Control.HasFocus(70049)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/audio.png</texture><visible>Control.HasFocus(70049) + ![!Skin.HasSetting(aeon.osd.noflags) + System.AddonIsEnabled(resource.images.languageflags.rounded) + !String.IsEmpty(VideoPlayer.AudioLanguage)]</visible></control><!-- 0.56.53 audio button flag: the rounded flag of the playing audio while the button has focus --><control type="image"><left>18</left><top>16</top><width>44</width><height>44</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.AudioLanguage,resource://resource.images.languageflags.rounded/,.png]</texture><visible>Control.HasFocus(70049) + !Skin.HasSetting(aeon.osd.noflags) + System.AddonIsEnabled(resource.images.languageflags.rounded) + !String.IsEmpty(VideoPlayer.AudioLanguage)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE]$VAR[Aeon_OSD_LblAudio][/UPPERCASE]</label>
+						<visible>Control.HasFocus(70049)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>!$EXP[FG_OSDLive]</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(70048)</visible></control>
+					<control type="button" id="70048">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>ActivateWindow(osdvideosettings)</onclick>
+						<onright condition="[$EXP[FG_OSDLive]]">70053</onright><onright condition="![$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">70054</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">70055</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]]">70044</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]]">70043</onright>
+						<onleft>70049</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">common/aeon_ic_screen.png</texture><visible>!Control.HasFocus(70048)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">common/aeon_ic_screen.png</texture><visible>Control.HasFocus(70048)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE]$VAR[Aeon_OSD_LblVideo][/UPPERCASE]</label>
+						<visible>Control.HasFocus(70048)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>$EXP[FG_OSDLive]</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(70053)</visible></control>
+					<control type="button" id="70053">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>SetProperty(aeon.guide.osd,1,home)</onclick><onclick>Dialog.Close(all,true)</onclick><onclick>ActivateWindow(TVGuide)</onclick>
+						<onright condition="[$EXP[FG_OSDLive]]">70054</onright><onright condition="![$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">70055</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]]">70044</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]]">70043</onright>
+						<onleft condition="[!$EXP[FG_OSDLive]]">70048</onleft><onleft condition="![!$EXP[FG_OSDLive]]">70049</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/sidebar.png</texture><visible>!Control.HasFocus(70053)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/sidebar.png</texture><visible>Control.HasFocus(70053)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE][B]$LOCALIZE[19069][/B][/UPPERCASE]</label>
+						<visible>Control.HasFocus(70053)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>$EXP[FG_OSDLive]</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(70054)</visible></control>
+					<control type="button" id="70054">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>ActivateWindow(pvrosdchannels)</onclick>
+						<onright condition="[$EXP[FG_OSDLive]]">70055</onright><onright condition="![$EXP[FG_OSDLive]] + [$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]]">70044</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]]">70043</onright>
+						<onleft condition="[$EXP[FG_OSDLive]]">70053</onleft><onleft condition="![$EXP[FG_OSDLive]] + [!$EXP[FG_OSDLive]]">70048</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![!$EXP[FG_OSDLive]]">70049</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/lines.png</texture><visible>!Control.HasFocus(70054)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/lines.png</texture><visible>Control.HasFocus(70054)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE][B]$LOCALIZE[19019][/B][/UPPERCASE]</label>
+						<visible>Control.HasFocus(70054)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>$EXP[FG_OSDLive]</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(70055)</visible></control>
+					<control type="button" id="70055">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>SetProperty(aeon.osdch.groups,1,home)</onclick><onclick>ActivateWindow(pvrosdchannels)</onclick>
+						<onright condition="[$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]]">70044</onright><onright condition="![$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]]">70043</onright>
+						<onleft condition="[$EXP[FG_OSDLive]]">70054</onleft><onleft condition="![$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">70053</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [!$EXP[FG_OSDLive]]">70048</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![!$EXP[FG_OSDLive]]">70049</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/layers.png</texture><visible>!Control.HasFocus(70055)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/layers.png</texture><visible>Control.HasFocus(70055)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE][B]$LOCALIZE[19146][/B][/UPPERCASE]</label>
+						<visible>Control.HasFocus(70055)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(70044)</visible></control>
+					<control type="button" id="70044">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>ActivateWindow(videobookmarks)</onclick>
+						<onright>70043</onright>
+						<onleft condition="[$EXP[FG_OSDLive]]">70055</onleft><onleft condition="![$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">70054</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">70053</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [!$EXP[FG_OSDLive]]">70048</onleft><onleft condition="![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![!$EXP[FG_OSDLive]]">70049</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/chapters.png</texture><visible>!Control.HasFocus(70044)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/chapters.png</texture><visible>Control.HasFocus(70044)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE]$VAR[Aeon_OSD_LblChapter][/UPPERCASE]</label>
+						<visible>Control.HasFocus(70044)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>true</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(70043)</visible></control>
+					<control type="button" id="70043">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>Action(Info,fullscreenvideo)</onclick>
+						<onright condition="[!System.AddonIsEnabled(script.tinyppi)]">70051</onright><onright condition="![!System.AddonIsEnabled(script.tinyppi)] + [System.AddonIsEnabled(script.tinyppi)]">70052</onright><onright condition="![!System.AddonIsEnabled(script.tinyppi)] + ![System.AddonIsEnabled(script.tinyppi)] + [$EXP[FG_OSDLive]]">610</onright><onright condition="![!System.AddonIsEnabled(script.tinyppi)] + ![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">600</onright><onright condition="![!System.AddonIsEnabled(script.tinyppi)] + ![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">601</onright><onright condition="![!System.AddonIsEnabled(script.tinyppi)] + ![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift]">602</onright><onright condition="![!System.AddonIsEnabled(script.tinyppi)] + ![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">606</onright><onright condition="![!System.AddonIsEnabled(script.tinyppi)] + ![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">611</onright><onright condition="![!System.AddonIsEnabled(script.tinyppi)] + ![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">607</onright><onright condition="![!System.AddonIsEnabled(script.tinyppi)] + ![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">612</onright><onright condition="![!System.AddonIsEnabled(script.tinyppi)] + ![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]]">603</onright>
+						<onleft condition="[$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]]">70044</onleft><onleft condition="![$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">70055</onleft><onleft condition="![$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">70054</onleft><onleft condition="![$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">70053</onleft><onleft condition="![$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [!$EXP[FG_OSDLive]]">70048</onleft><onleft condition="![$EXP[OSD_HasChapters] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![!$EXP[FG_OSDLive]]">70049</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/info.png</texture><visible>!Control.HasFocus(70043)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/info.png</texture><visible>Control.HasFocus(70043)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE][B]$LOCALIZE[31351][/B][/UPPERCASE]</label>
+						<visible>Control.HasFocus(70043)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>!System.AddonIsEnabled(script.tinyppi)</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(70051)</visible></control>
+					<control type="button" id="70051">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>Action(PlayerProcessInfo)</onclick>
+						<onright condition="[System.AddonIsEnabled(script.tinyppi)]">70052</onright><onright condition="![System.AddonIsEnabled(script.tinyppi)] + [$EXP[FG_OSDLive]]">610</onright><onright condition="![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">600</onright><onright condition="![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">601</onright><onright condition="![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift]">602</onright><onright condition="![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">606</onright><onright condition="![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">611</onright><onright condition="![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">607</onright><onright condition="![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">612</onright><onright condition="![System.AddonIsEnabled(script.tinyppi)] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]]">603</onright>
+						<onleft>70043</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">common/aeon_ic_stats.png</texture><visible>!Control.HasFocus(70051)</visible></control>
+					<control type="image"><left>23</left><top>21</top><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">common/aeon_ic_stats.png</texture><visible>Control.HasFocus(70051)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE][B]$LOCALIZE[31352][/B][/UPPERCASE]</label>
+						<visible>Control.HasFocus(70051)</visible>
+					</control>
+				</control>
+				<control type="group">
+					<width>80</width><height>110</height>
+					<visible>System.AddonIsEnabled(script.tinyppi)</visible>
+					<control type="image"><left>8</left><top>6</top><width>64</width><height>64</height><texture colordiffuse="1fffffff">fg/circle.png</texture><visible>!Control.HasFocus(70052)</visible></control>
+					<control type="button" id="70052">
+						<left>2</left><top>0</top><width>76</width><height>76</height><label></label>
+						<texturefocus colordiffuse="ffffffff">fg/circle.png</texturefocus><texturenofocus />
+						<onclick>CancelAlarm(osd_timeout,true)</onclick><onclick>RunScript(script.tinyppi,dialog)</onclick>
+						<onright condition="[$EXP[FG_OSDLive]]">610</onright><onright condition="![$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">600</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">601</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift]">602</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + [Player.SeekEnabled + !$EXP[FG_OSDLive]]">606</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">611</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + [$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]]">607</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + [$EXP[FG_OSDLive]]">612</onright><onright condition="![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![[!$EXP[FG_OSDLive]] | Player.PauseEnabled | Player.Paused | PVR.IsTimeShift] + ![Player.SeekEnabled + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]] + ![$EXP[OSD_HasPrevNext] + !$EXP[FG_OSDLive]] + ![$EXP[FG_OSDLive]]">603</onright>
+						<onleft condition="[!System.AddonIsEnabled(script.tinyppi)]">70051</onleft><onleft condition="![!System.AddonIsEnabled(script.tinyppi)]">70043</onleft>
+						<onup condition="Player.SeekEnabled">87</onup>
+						<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+						<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+					</control>
+					<control type="image"><left>12</left><top>10</top><width>56</width><height>56</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/ppi.png</texture><visible>!Control.HasFocus(70052)</visible></control>
+					<control type="image"><left>12</left><top>10</top><width>56</width><height>56</height><aspectratio>keep</aspectratio><texture colordiffuse="aeon_onbar">aeon/icons/ppi.png</texture><visible>Control.HasFocus(70052)</visible></control>
+					<control type="label">
+						<left>-260</left><top>80</top><width>600</width><height>28</height><align>center</align><aligny>center</aligny>
+						<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll>
+						<label>[UPPERCASE][B]$LOCALIZE[31352][/B][/UPPERCASE]</label>
+						<visible>Control.HasFocus(70052)</visible>
+					</control>
+				</control>
+				<control type="group"><width>120</width><height>110</height></control>
+			</control>
+		</control>
+	</include>
+
+	<!-- ============================================================ seek bar: a 12 px pill, white to where playback is
+	     (or where a step seek is heading), a gap at every chapter end (drawn over the bar in the card's colour) and a round
+	     marker. params: left, top, width -->
+	<include name="FG_SeekBar">
+		<param name="left">388</param>
+		<param name="top">864</param>
+		<param name="width">1404</param>
+		<definition>
+			<control type="group">
+				<left>$PARAM[left]</left><top>$PARAM[top]</top>
+				<control type="image"><width>$PARAM[width]</width><height>12</height><texture border="6" colordiffuse="3dffffff">fg/pill12.png</texture></control>
+				<control type="progress">
+					<width>$PARAM[width]</width><height>12</height>
+					<texturebg border="6" colordiffuse="00ffffff">fg/pill12.png</texturebg>
+					<midtexture subpixel="true" border="6" colordiffuse="ffffffff">fg/pill12.png</midtexture>
+					<info>Player.SeekBar</info>
+					<visible>!$EXP[FG_OSDLive]</visible>
+				</control>
+				<!-- Live TV: how far the programme is -->
+				<control type="progress">
+					<width>$PARAM[width]</width><height>12</height>
+					<texturebg border="6" colordiffuse="00ffffff">fg/pill12.png</texturebg>
+					<midtexture subpixel="true" border="6" colordiffuse="ffffffff">fg/pill12.png</midtexture>
+					<info>PVR.EpgEventProgress</info>
+					<visible>$EXP[FG_OSDLive]</visible>
+				</control>
+				<!-- Kodi draws the range ends half their height lower than the control's top: -6 puts them on the bar -->
+				<control type="ranges">
+					<top>-6</top><width>$PARAM[width]</width><height>12</height>
+					<texturebg></texturebg><lefttexture /><midtexture subpixel="true" />
+					<righttexture subpixel="true" colordiffuse="fg_gapcol">fg/chgap.png</righttexture>
+					<info>Player.Chapters</info>
+					<visible>$EXP[OSD_HasChapters]</visible>
+				</control>
+				<control type="ranges">
+					<top>-6</top><width>$PARAM[width]</width><height>12</height>
+					<texturebg></texturebg><lefttexture /><midtexture subpixel="true" />
+					<righttexture subpixel="true" colordiffuse="fg_gapcol">fg/chgap.png</righttexture>
+					<info>Window(Home).Property(aeon.sk.ranges)</info>
+					<visible>$EXP[OSD_HasSkChapters]</visible>
+				</control>
+				<control type="slider">
+					<description>marker only (not focusable; nothing navigates to it)</description>
+					<left>0</left><top>-7</top><width>$PARAM[width]</width><height>26</height>
+					<info>Player.SeekBar</info>
+					<texturesliderbar>aeon/seek_bar40.png</texturesliderbar>
+					<textureslidernib>fg/knob40.png</textureslidernib><textureslidernibfocus>fg/knob40.png</textureslidernibfocus>
+					<visible>Player.SeekEnabled + !$EXP[FG_OSDLive]</visible>
+				</control>
+			</control>
+		</definition>
+	</include>
+
+	<!-- ============================================================ the player card -->
+	<include name="FG_OSD2">
+		<!-- scrims, card -->
+		<control type="image"><left>0</left><top>560</top><width>1920</width><height>520</height><texture colordiffuse="b3000000">fg/scrim_b.png</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>1920</width><height>260</height><texture colordiffuse="cc000000">fg/scrim_t.png</texture></control>
+		<control type="image"><left>56</left><top>712</top><width>1808</width><height>370</height><texture border="72" colordiffuse="$VAR[FG_PanelSh_99]">$VAR[FG_Sh_sho32]</texture></control>
+		<control type="image"><left>96</left><top>752</top><width>1728</width><height>290</height><texture border="32" colordiffuse="$VAR[FG_Frost]">fg/r32.png</texture></control>
+		<control type="image"><left>96</left><top>752</top><width>1728</width><height>290</height><texture border="32" colordiffuse="$VAR[FG_Edge]">fg/e32.png</texture></control>
+
+		<!-- top: Now playing pill, clock pill with the end time -->
+		<include>FG_NowPill</include>
+		<control type="group">
+			<visible>!Skin.HasSetting(aeon.osd.noclock)</visible>
+			<include>FG_ClockCapsuleEnds</include>
+		</control>
+
+		<!-- disc art (films / albums that have it, Skin settings > Seek bar / OSD > Disc art): behind the poster; when the
+		     card opens the poster moves 40 px left and the disc slides out to its right, then spins while playing -->
+		<control type="group">
+			<visible>$EXP[FG_OSDHasDisc] + !$EXP[FG_OSDLive]</visible>
+			<animation type="WindowOpen" tween="cubic" easing="out" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="slide" start="-38,0" end="0,0" delay="350" time="550"/></animation>
+			<control type="image">
+				<left>205</left><top>822</top><width>150</width><height>150</height>
+				<aspectratio>keep</aspectratio>
+				<texture background="true" diffuse="aeon/mask_circle.png">$VAR[Aeon_DiscArt]</texture>
+				<animation type="Conditional" reversible="false" condition="Player.Playing + !Player.Paused + !Skin.HasSetting(aeon.reducemotion)" loop="true"><effect type="rotate" start="0" end="-360" center="auto" time="6000" tween="linear"/></animation>
+			</control>
+		</control>
+		<!-- poster: centred in front of the controls (164), or at 124 beside the disc -->
+		<control type="image">
+			<left>124</left><top>780</top><width>156</width><height>234</height>
+			<aspectratio scalediffuse="false">scale</aspectratio>
+			<texture background="true" diffuse="fg/m156x234.png">$VAR[Aeon_OSD_Poster]</texture>
+			<animation effect="slide" end="40,0" time="0" condition="![$EXP[FG_OSDHasDisc]]">Conditional</animation>
+			<animation type="WindowOpen" tween="cubic" easing="out" condition="$EXP[FG_OSDHasDisc] + !Skin.HasSetting(aeon.reducemotion)"><effect type="slide" start="40,0" end="0,0" delay="150" time="450"/></animation>
+			<visible>[!Skin.HasSetting(aeon.osd.noposter) | $EXP[FG_OSDHasDisc]] + !$EXP[FG_OSDLive]</visible>
+		</control>
+		<!-- Live TV: the channel on a frosted tile instead of a poster -->
+		<control type="group">
+			<left>164</left><top>780</top>
+			<visible>$EXP[FG_OSDLive]</visible>
+			<control type="image"><width>156</width><height>234</height><texture border="16" colordiffuse="1fffffff">fg/r16.png</texture></control>
+			<control type="image"><width>156</width><height>234</height><texture border="16" colordiffuse="$VAR[FG_Edge]">fg/e16.png</texture></control>
+			<control type="image"><left>18</left><top>48</top><width>120</width><height>96</height><aspectratio>keep</aspectratio><texture background="true">$INFO[VideoPlayer.Cover]</texture></control>
+			<control type="label"><top>156</top><width>156</width><height>40</height><align>center</align><aligny>center</aligny><font>pl_ui_30_semibold</font><textcolor>ffffffff</textcolor><label>$INFO[VideoPlayer.ChannelNumberLabel]</label></control>
+		</control>
+
+		<!-- text column: kicker, title; at the right Up next (Skippy) or the media chips -->
+		<control type="label">
+			<left>388</left><top>774</top><width>960</width><height>26</height><aligny>center</aligny>
+			<font>pl_cap_16</font><textcolor>a8ffffff</textcolor><selectedcolor>a8ffffff</selectedcolor>
+			<label>$VAR[FG_OSDKick]</label>
+		</control>
+		<control type="grouplist">
+			<left>388</left><top>798</top><width>980</width><height>52</height>
+			<orientation>horizontal</orientation><itemgap>18</itemgap><usecontrolcoords>true</usecontrolcoords>
+			<control type="label">
+				<width max="880">auto</width><height>52</height><aligny>center</aligny>
+				<font>pl_display_40</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+				<label>$VAR[FG_OSDCardTitle]</label>
+			</control>
+			<!-- Live TV: a red LIVE pill after the programme (not while watching back from the time-shift buffer) -->
+			<control type="group">
+				<top>12</top><width>84</width><height>28</height>
+				<visible>$EXP[FG_OSDLive] + !Player.IsTimeshifting</visible>
+				<control type="image"><width>84</width><height>28</height><texture border="14" colordiffuse="ffe5484d">fg/r14.png</texture></control>
+				<control type="image"><left>14</left><top>10</top><width>8</width><height>8</height><texture colordiffuse="ffffffff">fg/circle.png</texture></control>
+				<control type="label"><left>28</left><width>50</width><height>28</height><aligny>center</aligny><font>pl_cap_16</font><textcolor>ffffffff</textcolor><label>[B][UPPERCASE]$ADDON[skin.aeon.fuse 32477][/UPPERCASE][/B]</label></control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>$EXP[FG_OSDLive] + !String.IsEmpty(VideoPlayer.NextTitle)</visible>
+			<control type="label"><left>1092</left><top>784</top><width>700</width><height>24</height><align>right</align><aligny>center</aligny><font>pl_cap_16</font><textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor><label>[UPPERCASE]$LOCALIZE[31126]$INFO[VideoPlayer.NextStartTime,  ·  ][/UPPERCASE]</label></control>
+			<control type="label"><left>1092</left><top>808</top><width>700</width><height>32</height><align>right</align><aligny>center</aligny><font>un_pl_ui_22_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[VideoPlayer.NextTitle]</label></control>
+		</control>
+		<control type="group">
+			<visible>$EXP[FG_OSDUpNext] + !$EXP[FG_OSDLive]</visible>
+			<control type="label"><left>1092</left><top>784</top><width>700</width><height>24</height><align>right</align><aligny>center</aligny><font>pl_cap_16</font><textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor><label>[UPPERCASE]$LOCALIZE[31235][/UPPERCASE]</label></control>
+			<control type="label"><left>1092</left><top>808</top><width>700</width><height>32</height><align>right</align><aligny>center</aligny><font>pl_ui_22_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[Window(Home).Property(Skippy.NextEpisode.Label)]</label></control>
+		</control>
+		<control type="grouplist">
+			<left>1092</left><top>802</top><width>700</width><height>34</height>
+			<orientation>horizontal</orientation><align>right</align><itemgap>8</itemgap>
+			<visible>!$EXP[FG_OSDUpNext] + !$EXP[FG_OSDLive]</visible>
+			<include content="Aeon_InfoChip"><param name="label" value="$VAR[OSD_FlagResolution]"/><param name="visible" value="[!String.IsEmpty(VideoPlayer.VideoResolution)] + $EXP[Aeon_Chip_player]"/></include>
+			<include content="Aeon_InfoChip"><param name="label" value="$VAR[FG_ChipHDR]"/><param name="visible" value="[!String.IsEmpty(VideoPlayer.HdrType)] + $EXP[Aeon_Chip_player]"/></include>
+			<include content="Aeon_InfoChip"><param name="label" value="$VAR[OSD_FlagAudio]"/><param name="visible" value="[!String.IsEmpty(VideoPlayer.AudioCodec)] + $EXP[Aeon_Chip_player]"/></include>
+		</control>
+
+		<!-- seek bar, times; in the middle: chapter, then Skippy (or where a seek is heading) -->
+		<include content="FG_SeekBar"/>
+		<control type="label"><left>388</left><top>884</top><width>300</width><height>30</height><aligny>center</aligny><font>pl_small_20_bold</font><textcolor>dbffffff</textcolor><selectedcolor>dbffffff</selectedcolor><label>$VAR[FG_OSDTimeL]</label></control>
+		<control type="label"><left>1492</left><top>884</top><width>300</width><height>30</height><align>right</align><aligny>center</aligny><font>pl_small_20_bold</font><textcolor>dbffffff</textcolor><selectedcolor>dbffffff</selectedcolor><label>$VAR[FG_OSDTimeR]</label></control>
+		<control type="label">
+			<left>690</left><top>884</top><width>800</width><height>30</height><align>center</align><aligny>center</aligny>
+			<font>pl_small_20</font><textcolor>b8ffffff</textcolor><selectedcolor>b8ffffff</selectedcolor>
+			<label>$INFO[PVR.EpgEventRemainingTime,, $LOCALIZE[31965]]</label>
+			<visible>$EXP[FG_OSDLive] + ![$EXP[OSD_SeekActive] + Player.SeekEnabled]</visible>
+		</control>
+		<control type="label">
+			<left>690</left><top>884</top><width>800</width><height>30</height><align>center</align><aligny>center</aligny>
+			<font>pl_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+			<label>$INFO[Player.SeekTime]</label>
+			<visible>$EXP[OSD_SeekActive] + Player.SeekEnabled</visible>
+		</control>
+		<control type="grouplist">
+			<left>690</left><top>884</top><width>800</width><height>30</height>
+			<orientation>horizontal</orientation><align>center</align><itemgap>14</itemgap><usecontrolcoords>true</usecontrolcoords>
+			<visible>![$EXP[OSD_SeekActive] + Player.SeekEnabled] + !$EXP[FG_OSDLive]</visible>
+			<control type="label"><width max="300">auto</width><height>30</height><aligny>center</aligny><font>pl_small_20_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$VAR[Aeon_OSD_State][/UPPERCASE]</label><visible>!String.IsEmpty(Player.SeekStepSize) | Player.Caching | Player.Forwarding | Player.Rewinding</visible></control>
+			<control type="label"><width max="300">auto</width><height>30</height><aligny>center</aligny><font>pl_small_20</font><textcolor>b8ffffff</textcolor><label>$VAR[FG_OSDChapter]</label><visible>$EXP[OSD_HasChapters]</visible></control>
+			<control type="label"><width max="30">auto</width><height>30</height><aligny>center</aligny><font>pl_small_20</font><textcolor>66ffffff</textcolor><label>·</label><visible>$EXP[OSD_HasChapters] + [$EXP[FG_SkippyNow] | $EXP[FG_SkippyNext]]</visible></control>
+			<control type="label"><width max="480">auto</width><height>30</height><aligny>center</aligny><font>pl_small_20_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$INFO[Window(Home).Property(Skippy.Segment.Type)]$INFO[Window(Home).Property(Skippy.Segment.Remaining),  ·  , $LOCALIZE[31965]][/UPPERCASE]</label><visible>$EXP[FG_SkippyNow]</visible></control>
+			<control type="label"><width max="480">auto</width><height>30</height><aligny>center</aligny><font>pl_small_20_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE][COLOR 9effffff]$LOCALIZE[31126][/COLOR]  $INFO[Window(Home).Property(Skippy.Segment.Next.Type)]$INFO[Window(Home).Property(Skippy.Segment.Next.Start), $LOCALIZE[31966] ,][/UPPERCASE]</label><visible>$EXP[FG_SkippyNext]</visible></control>
+		</control>
+
+		<include>FG_OSDRow</include>
+
+		<!-- the seek bar: Left / Right are Kodi's step seek, OK pauses / plays, Up asks Skippy's skip button or opens the
+		     information screen, Down goes back to the buttons -->
+		<control type="button" id="87">
+			<description>seek bar</description>
+			<left>388</left><top>846</top><width>1404</width><height>48</height>
+			<label></label>
+			<texturefocus></texturefocus><texturenofocus></texturenofocus>
+			<onleft>Action(StepBack)</onleft>
+			<onright>Action(StepForward)</onright>
+			<onclick>PlayerControl(Play)</onclick>
+			<onup condition="$EXP[FG_SkipAsk]">SetFocus(88)</onup>
+			<onup condition="!$EXP[FG_SkipAsk]">Action(Info,fullscreenvideo)</onup>
+			<ondown>602</ondown>
+			<visible>Player.SeekEnabled</visible>
+		</control>
+		<!-- the seek bar has focus: a soft ring round the marker's bar -->
+		<control type="image"><left>380</left><top>856</top><width>1420</width><height>28</height><texture border="14" colordiffuse="40ffffff">fg/e14.png</texture><visible>Control.HasFocus(87)</visible></control>
+
+		<!-- Skippy's skip button on the card (the skip dialog itself closes while the card is up). Tab: on the card's top
+		     edge, right-aligned with the content (1436..1792); Glass: above the card's right edge (1400..1824). Up from the
+		     seek bar, OK skips, Down goes back. -->
+		<control type="group">
+			<visible>$EXP[FG_SkipAsk]</visible>
+			<animation type="Visible" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="fade" start="0" end="100" time="200"/><effect type="slide" start="0,16" end="0,0" time="240" tween="cubic" easing="out"/></animation>
+			<control type="group">
+				<left>1436</left><top>720</top>
+				<visible>!$EXP[FG_SkipGlass]</visible>
+				<animation type="Conditional" condition="Control.HasFocus(88)" reversible="true"><effect type="zoom" start="100" end="106" center="auto" time="160" tween="cubic" easing="out"/></animation>
+				<control type="image"><left>-5</left><top>-5</top><width>366</width><height>74</height><texture border="32" colordiffuse="ffffffff">fg/e32.png</texture><visible>Control.HasFocus(88)</visible></control>
+				<include content="FG_SkipTab"/>
+			</control>
+			<control type="group">
+				<left>1400</left><top>672</top>
+				<visible>$EXP[FG_SkipGlass]</visible>
+				<include content="FG_SkipGlass"><param name="lit" value="Control.HasFocus(88)"/></include>
+			</control>
+			<control type="button" id="88">
+				<left>1400</left><top>672</top><width>424</width><height>112</height>
+				<label></label>
+				<texturefocus /><texturenofocus />
+				<onclick>RunScript(service.skippy,skip_current)</onclick>
+				<onup>noop</onup><ondown>87</ondown><onleft>noop</onleft><onright>noop</onright>
+			</control>
+		</control>
+	</include>
+	<!-- ============================================================ chapters and bookmarks (VideoOSDBookmarks, 0.41.0):
+	     the player card's look. Kodi lists chapters and bookmarks together in panel 11 (one row here); buttons 2 / 3 / 4
+	     are pills at the right of the heading; under the row the card's seek bar with its chapter gaps. -->
+	<include name="FG_Bookmarks">
+		<control type="image"><left>0</left><top>420</top><width>1920</width><height>660</height><texture colordiffuse="b3000000">fg/scrim_b.png</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>1920</width><height>260</height><texture colordiffuse="cc000000">fg/scrim_t.png</texture></control>
+		<include>FG_NowPill</include>
+		<control type="group">
+			<visible>!Skin.HasSetting(aeon.osd.noclock)</visible>
+			<include>FG_ClockCapsuleEnds</include>
+		</control>
+		<control type="image"><left>56</left><top>520</top><width>1808</width><height>562</height><texture border="72" colordiffuse="$VAR[FG_PanelSh_99]">$VAR[FG_Sh_sho32]</texture></control>
+		<control type="image"><left>96</left><top>560</top><width>1728</width><height>482</height><texture border="32" colordiffuse="$VAR[FG_Frost]">fg/r32.png</texture></control>
+		<control type="image"><left>96</left><top>560</top><width>1728</width><height>482</height><texture border="32" colordiffuse="$VAR[FG_Edge]">fg/e32.png</texture></control>
+		<control type="label">
+			<left>136</left><top>584</top><width>900</width><height>48</height><aligny>center</aligny>
+			<font>pl_ui_28_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+			<label>$LOCALIZE[31564] &amp; $LOCALIZE[298][COLOR 99ffffff]$INFO[Container(11).NumItems,   ,][/COLOR]</label>
+		</control>
+		<control type="grouplist" id="9001">
+			<left>784</left><top>584</top><width>1000</width><height>button_h</height>
+			<orientation>horizontal</orientation><align>right</align><itemgap>12</itemgap>
+			<include content="AG_ButtonSecondary">
+				<param name="id" value="2"/><param name="left" value="0"/><param name="width" value="260"/>
+				<param name="label" value="$LOCALIZE[294]"/><param name="onclick" value="noop"/>
+				<param name="onleft" value="4"/><param name="onright" value="3"/><param name="ondown" value="11"/>
+			</include>
+			<include content="AG_ButtonSecondary">
+				<param name="id" value="3"/><param name="left" value="0"/><param name="width" value="260"/>
+				<param name="label" value="$LOCALIZE[296]"/><param name="onclick" value="noop"/>
+				<param name="onleft" value="2"/><param name="onright" value="4"/><param name="ondown" value="11"/>
+			</include>
+			<include content="AG_ButtonSecondary">
+				<param name="id" value="4"/><param name="left" value="0"/><param name="width" value="340"/>
+				<param name="label" value="$LOCALIZE[20406]"/><param name="onclick" value="noop"/>
+				<param name="onleft" value="3"/><param name="onright" value="2"/><param name="ondown" value="11"/>
+				<param name="visible" value="Control.IsEnabled(4)"/>
+			</include>
+		</control>
+		<control type="label">
+			<left>136</left><top>700</top><width>1648</width><height>40</height>
+			<font>pl_ui_24</font><textcolor>99ffffff</textcolor>
+			<label>$LOCALIZE[31276]</label>
+			<visible>Integer.IsEqual(Container(11).NumItems,0)</visible>
+		</control>
+		<control type="panel" id="11">
+			<left>120</left><top>644</top><width>1680</width><height>290</height>
+			<onup>9001</onup>
+			<ondown>Dialog.Close(videobookmarks)</ondown>
+			<onleft>noop</onleft><onright>noop</onright>
+			<orientation>horizontal</orientation>
+			<preloaditems>2</preloaditems>
+			<scrolltime tween="cubic" easing="out">200</scrolltime>
+			<itemlayout width="336" height="290">
+				<include content="OSD_BookmarkItem"><param name="label_color" value="99ffffff"/></include>
+				<include>FG_BookmarkNow</include>
+			</itemlayout>
+			<focusedlayout width="336" height="290">
+				<include content="OSD_BookmarkItem"><param name="label_color" value="ffffffff"/></include>
+				<include>FG_BookmarkNow</include>
+				<control type="image"><left>5</left><top>9</top><width>326</width><height>186</height><texture border="19" colordiffuse="ffffffff">fg/ring16.png</texture><visible>Control.HasFocus(11)</visible></control>
+			</focusedlayout>
+		</control>
+		<include content="FG_SeekBar"><param name="left" value="136"/><param name="top" value="954"/><param name="width" value="1648"/></include>
+		<control type="label"><left>136</left><top>976</top><width>400</width><height>30</height><aligny>center</aligny><font>pl_small_20_bold</font><textcolor>dbffffff</textcolor><label>$INFO[Player.Time]</label></control>
+		<control type="label"><left>1384</left><top>976</top><width>400</width><height>30</height><align>right</align><aligny>center</aligny><font>pl_small_20_bold</font><textcolor>dbffffff</textcolor><label>$INFO[Player.Duration]</label></control>
+		<control type="label"><left>536</left><top>976</top><width>848</width><height>30</height><align>center</align><aligny>center</aligny><font>pl_small_20</font><textcolor>99ffffff</textcolor><label>$LOCALIZE[31277]</label></control>
+	</include>
+	<!-- the chapter playing now: a PLAYING tag on its picture -->
+	<include name="FG_BookmarkNow">
+		<control type="group">
+			<left>18</left><top>22</top>
+			<visible>!String.IsEmpty(ListItem.Property(chapter)) + Integer.IsEqual(ListItem.Property(chapter),Player.Chapter)</visible>
+			<control type="image"><width>150</width><height>28</height><texture border="14" colordiffuse="b3000000">fg/r14.png</texture></control>
+			<control type="label"><width>150</width><height>28</height><align>center</align><aligny>center</aligny><font>pl_cap_16</font><textcolor>ffffffff</textcolor><label>[B][UPPERCASE]$LOCALIZE[31017][/UPPERCASE][/B]</label></control>
+		</control>
+	</include>
+	<!-- the chapters dialog of the Aeon / Glass themes (VideoOSDBookmarks.xml, 0.28.1); Fused Glass: FG_Bookmarks -->
+	<include name="OSD_Bookmarks_Classic">
+		<control type="image">
+			<left>0</left>
+			<top>440</top>
+			<width>1920</width>
+			<height>640</height>
+			<texture colordiffuse="f0000000">aeon/osd_scrim_bottom.png</texture>
+		</control>
+		<include>Aeon_OSD_TopBar</include>
+		<control type="label">
+			<left>60</left>
+			<top>0</top>
+			<width>900</width>
+			<height>108</height>
+			<aligny>center</aligny>
+			<font>pl_ui_26</font>
+			<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+			<label>[B][UPPERCASE]$LOCALIZE[31564] &amp; $LOCALIZE[298][/UPPERCASE][/B]$INFO[Container(11).NumItems,  ·  ,]</label>
+		</control>
+
+		<!-- ====== buttons, the playing time on the right -->
+		<control type="group" id="9001">
+			<left>0</left>
+			<top>560</top>
+			<width>screen_w</width>
+			<height>button_h</height>
+			<include content="AG_ButtonSecondary">
+				<param name="id" value="2"/>
+				<param name="left" value="60"/>
+				<param name="width" value="300"/>
+				<param name="label" value="$LOCALIZE[294]"/>
+				<param name="onclick" value="noop"/>
+				<param name="onleft" value="4"/>
+				<param name="onright" value="3"/>
+				<param name="ondown" value="11"/>
+			</include>
+			<include content="AG_ButtonSecondary">
+				<param name="id" value="3"/>
+				<param name="left" value="376"/>
+				<param name="width" value="300"/>
+				<param name="label" value="$LOCALIZE[296]"/>
+				<param name="onclick" value="noop"/>
+				<param name="onleft" value="2"/>
+				<param name="onright" value="4"/>
+				<param name="ondown" value="11"/>
+			</include>
+			<include content="AG_ButtonSecondary">
+				<param name="id" value="4"/>
+				<param name="left" value="692"/>
+				<param name="width" value="380"/>
+				<param name="label" value="$LOCALIZE[20406]"/>
+				<param name="onclick" value="noop"/>
+				<param name="onleft" value="3"/>
+				<param name="onright" value="2"/>
+				<param name="ondown" value="11"/>
+				<param name="visible" value="Control.IsEnabled(4)"/>
+			</include>
+		</control>
+		<control type="label">
+			<left>1260</left>
+			<top>560</top>
+			<width>600</width>
+			<height>button_h</height>
+			<align>right</align>
+			<aligny>center</aligny>
+			<font>pl_ui_24_semibold</font>
+			<textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor>
+			<label>$INFO[Player.Time]$INFO[Player.Duration,  /  ,]</label>
+		</control>
+
+		<!-- ====== thumbs -->
+		<control type="label">
+			<left>60</left>
+			<top>700</top>
+			<width>1800</width>
+			<height>40</height>
+			<font>pl_ui_24</font>
+			<textcolor>99ffffff</textcolor>
+			<label>$LOCALIZE[31276]</label>
+			<visible>Integer.IsEqual(Container(11).NumItems,0)</visible>
+		</control>
+		<control type="panel" id="11">
+			<left>52</left>
+			<top>648</top>
+			<width>1816</width>
+			<height>290</height>
+			<onup>9001</onup>
+			<ondown>Dialog.Close(videobookmarks)</ondown>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
+			<orientation>horizontal</orientation>
+			<preloaditems>2</preloaditems>
+			<scrolltime tween="cubic" easing="out">200</scrolltime>
+			<itemlayout width="344" height="290">
+				<include content="OSD_BookmarkItem">
+					<param name="label_color" value="99ffffff"/>
+				</include>
+			</itemlayout>
+			<focusedlayout width="344" height="290">
+				<include content="OSD_BookmarkItem">
+					<param name="label_color" value="ffffffff"/>
+				</include>
+				<control type="group">
+					<left>8</left>
+					<top>12</top>
+					<width>320</width>
+					<height>180</height>
+					<visible>Control.HasFocus(11)</visible>
+					<include condition="Skin.HasSetting(aeon.vglass) + !Skin.HasSetting(aeon.fglass)">AG_FocusFrameAlways</include>
+					<control type="image"><left>-3</left><top>-3</top><width>326</width><height>186</height><texture border="19" colordiffuse="ffffffff">fg/ring16.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+					<control type="image"><left>-4</left><top>-4</top><width>328</width><height>188</height><texture border="8" colordiffuse="aeon_white">common/aeon_outline_sq.png</texture><visible>!Skin.HasSetting(aeon.vglass)</visible><include>Aeon_RowFade</include></control>
+				</control>
+			</focusedlayout>
+		</control>
+
+		<control type="label">
+			<left>60</left>
+			<top>990</top>
+			<width>1800</width>
+			<height>30</height>
+			<font>pl_small_20</font>
+			<textcolor>99ffffff</textcolor>
+			<label>$LOCALIZE[31277]</label>
+		</control>
+	</include>
+	<!-- the information screen of the Aeon / Glass themes (DialogFullScreenInfo.xml, 0.28.1 / 0.38.0) -->
+	<include name="FullInfo_Classic">
+		<control type="button" id="999">
+			<left>0</left>
+			<top>0</top>
+			<width>screen_w</width>
+			<height>screen_h</height>
+			<label></label>
+			<texturefocus />
+			<onright>StepForward</onright>
+			<onleft>StepBack</onleft>
+			<onup>ChapterOrBigStepForward</onup>
+			<ondown>ChapterOrBigStepBack</ondown>
+			<onclick>OSD</onclick>
+		</control>
+		<control type="group">
+			<visible>!Window.IsVisible(sliderdialog) + !Window.IsVisible(selectdialog) + !Window.IsVisible(osdsubtitlesettings) + !Window.IsVisible(osdaudiosettings) + !Window.IsVisible(osdvideosettings)</visible>
+			<control type="image">
+				<left>0</left>
+				<top>440</top>
+				<width>1920</width>
+				<height>640</height>
+				<texture colordiffuse="f0000000">aeon/osd_scrim_bottom.png</texture>
+				<visible>!$EXP[Aeon_FGlass]</visible>
+			</control>
+			<!-- Fused Glass: the Video OSD's card behind the lower part (0.38.0) -->
+			<control type="group">
+				<visible>$EXP[Aeon_FGlass]</visible>
+				<control type="image"><left>0</left><top>420</top><width>1920</width><height>660</height><texture colordiffuse="b3000000">fg/scrim_b.png</texture></control>
+				<control type="image"><left>-4</left><top>528</top><width>1928</width><height>556</height><texture border="68" colordiffuse="$VAR[FG_PanelSh_99]">$VAR[FG_Sh_sho28]</texture></control>
+				<control type="image"><left>36</left><top>568</top><width>1848</width><height>476</height><texture border="28" colordiffuse="$VAR[FG_Frost]">fg/r28.png</texture></control>
+				<control type="image"><left>36</left><top>568</top><width>1848</width><height>476</height><texture border="28" colordiffuse="$VAR[FG_Edge]">fg/e28.png</texture></control>
+			</control>
+			<include>Aeon_OSD_TopBar</include>
+			<!-- the time of day (Past midnight, Evening ...), as on Home -->
+			<control type="grouplist">
+				<left>60</left>
+				<top>0</top>
+				<width>800</width>
+				<height>108</height>
+				<orientation>horizontal</orientation>
+				<itemgap>14</itemgap>
+				<usecontrolcoords>true</usecontrolcoords>
+				<control type="image">
+					<top>39</top>
+					<width>30</width>
+					<height>30</height>
+					<texture colordiffuse="ffffffff">$VAR[AG_MoodIcon]</texture>
+				</control>
+				<control type="label">
+					<width max="740">auto</width>
+					<height>108</height>
+					<aligny>center</aligny>
+					<font>pl_ui_26</font>
+					<textcolor>ddffffff</textcolor><selectedcolor>ddffffff</selectedcolor>
+					<label>$VAR[AG_DayPart]</label>
+				</control>
+			</control>
+			<!-- a playlist's next item when Skippy has no next episode: in the bar, where Skippy's would be -->
+			<control type="group">
+				<visible>$EXP[OSD_HasNext] + [Skin.HasSetting(aeon.skippy.nonext) | String.IsEmpty(Window(Home).Property(Skippy.NextEpisode.Label))]</visible>
+				<animation effect="slide" end="100,0" time="0" condition="Skin.HasSetting(aeon.osd.noclock) + [Skin.HasSetting(aeon.osd.noweather) | String.IsEmpty(Weather.Temperature)]">Conditional</animation>
+				<control type="label">
+					<left>1096</left><top>20</top><width>700</width><height>30</height><align>right</align>
+					<font>pl_cap_20</font><textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor>
+					<label>[UPPERCASE]$LOCALIZE[31235][/UPPERCASE]</label>
+				</control>
+				<control type="label">
+					<left>1096</left><top>50</top><width>700</width><height>40</height><align>right</align>
+					<font>pl_ui_26</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+					<label>$VAR[OSD_NextLabel]</label>
+				</control>
+			</control>
+
+			<!-- poster: the season's, the show's when the season has none, else the film's -->
+			<control type="image">
+				<left>60</left>
+				<top>600</top>
+				<width>200</width>
+				<height>300</height>
+				<aspectratio>scale</aspectratio>
+				<texture background="true">$VAR[Aeon_OSD_Poster]</texture>
+				<visible>!$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="image"><left>60</left><top>600</top><width>200</width><height>300</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m200x300.png">$VAR[Aeon_OSD_Poster]</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+
+			<!-- show / film: clearlogo, else the title -->
+			<control type="image">
+				<left>300</left>
+				<top>600</top>
+				<width>760</width>
+				<height>80</height>
+				<aspectratio align="left" aligny="center">keep</aspectratio>
+				<texture background="true">$VAR[Aeon_OSD_Logo]</texture>
+				<visible>$EXP[Aeon_OSD_HasLogo]</visible>
+			</control>
+			<control type="label">
+				<left>300</left>
+				<top>606</top>
+				<width>1000</width>
+				<height>70</height>
+				<font>pl_display_52</font>
+				<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+				<scroll>true</scroll>
+				<label>$VAR[Aeon_OSD_Title]</label>
+				<visible>!$EXP[Aeon_OSD_HasLogo]</visible>
+			</control>
+			<!-- ends at, and how that sits with your bedtime -->
+			<control type="grouplist">
+				<left>1060</left>
+				<top>604</top>
+				<width>800</width>
+				<height>40</height>
+				<orientation>horizontal</orientation>
+				<align>right</align>
+				<itemgap>10</itemgap>
+				<usecontrolcoords>true</usecontrolcoords>
+				<control type="image">
+					<top>8</top>
+					<width>24</width>
+					<height>24</height>
+					<texture colordiffuse="ffffffff">$VAR[AG_MoodIcon]</texture>
+				</control>
+				<control type="label">
+					<width max="760">auto</width>
+					<height>40</height>
+					<font>pl_ui_24_semibold</font>
+					<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+					<label>$VAR[AGOSD_EndLine]</label>
+				</control>
+			</control>
+			<control type="label">
+				<left>1060</left>
+				<top>646</top>
+				<width>800</width>
+				<height>30</height>
+				<align>right</align>
+				<font>pl_small_20</font>
+				<textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor>
+				<label>$VAR[AGOSD_BedtimeNote]</label>
+			</control>
+			<!-- episode code and title, or year, certificate, director and genre -->
+			<control type="label">
+				<left>300</left>
+				<top>690</top>
+				<width>1560</width>
+				<height>40</height>
+				<font>pl_ui_26</font>
+				<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+				<scroll>true</scroll>
+				<label>$VAR[AGOSD_Sub]</label>
+			</control>
+			<!-- plot, 3 lines -->
+			<control type="textbox">
+				<left>300</left>
+				<top>742</top>
+				<width>1560</width>
+				<height>108</height>
+				<font>pl_body_24</font>
+				<textcolor>ccffffff</textcolor>
+				<label>$INFO[VideoPlayer.Plot]</label>
+				<autoscroll delay="6000" time="3000" repeat="10000">!Skin.HasSetting(aeon.noautoscroll)</autoscroll>
+			</control>
+			<!-- media chips, the aspect ratio among them, and the language flags -->
+			<control type="grouplist">
+				<left>300</left>
+				<top>866</top>
+				<width>1000</width>
+				<height>34</height>
+				<orientation>horizontal</orientation>
+				<itemgap>8</itemgap>
+				<include content="Aeon_InfoChip">
+					<param name="label" value="$VAR[OSD_FlagResolution]"/>
+					<param name="visible" value="[!String.IsEmpty(VideoPlayer.VideoResolution)] + $EXP[Aeon_Chip_player]"/>
+				</include>
+				<include content="Aeon_InfoChip">
+					<param name="label" value="$VAR[OSD_FlagHDR]"/>
+					<param name="visible" value="[!String.IsEmpty(VideoPlayer.HdrType)] + $EXP[Aeon_Chip_player]"/>
+				</include>
+				<include content="Aeon_InfoChip">
+					<param name="label" value="$VAR[OSD_FlagVideoCodec]"/>
+					<param name="visible" value="[!String.IsEmpty(VideoPlayer.VideoCodec)] + $EXP[Aeon_Chip_player]"/>
+				</include>
+				<include content="Aeon_InfoChip">
+					<param name="label" value="$INFO[VideoPlayer.VideoAspect,,:1]"/>
+					<param name="visible" value="[!String.IsEmpty(VideoPlayer.VideoAspect)] + $EXP[Aeon_Chip_player]"/>
+				</include>
+				<include content="Aeon_InfoChip">
+					<param name="label" value="$VAR[OSD_FlagAudio]"/>
+					<param name="visible" value="[!String.IsEmpty(VideoPlayer.AudioCodec)] + $EXP[Aeon_Chip_player]"/>
+				</include>
+				<!-- language of the audio and of the subtitles shown: flags (Skin settings > Behaviour > More options), the code as text without the flag pack -->
+				<control type="image"><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ccffffff">aeon/icons/audio.png</texture><visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible></control>
+				<!-- 0.56.20 misc b: the rounded pack first --><control type="image"><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.AudioLanguage,resource://resource.images.languageflags.rounded/,.png]</texture><visible>!String.IsEmpty(VideoPlayer.AudioLanguage) + !Skin.HasSetting(aeon.osd.noflags) + System.AddonIsEnabled(resource.images.languageflags.rounded)</visible></control><control type="image"><width>44</width><height>34</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.AudioLanguage,resource://resource.images.languageflags.colour/,.png]</texture><visible>!String.IsEmpty(VideoPlayer.AudioLanguage) + !Skin.HasSetting(aeon.osd.noflags) + System.AddonIsEnabled(resource.images.languageflags.colour) + !System.AddonIsEnabled(resource.images.languageflags.rounded)</visible></control>
+				<include content="Aeon_InfoChip">
+					<param name="label" value="[UPPERCASE]$INFO[VideoPlayer.AudioLanguage][/UPPERCASE]"/>
+					<param name="visible" value="!String.IsEmpty(VideoPlayer.AudioLanguage) + ![!Skin.HasSetting(aeon.osd.noflags) + [System.AddonIsEnabled(resource.images.languageflags.colour) | System.AddonIsEnabled(resource.images.languageflags.rounded)]]"/>
+				</include>
+				<control type="image"><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture colordiffuse="ccffffff">aeon/icons/subtitles.png</texture><visible>VideoPlayer.SubtitlesEnabled + !String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible></control>
+				<!-- 0.56.20 misc b: the rounded pack first --><control type="image"><width>34</width><height>34</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.SubtitlesLanguage,resource://resource.images.languageflags.rounded/,.png]</texture><visible>VideoPlayer.SubtitlesEnabled + !String.IsEmpty(VideoPlayer.SubtitlesLanguage) + !Skin.HasSetting(aeon.osd.noflags) + System.AddonIsEnabled(resource.images.languageflags.rounded)</visible></control><control type="image"><width>44</width><height>34</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.SubtitlesLanguage,resource://resource.images.languageflags.colour/,.png]</texture><visible>VideoPlayer.SubtitlesEnabled + !String.IsEmpty(VideoPlayer.SubtitlesLanguage) + !Skin.HasSetting(aeon.osd.noflags) + System.AddonIsEnabled(resource.images.languageflags.colour) + !System.AddonIsEnabled(resource.images.languageflags.rounded)</visible></control>
+				<include content="Aeon_InfoChip">
+					<param name="label" value="[UPPERCASE]$INFO[VideoPlayer.SubtitlesLanguage][/UPPERCASE]"/>
+					<param name="visible" value="VideoPlayer.SubtitlesEnabled + !String.IsEmpty(VideoPlayer.SubtitlesLanguage) + ![!Skin.HasSetting(aeon.osd.noflags) + [System.AddonIsEnabled(resource.images.languageflags.colour) | System.AddonIsEnabled(resource.images.languageflags.rounded)]]"/>
+				</include>
+			</control>
+			<!-- every rating of the video (the helper reads them from the library: aeon.r.player.*), right-aligned -->
+			<control type="grouplist">
+				<left>1300</left>
+				<top>866</top>
+				<width>560</width>
+				<height>34</height>
+				<orientation>horizontal</orientation>
+				<align>right</align>
+				<itemgap>10</itemgap>
+				<include content="Aeon_InfoRating"><param name="src" value="imdb"/><param name="icon" value="imdb"/></include>
+				<include content="Aeon_InfoRating"><param name="src" value="tmdb"/><param name="icon" value="tmdb"/></include>
+				<include content="Aeon_InfoRating"><param name="src" value="rt"/><param name="icon" value="rtfresh"/></include>
+				<include content="Aeon_InfoRating"><param name="src" value="trakt"/><param name="icon" value="trakt"/></include>
+				<control type="label">
+					<width>auto</width>
+					<height>34</height>
+					<aligny>center</aligny>
+					<font>pl_ui_24_bold</font>
+					<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+					<label>$INFO[VideoPlayer.Rating]</label>
+					<visible>String.IsEmpty(Window(Home).Property(aeon.r.player.imdb)) + String.IsEmpty(Window(Home).Property(aeon.r.player.tmdb)) + String.IsEmpty(Window(Home).Property(aeon.r.player.rt)) + String.IsEmpty(Window(Home).Property(aeon.r.player.trakt))</visible>
+				<visible>$EXP[Aeon_Rate_player]</visible></control>
+			</control>
+
+			<!-- seek row: elapsed, the OSD's seek line and marker, remaining. 1330 wide, so the bedtime tick and the
+			     time bubble can use the 1 % = 13.3 px slides -->
+			<control type="label">
+				<left>300</left>
+				<top>966</top>
+				<width>100</width>
+				<height>34</height>
+				<font>pl_small_20_bold</font>
+				<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+				<label>$VAR[OSD_SeekTimeLabel]</label>
+			</control>
+			<control type="label">
+				<left>1740</left>
+				<top>966</top>
+				<width>120</width>
+				<height>34</height>
+				<align>right</align>
+				<font>pl_small_20_bold</font>
+				<textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor>
+				<label>$INFO[Player.TimeRemaining,−,]</label>
+			</control>
+			<include content="Aeon_SeekLine">
+				<param name="left" value="410"/>
+				<param name="top" value="982"/>
+				<param name="width" value="1330"/>
+				<param name="thick" value="$EXP[OSD_SeekActive]"/>
+			</include>
+			<!-- bedtime tick: where your bedtime falls in the film (aeon.bedpct, set when the window opens) -->
+			<control type="group">
+				<left>407</left>
+				<top>968</top>
+				<width>6</width>
+				<height>30</height>
+				<visible>$EXP[AGOSD_ShowBedtime] + !String.IsEmpty(Window(Home).Property(aeon.bedpct))</visible>
+				<include>AGOSD_BedTickSlide</include>
+				<control type="image"><left>0</left><top>0</top><width>6</width><height>30</height><texture colordiffuse="ccffffff">aeon/tick_bed.png</texture></control>
+				<control type="image"><left>-8</left><top>-26</top><width>22</width><height>22</height><texture colordiffuse="ffffffff">aeon/icons/moon.png</texture></control>
+			</control>
+			<!-- the time a step seek is heading to, above the marker -->
+			<control type="group">
+				<left>350</left>
+				<top>918</top>
+				<width>120</width>
+				<height>36</height>
+				<visible>$EXP[OSD_SeekActive] + Player.SeekEnabled</visible>
+				<include>AGOSD_BubbleSlide</include>
+				<control type="image"><left>0</left><top>0</top><width>120</width><height>36</height><texture colordiffuse="f2ffffff">common/white.png</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+				<control type="image"><left>0</left><top>0</top><width>120</width><height>36</height><texture border="18" colordiffuse="f2ffffff">fg/r18.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+				<control type="label"><left>0</left><top>0</top><width>120</width><height>36</height><align>center</align><aligny>center</aligny><font>pl_small_20_bold</font><textcolor>ff111111</textcolor><selectedcolor>ff111111</selectedcolor><label>$VAR[OSD_SeekTimeLabel]</label></control>
+			</control>
+		</control>
+	</include>
+	<!-- FG_FULLINFO:begin (written by _src/fg_fullinfo.py) ============================== information screen (0.41.0) -->
+	<variable name="FG_InfoCastPath">
+		<value condition="Player.HasVideo + !$EXP[FG_OSDLive]">plugin://script.aeon.helper/?info=playercast&amp;s=$INFO[VideoPlayer.Season]&amp;e=$INFO[VideoPlayer.Episode]&amp;y=$INFO[VideoPlayer.Year]</value>
+		<value>special://skin/shortcuts/customrows-none.xsp</value>
+	</variable>
+	<variable name="FG_InfoSeasonPath">
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.pf.seasonpath))">$INFO[Window(Home).Property(aeon.pf.seasonpath)]</value>
+		<value>special://skin/shortcuts/customrows-none.xsp</value>
+	</variable>
+	<variable name="FG_InfoFileW">
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.pf.seasonpath))">836</value>
+		<value>1484</value>
+	</variable>
+	<!-- Down from the overview: the cast row (photos), else the second page -->
+	<variable name="FG_InfoToPage2">
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.pf.seasonpath))">SetFocus(9502)</value>
+		<value>SetFocus(9503)</value>
+	</variable>
+	<variable name="FG_InfoBackTo">
+		<value condition="Skin.HasSetting(aeon.osd.castphotos) + Integer.IsGreater(Container(9504).NumItems,0)">SetFocus(9504)</value>
+		<value>SetFocus(999)</value>
+	</variable>
+	<variable name="FG_InfoMeta">
+		<value condition="!String.IsEmpty(VideoPlayer.TVShowTitle)">$INFO[VideoPlayer.Premiered]$INFO[Player.Duration(mins),  ·  , min]$INFO[VideoPlayer.mpaa,  ·  ]$INFO[VideoPlayer.Genre,  ·  ]$INFO[VideoPlayer.Studio,  ·  ]</value>
+		<value>$VAR[AGOSD_Sub]</value>
+	</variable>
+	<!-- 0.56.53 player sidecar --><variable name="FG_ChipHDR">
+		<value condition="[String.IsEqual(VideoPlayer.HdrType,dolbyvision) | String.IsEqual(VideoPlayer.HdrType,dv) | String.IsEqual(VideoPlayer.HdrType,dovi)] + !String.IsEmpty(Window(Home).Property(aeon.pf.dvp)) + String.IsEqual(Window(Home).Property(aeon.pf.mi.path),Player.FilenameAndPath)">DV $INFO[Window(Home).Property(aeon.pf.dvp)]</value>
+		<value condition="[String.IsEqual(VideoPlayer.HdrType,dolbyvision) | String.IsEqual(VideoPlayer.HdrType,dv) | String.IsEqual(VideoPlayer.HdrType,dovi)]">DV</value>
+		<value>$VAR[OSD_FlagHDR]</value>
+	</variable>
+	<!-- a cast member as a chip: name and character (the overview's default) -->
+	<include name="FG_CastChip">
+		<control type="image"><left>0</left><top>4</top><width>300</width><height>44</height><texture border="22" colordiffuse="1cffffff">fg/r22.png</texture></control>
+		<control type="label"><left>18</left><top>4</top><width>270</width><height>44</height><aligny>center</aligny><font>pl_small_20</font><textcolor>ffffffff</textcolor>
+			<label>[B]$INFO[ListItem.Label][/B]$INFO[ListItem.Label2,  [COLOR 9effffff],[/COLOR]]</label></control>
+	</include>
+	<!-- a cast member as a photo (as on the item information view, VidInfo_CastItem) -->
+	<include name="FG_CastItem">
+		<param name="focused">false</param>
+		<definition>
+			<control type="group">
+				<left>18</left><top>14</top><width>146</width><height>146</height>
+				<animation type="Conditional" condition="$PARAM[focused] + Control.HasFocus(9504) + !Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="zoom" start="100" end="108" center="auto" time="160" tween="cubic" easing="out"/></animation>
+				<control type="image"><left>-6</left><top>-6</top><width>158</width><height>158</height><texture colordiffuse="$VAR[Aeon_Accent]">aeon/ring_cast.png</texture><visible>$PARAM[focused] + Control.HasFocus(9504)</visible></control>
+				<control type="image"><width>146</width><height>146</height><texture colordiffuse="1fffffff">fg/circle.png</texture></control>
+				<control type="image"><left>48</left><top>48</top><width>50</width><height>50</height><texture colordiffuse="66ffffff">aeon/icons/info.png</texture><visible>String.IsEmpty(ListItem.Art(thumb))</visible></control>
+				<control type="image"><left>0</left><top>-15</top><width>146</width><height>219</height><aspectratio scalediffuse="false">scale</aspectratio><fadetime>160</fadetime><texture background="true" diffuse="aeon/mask_cast.png">$INFO[ListItem.Art(thumb)]</texture></control>
+			</control>
+			<control type="label"><left>8</left><top>177</top><width>166</width><height>28</height><align>center</align><font>pl_small_20_semibold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[ListItem.Label]</label></control>
+			<control type="label"><left>8</left><top>205</top><width>166</width><height>26</height><align>center</align><font>pl_small_20</font><textcolor>9effffff</textcolor><label>$INFO[ListItem.Label2]</label></control>
+		</definition>
+	</include>
+	<!-- an episode of the season on the second page; the one playing has a light pill, the focused row is white -->
+	<include name="FG_SeasonRow">
+		<param name="focused">false</param>
+		<definition>
+			<control type="image"><left>0</left><top>4</top><width>616</width><height>88</height><texture border="16" colordiffuse="1affffff">fg/r16.png</texture><visible>ListItem.IsPlaying + !$PARAM[focused]</visible></control>
+			<control type="image"><left>0</left><top>4</top><width>616</width><height>88</height><texture border="16" colordiffuse="ffffffff">fg/r16.png</texture><visible>$PARAM[focused] + Control.HasFocus(9502)</visible></control>
+			<control type="image"><left>8</left><top>12</top><width>128</width><height>72</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m128x72.png">$INFO[ListItem.Art(thumb)]</texture></control>
+			<control type="label"><left>152</left><top>14</top><width>450</width><height>32</height><aligny>center</aligny><font>pl_ui_22_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[ListItem.Episode,E, · ]$INFO[ListItem.Title]</label><visible>!$PARAM[focused] | !Control.HasFocus(9502)</visible></control>
+			<control type="label"><left>152</left><top>14</top><width>450</width><height>32</height><aligny>center</aligny><font>pl_ui_22_bold</font><textcolor>aeon_onbar</textcolor><selectedcolor>aeon_onbar</selectedcolor><label>$INFO[ListItem.Episode,E, · ]$INFO[ListItem.Title]</label><visible>$PARAM[focused] + Control.HasFocus(9502)</visible></control>
+			<control type="label"><left>152</left><top>48</top><width>450</width><height>28</height><aligny>center</aligny><font>pl_small_20</font><textcolor>9effffff</textcolor><selectedcolor>9effffff</selectedcolor><label>$INFO[ListItem.Duration(mins),, min]</label><visible>!$PARAM[focused] | !Control.HasFocus(9502)</visible></control>
+			<control type="label"><left>152</left><top>48</top><width>450</width><height>28</height><aligny>center</aligny><font>pl_small_20</font><textcolor>aeon_onbar</textcolor><selectedcolor>aeon_onbar</selectedcolor><label>$INFO[ListItem.Duration(mins),, min]</label><visible>$PARAM[focused] + Control.HasFocus(9502)</visible></control>
+		</definition>
+	</include>
+	<include name="FG_FullInfo">
+		<control type="button" id="999">
+			<left>0</left><top>0</top><width>screen_w</width><height>screen_h</height>
+			<label></label><texturefocus /><texturenofocus />
+			<onright>StepForward</onright>
+			<onleft>StepBack</onleft>
+			<onup>ChapterOrBigStepForward</onup>
+			<ondown condition="Skin.HasSetting(aeon.osd.castphotos) + Integer.IsGreater(Container(9504).NumItems,0)">SetFocus(9504)</ondown>
+			<ondown condition="![Skin.HasSetting(aeon.osd.castphotos) + Integer.IsGreater(Container(9504).NumItems,0)]">SetProperty(fgpage,2,fullscreeninfo)</ondown>
+			<ondown condition="![Skin.HasSetting(aeon.osd.castphotos) + Integer.IsGreater(Container(9504).NumItems,0)] + !String.IsEmpty(Window(Home).Property(aeon.pf.seasonpath))">SetFocus(9502)</ondown>
+			<ondown condition="![Skin.HasSetting(aeon.osd.castphotos) + Integer.IsGreater(Container(9504).NumItems,0)] + !!String.IsEmpty(Window(Home).Property(aeon.pf.seasonpath))">SetFocus(9503)</ondown>
+			<onclick>OSD</onclick>
+		</control>
+		<!-- the second page's focus when there is no season list (films) -->
+		<control type="button" id="9503">
+			<left>-200</left><top>-200</top><width>10</width><height>10</height><label></label><texturefocus /><texturenofocus />
+			<onup>ClearProperty(fgpage,fullscreeninfo)</onup><onup condition="Skin.HasSetting(aeon.osd.castphotos) + Integer.IsGreater(Container(9504).NumItems,0)">SetFocus(9504)</onup><onup condition="![Skin.HasSetting(aeon.osd.castphotos) + Integer.IsGreater(Container(9504).NumItems,0)]">SetFocus(999)</onup>
+			<onleft>noop</onleft><onright>noop</onright><ondown>noop</ondown>
+		</control>
+		<control type="group">
+			<visible>!Window.IsVisible(sliderdialog) + !Window.IsVisible(selectdialog) + !Window.IsVisible(osdsubtitlesettings) + !Window.IsVisible(osdaudiosettings) + !Window.IsVisible(osdvideosettings)</visible>
+			<control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><texture colordiffuse="66000000">common/white.png</texture></control>
+			<control type="image"><left>0</left><top>0</top><width>1920</width><height>260</height><texture colordiffuse="cc000000">fg/scrim_t.png</texture></control>
+			<include>FG_NowPill</include>
+			<control type="group">
+				<visible>!Skin.HasSetting(aeon.osd.noclock)</visible>
+				<include>FG_ClockCapsuleEnds</include>
+			</control>
+			<!-- overview: cast as chips (default) -->
+			<control type="group">
+				<visible>String.IsEmpty(Window(fullscreeninfo).Property(fgpage)) + !Skin.HasSetting(aeon.osd.castphotos) + !$EXP[FG_OSDLive]</visible>
+				<animation type="Visible" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="fade" start="0" end="100" time="200"/><effect type="slide" start="0,-24" end="0,0" time="260" tween="cubic" easing="out"/></animation>
+			<control type="image"><left>56</left><top>280</top><width>1808</width><height>802</height><texture border="72" colordiffuse="$VAR[FG_PanelSh_99]">$VAR[FG_Sh_sho32]</texture></control>
+			<control type="image"><left>96</left><top>320</top><width>1728</width><height>722</height><texture border="32" colordiffuse="$VAR[FG_Frost]">fg/r32.png</texture></control>
+			<control type="image"><left>96</left><top>320</top><width>1728</width><height>722</height><texture border="32" colordiffuse="$VAR[FG_Edge]">fg/e32.png</texture></control>
+			<control type="image"><left>136</left><top>356</top><width>270</width><height>405</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m270x405.png">$VAR[Aeon_OSD_Poster]</texture><visible>!$EXP[FG_OSDLive]</visible></control>
+			<control type="image"><left>136</left><top>779</top><width>270</width><height>6</height><texture border="3" colordiffuse="38ffffff">fg/pill4.png</texture></control>
+			<control type="progress"><left>136</left><top>779</top><width>270</width><height>6</height><texturebg border="3" colordiffuse="00ffffff">fg/pill4.png</texturebg><midtexture subpixel="true" border="3" colordiffuse="ffffffff">fg/pill4.png</midtexture><info>Player.Progress</info></control>
+			<control type="ranges"><left>136</left><top>776</top><width>270</width><height>6</height><texturebg></texturebg><lefttexture /><midtexture subpixel="true" /><righttexture subpixel="true" colordiffuse="fg_gapcol">fg/chgap6.png</righttexture><info>Player.Chapters</info><visible>$EXP[OSD_HasChapters]</visible></control>
+			<control type="ranges"><left>136</left><top>776</top><width>270</width><height>6</height><texturebg></texturebg><lefttexture /><midtexture subpixel="true" /><righttexture subpixel="true" colordiffuse="fg_gapcol">fg/chgap6.png</righttexture><info>Window(Home).Property(aeon.sk.ranges)</info><visible>$EXP[OSD_HasSkChapters]</visible></control>
+			<control type="label"><left>136</left><top>791</top><width>270</width><height>28</height><aligny>center</aligny><font>pl_small_20</font><textcolor>b3ffffff</textcolor><label>$INFO[Player.Time]$INFO[Player.Duration, / ,]</label></control>
+			<control type="label"><left>136</left><top>819</top><width>270</width><height>28</height><aligny>center</aligny><font>pl_small_20</font><textcolor>99ffffff</textcolor><label>$INFO[Player.TimeRemaining,−,]</label></control>
+			<control type="label"><left>446</left><top>356</top><width>934</width><height>24</height><aligny>center</aligny><font>pl_cap_16</font><textcolor>99ffffff</textcolor><label>$VAR[FG_OSDKick]</label></control>
+			<control type="label"><left>446</left><top>380</top><width>934</width><height>66</height><aligny>center</aligny><font>pl_display_52</font><textcolor>ffffffff</textcolor><scroll>true</scroll><label>$VAR[FG_OSDCardTitle]</label></control>
+			<control type="label"><left>446</left><top>452</top><width>934</width><height>34</height><aligny>center</aligny><font>pl_ui_22</font><textcolor>d0ffffff</textcolor><scroll>true</scroll><label>$VAR[FG_InfoMeta]</label></control>
+			<control type="grouplist"><left>446</left><top>494</top><width>934</width><height>34</height><orientation>horizontal</orientation><itemgap>12</itemgap><include content="Aeon_InfoRating"><param name="src" value="imdb"/><param name="icon" value="imdb"/></include><include content="Aeon_InfoRating"><param name="src" value="tmdb"/><param name="icon" value="tmdb"/></include><include content="Aeon_InfoRating"><param name="src" value="rt"/><param name="icon" value="rtfresh"/></include><include content="Aeon_InfoRating"><param name="src" value="trakt"/><param name="icon" value="trakt"/></include><control type="label"><width>auto</width><height>34</height><aligny>center</aligny><font>pl_ui_24_bold</font><textcolor>ffffffff</textcolor><label>$INFO[VideoPlayer.Rating]</label><visible>String.IsEmpty(Window(Home).Property(aeon.r.player.imdb)) + String.IsEmpty(Window(Home).Property(aeon.r.player.tmdb)) + String.IsEmpty(Window(Home).Property(aeon.r.player.rt)) + String.IsEmpty(Window(Home).Property(aeon.r.player.trakt))</visible><visible>$EXP[Aeon_Rate_player]</visible></control></control>
+			<control type="textbox"><left>446</left><top>544</top><width>934</width><height>144</height><font>pl_body_24</font><textcolor>ebffffff</textcolor><label>$INFO[VideoPlayer.Plot]</label><autoscroll delay="8000" time="3000" repeat="10000">!Skin.HasSetting(aeon.noautoscroll)</autoscroll></control>
+			<control type="label"><left>1420</left><top>356</top><width>364</width><height>24</height><aligny>center</aligny><font>pl_cap_16</font><textcolor>99ffffff</textcolor><label>[UPPERCASE]$LOCALIZE[31449][/UPPERCASE]</label></control>
+			<control type="grouplist"><left>1420</left><top>388</top><width>364</width><height>34</height><orientation>horizontal</orientation><itemgap>8</itemgap><include content="Aeon_InfoChip"><param name="label" value="$VAR[OSD_FlagResolution]"/><param name="visible" value="[!String.IsEmpty(VideoPlayer.VideoResolution)] + $EXP[Aeon_Chip_player]"/></include><include content="Aeon_InfoChip"><param name="label" value="$VAR[FG_ChipHDR]"/><param name="visible" value="[!String.IsEmpty(VideoPlayer.HdrType)] + $EXP[Aeon_Chip_player]"/></include><include content="Aeon_InfoChip"><param name="label" value="$VAR[OSD_FlagVideoCodec]"/><param name="visible" value="[!String.IsEmpty(VideoPlayer.VideoCodec)] + $EXP[Aeon_Chip_player]"/></include></control>
+			<control type="grouplist"><left>1420</left><top>430</top><width>364</width><height>34</height><orientation>horizontal</orientation><itemgap>8</itemgap><include content="Aeon_InfoChip"><param name="label" value="$VAR[OSD_FlagAudio]"/><param name="visible" value="[!String.IsEmpty(VideoPlayer.AudioCodec)] + $EXP[Aeon_Chip_player]"/></include><include content="Aeon_InfoChip"><param name="label" value="$INFO[VideoPlayer.VideoAspect,,:1]"/><param name="visible" value="[!String.IsEmpty(VideoPlayer.VideoAspect)] + $EXP[Aeon_Chip_player]"/></include></control>
+			<control type="label"><left>1420</left><top>482</top><width>150</width><height>30</height><aligny>center</aligny><font>pl_small_20</font><textcolor>8cffffff</textcolor><label>$LOCALIZE[292]</label></control>
+			<control type="label"><left>1570</left><top>482</top><width>214</width><height>30</height><align>right</align><aligny>center</aligny><font>pl_small_20</font><textcolor>d0ffffff</textcolor><label>$INFO[Window(Home).Property(aeon.pf.audio)]</label></control>
+			<!-- 0.56.53 language flags of the audio and the subtitles shown (the Aeon info page had them, this one only the text) -->
+			<control type="grouplist"><left>1420</left><top>518</top><width>364</width><height>30</height><orientation>horizontal</orientation><itemgap>8</itemgap><visible>!Skin.HasSetting(aeon.osd.noflags) + [System.AddonIsEnabled(resource.images.languageflags.rounded) | System.AddonIsEnabled(resource.images.languageflags.colour)]</visible><control type="image"><width>26</width><height>30</height><aspectratio>keep</aspectratio><texture colordiffuse="99ffffff">aeon/icons/audio.png</texture><visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible></control><control type="image"><width>30</width><height>30</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.AudioLanguage,resource://resource.images.languageflags.rounded/,.png]</texture><visible>!String.IsEmpty(VideoPlayer.AudioLanguage) + System.AddonIsEnabled(resource.images.languageflags.rounded)</visible></control><control type="image"><width>40</width><height>30</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.AudioLanguage,resource://resource.images.languageflags.colour/,.png]</texture><visible>!String.IsEmpty(VideoPlayer.AudioLanguage) + System.AddonIsEnabled(resource.images.languageflags.colour) + !System.AddonIsEnabled(resource.images.languageflags.rounded)</visible></control><control type="image"><width>26</width><height>30</height><aspectratio>keep</aspectratio><texture colordiffuse="99ffffff">aeon/icons/subtitles.png</texture><visible>VideoPlayer.SubtitlesEnabled + !String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible></control><control type="image"><width>30</width><height>30</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.SubtitlesLanguage,resource://resource.images.languageflags.rounded/,.png]</texture><visible>VideoPlayer.SubtitlesEnabled + !String.IsEmpty(VideoPlayer.SubtitlesLanguage) + System.AddonIsEnabled(resource.images.languageflags.rounded)</visible></control><control type="image"><width>40</width><height>30</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.SubtitlesLanguage,resource://resource.images.languageflags.colour/,.png]</texture><visible>VideoPlayer.SubtitlesEnabled + !String.IsEmpty(VideoPlayer.SubtitlesLanguage) + System.AddonIsEnabled(resource.images.languageflags.colour) + !System.AddonIsEnabled(resource.images.languageflags.rounded)</visible></control></control>
+			<control type="group"><visible>$EXP[FG_OSDUpNext]</visible><control type="label"><left>1420</left><top>592</top><width>364</width><height>24</height><aligny>center</aligny><font>pl_cap_16</font><textcolor>99ffffff</textcolor><label>[UPPERCASE]$LOCALIZE[31235][/UPPERCASE]</label></control><control type="image"><left>1420</left><top>624</top><width>364</width><height>205</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m400x225.png">$INFO[Window(Home).Property(Skippy.NextEpisode.Thumb)]</texture></control><control type="label"><left>1420</left><top>837</top><width>364</width><height>32</height><aligny>center</aligny><font>pl_ui_22_bold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Home).Property(Skippy.NextEpisode.Label)]</label><visible>!String.IsEmpty(Window(Home).Property(Skippy.NextEpisode.Thumb))</visible></control><control type="label"><left>1420</left><top>622</top><width>364</width><height>32</height><aligny>center</aligny><font>pl_ui_22_bold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Home).Property(Skippy.NextEpisode.Label)]</label><visible>String.IsEmpty(Window(Home).Property(Skippy.NextEpisode.Thumb))</visible></control></control>
+			<control type="label"><left>446</left><top>706</top><width>400</width><height>24</height><aligny>center</aligny><font>pl_cap_16</font><textcolor>99ffffff</textcolor><label>[UPPERCASE]$LOCALIZE[206][/UPPERCASE]</label><visible>Integer.IsGreater(Container(9501).NumItems,0)</visible></control>
+			<control type="panel" id="9501">
+				<left>446</left><top>736</top><width>934</width><height>104</height>
+				<orientation>vertical</orientation><preloaditems>0</preloaditems>
+				<content>$VAR[FG_InfoCastPath]</content>
+				<itemlayout width="311" height="52"><include>FG_CastChip</include></itemlayout>
+				<focusedlayout width="311" height="52"><include>FG_CastChip</include></focusedlayout>
+			</control>
+			<control type="grouplist"><left>136</left><top>996</top><width>1400</width><height>26</height><orientation>horizontal</orientation><itemgap>10</itemgap><control type="button"><width min="40" max="200">auto</width><height>26</height><label>[B][UPPERCASE]$LOCALIZE[31245][/UPPERCASE][/B]</label><font>pl_cap_12</font><textoffsetx>9</textoffsetx><align>center</align><aligny>center</aligny><textcolor>ffffffff</textcolor><disabledcolor>ffffffff</disabledcolor><texturenofocus border="8" colordiffuse="59ffffff">fg/e8.png</texturenofocus><texturefocus border="8" colordiffuse="59ffffff">fg/e8.png</texturefocus><enable>false</enable></control><control type="label"><width max="400">auto</width><height>26</height><aligny>center</aligny><font>pl_small_20</font><textcolor>99ffffff</textcolor><label>$LOCALIZE[15067]</label></control><control type="button"><width min="40" max="200">auto</width><height>26</height><label>[B][UPPERCASE]$ADDON[skin.aeon.fuse 32488][/UPPERCASE][/B]</label><font>pl_cap_12</font><textoffsetx>9</textoffsetx><align>center</align><aligny>center</aligny><textcolor>ffffffff</textcolor><disabledcolor>ffffffff</disabledcolor><texturenofocus border="8" colordiffuse="59ffffff">fg/e8.png</texturenofocus><texturefocus border="8" colordiffuse="59ffffff">fg/e8.png</texturefocus><enable>false</enable></control><control type="label"><width max="400">auto</width><height>26</height><aligny>center</aligny><font>pl_small_20</font><textcolor>99ffffff</textcolor><label>$ADDON[skin.aeon.fuse 32480]</label></control></control>
+			</control>
+			<!-- overview: cast as photos (Skin settings > ... > Cast photos in the information screen) -->
+			<control type="group">
+				<visible>String.IsEmpty(Window(fullscreeninfo).Property(fgpage)) + Skin.HasSetting(aeon.osd.castphotos) + !$EXP[FG_OSDLive]</visible>
+				<animation type="Visible" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="fade" start="0" end="100" time="200"/><effect type="slide" start="0,-24" end="0,0" time="260" tween="cubic" easing="out"/></animation>
+			<control type="image"><left>56</left><top>130</top><width>1808</width><height>952</height><texture border="72" colordiffuse="$VAR[FG_PanelSh_99]">$VAR[FG_Sh_sho32]</texture></control>
+			<control type="image"><left>96</left><top>170</top><width>1728</width><height>872</height><texture border="32" colordiffuse="$VAR[FG_Frost]">fg/r32.png</texture></control>
+			<control type="image"><left>96</left><top>170</top><width>1728</width><height>872</height><texture border="32" colordiffuse="$VAR[FG_Edge]">fg/e32.png</texture></control>
+			<control type="image"><left>136</left><top>206</top><width>230</width><height>345</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m230x345.png">$VAR[Aeon_OSD_Poster]</texture><visible>!$EXP[FG_OSDLive]</visible></control>
+			<control type="image"><left>136</left><top>569</top><width>230</width><height>6</height><texture border="3" colordiffuse="38ffffff">fg/pill4.png</texture></control>
+			<control type="progress"><left>136</left><top>569</top><width>230</width><height>6</height><texturebg border="3" colordiffuse="00ffffff">fg/pill4.png</texturebg><midtexture subpixel="true" border="3" colordiffuse="ffffffff">fg/pill4.png</midtexture><info>Player.Progress</info></control>
+			<control type="ranges"><left>136</left><top>566</top><width>230</width><height>6</height><texturebg></texturebg><lefttexture /><midtexture subpixel="true" /><righttexture subpixel="true" colordiffuse="fg_gapcol">fg/chgap6.png</righttexture><info>Player.Chapters</info><visible>$EXP[OSD_HasChapters]</visible></control>
+			<control type="ranges"><left>136</left><top>566</top><width>230</width><height>6</height><texturebg></texturebg><lefttexture /><midtexture subpixel="true" /><righttexture subpixel="true" colordiffuse="fg_gapcol">fg/chgap6.png</righttexture><info>Window(Home).Property(aeon.sk.ranges)</info><visible>$EXP[OSD_HasSkChapters]</visible></control>
+			<control type="label"><left>136</left><top>581</top><width>230</width><height>28</height><aligny>center</aligny><font>pl_small_20</font><textcolor>b3ffffff</textcolor><label>$INFO[Player.Time]$INFO[Player.Duration, / ,]</label></control>
+			<control type="label"><left>136</left><top>609</top><width>230</width><height>28</height><aligny>center</aligny><font>pl_small_20</font><textcolor>99ffffff</textcolor><label>$INFO[Player.TimeRemaining,−,]</label></control>
+			<control type="label"><left>406</left><top>206</top><width>974</width><height>24</height><aligny>center</aligny><font>pl_cap_16</font><textcolor>99ffffff</textcolor><label>$VAR[FG_OSDKick]</label></control>
+			<control type="label"><left>406</left><top>230</top><width>974</width><height>66</height><aligny>center</aligny><font>pl_display_52</font><textcolor>ffffffff</textcolor><scroll>true</scroll><label>$VAR[FG_OSDCardTitle]</label></control>
+			<control type="label"><left>406</left><top>302</top><width>974</width><height>34</height><aligny>center</aligny><font>pl_ui_22</font><textcolor>d0ffffff</textcolor><scroll>true</scroll><label>$VAR[FG_InfoMeta]</label></control>
+			<control type="grouplist"><left>406</left><top>344</top><width>974</width><height>34</height><orientation>horizontal</orientation><itemgap>12</itemgap><include content="Aeon_InfoRating"><param name="src" value="imdb"/><param name="icon" value="imdb"/></include><include content="Aeon_InfoRating"><param name="src" value="tmdb"/><param name="icon" value="tmdb"/></include><include content="Aeon_InfoRating"><param name="src" value="rt"/><param name="icon" value="rtfresh"/></include><include content="Aeon_InfoRating"><param name="src" value="trakt"/><param name="icon" value="trakt"/></include><control type="label"><width>auto</width><height>34</height><aligny>center</aligny><font>pl_ui_24_bold</font><textcolor>ffffffff</textcolor><label>$INFO[VideoPlayer.Rating]</label><visible>String.IsEmpty(Window(Home).Property(aeon.r.player.imdb)) + String.IsEmpty(Window(Home).Property(aeon.r.player.tmdb)) + String.IsEmpty(Window(Home).Property(aeon.r.player.rt)) + String.IsEmpty(Window(Home).Property(aeon.r.player.trakt))</visible><visible>$EXP[Aeon_Rate_player]</visible></control></control>
+			<control type="textbox"><left>406</left><top>394</top><width>974</width><height>108</height><font>pl_body_24</font><textcolor>ebffffff</textcolor><label>$INFO[VideoPlayer.Plot]</label><autoscroll delay="8000" time="3000" repeat="10000">!Skin.HasSetting(aeon.noautoscroll)</autoscroll></control>
+			<control type="label"><left>1420</left><top>206</top><width>364</width><height>24</height><aligny>center</aligny><font>pl_cap_16</font><textcolor>99ffffff</textcolor><label>[UPPERCASE]$LOCALIZE[31449][/UPPERCASE]</label></control>
+			<control type="grouplist"><left>1420</left><top>238</top><width>364</width><height>34</height><orientation>horizontal</orientation><itemgap>8</itemgap><include content="Aeon_InfoChip"><param name="label" value="$VAR[OSD_FlagResolution]"/><param name="visible" value="[!String.IsEmpty(VideoPlayer.VideoResolution)] + $EXP[Aeon_Chip_player]"/></include><include content="Aeon_InfoChip"><param name="label" value="$VAR[FG_ChipHDR]"/><param name="visible" value="[!String.IsEmpty(VideoPlayer.HdrType)] + $EXP[Aeon_Chip_player]"/></include><include content="Aeon_InfoChip"><param name="label" value="$VAR[OSD_FlagVideoCodec]"/><param name="visible" value="[!String.IsEmpty(VideoPlayer.VideoCodec)] + $EXP[Aeon_Chip_player]"/></include></control>
+			<control type="grouplist"><left>1420</left><top>280</top><width>364</width><height>34</height><orientation>horizontal</orientation><itemgap>8</itemgap><include content="Aeon_InfoChip"><param name="label" value="$VAR[OSD_FlagAudio]"/><param name="visible" value="[!String.IsEmpty(VideoPlayer.AudioCodec)] + $EXP[Aeon_Chip_player]"/></include><include content="Aeon_InfoChip"><param name="label" value="$INFO[VideoPlayer.VideoAspect,,:1]"/><param name="visible" value="[!String.IsEmpty(VideoPlayer.VideoAspect)] + $EXP[Aeon_Chip_player]"/></include></control>
+			<control type="label"><left>1420</left><top>332</top><width>150</width><height>30</height><aligny>center</aligny><font>pl_small_20</font><textcolor>8cffffff</textcolor><label>$LOCALIZE[292]</label></control>
+			<control type="label"><left>1570</left><top>332</top><width>214</width><height>30</height><align>right</align><aligny>center</aligny><font>pl_small_20</font><textcolor>d0ffffff</textcolor><label>$INFO[Window(Home).Property(aeon.pf.audio)]</label></control>
+			<!-- 0.56.53 language flags of the audio and the subtitles shown (the Aeon info page had them, this one only the text) -->
+			<control type="grouplist"><left>1420</left><top>368</top><width>364</width><height>30</height><orientation>horizontal</orientation><itemgap>8</itemgap><visible>!Skin.HasSetting(aeon.osd.noflags) + [System.AddonIsEnabled(resource.images.languageflags.rounded) | System.AddonIsEnabled(resource.images.languageflags.colour)]</visible><control type="image"><width>26</width><height>30</height><aspectratio>keep</aspectratio><texture colordiffuse="99ffffff">aeon/icons/audio.png</texture><visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible></control><control type="image"><width>30</width><height>30</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.AudioLanguage,resource://resource.images.languageflags.rounded/,.png]</texture><visible>!String.IsEmpty(VideoPlayer.AudioLanguage) + System.AddonIsEnabled(resource.images.languageflags.rounded)</visible></control><control type="image"><width>40</width><height>30</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.AudioLanguage,resource://resource.images.languageflags.colour/,.png]</texture><visible>!String.IsEmpty(VideoPlayer.AudioLanguage) + System.AddonIsEnabled(resource.images.languageflags.colour) + !System.AddonIsEnabled(resource.images.languageflags.rounded)</visible></control><control type="image"><width>26</width><height>30</height><aspectratio>keep</aspectratio><texture colordiffuse="99ffffff">aeon/icons/subtitles.png</texture><visible>VideoPlayer.SubtitlesEnabled + !String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible></control><control type="image"><width>30</width><height>30</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.SubtitlesLanguage,resource://resource.images.languageflags.rounded/,.png]</texture><visible>VideoPlayer.SubtitlesEnabled + !String.IsEmpty(VideoPlayer.SubtitlesLanguage) + System.AddonIsEnabled(resource.images.languageflags.rounded)</visible></control><control type="image"><width>40</width><height>30</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.SubtitlesLanguage,resource://resource.images.languageflags.colour/,.png]</texture><visible>VideoPlayer.SubtitlesEnabled + !String.IsEmpty(VideoPlayer.SubtitlesLanguage) + System.AddonIsEnabled(resource.images.languageflags.colour) + !System.AddonIsEnabled(resource.images.languageflags.rounded)</visible></control></control>
+			<control type="group"><visible>$EXP[FG_OSDUpNext]</visible><control type="label"><left>1420</left><top>416</top><width>364</width><height>24</height><aligny>center</aligny><font>pl_cap_16</font><textcolor>99ffffff</textcolor><label>[UPPERCASE]$LOCALIZE[31235][/UPPERCASE]</label></control><control type="image"><left>1420</left><top>448</top><width>284</width><height>160</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m400x225.png">$INFO[Window(Home).Property(Skippy.NextEpisode.Thumb)]</texture></control><control type="label"><left>1420</left><top>616</top><width>364</width><height>32</height><aligny>center</aligny><font>pl_ui_22_bold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Home).Property(Skippy.NextEpisode.Label)]</label><visible>!String.IsEmpty(Window(Home).Property(Skippy.NextEpisode.Thumb))</visible></control><control type="label"><left>1420</left><top>446</top><width>364</width><height>32</height><aligny>center</aligny><font>pl_ui_22_bold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Home).Property(Skippy.NextEpisode.Label)]</label><visible>String.IsEmpty(Window(Home).Property(Skippy.NextEpisode.Thumb))</visible></control></control>
+			<control type="label"><left>136</left><top>712</top><width>800</width><height>36</height><aligny>center</aligny><font>pl_ui_26_semibold</font><textcolor>ffffffff</textcolor><label>$LOCALIZE[206]</label></control>
+			<control type="label"><left>984</left><top>712</top><width>800</width><height>36</height><align>right</align><aligny>center</aligny><font>pl_small_20_semibold</font><textcolor>9effffff</textcolor><label>$INFO[Container(9504).CurrentItem]$INFO[Container(9504).NumItems, / ,]</label><visible>Integer.IsGreater(Container(9504).NumItems,0)</visible></control>
+			<control type="list" id="9504">
+				<left>118</left><top>754</top><width>1666</width><height>240</height>
+				<orientation>horizontal</orientation><preloaditems>1</preloaditems>
+				<scrolltime tween="cubic" easing="out">220</scrolltime>
+				<onup>999</onup>
+				<ondown>SetProperty(fgpage,2,fullscreeninfo)</ondown>
+				<ondown condition="!String.IsEmpty(Window(Home).Property(aeon.pf.seasonpath))">SetFocus(9502)</ondown>
+				<ondown condition="!!String.IsEmpty(Window(Home).Property(aeon.pf.seasonpath))">SetFocus(9503)</ondown>
+				<onleft>noop</onleft><onright>noop</onright>
+				<onclick>noop</onclick>
+				<content>$VAR[FG_InfoCastPath]</content>
+				<itemlayout width="182" height="240"><include>FG_CastItem</include></itemlayout>
+				<focusedlayout width="182" height="240"><include content="FG_CastItem"><param name="focused" value="true"/></include></focusedlayout>
+			</control>
+			<control type="grouplist"><left>136</left><top>996</top><width>1400</width><height>26</height><orientation>horizontal</orientation><itemgap>10</itemgap><control type="button"><width min="40" max="200">auto</width><height>26</height><label>[B][UPPERCASE]$LOCALIZE[31245][/UPPERCASE][/B]</label><font>pl_cap_12</font><textoffsetx>9</textoffsetx><align>center</align><aligny>center</aligny><textcolor>ffffffff</textcolor><disabledcolor>ffffffff</disabledcolor><texturenofocus border="8" colordiffuse="59ffffff">fg/e8.png</texturenofocus><texturefocus border="8" colordiffuse="59ffffff">fg/e8.png</texturefocus><enable>false</enable></control><control type="label"><width max="400">auto</width><height>26</height><aligny>center</aligny><font>pl_small_20</font><textcolor>99ffffff</textcolor><label>$LOCALIZE[15067]</label></control><control type="button"><width min="40" max="200">auto</width><height>26</height><label>[B][UPPERCASE]$ADDON[skin.aeon.fuse 32488][/UPPERCASE][/B]</label><font>pl_cap_12</font><textoffsetx>9</textoffsetx><align>center</align><aligny>center</aligny><textcolor>ffffffff</textcolor><disabledcolor>ffffffff</disabledcolor><texturenofocus border="8" colordiffuse="59ffffff">fg/e8.png</texturenofocus><texturefocus border="8" colordiffuse="59ffffff">fg/e8.png</texturefocus><enable>false</enable></control><control type="label"><width max="400">auto</width><height>26</height><aligny>center</aligny><font>pl_small_20</font><textcolor>99ffffff</textcolor><label>$ADDON[skin.aeon.fuse 32480]</label></control></control>
+			</control>
+			<!-- Live TV (0.46.1): the compact card -->
+			<control type="group">
+				<visible>String.IsEmpty(Window(fullscreeninfo).Property(fgpage)) + $EXP[FG_OSDLive]</visible>
+				<animation type="Visible" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="fade" start="0" end="100" time="200"/><effect type="slide" start="0,24" end="0,0" time="260" tween="cubic" easing="out"/></animation>
+			<control type="image"><left>56</left><top>636</top><width>1808</width><height>446</height><texture border="72" colordiffuse="$VAR[FG_PanelSh_99]">$VAR[FG_Sh_sho32]</texture></control>
+			<control type="image"><left>96</left><top>676</top><width>1728</width><height>366</height><texture border="32" colordiffuse="$VAR[FG_Frost]">fg/r32.png</texture></control>
+			<control type="image"><left>96</left><top>676</top><width>1728</width><height>366</height><texture border="32" colordiffuse="$VAR[FG_Edge]">fg/e32.png</texture></control>
+			<control type="image"><left>136</left><top>712</top><width>176</width><height>200</height><texture border="18" colordiffuse="14ffffff">fg/r18.png</texture></control>
+			<control type="image"><left>136</left><top>712</top><width>176</width><height>200</height><texture border="18" colordiffuse="24ffffff">fg/e18.png</texture></control>
+			<control type="image"><left>152</left><top>728</top><width>144</width><height>110</height><aspectratio>keep</aspectratio><texture background="true">$INFO[VideoPlayer.Cover]</texture></control>
+			<control type="label"><left>136</left><top>852</top><width>176</width><height>44</height><align>center</align><aligny>center</aligny><font>pl_display_40</font><textcolor>ffffffff</textcolor><label>$INFO[VideoPlayer.ChannelNumberLabel]</label></control>
+			<control type="label"><left>352</left><top>712</top><width>1000</width><height>26</height><aligny>center</aligny><font>un_pl_cap_16</font><textcolor>99ffffff</textcolor><label>[UPPERCASE]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Genre,  ·  ,][/UPPERCASE]</label></control>
+			<control type="grouplist"><left>352</left><top>740</top><width>1000</width><height>64</height><orientation>horizontal</orientation><itemgap>16</itemgap><usecontrolcoords>true</usecontrolcoords><control type="label"><width max="890">auto</width><height>64</height><aligny>center</aligny><font>pl_display_48</font><textcolor>ffffffff</textcolor><label>$INFO[VideoPlayer.Title]</label></control><control type="group"><top>17</top><width>78</width><height>30</height><control type="image"><width>78</width><height>30</height><texture border="15" colordiffuse="ffe5484d">fg/r16.png</texture></control><control type="label"><width>78</width><height>30</height><align>center</align><aligny>center</aligny><font>pl_cap_14</font><textcolor>ffffffff</textcolor><label>● $ADDON[skin.aeon.fuse 32477]</label></control></control></control>
+			<control type="textbox"><left>352</left><top>810</top><width>1000</width><height>66</height><font>pl_body_24</font><textcolor>c8ffffff</textcolor><label>$INFO[VideoPlayer.Plot]</label><autoscroll delay="6000" time="3000" repeat="10000">true</autoscroll></control>
+			<control type="group"><left>1420</left><top>712</top><visible>!String.IsEmpty(VideoPlayer.NextTitle)</visible><control type="label"><width>364</width><height>26</height><align>right</align><aligny>center</aligny><font>pl_cap_16</font><textcolor>99ffffff</textcolor><label>[UPPERCASE]$LOCALIZE[19031]$INFO[VideoPlayer.NextStartTime,  ·  ,][/UPPERCASE]</label></control><control type="label"><top>30</top><width>364</width><height>34</height><align>right</align><aligny>center</aligny><font>un_pl_ui_22_bold</font><textcolor>ffffffff</textcolor><label>$INFO[VideoPlayer.NextTitle]</label></control></control>
+			<control type="image"><left>136</left><top>920</top><width>1648</width><height>12</height><texture border="6" colordiffuse="3dffffff">fg/pill12.png</texture></control>
+			<control type="progress"><left>136</left><top>920</top><width>1648</width><height>12</height><texturebg border="6" colordiffuse="00ffffff">fg/pill12.png</texturebg><midtexture subpixel="true" border="6" colordiffuse="ffffffff">fg/pill12.png</midtexture><info>PVR.EpgEventProgress</info></control>
+			<control type="label"><left>136</left><top>942</top><width>400</width><height>30</height><aligny>center</aligny><font>pl_ui_22_bold</font><textcolor>ffffffff</textcolor><label>$INFO[VideoPlayer.StartTime]</label></control>
+			<control type="label"><left>560</left><top>942</top><width>800</width><height>30</height><align>center</align><aligny>center</aligny><font>pl_small_20</font><textcolor>c8ffffff</textcolor><label>$INFO[PVR.EpgEventRemainingTime,, $LOCALIZE[31965]]</label></control>
+			<control type="label"><left>1384</left><top>942</top><width>400</width><height>30</height><align>right</align><aligny>center</aligny><font>pl_ui_22_bold</font><textcolor>ffffffff</textcolor><label>$LOCALIZE[31030] $INFO[VideoPlayer.EndTime]</label></control>
+			<control type="grouplist"><left>136</left><top>996</top><width>1400</width><height>26</height><orientation>horizontal</orientation><itemgap>10</itemgap><control type="button"><width min="40" max="200">auto</width><height>26</height><label>[B][UPPERCASE]$LOCALIZE[31245][/UPPERCASE][/B]</label><font>pl_cap_12</font><textoffsetx>9</textoffsetx><align>center</align><aligny>center</aligny><textcolor>ffffffff</textcolor><disabledcolor>ffffffff</disabledcolor><texturenofocus border="8" colordiffuse="59ffffff">fg/e8.png</texturenofocus><texturefocus border="8" colordiffuse="59ffffff">fg/e8.png</texturefocus><enable>false</enable></control><control type="label"><width max="400">auto</width><height>26</height><aligny>center</aligny><font>pl_small_20</font><textcolor>99ffffff</textcolor><label>$LOCALIZE[15067]</label></control></control>
+			</control>
+			<!-- second page: file and season (0.56.53: the Fused Glass style draws its own, _src/fgsfileseason_05653.py) -->
+			<include condition="!$EXP[FGS]">FG_FullInfoPage2_Classic</include>
+			<include condition="$EXP[FGS]">FGS_FileSeason</include>
+		</control>
+	</include>
+	<!-- FG_FULLINFO:end -->
+	<!-- today's second page, moved unchanged (0.56.53) -->
+	<include name="FG_FullInfoPage2_Classic">
+			<!-- second page: file and season -->
+			<control type="group">
+				<visible>String.IsEqual(Window(fullscreeninfo).Property(fgpage),2)</visible>
+				<animation type="Visible" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="fade" start="0" end="100" time="200"/><effect type="slide" start="0,24" end="0,0" time="260" tween="cubic" easing="out"/></animation>
+			<control type="image"><left>56</left><top>100</top><width>1808</width><height>982</height><texture border="72" colordiffuse="$VAR[FG_PanelSh_99]">$VAR[FG_Sh_sho32]</texture></control>
+			<control type="image"><left>96</left><top>140</top><width>1728</width><height>902</height><texture border="32" colordiffuse="$VAR[FG_Frost]">fg/r32.png</texture></control>
+			<control type="image"><left>96</left><top>140</top><width>1728</width><height>902</height><texture border="32" colordiffuse="$VAR[FG_Edge]">fg/e32.png</texture></control>
+			<control type="label"><left>136</left><top>176</top><width>1100</width><height>24</height><aligny>center</aligny><font>pl_cap_16</font><textcolor>99ffffff</textcolor><label>$VAR[FG_OSDKick]</label></control>
+			<control type="label"><left>136</left><top>200</top><width>1100</width><height>52</height><aligny>center</aligny><font>pl_display_40</font><textcolor>ffffffff</textcolor><scroll>true</scroll><label>$VAR[FG_OSDCardTitle]</label></control>
+			<control type="grouplist"><left>984</left><top>190</top><width>800</width><height>44</height><orientation>horizontal</orientation><align>right</align><itemgap>8</itemgap><control type="button"><width min="80" max="400">auto</width><height>44</height><label>$ADDON[skin.aeon.fuse 32479]</label><font>pl_ui_22</font><textoffsetx>20</textoffsetx><aligny>center</aligny><textcolor>9effffff</textcolor><disabledcolor>9effffff</disabledcolor><texturenofocus /><texturefocus /><enable>false</enable></control><control type="button"><width min="80" max="400">auto</width><height>44</height><label>[B]$ADDON[skin.aeon.fuse 32480][/B]</label><font>pl_ui_22</font><textoffsetx>20</textoffsetx><aligny>center</aligny><textcolor>ffffffff</textcolor><disabledcolor>ffffffff</disabledcolor><texturenofocus border="22" colordiffuse="29ffffff">fg/r22.png</texturenofocus><texturefocus border="22" colordiffuse="29ffffff">fg/r22.png</texturefocus><enable>false</enable></control></control>
+			<control type="label"><left>136</left><top>292</top><width>900</width><height>24</height><aligny>center</aligny><font>pl_cap_16</font><textcolor>99ffffff</textcolor><label>[UPPERCASE]$ADDON[skin.aeon.fuse 32481][/UPPERCASE]</label></control>
+			<control type="label"><left>136</left><top>330</top><width>150</width><height>32</height><font>pl_ui_22</font><textcolor>8cffffff</textcolor><label>$LOCALIZE[291]</label></control>
+			<control type="textbox"><left>300</left><top>330</top><width>836</width><height>32</height><font>pl_ui_22</font><textcolor>ebffffff</textcolor><label>$VAR[OSD_FlagVideoCodec]$VAR[OSD_FlagResolution,  ·  ,]$INFO[VideoPlayer.VideoAspect,  ·  ,:1]$VAR[FG_ChipHDR,  ·  ,]$INFO[Window(Home).Property(aeon.pf.mi.format),  ·  ,]$INFO[Window(Home).Property(aeon.pf.mi.bitrate),  ·  ,]</label><visible>$EXP[Aeon_Chip_player]</visible></control>
+			<control type="label"><left>136</left><top>378</top><width>150</width><height>32</height><font>pl_ui_22</font><textcolor>8cffffff</textcolor><label>$LOCALIZE[292]</label></control>
+			<control type="textbox"><left>300</left><top>378</top><width>836</width><height>32</height><font>pl_ui_22</font><textcolor>ebffffff</textcolor><label>$VAR[OSD_FlagAudio]$INFO[Window(Home).Property(aeon.pf.audio),  ·  ,]</label><visible>$EXP[Aeon_Chip_player]</visible></control>
+			<control type="label"><left>136</left><top>426</top><width>150</width><height>32</height><font>pl_ui_22</font><textcolor>8cffffff</textcolor><label>$LOCALIZE[287]</label></control>
+			<control type="textbox"><left>300</left><top>426</top><width>836</width><height>128</height><font>pl_ui_22</font><textcolor>ebffffff</textcolor><label>$INFO[Window(Home).Property(aeon.pf.subcount),,:  ]$INFO[Window(Home).Property(aeon.pf.subs)]</label></control>
+			<control type="label"><left>136</left><top>570</top><width>150</width><height>32</height><font>pl_ui_22</font><textcolor>8cffffff</textcolor><label>$ADDON[skin.aeon.fuse 32482]</label></control>
+			<control type="textbox"><left>300</left><top>570</top><width>836</width><height>64</height><font>pl_ui_22</font><textcolor>ebffffff</textcolor><label>$INFO[Window(Home).Property(aeon.pf.file)]</label></control>
+			<control type="label"><left>136</left><top>650</top><width>150</width><height>32</height><font>pl_ui_22</font><textcolor>8cffffff</textcolor><label>$ADDON[skin.aeon.fuse 32483]</label></control>
+			<control type="textbox"><left>300</left><top>650</top><width>836</width><height>32</height><font>pl_ui_22</font><textcolor>ebffffff</textcolor><label>$INFO[Window(Home).Property(aeon.pf.size)]</label></control>
+			<control type="label"><left>136</left><top>698</top><width>150</width><height>32</height><font>pl_ui_22</font><textcolor>8cffffff</textcolor><label>$ADDON[skin.aeon.fuse 32484]</label></control>
+			<control type="textbox"><left>300</left><top>698</top><width>836</width><height>32</height><font>pl_ui_22</font><textcolor>ebffffff</textcolor><label>$INFO[System.ScreenResolution]</label></control>
+			<control type="group">
+				<visible>!String.IsEmpty(Window(Home).Property(aeon.pf.seasonpath))</visible>
+				<control type="label"><left>1184</left><top>292</top><width>600</width><height>24</height><aligny>center</aligny><font>pl_cap_16</font><textcolor>99ffffff</textcolor><label>[UPPERCASE]$LOCALIZE[20373] $INFO[VideoPlayer.Season][/UPPERCASE]</label></control>
+				<control type="list" id="9502">
+					<left>1176</left><top>326</top><width>616</width><height>640</height>
+					<orientation>vertical</orientation><preloaditems>1</preloaditems>
+					<scrolltime tween="cubic" easing="out">200</scrolltime>
+					<onup>ClearProperty(fgpage,fullscreeninfo)</onup><onup condition="Skin.HasSetting(aeon.osd.castphotos) + Integer.IsGreater(Container(9504).NumItems,0)">SetFocus(9504)</onup><onup condition="![Skin.HasSetting(aeon.osd.castphotos) + Integer.IsGreater(Container(9504).NumItems,0)]">SetFocus(999)</onup>
+					<onleft>noop</onleft><onright>noop</onright>
+					<onclick>noop</onclick>
+					<content target="videos">$VAR[FG_InfoSeasonPath]</content>
+					<itemlayout width="616" height="96"><include>FG_SeasonRow</include></itemlayout>
+					<focusedlayout width="616" height="96"><include content="FG_SeasonRow"><param name="focused" value="true"/></include></focusedlayout>
+				</control>
+			</control>
+			<control type="grouplist"><left>136</left><top>996</top><width>1400</width><height>26</height><orientation>horizontal</orientation><itemgap>10</itemgap><control type="button"><width min="40" max="200">auto</width><height>26</height><label>[B][UPPERCASE]$ADDON[skin.aeon.fuse 32487][/UPPERCASE][/B]</label><font>pl_cap_12</font><textoffsetx>9</textoffsetx><align>center</align><aligny>center</aligny><textcolor>ffffffff</textcolor><disabledcolor>ffffffff</disabledcolor><texturenofocus border="8" colordiffuse="59ffffff">fg/e8.png</texturenofocus><texturefocus border="8" colordiffuse="59ffffff">fg/e8.png</texturefocus><enable>false</enable></control><control type="label"><width max="400">auto</width><height>26</height><aligny>center</aligny><font>pl_small_20</font><textcolor>99ffffff</textcolor><label>$ADDON[skin.aeon.fuse 32479]</label></control><control type="button"><width min="40" max="200">auto</width><height>26</height><label>[B][UPPERCASE]$LOCALIZE[31245][/UPPERCASE][/B]</label><font>pl_cap_12</font><textoffsetx>9</textoffsetx><align>center</align><aligny>center</aligny><textcolor>ffffffff</textcolor><disabledcolor>ffffffff</disabledcolor><texturenofocus border="8" colordiffuse="59ffffff">fg/e8.png</texturenofocus><texturefocus border="8" colordiffuse="59ffffff">fg/e8.png</texturefocus><enable>false</enable></control><control type="label"><width max="400">auto</width><height>26</height><aligny>center</aligny><font>pl_small_20</font><textcolor>99ffffff</textcolor><label>$LOCALIZE[15067]</label></control></control>
+			</control>
+	</include>
+</includes>

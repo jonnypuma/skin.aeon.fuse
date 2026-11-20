@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	More library views (video): Flix (528), Combined (529), Circles (536), Planner (537).
+	They use the shared pieces of Includes_Aeon_Views2.xml: Aeon_V_Bg, Aeon_V_Header, Aeon_V_Chips2 and Aeon_M_Nav
+	(clock box, A-Z strip, item count). Left or Up at the edge opens the settings strip (dialog 1160), as in the other views.
+-->
+<includes>
+	<!-- Flix row, seasons: the season poster, else the show's poster (0.40.3) -->
+	<variable name="Aeon_FlixSeasonPoster">
+		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.poster))">$INFO[Window(Home).Property(aeon.fart.poster)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
+	<variable name="Aeon_FlixTitle">
+		<value condition="!String.IsEmpty(ListItem.TVShowTitle) + [Container.Content(episodes) | Container.Content(seasons)]">$INFO[ListItem.TVShowTitle]</value>
+		<value>$INFO[ListItem.Label]</value>
+	</variable>
+	<variable name="Aeon_PlannerSub">
+		<value condition="!String.IsEmpty(ListItem.Episode)">$VAR[Aeon_EpCode]$INFO[ListItem.Title,   ,]</value>
+		<value>$INFO[ListItem.Title]$VAR[Aeon_Ver]</value>
+	</variable>
+
+	<!-- ============================================================ Flix (528): fanart of the focused title, its details top left, one row of landscape tiles -->
+	<!-- 0.48.0: Fused Glass loads its own view (FG_V528_View, _src/fg_lib_lists.py) -->
+	<include name="Aeon_V528_View">
+		<include condition="Skin.HasSetting(aeon.fglass)">FG_V528_View</include>
+		<include condition="!Skin.HasSetting(aeon.fglass)">Aeon_V528_ViewAeon</include>
+	</include>
+	<include name="Aeon_V528_ViewAeon">
+		<control type="group">
+			<visible>Control.IsVisible(528)</visible>
+			<include>Anim_FadeVisible</include>
+			<control type="image"><width>1920</width><height>1080</height><texture colordiffuse="ff000000">common/white.png</texture></control>
+			<control type="image"><width>1920</width><height>1080</height><aspectratio>scale</aspectratio><fadetime>400</fadetime><texture background="true" colordiffuse="$VAR[Aeon_FlixFanAlpha]">$VAR[Aeon_Fanart]</texture></control>
+			<!-- trailer of the focused title (View settings > Play trailers automatically) -->
+			<control type="videowindow"><width>1920</width><height>1080</height><visible>Player.HasVideo + !String.IsEmpty(Window(Home).Property(aeon.flixtrailer))</visible></control>
+			<control type="image"><width>1200</width><height>1080</height><texture colordiffuse="d0000000">common/scrim_left.png</texture></control>
+			<control type="image"><left>0</left><top>520</top><width>1920</width><height>560</height><texture colordiffuse="f0000000">aeon/osd_scrim_bottom.png</texture></control>
+			<control type="image"><left>100</left><top>96</top><width>620</width><height>210</height><aspectratio align="left" aligny="bottom">keep</aspectratio><fadetime>200</fadetime><texture background="true">$VAR[Aeon_LowLogo]</texture><visible>$EXP[Aeon_LowHasLogo] + !Skin.HasSetting(aeon.nologos)</visible></control>
+			<control type="label"><left>100</left><top>96</top><width>900</width><height>210</height><aligny>bottom</aligny><font>lb_display_60</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><wrapmultiline>true</wrapmultiline><label>$VAR[Aeon_FlixTitle]</label><visible>![$EXP[Aeon_LowHasLogo] + !Skin.HasSetting(aeon.nologos)]</visible></control>
+			<control type="label"><left>100</left><top>322</top><width>900</width><height>34</height><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$VAR[Aeon_LowMeta]</label></control>
+			<include content="Aeon_V_Chips2"><param name="left">100</param><param name="top1">366</param><param name="top2">410</param><param name="width">900</param></include>
+			<control type="textbox"><left>100</left><top>462</top><width>820</width><height>110</height><font>lb_body_24</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$VAR[Aeon_LowPlot]</label><autoscroll delay="6000" time="3000" repeat="8000">true</autoscroll><visible>$EXP[Aeon_VOPlot]</visible></control>
+			<!-- 0.56.15 aeon_lib_round2: NEXT EPISODE in yellow -->
+			<!-- 0.56.14 aeon_lib_other: the next episode and the network's logo under the plot (0.56.43: the logo's right edge on the plot's, 920) -->
+			<control type="label"><left>100</left><top>592</top><width>600</width><height>26</height><aligny>center</aligny><font>lb_cap_16</font><textcolor>fg_mark</textcolor><label>[UPPERCASE]$ADDON[skin.aeon.fuse 32605][/UPPERCASE]</label><visible>String.IsEqual(Window(Home).Property(aeon.next.of),ListItem.TVShowTitle) + !String.IsEmpty(Window(Home).Property(aeon.next.code))</visible></control>
+			<control type="label"><left>100</left><top>618</top><width>600</width><height>36</height><aligny>center</aligny><font>lb_ui_24_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.next.code)]  ·  $INFO[Window(Home).Property(aeon.next.day)]$INFO[Window(Home).Property(aeon.next.kind),  ·  ,][/UPPERCASE]</label><visible>String.IsEqual(Window(Home).Property(aeon.next.of),ListItem.TVShowTitle) + !String.IsEmpty(Window(Home).Property(aeon.next.code))</visible></control>
+			<control type="image"><left>640</left><top>590</top><width>280</width><height>70</height><aspectratio align="right" aligny="center">keep</aspectratio><texture background="true">resource://resource.images.studios.white/$INFO[Window(Home).Property(aeon.studio)].png</texture><visible>!Skin.HasSetting(aeon.nostudio) + !String.IsEmpty(Window(Home).Property(aeon.studio)) + String.IsEqual(Window(Home).Property(aeon.studio.of),ListItem.Studio)</visible></control>
+			<control type="label"><left>620</left><top>590</top><width>300</width><height>70</height><align>right</align><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>d9ffffff</textcolor><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.studio.text)][/UPPERCASE]</label><visible>!Skin.HasSetting(aeon.nostudio) + String.IsEmpty(Window(Home).Property(aeon.studio)) + !String.IsEmpty(Window(Home).Property(aeon.studio.text)) + String.IsEqual(Window(Home).Property(aeon.studio.of),ListItem.Studio)</visible></control>
+			<control type="fixedlist" id="528">
+				<left>84</left><top>690</top><width>1736</width><height>330</height>
+				<orientation>horizontal</orientation>
+				<focusposition>0</focusposition>
+				<movement>3</movement>
+				<viewtype label="Flix">icon</viewtype>
+				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
+				<scrolltime tween="cubic" easing="out">300</scrolltime>
+				<onback condition="String.IsEqual(Skin.String(aeon.backmode),home)">ActivateWindow(home)</onback>
+				<onup condition="!Skin.HasSetting(aeon.kiosk)">ActivateWindow(1160)</onup>
+				<ondown>5280001</ondown>
+				<!-- seasons (0.40.3): their posters in a row of portrait tiles, the bottoms in line with the landscape tiles; a
+				     season without one shows the show's poster (Aeon_FlixSeasonPoster), not the show's landscape art for every season -->
+				<itemlayout width="190" height="330" condition="Container.Content(seasons)"><control type="image"><left>16</left><top>7</top><width>158</width><height>241</height><aspectratio>scale</aspectratio><texture background="true">$VAR[Aeon_FlixSeasonPoster]</texture><visible>!$EXP[Aeon_FGlass]</visible></control><control type="image"><left>16</left><top>7</top><width>158</width><height>241</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m158x241.png">$VAR[Aeon_FlixSeasonPoster]</texture><visible>$EXP[Aeon_FGlass]</visible></control><control type="image"><left>16</left><top>7</top><width>158</width><height>241</height><texture colordiffuse="66000000">common/white.png</texture><visible>!$EXP[Aeon_FGlass]</visible></control><control type="image"><left>16</left><top>7</top><width>158</width><height>241</height><texture border="16" colordiffuse="66000000">fg/r16.png</texture><visible>$EXP[Aeon_FGlass]</visible></control><control type="label"><left>16</left><top>256</top><width>158</width><height>30</height><font>lb_small_20</font><textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor><label>$INFO[ListItem.Label]</label></control></itemlayout>
+				<focusedlayout width="190" height="330" condition="Container.Content(seasons)"><control type="image"><left>10</left><top>1</top><width>170</width><height>253</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/white.png</texture><visible>[Control.HasFocus(528)] + !$EXP[Aeon_FGlass]</visible></control><control type="image"><left>16</left><top>7</top><width>158</width><height>241</height><aspectratio>scale</aspectratio><texture background="true">$VAR[Aeon_FlixSeasonPoster]</texture><visible>!$EXP[Aeon_FGlass]</visible></control><control type="image"><left>16</left><top>7</top><width>158</width><height>241</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m158x241.png">$VAR[Aeon_FlixSeasonPoster]</texture><visible>$EXP[Aeon_FGlass]</visible></control><control type="image"><left>16</left><top>7</top><width>158</width><height>241</height><texture border="16" colordiffuse="ffffffff">fg/ri16.png</texture><visible>[Control.HasFocus(528)] + $EXP[Aeon_FGlass]</visible></control><control type="label"><left>16</left><top>256</top><width>158</width><height>30</height><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[ListItem.Label]</label></control></focusedlayout>
+				<itemlayout width="420" height="330">
+					<control type="image"><left>16</left><top>30</top><width>388</width><height>218</height><aspectratio>scale</aspectratio><texture background="true">$VAR[Aeon_H_StripArtBn]</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+<control type="image"><left>16</left><top>30</top><width>388</width><height>218</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m388x218.png">$VAR[Aeon_H_StripArtBn]</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+					<control type="image"><left>16</left><top>30</top><width>388</width><height>218</height><texture colordiffuse="66000000">common/white.png</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+<control type="image"><left>16</left><top>30</top><width>388</width><height>218</height><texture border="16" colordiffuse="66000000">fg/r16.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+					<control type="label"><left>16</left><top>256</top><width>388</width><height>30</height><font>lb_small_20</font><textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor><label>$INFO[ListItem.Label]</label></control>
+				</itemlayout>
+				<focusedlayout width="420" height="330">
+					<control type="image"><left>10</left><top>24</top><width>400</width><height>230</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/white.png</texture><visible>[Control.HasFocus(528)] + !$EXP[Aeon_FGlass]</visible></control>
+
+					<control type="image"><left>16</left><top>30</top><width>388</width><height>218</height><aspectratio>scale</aspectratio><texture background="true">$VAR[Aeon_H_StripArtBn]</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+<control type="image"><left>16</left><top>30</top><width>388</width><height>218</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m388x218.png">$VAR[Aeon_H_StripArtBn]</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+<control type="image"><left>16</left><top>30</top><width>388</width><height>218</height><texture border="16" colordiffuse="ffffffff">fg/ri16.png</texture><visible>[Control.HasFocus(528)] + $EXP[Aeon_FGlass]</visible></control>
+					<control type="label"><left>16</left><top>256</top><width>388</width><height>30</height><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[ListItem.Label]</label></control>
+				</focusedlayout>
+			</control>
+			<include content="Aeon_M_Nav"><param name="icon" value="common/aeon_film.png"/><param name="cid" value="528"/><param name="base" value="52800"/><param name="scroll" value="true"/></include>
+		</control>
+	</include>
+
+	<!-- ============================================================ Combined (529): a row of shows / sets / seasons; under it what the focused one holds -->
+	<include name="Aeon_V529_Tile">
+		<param name="focused">false</param>
+		<param name="list">5291</param>
+		<definition>
+			<control type="image"><left>4</left><top>4</top><width>164</width><height>246</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/white.png</texture><visible>[$PARAM[focused] + Control.HasFocus($PARAM[list])] + !$EXP[Aeon_FGlass]</visible></control>
+			<control type="image"><left>8</left><top>8</top><width>156</width><height>238</height><aspectratio>scale</aspectratio><texture background="true">$VAR[Aeon_Poster]</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+			<control type="image"><left>8</left><top>8</top><width>156</width><height>238</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m156x238.png">$VAR[Aeon_Poster]</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+			<control type="image"><left>8</left><top>8</top><width>156</width><height>238</height><texture border="16" colordiffuse="ffffffff">fg/ri16.png</texture><visible>$PARAM[focused] + Control.HasFocus($PARAM[list]) + $EXP[Aeon_FGlass]</visible></control>
+			<control type="group"><left>8</left><top>8</top><width>156</width><height>238</height><include>Aeon_ProgressLine_L</include></control>
+			<control type="image"><left>8</left><top>254</top><width>156</width><height>30</height><texture colordiffuse="d0000000" flipx="true">common/aeon_fade_left.png</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+			<control type="label"><left>16</left><top>254</top><width>144</width><height>30</height><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>ddffffff</textcolor><selectedcolor>ddffffff</selectedcolor><scroll>$PARAM[focused]</scroll><label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label><visible>!$EXP[Aeon_FGlass]</visible></control>
+			<control type="label"><left>8</left><top>254</top><width>144</width><height>30</height><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>ddffffff</textcolor><selectedcolor>ddffffff</selectedcolor><scroll>$PARAM[focused]</scroll><label>$INFO[ListItem.Label]</label><visible>$EXP[Aeon_FGlass]</visible></control>
+		</definition>
+	</include>
+	<!-- 1 season / 2 seasons (Kodi's words: 20373 Season, 33054 Seasons, 20359 Episode, 20360 Episodes) -->
+	<variable name="Aeon_529Seasons">
+		<value condition="Integer.IsEqual(Container(529).ListItem.Property(TotalSeasons),1)">  •  1 $LOCALIZE[20373]</value>
+		<value>$INFO[Container(529).ListItem.Property(TotalSeasons),  •  , $LOCALIZE[33054]]</value>
+	</variable>
+	<variable name="Aeon_529Episodes">
+		<value condition="Integer.IsEqual(Container(529).ListItem.Property(TotalEpisodes),1)">  •  1 $LOCALIZE[20359]</value>
+		<value>$INFO[Container(529).ListItem.Property(TotalEpisodes),  •  , $LOCALIZE[20360]]</value>
+	</variable>
+	<!-- row two of a season: its episodes as landscape thumbs, code on the corner fade, title on the gradient band -->
+	<include name="Aeon_V529_EpTile">
+		<param name="focused">false</param>
+		<definition>
+			<control type="image"><left>4</left><top>4</top><width>336</width><height>192</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/white.png</texture><visible>[$PARAM[focused] + Control.HasFocus(5291)] + !$EXP[Aeon_FGlass]</visible></control>
+			<control type="image"><left>8</left><top>8</top><width>328</width><height>184</height><aspectratio>scale</aspectratio><texture background="true">$VAR[Aeon_EpThumb]</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+			<control type="image"><left>8</left><top>8</top><width>328</width><height>184</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m328x184.png">$VAR[Aeon_EpThumb]</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+			<control type="image"><left>8</left><top>8</top><width>328</width><height>184</height><texture border="16" colordiffuse="ffffffff">fg/ri16.png</texture><visible>$PARAM[focused] + Control.HasFocus(5291) + $EXP[Aeon_FGlass]</visible></control>
+			<control type="group"><left>8</left><top>8</top><width>328</width><height>184</height><include>Aeon_ProgressLine_L</include></control>
+			<control type="group"><left>8</left><top>8</top><width>328</width><height>40</height>
+				<control type="image"><right>0</right><top>0</top><width>200</width><height>40</height><texture colordiffuse="d0000000">common/aeon_fade_left.png</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+				<control type="image"><left>0</left><top>0</top><width>328</width><height>184</height><texture colordiffuse="d9000000" diffuse="fg/m328x184.png">fg/eptag.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+				<control type="label"><right>10</right><top>4</top><width>190</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_cap_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$VAR[Aeon_EpTag]</label></control>
+			</control>
+			<control type="image"><left>8</left><top>8</top><width>30</width><height>30</height><texture colordiffuse="$VAR[Aeon_Accent_L]">aeon/icons/check.png</texture><visible>Integer.IsGreater(ListItem.PlayCount,0)</visible></control>
+			<control type="image"><left>8</left><top>204</top><width>328</width><height>30</height><texture colordiffuse="d0000000" flipx="true">common/aeon_fade_left.png</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+			<control type="label"><left>20</left><top>204</top><width>304</width><height>30</height><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>ddffffff</textcolor><selectedcolor>ddffffff</selectedcolor><scroll>$PARAM[focused]</scroll><label>[UPPERCASE]$INFO[ListItem.Title][/UPPERCASE]</label><visible>!$EXP[Aeon_FGlass]</visible></control>
+			<control type="label"><left>8</left><top>204</top><width>304</width><height>30</height><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>ddffffff</textcolor><selectedcolor>ddffffff</selectedcolor><scroll>$PARAM[focused]</scroll><label>$INFO[ListItem.Title]</label><visible>$EXP[Aeon_FGlass]</visible></control>
+		</definition>
+	</include>
+	<!-- 0.48.0: Fused Glass loads its own view (FG_V529_View, _src/fg_lib_lists.py) -->
+	<include name="Aeon_V529_View">
+		<include condition="Skin.HasSetting(aeon.fglass)">FG_V529_View</include>
+		<include condition="!Skin.HasSetting(aeon.fglass)">Aeon_V529_ViewAeon</include>
+	</include>
+	<include name="Aeon_V529_ViewAeon">
+		<control type="group">
+			<visible>Control.IsVisible(529)</visible>
+			<include>Anim_FadeVisible</include>
+			<include>Aeon_V_Bg</include>
+			<include>Aeon_V_Header</include>
+			<control type="fixedlist" id="529">
+				<left>84</left><top>120</top><width>1736</width><height>330</height>
+				<orientation>horizontal</orientation>
+				<focusposition>0</focusposition>
+				<movement>6</movement>
+				<viewtype label="31290">icon</viewtype>
+				<visible>Container.Content(tvshows) | Container.Content(sets) | Container.Content(seasons)</visible>
+				<scrolltime tween="cubic" easing="out">300</scrolltime>
+				<onback condition="String.IsEqual(Skin.String(aeon.backmode),home)">ActivateWindow(home)</onback>
+				<onup condition="!Skin.HasSetting(aeon.kiosk)">ActivateWindow(1160)</onup>
+				<ondown>5291</ondown>
+				<onright>5290001</onright>
+				<itemlayout width="210" height="330">
+					<control type="image"><left>16</left><top>16</top><width>178</width><height>267</height><aspectratio>scale</aspectratio><texture background="true">$VAR[Aeon_Poster]</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+<control type="image"><left>16</left><top>16</top><width>178</width><height>267</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m178x267.png">$VAR[Aeon_Poster]</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+					<control type="group"><left>16</left><top>16</top><width>178</width><height>267</height><include>Aeon_ProgressLine_L</include></control>
+					<control type="image"><left>16</left><top>16</top><width>178</width><height>267</height><texture colordiffuse="88000000">common/white.png</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+<control type="image"><left>16</left><top>16</top><width>178</width><height>267</height><texture border="16" colordiffuse="88000000">fg/r16.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+				</itemlayout>
+				<focusedlayout width="210" height="330">
+					<control type="image"><left>10</left><top>10</top><width>190</width><height>279</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/white.png</texture><visible>[Control.HasFocus(529)] + !$EXP[Aeon_FGlass]</visible></control>
+
+					<control type="image"><left>16</left><top>16</top><width>178</width><height>267</height><aspectratio>scale</aspectratio><texture background="true">$VAR[Aeon_Poster]</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+<control type="image"><left>16</left><top>16</top><width>178</width><height>267</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m178x267.png">$VAR[Aeon_Poster]</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+<control type="image"><left>16</left><top>16</top><width>178</width><height>267</height><texture border="16" colordiffuse="ffffffff">fg/ri16.png</texture><visible>[Control.HasFocus(529)] + $EXP[Aeon_FGlass]</visible></control>
+					<control type="group"><left>16</left><top>16</top><width>178</width><height>267</height><include>Aeon_ProgressLine_L</include></control>
+				</focusedlayout>
+			</control>
+			<!-- title, then year · genre · certificate · seasons / episodes and the ratings, one line -->
+			<control type="grouplist"><left>100</left><top>452</top><width>1610</width><height>44</height><orientation>horizontal</orientation><itemgap>16</itemgap><usecontrolcoords>true</usecontrolcoords>
+				<control type="label"><width min="10" max="760">auto</width><height>44</height><aligny>center</aligny><font>lb_ui_28_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>[UPPERCASE]$INFO[Container(529).ListItem.Label][/UPPERCASE]</label></control>
+				<control type="label"><width min="1" max="1100">auto</width><height>44</height><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>[UPPERCASE]$INFO[Container(529).ListItem.Year,•  ,]$INFO[Container(529).ListItem.Genre,  •  ,]$INFO[Container(529).ListItem.Mpaa,  •  ,]$VAR[Aeon_529Seasons]$VAR[Aeon_529Episodes][/UPPERCASE]</label></control>
+				<control type="image"><top>8</top><width>46</width><height>28</height><aspectratio>keep</aspectratio><texture>ratings/imdb.png</texture><visible>[!String.IsEmpty(Container(529).ListItem.Rating(imdb))] + !$EXP[Aeon_RateText]</visible><visible>$EXP[Aeon_Rate_lib]</visible></control><control type="label"><width min="10" max="160">auto</width><height>28</height><aligny>center</aligny><font>lb_ui_24_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>IMDb</label><visible>[!String.IsEmpty(Container(529).ListItem.Rating(imdb))] + $EXP[Aeon_RateText]</visible></control>
+				<control type="label"><width min="10" max="90">auto</width><height>44</height><aligny>center</aligny><font>lb_ui_24_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[Container(529).ListItem.Rating(imdb)]</label><visible>!String.IsEmpty(Container(529).ListItem.Rating(imdb))</visible><visible>$EXP[Aeon_Rate_lib]</visible></control>
+				<control type="image"><top>8</top><width>40</width><height>28</height><aspectratio>keep</aspectratio><texture>ratings/tmdb.png</texture><visible>[!String.IsEmpty(Container(529).ListItem.Rating(tmdb))] + !$EXP[Aeon_RateText]</visible><visible>$EXP[Aeon_Rate_lib]</visible></control><control type="label"><width min="10" max="160">auto</width><height>28</height><aligny>center</aligny><font>lb_ui_24_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>TMDb</label><visible>[!String.IsEmpty(Container(529).ListItem.Rating(tmdb))] + $EXP[Aeon_RateText]</visible></control>
+				<control type="label"><width min="10" max="90">auto</width><height>44</height><aligny>center</aligny><font>lb_ui_24_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[Container(529).ListItem.Rating(tmdb)]</label><visible>!String.IsEmpty(Container(529).ListItem.Rating(tmdb))</visible><visible>$EXP[Aeon_Rate_lib]</visible></control>
+			</control>
+			<control type="label"><left>1100</left><top>452</top><width>700</width><height>44</height><align>right</align><aligny>center</aligny><font>lb_cap_20</font><textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor><label>$INFO[Container(5291).NumItems]</label></control>
+			<control type="image"><left>100</left><top>500</top><width>1700</width><height>1</height><texture colordiffuse="44ffffff">common/white.png</texture></control>
+			<control type="panel" id="5291">
+				<left>92</left><top>516</top><width>1720</width><height>564</height>
+				<orientation>vertical</orientation>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<onup>529</onup>
+				<onleft>529</onleft>
+				<onback>529</onback>
+				<onright>5290001</onright>
+				<itemlayout width="344" height="282" condition="Container.Content(seasons)"><include content="Aeon_V529_EpTile"/></itemlayout>
+				<focusedlayout width="344" height="282" condition="Container.Content(seasons)"><include content="Aeon_V529_EpTile"><param name="focused" value="true"/></include></focusedlayout>
+				<itemlayout width="184" height="290"><include content="Aeon_V529_Tile"/></itemlayout>
+				<focusedlayout width="184" height="290"><include content="Aeon_V529_Tile"><param name="focused" value="true"/></include></focusedlayout>
+				<content target="videos" sortby="episode" sortorder="ascending">$INFO[Container(529).ListItem.FolderPath]</content>
+			</control>
+			<include content="Aeon_M_Nav"><param name="icon" value="common/aeon_film.png"/><param name="cid" value="529"/><param name="base" value="52900"/><param name="scroll" value="true"/></include>
+		</control>
+	</include>
+
+	<!-- ============================================================ Circles (536): actors and directors as round portraits -->
+	<include name="Aeon_V536_Tile">
+		<param name="focused">false</param>
+		<definition>
+			<control type="image"><left>19</left><top>6</top><width>178</width><height>178</height><texture colordiffuse="$VAR[Aeon_Accent_L]">aeon/ring_circle.png</texture><visible>[$PARAM[focused] + Control.HasFocus(536)] + $EXP[Aeon_VGlass]</visible></control>
+			<control type="image"><left>28</left><top>15</top><width>160</width><height>160</height><texture colordiffuse="33ffffff" diffuse="common/aeon_circle_mask.png">common/white.png</texture><visible>$EXP[Aeon_VGlass]</visible></control>
+			<control type="image"><left>28</left><top>15</top><width>160</width><height>160</height><aspectratio align="center" aligny="top" scalediffuse="false">scale</aspectratio><texture background="true" diffuse="common/aeon_circle_mask.png">$INFO[ListItem.Icon]</texture><visible>$EXP[Aeon_VGlass]</visible></control>
+			<control type="label"><left>6</left><top>190</top><width>204</width><height>30</height><align>center</align><font>lb_small_20_bold</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$INFO[ListItem.Label]</label><visible>[!$PARAM[focused] | !Control.HasFocus(536)] + !Container.Content(artists)</visible></control>
+			<control type="label"><left>6</left><top>190</top><width>204</width><height>30</height><align>center</align><font>un_lb_small_20_bold</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$INFO[ListItem.Label]</label><visible>[!$PARAM[focused] | !Control.HasFocus(536)] + Container.Content(artists)</visible></control>
+			<control type="label"><left>6</left><top>190</top><width>204</width><height>30</height><align>center</align><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll><label>$INFO[ListItem.Label]</label><visible>[$PARAM[focused] + Control.HasFocus(536)] + !Container.Content(artists)</visible></control>
+			<control type="label"><left>6</left><top>190</top><width>204</width><height>30</height><align>center</align><font>un_lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><scroll>true</scroll><label>$INFO[ListItem.Label]</label><visible>[$PARAM[focused] + Control.HasFocus(536)] + Container.Content(artists)</visible></control>
+			<!-- 0.56.14 aeon_lib_music: people as squares in the Aeon theme -->
+			<control type="image"><left>22</left><top>9</top><width>172</width><height>172</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/white.png</texture><visible>$PARAM[focused] + Control.HasFocus(536) + !$EXP[Aeon_VGlass]</visible></control>
+			<control type="image"><left>28</left><top>15</top><width>160</width><height>160</height><texture colordiffuse="33ffffff">common/white.png</texture><visible>!$EXP[Aeon_VGlass]</visible></control>
+			<control type="image"><left>28</left><top>15</top><width>160</width><height>160</height><aspectratio align="center" aligny="top">scale</aspectratio><texture background="true">$INFO[ListItem.Icon]</texture><visible>!$EXP[Aeon_VGlass]</visible></control>
+		</definition>
+	</include>
+	<!-- 0.48.0: Fused Glass loads its own view (FG_V536_View, _src/fg_lib_lists.py) -->
+	<include name="Aeon_V536_View">
+		<include condition="Skin.HasSetting(aeon.fglass)">FG_V536_View</include>
+		<include condition="!Skin.HasSetting(aeon.fglass)">Aeon_V536_ViewAeon</include>
+	</include>
+	<include name="Aeon_V536_ViewAeon">
+		<control type="group">
+			<visible>Control.IsVisible(536)</visible>
+			<include>Anim_FadeVisible</include>
+			<include>Aeon_V_Bg</include>
+			<include>Aeon_V_Header</include>
+			<control type="panel" id="536">
+				<left>90</left><top>150</top><width>1728</width><height>720</height>
+				<orientation>vertical</orientation>
+				<viewtype label="31292">icon</viewtype>
+				<visible>Container.Content(actors) | Container.Content(directors) | Container.Content(artists)</visible>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<onback condition="String.IsEqual(Skin.String(aeon.backmode),home)">ActivateWindow(home)</onback>
+				<onleft condition="!Skin.HasSetting(aeon.kiosk)">ActivateWindow(1160)</onleft>
+				<onright>5360001</onright>
+				<itemlayout width="216" height="240"><include content="Aeon_V536_Tile"/></itemlayout>
+				<focusedlayout width="216" height="240"><include content="Aeon_V536_Tile"><param name="focused" value="true"/></include></focusedlayout>
+			</control>
+			<include content="Aeon_M_Nav"><param name="icon" value="common/aeon_film.png"/><param name="cid" value="536"/><param name="base" value="53600"/><param name="scroll" value="true"/></include>
+		</control>
+	</include>
+
+	<!-- ============================================================ Planner (537): episodes as a dated list (sort by date in the settings strip) -->
+	<!-- 0.56.14 aeon_lib_other: the Planner list meets the clock box and the A-Z strip in Aeon and Glass -->
+	<include name="Aeon_V537_GeoAeon"><left>90</left><top>108</top><width>1730</width><height>864</height></include>
+	<include name="Aeon_V537_GeoFG"><left>90</left><top>124</top><width>1720</width><height>864</height></include>
+	<include name="Aeon_V537_Row">
+		<param name="focused">false</param>
+		<param name="ink">ffffffff</param>
+		<param name="ink2">99ffffff</param>
+		<definition>
+			<control type="image"><left>0</left><top>0</top><width>1730</width><height>104</height><texture border="4,0,0,0" colordiffuse="$VAR[Aeon_RowFocusCol_L]">$VAR[Aeon_RowFocusTex]</texture><visible>[$PARAM[focused] + Control.HasFocus(537)] + !$EXP[Aeon_FGlass]</visible></control>
+			<control type="image"><left>-40</left><top>-34</top><width>1800</width><height>184</height><texture border="56" colordiffuse="$VAR[FG_ShadowCol]">fg/sh16.png</texture><visible>[[$PARAM[focused] + Control.HasFocus(537)] + $EXP[Aeon_FGlass]] + $EXP[FG_FocusShadowOn]</visible><include>FG_LandShadowFocus</include></control>
+<control type="image"><left>0</left><top>0</top><width>1720</width><height>104</height><texture border="16" colordiffuse="ffffffff">$VAR[FG_FocusTex]</texture><visible>[$PARAM[focused] + Control.HasFocus(537)] + $EXP[Aeon_FGlass]</visible><animation effect="zoom" start="100,100" end="101.395,111.538" center="auto" time="0" condition="$EXP[Aeon_FGlass] + $EXP[FG_FocusFlat]">Conditional</animation><include>FG_LandFocus</include></control>
+			<control type="image"><left>0</left><top>0</top><width>1730</width><height>104</height><texture colordiffuse="70000000">common/white.png</texture><visible>![$PARAM[focused] + Control.HasFocus(537)]</visible></control>
+			<control type="label"><left>24</left><top>0</top><width>230</width><height>104</height><aligny>center</aligny><font>lb_ui_24_bold</font><textcolor>$PARAM[ink]</textcolor><selectedcolor>$PARAM[ink]</selectedcolor><label>$INFO[ListItem.Premiered]</label><visible>String.IsEmpty(ListItem.Property(aeon.missing))</visible></control>
+			<!-- upcoming episodes: TODAY / TOMORROW / weekday on the first row of each day, the date under it -->
+			<control type="label"><left>24</left><top>-14</top><width>230</width><height>104</height><aligny>center</aligny><font>lb_ui_24_bold</font><textcolor>$PARAM[ink]</textcolor><selectedcolor>$PARAM[ink]</selectedcolor><label>[UPPERCASE]$INFO[ListItem.Property(day)][/UPPERCASE]</label><visible>!String.IsEmpty(ListItem.Property(aeon.missing))</visible></control>
+			<control type="label"><left>24</left><top>30</top><width>230</width><height>104</height><aligny>center</aligny><font>lb_small_20</font><textcolor>$PARAM[ink2]</textcolor><selectedcolor>$PARAM[ink2]</selectedcolor><label>$INFO[ListItem.Property(daydate)]</label><visible>!String.IsEmpty(ListItem.Property(aeon.missing))</visible></control>
+			<control type="image"><left>270</left><top>10</top><width>150</width><height>84</height><aspectratio>scale</aspectratio><texture background="true">$VAR[Aeon_EpThumb]</texture></control>
+			<control type="label"><left>446</left><top>14</top><width>980</width><height>40</height><font>lb_ui_24_bold</font><textcolor>$PARAM[ink]</textcolor><selectedcolor>$PARAM[ink]</selectedcolor><label>[UPPERCASE]$INFO[ListItem.TVShowTitle][/UPPERCASE]</label></control>
+			<control type="label"><left>446</left><top>54</top><width>980</width><height>32</height><font>lb_small_20</font><textcolor>$PARAM[ink2]</textcolor><selectedcolor>$PARAM[ink2]</selectedcolor><label>$VAR[Aeon_PlannerSub]</label></control>
+			<control type="label"><left>1440</left><top>0</top><width>256</width><height>104</height><align>right</align><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>$PARAM[ink2]</textcolor><selectedcolor>$PARAM[ink2]</selectedcolor><label>[UPPERCASE]$VAR[Aeon_LowWatched][/UPPERCASE]</label><visible>String.IsEmpty(ListItem.Property(aeon.missing))</visible></control>
+		</definition>
+	</include>
+	<include name="Aeon_V537_View">
+		<control type="group">
+			<visible>Control.IsVisible(537)</visible>
+			<include>Anim_FadeVisible</include>
+			<include>Aeon_V_Bg</include>
+			<include>Aeon_V_Header</include>
+			<control type="list" id="537">
+				<include condition="Skin.HasSetting(aeon.fglass)">Aeon_V537_GeoFG</include><include condition="!Skin.HasSetting(aeon.fglass)">Aeon_V537_GeoAeon</include>
+				<orientation>vertical</orientation>
+				<viewtype label="31294">list</viewtype>
+				<visible>Container.Content(episodes)</visible>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<onback condition="String.IsEqual(Skin.String(aeon.backmode),home)">ActivateWindow(home)</onback>
+				<onup>Action(LastPage)</onup><ondown>Action(FirstPage)</ondown>
+				<onleft condition="!Skin.HasSetting(aeon.kiosk)">ActivateWindow(1160)</onleft>
+				<onright>5370001</onright>
+				<itemlayout width="1730" height="108"><include content="Aeon_V537_Row"/></itemlayout>
+				<focusedlayout width="1730" height="108"><include content="Aeon_V537_Row"><param name="focused" value="true"/><param name="ink" value="$VAR[Aeon_OnBarInk_L]"/><param name="ink2" value="$VAR[Aeon_OnBarInk3_L]"/></include></focusedlayout>
+			</control>
+			<include content="Aeon_M_Nav"><param name="icon" value="common/aeon_film.png"/><param name="cid" value="537"/><param name="base" value="53700"/><param name="scroll" value="true"/></include>
+		</control>
+	</include>
+	<!-- ============================================================ Planner window (Custom_1168_Planner.xml) -->
+	<variable name="Aeon_Pl_Title">
+		<value condition="!String.IsEmpty(ListItem.TVShowTitle)">$INFO[ListItem.TVShowTitle]</value>
+		<value>$INFO[ListItem.Title]$VAR[Aeon_Ver]</value>
+	</variable>
+	<variable name="Aeon_Pl_Sub">
+		<value condition="String.IsEqual(ListItem.Property(kind),album)">$INFO[ListItem.Property(aeon.artist)]</value>
+		<value condition="String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(ListItem.Property(aeon.releasetext))">$INFO[ListItem.Property(aeon.releasetext)]</value>
+		<value condition="!String.IsEmpty(ListItem.TVShowTitle)">$VAR[Aeon_EpCode]$INFO[ListItem.Title,   ,]</value>
+		<value>$LOCALIZE[20338]</value>
+	</variable>
+	<!-- 0.39.16 the Planner spotlight on Home spells the episode out (the short 2x02 is for library views):
+	     SEASON 2 · EPISODE 2, then the episode's title only when it says something (the helper leaves aeon.eptitle empty
+	     for "Episode 2", "TBA" ...) -->
+	<variable name="Aeon_PlSpot_Sub">
+		<value condition="String.IsEqual(ListItem.Property(kind),album)">$INFO[ListItem.Property(aeon.artist)]</value>
+		<value condition="String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(ListItem.Property(aeon.releasetext))">$INFO[ListItem.Property(aeon.releasetext)]</value>
+		<value condition="!String.IsEmpty(ListItem.TVShowTitle) + String.IsEqual(ListItem.Season,0)">$LOCALIZE[20381]  ·  $VAR[Aeon_EpN_d6ec44fa]$INFO[ListItem.Property(aeon.eptitle),  ·  ,]$INFO[ListItem.Property(aeon.epkindtext),  ·  ,]</value>
+		<value condition="!String.IsEmpty(ListItem.TVShowTitle) + !String.IsEmpty(ListItem.Episode)">$LOCALIZE[20373] $INFO[ListItem.Season]  ·  $VAR[Aeon_EpN_d6ec44fa]$INFO[ListItem.Property(aeon.eptitle),  ·  ,]$INFO[ListItem.Property(aeon.epkindtext),  ·  ,]</value>
+		<value condition="!String.IsEmpty(ListItem.TVShowTitle)">$INFO[ListItem.Property(aeon.eptitle)]</value>
+		<value>$LOCALIZE[20338]</value>
+	</variable>
+	<variable name="Aeon_Pl_Kind">
+		<!-- wanted titles of the Planner sources (Radarr / Sonarr / Lidarr): In cinemas now, On Blu-ray, New album ... -->
+		<value condition="!String.IsEmpty(ListItem.Property(aeon.inlib))">[UPPERCASE]$ADDON[skin.aeon.fuse 32431][/UPPERCASE]</value>
+		<value condition="!String.IsEmpty(ListItem.Property(aeon.releasetext))">[UPPERCASE]$INFO[ListItem.Property(aeon.releasetext)][/UPPERCASE]</value>
+		<value condition="!String.IsEmpty(ListItem.Property(aeon.epkindtext))">[UPPERCASE]$INFO[ListItem.Property(aeon.epkindtext)][/UPPERCASE]</value><!-- 0.56.20 epkind: premiere / finale -->
+		<value condition="!String.IsEmpty(ListItem.TVShowTitle)">[UPPERCASE]$LOCALIZE[20359][/UPPERCASE]</value>
+		<value>[UPPERCASE]$LOCALIZE[20338][/UPPERCASE]</value>
+	</variable>
+	<variable name="Aeon_Pl_Thumb">
+		<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.thumb))">$INFO[Window(Home).Property(aeon.fart.thumb)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(landscape))">$INFO[ListItem.Art(landscape)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.landscape))">$INFO[Window(Home).Property(aeon.fart.landscape)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.fanart))">$INFO[Window(Home).Property(aeon.fart.fanart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.fanart))">$INFO[ListItem.Art(tvshow.fanart)]</value>
+		<value>$INFO[ListItem.Art(poster)]</value>
+	</variable>
+	<variable name="Aeon_Pl_DayPath">
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.planner.date))">plugin://script.aeon.helper/?info=planner&amp;date=$INFO[Window(Home).Property(aeon.planner.date)]&amp;what=$INFO[Skin.String(aeon.planner.what)]&amp;stamp=$INFO[Window(Home).Property(aeon.planner.updated)]&amp;w=$INFO[Window(Home).Property(aeon.planner.watching)]</value>
+		<value>special://skin/shortcuts/customrows-none.xsp</value>
+	</variable>
+	<variable name="Aeon_Pl_ColPath1">
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.planner.c1.iso)) + [String.IsEmpty(Window(Home).Property(aeon.planner.c1.past)) | Skin.HasSetting(aeon.planner.past)] + String.IsEqual(Window(Home).Property(aeon.planner.mode),week)">plugin://script.aeon.helper/?info=planner&amp;date=$INFO[Window(Home).Property(aeon.planner.c1.iso)]&amp;what=$INFO[Skin.String(aeon.planner.what)]&amp;stamp=$INFO[Window(Home).Property(aeon.planner.updated)]&amp;w=$INFO[Window(Home).Property(aeon.planner.watching)]</value>
+		<value>special://skin/shortcuts/customrows-none.xsp</value>
+	</variable>
+	<variable name="Aeon_Pl_ColPath2">
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.planner.c2.iso)) + [String.IsEmpty(Window(Home).Property(aeon.planner.c2.past)) | Skin.HasSetting(aeon.planner.past)] + String.IsEqual(Window(Home).Property(aeon.planner.mode),week)">plugin://script.aeon.helper/?info=planner&amp;date=$INFO[Window(Home).Property(aeon.planner.c2.iso)]&amp;what=$INFO[Skin.String(aeon.planner.what)]&amp;stamp=$INFO[Window(Home).Property(aeon.planner.updated)]&amp;w=$INFO[Window(Home).Property(aeon.planner.watching)]</value>
+		<value>special://skin/shortcuts/customrows-none.xsp</value>
+	</variable>
+	<variable name="Aeon_Pl_ColPath3">
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.planner.c3.iso)) + [String.IsEmpty(Window(Home).Property(aeon.planner.c3.past)) | Skin.HasSetting(aeon.planner.past)] + String.IsEqual(Window(Home).Property(aeon.planner.mode),week)">plugin://script.aeon.helper/?info=planner&amp;date=$INFO[Window(Home).Property(aeon.planner.c3.iso)]&amp;what=$INFO[Skin.String(aeon.planner.what)]&amp;stamp=$INFO[Window(Home).Property(aeon.planner.updated)]&amp;w=$INFO[Window(Home).Property(aeon.planner.watching)]</value>
+		<value>special://skin/shortcuts/customrows-none.xsp</value>
+	</variable>
+	<variable name="Aeon_Pl_ColPath4">
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.planner.c4.iso)) + [String.IsEmpty(Window(Home).Property(aeon.planner.c4.past)) | Skin.HasSetting(aeon.planner.past)] + String.IsEqual(Window(Home).Property(aeon.planner.mode),week)">plugin://script.aeon.helper/?info=planner&amp;date=$INFO[Window(Home).Property(aeon.planner.c4.iso)]&amp;what=$INFO[Skin.String(aeon.planner.what)]&amp;stamp=$INFO[Window(Home).Property(aeon.planner.updated)]&amp;w=$INFO[Window(Home).Property(aeon.planner.watching)]</value>
+		<value>special://skin/shortcuts/customrows-none.xsp</value>
+	</variable>
+	<variable name="Aeon_Pl_ColPath5">
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.planner.c5.iso)) + [String.IsEmpty(Window(Home).Property(aeon.planner.c5.past)) | Skin.HasSetting(aeon.planner.past)] + String.IsEqual(Window(Home).Property(aeon.planner.mode),week)">plugin://script.aeon.helper/?info=planner&amp;date=$INFO[Window(Home).Property(aeon.planner.c5.iso)]&amp;what=$INFO[Skin.String(aeon.planner.what)]&amp;stamp=$INFO[Window(Home).Property(aeon.planner.updated)]&amp;w=$INFO[Window(Home).Property(aeon.planner.watching)]</value>
+		<value>special://skin/shortcuts/customrows-none.xsp</value>
+	</variable>
+	<variable name="Aeon_Pl_ColPath6">
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.planner.c6.iso)) + [String.IsEmpty(Window(Home).Property(aeon.planner.c6.past)) | Skin.HasSetting(aeon.planner.past)] + String.IsEqual(Window(Home).Property(aeon.planner.mode),week)">plugin://script.aeon.helper/?info=planner&amp;date=$INFO[Window(Home).Property(aeon.planner.c6.iso)]&amp;what=$INFO[Skin.String(aeon.planner.what)]&amp;stamp=$INFO[Window(Home).Property(aeon.planner.updated)]&amp;w=$INFO[Window(Home).Property(aeon.planner.watching)]</value>
+		<value>special://skin/shortcuts/customrows-none.xsp</value>
+	</variable>
+	<variable name="Aeon_Pl_ColPath7">
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.planner.c7.iso)) + [String.IsEmpty(Window(Home).Property(aeon.planner.c7.past)) | Skin.HasSetting(aeon.planner.past)] + String.IsEqual(Window(Home).Property(aeon.planner.mode),week)">plugin://script.aeon.helper/?info=planner&amp;date=$INFO[Window(Home).Property(aeon.planner.c7.iso)]&amp;what=$INFO[Skin.String(aeon.planner.what)]&amp;stamp=$INFO[Window(Home).Property(aeon.planner.updated)]&amp;w=$INFO[Window(Home).Property(aeon.planner.watching)]</value>
+		<value>special://skin/shortcuts/customrows-none.xsp</value>
+	</variable>
+	<!-- Planner: backdrop strength (settings strip), count in the right strip -->
+	<variable name="Aeon_PlFanAlpha">
+		<value condition="String.IsEqual(Skin.String(aeon.planner.bgs),light)">1cffffff</value>
+		<value condition="String.IsEqual(Skin.String(aeon.planner.bgs),strong)">70ffffff</value>
+		<value>38ffffff</value>
+	</variable>
+	<variable name="Aeon_PlBgName">
+		<value condition="Skin.HasSetting(aeon.planner.nobg)">$LOCALIZE[1223]</value>
+		<value>$LOCALIZE[31550]</value>
+	</variable>
+	<variable name="Aeon_PlBgsName">
+		<value condition="String.IsEqual(Skin.String(aeon.planner.bgs),light)">$LOCALIZE[31672]</value>
+		<value condition="String.IsEqual(Skin.String(aeon.planner.bgs),strong)">$LOCALIZE[31673]</value>
+		<value>$LOCALIZE[31071]</value>
+	</variable>
+	<variable name="Aeon_PlCount">
+		<value condition="String.IsEqual(Window(Home).Property(aeon.planner.mode),week) + String.IsEqual(Window(Home).Property(aeon.planner.col),1)">$INFO[Window(Home).Property(aeon.planner.c1.count)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.planner.mode),week) + String.IsEqual(Window(Home).Property(aeon.planner.col),2)">$INFO[Window(Home).Property(aeon.planner.c2.count)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.planner.mode),week) + String.IsEqual(Window(Home).Property(aeon.planner.col),3)">$INFO[Window(Home).Property(aeon.planner.c3.count)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.planner.mode),week) + String.IsEqual(Window(Home).Property(aeon.planner.col),4)">$INFO[Window(Home).Property(aeon.planner.c4.count)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.planner.mode),week) + String.IsEqual(Window(Home).Property(aeon.planner.col),5)">$INFO[Window(Home).Property(aeon.planner.c5.count)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.planner.mode),week) + String.IsEqual(Window(Home).Property(aeon.planner.col),6)">$INFO[Window(Home).Property(aeon.planner.c6.count)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.planner.mode),week) + String.IsEqual(Window(Home).Property(aeon.planner.col),7)">$INFO[Window(Home).Property(aeon.planner.c7.count)]</value>
+		<value>$INFO[Container(9500).NumItems]</value>
+	</variable>
+	<include name="Aeon_Pl_Row"><control type="image"><left>0</left><top>0</top><width>1720</width><height>104</height><texture colordiffuse="70000000">common/white.png</texture><visible>!$EXP[Aeon_FGlass]</visible></control><control type="image"><left>0</left><top>0</top><width>1720</width><height>104</height><texture border="16" colordiffuse="70000000">fg/r16.png</texture><visible>$EXP[Aeon_FGlass]</visible></control><control type="label"><left>200</left><top>14</top><width>1300</width><height>40</height><aligny>center</aligny><font>lb_ui_24_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>[UPPERCASE]$VAR[Aeon_Pl_Title][/UPPERCASE]</label></control><control type="label"><left>200</left><top>54</top><width>1300</width><height>32</height><aligny>center</aligny><font>lb_small_20</font><textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor><label>$VAR[Aeon_Pl_Sub]</label></control><control type="label"><left>1410</left><top>0</top><width>286</width><height>104</height><align>right</align><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor><label>$VAR[Aeon_Pl_Kind]</label></control><control type="image"><left>24</left><top>10</top><width>150</width><height>84</height><aspectratio>scale</aspectratio><texture background="true">$VAR[Aeon_Pl_Thumb]</texture><visible>!$EXP[Aeon_FGlass]</visible></control><control type="image"><left>24</left><top>10</top><width>150</width><height>84</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m150x84.png">$VAR[Aeon_Pl_Thumb]</texture><visible>$EXP[Aeon_FGlass]</visible></control><include content="Aeon_PlInLibDot"><param name="x" value="138"/><param name="y" value="16"/></include></include>
+	<include name="Aeon_Pl_RowF"><control type="image"><left>0</left><top>0</top><width>1720</width><height>104</height><texture border="4,0,0,0" colordiffuse="$VAR[Aeon_RowFocusCol]">$VAR[Aeon_RowFocusTex]</texture><visible>[Control.HasFocus(9500)] + !$EXP[Aeon_FGlass]</visible></control>
+	<control type="image"><left>-40</left><top>-34</top><width>1800</width><height>184</height><texture border="56" colordiffuse="$VAR[FG_ShadowCol]">fg/sh16.png</texture><visible>[[Control.HasFocus(9500)] + $EXP[Aeon_FGlass]] + $EXP[FG_FocusShadowOn]</visible><include>FG_LandShadowVisible</include></control>
+<control type="image"><left>0</left><top>0</top><width>1720</width><height>104</height><texture border="16" colordiffuse="ffffffff">$VAR[FG_FocusTex]</texture><visible>[Control.HasFocus(9500)] + $EXP[Aeon_FGlass]</visible><animation effect="zoom" start="100,100" end="101.395,111.538" center="auto" time="0" condition="$EXP[Aeon_FGlass] + $EXP[FG_FocusFlat]">Conditional</animation><include>FG_LandVisible</include></control><control type="image"><left>0</left><top>0</top><width>1720</width><height>104</height><texture colordiffuse="70000000">common/white.png</texture><visible>!Control.HasFocus(9500) + !$EXP[Aeon_FGlass]</visible></control><control type="image"><left>0</left><top>0</top><width>1720</width><height>104</height><texture border="16" colordiffuse="70000000">fg/r16.png</texture><visible>!Control.HasFocus(9500) + $EXP[Aeon_FGlass]</visible></control><control type="group"><visible>Control.HasFocus(9500)</visible><control type="label"><left>200</left><top>14</top><width>1300</width><height>40</height><aligny>center</aligny><font>lb_ui_24_bold</font><textcolor>$VAR[Aeon_OnBarInk]</textcolor><selectedcolor>$VAR[Aeon_OnBarInk]</selectedcolor><label>[UPPERCASE]$VAR[Aeon_Pl_Title][/UPPERCASE]</label></control><control type="label"><left>200</left><top>54</top><width>1300</width><height>32</height><aligny>center</aligny><font>lb_small_20</font><textcolor>$VAR[Aeon_OnBarInk3]</textcolor><selectedcolor>$VAR[Aeon_OnBarInk3]</selectedcolor><label>$VAR[Aeon_Pl_Sub]</label></control><control type="label"><left>1410</left><top>0</top><width>286</width><height>104</height><align>right</align><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>$VAR[Aeon_OnBarInk3]</textcolor><selectedcolor>$VAR[Aeon_OnBarInk3]</selectedcolor><label>$VAR[Aeon_Pl_Kind]</label></control></control><control type="group"><visible>!Control.HasFocus(9500)</visible><control type="label"><left>200</left><top>14</top><width>1300</width><height>40</height><aligny>center</aligny><font>lb_ui_24_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>[UPPERCASE]$VAR[Aeon_Pl_Title][/UPPERCASE]</label></control><control type="label"><left>200</left><top>54</top><width>1300</width><height>32</height><aligny>center</aligny><font>lb_small_20</font><textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor><label>$VAR[Aeon_Pl_Sub]</label></control><control type="label"><left>1410</left><top>0</top><width>286</width><height>104</height><align>right</align><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor><label>$VAR[Aeon_Pl_Kind]</label></control></control><control type="image"><left>24</left><top>10</top><width>150</width><height>84</height><aspectratio>scale</aspectratio><texture background="true">$VAR[Aeon_Pl_Thumb]</texture><visible>!$EXP[Aeon_FGlass]</visible></control><control type="image"><left>24</left><top>10</top><width>150</width><height>84</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m150x84.png">$VAR[Aeon_Pl_Thumb]</texture><visible>$EXP[Aeon_FGlass]</visible></control><include content="Aeon_PlInLibDot"><param name="x" value="138"/><param name="y" value="16"/></include></include>
+	<variable name="Aeon_Pl_ViewName">
+		<value condition="String.IsEqual(Window(Home).Property(aeon.planner.mode),week) | [String.IsEmpty(Window(Home).Property(aeon.planner.mode)) + String.IsEqual(Skin.String(aeon.planner.view),week)]">$LOCALIZE[31898]</value>
+		<value>$LOCALIZE[31897]</value>
+	</variable>
+</includes>

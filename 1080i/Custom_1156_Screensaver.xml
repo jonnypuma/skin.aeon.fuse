@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Aeon style screensaver (dialog 1156). Opened and closed by the add-on screensaver.aeon.fuse, a regular Kodi screensaver
+	(Settings > Interface > Screensaver: on / off and wait time are Kodi's). The add-on asks for one round at a time
+	(0.56.22, screensaver 1.3.0): aeon.ss.path = the helper's ?info=ssround list, N items mixed from the switched-on sources,
+	each with ListItem.Property(aeon.ss.kind) = movies / tvshows / music / cinema / today / tomorrow.
+	Cycles through random titles: poster (album: cover) left, right-aligned title / credits / runtime, a pager of dots at the left edge,
+	and the music now-playing line (artist / song) top right. Conditions are written out in full: window <visible>
+	and <autoscroll> are evaluated outside the normal expression resolution path.
+-->
+<window type="dialog" id="1156">
+	<defaultcontrol>9701</defaultcontrol>
+	<onload>SetProperty(Groove.Helper.Container,9701,home)</onload>
+	<onunload>ClearProperty(Groove.Helper.Container,home)</onunload>
+	<animation type="WindowOpen" tween="cubic" easing="out">
+		<effect type="fade" start="0" end="100" time="900"/>
+	</animation>
+	<animation type="WindowClose" tween="cubic" easing="in">
+		<effect type="fade" start="100" end="0" time="300"/>
+	</animation>
+	<controls>
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<texture colordiffuse="ff0a0a0a">common/white.png</texture>
+		</control>
+		<!-- background style (Skin settings > Appearance > Screensaver background): neutral / fanart / colours of the poster -->
+		<control type="image">
+			<left>0</left><top>0</top><width>1920</width><height>1080</height>
+			<aspectratio>scale</aspectratio>
+			<fadetime>900</fadetime>
+			<texture background="true" colordiffuse="55ffffff">$INFO[Container(9701).ListItem.Art(fanart)]</texture>
+			<visible>String.IsEqual(Skin.String(aeon.ssbg),fanart) + ![!String.IsEmpty(Window(Home).Property(aeon.ss.zoom)) + !Skin.HasSetting(aeon.reducemotion)]</visible>
+		</control>
+		<!-- zoom and slide (screensaver settings, Window(Home).Property(aeon.ss.zoom)): two pictures take turns, odd and
+		     even titles, so the movement starts again with every title; the one leaving keeps its own title while it fades -->
+		<control type="image">
+			<left>0</left><top>0</top><width>1920</width><height>1080</height>
+			<aspectratio>scale</aspectratio>
+			<texture subpixel="true" mipmap="true" background="true" colordiffuse="55ffffff">$VAR[Aeon_SSFanOdd]</texture>
+			<visible>String.IsEqual(Skin.String(aeon.ssbg),fanart) + !String.IsEmpty(Window(Home).Property(aeon.ss.zoom)) + !Skin.HasSetting(aeon.reducemotion) + Integer.IsOdd(Container(9701).CurrentItem)</visible>
+			<animation type="Visible" reversible="false"><effect type="fade" start="0" end="100" time="900"/><effect type="zoom" start="100" end="108" center="960,540" time="10000" tween="linear"/><effect type="slide" start="0,0" end="-24,-10" time="10000" tween="linear"/></animation>
+			<animation type="Hidden" reversible="false"><effect type="fade" start="100" end="0" time="900"/><effect type="zoom" start="108" end="109" center="960,540" time="900" tween="linear"/><effect type="slide" start="-24,-10" end="-26,-11" time="900" tween="linear"/></animation>
+		</control>
+		<control type="image">
+			<left>0</left><top>0</top><width>1920</width><height>1080</height>
+			<aspectratio>scale</aspectratio>
+			<texture subpixel="true" mipmap="true" background="true" colordiffuse="55ffffff">$VAR[Aeon_SSFanEven]</texture>
+			<visible>String.IsEqual(Skin.String(aeon.ssbg),fanart) + !String.IsEmpty(Window(Home).Property(aeon.ss.zoom)) + !Skin.HasSetting(aeon.reducemotion) + Integer.IsEven(Container(9701).CurrentItem)</visible>
+			<animation type="Visible" reversible="false"><effect type="fade" start="0" end="100" time="900"/><effect type="zoom" start="100" end="108" center="960,540" time="10000" tween="linear"/><effect type="slide" start="0,0" end="-24,-10" time="10000" tween="linear"/></animation>
+			<animation type="Hidden" reversible="false"><effect type="fade" start="100" end="0" time="900"/><effect type="zoom" start="108" end="109" center="960,540" time="900" tween="linear"/><effect type="slide" start="-24,-10" end="-26,-11" time="900" tween="linear"/></animation>
+		</control>
+		<!-- Colors, until KarmaMole has made its soft colour picture (just after start-up, while busy, low memory):
+		     the real fanart, scaled, instead of a poster stretched over the screen -->
+		<control type="image">
+			<width>1920</width><height>1080</height>
+			<aspectratio>scale</aspectratio>
+			<fadetime>600</fadetime>
+			<texture background="true" colordiffuse="99ffffff">$INFO[Container(9701).ListItem.Art(fanart)]</texture>
+			<visible>String.IsEqual(Skin.String(aeon.ssbg),color) + String.IsEmpty(Window(Home).Property(Groove.Art.Soft))</visible>
+		</control>
+		<!-- real colour wash from the art, made by script.karmamole.helper -->
+		<control type="image">
+			<left>0</left><top>0</top><width>1920</width><height>1080</height>
+			<aspectratio>stretch</aspectratio>
+			<fadetime>900</fadetime>
+			<texture background="true">$INFO[Window(Home).Property(Groove.Art.Soft)]</texture>
+			<visible>String.IsEqual(Skin.String(aeon.ssbg),color) + !String.IsEmpty(Window(Home).Property(Groove.Art.Soft))</visible>
+		</control>
+		<control type="image">
+			<left>0</left><top>0</top><width>1920</width><height>1080</height>
+			<texture colordiffuse="55000000">common/white.png</texture>
+			<visible>String.IsEqual(Skin.String(aeon.ssbg),fanart) | String.IsEqual(Skin.String(aeon.ssbg),color)</visible>
+		</control>
+		<!-- data + cycling (the list holds focus; autoscroll moves it). Ten items: one for each pager ring (with 12 the
+		     last two slides had no ring) -->
+		<control type="list" id="9701">
+			<left>0</left>
+			<top>0</top>
+			<width>1</width>
+			<height>1</height>
+			<orientation>vertical</orientation>
+			<scrolltime>0</scrolltime>
+			<autoscroll time="10000" delay="10000" repeat="10000">true</autoscroll>
+			<itemlayout width="1" height="1"/>
+			<focusedlayout width="1" height="1"/>
+			<content limit="10" browse="never">$VAR[Aeon_SSPath]</content><!-- 0.56.22: the round keeps the helper's mixed order -->
+		</control>
+		<!-- poster: the full height of the screen (2:3, same centre as the album cover) -->
+		<control type="image">
+			<left>190</left>
+			<top>0</top>
+			<width>720</width>
+			<height>1080</height>
+			<aspectratio>scale</aspectratio>
+			<fadetime>700</fadetime>
+			<texture background="true">$INFO[Container(9701).ListItem.Art(poster)]</texture>
+			<visible>!String.IsEqual(Container(9701).ListItem.DBType,album) + !Skin.HasSetting(aeon.fglass)</visible>
+		</control>
+		<control type="image">
+			<left>110</left><top>80</top><width>640</width><height>920</height>
+			<texture border="64" colordiffuse="$VAR[FG_PanelSh_99]">$VAR[FG_Sh_sh24]</texture>
+			<visible>!String.IsEqual(Container(9701).ListItem.DBType,album) + Skin.HasSetting(aeon.fglass) + !String.IsEmpty(Container(9701).ListItem.Art(poster))</visible>
+		</control>
+		<control type="image">
+			<left>150</left><top>120</top><width>560</width><height>840</height>
+			<!-- 0.34.0: the whole picture (keep, nothing cut off) with the rounded mask laid over the picture as drawn,
+			     so a picture that is not exactly 560 x 840 gets its own rounded corners -->
+			<aspectratio>keep</aspectratio>
+			<fadetime>700</fadetime>
+			<texture background="true" diffuse="fg/m560x840.png">$INFO[Container(9701).ListItem.Art(poster)]</texture>
+			<visible>!String.IsEqual(Container(9701).ListItem.DBType,album) + Skin.HasSetting(aeon.fglass)</visible>
+		</control>
+		<!-- album cover (0.40.4): drawn as it is, whatever its shape (no square edge line, no square card shadow: a cover
+		     that is not quite square showed the square around it). The dropped shadow is the cover itself in black, faint,
+		     a few sizes larger and a little lower. 0.52.0: one pre-blurred soft texture (fg/shc.png, _src/fg_cover_shadow.py):
+		     the stacked copies showed as steps. -->
+		<control type="group">
+			<visible>String.IsEqual(Container(9701).ListItem.DBType,album) + !Skin.HasSetting(aeon.fglass)</visible>
+			<control type="image"><left>78</left><top>90</top><width>945</width><height>945</height><fadetime>700</fadetime><texture border="190" colordiffuse="99000000">fg/shc.png</texture></control>
+			<control type="image"><left>174</left><top>164</top><width>753</width><height>753</height><aspectratio>keep</aspectratio><fadetime>700</fadetime><texture background="true">$INFO[Container(9701).ListItem.Art(thumb)]</texture></control>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9701).ListItem.DBType,album) + Skin.HasSetting(aeon.fglass)</visible>
+			<control type="image"><left>78</left><top>90</top><width>945</width><height>945</height><fadetime>700</fadetime><texture border="190" colordiffuse="99000000">fg/shc.png</texture></control>
+			<!-- the whole picture (keep, nothing cut off) with the rounded mask laid over the picture as drawn, so a
+			     picture that is not exactly 753 x 753 gets its own rounded corners -->
+			<control type="image"><left>174</left><top>164</top><width>753</width><height>753</height><aspectratio>keep</aspectratio><fadetime>700</fadetime><texture background="true" diffuse="fg/m753x753.png">$INFO[Container(9701).ListItem.Art(thumb)]</texture></control>
+		</control>
+		<!-- studio / network logo: the lower left corner, beside the poster (white logos, resource.images.studios.white) -->
+		<control type="image">
+			<left>16</left>
+			<top>950</top>
+			<width>162</width>
+			<height>96</height>
+			<aspectratio align="center" aligny="bottom">keep</aspectratio>
+			<fadetime>700</fadetime>
+			<texture background="true" colordiffuse="ddffffff">resource://resource.images.studios.white/$INFO[Window(Home).Property(aeon.ss.studio)].png</texture>
+			<!-- the slide's first studio (script.aeon.helper aeon.ss.studio), only while it is this slide's -->
+			<visible>!String.IsEmpty(Window(Home).Property(aeon.ss.studio)) + String.IsEqual(Window(Home).Property(aeon.ss.studio.of),Container(9701).ListItem.Studio) + !String.IsEqual(Container(9701).ListItem.DBType,album)</visible>
+		</control>
+		<!-- pager dots (0.56.22 ss_round): one per item of the round (aeon.ss.pages), the one on show ringed (Container(9701).CurrentItem); hidden with a single item -->
+		<control type="group">
+			<left>62</left>
+			<top>300</top>
+			<visible>!Skin.HasSetting(aeon.fglass)</visible>
+			<control type="image"><top>0</top><width>26</width><height>26</height><texture colordiffuse="ccffffff">common/aeon_ring.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,1) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><top>54</top><width>26</width><height>26</height><texture colordiffuse="ccffffff">common/aeon_ring.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,2) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><top>108</top><width>26</width><height>26</height><texture colordiffuse="ccffffff">common/aeon_ring.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,3) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><top>162</top><width>26</width><height>26</height><texture colordiffuse="ccffffff">common/aeon_ring.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,4) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><top>216</top><width>26</width><height>26</height><texture colordiffuse="ccffffff">common/aeon_ring.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,5) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><top>270</top><width>26</width><height>26</height><texture colordiffuse="ccffffff">common/aeon_ring.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,6) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><top>324</top><width>26</width><height>26</height><texture colordiffuse="ccffffff">common/aeon_ring.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,7) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><top>378</top><width>26</width><height>26</height><texture colordiffuse="ccffffff">common/aeon_ring.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,8) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><top>432</top><width>26</width><height>26</height><texture colordiffuse="ccffffff">common/aeon_ring.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,9) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><top>486</top><width>26</width><height>26</height><texture colordiffuse="ccffffff">common/aeon_ring.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,10) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>9</left><top>9</top><width>10</width><height>10</height><texture colordiffuse="55ffffff">common/aeon_dot.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,1) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),1) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>9</left><top>63</top><width>10</width><height>10</height><texture colordiffuse="55ffffff">common/aeon_dot.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,2) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),2) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>9</left><top>117</top><width>10</width><height>10</height><texture colordiffuse="55ffffff">common/aeon_dot.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,3) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),3) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>9</left><top>171</top><width>10</width><height>10</height><texture colordiffuse="55ffffff">common/aeon_dot.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,4) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),4) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>9</left><top>225</top><width>10</width><height>10</height><texture colordiffuse="55ffffff">common/aeon_dot.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,5) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),5) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>9</left><top>279</top><width>10</width><height>10</height><texture colordiffuse="55ffffff">common/aeon_dot.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,6) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),6) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>9</left><top>333</top><width>10</width><height>10</height><texture colordiffuse="55ffffff">common/aeon_dot.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,7) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),7) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>9</left><top>387</top><width>10</width><height>10</height><texture colordiffuse="55ffffff">common/aeon_dot.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,8) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),8) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>9</left><top>441</top><width>10</width><height>10</height><texture colordiffuse="55ffffff">common/aeon_dot.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,9) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),9) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>9</left><top>495</top><width>10</width><height>10</height><texture colordiffuse="55ffffff">common/aeon_dot.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,10) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),10) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+		</control>
+
+		<!-- the right: now playing, tag, title, credits, runtime. Slides in a little with every new film -->
+		<control type="group">
+			<animation type="Visible" tween="cubic" easing="out">
+				<effect type="fade" start="0" end="100" time="500"/>
+			</animation>
+			<!-- now playing (music), a row in the top right corner under the clock and weather tiles (0.26.0):
+			     artist / title | album cover (100 x 100) | spectrum in a tile of its own, the same 100 x 100 as the clock and weather.
+			     It sits at y 200 under both tiles and moves up 100 for each tile that is off (or hidden: no weather yet). -->
+			<control type="group">
+				<top>200</top>
+				<visible>Player.HasAudio + !Skin.HasSetting(aeon.fglass)</visible>
+				<animation effect="slide" end="0,-100" time="0" condition="!Skin.HasSetting(aeon.ss.clock)">Conditional</animation>
+				<control type="group">
+					<animation effect="slide" end="0,-100" time="0" condition="!Skin.HasSetting(aeon.ss.weather) | String.IsEmpty(Weather.Temperature)">Conditional</animation>
+					<control type="label">
+						<left>900</left>
+						<top>18</top>
+						<width>796</width>
+						<height>32</height>
+						<align>right</align>
+						<font>cap_20</font>
+						<textcolor>99ffffff</textcolor>
+						<label>[UPPERCASE]$INFO[MusicPlayer.Artist][/UPPERCASE]</label>
+					</control>
+					<control type="label">
+						<left>900</left>
+						<top>48</top>
+						<width>796</width>
+						<height>34</height>
+						<align>right</align>
+						<font>small_20_bold</font>
+						<textcolor>ffffffff</textcolor>
+						<label>[UPPERCASE]$INFO[MusicPlayer.Title][/UPPERCASE]</label>
+					</control>
+					<!-- album cover, left of the spectrum tile -->
+					<control type="image">
+						<left>1720</left>
+						<top>0</top>
+						<width>100</width>
+						<height>100</height>
+						<aspectratio>scale</aspectratio>
+						<fadetime>300</fadetime>
+						<texture background="true">$VAR[Aeon_SSCover]</texture>
+					</control>
+					<!-- spectrum tile: one drawn animation, all bars on one base line; the still picture while paused -->
+					<control type="image"><left>1820</left><top>0</top><width>100</width><height>100</height><texture colordiffuse="990d0d0d">common/white.png</texture></control>
+					<control type="image"><left>1849</left><top>25</top><width>42</width><height>50</height><texture colordiffuse="ddffffff">common/aeon_eq_anim.gif</texture><visible>Player.Playing + !Player.Paused + !Skin.HasSetting(aeon.reducemotion)</visible></control>
+					<control type="image"><left>1849</left><top>25</top><width>42</width><height>50</height><texture colordiffuse="ddffffff">common/aeon_eq_still.png</texture><visible>![Player.Playing + !Player.Paused + !Skin.HasSetting(aeon.reducemotion)]</visible></control>
+				</control>
+			</control>
+			<!-- which list (0.45.1): In cinemas now / Airing today / Airing tomorrow, with the network -->
+			<control type="label"><left>1000</left><top>426</top><width>820</width><height>32</height><align>right</align><aligny>center</aligny><font>cap_20</font><textcolor>fg_mark</textcolor><label>[UPPERCASE]$VAR[Aeon_SSKindWord][/UPPERCASE]</label><visible>[String.IsEqual(Container(9701).ListItem.Property(aeon.ss.kind),cinema) | String.IsEqual(Container(9701).ListItem.Property(aeon.ss.kind),today) | String.IsEqual(Container(9701).ListItem.Property(aeon.ss.kind),tomorrow)] + Skin.HasSetting(aeon.fglass)</visible></control>
+			<!-- which list (0.45.1): In cinemas now / Airing today / Airing tomorrow, with the network -->
+			<control type="label"><left>1000</left><top>426</top><width>820</width><height>32</height><align>right</align><aligny>center</aligny><font>cap_20</font><textcolor>ccffffff</textcolor><label>[UPPERCASE]$VAR[Aeon_SSKindWord][/UPPERCASE]</label><visible>[String.IsEqual(Container(9701).ListItem.Property(aeon.ss.kind),cinema) | String.IsEqual(Container(9701).ListItem.Property(aeon.ss.kind),today) | String.IsEqual(Container(9701).ListItem.Property(aeon.ss.kind),tomorrow)] + !Skin.HasSetting(aeon.fglass)</visible></control>
+			<!-- ULTRA HD tag -->
+			<control type="image">
+				<left>1700</left>
+				<top>420</top>
+				<width>116</width>
+				<height>42</height>
+				<texture border="8" colordiffuse="88ffffff">$VAR[Aeon_TexOutline]</texture>
+				<visible>[String.IsEqual(Container(9701).ListItem.VideoResolution,4K) | String.IsEqual(Container(9701).ListItem.VideoResolution,2160)] + ![String.IsEqual(Container(9701).ListItem.Property(aeon.ss.kind),cinema) | String.IsEqual(Container(9701).ListItem.Property(aeon.ss.kind),today) | String.IsEqual(Container(9701).ListItem.Property(aeon.ss.kind),tomorrow)]</visible>
+			<visible>$EXP[Aeon_Chip_ss]</visible></control>
+			<control type="label">
+				<left>1700</left>
+				<top>420</top>
+				<width>116</width>
+				<height>42</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>cap_20</font>
+				<textcolor>ccffffff</textcolor>
+				<label>$LOCALIZE[31001]</label>
+				<visible>[String.IsEqual(Container(9701).ListItem.VideoResolution,4K) | String.IsEqual(Container(9701).ListItem.VideoResolution,2160)] + ![String.IsEqual(Container(9701).ListItem.Property(aeon.ss.kind),cinema) | String.IsEqual(Container(9701).ListItem.Property(aeon.ss.kind),today) | String.IsEqual(Container(9701).ListItem.Property(aeon.ss.kind),tomorrow)]</visible>
+			<visible>$EXP[Aeon_Chip_ss]</visible></control>
+			<!-- title: clearlogo when there is one (skin setting aeon.nologos switches it off) -->
+			<control type="image">
+				<left>1100</left>
+				<top>480</top>
+				<width>720</width>
+				<height>200</height>
+				<aspectratio align="right" aligny="bottom">keep</aspectratio>
+				<texture background="true">$INFO[Container(9701).ListItem.Art(clearlogo)]</texture>
+				<visible>!Skin.HasSetting(aeon.nologos) + !String.IsEmpty(Container(9701).ListItem.Art(clearlogo))</visible>
+			</control>
+			<control type="label">
+				<left>1000</left>
+				<top>480</top>
+				<width>820</width>
+				<height>180</height>
+				<align>right</align>
+				<aligny>top</aligny>
+				<font>aeon_title_66</font>
+				<textcolor>ffffffff</textcolor>
+				<wrapmultiline>true</wrapmultiline>
+				<label>[UPPERCASE]$INFO[Container(9701).ListItem.Label][/UPPERCASE]</label>
+				<visible>Skin.HasSetting(aeon.nologos) | String.IsEmpty(Container(9701).ListItem.Art(clearlogo))</visible>
+			</control>
+			<!-- credits -->
+			<control type="label">
+				<left>1000</left>
+				<top>690</top>
+				<width>820</width>
+				<height>34</height>
+				<align>right</align>
+				<font>ui_24</font>
+				<textcolor>ccffffff</textcolor>
+				<label>[UPPERCASE]$VAR[Aeon_SSCredit][/UPPERCASE]</label>
+			</control>
+			<control type="label">
+				<left>1000</left>
+				<top>724</top>
+				<width>820</width>
+				<height>34</height>
+				<align>right</align>
+				<font>ui_24</font>
+				<textcolor>ccffffff</textcolor>
+				<label>[UPPERCASE]$INFO[Container(9701).ListItem.Studio,$ADDON[skin.aeon.fuse 32022] [B],[/B]][/UPPERCASE]</label>
+			</control>
+			<!-- plot -->
+			<control type="textbox">
+				<left>1100</left>
+				<top>790</top>
+				<width>720</width>
+				<height>146</height>
+				<align>right</align>
+				<font>body_24</font>
+				<textcolor>99ffffff</textcolor>
+				<label>$INFO[Container(9701).ListItem.Plot]</label>
+			</control>
+			<!-- runtime -->
+			<control type="label">
+				<left>1000</left>
+				<top>990</top>
+				<width>820</width>
+				<height>34</height>
+				<align>right</align>
+				<font>ui_24</font>
+				<textcolor>ccffffff</textcolor>
+				<label>[UPPERCASE]$INFO[Container(9701).ListItem.Duration(mins),$ADDON[skin.aeon.fuse 32023] [B], $ADDON[skin.aeon.fuse 32024][/B]][/UPPERCASE]</label>
+			</control>
+		</control>
+		<!-- weather slide (0.30.0): the fourth slide shows today's and this week's weather, over the weather fanart, while
+		     the screensaver's weather switch is on (Skin settings > Backgrounds) and the weather add-on has a forecast.
+		     Built by _src/wx_screensaver.py. -->
+		<control type="group">
+			<visible>Skin.HasSetting(aeon.ss.weather) + !String.IsEmpty(Weather.Temperature) + !String.IsEmpty(Window(Weather).Property(Daily.1.ShortDay)) + Integer.IsEqual(Container(9701).CurrentItem,4)</visible>
+			<animation type="Visible" tween="cubic" easing="out"><effect type="fade" start="0" end="100" time="700"/></animation>
+			<animation type="Hidden" tween="cubic" easing="in"><effect type="fade" start="100" end="0" time="500"/></animation>
+			<control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><texture colordiffuse="ff0a0a0a">common/white.png</texture></control>
+			<control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><aspectratio>scale</aspectratio><texture background="true" colordiffuse="e6ffffff">$VAR[Aeon_WxBg]</texture></control>
+			<control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><texture colordiffuse="fg_scrim">fg/scrim_l.png</texture></control>
+			<control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><texture colordiffuse="fg_scrim">fg/scrim_b.png</texture></control>
+			<control type="label"><left>120</left><top>176</top><width>1200</width><height>30</height><font>cap_20</font><textcolor>b3ffffff</textcolor><label>[UPPERCASE]$INFO[Weather.Location][/UPPERCASE]</label></control>
+			<control type="image"><left>112</left><top>212</top><width>200</width><height>200</height><aspectratio>keep</aspectratio><texture>$VAR[Aeon_WxIcon]</texture></control>
+			<control type="label"><left>336</left><top>216</top><width>800</width><height>130</height><aligny>center</aligny><font>display_84</font><textcolor>ffffffff</textcolor><label>$INFO[Weather.Temperature]</label></control>
+			<control type="label"><left>340</left><top>346</top><width>1000</width><height>48</height><aligny>center</aligny><font>ui_30_semibold</font><textcolor>ffffffff</textcolor><label>$INFO[Weather.Conditions]</label></control>
+			<control type="grouplist">
+				<left>120</left><top>440</top><width>1680</width><height>34</height><orientation>horizontal</orientation><itemgap>30</itemgap>
+				<control type="label"><width>auto</width><height>34</height><aligny>center</aligny><font>small_20_semibold</font><textcolor>d9ffffff</textcolor><label>$LOCALIZE[33006] $INFO[Window(Weather).Property(Daily.1.HighTemperature)] / $INFO[Window(Weather).Property(Daily.1.LowTemperature)]</label></control>
+				<control type="label"><width>auto</width><height>34</height><aligny>center</aligny><font>small_20_semibold</font><textcolor>d9ffffff</textcolor><label>$LOCALIZE[402] $INFO[Window(Weather).Property(Current.FeelsLike)]°</label></control>
+				<control type="label"><width>auto</width><height>34</height><aligny>center</aligny><font>small_20_semibold</font><textcolor>d9ffffff</textcolor><label>$LOCALIZE[404]: $INFO[Window(Weather).Property(Current.Wind)]</label></control>
+				<control type="label"><width>auto</width><height>34</height><aligny>center</aligny><font>small_20_semibold</font><textcolor>d9ffffff</textcolor><label>$LOCALIZE[406]: $INFO[Window(Weather).Property(Current.Humidity)]</label></control>
+				<control type="label"><width>auto</width><height>34</height><aligny>center</aligny><font>small_20_semibold</font><textcolor>d9ffffff</textcolor><label>$LOCALIZE[33027] $INFO[Window(Weather).Property(Today.Sunrise)]</label></control>
+				<control type="label"><width>auto</width><height>34</height><aligny>center</aligny><font>small_20_semibold</font><textcolor>d9ffffff</textcolor><label>$LOCALIZE[33028] $INFO[Window(Weather).Property(Today.Sunset)]</label></control>
+			</control>
+			<control type="label"><left>120</left><top>690</top><width>800</width><height>30</height><font>cap_20</font><textcolor>b3ffffff</textcolor><label>[UPPERCASE]$ADDON[skin.aeon.fuse 32404][/UPPERCASE]</label></control>
+			<control type="image"><left>112</left><top>728</top><width>1696</width><height>256</height><texture border="24" colordiffuse="$VAR[FG_Frost]">fg/r24.png</texture><visible>Skin.HasSetting(aeon.fglass)</visible></control>
+			<control type="image"><left>112</left><top>728</top><width>1696</width><height>256</height><texture border="24" colordiffuse="$VAR[FG_Edge]">fg/e24.png</texture><visible>Skin.HasSetting(aeon.fglass)</visible></control>
+			<control type="image"><left>112</left><top>728</top><width>1696</width><height>256</height><texture colordiffuse="73000000">common/white.png</texture><visible>!Skin.HasSetting(aeon.fglass)</visible></control>
+			<control type="group"><left>112</left><top>728</top>
+				<control type="group"><left>0</left><top>0</top>
+					<control type="label"><left>22</left><top>22</top><width>210</width><height>32</height><font>ui_24_semibold</font><textcolor>ffffffff</textcolor><label>$LOCALIZE[33006]</label></control>
+					<control type="image"><left>22</left><top>62</top><width>84</width><height>84</height><aspectratio align="left">keep</aspectratio><texture>resource://resource.images.weathericons.white/$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</texture><visible>System.HasAddon(resource.images.weathericons.white)</visible></control>
+					<control type="image"><left>22</left><top>74</top><width>60</width><height>60</height><aspectratio align="left">keep</aspectratio><texture>aeon/icons/cloud.png</texture><visible>!System.HasAddon(resource.images.weathericons.white)</visible></control>
+					<control type="label"><left>22</left><top>154</top><width>210</width><height>36</height><font>ui_28_bold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.1.HighTemperature)]</label></control>
+					<control type="label"><left>22</left><top>188</top><width>210</width><height>28</height><font>small_20_semibold</font><textcolor>a3ffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.1.LowTemperature)]</label></control>
+					<control type="label"><left>22</left><top>214</top><width>210</width><height>24</height><font>cap_16</font><textcolor>8fffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.1.Outlook)]</label></control>
+				</control>
+				<control type="group"><left>242</left><top>0</top>
+					<control type="label"><left>22</left><top>22</top><width>210</width><height>32</height><font>ui_24_semibold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.2.LongDay)]</label></control>
+					<control type="image"><left>22</left><top>62</top><width>84</width><height>84</height><aspectratio align="left">keep</aspectratio><texture>resource://resource.images.weathericons.white/$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</texture><visible>System.HasAddon(resource.images.weathericons.white)</visible></control>
+					<control type="image"><left>22</left><top>74</top><width>60</width><height>60</height><aspectratio align="left">keep</aspectratio><texture>aeon/icons/cloud.png</texture><visible>!System.HasAddon(resource.images.weathericons.white)</visible></control>
+					<control type="label"><left>22</left><top>154</top><width>210</width><height>36</height><font>ui_28_bold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.2.HighTemperature)]</label></control>
+					<control type="label"><left>22</left><top>188</top><width>210</width><height>28</height><font>small_20_semibold</font><textcolor>a3ffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.2.LowTemperature)]</label></control>
+					<control type="label"><left>22</left><top>214</top><width>210</width><height>24</height><font>cap_16</font><textcolor>8fffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.2.Outlook)]</label></control>
+				</control>
+				<control type="group"><left>484</left><top>0</top>
+					<control type="label"><left>22</left><top>22</top><width>210</width><height>32</height><font>ui_24_semibold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.3.LongDay)]</label></control>
+					<control type="image"><left>22</left><top>62</top><width>84</width><height>84</height><aspectratio align="left">keep</aspectratio><texture>resource://resource.images.weathericons.white/$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</texture><visible>System.HasAddon(resource.images.weathericons.white)</visible></control>
+					<control type="image"><left>22</left><top>74</top><width>60</width><height>60</height><aspectratio align="left">keep</aspectratio><texture>aeon/icons/cloud.png</texture><visible>!System.HasAddon(resource.images.weathericons.white)</visible></control>
+					<control type="label"><left>22</left><top>154</top><width>210</width><height>36</height><font>ui_28_bold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.3.HighTemperature)]</label></control>
+					<control type="label"><left>22</left><top>188</top><width>210</width><height>28</height><font>small_20_semibold</font><textcolor>a3ffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.3.LowTemperature)]</label></control>
+					<control type="label"><left>22</left><top>214</top><width>210</width><height>24</height><font>cap_16</font><textcolor>8fffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.3.Outlook)]</label></control>
+				</control>
+				<control type="group"><left>726</left><top>0</top>
+					<control type="label"><left>22</left><top>22</top><width>210</width><height>32</height><font>ui_24_semibold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.4.LongDay)]</label></control>
+					<control type="image"><left>22</left><top>62</top><width>84</width><height>84</height><aspectratio align="left">keep</aspectratio><texture>resource://resource.images.weathericons.white/$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</texture><visible>System.HasAddon(resource.images.weathericons.white)</visible></control>
+					<control type="image"><left>22</left><top>74</top><width>60</width><height>60</height><aspectratio align="left">keep</aspectratio><texture>aeon/icons/cloud.png</texture><visible>!System.HasAddon(resource.images.weathericons.white)</visible></control>
+					<control type="label"><left>22</left><top>154</top><width>210</width><height>36</height><font>ui_28_bold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.4.HighTemperature)]</label></control>
+					<control type="label"><left>22</left><top>188</top><width>210</width><height>28</height><font>small_20_semibold</font><textcolor>a3ffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.4.LowTemperature)]</label></control>
+					<control type="label"><left>22</left><top>214</top><width>210</width><height>24</height><font>cap_16</font><textcolor>8fffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.4.Outlook)]</label></control>
+				</control>
+				<control type="group"><left>968</left><top>0</top>
+					<control type="label"><left>22</left><top>22</top><width>210</width><height>32</height><font>ui_24_semibold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.5.LongDay)]</label></control>
+					<control type="image"><left>22</left><top>62</top><width>84</width><height>84</height><aspectratio align="left">keep</aspectratio><texture>resource://resource.images.weathericons.white/$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</texture><visible>System.HasAddon(resource.images.weathericons.white)</visible></control>
+					<control type="image"><left>22</left><top>74</top><width>60</width><height>60</height><aspectratio align="left">keep</aspectratio><texture>aeon/icons/cloud.png</texture><visible>!System.HasAddon(resource.images.weathericons.white)</visible></control>
+					<control type="label"><left>22</left><top>154</top><width>210</width><height>36</height><font>ui_28_bold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.5.HighTemperature)]</label></control>
+					<control type="label"><left>22</left><top>188</top><width>210</width><height>28</height><font>small_20_semibold</font><textcolor>a3ffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.5.LowTemperature)]</label></control>
+					<control type="label"><left>22</left><top>214</top><width>210</width><height>24</height><font>cap_16</font><textcolor>8fffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.5.Outlook)]</label></control>
+				</control>
+				<control type="group"><left>1210</left><top>0</top>
+					<control type="label"><left>22</left><top>22</top><width>210</width><height>32</height><font>ui_24_semibold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.6.LongDay)]</label></control>
+					<control type="image"><left>22</left><top>62</top><width>84</width><height>84</height><aspectratio align="left">keep</aspectratio><texture>resource://resource.images.weathericons.white/$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</texture><visible>System.HasAddon(resource.images.weathericons.white)</visible></control>
+					<control type="image"><left>22</left><top>74</top><width>60</width><height>60</height><aspectratio align="left">keep</aspectratio><texture>aeon/icons/cloud.png</texture><visible>!System.HasAddon(resource.images.weathericons.white)</visible></control>
+					<control type="label"><left>22</left><top>154</top><width>210</width><height>36</height><font>ui_28_bold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.6.HighTemperature)]</label></control>
+					<control type="label"><left>22</left><top>188</top><width>210</width><height>28</height><font>small_20_semibold</font><textcolor>a3ffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.6.LowTemperature)]</label></control>
+					<control type="label"><left>22</left><top>214</top><width>210</width><height>24</height><font>cap_16</font><textcolor>8fffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.6.Outlook)]</label></control>
+				</control>
+				<control type="group"><left>1452</left><top>0</top>
+					<control type="label"><left>22</left><top>22</top><width>210</width><height>32</height><font>ui_24_semibold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.7.LongDay)]</label></control>
+					<control type="image"><left>22</left><top>62</top><width>84</width><height>84</height><aspectratio align="left">keep</aspectratio><texture>resource://resource.images.weathericons.white/$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</texture><visible>System.HasAddon(resource.images.weathericons.white)</visible></control>
+					<control type="image"><left>22</left><top>74</top><width>60</width><height>60</height><aspectratio align="left">keep</aspectratio><texture>aeon/icons/cloud.png</texture><visible>!System.HasAddon(resource.images.weathericons.white)</visible></control>
+					<control type="label"><left>22</left><top>154</top><width>210</width><height>36</height><font>ui_28_bold</font><textcolor>ffffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.7.HighTemperature)]</label></control>
+					<control type="label"><left>22</left><top>188</top><width>210</width><height>28</height><font>small_20_semibold</font><textcolor>a3ffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.7.LowTemperature)]</label></control>
+					<control type="label"><left>22</left><top>214</top><width>210</width><height>24</height><font>cap_16</font><textcolor>8fffffff</textcolor><label>$INFO[Window(Weather).Property(Daily.7.Outlook)]</label></control>
+				</control>
+			</control>
+		</control>
+		<!-- clock box and weather box, top right, as on Home (Skin settings > Backgrounds: each has its switch, both off by default).
+		     The weather box sits under the clock, or in its place when the clock is off; hidden while there is no weather. -->
+		<control type="group">
+			<left>1820</left>
+			<top>0</top>
+			<visible>!Skin.HasSetting(aeon.fglass)</visible>
+			<control type="group">
+				<visible>Skin.HasSetting(aeon.ss.clock)</visible>
+				<control type="image"><left>0</left><top>0</top><width>100</width><height>100</height><texture colordiffuse="cc0d0d0d">common/white.png</texture></control>
+				<control type="label"><left>0</left><top>14</top><width>100</width><height>44</height><align>center</align><font>ui_30_semibold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[System.Time(HH)]</label></control>
+				<control type="label"><left>0</left><top>54</top><width>100</width><height>40</height><align>center</align><font>ui_28</font><textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor><label>$INFO[System.Time(mm)]</label></control>
+			</control>
+			<control type="group">
+				<top>100</top>
+				<visible>Skin.HasSetting(aeon.ss.weather) + !String.IsEmpty(Weather.Temperature)</visible>
+				<animation effect="slide" end="0,-100" time="0" condition="!Skin.HasSetting(aeon.ss.clock)">Conditional</animation>
+				<control type="image"><left>0</left><top>0</top><width>100</width><height>100</height><texture colordiffuse="990d0d0d">common/white.png</texture></control>
+				<control type="image"><left>30</left><top>12</top><width>40</width><height>40</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">$VAR[AG_WeatherIcon]</texture></control>
+				<control type="label"><left>0</left><top>56</top><width>100</width><height>36</height><align>center</align><font>small_20_bold</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$INFO[Weather.Temperature]</label></control>
+			</control>
+		</control>
+		<!-- Fused Glass (0.31.0, _src/fg_ss.py): pager as dots and a pill, clock capsule, now playing card -->
+		<control type="group">
+			<left>48</left><top>420</top>
+			<visible>Skin.HasSetting(aeon.fglass)</visible>
+			<control type="image"><left>0</left><top>9</top><width>6</width><height>6</height><texture colordiffuse="73ffffff">fg/circle.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,1) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),1) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>1</top><width>6</width><height>22</height><texture colordiffuse="ffffffff">fg/bar.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,1) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>33</top><width>6</width><height>6</height><texture colordiffuse="73ffffff">fg/circle.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,2) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),2) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>25</top><width>6</width><height>22</height><texture colordiffuse="ffffffff">fg/bar.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,2) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>57</top><width>6</width><height>6</height><texture colordiffuse="73ffffff">fg/circle.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,3) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),3) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>49</top><width>6</width><height>22</height><texture colordiffuse="ffffffff">fg/bar.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,3) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>81</top><width>6</width><height>6</height><texture colordiffuse="73ffffff">fg/circle.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,4) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),4) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>73</top><width>6</width><height>22</height><texture colordiffuse="ffffffff">fg/bar.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,4) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>105</top><width>6</width><height>6</height><texture colordiffuse="73ffffff">fg/circle.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,5) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),5) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>97</top><width>6</width><height>22</height><texture colordiffuse="ffffffff">fg/bar.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,5) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>129</top><width>6</width><height>6</height><texture colordiffuse="73ffffff">fg/circle.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,6) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),6) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>121</top><width>6</width><height>22</height><texture colordiffuse="ffffffff">fg/bar.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,6) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>153</top><width>6</width><height>6</height><texture colordiffuse="73ffffff">fg/circle.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,7) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),7) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>145</top><width>6</width><height>22</height><texture colordiffuse="ffffffff">fg/bar.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,7) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>177</top><width>6</width><height>6</height><texture colordiffuse="73ffffff">fg/circle.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,8) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),8) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>169</top><width>6</width><height>22</height><texture colordiffuse="ffffffff">fg/bar.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,8) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>201</top><width>6</width><height>6</height><texture colordiffuse="73ffffff">fg/circle.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,9) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),9) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>193</top><width>6</width><height>22</height><texture colordiffuse="ffffffff">fg/bar.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,9) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>225</top><width>6</width><height>6</height><texture colordiffuse="73ffffff">fg/circle.png</texture><visible>!String.IsEqual(Container(9701).CurrentItem,10) + Integer.IsGreaterOrEqual(Window(Home).Property(aeon.ss.pages),10) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+			<control type="image"><left>0</left><top>217</top><width>6</width><height>22</height><texture colordiffuse="ffffffff">fg/bar.png</texture><visible>String.IsEqual(Container(9701).CurrentItem,10) + Integer.IsGreater(Window(Home).Property(aeon.ss.pages),1)</visible></control>
+		</control>
+		<control type="group">
+			<visible>Skin.HasSetting(aeon.fglass) + Skin.HasSetting(aeon.ss.clock)</visible>
+			<include content="FG_ClockCapsule"><param name="wx" value="Skin.HasSetting(aeon.ss.weather) + $EXP[AG_HasWeather]"/></include>
+		</control>
+		<control type="group">
+			<left>1704</left><top>40</top>
+			<visible>Skin.HasSetting(aeon.fglass) + !Skin.HasSetting(aeon.ss.clock) + Skin.HasSetting(aeon.ss.weather) + $EXP[AG_HasWeather]</visible>
+			<control type="image"><width>120</width><height>64</height><texture border="32" colordiffuse="$VAR[FG_Frost]">fg/r32.png</texture></control>
+			<control type="image"><width>120</width><height>64</height><texture border="32" colordiffuse="$VAR[FG_Edge]">fg/e32.png</texture></control>
+			<control type="image"><left>18</left><top>16</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">$VAR[AG_WeatherIcon]</texture></control>
+			<control type="label"><left>54</left><width>56</width><height>64</height><aligny>center</aligny><align>center</align><font>hm_ui_24</font><textcolor>dbffffff</textcolor><label>$INFO[Weather.Temperature]</label></control>
+		</control>
+		<control type="group">
+			<left>1284</left><top>120</top>
+			<visible>Skin.HasSetting(aeon.fglass) + Player.HasAudio</visible>
+			<animation effect="slide" end="0,-80" time="0" condition="!Skin.HasSetting(aeon.ss.clock) + ![Skin.HasSetting(aeon.ss.weather) + $EXP[AG_HasWeather]]">Conditional</animation>
+			<control type="image"><left>-40</left><top>-40</top><width>620</width><height>228</height><texture border="64" colordiffuse="$VAR[FG_PanelSh_66]">$VAR[FG_Sh_sho24]</texture></control>
+			<control type="image"><width>540</width><height>148</height><texture border="24" colordiffuse="$VAR[FG_Frost]">fg/r24.png</texture></control>
+			<control type="image"><width>540</width><height>148</height><texture border="24" colordiffuse="$VAR[FG_Edge]">fg/e24.png</texture></control>
+			<control type="image"><left>18</left><top>18</top><width>112</width><height>112</height><aspectratio scalediffuse="false">scale</aspectratio><fadetime>300</fadetime><texture background="true" diffuse="fg/m112x112.png">$VAR[Aeon_SSCover]</texture></control>
+			<control type="label"><left>150</left><top>22</top><width>320</width><height>24</height><aligny>center</aligny><font>hm_cap_16</font><textcolor>9effffff</textcolor><label>[UPPERCASE]$INFO[MusicPlayer.Artist][/UPPERCASE]</label></control>
+			<control type="label"><left>150</left><top>48</top><width>320</width><height>40</height><aligny>center</aligny><font>hm_ui_26_semibold</font><textcolor>ffffffff</textcolor><label>$INFO[MusicPlayer.Title]</label></control>
+			<control type="label"><left>150</left><top>90</top><width>320</width><height>28</height><aligny>center</aligny><font>hm_small_20</font><textcolor>99ffffff</textcolor><label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label></control>
+			<include content="FG_EqBarsM"><param name="left" value="484"/><param name="top" value="61"/><param name="col" value="ffffffff"/></include>
+		</control>
+	</controls>
+</window>

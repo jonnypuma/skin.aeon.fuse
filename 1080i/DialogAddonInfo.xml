@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Add-on information (Aeon; also the update pop-ups, so it must always be closable).
+	Hero card: rounded icon, name, summary, a facts line and the screenshots on the right; Kodi's
+	button row under it; a Description card (What's new toggle) and a Details card below.
+	Id contract (Estuary Omega): button row grouplist 9000 with 12 open, 9 configure,
+	13 auto-update (radio), 10 dependencies, 7 enable/disable, 8 install-from-versions, 14 update,
+	6 install/uninstall (Kodi labels / enables them); screenshots panel 50 (Kodi fills it).
+	Aeon ids: 9202 "What's new" toggle (Window(Home).Property(aeon.addonnews)).
+	Focus map: buttons 9000 (default) -Up-> screenshots 50 -Down-> buttons; buttons -Down-> 9202.
+-->
+<window>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<onload condition="!ListItem.Property(addon.isinstalled) + Window.IsActive(addonbrowser)">SetFocus(6)</onload>
+	<onload>ClearProperty(aeon.addonnews,home)</onload>
+	<include>Anim_DialogOpenClose</include>
+	<controls>
+		<include>AG_Background</include>
+		<include content="Aeon_AddonFanart"><param name="art" value="$INFO[ListItem.Art(fanart)]"/><param name="cond" value="!String.IsEmpty(ListItem.Art(fanart))"/></include>
+		<include condition="!$EXP[FGS]">AG_MoodLine</include>
+		<include>Aeon_ClockBox</include>
+
+		<include condition="!$EXP[FGS]">AddonInfo_Classic</include>
+		<include condition="$EXP[FGS]">FGS_AddonInfo</include><!-- 0.56.38 fgs_addoninfo -->
+	</controls>
+</window>

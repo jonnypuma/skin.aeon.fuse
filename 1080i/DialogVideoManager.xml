@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Manage video versions / extras (Kodi 21, opened from DialogVideoInfo buttons 14 / 15).
+	SPEC 5: Minimal treatment (AG_GenericDialog). Builder B.
+	Kodi id contract (Estuary Omega DialogVideoManager.xml): heading 2, list 50 (+ scrollbar 60)
+	inside group 100, button grouplist 101 with 21 play, 22 add version, 23 add extra, 27 choose art,
+	24 set default, 28 rename, 26 remove, 25 choose version type (22/24/25 versions only, 23/28 extras only).
+-->
+<window>
+	<defaultcontrol always="true">101</defaultcontrol>
+	<onload>SetProperty(aeon.vm.title,$INFO[ListItem.Title],home)</onload>
+	<onunload>ClearProperty(aeon.vm.title,home)</onunload><!-- 0.56.53 Select shows which film -->
+	<onload>SetProperty(aeon.vm.fanart,$ESCINFO[ListItem.Art(fanart)],home)</onload>
+	<onload>SetProperty(aeon.vm.logo,$ESCINFO[ListItem.Art(clearlogo)],home)</onload>
+	<onunload>ClearProperty(aeon.vm.fanart,home)</onunload>
+	<onunload>ClearProperty(aeon.vm.logo,home)</onunload>
+	<include>Anim_DialogOpenClose</include>
+	<controls>
+		<include condition="!$EXP[FGS]">VidMgr_PageClassic</include>
+		<include condition="$EXP[FGS]">VidMgr_PageFGS</include>
+	</controls>
+</window>

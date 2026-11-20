@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Palette "Wine" of Aeon Fuse (own): only the colours that differ from defaults.xml. -->
+<colors>
+    <!-- 0.40.4: palette "Wine" for the menus only: library views keep the Aeon colours (lib_ names of defaults.xml) -->
+    <color name="aeon_white">fff29bb0</color>
+    <color name="aeon_accent">fff29bb0</color>
+    <color name="aeon_onbar">ff210d12</color>
+    <color name="aeon_onbar_cc">cc210d12</color>
+    <color name="aeon_onbar_bb">bb210d12</color>
+    <color name="aeon_onbar_aa">aa210d12</color>
+    <color name="aeon_onbar_99">99210d12</color>
+    <color name="aeon_onaccent">ff210d12</color>
+    <color name="aeon_box">ff6c2a43</color>
+    <color name="aeon_sbbar">88f29bb0</color>
+    <color name="x_column">26f29bb0</color>
+    <color name="x_ground">ff382a30</color>
+    <color name="x_panel">ff261c21</color>
+    <color name="x_surface">ff261c21</color>
+    <color name="x_raised">ff2f2329</color>
+    <color name="x_line">ff554049</color>
+    <color name="x_line2">ff655059</color>
+    <color name="x_accent">fff29bb0</color>
+    <color name="x_accenttext">fff29bb0</color>
+    <color name="x_onaccent">ff210d12</color>
+    <color name="x_deep">ff22191d</color>
+    <color name="x_deep_f0">f0281e23</color>
+    <color name="x_deep_e6">e6281e23</color>
+    <color name="x_deep_cc">cc2d2226</color>
+    <color name="x_deep_8c">8c281e23</color>
+</colors>

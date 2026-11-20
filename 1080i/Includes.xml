@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	skin.aeon.fuse - include root. Kodi loads this file for every window.
+	Only <include file=""/> lines live here; definitions go in the topical files.
+	Map of what lives where: docs/CONVENTIONS.md section 3.
+-->
+<includes>
+	<include file="Defaults.xml"/>
+	<include file="Constants.xml"/>
+	<include file="Includes_Aeon.xml"/>
+	<include file="Expressions.xml"/>
+	<include file="Includes_FGSWin.xml"/>
+	<include file="Variables.xml"/>
+	<include file="Includes_Animations.xml"/>
+	<include file="Includes_Common.xml"/>
+	<include file="Includes_Dialogs.xml"/>
+	<include file="Includes_Keyboard.xml"/>
+	<include file="Includes_Settings.xml"/>
+	<include file="Includes_Views.xml"/>
+	<include file="Includes_Home.xml"/>
+	<include file="Includes_OSD.xml"/>
+	<include file="Includes_OSD_Aeon.xml"/>
+	<include file="Includes_Search.xml"/>
+	<include file="Includes_Views_Video.xml"/>
+	<include file="Includes_Aeon_Video.xml"/>
+	<include file="Includes_Aeon_Music.xml"/>
+	<include file="Includes_Aeon_Pics.xml"/>
+	<include file="Includes_Aeon_MusicLib.xml"/>
+	<include file="Includes_Aeon_Home.xml"/>
+	<include file="Includes_Aeon_Sub.xml"/>
+	<include file="Includes_Aeon_Glass.xml"/>
+	<include file="Includes_Fused.xml"/>
+	<include file="Includes_Aeon_Views2.xml"/>
+	<include file="Includes_Aeon_Views3.xml"/>
+	<include file="Includes_Aeon_Picker.xml"/>
+	<include file="Includes_Aeon_Menu.xml"/>
+	<include file="Includes_Aeon_OSD.xml"/>
+	<include file="Includes_FusedPlayer.xml"/>
+	<include file="Includes_Planner.xml"/>
+	<include file="Includes_Aeon_LyricsMod.xml"/>
+	<include file="Includes_Aeon_Wizard.xml"/>
+	<include file="Includes_VideoInfo.xml"/>
+	<include file="Includes_Music.xml"/>
+	<include file="Includes_MusicInfo.xml"/>
+	<include file="Includes_NowPlaying.xml"/>
+	<include file="Includes_Titles.xml"/>
+	<include file="Includes_Views_Music.xml"/>
+	<include file="Includes_Misc.xml"/>
+	<include file="Includes_LibraryPanel.xml"/>
+	<include file="Includes_CustomRows.xml"/>
+	<include file="Includes_MenuStyles.xml"/>
+	<include file="Includes_CustomMenu.xml"/>
+	<include file="Includes_CustomMenuPills.xml"/>
+	<include file="Includes_Plural.xml"/>
+</includes>

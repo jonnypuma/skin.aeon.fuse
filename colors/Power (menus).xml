@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Palette "Power" of Aeon Fuse (from the SABnzbd scheme Power): only the colours that differ from defaults.xml. -->
+<colors>
+    <!-- 0.40.4: palette "Power" for the menus only: library views keep the Aeon colours (lib_ names of defaults.xml) -->
+    <color name="aeon_white">ffe48ed2</color>
+    <color name="aeon_accent">ffe48ed2</color>
+    <color name="aeon_onbar">ff210d1d</color>
+    <color name="aeon_onbar_cc">cc210d1d</color>
+    <color name="aeon_onbar_bb">bb210d1d</color>
+    <color name="aeon_onbar_aa">aa210d1d</color>
+    <color name="aeon_onbar_99">99210d1d</color>
+    <color name="aeon_onaccent">ff210d1d</color>
+    <color name="aeon_box">ff701d6d</color>
+    <color name="aeon_sbbar">88e48ed2</color>
+    <color name="x_column">26a6288c</color>
+    <color name="x_ground">ff201d44</color>
+    <color name="x_panel">ff0b0833</color>
+    <color name="x_surface">ff0b0833</color>
+    <color name="x_raised">ff1a173f</color>
+    <color name="x_line">ff393758</color>
+    <color name="x_line2">ff4a4866</color>
+    <color name="x_accent">ffe48ed2</color>
+    <color name="x_accenttext">ffe48ed2</color>
+    <color name="x_onaccent">ff210d1d</color>
+    <color name="x_deep">ff0b0833</color>
+    <color name="x_deep_f0">f00b0833</color>
+    <color name="x_deep_e6">e60b0833</color>
+    <color name="x_deep_cc">cc0b0833</color>
+    <color name="x_deep_8c">8c0b0833</color>
+</colors>

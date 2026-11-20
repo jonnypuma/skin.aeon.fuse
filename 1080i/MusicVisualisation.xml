@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Now playing (Aeon): the mood background, a big rounded cover card on the left, the song set
+	in Fraunces on the right with a rounded track ("ends 4:12 PM"), and an Up next card along the
+	bottom. MusicOSD.xml floats its control panel over the Up next card. Pieces: Includes_NowPlaying.xml.
+
+	Kodi id contract (Estuary Omega MusicVisualisation.xml / GUIWindowVisualisation.cpp):
+	  2 = visualisation control. Only drawn when a visualisation add-on is enabled; then the page
+	  steps aside to a small title card and comes back on Info / OSD.
+	No focusable controls (Kodi routes OK / Menu to MusicOSD, Back to the previous window).
+-->
+<window>
+	<onload>ClearProperty(aeon.lyricsblur,home)</onload>
+	<defaultcontrol></defaultcontrol>
+	<onload condition="Skin.HasSetting(aeon.artistslideshow) + System.AddonIsEnabled(script.artistslideshow)">RunScript(script.artistslideshow,daemon=True)</onload>
+	<backgroundcolor>ff000000</backgroundcolor>
+	<!-- fade only: Kodi reads the wave control's position when it starts, and a zoom animation running at that moment shifts it -->
+	<animation type="WindowOpen"><effect type="fade" start="0" end="100" time="200"/></animation>
+	<animation type="WindowClose"><effect type="fade" start="100" end="0" time="150"/></animation>
+	<controls>
+		<include>Aeon_NowPlaying</include>
+	</controls>
+</window>

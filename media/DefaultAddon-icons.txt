@@ -1,0 +1,2 @@
+media/DefaultAddon*.png: glyphs of Font Awesome Free 6 (https://fontawesome.com), icons licensed CC BY 4.0,
+font SIL OFL 1.1; drawn on tiles by _src/addon_icons.py.

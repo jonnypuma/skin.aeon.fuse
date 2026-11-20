@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	TV / Radio recordings (SPEC 5: Minimal). Builder F, M4.
+	Kodi id contract (Estuary Omega MyPVRRecordings.xml + GUIWindowPVRBase.h): view container 50,
+	menucontrol 9000, sort 3 / 4, header labels 29 / 30, watched filter 10 (Kodi sets its label),
+	group-by-folder radio 5, show-deleted radio 7 (Kodi hides it when there is nothing deleted).
+-->
+<window>
+	<defaultcontrol always="true">9100</defaultcontrol>
+	<!-- 0.39.3: opened with Left / Right on the area tabs: the focus stays on the tabs -->
+	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.pvrnav))">SetFocus(102)</onload>
+	<onload>ClearProperty(aeon.pvrnav,home)</onload>
+	<menucontrol>9000</menucontrol>
+	<backgroundcolor>ff000000</backgroundcolor>
+	<views>50</views>
+	<include>Anim_WindowOpenClose</include>
+	<controls>
+		<include>AG_Background</include>
+		<include content="Misc_PVRFrame">
+			<param name="title" value="$LOCALIZE[19017]"/>
+			<param name="group_label" value="$INFO[Control.GetLabel(30)]"/>
+			<param name="options" value="Misc_PVROptions_Recordings"/>
+		</include>
+		<include content="Misc_PVRList">
+			<param name="label2" value="$INFO[ListItem.Label2]"/>
+			<param name="empty_label" value="$ADDON[skin.aeon.fuse 32357]"/>
+		</include>
+		<!-- backend disk space, bottom right -->
+		<control type="group">
+			<left>misc_pvr_panel_x</left>
+			<top>1010</top>
+			<width>misc_pvr_panel_w</width>
+			<height>40</height>
+			<visible>!Integer.IsGreater(PVR.BackendDiskSpaceProgr,100)</visible>
+			<control type="label">
+				<left>0</left>
+				<top>0</top>
+				<width>misc_pvr_panel_w</width>
+				<height>24</height>
+				<font>cap_20</font>
+				<textcolor>$VAR[AG_Ink3]</textcolor>
+				<label>$INFO[PVR.BackendDiskSpace]</label>
+			</control>
+			<control type="progress">
+				<left>0</left>
+				<top>30</top>
+				<width>misc_pvr_panel_w</width>
+				<height>2</height>
+				<info>PVR.BackendDiskSpaceProgr</info>
+			</control>
+		</control>
+	</controls>
+</window>

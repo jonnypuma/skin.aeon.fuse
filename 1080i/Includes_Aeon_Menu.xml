@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Aeon 2 style icon menu (System menu 1151, Library panel / Update libraries 1160).
+	Reference notes: ../AEON2_DESIGN_NOTES.md. A column of icons; the focused row shows a thin vertical
+	line and its title (bold, uppercase) with the second line dimmed under it. Only the icon shows on
+	the other rows. Header top-left: light + bold uppercase.
+-->
+<includes>
+	<variable name="Aeon_MenuIcon">
+		<value condition="!String.IsEmpty(ListItem.Property(icon))">$INFO[ListItem.Property(icon)]</value>
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[5])">common/aeon_mi_gear.png</value>
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[138])">common/aeon_mi_info.png</value>
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[24001])">common/aeon_mi_star.png</value>
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31201])">aeon/icons/tv.png</value>
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[1])">aeon/icons/sun.png</value>
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[10134])">common/aeon_mi_star.png</value>
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[744])">aeon/icons/film.png</value>
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[13012])">aeon/icons/back.png</value>
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[13013])">aeon/icons/forward.png</value>
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[13016])">common/aeon_mi_power.png</value>
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31022])">common/aeon_mi_power.png</value>
+		<value condition="String.IsEqual(ListItem.Label,$LOCALIZE[31203]) | String.IsEqual(ListItem.Label,$LOCALIZE[31205])">aeon/icons/clock.png</value>
+		<value condition="String.Contains(ListItem.Label,$LOCALIZE[2])">aeon/icons/music.png</value>
+		<value condition="String.Contains(ListItem.Label,$LOCALIZE[3])">aeon/icons/film.png</value>
+		<value>common/aeon_mi_gear.png</value>
+	</variable>
+
+	<!-- second line of the focused row: what a settings page holds (item property "cats"), else the item's hint -->
+	<variable name="Aeon_MenuSub">
+		<value condition="!String.IsEmpty(ListItem.Property(cats))">$INFO[ListItem.Property(cats)]</value>
+		<value>$INFO[ListItem.Label2]</value>
+	</variable>
+	<!-- two-weight header, top left: lead (light) + label (bold), as "KODI SETTINGS" -->
+	<include name="Aeon_MenuHeader2">
+		<definition>
+			<control type="grouplist">
+				<left>60</left><top>44</top><width>1500</width><height>48</height><orientation>horizontal</orientation><itemgap>14</itemgap><usecontrolcoords>true</usecontrolcoords>
+				<control type="label"><width>auto</width><height>48</height><aligny>center</aligny><font>st_ui_28</font><textcolor>$VAR[Aeon_MenuLeadCol]</textcolor><label>[UPPERCASE]$PARAM[lead][/UPPERCASE]</label></control>
+				<control type="label"><width>auto</width><height>48</height><aligny>center</aligny><font>st_ui_28_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$PARAM[label][/UPPERCASE]</label></control>
+			</control>
+		</definition>
+	</include>
+
+	<include name="Aeon_MenuRow">
+		<param name="focused">false</param>
+		<param name="id">100</param>
+		<definition>
+			<!-- grid: faint horizontal rule under every row, faint vertical rule at the icon / text divide -->
+			<control type="image">
+				<left>360</left>
+				<top>99</top>
+				<width>1200</width>
+				<height>1</height>
+				<texture colordiffuse="12ffffff">common/white.png</texture>
+			</control>
+			<control type="image">
+				<left>810</left>
+				<top>0</top>
+				<width>1</width>
+				<height>100</height>
+				<texture colordiffuse="22ffffff">common/white.png</texture>
+			</control>
+			<!-- focused: bold bar on the rule, horizontal rules above and below the row -->
+			<control type="group">
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[id])</visible>
+				<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+				<include>Aeon_LandFocusAll</include><!-- 0.56.20 system_screen -->
+				<control type="image">
+					<left>360</left>
+					<top>0</top>
+					<width>1200</width>
+					<height>1</height>
+					<texture colordiffuse="44ffffff">common/white.png</texture>
+				</control>
+				<control type="image">
+					<left>360</left>
+					<top>99</top>
+					<width>1200</width>
+					<height>1</height>
+					<texture colordiffuse="44ffffff">common/white.png</texture>
+				</control>
+				<control type="image">
+					<left>808</left>
+					<top>0</top>
+					<width>5</width>
+					<height>100</height>
+					<texture colordiffuse="aeon_white">common/white.png</texture>
+				</control>
+			</control>
+			<!-- icon (dim) / (bright) -->
+			<control type="image">
+				<left>698</left>
+				<top>30</top>
+				<width>40</width>
+				<height>40</height>
+				<texture colordiffuse="66ffffff">$VAR[Aeon_MenuIcon]</texture>
+				<visible>!$PARAM[focused] | !Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<!-- the other options stay readable in a dim grey -->
+			<control type="label">
+				<left>846</left>
+				<top>30</top>
+				<width>800</width>
+				<height>40</height>
+				<font>st_ui_24</font>
+				<textcolor>66ffffff</textcolor><selectedcolor>66ffffff</selectedcolor>
+				<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+				<visible>!$PARAM[focused] | !Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<!-- the focused option nudges to the left -->
+			<control type="group">
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[id])</visible>
+				<animation type="Visible" tween="cubic" easing="out" condition="!Skin.HasSetting(aeon.reducemotion)">
+					<effect type="slide" start="26,0" end="0,0" time="200"/>
+					<effect type="fade" start="0" end="100" time="200"/>
+				</animation>
+				<control type="image"><!-- 0.56.33 icon pop -->
+					<animation type="Visible" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="zoom" start="71" end="100" center="auto" time="240" tween="back" easing="out"/></animation>
+					<left>690</left>
+					<top>22</top>
+					<width>56</width>
+					<height>56</height>
+					<texture colordiffuse="ffffffff">$VAR[Aeon_MenuIcon]</texture>
+				</control>
+				<control type="label">
+					<left>846</left>
+					<top>18</top>
+					<width>800</width>
+					<height>36</height>
+					<font>st_ui_24_bold</font>
+					<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+					<label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+				</control>
+				<control type="label">
+					<left>846</left>
+					<top>54</top>
+					<width>800</width>
+					<height>30</height>
+					<font>st_small_20</font>
+					<textcolor>66ffffff</textcolor><selectedcolor>66ffffff</selectedcolor>
+					<label>[UPPERCASE]$VAR[Aeon_MenuSub][/UPPERCASE]</label>
+				</control>
+			</control>
+		</definition>
+	</include>
+
+	<!-- "<" and ">" hints: Left / Right do something here -->
+	<include name="Aeon_MenuArrows">
+		<control type="label">
+			<left>230</left>
+			<top>490</top>
+			<width>60</width>
+			<height>60</height>
+			<font>st_ui_30_semibold</font>
+			<textcolor>66ffffff</textcolor><selectedcolor>66ffffff</selectedcolor>
+			<label>&lt;</label>
+		</control>
+		<control type="label">
+			<left>1630</left>
+			<top>490</top>
+			<width>60</width>
+			<height>60</height>
+			<font>st_ui_30_semibold</font>
+			<textcolor>66ffffff</textcolor><selectedcolor>66ffffff</selectedcolor>
+			<label>&gt;</label>
+			<visible>!String.IsEmpty(Container(100).ListItem.Property(sub))</visible>
+		</control>
+	</include>
+
+	<!-- header, top left, the same on every page: lead (light, default "Kodi") + label (bold) -->
+	<include name="Aeon_MenuHeader">
+		<param name="lead">$LOCALIZE[31000]</param>
+		<param name="label"></param>
+		<definition>
+			<control type="grouplist">
+				<left>60</left><top>44</top><width>1500</width><height>48</height><orientation>horizontal</orientation><itemgap>14</itemgap><usecontrolcoords>true</usecontrolcoords>
+				<control type="label"><width>auto</width><height>48</height><aligny>center</aligny><font>st_ui_28</font><textcolor>$VAR[Aeon_MenuLeadCol]</textcolor><label>[UPPERCASE]$PARAM[lead][/UPPERCASE]</label></control>
+				<control type="label"><width>auto</width><height>48</height><aligny>center</aligny><font>st_ui_28_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$PARAM[label][/UPPERCASE]</label></control>
+			</control>
+		</definition>
+	</include>
+	<!-- Aeon_MenuHeader_L: the library windows' copy of Aeon_MenuHeader (lib_ colours: palette for menus / library / both, 0.40.4) -->
+	<include name="Aeon_MenuHeader_L">
+		<param name="lead">$LOCALIZE[31000]</param>
+		<param name="label"></param>
+		<definition>
+			<control type="grouplist">
+				<left>60</left><top>44</top><width>1500</width><height>48</height><orientation>horizontal</orientation><itemgap>14</itemgap><usecontrolcoords>true</usecontrolcoords>
+				<control type="label"><width>auto</width><height>48</height><aligny>center</aligny><font>st_ui_28</font><textcolor>$VAR[Aeon_MenuLeadCol_L]</textcolor><label>[UPPERCASE]$PARAM[lead][/UPPERCASE]</label></control>
+				<control type="label"><width>auto</width><height>48</height><aligny>center</aligny><font>st_ui_28_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$PARAM[label][/UPPERCASE]</label></control>
+			</control>
+		</definition>
+	</include>
+
+	<!-- ============================================================ Aeon settings rows (SettingsCategory.xml)
+	     Kodi-cloned controls: the look lives in textures. Focus = 2 px white bar + faint fill, rest = hairline.
+	     Labels can't be upper-cased (Kodi writes them). -->
+	<include name="Param_W"><param name="w">100</param><definition><width>$PARAM[w]</width></definition></include>
+	<include name="Param_F"><param name="f">st_ui_24</param><definition><font>$PARAM[f]</font></definition></include>
+	<include name="Param_H"><param name="h">70</param><definition><height>$PARAM[h]</height></definition></include>
+	<include name="Aeon_RowHConst"><height>settings_row_h</height></include>
+	<include name="FGS_H700"><height>700</height></include>
+	<include name="Aeon_H684"><height>684</height></include>
+	<include name="Aeon_SettingRow">
+		<param name="width">1058</param>
+		<param name="height">settings_row_h</param>
+		<param name="font">st_ui_24_semibold</param>
+		<param name="fgs">false</param>
+		<param name="fgswidth">$PARAM[width]</param>
+		<param name="pre"></param>
+		<definition>
+			<include content="Param_W" condition="$PARAM[fgs] + $EXP[FGS]"><param name="w" value="$PARAM[fgswidth]"/></include>
+			<include content="Param_W" condition="![$PARAM[fgs] + $EXP[FGS]]"><param name="w" value="$PARAM[width]"/></include>
+			<include condition="$PARAM[fgs] + $EXP[FGS]">FGS_RowH</include>
+			<include content="Param_H" condition="![$PARAM[fgs] + $EXP[FGS]]"><param name="h" value="$PARAM[height]"/></include>
+			<include content="Param_F" condition="$PARAM[fgs] + $EXP[FGS]"><param name="f" value="uc_st_ui_24_semibold"/></include><include content="Param_F" condition="![$PARAM[fgs] + $EXP[FGS]]"><param name="f" value="$PARAM[font]"/></include>
+			<textcolor>$VAR[FGS_RowText]</textcolor>
+			<focusedcolor>$VAR[$PARAM[pre]Aeon_OnBarInk]</focusedcolor>
+			<disabledcolor>44ffffff</disabledcolor>
+			<invalidcolor>ffe5484d</invalidcolor>
+			<selectedcolor>$VAR[FGS_RowText]</selectedcolor>
+			<textoffsetx>36</textoffsetx>
+			<aligny>center</aligny>
+			<pulseonselect>false</pulseonselect>
+			<include condition="$PARAM[fgs] + $EXP[FGS]">FGS_RowTex</include>
+			<include condition="$PARAM[fgs] + $EXP[FGS]">FGS_RowAnim</include>
+			<include condition="![$PARAM[fgs] + $EXP[FGS]]">Aeon_TexRowFocus</include>
+			<include condition="![$PARAM[fgs] + $EXP[FGS]]">Aeon_TexRowNoFocus</include>
+		</definition>
+	</include>
+	<include name="Aeon_SettingTemplates">
+		<param name="width">1058</param>
+		<param name="fgs">false</param>
+		<param name="pre"></param>
+		<param name="fgswidth">1058</param>
+		<definition>
+			<control type="button" id="7">
+				<include content="Aeon_SettingRow"><param name="width" value="$PARAM[width]"/><param name="fgs" value="$PARAM[fgs]"/><param name="pre" value="$PARAM[pre]"/><param name="fgswidth" value="$PARAM[fgswidth]"/></include>
+			</control>
+			<control type="radiobutton" id="8">
+				<include content="Aeon_SettingRow"><param name="width" value="$PARAM[width]"/><param name="fgs" value="$PARAM[fgs]"/><param name="pre" value="$PARAM[pre]"/><param name="fgswidth" value="$PARAM[fgswidth]"/></include>
+				<include condition="$PARAM[fgs] + $EXP[FGS]">FGS_RadioTex</include>
+				<include condition="![$PARAM[fgs] + $EXP[FGS]]">Aeon_RadioSize24</include>
+			</control>
+			<control type="spincontrolex" id="9">
+				<include condition="$PARAM[fgs] + $EXP[FGS]">FGS_SpinTex</include>
+				<include content="Aeon_SettingRow"><param name="width" value="$PARAM[width]"/><param name="fgs" value="$PARAM[fgs]"/><param name="pre" value="$PARAM[pre]"/><param name="fgswidth" value="$PARAM[fgswidth]"/></include>
+			</control>
+			<control type="image" id="11">
+				<include content="Param_W" condition="$PARAM[fgs] + $EXP[FGS]"><param name="w" value="$PARAM[fgswidth]"/></include>
+				<include content="Param_W" condition="![$PARAM[fgs] + $EXP[FGS]]"><param name="w" value="$PARAM[width]"/></include>
+				<height>1</height>
+				<include condition="$PARAM[fgs] + $EXP[FGS]">FGS_SepTex</include>
+				<include condition="![$PARAM[fgs] + $EXP[FGS]]">Aeon_SepTex</include>
+				<visible>!$EXP[Aeon_Fused]</visible>
+			</control>
+			<control type="edit" id="12">
+				<include content="Aeon_SettingRow"><param name="width" value="$PARAM[width]"/><param name="fgs" value="$PARAM[fgs]"/><param name="pre" value="$PARAM[pre]"/><param name="fgswidth" value="$PARAM[fgswidth]"/></include>
+			</control>
+			<control type="sliderex" id="13">
+				<include content="Aeon_SettingRow"><param name="width" value="$PARAM[width]"/><param name="fgs" value="$PARAM[fgs]"/><param name="pre" value="$PARAM[pre]"/><param name="fgswidth" value="$PARAM[fgswidth]"/></include>
+				<sliderwidth>220</sliderwidth>
+				<sliderheight>24</sliderheight>
+			</control>
+			<control type="label" id="14">
+				<width>$PARAM[width]</width>
+				<include condition="$PARAM[fgs] + $EXP[FGS]">FGS_RowH</include>
+				<include condition="![$PARAM[fgs] + $EXP[FGS]]">Aeon_RowHConst</include>
+				<textoffsetx>20</textoffsetx>
+				<include content="Param_F" condition="$PARAM[fgs] + $EXP[FGS]"><param name="f" value="uc_st_ui_24_bold"/></include><include content="Param_F" condition="![$PARAM[fgs] + $EXP[FGS]]"><param name="f" value="st_ui_24_bold"/></include>
+				<textcolor>$VAR[FGS_TitleText]</textcolor><selectedcolor>$VAR[FGS_TitleText]</selectedcolor>
+				<aligny>center</aligny>
+			</control>
+			<control type="colorbutton" id="15">
+				<include content="Aeon_SettingRow"><param name="width" value="$PARAM[width]"/><param name="fgs" value="$PARAM[fgs]"/><param name="pre" value="$PARAM[pre]"/><param name="fgswidth" value="$PARAM[fgswidth]"/></include>
+			</control>
+		</definition>
+	</include>
+	<!-- OK / Cancel / Defaults of the add-on settings page: a cell like the rows -->
+	<include name="Aeon_AddonSetButton">
+		<definition>
+			<control type="button" id="$PARAM[id]">
+				<width>267</width>
+				<height>settings_row_h</height>
+				<include content="Param_F" condition="$EXP[FGS]"><param name="f" value="uc_st_ui_24_semibold"/></include><include content="Param_F" condition="![$EXP[FGS]]"><param name="f" value="st_ui_24_semibold"/></include>
+				<textcolor>ccffffff</textcolor>
+				<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+				<disabledcolor>44ffffff</disabledcolor>
+				<textoffsetx>28</textoffsetx>
+				<aligny>center</aligny>
+				<pulseonselect>false</pulseonselect>
+				<include>Aeon_TexRowFocus</include>
+				<texturenofocus border="0,0,0,1">common/aeon_rule_h.png</texturenofocus>
+			</control>
+		</definition>
+	</include>
+	<!-- Kodi settings and add-on settings: the open category keeps a grey bar while the highlight is in the list.
+	     Kodi numbers the category buttons from -200 and only recolours the label of the open one (selectedcolor),
+	     so the bar is drawn behind the column, one per cell. Not while the column is scrolled (position unknown). -->
+	<include name="Aeon_CatParentBars">
+		<definition>
+			<control type="image"><left>100</left><top>181</top><width>380</width><height>76</height><texture colordiffuse="$VAR[Aeon_CatParentCol]">$VAR[Aeon_CatParentTex1]</texture><visible>ControlGroup(3).HasFocus(-200) + !Control.HasFocus(-200) + !Container(3).HasPrevious + !$EXP[FGS]</visible></control>
+			<control type="image"><left>100</left><top>257</top><width>380</width><height>76</height><texture colordiffuse="$VAR[Aeon_CatParentCol]">common/white.png</texture><visible>ControlGroup(3).HasFocus(-199) + !Control.HasFocus(-199) + !Container(3).HasPrevious + !$EXP[FGS]</visible></control>
+			<control type="image"><left>100</left><top>333</top><width>380</width><height>76</height><texture colordiffuse="$VAR[Aeon_CatParentCol]">common/white.png</texture><visible>ControlGroup(3).HasFocus(-198) + !Control.HasFocus(-198) + !Container(3).HasPrevious + !$EXP[FGS]</visible></control>
+			<control type="image"><left>100</left><top>409</top><width>380</width><height>76</height><texture colordiffuse="$VAR[Aeon_CatParentCol]">common/white.png</texture><visible>ControlGroup(3).HasFocus(-197) + !Control.HasFocus(-197) + !Container(3).HasPrevious + !$EXP[FGS]</visible></control>
+			<control type="image"><left>100</left><top>485</top><width>380</width><height>76</height><texture colordiffuse="$VAR[Aeon_CatParentCol]">common/white.png</texture><visible>ControlGroup(3).HasFocus(-196) + !Control.HasFocus(-196) + !Container(3).HasPrevious + !$EXP[FGS]</visible></control>
+			<control type="image"><left>100</left><top>561</top><width>380</width><height>76</height><texture colordiffuse="$VAR[Aeon_CatParentCol]">common/white.png</texture><visible>ControlGroup(3).HasFocus(-195) + !Control.HasFocus(-195) + !Container(3).HasPrevious + !$EXP[FGS]</visible></control>
+			<control type="image"><left>100</left><top>637</top><width>380</width><height>76</height><texture colordiffuse="$VAR[Aeon_CatParentCol]">common/white.png</texture><visible>ControlGroup(3).HasFocus(-194) + !Control.HasFocus(-194) + !Container(3).HasPrevious + !$EXP[FGS]</visible></control>
+			<control type="image"><left>100</left><top>713</top><width>380</width><height>76</height><texture colordiffuse="$VAR[Aeon_CatParentCol]">common/white.png</texture><visible>ControlGroup(3).HasFocus(-193) + !Control.HasFocus(-193) + !Container(3).HasPrevious + !$EXP[FGS]</visible></control>
+		</definition>
+	</include>
+	<variable name="Aeon_CatParentTex1">
+		<value condition="Skin.HasSetting(aeon.vglass) + !Skin.HasSetting(aeon.fglass) + !String.IsEqual(Skin.String(aeon.menutheme),fused)">aeon/cat_tl380w.png</value>
+		<value>common/white.png</value>
+	</variable>
+	<variable name="Aeon_CatSelInk">
+		<value condition="Container(3).HasPrevious">ffffffff</value>
+		<value>aeon_onbar</value>
+	</variable>
+	<!-- Kodi draws the open category with its focus texture, faded, and the focused text colour: dark text while the
+	     highlight is in the settings list (the grey parent bar), the normal bar text otherwise -->
+	<!-- Kodi lays the faded focus texture over the bar: solid white in Aeon (so the bar starts darker), nearly clear in Glass -->
+	<variable name="Aeon_CatParentCol">
+		<value condition="Skin.HasSetting(aeon.vglass)">14ffffff</value>
+		<value>ff4a4a4a</value>
+	</variable>
+	<variable name="Aeon_CatFocInk">
+		<value condition="ControlGroup(5).HasFocus + !Container(3).HasPrevious + !Skin.HasSetting(aeon.vglass)">aeon_onbar</value>
+		<value>$VAR[Aeon_OnBarInk]</value>
+	</variable>
+	<!-- 0.56.29 fgs_flush: the classic pages take params fgs / pre under the Fused Glass style -->
+	<include name="Aeon_SettingCategoryTemplate">
+		<param name="width">380</param>
+		<param name="roundfirst">false</param>
+		<param name="fgs">false</param>
+		<definition>
+			<control type="button" id="10">
+				<width>$PARAM[width]</width>
+				<include condition="$PARAM[fgs] + $EXP[FGS]">FGS_RowH</include>
+				<include condition="![$PARAM[fgs] + $EXP[FGS]]">Aeon_RowHConst</include>
+				<include content="Param_F" condition="$PARAM[fgs] + $EXP[FGS]"><param name="f" value="uc_st_ui_24_bold"/></include><include content="Param_F" condition="![$PARAM[fgs] + $EXP[FGS]]"><param name="f" value="st_ui_24_bold"/></include>
+				<textcolor>$VAR[FGS_CatText]</textcolor>
+				<focusedcolor>$VAR[FGS_Aeon_CatFocInk]</focusedcolor>
+				<selectedcolor>$VAR[FGS_Aeon_CatSelInk]</selectedcolor>
+				<disabledcolor>44ffffff</disabledcolor>
+				<textoffsetx>36</textoffsetx>
+				<aligny>center</aligny>
+				<pulseonselect>false</pulseonselect>
+				<include condition="$PARAM[fgs] + $EXP[FGS]">FGS_CatTex</include>
+				<include condition="$PARAM[fgs] + $EXP[FGS]">FGS_RowAnim</include>
+				<include condition="$PARAM[roundfirst] + ![$PARAM[fgs] + $EXP[FGS]]">Aeon_TexCatFocus</include>
+				<include condition="!$PARAM[roundfirst] + ![$PARAM[fgs] + $EXP[FGS]]">Aeon_TexRowFocus</include>
+				<include condition="![$PARAM[fgs] + $EXP[FGS]]">Aeon_TexCatNoFocus</include>
+			</control>
+		</definition>
+	</include>
+	<!-- Left settings strip (dialogs 1160, 1166): 80 px icon column, coloured boxes top and bottom like the A-Z strip -->
+	<include name="Aeon_StripFrame">
+		<control type="image"><left>0</left><top>0</top><width>80</width><height>1080</height><texture colordiffuse="$VAR[Aeon_StripBg]">$VAR[FG_Rail80]</texture><visible>!$EXP[Aeon_FGlass] | ![Window.IsActive(1160) | Window.IsActive(1166)]</visible></control>
+		<control type="image"><left>0</left><top>0</top><width>80</width><height>108</height><texture colordiffuse="$VAR[Aeon_BoxCol]">$VAR[FG_BoxTex]</texture></control>
+		<include content="Aeon_BoxFan"><param name="box" value="tl80"/></include>
+		<control type="image"><left>12</left><top>26</top><width>56</width><height>56</height><texture colordiffuse="fg_sel">fg/circle.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+		<control type="image"><left>12</left><top>998</top><width>56</width><height>56</height><texture colordiffuse="fg_sel">fg/circle.png</texture><visible>$EXP[Aeon_FGlass] + Player.HasAudio + !Window.IsActive(1160)</visible></control>
+		<!-- open dialog (1160 / 1166) in Fused Glass: the rail grows into a frosted panel -->
+		
+		
+		<control type="image"><left>8</left><top>8</top><width>444</width><height>1064</height><texture border="32" colordiffuse="lib_x_deep">fg/r32.png</texture><visible>$EXP[Aeon_FGlass] + [Window.IsActive(1160) | Window.IsActive(1166)]</visible></control>
+		<control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><aspectratio>stretch</aspectratio><fadetime>300</fadetime><texture background="true" diffuse="fg/bmp_8_8_444_1064_32.png" colordiffuse="$VAR[Aeon_VFanAlphaG]">$INFO[Window(Home).Property(aeon.blur)]</texture><visible>$EXP[Aeon_FGlass] + [Window.IsActive(1160) | Window.IsActive(1166)] + $EXP[FG_PanelBlur]</visible></control>
+		<control type="image"><left>8</left><top>8</top><width>444</width><height>1064</height><texture border="32" colordiffuse="$VAR[FG_MenuPanel]">fg/r32.png</texture><visible>$EXP[Aeon_FGlass] + [Window.IsActive(1160) | Window.IsActive(1166)]</visible></control>
+		<control type="image"><left>8</left><top>8</top><width>444</width><height>1064</height><texture border="32" colordiffuse="$VAR[FG_EdgeM]">fg/e32.png</texture><visible>$EXP[Aeon_FGlass] + [Window.IsActive(1160) | Window.IsActive(1166)]</visible></control>
+		<control type="image"><left>18</left><top>32</top><width>44</width><height>44</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">$VAR[Aeon_StripSectionIcon]</texture></control>
+		<control type="image"><left>0</left><top>972</top><width>80</width><height>108</height><texture colordiffuse="$VAR[Aeon_BoxCol]">$VAR[FG_BoxTex]</texture></control>
+		<include content="Aeon_BoxFan"><param name="box" value="bl80"/></include>
+		<!-- music playing: the four bars as one animated picture (drawn frames, all bars on one base line); a still one while paused -->
+		<control type="image"><left>19</left><top>1000</top><width>42</width><height>50</height><texture colordiffuse="ffffffff">common/aeon_eq_anim.gif</texture><visible>Player.HasAudio + Player.Playing + !Player.Paused + !Skin.HasSetting(aeon.reducemotion) + !$EXP[Aeon_FGlass]</visible></control>
+		<control type="image"><left>19</left><top>1000</top><width>42</width><height>50</height><texture colordiffuse="ffffffff">common/aeon_eq_still.png</texture><visible>Player.HasAudio + ![Player.Playing + !Player.Paused + !Skin.HasSetting(aeon.reducemotion)] + !$EXP[Aeon_FGlass]</visible></control>
+		<include content="FG_EqBarsM"><param name="left" value="24"/><param name="top" value="1013"/><param name="col" value="ffffffff"/><param name="vis" value="$EXP[Aeon_FGlass] + Player.HasAudio + !Window.IsActive(1160)"/></include>
+	</include>
+	<!-- Aeon_StripFrame_L: the library windows' copy of Aeon_StripFrame (lib_ colours: palette for menus / library / both, 0.40.4) -->
+	<include name="Aeon_StripFrame_L">
+		<control type="image"><left>0</left><top>0</top><width>80</width><height>1080</height><texture colordiffuse="$VAR[Aeon_StripBg_L]">$VAR[FG_Rail80]</texture><visible>!$EXP[Aeon_FGlass] | ![Window.IsActive(1160) | Window.IsActive(1166)]</visible></control>
+		<control type="image"><left>0</left><top>0</top><width>80</width><height>108</height><texture colordiffuse="$VAR[Aeon_BoxCol_L]">$VAR[FG_BoxTex]</texture></control>
+		<include content="Aeon_BoxFan"><param name="box" value="tl80"/></include>
+		<control type="image"><left>12</left><top>26</top><width>56</width><height>56</height><texture colordiffuse="fg_sel">fg/circle.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+		<control type="image"><left>12</left><top>998</top><width>56</width><height>56</height><texture colordiffuse="fg_sel">fg/circle.png</texture><visible>$EXP[Aeon_FGlass] + Player.HasAudio + !Window.IsActive(1160)</visible></control>
+		<!-- open dialog (1160 / 1166) in Fused Glass: the rail grows into a frosted panel -->
+		
+		
+		<control type="image"><left>8</left><top>8</top><width>444</width><height>1064</height><texture border="32" colordiffuse="lib_x_deep">fg/r32.png</texture><visible>$EXP[Aeon_FGlass] + [Window.IsActive(1160) | Window.IsActive(1166)]</visible></control>
+		<control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><aspectratio>stretch</aspectratio><fadetime>300</fadetime><texture background="true" diffuse="fg/bmp_8_8_444_1064_32.png" colordiffuse="$VAR[Aeon_VFanAlphaG]">$INFO[Window(Home).Property(aeon.blur)]</texture><visible>$EXP[Aeon_FGlass] + [Window.IsActive(1160) | Window.IsActive(1166)] + $EXP[FG_PanelBlur]</visible></control>
+		<control type="image"><left>8</left><top>8</top><width>444</width><height>1064</height><texture border="32" colordiffuse="$VAR[FG_MenuPanel]">fg/r32.png</texture><visible>$EXP[Aeon_FGlass] + [Window.IsActive(1160) | Window.IsActive(1166)]</visible></control>
+		<control type="image"><left>8</left><top>8</top><width>444</width><height>1064</height><texture border="32" colordiffuse="$VAR[FG_EdgeM]">fg/e32.png</texture><visible>$EXP[Aeon_FGlass] + [Window.IsActive(1160) | Window.IsActive(1166)]</visible></control>
+		<control type="image"><left>18</left><top>32</top><width>44</width><height>44</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">$VAR[Aeon_StripSectionIcon]</texture></control>
+		<control type="image"><left>0</left><top>972</top><width>80</width><height>108</height><texture colordiffuse="$VAR[Aeon_BoxCol_L]">$VAR[FG_BoxTex]</texture></control>
+		<include content="Aeon_BoxFan"><param name="box" value="bl80"/></include>
+		<!-- music playing: the four bars as one animated picture (drawn frames, all bars on one base line); a still one while paused -->
+		<control type="image"><left>19</left><top>1000</top><width>42</width><height>50</height><texture colordiffuse="ffffffff">common/aeon_eq_anim.gif</texture><visible>Player.HasAudio + Player.Playing + !Player.Paused + !Skin.HasSetting(aeon.reducemotion) + !$EXP[Aeon_FGlass]</visible></control>
+		<control type="image"><left>19</left><top>1000</top><width>42</width><height>50</height><texture colordiffuse="ffffffff">common/aeon_eq_still.png</texture><visible>Player.HasAudio + ![Player.Playing + !Player.Paused + !Skin.HasSetting(aeon.reducemotion)] + !$EXP[Aeon_FGlass]</visible></control>
+		<include content="FG_EqBarsM"><param name="left" value="24"/><param name="top" value="1013"/><param name="col" value="ffffffff"/><param name="vis" value="$EXP[Aeon_FGlass] + Player.HasAudio + !Window.IsActive(1160)"/></include>
+	</include>
+	<variable name="Aeon_StripSectionIcon">
+		<value condition="Window.IsActive(music)">common/aeon_headphones.png</value>
+		<value condition="Window.IsActive(videos)">common/aeon_film.png</value>
+		<value>aeon/icons/settings.png</value>
+	</variable>
+	<!-- one setting of the strip: icon; focused = bar that grows out of the column with name (small) and value (bold).
+	     open = true also shows name and value while not focused (View settings, confirmations) -->
+	<include name="Aeon_StripRow">
+		<param name="focused">false</param>
+		<param name="id">100</param>
+		<param name="open">false</param>
+		<definition>
+			<control type="group">
+				<visible>![$PARAM[focused] + Control.HasFocus($PARAM[id])]</visible>
+				<control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">$INFO[ListItem.Icon]</texture></control>
+				<control type="group">
+					<visible>$PARAM[open] | $EXP[Aeon_FGlass]</visible>
+					<control type="label"><left>96</left><top>14</top><width>300</width><height>26</height><align>right</align><font>lb_cap_20</font><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label></control>
+					<control type="label"><left>96</left><top>38</top><width>300</width><height>30</height><align>right</align><font>lb_small_20_bold</font><textcolor>$VAR[Aeon_StripTxt2]</textcolor><selectedcolor>$VAR[Aeon_StripTxt2]</selectedcolor><label>[UPPERCASE]$INFO[ListItem.Label2][/UPPERCASE]</label></control>
+					<control type="image"><left>80</left><top>79</top><width>340</width><height>1</height><texture colordiffuse="$VAR[Aeon_SBTrack]">common/white.png</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+				</control>
+			</control>
+			<control type="group">
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[id])</visible>
+				<control type="image"><left>0</left><top>0</top><width>420</width><height>80</height><texture colordiffuse="$VAR[Aeon_StripFocusBox]">common/white.png</texture><animation effect="zoom" start="19,100" end="100,100" center="0,0" time="200" tween="cubic" easing="out" condition="!Skin.HasSetting(aeon.reducemotion)">Focus</animation><visible>!$EXP[Aeon_FGlass]</visible></control>
+				<control type="image"><left>20</left><top>8</top><width>420</width><height>64</height><texture border="16" colordiffuse="$VAR[Aeon_StripFocusBox]">fg/r16.png</texture><animation effect="zoom" start="19,100" end="100,100" center="0,0" time="200" tween="cubic" easing="out" condition="!Skin.HasSetting(aeon.reducemotion)">Focus</animation><visible>$EXP[Aeon_FGlass]</visible></control>
+				<control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripFocusTxt]">$INFO[ListItem.Icon]</texture></control>
+				<control type="group">
+					<animation effect="fade" start="0" end="100" delay="80" time="150">Focus</animation>
+					<control type="label"><left>96</left><top>14</top><width>300</width><height>26</height><align>right</align><font>lb_cap_20</font><textcolor>$VAR[Aeon_StripFocusTxt]</textcolor><selectedcolor>$VAR[Aeon_StripFocusTxt]</selectedcolor><label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label><visible>!String.IsEmpty(ListItem.Label2)</visible></control>
+					<control type="label"><left>96</left><top>38</top><width>300</width><height>30</height><align>right</align><font>lb_small_20_bold</font><textcolor>$VAR[Aeon_StripFocusTxt]</textcolor><selectedcolor>$VAR[Aeon_StripFocusTxt]</selectedcolor><label>[UPPERCASE]$INFO[ListItem.Label2][/UPPERCASE]</label><visible>!String.IsEmpty(ListItem.Label2)</visible></control>
+					<control type="label"><left>96</left><top>0</top><width>300</width><height>80</height><align>right</align><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>$VAR[Aeon_StripFocusTxt]</textcolor><selectedcolor>$VAR[Aeon_StripFocusTxt]</selectedcolor><label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label><visible>String.IsEmpty(ListItem.Label2)</visible></control>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<!-- the settings strip when it is permanent: the same column as dialog 1160, drawn in the library window. Left / Menu open the
+	     dialog on top of it. Generated from Custom_1160_LibraryPanel.xml. -->
+	<include name="Aeon_StripPermanent">
+		<include>Aeon_StripFrame_L</include>
+		<control type="grouplist">
+			<left>0</left><top>108</top><width>80</width><height>864</height><orientation>vertical</orientation><itemgap>0</itemgap>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Integer.IsGreater(Container.ViewCount,1)</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_ic_view.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + [Window.IsActive(videos) | Window.IsActive(music)] + !String.IsEmpty(Window(Home).Property(aeon.vo.base))</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_ic_sliders.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + !String.IsEmpty(Container.SortMethod)</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_ic_sort.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + !String.IsEmpty(Container.SortMethod)</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_ic_order.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(videos) + !String.StartsWith(Container.FolderPath,videodb://inprogresstvshows) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_ic_filter.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + $EXP[LibPanel_ShowSets]</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_layers.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEmpty(Window(Home).Property(aeon.libmode))</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">aeon/icons/search.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(videos) + !Library.IsScanningVideo + String.IsEmpty(Container.PluginName) + !Container.Content(addons)</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_ic_refresh.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(videos) + Library.IsScanningVideo + String.IsEmpty(Container.PluginName) + !Container.Content(addons)</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_ic_refresh.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(music) + !Library.IsScanningMusic + String.IsEmpty(Container.PluginName) + !Container.Content(addons)</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_ic_refresh.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(music) + Library.IsScanningMusic + String.IsEmpty(Container.PluginName) + !Container.Content(addons)</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_ic_refresh.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(videos) + String.IsEmpty(Container.PluginName) + !Container.Content(addons)</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_ic_clean.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(music) + String.IsEmpty(Container.PluginName) + !Container.Content(addons)</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_ic_clean.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEmpty(Window(Home).Property(aeon.libmode))</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">aeon/icons/settings.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEqual(Window(Home).Property(aeon.libmode),update) + !Library.IsScanningVideo</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_film.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEqual(Window(Home).Property(aeon.libmode),update) + Library.IsScanningVideo</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_film.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEqual(Window(Home).Property(aeon.libmode),update) + !Library.IsScanningMusic</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_headphones.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEqual(Window(Home).Property(aeon.libmode),update) + Library.IsScanningMusic</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_headphones.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEqual(Window(Home).Property(aeon.libmode),clean)</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_film.png</texture></control></control>
+			<control type="group"><width>80</width><height>80</height><visible>String.IsEqual(Window(Home).Property(aeon.libmode),clean)</visible><control type="image"><left>24</left><top>24</top><width>32</width><height>32</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_StripTxt]">common/aeon_headphones.png</texture></control></control>
+		</control>
+	</include>
+	<!-- Font picker (script-aeon-fonts.xml): a mock-up screen drawn in family n. The fonts pv<n>_* are written into
+	     Font.xml by script.aeon.helper (resources/lib/fonts.py: PREVIEW). -->
+	<include name="Aeon_FontMock">
+		<!-- 0.37.0: the rows carry h (family of the title) and b (family of the rest), the font picker's preview numbers -->
+		<definition>
+			<control type="group">
+				<visible>String.IsEqual(Container(100).ListItem.Property(b),$PARAM[n])</visible>
+				<control type="label"><left>40</left><top>26</top><width>920</width><height>30</height><font>pv$PARAM[n]_c</font><textcolor>$VAR[AG_Ink3]</textcolor><label>[UPPERCASE]$LOCALIZE[31846]: $INFO[Window.Property(section)][/UPPERCASE]</label></control>
+				<control type="image"><left>40</left><top>146</top><width>920</width><height>1</height><texture colordiffuse="55ffffff">common/white.png</texture></control>
+				<!-- focused row -->
+				<control type="image"><left>40</left><top>162</top><width>920</width><height>88</height><texture colordiffuse="aeon_white">common/white.png</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+				<control type="image"><left>28</left><top>162</top><width>944</width><height>88</height><texture border="16" colordiffuse="ffffffff">fg/r16.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+				<control type="label"><left>64</left><top>168</top><width>640</width><height>44</height><font>pv$PARAM[n]_t</font><textcolor>aeon_onbar</textcolor><label>$LOCALIZE[31864]</label></control>
+				<control type="label"><left>64</left><top>210</top><width>640</width><height>30</height><font>pv$PARAM[n]_s</font><textcolor>aeon_onbar</textcolor><label>$LOCALIZE[31865]</label></control>
+				<control type="image"><left>796</left><top>188</top><width>140</width><height>36</height><texture border="8" colordiffuse="ff14171c">common/aeon_outline_sq.png</texture></control>
+				<control type="label"><left>796</left><top>188</top><width>140</width><height>36</height><align>center</align><font>pv$PARAM[n]_c</font><textcolor>aeon_onbar</textcolor><label>$LOCALIZE[31418]</label></control>
+				<!-- two plain rows -->
+				<control type="label"><left>64</left><top>256</top><width>640</width><height>44</height><font>pv$PARAM[n]_t</font><textcolor>$VAR[AG_Ink]</textcolor><label>$LOCALIZE[31866]</label></control>
+				<control type="label"><left>64</left><top>298</top><width>640</width><height>30</height><font>pv$PARAM[n]_s</font><textcolor>$VAR[AG_Ink3]</textcolor><label>$LOCALIZE[31867]</label></control>
+				<control type="image"><left>796</left><top>276</top><width>140</width><height>36</height><texture border="8" colordiffuse="88ffffff">common/aeon_outline_sq.png</texture></control>
+				<control type="label"><left>796</left><top>276</top><width>140</width><height>36</height><align>center</align><font>pv$PARAM[n]_c</font><textcolor>$VAR[AG_Ink2]</textcolor><label>$LOCALIZE[31001]</label></control>
+				<control type="image"><left>40</left><top>338</top><width>920</width><height>1</height><texture colordiffuse="30ffffff">common/white.png</texture></control>
+				<control type="label"><left>64</left><top>344</top><width>640</width><height>44</height><font>pv$PARAM[n]_t</font><textcolor>$VAR[AG_Ink]</textcolor><label>$LOCALIZE[31868]</label></control>
+				<control type="label"><left>64</left><top>386</top><width>640</width><height>30</height><font>pv$PARAM[n]_s</font><textcolor>$VAR[AG_Ink3]</textcolor><label>$LOCALIZE[31869]</label></control>
+				<control type="image"><left>796</left><top>364</top><width>140</width><height>36</height><texture border="8" colordiffuse="88ffffff">common/aeon_outline_sq.png</texture></control>
+				<control type="label"><left>796</left><top>364</top><width>140</width><height>36</height><align>center</align><font>pv$PARAM[n]_c</font><textcolor>$VAR[AG_Ink2]</textcolor><label>HD</label></control>
+				<control type="image"><left>40</left><top>426</top><width>920</width><height>1</height><texture colordiffuse="55ffffff">common/white.png</texture></control>
+				<!-- body text -->
+				<control type="textbox"><left>40</left><top>506</top><width>920</width><height>84</height><font>pv$PARAM[n]_b</font><textcolor>$VAR[AG_Ink2]</textcolor><label>$LOCALIZE[31845]</label></control>
+			</control>
+			<!-- title in the heading family of the row (a combination: its heading font) -->
+			<control type="group">
+				<visible>String.IsEqual(Container(100).ListItem.Property(h),$PARAM[n])</visible>
+				<control type="label"><left>40</left><top>58</top><width>920</width><height>76</height><font>pv$PARAM[n]_h</font><textcolor>$VAR[AG_Ink]</textcolor><label>$INFO[Container(100).ListItem.Label]</label></control><!-- 0.56.41 heading sample --><control type="label"><left>40</left><top>438</top><width>920</width><height>64</height><font>pv$PARAM[n]_h</font><textcolor>ffffffff</textcolor><label>Lawrence of Arabia</label></control>
+			</control>
+		</definition>
+	</include>
+	<!-- entries of the Settings window (both looks use them) -->
+	<include name="Aeon_SettingsItems">
+			<content>
+				<item>
+					<label>$LOCALIZE[31200]</label>
+					<property name="icon">common/aeon_mi_caret.png</property>
+					<label2>$LOCALIZE[31255]</label2>
+					<property name="index">[UPPERCASE]01[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31652]</property>
+					<onclick>ActivateWindow(skinsettings)</onclick>
+				</item>
+				<item>
+					<label>$LOCALIZE[14200]</label>
+					<property name="icon">common/aeon_mi_play.png</property>
+					<property name="cats">$LOCALIZE[31850]</property>
+					<label2>$LOCALIZE[31256]</label2>
+					<property name="index">[UPPERCASE]02[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31653]</property>
+					<onclick>ActivateWindow(PlayerSettings)</onclick>
+				</item>
+				<item>
+					<label>$LOCALIZE[14211]</label>
+					<property name="icon">common/aeon_mi_film.png</property>
+					<property name="cats">$LOCALIZE[31851]</property>
+					<label2>$LOCALIZE[31257]</label2>
+					<property name="index">[UPPERCASE]03[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31654]</property>
+					<onclick>ActivateWindow(MediaSettings)</onclick>
+				</item>
+				<item>
+					<label>$LOCALIZE[14206]</label>
+					<property name="icon">common/aeon_mi_palette.png</property>
+					<property name="cats">$LOCALIZE[31852]</property>
+					<label2>$LOCALIZE[31258]</label2>
+					<property name="index">[UPPERCASE]04[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31655]</property>
+					<onclick>ActivateWindow(InterfaceSettings)</onclick>
+				</item>
+				<item>
+					<label>$LOCALIZE[24001]</label>
+					<property name="icon">common/aeon_mi_box.png</property>
+					<label2>$LOCALIZE[31259]</label2>
+					<property name="index">[UPPERCASE]05[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31656]</property>
+					<onclick>ActivateWindow(addonbrowser)</onclick>
+				</item>
+				<item>
+					<label>$LOCALIZE[14036]</label>
+					<property name="icon">common/aeon_mi_wifi.png</property>
+					<property name="cats">$LOCALIZE[31853]</property>
+					<label2>$LOCALIZE[31260]</label2>
+					<property name="index">[UPPERCASE]06[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31657]</property>
+					<onclick>ActivateWindow(ServiceSettings)</onclick>
+				</item>
+				<item>
+					<label>$LOCALIZE[13000]</label>
+					<property name="icon">common/aeon_mi_system.png</property>
+					<property name="cats">$LOCALIZE[31854]</property>
+					<label2>$LOCALIZE[31261]</label2>
+					<property name="index">[UPPERCASE]07[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31658]</property>
+					<onclick>ActivateWindow(SystemSettings)</onclick>
+				</item>
+				<item>
+					<label>$LOCALIZE[10003]</label>
+					<property name="icon">common/aeon_mi_folder.png</property>
+					<label2>$LOCALIZE[31262]</label2>
+					<property name="index">[UPPERCASE]08[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31659]</property>
+					<onclick>ActivateWindow(filemanager)</onclick>
+				</item>
+				<item>
+					<label>$LOCALIZE[138]</label>
+					<property name="icon">common/aeon_mi_info.png</property>
+					<label2>$LOCALIZE[31263]</label2>
+					<property name="index">[UPPERCASE]09[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31660]</property>
+					<onclick>ActivateWindow(systeminfo)</onclick>
+				</item>
+				<item>
+					<label>$LOCALIZE[31264]</label>
+					<property name="icon">common/aeon_mi_log.png</property>
+					<label2>$LOCALIZE[31265]</label2>
+					<property name="index">[UPPERCASE]10[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31661]</property>
+					<onclick>ActivateWindow(eventlog)</onclick>
+				</item>
+				<item>
+					<label>$LOCALIZE[13200]</label>
+					<property name="icon">common/aeon_mi_person.png</property>
+					<label2>$LOCALIZE[31266]</label2>
+					<property name="index">[UPPERCASE]11[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31662]</property>
+					<onclick>ActivateWindow(Profiles)</onclick>
+				</item>
+				<item>
+					<label>$LOCALIZE[14204]</label>
+					<property name="icon">common/aeon_mi_tape.png</property>
+					<property name="cats">$LOCALIZE[31855]</property>
+					<label2>$LOCALIZE[31267]</label2>
+					<property name="index">[UPPERCASE]12[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31663]</property>
+					<onclick>ActivateWindow(PVRSettings)</onclick>
+				</item>
+				<item>
+					<label>$LOCALIZE[15016]</label>
+					<property name="cats">$LOCALIZE[31859]</property>
+					<property name="icon">common/aeon_mi_gamepad.png</property>
+					<label2>$LOCALIZE[31268]</label2>
+					<property name="index">[UPPERCASE]13[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31664]</property>
+					<onclick>ActivateWindow(GameSettings)</onclick>
+					<visible>System.GetBool(gamesgeneral.enable)</visible>
+				</item>
+				<!-- the box's own settings (network, updates, hardware) on CoreELEC / LibreELEC -->
+				<item>
+					<label>CoreELEC</label>
+					<property name="icon">common/aeon_mi_box.png</property>
+					<property name="cats">$LOCALIZE[31973]</property>
+					<label2>$LOCALIZE[31974]</label2>
+					<property name="index">[UPPERCASE]14[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31975]</property>
+					<onclick>RunAddon(service.coreelec.settings)</onclick>
+					<visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
+				</item>
+				<item>
+					<label>LibreELEC</label>
+					<property name="icon">common/aeon_mi_box.png</property>
+					<property name="cats">$LOCALIZE[31973]</property>
+					<label2>$LOCALIZE[31974]</label2>
+					<property name="index">[UPPERCASE]14[/UPPERCASE]</property>
+					<property name="help">$LOCALIZE[31975]</property>
+					<onclick>RunAddon(service.libreelec.settings)</onclick>
+					<visible>System.AddonIsEnabled(service.libreelec.settings)</visible>
+				</item>
+			</content>
+	</include>
+	<!-- SettingsCategory.xml: the page outside Fused Glass (FG_SettingsPage there) -->
+	<!-- 0.56.25 Aeon Glass (_src/aeonglass_corners_05625.py): the first category sits in the card's rounded top-left corner.
+	     Kodi draws one focus texture for every cloned category, so its bar is drawn here with the corner cut out (the
+	     button's own texture is clear then: Aeon_TexCatFocus_g); Kodi fades the open category's bar to 0x80 (half) and keeps it
+	     focused inside the grouplist, so Container(3).CurrentItem names the open category (add-on settings open with the
+	     focus in the list, where ControlGroup(3).HasFocus(-200) is false). -->
+	<include name="AG_CatGlassCorners">
+		<control type="group">
+			<visible>Skin.HasSetting(aeon.vglass) + !Skin.HasSetting(aeon.fglass) + !String.IsEqual(Skin.String(aeon.menutheme),fused) + !Container(3).HasPrevious</visible>
+			<control type="image"><left>100</left><top>181</top><width>380</width><height>76</height><texture colordiffuse="aeon_accent">aeon/cat_tl380.png</texture><visible>Control.HasFocus(-200)</visible></control>
+			<control type="image"><left>100</left><top>181</top><width>380</width><height>76</height><texture colordiffuse="aeon_accent">aeon/cat_tl380.png</texture><animation effect="fade" start="50" end="50" time="0" condition="true">Conditional</animation><visible>Integer.IsEqual(Container(3).CurrentItem,1) + !Control.HasFocus(-200)</visible></control>
+		</control>
+	</include>
+	<include name="SetCat_Classic">
+			<!-- frame around categories + list -->
+			<control type="image">
+				<left>100</left>
+				<top>180</top>
+				<width>1720</width>
+				<height>1</height>
+				<texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture><visible>[!$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]] | $EXP[FGS]</visible>
+			</control>
+			<control type="image">
+				<left>480</left>
+				<top>180</top>
+				<width>1</width>
+				<height>684</height>
+				<texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture><visible>[!$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]] | $EXP[FGS]</visible>
+			<animation effect="zoom" start="100,100" end="100,102.339" center="0,180" time="0" condition="$EXP[FGS]">Conditional</animation><!-- 700 --></control>
+
+			<!-- frame right / bottom: the ruled grid -->
+			<control type="image">
+				<left>1820</left>
+				<top>180</top>
+				<width>1</width>
+				<height>684</height>
+				<texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture><visible>[!$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]] | $EXP[FGS]</visible>
+			<animation effect="zoom" start="100,100" end="100,102.339" center="0,180" time="0" condition="$EXP[FGS]">Conditional</animation><!-- 700 --></control>
+			<control type="image">
+				<left>100</left>
+				<top>180</top>
+				<width>1</width>
+				<height>684</height>
+				<texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture><visible>[!$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]] | $EXP[FGS]</visible>
+			<animation effect="zoom" start="100,100" end="100,102.339" center="0,180" time="0" condition="$EXP[FGS]">Conditional</animation><!-- 700 --></control>
+			<control type="image">
+				<left>100</left>
+				<top>864</top>
+				<width>1720</width>
+				<height>1</height>
+				<texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture><visible>[!$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]] | $EXP[FGS]</visible>
+			<animation effect="slide" start="0,0" end="0,16" time="0" condition="$EXP[FGS]">Conditional</animation><!-- 700 --></control>
+
+			<!-- categories -->
+			<include>Aeon_CatParentBars</include>
+			<include>AG_CatGlassCorners</include>
+			<control type="grouplist" id="3">
+				<description>categories (Kodi clones template 10 into it)</description>
+				<left>100</left>
+				<top>181</top>
+				<width>380</width>
+				<height>608</height>
+				<orientation>vertical</orientation>
+				<onleft>noop</onleft>
+				<onright>5</onright>
+				<onup>20</onup>
+				<ondown>20</ondown>
+			</control>
+			<include content="Aeon_SettingCategoryTemplate">
+				<param name="width" value="380"/>
+				<param name="roundfirst" value="true"/>
+				<param name="fgs" value="true"/>
+			</include>
+			<control type="group">
+				<left>100</left>
+				<top>789</top>
+				<animation effect="slide" start="0,0" end="0,21" time="0" condition="$EXP[FGS]">Conditional</animation>
+				<include content="AG_SettingLevelButton">
+					<param name="width" value="380"/>
+					<param name="onleft" value="noop"/>
+					<param name="height" value="76"/>
+					<param name="round" value="true"/>
+				</include>
+			</control>
+
+			<!-- settings -->
+			<control type="grouplist" id="5">
+				<description>control area</description>
+				<left>481</left>
+				<top>181</top>
+				<include condition="!$EXP[FGS]">Aeon_W1296</include><include condition="$EXP[FGS]">FGS_W1333</include><!-- 0.56.30 fgs_round2 --><!-- 0.56.20 fuse_survey2: to the card's edge (the empty third column is gone) -->
+				<include condition="!$EXP[FGS]">Aeon_H684</include><include condition="$EXP[FGS]">FGS_H700</include><!-- 700 -->
+				<pagecontrol>60</pagecontrol>
+				<onleft>3</onleft>
+				<onright>noop</onright>
+				<onup>5</onup>
+				<ondown>5</ondown>
+			</control>
+			<include content="Aeon_SettingTemplates">
+				<param name="width" value="1296"/>
+				<param name="fgs" value="true"/><param name="pre" value="FGS_"/><param name="fgswidth" value="1333"/>
+			</include>
+			<control type="group"><animation effect="slide" start="0,0" end="24,0" time="0" condition="$EXP[FGS]">Conditional</animation><animation effect="zoom" start="100,100" end="100,102.339" center="0,181" time="0" condition="$EXP[FGS]">Conditional</animation>
+			<include content="AG_Scrollbar">
+				<param name="id" value="60"/>
+				<param name="left" value="1790"/>
+				<param name="top" value="181"/>
+				<param name="height" value="684"/>
+				<param name="onleft" value="5"/>
+				<param name="onright" value="5"/>
+				<param name="showonepage" value="false"/>
+			</include>
+			</control>
+
+			<!-- what the focused setting does -->
+			<control type="image">
+				<left>100</left>
+				<top>900</top>
+				<width>1720</width>
+				<height>1</height>
+				<texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture><visible>[!$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]] | $EXP[FGS]</visible>
+			</control>
+			<control type="textbox" id="6">
+				<description>description (Kodi)</description>
+				<left>520</left>
+				<top>920</top>
+				<width>1000</width>
+				<height>110</height>
+				<font>st_body_24</font>
+				<textcolor>99ffffff</textcolor>
+				<autoscroll time="3000" delay="6000" repeat="6000">true</autoscroll>
+			</control>
+	</include>
+	<!-- DialogAddonSettings.xml: the page outside Fused Glass (FG_AddonSettingsPage there) -->
+	<include name="AddonSet_Classic">
+			<!-- frame around categories + list + buttons -->
+			<control type="image"><left>100</left><top>180</top><width>1720</width><height>1</height><texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture><visible>[!$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]] | $EXP[FGS]</visible></control>
+			<control type="image"><left>100</left><top>864</top><width>1720</width><height>1</height><texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture><visible>[!$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]] | $EXP[FGS]</visible><animation effect="slide" start="0,0" end="0,16" time="0" condition="$EXP[FGS]">Conditional</animation><!-- 700 --></control>
+			<control type="image"><left>100</left><top>180</top><width>1</width><height>684</height><texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture><visible>[!$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]] | $EXP[FGS]</visible><animation effect="zoom" start="100,100" end="100,102.339" center="0,180" time="0" condition="$EXP[FGS]">Conditional</animation><!-- 700 --></control>
+			<control type="image"><left>480</left><top>180</top><width>1</width><height>684</height><texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture><visible>[!$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]] | $EXP[FGS]</visible><animation effect="zoom" start="100,100" end="100,102.339" center="0,180" time="0" condition="$EXP[FGS]">Conditional</animation><!-- 700 --></control>
+			<control type="image"><left>1552</left><top>180</top><width>1</width><height>684</height><texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture><visible>[!$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]] | $EXP[FGS]</visible><animation effect="zoom" start="100,100" end="100,102.339" center="0,180" time="0" condition="$EXP[FGS]">Conditional</animation><!-- 700 --></control>
+			<control type="image"><left>1820</left><top>180</top><width>1</width><height>684</height><texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture><visible>[!$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]] | $EXP[FGS]</visible><animation effect="zoom" start="100,100" end="100,102.339" center="0,180" time="0" condition="$EXP[FGS]">Conditional</animation><!-- 700 --></control>
+
+			<!-- categories: 8 cells of 76, the level button is the ninth -->
+			<include>Aeon_CatParentBars</include>
+			<include>AG_CatGlassCorners</include>
+			<control type="grouplist" id="3">
+				<description>categories (Kodi clones template 10 into it)</description>
+				<left>100</left>
+				<top>181</top>
+				<width>380</width>
+				<height>608</height>
+				<pagecontrol>61</pagecontrol>
+				<orientation>vertical</orientation>
+				<onleft>noop</onleft>
+				<onright>5</onright>
+				<onup>20</onup>
+				<ondown>20</ondown>
+			</control>
+			<include content="Aeon_SettingCategoryTemplate">
+				<param name="width" value="380"/>
+				<param name="roundfirst" value="true"/>
+				<param name="fgs" value="true"/>
+			</include>
+			<control type="group">
+				<left>100</left>
+				<top>789</top>
+				<animation effect="slide" start="0,0" end="0,21" time="0" condition="$EXP[FGS]">Conditional</animation>
+				<include content="AG_SettingLevelButton">
+					<param name="width" value="380"/>
+					<param name="onleft" value="noop"/>
+					<param name="height" value="76"/>
+					<param name="round" value="true"/>
+				</include>
+			</control>
+			<!-- more categories than fit: small arrows on the column's right edge -->
+			<control type="image">
+				<left>440</left><top>757</top><width>24</width><height>24</height><aspectratio>keep</aspectratio>
+				<texture colordiffuse="ffffffff">aeon/icons/chevron_down.png</texture>
+				<visible>Container(3).HasNext</visible>
+			</control>
+			<control type="image">
+				<left>440</left><top>189</top><width>24</width><height>24</height><aspectratio>keep</aspectratio>
+				<texture flipy="true" colordiffuse="ffffffff">aeon/icons/chevron_down.png</texture>
+				<visible>Container(3).HasPrevious</visible>
+			</control>
+			<control type="scrollbar" id="61"><left>-200</left><top>0</top><width>4</width><height>100</height><visible>false</visible></control>
+
+			<!-- settings -->
+			<control type="grouplist" id="5">
+				<description>control area</description>
+				<left>481</left>
+				<top>181</top>
+				<include condition="!$EXP[FGS]">Aeon_W1058</include><include condition="$EXP[FGS]">FGS_W1065</include><!-- 0.56.30 fgs_round2 -->
+				<include condition="!$EXP[FGS]">Aeon_H684</include><include condition="$EXP[FGS]">FGS_H700</include><!-- 700 -->
+				<pagecontrol>60</pagecontrol>
+				<onleft>3</onleft>
+				<onright>9000</onright>
+				<onup>5</onup>
+				<ondown>5</ondown>
+			</control>
+			<include content="Aeon_SettingTemplates">
+				<param name="width" value="1058"/>
+				<param name="fgs" value="true"/><param name="pre" value="FGS_"/><param name="fgswidth" value="1065"/>
+			</include>
+			<control type="group"><animation effect="slide" start="0,0" end="6,0" time="0" condition="$EXP[FGS]">Conditional</animation><animation effect="zoom" start="100,100" end="100,102.339" center="0,181" time="0" condition="$EXP[FGS]">Conditional</animation>
+			<include content="AG_Scrollbar">
+				<param name="id" value="60"/>
+				<param name="left" value="1540"/>
+				<param name="top" value="181"/>
+				<param name="height" value="684"/>
+				<param name="onleft" value="5"/>
+				<param name="onright" value="9000"/>
+				<param name="showonepage" value="false"/>
+			</include>
+			</control>
+
+			<!-- OK / Cancel / Defaults: cells of the same height as the rows -->
+			<control type="grouplist" id="9000">
+				<left>1553</left>
+				<top>181</top>
+				<width>267</width>
+				<height>228</height>
+				<orientation>vertical</orientation>
+				<itemgap>0</itemgap>
+				<onleft>5</onleft>
+				<onright>noop</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<include content="Aeon_AddonSetButton"><param name="id" value="28"/></include>
+				<include content="Aeon_AddonSetButton"><param name="id" value="29"/></include>
+				<include content="Aeon_AddonSetButton"><param name="id" value="30"/></include>
+			</control>
+
+			<!-- what the focused setting does -->
+			<control type="image"><left>100</left><top>900</top><width>1720</width><height>1</height><texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture><visible>[!$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]] | $EXP[FGS]</visible></control>
+			<control type="textbox" id="6">
+				<description>description (Kodi)</description>
+				<left>520</left>
+				<top>920</top>
+				<width>1000</width>
+				<height>110</height>
+				<font>st_body_24</font>
+				<textcolor>99ffffff</textcolor>
+				<autoscroll time="3000" delay="6000" repeat="6000">true</autoscroll>
+			</control>
+	</include>
+	<!-- Settings hub outside the Aeon theme menu styles (Fuse menu theme in the Aeon theme): moved here from Settings.xml (0.40.2) -->
+	<include name="Hub_Classic">
+		<control type="group">
+		<visible>!Skin.HasSetting(aeon.vglass) | $EXP[Aeon_Fused]</visible>
+		<include content="AG_TopBar">
+			<param name="index" value="SYS"/>
+			<param name="title" value="$LOCALIZE[5]"/>
+		</include>
+
+		<control type="group">
+			<left>page_margin</left>
+			<top>content_top</top>
+			<width>900</width>
+			<height>848</height>
+			<include>AG_Card</include>
+		</control>
+		<control type="list" id="9000">
+			<onback>SetProperty(aeon.fromsys,1,home)</onback>
+			<onback>ActivateWindow(home)</onback>
+			<left>120</left>
+			<top>168</top>
+			<width>900</width>
+			<height>848</height>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
+			<scrolltime tween="cubic" easing="out">200</scrolltime>
+			<include content="Dlg_IndexListLayout">
+				<param name="width" value="900"/>
+				<param name="height" value="72"/>
+				<param name="list_id" value="9000"/>
+			</include>
+			<include>Aeon_SettingsItems</include>
+		</control>
+
+		<!-- ====== right column: what the entry holds + this box -->
+		<control type="group">
+			<left>1060</left>
+			<top>content_top</top>
+			<width>740</width>
+			<height>380</height>
+			<include>AG_Card</include>
+			<control type="image">
+				<left>40</left>
+				<top>40</top>
+				<width>28</width>
+				<height>28</height>
+				<texture colordiffuse="$VAR[AG_AccentText]">aeon/icons/settings.png</texture>
+			</control>
+			<control type="label">
+				<left>82</left>
+				<top>38</top>
+				<width>620</width>
+				<height>32</height>
+				<font>st_small_20_bold</font>
+				<textcolor>$VAR[AG_AccentText]</textcolor>
+				<label>$INFO[Container(9000).ListItem.Label2]</label>
+			</control>
+			<control type="label">
+				<left>40</left>
+				<top>86</top>
+				<width>660</width>
+				<height>64</height>
+				<font>st_display_48</font>
+				<label>$INFO[Container(9000).ListItem.Label]</label>
+			</control>
+			<control type="textbox">
+				<left>40</left>
+				<top>170</top>
+				<width>660</width>
+				<height>170</height>
+				<font>st_body_24</font>
+				<label>$INFO[Container(9000).ListItem.Property(help)]</label>
+			</control>
+		</control>
+		<control type="group">
+			<left>1060</left>
+			<top>588</top>
+			<width>740</width>
+			<height>428</height>
+			<include>AG_Card</include>
+			<control type="label">
+				<left>40</left>
+				<top>34</top>
+				<width>660</width>
+				<height>40</height>
+				<font>st_serif_28</font>
+				<label>$LOCALIZE[31269]</label>
+			</control>
+			<control type="group">
+				<left>40</left>
+				<top>100</top>
+				<include content="Dlg_FactRow"><param name="top" value="0"/><param name="label" value="$LOCALIZE[31000]"/><param name="value" value="$INFO[System.BuildVersionShort]"/></include>
+				<include content="Dlg_FactRow"><param name="top" value="54"/><param name="label" value="$LOCALIZE[31649]"/><param name="value" value="Aeon Fuse $INFO[System.AddonVersion(skin.aeon.fuse)]"/></include>
+				<include content="Dlg_FactRow"><param name="top" value="108"/><param name="label" value="$LOCALIZE[31650]"/><param name="value" value="$INFO[Network.IPAddress]"/></include>
+				<include content="Dlg_FactRow"><param name="top" value="162"/><param name="label" value="$LOCALIZE[31651]"/><param name="value" value="$INFO[System.ScreenResolution]"/></include>
+				<include content="Dlg_FactRow"><param name="top" value="216"/><param name="label" value="$LOCALIZE[31794]"/><param name="value" value="$VAR[Aeon_Uptime]"/></include>
+			</control>
+		</control>
+		</control>
+	</include>
+</includes>

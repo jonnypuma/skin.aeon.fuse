@@ -1,0 +1,25 @@
+# Aeon Fuse skin: files git should not track
+
+# Python and test caches (tools run against the skin)
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backups, logs and scratch files
+*.bak
+*.orig
+*.rej
+*.tmp
+*.log
+
+# Release zips made from this folder
+*.zip

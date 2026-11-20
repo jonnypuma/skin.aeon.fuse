@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Text viewer (changelogs, logs, long plots) - M4, Builder E. Reading panel: 1320px measure,
+	body_23 (log files switch to the mono font), page position bottom-right.
+	Id contract (Estuary Omega): heading 1, textbox 5, scrollbar 3000, focus button 1000.
+	Focus sits on invisible button 1000: Up / Down page the text, OK and Back close.
+-->
+<window>
+	<defaultcontrol always="true">1000</defaultcontrol>
+	<include>Anim_DialogOpenClose</include>
+	<controls>
+		<include condition="!$EXP[FGS]">TV_Classic</include>
+		<include condition="$EXP[FGS]">FGS_TextViewer3</include><!-- 0.56.53 fgstextviewer -->
+	</controls>
+</window>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Skippy skip pill, closer: shows itself while the pill (Custom_1167) is open but no longer wanted (the segment ended or
+     was skipped, Back hid it, the player controls or another dialog came up) and closes it. -->
+<window type="dialog" id="1172">
+	<visible>Window.IsVisible(1167) + [Window.IsVisible(1174) | ![Window.IsActive(fullscreenvideo) + Player.HasVideo + Skin.HasSetting(aeon.skippy.button) + String.IsEqual(Window(Home).Property(Skippy.SkinSkipButton),true) + String.IsEqual(Window(Home).Property(Skippy.Segment.Mode),ask) + !String.IsEmpty(Window(Home).Property(Skippy.Segment.Type)) + String.IsEmpty(Window(Home).Property(Skippy.Skipping)) + [!String.IsEqual(Window(Home).Property(aeon.skippy.hidden),Window(Home).Property(Skippy.Segment.Start)) | !String.IsEqual(Window(Home).Property(aeon.skippy.hidfile),Player.FilenameAndPath)] + ![Window.IsVisible(videoosd) | Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(osdsubtitlesettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(playerprocessinfo) | Window.IsVisible(subtitlesearch) | Window.IsVisible(selectdialog) | Window.IsVisible(contextmenu) | Window.IsVisible(sliderdialog) | Window.IsVisible(pvrosdchannels) | Window.IsVisible(pvrchannelguide) | Window.IsVisible(fullscreeninfo) | Window.IsVisible(yesnodialog) | Window.IsVisible(okdialog)]]]</visible>
+	<onload>Dialog.Close(1167,true)</onload>
+	<controls/>
+</window>

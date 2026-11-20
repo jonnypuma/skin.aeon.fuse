@@ -1,0 +1,7177 @@
+# Kodi add-on strings - skin.aeon.fuse (zh_tw)
+msgid ""
+msgstr ""
+"Project-Id-Version: skin.aeon.fuse\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "#31010"
+msgid "Sort"
+msgstr "排序"
+
+msgctxt "#31011"
+msgid "View"
+msgstr "檢視"
+
+msgctxt "#31012"
+msgid "Nothing here"
+msgstr "這裡什麼都沒有"
+
+msgctxt "#31013"
+msgid "Working"
+msgstr "處理中"
+
+msgctxt "#31014"
+msgid "Up / down to page, OK to close"
+msgstr "上 / 下翻頁，OK 關閉"
+
+msgctxt "#31015"
+msgid "Muted"
+msgstr "靜音"
+
+msgctxt "#31016"
+msgid "Buffering"
+msgstr "緩衝中"
+
+msgctxt "#31017"
+msgid "Now playing"
+msgstr "正在播放"
+
+msgctxt "#31018"
+msgid "Next:"
+msgstr "接下來："
+
+msgctxt "#31019"
+msgid "Home"
+msgstr "首頁"
+
+msgctxt "#31020"
+msgid "System"
+msgstr "系統"
+
+msgctxt "#31021"
+msgid "Skin settings"
+msgstr "面板設定"
+
+msgctxt "#31022"
+msgid "Power"
+msgstr "電源"
+
+msgctxt "#31024"
+msgid "Aeon Fuse"
+msgstr "Aeon Fuse"
+
+msgctxt "#31025"
+msgid "Skin settings holds Aeon Fuse's own options. To switch skins: Interface > Skin > Skin."
+msgstr "面板設定包含 Aeon Fuse 自己的選項。切換面板：介面 > 面板 > 面板。"
+
+msgctxt "#31030"
+msgid "Ends"
+msgstr "結束"
+
+msgctxt "#31040"
+msgid "Symbols"
+msgstr "符號"
+
+msgctxt "#31041"
+msgid "Caps"
+msgstr "大寫"
+
+msgctxt "#31042"
+msgid "Shift"
+msgstr "Shift"
+
+msgctxt "#31043"
+msgid "Space"
+msgstr "空白"
+
+msgctxt "#31044"
+msgid "Delete"
+msgstr "刪除"
+
+msgctxt "#31045"
+msgid "Queue"
+msgstr "佇列"
+
+msgctxt "#31046"
+msgid "Cover showcase"
+msgstr "封面展示"
+
+msgctxt "#31047"
+msgid "03  Performance"
+msgstr "03  效能"
+
+msgctxt "#31048"
+msgid "Pause"
+msgstr "暫停"
+
+msgctxt "#31050"
+msgid "Palette"
+msgstr "調色盤"
+
+msgctxt "#31051"
+msgid "Slightly rounded corners"
+msgstr "略圓的角"
+
+msgctxt "#31052"
+msgid "Focus outline"
+msgstr "焦點外框"
+
+msgctxt "#31053"
+msgid "Artwork background"
+msgstr "圖片背景"
+
+msgctxt "#31054"
+msgid "Trailer button"
+msgstr "預告片按鈕"
+
+msgctxt "#31055"
+msgid "Watched indicators"
+msgstr "已觀看標記"
+
+msgctxt "#31056"
+msgid "Spotlight rotation"
+msgstr "Spotlight 輪換"
+
+msgctxt "#31057"
+msgid "Newest row on Home"
+msgstr "首頁最新一列"
+
+msgctxt "#31058"
+msgid "Reduce motion"
+msgstr "減少動畫"
+
+msgctxt "#31059"
+msgid "Reset all skin settings"
+msgstr "重設所有面板設定"
+
+msgctxt "#31060"
+msgid "Signal"
+msgstr "信號"
+
+msgctxt "#31061"
+msgid "Cobalt"
+msgstr "鈷藍"
+
+msgctxt "#31062"
+msgid "Mint"
+msgstr "薄荷"
+
+msgctxt "#31063"
+msgid "Amber"
+msgstr "琥珀"
+
+msgctxt "#31064"
+msgid "Rose"
+msgstr "玫瑰"
+
+msgctxt "#31065"
+msgid "Ice"
+msgstr "冰"
+
+msgctxt "#31066"
+msgid "Bone"
+msgstr "骨白"
+
+msgctxt "#31070"
+msgid "Thin"
+msgstr "細"
+
+msgctxt "#31071"
+msgid "Medium"
+msgstr "中"
+
+msgctxt "#31072"
+msgid "Off"
+msgstr "關"
+
+msgctxt "#31075"
+msgid "Faint"
+msgstr "微弱"
+
+msgctxt "#31076"
+msgid "Soft"
+msgstr "柔和"
+
+msgctxt "#31077"
+msgid "Visible"
+msgstr "明顯"
+
+msgctxt "#31080"
+msgid "Both"
+msgstr "兩者"
+
+msgctxt "#31081"
+msgid "Unwatched only"
+msgstr "僅未觀看"
+
+msgctxt "#31082"
+msgid "Watched only"
+msgstr "僅已觀看"
+
+msgctxt "#31085"
+msgid "Date added"
+msgstr "新增日期"
+
+msgctxt "#31086"
+msgid "Release date"
+msgstr "發行日期"
+
+msgctxt "#31087"
+msgid "Both rows"
+msgstr "兩列"
+
+msgctxt "#31100"
+msgid "Spotlight / unwatched / top rated"
+msgstr "Spotlight / 未觀看 / 高評分"
+
+msgctxt "#31101"
+msgid "Year"
+msgstr "年份"
+
+msgctxt "#31102"
+msgid "Runtime"
+msgstr "片長"
+
+msgctxt "#31103"
+msgid "Rating"
+msgstr "評分"
+
+msgctxt "#31104"
+msgid "Rated"
+msgstr "分級"
+
+msgctxt "#31105"
+msgid "Details"
+msgstr "詳細資料"
+
+msgctxt "#31106"
+msgid "Fig. 01: random pick, unwatched, rated 7.5+"
+msgstr "圖 01：隨機挑選，未觀看，評分 7.5+"
+
+msgctxt "#31107"
+msgid "No unwatched films rated 7.5+ yet"
+msgstr "還沒有評分 7.5+ 的未觀看電影"
+
+msgctxt "#31110"
+msgid "Newest additions"
+msgstr "最新新增"
+
+msgctxt "#31111"
+msgid "Sorted by date added ↓"
+msgstr "依新增日期排序 ↓"
+
+msgctxt "#31112"
+msgid "Newest releases"
+msgstr "最新發行"
+
+msgctxt "#31113"
+msgid "Sorted by release date ↓"
+msgstr "依發行日期排序 ↓"
+
+msgctxt "#31114"
+msgid "films"
+msgstr "部電影"
+
+msgctxt "#31120"
+msgid "Seek  ◀ ▶"
+msgstr "跳轉  ◀ ▶"
+
+msgctxt "#31121"
+msgid "Previous"
+msgstr "上一個"
+
+msgctxt "#31122"
+msgid "Rewind"
+msgstr "倒轉"
+
+msgctxt "#31123"
+msgid "Play / pause"
+msgstr "播放 / 暫停"
+
+msgctxt "#31124"
+msgid "Stop"
+msgstr "停止"
+
+msgctxt "#31125"
+msgid "Forward"
+msgstr "快轉"
+
+msgctxt "#31126"
+msgid "Next"
+msgstr "下一個"
+
+msgctxt "#31127"
+msgid "Subtitles"
+msgstr "字幕"
+
+msgctxt "#31128"
+msgid "Audio"
+msgstr "音訊"
+
+msgctxt "#31129"
+msgid "Video settings"
+msgstr "視訊設定"
+
+msgctxt "#31318"
+msgid "Visualiser presets"
+msgstr "視覺效果預設"
+
+msgctxt "#31319"
+msgid "OK, then ← for presets"
+msgstr "OK，然後按 ← 選預設"
+
+msgctxt "#31900"
+msgid "Aeon Fuse (Figtree)"
+msgstr "Aeon Fuse (Figtree)"
+
+msgctxt "#31901"
+msgid "Arial (wider script coverage)"
+msgstr "Arial（支援更多文字）"
+
+msgctxt "#31902"
+msgid "Episode code"
+msgstr "單集代碼"
+
+msgctxt "#31200"
+msgid "Aeon Fuse settings"
+msgstr "Aeon Fuse 設定"
+
+msgctxt "#31201"
+msgid "Live TV"
+msgstr "直播電視"
+
+msgctxt "#31202"
+msgid "Media"
+msgstr "媒體"
+
+msgctxt "#31203"
+msgid "Update library"
+msgstr "更新媒體櫃"
+
+msgctxt "#31204"
+msgid "Library"
+msgstr "媒體櫃"
+
+msgctxt "#31205"
+msgid "Clean library"
+msgstr "清理媒體櫃"
+
+msgctxt "#31206"
+msgid "More"
+msgstr "更多"
+
+msgctxt "#31207"
+msgid "Add-on"
+msgstr "附加元件"
+
+msgctxt "#31208"
+msgid "About this setting"
+msgstr "關於此設定"
+
+msgctxt "#31209"
+msgid "Timer"
+msgstr "定時器"
+
+msgctxt "#31210"
+msgid "Left / right: channel group"
+msgstr "左 / 右：頻道群組"
+
+msgctxt "#31211"
+msgid "Add group"
+msgstr "新增群組"
+
+msgctxt "#31212"
+msgid "Rename group"
+msgstr "重新命名群組"
+
+msgctxt "#31213"
+msgid "Delete group"
+msgstr "刪除群組"
+
+msgctxt "#31214"
+msgid "Jump through the guide  ·  Back to close"
+msgstr "在節目表中跳轉  ·  返回鍵關閉"
+
+msgctxt "#31215"
+msgid "Playing on this Shield"
+msgstr "正在這台 Shield 上播放"
+
+msgctxt "#31216"
+msgid "OK or Back closes"
+msgstr "OK 或返回鍵關閉"
+
+msgctxt "#31217"
+msgid "Find subtitles"
+msgstr "尋找字幕"
+
+msgctxt "#31218"
+msgid "Service"
+msgstr "服務"
+
+msgctxt "#31219"
+msgid "Status"
+msgstr "狀態"
+
+msgctxt "#31220"
+msgid "This file already has subtitle tracks"
+msgstr "此檔案已有字幕軌"
+
+msgctxt "#31221"
+msgid "Sync = timed to your file"
+msgstr "Sync = 與你的檔案同步"
+
+msgctxt "#31222"
+msgid "No subtitles listed yet. Pick a service or search manually."
+msgstr "尚未列出字幕。選擇一個服務或手動搜尋。"
+
+msgctxt "#31223"
+msgid "Order:"
+msgstr "順序："
+
+msgctxt "#31224"
+msgid "Nothing has happened yet."
+msgstr "還沒有發生任何事。"
+
+msgctxt "#31225"
+msgid "Back to continue"
+msgstr "按返回鍵繼續"
+
+msgctxt "#31226"
+msgid "Nothing to choose"
+msgstr "沒有可選的內容"
+
+msgctxt "#31227"
+msgid "Browse the whole library instead."
+msgstr "改為瀏覽整個媒體櫃。"
+
+msgctxt "#31228"
+msgid "See all"
+msgstr "檢視全部"
+
+msgctxt "#31229"
+msgid "No shows in progress. Start one from Shows."
+msgstr "沒有正在觀看的影集。從影集中開始一部。"
+
+msgctxt "#31230"
+msgid "Nothing here."
+msgstr "這裡什麼都沒有。"
+
+msgctxt "#31231"
+msgid "PVR & Live TV settings"
+msgstr "PVR 與直播電視設定"
+
+msgctxt "#31232"
+msgid "Up one level"
+msgstr "回上一層"
+
+msgctxt "#31233"
+msgid "Nothing else is known about this one yet."
+msgstr "關於這一部暫時沒有更多資訊。"
+
+msgctxt "#31234"
+msgid "Up and down scroll  ·  Back closes"
+msgstr "上下捲動  ·  返回鍵關閉"
+
+msgctxt "#31235"
+msgid "Up next"
+msgstr "接下來"
+
+msgctxt "#31236"
+msgid "The last one in the queue"
+msgstr "佇列中的最後一首"
+
+msgctxt "#31237"
+msgid "Sync"
+msgstr "Sync"
+
+msgctxt "#31238"
+msgid "No matches"
+msgstr "沒有符合項目"
+
+msgctxt "#31239"
+msgid "Searching"
+msgstr "搜尋中"
+
+msgctxt "#31240"
+msgid "Films, shows, albums, artists"
+msgstr "電影、影集、專輯、藝人"
+
+msgctxt "#31241"
+msgid "OK to type  ·  Down for results  ·  Back to close"
+msgstr "OK 輸入  ·  下查看結果  ·  返回鍵關閉"
+
+msgctxt "#31242"
+msgid "Films and shows match on title, albums on album name, artists on name. Library only."
+msgstr "電影和影集依標題，專輯依專輯名稱，藝人依名字比對。僅限媒體櫃。"
+
+msgctxt "#31243"
+msgid "Offsets apply to this film only. Choosing an offset hides this panel so you can sync against the picture."
+msgstr "偏移只對此電影生效。選擇偏移會隱藏此面板，方便對照畫面同步。"
+
+msgctxt "#31244"
+msgid "More for this title"
+msgstr "此作品的更多內容"
+
+msgctxt "#31245"
+msgid "Back"
+msgstr "返回"
+
+msgctxt "#31246"
+msgid "Unwatched only is on: choose the pill above to show everything."
+msgstr "「僅未觀看」已開啟：選擇上方的按鈕以顯示全部。"
+
+msgctxt "#31247"
+msgid "Left and right to seek  ·  Down returns"
+msgstr "左右跳轉  ·  下返回"
+
+msgctxt "#31248"
+msgid "Choose Albums, Artists, Songs or Genres above."
+msgstr "在上方選擇專輯、藝人、歌曲或類型。"
+
+msgctxt "#31249"
+msgid "Playlist"
+msgstr "播放清單"
+
+msgctxt "#31250"
+msgid "Empty. Pick songs or albums on the left and press OK to add them."
+msgstr "空的。在左側選擇歌曲或專輯，按 OK 新增。"
+
+msgctxt "#31251"
+msgid "The queue is empty"
+msgstr "佇列是空的"
+
+msgctxt "#31252"
+msgid "No weather yet."
+msgstr "還沒有天氣資訊。"
+
+msgctxt "#31253"
+msgid "Choose a weather service under Settings, Services, Weather."
+msgstr "在 設定 > 服務 > 天氣 中選擇天氣服務。"
+
+msgctxt "#31254"
+msgid "The next few days"
+msgstr "未來幾天"
+
+msgctxt "#31255"
+msgid "Look, behaviour, home menu"
+msgstr "外觀、行為、主選單"
+
+msgctxt "#31256"
+msgid "Playback, subtitles"
+msgstr "播放、字幕"
+
+msgctxt "#31257"
+msgid "Library, files"
+msgstr "媒體櫃、檔案"
+
+msgctxt "#31258"
+msgid "Skin, region"
+msgstr "面板、地區"
+
+msgctxt "#31259"
+msgid "Installed, updates"
+msgstr "已安裝、更新"
+
+msgctxt "#31260"
+msgid "Remote, sharing"
+msgstr "遙控器、分享"
+
+msgctxt "#31261"
+msgid "Display, audio"
+msgstr "顯示、音訊"
+
+msgctxt "#31262"
+msgid "Sources, files"
+msgstr "來源、檔案"
+
+msgctxt "#31263"
+msgid "Hardware, storage"
+msgstr "硬體、儲存空間"
+
+msgctxt "#31264"
+msgid "Event log"
+msgstr "事件記錄"
+
+msgctxt "#31265"
+msgid "Recent events"
+msgstr "最近事件"
+
+msgctxt "#31266"
+msgid "Users"
+msgstr "使用者"
+
+msgctxt "#31267"
+msgid "Not used"
+msgstr "未使用"
+
+msgctxt "#31268"
+msgid "Controllers"
+msgstr "控制器"
+
+msgctxt "#31269"
+msgid "This box"
+msgstr "本機"
+
+msgctxt "#31270"
+msgid "Login screen"
+msgstr "登入畫面"
+
+msgctxt "#31271"
+msgid "Auto login"
+msgstr "自動登入"
+
+msgctxt "#31272"
+msgid "Options"
+msgstr "選項"
+
+msgctxt "#31273"
+msgid "Order direction"
+msgstr "排序方向"
+
+msgctxt "#31274"
+msgid "Select a rule to edit it. Use the context menu to delete a rule."
+msgstr "選擇一條規則進行編輯。用內容選單刪除規則。"
+
+msgctxt "#31275"
+msgid "Value"
+msgstr "值"
+
+msgctxt "#31276"
+msgid "No chapters or bookmarks yet. Create one with the first button."
+msgstr "還沒有章節或書籤。用第一個按鈕建立。"
+
+msgctxt "#31277"
+msgid "OK jumps there  ·  Back closes"
+msgstr "OK 跳轉  ·  返回鍵關閉"
+
+msgctxt "#31300"
+msgid "Order"
+msgstr "順序"
+
+msgctxt "#31301"
+msgid "Watched"
+msgstr "已觀看"
+
+msgctxt "#31302"
+msgid "Search"
+msgstr "搜尋"
+
+msgctxt "#31303"
+msgid "Stop updating"
+msgstr "停止更新"
+
+msgctxt "#31304"
+msgid "Library settings"
+msgstr "媒體櫃設定"
+
+msgctxt "#31305"
+msgid "Music"
+msgstr "音樂"
+
+msgctxt "#31306"
+msgid "Update"
+msgstr "更新"
+
+msgctxt "#31307"
+msgid "Clean"
+msgstr "清理"
+
+msgctxt "#31308"
+msgid "Collections"
+msgstr "系列"
+
+msgctxt "#31309"
+msgid "Films and shows"
+msgstr "電影和影集"
+
+msgctxt "#31310"
+msgid "No, keep it as it is"
+msgstr "不，保持原樣"
+
+msgctxt "#31311"
+msgid "Yes, clean it now"
+msgstr "是，現在清理"
+
+msgctxt "#31312"
+msgid "Grid"
+msgstr "格狀"
+
+msgctxt "#31313"
+msgid "Wall"
+msgstr "牆"
+
+msgctxt "#31314"
+msgid "Episodes"
+msgstr "單集"
+
+msgctxt "#31315"
+msgid "List"
+msgstr "清單"
+
+msgctxt "#31316"
+msgid "OK to reset"
+msgstr "OK 重設"
+
+msgctxt "#31317"
+msgid "Press OK again to reset everything"
+msgstr "再按一次 OK 重設全部"
+
+msgctxt "#31320"
+msgid "Spotlight"
+msgstr "Spotlight"
+
+msgctxt "#31321"
+msgid "Wide"
+msgstr "寬"
+
+msgctxt "#31322"
+msgid "Time"
+msgstr "時間"
+
+msgctxt "#31323"
+msgid "No runtime"
+msgstr "無片長"
+
+msgctxt "#31324"
+msgid "Now"
+msgstr "現在"
+
+msgctxt "#31325"
+msgid "+1 h"
+msgstr "+1 h"
+
+msgctxt "#31326"
+msgid "+2 h"
+msgstr "+2 h"
+
+msgctxt "#31327"
+msgid "+3 h"
+msgstr "+3 h"
+
+msgctxt "#31328"
+msgid "+4 h"
+msgstr "+4 h"
+
+msgctxt "#31329"
+msgid "Rows"
+msgstr "列"
+
+msgctxt "#31330"
+msgid "Main menu"
+msgstr "主選單"
+
+msgctxt "#31331"
+msgid "Films"
+msgstr "電影"
+
+msgctxt "#31332"
+msgid "Shows"
+msgstr "影集"
+
+msgctxt "#31333"
+msgid "Music"
+msgstr "音樂"
+
+msgctxt "#31334"
+msgid "Search"
+msgstr "搜尋"
+
+msgctxt "#31335"
+msgid "Pill, hero and film cards"
+msgstr "按鈕、焦點和電影卡片"
+
+msgctxt "#31336"
+msgid "Pill and the Next up card"
+msgstr "按鈕和「接下來」卡片"
+
+msgctxt "#31337"
+msgid "Pill in the top line"
+msgstr "頂列中的按鈕"
+
+msgctxt "#31338"
+msgid "Which pills the top line shows. Hidden pills disappear on Home and in the libraries; the rest close up. For now and the gear (system menu, settings) always stay, so you can always come back here.[CR][CR]Up / Down picks a group, Right enters it."
+msgstr "頂列顯示哪些按鈕。隱藏的按鈕會從首頁和媒體櫃消失，其餘的會靠攏。「現在看」和齒輪（系統選單、設定）始終保留，讓你隨時能回到這裡。[CR][CR]上 / 下選擇一組，右鍵進入。"
+
+msgctxt "#31339"
+msgid "Films also takes the hero and the film cards off For now; Shows takes the Next up card. The libraries themselves stay: Search finds them, and the system menu has Files."
+msgstr "「電影」也會從「現在看」中拿掉焦點和電影卡片；「影集」拿掉「接下來」卡片。媒體櫃本身保留：搜尋找得到，系統選單裡有「檔案」。"
+
+msgctxt "#31340"
+msgid "Show"
+msgstr "顯示"
+
+msgctxt "#31341"
+msgid "Hide"
+msgstr "隱藏"
+
+msgctxt "#31342"
+msgid "View, sort, filter…"
+msgstr "檢視、排序、篩選…"
+
+msgctxt "#31940"
+msgid "Custom rows"
+msgstr "自訂列"
+
+msgctxt "#31941"
+msgid "Row 1"
+msgstr "第 1 列"
+
+msgctxt "#31942"
+msgid "Row 2"
+msgstr "第 2 列"
+
+msgctxt "#31943"
+msgid "Row 3"
+msgstr "第 3 列"
+
+msgctxt "#31944"
+msgid "Not set"
+msgstr "未設定"
+
+msgctxt "#31945"
+msgid "Add-on, playlist or library…"
+msgstr "附加元件、播放清單或媒體櫃…"
+
+msgctxt "#31946"
+msgid "A favourite…"
+msgstr "我的最愛…"
+
+msgctxt "#31947"
+msgid "Rename…"
+msgstr "重新命名…"
+
+msgctxt "#31948"
+msgid "Clear"
+msgstr "清除"
+
+msgctxt "#31949"
+msgid "This favourite opens no folder"
+msgstr "此最愛不會開啟資料夾"
+
+msgctxt "#31950"
+msgid "Add up to three rows of your own to Home: a folder of an add-on (for example JellyCon's Continue Watching), a smart playlist, a library node or a favourite that opens a folder. A row shows only when it has something in it.[CR][CR]OK opens the row's options: choose what it shows, rename it or clear it."
+msgstr "在首頁加入最多三列你自己的內容：附加元件資料夾（例如 JellyCon 的「繼續觀看」）、智慧播放清單、媒體櫃節點或開啟資料夾的最愛。只有有內容時才顯示該列。[CR][CR]OK 開啟該列的選項：選擇顯示內容、重新命名或清除。"
+
+msgctxt "#31951"
+msgid "Custom row"
+msgstr "自訂列"
+
+msgctxt "#31952"
+msgid "Loading…"
+msgstr "載入中…"
+
+msgctxt "#31953"
+msgid "1 item"
+msgstr "1 個項目"
+
+msgctxt "#31954"
+msgid "items"
+msgstr "個項目"
+
+msgctxt "#31955"
+msgid "Add-on · playlist · library · favourite"
+msgstr "附加元件 · 播放清單 · 媒體櫃 · 最愛"
+
+msgctxt "#31956"
+msgid "The add-on of this favourite isn't installed"
+msgstr "此最愛的附加元件未安裝"
+
+msgctxt "#31957"
+msgid "Rows of your own on Home: an add-on folder, a playlist, a library node or a favourite. OK opens the row's options."
+msgstr "首頁上你自己的列：附加元件資料夾、播放清單、媒體櫃節點或最愛。OK 開啟該列的選項。"
+
+msgctxt "#31980"
+msgid "Custom menu items"
+msgstr "自訂選單項目"
+
+msgctxt "#31981"
+msgid "Menu item 1"
+msgstr "選單項目 1"
+
+msgctxt "#31982"
+msgid "Menu item 2"
+msgstr "選單項目 2"
+
+msgctxt "#31983"
+msgid "Menu item 3"
+msgstr "選單項目 3"
+
+msgctxt "#31984"
+msgid "Put up to three add-ons, favourites or library folders on the main menu, after the skin's own items. An item shows only while its add-on is installed.[CR][CR]OK opens the item's options: choose what it opens, rename it or clear it."
+msgstr "在面板自帶項目之後，將最多三個附加元件、最愛或媒體櫃資料夾放入主選單。僅當其附加元件已安裝時才顯示該項目。[CR][CR]OK 開啟項目選項：選擇開啟的內容、重新命名或清除。"
+
+msgctxt "#31985"
+msgid "Add-on · favourite · library · folder"
+msgstr "附加元件 · 最愛 · 媒體櫃 · 資料夾"
+
+msgctxt "#31986"
+msgid "Opens"
+msgstr "開啟"
+
+msgctxt "#31987"
+msgid "Menu item"
+msgstr "選單項目"
+
+msgctxt "#31988"
+msgid "add-on not installed"
+msgstr "附加元件未安裝"
+
+msgctxt "#31989"
+msgid "Add-on"
+msgstr "附加元件"
+
+msgctxt "#31990"
+msgid "Playlist"
+msgstr "播放清單"
+
+msgctxt "#31991"
+msgid "Library"
+msgstr "媒體櫃"
+
+msgctxt "#31992"
+msgid "Folder"
+msgstr "資料夾"
+
+msgctxt "#31993"
+msgid "Shortcut"
+msgstr "捷徑"
+
+msgctxt "#31994"
+msgid "Your own items on the main menu: an add-on, a favourite, a library node or a folder. OK opens the item's options."
+msgstr "主選單上你自己的項目：附加元件、最愛、媒體櫃節點或資料夾。OK 開啟項目選項。"
+
+msgctxt "#31995"
+msgid "OK to open"
+msgstr "OK 開啟"
+
+msgctxt "#31540"
+msgid "View settings"
+msgstr "檢視設定"
+
+msgctxt "#31541"
+msgid "Ratings"
+msgstr "評分"
+
+msgctxt "#31542"
+msgid "Media info"
+msgstr "媒體資訊"
+
+msgctxt "#31543"
+msgid "Backdrop"
+msgstr "背景"
+
+msgctxt "#31544"
+msgid "Reset"
+msgstr "重設"
+
+msgctxt "#31545"
+msgid "Global settings"
+msgstr "全域設定"
+
+msgctxt "#31546"
+msgid "Default"
+msgstr "預設"
+
+msgctxt "#31547"
+msgid "On"
+msgstr "開"
+
+msgctxt "#31548"
+msgid "Off"
+msgstr "關"
+
+msgctxt "#31549"
+msgid "Neutral"
+msgstr "中性"
+
+msgctxt "#31550"
+msgid "Fanart"
+msgstr "劇照"
+
+msgctxt "#31551"
+msgid "Colors"
+msgstr "顏色"
+
+msgctxt "#31000"
+msgid "Kodi"
+msgstr "Kodi"
+
+msgctxt "#31001"
+msgid "ULTRA HD"
+msgstr "超高畫質"
+
+msgctxt "#31002"
+msgid "The pages that Up opens above this home menu item. Pick one, then use the buttons on the right."
+msgstr "在此主選單項目上按「上」開啟的頁面。選擇一個，然後使用右側的按鈕。"
+
+msgctxt "#31003"
+msgid "+  Add item"
+msgstr "+  新增項目"
+
+msgctxt "#31004"
+msgid "Rename"
+msgstr "重新命名"
+
+msgctxt "#31005"
+msgid "Select source"
+msgstr "選擇來源"
+
+msgctxt "#31006"
+msgid "Sort by"
+msgstr "排序方式"
+
+msgctxt "#31007"
+msgid "Reverse order"
+msgstr "反向排序"
+
+msgctxt "#31008"
+msgid "Items in list"
+msgstr "清單中的項目數"
+
+msgctxt "#31009"
+msgid "Seconds per item"
+msgstr "每項秒數"
+
+msgctxt "#31023"
+msgid "Autoscroll on / off"
+msgstr "自動捲動 開 / 關"
+
+msgctxt "#31026"
+msgid "Hide / show"
+msgstr "隱藏 / 顯示"
+
+msgctxt "#31027"
+msgid "Move up"
+msgstr "上移"
+
+msgctxt "#31028"
+msgid "Move down"
+msgstr "下移"
+
+msgctxt "#31029"
+msgid "Add list..."
+msgstr "新增清單..."
+
+msgctxt "#31031"
+msgid "Add folder items..."
+msgstr "新增資料夾項目..."
+
+msgctxt "#31032"
+msgid "Restore defaults"
+msgstr "還原預設值"
+
+msgctxt "#31033"
+msgid "The categories and rows shown under this home menu item (for Power: its actions)."
+msgstr "此主選單項目下顯示的類別和列（電源：其動作）。"
+
+msgctxt "#31034"
+msgid "Items in row"
+msgstr "列中的項目數"
+
+msgctxt "#31035"
+msgid "Artwork type"
+msgstr "圖片類型"
+
+msgctxt "#31036"
+msgid "The full-screen widget pages that Up opens above this item: on or off, autoscroll, and the defaults for every list in them."
+msgstr "在此項目上按「上」開啟的全螢幕小工具頁面：開或關、自動捲動以及其中每個清單的預設值。"
+
+msgctxt "#31037"
+msgid "Widget (Up key after Spotlight)"
+msgstr "小工具（Spotlight 之後按上）"
+
+msgctxt "#31038"
+msgid "Autoscroll"
+msgstr "自動捲動"
+
+msgctxt "#31039"
+msgid "Items per list"
+msgstr "每個清單的項目數"
+
+msgctxt "#31049"
+msgid "The big Netflix-style spotlight above this item on Home: a rotating list of titles with fanart, logo, details and Play."
+msgstr "首頁此項目上方的 Netflix 風格大型 Spotlight：輪流顯示附有劇照、標誌、詳細資料和播放按鈕的作品。"
+
+msgctxt "#31067"
+msgid "Label"
+msgstr "標籤"
+
+msgctxt "#31068"
+msgid "Path"
+msgstr "路徑"
+
+msgctxt "#31069"
+msgid "Items"
+msgstr "項目"
+
+msgctxt "#31073"
+msgid "Widget screen options"
+msgstr "小工具畫面選項"
+
+msgctxt "#31074"
+msgid "Library background (Aeon)"
+msgstr "媒體櫃背景（Aeon）"
+
+msgctxt "#31078"
+msgid "Choose a view"
+msgstr "選擇檢視"
+
+msgctxt "#31079"
+msgid "Left / Right to look, OK to switch"
+msgstr "左 / 右查看，OK 切換"
+
+msgctxt "#31083"
+msgid "Fanart list"
+msgstr "劇照清單"
+
+msgctxt "#31084"
+msgid "Rows with A-Z keys"
+msgstr "附 A-Z 鍵的列"
+
+msgctxt "#31088"
+msgid "Artist wall"
+msgstr "藝人牆"
+
+msgctxt "#31089"
+msgid "Cover grid"
+msgstr "封面格狀"
+
+msgctxt "#31090"
+msgid "Album wall"
+msgstr "專輯牆"
+
+msgctxt "#31091"
+msgid "Song wall"
+msgstr "歌曲牆"
+
+msgctxt "#31092"
+msgid "Artist showcase"
+msgstr "藝人展示"
+
+msgctxt "#31093"
+msgid "Big covers in a row"
+msgstr "一列大封面"
+
+msgctxt "#31094"
+msgid "Album showcase"
+msgstr "專輯展示"
+
+msgctxt "#31095"
+msgid "Song showcase"
+msgstr "歌曲展示"
+
+msgctxt "#31096"
+msgid "Artist rows"
+msgstr "藝人列"
+
+msgctxt "#31097"
+msgid "Rows with covers"
+msgstr "附封面的列"
+
+msgctxt "#31098"
+msgid "Album list"
+msgstr "專輯清單"
+
+msgctxt "#31099"
+msgid "Song list"
+msgstr "歌曲清單"
+
+msgctxt "#31108"
+msgid "Compact song rows"
+msgstr "緊湊歌曲列"
+
+msgctxt "#31109"
+msgid "Fanart wall"
+msgstr "劇照牆"
+
+msgctxt "#31115"
+msgid "Portrait grid"
+msgstr "直式格狀"
+
+msgctxt "#31116"
+msgid "Fanart and A-Z keys"
+msgstr "劇照和 A-Z 鍵"
+
+msgctxt "#31117"
+msgid "Show posters"
+msgstr "顯示海報"
+
+msgctxt "#31118"
+msgid "Posters"
+msgstr "海報"
+
+msgctxt "#31119"
+msgid "Season posters"
+msgstr "季海報"
+
+msgctxt "#31130"
+msgid "Poster wall"
+msgstr "海報牆"
+
+msgctxt "#31131"
+msgid "Episode wall"
+msgstr "單集牆"
+
+msgctxt "#31132"
+msgid "Landscape artwork"
+msgstr "橫式圖片"
+
+msgctxt "#31133"
+msgid "Landscape wall"
+msgstr "橫式牆"
+
+msgctxt "#31134"
+msgid "Square wall"
+msgstr "方形牆"
+
+msgctxt "#31135"
+msgid "Square tiles"
+msgstr "方形磚"
+
+msgctxt "#31136"
+msgid "Cards"
+msgstr "卡片"
+
+msgctxt "#31137"
+msgid "Artwork with details"
+msgstr "附詳細資料的圖片"
+
+msgctxt "#31138"
+msgid "Showcase"
+msgstr "展示"
+
+msgctxt "#31139"
+msgid "One big poster"
+msgstr "一張大海報"
+
+msgctxt "#31140"
+msgid "Banner list"
+msgstr "橫幅清單"
+
+msgctxt "#31141"
+msgid "Wide banner rows"
+msgstr "寬橫幅列"
+
+msgctxt "#31142"
+msgid "Compact list"
+msgstr "緊湊清單"
+
+msgctxt "#31143"
+msgid "Dense rows with poster"
+msgstr "附海報的密集列"
+
+msgctxt "#31144"
+msgid "Episode list"
+msgstr "單集清單"
+
+msgctxt "#31145"
+msgid "Rows with thumbs"
+msgstr "附縮圖的列"
+
+msgctxt "#31146"
+msgid "Season list combined 3"
+msgstr "季清單合併 3"
+
+msgctxt "#31147"
+msgid "Rows with posters"
+msgstr "附海報的列"
+
+msgctxt "#31148"
+msgid "Low list"
+msgstr "低位清單"
+
+msgctxt "#31149"
+msgid "Rows over fanart"
+msgstr "劇照上的列"
+
+msgctxt "#31150"
+msgid "Version"
+msgstr "版本"
+
+msgctxt "#31151"
+msgid "Type"
+msgstr "類型"
+
+msgctxt "#31152"
+msgid "Installed"
+msgstr "已安裝"
+
+msgctxt "#31153"
+msgid "Updated"
+msgstr "已更新"
+
+msgctxt "#31154"
+msgid "Channel"
+msgstr "頻道"
+
+msgctxt "#31155"
+msgid "Other"
+msgstr "其他"
+
+msgctxt "#31156"
+msgid "Jump to now"
+msgstr "跳到現在"
+
+msgctxt "#31157"
+msgid "Choose channel"
+msgstr "選擇頻道"
+
+msgctxt "#31158"
+msgid "Choose channel group"
+msgstr "選擇頻道群組"
+
+msgctxt "#31159"
+msgid "Choose date"
+msgstr "選擇日期"
+
+msgctxt "#31160"
+msgid "Recordings"
+msgstr "錄影"
+
+msgctxt "#31161"
+msgid "Timers"
+msgstr "定時器"
+
+msgctxt "#31162"
+msgid "Timer rules"
+msgstr "定時規則"
+
+msgctxt "#31163"
+msgid "Search guide"
+msgstr "搜尋節目表"
+
+msgctxt "#31164"
+msgid "Return to guide"
+msgstr "返回節目表"
+
+msgctxt "#31165"
+msgid "Exit guide"
+msgstr "離開節目表"
+
+msgctxt "#31166"
+msgid "Band"
+msgstr "樂團"
+
+msgctxt "#31167"
+msgid "Artist"
+msgstr "藝人"
+
+msgctxt "#31168"
+msgid "Title"
+msgstr "標題"
+
+msgctxt "#31169"
+msgid "Composer"
+msgstr "作曲"
+
+msgctxt "#31170"
+msgid "Conductor"
+msgstr "指揮"
+
+msgctxt "#31171"
+msgid "Album"
+msgstr "專輯"
+
+msgctxt "#31172"
+msgid "Comment"
+msgstr "備註"
+
+msgctxt "#31173"
+msgid "Studio  ·  hotline"
+msgstr "錄音室  ·  熱線"
+
+msgctxt "#31174"
+msgid "Studio phone"
+msgstr "錄音室電話"
+
+msgctxt "#31175"
+msgid "Studio email"
+msgstr "錄音室電子郵件"
+
+msgctxt "#31176"
+msgid "Studio SMS"
+msgstr "錄音室簡訊"
+
+msgctxt "#31177"
+msgid "Hotline phone"
+msgstr "熱線電話"
+
+msgctxt "#31178"
+msgid "Hotline email"
+msgstr "熱線電子郵件"
+
+msgctxt "#31179"
+msgid "Programme"
+msgstr "節目"
+
+msgctxt "#31180"
+msgid "Style"
+msgstr "風格"
+
+msgctxt "#31181"
+msgid "Station"
+msgstr "電台"
+
+msgctxt "#31182"
+msgid "Host"
+msgstr "主持人"
+
+msgctxt "#31183"
+msgid "Editorial"
+msgstr "編輯部"
+
+msgctxt "#31184"
+msgid "Website"
+msgstr "網站"
+
+msgctxt "#31185"
+msgid "Radiotext"
+msgstr "廣播文字"
+
+msgctxt "#31186"
+msgid "ENDS"
+msgstr "結束"
+
+msgctxt "#31187"
+msgid "Search manually…"
+msgstr "手動搜尋…"
+
+msgctxt "#31189"
+msgid "TRUEHD  7.1"
+msgstr "TRUEHD  7.1"
+
+msgctxt "#31190"
+msgid "Some stories never end."
+msgstr "有些故事永遠不會結束。"
+
+msgctxt "#31191"
+msgid "A retired detective is pulled back into a case he thought was closed, and the closer he looks the less of it makes sense."
+msgstr "一名退休警探被拉回一樁他以為早已結案的案子，越是細看，越覺得說不通。"
+
+msgctxt "#31194"
+msgid "Trakt 78"
+msgstr "Trakt 78"
+
+msgctxt "#31195"
+msgid "Controls stay hidden when you pause."
+msgstr "暫停時控制列保持隱藏。"
+
+msgctxt "#31196"
+msgid "Controls open 1 second after you pause."
+msgstr "暫停 1 秒後開啟控制列。"
+
+msgctxt "#31197"
+msgid "Controls open 3 seconds after you pause."
+msgstr "暫停 3 秒後開啟控制列。"
+
+msgctxt "#31198"
+msgid "Controls open 5 seconds after you pause."
+msgstr "暫停 5 秒後開啟控制列。"
+
+msgctxt "#31199"
+msgid "Controls open 2 seconds after you pause."
+msgstr "暫停 2 秒後開啟控制列。"
+
+msgctxt "#31278"
+msgid "Play"
+msgstr "播放"
+
+msgctxt "#31279"
+msgid "More information"
+msgstr "更多資訊"
+
+msgctxt "#31295"
+msgid "NOW ON TV"
+msgstr "正在播出"
+
+msgctxt "#31296"
+msgid "PRESS UP FOR THE FULL GUIDE"
+msgstr "按上查看完整節目表"
+
+msgctxt "#31297"
+msgid "NO LYRICS FOR THIS SONG"
+msgstr "這首歌沒有歌詞"
+
+msgctxt "#31298"
+msgid "Artists"
+msgstr "藝人"
+
+msgctxt "#31299"
+msgid "Albums"
+msgstr "專輯"
+
+msgctxt "#31343"
+msgid "Songs"
+msgstr "歌曲"
+
+msgctxt "#31344"
+msgid "Genres"
+msgstr "類型"
+
+msgctxt "#31345"
+msgid "Menu: view, sort"
+msgstr "選單：檢視、排序"
+
+msgctxt "#31346"
+msgid "MUSIC LIBRARY"
+msgstr "音樂媒體櫃"
+
+msgctxt "#31347"
+msgid "SUBTITLES"
+msgstr "字幕"
+
+msgctxt "#31348"
+msgid "AUDIO"
+msgstr "音訊"
+
+msgctxt "#31349"
+msgid "VIDEO"
+msgstr "視訊"
+
+msgctxt "#31350"
+msgid "CHAPTERS"
+msgstr "章節"
+
+msgctxt "#31351"
+msgid "INFO"
+msgstr "資訊"
+
+msgctxt "#31352"
+msgid "STATS"
+msgstr "統計"
+
+msgctxt "#31353"
+msgid "TV SHOWS"
+msgstr "影集"
+
+msgctxt "#31354"
+msgid "MOVIES"
+msgstr "電影"
+
+msgctxt "#31355"
+msgid "BUFFERING"
+msgstr "緩衝中"
+
+msgctxt "#31356"
+msgid "PAUSED"
+msgstr "已暫停"
+
+msgctxt "#31357"
+msgid "ADDED"
+msgstr "已新增"
+
+msgctxt "#31358"
+msgid "Custom path"
+msgstr "自訂路徑"
+
+msgctxt "#31359"
+msgid "Recently added"
+msgstr "最近新增"
+
+msgctxt "#31360"
+msgid "Recently watched"
+msgstr "最近觀看"
+
+msgctxt "#31361"
+msgid "In progress"
+msgstr "正在觀看"
+
+msgctxt "#31362"
+msgid "Top rated"
+msgstr "高評分"
+
+msgctxt "#31363"
+msgid "All movies"
+msgstr "所有電影"
+
+msgctxt "#31364"
+msgid "Unwatched shows"
+msgstr "未觀看的影集"
+
+msgctxt "#31365"
+msgid "Random shows"
+msgstr "隨機影集"
+
+msgctxt "#31366"
+msgid "Top rated shows"
+msgstr "高評分影集"
+
+msgctxt "#31367"
+msgid "All shows"
+msgstr "所有影集"
+
+msgctxt "#31368"
+msgid "Recently played"
+msgstr "最近播放"
+
+msgctxt "#31369"
+msgid "Random albums"
+msgstr "隨機專輯"
+
+msgctxt "#31370"
+msgid "Shut down"
+msgstr "關機"
+
+msgctxt "#31371"
+msgid "Reboot to Android"
+msgstr "重新開機到 Android"
+
+msgctxt "#31372"
+msgid "Quit Kodi"
+msgstr "結束 Kodi"
+
+msgctxt "#31373"
+msgid "Update video library"
+msgstr "更新視訊媒體櫃"
+
+msgctxt "#31374"
+msgid "Update music library"
+msgstr "更新音樂媒體櫃"
+
+msgctxt "#31375"
+msgid "Clean video library"
+msgstr "清理視訊媒體櫃"
+
+msgctxt "#31376"
+msgid "Clean music library"
+msgstr "清理音樂媒體櫃"
+
+msgctxt "#31377"
+msgid "Power menu"
+msgstr "電源選單"
+
+msgctxt "#31378"
+msgid "TV shows"
+msgstr "電視影集"
+
+msgctxt "#31379"
+msgid "MUSIC"
+msgstr "音樂"
+
+msgctxt "#31380"
+msgid "LISTEN"
+msgstr "聆聽"
+
+msgctxt "#31381"
+msgid "WATCH"
+msgstr "觀看"
+
+msgctxt "#31382"
+msgid "Latest added"
+msgstr "最新新增"
+
+msgctxt "#31383"
+msgid "Last played"
+msgstr "最近播放"
+
+msgctxt "#31384"
+msgid "Movies, TV shows, Music or Power"
+msgstr "電影、電視影集、音樂或電源"
+
+msgctxt "#31385"
+msgid "Position 1 is the first page you reach with Up"
+msgstr "位置 1 是按「上」到達的第一個頁面"
+
+msgctxt "#31386"
+msgid "What this position shows. Off hides it"
+msgstr "此位置顯示的內容。關則隱藏"
+
+msgctxt "#31387"
+msgid "OK types a name, Left clears it"
+msgstr "OK 輸入名稱，左鍵清除"
+
+msgctxt "#31388"
+msgid "Used when Category = Custom path (a library path, playlist or add-on folder)"
+msgstr "在 類別 = 自訂路徑 時使用（媒體櫃路徑、播放清單或附加元件資料夾）"
+
+msgctxt "#31389"
+msgid "How many items the page cycles through (default 15)"
+msgstr "頁面輪播的項目數（預設 15）"
+
+msgctxt "#31390"
+msgid "Order of the items on this page"
+msgstr "此頁面上項目的順序"
+
+msgctxt "#31391"
+msgid "Flip the sort order"
+msgstr "反轉排序"
+
+msgctxt "#31392"
+msgid "Step through the items by itself"
+msgstr "自動輪播項目"
+
+msgctxt "#31393"
+msgid "Seconds each item stays (default 10)"
+msgstr "每項停留秒數（預設 10）"
+
+msgctxt "#31394"
+msgid "SERIES PREMIERE"
+msgstr "影集首播"
+
+msgctxt "#31395"
+msgid "SEASON PREMIERE"
+msgstr "季首播"
+
+msgctxt "#31396"
+msgid "SERIES FINALE"
+msgstr "影集完結篇"
+
+msgctxt "#31397"
+msgid "SEASON FINALE"
+msgstr "季終集"
+
+msgctxt "#31398"
+msgid "Movie sets"
+msgstr "電影系列"
+
+msgctxt "#31399"
+msgid "Autoscroll off"
+msgstr "自動捲動 關"
+
+msgctxt "#31400"
+msgid "Random movies"
+msgstr "隨機電影"
+
+msgctxt "#31401"
+msgid "Recently added movies"
+msgstr "最近新增的電影"
+
+msgctxt "#31402"
+msgid "Recently played movies"
+msgstr "最近播放的電影"
+
+msgctxt "#31403"
+msgid "Top rated movies"
+msgstr "高評分電影"
+
+msgctxt "#31404"
+msgid "Most played movies"
+msgstr "最常播放的電影"
+
+msgctxt "#31405"
+msgid "Newest movies"
+msgstr "最新電影"
+
+msgctxt "#31406"
+msgid "Title movies"
+msgstr "依標題排列的電影"
+
+msgctxt "#31407"
+msgid "Recently added shows"
+msgstr "最近新增的影集"
+
+msgctxt "#31408"
+msgid "Recently played shows"
+msgstr "最近播放的影集"
+
+msgctxt "#31409"
+msgid "Most played shows"
+msgstr "最常播放的影集"
+
+msgctxt "#31410"
+msgid "Newest shows"
+msgstr "最新影集"
+
+msgctxt "#31411"
+msgid "Title shows"
+msgstr "依標題排列的影集"
+
+msgctxt "#31412"
+msgid "Recently added albums"
+msgstr "最近新增的專輯"
+
+msgctxt "#31413"
+msgid "Recently played albums"
+msgstr "最近播放的專輯"
+
+msgctxt "#31414"
+msgid "Top rated albums"
+msgstr "高評分專輯"
+
+msgctxt "#31415"
+msgid "Most played albums"
+msgstr "最常播放的專輯"
+
+msgctxt "#31416"
+msgid "Newest albums"
+msgstr "最新專輯"
+
+msgctxt "#31417"
+msgid "Title albums"
+msgstr "依標題排列的專輯"
+
+msgctxt "#31418"
+msgid "FULL HD"
+msgstr "FULL HD"
+
+msgctxt "#31419"
+msgid "DOLBY VISION"
+msgstr "DOLBY VISION"
+
+msgctxt "#31420"
+msgid "TRUEHD ATMOS"
+msgstr "TRUEHD ATMOS"
+
+msgctxt "#31421"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31422"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31423"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31424"
+msgid "TRUEHD"
+msgstr "TRUEHD"
+
+msgctxt "#31425"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31426"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31427"
+msgid "FLAC"
+msgstr "FLAC"
+
+msgctxt "#31428"
+msgid "ALAC"
+msgstr "ALAC"
+
+msgctxt "#31429"
+msgid "OPUS"
+msgstr "OPUS"
+
+msgctxt "#31430"
+msgid "VORBIS"
+msgstr "VORBIS"
+
+msgctxt "#31431"
+msgid "RATED NC-17"
+msgstr "分級 NC-17"
+
+msgctxt "#31432"
+msgid "RATED PG-13"
+msgstr "分級 PG-13"
+
+msgctxt "#31433"
+msgid "RATED PG"
+msgstr "分級 PG"
+
+msgctxt "#31434"
+msgid "RATED R"
+msgstr "分級 R"
+
+msgctxt "#31435"
+msgid "RATED G"
+msgstr "分級 G"
+
+msgctxt "#31436"
+msgid "RATED TV-MA"
+msgstr "分級 TV-MA"
+
+msgctxt "#31437"
+msgid "RATED TV-14"
+msgstr "分級 TV-14"
+
+msgctxt "#31438"
+msgid "RATED TV-PG"
+msgstr "分級 TV-PG"
+
+msgctxt "#31439"
+msgid "RATED TV-Y7"
+msgstr "分級 TV-Y7"
+
+msgctxt "#31440"
+msgid "RATED TV-Y"
+msgstr "分級 TV-Y"
+
+msgctxt "#31441"
+msgid "RATED TV-G"
+msgstr "分級 TV-G"
+
+msgctxt "#31442"
+msgid "ULTRA"
+msgstr "ULTRA"
+
+msgctxt "#31443"
+msgid "FULL"
+msgstr "FULL"
+
+msgctxt "#31444"
+msgid "READY"
+msgstr "READY"
+
+msgctxt "#31445"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31446"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31447"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31448"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31449"
+msgid "MEDIA"
+msgstr "媒體"
+
+msgctxt "#31450"
+msgid "RATING"
+msgstr "評分"
+
+msgctxt "#31451"
+msgid "CERTIFICATION"
+msgstr "分級"
+
+msgctxt "#31452"
+msgid "CREDITS"
+msgstr "演職人員"
+
+msgctxt "#31453"
+msgid "FIRST AIRED"
+msgstr "首播"
+
+msgctxt "#31454"
+msgid "STUDIO"
+msgstr "製片公司"
+
+msgctxt "#31455"
+msgid "GENRE"
+msgstr "類型"
+
+msgctxt "#31456"
+msgid "CAST"
+msgstr "演員"
+
+msgctxt "#31457"
+msgid "HD READY"
+msgstr "HD READY"
+
+msgctxt "#31458"
+msgid "BOXED SET"
+msgstr "套裝"
+
+msgctxt "#31459"
+msgid "* ALL SEASONS"
+msgstr "* 全部季"
+
+msgctxt "#31460"
+msgid "For now"
+msgstr "現在看"
+
+msgctxt "#31461"
+msgid "Kept all day"
+msgstr "保留一整天"
+
+msgctxt "#31462"
+msgid "Past midnight"
+msgstr "已過午夜"
+
+msgctxt "#31463"
+msgid "Still up?"
+msgstr "還沒睡？"
+
+msgctxt "#31464"
+msgid "Nearly bedtime."
+msgstr "快到睡覺時間了。"
+
+msgctxt "#31465"
+msgid "Good evening."
+msgstr "晚安。"
+
+msgctxt "#31466"
+msgid "Good afternoon."
+msgstr "午安。"
+
+msgctxt "#31467"
+msgid "Good morning."
+msgstr "早安。"
+
+msgctxt "#31468"
+msgid "Short ones: under 100 minutes"
+msgstr "短片：不到 100 分鐘"
+
+msgctxt "#31469"
+msgid "The evening is yours"
+msgstr "今晚屬於你"
+
+msgctxt "#31470"
+msgid "A free afternoon: something long"
+msgstr "空閒的下午：來部長的"
+
+msgctxt "#31471"
+msgid "Plenty of aeon left"
+msgstr "時間還多著呢"
+
+msgctxt "#31472"
+msgid "Sunday morning: take it slow"
+msgstr "週日早晨：慢慢來"
+
+msgctxt "#31473"
+msgid "A slow start: something light"
+msgstr "慢慢開始：來點輕鬆的"
+
+msgctxt "#31474"
+msgid "Needs a weather add-on in Kodi's settings"
+msgstr "需要在 Kodi 設定中啟用天氣附加元件"
+
+msgctxt "#31475"
+msgid "From the weather add-on set in Kodi"
+msgstr "來自 Kodi 中設定的天氣附加元件"
+
+msgctxt "#31476"
+msgid "Tropical storm"
+msgstr "熱帶風暴"
+
+msgctxt "#31477"
+msgid "Severe storms"
+msgstr "強烈雷暴"
+
+msgctxt "#31478"
+msgid "Rain and snow"
+msgstr "雨夾雪"
+
+msgctxt "#31479"
+msgid "Rain and sleet"
+msgstr "雨和冰珠"
+
+msgctxt "#31480"
+msgid "Snow and sleet"
+msgstr "雪和冰珠"
+
+msgctxt "#31481"
+msgid "Freezing drizzle"
+msgstr "凍毛毛雨"
+
+msgctxt "#31482"
+msgid "Freezing rain"
+msgstr "凍雨"
+
+msgctxt "#31483"
+msgid "Snow flurries"
+msgstr "陣雪"
+
+msgctxt "#31484"
+msgid "Light snow"
+msgstr "小雪"
+
+msgctxt "#31485"
+msgid "Blowing snow"
+msgstr "吹雪"
+
+msgctxt "#31486"
+msgid "Mostly cloudy"
+msgstr "大致多雲"
+
+msgctxt "#31487"
+msgid "Partly cloudy"
+msgstr "局部多雲"
+
+msgctxt "#31488"
+msgid "Rain and hail"
+msgstr "雨和冰雹"
+
+msgctxt "#31489"
+msgid "Isolated storms"
+msgstr "局部雷暴"
+
+msgctxt "#31490"
+msgid "Scattered storms"
+msgstr "零星雷暴"
+
+msgctxt "#31491"
+msgid "Scattered showers"
+msgstr "零星陣雨"
+
+msgctxt "#31492"
+msgid "Heavy snow"
+msgstr "大雪"
+
+msgctxt "#31493"
+msgid "Snow showers"
+msgstr "陣雪"
+
+msgctxt "#31494"
+msgid "More under 100 minutes"
+msgstr "更多不到 100 分鐘的"
+
+msgctxt "#31495"
+msgid "Sunday morning: documentaries"
+msgstr "週日早晨：紀錄片"
+
+msgctxt "#31496"
+msgid "Morning shorts: under 100 minutes"
+msgstr "晨間短片：不到 100 分鐘"
+
+msgctxt "#31497"
+msgid "A long afternoon film"
+msgstr "一部長的午後電影"
+
+msgctxt "#31498"
+msgid "Top rated, still unwatched"
+msgstr "高評分，尚未觀看"
+
+msgctxt "#31499"
+msgid "Tonight's top rated"
+msgstr "今晚的高評分"
+
+msgctxt "#31500"
+msgid "Before bed"
+msgstr "睡前"
+
+msgctxt "#31501"
+msgid "This morning"
+msgstr "今天早上"
+
+msgctxt "#31502"
+msgid "This afternoon"
+msgstr "今天下午"
+
+msgctxt "#31503"
+msgid "Later today"
+msgstr "今天稍晚"
+
+msgctxt "#31504"
+msgid "One more episode"
+msgstr "再看一集"
+
+msgctxt "#31505"
+msgid "Next up"
+msgstr "接下來"
+
+msgctxt "#31506"
+msgid "It's snowing: something long"
+msgstr "在下雪：來部長的"
+
+msgctxt "#31507"
+msgid "Still raining: under an hour"
+msgstr "還在下雨：不到一小時"
+
+msgctxt "#31508"
+msgid "It's raining: something long"
+msgstr "在下雨：來部長的"
+
+msgctxt "#31509"
+msgid "Just added"
+msgstr "剛剛新增"
+
+msgctxt "#31510"
+msgid "Download subtitles"
+msgstr "下載字幕"
+
+msgctxt "#31511"
+msgid "Subtitle settings"
+msgstr "字幕設定"
+
+msgctxt "#31512"
+msgid "What's new"
+msgstr "新內容"
+
+msgctxt "#31513"
+msgid "Nothing to suggest right now."
+msgstr "現在沒有可推薦的。"
+
+msgctxt "#31514"
+msgid "Clean library?"
+msgstr "清理媒體櫃？"
+
+msgctxt "#31515"
+msgid "Music videos"
+msgstr "音樂錄影帶"
+
+msgctxt "#31516"
+msgid "Kodi takes out the songs, albums and artists it can no longer find. Your files stay where they are."
+msgstr "Kodi 會移除它找不到的歌曲、專輯和藝人。你的檔案保持原處。"
+
+msgctxt "#31517"
+msgid "Kodi takes out the films, shows and episodes it can no longer find. Your files stay where they are."
+msgstr "Kodi 會移除它找不到的電影、影集和單集。你的檔案保持原處。"
+
+msgctxt "#31518"
+msgid "Add-on settings"
+msgstr "附加元件設定"
+
+msgctxt "#31519"
+msgid "Get more"
+msgstr "取得更多"
+
+msgctxt "#31520"
+msgid "Slideshow"
+msgstr "幻燈片"
+
+msgctxt "#31521"
+msgid "Recursive slideshow"
+msgstr "包含子資料夾的幻燈片"
+
+msgctxt "#31522"
+msgid "Randomise"
+msgstr "隨機排序"
+
+msgctxt "#31523"
+msgid "Edited  locked"
+msgstr "已編輯  已鎖定"
+
+msgctxt "#31524"
+msgid "Shuffle  ·  Repeat one"
+msgstr "隨機  ·  單曲重複"
+
+msgctxt "#31525"
+msgid "Shuffle  ·  Repeat all"
+msgstr "隨機  ·  全部重複"
+
+msgctxt "#31526"
+msgid "Repeat one"
+msgstr "單曲重複"
+
+msgctxt "#31527"
+msgid "Repeat all"
+msgstr "全部重複"
+
+msgctxt "#31528"
+msgid "Video queue"
+msgstr "視訊佇列"
+
+msgctxt "#31529"
+msgid "Shuffle: on"
+msgstr "隨機：開"
+
+msgctxt "#31530"
+msgid "Shuffle: off"
+msgstr "隨機：關"
+
+msgctxt "#31531"
+msgid "Play all"
+msgstr "全部播放"
+
+msgctxt "#31532"
+msgid "Shuffle"
+msgstr "隨機"
+
+msgctxt "#31533"
+msgid "Refresh"
+msgstr "重新整理"
+
+msgctxt "#31534"
+msgid "Added"
+msgstr "已新增"
+
+msgctxt "#31535"
+msgid "Plays"
+msgstr "播放次數"
+
+msgctxt "#31536"
+msgid "Mood"
+msgstr "情緒"
+
+msgctxt "#31537"
+msgid "Album info"
+msgstr "專輯資訊"
+
+msgctxt "#31538"
+msgid "Artist info"
+msgstr "藝人資訊"
+
+msgctxt "#31539"
+msgid "About the artist"
+msgstr "關於藝人"
+
+msgctxt "#31552"
+msgid "About the song"
+msgstr "關於歌曲"
+
+msgctxt "#31553"
+msgid "About the album"
+msgstr "關於專輯"
+
+msgctxt "#31554"
+msgid "OK reads all of it"
+msgstr "OK 閱讀全文"
+
+msgctxt "#31555"
+msgid "Up returns to the buttons"
+msgstr "上返回按鈕"
+
+msgctxt "#31556"
+msgid "Right for the full story"
+msgstr "右查看完整內容"
+
+msgctxt "#31557"
+msgid "Shuffle on"
+msgstr "隨機開"
+
+msgctxt "#31558"
+msgid "Music video"
+msgstr "音樂錄影帶"
+
+msgctxt "#31559"
+msgid "HEVC"
+msgstr "HEVC"
+
+msgctxt "#31560"
+msgid "Dolby Vision"
+msgstr "Dolby Vision"
+
+msgctxt "#31561"
+msgid "TrueHD Atmos"
+msgstr "TrueHD Atmos"
+
+msgctxt "#31562"
+msgid "DD+ Atmos"
+msgstr "DD+ Atmos"
+
+msgctxt "#31563"
+msgid "Video"
+msgstr "視訊"
+
+msgctxt "#31564"
+msgid "Chapters"
+msgstr "章節"
+
+msgctxt "#31565"
+msgid "Info"
+msgstr "資訊"
+
+msgctxt "#31566"
+msgid "Stats"
+msgstr "統計"
+
+msgctxt "#31567"
+msgid "Sleeping after this"
+msgstr "播完後將睡眠"
+
+msgctxt "#31568"
+msgid "Sleep after this"
+msgstr "播完後睡眠"
+
+msgctxt "#31569"
+msgid "1 RESULT"
+msgstr "1 個結果"
+
+msgctxt "#31575"
+msgid "Colors, backdrop and the look of the settings screens."
+msgstr "顏色、背景和設定畫面的外觀。"
+
+msgctxt "#31576"
+msgid "Show a dimmed copy of the last fanart you looked at behind the settings screens."
+msgstr "在設定畫面後方顯示最後看到的劇照的暗化副本。"
+
+msgctxt "#31577"
+msgid "Background of the A-Z / scroll bar strip in the library views: dark (default) or white like Aeon 2."
+msgstr "媒體櫃檢視中 A-Z / 捲軸的背景：深色（預設）或像 Aeon 2 那樣的白色。"
+
+msgctxt "#31578"
+msgid "Aeon style: neutral (flat dark), the faint fanart, or a color that follows the artwork and fades between titles. Override it per home menu item (Edit spotlight)."
+msgstr "Aeon 風格：中性（純深色）、淡淡的劇照，或跟隨圖片並在作品間漸變的顏色。可依主選單項目修改（編輯 Spotlight）。"
+
+msgctxt "#31579"
+msgid "Aeon: flat dark panels and a white highlight bar (like the Aeon 2 list). Aeon Glass: translucent panels and a soft highlight. Applies to every library view."
+msgstr "Aeon：純深色面板和白色高亮條（像 Aeon 2 的清單）。Aeon Glass：半透明面板和柔和高亮。適用於所有媒體櫃檢視。"
+
+msgctxt "#31580"
+msgid "Where the music that is playing shows on Home: Slot (lower left, default), Corner (top left), Line (above the menu) or Bar (bottom)."
+msgstr "正在播放的音樂在首頁的位置：插槽（左下，預設）、角落（左上）、列（選單上方）或橫條（底部）。"
+
+msgctxt "#31581"
+msgid "How visible the fanart backdrop is."
+msgstr "劇照背景的可見程度。"
+
+msgctxt "#31582"
+msgid "Tags, plot text and logos in the movie and episode views."
+msgstr "電影和單集檢視中的標籤、劇情和標誌。"
+
+msgctxt "#31583"
+msgid "Resolution and video codec in the tag line under a film or episode."
+msgstr "電影或單集下方標籤列中的解析度和視訊編碼。"
+
+msgctxt "#31584"
+msgid "Shows HDR10, HLG or Dolby Vision in the tag line when the file has it."
+msgstr "檔案有時在標籤列顯示 HDR10、HLG 或 Dolby Vision。"
+
+msgctxt "#31585"
+msgid "Audio codec and channel count in the tag line."
+msgstr "標籤列中的音訊編碼和聲道數。"
+
+msgctxt "#31586"
+msgid "What the text under a film shows: the full plot, or the tagline when the film has one."
+msgstr "電影下方的文字顯示什麼：完整劇情，或電影有標語時顯示標語。"
+
+msgctxt "#31587"
+msgid "Long plots scroll by themselves after a few seconds."
+msgstr "長劇情會在幾秒後自動捲動。"
+
+msgctxt "#31588"
+msgid "The studio logo beside seasons and episodes (needs the studio logos resource add-on)."
+msgstr "季和單集旁的製片公司標誌（需要製片公司標誌資源附加元件）。"
+
+msgctxt "#31589"
+msgid "Which rating sources show, and whether the score is colored."
+msgstr "顯示哪些評分來源，以及分數是否著色。"
+
+msgctxt "#31590"
+msgid "Green from 7, amber from 5, red below."
+msgstr "7 分起綠色，5 分起琥珀色，以下紅色。"
+
+msgctxt "#31591"
+msgid "Shows the IMDb score when the library has one. Several sources can be on at once."
+msgstr "媒體櫃中有 IMDb 分數時顯示。可同時開啟多個來源。"
+
+msgctxt "#31592"
+msgid "Shows the TMDb score when the library has one."
+msgstr "媒體櫃中有 TMDb 分數時顯示。"
+
+msgctxt "#31593"
+msgid "Shows the Tomatometer when your scraper or TMDb Helper provides it."
+msgstr "你的刮削器或 TMDb Helper 提供時顯示爛番茄指數。"
+
+msgctxt "#31594"
+msgid "Shows the Trakt score when it is in the library."
+msgstr "媒體櫃中有 Trakt 分數時顯示。"
+
+msgctxt "#31595"
+msgid "Seek bar, pause behaviour and the Back button."
+msgstr "進度列、暫停行為和返回鍵。"
+
+msgctxt "#31596"
+msgid "What the right-hand time of the seek bar shows: the total length, the time left, or when it ends."
+msgstr "進度列右側時間顯示什麼：總長度、剩餘時間或結束時間。"
+
+msgctxt "#31597"
+msgid "The player controls open by themselves when you pause."
+msgstr "暫停時播放器控制列自動開啟。"
+
+msgctxt "#31598"
+msgid "How long after pausing the controls open."
+msgstr "暫停後多久開啟控制列。"
+
+msgctxt "#31599"
+msgid "Back goes up one level, or straight to the home screen."
+msgstr "返回鍵回到上一層，或直接回到首頁畫面。"
+
+msgctxt "#31600"
+msgid "Extra fanart and the artist slideshow."
+msgstr "額外劇照和藝人幻燈片。"
+
+msgctxt "#31601"
+msgid "Home and the library cycle through a film or show's extra fanart. Needs extra fanart in the library (fanart1, fanart2 ...)."
+msgstr "首頁和媒體櫃輪流顯示電影或影集的額外劇照。需要媒體櫃中有額外劇照（fanart1、fanart2 ...）。"
+
+msgctxt "#31602"
+msgid "How long each fanart image stays."
+msgstr "每張劇照停留多久。"
+
+msgctxt "#31603"
+msgid "Now playing shows the Artist Slideshow add-on pictures of the artist (needs script.artistslideshow)."
+msgstr "正在播放畫面顯示 Artist Slideshow 附加元件中的藝人照片（需要 script.artistslideshow）。"
+
+msgctxt "#31604"
+msgid "What the full-screen widget pages (Up on a home item) show."
+msgstr "全螢幕小工具頁面（在首頁項目上按上）顯示的內容。"
+
+msgctxt "#31605"
+msgid "Resolution, codec, HDR and audio tags on the full-screen widget pages (the choices under Details apply)."
+msgstr "全螢幕小工具頁面上的解析度、編碼、HDR 和音訊標籤（詳細資料下的選擇適用）。"
+
+msgctxt "#31606"
+msgid "The rating line, with the sources you chose under Ratings, on the full-screen widget pages."
+msgstr "全螢幕小工具頁面上的評分列，使用評分中選擇的來源。"
+
+msgctxt "#31607"
+msgid "The studio logo, or the network logo for episodes, on the full-screen widget pages (needs the studio logos add-on)."
+msgstr "全螢幕小工具頁面上的製片公司標誌，單集顯示電視台標誌（需要製片公司標誌附加元件）。"
+
+msgctxt "#31608"
+msgid "Watched markers on posters, the trailer button and logos instead of titles."
+msgstr "海報上的已觀看標記、預告片按鈕以及代替標題的標誌。"
+
+msgctxt "#31609"
+msgid "How the playback controls behave."
+msgstr "播放控制的行為。"
+
+msgctxt "#31610"
+msgid "Fonts for each part of the skin, calmer animations, and a way back to the default settings."
+msgstr "面板各部分的字型、更平靜的動畫以及恢復預設設定的方法。"
+
+msgctxt "#31611"
+msgid "Unwatched: a small dot. Watched: a check disc. Shows add the number of unwatched episodes."
+msgstr "未觀看：小圓點。已觀看：勾選圓圈。影集還會顯示未觀看單集數。"
+
+msgctxt "#31612"
+msgid "Shows a Trailer button next to Play when a film has a trailer link (played through the YouTube add-on)."
+msgstr "電影有預告片連結時，在播放旁邊顯示預告片按鈕（透過 YouTube 附加元件播放）。"
+
+msgctxt "#31613"
+msgid "How long the playback controls stay up after your last button press. They stay while paused and while a menu is open."
+msgstr "最後一次按鍵後播放控制顯示多久。暫停時和選單開啟時會一直顯示。"
+
+msgctxt "#31614"
+msgid "Where the subtitle and audio offset strip appears while you sync. Top keeps bottom subtitles in view."
+msgstr "同步時字幕和音訊偏移條出現的位置。頂端可讓底部字幕保持可見。"
+
+msgctxt "#31615"
+msgid "Replaces zooms, slides and the rain with short fades. Focus changes stay instant."
+msgstr "用短淡入淡出取代縮放、滑動和雨效果。焦點切換仍然即時。"
+
+msgctxt "#31616"
+msgid "Puts every skin setting back to its default and reloads the skin. Press OK twice to confirm."
+msgstr "將每項面板設定恢復為預設並重新載入面板。按兩次 OK 確認。"
+
+msgctxt "#31617"
+msgid "Aeon Fuse options. Kodi's settings live under Settings; switch skins in Settings > Interface > Skin."
+msgstr "Aeon Fuse 選項。Kodi 的設定在「設定」中；切換面板：設定 > 介面 > 面板。"
+
+msgctxt "#31618"
+msgid "Resume"
+msgstr "繼續播放"
+
+msgctxt "#31619"
+msgid "From start"
+msgstr "從頭開始"
+
+msgctxt "#31620"
+msgid "Browse"
+msgstr "瀏覽"
+
+msgctxt "#31621"
+msgid "Trailer"
+msgstr "預告片"
+
+msgctxt "#31622"
+msgid "Collection"
+msgstr "系列"
+
+msgctxt "#31623"
+msgid "More by the director"
+msgstr "導演的更多作品"
+
+msgctxt "#31624"
+msgid "Versions"
+msgstr "版本"
+
+msgctxt "#31625"
+msgid "Extras"
+msgstr "花絮"
+
+msgctxt "#31626"
+msgid "Choose art"
+msgstr "選擇圖片"
+
+msgctxt "#31627"
+msgid "Choose fanart"
+msgstr "選擇劇照"
+
+msgctxt "#31628"
+msgid "Films in this collection"
+msgstr "此系列中的電影"
+
+msgctxt "#31629"
+msgid "OK reads the whole story"
+msgstr "OK 閱讀完整劇情"
+
+msgctxt "#31630"
+msgid "Up or Back returns to the buttons"
+msgstr "上或返回鍵回到按鈕"
+
+msgctxt "#31631"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31632"
+msgid "No story written for this one yet."
+msgstr "這一部還沒有劇情簡介。"
+
+msgctxt "#31633"
+msgid "Shows in progress"
+msgstr "正在觀看的影集"
+
+msgctxt "#31635"
+msgid "A collection: OK opens its films."
+msgstr "一個系列：OK 開啟其中的電影。"
+
+msgctxt "#31636"
+msgid "Nothing left: a good time for something new."
+msgstr "沒有剩下的了：正好看點新的。"
+
+msgctxt "#31637"
+msgid "Ending at"
+msgstr "結束於"
+
+msgctxt "#31638"
+msgid "PRESETS"
+msgstr "預設"
+
+msgctxt "#31639"
+msgid "LYRICS"
+msgstr "歌詞"
+
+msgctxt "#31640"
+msgid "No guide data. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "沒有節目表資料。在 PVR 與直播電視設定中啟用 PVR 用戶端附加元件。"
+
+msgctxt "#31641"
+msgid "Feels like"
+msgstr "體感溫度"
+
+msgctxt "#31642"
+msgid "Humidity"
+msgstr "濕度"
+
+msgctxt "#31643"
+msgid "Wind"
+msgstr "風"
+
+msgctxt "#31644"
+msgid "Precipitation"
+msgstr "降水"
+
+msgctxt "#31645"
+msgid "UV index"
+msgstr "紫外線指數"
+
+msgctxt "#31646"
+msgid "Sunrise"
+msgstr "日出"
+
+msgctxt "#31647"
+msgid "Sunset"
+msgstr "日落"
+
+msgctxt "#31648"
+msgid "Next location"
+msgstr "下一個地點"
+
+msgctxt "#31649"
+msgid "Skin"
+msgstr "面板"
+
+msgctxt "#31650"
+msgid "Address"
+msgstr "地址"
+
+msgctxt "#31651"
+msgid "Screen"
+msgstr "螢幕"
+
+msgctxt "#31652"
+msgid "Aeon Fuse options: look, details, ratings, behaviour, backgrounds and the home menu (order, widgets, submenus)."
+msgstr "Aeon Fuse 選項：外觀、詳細資料、評分、行為、背景和主選單（順序、小工具、子選單）。"
+
+msgctxt "#31653"
+msgid "Video and music playback, refresh-rate matching, subtitle languages and look, discs."
+msgstr "視訊和音樂播放、更新率配對、字幕語言和外觀、光碟。"
+
+msgctxt "#31654"
+msgid "Library behaviour, scrapers, file lists, artwork and what OK does on an item."
+msgstr "媒體櫃行為、刮削器、檔案清單、圖片以及在項目上按 OK 的效果。"
+
+msgctxt "#31655"
+msgid "Skin, colors, fonts, region and language, screensaver. Switch to another skin here: Skin > Skin."
+msgstr "面板、顏色、字型、地區和語言、螢幕保護程式。在此切換到其他面板：面板 > 面板。"
+
+msgctxt "#31656"
+msgid "Browse, update, configure or install add-ons."
+msgstr "瀏覽、更新、設定或安裝附加元件。"
+
+msgctxt "#31657"
+msgid "Web server and JSON-RPC control, UPnP, AirPlay, Zeroconf, SMB client."
+msgstr "網頁伺服器和 JSON-RPC 控制、UPnP、AirPlay、Zeroconf、SMB 用戶端。"
+
+msgctxt "#31658"
+msgid "Display, audio output and passthrough, input, power saving, logging."
+msgstr "顯示、音訊輸出和直通、輸入、省電、記錄。"
+
+msgctxt "#31659"
+msgid "Copy, move and delete files; add network sources."
+msgstr "複製、移動和刪除檔案；新增網路來源。"
+
+msgctxt "#31660"
+msgid "Kodi version, video renderer, storage, network and hardware details."
+msgstr "Kodi 版本、視訊轉譯器、儲存空間、網路和硬體詳細資料。"
+
+msgctxt "#31661"
+msgid "What Kodi has done recently: scans, add-on updates, errors."
+msgstr "Kodi 最近做了什麼：掃描、附加元件更新、錯誤。"
+
+msgctxt "#31662"
+msgid "Profiles and the login screen."
+msgstr "設定檔和登入畫面。"
+
+msgctxt "#31663"
+msgid "Live TV and PVR."
+msgstr "直播電視和 PVR。"
+
+msgctxt "#31664"
+msgid "Games and controllers."
+msgstr "遊戲和控制器。"
+
+msgctxt "#31665"
+msgid "Dark"
+msgstr "深色"
+
+msgctxt "#31666"
+msgid "White"
+msgstr "白色"
+
+msgctxt "#31667"
+msgid "Menu"
+msgstr "選單"
+
+msgctxt "#31668"
+msgid "Position"
+msgstr "位置"
+
+msgctxt "#31669"
+msgid "Category"
+msgstr "類別"
+
+msgctxt "#31670"
+msgid "Hold time"
+msgstr "停留時間"
+
+msgctxt "#31671"
+msgid "Pick an item, then use the buttons on the right. Add item puts a new one at the end."
+msgstr "選擇一個項目，然後使用右側按鈕。新增項目會在末尾加入新項目。"
+
+msgctxt "#31672"
+msgid "Light"
+msgstr "輕"
+
+msgctxt "#31673"
+msgid "Strong"
+msgstr "強"
+
+msgctxt "#31674"
+msgid "Slot"
+msgstr "插槽"
+
+msgctxt "#31675"
+msgid "Corner"
+msgstr "角落"
+
+msgctxt "#31676"
+msgid "Line"
+msgstr "列"
+
+msgctxt "#31677"
+msgid "Bar"
+msgstr "橫條"
+
+msgctxt "#31678"
+msgid "Aeon"
+msgstr "Aeon"
+
+msgctxt "#31679"
+msgid "Aeon Glass"
+msgstr "Aeon Glass"
+
+msgctxt "#31680"
+msgid "Color"
+msgstr "顏色"
+
+msgctxt "#31681"
+msgid "PREVIEW"
+msgstr "預覽"
+
+msgctxt "#31682"
+msgid "LIBRARY LISTS"
+msgstr "媒體櫃清單"
+
+msgctxt "#31683"
+msgid "Focused row"
+msgstr "焦點列"
+
+msgctxt "#31684"
+msgid "Other row"
+msgstr "其他列"
+
+msgctxt "#31685"
+msgid "MUSIC PLAYING"
+msgstr "正在播放音樂"
+
+msgctxt "#31686"
+msgid "SAMPLE"
+msgstr "範例"
+
+msgctxt "#31687"
+msgid "BACKDROP"
+msgstr "背景"
+
+msgctxt "#31688"
+msgid "SCREENSAVER"
+msgstr "螢幕保護程式"
+
+msgctxt "#31689"
+msgid "TITLE"
+msgstr "標題"
+
+msgctxt "#31690"
+msgid "Plot"
+msgstr "劇情"
+
+msgctxt "#31691"
+msgid "Tagline"
+msgstr "標語"
+
+msgctxt "#31692"
+msgid "TAG LINE"
+msgstr "標籤列"
+
+msgctxt "#31693"
+msgid "UNDER THE TITLE"
+msgstr "標題下方"
+
+msgctxt "#31694"
+msgid "PLOT TEXT"
+msgstr "劇情文字"
+
+msgctxt "#31695"
+msgid "Long plots scroll slowly by themselves, so you can read them without a button press."
+msgstr "長劇情會自動緩慢捲動，不必按鍵就能閱讀。"
+
+msgctxt "#31696"
+msgid "The studio logo shows beside a season or episode when the studio logos add-on is installed."
+msgstr "安裝製片公司標誌附加元件後，季或單集旁會顯示製片公司標誌。"
+
+msgctxt "#31697"
+msgid "THEME SONG"
+msgstr "主題曲"
+
+msgctxt "#31699"
+msgid "Plays while a movie or show is selected, if its folder has a theme file."
+msgstr "選取電影或影集時，如果其資料夾有主題檔案就會播放。"
+
+msgctxt "#31700"
+msgid "Total"
+msgstr "總計"
+
+msgctxt "#31701"
+msgid "Left"
+msgstr "剩餘"
+
+msgctxt "#31702"
+msgid "Ends at"
+msgstr "結束於"
+
+msgctxt "#31703"
+msgid "SEEK BAR"
+msgstr "進度列"
+
+msgctxt "#31704"
+msgid "ON PAUSE"
+msgstr "暫停時"
+
+msgctxt "#31705"
+msgid "BACK BUTTON"
+msgstr "返回鍵"
+
+msgctxt "#31706"
+msgid "Pressing Back in a library list goes up one level, or straight to the home screen if you choose Home."
+msgstr "在媒體櫃清單中按返回鍵回到上一層，選擇「首頁」則直接回到首頁。"
+
+msgctxt "#31707"
+msgid "PLAYER CONTROLS"
+msgstr "播放器控制"
+
+msgctxt "#31708"
+msgid "Needs disc art for the album or movie."
+msgstr "需要專輯或電影的光碟圖。"
+
+msgctxt "#31709"
+msgid "FANART"
+msgstr "劇照"
+
+msgctxt "#31710"
+msgid "NOW PLAYING"
+msgstr "正在播放"
+
+msgctxt "#31711"
+msgid "Pictures of the artist from the Artist Slideshow add-on fade in behind the album cover."
+msgstr "Artist Slideshow 附加元件中的藝人照片在專輯封面後淡入。"
+
+msgctxt "#31712"
+msgid "Slide"
+msgstr "滑動"
+
+msgctxt "#31713"
+msgid "Fade"
+msgstr "淡入淡出"
+
+msgctxt "#31714"
+msgid "Cut"
+msgstr "切換"
+
+msgctxt "#31715"
+msgid "MEDIA INFO"
+msgstr "媒體資訊"
+
+msgctxt "#31716"
+msgid "STUDIO / NETWORK"
+msgstr "製片公司 / 電視台"
+
+msgctxt "#31717"
+msgid "The logo of the studio, or of the network for episodes, under the date ring."
+msgstr "日期環下方的製片公司標誌，單集顯示電視台標誌。"
+
+msgctxt "#31718"
+msgid "SPOTLIGHT"
+msgstr "SPOTLIGHT"
+
+msgctxt "#31719"
+msgid "Selected item:"
+msgstr "所選項目："
+
+msgctxt "#31720"
+msgid "Set path / content"
+msgstr "設定路徑 / 內容"
+
+msgctxt "#31721"
+msgid "Edit widgets"
+msgstr "編輯小工具"
+
+msgctxt "#31722"
+msgid "Edit submenu"
+msgstr "編輯子選單"
+
+msgctxt "#31723"
+msgid "Edit spotlight"
+msgstr "編輯 Spotlight"
+
+msgctxt "#31724"
+msgid "Restore default order"
+msgstr "還原預設順序"
+
+msgctxt "#31725"
+msgid "Theme & style"
+msgstr "主題與樣式"
+
+msgctxt "#31726"
+msgid "Look"
+msgstr "樣式"
+
+msgctxt "#31727"
+msgid "Player"
+msgstr "播放器"
+
+msgctxt "#31728"
+msgid "Music player"
+msgstr "音樂播放器"
+
+msgctxt "#31729"
+msgid "Backgrounds"
+msgstr "背景"
+
+msgctxt "#31730"
+msgid "Widget & Spotlight screens"
+msgstr "小工具與 Spotlight 畫面"
+
+msgctxt "#31731"
+msgid "System"
+msgstr "系統"
+
+msgctxt "#31732"
+msgid "Home menu"
+msgstr "主選單"
+
+msgctxt "#31733"
+msgid "Auto"
+msgstr "自動"
+
+msgctxt "#31734"
+msgid "Morning"
+msgstr "早晨"
+
+msgctxt "#31735"
+msgid "Afternoon"
+msgstr "下午"
+
+msgctxt "#31736"
+msgid "Evening"
+msgstr "傍晚"
+
+msgctxt "#31737"
+msgid "Night"
+msgstr "夜晚"
+
+msgctxt "#31738"
+msgid "Bedtime"
+msgstr "就寢時間"
+
+msgctxt "#31739"
+msgid "Countdown and fits-before rows"
+msgstr "倒數和「來得及」列"
+
+msgctxt "#31740"
+msgid "Weather row and rain"
+msgstr "天氣列和雨"
+
+msgctxt "#31741"
+msgid "Borrowed color"
+msgstr "借來的顏色"
+
+msgctxt "#31742"
+msgid "The focused film tints the light"
+msgstr "焦點電影為光線著色"
+
+msgctxt "#31743"
+msgid "Dots and checks on posters"
+msgstr "海報上的圓點和勾選"
+
+msgctxt "#31744"
+msgid "Unwatched"
+msgstr "未觀看"
+
+msgctxt "#31745"
+msgid "Only when a film has a trailer"
+msgstr "僅當電影有預告片時"
+
+msgctxt "#31746"
+msgid "Logos instead of titles"
+msgstr "用標誌代替標題"
+
+msgctxt "#31747"
+msgid "Clearlogos in the OSD, screensaver and Now playing"
+msgstr "OSD、螢幕保護程式和正在播放中的透明標誌"
+
+msgctxt "#31748"
+msgid "Library side strip"
+msgstr "媒體櫃側邊條"
+
+msgctxt "#31749"
+msgid "OSD auto-hide"
+msgstr "OSD 自動隱藏"
+
+msgctxt "#31750"
+msgid "Controls close by themselves"
+msgstr "控制列自動關閉"
+
+msgctxt "#31751"
+msgid "Subtitle offset strip"
+msgstr "字幕偏移條"
+
+msgctxt "#31752"
+msgid "Subtitle / audio sync strip"
+msgstr "字幕 / 音訊同步條"
+
+msgctxt "#31753"
+msgid "Top"
+msgstr "頂端"
+
+msgctxt "#31754"
+msgid "Bottom"
+msgstr "底部"
+
+msgctxt "#31755"
+msgid "Fades instead of zooms and slides"
+msgstr "用淡入淡出取代縮放和滑動"
+
+msgctxt "#31756"
+msgid "Back to the defaults"
+msgstr "恢復預設值"
+
+msgctxt "#31757"
+msgid "Needs a PVR add-on"
+msgstr "需要 PVR 附加元件"
+
+msgctxt "#31758"
+msgid "Power and library actions (Home sub-menu)"
+msgstr "電源和媒體櫃動作（首頁子選單）"
+
+msgctxt "#31759"
+msgid "Spotlight: menu item 1"
+msgstr "Spotlight：選單項目 1"
+
+msgctxt "#31760"
+msgid "Featured slider for this item (needs a library or add-on folder)"
+msgstr "此選單項目的精選滑桿（需要媒體櫃或附加元件資料夾）"
+
+msgctxt "#31761"
+msgid "Spotlight: menu item 2"
+msgstr "Spotlight：選單項目 2"
+
+msgctxt "#31762"
+msgid "Spotlight: menu item 3"
+msgstr "Spotlight：選單項目 3"
+
+msgctxt "#31763"
+msgid "Fanart Menu Backdrop"
+msgstr "選單同人畫背景"
+
+msgctxt "#31764"
+msgid "Menu Backdrop Strength"
+msgstr "選單背景強度"
+
+msgctxt "#31765"
+msgid "Now playing on Home"
+msgstr "首頁上的正在播放"
+
+msgctxt "#31766"
+msgid "Theme"
+msgstr "主題"
+
+msgctxt "#31767"
+msgid "Library background"
+msgstr "媒體庫背景"
+
+msgctxt "#31768"
+msgid "Screensaver background"
+msgstr "螢幕保護程式背景"
+
+msgctxt "#31769"
+msgid "Resolution and codec"
+msgstr "解析度和編碼"
+
+msgctxt "#31770"
+msgid "HDR tag"
+msgstr "HDR 標籤"
+
+msgctxt "#31771"
+msgid "Audio codec and channels"
+msgstr "音訊編碼和聲道"
+
+msgctxt "#31772"
+msgid "Plotline"
+msgstr "劇情列"
+
+msgctxt "#31773"
+msgid "Autoscroll plot text"
+msgstr "自動捲動劇情"
+
+msgctxt "#31774"
+msgid "Studio logo"
+msgstr "製片公司標誌"
+
+msgctxt "#31775"
+msgid "Theme songs"
+msgstr "主題曲"
+
+msgctxt "#31776"
+msgid "Color the rating"
+msgstr "評分著色"
+
+msgctxt "#31777"
+msgid "IMDb rating"
+msgstr "IMDb 評分"
+
+msgctxt "#31778"
+msgid "TMDb rating"
+msgstr "TMDb 評分"
+
+msgctxt "#31779"
+msgid "Rotten Tomatoes"
+msgstr "Rotten Tomatoes"
+
+msgctxt "#31780"
+msgid "Trakt rating"
+msgstr "Trakt 評分"
+
+msgctxt "#31781"
+msgid "Seek bar time"
+msgstr "進度列時間"
+
+msgctxt "#31782"
+msgid "Controls on pause"
+msgstr "暫停時的控制列"
+
+msgctxt "#31783"
+msgid "Delay before they open"
+msgstr "開啟前的延遲"
+
+msgctxt "#31784"
+msgid "Back button in the library"
+msgstr "媒體櫃中的返回鍵"
+
+msgctxt "#31785"
+msgid "Show poster on OSD controls"
+msgstr "在 OSD 控制旁顯示海報"
+
+msgctxt "#31786"
+msgid "Spinning disc art"
+msgstr "旋轉的光碟圖"
+
+msgctxt "#31787"
+msgid "Cycle extra fanart"
+msgstr "輪換額外劇照"
+
+msgctxt "#31788"
+msgid "Seconds between images"
+msgstr "圖片間隔秒數"
+
+msgctxt "#31789"
+msgid "Artist slideshow"
+msgstr "藝人幻燈片"
+
+msgctxt "#31790"
+msgid "Studio / network"
+msgstr "製片公司 / 電視台"
+
+msgctxt "#31791"
+msgid "Home spotlight: background"
+msgstr "首頁 Spotlight：背景"
+
+msgctxt "#31792"
+msgid "Home spotlight: transition"
+msgstr "首頁 Spotlight：轉場"
+
+msgctxt "#31793"
+msgid "Rules"
+msgstr "規則"
+
+msgctxt "#31800"
+msgid "Settings strip"
+msgstr "設定條"
+
+msgctxt "#31801"
+msgid "Overlay"
+msgstr "覆蓋"
+
+msgctxt "#31802"
+msgid "Permanent"
+msgstr "常駐"
+
+msgctxt "#31803"
+msgid "Box colors from artwork"
+msgstr "從圖片取方框顏色"
+
+msgctxt "#31804"
+msgid "Show clock on OSD"
+msgstr "在 OSD 上顯示時鐘"
+
+msgctxt "#31805"
+msgid "Show weather on OSD"
+msgstr "在 OSD 上顯示天氣"
+
+msgctxt "#31806"
+msgid "Lyrics style"
+msgstr "歌詞樣式"
+
+msgctxt "#31807"
+msgid "Lines"
+msgstr "行"
+
+msgctxt "#31808"
+msgid "Words"
+msgstr "逐字"
+
+msgctxt "#31280"
+msgid "VERSION"
+msgstr "版本"
+
+msgctxt "#31281"
+msgid "SYSTEM"
+msgstr "系統"
+
+msgctxt "#31282"
+msgid "HARDWARE"
+msgstr "硬體"
+
+msgctxt "#31283"
+msgid "LIBRARY"
+msgstr "媒體櫃"
+
+msgctxt "#31574"
+msgid "Build"
+msgstr "組建"
+
+msgctxt "#31634"
+msgid "Name"
+msgstr "名稱"
+
+msgctxt "#31698"
+msgid "Profile"
+msgstr "設定檔"
+
+msgctxt "#31794"
+msgid "Uptime"
+msgstr "運作時間"
+
+msgctxt "#31795"
+msgid "Total uptime"
+msgstr "總運作時間"
+
+msgctxt "#31796"
+msgid "IP address"
+msgstr "IP 位址"
+
+msgctxt "#31797"
+msgid "MAC address"
+msgstr "MAC 位址"
+
+msgctxt "#31798"
+msgid "Internet"
+msgstr "網際網路"
+
+msgctxt "#31799"
+msgid "CPU usage"
+msgstr "CPU 使用率"
+
+msgctxt "#31809"
+msgid "Memory"
+msgstr "記憶體"
+
+msgctxt "#31810"
+msgid "Used"
+msgstr "已用"
+
+msgctxt "#31811"
+msgid "CPU temperature"
+msgstr "CPU 溫度"
+
+msgctxt "#31812"
+msgid "GPU temperature"
+msgstr "GPU 溫度"
+
+msgctxt "#31813"
+msgid "Movies"
+msgstr "電影"
+
+msgctxt "#31814"
+msgid "Lyrics take focus"
+msgstr "歌詞取得焦點"
+
+msgctxt "#31815"
+msgid "Artist list"
+msgstr "藝人清單"
+
+msgctxt "#31816"
+msgid "Artist wall (covers)"
+msgstr "藝人牆（封面）"
+
+msgctxt "#31817"
+msgid "Album wall (fanart)"
+msgstr "專輯牆（劇照）"
+
+msgctxt "#31824"
+msgid "LIBRARY VIEW"
+msgstr "媒體櫃檢視"
+
+msgctxt "#31825"
+msgid "Overlay: the strip slides in with Left or the Menu key. Permanent: it is always there. View settings can set this per view."
+msgstr "覆蓋：按左或選單鍵時滑入。常駐：始終顯示。檢視設定可依檢視設定。"
+
+msgctxt "#31826"
+msgid "BOXES"
+msgstr "方框"
+
+msgctxt "#31827"
+msgid "On: the clock and count boxes take the color of the poster or cover in focus (needs the KarmaMole helper)."
+msgstr "開：時鐘和計數框採用焦點海報或封面的顏色（需要 KarmaMole helper）。"
+
+msgctxt "#31828"
+msgid "The controls close by themselves after this many seconds without a key press."
+msgstr "多少秒無按鍵後控制列自動關閉。"
+
+msgctxt "#31829"
+msgid "SYNC STRIP"
+msgstr "同步條"
+
+msgctxt "#31830"
+msgid "Where the subtitle / audio offset strip sits while you adjust it."
+msgstr "調整時字幕 / 音訊偏移條的位置。"
+
+msgctxt "#31831"
+msgid "Clock box at the top right of the player controls."
+msgstr "播放控制右上角的時鐘框。"
+
+msgctxt "#31832"
+msgid "Weather box under the clock (needs a weather add-on)."
+msgstr "時鐘下方的天氣框（需要天氣附加元件）。"
+
+msgctxt "#31833"
+msgid "BIG"
+msgstr "大"
+
+msgctxt "#31834"
+msgid "COLORED"
+msgstr "彩色"
+
+msgctxt "#31835"
+msgid "WORDS"
+msgstr "逐字"
+
+msgctxt "#31836"
+msgid "Lines: the current line between its neighbours. Words: the animated lyrics of Estuary MOD V2 (needs that skin installed for its fonts)."
+msgstr "行：目前行位於前後行之間。逐字：Estuary MOD V2 的動畫歌詞（需要安裝該面板以使用其字型）。"
+
+msgctxt "#31837"
+msgid "Off: OK opens the music controls. On: Up / Down pick a line, OK jumps to it; Back lets go of the lines and the lyrics keep running."
+msgstr "關：OK 開啟音樂控制。開：上 / 下選擇一行，OK 跳到該處；返回鍵放開行，歌詞繼續捲動。"
+
+msgctxt "#31818"
+msgid "Words style placement"
+msgstr "逐字樣式位置"
+
+msgctxt "#31819"
+msgid "Full screen"
+msgstr "全螢幕"
+
+msgctxt "#31820"
+msgid "On the cover"
+msgstr "在封面上"
+
+msgctxt "#31821"
+msgid "Home vignette"
+msgstr "首頁暗角"
+
+msgctxt "#31822"
+msgid "Fonts"
+msgstr "字型"
+
+msgctxt "#31823"
+msgid "Own family for Home, library, headings, settings, player"
+msgstr "為首頁、媒體櫃、標題、設定、播放器分別設定字型"
+
+msgctxt "#31838"
+msgid "Fonts per section"
+msgstr "分區字型"
+
+msgctxt "#31839"
+msgid "Follow the font set"
+msgstr "跟隨字型組"
+
+msgctxt "#31840"
+msgid "Headings"
+msgstr "標題"
+
+msgctxt "#31841"
+msgid "Settings pages"
+msgstr "設定頁面"
+
+msgctxt "#31842"
+msgid "Player"
+msgstr "播放器"
+
+msgctxt "#31843"
+msgid "Font for: %s"
+msgstr "字型：%s"
+
+msgctxt "#31844"
+msgid "not installed"
+msgstr "未安裝"
+
+msgctxt "#31845"
+msgid "Plots, biographies and hints look like this. The quick brown fox jumps over the lazy dog. 0123456789"
+msgstr "劇情、簡介和提示會這樣顯示。天地玄黃，宇宙洪荒。0123456789"
+
+msgctxt "#31846"
+msgid "Preview"
+msgstr "預覽"
+
+msgctxt "#31847"
+msgid "Categories"
+msgstr "類別"
+
+msgctxt "#31848"
+msgid "Show weather on screensaver"
+msgstr "在螢幕保護程式上顯示天氣"
+
+msgctxt "#31849"
+msgid "Temperature and conditions in the top right corner"
+msgstr "右上角顯示溫度和天氣"
+
+msgctxt "#31850"
+msgid "Videos · Music · Discs · Pictures · Language · Subtitles"
+msgstr "視訊 · 音樂 · 光碟 · 圖片 · 語言 · 字幕"
+
+msgctxt "#31851"
+msgid "Library · General · Videos · Music · Pictures"
+msgstr "媒體櫃 · 一般 · 視訊 · 音樂 · 圖片"
+
+msgctxt "#31852"
+msgid "Skin · Regional · Screensaver · Master lock · Startup"
+msgstr "面板 · 地區 · 螢幕保護程式 · 主鎖 · 啟動"
+
+msgctxt "#31853"
+msgid "General · Control · UPnP / DLNA · AirPlay · Weather"
+msgstr "一般 · 控制 · UPnP / DLNA · AirPlay · 天氣"
+
+msgctxt "#31854"
+msgid "Display · Audio · Input · Internet access · Power saving · Add-ons · Logging"
+msgstr "顯示 · 音訊 · 輸入 · 網際網路存取 · 省電 · 附加元件 · 記錄"
+
+msgctxt "#31855"
+msgid "General · Channels · Guide · Playback · Recording · Reminders"
+msgstr "一般 · 頻道 · 節目表 · 播放 · 錄影 · 提醒"
+
+msgctxt "#31856"
+msgid "Home menu position"
+msgstr "主選單位置"
+
+msgctxt "#31857"
+msgid "Middle"
+msgstr "中間"
+
+msgctxt "#31858"
+msgid "Low"
+msgstr "底部"
+
+msgctxt "#31859"
+msgid "General · Achievements"
+msgstr "一般 · 成就"
+
+msgctxt "#31860"
+msgid "Show clock on screensaver"
+msgstr "在螢幕保護程式上顯示時鐘"
+
+msgctxt "#31861"
+msgid "Poster / thumbnail"
+msgstr "海報 / 縮圖"
+
+msgctxt "#31862"
+msgid "Season and episode counts"
+msgstr "季數和集數"
+
+msgctxt "#31863"
+msgid "Watched status"
+msgstr "觀看狀態"
+
+msgctxt "#31864"
+msgid "The Long Way Home"
+msgstr "漫漫回家路"
+
+msgctxt "#31865"
+msgid "2019 | DRAMA / ADVENTURE"
+msgstr "2019 | 劇情 / 冒險"
+
+msgctxt "#31866"
+msgid "Northern Lights"
+msgstr "北極光"
+
+msgctxt "#31867"
+msgid "2023 | DOCUMENTARY"
+msgstr "2023 | 紀錄片"
+
+msgctxt "#31868"
+msgid "A Quiet Harbour"
+msgstr "寧靜的港灣"
+
+msgctxt "#31869"
+msgid "1998 | CRIME / THRILLER"
+msgstr "1998 | 犯罪 / 驚悚"
+
+msgctxt "#31188"
+msgid "Item"
+msgstr "項目"
+
+msgctxt "#31192"
+msgid "Screenshots"
+msgstr "螢幕截圖"
+
+msgctxt "#31193"
+msgid "Picture details"
+msgstr "圖片詳細資料"
+
+msgctxt "#31284"
+msgid "EPG"
+msgstr "EPG"
+
+msgctxt "#31285"
+msgid "Tools"
+msgstr "工具"
+
+msgctxt "#31286"
+msgid "Who is watching?"
+msgstr "誰在觀看？"
+
+msgctxt "#31287"
+msgid "Playlist editor"
+msgstr "播放清單編輯器"
+
+msgctxt "#31288"
+msgid "Flix"
+msgstr "Flix"
+
+msgctxt "#31289"
+msgid "Fanart with one row"
+msgstr "劇照加一列"
+
+msgctxt "#31290"
+msgid "Combined"
+msgstr "組合"
+
+msgctxt "#31291"
+msgid "A row over its contents"
+msgstr "內容上方的一列"
+
+msgctxt "#31292"
+msgid "Circles"
+msgstr "圓形"
+
+msgctxt "#31293"
+msgid "Round portraits"
+msgstr "圓形肖像"
+
+msgctxt "#31294"
+msgid "Planner"
+msgstr "計畫表"
+
+msgctxt "#31570"
+msgid "Episodes by date"
+msgstr "依日期排列的單集"
+
+msgctxt "#31571"
+msgid "Recommended"
+msgstr "推薦"
+
+msgctxt "#31572"
+msgid "Similar titles"
+msgstr "類似作品"
+
+msgctxt "#31573"
+msgid "Information"
+msgstr "資訊"
+
+msgctxt "#31870"
+msgid "Plot hidden until you have watched it."
+msgstr "觀看之前隱藏劇情。"
+
+msgctxt "#31871"
+msgid "More options"
+msgstr "更多選項"
+
+msgctxt "#31872"
+msgid "Spoilers, pause and language flags"
+msgstr "劇透、暫停和語言旗幟"
+
+msgctxt "#31873"
+msgid "Hide spoilers of unwatched episodes"
+msgstr "隱藏未觀看單集的劇透"
+
+msgctxt "#31874"
+msgid "Seek bar while paused"
+msgstr "暫停時的進度列"
+
+msgctxt "#31875"
+msgid "Show language flags on OSD"
+msgstr "在 OSD 上顯示語言旗幟"
+
+msgctxt "#31876"
+msgid "Always"
+msgstr "總是"
+
+msgctxt "#31877"
+msgid "5 seconds"
+msgstr "5 秒"
+
+msgctxt "#31878"
+msgid "Never"
+msgstr "從不"
+
+msgctxt "#31879"
+msgid "Stacked row on Home"
+msgstr "首頁上的疊放列"
+
+msgctxt "#31880"
+msgid "Kiosk mode (lock views)"
+msgstr "展示模式（鎖定檢視）"
+
+msgctxt "#31881"
+msgid "Last login"
+msgstr "上次登入"
+
+msgctxt "#31882"
+msgid "Cinema mode: trailers before a film"
+msgstr "影院模式：電影前播放預告片"
+
+msgctxt "#31883"
+msgid "1 trailer"
+msgstr "1 個預告片"
+
+msgctxt "#31884"
+msgid "2 trailers"
+msgstr "2 個預告片"
+
+msgctxt "#31885"
+msgid "3 trailers"
+msgstr "3 個預告片"
+
+msgctxt "#31886"
+msgid "Reviews"
+msgstr "評論"
+
+msgctxt "#31887"
+msgid "Top tracks"
+msgstr "熱門曲目"
+
+msgctxt "#31888"
+msgid "Similar artists"
+msgstr "相似藝人"
+
+msgctxt "#31889"
+msgid "Not in your library"
+msgstr "不在你的媒體櫃中"
+
+msgctxt "#31890"
+msgid "Artist page: look up on Deezer"
+msgstr "藝人頁面：在 Deezer 上查詢"
+
+msgctxt "#31891"
+msgid "Progress line on posters"
+msgstr "海報上的進度線"
+
+msgctxt "#31892"
+msgid "Play trailers automatically"
+msgstr "自動播放預告片"
+
+msgctxt "#31893"
+msgid "Nothing planned"
+msgstr "暫無安排"
+
+msgctxt "#31894"
+msgid "View"
+msgstr "檢視"
+
+msgctxt "#31895"
+msgid "Week starts"
+msgstr "一週開始於"
+
+msgctxt "#31896"
+msgid "Show"
+msgstr "顯示"
+
+msgctxt "#31897"
+msgid "Day"
+msgstr "日"
+
+msgctxt "#31898"
+msgid "Week"
+msgstr "週"
+
+msgctxt "#31899"
+msgid "Home spotlight"
+msgstr "首頁 Spotlight"
+
+msgctxt "#31903"
+msgid "Days ahead"
+msgstr "向前天數"
+
+msgctxt "#31904"
+msgid "What is coming, shown one title at a time while the Planner is focused on Home. It starts with today."
+msgstr "當首頁上的計畫表取得焦點時，逐一顯示即將到來的作品。從今天開始。"
+
+msgctxt "#31905"
+msgid "Disable"
+msgstr "停用"
+
+msgctxt "#31906"
+msgid "Enable"
+msgstr "啟用"
+
+msgctxt "#31907"
+msgid "Empty"
+msgstr "空"
+
+msgctxt "#31908"
+msgid "Choose type"
+msgstr "選擇類型"
+
+msgctxt "#31909"
+msgid "Custom item"
+msgstr "自訂項目"
+
+msgctxt "#31910"
+msgid "Empty position"
+msgstr "空位置"
+
+msgctxt "#31911"
+msgid "Type of position"
+msgstr "位置類型"
+
+msgctxt "#31912"
+msgid "All ten custom items are in use. Free one first."
+msgstr "十個自訂項目都已使用。請先空出一個。"
+
+msgctxt "#31913"
+msgid "Channel group"
+msgstr "頻道群組"
+
+msgctxt "#31914"
+msgid "Watched last"
+msgstr "最近觀看"
+
+msgctxt "#31915"
+msgid "None"
+msgstr "無"
+
+msgctxt "#31916"
+msgid "No channel group"
+msgstr "無頻道群組"
+
+msgctxt "#31917"
+msgid "With Live TV focused on Home: Up reaches the channels watched last, Right there shows the channel group chosen here. OK plays a channel."
+msgstr "首頁上直播電視取得焦點時：按上到達最近觀看的頻道，在那裡按右顯示此處選擇的頻道群組。OK 播放頻道。"
+
+msgctxt "#31918"
+msgid "UP: CHANNELS   |   OK: GUIDE"
+msgstr "上：頻道   |   OK：節目表"
+
+msgctxt "#31919"
+msgid "OK: WATCH   |   LEFT: WATCHED LAST"
+msgstr "OK：觀看   |   左：最近觀看"
+
+msgctxt "#31920"
+msgid "OK: WATCH   |   RIGHT: CHANNEL GROUP"
+msgstr "OK：觀看   |   右：頻道群組"
+
+msgctxt "#31921"
+msgid "OK: WATCH"
+msgstr "OK：觀看"
+
+msgctxt "#31922"
+msgid "LEFT / RIGHT: OTHER TITLES   |   DOWN: MENU"
+msgstr "左 / 右：其他作品   |   下：選單"
+
+msgctxt "#31923"
+msgid "Coming up"
+msgstr "即將推出"
+
+msgctxt "#31924"
+msgid "Not in your library yet."
+msgstr "還不在你的媒體櫃中。"
+
+msgctxt "#31925"
+msgid "On"
+msgstr "開"
+
+msgctxt "#31926"
+msgid "Unwatched episodes show no thumbnail and no plot until you have seen them."
+msgstr "未觀看的單集在你看過之前不顯示縮圖和劇情。"
+
+msgctxt "#31927"
+msgid "Top tracks and similar artists on the artist page come from Deezer (needs internet). Off: only your library."
+msgstr "藝人頁面的熱門曲目和相似藝人來自 Deezer（需要網際網路）。關：僅你的媒體櫃。"
+
+msgctxt "#31928"
+msgid "When the seek bar shows while a film is paused: always, for 5 seconds, or never."
+msgstr "電影暫停時何時顯示進度列：總是、5 秒或從不。"
+
+msgctxt "#31929"
+msgid "Flags of the audio and subtitle languages on the player controls."
+msgstr "播放控制上的音訊和字幕語言旗幟。"
+
+msgctxt "#31930"
+msgid "Trailers of other films play before the film you start: none, 1, 2 or 3."
+msgstr "在你開始的電影之前播放其他電影的預告片：無、1、2 或 3 個。"
+
+msgctxt "#31931"
+msgid "A thin line under posters shows how much of a film, show or season you have watched."
+msgstr "海報下的一條細線顯示你看了電影、影集或季的多少。"
+
+msgctxt "#31932"
+msgid "A strip of small posters under the plot when a set or a show is in focus in the rows on Home."
+msgstr "首頁列中系列或影集取得焦點時，劇情下方的一排小海報。"
+
+msgctxt "#31933"
+msgid "Locks the library views: no view settings and no left-hand settings strip."
+msgstr "鎖定媒體櫃檢視：沒有檢視設定，也沒有左側設定條。"
+
+msgctxt "#31934"
+msgid "The library background takes the palette only with the Neutral backdrop. The highlight, boxes and strips follow it with every backdrop.[CR][CR]Use the Neutral backdrop in the libraries?"
+msgstr "媒體櫃背景只在中性背景下使用調色盤。高亮、方框和條在任何背景下都跟隨調色盤。[CR][CR]在媒體櫃中使用中性背景嗎？"
+
+msgctxt "#31935"
+msgid "Keep the backdrop"
+msgstr "保留背景"
+
+msgctxt "#31936"
+msgid "Use Neutral"
+msgstr "使用中性"
+
+msgctxt "#31937"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages. The library background takes it with the Neutral backdrop only."
+msgstr "高亮、方框、條和設定頁面的顏色。媒體櫃背景只在中性背景下使用它。"
+
+msgctxt "#31938"
+msgid "Words"
+msgstr "逐字"
+
+msgctxt "#31939"
+msgid "Lines"
+msgstr "行"
+
+msgctxt "#31958"
+msgid "Skippy: the skin's skip button"
+msgstr "Skippy：面板的略過按鈕"
+
+msgctxt "#31959"
+msgid "On: during a segment Skippy asks about (Ask), the player shows a Skip button in the skin's look; OK skips, Back hides it. Off: Skippy opens its own dialog. In Fused Glass, Up next at the end of an episode is the skin's too."
+msgstr "開：在 Skippy 詢問的片段（詢問）期間，播放器以面板風格顯示略過按鈕；OK 略過，返回鍵隱藏。關：Skippy 開啟自己的對話框。 在 Fused Glass 中，劇集結尾的「下一集」提示也使用面板風格。"
+
+msgctxt "#31960"
+msgid "Skippy: segment line in the player"
+msgstr "Skippy：播放器中的片段列"
+
+msgctxt "#31961"
+msgid "Between the times on the player controls: the segment playing and the time left (Intro · 0:42 left), or the next segment and when it starts."
+msgstr "在播放控制的時間之間：正在播放的片段和剩餘時間（片頭 · 剩餘 0:42），或下一個片段及其開始時間。"
+
+msgctxt "#31962"
+msgid "Skippy: up next in the player"
+msgstr "Skippy：播放器中的接下來"
+
+msgctxt "#31963"
+msgid "Top right of the player controls: the next episode Skippy found, with its picture. Skippy's own next-episode prompt is not affected."
+msgstr "播放控制右上角：Skippy 找到的下一集，附圖片。Skippy 自己的下一集提示不受影響。"
+
+msgctxt "#31964"
+msgid "Skip"
+msgstr "略過"
+
+msgctxt "#31965"
+msgid "left"
+msgstr "剩餘"
+
+msgctxt "#31966"
+msgid "at"
+msgstr "於"
+
+msgctxt "#31967"
+msgid "Memory hand-back"
+msgstr "記憶體歸還"
+
+msgctxt "#31968"
+msgid "Linux boxes (CoreELEC, LibreELEC): Kodi keeps memory it has finished with. The helper hands it back to the system after a pause in key presses, or when free RAM gets low. Not on Windows."
+msgstr "Linux 裝置（CoreELEC、LibreELEC）：Kodi 會保留用完的記憶體。helper 在按鍵停頓後或可用記憶體不足時將其歸還給系統。Windows 上無法使用。"
+
+msgctxt "#31969"
+msgid "Pause before hand-back"
+msgstr "歸還前的停頓"
+
+msgctxt "#31970"
+msgid "After a pause: seconds without a key press (2-30), not during a video. When free RAM is low: the least free memory the box keeps; within 256 MB of it the hand-back waits for a pause, below it it happens at once."
+msgstr "停頓後：無按鍵的秒數（2-30），播放視訊時除外。可用記憶體不足時：裝置保留的最少可用記憶體；在其 256 MB 以內時歸還會等待停頓，低於它則立即歸還。"
+
+msgctxt "#31971"
+msgid "Minimum free RAM"
+msgstr "最少可用記憶體"
+
+msgctxt "#31972"
+msgid "Adds Clean library to the context menu in the libraries and on Home: entries whose files are gone are removed (it asks first)."
+msgstr "在媒體櫃和首頁的內容選單中加入「清理媒體櫃」：移除檔案已不存在的項目（會先詢問）。"
+
+msgctxt "#31973"
+msgid "Network · Connections · Updates · Hardware · Services"
+msgstr "網路 · 連線 · 更新 · 硬體 · 服務"
+
+msgctxt "#31974"
+msgid "The box"
+msgstr "本機"
+
+msgctxt "#31975"
+msgid "The box's own settings: network and Wi-Fi, updates, hardware, services such as SSH and Samba."
+msgstr "裝置本身的設定：網路和 Wi-Fi、更新、硬體、SSH 和 Samba 等服務。"
+
+msgctxt "#31976"
+msgid "Restart Kodi"
+msgstr "重新啟動 Kodi"
+
+msgctxt "#31977"
+msgid "Widget screens: media info"
+msgstr "小工具畫面：媒體資訊"
+
+msgctxt "#31978"
+msgid "Widget screens: ratings"
+msgstr "小工具畫面：評分"
+
+msgctxt "#31979"
+msgid "Widget screens: studio / network"
+msgstr "小工具畫面：製片公司 / 電視台"
+
+msgctxt "#31996"
+msgid "The background of the spotlight at the top of Home. Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "首頁頂端 Spotlight 的背景。劇照：作品的劇照。中性：深色。顏色：KarmaMole helper 用圖片產生的柔和彩色影像（產生前顯示劇照）。"
+
+msgctxt "#31997"
+msgid "How the spotlight at the top of Home moves on to the next title: fade, slide or cut."
+msgstr "首頁頂端 Spotlight 如何切換到下一個作品：淡入淡出、滑動或切換。"
+
+msgctxt "#31998"
+msgid "Widget screens: background"
+msgstr "小工具畫面：背景"
+
+msgctxt "#31999"
+msgid "The background of the full-screen widget pages (Up on a title on Home). Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "全螢幕小工具頁面（在首頁作品上按上）的背景。劇照：作品的劇照。中性：深色。顏色：KarmaMole helper 用圖片產生的柔和彩色影像（產生前顯示劇照）。"
+
+msgctxt "#32000"
+msgid "creator of the Aeon 2 concept"
+msgstr "Aeon 2 概念的創作者"
+
+msgctxt "#32001"
+msgid "1 of 1 episode watched"
+msgstr "1 集中已看 1 集"
+
+msgctxt "#32002"
+msgid "on"
+msgstr "· 廠牌"
+
+msgctxt "#32003"
+msgid "9:00 PM"
+msgstr "21:00"
+
+msgctxt "#32004"
+msgid "9:30 PM"
+msgstr "21:30"
+
+msgctxt "#32005"
+msgid "10:00 PM"
+msgstr "22:00"
+
+msgctxt "#32006"
+msgid "10:30 PM"
+msgstr "22:30"
+
+msgctxt "#32007"
+msgid "11:00 PM"
+msgstr "23:00"
+
+msgctxt "#32008"
+msgid "11:30 PM"
+msgstr "23:30"
+
+msgctxt "#32009"
+msgid "12:00 AM"
+msgstr "0:00"
+
+msgctxt "#32010"
+msgid "12:30 AM"
+msgstr "0:30"
+
+msgctxt "#32011"
+msgid "1:00 AM"
+msgstr "1:00"
+
+msgctxt "#32012"
+msgid "1:30 AM"
+msgstr "1:30"
+
+msgctxt "#32013"
+msgid "2:00 AM"
+msgstr "2:00"
+
+msgctxt "#32015"
+msgid "Repositories checked"
+msgstr "已檢查存放庫"
+
+msgctxt "#32016"
+msgid "Close Kodi"
+msgstr "關閉 Kodi"
+
+msgctxt "#32017"
+msgid "Back to the profile screen"
+msgstr "返回設定檔畫面"
+
+msgctxt "#32018"
+msgid "Kodi only, the system keeps running"
+msgstr "僅 Kodi，系統繼續執行"
+
+msgctxt "#32019"
+msgid "Restart the whole system"
+msgstr "重新啟動整個系統"
+
+msgctxt "#32020"
+msgid "Restart into Android"
+msgstr "重新開機到 Android"
+
+msgctxt "#32021"
+msgid "Switch the system off"
+msgstr "關閉系統"
+
+msgctxt "#32022"
+msgid "By"
+msgstr "出品"
+
+msgctxt "#32023"
+msgid "Running time"
+msgstr "片長"
+
+msgctxt "#32024"
+msgid "min"
+msgstr "分鐘"
+
+msgctxt "#32025"
+msgid "Widgets"
+msgstr "小工具"
+
+msgctxt "#32026"
+msgid "hidden"
+msgstr "隱藏"
+
+msgctxt "#32027"
+msgid "Hold"
+msgstr "停留"
+
+msgctxt "#32028"
+msgid "Update the list"
+msgstr "更新清單"
+
+msgctxt "#32029"
+msgid "Update now"
+msgstr "立即更新"
+
+msgctxt "#32030"
+msgid "ARTISTS"
+msgstr "位藝人"
+
+msgctxt "#32031"
+msgid "ALBUMS"
+msgstr "張專輯"
+
+msgctxt "#32032"
+msgid "SONGS"
+msgstr "首歌曲"
+
+msgctxt "#32033"
+msgid "Widget screens"
+msgstr "小工具畫面"
+
+msgctxt "#32034"
+msgid "Hide plot and thumb"
+msgstr "隱藏劇情和縮圖"
+
+msgctxt "#32035"
+msgid "Start"
+msgstr "開始"
+
+msgctxt "#32036"
+msgid "A handful of short steps"
+msgstr "幾個簡短步驟"
+
+msgctxt "#32037"
+msgid "Backdrop, look, Home menu, libraries and motion."
+msgstr "背景、外觀、主選單、媒體櫃和動畫。"
+
+msgctxt "#32038"
+msgid "Skip setup"
+msgstr "略過設定"
+
+msgctxt "#32039"
+msgid "Keep the defaults for now"
+msgstr "暫時保留預設值"
+
+msgctxt "#32040"
+msgid "Run the setup any time: Skin settings > Motion, memory, reset > Setup wizard."
+msgstr "隨時執行設定：面板設定 > 動畫、記憶體、重設 > 設定精靈。"
+
+msgctxt "#32041"
+msgid "A calm backdrop in a palette of your choice"
+msgstr "你選擇的調色盤中的平靜背景"
+
+msgctxt "#32042"
+msgid "A dark, even background in the colours of the palette you pick next."
+msgstr "採用你接下來選擇的調色盤顏色的深色均勻背景。"
+
+msgctxt "#32043"
+msgid "The focused title's fanart, dimmed"
+msgstr "焦點作品的劇照，調暗"
+
+msgctxt "#32044"
+msgid "The artwork of the focused title fills the background, dimmed so text stays readable."
+msgstr "焦點作品的圖片填滿背景，並調暗以保持文字清晰。"
+
+msgctxt "#32045"
+msgid "A tint taken from the artwork"
+msgstr "取自圖片的色調"
+
+msgctxt "#32046"
+msgid "A deep colour taken from the focused title's artwork."
+msgstr "取自焦點作品圖片的深色。"
+
+msgctxt "#32047"
+msgid "The palette shows after Kodi restarts at the end of the setup."
+msgstr "調色盤會在設定結束 Kodi 重新啟動後顯示。"
+
+msgctxt "#32048"
+msgid "Solid panels, palettes"
+msgstr "純色面板、調色盤"
+
+msgctxt "#32049"
+msgid "The classic Aeon look: calm, solid surfaces and a white or coloured focus bar."
+msgstr "經典 Aeon 外觀：平靜的純色表面和白色或彩色的焦點條。"
+
+msgctxt "#32050"
+msgid "Aeon with glass menus, no palettes"
+msgstr "玻璃選單的 Aeon，無調色盤"
+
+msgctxt "#32051"
+msgid "Panels of frosted glass over the fanart; the focus bar is a soft light."
+msgstr "劇照上方的霧面玻璃面板；焦點條是一道柔和的光。"
+
+msgctxt "#32052"
+msgid "As the skin theme"
+msgstr "跟隨面板主題"
+
+msgctxt "#32053"
+msgid "Flat rows with rules"
+msgstr "帶分隔線的平面列"
+
+msgctxt "#32054"
+msgid "The menus of the Aeon or Aeon Glass theme you picked."
+msgstr "你選擇的 Aeon 或 Aeon Glass 主題的選單。"
+
+msgctxt "#32055"
+msgid "Rounded cards, like this setup"
+msgstr "圓角卡片，如同本設定"
+
+msgctxt "#32056"
+msgid "Every row a soft card, the focused one solid; no rule lines."
+msgstr "每列都是柔和的卡片，焦點列為實心；沒有分隔線。"
+
+msgctxt "#32057"
+msgid "OK switches Movies on or off."
+msgstr "OK 開啟或關閉電影。"
+
+msgctxt "#32058"
+msgid "OK switches TV shows on or off."
+msgstr "OK 開啟或關閉影集。"
+
+msgctxt "#32059"
+msgid "OK switches Music on or off."
+msgstr "OK 開啟或關閉音樂。"
+
+msgctxt "#32060"
+msgid "OK switches Live TV on or off."
+msgstr "OK 開啟或關閉直播電視。"
+
+msgctxt "#32061"
+msgid "OK switches Search on or off."
+msgstr "OK 開啟或關閉搜尋。"
+
+msgctxt "#32062"
+msgid "OK switches Movie sets on or off."
+msgstr "OK 開啟或關閉電影系列。"
+
+msgctxt "#32063"
+msgid "OK switches Favourites on or off."
+msgstr "OK 開啟或關閉我的最愛。"
+
+msgctxt "#32064"
+msgid "OK switches Pictures on or off."
+msgstr "OK 開啟或關閉圖片。"
+
+msgctxt "#32065"
+msgid "OK switches Add-ons on or off."
+msgstr "OK 開啟或關閉附加元件。"
+
+msgctxt "#32066"
+msgid "OK switches Weather on or off."
+msgstr "OK 開啟或關閉天氣。"
+
+msgctxt "#32067"
+msgid "OK switches Planner on or off."
+msgstr "OK 開啟或關閉計畫表。"
+
+msgctxt "#32068"
+msgid "OK switches Files on or off."
+msgstr "OK 開啟或關閉檔案。"
+
+msgctxt "#32069"
+msgid "OK switches Settings on or off."
+msgstr "OK 開啟或關閉設定。"
+
+msgctxt "#32070"
+msgid "OK switches Power on or off."
+msgstr "OK 開啟或關閉電源。"
+
+msgctxt "#32071"
+msgid "Continue"
+msgstr "繼續"
+
+msgctxt "#32072"
+msgid "Next step"
+msgstr "下一步"
+
+msgctxt "#32073"
+msgid "On to the Home menu position."
+msgstr "接下來是主選單的位置。"
+
+msgctxt "#32074"
+msgid "The spotlight above, a row of posters below"
+msgstr "上方是 Spotlight，下方是一排海報"
+
+msgctxt "#32075"
+msgid "The menu across the middle of the screen with a widget row underneath."
+msgstr "選單橫跨畫面中央，下方是一排小工具。"
+
+msgctxt "#32076"
+msgid "A taller spotlight, the menu near the bottom"
+msgstr "更高的 Spotlight，選單靠近底部"
+
+msgctxt "#32077"
+msgid "More room for the spotlight; the menu sits low on the screen."
+msgstr "給 Spotlight 更多空間；選單位於畫面下方。"
+
+msgctxt "#32078"
+msgid "The artwork of the spotlight title"
+msgstr "Spotlight 作品的圖片"
+
+msgctxt "#32079"
+msgid "Fanart of the title in the spotlight, with a soft fade from the left."
+msgstr "Spotlight 中作品的劇照，從左側柔和淡出。"
+
+msgctxt "#32080"
+msgid "A colour taken from the artwork"
+msgstr "取自圖片的顏色"
+
+msgctxt "#32081"
+msgid "A warm or cool tint drawn from the title's artwork."
+msgstr "取自作品圖片的暖色或冷色調。"
+
+msgctxt "#32082"
+msgid "A quiet dark background"
+msgstr "安靜的深色背景"
+
+msgctxt "#32083"
+msgid "No artwork behind the spotlight text."
+msgstr "Spotlight 文字後面沒有圖片。"
+
+msgctxt "#32084"
+msgid "One picture dissolves into the next"
+msgstr "一張圖片融入下一張"
+
+msgctxt "#32085"
+msgid "A soft cross-fade."
+msgstr "柔和的交叉淡化。"
+
+msgctxt "#32086"
+msgid "The next one pushes in from the right"
+msgstr "下一張從右側推入"
+
+msgctxt "#32087"
+msgid "A sideways slide, like turning a page."
+msgstr "側向滑動，就像翻頁。"
+
+msgctxt "#32088"
+msgid "Straight to the next"
+msgstr "直接切到下一張"
+
+msgctxt "#32089"
+msgid "No animation: the next title appears at once."
+msgstr "無動畫：下一個作品立即出現。"
+
+msgctxt "#32090"
+msgid "The colour of the artwork"
+msgstr "圖片的顏色"
+
+msgctxt "#32091"
+msgid "The boxes take a deep colour from the focused title's artwork."
+msgstr "方框取用焦點作品圖片中的深色。"
+
+msgctxt "#32092"
+msgid "The palette's box colour"
+msgstr "調色盤的方框顏色"
+
+msgctxt "#32093"
+msgid "Always the same calm colour of the palette."
+msgstr "始終是調色盤中同一種平靜的顏色。"
+
+msgctxt "#32094"
+msgid "A window onto the fanart"
+msgstr "通往劇照的窗口"
+
+msgctxt "#32095"
+msgid "Each box shows the part of the fanart behind it, darkened for the clock."
+msgstr "每個方框顯示其後方的劇照部分，為時鐘而調暗。"
+
+msgctxt "#32096"
+msgid "As the backdrop"
+msgstr "跟隨背景"
+
+msgctxt "#32097"
+msgid "Follow the library backdrop"
+msgstr "跟隨媒體櫃背景"
+
+msgctxt "#32098"
+msgid "Neutral, fanart or colour, whatever the library backdrop is."
+msgstr "中性、劇照或顏色，與媒體櫃背景一致。"
+
+msgctxt "#32099"
+msgid "Dots, checks and progress bars"
+msgstr "圓點、勾選和進度列"
+
+msgctxt "#32100"
+msgid "Unwatched titles get a dot, watched ones a check, started ones a progress bar."
+msgstr "未觀看的作品顯示圓點，已觀看的顯示勾選，看到一半的顯示進度列。"
+
+msgctxt "#32101"
+msgid "Dots and progress bars"
+msgstr "圓點和進度列"
+
+msgctxt "#32102"
+msgid "Only what is still to watch is marked."
+msgstr "只標記還要看的內容。"
+
+msgctxt "#32103"
+msgid "Checks on what you have seen"
+msgstr "已看內容打勾"
+
+msgctxt "#32104"
+msgid "Only finished titles are marked."
+msgstr "只標記看完的作品。"
+
+msgctxt "#32105"
+msgid "Clean posters"
+msgstr "乾淨的海報"
+
+msgctxt "#32106"
+msgid "No markers at all."
+msgstr "完全沒有標記。"
+
+msgctxt "#32107"
+msgid "Logos"
+msgstr "標誌"
+
+msgctxt "#32108"
+msgid "The artwork's clear logo"
+msgstr "圖片中的透明標誌"
+
+msgctxt "#32109"
+msgid "Clear logos from the artwork, text where a title has none."
+msgstr "取自圖片的透明標誌，沒有標誌的作品顯示文字。"
+
+msgctxt "#32110"
+msgid "Plain text"
+msgstr "純文字"
+
+msgctxt "#32111"
+msgid "Always the name in the skin's own font."
+msgstr "始終用面板自帶字型顯示名稱。"
+
+msgctxt "#32112"
+msgid "FULL HD, 4K, aspect ratio"
+msgstr "FULL HD、4K、長寬比"
+
+msgctxt "#32113"
+msgid "OK switches the resolution chips on or off."
+msgstr "OK 開啟或關閉解析度標籤。"
+
+msgctxt "#32114"
+msgid "SDR, HDR10, Dolby Vision profile"
+msgstr "SDR、HDR10、Dolby Vision 設定檔"
+
+msgctxt "#32115"
+msgid "OK switches the HDR chips on or off."
+msgstr "OK 開啟或關閉 HDR 標籤。"
+
+msgctxt "#32116"
+msgid "Codec and channels"
+msgstr "編解碼器和聲道"
+
+msgctxt "#32117"
+msgid "OK switches the audio chips on or off."
+msgstr "OK 開啟或關閉音訊標籤。"
+
+msgctxt "#32118"
+msgid "On to the extra fanart."
+msgstr "接下來是額外劇照。"
+
+msgctxt "#32119"
+msgid "Take turns"
+msgstr "輪流顯示"
+
+msgctxt "#32120"
+msgid "Every extra fanart in a slow cycle"
+msgstr "所有額外劇照緩慢輪換"
+
+msgctxt "#32121"
+msgid "The background changes picture every few seconds (Skin settings > Backgrounds sets how often)."
+msgstr "背景每隔幾秒換一張圖片（頻率在 面板設定 > 背景 中設定）。"
+
+msgctxt "#32122"
+msgid "One picture"
+msgstr "一張圖片"
+
+msgctxt "#32123"
+msgid "Only the main fanart"
+msgstr "僅主劇照"
+
+msgctxt "#32124"
+msgid "The background stays on the main fanart."
+msgstr "背景停留在主劇照上。"
+
+msgctxt "#32125"
+msgid "Hide them"
+msgstr "隱藏"
+
+msgctxt "#32126"
+msgid "No thumbnail or plot until watched"
+msgstr "看過之前不顯示縮圖和劇情"
+
+msgctxt "#32127"
+msgid "Unwatched episodes show a blurred picture and no plot."
+msgstr "未觀看的單集顯示模糊圖片，不顯示劇情。"
+
+msgctxt "#32128"
+msgid "Show them"
+msgstr "顯示"
+
+msgctxt "#32129"
+msgid "Thumbnails and plots for all"
+msgstr "全部顯示縮圖和劇情"
+
+msgctxt "#32130"
+msgid "Every episode shows its picture and plot."
+msgstr "每一集都顯示其圖片和劇情。"
+
+msgctxt "#32131"
+msgid "Full motion"
+msgstr "完整動畫"
+
+msgctxt "#32132"
+msgid "Smooth slides and fades"
+msgstr "流暢的滑動和淡化"
+
+msgctxt "#32133"
+msgid "Rows slide in one after another, dialogs glide open."
+msgstr "各列依序滑入，對話框平滑開啟。"
+
+msgctxt "#32134"
+msgid "Everything appears at once"
+msgstr "全部立即出現"
+
+msgctxt "#32135"
+msgid "No slides or zooms: calmer, and lighter on slow boxes."
+msgstr "無滑動或縮放：更平靜，對慢速裝置也更輕量。"
+
+msgctxt "#32136"
+msgid "When free RAM is low"
+msgstr "可用記憶體不足時"
+
+msgctxt "#32137"
+msgid "Recommended: below 1 GB free"
+msgstr "建議：可用記憶體低於 1 GB"
+
+msgctxt "#32138"
+msgid "Kodi hands memory back when the free RAM drops below the minimum (Skin settings can change it)."
+msgstr "可用記憶體低於最小值時 Kodi 歸還記憶體（可在面板設定中變更）。"
+
+msgctxt "#32139"
+msgid "After a pause"
+msgstr "停頓之後"
+
+msgctxt "#32140"
+msgid "A few seconds after the last key press"
+msgstr "最後一次按鍵幾秒後"
+
+msgctxt "#32141"
+msgid "Kodi hands memory back whenever the remote has been quiet for a moment."
+msgstr "遙控器每次安靜片刻時 Kodi 都會歸還記憶體。"
+
+msgctxt "#32142"
+msgid "Finish"
+msgstr "完成"
+
+msgctxt "#32143"
+msgid "Change something"
+msgstr "變更設定"
+
+msgctxt "#32144"
+msgid "Go back to the previous step."
+msgstr "返回上一步。"
+
+msgctxt "#32145"
+msgid "Huge thanks and credit go out to the following"
+msgstr "衷心感謝以下各位"
+
+msgctxt "#32146"
+msgid "The Kodi development team"
+msgstr "Kodi 開發團隊"
+
+msgctxt "#32147"
+msgid "OK  choose      BACK  previous step"
+msgstr "OK  選擇      返回  上一步"
+
+msgctxt "#32148"
+msgid "version"
+msgstr "版本"
+
+msgctxt "#32149"
+msgid "by"
+msgstr "作者"
+
+msgctxt "#32150"
+msgid "now"
+msgstr "現在"
+
+msgctxt "#32151"
+msgid "night"
+msgstr "夜晚"
+
+msgctxt "#32152"
+msgid "evening"
+msgstr "傍晚"
+
+msgctxt "#32153"
+msgid "afternoon"
+msgstr "下午"
+
+msgctxt "#32154"
+msgid "morning"
+msgstr "早上"
+
+msgctxt "#32158"
+msgid "until midnight"
+msgstr "後到午夜"
+
+msgctxt "#32159"
+msgid "tornado"
+msgstr "龍捲風"
+
+msgctxt "#32160"
+msgid "tropical storm"
+msgstr "熱帶風暴"
+
+msgctxt "#32161"
+msgid "hurricane"
+msgstr "颶風"
+
+msgctxt "#32162"
+msgid "severe storms"
+msgstr "強雷雨"
+
+msgctxt "#32163"
+msgid "thunderstorms"
+msgstr "雷雨"
+
+msgctxt "#32164"
+msgid "rain and snow"
+msgstr "雨夾雪"
+
+msgctxt "#32165"
+msgid "rain and sleet"
+msgstr "雨和冰珠"
+
+msgctxt "#32166"
+msgid "snow and sleet"
+msgstr "雪和冰珠"
+
+msgctxt "#32167"
+msgid "freezing drizzle"
+msgstr "凍毛毛雨"
+
+msgctxt "#32168"
+msgid "drizzle"
+msgstr "毛毛雨"
+
+msgctxt "#32169"
+msgid "freezing rain"
+msgstr "凍雨"
+
+msgctxt "#32170"
+msgid "showers"
+msgstr "陣雨"
+
+msgctxt "#32171"
+msgid "snow flurries"
+msgstr "零星小雪"
+
+msgctxt "#32172"
+msgid "light snow"
+msgstr "小雪"
+
+msgctxt "#32173"
+msgid "blowing snow"
+msgstr "吹雪"
+
+msgctxt "#32174"
+msgid "snow"
+msgstr "雪"
+
+msgctxt "#32175"
+msgid "hail"
+msgstr "冰雹"
+
+msgctxt "#32176"
+msgid "sleet"
+msgstr "冰珠"
+
+msgctxt "#32177"
+msgid "dust"
+msgstr "浮塵"
+
+msgctxt "#32178"
+msgid "fog"
+msgstr "霧"
+
+msgctxt "#32179"
+msgid "haze"
+msgstr "霾"
+
+msgctxt "#32180"
+msgid "smoke"
+msgstr "煙"
+
+msgctxt "#32181"
+msgid "blustery"
+msgstr "強風"
+
+msgctxt "#32182"
+msgid "windy"
+msgstr "有風"
+
+msgctxt "#32183"
+msgid "cold"
+msgstr "寒冷"
+
+msgctxt "#32184"
+msgid "cloudy"
+msgstr "多雲"
+
+msgctxt "#32185"
+msgid "mostly cloudy"
+msgstr "大部多雲"
+
+msgctxt "#32186"
+msgid "partly cloudy"
+msgstr "局部多雲"
+
+msgctxt "#32187"
+msgid "clear"
+msgstr "晴朗"
+
+msgctxt "#32188"
+msgid "sunny"
+msgstr "晴"
+
+msgctxt "#32189"
+msgid "fair"
+msgstr "晴好"
+
+msgctxt "#32190"
+msgid "rain and hail"
+msgstr "雨和冰雹"
+
+msgctxt "#32191"
+msgid "hot"
+msgstr "炎熱"
+
+msgctxt "#32192"
+msgid "isolated storms"
+msgstr "局部雷雨"
+
+msgctxt "#32193"
+msgid "scattered storms"
+msgstr "零星雷雨"
+
+msgctxt "#32194"
+msgid "scattered showers"
+msgstr "零星陣雨"
+
+msgctxt "#32195"
+msgid "heavy snow"
+msgstr "大雪"
+
+msgctxt "#32196"
+msgid "snow showers"
+msgstr "陣雪"
+
+msgctxt "#32197"
+msgid "thundershowers"
+msgstr "雷陣雨"
+
+msgctxt "#32198"
+msgid "Blustery"
+msgstr "強風"
+
+msgctxt "#32199"
+msgid "Hot"
+msgstr "炎熱"
+
+msgctxt "#32200"
+msgid "Fits before midnight"
+msgstr "午夜前能看完"
+
+msgctxt "#32201"
+msgid "fits before midnight"
+msgstr "午夜前能看完"
+
+msgctxt "#32202"
+msgid "under 100 minutes"
+msgstr "100 分鐘以內"
+
+msgctxt "#32203"
+msgid "something light"
+msgstr "輕鬆一點的"
+
+msgctxt "#32204"
+msgid "a long one"
+msgstr "長一點的"
+
+msgctxt "#32205"
+msgid "highly rated"
+msgstr "高分"
+
+msgctxt "#32206"
+msgid "right at midnight"
+msgstr "正好午夜"
+
+msgctxt "#32207"
+msgid "past midnight"
+msgstr "晚於午夜"
+
+msgctxt "#32208"
+msgid "before midnight"
+msgstr "早於午夜"
+
+msgctxt "#32209"
+msgid "kbps"
+msgstr "kbps"
+
+msgctxt "#32210"
+msgid "ch"
+msgstr "聲道"
+
+msgctxt "#32211"
+msgid "bit"
+msgstr "位元"
+
+msgctxt "#32212"
+msgid "kHz"
+msgstr "kHz"
+
+msgctxt "#32213"
+msgid "Hz"
+msgstr "Hz"
+
+msgctxt "#32214"
+msgid "TRACK"
+msgstr "曲目"
+
+msgctxt "#32215"
+msgid "FROM THE ALBUM"
+msgstr "· 專輯"
+
+msgctxt "#32216"
+msgid "Released in"
+msgstr "發行於"
+
+msgctxt "#32217"
+msgid "Record label"
+msgstr "唱片公司"
+
+msgctxt "#32218"
+msgid "Alphabetical"
+msgstr "依字母"
+
+msgctxt "#32219"
+msgid "Reversed"
+msgstr "反序"
+
+msgctxt "#32220"
+msgid "MINS"
+msgstr "分鐘"
+
+msgctxt "#32221"
+msgid "RATED"
+msgstr "分級"
+
+msgctxt "#32222"
+msgid "NOT RATED"
+msgstr "未分級"
+
+msgctxt "#32223"
+msgid "AN ALBUM BY"
+msgstr "專輯 · 藝人"
+
+msgctxt "#32224"
+msgid "RELEASED IN"
+msgstr "· 發行於"
+
+msgctxt "#32225"
+msgid "A TV SHOW"
+msgstr "電視節目"
+
+msgctxt "#32226"
+msgid "FIRST AIRED IN"
+msgstr "· 首播於"
+
+msgctxt "#32227"
+msgid "A MOVIE BY"
+msgstr "電影 · 導演"
+
+msgctxt "#32228"
+msgid "Active"
+msgstr "活躍"
+
+msgctxt "#32229"
+msgid "FORMED"
+msgstr "成立"
+
+msgctxt "#32230"
+msgid "DISBANDED"
+msgstr "解散"
+
+msgctxt "#32231"
+msgid "BORN"
+msgstr "出生"
+
+msgctxt "#32232"
+msgid "DIED"
+msgstr "逝世"
+
+msgctxt "#32233"
+msgid "Refresh information"
+msgstr "重新整理資訊"
+
+msgctxt "#32234"
+msgid "Take screenshot"
+msgstr "擷取畫面"
+
+msgctxt "#32235"
+msgid "Switch off"
+msgstr "關閉"
+
+msgctxt "#32236"
+msgid "Switch on"
+msgstr "開啟"
+
+msgctxt "#32237"
+msgid "Written by"
+msgstr "編劇："
+
+msgctxt "#32238"
+msgid "Directed by"
+msgstr "導演："
+
+msgctxt "#32239"
+msgid "SET"
+msgstr "系列"
+
+msgctxt "#32240"
+msgid "VOTES"
+msgstr "票"
+
+msgctxt "#32241"
+msgid "EPISODES"
+msgstr "集"
+
+msgctxt "#32242"
+msgid "UNWATCHED"
+msgstr "未看"
+
+msgctxt "#32243"
+msgid "Setup"
+msgstr "設定"
+
+msgctxt "#32244"
+msgid "Libraries"
+msgstr "媒體櫃"
+
+msgctxt "#32245"
+msgid "Motion"
+msgstr "動畫"
+
+msgctxt "#32246"
+msgid "Welcome to Aeon Fuse"
+msgstr "歡迎使用 Aeon Fuse"
+
+msgctxt "#32247"
+msgid "Library backdrop"
+msgstr "媒體櫃背景"
+
+msgctxt "#32248"
+msgid "Pick a palette"
+msgstr "選擇調色盤"
+
+msgctxt "#32249"
+msgid "Skin theme"
+msgstr "面板主題"
+
+msgctxt "#32250"
+msgid "Skin style"
+msgstr "面板風格"
+
+msgctxt "#32251"
+msgid "Home menu items"
+msgstr "主選單項目"
+
+msgctxt "#32252"
+msgid "Spotlight transition"
+msgstr "Spotlight 轉場"
+
+msgctxt "#32253"
+msgid "Corner boxes"
+msgstr "角落方框"
+
+msgctxt "#32254"
+msgid "Titles or logos"
+msgstr "標題或標誌"
+
+msgctxt "#32255"
+msgid "Extra fanart"
+msgstr "額外劇照"
+
+msgctxt "#32256"
+msgid "Spoilers"
+msgstr "劇透"
+
+msgctxt "#32257"
+msgid "All set"
+msgstr "全部就緒"
+
+msgctxt "#32258"
+msgid "A few quick choices make the skin yours. Every step shows a preview, and everything can be changed later in Skin settings."
+msgstr "幾個快速選擇就能讓面板成為你的。每一步都有預覽，以後也能在面板設定中變更一切。"
+
+msgctxt "#32259"
+msgid "What fills the space behind the library views. With Neutral the next step lets you pick a palette."
+msgstr "媒體櫃檢視後面的空間由什麼填滿。選擇中性後，下一步可以選擇調色盤。"
+
+msgctxt "#32260"
+msgid "The palette colours the neutral backdrop, the focus bar, the boxes and the strips (Aeon theme)."
+msgstr "調色盤為中性背景、焦點條、方框和條帶著色（Aeon 主題）。"
+
+msgctxt "#32261"
+msgid "Aeon draws solid panels with a bright focus bar. Aeon Glass lets the artwork shine through frosted panels."
+msgstr "Aeon 繪製純色面板和明亮的焦點條。Aeon Glass 讓圖片透過霧面面板顯現。"
+
+msgctxt "#32262"
+msgid "How settings, dialogs and side menus look: the skin theme's own menus, or Fuse, the rounded cards of this setup."
+msgstr "設定、對話框和側邊選單的外觀：面板主題自帶的選單，或 Fuse，即本設定的圓角卡片。"
+
+msgctxt "#32263"
+msgid "Switch the items you want on the Home menu. Order, custom items (three are always free) and their lists: Skin settings > Home menu."
+msgstr "開啟你想在主選單中顯示的項目。順序、自訂項目（始終留有三個空位）及其清單：面板設定 > 主選單。"
+
+msgctxt "#32264"
+msgid "Where the main menu sits on the Home screen."
+msgstr "主選單在主畫面上的位置。"
+
+msgctxt "#32265"
+msgid "The backdrop of the spotlight at the top of Home."
+msgstr "首頁頂端 Spotlight 的背景。"
+
+msgctxt "#32266"
+msgid "How one spotlight title gives way to the next."
+msgstr "一個 Spotlight 作品如何讓位給下一個。"
+
+msgctxt "#32267"
+msgid "The clock box, the item count and the strip boxes in the corners of the library."
+msgstr "媒體櫃角落裡的時鐘方框、項目數和條帶方框。"
+
+msgctxt "#32268"
+msgid "Small markers on posters: a dot for unwatched, a check for watched, a bar for in progress."
+msgstr "海報上的小標記：未看為圓點，已看為勾選，看到一半為進度列。"
+
+msgctxt "#32269"
+msgid "Show a title's clear logo where the skin has room for it, or its name in plain text."
+msgstr "在面板有空間的地方顯示作品的透明標誌，否則以純文字顯示名稱。"
+
+msgctxt "#32270"
+msgid "The chips under a title in the libraries and on the information page. Switch the ones you want."
+msgstr "媒體櫃和資訊頁面中作品下方的標籤。開啟你想要的。"
+
+msgctxt "#32271"
+msgid "Titles with more than one fanart can take turns showing them in the background."
+msgstr "有多張劇照的作品可以在背景中輪流顯示。"
+
+msgctxt "#32272"
+msgid "Unwatched episodes can keep their thumbnail and plot to themselves."
+msgstr "未觀看的單集可以隱藏縮圖和劇情。"
+
+msgctxt "#32273"
+msgid "Slides and fades when views, menus and dialogs open."
+msgstr "開啟檢視、選單和對話框時的滑動和淡化。"
+
+msgctxt "#32274"
+msgid "On small boxes Kodi keeps memory it no longer uses. The skin's helper can hand it back to the system."
+msgstr "在小型裝置上，Kodi 會保留不再使用的記憶體。面板的 helper 可以把它還給系統。"
+
+msgctxt "#32275"
+msgid "Your choices are saved. Run the setup again any time from Skin settings > Motion, memory, reset."
+msgstr "你的選擇已儲存。隨時可再次執行設定：面板設定 > 動畫、記憶體、重設。"
+
+msgctxt "#32276"
+msgid "Kodi restarts to show the new look"
+msgstr "Kodi 將重新啟動以顯示新外觀"
+
+msgctxt "#32277"
+msgid "Then restart Kodi once"
+msgstr "之後請重新啟動 Kodi 一次"
+
+msgctxt "#32278"
+msgid "Close the setup"
+msgstr "關閉設定"
+
+msgctxt "#32279"
+msgid "A new theme or palette needs Kodi to start again; it takes a few seconds."
+msgstr "新主題或調色盤需要重新啟動 Kodi，只需幾秒鐘。"
+
+msgctxt "#32280"
+msgid "The new look shows at once. Restart Kodi when you can: until then some settings may read wrong."
+msgstr "新外觀立即顯示。方便時請重新啟動 Kodi：在此之前部分設定可能顯示錯誤。"
+
+msgctxt "#32281"
+msgid "Enjoy Aeon Fuse."
+msgstr "享受 Aeon Fuse 吧。"
+
+msgctxt "#32282"
+msgid "ends"
+msgstr "結束"
+
+msgctxt "#32283"
+msgid "Nothing unwatched fits before midnight tonight."
+msgstr "今晚午夜前沒有能看完的未看作品。"
+
+msgctxt "#32285"
+msgid "of"
+msgstr "/"
+
+msgctxt "#32286"
+msgid "watched"
+msgstr "已看"
+
+msgctxt "#32287"
+msgid "unwatched"
+msgstr "未看"
+
+msgctxt "#32288"
+msgid "Nothing unwatched fits this slot. Try Films for everything."
+msgstr "這個時段放不下任何未看作品。所有作品請看電影。"
+
+msgctxt "#32289"
+msgid "Nothing here yet."
+msgstr "這裡還沒有內容。"
+
+msgctxt "#32290"
+msgid "Current"
+msgstr "目前"
+
+msgctxt "#32291"
+msgid "Rec"
+msgstr "錄製"
+
+msgctxt "#32292"
+msgid "Remind"
+msgstr "提醒"
+
+msgctxt "#32293"
+msgid "Archive"
+msgstr "封存"
+
+msgctxt "#32294"
+msgid "Edited"
+msgstr "已編輯"
+
+msgctxt "#32295"
+msgid "About"
+msgstr "關於"
+
+msgctxt "#32296"
+msgid "Group"
+msgstr "群組"
+
+msgctxt "#32297"
+msgid "Nothing here yet"
+msgstr "這裡還沒有內容"
+
+msgctxt "#32298"
+msgid "Tracklist"
+msgstr "曲目清單"
+
+msgctxt "#32299"
+msgid "born"
+msgstr "出生"
+
+msgctxt "#32300"
+msgid "formed"
+msgstr "成立"
+
+msgctxt "#32301"
+msgid "minutes of music"
+msgstr "分鐘音樂"
+
+msgctxt "#32302"
+msgid "Start now, done by"
+msgstr "現在開始，結束於"
+
+msgctxt "#32303"
+msgid "The music stops at"
+msgstr "音樂停止於"
+
+msgctxt "#32304"
+msgid "OK for the controls."
+msgstr "按 OK 顯示控制。"
+
+msgctxt "#32305"
+msgid "Go to"
+msgstr "跳至"
+
+msgctxt "#32306"
+msgid "Sleeps when this ends  ·  bedtime"
+msgstr "結束後休眠  ·  就寢時間"
+
+msgctxt "#32307"
+msgid "RESULTS"
+msgstr "個結果"
+
+msgctxt "#32308"
+msgid "track"
+msgstr "首曲目"
+
+msgctxt "#32309"
+msgid "tracks"
+msgstr "首曲目"
+
+msgctxt "#32310"
+msgid "option"
+msgstr "個選項"
+
+msgctxt "#32311"
+msgid "options"
+msgstr "個選項"
+
+msgctxt "#32312"
+msgid "item"
+msgstr "個項目"
+
+msgctxt "#32313"
+msgid "album in your library"
+msgstr "張專輯在媒體櫃中"
+
+msgctxt "#32314"
+msgid "albums in your library"
+msgstr "張專輯在媒體櫃中"
+
+msgctxt "#32315"
+msgid "film"
+msgstr "部電影"
+
+msgctxt "#32316"
+msgid "person"
+msgstr "人"
+
+msgctxt "#32317"
+msgid "people"
+msgstr "人"
+
+msgctxt "#32318"
+msgid "episode"
+msgstr "集"
+
+msgctxt "#32319"
+msgid "episodes"
+msgstr "集"
+
+msgctxt "#32320"
+msgid "film watched"
+msgstr "部電影已看"
+
+msgctxt "#32321"
+msgid "films watched"
+msgstr "部電影已看"
+
+msgctxt "#32322"
+msgid "episode watched"
+msgstr "集已看"
+
+msgctxt "#32323"
+msgid "episodes watched"
+msgstr "集已看"
+
+msgctxt "#32324"
+msgid "Midnight"
+msgstr "午夜"
+
+msgctxt "#32325"
+msgid "The extra items Aeon Fuse adds to Kodi's context menu: which of them show and in what order."
+msgstr "Aeon Fuse 加入 Kodi 內容選單的項目：顯示哪些以及順序。"
+
+msgctxt "#32326"
+msgid "Kodi lists these after its own items (and before those of other add-ons that come later). Pick one, then use the buttons on the right."
+msgstr "Kodi 將它們列在自己的項目之後（並在之後其他附加元件的項目之前）。選擇一項，然後使用右側按鈕。"
+
+msgctxt "#32327"
+msgid "Shows or hides the selected item in the context menu."
+msgstr "在內容選單中顯示或隱藏所選項目。"
+
+msgctxt "#32328"
+msgid "Moves the selected item one place up in the context menu."
+msgstr "將所選項目在內容選單中上移一位。"
+
+msgctxt "#32329"
+msgid "Moves the selected item one place down in the context menu."
+msgstr "將所選項目在內容選單中下移一位。"
+
+msgctxt "#32330"
+msgid "The backdrop of the widget screens (Up on a Home item) slowly zooms in with every title. Reduce motion stops it too."
+msgstr "小工具畫面（在首頁項目上按上）的背景隨每個作品緩慢放大。減少動畫也會停止它。"
+
+msgctxt "#32331"
+msgid "A font family for each part of the skin: Home, the libraries, headings, the settings pages and the player."
+msgstr "為面板的每個部分選擇字型家族：首頁、媒體櫃、標題、設定頁面和播放器。"
+
+msgctxt "#32332"
+msgid "Film"
+msgstr "電影"
+
+msgctxt "#32333"
+msgid "Resume now: done by"
+msgstr "現在繼續：結束於"
+
+msgctxt "#32334"
+msgid "Start now: ends"
+msgstr "現在開始：結束於"
+
+msgctxt "#32336"
+msgid "Down for the films"
+msgstr "按下查看電影"
+
+msgctxt "#32337"
+msgid "Down for the cast"
+msgstr "按下查看演員"
+
+msgctxt "#32338"
+msgid "Story"
+msgstr "故事"
+
+msgctxt "#32339"
+msgid "split"
+msgstr "解散"
+
+msgctxt "#32340"
+msgid "died"
+msgstr "逝世"
+
+msgctxt "#32341"
+msgid "Resume at"
+msgstr "繼續於"
+
+msgctxt "#32342"
+msgid "added"
+msgstr "加入於"
+
+msgctxt "#32343"
+msgid "season"
+msgstr "季"
+
+msgctxt "#32344"
+msgid "seasons"
+msgstr "季"
+
+msgctxt "#32345"
+msgid "Aired"
+msgstr "播出"
+
+msgctxt "#32346"
+msgid "Resume now and you're done by"
+msgstr "現在繼續，結束於"
+
+msgctxt "#32347"
+msgid "Start now and it ends at"
+msgstr "現在開始，結束於"
+
+msgctxt "#32348"
+msgid "after midnight"
+msgstr "晚於午夜"
+
+msgctxt "#32349"
+msgid "Start now and you're done by"
+msgstr "現在開始，結束於"
+
+msgctxt "#32350"
+msgid "still to watch"
+msgstr "集待看"
+
+msgctxt "#32351"
+msgid "aired"
+msgstr "播出"
+
+msgctxt "#32352"
+msgid "rated"
+msgstr "評分"
+
+msgctxt "#32353"
+msgid "With"
+msgstr "主演："
+
+msgctxt "#32354"
+msgid "Progress"
+msgstr "進度"
+
+msgctxt "#32355"
+msgid "to watch"
+msgstr "集待看"
+
+msgctxt "#32356"
+msgid "No channels. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "沒有頻道。請在 PVR 和直播電視設定中啟用 PVR 用戶端附加元件。"
+
+msgctxt "#32357"
+msgid "No recordings."
+msgstr "沒有錄影。"
+
+msgctxt "#32358"
+msgid "No results."
+msgstr "沒有結果。"
+
+msgctxt "#32359"
+msgid "No timers."
+msgstr "沒有計時器。"
+
+msgctxt "#32360"
+msgid "updated"
+msgstr "更新於"
+
+msgctxt "#32361"
+msgid "Setup wizard"
+msgstr "設定精靈"
+
+msgctxt "#32362"
+msgid "Theme, palette, backgrounds, Home"
+msgstr "主題、調色盤、背景、首頁"
+
+msgctxt "#32363"
+msgid "Widget screens: slow zoom"
+msgstr "小工具畫面：緩慢放大"
+
+msgctxt "#32364"
+msgid "Kodi shows these after its own items, in this order (items of other add-ons can follow). Update and Clean library show in the libraries and on Home, Refresh information on films, shows, episodes and music videos, Take screenshot everywhere."
+msgstr "Kodi 依此順序將它們顯示在自己的項目之後（其他附加元件的項目可能隨後出現）。更新和清理媒體櫃顯示在媒體櫃和首頁中，重新整理資訊顯示在電影、影集、單集和音樂影片上，擷取畫面隨處可用。"
+
+msgctxt "#32365"
+msgid "PICTURE"
+msgstr "圖片"
+
+msgctxt "#32366"
+msgid "Smart playlist"
+msgstr "智慧播放清單"
+
+msgctxt "#32367"
+msgid "Source"
+msgstr "來源"
+
+msgctxt "#32368"
+msgid "fps"
+msgstr "fps"
+
+msgctxt "#32369"
+msgid "AR"
+msgstr "AR"
+
+msgctxt "#32370"
+msgid "Dynamic range"
+msgstr "動態範圍"
+
+msgctxt "#32371"
+msgid "Decoder"
+msgstr "解碼器"
+
+msgctxt "#32372"
+msgid "Pixel format"
+msgstr "像素格式"
+
+msgctxt "#32373"
+msgid "Deinterlace"
+msgstr "去交錯"
+
+msgctxt "#32374"
+msgid "Display"
+msgstr "顯示"
+
+msgctxt "#32375"
+msgid "Audio output"
+msgstr "音訊輸出"
+
+msgctxt "#32376"
+msgid "Interface"
+msgstr "介面"
+
+msgctxt "#32377"
+msgid "memory"
+msgstr "記憶體"
+
+msgctxt "#32378"
+msgid "FILE"
+msgstr "檔案"
+
+msgctxt "#32379"
+msgid "SIZE"
+msgstr "大小"
+
+msgctxt "#32380"
+msgid "TAKEN"
+msgstr "拍攝於"
+
+msgctxt "#32381"
+msgid "STATE"
+msgstr "狀態"
+
+msgctxt "#32382"
+msgid "until bedtime"
+msgstr "後到就寢時間"
+
+msgctxt "#32383"
+msgid "Fits before bedtime"
+msgstr "就寢前能看完"
+
+msgctxt "#32384"
+msgid "fits before bedtime"
+msgstr "就寢前能看完"
+
+msgctxt "#32385"
+msgid "Nothing unwatched fits before bedtime tonight."
+msgstr "今晚就寢前沒有能看完的未看作品。"
+
+msgctxt "#32386"
+msgid "right at your bedtime"
+msgstr "正好到就寢時間"
+
+msgctxt "#32387"
+msgid "past your bedtime"
+msgstr "超過就寢時間"
+
+msgctxt "#32388"
+msgid "before your bedtime"
+msgstr "早於就寢時間"
+
+msgctxt "#32389"
+msgid "after your bedtime"
+msgstr "晚於就寢時間"
+
+msgctxt "#32390"
+msgid "Continuing"
+msgstr "連載中"
+
+msgctxt "#32391"
+msgid "Ended"
+msgstr "已完結"
+
+msgctxt "#32392"
+msgid "Cancelled"
+msgstr "已取消"
+
+msgctxt "#32393"
+msgid "In production"
+msgstr "製作中"
+
+msgctxt "#32394"
+msgid "Planned"
+msgstr "計畫中"
+
+msgctxt "#32395"
+msgid "Upcoming"
+msgstr "即將推出"
+
+msgctxt "#32396"
+msgid "Pilot"
+msgstr "試播"
+
+msgctxt "#32397"
+msgid "Now playing in"
+msgstr "正在播放 –"
+
+msgctxt "#32398"
+msgid "Films of a set"
+msgstr "系列中的電影"
+
+msgctxt "#32399"
+msgid "Versions of a film"
+msgstr "電影的版本"
+
+msgctxt "#32400"
+msgid "Grid"
+msgstr "網格"
+
+msgctxt "#32401"
+msgid "One at a time"
+msgstr "逐一"
+
+msgctxt "#32402"
+msgid "Fused Glass"
+msgstr "Fused Glass"
+
+msgctxt "#32403"
+msgid "Next hours"
+msgstr "未來幾小時"
+
+msgctxt "#32404"
+msgid "This week"
+msgstr "本週"
+
+msgctxt "#32405"
+msgid "No weather yet. Choose a weather service in Settings > Services > Weather."
+msgstr "尚無天氣資料。請在 設定 > 服務 > 天氣 中選擇天氣服務。"
+
+msgctxt "#32406"
+msgid "Recent searches"
+msgstr "最近搜尋"
+
+msgctxt "#32407"
+msgid "In Fused Glass the music playing always sits beside the clock on Home; this setting is for the other themes."
+msgstr "在 Fused Glass 中，正在播放的音樂總是顯示在首頁的時鐘旁邊；此設定用於其他主題。"
+
+msgctxt "#32408"
+msgid "Focus highlight"
+msgstr "焦點醒目提示"
+
+msgctxt "#32409"
+msgid "Pill"
+msgstr "膠囊"
+
+msgctxt "#32410"
+msgid "Flat"
+msgstr "平直"
+
+msgctxt "#32411"
+msgid "Frosted"
+msgstr "霧面"
+
+msgctxt "#32412"
+msgid "Outline"
+msgstr "外框"
+
+msgctxt "#32413"
+msgid "Tight"
+msgstr "緊湊"
+
+msgctxt "#32414"
+msgid "How the item in focus is marked in lists and menus. Changing it reloads the skin."
+msgstr "清單和選單中焦點項目的標示方式。變更後會重新載入面板。"
+
+msgctxt "#32415"
+msgid "Navigation animation"
+msgstr "導覽動畫"
+
+msgctxt "#32416"
+msgid "Pop"
+msgstr "彈跳"
+
+msgctxt "#32417"
+msgid "Grow"
+msgstr "放大"
+
+msgctxt "#32418"
+msgid "Fade"
+msgstr "淡入"
+
+msgctxt "#32419"
+msgid "Glow"
+msgstr "光暈"
+
+msgctxt "#32420"
+msgid "Nudge"
+msgstr "輕推"
+
+msgctxt "#32421"
+msgid "Lift"
+msgstr "抬起"
+
+msgctxt "#32422"
+msgid "How the highlight moves when it lands on an item. Pop is the default."
+msgstr "醒目提示落到項目上時的動作。預設為彈跳。"
+
+msgctxt "#32423"
+msgid "Font combination"
+msgstr "字型組合"
+
+msgctxt "#32424"
+msgid "A heading and text font combination, shown before you pick it, or your own font for each part of the skin."
+msgstr "附預覽的標題與內文字型組合，或為面板的每個部分個別選擇字型。"
+
+msgctxt "#32425"
+msgid "Home menu: only the focused item's name"
+msgstr "主選單：只顯示焦點項目的名稱"
+
+msgctxt "#32426"
+msgid "On: the other items of the Home menu show only their icon and the focused item shows its name."
+msgstr "開啟：主選單其他項目只顯示圖示，焦點項目顯示名稱。"
+
+msgctxt "#32427"
+msgid "Segment skip button placement"
+msgstr "片段跳過按鈕位置"
+
+msgctxt "#32428"
+msgid "Tab"
+msgstr "標籤"
+
+msgctxt "#32429"
+msgid "Glass"
+msgstr "玻璃"
+
+msgctxt "#32430"
+msgid "How the skip button sits on the player controls and the small seek bar: a white tab on the card's edge, or a capsule of the card's glass above it."
+msgstr "略過按鈕在播放控制與小進度列上的樣式：卡片邊緣的白色標籤，或卡片上方同樣玻璃質感的膠囊。"
+
+msgctxt "#32431"
+msgid "Available in library"
+msgstr "媒體櫃中已有"
+
+msgctxt "#32432"
+msgid "In library"
+msgstr "已在媒體櫃"
+
+msgctxt "#32433"
+msgid "Random %s"
+msgstr "隨機%s"
+
+msgctxt "#32434"
+msgid "Recently added %s"
+msgstr "最近新增的%s"
+
+msgctxt "#32435"
+msgid "Recently played %s"
+msgstr "最近播放的%s"
+
+msgctxt "#32436"
+msgid "Top rated %s"
+msgstr "高評分%s"
+
+msgctxt "#32437"
+msgid "Most played %s"
+msgstr "最常播放的%s"
+
+msgctxt "#32438"
+msgid "Newest %s"
+msgstr "最新%s"
+
+msgctxt "#32439"
+msgid "%s by title"
+msgstr "依標題排列的%s"
+
+msgctxt "#32440"
+msgid "Scroll through channels"
+msgstr "捲動瀏覽頻道"
+
+msgctxt "#32441"
+msgid "Auto-fix art with the wrong shape"
+msgstr "自動修正形狀不對的圖片"
+
+msgctxt "#32442"
+msgid "Check library art now"
+msgstr "立即檢查媒體櫃圖片"
+
+msgctxt "#32443"
+msgid "Library art"
+msgstr "媒體櫃圖片"
+
+msgctxt "#32444"
+msgid "Now uses a picture from the same folder that fits"
+msgstr "現在使用同一資料夾中合適的圖片"
+
+msgctxt "#32445"
+msgid "Wrong shape, nothing in the folder fits"
+msgstr "形狀不對，資料夾中沒有合適的圖片"
+
+msgctxt "#32446"
+msgid "Every picture has the right shape."
+msgstr "所有圖片的形狀都正確。"
+
+msgctxt "#32447"
+msgid "Fixed in the library: %d"
+msgstr "已在媒體櫃中修正：%d"
+
+msgctxt "#32448"
+msgid "After a refresh or a library scan, a poster, banner, landscape or fanart of the wrong shape is replaced by a picture of the same name in the same folder that fits. Your files stay as they are."
+msgstr "重新整理或掃描媒體櫃後，形狀不對的海報、橫幅、風景圖或背景圖會換成同一資料夾中同名且形狀合適的圖片。你的檔案保持不變。"
+
+msgctxt "#32449"
+msgid "Checks every picture Kodi has shown and fixes what it can. A list shows what was replaced and what is still the wrong shape."
+msgstr "檢查 Kodi 顯示過的每張圖片，能修正的就修正。清單會列出已替換的與仍然形狀不對的圖片。"
+
+msgctxt "#32450"
+msgid "Slot left empty: the skin shows the show's picture until season art is added"
+msgstr "此欄留空：在加入季圖片前，外觀會顯示影集圖片"
+
+msgctxt "#32451"
+msgid "Only Kodi's library changed. Your files are untouched."
+msgstr "只變更了 Kodi 的媒體櫃，你的檔案沒有改動。"
+
+msgctxt "#32452"
+msgid "Mosaic"
+msgstr "馬賽克"
+
+msgctxt "#32453"
+msgid "Ledger"
+msgstr "帳本"
+
+msgctxt "#32454"
+msgid "Bridge"
+msgstr "橋"
+
+msgctxt "#32455"
+msgid "Tab slab"
+msgstr "標籤"
+
+msgctxt "#32456"
+msgid "How the menus join their boxes: Mosaic, Ledger, Bridge or Tab slab. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "選單拼接方框的方式：馬賽克、帳本、橋或標籤。Fuse 使用圓角卡片，需要重新啟動 Kodi。"
+
+msgctxt "#32457"
+msgid "Aeon Glass keeps its own menus. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "Aeon Glass 保留自己的選單。Fuse 使用圓角卡片，需要重新啟動 Kodi。"
+
+msgctxt "#32458"
+msgid "Library options"
+msgstr "媒體櫃選項"
+
+msgctxt "#32459"
+msgid "Strip"
+msgstr "側欄"
+
+msgctxt "#32460"
+msgid "Box"
+msgstr "方框"
+
+msgctxt "#32461"
+msgid "Left at the edge of a view or the Menu key opens the side strip, or a big box in the menu style."
+msgstr "在檢視邊緣按左或按選單鍵會開啟側欄，或選單樣式的大方框。"
+
+msgctxt "#32462"
+msgid "Skippy: skip button style"
+msgstr "Skippy：跳過按鈕樣式"
+
+msgctxt "#32463"
+msgid "Box pair"
+msgstr "方框組"
+
+msgctxt "#32464"
+msgid "Clock dock"
+msgstr "靠時鐘"
+
+msgctxt "#32465"
+msgid "Aeon theme: a palette tile and a label box at the bottom right (above the player controls when they are open), or a row at the top right that ends in the clock box."
+msgstr "Aeon 主題：右下角的色塊和文字框（播放器控制項開啟時在其上方），或右上角以時鐘框結尾的一列。"
+
+msgctxt "#32466"
+msgid "Use the palette for"
+msgstr "調色盤用於"
+
+msgctxt "#32467"
+msgid "Menus and library views"
+msgstr "選單和媒體櫃檢視"
+
+msgctxt "#32468"
+msgid "Menus only"
+msgstr "僅選單"
+
+msgctxt "#32469"
+msgid "Library views only"
+msgstr "僅媒體櫃檢視"
+
+msgctxt "#32470"
+msgid "Colors: the colour of the artwork; in the library with the Neutral backdrop and a palette other than Aeon, the palette's own darker box colour. Neutral: always the palette's box colour. Fanart: a window onto the fanart. Backdrop: as the library backdrop. View settings sets it per view."
+msgstr "色彩：圖片的顏色；在媒體櫃中背景為中性且調色盤不是 Aeon 時，使用調色盤自己較深的方框顏色。中性：一律使用調色盤的方框顏色。同人畫：看到同人畫的視窗。背景：與媒體櫃背景相同。檢視設定可依檢視設定。"
+
+msgctxt "#32471"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages, for the menus and the library views, the menus only or the library views only. The library background takes it with the Neutral backdrop only."
+msgstr "醒目提示、方框、條帶和設定頁面的顏色，用於選單和媒體櫃檢視、僅選單或僅媒體櫃檢視。媒體櫃背景僅在中性背景時使用它。"
+
+msgctxt "#32472"
+msgid "Band under the Home menu"
+msgstr "主頁選單下方的色帶"
+
+msgctxt "#32473"
+msgid "A dark band from the Home menu down to the bottom of the screen, with a thin line on top, over the spotlight pictures. It follows the menu: middle or low."
+msgstr "從主頁選單到螢幕底部的一條深色帶，頂端有一條細線，位於聚光燈圖片之上。它跟隨選單位置：中間或底部。"
+
+msgctxt "#32474"
+msgid "Toasts expand from clock pill"
+msgstr "通知從時鐘膠囊展開"
+
+msgctxt "#32475"
+msgid "A notification widens the clock pill to the left and shows itself in it, instead of a capsule of its own. Library views and full-screen video keep the capsule."
+msgstr "通知會把時鐘膠囊向左加寬並顯示在其中，而不是使用自己的膠囊。媒體櫃檢視和全螢幕影片保留原來的膠囊。"
+
+msgctxt "#32476"
+msgid "Clearlogo in Now playing"
+msgstr "正在播放中顯示透明標誌"
+
+msgctxt "#32477"
+msgid "Live"
+msgstr "直播"
+
+msgctxt "#32478"
+msgid "Fused Glass player: the clearlogo of the show or film in the Now playing pill at the top left, instead of its title. Off: the title."
+msgstr "Fused Glass 播放器：左上角「正在播放」膠囊中顯示影集或電影的透明標誌，而不是標題。關閉：顯示標題。"
+
+msgctxt "#32479"
+msgid "Overview"
+msgstr "概覽"
+
+msgctxt "#32480"
+msgid "File and season"
+msgstr "檔案與季"
+
+msgctxt "#32481"
+msgid "In this file"
+msgstr "此檔案"
+
+msgctxt "#32482"
+msgid "File"
+msgstr "檔案"
+
+msgctxt "#32483"
+msgid "Size"
+msgstr "大小"
+
+msgctxt "#32484"
+msgid "Playing on"
+msgstr "播放裝置"
+
+msgctxt "#32485"
+msgid "Cast photos in the information screen"
+msgstr "資訊頁顯示演員照片"
+
+msgctxt "#32486"
+msgid "Fused Glass player: the information screen shows the cast as round photos with the name and the character under each, in one row you scroll through. Off: the names as chips."
+msgstr "Fused Glass 播放器：資訊頁以圓形照片顯示演員，每張照片下有姓名和角色，排成一列可捲動。關閉：以標籤顯示姓名。"
+
+msgctxt "#32487"
+msgid "Up"
+msgstr "上"
+
+msgctxt "#32488"
+msgid "Down"
+msgstr "下"
+
+msgctxt "#32489"
+msgid "Kodi running for"
+msgstr "Kodi 已執行"
+
+msgctxt "#32490"
+msgid "Box up for"
+msgstr "裝置已執行"
+
+msgctxt "#32491"
+msgid "Nothing is playing"
+msgstr "沒有播放內容"
+
+msgctxt "#32492"
+msgid "Sleep"
+msgstr "睡眠"
+
+msgctxt "#32493"
+msgid "Restart Kodi"
+msgstr "重新啟動 Kodi"
+
+msgctxt "#32495"
+msgid "Reboot to Android"
+msgstr "重新啟動到 Android"
+
+msgctxt "#32496"
+msgid "Shut down"
+msgstr "關機"
+
+msgctxt "#32497"
+msgid "OK again to confirm"
+msgstr "再按一次 OK 確認"
+
+msgctxt "#32498"
+msgid "Log off"
+msgstr "登出"
+
+msgctxt "#32499"
+msgid "Exit Kodi"
+msgstr "結束 Kodi"
+
+msgctxt "#32500"
+msgid "When this ends"
+msgstr "播放結束時"
+
+msgctxt "#32501"
+msgid "min"
+msgstr "分鐘"
+
+msgctxt "#32502"
+msgid "Health"
+msgstr "狀態"
+
+msgctxt "#32503"
+msgid "All good"
+msgstr "一切正常"
+
+msgctxt "#32504"
+msgid "Running warm"
+msgstr "溫度偏高"
+
+msgctxt "#32505"
+msgid "Memory almost full"
+msgstr "記憶體快滿了"
+
+msgctxt "#32506"
+msgid "Processor"
+msgstr "處理器"
+
+msgctxt "#32507"
+msgid "Shortcuts"
+msgstr "捷徑"
+
+msgctxt "#32508"
+msgid "Recently used add-ons"
+msgstr "最近使用的附加元件"
+
+msgctxt "#32509"
+msgid "Library jobs"
+msgstr "媒體櫃工作"
+
+msgctxt "#32510"
+msgid "All episodes"
+msgstr "所有劇集"
+
+msgctxt "#32511"
+msgid "to the tile"
+msgstr "回到磚塊"
+
+msgctxt "#32512"
+msgid "{n} min left"
+msgstr "還剩 {n} 分鐘"
+
+msgctxt "#32513"
+msgid "{episode} airs {date}"
+msgstr "{episode} 將於 {date} 播出"
+
+msgctxt "#32514"
+msgid "{n} more waiting in season {season}"
+msgstr "第 {season} 季還有 {n} 集"
+
+msgctxt "#32515"
+msgid "1 more waiting in season {season}"
+msgstr "第 {season} 季還有 1 集"
+
+msgctxt "#32516"
+msgid "Search your library"
+msgstr "搜尋媒體櫃"
+
+msgctxt "#32517"
+msgid "Films, shows, episodes, music, people"
+msgstr "電影、影集、單集、音樂、人物"
+
+msgctxt "#32518"
+msgid "You're on {episode}"
+msgstr "看到 {episode}"
+
+msgctxt "#32519"
+msgid "Last search:"
+msgstr "上次搜尋:"
+
+msgctxt "#32520"
+msgid "Also search"
+msgstr "還可搜尋"
+
+msgctxt "#32521"
+msgid "TMDb, not in the library"
+msgstr "TMDb（不在媒體櫃中）"
+
+msgctxt "#32522"
+msgid "People"
+msgstr "人物"
+
+msgctxt "#32523"
+msgid "Online"
+msgstr "線上"
+
+msgctxt "#32524"
+msgid "Next 7 days"
+msgstr "未來 7 天"
+
+msgctxt "#32525"
+msgid "Shows you watch"
+msgstr "你在看的影集"
+
+msgctxt "#32526"
+msgid "View settings"
+msgstr "檢視設定"
+
+msgctxt "#32527"
+msgid "Background"
+msgstr "背景"
+
+msgctxt "#32528"
+msgid "Nothing out"
+msgstr "沒有新內容"
+
+msgctxt "#32529"
+msgid "{n} this week"
+msgstr "本週 {n}"
+
+msgctxt "#32530"
+msgid "1 episode"
+msgstr "1 集"
+
+msgctxt "#32531"
+msgid "{n} episodes"
+msgstr "{n} 集"
+
+msgctxt "#32532"
+msgid "1 film"
+msgstr "1 部電影"
+
+msgctxt "#32533"
+msgid "{n} films"
+msgstr "{n} 部電影"
+
+msgctxt "#32534"
+msgid "Week: seven days side by side. Day: one day at a time."
+msgstr "週：七天並排顯示。日：一次一天。"
+
+msgctxt "#32535"
+msgid "Episodes, films or both."
+msgstr "劇集、電影或兩者。"
+
+msgctxt "#32536"
+msgid "Only the episodes of shows you have watched before."
+msgstr "只顯示看過的影集的新集。"
+
+msgctxt "#32537"
+msgid "Colors: the colours of the selected title's artwork. Neutral: plain. Fanart: the picture itself."
+msgstr "色彩：所選標題圖片的顏色。中性：純色。Fanart：圖片本身。"
+
+msgctxt "#32538"
+msgid "The first day of a week. Today: always the next seven days."
+msgstr "一週的第一天。今天：一律為未來七天。"
+
+msgctxt "#32539"
+msgid "This week"
+msgstr "本週"
+
+msgctxt "#32540"
+msgid "Next week"
+msgstr "下週"
+
+msgctxt "#32541"
+msgid "{n} in progress"
+msgstr "{n} 集在看"
+
+msgctxt "#32542"
+msgid "{n} unwatched"
+msgstr "{n} 集未看"
+
+msgctxt "#32543"
+msgid "All watched"
+msgstr "全部看完"
+
+msgctxt "#32544"
+msgid "Episode combined"
+msgstr "劇集合併"
+
+msgctxt "#32545"
+msgid "Season buttons, the episodes in a card and the one in focus beside it"
+msgstr "季按鈕、卡片中的劇集和旁邊選取的一集"
+
+msgctxt "#32546"
+msgid "{time} of {total}"
+msgstr "{time} / {total}"
+
+msgctxt "#32547"
+msgid "Frost"
+msgstr "霧面"
+
+msgctxt "#32548"
+msgid "Raised"
+msgstr "浮起"
+
+msgctxt "#32549"
+msgid "Clear"
+msgstr "透明"
+
+msgctxt "#32550"
+msgid "Library view theme"
+msgstr "媒體櫃檢視主題"
+
+msgctxt "#32551"
+msgid "The glass of the frosted panels: library views, Home panels and the Home bar. Menus and dialogs follow Menu theme. Frost: lighter. Raised: lit rim, deep shadow. Clear: thin, no blur. Dark: darker."
+msgstr "霧面面板的玻璃：媒體櫃檢視、主頁面板和主頁列。選單和對話框依照選單主題。霧面：較亮。浮起：亮邊、深陰影。透明：薄。深色：較暗。"
+
+msgctxt "#32552"
+msgid "Earlier days"
+msgstr "之前的日子"
+
+msgctxt "#32553"
+msgid "Also show what aired on the days of this week before today (episodes in your library)."
+msgstr "也顯示本週今天之前播出的內容（媒體櫃中的劇集）。"
+
+msgctxt "#32554"
+msgid "Menu names in capitals"
+msgstr "選單名稱大寫"
+
+msgctxt "#32555"
+msgid "Fused Glass: the Home menu names in capital letters instead of sentence case."
+msgstr "Fused Glass：主選單名稱使用大寫字母。"
+
+msgctxt "#32556"
+msgid "In cinemas now"
+msgstr "正在上映"
+
+msgctxt "#32557"
+msgid "Airing today"
+msgstr "今天播出"
+
+msgctxt "#32558"
+msgid "Airing tomorrow"
+msgstr "明天播出"
+
+msgctxt "#32559"
+msgid "Save lyrics next to the song"
+msgstr "將歌詞儲存在歌曲旁邊"
+
+msgctxt "#32560"
+msgid "Lyrics that CU LRC Lyrics finds are also saved as a file next to the song (.lrc or .txt), so they are there next time and for other players. The music folder must be writable."
+msgstr "CU LRC Lyrics 找到的歌詞也會以檔案 (.lrc 或 .txt) 儲存在歌曲旁邊，下次和其他播放器都能使用。音樂資料夾必須可寫入。"
+
+msgctxt "#32561"
+msgid "Home spotlight: recently watched sets"
+msgstr "首頁 Spotlight：最近觀看的系列"
+
+msgctxt "#32562"
+msgid "The spotlight of a Home item that shows movie sets (Sets, for example) lists the sets you watched last, newest first. Off: all sets, as its spotlight settings say."
+msgstr "顯示電影系列的首頁項目（例如「系列」）的 Spotlight 依由新到舊顯示你最近觀看的系列。關閉：依其 Spotlight 設定顯示所有系列。"
+
+msgctxt "#32563"
+msgid "Progress rings"
+msgstr "進度環"
+
+msgctxt "#32564"
+msgid "Season list combined 1"
+msgstr "季清單合併 1"
+
+msgctxt "#32565"
+msgid "Seasons, episodes, facts"
+msgstr "季、劇集與詳情"
+
+msgctxt "#32566"
+msgid "Season list combined 2"
+msgstr "季清單合併 2"
+
+msgctxt "#32567"
+msgid "Poster with episode stills"
+msgstr "海報與劇照"
+
+msgctxt "#32568"
+msgid "Smooth song progress"
+msgstr "平滑顯示歌曲進度"
+
+msgctxt "#32569"
+msgid "Fused Glass Now playing: the song's progress behind the waveform glides instead of jumping 1 % at a time. Uses a little more processor time while the screen is open."
+msgstr "Fused Glass 正在播放：波形後面的歌曲進度平滑移動，而不是每次跳 1%。畫面開啟時會多佔用一點處理器。"
+
+msgctxt "#32570"
+msgid "Progress bar updates per second"
+msgstr "進度列每秒更新次數"
+
+msgctxt "#32571"
+msgid "Screen"
+msgstr "螢幕"
+
+msgctxt "#32572"
+msgid "How often a second Smooth song progress moves the fill. Screen: as often as Kodi draws the screen. Fewer updates use less processor time; on a long song even 10 looks smooth."
+msgstr "平滑歌曲進度每秒移動填充的次數。螢幕：與 Kodi 繪製畫面的頻率相同。次數越少越省處理器；長歌曲用 10 也很平滑。"
+
+msgctxt "#32590"
+msgid "Season poster wall combined"
+msgstr "季海報牆合併"
+
+msgctxt "#32573"
+msgid "Dark"
+msgstr "深色"
+
+msgctxt "#32574"
+msgid "Dark: dark panels. Clear: thin glass that shows more of the backdrop. Frost: light frosted glass over the blurred backdrop. Fused Glass: the System screen's menus, full screen with thin rules and a white bar on the row in focus; Kodi starts again."
+msgstr "深色：深色面板。透明：薄玻璃，能看到更多背景。霧面：模糊背景上方的淺色霧面玻璃。 Fused Glass：系統畫面的選單，全螢幕、細線，焦點列有白色豎條；Kodi 將重新啟動。"
+
+msgctxt "#32575"
+msgid "Home bar"
+msgstr "主頁列"
+
+msgctxt "#32576"
+msgid "Bar"
+msgstr "長條"
+
+msgctxt "#32577"
+msgid "Keys"
+msgstr "按鍵"
+
+msgctxt "#32578"
+msgid "Shelf"
+msgstr "橫架"
+
+msgctxt "#32579"
+msgid "Frosted glass behind the Home menu, in the material chosen under Look. Bar: one capsule. Keys: glass under each icon. Shelf: a band across the screen."
+msgstr "主頁選單後的霧面玻璃，使用在樣式中所選的材質。長條：一個膠囊。按鍵：每個圖示下有玻璃。橫架：橫貫螢幕的玻璃帶。"
+
+msgctxt "#32591"
+msgid "Add item"
+msgstr "新增項目"
+
+msgctxt "#32592"
+msgid "Puts a new item at the end of the menu: one of the skin's items that is not on it yet, or a custom item with its own path, Spotlight and lists.[CR][CR]OK opens the list of types."
+msgstr "在選單末尾加入新項目：選單中還沒有的外觀項目，或帶有自己路徑、Spotlight 和清單的自訂項目。[CR][CR]按 OK 開啟類型清單。"
+
+msgctxt "#32593"
+msgid "Reload EPG"
+msgstr "重新載入 EPG"
+
+msgctxt "#32594"
+msgid "Aeon accent colour"
+msgstr "Aeon 強調色"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "金色"
+
+msgctxt "#32596"
+msgid "Slate"
+msgstr "石板灰"
+
+msgctxt "#32597"
+msgid "Teal"
+msgstr "藍綠"
+
+msgctxt "#32598"
+msgid "Moss"
+msgstr "苔綠"
+
+msgctxt "#32599"
+msgid "Side"
+msgstr "側邊"
+
+msgctxt "#32600"
+msgid "Vignette shape"
+msgstr "暗角形狀"
+
+msgctxt "#32601"
+msgid "Round"
+msgstr "圓形"
+
+msgctxt "#32602"
+msgid "Round darkens the edges all round. Side darkens the screen from the left and fades out to the right, under the Home text. The row above sets how strong it is."
+msgstr "圓形會讓四周邊緣變暗。側邊從左側壓暗畫面並向右漸隱，位於主頁文字下方。強度由上一列設定。"
+
+msgctxt "#32603"
+msgid "Heavy"
+msgstr "最強"
+
+msgctxt "#32604"
+msgid "All themes"
+msgstr "所有主題"
+
+msgctxt "#32605"
+msgid "Next episode"
+msgstr "下一集"
+
+msgctxt "#32606"
+msgid "{t} left"
+msgstr "還剩 {t}"
+
+msgctxt "#32607"
+msgid "Home menu underline"
+msgstr "主頁選單底線"
+
+msgctxt "#32608"
+msgid "Library fanart look"
+msgstr "媒體庫同人畫外觀"
+
+msgctxt "#32609"
+msgid "Dimmed"
+msgstr "調暗"
+
+msgctxt "#32610"
+msgid "Ratings shown as"
+msgstr "評分顯示為"
+
+msgctxt "#32611"
+msgid "Text"
+msgstr "文字"
+
+msgctxt "#32612"
+msgid "The accent line under the focused Home menu item, as in Fused Glass."
+msgstr "在選取的主頁選單項目下方顯示強調線，與 Fused Glass 相同。"
+
+msgctxt "#32613"
+msgid "The fanart behind the library views: dimmed under a dark veil, or light with a frosted colour tint."
+msgstr "媒體庫檢視後面的背景圖：在深色遮罩下調暗，或以霧面色調提亮。"
+
+msgctxt "#32614"
+msgid "Show the rating providers as their icons or as their names."
+msgstr "以圖示或名稱顯示評分來源。"
+
+msgctxt "#32615"
+msgid "Media info from sidecars"
+msgstr "來自旁路檔案的媒體資訊"
+
+msgctxt "#32616"
+msgid "Off: only what Kodi's library knows (the chips above). On: also the source (UHD Remux, Blu-ray, WEB-DL, DVD...), the edition, the audio and subtitle tracks and the chapters, read from a mediainfo sidecar next to each video file: <name>.cmm_mediainfo.xml from Curator Media Manager (used first) or <name>-mediainfo.xml from tinyMediaManager. Without sidecars nothing extra shows."
+msgstr "關：只顯示 Kodi 媒體庫已知的資訊（上方的標籤）。開：還從每個影片檔旁的 mediainfo 旁路檔讀取來源（UHD Remux、Blu-ray、WEB-DL、DVD 等）、版本、音軌與字幕軌以及章節：Curator Media Manager 的 <名稱>.cmm_mediainfo.xml（優先）或 tinyMediaManager 的 <名稱>-mediainfo.xml。沒有這些檔案就不會顯示額外內容。"
+
+msgctxt "#32617"
+msgid "Commentary"
+msgstr "評論音軌"
+
+msgctxt "#32618"
+msgid "Chapters"
+msgstr "章節"
+
+msgctxt "#32619"
+msgid "In cinemas now: films from"
+msgstr "現正上映：影片產地"
+
+msgctxt "#32620"
+msgid "Everywhere"
+msgstr "不限"
+
+msgctxt "#32621"
+msgid "In cinemas now (the screensaver and the widgets) is what TMDb Helper's country has in cinemas: the United States unless TMDb Helper's language is set to another country. Pick your country to keep only films made in the United States or there; Everywhere keeps them all."
+msgstr "現正上映（螢幕保護程式與小工具）顯示 TMDb Helper 所在國家正在上映的影片：除非 TMDb Helper 的語言設為其他國家，否則為美國。選擇你的國家後，只保留美國或該國製作的影片；「不限」保留全部。"
+
+msgctxt "#32622"
+msgid "Getting Home ready"
+msgstr "正在準備首頁"
+
+msgctxt "#32623"
+msgid "Home rows"
+msgstr "首頁列"
+
+msgctxt "#32624"
+msgid "OK or Back skips"
+msgstr "按確定或返回略過"
+
+msgctxt "#32625"
+msgid "Live TV guide"
+msgstr "電視節目表"
+
+msgctxt "#32626"
+msgid "Tint"
+msgstr "色調"
+
+msgctxt "#32627"
+msgid "Picture"
+msgstr "畫面"
+
+msgctxt "#32628"
+msgid "blurred"
+msgstr "模糊"
+
+msgctxt "#32629"
+msgid "Newest folder"
+msgstr "最新資料夾"
+
+msgctxt "#32630"
+msgid "Folders, newest first"
+msgstr "資料夾（最新在前）"
+
+msgctxt "#32631"
+msgid "photos"
+msgstr "張照片"
+
+msgctxt "#32632"
+msgid "photo"
+msgstr "張照片"
+
+msgctxt "#32633"
+msgid "videos"
+msgstr "部影片"
+
+msgctxt "#32634"
+msgid "video"
+msgstr "部影片"
+
+msgctxt "#32635"
+msgid "OK plays the folder as a slideshow · Down for the folders"
+msgstr "確定以投影片播放資料夾 · 向下查看資料夾"
+
+msgctxt "#32636"
+msgid "All pictures"
+msgstr "所有圖片"
+
+msgctxt "#32637"
+msgid "sources"
+msgstr "個來源"
+
+msgctxt "#32638"
+msgid "source"
+msgstr "個來源"
+
+msgctxt "#32639"
+msgid "No pictures yet"
+msgstr "還沒有圖片"
+
+msgctxt "#32640"
+msgid "Add a folder of photos as a picture source in the Pictures window. OK opens it."
+msgstr "在「圖片」視窗中將照片資料夾新增為圖片來源。確定將其開啟。"
+
+msgctxt "#32641"
+msgid "Photos"
+msgstr "照片"
+
+msgctxt "#32642"
+msgid "OK opens the photo · Up for sort, slideshow and view"
+msgstr "確定開啟照片 · 向上進行排序、投影片和檢視"
+
+msgctxt "#32643"
+msgid "View"
+msgstr "檢視"
+
+msgctxt "#32644"
+msgid "waits until loading is done"
+msgstr "等待載入完成"
+
+msgctxt "#32645"
+msgid "Media info chips"
+msgstr "媒體資訊標籤"
+
+msgctxt "#32646"
+msgid "Which chips the information page, Home and the library panels show. The sidecar chips need Media info from sidecars."
+msgstr "資訊頁、首頁和媒體庫面板顯示哪些標籤。附屬檔案標籤需要「附屬檔案的媒體資訊」。"
+
+msgctxt "#32647"
+msgid "Resolution"
+msgstr "解析度"
+
+msgctxt "#32648"
+msgid "Aspect ratio"
+msgstr "畫面比例"
+
+msgctxt "#32649"
+msgid "HDR and Dolby Vision"
+msgstr "HDR 與 Dolby Vision"
+
+msgctxt "#32650"
+msgid "Dolby Vision profile"
+msgstr "Dolby Vision 設定檔"
+
+msgctxt "#32651"
+msgid "Audio format"
+msgstr "音訊格式"
+
+msgctxt "#32652"
+msgid "Audio channels"
+msgstr "音訊聲道"
+
+msgctxt "#32653"
+msgid "Source format (sidecar)"
+msgstr "來源格式（附屬檔案）"
+
+msgctxt "#32654"
+msgid "Container (sidecar)"
+msgstr "容器（附屬檔案）"
+
+msgctxt "#32655"
+msgid "Bit rate (sidecar)"
+msgstr "位元率（附屬檔案）"
+
+msgctxt "#32656"
+msgid "File size (sidecar)"
+msgstr "檔案大小（附屬檔案）"
+
+msgctxt "#32657"
+msgid "Subtitles (sidecar)"
+msgstr "字幕（附屬檔案）"
+
+msgctxt "#32658"
+msgid "Chapters (sidecar)"
+msgstr "章節（附屬檔案）"
+
+msgctxt "#32659"
+msgid "Commentary (sidecar)"
+msgstr "評論音軌（附屬檔案）"
+
+msgctxt "#32660"
+msgid "3D (sidecar)"
+msgstr "3D（附屬檔案）"
+
+msgctxt "#32661"
+msgid "chapters"
+msgstr "章節"
+
+msgctxt "#32662"
+msgid "commentary"
+msgstr "評論"
+
+msgctxt "#32663"
+msgid "Combine multi-episode files into a single row in library"
+msgstr "在媒體庫中將多集檔案合併為一列"
+
+msgctxt "#32664"
+msgid "Episodes stored in one video file (a double episode, three cartoons) show as one row: 1–2, one title, the file's running time. The season's list then comes from Aeon Fuse Helper."
+msgstr "存在同一影片檔案中的劇集（上下集、三部卡通）顯示為一列：1–2、一個標題、檔案長度。該季清單將由 Aeon Fuse Helper 提供。"
+
+msgctxt "#32665"
+msgid "Video source (sidecar)"
+msgstr "影片來源（附屬檔案）"
+
+msgctxt "#32666"
+msgid "Video codec (sidecar)"
+msgstr "影片編碼（附屬檔案）"
+
+msgctxt "#32667"
+msgid "Version (sidecar)"
+msgstr "版本（附屬檔案）"
+
+msgctxt "#32668"
+msgid "Panel shadow"
+msgstr "面板陰影"
+
+msgctxt "#32669"
+msgid "How high the glass panels seem to float: their shadow grows and drops. Mild: close to the page. Medium: as before. Strong: higher. Heavy: highest."
+msgstr "玻璃面板看起來浮得多高：陰影變大並下移。輕：貼近頁面。中：與以前相同。強：更高。重：最高。"
+
+msgctxt "#32670"
+msgid "Mild"
+msgstr "柔和"
+
+msgctxt "#32671"
+msgid "Heavy"
+msgstr "厚重"
+
+msgctxt "#32672"
+msgid "Expert settings"
+msgstr "專家設定"
+
+msgctxt "#32673"
+msgid "Shows the rows below for fine-tuning the glass panels and the fanart behind the library views."
+msgstr "在下方顯示用於微調玻璃面板和媒體櫃檢視背後劇照的列。"
+
+msgctxt "#32674"
+msgid "Panel opacity"
+msgstr "面板不透明度"
+
+msgctxt "#32675"
+msgid "How solid the glass panels are, around the Skin style's own value. -2: most see-through. +2: most solid."
+msgstr "玻璃面板的實度，以風格自身的值為準。-2：最透明。+2：最實。"
+
+msgctxt "#32676"
+msgid "Panel blur"
+msgstr "面板模糊"
+
+msgctxt "#32677"
+msgid "How strongly the panels blur the picture behind them. Off: no blur."
+msgstr "面板對其背後圖片的模糊程度。關：不模糊。"
+
+msgctxt "#32678"
+msgid "Panel tint"
+msgstr "面板色調"
+
+msgctxt "#32679"
+msgid "The colour of the panels' glass, around the Skin style's own. -2: darkest. +2: lightest frost."
+msgstr "玻璃的顏色，以風格自身的顏色為準。-2：最暗。+2：最亮的霧面。"
+
+msgctxt "#32680"
+msgid "Library fanart opacity"
+msgstr "媒體庫同人畫不透明度"
+
+msgctxt "#32681"
+msgid "How much of the fanart behind the library views shows, on top of Backdrop strength. -2: faintest. +2: strongest."
+msgstr "在背景強度之外，媒體櫃檢視背後劇照的可見程度。-2：最淡。+2：最強。"
+
+msgctxt "#32682"
+msgid "Library fanart blur"
+msgstr "媒體庫同人畫模糊"
+
+msgctxt "#32683"
+msgid "Blurs the fanart behind the library views: -2 a little, +2 the most; 0 is the default. Off: sharp."
+msgstr "模糊媒體櫃檢視背後的同人圖：-2 輕微，+2 最強；0 為預設。關閉：清晰。"
+
+msgctxt "#32684"
+msgid "Library fanart tint"
+msgstr "媒體庫同人畫色調"
+
+msgctxt "#32685"
+msgid "The colour tint of the Frosted fanart look. Off: no tint."
+msgstr "霧面劇照外觀的色調。關：無色調。"
+
+msgctxt "#32686"
+msgid "Reset expert settings"
+msgstr "重設專家設定"
+
+msgctxt "#32687"
+msgid "Puts every expert setting back to its default."
+msgstr "將所有專家設定恢復為預設值。"
+
+msgctxt "#32688"
+msgid "Expert settings are back to their defaults."
+msgstr "專家設定已恢復為預設值。"
+
+msgctxt "#32689"
+msgid "Menu background"
+msgstr "選單背景"
+
+msgctxt "#32690"
+msgid "Screen"
+msgstr "螢幕"
+
+msgctxt "#32691"
+msgid "Menus and dialogs in the Fused Glass style. Fanart: the item's fanart behind them. Screen: the screen they opened on, dimmed."
+msgstr "Fused Glass 風格的選單和對話框。同人畫：在後面顯示項目的同人畫。螢幕：變暗顯示開啟它們的螢幕。"
+
+msgctxt "#32692"
+msgid "OK runs it  ·  Back closes"
+msgstr "OK 執行  ·  返回關閉"
+
+msgctxt "#32693"
+msgid "OK chooses  ·  Back closes"
+msgstr "OK 選擇  ·  返回關閉"
+
+msgctxt "#32694"
+msgid "Its own library views and menus: rounded glass cards with soft shadows float over the artwork, in Dark, Clear, Frost or the Fused Glass style."
+msgstr "自有媒體庫檢視和選單：帶柔和陰影的圓角玻璃卡片浮在圖片之上，風格為深色、透明、霧面或 Fused Glass。"
+
+msgctxt "#32695"
+msgid "Use the defaults"
+msgstr "使用預設值"
+
+msgctxt "#32696"
+msgid "The chosen theme as it comes, at once. Everything can be changed later in Skin settings."
+msgstr "立即依原樣使用所選主題。之後可在外觀設定中變更一切。"
+
+msgctxt "#32697"
+msgid "Customise"
+msgstr "自訂"
+
+msgctxt "#32698"
+msgid "Go through the look, libraries, Home and backgrounds page by page. Every row shows a preview of its choice."
+msgstr "逐頁設定外觀、媒體庫、首頁和背景。每一列都會顯示所選項目的預覽。"
+
+msgctxt "#32699"
+msgid "Keep my current settings"
+msgstr "保留目前設定"
+
+msgctxt "#32700"
+msgid "Leave every setting as it is: only the theme you picked changes."
+msgstr "所有設定維持不變：只變更所選主題。"
+
+msgctxt "#32701"
+msgid "Aeon with glass menus: the same layout and library views as Aeon, with see-through glass menus and dialogs instead of solid ones. No palettes."
+msgstr "玻璃選單的 Aeon：與 Aeon 相同的版面和媒體庫檢視，選單和對話框是半透明玻璃而非實心。無調色盤。"
+
+msgctxt "#32702"
+msgid "The Planner of upcoming episodes and films, online rows and extra ratings."
+msgstr "即將播出的影集和電影的規劃表、線上列和更多評分。"
+
+msgctxt "#32703"
+msgid "The Next up row: the next episode of every show you are watching."
+msgstr "「接下來」列：你正在觀看的每部影集的下一集。"
+
+msgctxt "#32704"
+msgid "Lyrics on the Now playing screen, line by line or word by word."
+msgstr "在正在播放畫面顯示歌詞，逐行或逐字。"
+
+msgctxt "#32705"
+msgid "Artist pictures behind the Now playing screen."
+msgstr "在正在播放畫面後顯示藝人圖片。"
+
+msgctxt "#32706"
+msgid "Box colours taken from the artwork."
+msgstr "取自圖片的方框顏色。"
+
+msgctxt "#32707"
+msgid "Skip intro, recap and credits buttons in the player."
+msgstr "播放器中跳過片頭、前情提要和片尾字幕的按鈕。"
+
+msgctxt "#32708"
+msgid "Thumbnail previews on the seek bar."
+msgstr "進度列上的縮圖預覽。"
+
+msgctxt "#32709"
+msgid "Studio and network logos in the libraries and on the information page."
+msgstr "媒體庫和資訊頁面中的工作室和電視網標誌。"
+
+msgctxt "#32710"
+msgid "Record label logos for albums."
+msgstr "專輯的唱片公司標誌。"
+
+msgctxt "#32711"
+msgid "Language flags in the video information."
+msgstr "影片資訊中的語言旗幟。"
+
+msgctxt "#32712"
+msgid "The skin's own screensaver: library pictures with a slow zoom and slide, and what is playing."
+msgstr "外觀自帶的螢幕保護程式：緩慢縮放和滑動的媒體庫圖片，以及正在播放的內容。"
+
+msgctxt "#32713"
+msgid "Aeon: solid panels in a palette you pick. Aeon Glass: the same Aeon layout and views with glass menus, no palettes. Fused Glass: its own library views, rounded glass cards over the artwork."
+msgstr "Aeon：所選調色盤的實心面板。Aeon Glass：相同的 Aeon 版面和檢視，搭配玻璃選單，無調色盤。Fused Glass：自有媒體庫檢視，圖片之上的圓角玻璃卡片。"
+
+msgctxt "#32714"
+msgid "Its own views, glass cards"
+msgstr "自有檢視，玻璃卡片"
+
+msgctxt "#32715"
+msgid "Take the theme as it comes, or go through its look step by step. Everything can be changed later in Skin settings."
+msgstr "依原樣使用主題，或逐步設定它的外觀。之後可在外觀設定中變更一切。"
+
+msgctxt "#32716"
+msgid "How the settings strip of the library views shows: over the view (Overlay) or always beside it (Permanent)."
+msgstr "媒體庫檢視中設定條的顯示方式：覆蓋在檢視上（覆蓋）或一直在旁邊（固定）。"
+
+msgctxt "#32717"
+msgid "How much the edges of the Home screen darken behind the menu and the text."
+msgstr "首頁畫面邊緣在選單和文字後面變暗的程度。"
+
+msgctxt "#32718"
+msgid "The colour of the clock box and the corner boxes with the Aeon palette."
+msgstr "使用 Aeon 調色盤時時鐘框和角落框的顏色。"
+
+msgctxt "#32719"
+msgid "Optional add-ons that give the skin more to show. Install the ones you want; the rest can wait."
+msgstr "讓外觀顯示更多內容的選用附加元件。安裝你想要的；其餘的可以之後再說。"
+
+msgctxt "#32720"
+msgid "The disc art spinning beside the poster on the player controls: for videos, for music, for both, or off."
+msgstr "播放器控制中海報旁旋轉的光碟圖：用於影片、音樂、兩者，或關閉。"
+
+msgctxt "#32721"
+msgid "What the text under a title shows in every library view: the plot, the tagline (when there is one) or both."
+msgstr "在所有媒體庫檢視中標題下方文字顯示的內容：劇情、標語（如有）或兩者。"
+
+msgctxt "#32722"
+msgid "Libraries"
+msgstr "媒體庫"
+
+msgctxt "#32723"
+msgid "Information"
+msgstr "資訊"
+
+msgctxt "#32724"
+msgid "Screensaver & backdrops"
+msgstr "螢幕保護與背景"
+
+msgctxt "#32725"
+msgid "Export skin settings"
+msgstr "匯出外觀設定"
+
+msgctxt "#32726"
+msgid "Import skin settings"
+msgstr "匯入外觀設定"
+
+msgctxt "#32727"
+msgid "Save"
+msgstr "儲存"
+
+msgctxt "#32728"
+msgid "Load"
+msgstr "載入"
+
+msgctxt "#32729"
+msgid "Saves every Aeon Fuse setting, with the theme, palette and fonts, to a file in a folder you pick."
+msgstr "將 Aeon Fuse 的所有設定連同主題、配色與字型儲存到你選擇的資料夾中的檔案。"
+
+msgctxt "#32730"
+msgid "Loads a file saved with Export skin settings. Your current skin settings are replaced."
+msgstr "載入以「匯出外觀設定」儲存的檔案。目前的外觀設定將被取代。"
+
+msgctxt "#32731"
+msgid "Folder for the settings file"
+msgstr "設定檔的資料夾"
+
+msgctxt "#32732"
+msgid "Settings file to load"
+msgstr "要載入的設定檔"
+
+msgctxt "#32733"
+msgid "Saved: %s"
+msgstr "已儲存：%s"
+
+msgctxt "#32734"
+msgid "Load the settings saved on %s? Your current skin settings are replaced."
+msgstr "載入 %s 儲存的設定？目前的外觀設定將被取代。"
+
+msgctxt "#32735"
+msgid "This file does not hold Aeon Fuse settings."
+msgstr "此檔案不含 Aeon Fuse 設定。"
+
+msgctxt "#32736"
+msgid "The file could not be written."
+msgstr "無法寫入檔案。"
+
+msgctxt "#32737"
+msgid "Kodi restarts to apply them."
+msgstr "Kodi 將重新啟動以套用它們。"
+
+msgctxt "#32738"
+msgid "The skin reloads; restart Kodi afterwards so every setting is read again."
+msgstr "外觀將重新載入；之後請重新啟動 Kodi，以便重新讀取所有設定。"
+
+msgctxt "#32739"
+msgid "These settings are already in use."
+msgstr "這些設定已在使用中。"
+
+msgctxt "#32740"
+msgid "Soft"
+msgstr "柔和"
+
+msgctxt "#32741"
+msgid "Home gradient"
+msgstr "首頁漸層"
+
+msgctxt "#32742"
+msgid "Beside the clock"
+msgstr "時鐘旁"
+
+msgctxt "#32743"
+msgid "Left corner"
+msgstr "左下角"
+
+msgctxt "#32744"
+msgid "The fade from the bottom of the screen up to the Home menu: off, soft (the look so far) or strong."
+msgstr "從螢幕底部到主選單的漸層：關閉、柔和（一貫的外觀）或強烈。"
+
+msgctxt "#32745"
+msgid "Where the Now playing capsule sits on Home while music plays: beside the clock or in the lower left corner."
+msgstr "播放音樂時首頁上正在播放膠囊的位置：時鐘旁或左下角。"
+
+msgctxt "#32746"
+msgid "How the skip button sits on the player controls: a white tab on their top edge, or a glass capsule above them."
+msgstr "跳過按鈕在播放器控制上的位置：頂端邊緣的白色標籤，或其上方的玻璃膠囊。"
+
+msgctxt "#32747"
+msgid "How strongly the picture behind the menus and dialogs is blurred. Off: sharp, as before."
+msgstr "選單與對話框背後圖片的模糊程度。關閉：與以前一樣清晰。"
+
+msgctxt "#32748"
+msgid "Left / Right: choose an option. OK: set it. Up, Down or Back: keep the one in use."
+msgstr "左 / 右：選擇選項。確定：套用。上、下或返回：保留目前的選項。"
+
+msgctxt "#32749"
+msgid "Start on"
+msgstr "啟動於"
+
+msgctxt "#32750"
+msgid "The Home menu item that has the focus when Kodi starts, once the splash has gone."
+msgstr "Kodi 啟動時、啟動畫面消失後取得焦點的首頁選單項目。"
+
+msgctxt "#32751"
+msgid "Ratings shown in"
+msgstr "評分顯示位置"
+
+msgctxt "#32752"
+msgid "Media info shown in"
+msgstr "媒體資訊顯示位置"
+
+msgctxt "#32753"
+msgid "Library views"
+msgstr "媒體庫檢視"
+
+msgctxt "#32754"
+msgid "Information pages"
+msgstr "資訊頁面"
+
+msgctxt "#32755"
+msgid "Widget & Spotlight screens"
+msgstr "小工具與聚光燈畫面"
+
+msgctxt "#32756"
+msgid "Home spotlights"
+msgstr "首頁聚光燈"
+
+msgctxt "#32757"
+msgid "Player info"
+msgstr "播放器資訊"
+
+msgctxt "#32758"
+msgid "Screensaver"
+msgstr "螢幕保護程式"
+
+msgctxt "#32759"
+msgid "Live TV"
+msgstr "直播電視"
+
+msgctxt "#32760"
+msgid "Where the ratings (IMDb, TMDb, Rotten Tomatoes, Trakt) appear. OK opens the list: tick the places."
+msgstr "評分 (IMDb、TMDb、Rotten Tomatoes、Trakt) 顯示的位置。按 OK 開啟清單：勾選位置。"
+
+msgctxt "#32761"
+msgid "Where the media info chips (resolution, HDR, audio ...) appear. OK opens the list: tick the places. Which chips: Media info chips."
+msgstr "媒體資訊標籤 (解析度、HDR、音訊 ...) 顯示的位置。按 OK 開啟清單：勾選位置。哪些標籤：媒體資訊標籤。"
+
+msgctxt "#32762"
+msgid "Recommended add-ons"
+msgstr "推薦的附加元件"
+
+msgctxt "#32764"
+msgid "Installed"
+msgstr "已安裝"
+
+msgctxt "#32765"
+msgid "Not installed"
+msgstr "未安裝"
+
+msgctxt "#32766"
+msgid "%s needs the %s repository. Install that repository first?"
+msgstr "%s 需要 %s 來源。先安裝該來源嗎？"
+
+msgctxt "#32767"
+msgid "White weather icons for the weather forecast."
+msgstr "用於天氣預報的白色天氣圖示。"
+
+msgctxt "#32768"
+msgid "The playback info button in the video controls."
+msgstr "影片控制中的播放資訊按鈕。"
+
+msgctxt "#32769"
+msgid "The Inter (Copacetic) font set."
+msgstr "Inter (Copacetic) 字型集。"
+
+msgctxt "#32770"
+msgid "The Roboto CJKSC font set for Chinese, Japanese and Korean."
+msgstr "用於中文、日文和韓文的 Roboto CJKSC 字型集。"
+
+msgctxt "#32771"
+msgid "Update and clean on another Kodi"
+msgstr "在另一台 Kodi 上更新與清理"
+
+msgctxt "#32772"
+msgid "Address"
+msgstr "位址"
+
+msgctxt "#32773"
+msgid "User name"
+msgstr "使用者名稱"
+
+msgctxt "#32774"
+msgid "Password"
+msgstr "密碼"
+
+msgctxt "#32775"
+msgid "Test connection"
+msgstr "測試連線"
+
+msgctxt "#32776"
+msgid "Library update and clean from this skin (Home, the library panel, the context menu) go to another Kodi, a headless one for instance, instead of this one."
+msgstr "從本面板 (首頁、媒體庫面板、右鍵選單) 發出的媒體庫更新與清理會送到另一台 Kodi (例如無畫面的 Kodi)，而不是這台。"
+
+msgctxt "#32777"
+msgid "The other Kodi's web address and port, for example http://192.168.10.10:8080 (there: Settings > Services > Control > Allow remote control via HTTP)."
+msgstr "另一台 Kodi 的網址與連接埠，例如 http://192.168.10.10:8080 (在那台上：設定 > 服務 > 控制 > 允許透過 HTTP 遠端控制)。"
+
+msgctxt "#32778"
+msgid "The web server user name and password of the other Kodi."
+msgstr "另一台 Kodi 網頁伺服器的使用者名稱與密碼。"
+
+msgctxt "#32779"
+msgid "Asks the other Kodi for its version: checks the address, user name and password."
+msgstr "向另一台 Kodi 詢問其版本：檢查位址、使用者名稱與密碼。"
+
+msgctxt "#32780"
+msgid "Not set"
+msgstr "未設定"
+
+msgctxt "#32781"
+msgid "Library update sent"
+msgstr "已送出媒體庫更新"
+
+msgctxt "#32782"
+msgid "Library clean sent"
+msgstr "已送出媒體庫清理"
+
+msgctxt "#32783"
+msgid "Could not reach %s: %s"
+msgstr "無法連線 %s：%s"
+
+msgctxt "#32784"
+msgid "%s answers: %s"
+msgstr "%s 回應：%s"
+
+msgctxt "#32785"
+msgid "Wrong user name or password"
+msgstr "使用者名稱或密碼錯誤"
+
+msgctxt "#32786"
+msgid "Library update finished"
+msgstr "媒體庫更新完成"
+
+msgctxt "#32789"
+msgid "Failed"
+msgstr "失敗"
+
+msgctxt "#32790"
+msgid "Could not install the repository"
+msgstr "無法安裝該來源"
+
+msgctxt "#32791"
+msgid "Pick the add-ons you want: OK ticks one, Next installs the ticked ones while you go on. The picture shows what each adds. Later: Skin settings > System > Recommended add-ons."
+msgstr "選擇你想要的附加元件：按 OK 勾選，按下一步會在你繼續時安裝已勾選的元件。圖片顯示每個元件帶來的內容。以後：面板設定 > 系統 > 推薦的附加元件。"
+
+msgctxt "#32792"
+msgid "Will be installed"
+msgstr "將會安裝"
+
+msgctxt "#32793"
+msgid "Installs the ticked add-ons"
+msgstr "安裝已勾選的附加元件"
+
+msgctxt "#32794"
+msgid "Installed: %s"
+msgstr "已安裝：%s"
+
+msgctxt "#32795"
+msgid "Delete %s? Its name, path, icon, widgets and submenu are removed; the items below it move up one place."
+msgstr "刪除 %s？其名稱、路徑、圖示、小工具和子選單將被移除；下方的項目上移一位。"
+
+msgctxt "#32796"
+msgid "Custom items only"
+msgstr "僅限自訂項目"
+
+msgctxt "#32797"
+msgid "A calm, thin waveform on the Now playing card, drawn in the skin's own box and smoothed so loud passages do not spike. The build for this device is installed."
+msgstr "正在播放卡片上細而平穩的波形，繪製在外觀自帶的框內，並經過平滑，響亮段落不會出現尖峰。將安裝適合此裝置的版本。"
+
+msgctxt "#32798"
+msgid "More by the artist"
+msgstr "該藝人的更多專輯"
+
+msgctxt "#32799"
+msgid "Intermission at"
+msgstr "中場休息"
+
+msgctxt "#32800"
+msgid "Your languages"
+msgstr "你的語言"
+
+msgctxt "#32801"
+msgid "All others"
+msgstr "其他全部"
+
+msgctxt "#32802"
+msgid "In your library"
+msgstr "在你的媒體庫中"
+
+msgctxt "#32803"
+msgid "Sort and show"
+msgstr "排序與顯示"
+
+msgctxt "#32804"
+msgid "Sort by"
+msgstr "排序方式"
+
+msgctxt "#32805"
+msgid "Show only"
+msgstr "僅顯示"
+
+msgctxt "#32806"
+msgid "OK again flips the order"
+msgstr "再按確定反轉順序"
+
+msgctxt "#32807"
+msgid "Several versions"
+msgstr "多個版本"
+
+msgctxt "#32808"
+msgid "Decade"
+msgstr "年代"
+
+msgctxt "#32809"
+msgid "Clear all"
+msgstr "全部清除"
+
+msgctxt "#32810"
+msgid "Never played"
+msgstr "從未播放"
+
+msgctxt "#32811"
+msgid "Played"
+msgstr "已播放"

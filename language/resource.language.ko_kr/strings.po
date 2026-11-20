@@ -1,0 +1,7177 @@
+# Kodi add-on strings - skin.aeon.fuse (ko_kr)
+msgid ""
+msgstr ""
+"Project-Id-Version: skin.aeon.fuse\n"
+"Language: ko_KR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgctxt "#31010"
+msgid "Sort"
+msgstr "정렬"
+
+msgctxt "#31011"
+msgid "View"
+msgstr "보기"
+
+msgctxt "#31012"
+msgid "Nothing here"
+msgstr "아무것도 없음"
+
+msgctxt "#31013"
+msgid "Working"
+msgstr "작업 중"
+
+msgctxt "#31014"
+msgid "Up / down to page, OK to close"
+msgstr "위 / 아래로 페이지 이동, OK로 닫기"
+
+msgctxt "#31015"
+msgid "Muted"
+msgstr "음소거"
+
+msgctxt "#31016"
+msgid "Buffering"
+msgstr "버퍼링"
+
+msgctxt "#31017"
+msgid "Now playing"
+msgstr "지금 재생 중"
+
+msgctxt "#31018"
+msgid "Next:"
+msgstr "다음:"
+
+msgctxt "#31019"
+msgid "Home"
+msgstr "홈"
+
+msgctxt "#31020"
+msgid "System"
+msgstr "시스템"
+
+msgctxt "#31021"
+msgid "Skin settings"
+msgstr "스킨 설정"
+
+msgctxt "#31022"
+msgid "Power"
+msgstr "전원"
+
+msgctxt "#31024"
+msgid "Aeon Fuse"
+msgstr "Aeon Fuse"
+
+msgctxt "#31025"
+msgid "Skin settings holds Aeon Fuse's own options. To switch skins: Interface > Skin > Skin."
+msgstr "스킨 설정에는 Aeon Fuse 고유의 옵션이 있습니다. 스킨 바꾸기: 인터페이스 > 스킨 > 스킨."
+
+msgctxt "#31030"
+msgid "Ends"
+msgstr "종료"
+
+msgctxt "#31040"
+msgid "Symbols"
+msgstr "기호"
+
+msgctxt "#31041"
+msgid "Caps"
+msgstr "대문자"
+
+msgctxt "#31042"
+msgid "Shift"
+msgstr "Shift"
+
+msgctxt "#31043"
+msgid "Space"
+msgstr "스페이스"
+
+msgctxt "#31044"
+msgid "Delete"
+msgstr "삭제"
+
+msgctxt "#31045"
+msgid "Queue"
+msgstr "대기열"
+
+msgctxt "#31046"
+msgid "Cover showcase"
+msgstr "커버 쇼케이스"
+
+msgctxt "#31047"
+msgid "03  Performance"
+msgstr "03  성능"
+
+msgctxt "#31048"
+msgid "Pause"
+msgstr "일시 정지"
+
+msgctxt "#31050"
+msgid "Palette"
+msgstr "팔레트"
+
+msgctxt "#31051"
+msgid "Slightly rounded corners"
+msgstr "살짝 둥근 모서리"
+
+msgctxt "#31052"
+msgid "Focus outline"
+msgstr "포커스 테두리"
+
+msgctxt "#31053"
+msgid "Artwork background"
+msgstr "아트워크 배경"
+
+msgctxt "#31054"
+msgid "Trailer button"
+msgstr "예고편 버튼"
+
+msgctxt "#31055"
+msgid "Watched indicators"
+msgstr "시청 표시"
+
+msgctxt "#31056"
+msgid "Spotlight rotation"
+msgstr "Spotlight 전환"
+
+msgctxt "#31057"
+msgid "Newest row on Home"
+msgstr "홈의 최신 항목 줄"
+
+msgctxt "#31058"
+msgid "Reduce motion"
+msgstr "움직임 줄이기"
+
+msgctxt "#31059"
+msgid "Reset all skin settings"
+msgstr "모든 스킨 설정 초기화"
+
+msgctxt "#31060"
+msgid "Signal"
+msgstr "시그널"
+
+msgctxt "#31061"
+msgid "Cobalt"
+msgstr "코발트"
+
+msgctxt "#31062"
+msgid "Mint"
+msgstr "민트"
+
+msgctxt "#31063"
+msgid "Amber"
+msgstr "앰버"
+
+msgctxt "#31064"
+msgid "Rose"
+msgstr "로즈"
+
+msgctxt "#31065"
+msgid "Ice"
+msgstr "아이스"
+
+msgctxt "#31066"
+msgid "Bone"
+msgstr "본"
+
+msgctxt "#31070"
+msgid "Thin"
+msgstr "얇게"
+
+msgctxt "#31071"
+msgid "Medium"
+msgstr "중간"
+
+msgctxt "#31072"
+msgid "Off"
+msgstr "끔"
+
+msgctxt "#31075"
+msgid "Faint"
+msgstr "희미하게"
+
+msgctxt "#31076"
+msgid "Soft"
+msgstr "부드럽게"
+
+msgctxt "#31077"
+msgid "Visible"
+msgstr "뚜렷하게"
+
+msgctxt "#31080"
+msgid "Both"
+msgstr "둘 다"
+
+msgctxt "#31081"
+msgid "Unwatched only"
+msgstr "안 본 항목만"
+
+msgctxt "#31082"
+msgid "Watched only"
+msgstr "본 항목만"
+
+msgctxt "#31085"
+msgid "Date added"
+msgstr "추가한 날짜"
+
+msgctxt "#31086"
+msgid "Release date"
+msgstr "출시일"
+
+msgctxt "#31087"
+msgid "Both rows"
+msgstr "두 줄 모두"
+
+msgctxt "#31100"
+msgid "Spotlight / unwatched / top rated"
+msgstr "Spotlight / 안 본 항목 / 높은 평점"
+
+msgctxt "#31101"
+msgid "Year"
+msgstr "연도"
+
+msgctxt "#31102"
+msgid "Runtime"
+msgstr "상영 시간"
+
+msgctxt "#31103"
+msgid "Rating"
+msgstr "평점"
+
+msgctxt "#31104"
+msgid "Rated"
+msgstr "관람 등급"
+
+msgctxt "#31105"
+msgid "Details"
+msgstr "세부 정보"
+
+msgctxt "#31106"
+msgid "Fig. 01: random pick, unwatched, rated 7.5+"
+msgstr "그림 01: 무작위 선택, 안 봄, 평점 7.5+"
+
+msgctxt "#31107"
+msgid "No unwatched films rated 7.5+ yet"
+msgstr "평점 7.5+의 안 본 영화가 아직 없음"
+
+msgctxt "#31110"
+msgid "Newest additions"
+msgstr "최근 추가"
+
+msgctxt "#31111"
+msgid "Sorted by date added ↓"
+msgstr "추가한 날짜순 ↓"
+
+msgctxt "#31112"
+msgid "Newest releases"
+msgstr "최신 출시"
+
+msgctxt "#31113"
+msgid "Sorted by release date ↓"
+msgstr "출시일순 ↓"
+
+msgctxt "#31114"
+msgid "films"
+msgstr "편의 영화"
+
+msgctxt "#31120"
+msgid "Seek  ◀ ▶"
+msgstr "탐색  ◀ ▶"
+
+msgctxt "#31121"
+msgid "Previous"
+msgstr "이전"
+
+msgctxt "#31122"
+msgid "Rewind"
+msgstr "되감기"
+
+msgctxt "#31123"
+msgid "Play / pause"
+msgstr "재생 / 일시 정지"
+
+msgctxt "#31124"
+msgid "Stop"
+msgstr "정지"
+
+msgctxt "#31125"
+msgid "Forward"
+msgstr "빨리 감기"
+
+msgctxt "#31126"
+msgid "Next"
+msgstr "다음"
+
+msgctxt "#31127"
+msgid "Subtitles"
+msgstr "자막"
+
+msgctxt "#31128"
+msgid "Audio"
+msgstr "오디오"
+
+msgctxt "#31129"
+msgid "Video settings"
+msgstr "비디오 설정"
+
+msgctxt "#31318"
+msgid "Visualiser presets"
+msgstr "비주얼라이저 프리셋"
+
+msgctxt "#31319"
+msgid "OK, then ← for presets"
+msgstr "OK 다음 ← 로 프리셋"
+
+msgctxt "#31900"
+msgid "Aeon Fuse (Figtree)"
+msgstr "Aeon Fuse (Figtree)"
+
+msgctxt "#31901"
+msgid "Arial (wider script coverage)"
+msgstr "Arial (더 많은 문자 지원)"
+
+msgctxt "#31902"
+msgid "Episode code"
+msgstr "에피소드 코드"
+
+msgctxt "#31200"
+msgid "Aeon Fuse settings"
+msgstr "Aeon Fuse 설정"
+
+msgctxt "#31201"
+msgid "Live TV"
+msgstr "실시간 TV"
+
+msgctxt "#31202"
+msgid "Media"
+msgstr "미디어"
+
+msgctxt "#31203"
+msgid "Update library"
+msgstr "라이브러리 업데이트"
+
+msgctxt "#31204"
+msgid "Library"
+msgstr "라이브러리"
+
+msgctxt "#31205"
+msgid "Clean library"
+msgstr "라이브러리 정리"
+
+msgctxt "#31206"
+msgid "More"
+msgstr "더 보기"
+
+msgctxt "#31207"
+msgid "Add-on"
+msgstr "애드온"
+
+msgctxt "#31208"
+msgid "About this setting"
+msgstr "이 설정에 대해"
+
+msgctxt "#31209"
+msgid "Timer"
+msgstr "타이머"
+
+msgctxt "#31210"
+msgid "Left / right: channel group"
+msgstr "왼쪽 / 오른쪽: 채널 그룹"
+
+msgctxt "#31211"
+msgid "Add group"
+msgstr "그룹 추가"
+
+msgctxt "#31212"
+msgid "Rename group"
+msgstr "그룹 이름 바꾸기"
+
+msgctxt "#31213"
+msgid "Delete group"
+msgstr "그룹 삭제"
+
+msgctxt "#31214"
+msgid "Jump through the guide  ·  Back to close"
+msgstr "가이드 이동  ·  뒤로로 닫기"
+
+msgctxt "#31215"
+msgid "Playing on this Shield"
+msgstr "이 Shield에서 재생 중"
+
+msgctxt "#31216"
+msgid "OK or Back closes"
+msgstr "OK 또는 뒤로로 닫기"
+
+msgctxt "#31217"
+msgid "Find subtitles"
+msgstr "자막 찾기"
+
+msgctxt "#31218"
+msgid "Service"
+msgstr "서비스"
+
+msgctxt "#31219"
+msgid "Status"
+msgstr "상태"
+
+msgctxt "#31220"
+msgid "This file already has subtitle tracks"
+msgstr "이 파일에는 이미 자막 트랙이 있습니다"
+
+msgctxt "#31221"
+msgid "Sync = timed to your file"
+msgstr "Sync = 파일에 맞춘 타이밍"
+
+msgctxt "#31222"
+msgid "No subtitles listed yet. Pick a service or search manually."
+msgstr "아직 자막이 없습니다. 서비스를 고르거나 직접 검색하세요."
+
+msgctxt "#31223"
+msgid "Order:"
+msgstr "순서:"
+
+msgctxt "#31224"
+msgid "Nothing has happened yet."
+msgstr "아직 아무 일도 없었습니다."
+
+msgctxt "#31225"
+msgid "Back to continue"
+msgstr "뒤로를 눌러 계속"
+
+msgctxt "#31226"
+msgid "Nothing to choose"
+msgstr "고를 것이 없음"
+
+msgctxt "#31227"
+msgid "Browse the whole library instead."
+msgstr "대신 전체 라이브러리를 둘러보세요."
+
+msgctxt "#31228"
+msgid "See all"
+msgstr "모두 보기"
+
+msgctxt "#31229"
+msgid "No shows in progress. Start one from Shows."
+msgstr "보는 중인 시리즈가 없습니다. 시리즈에서 시작하세요."
+
+msgctxt "#31230"
+msgid "Nothing here."
+msgstr "아무것도 없습니다."
+
+msgctxt "#31231"
+msgid "PVR & Live TV settings"
+msgstr "PVR 및 실시간 TV 설정"
+
+msgctxt "#31232"
+msgid "Up one level"
+msgstr "한 단계 위로"
+
+msgctxt "#31233"
+msgid "Nothing else is known about this one yet."
+msgstr "이 항목에 대해 아직 알려진 것이 없습니다."
+
+msgctxt "#31234"
+msgid "Up and down scroll  ·  Back closes"
+msgstr "위아래로 스크롤  ·  뒤로로 닫기"
+
+msgctxt "#31235"
+msgid "Up next"
+msgstr "다음 재생"
+
+msgctxt "#31236"
+msgid "The last one in the queue"
+msgstr "대기열의 마지막 곡"
+
+msgctxt "#31237"
+msgid "Sync"
+msgstr "Sync"
+
+msgctxt "#31238"
+msgid "No matches"
+msgstr "일치 항목 없음"
+
+msgctxt "#31239"
+msgid "Searching"
+msgstr "검색 중"
+
+msgctxt "#31240"
+msgid "Films, shows, albums, artists"
+msgstr "영화, 시리즈, 앨범, 아티스트"
+
+msgctxt "#31241"
+msgid "OK to type  ·  Down for results  ·  Back to close"
+msgstr "OK로 입력  ·  아래로 결과  ·  뒤로로 닫기"
+
+msgctxt "#31242"
+msgid "Films and shows match on title, albums on album name, artists on name. Library only."
+msgstr "영화와 시리즈는 제목, 앨범은 앨범 이름, 아티스트는 이름으로 찾습니다. 라이브러리만."
+
+msgctxt "#31243"
+msgid "Offsets apply to this film only. Choosing an offset hides this panel so you can sync against the picture."
+msgstr "오프셋은 이 영화에만 적용됩니다. 오프셋을 고르면 이 패널이 숨겨져 화면을 보며 맞출 수 있습니다."
+
+msgctxt "#31244"
+msgid "More for this title"
+msgstr "이 작품 더 보기"
+
+msgctxt "#31245"
+msgid "Back"
+msgstr "뒤로"
+
+msgctxt "#31246"
+msgid "Unwatched only is on: choose the pill above to show everything."
+msgstr "'안 본 항목만'이 켜져 있습니다. 모두 보려면 위의 버튼을 고르세요."
+
+msgctxt "#31247"
+msgid "Left and right to seek  ·  Down returns"
+msgstr "왼쪽과 오른쪽으로 탐색  ·  아래로 돌아가기"
+
+msgctxt "#31248"
+msgid "Choose Albums, Artists, Songs or Genres above."
+msgstr "위에서 앨범, 아티스트, 노래 또는 장르를 고르세요."
+
+msgctxt "#31249"
+msgid "Playlist"
+msgstr "재생 목록"
+
+msgctxt "#31250"
+msgid "Empty. Pick songs or albums on the left and press OK to add them."
+msgstr "비어 있습니다. 왼쪽에서 노래나 앨범을 고르고 OK를 눌러 추가하세요."
+
+msgctxt "#31251"
+msgid "The queue is empty"
+msgstr "대기열이 비어 있습니다"
+
+msgctxt "#31252"
+msgid "No weather yet."
+msgstr "아직 날씨 정보가 없습니다."
+
+msgctxt "#31253"
+msgid "Choose a weather service under Settings, Services, Weather."
+msgstr "설정 > 서비스 > 날씨에서 날씨 서비스를 고르세요."
+
+msgctxt "#31254"
+msgid "The next few days"
+msgstr "앞으로 며칠"
+
+msgctxt "#31255"
+msgid "Look, behaviour, home menu"
+msgstr "모양, 동작, 홈 메뉴"
+
+msgctxt "#31256"
+msgid "Playback, subtitles"
+msgstr "재생, 자막"
+
+msgctxt "#31257"
+msgid "Library, files"
+msgstr "라이브러리, 파일"
+
+msgctxt "#31258"
+msgid "Skin, region"
+msgstr "스킨, 지역"
+
+msgctxt "#31259"
+msgid "Installed, updates"
+msgstr "설치됨, 업데이트"
+
+msgctxt "#31260"
+msgid "Remote, sharing"
+msgstr "리모컨, 공유"
+
+msgctxt "#31261"
+msgid "Display, audio"
+msgstr "디스플레이, 오디오"
+
+msgctxt "#31262"
+msgid "Sources, files"
+msgstr "소스, 파일"
+
+msgctxt "#31263"
+msgid "Hardware, storage"
+msgstr "하드웨어, 저장소"
+
+msgctxt "#31264"
+msgid "Event log"
+msgstr "이벤트 로그"
+
+msgctxt "#31265"
+msgid "Recent events"
+msgstr "최근 이벤트"
+
+msgctxt "#31266"
+msgid "Users"
+msgstr "사용자"
+
+msgctxt "#31267"
+msgid "Not used"
+msgstr "사용 안 함"
+
+msgctxt "#31268"
+msgid "Controllers"
+msgstr "컨트롤러"
+
+msgctxt "#31269"
+msgid "This box"
+msgstr "이 기기"
+
+msgctxt "#31270"
+msgid "Login screen"
+msgstr "로그인 화면"
+
+msgctxt "#31271"
+msgid "Auto login"
+msgstr "자동 로그인"
+
+msgctxt "#31272"
+msgid "Options"
+msgstr "옵션"
+
+msgctxt "#31273"
+msgid "Order direction"
+msgstr "정렬 방향"
+
+msgctxt "#31274"
+msgid "Select a rule to edit it. Use the context menu to delete a rule."
+msgstr "편집할 규칙을 선택하세요. 규칙 삭제는 컨텍스트 메뉴에서 합니다."
+
+msgctxt "#31275"
+msgid "Value"
+msgstr "값"
+
+msgctxt "#31276"
+msgid "No chapters or bookmarks yet. Create one with the first button."
+msgstr "아직 챕터나 북마크가 없습니다. 첫 번째 버튼으로 만드세요."
+
+msgctxt "#31277"
+msgid "OK jumps there  ·  Back closes"
+msgstr "OK로 이동  ·  뒤로로 닫기"
+
+msgctxt "#31300"
+msgid "Order"
+msgstr "순서"
+
+msgctxt "#31301"
+msgid "Watched"
+msgstr "본 항목"
+
+msgctxt "#31302"
+msgid "Search"
+msgstr "검색"
+
+msgctxt "#31303"
+msgid "Stop updating"
+msgstr "업데이트 중지"
+
+msgctxt "#31304"
+msgid "Library settings"
+msgstr "라이브러리 설정"
+
+msgctxt "#31305"
+msgid "Music"
+msgstr "음악"
+
+msgctxt "#31306"
+msgid "Update"
+msgstr "업데이트"
+
+msgctxt "#31307"
+msgid "Clean"
+msgstr "정리"
+
+msgctxt "#31308"
+msgid "Collections"
+msgstr "컬렉션"
+
+msgctxt "#31309"
+msgid "Films and shows"
+msgstr "영화와 시리즈"
+
+msgctxt "#31310"
+msgid "No, keep it as it is"
+msgstr "아니요, 그대로 두기"
+
+msgctxt "#31311"
+msgid "Yes, clean it now"
+msgstr "예, 지금 정리"
+
+msgctxt "#31312"
+msgid "Grid"
+msgstr "그리드"
+
+msgctxt "#31313"
+msgid "Wall"
+msgstr "월"
+
+msgctxt "#31314"
+msgid "Episodes"
+msgstr "에피소드"
+
+msgctxt "#31315"
+msgid "List"
+msgstr "목록"
+
+msgctxt "#31316"
+msgid "OK to reset"
+msgstr "OK로 초기화"
+
+msgctxt "#31317"
+msgid "Press OK again to reset everything"
+msgstr "모두 초기화하려면 OK를 다시 누르세요"
+
+msgctxt "#31320"
+msgid "Spotlight"
+msgstr "Spotlight"
+
+msgctxt "#31321"
+msgid "Wide"
+msgstr "와이드"
+
+msgctxt "#31322"
+msgid "Time"
+msgstr "시간"
+
+msgctxt "#31323"
+msgid "No runtime"
+msgstr "상영 시간 없음"
+
+msgctxt "#31324"
+msgid "Now"
+msgstr "지금"
+
+msgctxt "#31325"
+msgid "+1 h"
+msgstr "+1 h"
+
+msgctxt "#31326"
+msgid "+2 h"
+msgstr "+2 h"
+
+msgctxt "#31327"
+msgid "+3 h"
+msgstr "+3 h"
+
+msgctxt "#31328"
+msgid "+4 h"
+msgstr "+4 h"
+
+msgctxt "#31329"
+msgid "Rows"
+msgstr "줄"
+
+msgctxt "#31330"
+msgid "Main menu"
+msgstr "메인 메뉴"
+
+msgctxt "#31331"
+msgid "Films"
+msgstr "영화"
+
+msgctxt "#31332"
+msgid "Shows"
+msgstr "시리즈"
+
+msgctxt "#31333"
+msgid "Music"
+msgstr "음악"
+
+msgctxt "#31334"
+msgid "Search"
+msgstr "검색"
+
+msgctxt "#31335"
+msgid "Pill, hero and film cards"
+msgstr "버튼, 히어로, 영화 카드"
+
+msgctxt "#31336"
+msgid "Pill and the Next up card"
+msgstr "버튼과 다음 재생 카드"
+
+msgctxt "#31337"
+msgid "Pill in the top line"
+msgstr "윗줄의 버튼"
+
+msgctxt "#31338"
+msgid "Which pills the top line shows. Hidden pills disappear on Home and in the libraries; the rest close up. For now and the gear (system menu, settings) always stay, so you can always come back here.[CR][CR]Up / Down picks a group, Right enters it."
+msgstr "윗줄에 표시할 버튼입니다. 숨긴 버튼은 홈과 라이브러리에서 사라지고 나머지는 모입니다. '지금 볼 만한'과 톱니바퀴(시스템 메뉴, 설정)는 항상 남아 있어 언제든 여기로 돌아올 수 있습니다.[CR][CR]위 / 아래로 그룹을 고르고, 오른쪽으로 들어갑니다."
+
+msgctxt "#31339"
+msgid "Films also takes the hero and the film cards off For now; Shows takes the Next up card. The libraries themselves stay: Search finds them, and the system menu has Files."
+msgstr "'영화'는 '지금 볼 만한'에서 히어로와 영화 카드도 빼고, '시리즈'는 다음 재생 카드를 뺍니다. 라이브러리 자체는 그대로입니다: 검색으로 찾을 수 있고 시스템 메뉴에 '파일'이 있습니다."
+
+msgctxt "#31340"
+msgid "Show"
+msgstr "표시"
+
+msgctxt "#31341"
+msgid "Hide"
+msgstr "숨기기"
+
+msgctxt "#31342"
+msgid "View, sort, filter…"
+msgstr "보기, 정렬, 필터…"
+
+msgctxt "#31940"
+msgid "Custom rows"
+msgstr "사용자 줄"
+
+msgctxt "#31941"
+msgid "Row 1"
+msgstr "줄 1"
+
+msgctxt "#31942"
+msgid "Row 2"
+msgstr "줄 2"
+
+msgctxt "#31943"
+msgid "Row 3"
+msgstr "줄 3"
+
+msgctxt "#31944"
+msgid "Not set"
+msgstr "설정 안 됨"
+
+msgctxt "#31945"
+msgid "Add-on, playlist or library…"
+msgstr "애드온, 재생 목록 또는 라이브러리…"
+
+msgctxt "#31946"
+msgid "A favourite…"
+msgstr "즐겨찾기…"
+
+msgctxt "#31947"
+msgid "Rename…"
+msgstr "이름 바꾸기…"
+
+msgctxt "#31948"
+msgid "Clear"
+msgstr "지우기"
+
+msgctxt "#31949"
+msgid "This favourite opens no folder"
+msgstr "이 즐겨찾기는 폴더를 열지 않습니다"
+
+msgctxt "#31950"
+msgid "Add up to three rows of your own to Home: a folder of an add-on (for example JellyCon's Continue Watching), a smart playlist, a library node or a favourite that opens a folder. A row shows only when it has something in it.[CR][CR]OK opens the row's options: choose what it shows, rename it or clear it."
+msgstr "홈에 나만의 줄을 최대 세 개 추가하세요: 애드온 폴더(예: JellyCon의 이어 보기), 스마트 재생 목록, 라이브러리 노드 또는 폴더를 여는 즐겨찾기. 줄은 내용이 있을 때만 보입니다.[CR][CR]OK로 줄 옵션을 엽니다: 표시할 내용 선택, 이름 바꾸기 또는 지우기."
+
+msgctxt "#31951"
+msgid "Custom row"
+msgstr "사용자 줄"
+
+msgctxt "#31952"
+msgid "Loading…"
+msgstr "불러오는 중…"
+
+msgctxt "#31953"
+msgid "1 item"
+msgstr "1개 항목"
+
+msgctxt "#31954"
+msgid "items"
+msgstr "개 항목"
+
+msgctxt "#31955"
+msgid "Add-on · playlist · library · favourite"
+msgstr "애드온 · 재생 목록 · 라이브러리 · 즐겨찾기"
+
+msgctxt "#31956"
+msgid "The add-on of this favourite isn't installed"
+msgstr "이 즐겨찾기의 애드온이 설치되지 않았습니다"
+
+msgctxt "#31957"
+msgid "Rows of your own on Home: an add-on folder, a playlist, a library node or a favourite. OK opens the row's options."
+msgstr "홈의 나만의 줄: 애드온 폴더, 재생 목록, 라이브러리 노드 또는 즐겨찾기. OK로 줄 옵션을 엽니다."
+
+msgctxt "#31980"
+msgid "Custom menu items"
+msgstr "사용자 메뉴 항목"
+
+msgctxt "#31981"
+msgid "Menu item 1"
+msgstr "메뉴 항목 1"
+
+msgctxt "#31982"
+msgid "Menu item 2"
+msgstr "메뉴 항목 2"
+
+msgctxt "#31983"
+msgid "Menu item 3"
+msgstr "메뉴 항목 3"
+
+msgctxt "#31984"
+msgid "Put up to three add-ons, favourites or library folders on the main menu, after the skin's own items. An item shows only while its add-on is installed.[CR][CR]OK opens the item's options: choose what it opens, rename it or clear it."
+msgstr "스킨 자체 항목 뒤에 애드온, 즐겨찾기, 라이브러리 폴더를 최대 세 개 메인 메뉴에 넣습니다. 항목은 애드온이 설치된 동안에만 보입니다.[CR][CR]OK로 항목 옵션을 엽니다: 열 대상 선택, 이름 바꾸기 또는 지우기."
+
+msgctxt "#31985"
+msgid "Add-on · favourite · library · folder"
+msgstr "애드온 · 즐겨찾기 · 라이브러리 · 폴더"
+
+msgctxt "#31986"
+msgid "Opens"
+msgstr "여는 대상"
+
+msgctxt "#31987"
+msgid "Menu item"
+msgstr "메뉴 항목"
+
+msgctxt "#31988"
+msgid "add-on not installed"
+msgstr "애드온 설치 안 됨"
+
+msgctxt "#31989"
+msgid "Add-on"
+msgstr "애드온"
+
+msgctxt "#31990"
+msgid "Playlist"
+msgstr "재생 목록"
+
+msgctxt "#31991"
+msgid "Library"
+msgstr "라이브러리"
+
+msgctxt "#31992"
+msgid "Folder"
+msgstr "폴더"
+
+msgctxt "#31993"
+msgid "Shortcut"
+msgstr "바로 가기"
+
+msgctxt "#31994"
+msgid "Your own items on the main menu: an add-on, a favourite, a library node or a folder. OK opens the item's options."
+msgstr "메인 메뉴의 나만의 항목: 애드온, 즐겨찾기, 라이브러리 노드 또는 폴더. OK로 항목 옵션을 엽니다."
+
+msgctxt "#31995"
+msgid "OK to open"
+msgstr "OK로 열기"
+
+msgctxt "#31540"
+msgid "View settings"
+msgstr "보기 설정"
+
+msgctxt "#31541"
+msgid "Ratings"
+msgstr "평점"
+
+msgctxt "#31542"
+msgid "Media info"
+msgstr "미디어 정보"
+
+msgctxt "#31543"
+msgid "Backdrop"
+msgstr "배경"
+
+msgctxt "#31544"
+msgid "Reset"
+msgstr "초기화"
+
+msgctxt "#31545"
+msgid "Global settings"
+msgstr "전체 설정"
+
+msgctxt "#31546"
+msgid "Default"
+msgstr "기본값"
+
+msgctxt "#31547"
+msgid "On"
+msgstr "켜짐"
+
+msgctxt "#31548"
+msgid "Off"
+msgstr "꺼짐"
+
+msgctxt "#31549"
+msgid "Neutral"
+msgstr "중립"
+
+msgctxt "#31550"
+msgid "Fanart"
+msgstr "팬아트"
+
+msgctxt "#31551"
+msgid "Colors"
+msgstr "색상"
+
+msgctxt "#31000"
+msgid "Kodi"
+msgstr "Kodi"
+
+msgctxt "#31001"
+msgid "ULTRA HD"
+msgstr "ULTRA HD"
+
+msgctxt "#31002"
+msgid "The pages that Up opens above this home menu item. Pick one, then use the buttons on the right."
+msgstr "이 홈 메뉴 항목 위에서 위쪽 키가 여는 페이지입니다. 하나를 고른 다음 오른쪽 버튼을 사용하세요."
+
+msgctxt "#31003"
+msgid "+  Add item"
+msgstr "+  항목 추가"
+
+msgctxt "#31004"
+msgid "Rename"
+msgstr "이름 바꾸기"
+
+msgctxt "#31005"
+msgid "Select source"
+msgstr "소스 선택"
+
+msgctxt "#31006"
+msgid "Sort by"
+msgstr "정렬 기준"
+
+msgctxt "#31007"
+msgid "Reverse order"
+msgstr "역순"
+
+msgctxt "#31008"
+msgid "Items in list"
+msgstr "목록의 항목 수"
+
+msgctxt "#31009"
+msgid "Seconds per item"
+msgstr "항목당 초"
+
+msgctxt "#31023"
+msgid "Autoscroll on / off"
+msgstr "자동 스크롤 켜기 / 끄기"
+
+msgctxt "#31026"
+msgid "Hide / show"
+msgstr "숨기기 / 표시"
+
+msgctxt "#31027"
+msgid "Move up"
+msgstr "위로 이동"
+
+msgctxt "#31028"
+msgid "Move down"
+msgstr "아래로 이동"
+
+msgctxt "#31029"
+msgid "Add list..."
+msgstr "목록 추가..."
+
+msgctxt "#31031"
+msgid "Add folder items..."
+msgstr "폴더 항목 추가..."
+
+msgctxt "#31032"
+msgid "Restore defaults"
+msgstr "기본값 복원"
+
+msgctxt "#31033"
+msgid "The categories and rows shown under this home menu item (for Power: its actions)."
+msgstr "이 홈 메뉴 항목 아래에 표시되는 범주와 줄 (전원의 경우 해당 동작)."
+
+msgctxt "#31034"
+msgid "Items in row"
+msgstr "줄의 항목 수"
+
+msgctxt "#31035"
+msgid "Artwork type"
+msgstr "아트워크 종류"
+
+msgctxt "#31036"
+msgid "The full-screen widget pages that Up opens above this item: on or off, autoscroll, and the defaults for every list in them."
+msgstr "이 항목 위에서 위쪽 키가 여는 전체 화면 위젯 페이지: 켜기 / 끄기, 자동 스크롤, 각 목록의 기본값."
+
+msgctxt "#31037"
+msgid "Widget (Up key after Spotlight)"
+msgstr "위젯 (Spotlight 다음 위쪽 키)"
+
+msgctxt "#31038"
+msgid "Autoscroll"
+msgstr "자동 스크롤"
+
+msgctxt "#31039"
+msgid "Items per list"
+msgstr "목록당 항목 수"
+
+msgctxt "#31049"
+msgid "The big Netflix-style spotlight above this item on Home: a rotating list of titles with fanart, logo, details and Play."
+msgstr "홈의 이 항목 위에 있는 넷플릭스 스타일의 큰 Spotlight: 팬아트, 로고, 세부 정보, 재생 버튼과 함께 작품이 바뀝니다."
+
+msgctxt "#31067"
+msgid "Label"
+msgstr "레이블"
+
+msgctxt "#31068"
+msgid "Path"
+msgstr "경로"
+
+msgctxt "#31069"
+msgid "Items"
+msgstr "항목"
+
+msgctxt "#31073"
+msgid "Widget screen options"
+msgstr "위젯 화면 옵션"
+
+msgctxt "#31074"
+msgid "Library background (Aeon)"
+msgstr "라이브러리 배경 (Aeon)"
+
+msgctxt "#31078"
+msgid "Choose a view"
+msgstr "보기 선택"
+
+msgctxt "#31079"
+msgid "Left / Right to look, OK to switch"
+msgstr "왼쪽 / 오른쪽으로 보기, OK로 전환"
+
+msgctxt "#31083"
+msgid "Fanart list"
+msgstr "팬아트 목록"
+
+msgctxt "#31084"
+msgid "Rows with A-Z keys"
+msgstr "A-Z 키가 있는 행"
+
+msgctxt "#31088"
+msgid "Artist wall"
+msgstr "아티스트 월"
+
+msgctxt "#31089"
+msgid "Cover grid"
+msgstr "커버 그리드"
+
+msgctxt "#31090"
+msgid "Album wall"
+msgstr "앨범 월"
+
+msgctxt "#31091"
+msgid "Song wall"
+msgstr "노래 월"
+
+msgctxt "#31092"
+msgid "Artist showcase"
+msgstr "아티스트 쇼케이스"
+
+msgctxt "#31093"
+msgid "Big covers in a row"
+msgstr "한 줄의 큰 커버"
+
+msgctxt "#31094"
+msgid "Album showcase"
+msgstr "앨범 쇼케이스"
+
+msgctxt "#31095"
+msgid "Song showcase"
+msgstr "노래 쇼케이스"
+
+msgctxt "#31096"
+msgid "Artist rows"
+msgstr "아티스트 줄"
+
+msgctxt "#31097"
+msgid "Rows with covers"
+msgstr "커버가 있는 줄"
+
+msgctxt "#31098"
+msgid "Album list"
+msgstr "앨범 목록"
+
+msgctxt "#31099"
+msgid "Song list"
+msgstr "노래 목록"
+
+msgctxt "#31108"
+msgid "Compact song rows"
+msgstr "간결한 노래 줄"
+
+msgctxt "#31109"
+msgid "Fanart wall"
+msgstr "팬아트 월"
+
+msgctxt "#31115"
+msgid "Portrait grid"
+msgstr "세로 그리드"
+
+msgctxt "#31116"
+msgid "Fanart and A-Z keys"
+msgstr "팬아트와 A-Z 키"
+
+msgctxt "#31117"
+msgid "Show posters"
+msgstr "포스터 표시"
+
+msgctxt "#31118"
+msgid "Posters"
+msgstr "포스터"
+
+msgctxt "#31119"
+msgid "Season posters"
+msgstr "시즌 포스터"
+
+msgctxt "#31130"
+msgid "Poster wall"
+msgstr "포스터 월"
+
+msgctxt "#31131"
+msgid "Episode wall"
+msgstr "에피소드 월"
+
+msgctxt "#31132"
+msgid "Landscape artwork"
+msgstr "가로형 아트워크"
+
+msgctxt "#31133"
+msgid "Landscape wall"
+msgstr "가로형 월"
+
+msgctxt "#31134"
+msgid "Square wall"
+msgstr "정사각형 월"
+
+msgctxt "#31135"
+msgid "Square tiles"
+msgstr "정사각형 타일"
+
+msgctxt "#31136"
+msgid "Cards"
+msgstr "카드"
+
+msgctxt "#31137"
+msgid "Artwork with details"
+msgstr "세부 정보가 있는 아트워크"
+
+msgctxt "#31138"
+msgid "Showcase"
+msgstr "쇼케이스"
+
+msgctxt "#31139"
+msgid "One big poster"
+msgstr "큰 포스터 하나"
+
+msgctxt "#31140"
+msgid "Banner list"
+msgstr "배너 목록"
+
+msgctxt "#31141"
+msgid "Wide banner rows"
+msgstr "넓은 배너 줄"
+
+msgctxt "#31142"
+msgid "Compact list"
+msgstr "간결한 목록"
+
+msgctxt "#31143"
+msgid "Dense rows with poster"
+msgstr "포스터가 있는 촘촘한 줄"
+
+msgctxt "#31144"
+msgid "Episode list"
+msgstr "에피소드 목록"
+
+msgctxt "#31145"
+msgid "Rows with thumbs"
+msgstr "섬네일이 있는 줄"
+
+msgctxt "#31146"
+msgid "Season list combined 3"
+msgstr "시즌 목록 모아 보기 3"
+
+msgctxt "#31147"
+msgid "Rows with posters"
+msgstr "포스터가 있는 줄"
+
+msgctxt "#31148"
+msgid "Low list"
+msgstr "낮은 목록"
+
+msgctxt "#31149"
+msgid "Rows over fanart"
+msgstr "팬아트 위의 줄"
+
+msgctxt "#31150"
+msgid "Version"
+msgstr "버전"
+
+msgctxt "#31151"
+msgid "Type"
+msgstr "유형"
+
+msgctxt "#31152"
+msgid "Installed"
+msgstr "설치됨"
+
+msgctxt "#31153"
+msgid "Updated"
+msgstr "업데이트됨"
+
+msgctxt "#31154"
+msgid "Channel"
+msgstr "채널"
+
+msgctxt "#31155"
+msgid "Other"
+msgstr "기타"
+
+msgctxt "#31156"
+msgid "Jump to now"
+msgstr "현재로 이동"
+
+msgctxt "#31157"
+msgid "Choose channel"
+msgstr "채널 선택"
+
+msgctxt "#31158"
+msgid "Choose channel group"
+msgstr "채널 그룹 선택"
+
+msgctxt "#31159"
+msgid "Choose date"
+msgstr "날짜 선택"
+
+msgctxt "#31160"
+msgid "Recordings"
+msgstr "녹화"
+
+msgctxt "#31161"
+msgid "Timers"
+msgstr "타이머"
+
+msgctxt "#31162"
+msgid "Timer rules"
+msgstr "타이머 규칙"
+
+msgctxt "#31163"
+msgid "Search guide"
+msgstr "가이드 검색"
+
+msgctxt "#31164"
+msgid "Return to guide"
+msgstr "가이드로 돌아가기"
+
+msgctxt "#31165"
+msgid "Exit guide"
+msgstr "가이드 나가기"
+
+msgctxt "#31166"
+msgid "Band"
+msgstr "밴드"
+
+msgctxt "#31167"
+msgid "Artist"
+msgstr "아티스트"
+
+msgctxt "#31168"
+msgid "Title"
+msgstr "제목"
+
+msgctxt "#31169"
+msgid "Composer"
+msgstr "작곡가"
+
+msgctxt "#31170"
+msgid "Conductor"
+msgstr "지휘자"
+
+msgctxt "#31171"
+msgid "Album"
+msgstr "앨범"
+
+msgctxt "#31172"
+msgid "Comment"
+msgstr "코멘트"
+
+msgctxt "#31173"
+msgid "Studio  ·  hotline"
+msgstr "스튜디오  ·  핫라인"
+
+msgctxt "#31174"
+msgid "Studio phone"
+msgstr "스튜디오 전화"
+
+msgctxt "#31175"
+msgid "Studio email"
+msgstr "스튜디오 이메일"
+
+msgctxt "#31176"
+msgid "Studio SMS"
+msgstr "스튜디오 SMS"
+
+msgctxt "#31177"
+msgid "Hotline phone"
+msgstr "핫라인 전화"
+
+msgctxt "#31178"
+msgid "Hotline email"
+msgstr "핫라인 이메일"
+
+msgctxt "#31179"
+msgid "Programme"
+msgstr "프로그램"
+
+msgctxt "#31180"
+msgid "Style"
+msgstr "스타일"
+
+msgctxt "#31181"
+msgid "Station"
+msgstr "방송국"
+
+msgctxt "#31182"
+msgid "Host"
+msgstr "진행자"
+
+msgctxt "#31183"
+msgid "Editorial"
+msgstr "편집부"
+
+msgctxt "#31184"
+msgid "Website"
+msgstr "웹사이트"
+
+msgctxt "#31185"
+msgid "Radiotext"
+msgstr "라디오텍스트"
+
+msgctxt "#31186"
+msgid "ENDS"
+msgstr "종료"
+
+msgctxt "#31187"
+msgid "Search manually…"
+msgstr "직접 검색…"
+
+msgctxt "#31189"
+msgid "TRUEHD  7.1"
+msgstr "TRUEHD  7.1"
+
+msgctxt "#31190"
+msgid "Some stories never end."
+msgstr "어떤 이야기는 끝나지 않는다."
+
+msgctxt "#31191"
+msgid "A retired detective is pulled back into a case he thought was closed, and the closer he looks the less of it makes sense."
+msgstr "은퇴한 형사가 끝난 줄 알았던 사건에 다시 끌려들고, 들여다볼수록 앞뒤가 맞지 않는다."
+
+msgctxt "#31194"
+msgid "Trakt 78"
+msgstr "Trakt 78"
+
+msgctxt "#31195"
+msgid "Controls stay hidden when you pause."
+msgstr "일시 정지해도 컨트롤이 숨겨진 채로 있습니다."
+
+msgctxt "#31196"
+msgid "Controls open 1 second after you pause."
+msgstr "일시 정지 1초 후 컨트롤이 열립니다."
+
+msgctxt "#31197"
+msgid "Controls open 3 seconds after you pause."
+msgstr "일시 정지 3초 후 컨트롤이 열립니다."
+
+msgctxt "#31198"
+msgid "Controls open 5 seconds after you pause."
+msgstr "일시 정지 5초 후 컨트롤이 열립니다."
+
+msgctxt "#31199"
+msgid "Controls open 2 seconds after you pause."
+msgstr "일시 정지 2초 후 컨트롤이 열립니다."
+
+msgctxt "#31278"
+msgid "Play"
+msgstr "재생"
+
+msgctxt "#31279"
+msgid "More information"
+msgstr "자세한 정보"
+
+msgctxt "#31295"
+msgid "NOW ON TV"
+msgstr "지금 방송 중"
+
+msgctxt "#31296"
+msgid "PRESS UP FOR THE FULL GUIDE"
+msgstr "위쪽 키로 전체 가이드 보기"
+
+msgctxt "#31297"
+msgid "NO LYRICS FOR THIS SONG"
+msgstr "이 노래의 가사가 없음"
+
+msgctxt "#31298"
+msgid "Artists"
+msgstr "아티스트"
+
+msgctxt "#31299"
+msgid "Albums"
+msgstr "앨범"
+
+msgctxt "#31343"
+msgid "Songs"
+msgstr "노래"
+
+msgctxt "#31344"
+msgid "Genres"
+msgstr "장르"
+
+msgctxt "#31345"
+msgid "Menu: view, sort"
+msgstr "메뉴: 보기, 정렬"
+
+msgctxt "#31346"
+msgid "MUSIC LIBRARY"
+msgstr "음악 라이브러리"
+
+msgctxt "#31347"
+msgid "SUBTITLES"
+msgstr "자막"
+
+msgctxt "#31348"
+msgid "AUDIO"
+msgstr "오디오"
+
+msgctxt "#31349"
+msgid "VIDEO"
+msgstr "비디오"
+
+msgctxt "#31350"
+msgid "CHAPTERS"
+msgstr "챕터"
+
+msgctxt "#31351"
+msgid "INFO"
+msgstr "정보"
+
+msgctxt "#31352"
+msgid "STATS"
+msgstr "통계"
+
+msgctxt "#31353"
+msgid "TV SHOWS"
+msgstr "TV 시리즈"
+
+msgctxt "#31354"
+msgid "MOVIES"
+msgstr "영화"
+
+msgctxt "#31355"
+msgid "BUFFERING"
+msgstr "버퍼링"
+
+msgctxt "#31356"
+msgid "PAUSED"
+msgstr "일시 정지됨"
+
+msgctxt "#31357"
+msgid "ADDED"
+msgstr "추가됨"
+
+msgctxt "#31358"
+msgid "Custom path"
+msgstr "사용자 경로"
+
+msgctxt "#31359"
+msgid "Recently added"
+msgstr "최근 추가"
+
+msgctxt "#31360"
+msgid "Recently watched"
+msgstr "최근 시청"
+
+msgctxt "#31361"
+msgid "In progress"
+msgstr "보는 중"
+
+msgctxt "#31362"
+msgid "Top rated"
+msgstr "높은 평점"
+
+msgctxt "#31363"
+msgid "All movies"
+msgstr "모든 영화"
+
+msgctxt "#31364"
+msgid "Unwatched shows"
+msgstr "안 본 시리즈"
+
+msgctxt "#31365"
+msgid "Random shows"
+msgstr "무작위 시리즈"
+
+msgctxt "#31366"
+msgid "Top rated shows"
+msgstr "높은 평점 시리즈"
+
+msgctxt "#31367"
+msgid "All shows"
+msgstr "모든 시리즈"
+
+msgctxt "#31368"
+msgid "Recently played"
+msgstr "최근 재생"
+
+msgctxt "#31369"
+msgid "Random albums"
+msgstr "무작위 앨범"
+
+msgctxt "#31370"
+msgid "Shut down"
+msgstr "종료"
+
+msgctxt "#31371"
+msgid "Reboot to Android"
+msgstr "Android로 재부팅"
+
+msgctxt "#31372"
+msgid "Quit Kodi"
+msgstr "Kodi 끝내기"
+
+msgctxt "#31373"
+msgid "Update video library"
+msgstr "비디오 라이브러리 업데이트"
+
+msgctxt "#31374"
+msgid "Update music library"
+msgstr "음악 라이브러리 업데이트"
+
+msgctxt "#31375"
+msgid "Clean video library"
+msgstr "비디오 라이브러리 정리"
+
+msgctxt "#31376"
+msgid "Clean music library"
+msgstr "음악 라이브러리 정리"
+
+msgctxt "#31377"
+msgid "Power menu"
+msgstr "전원 메뉴"
+
+msgctxt "#31378"
+msgid "TV shows"
+msgstr "TV 시리즈"
+
+msgctxt "#31379"
+msgid "MUSIC"
+msgstr "음악"
+
+msgctxt "#31380"
+msgid "LISTEN"
+msgstr "듣기"
+
+msgctxt "#31381"
+msgid "WATCH"
+msgstr "보기"
+
+msgctxt "#31382"
+msgid "Latest added"
+msgstr "최근 추가"
+
+msgctxt "#31383"
+msgid "Last played"
+msgstr "최근 재생"
+
+msgctxt "#31384"
+msgid "Movies, TV shows, Music or Power"
+msgstr "영화, TV 시리즈, 음악 또는 전원"
+
+msgctxt "#31385"
+msgid "Position 1 is the first page you reach with Up"
+msgstr "위치 1은 위쪽 키로 처음 가는 페이지입니다"
+
+msgctxt "#31386"
+msgid "What this position shows. Off hides it"
+msgstr "이 위치에 표시할 것. 끄면 숨깁니다"
+
+msgctxt "#31387"
+msgid "OK types a name, Left clears it"
+msgstr "OK로 이름 입력, 왼쪽으로 지우기"
+
+msgctxt "#31388"
+msgid "Used when Category = Custom path (a library path, playlist or add-on folder)"
+msgstr "범주 = 사용자 경로일 때 사용 (라이브러리 경로, 재생 목록 또는 애드온 폴더)"
+
+msgctxt "#31389"
+msgid "How many items the page cycles through (default 15)"
+msgstr "페이지에서 돌려 볼 항목 수 (기본값 15)"
+
+msgctxt "#31390"
+msgid "Order of the items on this page"
+msgstr "이 페이지의 항목 순서"
+
+msgctxt "#31391"
+msgid "Flip the sort order"
+msgstr "정렬 순서 뒤집기"
+
+msgctxt "#31392"
+msgid "Step through the items by itself"
+msgstr "항목을 저절로 넘기기"
+
+msgctxt "#31393"
+msgid "Seconds each item stays (default 10)"
+msgstr "항목당 표시 초 (기본값 10)"
+
+msgctxt "#31394"
+msgid "SERIES PREMIERE"
+msgstr "시리즈 첫 방송"
+
+msgctxt "#31395"
+msgid "SEASON PREMIERE"
+msgstr "시즌 첫 방송"
+
+msgctxt "#31396"
+msgid "SERIES FINALE"
+msgstr "시리즈 마지막 회"
+
+msgctxt "#31397"
+msgid "SEASON FINALE"
+msgstr "시즌 마지막 회"
+
+msgctxt "#31398"
+msgid "Movie sets"
+msgstr "영화 세트"
+
+msgctxt "#31399"
+msgid "Autoscroll off"
+msgstr "자동 스크롤 끔"
+
+msgctxt "#31400"
+msgid "Random movies"
+msgstr "무작위 영화"
+
+msgctxt "#31401"
+msgid "Recently added movies"
+msgstr "최근 추가한 영화"
+
+msgctxt "#31402"
+msgid "Recently played movies"
+msgstr "최근 재생한 영화"
+
+msgctxt "#31403"
+msgid "Top rated movies"
+msgstr "높은 평점 영화"
+
+msgctxt "#31404"
+msgid "Most played movies"
+msgstr "가장 많이 재생한 영화"
+
+msgctxt "#31405"
+msgid "Newest movies"
+msgstr "최신 영화"
+
+msgctxt "#31406"
+msgid "Title movies"
+msgstr "제목순 영화"
+
+msgctxt "#31407"
+msgid "Recently added shows"
+msgstr "최근 추가한 시리즈"
+
+msgctxt "#31408"
+msgid "Recently played shows"
+msgstr "최근 재생한 시리즈"
+
+msgctxt "#31409"
+msgid "Most played shows"
+msgstr "가장 많이 재생한 시리즈"
+
+msgctxt "#31410"
+msgid "Newest shows"
+msgstr "최신 시리즈"
+
+msgctxt "#31411"
+msgid "Title shows"
+msgstr "제목순 시리즈"
+
+msgctxt "#31412"
+msgid "Recently added albums"
+msgstr "최근 추가한 앨범"
+
+msgctxt "#31413"
+msgid "Recently played albums"
+msgstr "최근 재생한 앨범"
+
+msgctxt "#31414"
+msgid "Top rated albums"
+msgstr "높은 평점 앨범"
+
+msgctxt "#31415"
+msgid "Most played albums"
+msgstr "가장 많이 재생한 앨범"
+
+msgctxt "#31416"
+msgid "Newest albums"
+msgstr "최신 앨범"
+
+msgctxt "#31417"
+msgid "Title albums"
+msgstr "제목순 앨범"
+
+msgctxt "#31418"
+msgid "FULL HD"
+msgstr "FULL HD"
+
+msgctxt "#31419"
+msgid "DOLBY VISION"
+msgstr "DOLBY VISION"
+
+msgctxt "#31420"
+msgid "TRUEHD ATMOS"
+msgstr "TRUEHD ATMOS"
+
+msgctxt "#31421"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31422"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31423"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31424"
+msgid "TRUEHD"
+msgstr "TRUEHD"
+
+msgctxt "#31425"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31426"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31427"
+msgid "FLAC"
+msgstr "FLAC"
+
+msgctxt "#31428"
+msgid "ALAC"
+msgstr "ALAC"
+
+msgctxt "#31429"
+msgid "OPUS"
+msgstr "OPUS"
+
+msgctxt "#31430"
+msgid "VORBIS"
+msgstr "VORBIS"
+
+msgctxt "#31431"
+msgid "RATED NC-17"
+msgstr "등급 NC-17"
+
+msgctxt "#31432"
+msgid "RATED PG-13"
+msgstr "등급 PG-13"
+
+msgctxt "#31433"
+msgid "RATED PG"
+msgstr "등급 PG"
+
+msgctxt "#31434"
+msgid "RATED R"
+msgstr "등급 R"
+
+msgctxt "#31435"
+msgid "RATED G"
+msgstr "등급 G"
+
+msgctxt "#31436"
+msgid "RATED TV-MA"
+msgstr "등급 TV-MA"
+
+msgctxt "#31437"
+msgid "RATED TV-14"
+msgstr "등급 TV-14"
+
+msgctxt "#31438"
+msgid "RATED TV-PG"
+msgstr "등급 TV-PG"
+
+msgctxt "#31439"
+msgid "RATED TV-Y7"
+msgstr "등급 TV-Y7"
+
+msgctxt "#31440"
+msgid "RATED TV-Y"
+msgstr "등급 TV-Y"
+
+msgctxt "#31441"
+msgid "RATED TV-G"
+msgstr "등급 TV-G"
+
+msgctxt "#31442"
+msgid "ULTRA"
+msgstr "ULTRA"
+
+msgctxt "#31443"
+msgid "FULL"
+msgstr "FULL"
+
+msgctxt "#31444"
+msgid "READY"
+msgstr "READY"
+
+msgctxt "#31445"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31446"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31447"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31448"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31449"
+msgid "MEDIA"
+msgstr "미디어"
+
+msgctxt "#31450"
+msgid "RATING"
+msgstr "평점"
+
+msgctxt "#31451"
+msgid "CERTIFICATION"
+msgstr "관람 등급"
+
+msgctxt "#31452"
+msgid "CREDITS"
+msgstr "크레딧"
+
+msgctxt "#31453"
+msgid "FIRST AIRED"
+msgstr "첫 방송"
+
+msgctxt "#31454"
+msgid "STUDIO"
+msgstr "스튜디오"
+
+msgctxt "#31455"
+msgid "GENRE"
+msgstr "장르"
+
+msgctxt "#31456"
+msgid "CAST"
+msgstr "출연"
+
+msgctxt "#31457"
+msgid "HD READY"
+msgstr "HD READY"
+
+msgctxt "#31458"
+msgid "BOXED SET"
+msgstr "박스 세트"
+
+msgctxt "#31459"
+msgid "* ALL SEASONS"
+msgstr "* 모든 시즌"
+
+msgctxt "#31460"
+msgid "For now"
+msgstr "지금 볼 만한"
+
+msgctxt "#31461"
+msgid "Kept all day"
+msgstr "하루 종일 유지"
+
+msgctxt "#31462"
+msgid "Past midnight"
+msgstr "자정 넘음"
+
+msgctxt "#31463"
+msgid "Still up?"
+msgstr "아직 안 자요?"
+
+msgctxt "#31464"
+msgid "Nearly bedtime."
+msgstr "곧 잘 시간이에요."
+
+msgctxt "#31465"
+msgid "Good evening."
+msgstr "좋은 저녁이에요."
+
+msgctxt "#31466"
+msgid "Good afternoon."
+msgstr "좋은 오후예요."
+
+msgctxt "#31467"
+msgid "Good morning."
+msgstr "좋은 아침이에요."
+
+msgctxt "#31468"
+msgid "Short ones: under 100 minutes"
+msgstr "짧은 작품: 100분 미만"
+
+msgctxt "#31469"
+msgid "The evening is yours"
+msgstr "저녁은 당신 것"
+
+msgctxt "#31470"
+msgid "A free afternoon: something long"
+msgstr "한가한 오후: 긴 작품"
+
+msgctxt "#31471"
+msgid "Plenty of aeon left"
+msgstr "시간은 아직 넉넉해요"
+
+msgctxt "#31472"
+msgid "Sunday morning: take it slow"
+msgstr "일요일 아침: 느긋하게"
+
+msgctxt "#31473"
+msgid "A slow start: something light"
+msgstr "천천히 시작: 가벼운 작품"
+
+msgctxt "#31474"
+msgid "Needs a weather add-on in Kodi's settings"
+msgstr "Kodi 설정에서 날씨 애드온이 필요합니다"
+
+msgctxt "#31475"
+msgid "From the weather add-on set in Kodi"
+msgstr "Kodi에 설정된 날씨 애드온에서"
+
+msgctxt "#31476"
+msgid "Tropical storm"
+msgstr "열대 폭풍"
+
+msgctxt "#31477"
+msgid "Severe storms"
+msgstr "강한 뇌우"
+
+msgctxt "#31478"
+msgid "Rain and snow"
+msgstr "비와 눈"
+
+msgctxt "#31479"
+msgid "Rain and sleet"
+msgstr "비와 진눈깨비"
+
+msgctxt "#31480"
+msgid "Snow and sleet"
+msgstr "눈과 진눈깨비"
+
+msgctxt "#31481"
+msgid "Freezing drizzle"
+msgstr "어는 이슬비"
+
+msgctxt "#31482"
+msgid "Freezing rain"
+msgstr "어는 비"
+
+msgctxt "#31483"
+msgid "Snow flurries"
+msgstr "눈발"
+
+msgctxt "#31484"
+msgid "Light snow"
+msgstr "약한 눈"
+
+msgctxt "#31485"
+msgid "Blowing snow"
+msgstr "날리는 눈"
+
+msgctxt "#31486"
+msgid "Mostly cloudy"
+msgstr "대체로 흐림"
+
+msgctxt "#31487"
+msgid "Partly cloudy"
+msgstr "구름 조금"
+
+msgctxt "#31488"
+msgid "Rain and hail"
+msgstr "비와 우박"
+
+msgctxt "#31489"
+msgid "Isolated storms"
+msgstr "곳에 따라 뇌우"
+
+msgctxt "#31490"
+msgid "Scattered storms"
+msgstr "산발적 뇌우"
+
+msgctxt "#31491"
+msgid "Scattered showers"
+msgstr "산발적 소나기"
+
+msgctxt "#31492"
+msgid "Heavy snow"
+msgstr "많은 눈"
+
+msgctxt "#31493"
+msgid "Snow showers"
+msgstr "눈 소나기"
+
+msgctxt "#31494"
+msgid "More under 100 minutes"
+msgstr "100분 미만 더 보기"
+
+msgctxt "#31495"
+msgid "Sunday morning: documentaries"
+msgstr "일요일 아침: 다큐멘터리"
+
+msgctxt "#31496"
+msgid "Morning shorts: under 100 minutes"
+msgstr "아침의 짧은 작품: 100분 미만"
+
+msgctxt "#31497"
+msgid "A long afternoon film"
+msgstr "오후의 긴 영화"
+
+msgctxt "#31498"
+msgid "Top rated, still unwatched"
+msgstr "높은 평점, 아직 안 봄"
+
+msgctxt "#31499"
+msgid "Tonight's top rated"
+msgstr "오늘 밤 높은 평점"
+
+msgctxt "#31500"
+msgid "Before bed"
+msgstr "자기 전에"
+
+msgctxt "#31501"
+msgid "This morning"
+msgstr "오늘 아침"
+
+msgctxt "#31502"
+msgid "This afternoon"
+msgstr "오늘 오후"
+
+msgctxt "#31503"
+msgid "Later today"
+msgstr "오늘 이따가"
+
+msgctxt "#31504"
+msgid "One more episode"
+msgstr "한 화 더"
+
+msgctxt "#31505"
+msgid "Next up"
+msgstr "다음 재생"
+
+msgctxt "#31506"
+msgid "It's snowing: something long"
+msgstr "눈이 와요: 긴 작품"
+
+msgctxt "#31507"
+msgid "Still raining: under an hour"
+msgstr "아직 비가 와요: 1시간 미만"
+
+msgctxt "#31508"
+msgid "It's raining: something long"
+msgstr "비가 와요: 긴 작품"
+
+msgctxt "#31509"
+msgid "Just added"
+msgstr "방금 추가됨"
+
+msgctxt "#31510"
+msgid "Download subtitles"
+msgstr "자막 다운로드"
+
+msgctxt "#31511"
+msgid "Subtitle settings"
+msgstr "자막 설정"
+
+msgctxt "#31512"
+msgid "What's new"
+msgstr "새로운 소식"
+
+msgctxt "#31513"
+msgid "Nothing to suggest right now."
+msgstr "지금은 추천할 것이 없습니다."
+
+msgctxt "#31514"
+msgid "Clean library?"
+msgstr "라이브러리를 정리할까요?"
+
+msgctxt "#31515"
+msgid "Music videos"
+msgstr "뮤직 비디오"
+
+msgctxt "#31516"
+msgid "Kodi takes out the songs, albums and artists it can no longer find. Your files stay where they are."
+msgstr "Kodi는 더 이상 찾을 수 없는 노래, 앨범, 아티스트를 제거합니다. 파일은 그대로 있습니다."
+
+msgctxt "#31517"
+msgid "Kodi takes out the films, shows and episodes it can no longer find. Your files stay where they are."
+msgstr "Kodi는 더 이상 찾을 수 없는 영화, 시리즈, 에피소드를 제거합니다. 파일은 그대로 있습니다."
+
+msgctxt "#31518"
+msgid "Add-on settings"
+msgstr "애드온 설정"
+
+msgctxt "#31519"
+msgid "Get more"
+msgstr "더 받기"
+
+msgctxt "#31520"
+msgid "Slideshow"
+msgstr "슬라이드쇼"
+
+msgctxt "#31521"
+msgid "Recursive slideshow"
+msgstr "하위 폴더 포함 슬라이드쇼"
+
+msgctxt "#31522"
+msgid "Randomise"
+msgstr "무작위로"
+
+msgctxt "#31523"
+msgid "Edited  locked"
+msgstr "편집됨  잠김"
+
+msgctxt "#31524"
+msgid "Shuffle  ·  Repeat one"
+msgstr "셔플  ·  한 곡 반복"
+
+msgctxt "#31525"
+msgid "Shuffle  ·  Repeat all"
+msgstr "셔플  ·  전체 반복"
+
+msgctxt "#31526"
+msgid "Repeat one"
+msgstr "한 곡 반복"
+
+msgctxt "#31527"
+msgid "Repeat all"
+msgstr "전체 반복"
+
+msgctxt "#31528"
+msgid "Video queue"
+msgstr "비디오 대기열"
+
+msgctxt "#31529"
+msgid "Shuffle: on"
+msgstr "셔플: 켜짐"
+
+msgctxt "#31530"
+msgid "Shuffle: off"
+msgstr "셔플: 꺼짐"
+
+msgctxt "#31531"
+msgid "Play all"
+msgstr "모두 재생"
+
+msgctxt "#31532"
+msgid "Shuffle"
+msgstr "셔플"
+
+msgctxt "#31533"
+msgid "Refresh"
+msgstr "새로 고침"
+
+msgctxt "#31534"
+msgid "Added"
+msgstr "추가됨"
+
+msgctxt "#31535"
+msgid "Plays"
+msgstr "재생 횟수"
+
+msgctxt "#31536"
+msgid "Mood"
+msgstr "분위기"
+
+msgctxt "#31537"
+msgid "Album info"
+msgstr "앨범 정보"
+
+msgctxt "#31538"
+msgid "Artist info"
+msgstr "아티스트 정보"
+
+msgctxt "#31539"
+msgid "About the artist"
+msgstr "아티스트 소개"
+
+msgctxt "#31552"
+msgid "About the song"
+msgstr "노래 소개"
+
+msgctxt "#31553"
+msgid "About the album"
+msgstr "앨범 소개"
+
+msgctxt "#31554"
+msgid "OK reads all of it"
+msgstr "OK로 전부 읽기"
+
+msgctxt "#31555"
+msgid "Up returns to the buttons"
+msgstr "위로 버튼으로 돌아가기"
+
+msgctxt "#31556"
+msgid "Right for the full story"
+msgstr "오른쪽으로 전체 내용"
+
+msgctxt "#31557"
+msgid "Shuffle on"
+msgstr "셔플 켜짐"
+
+msgctxt "#31558"
+msgid "Music video"
+msgstr "뮤직 비디오"
+
+msgctxt "#31559"
+msgid "HEVC"
+msgstr "HEVC"
+
+msgctxt "#31560"
+msgid "Dolby Vision"
+msgstr "Dolby Vision"
+
+msgctxt "#31561"
+msgid "TrueHD Atmos"
+msgstr "TrueHD Atmos"
+
+msgctxt "#31562"
+msgid "DD+ Atmos"
+msgstr "DD+ Atmos"
+
+msgctxt "#31563"
+msgid "Video"
+msgstr "비디오"
+
+msgctxt "#31564"
+msgid "Chapters"
+msgstr "챕터"
+
+msgctxt "#31565"
+msgid "Info"
+msgstr "정보"
+
+msgctxt "#31566"
+msgid "Stats"
+msgstr "통계"
+
+msgctxt "#31567"
+msgid "Sleeping after this"
+msgstr "이후 절전"
+
+msgctxt "#31568"
+msgid "Sleep after this"
+msgstr "이후 절전하기"
+
+msgctxt "#31569"
+msgid "1 RESULT"
+msgstr "결과 1개"
+
+msgctxt "#31575"
+msgid "Colors, backdrop and the look of the settings screens."
+msgstr "색상, 배경, 설정 화면의 모양."
+
+msgctxt "#31576"
+msgid "Show a dimmed copy of the last fanart you looked at behind the settings screens."
+msgstr "마지막으로 본 팬아트를 어둡게 해 설정 화면 뒤에 표시합니다."
+
+msgctxt "#31577"
+msgid "Background of the A-Z / scroll bar strip in the library views: dark (default) or white like Aeon 2."
+msgstr "라이브러리 보기의 A-Z / 스크롤 막대 띠 배경: 어둡게(기본값) 또는 Aeon 2처럼 흰색."
+
+msgctxt "#31578"
+msgid "Aeon style: neutral (flat dark), the faint fanart, or a color that follows the artwork and fades between titles. Override it per home menu item (Edit spotlight)."
+msgstr "Aeon 스타일: 중립(평평한 어두운색), 희미한 팬아트, 또는 아트워크를 따라 작품마다 바뀌는 색. 홈 메뉴 항목별로 바꿀 수 있습니다(Spotlight 편집)."
+
+msgctxt "#31579"
+msgid "Aeon: flat dark panels and a white highlight bar (like the Aeon 2 list). Aeon Glass: translucent panels and a soft highlight. Applies to every library view."
+msgstr "Aeon: 평평한 어두운 패널과 흰색 강조 막대(Aeon 2 목록처럼). Aeon Glass: 반투명 패널과 부드러운 강조. 모든 라이브러리 보기에 적용됩니다."
+
+msgctxt "#31580"
+msgid "Where the music that is playing shows on Home: Slot (lower left, default), Corner (top left), Line (above the menu) or Bar (bottom)."
+msgstr "재생 중인 음악이 홈에 표시되는 곳: 슬롯(왼쪽 아래, 기본값), 모서리(왼쪽 위), 줄(메뉴 위) 또는 막대(아래)."
+
+msgctxt "#31581"
+msgid "How visible the fanart backdrop is."
+msgstr "팬아트 배경이 보이는 정도."
+
+msgctxt "#31582"
+msgid "Tags, plot text and logos in the movie and episode views."
+msgstr "영화와 에피소드 보기의 태그, 줄거리, 로고."
+
+msgctxt "#31583"
+msgid "Resolution and video codec in the tag line under a film or episode."
+msgstr "영화나 에피소드 아래 태그 줄의 해상도와 비디오 코덱."
+
+msgctxt "#31584"
+msgid "Shows HDR10, HLG or Dolby Vision in the tag line when the file has it."
+msgstr "파일에 있으면 태그 줄에 HDR10, HLG 또는 Dolby Vision을 표시합니다."
+
+msgctxt "#31585"
+msgid "Audio codec and channel count in the tag line."
+msgstr "태그 줄의 오디오 코덱과 채널 수."
+
+msgctxt "#31586"
+msgid "What the text under a film shows: the full plot, or the tagline when the film has one."
+msgstr "영화 아래 텍스트가 보여 줄 것: 전체 줄거리, 또는 있으면 태그라인."
+
+msgctxt "#31587"
+msgid "Long plots scroll by themselves after a few seconds."
+msgstr "긴 줄거리는 몇 초 뒤 저절로 스크롤됩니다."
+
+msgctxt "#31588"
+msgid "The studio logo beside seasons and episodes (needs the studio logos resource add-on)."
+msgstr "시즌과 에피소드 옆의 스튜디오 로고(스튜디오 로고 리소스 애드온 필요)."
+
+msgctxt "#31589"
+msgid "Which rating sources show, and whether the score is colored."
+msgstr "표시할 평점 출처와 점수에 색을 넣을지 여부."
+
+msgctxt "#31590"
+msgid "Green from 7, amber from 5, red below."
+msgstr "7부터 초록, 5부터 호박색, 그 아래는 빨강."
+
+msgctxt "#31591"
+msgid "Shows the IMDb score when the library has one. Several sources can be on at once."
+msgstr "라이브러리에 있으면 IMDb 점수를 표시합니다. 여러 출처를 동시에 켤 수 있습니다."
+
+msgctxt "#31592"
+msgid "Shows the TMDb score when the library has one."
+msgstr "라이브러리에 있으면 TMDb 점수를 표시합니다."
+
+msgctxt "#31593"
+msgid "Shows the Tomatometer when your scraper or TMDb Helper provides it."
+msgstr "스크레이퍼나 TMDb Helper가 제공하면 Tomatometer를 표시합니다."
+
+msgctxt "#31594"
+msgid "Shows the Trakt score when it is in the library."
+msgstr "라이브러리에 있으면 Trakt 점수를 표시합니다."
+
+msgctxt "#31595"
+msgid "Seek bar, pause behaviour and the Back button."
+msgstr "탐색 막대, 일시 정지 동작, 뒤로 버튼."
+
+msgctxt "#31596"
+msgid "What the right-hand time of the seek bar shows: the total length, the time left, or when it ends."
+msgstr "탐색 막대 오른쪽 시간에 표시할 것: 전체 길이, 남은 시간 또는 끝나는 시각."
+
+msgctxt "#31597"
+msgid "The player controls open by themselves when you pause."
+msgstr "일시 정지하면 플레이어 컨트롤이 저절로 열립니다."
+
+msgctxt "#31598"
+msgid "How long after pausing the controls open."
+msgstr "일시 정지 후 컨트롤이 열리기까지의 시간."
+
+msgctxt "#31599"
+msgid "Back goes up one level, or straight to the home screen."
+msgstr "뒤로는 한 단계 위로, 또는 바로 홈 화면으로 갑니다."
+
+msgctxt "#31600"
+msgid "Extra fanart and the artist slideshow."
+msgstr "추가 팬아트와 아티스트 슬라이드쇼."
+
+msgctxt "#31601"
+msgid "Home and the library cycle through a film or show's extra fanart. Needs extra fanart in the library (fanart1, fanart2 ...)."
+msgstr "홈과 라이브러리에서 영화나 시리즈의 추가 팬아트를 차례로 보여 줍니다. 라이브러리에 추가 팬아트가 필요합니다(fanart1, fanart2 ...)."
+
+msgctxt "#31602"
+msgid "How long each fanart image stays."
+msgstr "각 팬아트 이미지가 머무는 시간."
+
+msgctxt "#31603"
+msgid "Now playing shows the Artist Slideshow add-on pictures of the artist (needs script.artistslideshow)."
+msgstr "지금 재생 중 화면에 Artist Slideshow 애드온의 아티스트 사진을 보여 줍니다(script.artistslideshow 필요)."
+
+msgctxt "#31604"
+msgid "What the full-screen widget pages (Up on a home item) show."
+msgstr "전체 화면 위젯 페이지(홈 항목에서 위쪽 키)에 표시할 것."
+
+msgctxt "#31605"
+msgid "Resolution, codec, HDR and audio tags on the full-screen widget pages (the choices under Details apply)."
+msgstr "전체 화면 위젯 페이지의 해상도, 코덱, HDR, 오디오 태그(세부 정보의 선택이 적용됨)."
+
+msgctxt "#31606"
+msgid "The rating line, with the sources you chose under Ratings, on the full-screen widget pages."
+msgstr "전체 화면 위젯 페이지에 평점에서 고른 출처로 된 평점 줄."
+
+msgctxt "#31607"
+msgid "The studio logo, or the network logo for episodes, on the full-screen widget pages (needs the studio logos add-on)."
+msgstr "전체 화면 위젯 페이지의 스튜디오 로고, 에피소드는 방송사 로고(스튜디오 로고 애드온 필요)."
+
+msgctxt "#31608"
+msgid "Watched markers on posters, the trailer button and logos instead of titles."
+msgstr "포스터의 시청 표시, 예고편 버튼, 제목 대신 로고."
+
+msgctxt "#31609"
+msgid "How the playback controls behave."
+msgstr "재생 컨트롤의 동작 방식."
+
+msgctxt "#31610"
+msgid "Fonts for each part of the skin, calmer animations, and a way back to the default settings."
+msgstr "스킨 각 부분의 글꼴, 차분한 애니메이션, 기본 설정으로 돌아가는 방법."
+
+msgctxt "#31611"
+msgid "Unwatched: a small dot. Watched: a check disc. Shows add the number of unwatched episodes."
+msgstr "안 봄: 작은 점. 봄: 체크 원. 시리즈는 안 본 에피소드 수도 표시합니다."
+
+msgctxt "#31612"
+msgid "Shows a Trailer button next to Play when a film has a trailer link (played through the YouTube add-on)."
+msgstr "영화에 예고편 링크가 있으면 재생 옆에 예고편 버튼을 표시합니다(YouTube 애드온으로 재생)."
+
+msgctxt "#31613"
+msgid "How long the playback controls stay up after your last button press. They stay while paused and while a menu is open."
+msgstr "마지막 버튼을 누른 뒤 재생 컨트롤이 표시되는 시간. 일시 정지 중이나 메뉴가 열려 있으면 계속 표시됩니다."
+
+msgctxt "#31614"
+msgid "Where the subtitle and audio offset strip appears while you sync. Top keeps bottom subtitles in view."
+msgstr "싱크 중 자막과 오디오 오프셋 띠가 나타나는 위치. 위로 하면 아래쪽 자막이 계속 보입니다."
+
+msgctxt "#31615"
+msgid "Replaces zooms, slides and the rain with short fades. Focus changes stay instant."
+msgstr "확대, 슬라이드, 비 효과를 짧은 페이드로 바꿉니다. 포커스 이동은 그대로 즉시입니다."
+
+msgctxt "#31616"
+msgid "Puts every skin setting back to its default and reloads the skin. Press OK twice to confirm."
+msgstr "모든 스킨 설정을 기본값으로 되돌리고 스킨을 다시 불러옵니다. 확인하려면 OK를 두 번 누르세요."
+
+msgctxt "#31617"
+msgid "Aeon Fuse options. Kodi's settings live under Settings; switch skins in Settings > Interface > Skin."
+msgstr "Aeon Fuse 옵션. Kodi 설정은 설정에 있으며, 스킨 바꾸기는 설정 > 인터페이스 > 스킨에서 합니다."
+
+msgctxt "#31618"
+msgid "Resume"
+msgstr "이어 보기"
+
+msgctxt "#31619"
+msgid "From start"
+msgstr "처음부터"
+
+msgctxt "#31620"
+msgid "Browse"
+msgstr "찾아보기"
+
+msgctxt "#31621"
+msgid "Trailer"
+msgstr "예고편"
+
+msgctxt "#31622"
+msgid "Collection"
+msgstr "컬렉션"
+
+msgctxt "#31623"
+msgid "More by the director"
+msgstr "감독의 다른 작품"
+
+msgctxt "#31624"
+msgid "Versions"
+msgstr "버전"
+
+msgctxt "#31625"
+msgid "Extras"
+msgstr "부가 영상"
+
+msgctxt "#31626"
+msgid "Choose art"
+msgstr "이미지 선택"
+
+msgctxt "#31627"
+msgid "Choose fanart"
+msgstr "팬아트 선택"
+
+msgctxt "#31628"
+msgid "Films in this collection"
+msgstr "이 컬렉션의 영화"
+
+msgctxt "#31629"
+msgid "OK reads the whole story"
+msgstr "OK로 줄거리 전체 읽기"
+
+msgctxt "#31630"
+msgid "Up or Back returns to the buttons"
+msgstr "위 또는 뒤로로 버튼으로 돌아가기"
+
+msgctxt "#31631"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31632"
+msgid "No story written for this one yet."
+msgstr "이 작품의 줄거리가 아직 없습니다."
+
+msgctxt "#31633"
+msgid "Shows in progress"
+msgstr "보는 중인 시리즈"
+
+msgctxt "#31635"
+msgid "A collection: OK opens its films."
+msgstr "컬렉션: OK로 영화를 엽니다."
+
+msgctxt "#31636"
+msgid "Nothing left: a good time for something new."
+msgstr "남은 것이 없습니다: 새로운 걸 볼 때예요."
+
+msgctxt "#31637"
+msgid "Ending at"
+msgstr "종료 시각"
+
+msgctxt "#31638"
+msgid "PRESETS"
+msgstr "프리셋"
+
+msgctxt "#31639"
+msgid "LYRICS"
+msgstr "가사"
+
+msgctxt "#31640"
+msgid "No guide data. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "가이드 데이터가 없습니다. PVR 및 실시간 TV 설정에서 PVR 클라이언트 애드온을 켜세요."
+
+msgctxt "#31641"
+msgid "Feels like"
+msgstr "체감 온도"
+
+msgctxt "#31642"
+msgid "Humidity"
+msgstr "습도"
+
+msgctxt "#31643"
+msgid "Wind"
+msgstr "바람"
+
+msgctxt "#31644"
+msgid "Precipitation"
+msgstr "강수량"
+
+msgctxt "#31645"
+msgid "UV index"
+msgstr "자외선 지수"
+
+msgctxt "#31646"
+msgid "Sunrise"
+msgstr "일출"
+
+msgctxt "#31647"
+msgid "Sunset"
+msgstr "일몰"
+
+msgctxt "#31648"
+msgid "Next location"
+msgstr "다음 위치"
+
+msgctxt "#31649"
+msgid "Skin"
+msgstr "스킨"
+
+msgctxt "#31650"
+msgid "Address"
+msgstr "주소"
+
+msgctxt "#31651"
+msgid "Screen"
+msgstr "화면"
+
+msgctxt "#31652"
+msgid "Aeon Fuse options: look, details, ratings, behaviour, backgrounds and the home menu (order, widgets, submenus)."
+msgstr "Aeon Fuse 옵션: 모양, 세부 정보, 평점, 동작, 배경, 홈 메뉴(순서, 위젯, 하위 메뉴)."
+
+msgctxt "#31653"
+msgid "Video and music playback, refresh-rate matching, subtitle languages and look, discs."
+msgstr "비디오와 음악 재생, 주사율 맞춤, 자막 언어와 모양, 디스크."
+
+msgctxt "#31654"
+msgid "Library behaviour, scrapers, file lists, artwork and what OK does on an item."
+msgstr "라이브러리 동작, 스크레이퍼, 파일 목록, 아트워크, 항목에서 OK를 눌렀을 때의 동작."
+
+msgctxt "#31655"
+msgid "Skin, colors, fonts, region and language, screensaver. Switch to another skin here: Skin > Skin."
+msgstr "스킨, 색상, 글꼴, 지역과 언어, 화면 보호기. 다른 스킨으로 바꾸려면 여기: 스킨 > 스킨."
+
+msgctxt "#31656"
+msgid "Browse, update, configure or install add-ons."
+msgstr "애드온 찾아보기, 업데이트, 설정 또는 설치."
+
+msgctxt "#31657"
+msgid "Web server and JSON-RPC control, UPnP, AirPlay, Zeroconf, SMB client."
+msgstr "웹 서버와 JSON-RPC 제어, UPnP, AirPlay, Zeroconf, SMB 클라이언트."
+
+msgctxt "#31658"
+msgid "Display, audio output and passthrough, input, power saving, logging."
+msgstr "디스플레이, 오디오 출력과 패스스루, 입력, 절전, 로그."
+
+msgctxt "#31659"
+msgid "Copy, move and delete files; add network sources."
+msgstr "파일 복사, 이동, 삭제; 네트워크 소스 추가."
+
+msgctxt "#31660"
+msgid "Kodi version, video renderer, storage, network and hardware details."
+msgstr "Kodi 버전, 비디오 렌더러, 저장소, 네트워크, 하드웨어 정보."
+
+msgctxt "#31661"
+msgid "What Kodi has done recently: scans, add-on updates, errors."
+msgstr "Kodi가 최근에 한 일: 스캔, 애드온 업데이트, 오류."
+
+msgctxt "#31662"
+msgid "Profiles and the login screen."
+msgstr "프로필과 로그인 화면."
+
+msgctxt "#31663"
+msgid "Live TV and PVR."
+msgstr "실시간 TV와 PVR."
+
+msgctxt "#31664"
+msgid "Games and controllers."
+msgstr "게임과 컨트롤러."
+
+msgctxt "#31665"
+msgid "Dark"
+msgstr "어둡게"
+
+msgctxt "#31666"
+msgid "White"
+msgstr "흰색"
+
+msgctxt "#31667"
+msgid "Menu"
+msgstr "메뉴"
+
+msgctxt "#31668"
+msgid "Position"
+msgstr "위치"
+
+msgctxt "#31669"
+msgid "Category"
+msgstr "범주"
+
+msgctxt "#31670"
+msgid "Hold time"
+msgstr "표시 시간"
+
+msgctxt "#31671"
+msgid "Pick an item, then use the buttons on the right. Add item puts a new one at the end."
+msgstr "항목을 고른 다음 오른쪽 버튼을 사용하세요. 항목 추가는 새 항목을 끝에 넣습니다."
+
+msgctxt "#31672"
+msgid "Light"
+msgstr "약하게"
+
+msgctxt "#31673"
+msgid "Strong"
+msgstr "강하게"
+
+msgctxt "#31674"
+msgid "Slot"
+msgstr "슬롯"
+
+msgctxt "#31675"
+msgid "Corner"
+msgstr "모서리"
+
+msgctxt "#31676"
+msgid "Line"
+msgstr "줄"
+
+msgctxt "#31677"
+msgid "Bar"
+msgstr "막대"
+
+msgctxt "#31678"
+msgid "Aeon"
+msgstr "Aeon"
+
+msgctxt "#31679"
+msgid "Aeon Glass"
+msgstr "Aeon Glass"
+
+msgctxt "#31680"
+msgid "Color"
+msgstr "색상"
+
+msgctxt "#31681"
+msgid "PREVIEW"
+msgstr "미리 보기"
+
+msgctxt "#31682"
+msgid "LIBRARY LISTS"
+msgstr "라이브러리 목록"
+
+msgctxt "#31683"
+msgid "Focused row"
+msgstr "포커스된 줄"
+
+msgctxt "#31684"
+msgid "Other row"
+msgstr "다른 줄"
+
+msgctxt "#31685"
+msgid "MUSIC PLAYING"
+msgstr "음악 재생 중"
+
+msgctxt "#31686"
+msgid "SAMPLE"
+msgstr "예시"
+
+msgctxt "#31687"
+msgid "BACKDROP"
+msgstr "배경"
+
+msgctxt "#31688"
+msgid "SCREENSAVER"
+msgstr "화면 보호기"
+
+msgctxt "#31689"
+msgid "TITLE"
+msgstr "제목"
+
+msgctxt "#31690"
+msgid "Plot"
+msgstr "줄거리"
+
+msgctxt "#31691"
+msgid "Tagline"
+msgstr "태그라인"
+
+msgctxt "#31692"
+msgid "TAG LINE"
+msgstr "태그 줄"
+
+msgctxt "#31693"
+msgid "UNDER THE TITLE"
+msgstr "제목 아래"
+
+msgctxt "#31694"
+msgid "PLOT TEXT"
+msgstr "줄거리 텍스트"
+
+msgctxt "#31695"
+msgid "Long plots scroll slowly by themselves, so you can read them without a button press."
+msgstr "긴 줄거리는 천천히 저절로 스크롤되어 버튼을 누르지 않고 읽을 수 있습니다."
+
+msgctxt "#31696"
+msgid "The studio logo shows beside a season or episode when the studio logos add-on is installed."
+msgstr "스튜디오 로고 애드온이 설치되어 있으면 시즌이나 에피소드 옆에 스튜디오 로고가 표시됩니다."
+
+msgctxt "#31697"
+msgid "THEME SONG"
+msgstr "테마 음악"
+
+msgctxt "#31699"
+msgid "Plays while a movie or show is selected, if its folder has a theme file."
+msgstr "영화나 시리즈가 선택된 동안 폴더에 테마 파일이 있으면 재생됩니다."
+
+msgctxt "#31700"
+msgid "Total"
+msgstr "전체"
+
+msgctxt "#31701"
+msgid "Left"
+msgstr "남은 시간"
+
+msgctxt "#31702"
+msgid "Ends at"
+msgstr "종료 시각"
+
+msgctxt "#31703"
+msgid "SEEK BAR"
+msgstr "탐색 막대"
+
+msgctxt "#31704"
+msgid "ON PAUSE"
+msgstr "일시 정지 시"
+
+msgctxt "#31705"
+msgid "BACK BUTTON"
+msgstr "뒤로 버튼"
+
+msgctxt "#31706"
+msgid "Pressing Back in a library list goes up one level, or straight to the home screen if you choose Home."
+msgstr "라이브러리 목록에서 뒤로를 누르면 한 단계 위로, 홈을 고르면 바로 홈 화면으로 갑니다."
+
+msgctxt "#31707"
+msgid "PLAYER CONTROLS"
+msgstr "플레이어 컨트롤"
+
+msgctxt "#31708"
+msgid "Needs disc art for the album or movie."
+msgstr "앨범이나 영화의 디스크 아트가 필요합니다."
+
+msgctxt "#31709"
+msgid "FANART"
+msgstr "팬아트"
+
+msgctxt "#31710"
+msgid "NOW PLAYING"
+msgstr "지금 재생 중"
+
+msgctxt "#31711"
+msgid "Pictures of the artist from the Artist Slideshow add-on fade in behind the album cover."
+msgstr "Artist Slideshow 애드온의 아티스트 사진이 앨범 커버 뒤에 서서히 나타납니다."
+
+msgctxt "#31712"
+msgid "Slide"
+msgstr "슬라이드"
+
+msgctxt "#31713"
+msgid "Fade"
+msgstr "페이드"
+
+msgctxt "#31714"
+msgid "Cut"
+msgstr "컷"
+
+msgctxt "#31715"
+msgid "MEDIA INFO"
+msgstr "미디어 정보"
+
+msgctxt "#31716"
+msgid "STUDIO / NETWORK"
+msgstr "스튜디오 / 방송사"
+
+msgctxt "#31717"
+msgid "The logo of the studio, or of the network for episodes, under the date ring."
+msgstr "날짜 고리 아래의 스튜디오 로고, 에피소드는 방송사 로고."
+
+msgctxt "#31718"
+msgid "SPOTLIGHT"
+msgstr "SPOTLIGHT"
+
+msgctxt "#31719"
+msgid "Selected item:"
+msgstr "선택한 항목:"
+
+msgctxt "#31720"
+msgid "Set path / content"
+msgstr "경로 / 콘텐츠 설정"
+
+msgctxt "#31721"
+msgid "Edit widgets"
+msgstr "위젯 편집"
+
+msgctxt "#31722"
+msgid "Edit submenu"
+msgstr "하위 메뉴 편집"
+
+msgctxt "#31723"
+msgid "Edit spotlight"
+msgstr "Spotlight 편집"
+
+msgctxt "#31724"
+msgid "Restore default order"
+msgstr "기본 순서 복원"
+
+msgctxt "#31725"
+msgid "Theme & style"
+msgstr "테마 및 스타일"
+
+msgctxt "#31726"
+msgid "Look"
+msgstr "모양"
+
+msgctxt "#31727"
+msgid "Player"
+msgstr "플레이어"
+
+msgctxt "#31728"
+msgid "Music player"
+msgstr "음악 플레이어"
+
+msgctxt "#31729"
+msgid "Backgrounds"
+msgstr "배경"
+
+msgctxt "#31730"
+msgid "Widget & Spotlight screens"
+msgstr "위젯 및 Spotlight 화면"
+
+msgctxt "#31731"
+msgid "System"
+msgstr "시스템"
+
+msgctxt "#31732"
+msgid "Home menu"
+msgstr "홈 메뉴"
+
+msgctxt "#31733"
+msgid "Auto"
+msgstr "자동"
+
+msgctxt "#31734"
+msgid "Morning"
+msgstr "아침"
+
+msgctxt "#31735"
+msgid "Afternoon"
+msgstr "오후"
+
+msgctxt "#31736"
+msgid "Evening"
+msgstr "저녁"
+
+msgctxt "#31737"
+msgid "Night"
+msgstr "밤"
+
+msgctxt "#31738"
+msgid "Bedtime"
+msgstr "잘 시간"
+
+msgctxt "#31739"
+msgid "Countdown and fits-before rows"
+msgstr "카운트다운과 '그 전에 끝나는' 줄"
+
+msgctxt "#31740"
+msgid "Weather row and rain"
+msgstr "날씨 줄과 비"
+
+msgctxt "#31741"
+msgid "Borrowed color"
+msgstr "빌린 색"
+
+msgctxt "#31742"
+msgid "The focused film tints the light"
+msgstr "포커스된 영화가 빛에 색을 입힘"
+
+msgctxt "#31743"
+msgid "Dots and checks on posters"
+msgstr "포스터의 점과 체크"
+
+msgctxt "#31744"
+msgid "Unwatched"
+msgstr "안 봄"
+
+msgctxt "#31745"
+msgid "Only when a film has a trailer"
+msgstr "영화에 예고편이 있을 때만"
+
+msgctxt "#31746"
+msgid "Logos instead of titles"
+msgstr "제목 대신 로고"
+
+msgctxt "#31747"
+msgid "Clearlogos in the OSD, screensaver and Now playing"
+msgstr "OSD, 화면 보호기, 지금 재생 중의 클리어로고"
+
+msgctxt "#31748"
+msgid "Library side strip"
+msgstr "라이브러리 사이드 띠"
+
+msgctxt "#31749"
+msgid "OSD auto-hide"
+msgstr "OSD 자동 숨기기"
+
+msgctxt "#31750"
+msgid "Controls close by themselves"
+msgstr "컨트롤 자동 닫힘"
+
+msgctxt "#31751"
+msgid "Subtitle offset strip"
+msgstr "자막 오프셋 스트립"
+
+msgctxt "#31752"
+msgid "Subtitle / audio sync strip"
+msgstr "자막 / 오디오 싱크 띠"
+
+msgctxt "#31753"
+msgid "Top"
+msgstr "위"
+
+msgctxt "#31754"
+msgid "Bottom"
+msgstr "아래"
+
+msgctxt "#31755"
+msgid "Fades instead of zooms and slides"
+msgstr "확대와 슬라이드 대신 페이드"
+
+msgctxt "#31756"
+msgid "Back to the defaults"
+msgstr "기본값으로 돌아가기"
+
+msgctxt "#31757"
+msgid "Needs a PVR add-on"
+msgstr "PVR 애드온 필요"
+
+msgctxt "#31758"
+msgid "Power and library actions (Home sub-menu)"
+msgstr "전원 및 라이브러리 동작(홈 하위 메뉴)"
+
+msgctxt "#31759"
+msgid "Spotlight: menu item 1"
+msgstr "Spotlight: 메뉴 항목 1"
+
+msgctxt "#31760"
+msgid "Featured slider for this item (needs a library or add-on folder)"
+msgstr "이 메뉴 항목의 추천 슬라이더(라이브러리 또는 애드온 폴더 필요)"
+
+msgctxt "#31761"
+msgid "Spotlight: menu item 2"
+msgstr "Spotlight: 메뉴 항목 2"
+
+msgctxt "#31762"
+msgid "Spotlight: menu item 3"
+msgstr "Spotlight: 메뉴 항목 3"
+
+msgctxt "#31763"
+msgid "Fanart Menu Backdrop"
+msgstr "메뉴 팬아트 배경"
+
+msgctxt "#31764"
+msgid "Menu Backdrop Strength"
+msgstr "메뉴 배경 강도"
+
+msgctxt "#31765"
+msgid "Now playing on Home"
+msgstr "홈의 지금 재생 중"
+
+msgctxt "#31766"
+msgid "Theme"
+msgstr "테마"
+
+msgctxt "#31767"
+msgid "Library background"
+msgstr "라이브러리 배경"
+
+msgctxt "#31768"
+msgid "Screensaver background"
+msgstr "화면 보호기 배경"
+
+msgctxt "#31769"
+msgid "Resolution and codec"
+msgstr "해상도와 코덱"
+
+msgctxt "#31770"
+msgid "HDR tag"
+msgstr "HDR 태그"
+
+msgctxt "#31771"
+msgid "Audio codec and channels"
+msgstr "오디오 코덱과 채널"
+
+msgctxt "#31772"
+msgid "Plotline"
+msgstr "줄거리 줄"
+
+msgctxt "#31773"
+msgid "Autoscroll plot text"
+msgstr "줄거리 자동 스크롤"
+
+msgctxt "#31774"
+msgid "Studio logo"
+msgstr "스튜디오 로고"
+
+msgctxt "#31775"
+msgid "Theme songs"
+msgstr "테마 음악"
+
+msgctxt "#31776"
+msgid "Color the rating"
+msgstr "평점에 색 넣기"
+
+msgctxt "#31777"
+msgid "IMDb rating"
+msgstr "IMDb 평점"
+
+msgctxt "#31778"
+msgid "TMDb rating"
+msgstr "TMDb 평점"
+
+msgctxt "#31779"
+msgid "Rotten Tomatoes"
+msgstr "Rotten Tomatoes"
+
+msgctxt "#31780"
+msgid "Trakt rating"
+msgstr "Trakt 평점"
+
+msgctxt "#31781"
+msgid "Seek bar time"
+msgstr "탐색 막대 시간"
+
+msgctxt "#31782"
+msgid "Controls on pause"
+msgstr "일시 정지 시 컨트롤"
+
+msgctxt "#31783"
+msgid "Delay before they open"
+msgstr "열리기 전 지연"
+
+msgctxt "#31784"
+msgid "Back button in the library"
+msgstr "라이브러리의 뒤로 버튼"
+
+msgctxt "#31785"
+msgid "Show poster on OSD controls"
+msgstr "OSD 컨트롤에 포스터 표시"
+
+msgctxt "#31786"
+msgid "Spinning disc art"
+msgstr "회전하는 디스크 아트"
+
+msgctxt "#31787"
+msgid "Cycle extra fanart"
+msgstr "추가 팬아트 순환"
+
+msgctxt "#31788"
+msgid "Seconds between images"
+msgstr "이미지 간격(초)"
+
+msgctxt "#31789"
+msgid "Artist slideshow"
+msgstr "아티스트 슬라이드쇼"
+
+msgctxt "#31790"
+msgid "Studio / network"
+msgstr "스튜디오 / 방송사"
+
+msgctxt "#31791"
+msgid "Home spotlight: background"
+msgstr "홈 Spotlight: 배경"
+
+msgctxt "#31792"
+msgid "Home spotlight: transition"
+msgstr "홈 Spotlight: 전환"
+
+msgctxt "#31793"
+msgid "Rules"
+msgstr "규칙"
+
+msgctxt "#31800"
+msgid "Settings strip"
+msgstr "설정 띠"
+
+msgctxt "#31801"
+msgid "Overlay"
+msgstr "오버레이"
+
+msgctxt "#31802"
+msgid "Permanent"
+msgstr "항상 표시"
+
+msgctxt "#31803"
+msgid "Box colors from artwork"
+msgstr "아트워크에서 상자 색상"
+
+msgctxt "#31804"
+msgid "Show clock on OSD"
+msgstr "OSD에 시계 표시"
+
+msgctxt "#31805"
+msgid "Show weather on OSD"
+msgstr "OSD에 날씨 표시"
+
+msgctxt "#31806"
+msgid "Lyrics style"
+msgstr "가사 스타일"
+
+msgctxt "#31807"
+msgid "Lines"
+msgstr "줄"
+
+msgctxt "#31808"
+msgid "Words"
+msgstr "단어"
+
+msgctxt "#31280"
+msgid "VERSION"
+msgstr "버전"
+
+msgctxt "#31281"
+msgid "SYSTEM"
+msgstr "시스템"
+
+msgctxt "#31282"
+msgid "HARDWARE"
+msgstr "하드웨어"
+
+msgctxt "#31283"
+msgid "LIBRARY"
+msgstr "라이브러리"
+
+msgctxt "#31574"
+msgid "Build"
+msgstr "빌드"
+
+msgctxt "#31634"
+msgid "Name"
+msgstr "이름"
+
+msgctxt "#31698"
+msgid "Profile"
+msgstr "프로필"
+
+msgctxt "#31794"
+msgid "Uptime"
+msgstr "가동 시간"
+
+msgctxt "#31795"
+msgid "Total uptime"
+msgstr "총 가동 시간"
+
+msgctxt "#31796"
+msgid "IP address"
+msgstr "IP 주소"
+
+msgctxt "#31797"
+msgid "MAC address"
+msgstr "MAC 주소"
+
+msgctxt "#31798"
+msgid "Internet"
+msgstr "인터넷"
+
+msgctxt "#31799"
+msgid "CPU usage"
+msgstr "CPU 사용률"
+
+msgctxt "#31809"
+msgid "Memory"
+msgstr "메모리"
+
+msgctxt "#31810"
+msgid "Used"
+msgstr "사용 중"
+
+msgctxt "#31811"
+msgid "CPU temperature"
+msgstr "CPU 온도"
+
+msgctxt "#31812"
+msgid "GPU temperature"
+msgstr "GPU 온도"
+
+msgctxt "#31813"
+msgid "Movies"
+msgstr "영화"
+
+msgctxt "#31814"
+msgid "Lyrics take focus"
+msgstr "가사가 포커스를 받음"
+
+msgctxt "#31815"
+msgid "Artist list"
+msgstr "아티스트 목록"
+
+msgctxt "#31816"
+msgid "Artist wall (covers)"
+msgstr "아티스트 월(커버)"
+
+msgctxt "#31817"
+msgid "Album wall (fanart)"
+msgstr "앨범 월(팬아트)"
+
+msgctxt "#31824"
+msgid "LIBRARY VIEW"
+msgstr "라이브러리 보기"
+
+msgctxt "#31825"
+msgid "Overlay: the strip slides in with Left or the Menu key. Permanent: it is always there. View settings can set this per view."
+msgstr "오버레이: 왼쪽 또는 메뉴 키로 띠가 들어옵니다. 항상 표시: 늘 그 자리에 있습니다. 보기 설정에서 보기마다 정할 수 있습니다."
+
+msgctxt "#31826"
+msgid "BOXES"
+msgstr "상자"
+
+msgctxt "#31827"
+msgid "On: the clock and count boxes take the color of the poster or cover in focus (needs the KarmaMole helper)."
+msgstr "켜짐: 시계와 개수 상자가 포커스된 포스터나 커버의 색을 띱니다(KarmaMole helper 필요)."
+
+msgctxt "#31828"
+msgid "The controls close by themselves after this many seconds without a key press."
+msgstr "키를 누르지 않고 이 시간(초)이 지나면 컨트롤이 저절로 닫힙니다."
+
+msgctxt "#31829"
+msgid "SYNC STRIP"
+msgstr "싱크 띠"
+
+msgctxt "#31830"
+msgid "Where the subtitle / audio offset strip sits while you adjust it."
+msgstr "조정하는 동안 자막 / 오디오 오프셋 띠가 놓이는 위치."
+
+msgctxt "#31831"
+msgid "Clock box at the top right of the player controls."
+msgstr "플레이어 컨트롤 오른쪽 위의 시계 상자."
+
+msgctxt "#31832"
+msgid "Weather box under the clock (needs a weather add-on)."
+msgstr "시계 아래의 날씨 상자(날씨 애드온 필요)."
+
+msgctxt "#31833"
+msgid "BIG"
+msgstr "크게"
+
+msgctxt "#31834"
+msgid "COLORED"
+msgstr "컬러"
+
+msgctxt "#31835"
+msgid "WORDS"
+msgstr "단어"
+
+msgctxt "#31836"
+msgid "Lines: the current line between its neighbours. Words: the animated lyrics of Estuary MOD V2 (needs that skin installed for its fonts)."
+msgstr "줄: 현재 줄을 앞뒤 줄 사이에 표시. 단어: Estuary MOD V2의 애니메이션 가사(글꼴 때문에 그 스킨 설치 필요)."
+
+msgctxt "#31837"
+msgid "Off: OK opens the music controls. On: Up / Down pick a line, OK jumps to it; Back lets go of the lines and the lyrics keep running."
+msgstr "꺼짐: OK로 음악 컨트롤을 엽니다. 켜짐: 위 / 아래로 줄을 고르고 OK로 그곳으로 이동하며, 뒤로를 누르면 줄 선택을 놓고 가사는 계속 흐릅니다."
+
+msgctxt "#31818"
+msgid "Words style placement"
+msgstr "단어 스타일 위치"
+
+msgctxt "#31819"
+msgid "Full screen"
+msgstr "전체 화면"
+
+msgctxt "#31820"
+msgid "On the cover"
+msgstr "커버 위"
+
+msgctxt "#31821"
+msgid "Home vignette"
+msgstr "홈 비네트"
+
+msgctxt "#31822"
+msgid "Fonts"
+msgstr "글꼴"
+
+msgctxt "#31823"
+msgid "Own family for Home, library, headings, settings, player"
+msgstr "홈, 라이브러리, 제목, 설정, 플레이어별 글꼴"
+
+msgctxt "#31838"
+msgid "Fonts per section"
+msgstr "부분별 글꼴"
+
+msgctxt "#31839"
+msgid "Follow the font set"
+msgstr "글꼴 세트 따르기"
+
+msgctxt "#31840"
+msgid "Headings"
+msgstr "제목"
+
+msgctxt "#31841"
+msgid "Settings pages"
+msgstr "설정 페이지"
+
+msgctxt "#31842"
+msgid "Player"
+msgstr "플레이어"
+
+msgctxt "#31843"
+msgid "Font for: %s"
+msgstr "글꼴: %s"
+
+msgctxt "#31844"
+msgid "not installed"
+msgstr "설치되지 않음"
+
+msgctxt "#31845"
+msgid "Plots, biographies and hints look like this. The quick brown fox jumps over the lazy dog. 0123456789"
+msgstr "줄거리, 약력, 도움말은 이렇게 보입니다. 다람쥐 헌 쳇바퀴에 타고파. 0123456789"
+
+msgctxt "#31846"
+msgid "Preview"
+msgstr "미리 보기"
+
+msgctxt "#31847"
+msgid "Categories"
+msgstr "범주"
+
+msgctxt "#31848"
+msgid "Show weather on screensaver"
+msgstr "화면 보호기에 날씨 표시"
+
+msgctxt "#31849"
+msgid "Temperature and conditions in the top right corner"
+msgstr "오른쪽 위에 기온과 날씨"
+
+msgctxt "#31850"
+msgid "Videos · Music · Discs · Pictures · Language · Subtitles"
+msgstr "비디오 · 음악 · 디스크 · 사진 · 언어 · 자막"
+
+msgctxt "#31851"
+msgid "Library · General · Videos · Music · Pictures"
+msgstr "라이브러리 · 일반 · 비디오 · 음악 · 사진"
+
+msgctxt "#31852"
+msgid "Skin · Regional · Screensaver · Master lock · Startup"
+msgstr "스킨 · 지역 · 화면 보호기 · 마스터 잠금 · 시작"
+
+msgctxt "#31853"
+msgid "General · Control · UPnP / DLNA · AirPlay · Weather"
+msgstr "일반 · 제어 · UPnP / DLNA · AirPlay · 날씨"
+
+msgctxt "#31854"
+msgid "Display · Audio · Input · Internet access · Power saving · Add-ons · Logging"
+msgstr "디스플레이 · 오디오 · 입력 · 인터넷 연결 · 절전 · 애드온 · 로그"
+
+msgctxt "#31855"
+msgid "General · Channels · Guide · Playback · Recording · Reminders"
+msgstr "일반 · 채널 · 가이드 · 재생 · 녹화 · 알림"
+
+msgctxt "#31856"
+msgid "Home menu position"
+msgstr "홈 메뉴 위치"
+
+msgctxt "#31857"
+msgid "Middle"
+msgstr "가운데"
+
+msgctxt "#31858"
+msgid "Low"
+msgstr "아래쪽"
+
+msgctxt "#31859"
+msgid "General · Achievements"
+msgstr "일반 · 업적"
+
+msgctxt "#31860"
+msgid "Show clock on screensaver"
+msgstr "화면 보호기에 시계 표시"
+
+msgctxt "#31861"
+msgid "Poster / thumbnail"
+msgstr "포스터 / 섬네일"
+
+msgctxt "#31862"
+msgid "Season and episode counts"
+msgstr "시즌과 에피소드 수"
+
+msgctxt "#31863"
+msgid "Watched status"
+msgstr "시청 상태"
+
+msgctxt "#31864"
+msgid "The Long Way Home"
+msgstr "머나먼 귀갓길"
+
+msgctxt "#31865"
+msgid "2019 | DRAMA / ADVENTURE"
+msgstr "2019 | 드라마 / 모험"
+
+msgctxt "#31866"
+msgid "Northern Lights"
+msgstr "북극광"
+
+msgctxt "#31867"
+msgid "2023 | DOCUMENTARY"
+msgstr "2023 | 다큐멘터리"
+
+msgctxt "#31868"
+msgid "A Quiet Harbour"
+msgstr "고요한 항구"
+
+msgctxt "#31869"
+msgid "1998 | CRIME / THRILLER"
+msgstr "1998 | 범죄 / 스릴러"
+
+msgctxt "#31188"
+msgid "Item"
+msgstr "항목"
+
+msgctxt "#31192"
+msgid "Screenshots"
+msgstr "스크린샷"
+
+msgctxt "#31193"
+msgid "Picture details"
+msgstr "사진 세부 정보"
+
+msgctxt "#31284"
+msgid "EPG"
+msgstr "EPG"
+
+msgctxt "#31285"
+msgid "Tools"
+msgstr "도구"
+
+msgctxt "#31286"
+msgid "Who is watching?"
+msgstr "누가 보고 있나요?"
+
+msgctxt "#31287"
+msgid "Playlist editor"
+msgstr "재생 목록 편집기"
+
+msgctxt "#31288"
+msgid "Flix"
+msgstr "Flix"
+
+msgctxt "#31289"
+msgid "Fanart with one row"
+msgstr "한 줄과 팬아트"
+
+msgctxt "#31290"
+msgid "Combined"
+msgstr "결합형"
+
+msgctxt "#31291"
+msgid "A row over its contents"
+msgstr "내용 위의 한 줄"
+
+msgctxt "#31292"
+msgid "Circles"
+msgstr "원형"
+
+msgctxt "#31293"
+msgid "Round portraits"
+msgstr "둥근 인물 사진"
+
+msgctxt "#31294"
+msgid "Planner"
+msgstr "플래너"
+
+msgctxt "#31570"
+msgid "Episodes by date"
+msgstr "날짜순 에피소드"
+
+msgctxt "#31571"
+msgid "Recommended"
+msgstr "추천"
+
+msgctxt "#31572"
+msgid "Similar titles"
+msgstr "비슷한 작품"
+
+msgctxt "#31573"
+msgid "Information"
+msgstr "정보"
+
+msgctxt "#31870"
+msgid "Plot hidden until you have watched it."
+msgstr "보기 전까지 줄거리를 숨깁니다."
+
+msgctxt "#31871"
+msgid "More options"
+msgstr "더 많은 옵션"
+
+msgctxt "#31872"
+msgid "Spoilers, pause and language flags"
+msgstr "스포일러, 일시 정지, 언어 깃발"
+
+msgctxt "#31873"
+msgid "Hide spoilers of unwatched episodes"
+msgstr "안 본 에피소드의 스포일러 숨기기"
+
+msgctxt "#31874"
+msgid "Seek bar while paused"
+msgstr "일시 정지 중 탐색 막대"
+
+msgctxt "#31875"
+msgid "Show language flags on OSD"
+msgstr "OSD에 언어 국기 표시"
+
+msgctxt "#31876"
+msgid "Always"
+msgstr "항상"
+
+msgctxt "#31877"
+msgid "5 seconds"
+msgstr "5초"
+
+msgctxt "#31878"
+msgid "Never"
+msgstr "안 함"
+
+msgctxt "#31879"
+msgid "Stacked row on Home"
+msgstr "홈의 겹친 줄"
+
+msgctxt "#31880"
+msgid "Kiosk mode (lock views)"
+msgstr "키오스크 모드(보기 잠금)"
+
+msgctxt "#31881"
+msgid "Last login"
+msgstr "마지막 로그인"
+
+msgctxt "#31882"
+msgid "Cinema mode: trailers before a film"
+msgstr "시네마 모드: 영화 전 예고편"
+
+msgctxt "#31883"
+msgid "1 trailer"
+msgstr "예고편 1개"
+
+msgctxt "#31884"
+msgid "2 trailers"
+msgstr "예고편 2개"
+
+msgctxt "#31885"
+msgid "3 trailers"
+msgstr "예고편 3개"
+
+msgctxt "#31886"
+msgid "Reviews"
+msgstr "리뷰"
+
+msgctxt "#31887"
+msgid "Top tracks"
+msgstr "인기 곡"
+
+msgctxt "#31888"
+msgid "Similar artists"
+msgstr "비슷한 아티스트"
+
+msgctxt "#31889"
+msgid "Not in your library"
+msgstr "라이브러리에 없음"
+
+msgctxt "#31890"
+msgid "Artist page: look up on Deezer"
+msgstr "아티스트 페이지: Deezer에서 찾기"
+
+msgctxt "#31891"
+msgid "Progress line on posters"
+msgstr "포스터의 진행 표시줄"
+
+msgctxt "#31892"
+msgid "Play trailers automatically"
+msgstr "예고편 자동 재생"
+
+msgctxt "#31893"
+msgid "Nothing planned"
+msgstr "예정된 것 없음"
+
+msgctxt "#31894"
+msgid "View"
+msgstr "보기"
+
+msgctxt "#31895"
+msgid "Week starts"
+msgstr "주 시작 요일"
+
+msgctxt "#31896"
+msgid "Show"
+msgstr "표시"
+
+msgctxt "#31897"
+msgid "Day"
+msgstr "일"
+
+msgctxt "#31898"
+msgid "Week"
+msgstr "주"
+
+msgctxt "#31899"
+msgid "Home spotlight"
+msgstr "홈 Spotlight"
+
+msgctxt "#31903"
+msgid "Days ahead"
+msgstr "앞으로 며칠"
+
+msgctxt "#31904"
+msgid "What is coming, shown one title at a time while the Planner is focused on Home. It starts with today."
+msgstr "홈에서 플래너에 포커스가 있는 동안 다가올 작품을 하나씩 보여 줍니다. 오늘부터 시작합니다."
+
+msgctxt "#31905"
+msgid "Disable"
+msgstr "비활성화"
+
+msgctxt "#31906"
+msgid "Enable"
+msgstr "활성화"
+
+msgctxt "#31907"
+msgid "Empty"
+msgstr "비어 있음"
+
+msgctxt "#31908"
+msgid "Choose type"
+msgstr "유형 선택"
+
+msgctxt "#31909"
+msgid "Custom item"
+msgstr "사용자 항목"
+
+msgctxt "#31910"
+msgid "Empty position"
+msgstr "빈 위치"
+
+msgctxt "#31911"
+msgid "Type of position"
+msgstr "위치 유형"
+
+msgctxt "#31912"
+msgid "All ten custom items are in use. Free one first."
+msgstr "사용자 항목 열 개가 모두 사용 중입니다. 먼저 하나를 비우세요."
+
+msgctxt "#31913"
+msgid "Channel group"
+msgstr "채널 그룹"
+
+msgctxt "#31914"
+msgid "Watched last"
+msgstr "최근 시청"
+
+msgctxt "#31915"
+msgid "None"
+msgstr "없음"
+
+msgctxt "#31916"
+msgid "No channel group"
+msgstr "채널 그룹 없음"
+
+msgctxt "#31917"
+msgid "With Live TV focused on Home: Up reaches the channels watched last, Right there shows the channel group chosen here. OK plays a channel."
+msgstr "홈에서 실시간 TV에 포커스가 있을 때: 위쪽으로 최근 시청 채널에 가고, 거기서 오른쪽은 여기서 고른 채널 그룹을 보여 줍니다. OK로 채널을 재생합니다."
+
+msgctxt "#31918"
+msgid "UP: CHANNELS   |   OK: GUIDE"
+msgstr "위: 채널   |   OK: 가이드"
+
+msgctxt "#31919"
+msgid "OK: WATCH   |   LEFT: WATCHED LAST"
+msgstr "OK: 시청   |   왼쪽: 최근 시청"
+
+msgctxt "#31920"
+msgid "OK: WATCH   |   RIGHT: CHANNEL GROUP"
+msgstr "OK: 시청   |   오른쪽: 채널 그룹"
+
+msgctxt "#31921"
+msgid "OK: WATCH"
+msgstr "OK: 시청"
+
+msgctxt "#31922"
+msgid "LEFT / RIGHT: OTHER TITLES   |   DOWN: MENU"
+msgstr "왼쪽 / 오른쪽: 다른 작품   |   아래: 메뉴"
+
+msgctxt "#31923"
+msgid "Coming up"
+msgstr "공개 예정"
+
+msgctxt "#31924"
+msgid "Not in your library yet."
+msgstr "아직 라이브러리에 없습니다."
+
+msgctxt "#31925"
+msgid "On"
+msgstr "켜짐"
+
+msgctxt "#31926"
+msgid "Unwatched episodes show no thumbnail and no plot until you have seen them."
+msgstr "안 본 에피소드는 볼 때까지 섬네일과 줄거리를 보여 주지 않습니다."
+
+msgctxt "#31927"
+msgid "Top tracks and similar artists on the artist page come from Deezer (needs internet). Off: only your library."
+msgstr "아티스트 페이지의 인기 곡과 비슷한 아티스트는 Deezer에서 가져옵니다(인터넷 필요). 꺼짐: 내 라이브러리만."
+
+msgctxt "#31928"
+msgid "When the seek bar shows while a film is paused: always, for 5 seconds, or never."
+msgstr "영화가 일시 정지됐을 때 탐색 막대를 보여 줄 시점: 항상, 5초 동안 또는 안 함."
+
+msgctxt "#31929"
+msgid "Flags of the audio and subtitle languages on the player controls."
+msgstr "플레이어 컨트롤의 오디오 및 자막 언어 깃발."
+
+msgctxt "#31930"
+msgid "Trailers of other films play before the film you start: none, 1, 2 or 3."
+msgstr "시작한 영화 앞에 다른 영화의 예고편: 없음, 1, 2 또는 3."
+
+msgctxt "#31931"
+msgid "A thin line under posters shows how much of a film, show or season you have watched."
+msgstr "포스터 아래의 가는 선이 영화, 시리즈, 시즌을 얼마나 봤는지 보여 줍니다."
+
+msgctxt "#31932"
+msgid "A strip of small posters under the plot when a set or a show is in focus in the rows on Home."
+msgstr "홈의 줄에서 컬렉션이나 시리즈에 포커스가 있을 때 줄거리 아래의 작은 포스터 띠."
+
+msgctxt "#31933"
+msgid "Locks the library views: no view settings and no left-hand settings strip."
+msgstr "라이브러리 보기를 잠급니다: 보기 설정과 왼쪽 설정 띠 없음."
+
+msgctxt "#31934"
+msgid "The library background takes the palette only with the Neutral backdrop. The highlight, boxes and strips follow it with every backdrop.[CR][CR]Use the Neutral backdrop in the libraries?"
+msgstr "라이브러리 배경은 중립 배경일 때만 팔레트를 따릅니다. 강조, 상자, 띠는 어떤 배경에서도 팔레트를 따릅니다.[CR][CR]라이브러리에서 중립 배경을 사용할까요?"
+
+msgctxt "#31935"
+msgid "Keep the backdrop"
+msgstr "배경 유지"
+
+msgctxt "#31936"
+msgid "Use Neutral"
+msgstr "중립 사용"
+
+msgctxt "#31937"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages. The library background takes it with the Neutral backdrop only."
+msgstr "강조, 상자, 띠, 설정 페이지의 색. 라이브러리 배경은 중립 배경일 때만 이 색을 씁니다."
+
+msgctxt "#31938"
+msgid "Words"
+msgstr "단어"
+
+msgctxt "#31939"
+msgid "Lines"
+msgstr "줄"
+
+msgctxt "#31958"
+msgid "Skippy: the skin's skip button"
+msgstr "Skippy: 스킨의 건너뛰기 버튼"
+
+msgctxt "#31959"
+msgid "On: during a segment Skippy asks about (Ask), the player shows a Skip button in the skin's look; OK skips, Back hides it. Off: Skippy opens its own dialog. In Fused Glass, Up next at the end of an episode is the skin's too."
+msgstr "켜짐: Skippy가 묻는 구간(묻기) 동안 플레이어에 스킨 모양의 건너뛰기 버튼을 표시합니다. OK로 건너뛰고 뒤로로 숨깁니다. 꺼짐: Skippy가 자체 대화 상자를 엽니다. Fused Glass에서는 에피소드 끝의 다음 에피소드 안내도 스킨 모양으로 표시합니다."
+
+msgctxt "#31960"
+msgid "Skippy: segment line in the player"
+msgstr "Skippy: 플레이어의 구간 줄"
+
+msgctxt "#31961"
+msgid "Between the times on the player controls: the segment playing and the time left (Intro · 0:42 left), or the next segment and when it starts."
+msgstr "플레이어 컨트롤의 시간 사이: 재생 중인 구간과 남은 시간(인트로 · 0:42 남음), 또는 다음 구간과 시작 시각."
+
+msgctxt "#31962"
+msgid "Skippy: up next in the player"
+msgstr "Skippy: 플레이어의 다음 재생"
+
+msgctxt "#31963"
+msgid "Top right of the player controls: the next episode Skippy found, with its picture. Skippy's own next-episode prompt is not affected."
+msgstr "플레이어 컨트롤 오른쪽 위: Skippy가 찾은 다음 에피소드를 사진과 함께 표시. Skippy 자체의 다음 에피소드 안내는 그대로입니다."
+
+msgctxt "#31964"
+msgid "Skip"
+msgstr "건너뛰기"
+
+msgctxt "#31965"
+msgid "left"
+msgstr "남음"
+
+msgctxt "#31966"
+msgid "at"
+msgstr "시작"
+
+msgctxt "#31967"
+msgid "Memory hand-back"
+msgstr "메모리 반환"
+
+msgctxt "#31968"
+msgid "Linux boxes (CoreELEC, LibreELEC): Kodi keeps memory it has finished with. The helper hands it back to the system after a pause in key presses, or when free RAM gets low. Not on Windows."
+msgstr "Linux 기기(CoreELEC, LibreELEC): Kodi는 다 쓴 메모리를 계속 붙잡고 있습니다. 키 입력이 잠시 멈추거나 여유 RAM이 부족해지면 helper가 시스템에 돌려줍니다. Windows에서는 동작하지 않습니다."
+
+msgctxt "#31969"
+msgid "Pause before hand-back"
+msgstr "반환 전 대기"
+
+msgctxt "#31970"
+msgid "After a pause: seconds without a key press (2-30), not during a video. When free RAM is low: the least free memory the box keeps; within 256 MB of it the hand-back waits for a pause, below it it happens at once."
+msgstr "일시 정지 후: 키를 누르지 않은 초(2-30), 비디오 재생 중 제외. 여유 RAM 부족 시: 기기가 유지하는 최소 여유 메모리. 그 256MB 이내면 반환이 대기를 기다리고, 그보다 적으면 바로 반환합니다."
+
+msgctxt "#31971"
+msgid "Minimum free RAM"
+msgstr "최소 여유 RAM"
+
+msgctxt "#31972"
+msgid "Adds Clean library to the context menu in the libraries and on Home: entries whose files are gone are removed (it asks first)."
+msgstr "라이브러리와 홈의 컨텍스트 메뉴에 라이브러리 정리를 추가합니다: 파일이 없어진 항목을 제거합니다(먼저 묻습니다)."
+
+msgctxt "#31973"
+msgid "Network · Connections · Updates · Hardware · Services"
+msgstr "네트워크 · 연결 · 업데이트 · 하드웨어 · 서비스"
+
+msgctxt "#31974"
+msgid "The box"
+msgstr "이 기기"
+
+msgctxt "#31975"
+msgid "The box's own settings: network and Wi-Fi, updates, hardware, services such as SSH and Samba."
+msgstr "기기 자체의 설정: 네트워크와 Wi-Fi, 업데이트, 하드웨어, SSH와 Samba 같은 서비스."
+
+msgctxt "#31976"
+msgid "Restart Kodi"
+msgstr "Kodi 다시 시작"
+
+msgctxt "#31977"
+msgid "Widget screens: media info"
+msgstr "위젯 화면: 미디어 정보"
+
+msgctxt "#31978"
+msgid "Widget screens: ratings"
+msgstr "위젯 화면: 평점"
+
+msgctxt "#31979"
+msgid "Widget screens: studio / network"
+msgstr "위젯 화면: 스튜디오 / 방송사"
+
+msgctxt "#31996"
+msgid "The background of the spotlight at the top of Home. Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "홈 상단 Spotlight의 배경. 팬아트: 작품의 팬아트. 중립: 어둡게. 색상: KarmaMole helper가 아트워크로 만든 부드러운 색 이미지(준비될 때까지 팬아트 표시)."
+
+msgctxt "#31997"
+msgid "How the spotlight at the top of Home moves on to the next title: fade, slide or cut."
+msgstr "홈 상단 Spotlight가 다음 작품으로 넘어가는 방식: 페이드, 슬라이드 또는 컷."
+
+msgctxt "#31998"
+msgid "Widget screens: background"
+msgstr "위젯 화면: 배경"
+
+msgctxt "#31999"
+msgid "The background of the full-screen widget pages (Up on a title on Home). Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "전체 화면 위젯 페이지(홈의 작품에서 위쪽)의 배경. 팬아트: 작품의 팬아트. 중립: 어둡게. 색상: KarmaMole helper가 아트워크로 만든 부드러운 색 이미지(준비될 때까지 팬아트 표시)."
+
+msgctxt "#32000"
+msgid "creator of the Aeon 2 concept"
+msgstr "Aeon 2 콘셉트 창작자"
+
+msgctxt "#32001"
+msgid "1 of 1 episode watched"
+msgstr "1화 중 1화 시청"
+
+msgctxt "#32002"
+msgid "on"
+msgstr "/ 레이블"
+
+msgctxt "#32003"
+msgid "9:00 PM"
+msgstr "오후 9:00"
+
+msgctxt "#32004"
+msgid "9:30 PM"
+msgstr "오후 9:30"
+
+msgctxt "#32005"
+msgid "10:00 PM"
+msgstr "오후 10:00"
+
+msgctxt "#32006"
+msgid "10:30 PM"
+msgstr "오후 10:30"
+
+msgctxt "#32007"
+msgid "11:00 PM"
+msgstr "오후 11:00"
+
+msgctxt "#32008"
+msgid "11:30 PM"
+msgstr "오후 11:30"
+
+msgctxt "#32009"
+msgid "12:00 AM"
+msgstr "오전 12:00"
+
+msgctxt "#32010"
+msgid "12:30 AM"
+msgstr "오전 12:30"
+
+msgctxt "#32011"
+msgid "1:00 AM"
+msgstr "오전 1:00"
+
+msgctxt "#32012"
+msgid "1:30 AM"
+msgstr "오전 1:30"
+
+msgctxt "#32013"
+msgid "2:00 AM"
+msgstr "오전 2:00"
+
+msgctxt "#32015"
+msgid "Repositories checked"
+msgstr "저장소 확인"
+
+msgctxt "#32016"
+msgid "Close Kodi"
+msgstr "Kodi 닫기"
+
+msgctxt "#32017"
+msgid "Back to the profile screen"
+msgstr "프로필 화면으로 돌아가기"
+
+msgctxt "#32018"
+msgid "Kodi only, the system keeps running"
+msgstr "Kodi만, 시스템은 계속 실행"
+
+msgctxt "#32019"
+msgid "Restart the whole system"
+msgstr "전체 시스템 다시 시작"
+
+msgctxt "#32020"
+msgid "Restart into Android"
+msgstr "Android로 다시 시작"
+
+msgctxt "#32021"
+msgid "Switch the system off"
+msgstr "시스템 끄기"
+
+msgctxt "#32022"
+msgid "By"
+msgstr "제작"
+
+msgctxt "#32023"
+msgid "Running time"
+msgstr "상영 시간"
+
+msgctxt "#32024"
+msgid "min"
+msgstr "분"
+
+msgctxt "#32025"
+msgid "Widgets"
+msgstr "위젯"
+
+msgctxt "#32026"
+msgid "hidden"
+msgstr "숨김"
+
+msgctxt "#32027"
+msgid "Hold"
+msgstr "표시 시간"
+
+msgctxt "#32028"
+msgid "Update the list"
+msgstr "목록 업데이트"
+
+msgctxt "#32029"
+msgid "Update now"
+msgstr "지금 업데이트"
+
+msgctxt "#32030"
+msgid "ARTISTS"
+msgstr "아티스트"
+
+msgctxt "#32031"
+msgid "ALBUMS"
+msgstr "앨범"
+
+msgctxt "#32032"
+msgid "SONGS"
+msgstr "노래"
+
+msgctxt "#32033"
+msgid "Widget screens"
+msgstr "위젯 화면"
+
+msgctxt "#32034"
+msgid "Hide plot and thumb"
+msgstr "줄거리와 섬네일 숨기기"
+
+msgctxt "#32035"
+msgid "Start"
+msgstr "시작"
+
+msgctxt "#32036"
+msgid "A handful of short steps"
+msgstr "몇 가지 짧은 단계"
+
+msgctxt "#32037"
+msgid "Backdrop, look, Home menu, libraries and motion."
+msgstr "배경, 모양, 홈 메뉴, 라이브러리, 움직임."
+
+msgctxt "#32038"
+msgid "Skip setup"
+msgstr "설정 건너뛰기"
+
+msgctxt "#32039"
+msgid "Keep the defaults for now"
+msgstr "지금은 기본값 유지"
+
+msgctxt "#32040"
+msgid "Run the setup any time: Skin settings > Motion, memory, reset > Setup wizard."
+msgstr "설정은 언제든 다시 실행할 수 있습니다: 스킨 설정 > 움직임, 메모리, 초기화 > 설정 마법사."
+
+msgctxt "#32041"
+msgid "A calm backdrop in a palette of your choice"
+msgstr "원하는 팔레트의 차분한 배경"
+
+msgctxt "#32042"
+msgid "A dark, even background in the colours of the palette you pick next."
+msgstr "다음에 고를 팔레트 색의 어둡고 고른 배경."
+
+msgctxt "#32043"
+msgid "The focused title's fanart, dimmed"
+msgstr "포커스된 작품의 팬아트, 어둡게"
+
+msgctxt "#32044"
+msgid "The artwork of the focused title fills the background, dimmed so text stays readable."
+msgstr "포커스된 작품의 이미지가 배경을 채웁니다. 글씨가 잘 보이도록 어둡게 합니다."
+
+msgctxt "#32045"
+msgid "A tint taken from the artwork"
+msgstr "아트워크에서 가져온 색조"
+
+msgctxt "#32046"
+msgid "A deep colour taken from the focused title's artwork."
+msgstr "포커스된 작품의 이미지에서 가져온 깊은 색."
+
+msgctxt "#32047"
+msgid "The palette shows after Kodi restarts at the end of the setup."
+msgstr "팔레트는 설정이 끝나고 Kodi가 다시 시작된 뒤에 보입니다."
+
+msgctxt "#32048"
+msgid "Solid panels, palettes"
+msgstr "단색 패널, 팔레트"
+
+msgctxt "#32049"
+msgid "The classic Aeon look: calm, solid surfaces and a white or coloured focus bar."
+msgstr "클래식 Aeon 모양: 차분한 단색 면과 흰색 또는 색 있는 포커스 막대."
+
+msgctxt "#32050"
+msgid "Aeon with glass menus, no palettes"
+msgstr "유리 메뉴의 Aeon, 팔레트 없음"
+
+msgctxt "#32051"
+msgid "Panels of frosted glass over the fanart; the focus bar is a soft light."
+msgstr "팬아트 위에 서리 유리 패널. 포커스 막대는 부드러운 빛입니다."
+
+msgctxt "#32052"
+msgid "As the skin theme"
+msgstr "스킨 테마에 맞춤"
+
+msgctxt "#32053"
+msgid "Flat rows with rules"
+msgstr "선으로 나눈 평평한 줄"
+
+msgctxt "#32054"
+msgid "The menus of the Aeon or Aeon Glass theme you picked."
+msgstr "선택한 Aeon 또는 Aeon Glass 테마의 메뉴."
+
+msgctxt "#32055"
+msgid "Rounded cards, like this setup"
+msgstr "이 설정처럼 둥근 카드"
+
+msgctxt "#32056"
+msgid "Every row a soft card, the focused one solid; no rule lines."
+msgstr "모든 줄이 부드러운 카드이고 포커스된 줄은 채워집니다. 구분선 없음."
+
+msgctxt "#32057"
+msgid "OK switches Movies on or off."
+msgstr "OK로 영화를 켜거나 끕니다."
+
+msgctxt "#32058"
+msgid "OK switches TV shows on or off."
+msgstr "OK로 TV 프로그램을 켜거나 끕니다."
+
+msgctxt "#32059"
+msgid "OK switches Music on or off."
+msgstr "OK로 음악을 켜거나 끕니다."
+
+msgctxt "#32060"
+msgid "OK switches Live TV on or off."
+msgstr "OK로 실시간 TV를 켜거나 끕니다."
+
+msgctxt "#32061"
+msgid "OK switches Search on or off."
+msgstr "OK로 검색을 켜거나 끕니다."
+
+msgctxt "#32062"
+msgid "OK switches Movie sets on or off."
+msgstr "OK로 영화 세트를 켜거나 끕니다."
+
+msgctxt "#32063"
+msgid "OK switches Favourites on or off."
+msgstr "OK로 즐겨찾기를 켜거나 끕니다."
+
+msgctxt "#32064"
+msgid "OK switches Pictures on or off."
+msgstr "OK로 사진을 켜거나 끕니다."
+
+msgctxt "#32065"
+msgid "OK switches Add-ons on or off."
+msgstr "OK로 애드온을 켜거나 끕니다."
+
+msgctxt "#32066"
+msgid "OK switches Weather on or off."
+msgstr "OK로 날씨를 켜거나 끕니다."
+
+msgctxt "#32067"
+msgid "OK switches Planner on or off."
+msgstr "OK로 플래너를 켜거나 끕니다."
+
+msgctxt "#32068"
+msgid "OK switches Files on or off."
+msgstr "OK로 파일을 켜거나 끕니다."
+
+msgctxt "#32069"
+msgid "OK switches Settings on or off."
+msgstr "OK로 설정을 켜거나 끕니다."
+
+msgctxt "#32070"
+msgid "OK switches Power on or off."
+msgstr "OK로 전원을 켜거나 끕니다."
+
+msgctxt "#32071"
+msgid "Continue"
+msgstr "계속"
+
+msgctxt "#32072"
+msgid "Next step"
+msgstr "다음 단계"
+
+msgctxt "#32073"
+msgid "On to the Home menu position."
+msgstr "다음은 홈 메뉴의 위치입니다."
+
+msgctxt "#32074"
+msgid "The spotlight above, a row of posters below"
+msgstr "위에는 Spotlight, 아래에는 포스터 줄"
+
+msgctxt "#32075"
+msgid "The menu across the middle of the screen with a widget row underneath."
+msgstr "화면 가운데를 가로지르는 메뉴와 그 아래 위젯 줄."
+
+msgctxt "#32076"
+msgid "A taller spotlight, the menu near the bottom"
+msgstr "더 높은 Spotlight, 메뉴는 아래쪽"
+
+msgctxt "#32077"
+msgid "More room for the spotlight; the menu sits low on the screen."
+msgstr "Spotlight에 더 많은 공간을 주고 메뉴는 화면 아래쪽에 둡니다."
+
+msgctxt "#32078"
+msgid "The artwork of the spotlight title"
+msgstr "Spotlight 작품의 아트워크"
+
+msgctxt "#32079"
+msgid "Fanart of the title in the spotlight, with a soft fade from the left."
+msgstr "Spotlight 작품의 팬아트, 왼쪽에서 부드럽게 페이드."
+
+msgctxt "#32080"
+msgid "A colour taken from the artwork"
+msgstr "아트워크에서 가져온 색"
+
+msgctxt "#32081"
+msgid "A warm or cool tint drawn from the title's artwork."
+msgstr "작품 아트워크에서 가져온 따뜻하거나 차가운 색조."
+
+msgctxt "#32082"
+msgid "A quiet dark background"
+msgstr "차분하고 어두운 배경"
+
+msgctxt "#32083"
+msgid "No artwork behind the spotlight text."
+msgstr "Spotlight 글자 뒤에 이미지가 없습니다."
+
+msgctxt "#32084"
+msgid "One picture dissolves into the next"
+msgstr "이미지가 다음 이미지로 녹아듦"
+
+msgctxt "#32085"
+msgid "A soft cross-fade."
+msgstr "부드러운 크로스페이드."
+
+msgctxt "#32086"
+msgid "The next one pushes in from the right"
+msgstr "다음 이미지가 오른쪽에서 밀고 들어옴"
+
+msgctxt "#32087"
+msgid "A sideways slide, like turning a page."
+msgstr "페이지를 넘기듯 옆으로 미끄러짐."
+
+msgctxt "#32088"
+msgid "Straight to the next"
+msgstr "바로 다음으로"
+
+msgctxt "#32089"
+msgid "No animation: the next title appears at once."
+msgstr "애니메이션 없음: 다음 작품이 바로 나타납니다."
+
+msgctxt "#32090"
+msgid "The colour of the artwork"
+msgstr "아트워크의 색"
+
+msgctxt "#32091"
+msgid "The boxes take a deep colour from the focused title's artwork."
+msgstr "상자가 포커스된 작품의 아트워크에서 깊은 색을 가져옵니다."
+
+msgctxt "#32092"
+msgid "The palette's box colour"
+msgstr "팔레트의 상자 색"
+
+msgctxt "#32093"
+msgid "Always the same calm colour of the palette."
+msgstr "항상 같은 차분한 팔레트 색."
+
+msgctxt "#32094"
+msgid "A window onto the fanart"
+msgstr "팬아트로 난 창"
+
+msgctxt "#32095"
+msgid "Each box shows the part of the fanart behind it, darkened for the clock."
+msgstr "각 상자가 뒤에 있는 팬아트 부분을 보여 주며, 시계를 위해 어둡게 합니다."
+
+msgctxt "#32096"
+msgid "As the backdrop"
+msgstr "배경에 맞춤"
+
+msgctxt "#32097"
+msgid "Follow the library backdrop"
+msgstr "라이브러리 배경 따르기"
+
+msgctxt "#32098"
+msgid "Neutral, fanart or colour, whatever the library backdrop is."
+msgstr "중립, 팬아트, 색상 중 라이브러리 배경과 같게."
+
+msgctxt "#32099"
+msgid "Dots, checks and progress bars"
+msgstr "점, 체크, 진행 막대"
+
+msgctxt "#32100"
+msgid "Unwatched titles get a dot, watched ones a check, started ones a progress bar."
+msgstr "안 본 작품에는 점, 본 작품에는 체크, 보던 작품에는 진행 막대가 붙습니다."
+
+msgctxt "#32101"
+msgid "Dots and progress bars"
+msgstr "점과 진행 막대"
+
+msgctxt "#32102"
+msgid "Only what is still to watch is marked."
+msgstr "앞으로 볼 것만 표시합니다."
+
+msgctxt "#32103"
+msgid "Checks on what you have seen"
+msgstr "본 것에 체크"
+
+msgctxt "#32104"
+msgid "Only finished titles are marked."
+msgstr "다 본 작품만 표시합니다."
+
+msgctxt "#32105"
+msgid "Clean posters"
+msgstr "깔끔한 포스터"
+
+msgctxt "#32106"
+msgid "No markers at all."
+msgstr "표시를 전혀 하지 않습니다."
+
+msgctxt "#32107"
+msgid "Logos"
+msgstr "로고"
+
+msgctxt "#32108"
+msgid "The artwork's clear logo"
+msgstr "아트워크의 클리어 로고"
+
+msgctxt "#32109"
+msgid "Clear logos from the artwork, text where a title has none."
+msgstr "아트워크의 클리어 로고, 로고가 없는 작품은 글자로."
+
+msgctxt "#32110"
+msgid "Plain text"
+msgstr "일반 글자"
+
+msgctxt "#32111"
+msgid "Always the name in the skin's own font."
+msgstr "항상 스킨 자체 글꼴로 이름을 표시합니다."
+
+msgctxt "#32112"
+msgid "FULL HD, 4K, aspect ratio"
+msgstr "FULL HD, 4K, 화면 비율"
+
+msgctxt "#32113"
+msgid "OK switches the resolution chips on or off."
+msgstr "OK로 해상도 칩을 켜거나 끕니다."
+
+msgctxt "#32114"
+msgid "SDR, HDR10, Dolby Vision profile"
+msgstr "SDR, HDR10, Dolby Vision 프로필"
+
+msgctxt "#32115"
+msgid "OK switches the HDR chips on or off."
+msgstr "OK로 HDR 칩을 켜거나 끕니다."
+
+msgctxt "#32116"
+msgid "Codec and channels"
+msgstr "코덱과 채널"
+
+msgctxt "#32117"
+msgid "OK switches the audio chips on or off."
+msgstr "OK로 오디오 칩을 켜거나 끕니다."
+
+msgctxt "#32118"
+msgid "On to the extra fanart."
+msgstr "다음은 추가 팬아트입니다."
+
+msgctxt "#32119"
+msgid "Take turns"
+msgstr "번갈아 표시"
+
+msgctxt "#32120"
+msgid "Every extra fanart in a slow cycle"
+msgstr "모든 추가 팬아트를 천천히 순환"
+
+msgctxt "#32121"
+msgid "The background changes picture every few seconds (Skin settings > Backgrounds sets how often)."
+msgstr "배경 이미지가 몇 초마다 바뀝니다(얼마나 자주인지는 스킨 설정 > 배경에서 설정)."
+
+msgctxt "#32122"
+msgid "One picture"
+msgstr "이미지 하나"
+
+msgctxt "#32123"
+msgid "Only the main fanart"
+msgstr "주 팬아트만"
+
+msgctxt "#32124"
+msgid "The background stays on the main fanart."
+msgstr "배경은 주 팬아트에 머뭅니다."
+
+msgctxt "#32125"
+msgid "Hide them"
+msgstr "숨기기"
+
+msgctxt "#32126"
+msgid "No thumbnail or plot until watched"
+msgstr "볼 때까지 섬네일과 줄거리 없음"
+
+msgctxt "#32127"
+msgid "Unwatched episodes show a blurred picture and no plot."
+msgstr "안 본 에피소드는 흐린 이미지를 보여 주고 줄거리는 보여 주지 않습니다."
+
+msgctxt "#32128"
+msgid "Show them"
+msgstr "보이기"
+
+msgctxt "#32129"
+msgid "Thumbnails and plots for all"
+msgstr "모두에 섬네일과 줄거리"
+
+msgctxt "#32130"
+msgid "Every episode shows its picture and plot."
+msgstr "모든 에피소드가 이미지와 줄거리를 보여 줍니다."
+
+msgctxt "#32131"
+msgid "Full motion"
+msgstr "전체 움직임"
+
+msgctxt "#32132"
+msgid "Smooth slides and fades"
+msgstr "부드러운 슬라이드와 페이드"
+
+msgctxt "#32133"
+msgid "Rows slide in one after another, dialogs glide open."
+msgstr "줄이 차례로 미끄러져 들어오고 대화 상자가 부드럽게 열립니다."
+
+msgctxt "#32134"
+msgid "Everything appears at once"
+msgstr "모두 바로 표시"
+
+msgctxt "#32135"
+msgid "No slides or zooms: calmer, and lighter on slow boxes."
+msgstr "슬라이드와 확대 없음: 더 차분하고 느린 기기에서 더 가볍습니다."
+
+msgctxt "#32136"
+msgid "When free RAM is low"
+msgstr "여유 RAM이 부족할 때"
+
+msgctxt "#32137"
+msgid "Recommended: below 1 GB free"
+msgstr "권장: 여유 1GB 미만"
+
+msgctxt "#32138"
+msgid "Kodi hands memory back when the free RAM drops below the minimum (Skin settings can change it)."
+msgstr "여유 RAM이 최솟값 아래로 떨어지면 Kodi가 메모리를 돌려줍니다(스킨 설정에서 변경 가능)."
+
+msgctxt "#32139"
+msgid "After a pause"
+msgstr "잠시 멈춘 뒤"
+
+msgctxt "#32140"
+msgid "A few seconds after the last key press"
+msgstr "마지막 키 입력 몇 초 뒤"
+
+msgctxt "#32141"
+msgid "Kodi hands memory back whenever the remote has been quiet for a moment."
+msgstr "리모컨이 잠시 조용해질 때마다 Kodi가 메모리를 돌려줍니다."
+
+msgctxt "#32142"
+msgid "Finish"
+msgstr "완료"
+
+msgctxt "#32143"
+msgid "Change something"
+msgstr "변경하기"
+
+msgctxt "#32144"
+msgid "Go back to the previous step."
+msgstr "이전 단계로 돌아갑니다."
+
+msgctxt "#32145"
+msgid "Huge thanks and credit go out to the following"
+msgstr "다음 분들께 깊이 감사드립니다"
+
+msgctxt "#32146"
+msgid "The Kodi development team"
+msgstr "Kodi 개발 팀"
+
+msgctxt "#32147"
+msgid "OK  choose      BACK  previous step"
+msgstr "OK  선택      뒤로  이전 단계"
+
+msgctxt "#32148"
+msgid "version"
+msgstr "버전"
+
+msgctxt "#32149"
+msgid "by"
+msgstr "제작"
+
+msgctxt "#32150"
+msgid "now"
+msgstr "현재"
+
+msgctxt "#32151"
+msgid "night"
+msgstr "밤"
+
+msgctxt "#32152"
+msgid "evening"
+msgstr "저녁"
+
+msgctxt "#32153"
+msgid "afternoon"
+msgstr "오후"
+
+msgctxt "#32154"
+msgid "morning"
+msgstr "아침"
+
+msgctxt "#32158"
+msgid "until midnight"
+msgstr "후 자정"
+
+msgctxt "#32159"
+msgid "tornado"
+msgstr "토네이도"
+
+msgctxt "#32160"
+msgid "tropical storm"
+msgstr "열대 폭풍"
+
+msgctxt "#32161"
+msgid "hurricane"
+msgstr "허리케인"
+
+msgctxt "#32162"
+msgid "severe storms"
+msgstr "강한 뇌우"
+
+msgctxt "#32163"
+msgid "thunderstorms"
+msgstr "뇌우"
+
+msgctxt "#32164"
+msgid "rain and snow"
+msgstr "비와 눈"
+
+msgctxt "#32165"
+msgid "rain and sleet"
+msgstr "비와 진눈깨비"
+
+msgctxt "#32166"
+msgid "snow and sleet"
+msgstr "눈과 진눈깨비"
+
+msgctxt "#32167"
+msgid "freezing drizzle"
+msgstr "어는 이슬비"
+
+msgctxt "#32168"
+msgid "drizzle"
+msgstr "이슬비"
+
+msgctxt "#32169"
+msgid "freezing rain"
+msgstr "어는 비"
+
+msgctxt "#32170"
+msgid "showers"
+msgstr "소나기"
+
+msgctxt "#32171"
+msgid "snow flurries"
+msgstr "가벼운 눈발"
+
+msgctxt "#32172"
+msgid "light snow"
+msgstr "약한 눈"
+
+msgctxt "#32173"
+msgid "blowing snow"
+msgstr "날리는 눈"
+
+msgctxt "#32174"
+msgid "snow"
+msgstr "눈"
+
+msgctxt "#32175"
+msgid "hail"
+msgstr "우박"
+
+msgctxt "#32176"
+msgid "sleet"
+msgstr "진눈깨비"
+
+msgctxt "#32177"
+msgid "dust"
+msgstr "먼지"
+
+msgctxt "#32178"
+msgid "fog"
+msgstr "안개"
+
+msgctxt "#32179"
+msgid "haze"
+msgstr "연무"
+
+msgctxt "#32180"
+msgid "smoke"
+msgstr "연기"
+
+msgctxt "#32181"
+msgid "blustery"
+msgstr "돌풍"
+
+msgctxt "#32182"
+msgid "windy"
+msgstr "바람이 강함"
+
+msgctxt "#32183"
+msgid "cold"
+msgstr "추움"
+
+msgctxt "#32184"
+msgid "cloudy"
+msgstr "흐림"
+
+msgctxt "#32185"
+msgid "mostly cloudy"
+msgstr "대체로 흐림"
+
+msgctxt "#32186"
+msgid "partly cloudy"
+msgstr "구름 조금"
+
+msgctxt "#32187"
+msgid "clear"
+msgstr "맑음"
+
+msgctxt "#32188"
+msgid "sunny"
+msgstr "화창함"
+
+msgctxt "#32189"
+msgid "fair"
+msgstr "갬"
+
+msgctxt "#32190"
+msgid "rain and hail"
+msgstr "비와 우박"
+
+msgctxt "#32191"
+msgid "hot"
+msgstr "더움"
+
+msgctxt "#32192"
+msgid "isolated storms"
+msgstr "곳에 따라 뇌우"
+
+msgctxt "#32193"
+msgid "scattered storms"
+msgstr "산발적 뇌우"
+
+msgctxt "#32194"
+msgid "scattered showers"
+msgstr "산발적 소나기"
+
+msgctxt "#32195"
+msgid "heavy snow"
+msgstr "폭설"
+
+msgctxt "#32196"
+msgid "snow showers"
+msgstr "눈 소나기"
+
+msgctxt "#32197"
+msgid "thundershowers"
+msgstr "뇌우를 동반한 소나기"
+
+msgctxt "#32198"
+msgid "Blustery"
+msgstr "돌풍"
+
+msgctxt "#32199"
+msgid "Hot"
+msgstr "더움"
+
+msgctxt "#32200"
+msgid "Fits before midnight"
+msgstr "자정 전에 끝남"
+
+msgctxt "#32201"
+msgid "fits before midnight"
+msgstr "자정 전에 끝남"
+
+msgctxt "#32202"
+msgid "under 100 minutes"
+msgstr "100분 미만"
+
+msgctxt "#32203"
+msgid "something light"
+msgstr "가볍게 볼 작품"
+
+msgctxt "#32204"
+msgid "a long one"
+msgstr "긴 작품"
+
+msgctxt "#32205"
+msgid "highly rated"
+msgstr "높은 평점"
+
+msgctxt "#32206"
+msgid "right at midnight"
+msgstr "정확히 자정"
+
+msgctxt "#32207"
+msgid "past midnight"
+msgstr "자정 지남"
+
+msgctxt "#32208"
+msgid "before midnight"
+msgstr "자정 전"
+
+msgctxt "#32209"
+msgid "kbps"
+msgstr "kbps"
+
+msgctxt "#32210"
+msgid "ch"
+msgstr "ch"
+
+msgctxt "#32211"
+msgid "bit"
+msgstr "bit"
+
+msgctxt "#32212"
+msgid "kHz"
+msgstr "kHz"
+
+msgctxt "#32213"
+msgid "Hz"
+msgstr "Hz"
+
+msgctxt "#32214"
+msgid "TRACK"
+msgstr "트랙"
+
+msgctxt "#32215"
+msgid "FROM THE ALBUM"
+msgstr "· 앨범"
+
+msgctxt "#32216"
+msgid "Released in"
+msgstr "발매"
+
+msgctxt "#32217"
+msgid "Record label"
+msgstr "레이블"
+
+msgctxt "#32218"
+msgid "Alphabetical"
+msgstr "가나다순"
+
+msgctxt "#32219"
+msgid "Reversed"
+msgstr "역순"
+
+msgctxt "#32220"
+msgid "MINS"
+msgstr "분"
+
+msgctxt "#32221"
+msgid "RATED"
+msgstr "등급"
+
+msgctxt "#32222"
+msgid "NOT RATED"
+msgstr "등급 없음"
+
+msgctxt "#32223"
+msgid "AN ALBUM BY"
+msgstr "앨범 · 아티스트"
+
+msgctxt "#32224"
+msgid "RELEASED IN"
+msgstr "· 발매"
+
+msgctxt "#32225"
+msgid "A TV SHOW"
+msgstr "TV 프로그램"
+
+msgctxt "#32226"
+msgid "FIRST AIRED IN"
+msgstr "· 첫 방송"
+
+msgctxt "#32227"
+msgid "A MOVIE BY"
+msgstr "영화 · 감독"
+
+msgctxt "#32228"
+msgid "Active"
+msgstr "활동"
+
+msgctxt "#32229"
+msgid "FORMED"
+msgstr "결성"
+
+msgctxt "#32230"
+msgid "DISBANDED"
+msgstr "해체"
+
+msgctxt "#32231"
+msgid "BORN"
+msgstr "출생"
+
+msgctxt "#32232"
+msgid "DIED"
+msgstr "사망"
+
+msgctxt "#32233"
+msgid "Refresh information"
+msgstr "정보 새로 고침"
+
+msgctxt "#32234"
+msgid "Take screenshot"
+msgstr "스크린샷 찍기"
+
+msgctxt "#32235"
+msgid "Switch off"
+msgstr "끄기"
+
+msgctxt "#32236"
+msgid "Switch on"
+msgstr "켜기"
+
+msgctxt "#32237"
+msgid "Written by"
+msgstr "각본:"
+
+msgctxt "#32238"
+msgid "Directed by"
+msgstr "감독:"
+
+msgctxt "#32239"
+msgid "SET"
+msgstr "세트"
+
+msgctxt "#32240"
+msgid "VOTES"
+msgstr "표"
+
+msgctxt "#32241"
+msgid "EPISODES"
+msgstr "에피소드"
+
+msgctxt "#32242"
+msgid "UNWATCHED"
+msgstr "안 봄"
+
+msgctxt "#32243"
+msgid "Setup"
+msgstr "설정"
+
+msgctxt "#32244"
+msgid "Libraries"
+msgstr "라이브러리"
+
+msgctxt "#32245"
+msgid "Motion"
+msgstr "움직임"
+
+msgctxt "#32246"
+msgid "Welcome to Aeon Fuse"
+msgstr "Aeon Fuse에 오신 것을 환영합니다"
+
+msgctxt "#32247"
+msgid "Library backdrop"
+msgstr "라이브러리 배경"
+
+msgctxt "#32248"
+msgid "Pick a palette"
+msgstr "팔레트 고르기"
+
+msgctxt "#32249"
+msgid "Skin theme"
+msgstr "스킨 테마"
+
+msgctxt "#32250"
+msgid "Skin style"
+msgstr "스킨 스타일"
+
+msgctxt "#32251"
+msgid "Home menu items"
+msgstr "홈 메뉴 항목"
+
+msgctxt "#32252"
+msgid "Spotlight transition"
+msgstr "Spotlight 전환"
+
+msgctxt "#32253"
+msgid "Corner boxes"
+msgstr "모서리 상자"
+
+msgctxt "#32254"
+msgid "Titles or logos"
+msgstr "제목 또는 로고"
+
+msgctxt "#32255"
+msgid "Extra fanart"
+msgstr "추가 팬아트"
+
+msgctxt "#32256"
+msgid "Spoilers"
+msgstr "스포일러"
+
+msgctxt "#32257"
+msgid "All set"
+msgstr "모두 준비됨"
+
+msgctxt "#32258"
+msgid "A few quick choices make the skin yours. Every step shows a preview, and everything can be changed later in Skin settings."
+msgstr "몇 가지 빠른 선택으로 스킨을 내 것으로 만드세요. 단계마다 미리 보기가 나오고, 모든 것은 나중에 스킨 설정에서 바꿀 수 있습니다."
+
+msgctxt "#32259"
+msgid "What fills the space behind the library views. With Neutral the next step lets you pick a palette."
+msgstr "라이브러리 보기 뒤의 공간을 채우는 것. 중립을 고르면 다음 단계에서 팔레트를 고를 수 있습니다."
+
+msgctxt "#32260"
+msgid "The palette colours the neutral backdrop, the focus bar, the boxes and the strips (Aeon theme)."
+msgstr "팔레트는 중립 배경, 포커스 막대, 상자, 띠에 색을 입힙니다(Aeon 테마)."
+
+msgctxt "#32261"
+msgid "Aeon draws solid panels with a bright focus bar. Aeon Glass lets the artwork shine through frosted panels."
+msgstr "Aeon은 밝은 포커스 막대와 단색 패널을 그립니다. Glass는 서리 유리 패널 너머로 아트워크가 비칩니다."
+
+msgctxt "#32262"
+msgid "How settings, dialogs and side menus look: the skin theme's own menus, or Fuse, the rounded cards of this setup."
+msgstr "설정, 대화 상자, 측면 메뉴의 모양: 스킨 테마 자체의 메뉴, 또는 이 설정의 둥근 카드인 Fuse."
+
+msgctxt "#32263"
+msgid "Switch the items you want on the Home menu. Order, custom items (three are always free) and their lists: Skin settings > Home menu."
+msgstr "홈 메뉴에 둘 항목을 켜세요. 순서, 사용자 항목(항상 세 개는 비어 있음)과 그 목록: 스킨 설정 > 홈 메뉴."
+
+msgctxt "#32264"
+msgid "Where the main menu sits on the Home screen."
+msgstr "홈 화면에서 메인 메뉴가 놓이는 위치."
+
+msgctxt "#32265"
+msgid "The backdrop of the spotlight at the top of Home."
+msgstr "홈 상단 Spotlight의 배경."
+
+msgctxt "#32266"
+msgid "How one spotlight title gives way to the next."
+msgstr "Spotlight 작품이 다음 작품으로 넘어가는 방식."
+
+msgctxt "#32267"
+msgid "The clock box, the item count and the strip boxes in the corners of the library."
+msgstr "라이브러리 모서리의 시계 상자, 항목 수, 띠 상자."
+
+msgctxt "#32268"
+msgid "Small markers on posters: a dot for unwatched, a check for watched, a bar for in progress."
+msgstr "포스터의 작은 표시: 안 본 것은 점, 본 것은 체크, 보던 것은 막대."
+
+msgctxt "#32269"
+msgid "Show a title's clear logo where the skin has room for it, or its name in plain text."
+msgstr "스킨에 자리가 있는 곳에는 작품의 클리어 로고를, 아니면 이름을 글자로 보여 줍니다."
+
+msgctxt "#32270"
+msgid "The chips under a title in the libraries and on the information page. Switch the ones you want."
+msgstr "라이브러리와 정보 페이지에서 작품 아래에 붙는 칩. 원하는 것을 켜세요."
+
+msgctxt "#32271"
+msgid "Titles with more than one fanart can take turns showing them in the background."
+msgstr "팬아트가 여러 개인 작품은 배경에서 번갈아 보여 줄 수 있습니다."
+
+msgctxt "#32272"
+msgid "Unwatched episodes can keep their thumbnail and plot to themselves."
+msgstr "안 본 에피소드는 섬네일과 줄거리를 감춰 둘 수 있습니다."
+
+msgctxt "#32273"
+msgid "Slides and fades when views, menus and dialogs open."
+msgstr "보기, 메뉴, 대화 상자가 열릴 때의 슬라이드와 페이드."
+
+msgctxt "#32274"
+msgid "On small boxes Kodi keeps memory it no longer uses. The skin's helper can hand it back to the system."
+msgstr "작은 기기에서 Kodi는 더 이상 쓰지 않는 메모리를 붙잡고 있습니다. 스킨의 helper가 이를 시스템에 돌려줄 수 있습니다."
+
+msgctxt "#32275"
+msgid "Your choices are saved. Run the setup again any time from Skin settings > Motion, memory, reset."
+msgstr "선택이 저장되었습니다. 설정은 언제든 다시 실행할 수 있습니다: 스킨 설정 > 움직임, 메모리, 초기화."
+
+msgctxt "#32276"
+msgid "Kodi restarts to show the new look"
+msgstr "새 모양을 보여 주기 위해 Kodi가 다시 시작됩니다"
+
+msgctxt "#32277"
+msgid "Then restart Kodi once"
+msgstr "그다음 Kodi를 한 번 다시 시작하세요"
+
+msgctxt "#32278"
+msgid "Close the setup"
+msgstr "설정 닫기"
+
+msgctxt "#32279"
+msgid "A new theme or palette needs Kodi to start again; it takes a few seconds."
+msgstr "새 테마나 팔레트를 쓰려면 Kodi를 다시 시작해야 합니다. 몇 초면 됩니다."
+
+msgctxt "#32280"
+msgid "The new look shows at once. Restart Kodi when you can: until then some settings may read wrong."
+msgstr "새 모양은 바로 보입니다. 가능할 때 Kodi를 다시 시작하세요. 그전까지 일부 설정이 잘못 표시될 수 있습니다."
+
+msgctxt "#32281"
+msgid "Enjoy Aeon Fuse."
+msgstr "Aeon Fuse를 즐기세요."
+
+msgctxt "#32282"
+msgid "ends"
+msgstr "종료"
+
+msgctxt "#32283"
+msgid "Nothing unwatched fits before midnight tonight."
+msgstr "오늘 밤 자정 전에 끝나는 안 본 작품이 없습니다."
+
+msgctxt "#32285"
+msgid "of"
+msgstr "/"
+
+msgctxt "#32286"
+msgid "watched"
+msgstr "시청"
+
+msgctxt "#32287"
+msgid "unwatched"
+msgstr "안 봄"
+
+msgctxt "#32288"
+msgid "Nothing unwatched fits this slot. Try Films for everything."
+msgstr "이 시간대에 맞는 안 본 작품이 없습니다. 전체는 영화에서 보세요."
+
+msgctxt "#32289"
+msgid "Nothing here yet."
+msgstr "아직 아무것도 없습니다."
+
+msgctxt "#32290"
+msgid "Current"
+msgstr "현재"
+
+msgctxt "#32291"
+msgid "Rec"
+msgstr "녹화"
+
+msgctxt "#32292"
+msgid "Remind"
+msgstr "알림"
+
+msgctxt "#32293"
+msgid "Archive"
+msgstr "보관"
+
+msgctxt "#32294"
+msgid "Edited"
+msgstr "편집됨"
+
+msgctxt "#32295"
+msgid "About"
+msgstr "정보"
+
+msgctxt "#32296"
+msgid "Group"
+msgstr "그룹"
+
+msgctxt "#32297"
+msgid "Nothing here yet"
+msgstr "아직 아무것도 없습니다"
+
+msgctxt "#32298"
+msgid "Tracklist"
+msgstr "트랙 목록"
+
+msgctxt "#32299"
+msgid "born"
+msgstr "출생"
+
+msgctxt "#32300"
+msgid "formed"
+msgstr "결성"
+
+msgctxt "#32301"
+msgid "minutes of music"
+msgstr "분 분량의 음악"
+
+msgctxt "#32302"
+msgid "Start now, done by"
+msgstr "지금 시작하면 종료"
+
+msgctxt "#32303"
+msgid "The music stops at"
+msgstr "음악 종료 시각"
+
+msgctxt "#32304"
+msgid "OK for the controls."
+msgstr "OK로 컨트롤 표시."
+
+msgctxt "#32305"
+msgid "Go to"
+msgstr "이동"
+
+msgctxt "#32306"
+msgid "Sleeps when this ends  ·  bedtime"
+msgstr "이것이 끝나면 절전  ·  취침 시간"
+
+msgctxt "#32307"
+msgid "RESULTS"
+msgstr "개 결과"
+
+msgctxt "#32308"
+msgid "track"
+msgstr "곡"
+
+msgctxt "#32309"
+msgid "tracks"
+msgstr "곡"
+
+msgctxt "#32310"
+msgid "option"
+msgstr "개 옵션"
+
+msgctxt "#32311"
+msgid "options"
+msgstr "개 옵션"
+
+msgctxt "#32312"
+msgid "item"
+msgstr "개 항목"
+
+msgctxt "#32313"
+msgid "album in your library"
+msgstr "개 앨범이 라이브러리에"
+
+msgctxt "#32314"
+msgid "albums in your library"
+msgstr "개 앨범이 라이브러리에"
+
+msgctxt "#32315"
+msgid "film"
+msgstr "편의 영화"
+
+msgctxt "#32316"
+msgid "person"
+msgstr "명"
+
+msgctxt "#32317"
+msgid "people"
+msgstr "명"
+
+msgctxt "#32318"
+msgid "episode"
+msgstr "화"
+
+msgctxt "#32319"
+msgid "episodes"
+msgstr "화"
+
+msgctxt "#32320"
+msgid "film watched"
+msgstr "편의 영화 시청"
+
+msgctxt "#32321"
+msgid "films watched"
+msgstr "편의 영화 시청"
+
+msgctxt "#32322"
+msgid "episode watched"
+msgstr "화 시청"
+
+msgctxt "#32323"
+msgid "episodes watched"
+msgstr "화 시청"
+
+msgctxt "#32324"
+msgid "Midnight"
+msgstr "자정"
+
+msgctxt "#32325"
+msgid "The extra items Aeon Fuse adds to Kodi's context menu: which of them show and in what order."
+msgstr "Aeon Fuse가 Kodi 컨텍스트 메뉴에 추가하는 항목: 어떤 것을 어떤 순서로 보여 줄지."
+
+msgctxt "#32326"
+msgid "Kodi lists these after its own items (and before those of other add-ons that come later). Pick one, then use the buttons on the right."
+msgstr "Kodi는 이 항목들을 자체 항목 뒤에(나중에 오는 다른 애드온의 항목 앞에) 표시합니다. 하나를 고른 뒤 오른쪽 버튼을 쓰세요."
+
+msgctxt "#32327"
+msgid "Shows or hides the selected item in the context menu."
+msgstr "선택한 항목을 컨텍스트 메뉴에서 보이거나 숨깁니다."
+
+msgctxt "#32328"
+msgid "Moves the selected item one place up in the context menu."
+msgstr "선택한 항목을 컨텍스트 메뉴에서 한 칸 위로 옮깁니다."
+
+msgctxt "#32329"
+msgid "Moves the selected item one place down in the context menu."
+msgstr "선택한 항목을 컨텍스트 메뉴에서 한 칸 아래로 옮깁니다."
+
+msgctxt "#32330"
+msgid "The backdrop of the widget screens (Up on a Home item) slowly zooms in with every title. Reduce motion stops it too."
+msgstr "위젯 화면(홈 항목에서 위쪽)의 배경이 작품마다 천천히 확대됩니다. 움직임 줄이기로도 멈춥니다."
+
+msgctxt "#32331"
+msgid "A font family for each part of the skin: Home, the libraries, headings, the settings pages and the player."
+msgstr "스킨의 각 부분에 쓸 글꼴 모음: 홈, 라이브러리, 제목, 설정 페이지, 플레이어."
+
+msgctxt "#32332"
+msgid "Film"
+msgstr "영화"
+
+msgctxt "#32333"
+msgid "Resume now: done by"
+msgstr "지금 이어 보면 종료"
+
+msgctxt "#32334"
+msgid "Start now: ends"
+msgstr "지금 시작하면 종료"
+
+msgctxt "#32336"
+msgid "Down for the films"
+msgstr "아래쪽: 영화"
+
+msgctxt "#32337"
+msgid "Down for the cast"
+msgstr "아래쪽: 출연진"
+
+msgctxt "#32338"
+msgid "Story"
+msgstr "이야기"
+
+msgctxt "#32339"
+msgid "split"
+msgstr "해체"
+
+msgctxt "#32340"
+msgid "died"
+msgstr "사망"
+
+msgctxt "#32341"
+msgid "Resume at"
+msgstr "이어 보기"
+
+msgctxt "#32342"
+msgid "added"
+msgstr "추가"
+
+msgctxt "#32343"
+msgid "season"
+msgstr "시즌"
+
+msgctxt "#32344"
+msgid "seasons"
+msgstr "시즌"
+
+msgctxt "#32345"
+msgid "Aired"
+msgstr "방송"
+
+msgctxt "#32346"
+msgid "Resume now and you're done by"
+msgstr "지금 이어 보면 종료"
+
+msgctxt "#32347"
+msgid "Start now and it ends at"
+msgstr "지금 시작하면 종료"
+
+msgctxt "#32348"
+msgid "after midnight"
+msgstr "자정 이후"
+
+msgctxt "#32349"
+msgid "Start now and you're done by"
+msgstr "지금 시작하면 종료"
+
+msgctxt "#32350"
+msgid "still to watch"
+msgstr "화 남음"
+
+msgctxt "#32351"
+msgid "aired"
+msgstr "방송"
+
+msgctxt "#32352"
+msgid "rated"
+msgstr "평점"
+
+msgctxt "#32353"
+msgid "With"
+msgstr "출연:"
+
+msgctxt "#32354"
+msgid "Progress"
+msgstr "진행"
+
+msgctxt "#32355"
+msgid "to watch"
+msgstr "화 남음"
+
+msgctxt "#32356"
+msgid "No channels. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "채널이 없습니다. PVR 및 실시간 TV 설정에서 PVR 클라이언트 애드온을 활성화하세요."
+
+msgctxt "#32357"
+msgid "No recordings."
+msgstr "녹화가 없습니다."
+
+msgctxt "#32358"
+msgid "No results."
+msgstr "결과가 없습니다."
+
+msgctxt "#32359"
+msgid "No timers."
+msgstr "타이머가 없습니다."
+
+msgctxt "#32360"
+msgid "updated"
+msgstr "업데이트"
+
+msgctxt "#32361"
+msgid "Setup wizard"
+msgstr "설정 마법사"
+
+msgctxt "#32362"
+msgid "Theme, palette, backgrounds, Home"
+msgstr "테마, 팔레트, 배경, 홈"
+
+msgctxt "#32363"
+msgid "Widget screens: slow zoom"
+msgstr "위젯 화면: 느린 확대"
+
+msgctxt "#32364"
+msgid "Kodi shows these after its own items, in this order (items of other add-ons can follow). Update and Clean library show in the libraries and on Home, Refresh information on films, shows, episodes and music videos, Take screenshot everywhere."
+msgstr "Kodi는 이 항목들을 자체 항목 뒤에 이 순서로 표시합니다(다른 애드온의 항목이 뒤따를 수 있음). 라이브러리 업데이트와 정리는 라이브러리와 홈에, 정보 새로 고침은 영화, 시리즈, 에피소드, 뮤직 비디오에, 스크린샷 찍기는 어디서나 표시됩니다."
+
+msgctxt "#32365"
+msgid "PICTURE"
+msgstr "사진"
+
+msgctxt "#32366"
+msgid "Smart playlist"
+msgstr "스마트 재생 목록"
+
+msgctxt "#32367"
+msgid "Source"
+msgstr "소스"
+
+msgctxt "#32368"
+msgid "fps"
+msgstr "fps"
+
+msgctxt "#32369"
+msgid "AR"
+msgstr "AR"
+
+msgctxt "#32370"
+msgid "Dynamic range"
+msgstr "다이내믹 레인지"
+
+msgctxt "#32371"
+msgid "Decoder"
+msgstr "디코더"
+
+msgctxt "#32372"
+msgid "Pixel format"
+msgstr "픽셀 형식"
+
+msgctxt "#32373"
+msgid "Deinterlace"
+msgstr "디인터레이스"
+
+msgctxt "#32374"
+msgid "Display"
+msgstr "디스플레이"
+
+msgctxt "#32375"
+msgid "Audio output"
+msgstr "오디오 출력"
+
+msgctxt "#32376"
+msgid "Interface"
+msgstr "인터페이스"
+
+msgctxt "#32377"
+msgid "memory"
+msgstr "메모리"
+
+msgctxt "#32378"
+msgid "FILE"
+msgstr "파일"
+
+msgctxt "#32379"
+msgid "SIZE"
+msgstr "크기"
+
+msgctxt "#32380"
+msgid "TAKEN"
+msgstr "촬영"
+
+msgctxt "#32381"
+msgid "STATE"
+msgstr "상태"
+
+msgctxt "#32382"
+msgid "until bedtime"
+msgstr "후 취침 시간"
+
+msgctxt "#32383"
+msgid "Fits before bedtime"
+msgstr "취침 시간 전에 끝남"
+
+msgctxt "#32384"
+msgid "fits before bedtime"
+msgstr "취침 시간 전에 끝남"
+
+msgctxt "#32385"
+msgid "Nothing unwatched fits before bedtime tonight."
+msgstr "오늘 밤 취침 시간 전에 끝나는 안 본 작품이 없습니다."
+
+msgctxt "#32386"
+msgid "right at your bedtime"
+msgstr "정확히 취침 시간"
+
+msgctxt "#32387"
+msgid "past your bedtime"
+msgstr "취침 시간 초과"
+
+msgctxt "#32388"
+msgid "before your bedtime"
+msgstr "취침 시간 전"
+
+msgctxt "#32389"
+msgid "after your bedtime"
+msgstr "취침 시간 이후"
+
+msgctxt "#32390"
+msgid "Continuing"
+msgstr "방영 중"
+
+msgctxt "#32391"
+msgid "Ended"
+msgstr "종영"
+
+msgctxt "#32392"
+msgid "Cancelled"
+msgstr "취소됨"
+
+msgctxt "#32393"
+msgid "In production"
+msgstr "제작 중"
+
+msgctxt "#32394"
+msgid "Planned"
+msgstr "예정"
+
+msgctxt "#32395"
+msgid "Upcoming"
+msgstr "공개 예정"
+
+msgctxt "#32396"
+msgid "Pilot"
+msgstr "파일럿"
+
+msgctxt "#32397"
+msgid "Now playing in"
+msgstr "재생 중 –"
+
+msgctxt "#32398"
+msgid "Films of a set"
+msgstr "세트의 영화"
+
+msgctxt "#32399"
+msgid "Versions of a film"
+msgstr "영화 버전"
+
+msgctxt "#32400"
+msgid "Grid"
+msgstr "그리드"
+
+msgctxt "#32401"
+msgid "One at a time"
+msgstr "하나씩"
+
+msgctxt "#32402"
+msgid "Fused Glass"
+msgstr "Fused Glass"
+
+msgctxt "#32403"
+msgid "Next hours"
+msgstr "앞으로 몇 시간"
+
+msgctxt "#32404"
+msgid "This week"
+msgstr "이번 주"
+
+msgctxt "#32405"
+msgid "No weather yet. Choose a weather service in Settings > Services > Weather."
+msgstr "아직 날씨 정보가 없습니다. 설정 > 서비스 > 날씨에서 서비스를 선택하세요."
+
+msgctxt "#32406"
+msgid "Recent searches"
+msgstr "최근 검색"
+
+msgctxt "#32407"
+msgid "In Fused Glass the music playing always sits beside the clock on Home; this setting is for the other themes."
+msgstr "Fused Glass에서는 재생 중인 음악이 항상 홈의 시계 옆에 표시됩니다. 이 설정은 다른 테마용입니다."
+
+msgctxt "#32408"
+msgid "Focus highlight"
+msgstr "포커스 강조"
+
+msgctxt "#32409"
+msgid "Pill"
+msgstr "알약"
+
+msgctxt "#32410"
+msgid "Flat"
+msgstr "평면"
+
+msgctxt "#32411"
+msgid "Frosted"
+msgstr "반투명 유리"
+
+msgctxt "#32412"
+msgid "Outline"
+msgstr "윤곽선"
+
+msgctxt "#32413"
+msgid "Tight"
+msgstr "좁게"
+
+msgctxt "#32414"
+msgid "How the item in focus is marked in lists and menus. Changing it reloads the skin."
+msgstr "목록과 메뉴에서 선택된 항목을 표시하는 방식입니다. 바꾸면 스킨을 다시 불러옵니다."
+
+msgctxt "#32415"
+msgid "Navigation animation"
+msgstr "탐색 애니메이션"
+
+msgctxt "#32416"
+msgid "Pop"
+msgstr "팝"
+
+msgctxt "#32417"
+msgid "Grow"
+msgstr "확장"
+
+msgctxt "#32418"
+msgid "Fade"
+msgstr "페이드"
+
+msgctxt "#32419"
+msgid "Glow"
+msgstr "글로우"
+
+msgctxt "#32420"
+msgid "Nudge"
+msgstr "밀기"
+
+msgctxt "#32421"
+msgid "Lift"
+msgstr "띄우기"
+
+msgctxt "#32422"
+msgid "How the highlight moves when it lands on an item. Pop is the default."
+msgstr "강조 표시가 항목에 닿을 때 움직이는 방식입니다. 기본값은 팝입니다."
+
+msgctxt "#32423"
+msgid "Font combination"
+msgstr "글꼴 조합"
+
+msgctxt "#32424"
+msgid "A heading and text font combination, shown before you pick it, or your own font for each part of the skin."
+msgstr "미리 보기와 함께 제목과 본문 글꼴 조합을 고르거나, 스킨의 각 부분마다 글꼴을 직접 고릅니다."
+
+msgctxt "#32425"
+msgid "Home menu: only the focused item's name"
+msgstr "홈 메뉴: 선택한 항목만 이름 표시"
+
+msgctxt "#32426"
+msgid "On: the other items of the Home menu show only their icon and the focused item shows its name."
+msgstr "켜짐: 홈 메뉴의 다른 항목은 아이콘만 보이고 선택한 항목에 이름이 표시됩니다."
+
+msgctxt "#32427"
+msgid "Segment skip button placement"
+msgstr "구간 건너뛰기 버튼 위치"
+
+msgctxt "#32428"
+msgid "Tab"
+msgstr "탭"
+
+msgctxt "#32429"
+msgid "Glass"
+msgstr "유리"
+
+msgctxt "#32430"
+msgid "How the skip button sits on the player controls and the small seek bar: a white tab on the card's edge, or a capsule of the card's glass above it."
+msgstr "건너뛰기 버튼을 플레이어 컨트롤과 작은 탐색 막대에 놓는 방식: 카드 가장자리의 흰 탭, 또는 카드와 같은 유리 캡슐을 위에."
+
+msgctxt "#32431"
+msgid "Available in library"
+msgstr "라이브러리에 있음"
+
+msgctxt "#32432"
+msgid "In library"
+msgstr "라이브러리"
+
+msgctxt "#32433"
+msgid "Random %s"
+msgstr "무작위 %s"
+
+msgctxt "#32434"
+msgid "Recently added %s"
+msgstr "최근 추가한 %s"
+
+msgctxt "#32435"
+msgid "Recently played %s"
+msgstr "최근 재생한 %s"
+
+msgctxt "#32436"
+msgid "Top rated %s"
+msgstr "높은 평점 %s"
+
+msgctxt "#32437"
+msgid "Most played %s"
+msgstr "가장 많이 재생한 %s"
+
+msgctxt "#32438"
+msgid "Newest %s"
+msgstr "최신 %s"
+
+msgctxt "#32439"
+msgid "%s by title"
+msgstr "제목순 %s"
+
+msgctxt "#32440"
+msgid "Scroll through channels"
+msgstr "채널 스크롤"
+
+msgctxt "#32441"
+msgid "Auto-fix art with the wrong shape"
+msgstr "모양이 맞지 않는 아트 자동 수정"
+
+msgctxt "#32442"
+msgid "Check library art now"
+msgstr "지금 라이브러리 아트 확인"
+
+msgctxt "#32443"
+msgid "Library art"
+msgstr "라이브러리 아트"
+
+msgctxt "#32444"
+msgid "Now uses a picture from the same folder that fits"
+msgstr "이제 같은 폴더의 맞는 그림을 사용함"
+
+msgctxt "#32445"
+msgid "Wrong shape, nothing in the folder fits"
+msgstr "모양이 맞지 않음, 폴더에 맞는 그림 없음"
+
+msgctxt "#32446"
+msgid "Every picture has the right shape."
+msgstr "모든 그림의 모양이 맞습니다."
+
+msgctxt "#32447"
+msgid "Fixed in the library: %d"
+msgstr "라이브러리에서 수정함: %d"
+
+msgctxt "#32448"
+msgid "After a refresh or a library scan, a poster, banner, landscape or fanart of the wrong shape is replaced by a picture of the same name in the same folder that fits. Your files stay as they are."
+msgstr "새로 고침이나 라이브러리 스캔 후 모양이 맞지 않는 포스터, 배너, 랜드스케이프, 팬아트를 같은 폴더에 있는 같은 이름의 맞는 그림으로 바꿉니다. 파일은 그대로 둡니다."
+
+msgctxt "#32449"
+msgid "Checks every picture Kodi has shown and fixes what it can. A list shows what was replaced and what is still the wrong shape."
+msgstr "Kodi가 표시한 모든 그림을 확인하고 고칠 수 있는 것을 고칩니다. 바꾼 것과 여전히 모양이 맞지 않는 것을 목록으로 보여 줍니다."
+
+msgctxt "#32450"
+msgid "Slot left empty: the skin shows the show's picture until season art is added"
+msgstr "칸을 비워 둠: 시즌 그림이 추가될 때까지 스킨이 프로그램 그림을 보여 줌"
+
+msgctxt "#32451"
+msgid "Only Kodi's library changed. Your files are untouched."
+msgstr "Kodi 라이브러리만 바뀌었습니다. 파일은 그대로입니다."
+
+msgctxt "#32452"
+msgid "Mosaic"
+msgstr "모자이크"
+
+msgctxt "#32453"
+msgid "Ledger"
+msgstr "장부"
+
+msgctxt "#32454"
+msgid "Bridge"
+msgstr "브리지"
+
+msgctxt "#32455"
+msgid "Tab slab"
+msgstr "탭"
+
+msgctxt "#32456"
+msgid "How the menus join their boxes: Mosaic, Ledger, Bridge or Tab slab. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "메뉴가 상자를 잇는 방식: 모자이크, 장부, 브리지, 탭. Fuse는 둥근 카드를 쓰며 Kodi를 다시 시작해야 합니다."
+
+msgctxt "#32457"
+msgid "Aeon Glass keeps its own menus. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "Glass는 자체 메뉴를 유지합니다. Fuse는 둥근 카드를 쓰며 Kodi를 다시 시작해야 합니다."
+
+msgctxt "#32458"
+msgid "Library options"
+msgstr "라이브러리 옵션"
+
+msgctxt "#32459"
+msgid "Strip"
+msgstr "스트립"
+
+msgctxt "#32460"
+msgid "Box"
+msgstr "상자"
+
+msgctxt "#32461"
+msgid "Left at the edge of a view or the Menu key opens the side strip, or a big box in the menu style."
+msgstr "보기 가장자리에서 왼쪽 또는 메뉴 키를 누르면 옆 스트립이나 메뉴 스타일의 큰 상자가 열립니다."
+
+msgctxt "#32462"
+msgid "Skippy: skip button style"
+msgstr "Skippy: 건너뛰기 버튼 스타일"
+
+msgctxt "#32463"
+msgid "Box pair"
+msgstr "상자 쌍"
+
+msgctxt "#32464"
+msgid "Clock dock"
+msgstr "시계 옆"
+
+msgctxt "#32465"
+msgid "Aeon theme: a palette tile and a label box at the bottom right (above the player controls when they are open), or a row at the top right that ends in the clock box."
+msgstr "Aeon 테마: 오른쪽 아래의 색 타일과 글자 상자(플레이어 컨트롤이 열려 있으면 그 위), 또는 오른쪽 위에서 시계 상자로 끝나는 한 줄."
+
+msgctxt "#32466"
+msgid "Use the palette for"
+msgstr "팔레트 적용 대상"
+
+msgctxt "#32467"
+msgid "Menus and library views"
+msgstr "메뉴와 라이브러리 보기"
+
+msgctxt "#32468"
+msgid "Menus only"
+msgstr "메뉴만"
+
+msgctxt "#32469"
+msgid "Library views only"
+msgstr "라이브러리 보기만"
+
+msgctxt "#32470"
+msgid "Colors: the colour of the artwork; in the library with the Neutral backdrop and a palette other than Aeon, the palette's own darker box colour. Neutral: always the palette's box colour. Fanart: a window onto the fanart. Backdrop: as the library backdrop. View settings sets it per view."
+msgstr "색상: 아트워크의 색. 라이브러리에서 배경이 중립이고 Aeon이 아닌 팔레트이면 팔레트 고유의 더 어두운 상자 색. 중립: 항상 팔레트의 상자 색. 팬아트: 팬아트를 보여 주는 창. 배경: 라이브러리 배경과 같게. 보기 설정에서 보기마다 정합니다."
+
+msgctxt "#32471"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages, for the menus and the library views, the menus only or the library views only. The library background takes it with the Neutral backdrop only."
+msgstr "강조, 상자, 띠, 설정 페이지의 색. 메뉴와 라이브러리 보기, 메뉴만 또는 라이브러리 보기만에 씁니다. 라이브러리 배경은 중립 배경일 때만 이 색을 씁니다."
+
+msgctxt "#32472"
+msgid "Band under the Home menu"
+msgstr "홈 메뉴 아래 띠"
+
+msgctxt "#32473"
+msgid "A dark band from the Home menu down to the bottom of the screen, with a thin line on top, over the spotlight pictures. It follows the menu: middle or low."
+msgstr "홈 메뉴에서 화면 아래까지 이어지는 어두운 띠, 위쪽에 가는 선, 스포트라이트 그림 위에 놓입니다. 메뉴 위치(가운데 또는 아래)를 따릅니다."
+
+msgctxt "#32474"
+msgid "Toasts expand from clock pill"
+msgstr "알림이 시계 캡슐에서 펼쳐짐"
+
+msgctxt "#32475"
+msgid "A notification widens the clock pill to the left and shows itself in it, instead of a capsule of its own. Library views and full-screen video keep the capsule."
+msgstr "알림이 시계 알약을 왼쪽으로 넓히고 그 안에 나타납니다(자체 캡슐 대신). 라이브러리 보기와 전체 화면 동영상은 캡슐을 유지합니다."
+
+msgctxt "#32476"
+msgid "Clearlogo in Now playing"
+msgstr "재생 중에 클리어로고"
+
+msgctxt "#32477"
+msgid "Live"
+msgstr "생방송"
+
+msgctxt "#32478"
+msgid "Fused Glass player: the clearlogo of the show or film in the Now playing pill at the top left, instead of its title. Off: the title."
+msgstr "Fused Glass 플레이어: 왼쪽 위 재생 중 알약에 제목 대신 프로그램이나 영화의 클리어로고를 표시합니다. 끔: 제목."
+
+msgctxt "#32479"
+msgid "Overview"
+msgstr "개요"
+
+msgctxt "#32480"
+msgid "File and season"
+msgstr "파일과 시즌"
+
+msgctxt "#32481"
+msgid "In this file"
+msgstr "이 파일"
+
+msgctxt "#32482"
+msgid "File"
+msgstr "파일"
+
+msgctxt "#32483"
+msgid "Size"
+msgstr "크기"
+
+msgctxt "#32484"
+msgid "Playing on"
+msgstr "재생 기기"
+
+msgctxt "#32485"
+msgid "Cast photos in the information screen"
+msgstr "정보 화면의 출연진 사진"
+
+msgctxt "#32486"
+msgid "Fused Glass player: the information screen shows the cast as round photos with the name and the character under each, in one row you scroll through. Off: the names as chips."
+msgstr "Fused Glass 플레이어: 정보 화면에서 출연진을 둥근 사진으로 보여 주고 각 사진 아래에 이름과 배역을 표시하며, 한 줄로 스크롤합니다. 끔: 이름을 칩으로 표시."
+
+msgctxt "#32487"
+msgid "Up"
+msgstr "위"
+
+msgctxt "#32488"
+msgid "Down"
+msgstr "아래"
+
+msgctxt "#32489"
+msgid "Kodi running for"
+msgstr "Kodi 실행 시간"
+
+msgctxt "#32490"
+msgid "Box up for"
+msgstr "기기 실행 시간"
+
+msgctxt "#32491"
+msgid "Nothing is playing"
+msgstr "재생 중인 항목 없음"
+
+msgctxt "#32492"
+msgid "Sleep"
+msgstr "절전"
+
+msgctxt "#32493"
+msgid "Restart Kodi"
+msgstr "Kodi 다시 시작"
+
+msgctxt "#32495"
+msgid "Reboot to Android"
+msgstr "Android로 재부팅"
+
+msgctxt "#32496"
+msgid "Shut down"
+msgstr "종료"
+
+msgctxt "#32497"
+msgid "OK again to confirm"
+msgstr "확인하려면 OK를 한 번 더"
+
+msgctxt "#32498"
+msgid "Log off"
+msgstr "로그오프"
+
+msgctxt "#32499"
+msgid "Exit Kodi"
+msgstr "Kodi 끝내기"
+
+msgctxt "#32500"
+msgid "When this ends"
+msgstr "이 항목이 끝나면"
+
+msgctxt "#32501"
+msgid "min"
+msgstr "분"
+
+msgctxt "#32502"
+msgid "Health"
+msgstr "상태"
+
+msgctxt "#32503"
+msgid "All good"
+msgstr "모두 정상"
+
+msgctxt "#32504"
+msgid "Running warm"
+msgstr "온도가 높음"
+
+msgctxt "#32505"
+msgid "Memory almost full"
+msgstr "메모리가 거의 가득 참"
+
+msgctxt "#32506"
+msgid "Processor"
+msgstr "프로세서"
+
+msgctxt "#32507"
+msgid "Shortcuts"
+msgstr "바로 가기"
+
+msgctxt "#32508"
+msgid "Recently used add-ons"
+msgstr "최근 사용한 애드온"
+
+msgctxt "#32509"
+msgid "Library jobs"
+msgstr "라이브러리 작업"
+
+msgctxt "#32510"
+msgid "All episodes"
+msgstr "모든 에피소드"
+
+msgctxt "#32511"
+msgid "to the tile"
+msgstr "타일로"
+
+msgctxt "#32512"
+msgid "{n} min left"
+msgstr "{n}분 남음"
+
+msgctxt "#32513"
+msgid "{episode} airs {date}"
+msgstr "{episode} {date} 방영"
+
+msgctxt "#32514"
+msgid "{n} more waiting in season {season}"
+msgstr "시즌 {season}에 {n}편 더 남음"
+
+msgctxt "#32515"
+msgid "1 more waiting in season {season}"
+msgstr "시즌 {season}에 1편 더 남음"
+
+msgctxt "#32516"
+msgid "Search your library"
+msgstr "라이브러리 검색"
+
+msgctxt "#32517"
+msgid "Films, shows, episodes, music, people"
+msgstr "영화, 프로그램, 에피소드, 음악, 인물"
+
+msgctxt "#32518"
+msgid "You're on {episode}"
+msgstr "{episode} 시청 중"
+
+msgctxt "#32519"
+msgid "Last search:"
+msgstr "최근 검색:"
+
+msgctxt "#32520"
+msgid "Also search"
+msgstr "다른 곳에서도 검색"
+
+msgctxt "#32521"
+msgid "TMDb, not in the library"
+msgstr "TMDb (라이브러리에 없음)"
+
+msgctxt "#32522"
+msgid "People"
+msgstr "인물"
+
+msgctxt "#32523"
+msgid "Online"
+msgstr "온라인"
+
+msgctxt "#32524"
+msgid "Next 7 days"
+msgstr "앞으로 7일"
+
+msgctxt "#32525"
+msgid "Shows you watch"
+msgstr "시청 중인 프로그램"
+
+msgctxt "#32526"
+msgid "View settings"
+msgstr "보기 설정"
+
+msgctxt "#32527"
+msgid "Background"
+msgstr "배경"
+
+msgctxt "#32528"
+msgid "Nothing out"
+msgstr "공개 예정 없음"
+
+msgctxt "#32529"
+msgid "{n} this week"
+msgstr "이번 주 {n}"
+
+msgctxt "#32530"
+msgid "1 episode"
+msgstr "에피소드 1편"
+
+msgctxt "#32531"
+msgid "{n} episodes"
+msgstr "에피소드 {n}편"
+
+msgctxt "#32532"
+msgid "1 film"
+msgstr "영화 1편"
+
+msgctxt "#32533"
+msgid "{n} films"
+msgstr "영화 {n}편"
+
+msgctxt "#32534"
+msgid "Week: seven days side by side. Day: one day at a time."
+msgstr "주: 7일을 나란히 표시. 일: 하루씩 표시."
+
+msgctxt "#32535"
+msgid "Episodes, films or both."
+msgstr "에피소드, 영화 또는 둘 다."
+
+msgctxt "#32536"
+msgid "Only the episodes of shows you have watched before."
+msgstr "본 적이 있는 프로그램의 에피소드만."
+
+msgctxt "#32537"
+msgid "Colors: the colours of the selected title's artwork. Neutral: plain. Fanart: the picture itself."
+msgstr "색상: 선택한 작품 이미지의 색. 중립: 단색. 팬아트: 이미지 그대로."
+
+msgctxt "#32538"
+msgid "The first day of a week. Today: always the next seven days."
+msgstr "한 주의 첫날. 오늘: 항상 앞으로 7일."
+
+msgctxt "#32539"
+msgid "This week"
+msgstr "이번 주"
+
+msgctxt "#32540"
+msgid "Next week"
+msgstr "다음 주"
+
+msgctxt "#32541"
+msgid "{n} in progress"
+msgstr "{n}편 시청 중"
+
+msgctxt "#32542"
+msgid "{n} unwatched"
+msgstr "{n}편 안 봄"
+
+msgctxt "#32543"
+msgid "All watched"
+msgstr "모두 시청함"
+
+msgctxt "#32544"
+msgid "Episode combined"
+msgstr "에피소드 모아 보기"
+
+msgctxt "#32545"
+msgid "Season buttons, the episodes in a card and the one in focus beside it"
+msgstr "시즌 버튼, 카드 속 에피소드, 옆에 선택한 에피소드"
+
+msgctxt "#32546"
+msgid "{time} of {total}"
+msgstr "{time} / {total}"
+
+msgctxt "#32547"
+msgid "Frost"
+msgstr "프로스트"
+
+msgctxt "#32548"
+msgid "Raised"
+msgstr "돋움"
+
+msgctxt "#32549"
+msgid "Clear"
+msgstr "투명"
+
+msgctxt "#32550"
+msgid "Library view theme"
+msgstr "라이브러리 보기 테마"
+
+msgctxt "#32551"
+msgid "The glass of the frosted panels: library views, Home panels and the Home bar. Menus and dialogs follow Menu theme. Frost: lighter. Raised: lit rim, deep shadow. Clear: thin, no blur. Dark: darker."
+msgstr "반투명 패널의 유리: 라이브러리 보기, 홈 패널과 홈 바. 메뉴와 대화 상자는 메뉴 테마를 따릅니다. 프로스트: 더 밝게. 돋움: 빛나는 테두리, 깊은 그림자. 투명: 얇게. 어둡게: 더 어둡게."
+
+msgctxt "#32552"
+msgid "Earlier days"
+msgstr "이전 날짜"
+
+msgctxt "#32553"
+msgid "Also show what aired on the days of this week before today (episodes in your library)."
+msgstr "이번 주 오늘 이전 날에 방영된 것도 표시 (라이브러리의 에피소드)."
+
+msgctxt "#32554"
+msgid "Menu names in capitals"
+msgstr "메뉴 이름 대문자"
+
+msgctxt "#32555"
+msgid "Fused Glass: the Home menu names in capital letters instead of sentence case."
+msgstr "Fused Glass: 홈 메뉴 이름을 대문자로 표시합니다."
+
+msgctxt "#32556"
+msgid "In cinemas now"
+msgstr "현재 상영작"
+
+msgctxt "#32557"
+msgid "Airing today"
+msgstr "오늘 방영"
+
+msgctxt "#32558"
+msgid "Airing tomorrow"
+msgstr "내일 방영"
+
+msgctxt "#32559"
+msgid "Save lyrics next to the song"
+msgstr "가사를 노래 옆에 저장"
+
+msgctxt "#32560"
+msgid "Lyrics that CU LRC Lyrics finds are also saved as a file next to the song (.lrc or .txt), so they are there next time and for other players. The music folder must be writable."
+msgstr "CU LRC Lyrics가 찾은 가사를 노래 파일 옆에도 파일(.lrc 또는 .txt)로 저장하여 다음에도, 다른 플레이어에서도 쓸 수 있게 합니다. 음악 폴더에 쓰기가 가능해야 합니다."
+
+msgctxt "#32561"
+msgid "Home spotlight: recently watched sets"
+msgstr "홈 Spotlight: 최근 시청한 컬렉션"
+
+msgctxt "#32562"
+msgid "The spotlight of a Home item that shows movie sets (Sets, for example) lists the sets you watched last, newest first. Off: all sets, as its spotlight settings say."
+msgstr "영화 컬렉션을 보여 주는 홈 항목(예: 컬렉션)의 Spotlight에 최근 시청한 컬렉션을 최신순으로 보여 줍니다. 끔: Spotlight 설정대로 모든 컬렉션을 보여 줍니다."
+
+msgctxt "#32563"
+msgid "Progress rings"
+msgstr "진행률 링"
+
+msgctxt "#32564"
+msgid "Season list combined 1"
+msgstr "시즌 목록 모아 보기 1"
+
+msgctxt "#32565"
+msgid "Seasons, episodes, facts"
+msgstr "시즌, 에피소드, 정보"
+
+msgctxt "#32566"
+msgid "Season list combined 2"
+msgstr "시즌 목록 모아 보기 2"
+
+msgctxt "#32567"
+msgid "Poster with episode stills"
+msgstr "포스터와 스틸"
+
+msgctxt "#32568"
+msgid "Smooth song progress"
+msgstr "노래 진행을 부드럽게 표시"
+
+msgctxt "#32569"
+msgid "Fused Glass Now playing: the song's progress behind the waveform glides instead of jumping 1 % at a time. Uses a little more processor time while the screen is open."
+msgstr "Fused Glass 재생 중 화면: 파형 뒤의 노래 진행이 1 %씩 건너뛰지 않고 부드럽게 움직입니다. 화면이 열려 있는 동안 CPU를 조금 더 사용합니다."
+
+msgctxt "#32570"
+msgid "Progress bar updates per second"
+msgstr "진행 막대 초당 업데이트 횟수"
+
+msgctxt "#32571"
+msgid "Screen"
+msgstr "화면"
+
+msgctxt "#32572"
+msgid "How often a second Smooth song progress moves the fill. Screen: as often as Kodi draws the screen. Fewer updates use less processor time; on a long song even 10 looks smooth."
+msgstr "부드러운 노래 진행이 1초에 몇 번 움직일지 정합니다. 화면: Kodi가 화면을 그리는 횟수만큼. 횟수가 적을수록 CPU를 덜 씁니다. 긴 노래는 10도 부드럽게 보입니다."
+
+msgctxt "#32590"
+msgid "Season poster wall combined"
+msgstr "시즌 포스터 월 모아 보기"
+
+msgctxt "#32573"
+msgid "Dark"
+msgstr "어둡게"
+
+msgctxt "#32574"
+msgid "Dark: dark panels. Clear: thin glass that shows more of the backdrop. Frost: light frosted glass over the blurred backdrop. Fused Glass: the System screen's menus, full screen with thin rules and a white bar on the row in focus; Kodi starts again."
+msgstr "어둡게: 어두운 패널. 투명: 배경이 더 많이 보이는 얇은 유리. 프로스트: 흐린 배경 위의 밝은 반투명 유리. Fused Glass: 시스템 화면의 메뉴. 전체 화면, 가는 선, 포커스된 행의 흰색 막대. Kodi가 다시 시작됩니다."
+
+msgctxt "#32575"
+msgid "Home bar"
+msgstr "홈 바"
+
+msgctxt "#32576"
+msgid "Bar"
+msgstr "바"
+
+msgctxt "#32577"
+msgid "Keys"
+msgstr "키"
+
+msgctxt "#32578"
+msgid "Shelf"
+msgstr "선반"
+
+msgctxt "#32579"
+msgid "Frosted glass behind the Home menu, in the material chosen under Look. Bar: one capsule. Keys: glass under each icon. Shelf: a band across the screen."
+msgstr "홈 메뉴 뒤의 반투명 유리 (모양에서 고른 재질). 바: 캡슐 하나. 키: 아이콘마다 유리. 선반: 화면 너비의 띠."
+
+msgctxt "#32591"
+msgid "Add item"
+msgstr "항목 추가"
+
+msgctxt "#32592"
+msgid "Puts a new item at the end of the menu: one of the skin's items that is not on it yet, or a custom item with its own path, Spotlight and lists.[CR][CR]OK opens the list of types."
+msgstr "메뉴 끝에 새 항목을 넣습니다: 아직 없는 스킨 항목 또는 자체 경로, Spotlight, 목록을 가진 사용자 항목.[CR][CR]OK를 누르면 유형 목록이 열립니다."
+
+msgctxt "#32593"
+msgid "Reload EPG"
+msgstr "EPG 다시 불러오기"
+
+msgctxt "#32594"
+msgid "Aeon accent colour"
+msgstr "Aeon 강조 색"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "골드"
+
+msgctxt "#32596"
+msgid "Slate"
+msgstr "슬레이트"
+
+msgctxt "#32597"
+msgid "Teal"
+msgstr "틸"
+
+msgctxt "#32598"
+msgid "Moss"
+msgstr "모스"
+
+msgctxt "#32599"
+msgid "Side"
+msgstr "측면"
+
+msgctxt "#32600"
+msgid "Vignette shape"
+msgstr "비네트 모양"
+
+msgctxt "#32601"
+msgid "Round"
+msgstr "원형"
+
+msgctxt "#32602"
+msgid "Round darkens the edges all round. Side darkens the screen from the left and fades out to the right, under the Home text. The row above sets how strong it is."
+msgstr "원형은 가장자리를 둥글게 어둡게 합니다. 측면은 화면을 왼쪽부터 어둡게 하고 오른쪽으로 갈수록 옅어집니다(홈 텍스트 아래). 강도는 위 행에서 설정합니다."
+
+msgctxt "#32603"
+msgid "Heavy"
+msgstr "아주 강하게"
+
+msgctxt "#32604"
+msgid "All themes"
+msgstr "모든 테마"
+
+msgctxt "#32605"
+msgid "Next episode"
+msgstr "다음 에피소드"
+
+msgctxt "#32606"
+msgid "{t} left"
+msgstr "{t} 남음"
+
+msgctxt "#32607"
+msgid "Home menu underline"
+msgstr "홈 메뉴 밑줄"
+
+msgctxt "#32608"
+msgid "Library fanart look"
+msgstr "라이브러리 팬아트 모양"
+
+msgctxt "#32609"
+msgid "Dimmed"
+msgstr "어둡게"
+
+msgctxt "#32610"
+msgid "Ratings shown as"
+msgstr "평점 표시 방식"
+
+msgctxt "#32611"
+msgid "Text"
+msgstr "텍스트"
+
+msgctxt "#32612"
+msgid "The accent line under the focused Home menu item, as in Fused Glass."
+msgstr "선택한 홈 메뉴 항목 아래의 강조선 (Fused Glass와 같음)."
+
+msgctxt "#32613"
+msgid "The fanart behind the library views: dimmed under a dark veil, or light with a frosted colour tint."
+msgstr "라이브러리 보기 뒤의 팬아트: 어두운 막으로 어둡게, 또는 서리 낀 색조로 밝게."
+
+msgctxt "#32614"
+msgid "Show the rating providers as their icons or as their names."
+msgstr "평점 제공자를 아이콘 또는 이름으로 표시합니다."
+
+msgctxt "#32615"
+msgid "Media info from sidecars"
+msgstr "사이드카 파일의 미디어 정보"
+
+msgctxt "#32616"
+msgid "Off: only what Kodi's library knows (the chips above). On: also the source (UHD Remux, Blu-ray, WEB-DL, DVD...), the edition, the audio and subtitle tracks and the chapters, read from a mediainfo sidecar next to each video file: <name>.cmm_mediainfo.xml from Curator Media Manager (used first) or <name>-mediainfo.xml from tinyMediaManager. Without sidecars nothing extra shows."
+msgstr "끔: Kodi 라이브러리가 아는 정보만(위의 칩). 켬: 각 동영상 파일 옆의 mediainfo 사이드카에서 소스(UHD Remux, Blu-ray, WEB-DL, DVD...), 에디션, 오디오·자막 트랙, 챕터도 표시: Curator Media Manager의 <이름>.cmm_mediainfo.xml(우선) 또는 tinyMediaManager의 <이름>-mediainfo.xml. 사이드카가 없으면 추가로 표시되는 것이 없습니다."
+
+msgctxt "#32617"
+msgid "Commentary"
+msgstr "코멘터리"
+
+msgctxt "#32618"
+msgid "Chapters"
+msgstr "챕터"
+
+msgctxt "#32619"
+msgid "In cinemas now: films from"
+msgstr "현재 상영작: 제작 국가"
+
+msgctxt "#32620"
+msgid "Everywhere"
+msgstr "전체"
+
+msgctxt "#32621"
+msgid "In cinemas now (the screensaver and the widgets) is what TMDb Helper's country has in cinemas: the United States unless TMDb Helper's language is set to another country. Pick your country to keep only films made in the United States or there; Everywhere keeps them all."
+msgstr "현재 상영작(화면 보호기와 위젯)은 TMDb Helper 국가의 극장 상영작입니다: TMDb Helper 언어에서 다른 국가를 고르지 않았다면 미국. 국가를 고르면 미국 또는 그 나라에서 만든 영화만 남습니다. 전체는 모두 남깁니다."
+
+msgctxt "#32622"
+msgid "Getting Home ready"
+msgstr "홈 준비 중"
+
+msgctxt "#32623"
+msgid "Home rows"
+msgstr "홈 행"
+
+msgctxt "#32624"
+msgid "OK or Back skips"
+msgstr "확인 또는 뒤로로 건너뛰기"
+
+msgctxt "#32625"
+msgid "Live TV guide"
+msgstr "TV 편성표"
+
+msgctxt "#32626"
+msgid "Tint"
+msgstr "색조"
+
+msgctxt "#32627"
+msgid "Picture"
+msgstr "그림"
+
+msgctxt "#32628"
+msgid "blurred"
+msgstr "흐림"
+
+msgctxt "#32629"
+msgid "Newest folder"
+msgstr "최신 폴더"
+
+msgctxt "#32630"
+msgid "Folders, newest first"
+msgstr "폴더, 최신 순"
+
+msgctxt "#32631"
+msgid "photos"
+msgstr "장의 사진"
+
+msgctxt "#32632"
+msgid "photo"
+msgstr "장의 사진"
+
+msgctxt "#32633"
+msgid "videos"
+msgstr "개의 동영상"
+
+msgctxt "#32634"
+msgid "video"
+msgstr "개의 동영상"
+
+msgctxt "#32635"
+msgid "OK plays the folder as a slideshow · Down for the folders"
+msgstr "OK로 폴더를 슬라이드쇼로 보기 · 아래로 폴더"
+
+msgctxt "#32636"
+msgid "All pictures"
+msgstr "모든 사진"
+
+msgctxt "#32637"
+msgid "sources"
+msgstr "개 소스"
+
+msgctxt "#32638"
+msgid "source"
+msgstr "개 소스"
+
+msgctxt "#32639"
+msgid "No pictures yet"
+msgstr "아직 사진이 없습니다"
+
+msgctxt "#32640"
+msgid "Add a folder of photos as a picture source in the Pictures window. OK opens it."
+msgstr "사진 창에서 사진 폴더를 사진 소스로 추가하세요. OK로 엽니다."
+
+msgctxt "#32641"
+msgid "Photos"
+msgstr "사진"
+
+msgctxt "#32642"
+msgid "OK opens the photo · Up for sort, slideshow and view"
+msgstr "OK로 사진 열기 · 위로 정렬, 슬라이드쇼, 보기"
+
+msgctxt "#32643"
+msgid "View"
+msgstr "보기"
+
+msgctxt "#32644"
+msgid "waits until loading is done"
+msgstr "로딩이 끝날 때까지 대기"
+
+msgctxt "#32645"
+msgid "Media info chips"
+msgstr "미디어 정보 칩"
+
+msgctxt "#32646"
+msgid "Which chips the information page, Home and the library panels show. The sidecar chips need Media info from sidecars."
+msgstr "정보 페이지, 홈, 라이브러리 패널에 보일 칩. 사이드카 칩은 사이드카 미디어 정보가 필요합니다."
+
+msgctxt "#32647"
+msgid "Resolution"
+msgstr "해상도"
+
+msgctxt "#32648"
+msgid "Aspect ratio"
+msgstr "화면 비율"
+
+msgctxt "#32649"
+msgid "HDR and Dolby Vision"
+msgstr "HDR 및 Dolby Vision"
+
+msgctxt "#32650"
+msgid "Dolby Vision profile"
+msgstr "Dolby Vision 프로필"
+
+msgctxt "#32651"
+msgid "Audio format"
+msgstr "오디오 형식"
+
+msgctxt "#32652"
+msgid "Audio channels"
+msgstr "오디오 채널"
+
+msgctxt "#32653"
+msgid "Source format (sidecar)"
+msgstr "소스 형식(사이드카)"
+
+msgctxt "#32654"
+msgid "Container (sidecar)"
+msgstr "컨테이너(사이드카)"
+
+msgctxt "#32655"
+msgid "Bit rate (sidecar)"
+msgstr "비트레이트(사이드카)"
+
+msgctxt "#32656"
+msgid "File size (sidecar)"
+msgstr "파일 크기(사이드카)"
+
+msgctxt "#32657"
+msgid "Subtitles (sidecar)"
+msgstr "자막(사이드카)"
+
+msgctxt "#32658"
+msgid "Chapters (sidecar)"
+msgstr "챕터(사이드카)"
+
+msgctxt "#32659"
+msgid "Commentary (sidecar)"
+msgstr "코멘터리(사이드카)"
+
+msgctxt "#32660"
+msgid "3D (sidecar)"
+msgstr "3D(사이드카)"
+
+msgctxt "#32661"
+msgid "chapters"
+msgstr "챕터"
+
+msgctxt "#32662"
+msgid "commentary"
+msgstr "코멘터리"
+
+msgctxt "#32663"
+msgid "Combine multi-episode files into a single row in library"
+msgstr "여러 에피소드가 든 파일을 라이브러리에서 한 행으로 합치기"
+
+msgctxt "#32664"
+msgid "Episodes stored in one video file (a double episode, three cartoons) show as one row: 1–2, one title, the file's running time. The season's list then comes from Aeon Fuse Helper."
+msgstr "한 동영상 파일에 든 에피소드(2부작, 만화 세 편)를 한 줄로 보여 줍니다: 1–2, 제목 하나, 파일 길이. 시즌 목록은 Aeon Fuse Helper가 만듭니다."
+
+msgctxt "#32665"
+msgid "Video source (sidecar)"
+msgstr "비디오 소스(사이드카)"
+
+msgctxt "#32666"
+msgid "Video codec (sidecar)"
+msgstr "비디오 코덱(사이드카)"
+
+msgctxt "#32667"
+msgid "Version (sidecar)"
+msgstr "버전(사이드카)"
+
+msgctxt "#32668"
+msgid "Panel shadow"
+msgstr "패널 그림자"
+
+msgctxt "#32669"
+msgid "How high the glass panels seem to float: their shadow grows and drops. Mild: close to the page. Medium: as before. Strong: higher. Heavy: highest."
+msgstr "유리 패널이 얼마나 높이 떠 보이는지: 그림자가 커지고 아래로 내려갑니다. 약하게: 페이지 가까이. 보통: 이전과 같음. 강하게: 더 높이. 아주 강하게: 가장 높이."
+
+msgctxt "#32670"
+msgid "Mild"
+msgstr "약하게"
+
+msgctxt "#32671"
+msgid "Heavy"
+msgstr "아주 강하게"
+
+msgctxt "#32672"
+msgid "Expert settings"
+msgstr "전문가 설정"
+
+msgctxt "#32673"
+msgid "Shows the rows below for fine-tuning the glass panels and the fanart behind the library views."
+msgstr "유리 패널과 라이브러리 보기 뒤의 팬아트를 미세 조정하는 행을 아래에 표시합니다."
+
+msgctxt "#32674"
+msgid "Panel opacity"
+msgstr "패널 불투명도"
+
+msgctxt "#32675"
+msgid "How solid the glass panels are, around the Skin style's own value. -2: most see-through. +2: most solid."
+msgstr "스타일 값을 기준으로 한 유리 패널의 불투명도. -2: 가장 투명. +2: 가장 불투명."
+
+msgctxt "#32676"
+msgid "Panel blur"
+msgstr "패널 흐림"
+
+msgctxt "#32677"
+msgid "How strongly the panels blur the picture behind them. Off: no blur."
+msgstr "패널이 뒤의 그림을 흐리게 하는 정도. 끔: 흐림 없음."
+
+msgctxt "#32678"
+msgid "Panel tint"
+msgstr "패널 색조"
+
+msgctxt "#32679"
+msgid "The colour of the panels' glass, around the Skin style's own. -2: darkest. +2: lightest frost."
+msgstr "스타일 색을 기준으로 한 유리 색. -2: 가장 어둡게. +2: 가장 밝은 프로스트."
+
+msgctxt "#32680"
+msgid "Library fanart opacity"
+msgstr "라이브러리 팬아트 불투명도"
+
+msgctxt "#32681"
+msgid "How much of the fanart behind the library views shows, on top of Backdrop strength. -2: faintest. +2: strongest."
+msgstr "배경 강도에 더해 라이브러리 보기 뒤 팬아트가 보이는 정도. -2: 가장 흐리게. +2: 가장 강하게."
+
+msgctxt "#32682"
+msgid "Library fanart blur"
+msgstr "라이브러리 팬아트 흐림"
+
+msgctxt "#32683"
+msgid "Blurs the fanart behind the library views: -2 a little, +2 the most; 0 is the default. Off: sharp."
+msgstr "라이브러리 보기 뒤의 팬아트를 흐리게 합니다: -2 조금, +2 가장 많이; 0이 기본값. 끔: 선명하게."
+
+msgctxt "#32684"
+msgid "Library fanart tint"
+msgstr "라이브러리 팬아트 색조"
+
+msgctxt "#32685"
+msgid "The colour tint of the Frosted fanart look. Off: no tint."
+msgstr "프로스트 팬아트 모양의 색조. 끔: 색조 없음."
+
+msgctxt "#32686"
+msgid "Reset expert settings"
+msgstr "전문가 설정 초기화"
+
+msgctxt "#32687"
+msgid "Puts every expert setting back to its default."
+msgstr "모든 전문가 설정을 기본값으로 되돌립니다."
+
+msgctxt "#32688"
+msgid "Expert settings are back to their defaults."
+msgstr "전문가 설정이 기본값으로 돌아왔습니다."
+
+msgctxt "#32689"
+msgid "Menu background"
+msgstr "메뉴 배경"
+
+msgctxt "#32690"
+msgid "Screen"
+msgstr "화면"
+
+msgctxt "#32691"
+msgid "Menus and dialogs in the Fused Glass style. Fanart: the item's fanart behind them. Screen: the screen they opened on, dimmed."
+msgstr "Fused Glass 스타일의 메뉴와 대화상자. 팬아트: 항목의 팬아트를 뒤에 표시. 화면: 열린 화면을 어둡게 표시."
+
+msgctxt "#32692"
+msgid "OK runs it  ·  Back closes"
+msgstr "OK 실행  ·  뒤로 닫기"
+
+msgctxt "#32693"
+msgid "OK chooses  ·  Back closes"
+msgstr "OK 선택  ·  뒤로 닫기"
+
+msgctxt "#32694"
+msgid "Its own library views and menus: rounded glass cards with soft shadows float over the artwork, in Dark, Clear, Frost or the Fused Glass style."
+msgstr "자체 라이브러리 보기와 메뉴: 부드러운 그림자의 둥근 유리 카드가 아트워크 위에 떠 있으며, 다크, 클리어, 프로스트 또는 Fused Glass 스타일입니다."
+
+msgctxt "#32695"
+msgid "Use the defaults"
+msgstr "기본값 사용"
+
+msgctxt "#32696"
+msgid "The chosen theme as it comes, at once. Everything can be changed later in Skin settings."
+msgstr "선택한 테마를 그대로 바로 적용합니다. 나중에 스킨 설정에서 모두 바꿀 수 있습니다."
+
+msgctxt "#32697"
+msgid "Customise"
+msgstr "사용자 지정"
+
+msgctxt "#32698"
+msgid "Go through the look, libraries, Home and backgrounds page by page. Every row shows a preview of its choice."
+msgstr "모양, 라이브러리, 홈, 배경을 한 페이지씩 설정합니다. 각 행은 선택한 항목의 미리보기를 보여 줍니다."
+
+msgctxt "#32699"
+msgid "Keep my current settings"
+msgstr "현재 설정 유지"
+
+msgctxt "#32700"
+msgid "Leave every setting as it is: only the theme you picked changes."
+msgstr "모든 설정은 그대로이고 선택한 테마만 바뀝니다."
+
+msgctxt "#32701"
+msgid "Aeon with glass menus: the same layout and library views as Aeon, with see-through glass menus and dialogs instead of solid ones. No palettes."
+msgstr "유리 메뉴의 Aeon: Aeon과 같은 레이아웃과 라이브러리 보기에, 메뉴와 대화상자가 불투명 대신 반투명 유리입니다. 팔레트 없음."
+
+msgctxt "#32702"
+msgid "The Planner of upcoming episodes and films, online rows and extra ratings."
+msgstr "예정된 에피소드와 영화의 플래너, 온라인 행과 추가 평점."
+
+msgctxt "#32703"
+msgid "The Next up row: the next episode of every show you are watching."
+msgstr "다음 볼 항목 행: 시청 중인 각 프로그램의 다음 에피소드."
+
+msgctxt "#32704"
+msgid "Lyrics on the Now playing screen, line by line or word by word."
+msgstr "재생 중 화면의 가사, 한 줄씩 또는 한 단어씩."
+
+msgctxt "#32705"
+msgid "Artist pictures behind the Now playing screen."
+msgstr "재생 중 화면 뒤의 아티스트 사진."
+
+msgctxt "#32706"
+msgid "Box colours taken from the artwork."
+msgstr "아트워크에서 가져온 상자 색상."
+
+msgctxt "#32707"
+msgid "Skip intro, recap and credits buttons in the player."
+msgstr "플레이어에서 인트로, 요약, 엔딩 크레딧 건너뛰기 버튼."
+
+msgctxt "#32708"
+msgid "Thumbnail previews on the seek bar."
+msgstr "탐색 막대의 썸네일 미리보기."
+
+msgctxt "#32709"
+msgid "Studio and network logos in the libraries and on the information page."
+msgstr "라이브러리와 정보 페이지의 스튜디오 및 방송사 로고."
+
+msgctxt "#32710"
+msgid "Record label logos for albums."
+msgstr "앨범의 음반사 로고."
+
+msgctxt "#32711"
+msgid "Language flags in the video information."
+msgstr "비디오 정보의 언어 국기."
+
+msgctxt "#32712"
+msgid "The skin's own screensaver: library pictures with a slow zoom and slide, and what is playing."
+msgstr "스킨 전용 화면 보호기: 천천히 확대되고 움직이는 라이브러리 사진과 재생 중인 항목."
+
+msgctxt "#32713"
+msgid "Aeon: solid panels in a palette you pick. Aeon Glass: the same Aeon layout and views with glass menus, no palettes. Fused Glass: its own library views, rounded glass cards over the artwork."
+msgstr "Aeon: 고른 팔레트의 불투명 패널. Aeon Glass: 같은 Aeon 레이아웃과 보기에 유리 메뉴, 팔레트 없음. Fused Glass: 자체 라이브러리 보기, 아트워크 위의 둥근 유리 카드."
+
+msgctxt "#32714"
+msgid "Its own views, glass cards"
+msgstr "자체 보기, 유리 카드"
+
+msgctxt "#32715"
+msgid "Take the theme as it comes, or go through its look step by step. Everything can be changed later in Skin settings."
+msgstr "테마를 그대로 쓰거나 모양을 한 단계씩 설정하세요. 나중에 스킨 설정에서 모두 바꿀 수 있습니다."
+
+msgctxt "#32716"
+msgid "How the settings strip of the library views shows: over the view (Overlay) or always beside it (Permanent)."
+msgstr "라이브러리 보기의 설정 스트립 표시 방식: 보기 위에 겹쳐서(오버레이) 또는 항상 옆에(고정)."
+
+msgctxt "#32717"
+msgid "How much the edges of the Home screen darken behind the menu and the text."
+msgstr "메뉴와 텍스트 뒤에서 홈 화면 가장자리를 얼마나 어둡게 할지."
+
+msgctxt "#32718"
+msgid "The colour of the clock box and the corner boxes with the Aeon palette."
+msgstr "Aeon 팔레트에서 시계 상자와 모서리 상자의 색."
+
+msgctxt "#32719"
+msgid "Optional add-ons that give the skin more to show. Install the ones you want; the rest can wait."
+msgstr "스킨이 더 많은 것을 보여 주게 하는 선택 애드온입니다. 원하는 것을 설치하세요. 나머지는 나중에 해도 됩니다."
+
+msgctxt "#32720"
+msgid "The disc art spinning beside the poster on the player controls: for videos, for music, for both, or off."
+msgstr "플레이어 컨트롤에서 포스터 옆에 도는 디스크 아트: 비디오, 음악, 둘 다 또는 끄기."
+
+msgctxt "#32721"
+msgid "What the text under a title shows in every library view: the plot, the tagline (when there is one) or both."
+msgstr "모든 라이브러리 보기에서 제목 아래 텍스트에 표시할 내용: 줄거리, 태그라인(있을 때) 또는 둘 다."
+
+msgctxt "#32722"
+msgid "Libraries"
+msgstr "라이브러리"
+
+msgctxt "#32723"
+msgid "Information"
+msgstr "정보"
+
+msgctxt "#32724"
+msgid "Screensaver & backdrops"
+msgstr "화면 보호기 및 배경"
+
+msgctxt "#32725"
+msgid "Export skin settings"
+msgstr "스킨 설정 내보내기"
+
+msgctxt "#32726"
+msgid "Import skin settings"
+msgstr "스킨 설정 가져오기"
+
+msgctxt "#32727"
+msgid "Save"
+msgstr "저장"
+
+msgctxt "#32728"
+msgid "Load"
+msgstr "불러오기"
+
+msgctxt "#32729"
+msgid "Saves every Aeon Fuse setting, with the theme, palette and fonts, to a file in a folder you pick."
+msgstr "Aeon Fuse의 모든 설정을 테마, 팔레트, 글꼴과 함께 선택한 폴더의 파일로 저장합니다."
+
+msgctxt "#32730"
+msgid "Loads a file saved with Export skin settings. Your current skin settings are replaced."
+msgstr "스킨 설정 내보내기로 저장한 파일을 불러옵니다. 현재 스킨 설정은 대체됩니다."
+
+msgctxt "#32731"
+msgid "Folder for the settings file"
+msgstr "설정 파일을 저장할 폴더"
+
+msgctxt "#32732"
+msgid "Settings file to load"
+msgstr "불러올 설정 파일"
+
+msgctxt "#32733"
+msgid "Saved: %s"
+msgstr "저장됨: %s"
+
+msgctxt "#32734"
+msgid "Load the settings saved on %s? Your current skin settings are replaced."
+msgstr "%s에 저장한 설정을 불러올까요? 현재 스킨 설정은 대체됩니다."
+
+msgctxt "#32735"
+msgid "This file does not hold Aeon Fuse settings."
+msgstr "이 파일에는 Aeon Fuse 설정이 없습니다."
+
+msgctxt "#32736"
+msgid "The file could not be written."
+msgstr "파일을 쓸 수 없습니다."
+
+msgctxt "#32737"
+msgid "Kodi restarts to apply them."
+msgstr "적용하려면 Kodi가 다시 시작됩니다."
+
+msgctxt "#32738"
+msgid "The skin reloads; restart Kodi afterwards so every setting is read again."
+msgstr "스킨을 다시 불러옵니다. 모든 설정을 다시 읽도록 나중에 Kodi를 다시 시작하세요."
+
+msgctxt "#32739"
+msgid "These settings are already in use."
+msgstr "이 설정은 이미 사용 중입니다."
+
+msgctxt "#32740"
+msgid "Soft"
+msgstr "부드럽게"
+
+msgctxt "#32741"
+msgid "Home gradient"
+msgstr "홈 그라데이션"
+
+msgctxt "#32742"
+msgid "Beside the clock"
+msgstr "시계 옆"
+
+msgctxt "#32743"
+msgid "Left corner"
+msgstr "왼쪽 모서리"
+
+msgctxt "#32744"
+msgid "The fade from the bottom of the screen up to the Home menu: off, soft (the look so far) or strong."
+msgstr "화면 아래쪽에서 홈 메뉴까지의 그라데이션: 끄기, 부드럽게(지금까지의 모습) 또는 강하게."
+
+msgctxt "#32745"
+msgid "Where the Now playing capsule sits on Home while music plays: beside the clock or in the lower left corner."
+msgstr "음악 재생 중 홈에서 지금 재생 중 캡슐이 놓이는 곳: 시계 옆 또는 왼쪽 아래 모서리."
+
+msgctxt "#32746"
+msgid "How the skip button sits on the player controls: a white tab on their top edge, or a glass capsule above them."
+msgstr "플레이어 컨트롤에서 건너뛰기 버튼의 위치: 위쪽 가장자리의 흰색 탭, 또는 그 위의 유리 캡슐."
+
+msgctxt "#32747"
+msgid "How strongly the picture behind the menus and dialogs is blurred. Off: sharp, as before."
+msgstr "메뉴와 대화 상자 뒤의 그림을 얼마나 흐리게 할지. 끔: 지금처럼 선명하게."
+
+msgctxt "#32748"
+msgid "Left / Right: choose an option. OK: set it. Up, Down or Back: keep the one in use."
+msgstr "왼쪽 / 오른쪽: 옵션을 고르세요. OK: 설정합니다. 위, 아래 또는 뒤로: 지금 것을 유지합니다."
+
+msgctxt "#32749"
+msgid "Start on"
+msgstr "시작 위치"
+
+msgctxt "#32750"
+msgid "The Home menu item that has the focus when Kodi starts, once the splash has gone."
+msgstr "Kodi가 시작될 때 시작 화면이 사라진 뒤 포커스가 놓이는 홈 메뉴 항목."
+
+msgctxt "#32751"
+msgid "Ratings shown in"
+msgstr "평점 표시 위치"
+
+msgctxt "#32752"
+msgid "Media info shown in"
+msgstr "미디어 정보 표시 위치"
+
+msgctxt "#32753"
+msgid "Library views"
+msgstr "라이브러리 보기"
+
+msgctxt "#32754"
+msgid "Information pages"
+msgstr "정보 페이지"
+
+msgctxt "#32755"
+msgid "Widget & Spotlight screens"
+msgstr "위젯 및 스포트라이트 화면"
+
+msgctxt "#32756"
+msgid "Home spotlights"
+msgstr "홈 스포트라이트"
+
+msgctxt "#32757"
+msgid "Player info"
+msgstr "플레이어 정보"
+
+msgctxt "#32758"
+msgid "Screensaver"
+msgstr "화면 보호기"
+
+msgctxt "#32759"
+msgid "Live TV"
+msgstr "실시간 TV"
+
+msgctxt "#32760"
+msgid "Where the ratings (IMDb, TMDb, Rotten Tomatoes, Trakt) appear. OK opens the list: tick the places."
+msgstr "평점 (IMDb, TMDb, Rotten Tomatoes, Trakt) 이 표시되는 곳. OK 로 목록을 열고 위치를 선택하세요."
+
+msgctxt "#32761"
+msgid "Where the media info chips (resolution, HDR, audio ...) appear. OK opens the list: tick the places. Which chips: Media info chips."
+msgstr "미디어 정보 칩 (해상도, HDR, 오디오 ...) 이 표시되는 곳. OK 로 목록을 열고 위치를 선택하세요. 어떤 칩: 미디어 정보 칩."
+
+msgctxt "#32762"
+msgid "Recommended add-ons"
+msgstr "추천 애드온"
+
+msgctxt "#32764"
+msgid "Installed"
+msgstr "설치됨"
+
+msgctxt "#32765"
+msgid "Not installed"
+msgstr "설치 안 됨"
+
+msgctxt "#32766"
+msgid "%s needs the %s repository. Install that repository first?"
+msgstr "%s에는 %s 저장소가 필요합니다. 그 저장소를 먼저 설치할까요?"
+
+msgctxt "#32767"
+msgid "White weather icons for the weather forecast."
+msgstr "일기 예보용 흰색 날씨 아이콘."
+
+msgctxt "#32768"
+msgid "The playback info button in the video controls."
+msgstr "비디오 컨트롤의 재생 정보 버튼."
+
+msgctxt "#32769"
+msgid "The Inter (Copacetic) font set."
+msgstr "Inter (Copacetic) 글꼴 세트."
+
+msgctxt "#32770"
+msgid "The Roboto CJKSC font set for Chinese, Japanese and Korean."
+msgstr "중국어, 일본어, 한국어용 Roboto CJKSC 글꼴 세트."
+
+msgctxt "#32771"
+msgid "Update and clean on another Kodi"
+msgstr "다른 Kodi에서 업데이트 및 정리"
+
+msgctxt "#32772"
+msgid "Address"
+msgstr "주소"
+
+msgctxt "#32773"
+msgid "User name"
+msgstr "사용자 이름"
+
+msgctxt "#32774"
+msgid "Password"
+msgstr "비밀번호"
+
+msgctxt "#32775"
+msgid "Test connection"
+msgstr "연결 테스트"
+
+msgctxt "#32776"
+msgid "Library update and clean from this skin (Home, the library panel, the context menu) go to another Kodi, a headless one for instance, instead of this one."
+msgstr "이 스킨(홈, 라이브러리 패널, 컨텍스트 메뉴)에서 하는 라이브러리 업데이트와 정리를 이 Kodi 대신 다른 Kodi(예: 화면 없는 Kodi)로 보냅니다."
+
+msgctxt "#32777"
+msgid "The other Kodi's web address and port, for example http://192.168.10.10:8080 (there: Settings > Services > Control > Allow remote control via HTTP)."
+msgstr "다른 Kodi의 웹 주소와 포트, 예: http://192.168.10.10:8080 (그 Kodi에서: 설정 > 서비스 > 제어 > HTTP를 통한 원격 제어 허용)."
+
+msgctxt "#32778"
+msgid "The web server user name and password of the other Kodi."
+msgstr "다른 Kodi 웹 서버의 사용자 이름과 비밀번호."
+
+msgctxt "#32779"
+msgid "Asks the other Kodi for its version: checks the address, user name and password."
+msgstr "다른 Kodi에 버전을 물어 주소, 사용자 이름, 비밀번호를 확인합니다."
+
+msgctxt "#32780"
+msgid "Not set"
+msgstr "설정 안 됨"
+
+msgctxt "#32781"
+msgid "Library update sent"
+msgstr "라이브러리 업데이트를 보냈습니다"
+
+msgctxt "#32782"
+msgid "Library clean sent"
+msgstr "라이브러리 정리를 보냈습니다"
+
+msgctxt "#32783"
+msgid "Could not reach %s: %s"
+msgstr "%s에 연결할 수 없음: %s"
+
+msgctxt "#32784"
+msgid "%s answers: %s"
+msgstr "%s 응답: %s"
+
+msgctxt "#32785"
+msgid "Wrong user name or password"
+msgstr "사용자 이름 또는 비밀번호가 틀렸습니다"
+
+msgctxt "#32786"
+msgid "Library update finished"
+msgstr "라이브러리 업데이트 완료"
+
+msgctxt "#32789"
+msgid "Failed"
+msgstr "실패"
+
+msgctxt "#32790"
+msgid "Could not install the repository"
+msgstr "저장소를 설치할 수 없습니다"
+
+msgctxt "#32791"
+msgid "Pick the add-ons you want: OK ticks one, Next installs the ticked ones while you go on. The picture shows what each adds. Later: Skin settings > System > Recommended add-ons."
+msgstr "원하는 애드온을 고르세요: OK로 체크하고, 다음을 누르면 계속 진행하는 동안 체크한 애드온을 설치합니다. 그림은 각 애드온이 더하는 것을 보여 줍니다. 나중에: 스킨 설정 > 시스템 > 추천 애드온."
+
+msgctxt "#32792"
+msgid "Will be installed"
+msgstr "설치 예정"
+
+msgctxt "#32793"
+msgid "Installs the ticked add-ons"
+msgstr "체크한 애드온 설치"
+
+msgctxt "#32794"
+msgid "Installed: %s"
+msgstr "설치됨: %s"
+
+msgctxt "#32795"
+msgid "Delete %s? Its name, path, icon, widgets and submenu are removed; the items below it move up one place."
+msgstr "%s 을(를) 삭제할까요? 이름, 경로, 아이콘, 위젯, 하위 메뉴가 지워지고 아래 항목이 한 칸 위로 올라갑니다."
+
+msgctxt "#32796"
+msgid "Custom items only"
+msgstr "사용자 항목만"
+
+msgctxt "#32797"
+msgid "A calm, thin waveform on the Now playing card, drawn in the skin's own box and smoothed so loud passages do not spike. The build for this device is installed."
+msgstr "재생 중 카드에 표시되는 가늘고 차분한 파형. 스킨의 상자 안에 그려지고 큰 소리에도 튀지 않게 부드럽게 다듬습니다. 이 기기에 맞는 빌드가 설치됩니다."
+
+msgctxt "#32798"
+msgid "More by the artist"
+msgstr "아티스트의 다른 앨범"
+
+msgctxt "#32799"
+msgid "Intermission at"
+msgstr "인터미션"
+
+msgctxt "#32800"
+msgid "Your languages"
+msgstr "내 언어"
+
+msgctxt "#32801"
+msgid "All others"
+msgstr "기타 모든 언어"
+
+msgctxt "#32802"
+msgid "In your library"
+msgstr "내 라이브러리"
+
+msgctxt "#32803"
+msgid "Sort and show"
+msgstr "정렬 및 표시"
+
+msgctxt "#32804"
+msgid "Sort by"
+msgstr "정렬 기준"
+
+msgctxt "#32805"
+msgid "Show only"
+msgstr "다음만 표시"
+
+msgctxt "#32806"
+msgid "OK again flips the order"
+msgstr "OK를 한 번 더 누르면 순서가 바뀝니다"
+
+msgctxt "#32807"
+msgid "Several versions"
+msgstr "여러 버전"
+
+msgctxt "#32808"
+msgid "Decade"
+msgstr "연대"
+
+msgctxt "#32809"
+msgid "Clear all"
+msgstr "모두 해제"
+
+msgctxt "#32810"
+msgid "Never played"
+msgstr "재생한 적 없음"
+
+msgctxt "#32811"
+msgid "Played"
+msgstr "재생함"

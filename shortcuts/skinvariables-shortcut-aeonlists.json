@@ -1,0 +1,142 @@
+[
+    {
+        "label": "Movies",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "submenu": [],
+        "widgets": [
+            {
+                "label": "Recently added",
+                "icon": "",
+                "path": "videodb://recentlyaddedmovies/",
+                "target": "videos",
+                "sortby": "dateadded",
+                "guid": "guid-5c4f7eca"
+            },
+            {
+                "label": "Recently played",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_watched.xsp",
+                "target": "videos",
+                "sortby": "lastplayed",
+                "guid": "guid-17247225"
+            },
+            {
+                "label": "In progress",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_progress.xsp",
+                "target": "videos",
+                "sortby": "lastplayed",
+                "guid": "guid-2e194778"
+            },
+            {
+                "label": "Random movies",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_random.xsp",
+                "target": "videos",
+                "sortby": "random",
+                "guid": "guid-e6a544cc"
+            },
+            {
+                "label": "Top rated",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_toprated.xsp",
+                "target": "videos",
+                "sortby": "rating",
+                "guid": "guid-d526dc67"
+            },
+            {
+                "label": "Unwatched",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_unwatched.xsp",
+                "target": "videos",
+                "sortby": "dateadded",
+                "guid": "guid-d54fa6aa"
+            }
+        ],
+        "guid": "guid-aeon0001"
+    },
+    {
+        "label": "TV shows",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "submenu": [],
+        "widgets": [
+            {
+                "label": "Recent episodes",
+                "icon": "",
+                "path": "videodb://recentlyaddedepisodes/",
+                "target": "videos",
+                "sortby": "dateadded",
+                "guid": "guid-cfbb76b2"
+            },
+            {
+                "label": "In progress shows",
+                "icon": "",
+                "path": "videodb://inprogresstvshows/",
+                "target": "videos",
+                "guid": "guid-96a675be",
+                "sortby": "lastplayed"
+            },
+            {
+                "label": "Recently played",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_tv_watched.xsp",
+                "target": "videos",
+                "sortby": "lastplayed",
+                "guid": "guid-95397ab9"
+            },
+            {
+                "label": "Random shows",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_tv_random.xsp",
+                "target": "videos",
+                "sortby": "random",
+                "guid": "guid-671fa364"
+            },
+            {
+                "label": "Top rated shows",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_tv_toprated.xsp",
+                "target": "videos",
+                "sortby": "rating",
+                "guid": "guid-7de3f054"
+            }
+        ],
+        "guid": "guid-aeon0002"
+    },
+    {
+        "label": "Music",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "submenu": [],
+        "widgets": [
+            {
+                "label": "Recently added albums",
+                "icon": "",
+                "path": "musicdb://recentlyaddedalbums/",
+                "target": "music",
+                "guid": "guid-4b2d6cb5"
+            },
+            {
+                "label": "Recently played",
+                "icon": "",
+                "path": "musicdb://recentlyplayedalbums/",
+                "target": "music",
+                "guid": "guid-fe4b799f"
+            },
+            {
+                "label": "Random albums",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_music_random.xsp",
+                "target": "music",
+                "sortby": "random",
+                "guid": "guid-c646a0bb"
+            }
+        ],
+        "guid": "guid-aeon0003"
+    }
+]

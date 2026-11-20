@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	File manager (Aeon): two soft cards side by side, each with its path, a count and a list.
+	Copy / move / delete come from the context menu (Kodi's own items); marked items show the check
+	(ListItem.IsSelected).
+	Kodi id contract (Estuary Omega FileManager.xml): left list 20 + scrollbar 60, right list 21 +
+	scrollbar 61, current-path labels 101 (left) / 102 (right).
+	Focus map (0.46.4): Right walks list 20 > scroll bar 60 > list 21 > scroll bar 61, Left walks back the same way.
+	A scroll bar is a stop only when its list has more than one page (as in the file browser); otherwise Left / Right
+	go straight to the other list. Up / Down on a scroll bar page its list; Back on a scroll bar returns to its list.
+	Up / Down wrap inside a list. Back on a list is Kodi's (parent folder, then close).
+-->
+<window>
+	<defaultcontrol always="true">20</defaultcontrol>
+	<backgroundcolor>ff000000</backgroundcolor>
+	<include>Anim_WindowOpenClose</include>
+	<controls>
+		<include>AG_Background</include>
+		<!-- 0.46.5, Aeon look: no hairline over the cards (they reach up to the clock box), a black bar with a two-way
+		     arrow between them (FM_Divider). 0.56.26: no hairline in Aeon Glass either (it ran across the tops of the
+		     rounded cards) -->
+		<include content="AG_TopBar">
+			<param name="index" value="12"/>
+			<param name="title" value="$LOCALIZE[7]"/>
+			<param name="rule" value="false"/>
+		</include>
+		<include condition="!$EXP[FGS]">FM_Classic</include>
+		<include condition="$EXP[FGS]">FGS_FileManager</include><!-- 0.56.53 fgsfilemanager -->
+	</controls>
+</window>

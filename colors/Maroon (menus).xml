@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Palette "Maroon" of Aeon Fuse (from the SABnzbd scheme Maroon): only the colours that differ from defaults.xml. -->
+<colors>
+    <!-- 0.40.4: palette "Maroon" for the menus only: library views keep the Aeon colours (lib_ names of defaults.xml) -->
+    <color name="aeon_white">ffeb8dc0</color>
+    <color name="aeon_accent">ffeb8dc0</color>
+    <color name="aeon_onbar">ff210d18</color>
+    <color name="aeon_onbar_cc">cc210d18</color>
+    <color name="aeon_onbar_bb">bb210d18</color>
+    <color name="aeon_onbar_aa">aa210d18</color>
+    <color name="aeon_onbar_99">99210d18</color>
+    <color name="aeon_onaccent">ff210d18</color>
+    <color name="aeon_box">ff75164f</color>
+    <color name="aeon_sbbar">88eb8dc0</color>
+    <color name="x_column">26a21c65</color>
+    <color name="x_ground">ff341f37</color>
+    <color name="x_panel">ff220a25</color>
+    <color name="x_surface">ff220a25</color>
+    <color name="x_raised">ff2f1932</color>
+    <color name="x_line">ff4a384d</color>
+    <color name="x_line2">ff59485b</color>
+    <color name="x_accent">ffeb8dc0</color>
+    <color name="x_accenttext">ffeb8dc0</color>
+    <color name="x_onaccent">ff210d18</color>
+    <color name="x_deep">ff220a25</color>
+    <color name="x_deep_f0">f0220a25</color>
+    <color name="x_deep_e6">e6220a25</color>
+    <color name="x_deep_cc">cc220a25</color>
+    <color name="x_deep_8c">8c220a25</color>
+</colors>

@@ -1,0 +1,153 @@
+[
+    {
+        "label": "Movie sets",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0011",
+        "submenu": [],
+        "widgets": [
+            {
+                "label": "Random sets",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_sets_random.xsp",
+                "target": "videos",
+                "sortby": "random",
+                "guid": "guid-8ed43b91"
+            },
+            {
+                "label": "Movies with versions",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_versions.xsp",
+                "target": "videos",
+                "sortby": "random",
+                "guid": "guid-4f67711e"
+            }
+        ]
+    },
+    {
+        "label": "Custom item 1",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0012",
+        "submenu": [
+            {
+                "label": "Sets",
+                "path": "library://video/movies/sets.xml/",
+                "icon": "special://skin/media/DefaultFolder.png",
+                "target": "videos",
+                "guid": "guid-b0c57f93",
+                "art": "poster"
+            },
+            {
+                "label": "Versions",
+                "path": "library://video/movies/versions.xml/",
+                "icon": "special://skin/media/DefaultFolder.png",
+                "target": "videos",
+                "guid": "guid-05b9ed23",
+                "limit": "20",
+                "art": "poster"
+            }
+        ],
+        "widgets": [
+            {
+                "label": "Random sets",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_sets_random.xsp",
+                "target": "videos",
+                "sortby": "random",
+                "guid": "guid-ef68f8a6"
+            },
+            {
+                "label": "Movies with versions",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_versions.xsp",
+                "target": "videos",
+                "sortby": "random",
+                "guid": "guid-94cb6c2c"
+            }
+        ]
+    },
+    {
+        "label": "Custom item 2",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0013",
+        "submenu": [],
+        "widgets": []
+    },
+    {
+        "label": "Custom item 3",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0014",
+        "submenu": [],
+        "widgets": []
+    },
+    {
+        "label": "Custom item 4",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0015",
+        "submenu": [],
+        "widgets": []
+    },
+    {
+        "label": "Custom item 5",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0016",
+        "submenu": [],
+        "widgets": []
+    },
+    {
+        "label": "Custom item 6",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0017",
+        "submenu": [],
+        "widgets": []
+    },
+    {
+        "label": "Custom item 7",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0018",
+        "submenu": [],
+        "widgets": []
+    },
+    {
+        "label": "Custom item 8",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0019",
+        "submenu": [],
+        "widgets": []
+    },
+    {
+        "label": "Custom item 9",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0020",
+        "submenu": [],
+        "widgets": []
+    },
+    {
+        "label": "Custom item 10",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0021",
+        "submenu": [],
+        "widgets": []
+    }
+]

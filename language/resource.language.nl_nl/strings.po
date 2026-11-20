@@ -1,0 +1,7177 @@
+# Kodi add-on strings - skin.aeon.fuse (nl_nl)
+msgid ""
+msgstr ""
+"Project-Id-Version: skin.aeon.fuse\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#31010"
+msgid "Sort"
+msgstr "Sortering"
+
+msgctxt "#31011"
+msgid "View"
+msgstr "Weergave"
+
+msgctxt "#31012"
+msgid "Nothing here"
+msgstr "Hier is niets"
+
+msgctxt "#31013"
+msgid "Working"
+msgstr "Bezig"
+
+msgctxt "#31014"
+msgid "Up / down to page, OK to close"
+msgstr "Omhoog / omlaag om te bladeren, OK om te sluiten"
+
+msgctxt "#31015"
+msgid "Muted"
+msgstr "Gedempt"
+
+msgctxt "#31016"
+msgid "Buffering"
+msgstr "Bufferen"
+
+msgctxt "#31017"
+msgid "Now playing"
+msgstr "Nu aan het spelen"
+
+msgctxt "#31018"
+msgid "Next:"
+msgstr "Volgende:"
+
+msgctxt "#31019"
+msgid "Home"
+msgstr "Start"
+
+msgctxt "#31020"
+msgid "System"
+msgstr "Systeem"
+
+msgctxt "#31021"
+msgid "Skin settings"
+msgstr "Skin-instellingen"
+
+msgctxt "#31022"
+msgid "Power"
+msgstr "Aan/uit"
+
+msgctxt "#31024"
+msgid "Aeon Fuse"
+msgstr "Aeon Fuse"
+
+msgctxt "#31025"
+msgid "Skin settings holds Aeon Fuse's own options. To switch skins: Interface > Skin > Skin."
+msgstr "De skin-instellingen bevatten de eigen opties van Aeon Fuse. Skin wisselen: Interface > Skin > Skin."
+
+msgctxt "#31030"
+msgid "Ends"
+msgstr "Eindigt"
+
+msgctxt "#31040"
+msgid "Symbols"
+msgstr "Symbolen"
+
+msgctxt "#31041"
+msgid "Caps"
+msgstr "Hoofdl."
+
+msgctxt "#31042"
+msgid "Shift"
+msgstr "Shift"
+
+msgctxt "#31043"
+msgid "Space"
+msgstr "Spatie"
+
+msgctxt "#31044"
+msgid "Delete"
+msgstr "Wissen"
+
+msgctxt "#31045"
+msgid "Queue"
+msgstr "Wachtrij"
+
+msgctxt "#31046"
+msgid "Cover showcase"
+msgstr "Hoezenvitrine"
+
+msgctxt "#31047"
+msgid "03  Performance"
+msgstr "03  Prestaties"
+
+msgctxt "#31048"
+msgid "Pause"
+msgstr "Pauze"
+
+msgctxt "#31050"
+msgid "Palette"
+msgstr "Palet"
+
+msgctxt "#31051"
+msgid "Slightly rounded corners"
+msgstr "Licht afgeronde hoeken"
+
+msgctxt "#31052"
+msgid "Focus outline"
+msgstr "Focusrand"
+
+msgctxt "#31053"
+msgid "Artwork background"
+msgstr "Achtergrond met afbeelding"
+
+msgctxt "#31054"
+msgid "Trailer button"
+msgstr "Trailerknop"
+
+msgctxt "#31055"
+msgid "Watched indicators"
+msgstr "Bekeken-markeringen"
+
+msgctxt "#31056"
+msgid "Spotlight rotation"
+msgstr "Spotlight-wisseling"
+
+msgctxt "#31057"
+msgid "Newest row on Home"
+msgstr "Rij met nieuwste op Start"
+
+msgctxt "#31058"
+msgid "Reduce motion"
+msgstr "Minder beweging"
+
+msgctxt "#31059"
+msgid "Reset all skin settings"
+msgstr "Alle skin-instellingen terugzetten"
+
+msgctxt "#31060"
+msgid "Signal"
+msgstr "Signaal"
+
+msgctxt "#31061"
+msgid "Cobalt"
+msgstr "Kobalt"
+
+msgctxt "#31062"
+msgid "Mint"
+msgstr "Mint"
+
+msgctxt "#31063"
+msgid "Amber"
+msgstr "Amber"
+
+msgctxt "#31064"
+msgid "Rose"
+msgstr "Roze"
+
+msgctxt "#31065"
+msgid "Ice"
+msgstr "IJs"
+
+msgctxt "#31066"
+msgid "Bone"
+msgstr "Been"
+
+msgctxt "#31070"
+msgid "Thin"
+msgstr "Dun"
+
+msgctxt "#31071"
+msgid "Medium"
+msgstr "Middel"
+
+msgctxt "#31072"
+msgid "Off"
+msgstr "Uit"
+
+msgctxt "#31075"
+msgid "Faint"
+msgstr "Zwak"
+
+msgctxt "#31076"
+msgid "Soft"
+msgstr "Zacht"
+
+msgctxt "#31077"
+msgid "Visible"
+msgstr "Zichtbaar"
+
+msgctxt "#31080"
+msgid "Both"
+msgstr "Beide"
+
+msgctxt "#31081"
+msgid "Unwatched only"
+msgstr "Alleen niet bekeken"
+
+msgctxt "#31082"
+msgid "Watched only"
+msgstr "Alleen bekeken"
+
+msgctxt "#31085"
+msgid "Date added"
+msgstr "Datum toegevoegd"
+
+msgctxt "#31086"
+msgid "Release date"
+msgstr "Verschijningsdatum"
+
+msgctxt "#31087"
+msgid "Both rows"
+msgstr "Beide rijen"
+
+msgctxt "#31100"
+msgid "Spotlight / unwatched / top rated"
+msgstr "Spotlight / niet bekeken / best beoordeeld"
+
+msgctxt "#31101"
+msgid "Year"
+msgstr "Jaar"
+
+msgctxt "#31102"
+msgid "Runtime"
+msgstr "Speelduur"
+
+msgctxt "#31103"
+msgid "Rating"
+msgstr "Beoordeling"
+
+msgctxt "#31104"
+msgid "Rated"
+msgstr "Leeftijd"
+
+msgctxt "#31105"
+msgid "Details"
+msgstr "Details"
+
+msgctxt "#31106"
+msgid "Fig. 01: random pick, unwatched, rated 7.5+"
+msgstr "Fig. 01: willekeurig, niet bekeken, beoordeling 7,5+"
+
+msgctxt "#31107"
+msgid "No unwatched films rated 7.5+ yet"
+msgstr "Nog geen niet-bekeken films met beoordeling 7,5+"
+
+msgctxt "#31110"
+msgid "Newest additions"
+msgstr "Nieuwste toevoegingen"
+
+msgctxt "#31111"
+msgid "Sorted by date added ↓"
+msgstr "Gesorteerd op datum toegevoegd ↓"
+
+msgctxt "#31112"
+msgid "Newest releases"
+msgstr "Nieuwste uitgaven"
+
+msgctxt "#31113"
+msgid "Sorted by release date ↓"
+msgstr "Gesorteerd op verschijningsdatum ↓"
+
+msgctxt "#31114"
+msgid "films"
+msgstr "films"
+
+msgctxt "#31120"
+msgid "Seek  ◀ ▶"
+msgstr "Spoelen  ◀ ▶"
+
+msgctxt "#31121"
+msgid "Previous"
+msgstr "Vorige"
+
+msgctxt "#31122"
+msgid "Rewind"
+msgstr "Terugspoelen"
+
+msgctxt "#31123"
+msgid "Play / pause"
+msgstr "Afspelen / pauze"
+
+msgctxt "#31124"
+msgid "Stop"
+msgstr "Stop"
+
+msgctxt "#31125"
+msgid "Forward"
+msgstr "Vooruitspoelen"
+
+msgctxt "#31126"
+msgid "Next"
+msgstr "Volgende"
+
+msgctxt "#31127"
+msgid "Subtitles"
+msgstr "Ondertitels"
+
+msgctxt "#31128"
+msgid "Audio"
+msgstr "Audio"
+
+msgctxt "#31129"
+msgid "Video settings"
+msgstr "Video-instellingen"
+
+msgctxt "#31318"
+msgid "Visualiser presets"
+msgstr "Visualisatievoorinstellingen"
+
+msgctxt "#31319"
+msgid "OK, then ← for presets"
+msgstr "OK, dan ← voor presets"
+
+msgctxt "#31900"
+msgid "Aeon Fuse (Figtree)"
+msgstr "Aeon Fuse (Figtree)"
+
+msgctxt "#31901"
+msgid "Arial (wider script coverage)"
+msgstr "Arial (meer schriften)"
+
+msgctxt "#31902"
+msgid "Episode code"
+msgstr "Afleveringscode"
+
+msgctxt "#31200"
+msgid "Aeon Fuse settings"
+msgstr "Aeon Fuse-instellingen"
+
+msgctxt "#31201"
+msgid "Live TV"
+msgstr "Live tv"
+
+msgctxt "#31202"
+msgid "Media"
+msgstr "Media"
+
+msgctxt "#31203"
+msgid "Update library"
+msgstr "Bibliotheek bijwerken"
+
+msgctxt "#31204"
+msgid "Library"
+msgstr "Bibliotheek"
+
+msgctxt "#31205"
+msgid "Clean library"
+msgstr "Bibliotheek opschonen"
+
+msgctxt "#31206"
+msgid "More"
+msgstr "Meer"
+
+msgctxt "#31207"
+msgid "Add-on"
+msgstr "Add-on"
+
+msgctxt "#31208"
+msgid "About this setting"
+msgstr "Over deze instelling"
+
+msgctxt "#31209"
+msgid "Timer"
+msgstr "Timer"
+
+msgctxt "#31210"
+msgid "Left / right: channel group"
+msgstr "Links / rechts: zendergroep"
+
+msgctxt "#31211"
+msgid "Add group"
+msgstr "Groep toevoegen"
+
+msgctxt "#31212"
+msgid "Rename group"
+msgstr "Groep hernoemen"
+
+msgctxt "#31213"
+msgid "Delete group"
+msgstr "Groep verwijderen"
+
+msgctxt "#31214"
+msgid "Jump through the guide  ·  Back to close"
+msgstr "Door de gids springen  ·  Terug om te sluiten"
+
+msgctxt "#31215"
+msgid "Playing on this Shield"
+msgstr "Speelt op deze Shield"
+
+msgctxt "#31216"
+msgid "OK or Back closes"
+msgstr "OK of Terug sluit"
+
+msgctxt "#31217"
+msgid "Find subtitles"
+msgstr "Ondertitels zoeken"
+
+msgctxt "#31218"
+msgid "Service"
+msgstr "Dienst"
+
+msgctxt "#31219"
+msgid "Status"
+msgstr "Status"
+
+msgctxt "#31220"
+msgid "This file already has subtitle tracks"
+msgstr "Dit bestand heeft al ondertitelsporen"
+
+msgctxt "#31221"
+msgid "Sync = timed to your file"
+msgstr "Sync = afgestemd op je bestand"
+
+msgctxt "#31222"
+msgid "No subtitles listed yet. Pick a service or search manually."
+msgstr "Nog geen ondertitels. Kies een dienst of zoek handmatig."
+
+msgctxt "#31223"
+msgid "Order:"
+msgstr "Volgorde:"
+
+msgctxt "#31224"
+msgid "Nothing has happened yet."
+msgstr "Er is nog niets gebeurd."
+
+msgctxt "#31225"
+msgid "Back to continue"
+msgstr "Terug om verder te gaan"
+
+msgctxt "#31226"
+msgid "Nothing to choose"
+msgstr "Niets om te kiezen"
+
+msgctxt "#31227"
+msgid "Browse the whole library instead."
+msgstr "Blader in plaats daarvan door de hele bibliotheek."
+
+msgctxt "#31228"
+msgid "See all"
+msgstr "Alles bekijken"
+
+msgctxt "#31229"
+msgid "No shows in progress. Start one from Shows."
+msgstr "Geen series bezig. Begin er een via Series."
+
+msgctxt "#31230"
+msgid "Nothing here."
+msgstr "Hier is niets."
+
+msgctxt "#31231"
+msgid "PVR & Live TV settings"
+msgstr "PVR- en live-tv-instellingen"
+
+msgctxt "#31232"
+msgid "Up one level"
+msgstr "Een niveau omhoog"
+
+msgctxt "#31233"
+msgid "Nothing else is known about this one yet."
+msgstr "Verder is er nog niets over bekend."
+
+msgctxt "#31234"
+msgid "Up and down scroll  ·  Back closes"
+msgstr "Omhoog en omlaag om te scrollen  ·  Terug sluit"
+
+msgctxt "#31235"
+msgid "Up next"
+msgstr "Hierna"
+
+msgctxt "#31236"
+msgid "The last one in the queue"
+msgstr "De laatste in de wachtrij"
+
+msgctxt "#31237"
+msgid "Sync"
+msgstr "Sync"
+
+msgctxt "#31238"
+msgid "No matches"
+msgstr "Geen resultaten"
+
+msgctxt "#31239"
+msgid "Searching"
+msgstr "Zoeken"
+
+msgctxt "#31240"
+msgid "Films, shows, albums, artists"
+msgstr "Films, series, albums, artiesten"
+
+msgctxt "#31241"
+msgid "OK to type  ·  Down for results  ·  Back to close"
+msgstr "OK om te typen  ·  Omlaag voor resultaten  ·  Terug om te sluiten"
+
+msgctxt "#31242"
+msgid "Films and shows match on title, albums on album name, artists on name. Library only."
+msgstr "Films en series op titel, albums op albumnaam, artiesten op naam. Alleen bibliotheek."
+
+msgctxt "#31243"
+msgid "Offsets apply to this film only. Choosing an offset hides this panel so you can sync against the picture."
+msgstr "Verschuivingen gelden alleen voor deze film. Een verschuiving kiezen verbergt dit paneel, zodat je op het beeld kunt afstemmen."
+
+msgctxt "#31244"
+msgid "More for this title"
+msgstr "Meer over deze titel"
+
+msgctxt "#31245"
+msgid "Back"
+msgstr "Terug"
+
+msgctxt "#31246"
+msgid "Unwatched only is on: choose the pill above to show everything."
+msgstr "'Alleen niet bekeken' staat aan: kies het label hierboven om alles te tonen."
+
+msgctxt "#31247"
+msgid "Left and right to seek  ·  Down returns"
+msgstr "Links en rechts om te spoelen  ·  Omlaag om terug te gaan"
+
+msgctxt "#31248"
+msgid "Choose Albums, Artists, Songs or Genres above."
+msgstr "Kies hierboven Albums, Artiesten, Nummers of Genres."
+
+msgctxt "#31249"
+msgid "Playlist"
+msgstr "Afspeellijst"
+
+msgctxt "#31250"
+msgid "Empty. Pick songs or albums on the left and press OK to add them."
+msgstr "Leeg. Kies links nummers of albums en druk op OK om ze toe te voegen."
+
+msgctxt "#31251"
+msgid "The queue is empty"
+msgstr "De wachtrij is leeg"
+
+msgctxt "#31252"
+msgid "No weather yet."
+msgstr "Nog geen weer."
+
+msgctxt "#31253"
+msgid "Choose a weather service under Settings, Services, Weather."
+msgstr "Kies een weerdienst onder Instellingen, Diensten, Weer."
+
+msgctxt "#31254"
+msgid "The next few days"
+msgstr "De komende dagen"
+
+msgctxt "#31255"
+msgid "Look, behaviour, home menu"
+msgstr "Uiterlijk, gedrag, hoofdmenu"
+
+msgctxt "#31256"
+msgid "Playback, subtitles"
+msgstr "Afspelen, ondertitels"
+
+msgctxt "#31257"
+msgid "Library, files"
+msgstr "Bibliotheek, bestanden"
+
+msgctxt "#31258"
+msgid "Skin, region"
+msgstr "Skin, regio"
+
+msgctxt "#31259"
+msgid "Installed, updates"
+msgstr "Geïnstalleerd, updates"
+
+msgctxt "#31260"
+msgid "Remote, sharing"
+msgstr "Afstandsbediening, delen"
+
+msgctxt "#31261"
+msgid "Display, audio"
+msgstr "Scherm, audio"
+
+msgctxt "#31262"
+msgid "Sources, files"
+msgstr "Bronnen, bestanden"
+
+msgctxt "#31263"
+msgid "Hardware, storage"
+msgstr "Hardware, opslag"
+
+msgctxt "#31264"
+msgid "Event log"
+msgstr "Gebeurtenislog"
+
+msgctxt "#31265"
+msgid "Recent events"
+msgstr "Recente gebeurtenissen"
+
+msgctxt "#31266"
+msgid "Users"
+msgstr "Gebruikers"
+
+msgctxt "#31267"
+msgid "Not used"
+msgstr "Niet gebruikt"
+
+msgctxt "#31268"
+msgid "Controllers"
+msgstr "Controllers"
+
+msgctxt "#31269"
+msgid "This box"
+msgstr "Dit apparaat"
+
+msgctxt "#31270"
+msgid "Login screen"
+msgstr "Aanmeldscherm"
+
+msgctxt "#31271"
+msgid "Auto login"
+msgstr "Automatisch aanmelden"
+
+msgctxt "#31272"
+msgid "Options"
+msgstr "Opties"
+
+msgctxt "#31273"
+msgid "Order direction"
+msgstr "Sorteerrichting"
+
+msgctxt "#31274"
+msgid "Select a rule to edit it. Use the context menu to delete a rule."
+msgstr "Selecteer een regel om die te bewerken. Gebruik het contextmenu om een regel te verwijderen."
+
+msgctxt "#31275"
+msgid "Value"
+msgstr "Waarde"
+
+msgctxt "#31276"
+msgid "No chapters or bookmarks yet. Create one with the first button."
+msgstr "Nog geen hoofdstukken of bladwijzers. Maak er een met de eerste knop."
+
+msgctxt "#31277"
+msgid "OK jumps there  ·  Back closes"
+msgstr "OK springt erheen  ·  Terug sluit"
+
+msgctxt "#31300"
+msgid "Order"
+msgstr "Volgorde"
+
+msgctxt "#31301"
+msgid "Watched"
+msgstr "Bekeken"
+
+msgctxt "#31302"
+msgid "Search"
+msgstr "Zoeken"
+
+msgctxt "#31303"
+msgid "Stop updating"
+msgstr "Bijwerken stoppen"
+
+msgctxt "#31304"
+msgid "Library settings"
+msgstr "Bibliotheekinstellingen"
+
+msgctxt "#31305"
+msgid "Music"
+msgstr "Muziek"
+
+msgctxt "#31306"
+msgid "Update"
+msgstr "Bijwerken"
+
+msgctxt "#31307"
+msgid "Clean"
+msgstr "Opschonen"
+
+msgctxt "#31308"
+msgid "Collections"
+msgstr "Collecties"
+
+msgctxt "#31309"
+msgid "Films and shows"
+msgstr "Films en series"
+
+msgctxt "#31310"
+msgid "No, keep it as it is"
+msgstr "Nee, laat het zo"
+
+msgctxt "#31311"
+msgid "Yes, clean it now"
+msgstr "Ja, nu opschonen"
+
+msgctxt "#31312"
+msgid "Grid"
+msgstr "Raster"
+
+msgctxt "#31313"
+msgid "Wall"
+msgstr "Muur"
+
+msgctxt "#31314"
+msgid "Episodes"
+msgstr "Afleveringen"
+
+msgctxt "#31315"
+msgid "List"
+msgstr "Lijst"
+
+msgctxt "#31316"
+msgid "OK to reset"
+msgstr "OK om terug te zetten"
+
+msgctxt "#31317"
+msgid "Press OK again to reset everything"
+msgstr "Druk nogmaals op OK om alles terug te zetten"
+
+msgctxt "#31320"
+msgid "Spotlight"
+msgstr "Spotlight"
+
+msgctxt "#31321"
+msgid "Wide"
+msgstr "Breed"
+
+msgctxt "#31322"
+msgid "Time"
+msgstr "Tijd"
+
+msgctxt "#31323"
+msgid "No runtime"
+msgstr "Geen speelduur"
+
+msgctxt "#31324"
+msgid "Now"
+msgstr "Nu"
+
+msgctxt "#31325"
+msgid "+1 h"
+msgstr "+1 h"
+
+msgctxt "#31326"
+msgid "+2 h"
+msgstr "+2 h"
+
+msgctxt "#31327"
+msgid "+3 h"
+msgstr "+3 h"
+
+msgctxt "#31328"
+msgid "+4 h"
+msgstr "+4 h"
+
+msgctxt "#31329"
+msgid "Rows"
+msgstr "Rijen"
+
+msgctxt "#31330"
+msgid "Main menu"
+msgstr "Hoofdmenu"
+
+msgctxt "#31331"
+msgid "Films"
+msgstr "Films"
+
+msgctxt "#31332"
+msgid "Shows"
+msgstr "Series"
+
+msgctxt "#31333"
+msgid "Music"
+msgstr "Muziek"
+
+msgctxt "#31334"
+msgid "Search"
+msgstr "Zoeken"
+
+msgctxt "#31335"
+msgid "Pill, hero and film cards"
+msgstr "Label, hero en filmkaarten"
+
+msgctxt "#31336"
+msgid "Pill and the Next up card"
+msgstr "Label en de Hierna-kaart"
+
+msgctxt "#31337"
+msgid "Pill in the top line"
+msgstr "Label in de bovenste regel"
+
+msgctxt "#31338"
+msgid "Which pills the top line shows. Hidden pills disappear on Home and in the libraries; the rest close up. For now and the gear (system menu, settings) always stay, so you can always come back here.[CR][CR]Up / Down picks a group, Right enters it."
+msgstr "Welke labels de bovenste regel toont. Verborgen labels verdwijnen op Start en in de bibliotheken; de rest schuift op. 'Voor nu' en het tandwiel (systeemmenu, instellingen) blijven altijd, zodat je hier altijd terug kunt komen.[CR][CR]Omhoog / Omlaag kiest een groep, Rechts opent hem."
+
+msgctxt "#31339"
+msgid "Films also takes the hero and the film cards off For now; Shows takes the Next up card. The libraries themselves stay: Search finds them, and the system menu has Files."
+msgstr "Films haalt ook de hero en de filmkaarten weg uit 'Voor nu'; Series de Hierna-kaart. De bibliotheken zelf blijven: Zoeken vindt ze en het systeemmenu heeft Bestanden."
+
+msgctxt "#31340"
+msgid "Show"
+msgstr "Tonen"
+
+msgctxt "#31341"
+msgid "Hide"
+msgstr "Verbergen"
+
+msgctxt "#31342"
+msgid "View, sort, filter…"
+msgstr "Weergave, sortering, filter…"
+
+msgctxt "#31940"
+msgid "Custom rows"
+msgstr "Eigen rijen"
+
+msgctxt "#31941"
+msgid "Row 1"
+msgstr "Rij 1"
+
+msgctxt "#31942"
+msgid "Row 2"
+msgstr "Rij 2"
+
+msgctxt "#31943"
+msgid "Row 3"
+msgstr "Rij 3"
+
+msgctxt "#31944"
+msgid "Not set"
+msgstr "Niet ingesteld"
+
+msgctxt "#31945"
+msgid "Add-on, playlist or library…"
+msgstr "Add-on, afspeellijst of bibliotheek…"
+
+msgctxt "#31946"
+msgid "A favourite…"
+msgstr "Een favoriet…"
+
+msgctxt "#31947"
+msgid "Rename…"
+msgstr "Hernoemen…"
+
+msgctxt "#31948"
+msgid "Clear"
+msgstr "Wissen"
+
+msgctxt "#31949"
+msgid "This favourite opens no folder"
+msgstr "Deze favoriet opent geen map"
+
+msgctxt "#31950"
+msgid "Add up to three rows of your own to Home: a folder of an add-on (for example JellyCon's Continue Watching), a smart playlist, a library node or a favourite that opens a folder. A row shows only when it has something in it.[CR][CR]OK opens the row's options: choose what it shows, rename it or clear it."
+msgstr "Voeg tot drie eigen rijen toe aan Start: een map van een add-on (bijvoorbeeld Verder kijken van JellyCon), een slimme afspeellijst, een bibliotheekknooppunt of een favoriet die een map opent. Een rij verschijnt alleen als er iets in staat.[CR][CR]OK opent de opties van de rij: kies wat hij toont, hernoem hem of wis hem."
+
+msgctxt "#31951"
+msgid "Custom row"
+msgstr "Eigen rij"
+
+msgctxt "#31952"
+msgid "Loading…"
+msgstr "Laden…"
+
+msgctxt "#31953"
+msgid "1 item"
+msgstr "1 item"
+
+msgctxt "#31954"
+msgid "items"
+msgstr "items"
+
+msgctxt "#31955"
+msgid "Add-on · playlist · library · favourite"
+msgstr "Add-on · afspeellijst · bibliotheek · favoriet"
+
+msgctxt "#31956"
+msgid "The add-on of this favourite isn't installed"
+msgstr "De add-on van deze favoriet is niet geïnstalleerd"
+
+msgctxt "#31957"
+msgid "Rows of your own on Home: an add-on folder, a playlist, a library node or a favourite. OK opens the row's options."
+msgstr "Eigen rijen op Start: een add-onmap, een afspeellijst, een bibliotheekknooppunt of een favoriet. OK opent de opties van de rij."
+
+msgctxt "#31980"
+msgid "Custom menu items"
+msgstr "Eigen menu-items"
+
+msgctxt "#31981"
+msgid "Menu item 1"
+msgstr "Menu-item 1"
+
+msgctxt "#31982"
+msgid "Menu item 2"
+msgstr "Menu-item 2"
+
+msgctxt "#31983"
+msgid "Menu item 3"
+msgstr "Menu-item 3"
+
+msgctxt "#31984"
+msgid "Put up to three add-ons, favourites or library folders on the main menu, after the skin's own items. An item shows only while its add-on is installed.[CR][CR]OK opens the item's options: choose what it opens, rename it or clear it."
+msgstr "Zet tot drie add-ons, favorieten of bibliotheekmappen in het hoofdmenu, na de eigen items van de skin. Een item verschijnt alleen zolang zijn add-on geïnstalleerd is.[CR][CR]OK opent de opties van het item: kies wat het opent, hernoem het of wis het."
+
+msgctxt "#31985"
+msgid "Add-on · favourite · library · folder"
+msgstr "Add-on · favoriet · bibliotheek · map"
+
+msgctxt "#31986"
+msgid "Opens"
+msgstr "Opent"
+
+msgctxt "#31987"
+msgid "Menu item"
+msgstr "Menu-item"
+
+msgctxt "#31988"
+msgid "add-on not installed"
+msgstr "add-on niet geïnstalleerd"
+
+msgctxt "#31989"
+msgid "Add-on"
+msgstr "Add-on"
+
+msgctxt "#31990"
+msgid "Playlist"
+msgstr "Afspeellijst"
+
+msgctxt "#31991"
+msgid "Library"
+msgstr "Bibliotheek"
+
+msgctxt "#31992"
+msgid "Folder"
+msgstr "Map"
+
+msgctxt "#31993"
+msgid "Shortcut"
+msgstr "Snelkoppeling"
+
+msgctxt "#31994"
+msgid "Your own items on the main menu: an add-on, a favourite, a library node or a folder. OK opens the item's options."
+msgstr "Je eigen items in het hoofdmenu: een add-on, een favoriet, een bibliotheekknooppunt of een map. OK opent de opties van het item."
+
+msgctxt "#31995"
+msgid "OK to open"
+msgstr "OK om te openen"
+
+msgctxt "#31540"
+msgid "View settings"
+msgstr "Weergave-instellingen"
+
+msgctxt "#31541"
+msgid "Ratings"
+msgstr "Beoordelingen"
+
+msgctxt "#31542"
+msgid "Media info"
+msgstr "Media-info"
+
+msgctxt "#31543"
+msgid "Backdrop"
+msgstr "Decor"
+
+msgctxt "#31544"
+msgid "Reset"
+msgstr "Terugzetten"
+
+msgctxt "#31545"
+msgid "Global settings"
+msgstr "Algemene instellingen"
+
+msgctxt "#31546"
+msgid "Default"
+msgstr "Standaard"
+
+msgctxt "#31547"
+msgid "On"
+msgstr "Aan"
+
+msgctxt "#31548"
+msgid "Off"
+msgstr "Uit"
+
+msgctxt "#31549"
+msgid "Neutral"
+msgstr "Neutraal"
+
+msgctxt "#31550"
+msgid "Fanart"
+msgstr "Fanart"
+
+msgctxt "#31551"
+msgid "Colors"
+msgstr "Kleuren"
+
+msgctxt "#31000"
+msgid "Kodi"
+msgstr "Kodi"
+
+msgctxt "#31001"
+msgid "ULTRA HD"
+msgstr "ULTRA HD"
+
+msgctxt "#31002"
+msgid "The pages that Up opens above this home menu item. Pick one, then use the buttons on the right."
+msgstr "De pagina's die Omhoog boven dit hoofdmenu-item opent. Kies er een en gebruik dan de knoppen rechts."
+
+msgctxt "#31003"
+msgid "+  Add item"
+msgstr "+  Item toevoegen"
+
+msgctxt "#31004"
+msgid "Rename"
+msgstr "Hernoemen"
+
+msgctxt "#31005"
+msgid "Select source"
+msgstr "Bron kiezen"
+
+msgctxt "#31006"
+msgid "Sort by"
+msgstr "Sorteren op"
+
+msgctxt "#31007"
+msgid "Reverse order"
+msgstr "Omgekeerde volgorde"
+
+msgctxt "#31008"
+msgid "Items in list"
+msgstr "Items in lijst"
+
+msgctxt "#31009"
+msgid "Seconds per item"
+msgstr "Seconden per item"
+
+msgctxt "#31023"
+msgid "Autoscroll on / off"
+msgstr "Automatisch scrollen aan / uit"
+
+msgctxt "#31026"
+msgid "Hide / show"
+msgstr "Verbergen / tonen"
+
+msgctxt "#31027"
+msgid "Move up"
+msgstr "Omhoog"
+
+msgctxt "#31028"
+msgid "Move down"
+msgstr "Omlaag"
+
+msgctxt "#31029"
+msgid "Add list..."
+msgstr "Lijst toevoegen..."
+
+msgctxt "#31031"
+msgid "Add folder items..."
+msgstr "Mapitems toevoegen..."
+
+msgctxt "#31032"
+msgid "Restore defaults"
+msgstr "Standaard herstellen"
+
+msgctxt "#31033"
+msgid "The categories and rows shown under this home menu item (for Power: its actions)."
+msgstr "De categorieën en rijen onder dit hoofdmenu-item (bij Aan/uit: de acties)."
+
+msgctxt "#31034"
+msgid "Items in row"
+msgstr "Items in rij"
+
+msgctxt "#31035"
+msgid "Artwork type"
+msgstr "Soort afbeelding"
+
+msgctxt "#31036"
+msgid "The full-screen widget pages that Up opens above this item: on or off, autoscroll, and the defaults for every list in them."
+msgstr "De schermvullende widgetpagina's die Omhoog boven dit item opent: aan of uit, automatisch scrollen en de standaard voor elke lijst erin."
+
+msgctxt "#31037"
+msgid "Widget (Up key after Spotlight)"
+msgstr "Widget (toets Omhoog na de Spotlight)"
+
+msgctxt "#31038"
+msgid "Autoscroll"
+msgstr "Automatisch scrollen"
+
+msgctxt "#31039"
+msgid "Items per list"
+msgstr "Items per lijst"
+
+msgctxt "#31049"
+msgid "The big Netflix-style spotlight above this item on Home: a rotating list of titles with fanart, logo, details and Play."
+msgstr "De grote Spotlight in Netflix-stijl boven dit item op Start: een wisselende lijst titels met fanart, logo, details en Afspelen."
+
+msgctxt "#31067"
+msgid "Label"
+msgstr "Label"
+
+msgctxt "#31068"
+msgid "Path"
+msgstr "Pad"
+
+msgctxt "#31069"
+msgid "Items"
+msgstr "Items"
+
+msgctxt "#31073"
+msgid "Widget screen options"
+msgstr "Opties widgetschermen"
+
+msgctxt "#31074"
+msgid "Library background (Aeon)"
+msgstr "Bibliotheekachtergrond (Aeon)"
+
+msgctxt "#31078"
+msgid "Choose a view"
+msgstr "Kies een weergave"
+
+msgctxt "#31079"
+msgid "Left / Right to look, OK to switch"
+msgstr "Links / Rechts om te kijken, OK om te wisselen"
+
+msgctxt "#31083"
+msgid "Fanart list"
+msgstr "Fanartlijst"
+
+msgctxt "#31084"
+msgid "Rows with A-Z keys"
+msgstr "Rijen met A-Z-toetsen"
+
+msgctxt "#31088"
+msgid "Artist wall"
+msgstr "Artiestenmuur"
+
+msgctxt "#31089"
+msgid "Cover grid"
+msgstr "Hoesraster"
+
+msgctxt "#31090"
+msgid "Album wall"
+msgstr "Albummuur"
+
+msgctxt "#31091"
+msgid "Song wall"
+msgstr "Nummermuur"
+
+msgctxt "#31092"
+msgid "Artist showcase"
+msgstr "Artiestenvitrine"
+
+msgctxt "#31093"
+msgid "Big covers in a row"
+msgstr "Grote hoezen op een rij"
+
+msgctxt "#31094"
+msgid "Album showcase"
+msgstr "Albumvitrine"
+
+msgctxt "#31095"
+msgid "Song showcase"
+msgstr "Nummervitrine"
+
+msgctxt "#31096"
+msgid "Artist rows"
+msgstr "Artiestenrijen"
+
+msgctxt "#31097"
+msgid "Rows with covers"
+msgstr "Rijen met hoezen"
+
+msgctxt "#31098"
+msgid "Album list"
+msgstr "Albumlijst"
+
+msgctxt "#31099"
+msgid "Song list"
+msgstr "Nummerlijst"
+
+msgctxt "#31108"
+msgid "Compact song rows"
+msgstr "Compacte nummerrijen"
+
+msgctxt "#31109"
+msgid "Fanart wall"
+msgstr "Fanartmuur"
+
+msgctxt "#31115"
+msgid "Portrait grid"
+msgstr "Staand raster"
+
+msgctxt "#31116"
+msgid "Fanart and A-Z keys"
+msgstr "Fanart en A-Z-toetsen"
+
+msgctxt "#31117"
+msgid "Show posters"
+msgstr "Posters tonen"
+
+msgctxt "#31118"
+msgid "Posters"
+msgstr "Posters"
+
+msgctxt "#31119"
+msgid "Season posters"
+msgstr "Seizoensposters"
+
+msgctxt "#31130"
+msgid "Poster wall"
+msgstr "Postermuur"
+
+msgctxt "#31131"
+msgid "Episode wall"
+msgstr "Afleveringenmuur"
+
+msgctxt "#31132"
+msgid "Landscape artwork"
+msgstr "Liggende afbeeldingen"
+
+msgctxt "#31133"
+msgid "Landscape wall"
+msgstr "Liggende muur"
+
+msgctxt "#31134"
+msgid "Square wall"
+msgstr "Vierkante muur"
+
+msgctxt "#31135"
+msgid "Square tiles"
+msgstr "Vierkante tegels"
+
+msgctxt "#31136"
+msgid "Cards"
+msgstr "Kaarten"
+
+msgctxt "#31137"
+msgid "Artwork with details"
+msgstr "Afbeeldingen met details"
+
+msgctxt "#31138"
+msgid "Showcase"
+msgstr "Vitrine"
+
+msgctxt "#31139"
+msgid "One big poster"
+msgstr "Eén grote poster"
+
+msgctxt "#31140"
+msgid "Banner list"
+msgstr "Bannerlijst"
+
+msgctxt "#31141"
+msgid "Wide banner rows"
+msgstr "Brede bannerrijen"
+
+msgctxt "#31142"
+msgid "Compact list"
+msgstr "Compacte lijst"
+
+msgctxt "#31143"
+msgid "Dense rows with poster"
+msgstr "Dichte rijen met poster"
+
+msgctxt "#31144"
+msgid "Episode list"
+msgstr "Afleveringenlijst"
+
+msgctxt "#31145"
+msgid "Rows with thumbs"
+msgstr "Rijen met miniaturen"
+
+msgctxt "#31146"
+msgid "Season list combined 3"
+msgstr "Seizoenenlijst gecombineerd 3"
+
+msgctxt "#31147"
+msgid "Rows with posters"
+msgstr "Rijen met posters"
+
+msgctxt "#31148"
+msgid "Low list"
+msgstr "Lage lijst"
+
+msgctxt "#31149"
+msgid "Rows over fanart"
+msgstr "Rijen over fanart"
+
+msgctxt "#31150"
+msgid "Version"
+msgstr "Versie"
+
+msgctxt "#31151"
+msgid "Type"
+msgstr "Type"
+
+msgctxt "#31152"
+msgid "Installed"
+msgstr "Geïnstalleerd"
+
+msgctxt "#31153"
+msgid "Updated"
+msgstr "Bijgewerkt"
+
+msgctxt "#31154"
+msgid "Channel"
+msgstr "Zender"
+
+msgctxt "#31155"
+msgid "Other"
+msgstr "Overig"
+
+msgctxt "#31156"
+msgid "Jump to now"
+msgstr "Naar nu springen"
+
+msgctxt "#31157"
+msgid "Choose channel"
+msgstr "Zender kiezen"
+
+msgctxt "#31158"
+msgid "Choose channel group"
+msgstr "Zendergroep kiezen"
+
+msgctxt "#31159"
+msgid "Choose date"
+msgstr "Datum kiezen"
+
+msgctxt "#31160"
+msgid "Recordings"
+msgstr "Opnames"
+
+msgctxt "#31161"
+msgid "Timers"
+msgstr "Timers"
+
+msgctxt "#31162"
+msgid "Timer rules"
+msgstr "Timerregels"
+
+msgctxt "#31163"
+msgid "Search guide"
+msgstr "Gids doorzoeken"
+
+msgctxt "#31164"
+msgid "Return to guide"
+msgstr "Terug naar de gids"
+
+msgctxt "#31165"
+msgid "Exit guide"
+msgstr "Gids verlaten"
+
+msgctxt "#31166"
+msgid "Band"
+msgstr "Band"
+
+msgctxt "#31167"
+msgid "Artist"
+msgstr "Artiest"
+
+msgctxt "#31168"
+msgid "Title"
+msgstr "Titel"
+
+msgctxt "#31169"
+msgid "Composer"
+msgstr "Componist"
+
+msgctxt "#31170"
+msgid "Conductor"
+msgstr "Dirigent"
+
+msgctxt "#31171"
+msgid "Album"
+msgstr "Album"
+
+msgctxt "#31172"
+msgid "Comment"
+msgstr "Opmerking"
+
+msgctxt "#31173"
+msgid "Studio  ·  hotline"
+msgstr "Studio  ·  hotline"
+
+msgctxt "#31174"
+msgid "Studio phone"
+msgstr "Studiotelefoon"
+
+msgctxt "#31175"
+msgid "Studio email"
+msgstr "Studio-e-mail"
+
+msgctxt "#31176"
+msgid "Studio SMS"
+msgstr "Studio-sms"
+
+msgctxt "#31177"
+msgid "Hotline phone"
+msgstr "Hotlinetelefoon"
+
+msgctxt "#31178"
+msgid "Hotline email"
+msgstr "Hotline-e-mail"
+
+msgctxt "#31179"
+msgid "Programme"
+msgstr "Programma"
+
+msgctxt "#31180"
+msgid "Style"
+msgstr "Stijl"
+
+msgctxt "#31181"
+msgid "Station"
+msgstr "Zender"
+
+msgctxt "#31182"
+msgid "Host"
+msgstr "Presentator"
+
+msgctxt "#31183"
+msgid "Editorial"
+msgstr "Redactie"
+
+msgctxt "#31184"
+msgid "Website"
+msgstr "Website"
+
+msgctxt "#31185"
+msgid "Radiotext"
+msgstr "Radiotekst"
+
+msgctxt "#31186"
+msgid "ENDS"
+msgstr "EINDIGT"
+
+msgctxt "#31187"
+msgid "Search manually…"
+msgstr "Handmatig zoeken…"
+
+msgctxt "#31189"
+msgid "TRUEHD  7.1"
+msgstr "TRUEHD  7.1"
+
+msgctxt "#31190"
+msgid "Some stories never end."
+msgstr "Sommige verhalen eindigen nooit."
+
+msgctxt "#31191"
+msgid "A retired detective is pulled back into a case he thought was closed, and the closer he looks the less of it makes sense."
+msgstr "Een gepensioneerde rechercheur wordt teruggehaald in een zaak die hij gesloten waande, en hoe beter hij kijkt, hoe minder ervan klopt."
+
+msgctxt "#31194"
+msgid "Trakt 78"
+msgstr "Trakt 78"
+
+msgctxt "#31195"
+msgid "Controls stay hidden when you pause."
+msgstr "De bediening blijft verborgen bij pauzeren."
+
+msgctxt "#31196"
+msgid "Controls open 1 second after you pause."
+msgstr "De bediening opent 1 seconde na het pauzeren."
+
+msgctxt "#31197"
+msgid "Controls open 3 seconds after you pause."
+msgstr "De bediening opent 3 seconden na het pauzeren."
+
+msgctxt "#31198"
+msgid "Controls open 5 seconds after you pause."
+msgstr "De bediening opent 5 seconden na het pauzeren."
+
+msgctxt "#31199"
+msgid "Controls open 2 seconds after you pause."
+msgstr "De bediening opent 2 seconden na het pauzeren."
+
+msgctxt "#31278"
+msgid "Play"
+msgstr "Afspelen"
+
+msgctxt "#31279"
+msgid "More information"
+msgstr "Meer informatie"
+
+msgctxt "#31295"
+msgid "NOW ON TV"
+msgstr "NU OP TV"
+
+msgctxt "#31296"
+msgid "PRESS UP FOR THE FULL GUIDE"
+msgstr "DRUK OMHOOG VOOR DE VOLLEDIGE GIDS"
+
+msgctxt "#31297"
+msgid "NO LYRICS FOR THIS SONG"
+msgstr "GEEN SONGTEKST VOOR DIT NUMMER"
+
+msgctxt "#31298"
+msgid "Artists"
+msgstr "Artiesten"
+
+msgctxt "#31299"
+msgid "Albums"
+msgstr "Albums"
+
+msgctxt "#31343"
+msgid "Songs"
+msgstr "Nummers"
+
+msgctxt "#31344"
+msgid "Genres"
+msgstr "Genres"
+
+msgctxt "#31345"
+msgid "Menu: view, sort"
+msgstr "Menu: weergave, sortering"
+
+msgctxt "#31346"
+msgid "MUSIC LIBRARY"
+msgstr "MUZIEKBIBLIOTHEEK"
+
+msgctxt "#31347"
+msgid "SUBTITLES"
+msgstr "ONDERTITELS"
+
+msgctxt "#31348"
+msgid "AUDIO"
+msgstr "AUDIO"
+
+msgctxt "#31349"
+msgid "VIDEO"
+msgstr "VIDEO"
+
+msgctxt "#31350"
+msgid "CHAPTERS"
+msgstr "HOOFDSTUKKEN"
+
+msgctxt "#31351"
+msgid "INFO"
+msgstr "INFO"
+
+msgctxt "#31352"
+msgid "STATS"
+msgstr "STATISTIEKEN"
+
+msgctxt "#31353"
+msgid "TV SHOWS"
+msgstr "SERIES"
+
+msgctxt "#31354"
+msgid "MOVIES"
+msgstr "FILMS"
+
+msgctxt "#31355"
+msgid "BUFFERING"
+msgstr "BUFFEREN"
+
+msgctxt "#31356"
+msgid "PAUSED"
+msgstr "GEPAUZEERD"
+
+msgctxt "#31357"
+msgid "ADDED"
+msgstr "TOEGEVOEGD"
+
+msgctxt "#31358"
+msgid "Custom path"
+msgstr "Eigen pad"
+
+msgctxt "#31359"
+msgid "Recently added"
+msgstr "Recent toegevoegd"
+
+msgctxt "#31360"
+msgid "Recently watched"
+msgstr "Recent bekeken"
+
+msgctxt "#31361"
+msgid "In progress"
+msgstr "Bezig"
+
+msgctxt "#31362"
+msgid "Top rated"
+msgstr "Best beoordeeld"
+
+msgctxt "#31363"
+msgid "All movies"
+msgstr "Alle films"
+
+msgctxt "#31364"
+msgid "Unwatched shows"
+msgstr "Niet-bekeken series"
+
+msgctxt "#31365"
+msgid "Random shows"
+msgstr "Willekeurige series"
+
+msgctxt "#31366"
+msgid "Top rated shows"
+msgstr "Best beoordeelde series"
+
+msgctxt "#31367"
+msgid "All shows"
+msgstr "Alle series"
+
+msgctxt "#31368"
+msgid "Recently played"
+msgstr "Recent afgespeeld"
+
+msgctxt "#31369"
+msgid "Random albums"
+msgstr "Willekeurige albums"
+
+msgctxt "#31370"
+msgid "Shut down"
+msgstr "Afsluiten"
+
+msgctxt "#31371"
+msgid "Reboot to Android"
+msgstr "Herstarten naar Android"
+
+msgctxt "#31372"
+msgid "Quit Kodi"
+msgstr "Kodi afsluiten"
+
+msgctxt "#31373"
+msgid "Update video library"
+msgstr "Videobibliotheek bijwerken"
+
+msgctxt "#31374"
+msgid "Update music library"
+msgstr "Muziekbibliotheek bijwerken"
+
+msgctxt "#31375"
+msgid "Clean video library"
+msgstr "Videobibliotheek opschonen"
+
+msgctxt "#31376"
+msgid "Clean music library"
+msgstr "Muziekbibliotheek opschonen"
+
+msgctxt "#31377"
+msgid "Power menu"
+msgstr "Aan/uit-menu"
+
+msgctxt "#31378"
+msgid "TV shows"
+msgstr "Tv-series"
+
+msgctxt "#31379"
+msgid "MUSIC"
+msgstr "MUZIEK"
+
+msgctxt "#31380"
+msgid "LISTEN"
+msgstr "LUISTEREN"
+
+msgctxt "#31381"
+msgid "WATCH"
+msgstr "KIJKEN"
+
+msgctxt "#31382"
+msgid "Latest added"
+msgstr "Laatst toegevoegd"
+
+msgctxt "#31383"
+msgid "Last played"
+msgstr "Laatst afgespeeld"
+
+msgctxt "#31384"
+msgid "Movies, TV shows, Music or Power"
+msgstr "Films, Tv-series, Muziek of Aan/uit"
+
+msgctxt "#31385"
+msgid "Position 1 is the first page you reach with Up"
+msgstr "Positie 1 is de eerste pagina die je met Omhoog bereikt"
+
+msgctxt "#31386"
+msgid "What this position shows. Off hides it"
+msgstr "Wat deze positie toont. Uit verbergt hem"
+
+msgctxt "#31387"
+msgid "OK types a name, Left clears it"
+msgstr "OK typt een naam, Links wist hem"
+
+msgctxt "#31388"
+msgid "Used when Category = Custom path (a library path, playlist or add-on folder)"
+msgstr "Gebruikt als Categorie = Eigen pad (een bibliotheekpad, afspeellijst of add-onmap)"
+
+msgctxt "#31389"
+msgid "How many items the page cycles through (default 15)"
+msgstr "Hoeveel items de pagina doorloopt (standaard 15)"
+
+msgctxt "#31390"
+msgid "Order of the items on this page"
+msgstr "Volgorde van de items op deze pagina"
+
+msgctxt "#31391"
+msgid "Flip the sort order"
+msgstr "Sorteervolgorde omdraaien"
+
+msgctxt "#31392"
+msgid "Step through the items by itself"
+msgstr "Zelf door de items gaan"
+
+msgctxt "#31393"
+msgid "Seconds each item stays (default 10)"
+msgstr "Seconden per item (standaard 10)"
+
+msgctxt "#31394"
+msgid "SERIES PREMIERE"
+msgstr "SERIEPREMIÈRE"
+
+msgctxt "#31395"
+msgid "SEASON PREMIERE"
+msgstr "SEIZOENSPREMIÈRE"
+
+msgctxt "#31396"
+msgid "SERIES FINALE"
+msgstr "SERIEFINALE"
+
+msgctxt "#31397"
+msgid "SEASON FINALE"
+msgstr "SEIZOENSFINALE"
+
+msgctxt "#31398"
+msgid "Movie sets"
+msgstr "Filmsets"
+
+msgctxt "#31399"
+msgid "Autoscroll off"
+msgstr "Automatisch scrollen uit"
+
+msgctxt "#31400"
+msgid "Random movies"
+msgstr "Willekeurige films"
+
+msgctxt "#31401"
+msgid "Recently added movies"
+msgstr "Recent toegevoegde films"
+
+msgctxt "#31402"
+msgid "Recently played movies"
+msgstr "Recent afgespeelde films"
+
+msgctxt "#31403"
+msgid "Top rated movies"
+msgstr "Best beoordeelde films"
+
+msgctxt "#31404"
+msgid "Most played movies"
+msgstr "Meest afgespeelde films"
+
+msgctxt "#31405"
+msgid "Newest movies"
+msgstr "Nieuwste films"
+
+msgctxt "#31406"
+msgid "Title movies"
+msgstr "Films op titel"
+
+msgctxt "#31407"
+msgid "Recently added shows"
+msgstr "Recent toegevoegde series"
+
+msgctxt "#31408"
+msgid "Recently played shows"
+msgstr "Recent afgespeelde series"
+
+msgctxt "#31409"
+msgid "Most played shows"
+msgstr "Meest afgespeelde series"
+
+msgctxt "#31410"
+msgid "Newest shows"
+msgstr "Nieuwste series"
+
+msgctxt "#31411"
+msgid "Title shows"
+msgstr "Series op titel"
+
+msgctxt "#31412"
+msgid "Recently added albums"
+msgstr "Recent toegevoegde albums"
+
+msgctxt "#31413"
+msgid "Recently played albums"
+msgstr "Recent afgespeelde albums"
+
+msgctxt "#31414"
+msgid "Top rated albums"
+msgstr "Best beoordeelde albums"
+
+msgctxt "#31415"
+msgid "Most played albums"
+msgstr "Meest afgespeelde albums"
+
+msgctxt "#31416"
+msgid "Newest albums"
+msgstr "Nieuwste albums"
+
+msgctxt "#31417"
+msgid "Title albums"
+msgstr "Albums op titel"
+
+msgctxt "#31418"
+msgid "FULL HD"
+msgstr "FULL HD"
+
+msgctxt "#31419"
+msgid "DOLBY VISION"
+msgstr "DOLBY VISION"
+
+msgctxt "#31420"
+msgid "TRUEHD ATMOS"
+msgstr "TRUEHD ATMOS"
+
+msgctxt "#31421"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31422"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31423"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31424"
+msgid "TRUEHD"
+msgstr "TRUEHD"
+
+msgctxt "#31425"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31426"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31427"
+msgid "FLAC"
+msgstr "FLAC"
+
+msgctxt "#31428"
+msgid "ALAC"
+msgstr "ALAC"
+
+msgctxt "#31429"
+msgid "OPUS"
+msgstr "OPUS"
+
+msgctxt "#31430"
+msgid "VORBIS"
+msgstr "VORBIS"
+
+msgctxt "#31431"
+msgid "RATED NC-17"
+msgstr "KEURING NC-17"
+
+msgctxt "#31432"
+msgid "RATED PG-13"
+msgstr "KEURING PG-13"
+
+msgctxt "#31433"
+msgid "RATED PG"
+msgstr "KEURING PG"
+
+msgctxt "#31434"
+msgid "RATED R"
+msgstr "KEURING R"
+
+msgctxt "#31435"
+msgid "RATED G"
+msgstr "KEURING G"
+
+msgctxt "#31436"
+msgid "RATED TV-MA"
+msgstr "KEURING TV-MA"
+
+msgctxt "#31437"
+msgid "RATED TV-14"
+msgstr "KEURING TV-14"
+
+msgctxt "#31438"
+msgid "RATED TV-PG"
+msgstr "KEURING TV-PG"
+
+msgctxt "#31439"
+msgid "RATED TV-Y7"
+msgstr "KEURING TV-Y7"
+
+msgctxt "#31440"
+msgid "RATED TV-Y"
+msgstr "KEURING TV-Y"
+
+msgctxt "#31441"
+msgid "RATED TV-G"
+msgstr "KEURING TV-G"
+
+msgctxt "#31442"
+msgid "ULTRA"
+msgstr "ULTRA"
+
+msgctxt "#31443"
+msgid "FULL"
+msgstr "FULL"
+
+msgctxt "#31444"
+msgid "READY"
+msgstr "READY"
+
+msgctxt "#31445"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31446"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31447"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31448"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31449"
+msgid "MEDIA"
+msgstr "MEDIA"
+
+msgctxt "#31450"
+msgid "RATING"
+msgstr "BEOORDELING"
+
+msgctxt "#31451"
+msgid "CERTIFICATION"
+msgstr "LEEFTIJD"
+
+msgctxt "#31452"
+msgid "CREDITS"
+msgstr "MAKERS"
+
+msgctxt "#31453"
+msgid "FIRST AIRED"
+msgstr "Première"
+
+msgctxt "#31454"
+msgid "STUDIO"
+msgstr "STUDIO"
+
+msgctxt "#31455"
+msgid "GENRE"
+msgstr "GENRE"
+
+msgctxt "#31456"
+msgid "CAST"
+msgstr "CAST"
+
+msgctxt "#31457"
+msgid "HD READY"
+msgstr "HD READY"
+
+msgctxt "#31458"
+msgid "BOXED SET"
+msgstr "BOX"
+
+msgctxt "#31459"
+msgid "* ALL SEASONS"
+msgstr "* ALLE SEIZOENEN"
+
+msgctxt "#31460"
+msgid "For now"
+msgstr "Voor nu"
+
+msgctxt "#31461"
+msgid "Kept all day"
+msgstr "De hele dag bewaard"
+
+msgctxt "#31462"
+msgid "Past midnight"
+msgstr "Na middernacht"
+
+msgctxt "#31463"
+msgid "Still up?"
+msgstr "Nog wakker?"
+
+msgctxt "#31464"
+msgid "Nearly bedtime."
+msgstr "Bijna bedtijd."
+
+msgctxt "#31465"
+msgid "Good evening."
+msgstr "Goedenavond."
+
+msgctxt "#31466"
+msgid "Good afternoon."
+msgstr "Goedemiddag."
+
+msgctxt "#31467"
+msgid "Good morning."
+msgstr "Goedemorgen."
+
+msgctxt "#31468"
+msgid "Short ones: under 100 minutes"
+msgstr "Korte: onder de 100 minuten"
+
+msgctxt "#31469"
+msgid "The evening is yours"
+msgstr "De avond is van jou"
+
+msgctxt "#31470"
+msgid "A free afternoon: something long"
+msgstr "Een vrije middag: iets lang"
+
+msgctxt "#31471"
+msgid "Plenty of aeon left"
+msgstr "Nog tijd zat"
+
+msgctxt "#31472"
+msgid "Sunday morning: take it slow"
+msgstr "Zondagochtend: rustig aan"
+
+msgctxt "#31473"
+msgid "A slow start: something light"
+msgstr "Een rustige start: iets lichts"
+
+msgctxt "#31474"
+msgid "Needs a weather add-on in Kodi's settings"
+msgstr "Vereist een weer-add-on in de Kodi-instellingen"
+
+msgctxt "#31475"
+msgid "From the weather add-on set in Kodi"
+msgstr "Van de weer-add-on die in Kodi is ingesteld"
+
+msgctxt "#31476"
+msgid "Tropical storm"
+msgstr "Tropische storm"
+
+msgctxt "#31477"
+msgid "Severe storms"
+msgstr "Zware onweersbuien"
+
+msgctxt "#31478"
+msgid "Rain and snow"
+msgstr "Regen en sneeuw"
+
+msgctxt "#31479"
+msgid "Rain and sleet"
+msgstr "Regen en natte sneeuw"
+
+msgctxt "#31480"
+msgid "Snow and sleet"
+msgstr "Sneeuw en natte sneeuw"
+
+msgctxt "#31481"
+msgid "Freezing drizzle"
+msgstr "Ijzel"
+
+msgctxt "#31482"
+msgid "Freezing rain"
+msgstr "Onderkoelde regen"
+
+msgctxt "#31483"
+msgid "Snow flurries"
+msgstr "Sneeuwvlokken"
+
+msgctxt "#31484"
+msgid "Light snow"
+msgstr "Lichte sneeuw"
+
+msgctxt "#31485"
+msgid "Blowing snow"
+msgstr "Stuifsneeuw"
+
+msgctxt "#31486"
+msgid "Mostly cloudy"
+msgstr "Overwegend bewolkt"
+
+msgctxt "#31487"
+msgid "Partly cloudy"
+msgstr "Half bewolkt"
+
+msgctxt "#31488"
+msgid "Rain and hail"
+msgstr "Regen en hagel"
+
+msgctxt "#31489"
+msgid "Isolated storms"
+msgstr "Plaatselijk onweer"
+
+msgctxt "#31490"
+msgid "Scattered storms"
+msgstr "Verspreid onweer"
+
+msgctxt "#31491"
+msgid "Scattered showers"
+msgstr "Verspreide buien"
+
+msgctxt "#31492"
+msgid "Heavy snow"
+msgstr "Zware sneeuwval"
+
+msgctxt "#31493"
+msgid "Snow showers"
+msgstr "Sneeuwbuien"
+
+msgctxt "#31494"
+msgid "More under 100 minutes"
+msgstr "Meer onder de 100 minuten"
+
+msgctxt "#31495"
+msgid "Sunday morning: documentaries"
+msgstr "Zondagochtend: documentaires"
+
+msgctxt "#31496"
+msgid "Morning shorts: under 100 minutes"
+msgstr "Korte ochtendfilms: onder de 100 minuten"
+
+msgctxt "#31497"
+msgid "A long afternoon film"
+msgstr "Een lange middagfilm"
+
+msgctxt "#31498"
+msgid "Top rated, still unwatched"
+msgstr "Best beoordeeld, nog niet bekeken"
+
+msgctxt "#31499"
+msgid "Tonight's top rated"
+msgstr "Vanavond best beoordeeld"
+
+msgctxt "#31500"
+msgid "Before bed"
+msgstr "Voor het slapengaan"
+
+msgctxt "#31501"
+msgid "This morning"
+msgstr "Vanochtend"
+
+msgctxt "#31502"
+msgid "This afternoon"
+msgstr "Vanmiddag"
+
+msgctxt "#31503"
+msgid "Later today"
+msgstr "Later vandaag"
+
+msgctxt "#31504"
+msgid "One more episode"
+msgstr "Nog één aflevering"
+
+msgctxt "#31505"
+msgid "Next up"
+msgstr "Hierna"
+
+msgctxt "#31506"
+msgid "It's snowing: something long"
+msgstr "Het sneeuwt: iets lang"
+
+msgctxt "#31507"
+msgid "Still raining: under an hour"
+msgstr "Het regent nog: onder het uur"
+
+msgctxt "#31508"
+msgid "It's raining: something long"
+msgstr "Het regent: iets lang"
+
+msgctxt "#31509"
+msgid "Just added"
+msgstr "Net toegevoegd"
+
+msgctxt "#31510"
+msgid "Download subtitles"
+msgstr "Ondertitels downloaden"
+
+msgctxt "#31511"
+msgid "Subtitle settings"
+msgstr "Ondertitelinstellingen"
+
+msgctxt "#31512"
+msgid "What's new"
+msgstr "Wat is er nieuw"
+
+msgctxt "#31513"
+msgid "Nothing to suggest right now."
+msgstr "Nu niets om voor te stellen."
+
+msgctxt "#31514"
+msgid "Clean library?"
+msgstr "Bibliotheek opschonen?"
+
+msgctxt "#31515"
+msgid "Music videos"
+msgstr "Muziekvideo's"
+
+msgctxt "#31516"
+msgid "Kodi takes out the songs, albums and artists it can no longer find. Your files stay where they are."
+msgstr "Kodi haalt de nummers, albums en artiesten weg die het niet meer vindt. Je bestanden blijven waar ze zijn."
+
+msgctxt "#31517"
+msgid "Kodi takes out the films, shows and episodes it can no longer find. Your files stay where they are."
+msgstr "Kodi haalt de films, series en afleveringen weg die het niet meer vindt. Je bestanden blijven waar ze zijn."
+
+msgctxt "#31518"
+msgid "Add-on settings"
+msgstr "Add-on-instellingen"
+
+msgctxt "#31519"
+msgid "Get more"
+msgstr "Meer ophalen"
+
+msgctxt "#31520"
+msgid "Slideshow"
+msgstr "Diavoorstelling"
+
+msgctxt "#31521"
+msgid "Recursive slideshow"
+msgstr "Recursieve diavoorstelling"
+
+msgctxt "#31522"
+msgid "Randomise"
+msgstr "Willekeurig"
+
+msgctxt "#31523"
+msgid "Edited  locked"
+msgstr "Bewerkt  vergrendeld"
+
+msgctxt "#31524"
+msgid "Shuffle  ·  Repeat one"
+msgstr "Shuffle  ·  Eén herhalen"
+
+msgctxt "#31525"
+msgid "Shuffle  ·  Repeat all"
+msgstr "Shuffle  ·  Alles herhalen"
+
+msgctxt "#31526"
+msgid "Repeat one"
+msgstr "Eén herhalen"
+
+msgctxt "#31527"
+msgid "Repeat all"
+msgstr "Alles herhalen"
+
+msgctxt "#31528"
+msgid "Video queue"
+msgstr "Videowachtrij"
+
+msgctxt "#31529"
+msgid "Shuffle: on"
+msgstr "Shuffle: aan"
+
+msgctxt "#31530"
+msgid "Shuffle: off"
+msgstr "Shuffle: uit"
+
+msgctxt "#31531"
+msgid "Play all"
+msgstr "Alles afspelen"
+
+msgctxt "#31532"
+msgid "Shuffle"
+msgstr "Shuffle"
+
+msgctxt "#31533"
+msgid "Refresh"
+msgstr "Vernieuwen"
+
+msgctxt "#31534"
+msgid "Added"
+msgstr "Toegevoegd"
+
+msgctxt "#31535"
+msgid "Plays"
+msgstr "Keer afgespeeld"
+
+msgctxt "#31536"
+msgid "Mood"
+msgstr "Sfeer"
+
+msgctxt "#31537"
+msgid "Album info"
+msgstr "Albuminfo"
+
+msgctxt "#31538"
+msgid "Artist info"
+msgstr "Artiesteninfo"
+
+msgctxt "#31539"
+msgid "About the artist"
+msgstr "Over de artiest"
+
+msgctxt "#31552"
+msgid "About the song"
+msgstr "Over het nummer"
+
+msgctxt "#31553"
+msgid "About the album"
+msgstr "Over het album"
+
+msgctxt "#31554"
+msgid "OK reads all of it"
+msgstr "OK leest alles"
+
+msgctxt "#31555"
+msgid "Up returns to the buttons"
+msgstr "Omhoog gaat terug naar de knoppen"
+
+msgctxt "#31556"
+msgid "Right for the full story"
+msgstr "Rechts voor het hele verhaal"
+
+msgctxt "#31557"
+msgid "Shuffle on"
+msgstr "Shuffle aan"
+
+msgctxt "#31558"
+msgid "Music video"
+msgstr "Muziekvideo"
+
+msgctxt "#31559"
+msgid "HEVC"
+msgstr "HEVC"
+
+msgctxt "#31560"
+msgid "Dolby Vision"
+msgstr "Dolby Vision"
+
+msgctxt "#31561"
+msgid "TrueHD Atmos"
+msgstr "TrueHD Atmos"
+
+msgctxt "#31562"
+msgid "DD+ Atmos"
+msgstr "DD+ Atmos"
+
+msgctxt "#31563"
+msgid "Video"
+msgstr "Video"
+
+msgctxt "#31564"
+msgid "Chapters"
+msgstr "Hoofdstukken"
+
+msgctxt "#31565"
+msgid "Info"
+msgstr "Info"
+
+msgctxt "#31566"
+msgid "Stats"
+msgstr "Gegevens"
+
+msgctxt "#31567"
+msgid "Sleeping after this"
+msgstr "Slaapt hierna"
+
+msgctxt "#31568"
+msgid "Sleep after this"
+msgstr "Hierna slapen"
+
+msgctxt "#31569"
+msgid "1 RESULT"
+msgstr "1 RESULTAAT"
+
+msgctxt "#31575"
+msgid "Colors, backdrop and the look of the settings screens."
+msgstr "Kleuren, achtergrond en het uiterlijk van de instellingenschermen."
+
+msgctxt "#31576"
+msgid "Show a dimmed copy of the last fanart you looked at behind the settings screens."
+msgstr "Een gedimde kopie van de laatst bekeken fanart achter de instellingenschermen tonen."
+
+msgctxt "#31577"
+msgid "Background of the A-Z / scroll bar strip in the library views: dark (default) or white like Aeon 2."
+msgstr "Achtergrond van de A-Z- / scrollbalk in de bibliotheekweergaven: donker (standaard) of wit zoals Aeon 2."
+
+msgctxt "#31578"
+msgid "Aeon style: neutral (flat dark), the faint fanart, or a color that follows the artwork and fades between titles. Override it per home menu item (Edit spotlight)."
+msgstr "Aeon-stijl: neutraal (egaal donker), de vage fanart of een kleur die de afbeelding volgt en tussen titels overvloeit. Per hoofdmenu-item aan te passen (Spotlight bewerken)."
+
+msgctxt "#31579"
+msgid "Aeon: flat dark panels and a white highlight bar (like the Aeon 2 list). Aeon Glass: translucent panels and a soft highlight. Applies to every library view."
+msgstr "Aeon: egale donkere panelen en een witte selectiebalk (zoals de Aeon 2-lijst). Aeon Glass: doorschijnende panelen en een zachte selectie. Geldt voor elke bibliotheekweergave."
+
+msgctxt "#31580"
+msgid "Where the music that is playing shows on Home: Slot (lower left, default), Corner (top left), Line (above the menu) or Bar (bottom)."
+msgstr "Waar de muziek die speelt op Start verschijnt: Vak (linksonder, standaard), Hoek (linksboven), Regel (boven het menu) of Balk (onder)."
+
+msgctxt "#31581"
+msgid "How visible the fanart backdrop is."
+msgstr "Hoe zichtbaar de fanart-achtergrond is."
+
+msgctxt "#31582"
+msgid "Tags, plot text and logos in the movie and episode views."
+msgstr "Labels, plottekst en logo's in de film- en afleveringsweergaven."
+
+msgctxt "#31583"
+msgid "Resolution and video codec in the tag line under a film or episode."
+msgstr "Resolutie en videocodec in de labelregel onder een film of aflevering."
+
+msgctxt "#31584"
+msgid "Shows HDR10, HLG or Dolby Vision in the tag line when the file has it."
+msgstr "Toont HDR10, HLG of Dolby Vision in de labelregel als het bestand het heeft."
+
+msgctxt "#31585"
+msgid "Audio codec and channel count in the tag line."
+msgstr "Audiocodec en aantal kanalen in de labelregel."
+
+msgctxt "#31586"
+msgid "What the text under a film shows: the full plot, or the tagline when the film has one."
+msgstr "Wat de tekst onder een film toont: de volledige plot, of de tagline als de film er een heeft."
+
+msgctxt "#31587"
+msgid "Long plots scroll by themselves after a few seconds."
+msgstr "Lange plots scrollen na een paar seconden vanzelf."
+
+msgctxt "#31588"
+msgid "The studio logo beside seasons and episodes (needs the studio logos resource add-on)."
+msgstr "Het studiologo naast seizoenen en afleveringen (vereist de resource-add-on met studiologo's)."
+
+msgctxt "#31589"
+msgid "Which rating sources show, and whether the score is colored."
+msgstr "Welke beoordelingsbronnen verschijnen en of de score gekleurd is."
+
+msgctxt "#31590"
+msgid "Green from 7, amber from 5, red below."
+msgstr "Groen vanaf 7, amber vanaf 5, rood eronder."
+
+msgctxt "#31591"
+msgid "Shows the IMDb score when the library has one. Several sources can be on at once."
+msgstr "Toont de IMDb-score als de bibliotheek er een heeft. Meerdere bronnen kunnen tegelijk aan staan."
+
+msgctxt "#31592"
+msgid "Shows the TMDb score when the library has one."
+msgstr "Toont de TMDb-score als de bibliotheek er een heeft."
+
+msgctxt "#31593"
+msgid "Shows the Tomatometer when your scraper or TMDb Helper provides it."
+msgstr "Toont de Tomatometer als je scraper of TMDb Helper die levert."
+
+msgctxt "#31594"
+msgid "Shows the Trakt score when it is in the library."
+msgstr "Toont de Trakt-score als die in de bibliotheek staat."
+
+msgctxt "#31595"
+msgid "Seek bar, pause behaviour and the Back button."
+msgstr "Zoekbalk, pauzegedrag en de Terug-knop."
+
+msgctxt "#31596"
+msgid "What the right-hand time of the seek bar shows: the total length, the time left, or when it ends."
+msgstr "Wat de rechtertijd van de zoekbalk toont: de totale lengte, de resterende tijd of wanneer het eindigt."
+
+msgctxt "#31597"
+msgid "The player controls open by themselves when you pause."
+msgstr "De spelerbediening opent vanzelf bij pauzeren."
+
+msgctxt "#31598"
+msgid "How long after pausing the controls open."
+msgstr "Hoelang na het pauzeren de bediening opent."
+
+msgctxt "#31599"
+msgid "Back goes up one level, or straight to the home screen."
+msgstr "Terug gaat een niveau omhoog, of direct naar het startscherm."
+
+msgctxt "#31600"
+msgid "Extra fanart and the artist slideshow."
+msgstr "Extra fanart en de artiestendiavoorstelling."
+
+msgctxt "#31601"
+msgid "Home and the library cycle through a film or show's extra fanart. Needs extra fanart in the library (fanart1, fanart2 ...)."
+msgstr "Start en de bibliotheek wisselen door de extra fanart van een film of serie. Vereist extra fanart in de bibliotheek (fanart1, fanart2 ...)."
+
+msgctxt "#31602"
+msgid "How long each fanart image stays."
+msgstr "Hoelang elke fanart-afbeelding blijft."
+
+msgctxt "#31603"
+msgid "Now playing shows the Artist Slideshow add-on pictures of the artist (needs script.artistslideshow)."
+msgstr "Nu aan het spelen toont de artiestfoto's van de add-on Artist Slideshow (vereist script.artistslideshow)."
+
+msgctxt "#31604"
+msgid "What the full-screen widget pages (Up on a home item) show."
+msgstr "Wat de schermvullende widgetpagina's (Omhoog op een startitem) tonen."
+
+msgctxt "#31605"
+msgid "Resolution, codec, HDR and audio tags on the full-screen widget pages (the choices under Details apply)."
+msgstr "Labels voor resolutie, codec, HDR en audio op de schermvullende widgetpagina's (de keuzes onder Details gelden)."
+
+msgctxt "#31606"
+msgid "The rating line, with the sources you chose under Ratings, on the full-screen widget pages."
+msgstr "De beoordelingsregel, met de bronnen gekozen onder Beoordelingen, op de schermvullende widgetpagina's."
+
+msgctxt "#31607"
+msgid "The studio logo, or the network logo for episodes, on the full-screen widget pages (needs the studio logos add-on)."
+msgstr "Het studiologo, of bij afleveringen het zenderlogo, op de schermvullende widgetpagina's (vereist de add-on met studiologo's)."
+
+msgctxt "#31608"
+msgid "Watched markers on posters, the trailer button and logos instead of titles."
+msgstr "Bekeken-markeringen op posters, de trailerknop en logo's in plaats van titels."
+
+msgctxt "#31609"
+msgid "How the playback controls behave."
+msgstr "Hoe de afspeelbediening zich gedraagt."
+
+msgctxt "#31610"
+msgid "Fonts for each part of the skin, calmer animations, and a way back to the default settings."
+msgstr "Lettertypen per deel van de skin, rustigere animaties en een weg terug naar de standaardinstellingen."
+
+msgctxt "#31611"
+msgid "Unwatched: a small dot. Watched: a check disc. Shows add the number of unwatched episodes."
+msgstr "Niet bekeken: een stipje. Bekeken: een vinkje. Series tonen ook het aantal niet-bekeken afleveringen."
+
+msgctxt "#31612"
+msgid "Shows a Trailer button next to Play when a film has a trailer link (played through the YouTube add-on)."
+msgstr "Toont een Trailer-knop naast Afspelen als een film een trailerlink heeft (afgespeeld via de YouTube-add-on)."
+
+msgctxt "#31613"
+msgid "How long the playback controls stay up after your last button press. They stay while paused and while a menu is open."
+msgstr "Hoelang de afspeelbediening blijft staan na je laatste toetsdruk. Bij pauze en met een open menu blijft ze."
+
+msgctxt "#31614"
+msgid "Where the subtitle and audio offset strip appears while you sync. Top keeps bottom subtitles in view."
+msgstr "Waar de strook voor ondertitel- en audioverschuiving verschijnt tijdens het synchroniseren. Boven houdt ondertitels onderaan zichtbaar."
+
+msgctxt "#31615"
+msgid "Replaces zooms, slides and the rain with short fades. Focus changes stay instant."
+msgstr "Vervangt zooms, schuiven en de regen door korte overgangen. Focuswissels blijven direct."
+
+msgctxt "#31616"
+msgid "Puts every skin setting back to its default and reloads the skin. Press OK twice to confirm."
+msgstr "Zet elke skin-instelling terug op de standaard en laadt de skin opnieuw. Druk twee keer op OK om te bevestigen."
+
+msgctxt "#31617"
+msgid "Aeon Fuse options. Kodi's settings live under Settings; switch skins in Settings > Interface > Skin."
+msgstr "Opties van Aeon Fuse. De instellingen van Kodi staan onder Instellingen; wissel van skin via Instellingen > Interface > Skin."
+
+msgctxt "#31618"
+msgid "Resume"
+msgstr "Hervatten"
+
+msgctxt "#31619"
+msgid "From start"
+msgstr "Vanaf het begin"
+
+msgctxt "#31620"
+msgid "Browse"
+msgstr "Bladeren"
+
+msgctxt "#31621"
+msgid "Trailer"
+msgstr "Trailer"
+
+msgctxt "#31622"
+msgid "Collection"
+msgstr "Collectie"
+
+msgctxt "#31623"
+msgid "More by the director"
+msgstr "Meer van de regisseur"
+
+msgctxt "#31624"
+msgid "Versions"
+msgstr "Versies"
+
+msgctxt "#31625"
+msgid "Extras"
+msgstr "Extra's"
+
+msgctxt "#31626"
+msgid "Choose art"
+msgstr "Afbeelding kiezen"
+
+msgctxt "#31627"
+msgid "Choose fanart"
+msgstr "Fanart kiezen"
+
+msgctxt "#31628"
+msgid "Films in this collection"
+msgstr "Films in deze collectie"
+
+msgctxt "#31629"
+msgid "OK reads the whole story"
+msgstr "OK leest het hele verhaal"
+
+msgctxt "#31630"
+msgid "Up or Back returns to the buttons"
+msgstr "Omhoog of Terug gaat naar de knoppen"
+
+msgctxt "#31631"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31632"
+msgid "No story written for this one yet."
+msgstr "Voor deze titel is nog geen verhaal geschreven."
+
+msgctxt "#31633"
+msgid "Shows in progress"
+msgstr "Series in uitvoering"
+
+msgctxt "#31635"
+msgid "A collection: OK opens its films."
+msgstr "Een collectie: OK opent de films."
+
+msgctxt "#31636"
+msgid "Nothing left: a good time for something new."
+msgstr "Niets meer over: tijd voor iets nieuws."
+
+msgctxt "#31637"
+msgid "Ending at"
+msgstr "Eindigt om"
+
+msgctxt "#31638"
+msgid "PRESETS"
+msgstr "VOORINSTELLINGEN"
+
+msgctxt "#31639"
+msgid "LYRICS"
+msgstr "SONGTEKST"
+
+msgctxt "#31640"
+msgid "No guide data. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "Geen gidsgegevens. Schakel een PVR-client-add-on in bij de PVR- en live-tv-instellingen."
+
+msgctxt "#31641"
+msgid "Feels like"
+msgstr "Voelt als"
+
+msgctxt "#31642"
+msgid "Humidity"
+msgstr "Luchtvochtigheid"
+
+msgctxt "#31643"
+msgid "Wind"
+msgstr "Wind"
+
+msgctxt "#31644"
+msgid "Precipitation"
+msgstr "Neerslag"
+
+msgctxt "#31645"
+msgid "UV index"
+msgstr "UV-index"
+
+msgctxt "#31646"
+msgid "Sunrise"
+msgstr "Zonsopkomst"
+
+msgctxt "#31647"
+msgid "Sunset"
+msgstr "Zonsondergang"
+
+msgctxt "#31648"
+msgid "Next location"
+msgstr "Volgende locatie"
+
+msgctxt "#31649"
+msgid "Skin"
+msgstr "Skin"
+
+msgctxt "#31650"
+msgid "Address"
+msgstr "Adres"
+
+msgctxt "#31651"
+msgid "Screen"
+msgstr "Scherm"
+
+msgctxt "#31652"
+msgid "Aeon Fuse options: look, details, ratings, behaviour, backgrounds and the home menu (order, widgets, submenus)."
+msgstr "Opties van Aeon Fuse: uiterlijk, details, beoordelingen, gedrag, achtergronden en het hoofdmenu (volgorde, widgets, submenu's)."
+
+msgctxt "#31653"
+msgid "Video and music playback, refresh-rate matching, subtitle languages and look, discs."
+msgstr "Video- en muziekweergave, verversingsfrequentie, ondertiteltalen en -uiterlijk, schijven."
+
+msgctxt "#31654"
+msgid "Library behaviour, scrapers, file lists, artwork and what OK does on an item."
+msgstr "Bibliotheekgedrag, scrapers, bestandslijsten, afbeeldingen en wat OK op een item doet."
+
+msgctxt "#31655"
+msgid "Skin, colors, fonts, region and language, screensaver. Switch to another skin here: Skin > Skin."
+msgstr "Skin, kleuren, lettertypen, regio en taal, schermbeveiliging. Wissel hier naar een andere skin: Skin > Skin."
+
+msgctxt "#31656"
+msgid "Browse, update, configure or install add-ons."
+msgstr "Add-ons bekijken, bijwerken, instellen of installeren."
+
+msgctxt "#31657"
+msgid "Web server and JSON-RPC control, UPnP, AirPlay, Zeroconf, SMB client."
+msgstr "Webserver en JSON-RPC-bediening, UPnP, AirPlay, Zeroconf, SMB-client."
+
+msgctxt "#31658"
+msgid "Display, audio output and passthrough, input, power saving, logging."
+msgstr "Beeldscherm, audio-uitvoer en passthrough, invoer, energiebesparing, logboek."
+
+msgctxt "#31659"
+msgid "Copy, move and delete files; add network sources."
+msgstr "Bestanden kopiëren, verplaatsen en verwijderen; netwerkbronnen toevoegen."
+
+msgctxt "#31660"
+msgid "Kodi version, video renderer, storage, network and hardware details."
+msgstr "Kodi-versie, videorenderer, opslag, netwerk en hardware."
+
+msgctxt "#31661"
+msgid "What Kodi has done recently: scans, add-on updates, errors."
+msgstr "Wat Kodi recent heeft gedaan: scans, add-on-updates, fouten."
+
+msgctxt "#31662"
+msgid "Profiles and the login screen."
+msgstr "Profielen en het aanmeldscherm."
+
+msgctxt "#31663"
+msgid "Live TV and PVR."
+msgstr "Live tv en PVR."
+
+msgctxt "#31664"
+msgid "Games and controllers."
+msgstr "Games en controllers."
+
+msgctxt "#31665"
+msgid "Dark"
+msgstr "Donker"
+
+msgctxt "#31666"
+msgid "White"
+msgstr "Wit"
+
+msgctxt "#31667"
+msgid "Menu"
+msgstr "Menu"
+
+msgctxt "#31668"
+msgid "Position"
+msgstr "Positie"
+
+msgctxt "#31669"
+msgid "Category"
+msgstr "Categorie"
+
+msgctxt "#31670"
+msgid "Hold time"
+msgstr "Toontijd"
+
+msgctxt "#31671"
+msgid "Pick an item, then use the buttons on the right. Add item puts a new one at the end."
+msgstr "Kies een item en gebruik de knoppen rechts. Item toevoegen zet een nieuw item achteraan."
+
+msgctxt "#31672"
+msgid "Light"
+msgstr "Licht"
+
+msgctxt "#31673"
+msgid "Strong"
+msgstr "Sterk"
+
+msgctxt "#31674"
+msgid "Slot"
+msgstr "Vak"
+
+msgctxt "#31675"
+msgid "Corner"
+msgstr "Hoek"
+
+msgctxt "#31676"
+msgid "Line"
+msgstr "Regel"
+
+msgctxt "#31677"
+msgid "Bar"
+msgstr "Balk"
+
+msgctxt "#31678"
+msgid "Aeon"
+msgstr "Aeon"
+
+msgctxt "#31679"
+msgid "Aeon Glass"
+msgstr "Aeon Glass"
+
+msgctxt "#31680"
+msgid "Color"
+msgstr "Kleur"
+
+msgctxt "#31681"
+msgid "PREVIEW"
+msgstr "VOORBEELD"
+
+msgctxt "#31682"
+msgid "LIBRARY LISTS"
+msgstr "BIBLIOTHEEKLIJSTEN"
+
+msgctxt "#31683"
+msgid "Focused row"
+msgstr "Rij met focus"
+
+msgctxt "#31684"
+msgid "Other row"
+msgstr "Andere rij"
+
+msgctxt "#31685"
+msgid "MUSIC PLAYING"
+msgstr "MUZIEK SPEELT"
+
+msgctxt "#31686"
+msgid "SAMPLE"
+msgstr "VOORBEELD"
+
+msgctxt "#31687"
+msgid "BACKDROP"
+msgstr "ACHTERGROND"
+
+msgctxt "#31688"
+msgid "SCREENSAVER"
+msgstr "SCHERMBEVEILIGING"
+
+msgctxt "#31689"
+msgid "TITLE"
+msgstr "TITEL"
+
+msgctxt "#31690"
+msgid "Plot"
+msgstr "Plot"
+
+msgctxt "#31691"
+msgid "Tagline"
+msgstr "Tagline"
+
+msgctxt "#31692"
+msgid "TAG LINE"
+msgstr "LABELREGEL"
+
+msgctxt "#31693"
+msgid "UNDER THE TITLE"
+msgstr "ONDER DE TITEL"
+
+msgctxt "#31694"
+msgid "PLOT TEXT"
+msgstr "PLOTTEKST"
+
+msgctxt "#31695"
+msgid "Long plots scroll slowly by themselves, so you can read them without a button press."
+msgstr "Lange plots scrollen langzaam vanzelf, zodat je ze zonder toetsdruk kunt lezen."
+
+msgctxt "#31696"
+msgid "The studio logo shows beside a season or episode when the studio logos add-on is installed."
+msgstr "Het studiologo verschijnt naast een seizoen of aflevering als de add-on met studiologo's is geïnstalleerd."
+
+msgctxt "#31697"
+msgid "THEME SONG"
+msgstr "TITELMUZIEK"
+
+msgctxt "#31699"
+msgid "Plays while a movie or show is selected, if its folder has a theme file."
+msgstr "Speelt terwijl een film of serie geselecteerd is, als de map een themabestand heeft."
+
+msgctxt "#31700"
+msgid "Total"
+msgstr "Totaal"
+
+msgctxt "#31701"
+msgid "Left"
+msgstr "Resterend"
+
+msgctxt "#31702"
+msgid "Ends at"
+msgstr "Eindigt om"
+
+msgctxt "#31703"
+msgid "SEEK BAR"
+msgstr "ZOEKBALK"
+
+msgctxt "#31704"
+msgid "ON PAUSE"
+msgstr "BIJ PAUZE"
+
+msgctxt "#31705"
+msgid "BACK BUTTON"
+msgstr "TERUG-KNOP"
+
+msgctxt "#31706"
+msgid "Pressing Back in a library list goes up one level, or straight to the home screen if you choose Home."
+msgstr "Terug in een bibliotheeklijst gaat een niveau omhoog, of direct naar Start als je Start kiest."
+
+msgctxt "#31707"
+msgid "PLAYER CONTROLS"
+msgstr "SPELERBEDIENING"
+
+msgctxt "#31708"
+msgid "Needs disc art for the album or movie."
+msgstr "Vereist disc-art voor het album of de film."
+
+msgctxt "#31709"
+msgid "FANART"
+msgstr "FANART"
+
+msgctxt "#31710"
+msgid "NOW PLAYING"
+msgstr "NU AAN HET SPELEN"
+
+msgctxt "#31711"
+msgid "Pictures of the artist from the Artist Slideshow add-on fade in behind the album cover."
+msgstr "Foto's van de artiest uit de add-on Artist Slideshow verschijnen achter de albumhoes."
+
+msgctxt "#31712"
+msgid "Slide"
+msgstr "Schuiven"
+
+msgctxt "#31713"
+msgid "Fade"
+msgstr "Vervagen"
+
+msgctxt "#31714"
+msgid "Cut"
+msgstr "Knip"
+
+msgctxt "#31715"
+msgid "MEDIA INFO"
+msgstr "MEDIA-INFO"
+
+msgctxt "#31716"
+msgid "STUDIO / NETWORK"
+msgstr "STUDIO / ZENDER"
+
+msgctxt "#31717"
+msgid "The logo of the studio, or of the network for episodes, under the date ring."
+msgstr "Het logo van de studio, of van de zender voor afleveringen, onder de datumring."
+
+msgctxt "#31718"
+msgid "SPOTLIGHT"
+msgstr "SPOTLIGHT"
+
+msgctxt "#31719"
+msgid "Selected item:"
+msgstr "Geselecteerd item:"
+
+msgctxt "#31720"
+msgid "Set path / content"
+msgstr "Pad / inhoud instellen"
+
+msgctxt "#31721"
+msgid "Edit widgets"
+msgstr "Widgets bewerken"
+
+msgctxt "#31722"
+msgid "Edit submenu"
+msgstr "Submenu bewerken"
+
+msgctxt "#31723"
+msgid "Edit spotlight"
+msgstr "Spotlight bewerken"
+
+msgctxt "#31724"
+msgid "Restore default order"
+msgstr "Standaardvolgorde"
+
+msgctxt "#31725"
+msgid "Theme & style"
+msgstr "Thema & stijl"
+
+msgctxt "#31726"
+msgid "Look"
+msgstr "Stijl"
+
+msgctxt "#31727"
+msgid "Player"
+msgstr "Speler"
+
+msgctxt "#31728"
+msgid "Music player"
+msgstr "Muziekspeler"
+
+msgctxt "#31729"
+msgid "Backgrounds"
+msgstr "Achtergronden"
+
+msgctxt "#31730"
+msgid "Widget & Spotlight screens"
+msgstr "Widget- & Spotlight-schermen"
+
+msgctxt "#31731"
+msgid "System"
+msgstr "Systeem"
+
+msgctxt "#31732"
+msgid "Home menu"
+msgstr "Hoofdmenu"
+
+msgctxt "#31733"
+msgid "Auto"
+msgstr "Auto"
+
+msgctxt "#31734"
+msgid "Morning"
+msgstr "Ochtend"
+
+msgctxt "#31735"
+msgid "Afternoon"
+msgstr "Middag"
+
+msgctxt "#31736"
+msgid "Evening"
+msgstr "Avond"
+
+msgctxt "#31737"
+msgid "Night"
+msgstr "Nacht"
+
+msgctxt "#31738"
+msgid "Bedtime"
+msgstr "Bedtijd"
+
+msgctxt "#31739"
+msgid "Countdown and fits-before rows"
+msgstr "Aftel- en past-nog-rijen"
+
+msgctxt "#31740"
+msgid "Weather row and rain"
+msgstr "Weerrij en regen"
+
+msgctxt "#31741"
+msgid "Borrowed color"
+msgstr "Geleende kleur"
+
+msgctxt "#31742"
+msgid "The focused film tints the light"
+msgstr "De film met focus kleurt het licht"
+
+msgctxt "#31743"
+msgid "Dots and checks on posters"
+msgstr "Stippen en vinkjes op posters"
+
+msgctxt "#31744"
+msgid "Unwatched"
+msgstr "Ongezien"
+
+msgctxt "#31745"
+msgid "Only when a film has a trailer"
+msgstr "Alleen als een film een trailer heeft"
+
+msgctxt "#31746"
+msgid "Logos instead of titles"
+msgstr "Logo's in plaats van titels"
+
+msgctxt "#31747"
+msgid "Clearlogos in the OSD, screensaver and Now playing"
+msgstr "Clearlogo's in de OSD, schermbeveiliging en Nu aan het spelen"
+
+msgctxt "#31748"
+msgid "Library side strip"
+msgstr "Zijstrook van de bibliotheek"
+
+msgctxt "#31749"
+msgid "OSD auto-hide"
+msgstr "OSD automatisch verbergen"
+
+msgctxt "#31750"
+msgid "Controls close by themselves"
+msgstr "Bediening sluit vanzelf"
+
+msgctxt "#31751"
+msgid "Subtitle offset strip"
+msgstr "Strook voor ondertitelverschuiving"
+
+msgctxt "#31752"
+msgid "Subtitle / audio sync strip"
+msgstr "Synchronisatiestrook ondertitels / audio"
+
+msgctxt "#31753"
+msgid "Top"
+msgstr "Boven"
+
+msgctxt "#31754"
+msgid "Bottom"
+msgstr "Onder"
+
+msgctxt "#31755"
+msgid "Fades instead of zooms and slides"
+msgstr "Overgangen in plaats van zoomen en schuiven"
+
+msgctxt "#31756"
+msgid "Back to the defaults"
+msgstr "Terug naar de standaard"
+
+msgctxt "#31757"
+msgid "Needs a PVR add-on"
+msgstr "Vereist een PVR-add-on"
+
+msgctxt "#31758"
+msgid "Power and library actions (Home sub-menu)"
+msgstr "Aan/uit- en bibliotheekacties (submenu van Start)"
+
+msgctxt "#31759"
+msgid "Spotlight: menu item 1"
+msgstr "Spotlight: menu-item 1"
+
+msgctxt "#31760"
+msgid "Featured slider for this item (needs a library or add-on folder)"
+msgstr "Slider voor dit item (vereist een bibliotheek- of add-onmap)"
+
+msgctxt "#31761"
+msgid "Spotlight: menu item 2"
+msgstr "Spotlight: menu-item 2"
+
+msgctxt "#31762"
+msgid "Spotlight: menu item 3"
+msgstr "Spotlight: menu-item 3"
+
+msgctxt "#31763"
+msgid "Fanart Menu Backdrop"
+msgstr "Fanart-menuachtergrond"
+
+msgctxt "#31764"
+msgid "Menu Backdrop Strength"
+msgstr "Sterkte van de menuachtergrond"
+
+msgctxt "#31765"
+msgid "Now playing on Home"
+msgstr "Nu aan het spelen op Start"
+
+msgctxt "#31766"
+msgid "Theme"
+msgstr "Thema"
+
+msgctxt "#31767"
+msgid "Library background"
+msgstr "Bibliotheekachtergrond"
+
+msgctxt "#31768"
+msgid "Screensaver background"
+msgstr "Achtergrond schermbeveiliging"
+
+msgctxt "#31769"
+msgid "Resolution and codec"
+msgstr "Resolutie en codec"
+
+msgctxt "#31770"
+msgid "HDR tag"
+msgstr "HDR-label"
+
+msgctxt "#31771"
+msgid "Audio codec and channels"
+msgstr "Audiocodec en kanalen"
+
+msgctxt "#31772"
+msgid "Plotline"
+msgstr "Plotregel"
+
+msgctxt "#31773"
+msgid "Autoscroll plot text"
+msgstr "Plottekst automatisch scrollen"
+
+msgctxt "#31774"
+msgid "Studio logo"
+msgstr "Studiologo"
+
+msgctxt "#31775"
+msgid "Theme songs"
+msgstr "Titelmuziek"
+
+msgctxt "#31776"
+msgid "Color the rating"
+msgstr "Beoordeling kleuren"
+
+msgctxt "#31777"
+msgid "IMDb rating"
+msgstr "IMDb-score"
+
+msgctxt "#31778"
+msgid "TMDb rating"
+msgstr "TMDb-score"
+
+msgctxt "#31779"
+msgid "Rotten Tomatoes"
+msgstr "Rotten Tomatoes"
+
+msgctxt "#31780"
+msgid "Trakt rating"
+msgstr "Trakt-score"
+
+msgctxt "#31781"
+msgid "Seek bar time"
+msgstr "Tijd op de zoekbalk"
+
+msgctxt "#31782"
+msgid "Controls on pause"
+msgstr "Bediening bij pauze"
+
+msgctxt "#31783"
+msgid "Delay before they open"
+msgstr "Vertraging voor openen"
+
+msgctxt "#31784"
+msgid "Back button in the library"
+msgstr "Terug-knop in de bibliotheek"
+
+msgctxt "#31785"
+msgid "Show poster on OSD controls"
+msgstr "Poster tonen bij de OSD-bediening"
+
+msgctxt "#31786"
+msgid "Spinning disc art"
+msgstr "Draaiende disc-art"
+
+msgctxt "#31787"
+msgid "Cycle extra fanart"
+msgstr "Extra fanart wisselen"
+
+msgctxt "#31788"
+msgid "Seconds between images"
+msgstr "Seconden tussen afbeeldingen"
+
+msgctxt "#31789"
+msgid "Artist slideshow"
+msgstr "Artiestendiavoorstelling"
+
+msgctxt "#31790"
+msgid "Studio / network"
+msgstr "Studio / zender"
+
+msgctxt "#31791"
+msgid "Home spotlight: background"
+msgstr "Spotlight op Start: achtergrond"
+
+msgctxt "#31792"
+msgid "Home spotlight: transition"
+msgstr "Spotlight op Start: overgang"
+
+msgctxt "#31793"
+msgid "Rules"
+msgstr "Regels"
+
+msgctxt "#31800"
+msgid "Settings strip"
+msgstr "Instellingenstrook"
+
+msgctxt "#31801"
+msgid "Overlay"
+msgstr "Overlappend"
+
+msgctxt "#31802"
+msgid "Permanent"
+msgstr "Permanent"
+
+msgctxt "#31803"
+msgid "Box colors from artwork"
+msgstr "Vakkleuren uit de afbeelding"
+
+msgctxt "#31804"
+msgid "Show clock on OSD"
+msgstr "Klok tonen in de OSD"
+
+msgctxt "#31805"
+msgid "Show weather on OSD"
+msgstr "Weer tonen in de OSD"
+
+msgctxt "#31806"
+msgid "Lyrics style"
+msgstr "Songtekststijl"
+
+msgctxt "#31807"
+msgid "Lines"
+msgstr "Regels"
+
+msgctxt "#31808"
+msgid "Words"
+msgstr "Woorden"
+
+msgctxt "#31280"
+msgid "VERSION"
+msgstr "VERSIE"
+
+msgctxt "#31281"
+msgid "SYSTEM"
+msgstr "SYSTEEM"
+
+msgctxt "#31282"
+msgid "HARDWARE"
+msgstr "HARDWARE"
+
+msgctxt "#31283"
+msgid "LIBRARY"
+msgstr "BIBLIOTHEEK"
+
+msgctxt "#31574"
+msgid "Build"
+msgstr "Build"
+
+msgctxt "#31634"
+msgid "Name"
+msgstr "Naam"
+
+msgctxt "#31698"
+msgid "Profile"
+msgstr "Profiel"
+
+msgctxt "#31794"
+msgid "Uptime"
+msgstr "Uptime"
+
+msgctxt "#31795"
+msgid "Total uptime"
+msgstr "Totale uptime"
+
+msgctxt "#31796"
+msgid "IP address"
+msgstr "IP-adres"
+
+msgctxt "#31797"
+msgid "MAC address"
+msgstr "MAC-adres"
+
+msgctxt "#31798"
+msgid "Internet"
+msgstr "Internet"
+
+msgctxt "#31799"
+msgid "CPU usage"
+msgstr "CPU-gebruik"
+
+msgctxt "#31809"
+msgid "Memory"
+msgstr "Geheugen"
+
+msgctxt "#31810"
+msgid "Used"
+msgstr "Gebruikt"
+
+msgctxt "#31811"
+msgid "CPU temperature"
+msgstr "CPU-temperatuur"
+
+msgctxt "#31812"
+msgid "GPU temperature"
+msgstr "GPU-temperatuur"
+
+msgctxt "#31813"
+msgid "Movies"
+msgstr "Films"
+
+msgctxt "#31814"
+msgid "Lyrics take focus"
+msgstr "Songtekst krijgt de focus"
+
+msgctxt "#31815"
+msgid "Artist list"
+msgstr "Artiestenlijst"
+
+msgctxt "#31816"
+msgid "Artist wall (covers)"
+msgstr "Artiestenmuur (hoezen)"
+
+msgctxt "#31817"
+msgid "Album wall (fanart)"
+msgstr "Albummuur (fanart)"
+
+msgctxt "#31824"
+msgid "LIBRARY VIEW"
+msgstr "BIBLIOTHEEKWEERGAVE"
+
+msgctxt "#31825"
+msgid "Overlay: the strip slides in with Left or the Menu key. Permanent: it is always there. View settings can set this per view."
+msgstr "Overlappend: de strook schuift in met Links of de Menu-toets. Permanent: hij is er altijd. Weergave-instellingen kunnen dit per weergave instellen."
+
+msgctxt "#31826"
+msgid "BOXES"
+msgstr "VAKKEN"
+
+msgctxt "#31827"
+msgid "On: the clock and count boxes take the color of the poster or cover in focus (needs the KarmaMole helper)."
+msgstr "Aan: het klok- en tellervak nemen de kleur aan van de poster of hoes met focus (vereist de KarmaMole-helper)."
+
+msgctxt "#31828"
+msgid "The controls close by themselves after this many seconds without a key press."
+msgstr "De bediening sluit vanzelf na zoveel seconden zonder toetsdruk."
+
+msgctxt "#31829"
+msgid "SYNC STRIP"
+msgstr "Syncstrook"
+
+msgctxt "#31830"
+msgid "Where the subtitle / audio offset strip sits while you adjust it."
+msgstr "Waar de strook voor ondertitel- / audioverschuiving staat terwijl je hem instelt."
+
+msgctxt "#31831"
+msgid "Clock box at the top right of the player controls."
+msgstr "Klokvak rechtsboven op de spelerbediening."
+
+msgctxt "#31832"
+msgid "Weather box under the clock (needs a weather add-on)."
+msgstr "Weervak onder de klok (vereist een weer-add-on)."
+
+msgctxt "#31833"
+msgid "BIG"
+msgstr "GROOT"
+
+msgctxt "#31834"
+msgid "COLORED"
+msgstr "GEKLEURD"
+
+msgctxt "#31835"
+msgid "WORDS"
+msgstr "WOORDEN"
+
+msgctxt "#31836"
+msgid "Lines: the current line between its neighbours. Words: the animated lyrics of Estuary MOD V2 (needs that skin installed for its fonts)."
+msgstr "Regels: de huidige regel tussen zijn buren. Woorden: de geanimeerde songtekst van Estuary MOD V2 (vereist dat die skin geïnstalleerd is voor de lettertypen)."
+
+msgctxt "#31837"
+msgid "Off: OK opens the music controls. On: Up / Down pick a line, OK jumps to it; Back lets go of the lines and the lyrics keep running."
+msgstr "Uit: OK opent de muziekbediening. Aan: Omhoog / Omlaag kiest een regel, OK springt erheen; Terug laat de regels los en de songtekst loopt door."
+
+msgctxt "#31818"
+msgid "Words style placement"
+msgstr "Plaatsing van de Woorden-stijl"
+
+msgctxt "#31819"
+msgid "Full screen"
+msgstr "Volledig scherm"
+
+msgctxt "#31820"
+msgid "On the cover"
+msgstr "Op de hoes"
+
+msgctxt "#31821"
+msgid "Home vignette"
+msgstr "Vignet op Start"
+
+msgctxt "#31822"
+msgid "Fonts"
+msgstr "Lettertypen"
+
+msgctxt "#31823"
+msgid "Own family for Home, library, headings, settings, player"
+msgstr "Eigen familie voor Start, bibliotheek, koppen, instellingen, speler"
+
+msgctxt "#31838"
+msgid "Fonts per section"
+msgstr "Lettertypen per onderdeel"
+
+msgctxt "#31839"
+msgid "Follow the font set"
+msgstr "De lettertypeset volgen"
+
+msgctxt "#31840"
+msgid "Headings"
+msgstr "Koppen"
+
+msgctxt "#31841"
+msgid "Settings pages"
+msgstr "Instellingenpagina's"
+
+msgctxt "#31842"
+msgid "Player"
+msgstr "Speler"
+
+msgctxt "#31843"
+msgid "Font for: %s"
+msgstr "Lettertype voor: %s"
+
+msgctxt "#31844"
+msgid "not installed"
+msgstr "niet geïnstalleerd"
+
+msgctxt "#31845"
+msgid "Plots, biographies and hints look like this. The quick brown fox jumps over the lazy dog. 0123456789"
+msgstr "Plots, biografieën en tips zien er zo uit. Pa's wijze lynx bezag vroom het fikse aquaduct. 0123456789"
+
+msgctxt "#31846"
+msgid "Preview"
+msgstr "Voorbeeld"
+
+msgctxt "#31847"
+msgid "Categories"
+msgstr "Categorieën"
+
+msgctxt "#31848"
+msgid "Show weather on screensaver"
+msgstr "Weer tonen op de schermbeveiliging"
+
+msgctxt "#31849"
+msgid "Temperature and conditions in the top right corner"
+msgstr "Temperatuur en weer rechtsboven"
+
+msgctxt "#31850"
+msgid "Videos · Music · Discs · Pictures · Language · Subtitles"
+msgstr "Video's · Muziek · Schijven · Afbeeldingen · Taal · Ondertitels"
+
+msgctxt "#31851"
+msgid "Library · General · Videos · Music · Pictures"
+msgstr "Bibliotheek · Algemeen · Video's · Muziek · Afbeeldingen"
+
+msgctxt "#31852"
+msgid "Skin · Regional · Screensaver · Master lock · Startup"
+msgstr "Skin · Regionaal · Schermbeveiliging · Hoofdslot · Opstarten"
+
+msgctxt "#31853"
+msgid "General · Control · UPnP / DLNA · AirPlay · Weather"
+msgstr "Algemeen · Bediening · UPnP / DLNA · AirPlay · Weer"
+
+msgctxt "#31854"
+msgid "Display · Audio · Input · Internet access · Power saving · Add-ons · Logging"
+msgstr "Beeldscherm · Audio · Invoer · Internettoegang · Energiebesparing · Add-ons · Logboek"
+
+msgctxt "#31855"
+msgid "General · Channels · Guide · Playback · Recording · Reminders"
+msgstr "Algemeen · Zenders · Gids · Afspelen · Opnemen · Herinneringen"
+
+msgctxt "#31856"
+msgid "Home menu position"
+msgstr "Positie van het hoofdmenu"
+
+msgctxt "#31857"
+msgid "Middle"
+msgstr "Midden"
+
+msgctxt "#31858"
+msgid "Low"
+msgstr "Laag"
+
+msgctxt "#31859"
+msgid "General · Achievements"
+msgstr "Algemeen · Prestaties"
+
+msgctxt "#31860"
+msgid "Show clock on screensaver"
+msgstr "Klok tonen op de schermbeveiliging"
+
+msgctxt "#31861"
+msgid "Poster / thumbnail"
+msgstr "Poster / miniatuur"
+
+msgctxt "#31862"
+msgid "Season and episode counts"
+msgstr "Aantal seizoenen en afleveringen"
+
+msgctxt "#31863"
+msgid "Watched status"
+msgstr "Bekeken-status"
+
+msgctxt "#31864"
+msgid "The Long Way Home"
+msgstr "De lange weg naar huis"
+
+msgctxt "#31865"
+msgid "2019 | DRAMA / ADVENTURE"
+msgstr "2019 | DRAMA / AVONTUUR"
+
+msgctxt "#31866"
+msgid "Northern Lights"
+msgstr "Noorderlicht"
+
+msgctxt "#31867"
+msgid "2023 | DOCUMENTARY"
+msgstr "2023 | DOCUMENTAIRE"
+
+msgctxt "#31868"
+msgid "A Quiet Harbour"
+msgstr "Een stille haven"
+
+msgctxt "#31869"
+msgid "1998 | CRIME / THRILLER"
+msgstr "1998 | MISDAAD / THRILLER"
+
+msgctxt "#31188"
+msgid "Item"
+msgstr "Item"
+
+msgctxt "#31192"
+msgid "Screenshots"
+msgstr "Schermafbeeldingen"
+
+msgctxt "#31193"
+msgid "Picture details"
+msgstr "Afbeeldingsdetails"
+
+msgctxt "#31284"
+msgid "EPG"
+msgstr "EPG"
+
+msgctxt "#31285"
+msgid "Tools"
+msgstr "Hulpmiddelen"
+
+msgctxt "#31286"
+msgid "Who is watching?"
+msgstr "Wie kijkt er?"
+
+msgctxt "#31287"
+msgid "Playlist editor"
+msgstr "Afspeellijsteditor"
+
+msgctxt "#31288"
+msgid "Flix"
+msgstr "Flix"
+
+msgctxt "#31289"
+msgid "Fanart with one row"
+msgstr "Fanart met één rij"
+
+msgctxt "#31290"
+msgid "Combined"
+msgstr "Gecombineerd"
+
+msgctxt "#31291"
+msgid "A row over its contents"
+msgstr "Een rij boven de inhoud"
+
+msgctxt "#31292"
+msgid "Circles"
+msgstr "Cirkels"
+
+msgctxt "#31293"
+msgid "Round portraits"
+msgstr "Ronde portretten"
+
+msgctxt "#31294"
+msgid "Planner"
+msgstr "Planner"
+
+msgctxt "#31570"
+msgid "Episodes by date"
+msgstr "Afleveringen op datum"
+
+msgctxt "#31571"
+msgid "Recommended"
+msgstr "Aanbevolen"
+
+msgctxt "#31572"
+msgid "Similar titles"
+msgstr "Vergelijkbare titels"
+
+msgctxt "#31573"
+msgid "Information"
+msgstr "Informatie"
+
+msgctxt "#31870"
+msgid "Plot hidden until you have watched it."
+msgstr "Plot verborgen tot je het hebt gezien."
+
+msgctxt "#31871"
+msgid "More options"
+msgstr "Meer opties"
+
+msgctxt "#31872"
+msgid "Spoilers, pause and language flags"
+msgstr "Spoilers, pauze en taalvlaggen"
+
+msgctxt "#31873"
+msgid "Hide spoilers of unwatched episodes"
+msgstr "Spoilers van nieuwe afleveringen verbergen"
+
+msgctxt "#31874"
+msgid "Seek bar while paused"
+msgstr "Zoekbalk bij pauze"
+
+msgctxt "#31875"
+msgid "Show language flags on OSD"
+msgstr "Taalvlaggen tonen in de OSD"
+
+msgctxt "#31876"
+msgid "Always"
+msgstr "Altijd"
+
+msgctxt "#31877"
+msgid "5 seconds"
+msgstr "5 seconden"
+
+msgctxt "#31878"
+msgid "Never"
+msgstr "Nooit"
+
+msgctxt "#31879"
+msgid "Stacked row on Home"
+msgstr "Gestapelde rij op Start"
+
+msgctxt "#31880"
+msgid "Kiosk mode (lock views)"
+msgstr "Kioskmodus (weergaven vergrendeld)"
+
+msgctxt "#31881"
+msgid "Last login"
+msgstr "Laatst aangemeld"
+
+msgctxt "#31882"
+msgid "Cinema mode: trailers before a film"
+msgstr "Bioscoopmodus: trailers voor een film"
+
+msgctxt "#31883"
+msgid "1 trailer"
+msgstr "1 trailer"
+
+msgctxt "#31884"
+msgid "2 trailers"
+msgstr "2 trailers"
+
+msgctxt "#31885"
+msgid "3 trailers"
+msgstr "3 trailers"
+
+msgctxt "#31886"
+msgid "Reviews"
+msgstr "Recensies"
+
+msgctxt "#31887"
+msgid "Top tracks"
+msgstr "Topnummers"
+
+msgctxt "#31888"
+msgid "Similar artists"
+msgstr "Vergelijkbare artiesten"
+
+msgctxt "#31889"
+msgid "Not in your library"
+msgstr "Niet in bibliotheek"
+
+msgctxt "#31890"
+msgid "Artist page: look up on Deezer"
+msgstr "Artiestpagina: opzoeken op Deezer"
+
+msgctxt "#31891"
+msgid "Progress line on posters"
+msgstr "Voortgangslijn op posters"
+
+msgctxt "#31892"
+msgid "Play trailers automatically"
+msgstr "Trailers automatisch afspelen"
+
+msgctxt "#31893"
+msgid "Nothing planned"
+msgstr "Niets gepland"
+
+msgctxt "#31894"
+msgid "View"
+msgstr "Weergave"
+
+msgctxt "#31895"
+msgid "Week starts"
+msgstr "Week begint"
+
+msgctxt "#31896"
+msgid "Show"
+msgstr "Tonen"
+
+msgctxt "#31897"
+msgid "Day"
+msgstr "Dag"
+
+msgctxt "#31898"
+msgid "Week"
+msgstr "Week"
+
+msgctxt "#31899"
+msgid "Home spotlight"
+msgstr "Spotlight op Start"
+
+msgctxt "#31903"
+msgid "Days ahead"
+msgstr "Dagen vooruit"
+
+msgctxt "#31904"
+msgid "What is coming, shown one title at a time while the Planner is focused on Home. It starts with today."
+msgstr "Wat er komt, één titel tegelijk zolang de Planner focus heeft op Start. Het begint bij vandaag."
+
+msgctxt "#31905"
+msgid "Disable"
+msgstr "Uitschakelen"
+
+msgctxt "#31906"
+msgid "Enable"
+msgstr "Inschakelen"
+
+msgctxt "#31907"
+msgid "Empty"
+msgstr "Leeg"
+
+msgctxt "#31908"
+msgid "Choose type"
+msgstr "Type kiezen"
+
+msgctxt "#31909"
+msgid "Custom item"
+msgstr "Eigen item"
+
+msgctxt "#31910"
+msgid "Empty position"
+msgstr "Lege positie"
+
+msgctxt "#31911"
+msgid "Type of position"
+msgstr "Soort positie"
+
+msgctxt "#31912"
+msgid "All ten custom items are in use. Free one first."
+msgstr "Alle tien eigen items zijn in gebruik. Maak er eerst een vrij."
+
+msgctxt "#31913"
+msgid "Channel group"
+msgstr "Zendergroep"
+
+msgctxt "#31914"
+msgid "Watched last"
+msgstr "Laatst bekeken"
+
+msgctxt "#31915"
+msgid "None"
+msgstr "Geen"
+
+msgctxt "#31916"
+msgid "No channel group"
+msgstr "Geen zendergroep"
+
+msgctxt "#31917"
+msgid "With Live TV focused on Home: Up reaches the channels watched last, Right there shows the channel group chosen here. OK plays a channel."
+msgstr "Met live tv in focus op Start: Omhoog bereikt de laatst bekeken zenders, Rechts toont daar de zendergroep die je hier kiest. OK speelt een zender af."
+
+msgctxt "#31918"
+msgid "UP: CHANNELS   |   OK: GUIDE"
+msgstr "OMHOOG: ZENDERS   |   OK: GIDS"
+
+msgctxt "#31919"
+msgid "OK: WATCH   |   LEFT: WATCHED LAST"
+msgstr "OK: KIJKEN   |   LINKS: LAATST BEKEKEN"
+
+msgctxt "#31920"
+msgid "OK: WATCH   |   RIGHT: CHANNEL GROUP"
+msgstr "OK: KIJKEN   |   RECHTS: ZENDERGROEP"
+
+msgctxt "#31921"
+msgid "OK: WATCH"
+msgstr "OK: KIJKEN"
+
+msgctxt "#31922"
+msgid "LEFT / RIGHT: OTHER TITLES   |   DOWN: MENU"
+msgstr "LINKS / RECHTS: ANDERE TITELS   |   OMLAAG: MENU"
+
+msgctxt "#31923"
+msgid "Coming up"
+msgstr "Binnenkort"
+
+msgctxt "#31924"
+msgid "Not in your library yet."
+msgstr "Nog niet in je bibliotheek."
+
+msgctxt "#31925"
+msgid "On"
+msgstr "Aan"
+
+msgctxt "#31926"
+msgid "Unwatched episodes show no thumbnail and no plot until you have seen them."
+msgstr "Niet-bekeken afleveringen tonen geen miniatuur en geen plot tot je ze hebt gezien."
+
+msgctxt "#31927"
+msgid "Top tracks and similar artists on the artist page come from Deezer (needs internet). Off: only your library."
+msgstr "Topnummers en vergelijkbare artiesten op de artiestpagina komen van Deezer (vereist internet). Uit: alleen je bibliotheek."
+
+msgctxt "#31928"
+msgid "When the seek bar shows while a film is paused: always, for 5 seconds, or never."
+msgstr "Wanneer de zoekbalk verschijnt terwijl een film gepauzeerd is: altijd, 5 seconden of nooit."
+
+msgctxt "#31929"
+msgid "Flags of the audio and subtitle languages on the player controls."
+msgstr "Vlaggen van de audio- en ondertiteltalen op de spelerbediening."
+
+msgctxt "#31930"
+msgid "Trailers of other films play before the film you start: none, 1, 2 or 3."
+msgstr "Trailers van andere films spelen voor de film die je start: geen, 1, 2 of 3."
+
+msgctxt "#31931"
+msgid "A thin line under posters shows how much of a film, show or season you have watched."
+msgstr "Een dunne lijn onder posters toont hoeveel je van een film, serie of seizoen hebt gezien."
+
+msgctxt "#31932"
+msgid "A strip of small posters under the plot when a set or a show is in focus in the rows on Home."
+msgstr "Een strook kleine posters onder de plot als een collectie of serie focus heeft in de rijen op Start."
+
+msgctxt "#31933"
+msgid "Locks the library views: no view settings and no left-hand settings strip."
+msgstr "Vergrendelt de bibliotheekweergaven: geen weergave-instellingen en geen instellingenstrook links."
+
+msgctxt "#31934"
+msgid "The library background takes the palette only with the Neutral backdrop. The highlight, boxes and strips follow it with every backdrop.[CR][CR]Use the Neutral backdrop in the libraries?"
+msgstr "De bibliotheekachtergrond neemt het palet alleen over met de neutrale achtergrond. Selectie, vakken en stroken volgen het bij elke achtergrond.[CR][CR]De neutrale achtergrond in de bibliotheken gebruiken?"
+
+msgctxt "#31935"
+msgid "Keep the backdrop"
+msgstr "Achtergrond houden"
+
+msgctxt "#31936"
+msgid "Use Neutral"
+msgstr "Neutraal gebruiken"
+
+msgctxt "#31937"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages. The library background takes it with the Neutral backdrop only."
+msgstr "Kleur van de selectie, de vakken, de stroken en de instellingenpagina's. De bibliotheekachtergrond neemt hem alleen over met de neutrale achtergrond."
+
+msgctxt "#31938"
+msgid "Words"
+msgstr "Woorden"
+
+msgctxt "#31939"
+msgid "Lines"
+msgstr "Regels"
+
+msgctxt "#31958"
+msgid "Skippy: the skin's skip button"
+msgstr "Skippy: de overslaanknop van de skin"
+
+msgctxt "#31959"
+msgid "On: during a segment Skippy asks about (Ask), the player shows a Skip button in the skin's look; OK skips, Back hides it. Off: Skippy opens its own dialog. In Fused Glass, Up next at the end of an episode is the skin's too."
+msgstr "Aan: tijdens een segment waarover Skippy vraagt (Vragen) toont de speler een Overslaan-knop in de stijl van de skin; OK slaat over, Terug verbergt hem. Uit: Skippy opent zijn eigen dialoog. In Fused Glass komt ook Hierna aan het eind van een aflevering van de skin."
+
+msgctxt "#31960"
+msgid "Skippy: segment line in the player"
+msgstr "Skippy: segmentregel in de speler"
+
+msgctxt "#31961"
+msgid "Between the times on the player controls: the segment playing and the time left (Intro · 0:42 left), or the next segment and when it starts."
+msgstr "Tussen de tijden van de spelerbediening: het lopende segment en de resterende tijd (Intro · nog 0:42), of het volgende segment en wanneer het begint."
+
+msgctxt "#31962"
+msgid "Skippy: up next in the player"
+msgstr "Skippy: hierna in de speler"
+
+msgctxt "#31963"
+msgid "Top right of the player controls: the next episode Skippy found, with its picture. Skippy's own next-episode prompt is not affected."
+msgstr "Rechtsboven op de spelerbediening: de volgende aflevering die Skippy vond, met afbeelding. Skippy's eigen melding voor de volgende aflevering verandert niet."
+
+msgctxt "#31964"
+msgid "Skip"
+msgstr "Overslaan"
+
+msgctxt "#31965"
+msgid "left"
+msgstr "resterend"
+
+msgctxt "#31966"
+msgid "at"
+msgstr "om"
+
+msgctxt "#31967"
+msgid "Memory hand-back"
+msgstr "Geheugen teruggeven"
+
+msgctxt "#31968"
+msgid "Linux boxes (CoreELEC, LibreELEC): Kodi keeps memory it has finished with. The helper hands it back to the system after a pause in key presses, or when free RAM gets low. Not on Windows."
+msgstr "Linux-apparaten (CoreELEC, LibreELEC): Kodi houdt geheugen vast dat het niet meer gebruikt. De helper geeft het terug aan het systeem na een toetspauze, of als het vrije RAM laag wordt. Niet op Windows."
+
+msgctxt "#31969"
+msgid "Pause before hand-back"
+msgstr "Pauze voor teruggeven"
+
+msgctxt "#31970"
+msgid "After a pause: seconds without a key press (2-30), not during a video. When free RAM is low: the least free memory the box keeps; within 256 MB of it the hand-back waits for a pause, below it it happens at once."
+msgstr "Na een pauze: seconden zonder toetsdruk (2-30), niet tijdens een video. Bij weinig vrij RAM: het minste vrije geheugen dat het apparaat houdt; binnen 256 MB daarvan wacht het teruggeven op een pauze, eronder gebeurt het meteen."
+
+msgctxt "#31971"
+msgid "Minimum free RAM"
+msgstr "Minimaal vrij RAM"
+
+msgctxt "#31972"
+msgid "Adds Clean library to the context menu in the libraries and on Home: entries whose files are gone are removed (it asks first)."
+msgstr "Voegt Bibliotheek opschonen toe aan het contextmenu in de bibliotheken en op Start: items waarvan de bestanden weg zijn worden verwijderd (het vraagt eerst)."
+
+msgctxt "#31973"
+msgid "Network · Connections · Updates · Hardware · Services"
+msgstr "Netwerk · Verbindingen · Updates · Hardware · Diensten"
+
+msgctxt "#31974"
+msgid "The box"
+msgstr "Het apparaat"
+
+msgctxt "#31975"
+msgid "The box's own settings: network and Wi-Fi, updates, hardware, services such as SSH and Samba."
+msgstr "De eigen instellingen van het apparaat: netwerk en wifi, updates, hardware, diensten zoals SSH en Samba."
+
+msgctxt "#31976"
+msgid "Restart Kodi"
+msgstr "Kodi herstarten"
+
+msgctxt "#31977"
+msgid "Widget screens: media info"
+msgstr "Widgetschermen: media-info"
+
+msgctxt "#31978"
+msgid "Widget screens: ratings"
+msgstr "Widgetschermen: beoordelingen"
+
+msgctxt "#31979"
+msgid "Widget screens: studio / network"
+msgstr "Widgetschermen: studio / zender"
+
+msgctxt "#31996"
+msgid "The background of the spotlight at the top of Home. Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "De achtergrond van de Spotlight boven aan Start. Fanart: de fanart van de titel. Neutraal: donker. Kleur: een zacht kleurbeeld dat de KarmaMole-helper uit de afbeelding maakt (tot het klaar is, toont de fanart)."
+
+msgctxt "#31997"
+msgid "How the spotlight at the top of Home moves on to the next title: fade, slide or cut."
+msgstr "Hoe de Spotlight boven aan Start naar de volgende titel gaat: overvloeien, schuiven of knip."
+
+msgctxt "#31998"
+msgid "Widget screens: background"
+msgstr "Widgetschermen: achtergrond"
+
+msgctxt "#31999"
+msgid "The background of the full-screen widget pages (Up on a title on Home). Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "De achtergrond van de schermvullende widgetpagina's (Omhoog op een titel op Start). Fanart: de fanart van de titel. Neutraal: donker. Kleur: een zacht kleurbeeld dat de KarmaMole-helper uit de afbeelding maakt (tot het klaar is, toont de fanart)."
+
+msgctxt "#32000"
+msgid "creator of the Aeon 2 concept"
+msgstr "bedenker van het Aeon 2-concept"
+
+msgctxt "#32001"
+msgid "1 of 1 episode watched"
+msgstr "1 van 1 aflevering bekeken"
+
+msgctxt "#32002"
+msgid "on"
+msgstr "bij"
+
+msgctxt "#32003"
+msgid "9:00 PM"
+msgstr "21:00"
+
+msgctxt "#32004"
+msgid "9:30 PM"
+msgstr "21:30"
+
+msgctxt "#32005"
+msgid "10:00 PM"
+msgstr "22:00"
+
+msgctxt "#32006"
+msgid "10:30 PM"
+msgstr "22:30"
+
+msgctxt "#32007"
+msgid "11:00 PM"
+msgstr "23:00"
+
+msgctxt "#32008"
+msgid "11:30 PM"
+msgstr "23:30"
+
+msgctxt "#32009"
+msgid "12:00 AM"
+msgstr "0:00"
+
+msgctxt "#32010"
+msgid "12:30 AM"
+msgstr "0:30"
+
+msgctxt "#32011"
+msgid "1:00 AM"
+msgstr "1:00"
+
+msgctxt "#32012"
+msgid "1:30 AM"
+msgstr "1:30"
+
+msgctxt "#32013"
+msgid "2:00 AM"
+msgstr "2:00"
+
+msgctxt "#32015"
+msgid "Repositories checked"
+msgstr "Bronnen gecontroleerd"
+
+msgctxt "#32016"
+msgid "Close Kodi"
+msgstr "Kodi sluiten"
+
+msgctxt "#32017"
+msgid "Back to the profile screen"
+msgstr "Terug naar het profielscherm"
+
+msgctxt "#32018"
+msgid "Kodi only, the system keeps running"
+msgstr "Alleen Kodi, het systeem blijft draaien"
+
+msgctxt "#32019"
+msgid "Restart the whole system"
+msgstr "Het hele systeem herstarten"
+
+msgctxt "#32020"
+msgid "Restart into Android"
+msgstr "Herstarten naar Android"
+
+msgctxt "#32021"
+msgid "Switch the system off"
+msgstr "Het systeem uitschakelen"
+
+msgctxt "#32022"
+msgid "By"
+msgstr "Van"
+
+msgctxt "#32023"
+msgid "Running time"
+msgstr "Speelduur"
+
+msgctxt "#32024"
+msgid "min"
+msgstr "min"
+
+msgctxt "#32025"
+msgid "Widgets"
+msgstr "Widgets"
+
+msgctxt "#32026"
+msgid "hidden"
+msgstr "verborgen"
+
+msgctxt "#32027"
+msgid "Hold"
+msgstr "Toontijd"
+
+msgctxt "#32028"
+msgid "Update the list"
+msgstr "Lijst bijwerken"
+
+msgctxt "#32029"
+msgid "Update now"
+msgstr "Nu bijwerken"
+
+msgctxt "#32030"
+msgid "ARTISTS"
+msgstr "ARTIESTEN"
+
+msgctxt "#32031"
+msgid "ALBUMS"
+msgstr "ALBUMS"
+
+msgctxt "#32032"
+msgid "SONGS"
+msgstr "NUMMERS"
+
+msgctxt "#32033"
+msgid "Widget screens"
+msgstr "Widgetschermen"
+
+msgctxt "#32034"
+msgid "Hide plot and thumb"
+msgstr "Plot en miniatuur verbergen"
+
+msgctxt "#32035"
+msgid "Start"
+msgstr "Beginnen"
+
+msgctxt "#32036"
+msgid "A handful of short steps"
+msgstr "Een paar korte stappen"
+
+msgctxt "#32037"
+msgid "Backdrop, look, Home menu, libraries and motion."
+msgstr "Achtergrond, uiterlijk, hoofdmenu, bibliotheken en beweging."
+
+msgctxt "#32038"
+msgid "Skip setup"
+msgstr "Installatie overslaan"
+
+msgctxt "#32039"
+msgid "Keep the defaults for now"
+msgstr "Voorlopig de standaard houden"
+
+msgctxt "#32040"
+msgid "Run the setup any time: Skin settings > Motion, memory, reset > Setup wizard."
+msgstr "Start de installatie wanneer je wilt: Skin-instellingen > Beweging, RAM, reset > Installatiewizard."
+
+msgctxt "#32041"
+msgid "A calm backdrop in a palette of your choice"
+msgstr "Een rustige achtergrond in een palet naar keuze"
+
+msgctxt "#32042"
+msgid "A dark, even background in the colours of the palette you pick next."
+msgstr "Een donkere, egale achtergrond in de kleuren van het palet dat je hierna kiest."
+
+msgctxt "#32043"
+msgid "The focused title's fanart, dimmed"
+msgstr "De fanart van de titel met focus, gedimd"
+
+msgctxt "#32044"
+msgid "The artwork of the focused title fills the background, dimmed so text stays readable."
+msgstr "De afbeelding van de titel met focus vult de achtergrond, gedimd zodat tekst leesbaar blijft."
+
+msgctxt "#32045"
+msgid "A tint taken from the artwork"
+msgstr "Een tint uit de afbeelding"
+
+msgctxt "#32046"
+msgid "A deep colour taken from the focused title's artwork."
+msgstr "Een diepe kleur uit de afbeelding van de titel met focus."
+
+msgctxt "#32047"
+msgid "The palette shows after Kodi restarts at the end of the setup."
+msgstr "Het palet verschijnt nadat Kodi aan het eind van de installatie herstart."
+
+msgctxt "#32048"
+msgid "Solid panels, palettes"
+msgstr "Egale panelen, paletten"
+
+msgctxt "#32049"
+msgid "The classic Aeon look: calm, solid surfaces and a white or coloured focus bar."
+msgstr "De klassieke Aeon-look: rustige, egale vlakken en een witte of gekleurde selectiebalk."
+
+msgctxt "#32050"
+msgid "Aeon with glass menus, no palettes"
+msgstr "Aeon met glazen menu’s, zonder paletten"
+
+msgctxt "#32051"
+msgid "Panels of frosted glass over the fanart; the focus bar is a soft light."
+msgstr "Panelen van matglas over de fanart; de selectiebalk is een zacht licht."
+
+msgctxt "#32052"
+msgid "As the skin theme"
+msgstr "Zoals het skinthema"
+
+msgctxt "#32053"
+msgid "Flat rows with rules"
+msgstr "Vlakke rijen met lijnen"
+
+msgctxt "#32054"
+msgid "The menus of the Aeon or Aeon Glass theme you picked."
+msgstr "De menu's van het Aeon- of Aeon Glass-thema dat je koos."
+
+msgctxt "#32055"
+msgid "Rounded cards, like this setup"
+msgstr "Afgeronde kaarten, zoals deze installatie"
+
+msgctxt "#32056"
+msgid "Every row a soft card, the focused one solid; no rule lines."
+msgstr "Elke rij een zachte kaart, de geselecteerde gevuld; geen lijnen."
+
+msgctxt "#32057"
+msgid "OK switches Movies on or off."
+msgstr "OK zet Films aan of uit."
+
+msgctxt "#32058"
+msgid "OK switches TV shows on or off."
+msgstr "OK zet Series aan of uit."
+
+msgctxt "#32059"
+msgid "OK switches Music on or off."
+msgstr "OK zet Muziek aan of uit."
+
+msgctxt "#32060"
+msgid "OK switches Live TV on or off."
+msgstr "OK zet Live tv aan of uit."
+
+msgctxt "#32061"
+msgid "OK switches Search on or off."
+msgstr "OK zet Zoeken aan of uit."
+
+msgctxt "#32062"
+msgid "OK switches Movie sets on or off."
+msgstr "OK zet Filmsets aan of uit."
+
+msgctxt "#32063"
+msgid "OK switches Favourites on or off."
+msgstr "OK zet Favorieten aan of uit."
+
+msgctxt "#32064"
+msgid "OK switches Pictures on or off."
+msgstr "OK zet Afbeeldingen aan of uit."
+
+msgctxt "#32065"
+msgid "OK switches Add-ons on or off."
+msgstr "OK zet Add-ons aan of uit."
+
+msgctxt "#32066"
+msgid "OK switches Weather on or off."
+msgstr "OK zet Weer aan of uit."
+
+msgctxt "#32067"
+msgid "OK switches Planner on or off."
+msgstr "OK zet Planner aan of uit."
+
+msgctxt "#32068"
+msgid "OK switches Files on or off."
+msgstr "OK zet Bestanden aan of uit."
+
+msgctxt "#32069"
+msgid "OK switches Settings on or off."
+msgstr "OK zet Instellingen aan of uit."
+
+msgctxt "#32070"
+msgid "OK switches Power on or off."
+msgstr "OK zet Aan/uit aan of uit."
+
+msgctxt "#32071"
+msgid "Continue"
+msgstr "Doorgaan"
+
+msgctxt "#32072"
+msgid "Next step"
+msgstr "Volgende stap"
+
+msgctxt "#32073"
+msgid "On to the Home menu position."
+msgstr "Door naar de positie van het hoofdmenu."
+
+msgctxt "#32074"
+msgid "The spotlight above, a row of posters below"
+msgstr "De Spotlight boven, een rij posters eronder"
+
+msgctxt "#32075"
+msgid "The menu across the middle of the screen with a widget row underneath."
+msgstr "Het menu midden over het scherm met een widgetrij eronder."
+
+msgctxt "#32076"
+msgid "A taller spotlight, the menu near the bottom"
+msgstr "Een hogere Spotlight, het menu onderaan"
+
+msgctxt "#32077"
+msgid "More room for the spotlight; the menu sits low on the screen."
+msgstr "Meer ruimte voor de Spotlight; het menu staat laag op het scherm."
+
+msgctxt "#32078"
+msgid "The artwork of the spotlight title"
+msgstr "De afbeelding van de Spotlight-titel"
+
+msgctxt "#32079"
+msgid "Fanart of the title in the spotlight, with a soft fade from the left."
+msgstr "Fanart van de titel in de Spotlight, met een zachte overgang vanaf links."
+
+msgctxt "#32080"
+msgid "A colour taken from the artwork"
+msgstr "Een kleur uit de afbeelding"
+
+msgctxt "#32081"
+msgid "A warm or cool tint drawn from the title's artwork."
+msgstr "Een warme of koele tint uit de afbeelding van de titel."
+
+msgctxt "#32082"
+msgid "A quiet dark background"
+msgstr "Een rustige donkere achtergrond"
+
+msgctxt "#32083"
+msgid "No artwork behind the spotlight text."
+msgstr "Geen afbeelding achter de Spotlight-tekst."
+
+msgctxt "#32084"
+msgid "One picture dissolves into the next"
+msgstr "De ene afbeelding vloeit over in de volgende"
+
+msgctxt "#32085"
+msgid "A soft cross-fade."
+msgstr "Een zachte overvloeier."
+
+msgctxt "#32086"
+msgid "The next one pushes in from the right"
+msgstr "De volgende schuift van rechts in beeld"
+
+msgctxt "#32087"
+msgid "A sideways slide, like turning a page."
+msgstr "Een zijwaartse schuif, als een bladzijde omslaan."
+
+msgctxt "#32088"
+msgid "Straight to the next"
+msgstr "Meteen naar de volgende"
+
+msgctxt "#32089"
+msgid "No animation: the next title appears at once."
+msgstr "Geen animatie: de volgende titel verschijnt meteen."
+
+msgctxt "#32090"
+msgid "The colour of the artwork"
+msgstr "De kleur van de afbeelding"
+
+msgctxt "#32091"
+msgid "The boxes take a deep colour from the focused title's artwork."
+msgstr "De vakken nemen een diepe kleur uit de afbeelding van de geselecteerde titel."
+
+msgctxt "#32092"
+msgid "The palette's box colour"
+msgstr "De vakkleur van het palet"
+
+msgctxt "#32093"
+msgid "Always the same calm colour of the palette."
+msgstr "Altijd dezelfde rustige kleur van het palet."
+
+msgctxt "#32094"
+msgid "A window onto the fanart"
+msgstr "Een venster op de fanart"
+
+msgctxt "#32095"
+msgid "Each box shows the part of the fanart behind it, darkened for the clock."
+msgstr "Elk vak toont het stuk fanart erachter, verdonkerd voor de klok."
+
+msgctxt "#32096"
+msgid "As the backdrop"
+msgstr "Zoals de achtergrond"
+
+msgctxt "#32097"
+msgid "Follow the library backdrop"
+msgstr "De bibliotheekachtergrond volgen"
+
+msgctxt "#32098"
+msgid "Neutral, fanart or colour, whatever the library backdrop is."
+msgstr "Neutraal, fanart of kleur, net als de bibliotheekachtergrond."
+
+msgctxt "#32099"
+msgid "Dots, checks and progress bars"
+msgstr "Stippen, vinkjes en voortgangsbalken"
+
+msgctxt "#32100"
+msgid "Unwatched titles get a dot, watched ones a check, started ones a progress bar."
+msgstr "Ongeziene titels krijgen een stip, geziene een vinkje, begonnen titels een voortgangsbalk."
+
+msgctxt "#32101"
+msgid "Dots and progress bars"
+msgstr "Stippen en voortgangsbalken"
+
+msgctxt "#32102"
+msgid "Only what is still to watch is marked."
+msgstr "Alleen wat nog te kijken is, wordt gemarkeerd."
+
+msgctxt "#32103"
+msgid "Checks on what you have seen"
+msgstr "Vinkjes bij wat je gezien hebt"
+
+msgctxt "#32104"
+msgid "Only finished titles are marked."
+msgstr "Alleen afgekeken titels worden gemarkeerd."
+
+msgctxt "#32105"
+msgid "Clean posters"
+msgstr "Schone posters"
+
+msgctxt "#32106"
+msgid "No markers at all."
+msgstr "Helemaal geen markeringen."
+
+msgctxt "#32107"
+msgid "Logos"
+msgstr "Logo's"
+
+msgctxt "#32108"
+msgid "The artwork's clear logo"
+msgstr "Het ClearLogo van de afbeeldingen"
+
+msgctxt "#32109"
+msgid "Clear logos from the artwork, text where a title has none."
+msgstr "ClearLogo's uit de afbeeldingen, tekst als een titel er geen heeft."
+
+msgctxt "#32110"
+msgid "Plain text"
+msgstr "Gewone tekst"
+
+msgctxt "#32111"
+msgid "Always the name in the skin's own font."
+msgstr "Altijd de naam in het lettertype van de skin."
+
+msgctxt "#32112"
+msgid "FULL HD, 4K, aspect ratio"
+msgstr "FULL HD, 4K, beeldverhouding"
+
+msgctxt "#32113"
+msgid "OK switches the resolution chips on or off."
+msgstr "OK zet de resolutielabels aan of uit."
+
+msgctxt "#32114"
+msgid "SDR, HDR10, Dolby Vision profile"
+msgstr "SDR, HDR10, Dolby Vision-profiel"
+
+msgctxt "#32115"
+msgid "OK switches the HDR chips on or off."
+msgstr "OK zet de HDR-labels aan of uit."
+
+msgctxt "#32116"
+msgid "Codec and channels"
+msgstr "Codec en kanalen"
+
+msgctxt "#32117"
+msgid "OK switches the audio chips on or off."
+msgstr "OK zet de audiolabels aan of uit."
+
+msgctxt "#32118"
+msgid "On to the extra fanart."
+msgstr "Door naar de extra fanart."
+
+msgctxt "#32119"
+msgid "Take turns"
+msgstr "Om de beurt"
+
+msgctxt "#32120"
+msgid "Every extra fanart in a slow cycle"
+msgstr "Elke extra fanart in een trage wissel"
+
+msgctxt "#32121"
+msgid "The background changes picture every few seconds (Skin settings > Backgrounds sets how often)."
+msgstr "De achtergrond wisselt om de paar seconden van afbeelding (Skin-instellingen > Achtergronden bepaalt hoe vaak)."
+
+msgctxt "#32122"
+msgid "One picture"
+msgstr "Eén afbeelding"
+
+msgctxt "#32123"
+msgid "Only the main fanart"
+msgstr "Alleen de hoofdfanart"
+
+msgctxt "#32124"
+msgid "The background stays on the main fanart."
+msgstr "De achtergrond blijft op de hoofdfanart."
+
+msgctxt "#32125"
+msgid "Hide them"
+msgstr "Verbergen"
+
+msgctxt "#32126"
+msgid "No thumbnail or plot until watched"
+msgstr "Geen miniatuur of plot tot je het gezien hebt"
+
+msgctxt "#32127"
+msgid "Unwatched episodes show a blurred picture and no plot."
+msgstr "Ongeziene afleveringen tonen een wazige afbeelding en geen plot."
+
+msgctxt "#32128"
+msgid "Show them"
+msgstr "Tonen"
+
+msgctxt "#32129"
+msgid "Thumbnails and plots for all"
+msgstr "Miniaturen en plots voor alles"
+
+msgctxt "#32130"
+msgid "Every episode shows its picture and plot."
+msgstr "Elke aflevering toont haar afbeelding en plot."
+
+msgctxt "#32131"
+msgid "Full motion"
+msgstr "Volledige beweging"
+
+msgctxt "#32132"
+msgid "Smooth slides and fades"
+msgstr "Zachte schuiven en overgangen"
+
+msgctxt "#32133"
+msgid "Rows slide in one after another, dialogs glide open."
+msgstr "Rijen schuiven na elkaar in beeld, dialogen glijden open."
+
+msgctxt "#32134"
+msgid "Everything appears at once"
+msgstr "Alles verschijnt meteen"
+
+msgctxt "#32135"
+msgid "No slides or zooms: calmer, and lighter on slow boxes."
+msgstr "Geen schuiven of zoomen: rustiger en lichter voor trage boxen."
+
+msgctxt "#32136"
+msgid "When free RAM is low"
+msgstr "Als het vrije RAM laag is"
+
+msgctxt "#32137"
+msgid "Recommended: below 1 GB free"
+msgstr "Aanbevolen: onder 1 GB vrij"
+
+msgctxt "#32138"
+msgid "Kodi hands memory back when the free RAM drops below the minimum (Skin settings can change it)."
+msgstr "Kodi geeft geheugen terug als het vrije RAM onder het minimum zakt (in Skin-instellingen aan te passen)."
+
+msgctxt "#32139"
+msgid "After a pause"
+msgstr "Na een pauze"
+
+msgctxt "#32140"
+msgid "A few seconds after the last key press"
+msgstr "Een paar seconden na de laatste toets"
+
+msgctxt "#32141"
+msgid "Kodi hands memory back whenever the remote has been quiet for a moment."
+msgstr "Kodi geeft geheugen terug zodra de afstandsbediening even stil is."
+
+msgctxt "#32142"
+msgid "Finish"
+msgstr "Voltooien"
+
+msgctxt "#32143"
+msgid "Change something"
+msgstr "Iets wijzigen"
+
+msgctxt "#32144"
+msgid "Go back to the previous step."
+msgstr "Terug naar de vorige stap."
+
+msgctxt "#32145"
+msgid "Huge thanks and credit go out to the following"
+msgstr "Hartelijk dank aan"
+
+msgctxt "#32146"
+msgid "The Kodi development team"
+msgstr "Het Kodi-ontwikkelteam"
+
+msgctxt "#32147"
+msgid "OK  choose      BACK  previous step"
+msgstr "OK  kiezen      TERUG  vorige stap"
+
+msgctxt "#32148"
+msgid "version"
+msgstr "versie"
+
+msgctxt "#32149"
+msgid "by"
+msgstr "door"
+
+msgctxt "#32150"
+msgid "now"
+msgstr "nu"
+
+msgctxt "#32151"
+msgid "night"
+msgstr "nacht"
+
+msgctxt "#32152"
+msgid "evening"
+msgstr "avond"
+
+msgctxt "#32153"
+msgid "afternoon"
+msgstr "middag"
+
+msgctxt "#32154"
+msgid "morning"
+msgstr "ochtend"
+
+msgctxt "#32158"
+msgid "until midnight"
+msgstr "tot middernacht"
+
+msgctxt "#32159"
+msgid "tornado"
+msgstr "tornado"
+
+msgctxt "#32160"
+msgid "tropical storm"
+msgstr "tropische storm"
+
+msgctxt "#32161"
+msgid "hurricane"
+msgstr "orkaan"
+
+msgctxt "#32162"
+msgid "severe storms"
+msgstr "zware onweersbuien"
+
+msgctxt "#32163"
+msgid "thunderstorms"
+msgstr "onweersbuien"
+
+msgctxt "#32164"
+msgid "rain and snow"
+msgstr "regen en sneeuw"
+
+msgctxt "#32165"
+msgid "rain and sleet"
+msgstr "regen en natte sneeuw"
+
+msgctxt "#32166"
+msgid "snow and sleet"
+msgstr "sneeuw en natte sneeuw"
+
+msgctxt "#32167"
+msgid "freezing drizzle"
+msgstr "ijzel"
+
+msgctxt "#32168"
+msgid "drizzle"
+msgstr "motregen"
+
+msgctxt "#32169"
+msgid "freezing rain"
+msgstr "onderkoelde regen"
+
+msgctxt "#32170"
+msgid "showers"
+msgstr "buien"
+
+msgctxt "#32171"
+msgid "snow flurries"
+msgstr "lichte sneeuwbuien"
+
+msgctxt "#32172"
+msgid "light snow"
+msgstr "lichte sneeuw"
+
+msgctxt "#32173"
+msgid "blowing snow"
+msgstr "stuifsneeuw"
+
+msgctxt "#32174"
+msgid "snow"
+msgstr "sneeuw"
+
+msgctxt "#32175"
+msgid "hail"
+msgstr "hagel"
+
+msgctxt "#32176"
+msgid "sleet"
+msgstr "natte sneeuw"
+
+msgctxt "#32177"
+msgid "dust"
+msgstr "stof"
+
+msgctxt "#32178"
+msgid "fog"
+msgstr "mist"
+
+msgctxt "#32179"
+msgid "haze"
+msgstr "nevel"
+
+msgctxt "#32180"
+msgid "smoke"
+msgstr "rook"
+
+msgctxt "#32181"
+msgid "blustery"
+msgstr "stormachtig"
+
+msgctxt "#32182"
+msgid "windy"
+msgstr "winderig"
+
+msgctxt "#32183"
+msgid "cold"
+msgstr "koud"
+
+msgctxt "#32184"
+msgid "cloudy"
+msgstr "bewolkt"
+
+msgctxt "#32185"
+msgid "mostly cloudy"
+msgstr "zwaar bewolkt"
+
+msgctxt "#32186"
+msgid "partly cloudy"
+msgstr "half bewolkt"
+
+msgctxt "#32187"
+msgid "clear"
+msgstr "helder"
+
+msgctxt "#32188"
+msgid "sunny"
+msgstr "zonnig"
+
+msgctxt "#32189"
+msgid "fair"
+msgstr "mooi weer"
+
+msgctxt "#32190"
+msgid "rain and hail"
+msgstr "regen en hagel"
+
+msgctxt "#32191"
+msgid "hot"
+msgstr "heet"
+
+msgctxt "#32192"
+msgid "isolated storms"
+msgstr "plaatselijk onweer"
+
+msgctxt "#32193"
+msgid "scattered storms"
+msgstr "verspreid onweer"
+
+msgctxt "#32194"
+msgid "scattered showers"
+msgstr "verspreide buien"
+
+msgctxt "#32195"
+msgid "heavy snow"
+msgstr "zware sneeuwval"
+
+msgctxt "#32196"
+msgid "snow showers"
+msgstr "sneeuwbuien"
+
+msgctxt "#32197"
+msgid "thundershowers"
+msgstr "onweersbuien met regen"
+
+msgctxt "#32198"
+msgid "Blustery"
+msgstr "Stormachtig"
+
+msgctxt "#32199"
+msgid "Hot"
+msgstr "Heet"
+
+msgctxt "#32200"
+msgid "Fits before midnight"
+msgstr "Past vóór middernacht"
+
+msgctxt "#32201"
+msgid "fits before midnight"
+msgstr "past vóór middernacht"
+
+msgctxt "#32202"
+msgid "under 100 minutes"
+msgstr "onder 100 minuten"
+
+msgctxt "#32203"
+msgid "something light"
+msgstr "iets lichts"
+
+msgctxt "#32204"
+msgid "a long one"
+msgstr "een lange"
+
+msgctxt "#32205"
+msgid "highly rated"
+msgstr "hoog gewaardeerd"
+
+msgctxt "#32206"
+msgid "right at midnight"
+msgstr "precies om middernacht"
+
+msgctxt "#32207"
+msgid "past midnight"
+msgstr "na middernacht"
+
+msgctxt "#32208"
+msgid "before midnight"
+msgstr "vóór middernacht"
+
+msgctxt "#32209"
+msgid "kbps"
+msgstr "kbps"
+
+msgctxt "#32210"
+msgid "ch"
+msgstr "kan."
+
+msgctxt "#32211"
+msgid "bit"
+msgstr "bit"
+
+msgctxt "#32212"
+msgid "kHz"
+msgstr "kHz"
+
+msgctxt "#32213"
+msgid "Hz"
+msgstr "Hz"
+
+msgctxt "#32214"
+msgid "TRACK"
+msgstr "NUMMER"
+
+msgctxt "#32215"
+msgid "FROM THE ALBUM"
+msgstr "VAN HET ALBUM"
+
+msgctxt "#32216"
+msgid "Released in"
+msgstr "Uitgebracht in"
+
+msgctxt "#32217"
+msgid "Record label"
+msgstr "Label"
+
+msgctxt "#32218"
+msgid "Alphabetical"
+msgstr "Alfabetisch"
+
+msgctxt "#32219"
+msgid "Reversed"
+msgstr "Omgekeerd"
+
+msgctxt "#32220"
+msgid "MINS"
+msgstr "MIN"
+
+msgctxt "#32221"
+msgid "RATED"
+msgstr "KEURING"
+
+msgctxt "#32222"
+msgid "NOT RATED"
+msgstr "NIET GEKEURD"
+
+msgctxt "#32223"
+msgid "AN ALBUM BY"
+msgstr "EEN ALBUM VAN"
+
+msgctxt "#32224"
+msgid "RELEASED IN"
+msgstr "UITGEBRACHT IN"
+
+msgctxt "#32225"
+msgid "A TV SHOW"
+msgstr "EEN SERIE"
+
+msgctxt "#32226"
+msgid "FIRST AIRED IN"
+msgstr "EERST UITGEZONDEN IN"
+
+msgctxt "#32227"
+msgid "A MOVIE BY"
+msgstr "EEN FILM VAN"
+
+msgctxt "#32228"
+msgid "Active"
+msgstr "Actief"
+
+msgctxt "#32229"
+msgid "FORMED"
+msgstr "OPGERICHT"
+
+msgctxt "#32230"
+msgid "DISBANDED"
+msgstr "OPGEHEVEN"
+
+msgctxt "#32231"
+msgid "BORN"
+msgstr "GEBOREN"
+
+msgctxt "#32232"
+msgid "DIED"
+msgstr "OVERLEDEN"
+
+msgctxt "#32233"
+msgid "Refresh information"
+msgstr "Informatie vernieuwen"
+
+msgctxt "#32234"
+msgid "Take screenshot"
+msgstr "Schermafbeelding maken"
+
+msgctxt "#32235"
+msgid "Switch off"
+msgstr "Uitzetten"
+
+msgctxt "#32236"
+msgid "Switch on"
+msgstr "Aanzetten"
+
+msgctxt "#32237"
+msgid "Written by"
+msgstr "Scenario:"
+
+msgctxt "#32238"
+msgid "Directed by"
+msgstr "Regie:"
+
+msgctxt "#32239"
+msgid "SET"
+msgstr "SET"
+
+msgctxt "#32240"
+msgid "VOTES"
+msgstr "STEMMEN"
+
+msgctxt "#32241"
+msgid "EPISODES"
+msgstr "AFLEVERINGEN"
+
+msgctxt "#32242"
+msgid "UNWATCHED"
+msgstr "ONGEZIEN"
+
+msgctxt "#32243"
+msgid "Setup"
+msgstr "Installatie"
+
+msgctxt "#32244"
+msgid "Libraries"
+msgstr "Bibliotheken"
+
+msgctxt "#32245"
+msgid "Motion"
+msgstr "Beweging"
+
+msgctxt "#32246"
+msgid "Welcome to Aeon Fuse"
+msgstr "Welkom bij Aeon Fuse"
+
+msgctxt "#32247"
+msgid "Library backdrop"
+msgstr "Bibliotheekachtergrond"
+
+msgctxt "#32248"
+msgid "Pick a palette"
+msgstr "Kies een palet"
+
+msgctxt "#32249"
+msgid "Skin theme"
+msgstr "Skinthema"
+
+msgctxt "#32250"
+msgid "Skin style"
+msgstr "Skinstijl"
+
+msgctxt "#32251"
+msgid "Home menu items"
+msgstr "Onderdelen van het hoofdmenu"
+
+msgctxt "#32252"
+msgid "Spotlight transition"
+msgstr "Spotlight-overgang"
+
+msgctxt "#32253"
+msgid "Corner boxes"
+msgstr "Hoekvakken"
+
+msgctxt "#32254"
+msgid "Titles or logos"
+msgstr "Titels of logo's"
+
+msgctxt "#32255"
+msgid "Extra fanart"
+msgstr "Extra fanart"
+
+msgctxt "#32256"
+msgid "Spoilers"
+msgstr "Spoilers"
+
+msgctxt "#32257"
+msgid "All set"
+msgstr "Alles klaar"
+
+msgctxt "#32258"
+msgid "A few quick choices make the skin yours. Every step shows a preview, and everything can be changed later in Skin settings."
+msgstr "Een paar snelle keuzes maken de skin van jou. Elke stap toont een voorbeeld, en alles is later te wijzigen in Skin-instellingen."
+
+msgctxt "#32259"
+msgid "What fills the space behind the library views. With Neutral the next step lets you pick a palette."
+msgstr "Wat de ruimte achter de bibliotheekweergaven vult. Met Neutraal kies je in de volgende stap een palet."
+
+msgctxt "#32260"
+msgid "The palette colours the neutral backdrop, the focus bar, the boxes and the strips (Aeon theme)."
+msgstr "Het palet kleurt de neutrale achtergrond, de selectiebalk, de vakken en de stroken (Aeon-thema)."
+
+msgctxt "#32261"
+msgid "Aeon draws solid panels with a bright focus bar. Aeon Glass lets the artwork shine through frosted panels."
+msgstr "Aeon tekent egale panelen met een felle selectiebalk. Aeon Glass laat de afbeelding door matte panelen schijnen."
+
+msgctxt "#32262"
+msgid "How settings, dialogs and side menus look: the skin theme's own menus, or Fuse, the rounded cards of this setup."
+msgstr "Hoe instellingen, dialogen en zijmenu's eruitzien: de eigen menu's van het skinthema, of Fuse, de afgeronde kaarten van deze installatie."
+
+msgctxt "#32263"
+msgid "Switch the items you want on the Home menu. Order, custom items (three are always free) and their lists: Skin settings > Home menu."
+msgstr "Zet de onderdelen aan die je in het hoofdmenu wilt. Volgorde, eigen onderdelen (er zijn er altijd drie vrij) en hun lijsten: Skin-instellingen > Hoofdmenu."
+
+msgctxt "#32264"
+msgid "Where the main menu sits on the Home screen."
+msgstr "Waar het hoofdmenu op het startscherm staat."
+
+msgctxt "#32265"
+msgid "The backdrop of the spotlight at the top of Home."
+msgstr "De achtergrond van de Spotlight boven aan Start."
+
+msgctxt "#32266"
+msgid "How one spotlight title gives way to the next."
+msgstr "Hoe de ene Spotlight-titel plaatsmaakt voor de volgende."
+
+msgctxt "#32267"
+msgid "The clock box, the item count and the strip boxes in the corners of the library."
+msgstr "Het klokvak, het aantal items en de strookvakken in de hoeken van de bibliotheek."
+
+msgctxt "#32268"
+msgid "Small markers on posters: a dot for unwatched, a check for watched, a bar for in progress."
+msgstr "Kleine markeringen op posters: een stip voor ongezien, een vinkje voor gezien, een balk voor begonnen."
+
+msgctxt "#32269"
+msgid "Show a title's clear logo where the skin has room for it, or its name in plain text."
+msgstr "Het ClearLogo van een titel tonen waar de skin er ruimte voor heeft, of de naam als gewone tekst."
+
+msgctxt "#32270"
+msgid "The chips under a title in the libraries and on the information page. Switch the ones you want."
+msgstr "De labels onder een titel in de bibliotheken en op de informatiepagina. Zet de labels aan die je wilt."
+
+msgctxt "#32271"
+msgid "Titles with more than one fanart can take turns showing them in the background."
+msgstr "Titels met meer dan één fanart kunnen ze om de beurt op de achtergrond tonen."
+
+msgctxt "#32272"
+msgid "Unwatched episodes can keep their thumbnail and plot to themselves."
+msgstr "Ongeziene afleveringen kunnen hun miniatuur en plot voor zich houden."
+
+msgctxt "#32273"
+msgid "Slides and fades when views, menus and dialogs open."
+msgstr "Schuiven en overgangen als weergaven, menu's en dialogen openen."
+
+msgctxt "#32274"
+msgid "On small boxes Kodi keeps memory it no longer uses. The skin's helper can hand it back to the system."
+msgstr "Op kleine boxen houdt Kodi geheugen vast dat het niet meer gebruikt. De helper van de skin kan het aan het systeem teruggeven."
+
+msgctxt "#32275"
+msgid "Your choices are saved. Run the setup again any time from Skin settings > Motion, memory, reset."
+msgstr "Je keuzes zijn opgeslagen. Start de installatie wanneer je wilt opnieuw via Skin-instellingen > Beweging, RAM, reset."
+
+msgctxt "#32276"
+msgid "Kodi restarts to show the new look"
+msgstr "Kodi herstart om de nieuwe look te tonen"
+
+msgctxt "#32277"
+msgid "Then restart Kodi once"
+msgstr "Herstart Kodi daarna één keer"
+
+msgctxt "#32278"
+msgid "Close the setup"
+msgstr "Installatie sluiten"
+
+msgctxt "#32279"
+msgid "A new theme or palette needs Kodi to start again; it takes a few seconds."
+msgstr "Een nieuw thema of palet vraagt om een herstart van Kodi; dat duurt een paar seconden."
+
+msgctxt "#32280"
+msgid "The new look shows at once. Restart Kodi when you can: until then some settings may read wrong."
+msgstr "De nieuwe look is meteen te zien. Herstart Kodi zodra het kan: tot dan tonen sommige instellingen misschien verkeerde waarden."
+
+msgctxt "#32281"
+msgid "Enjoy Aeon Fuse."
+msgstr "Veel plezier met Aeon Fuse."
+
+msgctxt "#32282"
+msgid "ends"
+msgstr "einde"
+
+msgctxt "#32283"
+msgid "Nothing unwatched fits before midnight tonight."
+msgstr "Niets ongeziens past vanavond nog vóór middernacht."
+
+msgctxt "#32285"
+msgid "of"
+msgstr "van"
+
+msgctxt "#32286"
+msgid "watched"
+msgstr "gezien"
+
+msgctxt "#32287"
+msgid "unwatched"
+msgstr "ongezien"
+
+msgctxt "#32288"
+msgid "Nothing unwatched fits this slot. Try Films for everything."
+msgstr "Niets ongeziens past in dit tijdvak. Kijk bij Films voor alles."
+
+msgctxt "#32289"
+msgid "Nothing here yet."
+msgstr "Hier staat nog niets."
+
+msgctxt "#32290"
+msgid "Current"
+msgstr "Huidig"
+
+msgctxt "#32291"
+msgid "Rec"
+msgstr "Opn."
+
+msgctxt "#32292"
+msgid "Remind"
+msgstr "Herinnering"
+
+msgctxt "#32293"
+msgid "Archive"
+msgstr "Archief"
+
+msgctxt "#32294"
+msgid "Edited"
+msgstr "Bewerkt"
+
+msgctxt "#32295"
+msgid "About"
+msgstr "Over"
+
+msgctxt "#32296"
+msgid "Group"
+msgstr "Groep"
+
+msgctxt "#32297"
+msgid "Nothing here yet"
+msgstr "Hier staat nog niets"
+
+msgctxt "#32298"
+msgid "Tracklist"
+msgstr "Nummers"
+
+msgctxt "#32299"
+msgid "born"
+msgstr "geboren"
+
+msgctxt "#32300"
+msgid "formed"
+msgstr "opgericht"
+
+msgctxt "#32301"
+msgid "minutes of music"
+msgstr "minuten muziek"
+
+msgctxt "#32302"
+msgid "Start now, done by"
+msgstr "Start nu, klaar om"
+
+msgctxt "#32303"
+msgid "The music stops at"
+msgstr "De muziek stopt om"
+
+msgctxt "#32304"
+msgid "OK for the controls."
+msgstr "OK voor de bediening."
+
+msgctxt "#32305"
+msgid "Go to"
+msgstr "Ga naar"
+
+msgctxt "#32306"
+msgid "Sleeps when this ends  ·  bedtime"
+msgstr "Slaapt als dit afloopt  ·  bedtijd"
+
+msgctxt "#32307"
+msgid "RESULTS"
+msgstr "RESULTATEN"
+
+msgctxt "#32308"
+msgid "track"
+msgstr "nummer"
+
+msgctxt "#32309"
+msgid "tracks"
+msgstr "nummers"
+
+msgctxt "#32310"
+msgid "option"
+msgstr "optie"
+
+msgctxt "#32311"
+msgid "options"
+msgstr "opties"
+
+msgctxt "#32312"
+msgid "item"
+msgstr "item"
+
+msgctxt "#32313"
+msgid "album in your library"
+msgstr "album in je bibliotheek"
+
+msgctxt "#32314"
+msgid "albums in your library"
+msgstr "albums in je bibliotheek"
+
+msgctxt "#32315"
+msgid "film"
+msgstr "film"
+
+msgctxt "#32316"
+msgid "person"
+msgstr "persoon"
+
+msgctxt "#32317"
+msgid "people"
+msgstr "personen"
+
+msgctxt "#32318"
+msgid "episode"
+msgstr "aflevering"
+
+msgctxt "#32319"
+msgid "episodes"
+msgstr "afleveringen"
+
+msgctxt "#32320"
+msgid "film watched"
+msgstr "film gezien"
+
+msgctxt "#32321"
+msgid "films watched"
+msgstr "films gezien"
+
+msgctxt "#32322"
+msgid "episode watched"
+msgstr "aflevering gezien"
+
+msgctxt "#32323"
+msgid "episodes watched"
+msgstr "afleveringen gezien"
+
+msgctxt "#32324"
+msgid "Midnight"
+msgstr "Middernacht"
+
+msgctxt "#32325"
+msgid "The extra items Aeon Fuse adds to Kodi's context menu: which of them show and in what order."
+msgstr "De extra onderdelen die Aeon Fuse aan het contextmenu van Kodi toevoegt: welke er verschijnen en in welke volgorde."
+
+msgctxt "#32326"
+msgid "Kodi lists these after its own items (and before those of other add-ons that come later). Pick one, then use the buttons on the right."
+msgstr "Kodi toont ze na zijn eigen onderdelen (en vóór die van later volgende add-ons). Kies er een en gebruik dan de knoppen rechts."
+
+msgctxt "#32327"
+msgid "Shows or hides the selected item in the context menu."
+msgstr "Toont of verbergt het gekozen onderdeel in het contextmenu."
+
+msgctxt "#32328"
+msgid "Moves the selected item one place up in the context menu."
+msgstr "Zet het gekozen onderdeel één plaats hoger in het contextmenu."
+
+msgctxt "#32329"
+msgid "Moves the selected item one place down in the context menu."
+msgstr "Zet het gekozen onderdeel één plaats lager in het contextmenu."
+
+msgctxt "#32330"
+msgid "The backdrop of the widget screens (Up on a Home item) slowly zooms in with every title. Reduce motion stops it too."
+msgstr "De achtergrond van de widgetschermen (Omhoog op een onderdeel van Start) zoomt bij elke titel langzaam in. Minder beweging stopt dat ook."
+
+msgctxt "#32331"
+msgid "A font family for each part of the skin: Home, the libraries, headings, the settings pages and the player."
+msgstr "Een lettertypefamilie voor elk deel van de skin: Start, de bibliotheken, koppen, de instellingenpagina's en de speler."
+
+msgctxt "#32332"
+msgid "Film"
+msgstr "Film"
+
+msgctxt "#32333"
+msgid "Resume now: done by"
+msgstr "Nu hervatten: klaar om"
+
+msgctxt "#32334"
+msgid "Start now: ends"
+msgstr "Nu starten: einde"
+
+msgctxt "#32336"
+msgid "Down for the films"
+msgstr "Omlaag voor de films"
+
+msgctxt "#32337"
+msgid "Down for the cast"
+msgstr "Omlaag voor de cast"
+
+msgctxt "#32338"
+msgid "Story"
+msgstr "Verhaal"
+
+msgctxt "#32339"
+msgid "split"
+msgstr "gestopt"
+
+msgctxt "#32340"
+msgid "died"
+msgstr "overleden"
+
+msgctxt "#32341"
+msgid "Resume at"
+msgstr "Hervatten bij"
+
+msgctxt "#32342"
+msgid "added"
+msgstr "toegevoegd"
+
+msgctxt "#32343"
+msgid "season"
+msgstr "seizoen"
+
+msgctxt "#32344"
+msgid "seasons"
+msgstr "seizoenen"
+
+msgctxt "#32345"
+msgid "Aired"
+msgstr "Uitgezonden"
+
+msgctxt "#32346"
+msgid "Resume now and you're done by"
+msgstr "Hervat nu en je bent klaar om"
+
+msgctxt "#32347"
+msgid "Start now and it ends at"
+msgstr "Start nu en het eindigt om"
+
+msgctxt "#32348"
+msgid "after midnight"
+msgstr "na middernacht"
+
+msgctxt "#32349"
+msgid "Start now and you're done by"
+msgstr "Start nu en je bent klaar om"
+
+msgctxt "#32350"
+msgid "still to watch"
+msgstr "nog te kijken"
+
+msgctxt "#32351"
+msgid "aired"
+msgstr "uitgezonden"
+
+msgctxt "#32352"
+msgid "rated"
+msgstr "waardering"
+
+msgctxt "#32353"
+msgid "With"
+msgstr "Met"
+
+msgctxt "#32354"
+msgid "Progress"
+msgstr "Voortgang"
+
+msgctxt "#32355"
+msgid "to watch"
+msgstr "te kijken"
+
+msgctxt "#32356"
+msgid "No channels. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "Geen zenders. Schakel een PVR-client-add-on in bij de instellingen voor PVR & live tv."
+
+msgctxt "#32357"
+msgid "No recordings."
+msgstr "Geen opnames."
+
+msgctxt "#32358"
+msgid "No results."
+msgstr "Geen resultaten."
+
+msgctxt "#32359"
+msgid "No timers."
+msgstr "Geen timers."
+
+msgctxt "#32360"
+msgid "updated"
+msgstr "bijgewerkt"
+
+msgctxt "#32361"
+msgid "Setup wizard"
+msgstr "Installatiewizard"
+
+msgctxt "#32362"
+msgid "Theme, palette, backgrounds, Home"
+msgstr "Thema, palet, achtergronden, Start"
+
+msgctxt "#32363"
+msgid "Widget screens: slow zoom"
+msgstr "Widgetschermen: langzame zoom"
+
+msgctxt "#32364"
+msgid "Kodi shows these after its own items, in this order (items of other add-ons can follow). Update and Clean library show in the libraries and on Home, Refresh information on films, shows, episodes and music videos, Take screenshot everywhere."
+msgstr "Kodi toont ze na zijn eigen onderdelen, in deze volgorde (onderdelen van andere add-ons kunnen volgen). Bibliotheek bijwerken en opschonen staan in de bibliotheken en op Start, Informatie vernieuwen bij films, series, afleveringen en muziekvideo's, Schermafbeelding maken overal."
+
+msgctxt "#32365"
+msgid "PICTURE"
+msgstr "AFBEELDING"
+
+msgctxt "#32366"
+msgid "Smart playlist"
+msgstr "Slimme afspeellijst"
+
+msgctxt "#32367"
+msgid "Source"
+msgstr "Bron"
+
+msgctxt "#32368"
+msgid "fps"
+msgstr "fps"
+
+msgctxt "#32369"
+msgid "AR"
+msgstr "AR"
+
+msgctxt "#32370"
+msgid "Dynamic range"
+msgstr "Dynamisch bereik"
+
+msgctxt "#32371"
+msgid "Decoder"
+msgstr "Decoder"
+
+msgctxt "#32372"
+msgid "Pixel format"
+msgstr "Pixelformaat"
+
+msgctxt "#32373"
+msgid "Deinterlace"
+msgstr "Deinterlacing"
+
+msgctxt "#32374"
+msgid "Display"
+msgstr "Beeldscherm"
+
+msgctxt "#32375"
+msgid "Audio output"
+msgstr "Audio-uitvoer"
+
+msgctxt "#32376"
+msgid "Interface"
+msgstr "Interface"
+
+msgctxt "#32377"
+msgid "memory"
+msgstr "geheugen"
+
+msgctxt "#32378"
+msgid "FILE"
+msgstr "BESTAND"
+
+msgctxt "#32379"
+msgid "SIZE"
+msgstr "GROOTTE"
+
+msgctxt "#32380"
+msgid "TAKEN"
+msgstr "GEMAAKT"
+
+msgctxt "#32381"
+msgid "STATE"
+msgstr "STATUS"
+
+msgctxt "#32382"
+msgid "until bedtime"
+msgstr "tot bedtijd"
+
+msgctxt "#32383"
+msgid "Fits before bedtime"
+msgstr "Past vóór bedtijd"
+
+msgctxt "#32384"
+msgid "fits before bedtime"
+msgstr "past vóór bedtijd"
+
+msgctxt "#32385"
+msgid "Nothing unwatched fits before bedtime tonight."
+msgstr "Niets ongeziens past vanavond nog vóór bedtijd."
+
+msgctxt "#32386"
+msgid "right at your bedtime"
+msgstr "precies op je bedtijd"
+
+msgctxt "#32387"
+msgid "past your bedtime"
+msgstr "na je bedtijd"
+
+msgctxt "#32388"
+msgid "before your bedtime"
+msgstr "vóór je bedtijd"
+
+msgctxt "#32389"
+msgid "after your bedtime"
+msgstr "na je bedtijd"
+
+msgctxt "#32390"
+msgid "Continuing"
+msgstr "Lopend"
+
+msgctxt "#32391"
+msgid "Ended"
+msgstr "Afgelopen"
+
+msgctxt "#32392"
+msgid "Cancelled"
+msgstr "Geannuleerd"
+
+msgctxt "#32393"
+msgid "In production"
+msgstr "In productie"
+
+msgctxt "#32394"
+msgid "Planned"
+msgstr "Gepland"
+
+msgctxt "#32395"
+msgid "Upcoming"
+msgstr "Binnenkort"
+
+msgctxt "#32396"
+msgid "Pilot"
+msgstr "Pilot"
+
+msgctxt "#32397"
+msgid "Now playing in"
+msgstr "Speelt nu in"
+
+msgctxt "#32398"
+msgid "Films of a set"
+msgstr "Films van een reeks"
+
+msgctxt "#32399"
+msgid "Versions of a film"
+msgstr "Versies van een film"
+
+msgctxt "#32400"
+msgid "Grid"
+msgstr "Raster"
+
+msgctxt "#32401"
+msgid "One at a time"
+msgstr "Eén voor één"
+
+msgctxt "#32402"
+msgid "Fused Glass"
+msgstr "Fused Glass"
+
+msgctxt "#32403"
+msgid "Next hours"
+msgstr "Komende uren"
+
+msgctxt "#32404"
+msgid "This week"
+msgstr "Deze week"
+
+msgctxt "#32405"
+msgid "No weather yet. Choose a weather service in Settings > Services > Weather."
+msgstr "Nog geen weer. Kies een weerdienst bij Instellingen > Diensten > Weer."
+
+msgctxt "#32406"
+msgid "Recent searches"
+msgstr "Recente zoekopdrachten"
+
+msgctxt "#32407"
+msgid "In Fused Glass the music playing always sits beside the clock on Home; this setting is for the other themes."
+msgstr "In Fused Glass staat de muziek die speelt op Home altijd naast de klok; deze instelling is voor de andere thema's."
+
+msgctxt "#32408"
+msgid "Focus highlight"
+msgstr "Focusmarkering"
+
+msgctxt "#32409"
+msgid "Pill"
+msgstr "Pil"
+
+msgctxt "#32410"
+msgid "Flat"
+msgstr "Vlak"
+
+msgctxt "#32411"
+msgid "Frosted"
+msgstr "Matglas"
+
+msgctxt "#32412"
+msgid "Outline"
+msgstr "Omlijning"
+
+msgctxt "#32413"
+msgid "Tight"
+msgstr "Strak"
+
+msgctxt "#32414"
+msgid "How the item in focus is marked in lists and menus. Changing it reloads the skin."
+msgstr "Hoe het item in focus in lijsten en menu's wordt gemarkeerd. Wijzigen herlaadt de skin."
+
+msgctxt "#32415"
+msgid "Navigation animation"
+msgstr "Navigatieanimatie"
+
+msgctxt "#32416"
+msgid "Pop"
+msgstr "Pop"
+
+msgctxt "#32417"
+msgid "Grow"
+msgstr "Groei"
+
+msgctxt "#32418"
+msgid "Fade"
+msgstr "Vervaag"
+
+msgctxt "#32419"
+msgid "Glow"
+msgstr "Gloed"
+
+msgctxt "#32420"
+msgid "Nudge"
+msgstr "Duw"
+
+msgctxt "#32421"
+msgid "Lift"
+msgstr "Til"
+
+msgctxt "#32422"
+msgid "How the highlight moves when it lands on an item. Pop is the default."
+msgstr "Hoe de markering beweegt als die op een item landt. Pop is de standaard."
+
+msgctxt "#32423"
+msgid "Font combination"
+msgstr "Lettertypecombinatie"
+
+msgctxt "#32424"
+msgid "A heading and text font combination, shown before you pick it, or your own font for each part of the skin."
+msgstr "Een combinatie van kop- en tekstlettertype, met voorbeeld, of een eigen lettertype voor elk deel van de skin."
+
+msgctxt "#32425"
+msgid "Home menu: only the focused item's name"
+msgstr "Hoofdmenu: alleen de naam van het gekozen item"
+
+msgctxt "#32426"
+msgid "On: the other items of the Home menu show only their icon and the focused item shows its name."
+msgstr "Aan: de andere items van het hoofdmenu tonen alleen hun icoon en het gekozen item zijn naam."
+
+msgctxt "#32427"
+msgid "Segment skip button placement"
+msgstr "Plaatsing van de knop om segmenten over te slaan"
+
+msgctxt "#32428"
+msgid "Tab"
+msgstr "Tab"
+
+msgctxt "#32429"
+msgid "Glass"
+msgstr "Glas"
+
+msgctxt "#32430"
+msgid "How the skip button sits on the player controls and the small seek bar: a white tab on the card's edge, or a capsule of the card's glass above it."
+msgstr "Hoe de overslaanknop op de spelerbediening en de kleine zoekbalk zit: een wit tabje op de rand van de kaart, of een capsule van het glas van de kaart erboven."
+
+msgctxt "#32431"
+msgid "Available in library"
+msgstr "Beschikbaar in bibliotheek"
+
+msgctxt "#32432"
+msgid "In library"
+msgstr "In bibliotheek"
+
+msgctxt "#32433"
+msgid "Random %s"
+msgstr "Willekeurige %s"
+
+msgctxt "#32434"
+msgid "Recently added %s"
+msgstr "Recent toegevoegde %s"
+
+msgctxt "#32435"
+msgid "Recently played %s"
+msgstr "Recent afgespeelde %s"
+
+msgctxt "#32436"
+msgid "Top rated %s"
+msgstr "Best beoordeelde %s"
+
+msgctxt "#32437"
+msgid "Most played %s"
+msgstr "Meest afgespeelde %s"
+
+msgctxt "#32438"
+msgid "Newest %s"
+msgstr "Nieuwste %s"
+
+msgctxt "#32439"
+msgid "%s by title"
+msgstr "%s op titel"
+
+msgctxt "#32440"
+msgid "Scroll through channels"
+msgstr "Door zenders scrollen"
+
+msgctxt "#32441"
+msgid "Auto-fix art with the wrong shape"
+msgstr "Afbeeldingen met foute vorm herstellen"
+
+msgctxt "#32442"
+msgid "Check library art now"
+msgstr "Bibliotheekafbeeldingen nu controleren"
+
+msgctxt "#32443"
+msgid "Library art"
+msgstr "Bibliotheekafbeeldingen"
+
+msgctxt "#32444"
+msgid "Now uses a picture from the same folder that fits"
+msgstr "Gebruikt nu een passende afbeelding uit dezelfde map"
+
+msgctxt "#32445"
+msgid "Wrong shape, nothing in the folder fits"
+msgstr "Verkeerde vorm, niets in de map past"
+
+msgctxt "#32446"
+msgid "Every picture has the right shape."
+msgstr "Alle afbeeldingen hebben de juiste vorm."
+
+msgctxt "#32447"
+msgid "Fixed in the library: %d"
+msgstr "Hersteld in de bibliotheek: %d"
+
+msgctxt "#32448"
+msgid "After a refresh or a library scan, a poster, banner, landscape or fanart of the wrong shape is replaced by a picture of the same name in the same folder that fits. Your files stay as they are."
+msgstr "Na een vernieuwing of bibliotheekscan wordt een poster, banner, landschap of fanart met de verkeerde vorm vervangen door een passende afbeelding met dezelfde naam uit dezelfde map. Je bestanden blijven zoals ze zijn."
+
+msgctxt "#32449"
+msgid "Checks every picture Kodi has shown and fixes what it can. A list shows what was replaced and what is still the wrong shape."
+msgstr "Controleert elke afbeelding die Kodi heeft getoond en herstelt wat kan. Een lijst toont wat vervangen is en wat nog de verkeerde vorm heeft."
+
+msgctxt "#32450"
+msgid "Slot left empty: the skin shows the show's picture until season art is added"
+msgstr "Plek leeg gelaten: de skin toont de afbeelding van de serie tot er seizoensafbeeldingen zijn"
+
+msgctxt "#32451"
+msgid "Only Kodi's library changed. Your files are untouched."
+msgstr "Alleen de bibliotheek van Kodi is gewijzigd. Je bestanden zijn ongemoeid gelaten."
+
+msgctxt "#32452"
+msgid "Mosaic"
+msgstr "Mozaïek"
+
+msgctxt "#32453"
+msgid "Ledger"
+msgstr "Grootboek"
+
+msgctxt "#32454"
+msgid "Bridge"
+msgstr "Brug"
+
+msgctxt "#32455"
+msgid "Tab slab"
+msgstr "Tabblad"
+
+msgctxt "#32456"
+msgid "How the menus join their boxes: Mosaic, Ledger, Bridge or Tab slab. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "Hoe de menu's hun vakken samenvoegen: Mozaïek, Grootboek, Brug of Tabblad. Fuse gebruikt afgeronde kaarten en vraagt om Kodi opnieuw te starten."
+
+msgctxt "#32457"
+msgid "Aeon Glass keeps its own menus. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "Aeon Glass houdt zijn eigen menu's. Fuse gebruikt afgeronde kaarten en vraagt om Kodi opnieuw te starten."
+
+msgctxt "#32458"
+msgid "Library options"
+msgstr "Bibliotheekopties"
+
+msgctxt "#32459"
+msgid "Strip"
+msgstr "Strook"
+
+msgctxt "#32460"
+msgid "Box"
+msgstr "Vak"
+
+msgctxt "#32461"
+msgid "Left at the edge of a view or the Menu key opens the side strip, or a big box in the menu style."
+msgstr "Links aan de rand van een weergave of de Menutoets opent de zijstrook, of een groot vak in de menustijl."
+
+msgctxt "#32462"
+msgid "Skippy: skip button style"
+msgstr "Skippy: stijl van de overslaanknop"
+
+msgctxt "#32463"
+msgid "Box pair"
+msgstr "Vakkenpaar"
+
+msgctxt "#32464"
+msgid "Clock dock"
+msgstr "Bij de klok"
+
+msgctxt "#32465"
+msgid "Aeon theme: a palette tile and a label box at the bottom right (above the player controls when they are open), or a row at the top right that ends in the clock box."
+msgstr "Aeon-thema: een gekleurde tegel en een tekstvak rechtsonder (boven de spelerknoppen als die open zijn), of een rij rechtsboven die eindigt in het klokvak."
+
+msgctxt "#32466"
+msgid "Use the palette for"
+msgstr "Palet gebruiken voor"
+
+msgctxt "#32467"
+msgid "Menus and library views"
+msgstr "Menu's en bibliotheekweergaven"
+
+msgctxt "#32468"
+msgid "Menus only"
+msgstr "Alleen menu's"
+
+msgctxt "#32469"
+msgid "Library views only"
+msgstr "Alleen bibliotheekweergaven"
+
+msgctxt "#32470"
+msgid "Colors: the colour of the artwork; in the library with the Neutral backdrop and a palette other than Aeon, the palette's own darker box colour. Neutral: always the palette's box colour. Fanart: a window onto the fanart. Backdrop: as the library backdrop. View settings sets it per view."
+msgstr "Kleuren: de kleur van de afbeelding; in de bibliotheek met de neutrale achtergrond en een ander palet dan Aeon de eigen, donkerdere vakkleur van het palet. Neutraal: altijd de vakkleur van het palet. Fanart: een venster op de fanart. Achtergrond: als de bibliotheekachtergrond. Weergave-instellingen stellen het per weergave in."
+
+msgctxt "#32471"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages, for the menus and the library views, the menus only or the library views only. The library background takes it with the Neutral backdrop only."
+msgstr "Kleur van de markering, de vakken, de stroken en de instellingspagina's, voor menu's en bibliotheekweergaven, alleen menu's of alleen bibliotheekweergaven. De bibliotheekachtergrond neemt hem alleen over met de neutrale achtergrond."
+
+msgctxt "#32472"
+msgid "Band under the Home menu"
+msgstr "Band onder het hoofdmenu"
+
+msgctxt "#32473"
+msgid "A dark band from the Home menu down to the bottom of the screen, with a thin line on top, over the spotlight pictures. It follows the menu: middle or low."
+msgstr "Een donkere band van het hoofdmenu tot de onderkant van het scherm, met een dunne lijn bovenaan, over de spotlightafbeeldingen. Hij volgt het menu: midden of laag."
+
+msgctxt "#32474"
+msgid "Toasts expand from clock pill"
+msgstr "Meldingen klappen uit vanuit de klokcapsule"
+
+msgctxt "#32475"
+msgid "A notification widens the clock pill to the left and shows itself in it, instead of a capsule of its own. Library views and full-screen video keep the capsule."
+msgstr "Een melding maakt de klokcapsule naar links breder en verschijnt daarin, in plaats van in een eigen capsule. Bibliotheekweergaven en video op volledig scherm houden de capsule."
+
+msgctxt "#32476"
+msgid "Clearlogo in Now playing"
+msgstr "Clearlogo bij Speelt nu"
+
+msgctxt "#32477"
+msgid "Live"
+msgstr "Live"
+
+msgctxt "#32478"
+msgid "Fused Glass player: the clearlogo of the show or film in the Now playing pill at the top left, instead of its title. Off: the title."
+msgstr "Fused Glass-speler: het clearlogo van de serie of film in de pil Speelt nu linksboven, in plaats van de titel. Uit: de titel."
+
+msgctxt "#32479"
+msgid "Overview"
+msgstr "Overzicht"
+
+msgctxt "#32480"
+msgid "File and season"
+msgstr "Bestand en seizoen"
+
+msgctxt "#32481"
+msgid "In this file"
+msgstr "In dit bestand"
+
+msgctxt "#32482"
+msgid "File"
+msgstr "Bestand"
+
+msgctxt "#32483"
+msgid "Size"
+msgstr "Grootte"
+
+msgctxt "#32484"
+msgid "Playing on"
+msgstr "Speelt op"
+
+msgctxt "#32485"
+msgid "Cast photos in the information screen"
+msgstr "Castfoto’s in het infoscherm"
+
+msgctxt "#32486"
+msgid "Fused Glass player: the information screen shows the cast as round photos with the name and the character under each, in one row you scroll through. Off: the names as chips."
+msgstr "Fused Glass-speler: het infoscherm toont de cast als ronde foto’s met de naam en het personage eronder, in één rij om door te bladeren. Uit: de namen als labels."
+
+msgctxt "#32487"
+msgid "Up"
+msgstr "Omhoog"
+
+msgctxt "#32488"
+msgid "Down"
+msgstr "Omlaag"
+
+msgctxt "#32489"
+msgid "Kodi running for"
+msgstr "Kodi draait al"
+
+msgctxt "#32490"
+msgid "Box up for"
+msgstr "Box draait al"
+
+msgctxt "#32491"
+msgid "Nothing is playing"
+msgstr "Er speelt niets"
+
+msgctxt "#32492"
+msgid "Sleep"
+msgstr "Slaapstand"
+
+msgctxt "#32493"
+msgid "Restart Kodi"
+msgstr "Kodi herstarten"
+
+msgctxt "#32495"
+msgid "Reboot to Android"
+msgstr "Herstarten naar Android"
+
+msgctxt "#32496"
+msgid "Shut down"
+msgstr "Uitschakelen"
+
+msgctxt "#32497"
+msgid "OK again to confirm"
+msgstr "Nogmaals OK om te bevestigen"
+
+msgctxt "#32498"
+msgid "Log off"
+msgstr "Afmelden"
+
+msgctxt "#32499"
+msgid "Exit Kodi"
+msgstr "Kodi afsluiten"
+
+msgctxt "#32500"
+msgid "When this ends"
+msgstr "Als dit afgelopen is"
+
+msgctxt "#32501"
+msgid "min"
+msgstr "min"
+
+msgctxt "#32502"
+msgid "Health"
+msgstr "Conditie"
+
+msgctxt "#32503"
+msgid "All good"
+msgstr "Alles in orde"
+
+msgctxt "#32504"
+msgid "Running warm"
+msgstr "Wordt warm"
+
+msgctxt "#32505"
+msgid "Memory almost full"
+msgstr "Geheugen bijna vol"
+
+msgctxt "#32506"
+msgid "Processor"
+msgstr "Processor"
+
+msgctxt "#32507"
+msgid "Shortcuts"
+msgstr "Snelkoppelingen"
+
+msgctxt "#32508"
+msgid "Recently used add-ons"
+msgstr "Recent gebruikte add-ons"
+
+msgctxt "#32509"
+msgid "Library jobs"
+msgstr "Bibliotheektaken"
+
+msgctxt "#32510"
+msgid "All episodes"
+msgstr "Alle afleveringen"
+
+msgctxt "#32511"
+msgid "to the tile"
+msgstr "naar de tegel"
+
+msgctxt "#32512"
+msgid "{n} min left"
+msgstr "nog {n} min"
+
+msgctxt "#32513"
+msgid "{episode} airs {date}"
+msgstr "{episode} komt {date}"
+
+msgctxt "#32514"
+msgid "{n} more waiting in season {season}"
+msgstr "nog {n} wachten in seizoen {season}"
+
+msgctxt "#32515"
+msgid "1 more waiting in season {season}"
+msgstr "nog 1 wacht in seizoen {season}"
+
+msgctxt "#32516"
+msgid "Search your library"
+msgstr "Zoek in je bibliotheek"
+
+msgctxt "#32517"
+msgid "Films, shows, episodes, music, people"
+msgstr "Films, series, afleveringen, muziek, personen"
+
+msgctxt "#32518"
+msgid "You're on {episode}"
+msgstr "Je bent bij {episode}"
+
+msgctxt "#32519"
+msgid "Last search:"
+msgstr "Laatste zoekopdracht:"
+
+msgctxt "#32520"
+msgid "Also search"
+msgstr "Zoek ook"
+
+msgctxt "#32521"
+msgid "TMDb, not in the library"
+msgstr "TMDb, niet in de bibliotheek"
+
+msgctxt "#32522"
+msgid "People"
+msgstr "Personen"
+
+msgctxt "#32523"
+msgid "Online"
+msgstr "Online"
+
+msgctxt "#32524"
+msgid "Next 7 days"
+msgstr "Komende 7 dagen"
+
+msgctxt "#32525"
+msgid "Shows you watch"
+msgstr "Series die je kijkt"
+
+msgctxt "#32526"
+msgid "View settings"
+msgstr "Weergave-instellingen"
+
+msgctxt "#32527"
+msgid "Background"
+msgstr "Achtergrond"
+
+msgctxt "#32528"
+msgid "Nothing out"
+msgstr "Niets verwacht"
+
+msgctxt "#32529"
+msgid "{n} this week"
+msgstr "{n} deze week"
+
+msgctxt "#32530"
+msgid "1 episode"
+msgstr "1 aflevering"
+
+msgctxt "#32531"
+msgid "{n} episodes"
+msgstr "{n} afleveringen"
+
+msgctxt "#32532"
+msgid "1 film"
+msgstr "1 film"
+
+msgctxt "#32533"
+msgid "{n} films"
+msgstr "{n} films"
+
+msgctxt "#32534"
+msgid "Week: seven days side by side. Day: one day at a time."
+msgstr "Week: zeven dagen naast elkaar. Dag: één dag tegelijk."
+
+msgctxt "#32535"
+msgid "Episodes, films or both."
+msgstr "Afleveringen, films of beide."
+
+msgctxt "#32536"
+msgid "Only the episodes of shows you have watched before."
+msgstr "Alleen afleveringen van series die je al hebt gekeken."
+
+msgctxt "#32537"
+msgid "Colors: the colours of the selected title's artwork. Neutral: plain. Fanart: the picture itself."
+msgstr "Kleuren: de kleuren van de afbeelding van de gekozen titel. Neutraal: effen. Fanart: de afbeelding zelf."
+
+msgctxt "#32538"
+msgid "The first day of a week. Today: always the next seven days."
+msgstr "De eerste dag van een week. Vandaag: altijd de komende zeven dagen."
+
+msgctxt "#32539"
+msgid "This week"
+msgstr "Deze week"
+
+msgctxt "#32540"
+msgid "Next week"
+msgstr "Volgende week"
+
+msgctxt "#32541"
+msgid "{n} in progress"
+msgstr "{n} begonnen"
+
+msgctxt "#32542"
+msgid "{n} unwatched"
+msgstr "{n} niet gezien"
+
+msgctxt "#32543"
+msgid "All watched"
+msgstr "Alles gezien"
+
+msgctxt "#32544"
+msgid "Episode combined"
+msgstr "Afleveringen gecombineerd"
+
+msgctxt "#32545"
+msgid "Season buttons, the episodes in a card and the one in focus beside it"
+msgstr "Seizoensknoppen, de afleveringen in een kaart en de gekozen ernaast"
+
+msgctxt "#32546"
+msgid "{time} of {total}"
+msgstr "{time} van {total}"
+
+msgctxt "#32547"
+msgid "Frost"
+msgstr "Rijp"
+
+msgctxt "#32548"
+msgid "Raised"
+msgstr "Verhoogd"
+
+msgctxt "#32549"
+msgid "Clear"
+msgstr "Helder"
+
+msgctxt "#32550"
+msgid "Library view theme"
+msgstr "Bibliotheekthema"
+
+msgctxt "#32551"
+msgid "The glass of the frosted panels: library views, Home panels and the Home bar. Menus and dialogs follow Menu theme. Frost: lighter. Raised: lit rim, deep shadow. Clear: thin, no blur. Dark: darker."
+msgstr "Het glas van de matglazen panelen: bibliotheekweergaven, panelen en balk van het hoofdscherm. Menu's en dialogen volgen het Menuthema. Rijp: lichter. Verhoogd: lichte rand, diepe schaduw. Helder: dun. Donker: donkerder."
+
+msgctxt "#32552"
+msgid "Earlier days"
+msgstr "Eerdere dagen"
+
+msgctxt "#32553"
+msgid "Also show what aired on the days of this week before today (episodes in your library)."
+msgstr "Ook tonen wat er deze week vóór vandaag uitkwam (afleveringen in je bibliotheek)."
+
+msgctxt "#32554"
+msgid "Menu names in capitals"
+msgstr "Menunamen in hoofdletters"
+
+msgctxt "#32555"
+msgid "Fused Glass: the Home menu names in capital letters instead of sentence case."
+msgstr "Fused Glass: de namen in het hoofdmenu in hoofdletters."
+
+msgctxt "#32556"
+msgid "In cinemas now"
+msgstr "Nu in de bioscoop"
+
+msgctxt "#32557"
+msgid "Airing today"
+msgstr "Vandaag te zien"
+
+msgctxt "#32558"
+msgid "Airing tomorrow"
+msgstr "Morgen te zien"
+
+msgctxt "#32559"
+msgid "Save lyrics next to the song"
+msgstr "Songteksten naast het nummer opslaan"
+
+msgctxt "#32560"
+msgid "Lyrics that CU LRC Lyrics finds are also saved as a file next to the song (.lrc or .txt), so they are there next time and for other players. The music folder must be writable."
+msgstr "Songteksten die CU LRC Lyrics vindt, worden ook als bestand naast het nummer opgeslagen (.lrc of .txt), zodat ze er de volgende keer en voor andere spelers zijn. In de muziekmap moet geschreven kunnen worden."
+
+msgctxt "#32561"
+msgid "Home spotlight: recently watched sets"
+msgstr "Spotlight op Start: recent bekeken collecties"
+
+msgctxt "#32562"
+msgid "The spotlight of a Home item that shows movie sets (Sets, for example) lists the sets you watched last, newest first. Off: all sets, as its spotlight settings say."
+msgstr "De Spotlight van een Start-onderdeel met filmcollecties (bijvoorbeeld Collecties) toont de collecties die je het laatst hebt bekeken, nieuwste eerst. Uit: alle collecties, zoals in de Spotlight-instellingen."
+
+msgctxt "#32563"
+msgid "Progress rings"
+msgstr "Voortgangsringen"
+
+msgctxt "#32564"
+msgid "Season list combined 1"
+msgstr "Seizoenenlijst gecombineerd 1"
+
+msgctxt "#32565"
+msgid "Seasons, episodes, facts"
+msgstr "Seizoenen, afleveringen, info"
+
+msgctxt "#32566"
+msgid "Season list combined 2"
+msgstr "Seizoenenlijst gecombineerd 2"
+
+msgctxt "#32567"
+msgid "Poster with episode stills"
+msgstr "Poster met stills"
+
+msgctxt "#32568"
+msgid "Smooth song progress"
+msgstr "Vloeiende voortgang van het nummer"
+
+msgctxt "#32569"
+msgid "Fused Glass Now playing: the song's progress behind the waveform glides instead of jumping 1 % at a time. Uses a little more processor time while the screen is open."
+msgstr "Speelt nu in Fused Glass: de voortgang van het nummer achter de golfvorm glijdt in plaats van per 1 % te verspringen. Kost iets meer processortijd zolang het scherm open is."
+
+msgctxt "#32570"
+msgid "Progress bar updates per second"
+msgstr "Voortgangsbalk: updates per seconde"
+
+msgctxt "#32571"
+msgid "Screen"
+msgstr "Scherm"
+
+msgctxt "#32572"
+msgid "How often a second Smooth song progress moves the fill. Screen: as often as Kodi draws the screen. Fewer updates use less processor time; on a long song even 10 looks smooth."
+msgstr "Hoe vaak per seconde de vloeiende voortgang de vulling verschuift. Scherm: zo vaak als Kodi het scherm tekent. Minder updates kosten minder processortijd; bij een lang nummer oogt zelfs 10 vloeiend."
+
+msgctxt "#32590"
+msgid "Season poster wall combined"
+msgstr "Seizoenspostermuur gecombineerd"
+
+msgctxt "#32573"
+msgid "Dark"
+msgstr "Donker"
+
+msgctxt "#32574"
+msgid "Dark: dark panels. Clear: thin glass that shows more of the backdrop. Frost: light frosted glass over the blurred backdrop. Fused Glass: the System screen's menus, full screen with thin rules and a white bar on the row in focus; Kodi starts again."
+msgstr "Donker: donkere panelen. Helder: dun glas dat meer van de achtergrond laat zien. Rijp: licht matglas boven de vervaagde achtergrond. Fused Glass: de menu's van het Systeemscherm, schermvullend met dunne lijnen en een witte balk bij de rij met focus; Kodi start opnieuw."
+
+msgctxt "#32575"
+msgid "Home bar"
+msgstr "Hoofdmenubalk"
+
+msgctxt "#32576"
+msgid "Bar"
+msgstr "Balk"
+
+msgctxt "#32577"
+msgid "Keys"
+msgstr "Toetsen"
+
+msgctxt "#32578"
+msgid "Shelf"
+msgstr "Plank"
+
+msgctxt "#32579"
+msgid "Frosted glass behind the Home menu, in the material chosen under Look. Bar: one capsule. Keys: glass under each icon. Shelf: a band across the screen."
+msgstr "Matglas achter het hoofdmenu, in het materiaal gekozen onder Stijl. Balk: één capsule. Toetsen: glas onder elk pictogram. Plank: een band over de hele breedte."
+
+msgctxt "#32591"
+msgid "Add item"
+msgstr "Item toevoegen"
+
+msgctxt "#32592"
+msgid "Puts a new item at the end of the menu: one of the skin's items that is not on it yet, or a custom item with its own path, Spotlight and lists.[CR][CR]OK opens the list of types."
+msgstr "Zet een nieuw item achteraan het menu: een item van de skin dat er nog niet in staat, of een eigen item met eigen pad, Spotlight en lijsten.[CR][CR]OK opent de lijst met soorten."
+
+msgctxt "#32593"
+msgid "Reload EPG"
+msgstr "EPG opnieuw laden"
+
+msgctxt "#32594"
+msgid "Aeon accent colour"
+msgstr "Aeon-accentkleur"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "Goud"
+
+msgctxt "#32596"
+msgid "Slate"
+msgstr "Leisteen"
+
+msgctxt "#32597"
+msgid "Teal"
+msgstr "Groenblauw"
+
+msgctxt "#32598"
+msgid "Moss"
+msgstr "Mos"
+
+msgctxt "#32599"
+msgid "Side"
+msgstr "Zijkant"
+
+msgctxt "#32600"
+msgid "Vignette shape"
+msgstr "Vorm van vignet"
+
+msgctxt "#32601"
+msgid "Round"
+msgstr "Rond"
+
+msgctxt "#32602"
+msgid "Round darkens the edges all round. Side darkens the screen from the left and fades out to the right, under the Home text. The row above sets how strong it is."
+msgstr "Rond maakt de randen rondom donkerder. Zijkant maakt het scherm vanaf links donker en vervaagt naar rechts, onder de tekst op het startscherm. De rij erboven bepaalt hoe sterk."
+
+msgctxt "#32603"
+msgid "Heavy"
+msgstr "Intens"
+
+msgctxt "#32604"
+msgid "All themes"
+msgstr "Alle thema's"
+
+msgctxt "#32605"
+msgid "Next episode"
+msgstr "Volgende aflevering"
+
+msgctxt "#32606"
+msgid "{t} left"
+msgstr "nog {t}"
+
+msgctxt "#32607"
+msgid "Home menu underline"
+msgstr "Onderstreping in het startmenu"
+
+msgctxt "#32608"
+msgid "Library fanart look"
+msgstr "Uiterlijk van de bibliotheekfanart"
+
+msgctxt "#32609"
+msgid "Dimmed"
+msgstr "Gedimd"
+
+msgctxt "#32610"
+msgid "Ratings shown as"
+msgstr "Beoordelingen tonen als"
+
+msgctxt "#32611"
+msgid "Text"
+msgstr "Tekst"
+
+msgctxt "#32612"
+msgid "The accent line under the focused Home menu item, as in Fused Glass."
+msgstr "De accentlijn onder het gekozen item in het startmenu, zoals in Fused Glass."
+
+msgctxt "#32613"
+msgid "The fanart behind the library views: dimmed under a dark veil, or light with a frosted colour tint."
+msgstr "De fanart achter de bibliotheekweergaven: gedimd onder een donkere sluier, of licht met een berijpte kleurtint."
+
+msgctxt "#32614"
+msgid "Show the rating providers as their icons or as their names."
+msgstr "Toon de beoordelingsbronnen als hun pictogrammen of als hun namen."
+
+msgctxt "#32615"
+msgid "Media info from sidecars"
+msgstr "Media-info uit sidecar-bestanden"
+
+msgctxt "#32616"
+msgid "Off: only what Kodi's library knows (the chips above). On: also the source (UHD Remux, Blu-ray, WEB-DL, DVD...), the edition, the audio and subtitle tracks and the chapters, read from a mediainfo sidecar next to each video file: <name>.cmm_mediainfo.xml from Curator Media Manager (used first) or <name>-mediainfo.xml from tinyMediaManager. Without sidecars nothing extra shows."
+msgstr "Uit: alleen wat de bibliotheek van Kodi weet (de labels hierboven). Aan: ook de bron (UHD Remux, Blu-ray, WEB-DL, DVD...), de editie, de audio- en ondertitelsporen en de hoofdstukken uit een mediainfo-bestand naast elk videobestand: <naam>.cmm_mediainfo.xml van Curator Media Manager (eerst) of <naam>-mediainfo.xml van tinyMediaManager. Zonder die bestanden verschijnt er niets extra."
+
+msgctxt "#32617"
+msgid "Commentary"
+msgstr "Commentaar"
+
+msgctxt "#32618"
+msgid "Chapters"
+msgstr "Hoofdstukken"
+
+msgctxt "#32619"
+msgid "In cinemas now: films from"
+msgstr "Nu in de bioscoop: films uit"
+
+msgctxt "#32620"
+msgid "Everywhere"
+msgstr "Overal"
+
+msgctxt "#32621"
+msgid "In cinemas now (the screensaver and the widgets) is what TMDb Helper's country has in cinemas: the United States unless TMDb Helper's language is set to another country. Pick your country to keep only films made in the United States or there; Everywhere keeps them all."
+msgstr "Nu in de bioscoop (schermbeveiliging en widgets) toont wat er draait in het land van TMDb Helper: de Verenigde Staten, tenzij de taal van TMDb Helper op een ander land staat. Kies je land om alleen films uit de Verenigde Staten of daar te houden; Overal houdt ze allemaal."
+
+msgctxt "#32622"
+msgid "Getting Home ready"
+msgstr "Startscherm wordt klaargezet"
+
+msgctxt "#32623"
+msgid "Home rows"
+msgstr "Rijen van het startscherm"
+
+msgctxt "#32624"
+msgid "OK or Back skips"
+msgstr "OK of Terug slaat over"
+
+msgctxt "#32625"
+msgid "Live TV guide"
+msgstr "Tv-gids"
+
+msgctxt "#32626"
+msgid "Tint"
+msgstr "Tint"
+
+msgctxt "#32627"
+msgid "Picture"
+msgstr "Beeld"
+
+msgctxt "#32628"
+msgid "blurred"
+msgstr "vervaagd"
+
+msgctxt "#32629"
+msgid "Newest folder"
+msgstr "Nieuwste map"
+
+msgctxt "#32630"
+msgid "Folders, newest first"
+msgstr "Mappen, nieuwste eerst"
+
+msgctxt "#32631"
+msgid "photos"
+msgstr "foto's"
+
+msgctxt "#32632"
+msgid "photo"
+msgstr "foto"
+
+msgctxt "#32633"
+msgid "videos"
+msgstr "video's"
+
+msgctxt "#32634"
+msgid "video"
+msgstr "video"
+
+msgctxt "#32635"
+msgid "OK plays the folder as a slideshow · Down for the folders"
+msgstr "OK speelt de map af als diavoorstelling · Omlaag voor de mappen"
+
+msgctxt "#32636"
+msgid "All pictures"
+msgstr "Alle afbeeldingen"
+
+msgctxt "#32637"
+msgid "sources"
+msgstr "bronnen"
+
+msgctxt "#32638"
+msgid "source"
+msgstr "bron"
+
+msgctxt "#32639"
+msgid "No pictures yet"
+msgstr "Nog geen afbeeldingen"
+
+msgctxt "#32640"
+msgid "Add a folder of photos as a picture source in the Pictures window. OK opens it."
+msgstr "Voeg in het venster Afbeeldingen een map met foto's toe als afbeeldingsbron. OK opent het."
+
+msgctxt "#32641"
+msgid "Photos"
+msgstr "Foto's"
+
+msgctxt "#32642"
+msgid "OK opens the photo · Up for sort, slideshow and view"
+msgstr "OK opent de foto · Omhoog voor sorteren, diavoorstelling en weergave"
+
+msgctxt "#32643"
+msgid "View"
+msgstr "Weergave"
+
+msgctxt "#32644"
+msgid "waits until loading is done"
+msgstr "wacht tot het laden klaar is"
+
+msgctxt "#32645"
+msgid "Media info chips"
+msgstr "Media-infochips"
+
+msgctxt "#32646"
+msgid "Which chips the information page, Home and the library panels show. The sidecar chips need Media info from sidecars."
+msgstr "Welke chips de infopagina, Home en de bibliotheekpanelen tonen. De sidecar-chips hebben Media-info uit sidecars nodig."
+
+msgctxt "#32647"
+msgid "Resolution"
+msgstr "Resolutie"
+
+msgctxt "#32648"
+msgid "Aspect ratio"
+msgstr "Beeldverhouding"
+
+msgctxt "#32649"
+msgid "HDR and Dolby Vision"
+msgstr "HDR en Dolby Vision"
+
+msgctxt "#32650"
+msgid "Dolby Vision profile"
+msgstr "Dolby Vision-profiel"
+
+msgctxt "#32651"
+msgid "Audio format"
+msgstr "Audioformaat"
+
+msgctxt "#32652"
+msgid "Audio channels"
+msgstr "Audiokanalen"
+
+msgctxt "#32653"
+msgid "Source format (sidecar)"
+msgstr "Bronformaat (sidecar)"
+
+msgctxt "#32654"
+msgid "Container (sidecar)"
+msgstr "Container (sidecar)"
+
+msgctxt "#32655"
+msgid "Bit rate (sidecar)"
+msgstr "Bitrate (sidecar)"
+
+msgctxt "#32656"
+msgid "File size (sidecar)"
+msgstr "Bestandsgrootte (sidecar)"
+
+msgctxt "#32657"
+msgid "Subtitles (sidecar)"
+msgstr "Ondertitels (sidecar)"
+
+msgctxt "#32658"
+msgid "Chapters (sidecar)"
+msgstr "Hoofdstukken (sidecar)"
+
+msgctxt "#32659"
+msgid "Commentary (sidecar)"
+msgstr "Commentaar (sidecar)"
+
+msgctxt "#32660"
+msgid "3D (sidecar)"
+msgstr "3D (sidecar)"
+
+msgctxt "#32661"
+msgid "chapters"
+msgstr "hoofdstukken"
+
+msgctxt "#32662"
+msgid "commentary"
+msgstr "commentaar"
+
+msgctxt "#32663"
+msgid "Combine multi-episode files into a single row in library"
+msgstr "Bestanden met meerdere afleveringen samenvoegen tot één rij in de bibliotheek"
+
+msgctxt "#32664"
+msgid "Episodes stored in one video file (a double episode, three cartoons) show as one row: 1–2, one title, the file's running time. The season's list then comes from Aeon Fuse Helper."
+msgstr "Afleveringen in één videobestand (een dubbele aflevering, drie tekenfilms) staan als één rij: 1–2, één titel, de speelduur van het bestand. De lijst van het seizoen komt dan van Aeon Fuse Helper."
+
+msgctxt "#32665"
+msgid "Video source (sidecar)"
+msgstr "Videobron (sidecar)"
+
+msgctxt "#32666"
+msgid "Video codec (sidecar)"
+msgstr "Videocodec (sidecar)"
+
+msgctxt "#32667"
+msgid "Version (sidecar)"
+msgstr "Versie (sidecar)"
+
+msgctxt "#32668"
+msgid "Panel shadow"
+msgstr "Paneelschaduw"
+
+msgctxt "#32669"
+msgid "How high the glass panels seem to float: their shadow grows and drops. Mild: close to the page. Medium: as before. Strong: higher. Heavy: highest."
+msgstr "Hoe hoog de glazen panelen lijken te zweven: hun schaduw groeit en zakt. Mild: dicht bij de pagina. Gemiddeld: zoals voorheen. Sterk: hoger. Zwaar: het hoogst."
+
+msgctxt "#32670"
+msgid "Mild"
+msgstr "Mild"
+
+msgctxt "#32671"
+msgid "Heavy"
+msgstr "Zwaar"
+
+msgctxt "#32672"
+msgid "Expert settings"
+msgstr "Expertinstellingen"
+
+msgctxt "#32673"
+msgid "Shows the rows below for fine-tuning the glass panels and the fanart behind the library views."
+msgstr "Toont de rijen hieronder om de glazen panelen en de fanart achter de bibliotheekweergaven fijn af te stemmen."
+
+msgctxt "#32674"
+msgid "Panel opacity"
+msgstr "Dekking van de panelen"
+
+msgctxt "#32675"
+msgid "How solid the glass panels are, around the Skin style's own value. -2: most see-through. +2: most solid."
+msgstr "Hoe dicht de glazen panelen zijn, rond de waarde van de skinstijl. -2: het meest doorzichtig. +2: het dichtst."
+
+msgctxt "#32676"
+msgid "Panel blur"
+msgstr "Vervaging van de panelen"
+
+msgctxt "#32677"
+msgid "How strongly the panels blur the picture behind them. Off: no blur."
+msgstr "Hoe sterk de panelen het beeld erachter vervagen. Uit: geen vervaging."
+
+msgctxt "#32678"
+msgid "Panel tint"
+msgstr "Tint van de panelen"
+
+msgctxt "#32679"
+msgid "The colour of the panels' glass, around the Skin style's own. -2: darkest. +2: lightest frost."
+msgstr "De kleur van het glas, rond die van de skinstijl. -2: het donkerst. +2: de lichtste rijp."
+
+msgctxt "#32680"
+msgid "Library fanart opacity"
+msgstr "Dekking van de bibliotheekfanart"
+
+msgctxt "#32681"
+msgid "How much of the fanart behind the library views shows, on top of Backdrop strength. -2: faintest. +2: strongest."
+msgstr "Hoeveel van de fanart achter de bibliotheekweergaven te zien is, bovenop de achtergrondsterkte. -2: het zwakst. +2: het sterkst."
+
+msgctxt "#32682"
+msgid "Library fanart blur"
+msgstr "Vervaging van de bibliotheekfanart"
+
+msgctxt "#32683"
+msgid "Blurs the fanart behind the library views: -2 a little, +2 the most; 0 is the default. Off: sharp."
+msgstr "Vervaagt de fanart achter de bibliotheekweergaven: -2 een beetje, +2 het meest; 0 is de standaard. Uit: scherp."
+
+msgctxt "#32684"
+msgid "Library fanart tint"
+msgstr "Tint van de bibliotheekfanart"
+
+msgctxt "#32685"
+msgid "The colour tint of the Frosted fanart look. Off: no tint."
+msgstr "De kleurtint van de fanartweergave Rijp. Uit: geen tint."
+
+msgctxt "#32686"
+msgid "Reset expert settings"
+msgstr "Expertinstellingen herstellen"
+
+msgctxt "#32687"
+msgid "Puts every expert setting back to its default."
+msgstr "Zet alle expertinstellingen terug op hun standaard."
+
+msgctxt "#32688"
+msgid "Expert settings are back to their defaults."
+msgstr "De expertinstellingen staan weer op hun standaard."
+
+msgctxt "#32689"
+msgid "Menu background"
+msgstr "Menuachtergrond"
+
+msgctxt "#32690"
+msgid "Screen"
+msgstr "Scherm"
+
+msgctxt "#32691"
+msgid "Menus and dialogs in the Fused Glass style. Fanart: the item's fanart behind them. Screen: the screen they opened on, dimmed."
+msgstr "Menu's en dialogen in de Fused Glass-stijl. Fanart: de fanart van het item erachter. Scherm: het scherm waarop ze openden, gedimd."
+
+msgctxt "#32692"
+msgid "OK runs it  ·  Back closes"
+msgstr "OK voert uit  ·  Terug sluit"
+
+msgctxt "#32693"
+msgid "OK chooses  ·  Back closes"
+msgstr "OK kiest  ·  Terug sluit"
+
+msgctxt "#32694"
+msgid "Its own library views and menus: rounded glass cards with soft shadows float over the artwork, in Dark, Clear, Frost or the Fused Glass style."
+msgstr "Eigen bibliotheekweergaven en menu’s: afgeronde glazen kaarten met zachte schaduwen zweven boven de afbeeldingen, in de stijl Donker, Helder, Rijp of Fused Glass."
+
+msgctxt "#32695"
+msgid "Use the defaults"
+msgstr "De standaardinstellingen gebruiken"
+
+msgctxt "#32696"
+msgid "The chosen theme as it comes, at once. Everything can be changed later in Skin settings."
+msgstr "Het gekozen thema zoals het is, meteen. Alles is later te wijzigen in de skininstellingen."
+
+msgctxt "#32697"
+msgid "Customise"
+msgstr "Aanpassen"
+
+msgctxt "#32698"
+msgid "Go through the look, libraries, Home and backgrounds page by page. Every row shows a preview of its choice."
+msgstr "Loop het uiterlijk, de bibliotheken, Home en de achtergronden pagina voor pagina door. Elke rij toont een voorbeeld van de keuze."
+
+msgctxt "#32699"
+msgid "Keep my current settings"
+msgstr "Mijn huidige instellingen houden"
+
+msgctxt "#32700"
+msgid "Leave every setting as it is: only the theme you picked changes."
+msgstr "Alle instellingen blijven zoals ze zijn: alleen het gekozen thema verandert."
+
+msgctxt "#32701"
+msgid "Aeon with glass menus: the same layout and library views as Aeon, with see-through glass menus and dialogs instead of solid ones. No palettes."
+msgstr "Aeon met glazen menu’s: dezelfde indeling en bibliotheekweergaven als Aeon, met doorschijnende glazen menu’s en dialogen in plaats van dichte. Geen paletten."
+
+msgctxt "#32702"
+msgid "The Planner of upcoming episodes and films, online rows and extra ratings."
+msgstr "De Planner met komende afleveringen en films, onlinerijen en extra beoordelingen."
+
+msgctxt "#32703"
+msgid "The Next up row: the next episode of every show you are watching."
+msgstr "De rij Volgende: de volgende aflevering van elke serie die je kijkt."
+
+msgctxt "#32704"
+msgid "Lyrics on the Now playing screen, line by line or word by word."
+msgstr "Songteksten op het scherm Nu speelt, per regel of per woord."
+
+msgctxt "#32705"
+msgid "Artist pictures behind the Now playing screen."
+msgstr "Artiestfoto’s achter het scherm Nu speelt."
+
+msgctxt "#32706"
+msgid "Box colours taken from the artwork."
+msgstr "Kleuren van de vakken uit de afbeeldingen."
+
+msgctxt "#32707"
+msgid "Skip intro, recap and credits buttons in the player."
+msgstr "Knoppen om intro, samenvatting en aftiteling over te slaan in de speler."
+
+msgctxt "#32708"
+msgid "Thumbnail previews on the seek bar."
+msgstr "Miniatuurvoorbeelden op de zoekbalk."
+
+msgctxt "#32709"
+msgid "Studio and network logos in the libraries and on the information page."
+msgstr "Logo’s van studio’s en zenders in de bibliotheken en op de informatiepagina."
+
+msgctxt "#32710"
+msgid "Record label logos for albums."
+msgstr "Platenlabellogo’s bij albums."
+
+msgctxt "#32711"
+msgid "Language flags in the video information."
+msgstr "Taalvlaggen in de video-informatie."
+
+msgctxt "#32712"
+msgid "The skin's own screensaver: library pictures with a slow zoom and slide, and what is playing."
+msgstr "De eigen schermbeveiliging van de skin: bibliotheekbeelden met langzame zoom en verschuiving, en wat er speelt."
+
+msgctxt "#32713"
+msgid "Aeon: solid panels in a palette you pick. Aeon Glass: the same Aeon layout and views with glass menus, no palettes. Fused Glass: its own library views, rounded glass cards over the artwork."
+msgstr "Aeon: dichte panelen in een palet naar keuze. Aeon Glass: dezelfde Aeon-indeling en weergaven met glazen menu’s, zonder paletten. Fused Glass: eigen bibliotheekweergaven, afgeronde glazen kaarten boven de afbeeldingen."
+
+msgctxt "#32714"
+msgid "Its own views, glass cards"
+msgstr "Eigen weergaven, glazen kaarten"
+
+msgctxt "#32715"
+msgid "Take the theme as it comes, or go through its look step by step. Everything can be changed later in Skin settings."
+msgstr "Neem het thema zoals het is, of loop het uiterlijk stap voor stap door. Alles is later te wijzigen in de skininstellingen."
+
+msgctxt "#32716"
+msgid "How the settings strip of the library views shows: over the view (Overlay) or always beside it (Permanent)."
+msgstr "Hoe de instellingenstrook van de bibliotheekweergaven verschijnt: over de weergave (Overlay) of altijd ernaast (Permanent)."
+
+msgctxt "#32717"
+msgid "How much the edges of the Home screen darken behind the menu and the text."
+msgstr "Hoeveel de randen van het Home-scherm donkerder worden achter het menu en de tekst."
+
+msgctxt "#32718"
+msgid "The colour of the clock box and the corner boxes with the Aeon palette."
+msgstr "De kleur van het klokvak en de hoekvakken met het Aeon-palet."
+
+msgctxt "#32719"
+msgid "Optional add-ons that give the skin more to show. Install the ones you want; the rest can wait."
+msgstr "Optionele add-ons die de skin meer te tonen geven. Installeer de add-ons die je wilt; de rest kan wachten."
+
+msgctxt "#32720"
+msgid "The disc art spinning beside the poster on the player controls: for videos, for music, for both, or off."
+msgstr "De draaiende disc-afbeelding naast de poster bij de spelerbediening: voor video’s, voor muziek, voor beide of uit."
+
+msgctxt "#32721"
+msgid "What the text under a title shows in every library view: the plot, the tagline (when there is one) or both."
+msgstr "Wat de tekst onder een titel toont in elke bibliotheekweergave: de plot, de tagline (als die er is) of beide."
+
+msgctxt "#32722"
+msgid "Libraries"
+msgstr "Bibliotheken"
+
+msgctxt "#32723"
+msgid "Information"
+msgstr "Informatie"
+
+msgctxt "#32724"
+msgid "Screensaver & backdrops"
+msgstr "Schermbeveiliging & achtergronden"
+
+msgctxt "#32725"
+msgid "Export skin settings"
+msgstr "Skin-instellingen exporteren"
+
+msgctxt "#32726"
+msgid "Import skin settings"
+msgstr "Skin-instellingen importeren"
+
+msgctxt "#32727"
+msgid "Save"
+msgstr "Opslaan"
+
+msgctxt "#32728"
+msgid "Load"
+msgstr "Laden"
+
+msgctxt "#32729"
+msgid "Saves every Aeon Fuse setting, with the theme, palette and fonts, to a file in a folder you pick."
+msgstr "Slaat elke Aeon Fuse-instelling op, met thema, palet en lettertypen, in een bestand in een map naar keuze."
+
+msgctxt "#32730"
+msgid "Loads a file saved with Export skin settings. Your current skin settings are replaced."
+msgstr "Laadt een bestand dat met Skin-instellingen exporteren is opgeslagen. Je huidige skin-instellingen worden vervangen."
+
+msgctxt "#32731"
+msgid "Folder for the settings file"
+msgstr "Map voor het instellingenbestand"
+
+msgctxt "#32732"
+msgid "Settings file to load"
+msgstr "Instellingenbestand om te laden"
+
+msgctxt "#32733"
+msgid "Saved: %s"
+msgstr "Opgeslagen: %s"
+
+msgctxt "#32734"
+msgid "Load the settings saved on %s? Your current skin settings are replaced."
+msgstr "De instellingen van %s laden? Je huidige skin-instellingen worden vervangen."
+
+msgctxt "#32735"
+msgid "This file does not hold Aeon Fuse settings."
+msgstr "Dit bestand bevat geen Aeon Fuse-instellingen."
+
+msgctxt "#32736"
+msgid "The file could not be written."
+msgstr "Het bestand kon niet worden geschreven."
+
+msgctxt "#32737"
+msgid "Kodi restarts to apply them."
+msgstr "Kodi herstart om ze toe te passen."
+
+msgctxt "#32738"
+msgid "The skin reloads; restart Kodi afterwards so every setting is read again."
+msgstr "De skin wordt opnieuw geladen; herstart Kodi daarna zodat elke instelling opnieuw wordt gelezen."
+
+msgctxt "#32739"
+msgid "These settings are already in use."
+msgstr "Deze instellingen zijn al in gebruik."
+
+msgctxt "#32740"
+msgid "Soft"
+msgstr "Zacht"
+
+msgctxt "#32741"
+msgid "Home gradient"
+msgstr "Verloop op Start"
+
+msgctxt "#32742"
+msgid "Beside the clock"
+msgstr "Naast de klok"
+
+msgctxt "#32743"
+msgid "Left corner"
+msgstr "Linkerhoek"
+
+msgctxt "#32744"
+msgid "The fade from the bottom of the screen up to the Home menu: off, soft (the look so far) or strong."
+msgstr "Het verloop van de onderkant van het scherm tot aan het hoofdmenu: uit, zacht (zoals tot nu toe) of sterk."
+
+msgctxt "#32745"
+msgid "Where the Now playing capsule sits on Home while music plays: beside the clock or in the lower left corner."
+msgstr "Waar de Nu aan het spelen-capsule op Start staat terwijl er muziek speelt: naast de klok of linksonder."
+
+msgctxt "#32746"
+msgid "How the skip button sits on the player controls: a white tab on their top edge, or a glass capsule above them."
+msgstr "Hoe de overslaan-knop bij de spelerbediening staat: een wit tabje op de bovenrand of een glazen capsule erboven."
+
+msgctxt "#32747"
+msgid "How strongly the picture behind the menus and dialogs is blurred. Off: sharp, as before."
+msgstr "Hoe sterk de afbeelding achter menu's en dialogen vervaagt. Uit: scherp, zoals voorheen."
+
+msgctxt "#32748"
+msgid "Left / Right: choose an option. OK: set it. Up, Down or Back: keep the one in use."
+msgstr "Links / Rechts: kies een optie. OK: stel hem in. Omhoog, Omlaag of Terug: houd de huidige."
+
+msgctxt "#32749"
+msgid "Start on"
+msgstr "Starten op"
+
+msgctxt "#32750"
+msgid "The Home menu item that has the focus when Kodi starts, once the splash has gone."
+msgstr "Het item van het hoofdmenu dat de focus heeft als Kodi start, zodra het opstartscherm weg is."
+
+msgctxt "#32751"
+msgid "Ratings shown in"
+msgstr "Beoordelingen tonen in"
+
+msgctxt "#32752"
+msgid "Media info shown in"
+msgstr "Media-info tonen in"
+
+msgctxt "#32753"
+msgid "Library views"
+msgstr "Bibliotheekweergaven"
+
+msgctxt "#32754"
+msgid "Information pages"
+msgstr "Informatiepagina’s"
+
+msgctxt "#32755"
+msgid "Widget & Spotlight screens"
+msgstr "Widget- en Spotlight-schermen"
+
+msgctxt "#32756"
+msgid "Home spotlights"
+msgstr "Spotlights op het startscherm"
+
+msgctxt "#32757"
+msgid "Player info"
+msgstr "Spelerinfo"
+
+msgctxt "#32758"
+msgid "Screensaver"
+msgstr "Schermbeveiliging"
+
+msgctxt "#32759"
+msgid "Live TV"
+msgstr "Live-tv"
+
+msgctxt "#32760"
+msgid "Where the ratings (IMDb, TMDb, Rotten Tomatoes, Trakt) appear. OK opens the list: tick the places."
+msgstr "Waar de beoordelingen (IMDb, TMDb, Rotten Tomatoes, Trakt) verschijnen. OK opent de lijst: vink de plaatsen aan."
+
+msgctxt "#32761"
+msgid "Where the media info chips (resolution, HDR, audio ...) appear. OK opens the list: tick the places. Which chips: Media info chips."
+msgstr "Waar de media-infolabels (resolutie, HDR, audio ...) verschijnen. OK opent de lijst: vink de plaatsen aan. Welke labels: Media-infolabels."
+
+msgctxt "#32762"
+msgid "Recommended add-ons"
+msgstr "Aanbevolen add-ons"
+
+msgctxt "#32764"
+msgid "Installed"
+msgstr "Geïnstalleerd"
+
+msgctxt "#32765"
+msgid "Not installed"
+msgstr "Niet geïnstalleerd"
+
+msgctxt "#32766"
+msgid "%s needs the %s repository. Install that repository first?"
+msgstr "%s heeft de bron %s nodig. Die bron eerst installeren?"
+
+msgctxt "#32767"
+msgid "White weather icons for the weather forecast."
+msgstr "Witte weericonen voor de weersverwachting."
+
+msgctxt "#32768"
+msgid "The playback info button in the video controls."
+msgstr "De knop voor afspeelinfo in de videobediening."
+
+msgctxt "#32769"
+msgid "The Inter (Copacetic) font set."
+msgstr "De lettertypeset Inter (Copacetic)."
+
+msgctxt "#32770"
+msgid "The Roboto CJKSC font set for Chinese, Japanese and Korean."
+msgstr "De lettertypeset Roboto CJKSC voor Chinees, Japans en Koreaans."
+
+msgctxt "#32771"
+msgid "Update and clean on another Kodi"
+msgstr "Bijwerken en opschonen op een andere Kodi"
+
+msgctxt "#32772"
+msgid "Address"
+msgstr "Adres"
+
+msgctxt "#32773"
+msgid "User name"
+msgstr "Gebruikersnaam"
+
+msgctxt "#32774"
+msgid "Password"
+msgstr "Wachtwoord"
+
+msgctxt "#32775"
+msgid "Test connection"
+msgstr "Verbinding testen"
+
+msgctxt "#32776"
+msgid "Library update and clean from this skin (Home, the library panel, the context menu) go to another Kodi, a headless one for instance, instead of this one."
+msgstr "Bibliotheek bijwerken en opschonen vanuit deze skin (startscherm, bibliotheekpaneel, contextmenu) gaan naar een andere Kodi, bijvoorbeeld een zonder scherm, in plaats van naar deze."
+
+msgctxt "#32777"
+msgid "The other Kodi's web address and port, for example http://192.168.10.10:8080 (there: Settings > Services > Control > Allow remote control via HTTP)."
+msgstr "Het webadres en de poort van de andere Kodi, bijvoorbeeld http://192.168.10.10:8080 (daar: Instellingen > Services > Bediening > Bediening op afstand via HTTP toestaan)."
+
+msgctxt "#32778"
+msgid "The web server user name and password of the other Kodi."
+msgstr "De gebruikersnaam en het wachtwoord van de webserver van de andere Kodi."
+
+msgctxt "#32779"
+msgid "Asks the other Kodi for its version: checks the address, user name and password."
+msgstr "Vraagt de andere Kodi om zijn versie: controleert adres, gebruikersnaam en wachtwoord."
+
+msgctxt "#32780"
+msgid "Not set"
+msgstr "Niet ingesteld"
+
+msgctxt "#32781"
+msgid "Library update sent"
+msgstr "Bibliotheek bijwerken verstuurd"
+
+msgctxt "#32782"
+msgid "Library clean sent"
+msgstr "Bibliotheek opschonen verstuurd"
+
+msgctxt "#32783"
+msgid "Could not reach %s: %s"
+msgstr "%s niet bereikbaar: %s"
+
+msgctxt "#32784"
+msgid "%s answers: %s"
+msgstr "%s antwoordt: %s"
+
+msgctxt "#32785"
+msgid "Wrong user name or password"
+msgstr "Verkeerde gebruikersnaam of wachtwoord"
+
+msgctxt "#32786"
+msgid "Library update finished"
+msgstr "Bibliotheek bijwerken klaar"
+
+msgctxt "#32789"
+msgid "Failed"
+msgstr "Mislukt"
+
+msgctxt "#32790"
+msgid "Could not install the repository"
+msgstr "Bron kon niet worden geïnstalleerd"
+
+msgctxt "#32791"
+msgid "Pick the add-ons you want: OK ticks one, Next installs the ticked ones while you go on. The picture shows what each adds. Later: Skin settings > System > Recommended add-ons."
+msgstr "Kies de add-ons die je wilt: OK vinkt er een aan, Volgende installeert de aangevinkte terwijl je verdergaat. De afbeelding laat zien wat elk toevoegt. Later: Skin-instellingen > Systeem > Aanbevolen add-ons."
+
+msgctxt "#32792"
+msgid "Will be installed"
+msgstr "Wordt geïnstalleerd"
+
+msgctxt "#32793"
+msgid "Installs the ticked add-ons"
+msgstr "Installeert de aangevinkte add-ons"
+
+msgctxt "#32794"
+msgid "Installed: %s"
+msgstr "Geïnstalleerd: %s"
+
+msgctxt "#32795"
+msgid "Delete %s? Its name, path, icon, widgets and submenu are removed; the items below it move up one place."
+msgstr "%s verwijderen? De naam, het pad, het pictogram, de widgets en het submenu worden gewist; de items eronder schuiven één plaats op."
+
+msgctxt "#32796"
+msgid "Custom items only"
+msgstr "Alleen eigen items"
+
+msgctxt "#32797"
+msgid "A calm, thin waveform on the Now playing card, drawn in the skin's own box and smoothed so loud passages do not spike. The build for this device is installed."
+msgstr "Een rustige, dunne golfvorm op de kaart Nu afgespeeld, getekend in het kader van de skin en afgevlakt zodat harde passages niet uitschieten. De versie voor dit apparaat wordt geïnstalleerd."
+
+msgctxt "#32798"
+msgid "More by the artist"
+msgstr "Meer van de artiest"
+
+msgctxt "#32799"
+msgid "Intermission at"
+msgstr "Pauze om"
+
+msgctxt "#32800"
+msgid "Your languages"
+msgstr "Uw talen"
+
+msgctxt "#32801"
+msgid "All others"
+msgstr "Alle andere"
+
+msgctxt "#32802"
+msgid "In your library"
+msgstr "In je bibliotheek"
+
+msgctxt "#32803"
+msgid "Sort and show"
+msgstr "Sorteren en tonen"
+
+msgctxt "#32804"
+msgid "Sort by"
+msgstr "Sorteren op"
+
+msgctxt "#32805"
+msgid "Show only"
+msgstr "Alleen tonen"
+
+msgctxt "#32806"
+msgid "OK again flips the order"
+msgstr "Nogmaals OK keert de volgorde om"
+
+msgctxt "#32807"
+msgid "Several versions"
+msgstr "Meerdere versies"
+
+msgctxt "#32808"
+msgid "Decade"
+msgstr "Decennium"
+
+msgctxt "#32809"
+msgid "Clear all"
+msgstr "Alles wissen"
+
+msgctxt "#32810"
+msgid "Never played"
+msgstr "Nooit afgespeeld"
+
+msgctxt "#32811"
+msgid "Played"
+msgstr "Afgespeeld"

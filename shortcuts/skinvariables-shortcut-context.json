@@ -1,0 +1,102 @@
+{
+    "mainmenu": [
+        [
+            "Restore defaults",
+            "do_refresh",
+            [
+                "True"
+            ]
+        ]
+    ],
+    "basic": [],
+    "widgets": [
+        [
+            "Rename",
+            "do_edit",
+            [
+                "label"
+            ]
+        ],
+        [
+            "Select list",
+            "do_action",
+            []
+        ],
+        [
+            "Sort by",
+            "do_edit",
+            [
+                "sortby",
+                "Default=null&Date added=dateadded&Title=title&Year=year&Rating=rating&Runtime=time&Last played=lastplayed&Random=random",
+                "Sort by",
+                "True"
+            ]
+        ],
+        [
+            "Reverse order",
+            "do_toggle",
+            [
+                "reverse"
+            ]
+        ],
+        [
+            "Items in list",
+            "do_numeric",
+            [
+                "limit",
+                "heading::Items in list - default 15"
+            ]
+        ],
+        [
+            "Seconds per item",
+            "do_numeric",
+            [
+                "hold",
+                "heading::Seconds per item - default 10"
+            ]
+        ],
+        [
+            "Autoscroll on/off",
+            "do_toggle",
+            [
+                "noscroll"
+            ]
+        ],
+        [
+            "Hide / show",
+            "do_toggle",
+            [
+                "disabled"
+            ]
+        ],
+        [
+            "Move up",
+            "do_move",
+            [
+                "-1"
+            ]
+        ],
+        [
+            "Move down",
+            "do_move",
+            [
+                "1"
+            ]
+        ],
+        [
+            "Add list...",
+            "do_new",
+            []
+        ],
+        [
+            "Add all items of a folder...",
+            "do_list_add",
+            []
+        ],
+        [
+            "Delete",
+            "do_delete",
+            []
+        ]
+    ]
+}

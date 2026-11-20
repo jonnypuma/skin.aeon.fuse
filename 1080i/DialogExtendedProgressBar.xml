@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Background progress (library scans, add-on updates): built like the notification toast.
+	Aeon: a bar in the highlight colour slides out of the clock box at the top right, dark text, a turning
+	spinner on the left, the progress as a line along the bottom. The clock box is redrawn on top so the bar
+	really comes out of it (where the window has no clock box the bar runs to the screen edge).
+	Glass: a dark fade that rises from the left into the top right corner, white text, the spinner on the right.
+	While a notification is showing, the bar drops below it.
+	Id contract (Estuary Omega): 30 heading, 31 line, 32 progress.
+-->
+<window>
+	<zorder>3</zorder>
+	<controls>
+		<include condition="!$EXP[FGS]">ExtProg_PageClassic</include>
+		<include condition="$EXP[FGS]">ExtProg_PageFGS</include>
+	</controls>
+</window>

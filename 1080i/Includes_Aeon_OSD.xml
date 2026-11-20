@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Aeon style video OSD. NOTE: the Aeon 2 video never shows its player OSD, so this is built from Aeon's
+	look (black, white uppercase, thin lines, white focus block, ring + "ENDS" from the resume screen at ~7:20)
+	and is NOT a copy. Reference notes: ../AEON2_DESIGN_NOTES.md.
+
+	Same Kodi id contract and focus map as the Aeon OSD (VideoOSD.xml): 602 play/pause (default), 603 stop,
+	600 previous, 607 next, 70046 subtitles, 70049 audio, 70048 video, 70044 chapters, 70043 info, 70051 stats,
+	87 hidden seek stepper (Up from any button; Down returns), group 200 = controls.
+	The Aeon "Sleep after this" button (70060) is not carried over.
+-->
+<includes>
+	<variable name="Aeon_OSD_Play">
+		<value condition="Player.Paused | Player.Forwarding | Player.Rewinding">aeon/icons/play.png</value>
+		<value>aeon/icons/pause.png</value>
+	</variable>
+	<!-- 0.39.10: a trailer started from an information page (helper trailer.play): while that very file plays, the
+	     overlays show the show / film it belongs to (Window(Home) aeon.tr.*), not "Movies" and the file name -->
+	<expression name="Aeon_OSD_Trailer">[!String.IsEmpty(Window(Home).Property(aeon.tr.now)) + String.IsEqual(Player.FilenameAndPath,Window(Home).Property(aeon.tr.now))]</expression>
+	<variable name="Aeon_OSD_Logo">
+		<value condition="$EXP[Aeon_OSD_Trailer]">$INFO[Window(Home).Property(aeon.tr.logo)]</value>
+		<value condition="!String.IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearlogo)]</value>
+		<value>$INFO[Player.Art(clearlogo)]</value>
+	</variable>
+	<expression name="Aeon_OSD_HasLogo">[!Skin.HasSetting(aeon.nologos) + [[$EXP[Aeon_OSD_Trailer] + !String.IsEmpty(Window(Home).Property(aeon.tr.logo))] | [!$EXP[Aeon_OSD_Trailer] + [!String.IsEmpty(Player.Art(tvshow.clearlogo)) | !String.IsEmpty(Player.Art(clearlogo))]]]]</expression>
+	<variable name="Aeon_OSD_Kind">
+		<value condition="$EXP[Aeon_OSD_Trailer] + String.IsEqual(Window(Home).Property(aeon.tr.kind),tvshow)">$LOCALIZE[31353]</value>
+		<value condition="$EXP[Aeon_OSD_Trailer]">$LOCALIZE[31354]</value>
+		<value condition="!String.IsEmpty(VideoPlayer.TVShowTitle)">$LOCALIZE[31353]</value>
+		<value>$LOCALIZE[31354]</value>
+	</variable>
+	<variable name="Aeon_OSD_Title">
+		<value condition="$EXP[Aeon_OSD_Trailer]">[UPPERCASE]$INFO[Window(Home).Property(aeon.tr.title)][/UPPERCASE]</value>
+		<value condition="!String.IsEmpty(VideoPlayer.TVShowTitle)">[UPPERCASE]$INFO[VideoPlayer.TVShowTitle][/UPPERCASE]</value>
+		<value>[UPPERCASE]$INFO[VideoPlayer.Title][/UPPERCASE]</value>
+	</variable>
+	<variable name="Aeon_OSD_Sub">
+		<value condition="$EXP[Aeon_OSD_Trailer]">[UPPERCASE]$INFO[Window(Home).Property(aeon.tr.title)]  |  $LOCALIZE[20410]  [/UPPERCASE]</value>
+		<value condition="!String.IsEmpty(VideoPlayer.TVShowTitle) + !String.IsEmpty(VideoPlayer.Episode)">$VAR[Aeon_EpCodeVP]  |  [UPPERCASE]$INFO[VideoPlayer.Title]  [/UPPERCASE]</value>
+		<value condition="!String.IsEmpty(VideoPlayer.TVShowTitle)">[UPPERCASE]$INFO[VideoPlayer.Title]  [/UPPERCASE]</value>
+		<value>[UPPERCASE]$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre,  |  ][/UPPERCASE]</value>
+	</variable>
+	<variable name="Aeon_OSD_State">
+		<value condition="Player.Caching">$LOCALIZE[31355]</value>
+		<value condition="Player.Paused">$LOCALIZE[31356]</value>
+		<value condition="Player.Forwarding | Player.Rewinding">$INFO[Player.SeekStepSize]</value>
+	</variable>
+
+	<!-- labels under the focused OSD button (0.26.0): KEY:  VALUE with the value in bold, or one bold word.
+	     Drawn in the medium face, so the bold part stands out; uppercase in the button include. -->
+	<variable name="Aeon_OSD_LblPlay">
+		<value condition="Player.Paused | Player.Forwarding | Player.Rewinding">[B]$LOCALIZE[31278][/B]</value>
+		<value>[B]$LOCALIZE[31048][/B]</value>
+	</variable>
+	<variable name="Aeon_OSD_LblShuffle">
+		<value condition="Playlist.IsRandom">[COLOR a6ffffff]$LOCALIZE[31532]:[/COLOR]  [B]$LOCALIZE[31547][/B]</value>
+		<value>[COLOR a6ffffff]$LOCALIZE[31532]:[/COLOR]  [B]$LOCALIZE[31548][/B]</value>
+	</variable>
+	<variable name="Aeon_OSD_LblRepeat">
+		<value condition="Playlist.IsRepeatOne">[COLOR a6ffffff]$LOCALIZE[486]:[/COLOR]  [B]$LOCALIZE[592][/B]</value>
+		<value condition="Playlist.IsRepeat">[COLOR a6ffffff]$LOCALIZE[486]:[/COLOR]  [B]$LOCALIZE[593][/B]</value>
+		<value>[COLOR a6ffffff]$LOCALIZE[486]:[/COLOR]  [B]$LOCALIZE[31548][/B]</value>
+	</variable>
+	<variable name="Aeon_OSD_LblLyrics">
+		<value>[COLOR a6ffffff]$LOCALIZE[31639]:[/COLOR]  [B]$VAR[Aeon_LyricsMode][/B]</value>
+	</variable>
+	<variable name="Aeon_OSD_LblPresets">
+		<value condition="!String.IsEmpty(Visualisation.Preset)">[COLOR a6ffffff]$LOCALIZE[31638]:[/COLOR]  [B]$INFO[Visualisation.Preset][/B]</value>
+		<value>[B]$LOCALIZE[31638][/B]</value>
+	</variable>
+	<variable name="Aeon_OSD_LblQueue">
+		<value>[COLOR a6ffffff]$LOCALIZE[31045]:[/COLOR]  [B]$INFO[Playlist.Position(music)] / $INFO[Playlist.Length(music)][/B]</value>
+	</variable>
+	<variable name="Aeon_OSD_LblAlbum">
+		<value condition="!String.IsEmpty(MusicPlayer.Album)">[COLOR a6ffffff]$LOCALIZE[558]:[/COLOR]  [B]$INFO[MusicPlayer.Album][/B]</value>
+		<value>[B]$LOCALIZE[558][/B]</value>
+	</variable>
+	<variable name="Aeon_OSD_LblSubs">
+		<value condition="!VideoPlayer.HasSubtitles">[B]$LOCALIZE[31347][/B]</value>
+		<value condition="!VideoPlayer.SubtitlesEnabled">[COLOR a6ffffff]$LOCALIZE[31347]:[/COLOR]  [B]$LOCALIZE[31548][/B]</value>
+		<value condition="!String.IsEmpty(VideoPlayer.SubtitlesLanguage)">[COLOR a6ffffff]$LOCALIZE[31347]:[/COLOR]  [B]$INFO[VideoPlayer.SubtitlesLanguage][/B]</value>
+		<value>[COLOR a6ffffff]$LOCALIZE[31347]:[/COLOR]  [B]$LOCALIZE[31547][/B]</value>
+	</variable>
+	<variable name="Aeon_OSD_LblAudio">
+		<value condition="!String.IsEmpty(VideoPlayer.AudioLanguage) | !String.IsEmpty(VideoPlayer.AudioCodec)">[COLOR a6ffffff]$LOCALIZE[31348]:[/COLOR]  [B]$INFO[VideoPlayer.AudioLanguage,,  ·  ]$VAR[OSD_FlagAudio][/B]</value>
+		<value>[B]$LOCALIZE[31348][/B]</value>
+	</variable>
+	<variable name="Aeon_OSD_LblVideo">
+		<value condition="!String.IsEmpty(VideoPlayer.VideoResolution)">[COLOR a6ffffff]$LOCALIZE[31349]:[/COLOR]  [B]$VAR[OSD_FlagResolution]$VAR[OSD_FlagVideoCodec,  ·  ,]$VAR[OSD_FlagHDR,  ·  ,][/B]</value>
+		<value>[B]$LOCALIZE[31349][/B]</value>
+	</variable>
+	<variable name="Aeon_OSD_LblChapter">
+		<value condition="Integer.IsGreater(Player.ChapterCount,0)">[COLOR a6ffffff]$LOCALIZE[21396]:[/COLOR]  [B]$INFO[Player.Chapter] / $INFO[Player.ChapterCount][/B]</value>
+		<value condition="!Integer.IsGreater(Player.ChapterCount,1) + $EXP[OSD_HasSkChapters]">[COLOR a6ffffff]$LOCALIZE[21396]:[/COLOR]  [B]$INFO[Window(Home).Property(aeon.sk.part)] / $INFO[Window(Home).Property(aeon.sk.count)][/B]</value>
+		<value>[B]$LOCALIZE[31350][/B]</value>
+	</variable>
+
+	<!-- Icon button (transport). params: id, icon, onclick, visible -->
+	<include name="Aeon_OSD_IconBtn">
+		<param name="visible">true</param>
+		<param name="label"></param>
+		<param name="onclick2">noop</param>
+		<param name="nav">AeonV_</param>
+		<param name="active">false</param>
+		<definition>
+			<control type="group">
+				<width>90</width>
+				<height>90</height>
+				<visible>$PARAM[visible]</visible>
+				<control type="button" id="$PARAM[id]">
+					<left>0</left>
+					<top>0</top>
+					<width>90</width>
+					<height>90</height>
+					<label></label>
+					<include>FG_OSDIconTex</include>
+					<onclick>$PARAM[onclick]</onclick>
+					<onclick>$PARAM[onclick2]</onclick>
+					<onleft>$VAR[$PARAM[nav]Left$PARAM[id]]</onleft>
+					<onright>$VAR[$PARAM[nav]Right$PARAM[id]]</onright>
+					<onup condition="Player.SeekEnabled">87</onup>
+					<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+					<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+				</control>
+				<control type="image">
+					<left>25</left>
+					<top>25</top>
+					<width>40</width>
+					<height>40</height>
+					<texture colordiffuse="ffffffff">$PARAM[icon]</texture>
+					<visible>!Control.HasFocus($PARAM[id])</visible>
+				</control>
+				<control type="image">
+					<left>25</left>
+					<top>25</top>
+					<width>40</width>
+					<height>40</height>
+					<texture colordiffuse="aeon_onbar">$PARAM[icon]</texture>
+					<visible>Control.HasFocus($PARAM[id])</visible>
+				</control>
+				<!-- the option is on (shuffle, repeat, lyrics): a short line under the icon -->
+				<control type="image"><left>33</left><top>74</top><width>24</width><height>4</height><texture colordiffuse="ffffffff">common/white.png</texture><visible>[$PARAM[active]] + !Control.HasFocus($PARAM[id])</visible></control>
+				<control type="image"><left>33</left><top>74</top><width>24</width><height>4</height><texture colordiffuse="aeon_onbar">common/white.png</texture><visible>[$PARAM[active]] + Control.HasFocus($PARAM[id])</visible></control>
+				<!-- what the focused button does / is set to, under it (the row is 130 high: a grouplist clips its children) -->
+				<control type="label">
+					<left>-405</left><top>96</top><width>900</width><height>30</height><align>center</align><aligny>center</aligny>
+					<font>pl_small_20</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+					<scroll>true</scroll>
+					<label>[UPPERCASE]$PARAM[label][/UPPERCASE]</label>
+					<visible>Control.HasFocus($PARAM[id])</visible>
+				</control>
+			</control>
+		</definition>
+	</include>
+
+	<!-- Text button. params: id, w, label, onclick, visible -->
+	<include name="Aeon_OSD_Btn">
+		<param name="nav">AeonV_</param>
+		<param name="w">130</param>
+		<param name="label"></param>
+		<param name="visible">true</param>
+		<definition>
+			<control type="group">
+				<width>$PARAM[w]</width>
+				<height>90</height>
+				<visible>$PARAM[visible]</visible>
+				<control type="button" id="$PARAM[id]">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[w]</width>
+					<height>90</height>
+					<label>$PARAM[label]</label>
+					<font>pl_cap_20</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textoffsetx>0</textoffsetx>
+					<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+					<focusedcolor>aeon_onbar</focusedcolor>
+					<include>FG_OSDPillTex</include>
+					<onclick>$PARAM[onclick]</onclick>
+					<onleft>$VAR[$PARAM[nav]Left$PARAM[id]]</onleft>
+					<onright>$VAR[$PARAM[nav]Right$PARAM[id]]</onright>
+					<onup condition="Player.SeekEnabled">87</onup>
+					<ondown condition="$EXP[OSD_HasChapters]">ActivateWindow(videobookmarks)</ondown>
+					<ondown condition="!$EXP[OSD_HasChapters]">noop</ondown>
+				</control>
+			</control>
+		</definition>
+	</include>
+
+	<!-- Controls row. A grouplist, so Left / Right skip hidden buttons by themselves. 130 high: the buttons are 90, the label
+	     under the focused one needs the rest (a grouplist clips what is outside it). -->
+	<include name="Aeon_OSD_Row">
+		<control type="group" id="200">
+			<left>477</left>
+			<top>880</top>
+			<width>1383</width>
+			<height>130</height>
+			<control type="grouplist">
+				<left>-477</left>
+				<top>0</top>
+				<width>1920</width>
+				<height>130</height>
+				<orientation>horizontal</orientation>
+				<itemgap>4</itemgap>
+				<usecontrolcoords>true</usecontrolcoords>
+				<!-- an empty start: the row runs from the screen's left edge, so the first button's label has room on its left
+				     (a grouplist cuts off whatever reaches past its edges) -->
+				<control type="group"><width>473</width><height>130</height></control>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="id" value="600"/>
+					<param name="label" value="[B]$LOCALIZE[31121][/B]"/>
+					<param name="icon" value="aeon/icons/prev.png"/>
+					<param name="onclick" value="PlayerControl(Previous)"/>
+					<param name="visible" value="$EXP[OSD_HasPrevNext]"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="id" value="601"/>
+					<param name="label" value="[B]$LOCALIZE[31122][/B]"/>
+					<param name="icon" value="aeon/icons/rewind.png"/>
+					<param name="onclick" value="PlayerControl(Rewind)"/>
+					<param name="visible" value="Player.SeekEnabled"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="id" value="602"/>
+					<param name="label" value="$VAR[Aeon_OSD_LblPlay]"/>
+					<param name="icon" value="$VAR[Aeon_OSD_Play]"/>
+					<param name="onclick" value="PlayerControl(Play)"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="id" value="606"/>
+					<param name="label" value="[B]$LOCALIZE[31125][/B]"/>
+					<param name="icon" value="aeon/icons/forward.png"/>
+					<param name="onclick" value="PlayerControl(Forward)"/>
+					<param name="visible" value="Player.SeekEnabled"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="id" value="607"/>
+					<param name="label" value="[B]$LOCALIZE[31126][/B]"/>
+					<param name="icon" value="aeon/icons/next.png"/>
+					<param name="onclick" value="PlayerControl(Next)"/>
+					<param name="visible" value="$EXP[OSD_HasPrevNext]"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="id" value="603"/>
+					<param name="label" value="[B]$LOCALIZE[31124][/B]"/>
+					<param name="icon" value="aeon/icons/stop.png"/>
+					<param name="onclick" value="PlayerControl(Stop)"/>
+				</include>
+				<control type="group"><width>26</width><height>90</height></control>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="id" value="70046"/>
+					<param name="label" value="$VAR[Aeon_OSD_LblSubs]"/>
+					<param name="icon" value="aeon/icons/subtitles.png"/>
+					<param name="onclick" value="ActivateWindow(osdsubtitlesettings)"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="id" value="70049"/>
+					<param name="label" value="$VAR[Aeon_OSD_LblAudio]"/>
+					<param name="icon" value="aeon/icons/audio.png"/>
+					<param name="onclick" value="ActivateWindow(osdaudiosettings)"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="id" value="70048"/>
+					<param name="label" value="$VAR[Aeon_OSD_LblVideo]"/>
+					<param name="icon" value="common/aeon_ic_screen.png"/>
+					<param name="onclick" value="ActivateWindow(osdvideosettings)"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="id" value="70044"/>
+					<param name="label" value="$VAR[Aeon_OSD_LblChapter]"/>
+					<param name="icon" value="aeon/icons/chapters.png"/>
+					<param name="onclick" value="ActivateWindow(videobookmarks)"/>
+					<param name="visible" value="$EXP[OSD_HasChapters]"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="id" value="70043"/>
+					<param name="label" value="[B]$LOCALIZE[31351][/B]"/>
+					<param name="icon" value="aeon/icons/info.png"/>
+					<param name="onclick" value="Action(Info,fullscreenvideo)"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="id" value="70051"/>
+					<param name="label" value="[B]$LOCALIZE[31352][/B]"/>
+					<param name="icon" value="common/aeon_ic_stats.png"/>
+					<param name="onclick" value="Action(PlayerProcessInfo)"/>
+					<param name="visible" value="!System.AddonIsEnabled(script.tinyppi)"/>
+				</include>
+				<!-- tinyPPI (optional add-on): playback info of the player and the display chain -->
+				<include content="Aeon_OSD_IconBtn">
+					<param name="id" value="70052"/>
+					<param name="label" value="[B]$LOCALIZE[31352][/B]"/>
+					<param name="icon" value="aeon/icons/ppi.png"/>
+					<param name="onclick" value="CancelAlarm(osd_timeout,true)"/>
+					<param name="onclick2" value="RunScript(script.tinyppi,dialog)"/>
+					<param name="visible" value="System.AddonIsEnabled(script.tinyppi)"/>
+				</include>
+			</control>
+		</control>
+	</include>
+
+	<!-- poster beside the ring: the season's, the show's when the season has none (or its "poster" is a landscape picture:
+	     the helper sets aeon.osd.noseasonposter, 0.39.8), else the film's -->
+	<variable name="Aeon_OSD_Poster">
+		<value condition="$EXP[Aeon_OSD_Trailer] + !String.IsEmpty(Window(Home).Property(aeon.tr.poster))">$INFO[Window(Home).Property(aeon.tr.poster)]</value>
+		<value condition="!String.IsEmpty(Player.Art(season.poster)) + String.IsEmpty(Window(Home).Property(aeon.osd.noseasonposter))">$INFO[Player.Art(season.poster)]</value>
+		<value condition="!String.IsEmpty(Player.Art(tvshow.poster))">$INFO[Player.Art(tvshow.poster)]</value>
+		<value condition="!String.IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
+		<value>$INFO[Player.Art(thumb)]</value>
+	</variable>
+	<!-- the top bar of the player overlays (Video OSD, information, chapters): as tall as the clock box, with the clock box
+	     and the weather box under it as everywhere else (Skin settings > Playback can switch each off) and Skippy's next
+	     episode beside the clock. Each window draws its own text on the left. -->
+	<include name="Aeon_OSD_TopBar">
+		<control type="image"><left>0</left><top>0</top><width>1920</width><height>108</height><texture colordiffuse="e6000000">common/white.png</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+		<control type="image"><left>0</left><top>0</top><width>1920</width><height>260</height><texture colordiffuse="cc000000">fg/scrim_t.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+		<control type="group">
+			<visible>!Skin.HasSetting(aeon.osd.noclock) + !$EXP[Aeon_FGlass]</visible>
+			<include>Aeon_ClockBox</include>
+		</control>
+		<control type="group">
+			<visible>!Skin.HasSetting(aeon.osd.noclock) + $EXP[Aeon_FGlass]</visible>
+			<include>FG_ClockCapsule</include>
+		</control>
+		<control type="group">
+			<left>1820</left>
+			<top>108</top>
+			<visible>!Skin.HasSetting(aeon.osd.noweather) + !String.IsEmpty(Weather.Temperature) + !$EXP[Aeon_FGlass]</visible>
+			<animation effect="slide" end="0,-108" time="0" condition="Skin.HasSetting(aeon.osd.noclock)">Conditional</animation>
+			<control type="image"><left>0</left><top>0</top><width>100</width><height>108</height><texture colordiffuse="cc0d0d0d">common/white.png</texture></control>
+			<control type="image"><left>30</left><top>16</top><width>40</width><height>40</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">$VAR[AG_WeatherIcon]</texture></control>
+			<control type="label"><left>0</left><top>60</top><width>100</width><height>36</height><align>center</align><font>pl_small_20_bold</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$INFO[Weather.Temperature]</label></control>
+		</control>
+		<!-- Skippy: the next episode it found, in the bar beside the clock box (Skin settings > Behaviour) -->
+		<control type="group">
+			<visible>!Skin.HasSetting(aeon.skippy.nonext) + !String.IsEmpty(Window(Home).Property(Skippy.NextEpisode.Label)) + !$EXP[Aeon_FGlass]</visible>
+			<animation effect="slide" end="100,0" time="0" condition="Skin.HasSetting(aeon.osd.noclock) + [Skin.HasSetting(aeon.osd.noweather) | String.IsEmpty(Weather.Temperature)] + !$EXP[Aeon_FGlass]">Conditional</animation>
+			<animation effect="slide" end="-236,0" time="0" condition="!Skin.HasSetting(aeon.osd.noclock) + $EXP[Aeon_FGlass]">Conditional</animation>
+			<animation effect="slide" end="100,0" time="0" condition="Skin.HasSetting(aeon.osd.noclock) + $EXP[Aeon_FGlass]">Conditional</animation>
+			<control type="image">
+				<left>1636</left><top>9</top><width>160</width><height>90</height>
+				<aspectratio>scale</aspectratio>
+				<texture background="true">$INFO[Window(Home).Property(Skippy.NextEpisode.Thumb)]</texture>
+				<visible>!String.IsEmpty(Window(Home).Property(Skippy.NextEpisode.Thumb))</visible>
+			</control>
+			<control type="group">
+				<animation effect="slide" end="184,0" time="0" condition="String.IsEmpty(Window(Home).Property(Skippy.NextEpisode.Thumb))">Conditional</animation>
+				<control type="label">
+					<left>912</left><top>20</top><width>700</width><height>30</height><align>right</align>
+					<font>pl_cap_20</font><textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor>
+					<label>[UPPERCASE]$LOCALIZE[31235][/UPPERCASE]</label>
+				</control>
+				<control type="label">
+					<left>912</left><top>50</top><width>700</width><height>40</height><align>right</align>
+					<font>pl_ui_26</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+					<label>$INFO[Window(Home).Property(Skippy.NextEpisode.Label)]</label>
+				</control>
+			</control>
+		</control>
+	</include>
+	<!-- Kodi scales a progress bar's fill by the height of its background texture: both are exactly as tall as the line
+	     (aeon/line2.png, line4.png), or the fill comes out taller and below the line (it did, with no background texture). -->
+	<!-- the seek line of the player overlays: a thin line, the white fill to where playback is (or where a step seek is
+	     heading: Player.SeekBar moves with every Left / Right press, before the seek happens) and the marker, a white
+	     square that hovers over the line. The slider is exactly as wide as the line, so its centre follows the fill
+	     (Kodi keeps the 40 px marker inside the slider at the very start and end). params: left, top (line), width -->
+	<include name="Aeon_SeekLine">
+		<param name="left">477</param>
+		<param name="top">856</param>
+		<param name="width">1383</param>
+		<param name="thick">Control.HasFocus(87)</param>
+		<definition>
+			<!-- Fused Glass (0.45.1): the player card's bar with gaps between chapters, as in the Video OSD -->
+			<control type="group">
+				<visible>Skin.HasSetting(aeon.fglass)</visible>
+				<include content="FG_SeekBar"><param name="left" value="$PARAM[left]"/><param name="top" value="$PARAM[top]"/><param name="width" value="$PARAM[width]"/></include>
+			</control>
+			<control type="group">
+				<visible>!Skin.HasSetting(aeon.fglass)</visible>
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<control type="image"><left>0</left><top>0</top><width>$PARAM[width]</width><height>2</height><texture colordiffuse="33ffffff">common/white.png</texture><visible>!$PARAM[thick]</visible></control>
+				<control type="progress"><left>0</left><top>0</top><width>$PARAM[width]</width><height>2</height><texturebg>aeon/line2_clear.png</texturebg><midtexture subpixel="true" colordiffuse="ffffffff">aeon/line2.png</midtexture><info>Player.SeekBar</info><visible>!$PARAM[thick]</visible></control>
+				<control type="image"><left>0</left><top>-1</top><width>$PARAM[width]</width><height>4</height><texture colordiffuse="44ffffff">common/white.png</texture><visible>$PARAM[thick]</visible></control>
+				<control type="progress"><left>0</left><top>-1</top><width>$PARAM[width]</width><height>4</height><texturebg>aeon/line4_clear.png</texturebg><midtexture subpixel="true" colordiffuse="ffffffff">aeon/line4.png</midtexture><info>Player.SeekBar</info><visible>$PARAM[thick]</visible></control>
+				<!-- chapter marks -->
+				<control type="ranges">
+					<left>0</left><top>-5</top><width>$PARAM[width]</width><height>12</height>
+					<texturebg></texturebg><lefttexture /><midtexture subpixel="true" />
+					<righttexture subpixel="true" colordiffuse="99ffffff">aeon/seek_tick.png</righttexture>
+					<info>Player.Chapters</info>
+					<visible>$EXP[OSD_HasChapters]</visible>
+				</control>
+				<control type="ranges">
+					<left>0</left><top>-5</top><width>$PARAM[width]</width><height>12</height>
+					<texturebg></texturebg><lefttexture /><midtexture subpixel="true" />
+					<righttexture subpixel="true" colordiffuse="99ffffff">aeon/seek_tick.png</righttexture>
+					<info>Window(Home).Property(aeon.sk.ranges)</info>
+					<visible>$EXP[OSD_HasSkChapters]</visible>
+				</control>
+				<control type="slider">
+					<description>marker only (not focusable; nothing navigates to it)</description>
+					<left>0</left><top>-19</top><width>$PARAM[width]</width><height>40</height>
+					<info>Player.SeekBar</info>
+					<texturesliderbar>aeon/seek_bar40.png</texturesliderbar>
+					<include>FG_SeekNib</include>
+					<visible>Player.SeekEnabled</visible>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<!-- a media chip of the information screen (display only), drawn like the chips of the library views. params: label, visible -->
+	<include name="Aeon_InfoChip">
+		<param name="visible">true</param>
+		<definition>
+			<control type="button">
+				<width min="46" max="320">auto</width>
+				<height>34</height>
+				<label>$PARAM[label]</label>
+				<font>pl_small_20_bold</font>
+				<textcolor>ffffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>ffffffff</disabledcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textoffsetx>12</textoffsetx>
+				<include>Aeon_T_114fa152</include>
+				<include>Aeon_T_94e6fa86</include>
+				<enable>false</enable>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
+	<!-- one rating of the video playing, from the helper (aeon.r.player.<src>). params: src, icon (media/ratings/<icon>.png) -->
+	<include name="Aeon_InfoRating">
+		<definition>
+			<control type="image"><width>46</width><height>34</height><aspectratio>keep</aspectratio><texture>ratings/$PARAM[icon].png</texture><visible>!String.IsEmpty(Window(Home).Property(aeon.r.player.$PARAM[src]))</visible><visible>$EXP[Aeon_Rate_player]</visible></control>
+			<control type="label"><width min="10" max="90">auto</width><height>34</height><aligny>center</aligny><font>pl_ui_24_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[Window(Home).Property(aeon.r.player.$PARAM[src])]</label><visible>!String.IsEmpty(Window(Home).Property(aeon.r.player.$PARAM[src]))</visible><visible>$EXP[Aeon_Rate_player]</visible></control>
+		</definition>
+	</include>
+	<!-- 0.41.0: Fused Glass has its own player card (Includes_FusedPlayer.xml, FG_OSD2), chosen when the skin loads -->
+	<include name="Aeon_OSD">
+		<include condition="Skin.HasSetting(aeon.fglass)">FG_OSD2</include>
+		<include condition="!Skin.HasSetting(aeon.fglass)">Aeon_OSD_Classic</include>
+	</include>
+	<include name="Aeon_OSD_Classic">
+		<!-- bottom scrim, then the top bar -->
+		<control type="image">
+			<left>0</left>
+			<top>520</top>
+			<width>1920</width>
+			<height>560</height>
+			<texture colordiffuse="f0000000">aeon/osd_scrim_bottom.png</texture>
+			<visible>!$EXP[Aeon_FGlass]</visible>
+		</control>
+		<include>FG_OSDCard</include>
+		<include>Aeon_OSD_TopBar</include>
+		<!-- NOW PLAYING IN TV SHOWS: <clearlogo>; the title in text when there is no clearlogo (or logos are off) -->
+		<control type="grouplist">
+			<left>60</left>
+			<top>0</top>
+			<width>1100</width>
+			<height>108</height>
+			<visible>!$EXP[Aeon_FGlass]</visible>
+			<orientation>horizontal</orientation>
+			<itemgap>18</itemgap>
+			<usecontrolcoords>true</usecontrolcoords>
+			<control type="label">
+				<width max="700">auto</width>
+				<height>108</height>
+				<aligny>center</aligny>
+				<font>pl_ui_26</font>
+				<textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor>
+				<label>[UPPERCASE]$ADDON[skin.aeon.fuse 32397] [B]$VAR[Aeon_OSD_Kind]:[/B][/UPPERCASE]</label>
+			</control>
+			<control type="image">
+				<top>22</top>
+				<width>380</width>
+				<height>64</height>
+				<aspectratio align="left" aligny="center">keep</aspectratio>
+				<texture background="true">$VAR[Aeon_OSD_Logo]</texture>
+				<visible>$EXP[Aeon_OSD_HasLogo]</visible>
+			</control>
+			<control type="label">
+				<width max="760">auto</width>
+				<height>108</height>
+				<aligny>center</aligny>
+				<font>pl_ui_26</font>
+				<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+				<label>[B]$VAR[Aeon_OSD_Title][/B]</label>
+				<visible>!$EXP[Aeon_OSD_HasLogo]</visible>
+			</control>
+		</control>
+		<!-- Fused Glass: "NOW PLAYING IN TV SHOWS" over the clearlogo (or the title), on the clock capsule's middle line and
+		     at its margin from the screen edge (96) -->
+		<control type="group">
+			<left>96</left>
+			<visible>$EXP[Aeon_FGlass]</visible>
+			<control type="label">
+				<top>30</top><width>1100</width><height>28</height><aligny>center</aligny>
+				<font>pl_cap_20</font><textcolor>b3ffffff</textcolor><selectedcolor>b3ffffff</selectedcolor>
+				<label>[UPPERCASE]$ADDON[skin.aeon.fuse 32397] [B]$VAR[Aeon_OSD_Kind][/B][/UPPERCASE]</label>
+			</control>
+			<control type="image">
+				<top>62</top><width>420</width><height>56</height>
+				<aspectratio align="left" aligny="center">keep</aspectratio>
+				<texture background="true">$VAR[Aeon_OSD_Logo]</texture>
+				<visible>$EXP[Aeon_OSD_HasLogo]</visible>
+			</control>
+			<control type="label">
+				<top>60</top><width>1100</width><height>58</height><aligny>center</aligny>
+				<font>pl_display_40</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+				<label>$VAR[Aeon_OSD_Title]</label>
+				<visible>!$EXP[Aeon_OSD_HasLogo]</visible>
+			</control>
+		</control>
+
+		<!-- poster left of the ring, as tall as the ring and the line beside it (Skin settings > Seek bar / OSD > Poster
+		     beside the ring); disc art slides out of its top and spins while playing -->
+		<control type="group">
+			<visible>$EXP[Aeon_OSDDisc] + [!String.IsEmpty(Player.Art(discart)) | !String.IsEmpty(Player.Art(album.discart))]</visible>
+			<animation effect="slide" end="0,19" time="0" condition="$EXP[Aeon_FGlass] + !$EXP[FG_OSDUpNext]">Conditional</animation><animation effect="slide" end="0,-12" time="0" condition="$EXP[Aeon_FGlass] + $EXP[FG_OSDUpNext]">Conditional</animation>
+			<animation type="Visible" tween="cubic" easing="out" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="slide" start="0,80" end="0,0" delay="500" time="900"/><effect type="fade" start="0" end="100" delay="500" time="300"/></animation>
+			<control type="image">
+				<left>65</left><top>708</top><width>117</width><height>117</height>
+				<aspectratio>keep</aspectratio>
+				<!-- a circle the size of the disc: disc art saved on a square background spins as a disc, not a square -->
+				<texture background="true" diffuse="aeon/mask_circle.png">$VAR[Aeon_DiscArt]</texture>
+				<animation type="Conditional" condition="Player.Playing + !Player.Paused + !Skin.HasSetting(aeon.reducemotion)" loop="true"><effect type="rotate" start="0" end="-360" center="auto" time="6000" tween="linear"/></animation>
+			</control>
+		</control>
+		<control type="image">
+			<left>60</left><top>780</top><width>127</width><height>190</height>
+			<aspectratio>scale</aspectratio>
+			<texture background="true">$VAR[Aeon_OSD_Poster]</texture>
+			<visible>[!Skin.HasSetting(aeon.osd.noposter) | [$EXP[Aeon_OSDDisc] + [!String.IsEmpty(Player.Art(discart)) | !String.IsEmpty(Player.Art(album.discart))]]] + !$EXP[Aeon_FGlass]</visible>
+		</control>
+		<control type="image">
+			<left>60</left><top>780</top><width>127</width><height>190</height>
+			<aspectratio scalediffuse="false">scale</aspectratio>
+			<texture background="true" diffuse="fg/m127x190.png">$VAR[Aeon_OSD_Poster]</texture>
+			<animation effect="slide" end="0,19" time="0" condition="$EXP[Aeon_FGlass] + !$EXP[FG_OSDUpNext]">Conditional</animation><animation effect="slide" end="0,-12" time="0" condition="$EXP[Aeon_FGlass] + $EXP[FG_OSDUpNext]">Conditional</animation>
+			<visible>[!Skin.HasSetting(aeon.osd.noposter) | [$EXP[Aeon_OSDDisc] + [!String.IsEmpty(Player.Art(discart)) | !String.IsEmpty(Player.Art(album.discart))]]] + $EXP[Aeon_FGlass]</visible>
+		</control>
+
+		<!-- ring: ends at; moves left beside the poster's place when there is no poster -->
+		<control type="group">
+			<animation effect="slide" end="-157,0" time="0" condition="Skin.HasSetting(aeon.osd.noposter) + ![$EXP[Aeon_OSDDisc] + [!String.IsEmpty(Player.Art(discart)) | !String.IsEmpty(Player.Art(album.discart))]]">Conditional</animation>
+			<animation effect="slide" end="0,19" time="0" condition="$EXP[Aeon_FGlass] + !$EXP[FG_OSDUpNext]">Conditional</animation><animation effect="slide" end="0,-12" time="0" condition="$EXP[Aeon_FGlass] + $EXP[FG_OSDUpNext]">Conditional</animation>
+			<control type="image">
+				<left>217</left>
+				<top>780</top>
+				<width>190</width>
+				<height>190</height>
+				<texture colordiffuse="ccffffff">aeon/ring_circle.png</texture>
+			</control>
+			<control type="label">
+				<left>217</left>
+				<top>832</top>
+				<width>190</width>
+				<height>40</height>
+				<align>center</align>
+				<font>pl_small_20</font>
+				<textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor>
+				<label>$LOCALIZE[31186]</label>
+			</control>
+			<control type="label">
+				<left>217</left>
+				<top>864</top>
+				<width>190</width>
+				<height>44</height>
+				<align>center</align>
+				<font>pl_ui_28_bold</font>
+				<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+				<label>$INFO[Player.FinishTime]</label>
+			</control>
+		</control>
+		<control type="image">
+			<left>437</left>
+			<top>780</top>
+			<width>1</width>
+			<height>190</height>
+			<texture colordiffuse="50ffffff">common/white.png</texture>
+			<visible>!$EXP[Aeon_FGlass]</visible>
+		</control>
+		<control type="image"><left>437</left><top>780</top><width>1</width><height>228</height><texture colordiffuse="33ffffff">common/white.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+		<!-- Fused Glass: Skippy's next episode under the poster and the ring (Skin settings > Behaviour) -->
+		<control type="group">
+			<left>60</left>
+			<top>966</top>
+			<visible>$EXP[Aeon_FGlass] + $EXP[FG_OSDUpNext]</visible>
+			<control type="label">
+				<width>347</width><height>24</height><aligny>center</aligny>
+				<font>pl_cap_20</font><textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor>
+				<label>[UPPERCASE]$LOCALIZE[31235][/UPPERCASE]</label>
+			</control>
+			<control type="label">
+				<top>24</top><width>347</width><height>34</height><aligny>center</aligny>
+				<font>pl_ui_24_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+				<label>$INFO[Window(Home).Property(Skippy.NextEpisode.Label)]</label>
+			</control>
+		</control>
+
+		<!-- what is playing: episode code and title, or year and genre (the show / film itself is in the top bar) -->
+		<control type="label">
+			<left>477</left>
+			<top>770</top>
+			<width>980</width>
+			<height>40</height>
+			<font>pl_ui_26</font>
+			<textcolor>ddffffff</textcolor><selectedcolor>ddffffff</selectedcolor>
+			<scroll>true</scroll>
+			<label>$VAR[Aeon_OSD_Sub]</label>
+		</control>
+		<!-- state chip -->
+		<control type="label">
+			<left>1460</left>
+			<top>776</top>
+			<width>400</width>
+			<height>34</height>
+			<align>right</align>
+			<font>pl_small_20_bold</font>
+			<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+			<label>$VAR[Aeon_OSD_State]</label>
+		</control>
+
+		<include>Aeon_OSD_Row</include>
+
+		<!-- times -->
+		<control type="label">
+			<left>477</left>
+			<top>804</top>
+			<width>300</width>
+			<height>34</height>
+			<font>pl_small_20_bold</font>
+			<textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor>
+			<label>$INFO[Player.Time]</label>
+		</control>
+		<control type="label">
+			<left>1560</left>
+			<top>804</top>
+			<width>300</width>
+			<height>34</height>
+			<align>right</align>
+			<font>pl_small_20_bold</font>
+			<textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor>
+			<label>$VAR[Aeon_OSD_Total]</label>
+		</control>
+		<control type="label">
+			<left>768</left>
+			<top>804</top>
+			<width>800</width>
+			<height>34</height>
+			<align>center</align>
+			<font>pl_small_20_bold</font>
+			<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+			<label>$INFO[Player.SeekTime]</label>
+			<visible>$EXP[OSD_SeekActive] + Player.SeekEnabled</visible>
+		</control>
+		<include content="Aeon_SeekLine"/>
+		<!-- the seek bar: Left / Right are Kodi's step seek (Settings > Player > Videos > Skip steps and Delay after seek):
+		     quick presses add up and playback seeks once, after the delay (the marker moves at once); OK pauses / plays;
+		     Up opens the information screen -->
+		<control type="button" id="87">
+			<description>seek bar</description>
+			<left>477</left><top>836</top><width>1383</width><height>42</height>
+			<label></label>
+			<texturefocus></texturefocus><texturenofocus></texturenofocus>
+			<onleft>Action(StepBack)</onleft>
+			<onright>Action(StepForward)</onright>
+			<onclick>PlayerControl(Play)</onclick>
+			<onup condition="$EXP[FG_SkipAsk]">SetFocus(88)</onup>
+			<onup condition="!$EXP[FG_SkipAsk]">Action(Info,fullscreenvideo)</onup>
+			<ondown>602</ondown>
+			<visible>Player.SeekEnabled</visible>
+		</control>
+
+		<!-- Fused Glass (0.39.0): the skip button on the card while Skippy asks about a segment (the skip dialog itself
+		     closes when the OSD opens). Tab: on the card's top edge, right-aligned with the content (1504..1860, 712..776);
+		     Glass: above the card's right edge (1460..1884, 664..728). Up from the seek bar, OK skips, Down goes back. -->
+		<control type="group">
+			<visible>$EXP[FG_SkipAsk]</visible>
+			<animation type="Visible" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="fade" start="0" end="100" time="200"/><effect type="slide" start="0,16" end="0,0" time="240" tween="cubic" easing="out"/></animation>
+			<control type="group">
+				<left>1504</left><top>712</top>
+				<visible>[$EXP[Aeon_FGlass] | Skin.HasSetting(aeon.vglass)] + !$EXP[FG_SkipGlass]</visible>
+				<animation type="Conditional" condition="Control.HasFocus(88)" reversible="true"><effect type="zoom" start="100" end="106" center="auto" time="160" tween="cubic" easing="out"/></animation>
+				<control type="image"><left>-5</left><top>-5</top><width>366</width><height>74</height><texture border="32" colordiffuse="ffffffff">fg/e32.png</texture><visible>Control.HasFocus(88)</visible></control>
+				<include content="FG_SkipTab"/>
+			</control>
+			<control type="group">
+				<left>1460</left><top>664</top>
+				<visible>[$EXP[Aeon_FGlass] | Skin.HasSetting(aeon.vglass)] + $EXP[FG_SkipGlass]</visible>
+				<include content="FG_SkipGlass"><param name="lit" value="Control.HasFocus(88)"/></include>
+			</control>
+			<!-- Aeon theme (0.40.3): box pair above the controls, or tile and label cell beside the clock box -->
+			<control type="group">
+				<left>1464</left><top>672</top>
+				<visible>$EXP[Aeon_SkipPair]</visible>
+				<include content="Aeon_SkipCells96"><param name="lit" value="Control.HasFocus(88)"/></include>
+			</control>
+			<control type="group">
+				<left>1292</left><top>0</top>
+				<visible>$EXP[Aeon_SkipClock]</visible>
+				<include content="Aeon_SkipCells108"><param name="lit" value="Control.HasFocus(88)"/></include>
+			</control>
+			<control type="button" id="88">
+				<left>1460</left><top>664</top><width>424</width><height>112</height>
+				<label></label>
+				<texturefocus /><texturenofocus />
+				<onclick>RunScript(service.skippy,skip_current)</onclick>
+				<onup>noop</onup>
+				<ondown>87</ondown>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+			</control>
+		</control>
+		<!-- Skippy (Skin settings > Behaviour): between the times, the segment playing and the time left, or the next one
+		     (also inside a "Main" segment: the sidecar's mark for the episode itself, between intro and credits) -->
+		<control type="group">
+			<visible>!Skin.HasSetting(aeon.skippy.noline) + !$EXP[OSD_SeekActive]</visible>
+			<control type="label">
+				<left>768</left><top>804</top><width>800</width><height>34</height><align>center</align>
+				<font>pl_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+				<label>[UPPERCASE]$INFO[Window(Home).Property(Skippy.Segment.Type)]$INFO[Window(Home).Property(Skippy.Segment.Remaining),  ·  , $LOCALIZE[31965]][/UPPERCASE]</label>
+				<visible>!String.IsEmpty(Window(Home).Property(Skippy.Segment.Type)) + !String.IsEqual(Window(Home).Property(Skippy.Segment.TypeId),main)</visible>
+			</control>
+			<control type="label">
+				<left>768</left><top>804</top><width>800</width><height>34</height><align>center</align>
+				<font>pl_small_20</font><textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor>
+				<label>[UPPERCASE]$LOCALIZE[31126]  $INFO[Window(Home).Property(Skippy.Segment.Next.Type)]$INFO[Window(Home).Property(Skippy.Segment.Next.Start), $LOCALIZE[31966] ,][/UPPERCASE]</label>
+				<visible>[String.IsEmpty(Window(Home).Property(Skippy.Segment.Type)) | String.IsEqual(Window(Home).Property(Skippy.Segment.TypeId),main)] + !String.IsEmpty(Window(Home).Property(Skippy.Segment.Next.Type))</visible>
+			</control>
+		</control>
+	</include>
+	<!-- disc art of what is playing: a movie's own, or the album's when music plays -->
+	<variable name="Aeon_DiscArt">
+		<value condition="!String.IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
+		<value>$INFO[Player.Art(album.discart)]</value>
+	</variable>
+</includes>

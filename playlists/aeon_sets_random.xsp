@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<smartplaylist type="movies">
+	<name>Random sets</name>
+	<match>all</match>
+	<group mixed="false">sets</group>
+	<limit>30</limit>
+	<order direction="descending">random</order>
+</smartplaylist>

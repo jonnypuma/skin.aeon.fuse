@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Spotlight of one home menu item (dialog 1163): the Netflix-style spotlight above the menu (on/off, label, path, items, sort, order, seconds). Opened from Settings > Home menu > Edit spotlight. -->
+<window type="dialog" id="1163">
+	<defaultcontrol always="true">9830</defaultcontrol>
+	<animation type="WindowOpen" tween="cubic" easing="out"><effect type="fade" start="0" end="100" time="200"/></animation>
+	<animation type="WindowClose" tween="cubic" easing="in"><effect type="fade" start="100" end="0" time="200"/></animation>
+	<controls>
+		<include condition="$EXP[Aeon_FGlass] + $EXP[FGS]">Spot1163_FGS</include>
+		<include condition="![$EXP[Aeon_FGlass] + $EXP[FGS]]">Spot1163_Classic</include>
+	</controls>
+</window>

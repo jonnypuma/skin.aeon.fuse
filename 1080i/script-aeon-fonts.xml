@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Font picker of script.aeon.helper (fontpick.py): Skin settings > Look > Fonts > a section.
+	Left: the rows (list 100, filled by the script): font combinations or families. Item properties h and b = family
+	numbers of the mock-up's title and of the rest (0 = follow the font set); one include per family number (0-44: len(fonts.families()) + 1).
+	Right: a mock-up screen drawn in the focused family (Aeon_FontMock, fonts pv<n>_* in Font.xml).
+	Heading: control 1 (set by the script). Window property "section" = name of the section.
+-->
+<window>
+	<defaultcontrol always="true">100</defaultcontrol>
+	<include>Anim_DialogOpenClose</include>
+	<controls>
+		<include condition="!$EXP[FGS]">FontPick_PageClassic</include>
+		<include condition="$EXP[FGS]">FontPick_PageFGS</include>
+	</controls>
+</window>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Event log (SPEC 5: Minimal). Builder F, M4. Options on the left, events on the right.
+	Kodi id contract (Estuary Omega EventLog.xml / GUIWindowEventLog): view container 50 +
+	scrollbar 60, menucontrol 9000 holding togglebutton 4 (sort order), button 21 (level filter,
+	Kodi sets the label), radiobutton 22 (include higher levels, Kodi sets the label), button 20
+	(clear); 501 opens the logging settings. Item property Event.Description.
+	The list and the options share focus group 9100, so an empty log still lands focus on the options.
+-->
+<window>
+	<defaultcontrol always="true">9100</defaultcontrol>
+	<menucontrol>9000</menucontrol>
+	<backgroundcolor>ff000000</backgroundcolor>
+	<views>50</views>
+	<include>Anim_WindowOpenClose</include>
+	<controls>
+		<include>AG_Background</include>
+		<include content="AG_TopBar">
+			<param name="index" value="14"/>
+			<param name="title" value="$LOCALIZE[31264]"/>
+			<param name="sub" value="$INFO[Container.NumItems]"/>
+		</include>
+		<include condition="!$EXP[FGS]">EventLog_Classic</include>
+		<include condition="$EXP[FGS]">FGS_EventLog</include><!-- 0.56.53 fgseventlog -->
+	</controls>
+</window>

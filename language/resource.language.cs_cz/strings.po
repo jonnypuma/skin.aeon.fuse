@@ -1,0 +1,7177 @@
+# Kodi add-on strings - skin.aeon.fuse (cs_cz)
+msgid ""
+msgstr ""
+"Project-Id-Version: skin.aeon.fuse\n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+msgctxt "#31010"
+msgid "Sort"
+msgstr "Řazení"
+
+msgctxt "#31011"
+msgid "View"
+msgstr "Zobrazení"
+
+msgctxt "#31012"
+msgid "Nothing here"
+msgstr "Nic tu není"
+
+msgctxt "#31013"
+msgid "Working"
+msgstr "Pracuji"
+
+msgctxt "#31014"
+msgid "Up / down to page, OK to close"
+msgstr "Nahoru / dolů listuje, OK zavře"
+
+msgctxt "#31015"
+msgid "Muted"
+msgstr "Ztlumeno"
+
+msgctxt "#31016"
+msgid "Buffering"
+msgstr "Načítání do mezipaměti"
+
+msgctxt "#31017"
+msgid "Now playing"
+msgstr "Právě hraje"
+
+msgctxt "#31018"
+msgid "Next:"
+msgstr "Další:"
+
+msgctxt "#31019"
+msgid "Home"
+msgstr "Domů"
+
+msgctxt "#31020"
+msgid "System"
+msgstr "Systém"
+
+msgctxt "#31021"
+msgid "Skin settings"
+msgstr "Nastavení vzhledu"
+
+msgctxt "#31022"
+msgid "Power"
+msgstr "Napájení"
+
+msgctxt "#31024"
+msgid "Aeon Fuse"
+msgstr "Aeon Fuse"
+
+msgctxt "#31025"
+msgid "Skin settings holds Aeon Fuse's own options. To switch skins: Interface > Skin > Skin."
+msgstr "Nastavení vzhledu obsahuje vlastní volby Aeon Fuse. Změna vzhledu: Rozhraní > Vzhled > Vzhled."
+
+msgctxt "#31030"
+msgid "Ends"
+msgstr "Konec"
+
+msgctxt "#31040"
+msgid "Symbols"
+msgstr "Symboly"
+
+msgctxt "#31041"
+msgid "Caps"
+msgstr "Velká písm."
+
+msgctxt "#31042"
+msgid "Shift"
+msgstr "Shift"
+
+msgctxt "#31043"
+msgid "Space"
+msgstr "Mezera"
+
+msgctxt "#31044"
+msgid "Delete"
+msgstr "Smazat"
+
+msgctxt "#31045"
+msgid "Queue"
+msgstr "Fronta"
+
+msgctxt "#31046"
+msgid "Cover showcase"
+msgstr "Výloha obalů"
+
+msgctxt "#31047"
+msgid "03  Performance"
+msgstr "03  Výkon"
+
+msgctxt "#31048"
+msgid "Pause"
+msgstr "Pauza"
+
+msgctxt "#31050"
+msgid "Palette"
+msgstr "Paleta"
+
+msgctxt "#31051"
+msgid "Slightly rounded corners"
+msgstr "Mírně zaoblené rohy"
+
+msgctxt "#31052"
+msgid "Focus outline"
+msgstr "Obrys výběru"
+
+msgctxt "#31053"
+msgid "Artwork background"
+msgstr "Obrázkové pozadí"
+
+msgctxt "#31054"
+msgid "Trailer button"
+msgstr "Tlačítko traileru"
+
+msgctxt "#31055"
+msgid "Watched indicators"
+msgstr "Značky zhlédnutí"
+
+msgctxt "#31056"
+msgid "Spotlight rotation"
+msgstr "Střídání Spotlightu"
+
+msgctxt "#31057"
+msgid "Newest row on Home"
+msgstr "Řada novinek na Domů"
+
+msgctxt "#31058"
+msgid "Reduce motion"
+msgstr "Omezit pohyb"
+
+msgctxt "#31059"
+msgid "Reset all skin settings"
+msgstr "Obnovit všechna nastavení vzhledu"
+
+msgctxt "#31060"
+msgid "Signal"
+msgstr "Signál"
+
+msgctxt "#31061"
+msgid "Cobalt"
+msgstr "Kobalt"
+
+msgctxt "#31062"
+msgid "Mint"
+msgstr "Máta"
+
+msgctxt "#31063"
+msgid "Amber"
+msgstr "Jantar"
+
+msgctxt "#31064"
+msgid "Rose"
+msgstr "Růže"
+
+msgctxt "#31065"
+msgid "Ice"
+msgstr "Led"
+
+msgctxt "#31066"
+msgid "Bone"
+msgstr "Kost"
+
+msgctxt "#31070"
+msgid "Thin"
+msgstr "Tenká"
+
+msgctxt "#31071"
+msgid "Medium"
+msgstr "Střední"
+
+msgctxt "#31072"
+msgid "Off"
+msgstr "Vypnuto"
+
+msgctxt "#31075"
+msgid "Faint"
+msgstr "Slabý"
+
+msgctxt "#31076"
+msgid "Soft"
+msgstr "Jemný"
+
+msgctxt "#31077"
+msgid "Visible"
+msgstr "Viditelný"
+
+msgctxt "#31080"
+msgid "Both"
+msgstr "Obojí"
+
+msgctxt "#31081"
+msgid "Unwatched only"
+msgstr "Jen nezhlédnuté"
+
+msgctxt "#31082"
+msgid "Watched only"
+msgstr "Jen zhlédnuté"
+
+msgctxt "#31085"
+msgid "Date added"
+msgstr "Datum přidání"
+
+msgctxt "#31086"
+msgid "Release date"
+msgstr "Datum vydání"
+
+msgctxt "#31087"
+msgid "Both rows"
+msgstr "Obě řady"
+
+msgctxt "#31100"
+msgid "Spotlight / unwatched / top rated"
+msgstr "Spotlight / nezhlédnuté / nejlépe hodnocené"
+
+msgctxt "#31101"
+msgid "Year"
+msgstr "Rok"
+
+msgctxt "#31102"
+msgid "Runtime"
+msgstr "Délka"
+
+msgctxt "#31103"
+msgid "Rating"
+msgstr "Hodnocení"
+
+msgctxt "#31104"
+msgid "Rated"
+msgstr "Přístupnost"
+
+msgctxt "#31105"
+msgid "Details"
+msgstr "Podrobnosti"
+
+msgctxt "#31106"
+msgid "Fig. 01: random pick, unwatched, rated 7.5+"
+msgstr "Obr. 01: náhodný výběr, nezhlédnutý, hodnocení 7,5+"
+
+msgctxt "#31107"
+msgid "No unwatched films rated 7.5+ yet"
+msgstr "Zatím žádné nezhlédnuté filmy s hodnocením 7,5+"
+
+msgctxt "#31110"
+msgid "Newest additions"
+msgstr "Nejnovější přírůstky"
+
+msgctxt "#31111"
+msgid "Sorted by date added ↓"
+msgstr "Podle data přidání ↓"
+
+msgctxt "#31112"
+msgid "Newest releases"
+msgstr "Nejnovější vydání"
+
+msgctxt "#31113"
+msgid "Sorted by release date ↓"
+msgstr "Podle data vydání ↓"
+
+msgctxt "#31114"
+msgid "films"
+msgstr "filmů"
+
+msgctxt "#31120"
+msgid "Seek  ◀ ▶"
+msgstr "Posun  ◀ ▶"
+
+msgctxt "#31121"
+msgid "Previous"
+msgstr "Předchozí"
+
+msgctxt "#31122"
+msgid "Rewind"
+msgstr "Přetočit zpět"
+
+msgctxt "#31123"
+msgid "Play / pause"
+msgstr "Přehrát / pozastavit"
+
+msgctxt "#31124"
+msgid "Stop"
+msgstr "Zastavit"
+
+msgctxt "#31125"
+msgid "Forward"
+msgstr "Přetočit vpřed"
+
+msgctxt "#31126"
+msgid "Next"
+msgstr "Další"
+
+msgctxt "#31127"
+msgid "Subtitles"
+msgstr "Titulky"
+
+msgctxt "#31128"
+msgid "Audio"
+msgstr "Zvuk"
+
+msgctxt "#31129"
+msgid "Video settings"
+msgstr "Nastavení videa"
+
+msgctxt "#31318"
+msgid "Visualiser presets"
+msgstr "Předvolby vizualizace"
+
+msgctxt "#31319"
+msgid "OK, then ← for presets"
+msgstr "OK, pak ← pro předvolby"
+
+msgctxt "#31900"
+msgid "Aeon Fuse (Figtree)"
+msgstr "Aeon Fuse (Figtree)"
+
+msgctxt "#31901"
+msgid "Arial (wider script coverage)"
+msgstr "Arial (více písem)"
+
+msgctxt "#31902"
+msgid "Episode code"
+msgstr "Kód epizody"
+
+msgctxt "#31200"
+msgid "Aeon Fuse settings"
+msgstr "Nastavení Aeon Fuse"
+
+msgctxt "#31201"
+msgid "Live TV"
+msgstr "Živé vysílání"
+
+msgctxt "#31202"
+msgid "Media"
+msgstr "Média"
+
+msgctxt "#31203"
+msgid "Update library"
+msgstr "Aktualizovat knihovnu"
+
+msgctxt "#31204"
+msgid "Library"
+msgstr "Knihovna"
+
+msgctxt "#31205"
+msgid "Clean library"
+msgstr "Vyčistit knihovnu"
+
+msgctxt "#31206"
+msgid "More"
+msgstr "Více"
+
+msgctxt "#31207"
+msgid "Add-on"
+msgstr "Doplněk"
+
+msgctxt "#31208"
+msgid "About this setting"
+msgstr "O tomto nastavení"
+
+msgctxt "#31209"
+msgid "Timer"
+msgstr "Časovač"
+
+msgctxt "#31210"
+msgid "Left / right: channel group"
+msgstr "Vlevo / vpravo: skupina kanálů"
+
+msgctxt "#31211"
+msgid "Add group"
+msgstr "Přidat skupinu"
+
+msgctxt "#31212"
+msgid "Rename group"
+msgstr "Přejmenovat skupinu"
+
+msgctxt "#31213"
+msgid "Delete group"
+msgstr "Smazat skupinu"
+
+msgctxt "#31214"
+msgid "Jump through the guide  ·  Back to close"
+msgstr "Procházet průvodce  ·  Zpět zavře"
+
+msgctxt "#31215"
+msgid "Playing on this Shield"
+msgstr "Hraje na tomto Shieldu"
+
+msgctxt "#31216"
+msgid "OK or Back closes"
+msgstr "OK nebo Zpět zavře"
+
+msgctxt "#31217"
+msgid "Find subtitles"
+msgstr "Najít titulky"
+
+msgctxt "#31218"
+msgid "Service"
+msgstr "Služba"
+
+msgctxt "#31219"
+msgid "Status"
+msgstr "Stav"
+
+msgctxt "#31220"
+msgid "This file already has subtitle tracks"
+msgstr "Tento soubor už má stopy titulků"
+
+msgctxt "#31221"
+msgid "Sync = timed to your file"
+msgstr "Sync = načasované na váš soubor"
+
+msgctxt "#31222"
+msgid "No subtitles listed yet. Pick a service or search manually."
+msgstr "Zatím žádné titulky. Vyberte službu nebo hledejte ručně."
+
+msgctxt "#31223"
+msgid "Order:"
+msgstr "Pořadí:"
+
+msgctxt "#31224"
+msgid "Nothing has happened yet."
+msgstr "Zatím se nic nestalo."
+
+msgctxt "#31225"
+msgid "Back to continue"
+msgstr "Zpět pro pokračování"
+
+msgctxt "#31226"
+msgid "Nothing to choose"
+msgstr "Není co vybrat"
+
+msgctxt "#31227"
+msgid "Browse the whole library instead."
+msgstr "Raději procházejte celou knihovnu."
+
+msgctxt "#31228"
+msgid "See all"
+msgstr "Zobrazit vše"
+
+msgctxt "#31229"
+msgid "No shows in progress. Start one from Shows."
+msgstr "Žádné rozkoukané seriály. Začněte nějaký v Seriálech."
+
+msgctxt "#31230"
+msgid "Nothing here."
+msgstr "Nic tu není."
+
+msgctxt "#31231"
+msgid "PVR & Live TV settings"
+msgstr "Nastavení PVR a živého vysílání"
+
+msgctxt "#31232"
+msgid "Up one level"
+msgstr "O úroveň výš"
+
+msgctxt "#31233"
+msgid "Nothing else is known about this one yet."
+msgstr "O tomto titulu se zatím nic dalšího neví."
+
+msgctxt "#31234"
+msgid "Up and down scroll  ·  Back closes"
+msgstr "Nahoru a dolů posouvá  ·  Zpět zavře"
+
+msgctxt "#31235"
+msgid "Up next"
+msgstr "Následuje"
+
+msgctxt "#31236"
+msgid "The last one in the queue"
+msgstr "Poslední ve frontě"
+
+msgctxt "#31237"
+msgid "Sync"
+msgstr "Sync"
+
+msgctxt "#31238"
+msgid "No matches"
+msgstr "Žádné shody"
+
+msgctxt "#31239"
+msgid "Searching"
+msgstr "Hledám"
+
+msgctxt "#31240"
+msgid "Films, shows, albums, artists"
+msgstr "Filmy, seriály, alba, umělci"
+
+msgctxt "#31241"
+msgid "OK to type  ·  Down for results  ·  Back to close"
+msgstr "OK pro psaní  ·  Dolů k výsledkům  ·  Zpět zavře"
+
+msgctxt "#31242"
+msgid "Films and shows match on title, albums on album name, artists on name. Library only."
+msgstr "Filmy a seriály podle názvu, alba podle názvu alba, umělci podle jména. Jen knihovna."
+
+msgctxt "#31243"
+msgid "Offsets apply to this film only. Choosing an offset hides this panel so you can sync against the picture."
+msgstr "Posuny platí jen pro tento film. Volba posunu skryje tento panel, abyste mohli synchronizovat podle obrazu."
+
+msgctxt "#31244"
+msgid "More for this title"
+msgstr "Více k tomuto titulu"
+
+msgctxt "#31245"
+msgid "Back"
+msgstr "Zpět"
+
+msgctxt "#31246"
+msgid "Unwatched only is on: choose the pill above to show everything."
+msgstr "„Jen nezhlédnuté“ je zapnuto: vyberte tlačítko nahoře pro zobrazení všeho."
+
+msgctxt "#31247"
+msgid "Left and right to seek  ·  Down returns"
+msgstr "Vlevo a vpravo posouvá  ·  Dolů se vrací"
+
+msgctxt "#31248"
+msgid "Choose Albums, Artists, Songs or Genres above."
+msgstr "Nahoře vyberte Alba, Umělce, Skladby nebo Žánry."
+
+msgctxt "#31249"
+msgid "Playlist"
+msgstr "Seznam skladeb"
+
+msgctxt "#31250"
+msgid "Empty. Pick songs or albums on the left and press OK to add them."
+msgstr "Prázdné. Vlevo vyberte skladby či alba a přidejte je tlačítkem OK."
+
+msgctxt "#31251"
+msgid "The queue is empty"
+msgstr "Fronta je prázdná"
+
+msgctxt "#31252"
+msgid "No weather yet."
+msgstr "Zatím žádné počasí."
+
+msgctxt "#31253"
+msgid "Choose a weather service under Settings, Services, Weather."
+msgstr "Vyberte službu počasí v Nastavení, Služby, Počasí."
+
+msgctxt "#31254"
+msgid "The next few days"
+msgstr "Několik dalších dní"
+
+msgctxt "#31255"
+msgid "Look, behaviour, home menu"
+msgstr "Vzhled, chování, hlavní nabídka"
+
+msgctxt "#31256"
+msgid "Playback, subtitles"
+msgstr "Přehrávání, titulky"
+
+msgctxt "#31257"
+msgid "Library, files"
+msgstr "Knihovna, soubory"
+
+msgctxt "#31258"
+msgid "Skin, region"
+msgstr "Vzhled, oblast"
+
+msgctxt "#31259"
+msgid "Installed, updates"
+msgstr "Nainstalované, aktualizace"
+
+msgctxt "#31260"
+msgid "Remote, sharing"
+msgstr "Ovladač, sdílení"
+
+msgctxt "#31261"
+msgid "Display, audio"
+msgstr "Displej, zvuk"
+
+msgctxt "#31262"
+msgid "Sources, files"
+msgstr "Zdroje, soubory"
+
+msgctxt "#31263"
+msgid "Hardware, storage"
+msgstr "Hardware, úložiště"
+
+msgctxt "#31264"
+msgid "Event log"
+msgstr "Protokol událostí"
+
+msgctxt "#31265"
+msgid "Recent events"
+msgstr "Nedávné události"
+
+msgctxt "#31266"
+msgid "Users"
+msgstr "Uživatelé"
+
+msgctxt "#31267"
+msgid "Not used"
+msgstr "Nepoužito"
+
+msgctxt "#31268"
+msgid "Controllers"
+msgstr "Ovladače"
+
+msgctxt "#31269"
+msgid "This box"
+msgstr "Toto zařízení"
+
+msgctxt "#31270"
+msgid "Login screen"
+msgstr "Přihlašovací obrazovka"
+
+msgctxt "#31271"
+msgid "Auto login"
+msgstr "Automatické přihlášení"
+
+msgctxt "#31272"
+msgid "Options"
+msgstr "Volby"
+
+msgctxt "#31273"
+msgid "Order direction"
+msgstr "Směr řazení"
+
+msgctxt "#31274"
+msgid "Select a rule to edit it. Use the context menu to delete a rule."
+msgstr "Vyberte pravidlo pro úpravu. Pravidlo smažete kontextovou nabídkou."
+
+msgctxt "#31275"
+msgid "Value"
+msgstr "Hodnota"
+
+msgctxt "#31276"
+msgid "No chapters or bookmarks yet. Create one with the first button."
+msgstr "Zatím žádné kapitoly ani záložky. Vytvořte jednu prvním tlačítkem."
+
+msgctxt "#31277"
+msgid "OK jumps there  ·  Back closes"
+msgstr "OK tam přeskočí  ·  Zpět zavře"
+
+msgctxt "#31300"
+msgid "Order"
+msgstr "Pořadí"
+
+msgctxt "#31301"
+msgid "Watched"
+msgstr "Zhlédnuté"
+
+msgctxt "#31302"
+msgid "Search"
+msgstr "Hledat"
+
+msgctxt "#31303"
+msgid "Stop updating"
+msgstr "Zastavit aktualizaci"
+
+msgctxt "#31304"
+msgid "Library settings"
+msgstr "Nastavení knihovny"
+
+msgctxt "#31305"
+msgid "Music"
+msgstr "Hudba"
+
+msgctxt "#31306"
+msgid "Update"
+msgstr "Aktualizovat"
+
+msgctxt "#31307"
+msgid "Clean"
+msgstr "Vyčistit"
+
+msgctxt "#31308"
+msgid "Collections"
+msgstr "Kolekce"
+
+msgctxt "#31309"
+msgid "Films and shows"
+msgstr "Filmy a seriály"
+
+msgctxt "#31310"
+msgid "No, keep it as it is"
+msgstr "Ne, nechat jak je"
+
+msgctxt "#31311"
+msgid "Yes, clean it now"
+msgstr "Ano, vyčistit teď"
+
+msgctxt "#31312"
+msgid "Grid"
+msgstr "Mřížka"
+
+msgctxt "#31313"
+msgid "Wall"
+msgstr "Stěna"
+
+msgctxt "#31314"
+msgid "Episodes"
+msgstr "Epizody"
+
+msgctxt "#31315"
+msgid "List"
+msgstr "Seznam"
+
+msgctxt "#31316"
+msgid "OK to reset"
+msgstr "OK pro obnovení"
+
+msgctxt "#31317"
+msgid "Press OK again to reset everything"
+msgstr "Znovu stiskněte OK pro obnovení všeho"
+
+msgctxt "#31320"
+msgid "Spotlight"
+msgstr "Spotlight"
+
+msgctxt "#31321"
+msgid "Wide"
+msgstr "Široký"
+
+msgctxt "#31322"
+msgid "Time"
+msgstr "Čas"
+
+msgctxt "#31323"
+msgid "No runtime"
+msgstr "Bez délky"
+
+msgctxt "#31324"
+msgid "Now"
+msgstr "Teď"
+
+msgctxt "#31325"
+msgid "+1 h"
+msgstr "+1 h"
+
+msgctxt "#31326"
+msgid "+2 h"
+msgstr "+2 h"
+
+msgctxt "#31327"
+msgid "+3 h"
+msgstr "+3 h"
+
+msgctxt "#31328"
+msgid "+4 h"
+msgstr "+4 h"
+
+msgctxt "#31329"
+msgid "Rows"
+msgstr "Řady"
+
+msgctxt "#31330"
+msgid "Main menu"
+msgstr "Hlavní nabídka"
+
+msgctxt "#31331"
+msgid "Films"
+msgstr "Filmy"
+
+msgctxt "#31332"
+msgid "Shows"
+msgstr "Seriály"
+
+msgctxt "#31333"
+msgid "Music"
+msgstr "Hudba"
+
+msgctxt "#31334"
+msgid "Search"
+msgstr "Hledat"
+
+msgctxt "#31335"
+msgid "Pill, hero and film cards"
+msgstr "Tlačítko, upoutávka a karty filmů"
+
+msgctxt "#31336"
+msgid "Pill and the Next up card"
+msgstr "Tlačítko a karta Následuje"
+
+msgctxt "#31337"
+msgid "Pill in the top line"
+msgstr "Tlačítko v horním řádku"
+
+msgctxt "#31338"
+msgid "Which pills the top line shows. Hidden pills disappear on Home and in the libraries; the rest close up. For now and the gear (system menu, settings) always stay, so you can always come back here.[CR][CR]Up / Down picks a group, Right enters it."
+msgstr "Která tlačítka horní řádek ukazuje. Skrytá tlačítka zmizí z Domů i z knihoven; ostatní se přisunou. „Teď“ a ozubené kolo (systémová nabídka, nastavení) zůstávají vždy, abyste se sem mohli vždy vrátit.[CR][CR]Nahoru / Dolů vybírá skupinu, Vpravo do ní vstoupí."
+
+msgctxt "#31339"
+msgid "Films also takes the hero and the film cards off For now; Shows takes the Next up card. The libraries themselves stay: Search finds them, and the system menu has Files."
+msgstr "Filmy odeberou z „Teď“ i upoutávku a karty filmů; Seriály kartu Následuje. Knihovny samy zůstávají: hledání je najde a systémová nabídka má Soubory."
+
+msgctxt "#31340"
+msgid "Show"
+msgstr "Zobrazit"
+
+msgctxt "#31341"
+msgid "Hide"
+msgstr "Skrýt"
+
+msgctxt "#31342"
+msgid "View, sort, filter…"
+msgstr "Zobrazení, řazení, filtr…"
+
+msgctxt "#31940"
+msgid "Custom rows"
+msgstr "Vlastní řady"
+
+msgctxt "#31941"
+msgid "Row 1"
+msgstr "Řada 1"
+
+msgctxt "#31942"
+msgid "Row 2"
+msgstr "Řada 2"
+
+msgctxt "#31943"
+msgid "Row 3"
+msgstr "Řada 3"
+
+msgctxt "#31944"
+msgid "Not set"
+msgstr "Nenastaveno"
+
+msgctxt "#31945"
+msgid "Add-on, playlist or library…"
+msgstr "Doplněk, seznam skladeb nebo knihovna…"
+
+msgctxt "#31946"
+msgid "A favourite…"
+msgstr "Oblíbená položka…"
+
+msgctxt "#31947"
+msgid "Rename…"
+msgstr "Přejmenovat…"
+
+msgctxt "#31948"
+msgid "Clear"
+msgstr "Vymazat"
+
+msgctxt "#31949"
+msgid "This favourite opens no folder"
+msgstr "Tato oblíbená položka neotevírá složku"
+
+msgctxt "#31950"
+msgid "Add up to three rows of your own to Home: a folder of an add-on (for example JellyCon's Continue Watching), a smart playlist, a library node or a favourite that opens a folder. A row shows only when it has something in it.[CR][CR]OK opens the row's options: choose what it shows, rename it or clear it."
+msgstr "Přidejte na Domů až tři vlastní řady: složku doplňku (například Pokračovat ve sledování z JellyCon), chytrý seznam, uzel knihovny nebo oblíbenou položku, která otevírá složku. Řada se ukáže jen, když něco obsahuje.[CR][CR]OK otevře volby řady: vyberte, co ukazuje, přejmenujte ji nebo vymažte."
+
+msgctxt "#31951"
+msgid "Custom row"
+msgstr "Vlastní řada"
+
+msgctxt "#31952"
+msgid "Loading…"
+msgstr "Načítání…"
+
+msgctxt "#31953"
+msgid "1 item"
+msgstr "1 položka"
+
+msgctxt "#31954"
+msgid "items"
+msgstr "položek"
+
+msgctxt "#31955"
+msgid "Add-on · playlist · library · favourite"
+msgstr "Doplněk · seznam · knihovna · oblíbené"
+
+msgctxt "#31956"
+msgid "The add-on of this favourite isn't installed"
+msgstr "Doplněk této oblíbené položky není nainstalován"
+
+msgctxt "#31957"
+msgid "Rows of your own on Home: an add-on folder, a playlist, a library node or a favourite. OK opens the row's options."
+msgstr "Vlastní řady na Domů: složka doplňku, seznam skladeb, uzel knihovny nebo oblíbená položka. OK otevře volby řady."
+
+msgctxt "#31980"
+msgid "Custom menu items"
+msgstr "Vlastní položky nabídky"
+
+msgctxt "#31981"
+msgid "Menu item 1"
+msgstr "Položka nabídky 1"
+
+msgctxt "#31982"
+msgid "Menu item 2"
+msgstr "Položka nabídky 2"
+
+msgctxt "#31983"
+msgid "Menu item 3"
+msgstr "Položka nabídky 3"
+
+msgctxt "#31984"
+msgid "Put up to three add-ons, favourites or library folders on the main menu, after the skin's own items. An item shows only while its add-on is installed.[CR][CR]OK opens the item's options: choose what it opens, rename it or clear it."
+msgstr "Dejte do hlavní nabídky až tři doplňky, oblíbené položky nebo složky knihovny, za vlastní položky vzhledu. Položka se ukáže jen, dokud je její doplněk nainstalován.[CR][CR]OK otevře volby položky: vyberte, co otevírá, přejmenujte ji nebo vymažte."
+
+msgctxt "#31985"
+msgid "Add-on · favourite · library · folder"
+msgstr "Doplněk · oblíbené · knihovna · složka"
+
+msgctxt "#31986"
+msgid "Opens"
+msgstr "Otevírá"
+
+msgctxt "#31987"
+msgid "Menu item"
+msgstr "Položka nabídky"
+
+msgctxt "#31988"
+msgid "add-on not installed"
+msgstr "doplněk není nainstalován"
+
+msgctxt "#31989"
+msgid "Add-on"
+msgstr "Doplněk"
+
+msgctxt "#31990"
+msgid "Playlist"
+msgstr "Seznam skladeb"
+
+msgctxt "#31991"
+msgid "Library"
+msgstr "Knihovna"
+
+msgctxt "#31992"
+msgid "Folder"
+msgstr "Složka"
+
+msgctxt "#31993"
+msgid "Shortcut"
+msgstr "Zástupce"
+
+msgctxt "#31994"
+msgid "Your own items on the main menu: an add-on, a favourite, a library node or a folder. OK opens the item's options."
+msgstr "Vaše vlastní položky v hlavní nabídce: doplněk, oblíbená položka, uzel knihovny nebo složka. OK otevře volby položky."
+
+msgctxt "#31995"
+msgid "OK to open"
+msgstr "OK pro otevření"
+
+msgctxt "#31540"
+msgid "View settings"
+msgstr "Nastavení zobrazení"
+
+msgctxt "#31541"
+msgid "Ratings"
+msgstr "Hodnocení"
+
+msgctxt "#31542"
+msgid "Media info"
+msgstr "Info o médiu"
+
+msgctxt "#31543"
+msgid "Backdrop"
+msgstr "Pozadí"
+
+msgctxt "#31544"
+msgid "Reset"
+msgstr "Obnovit výchozí"
+
+msgctxt "#31545"
+msgid "Global settings"
+msgstr "Globální nastavení"
+
+msgctxt "#31546"
+msgid "Default"
+msgstr "Výchozí"
+
+msgctxt "#31547"
+msgid "On"
+msgstr "Zapnuto"
+
+msgctxt "#31548"
+msgid "Off"
+msgstr "Vypnuto"
+
+msgctxt "#31549"
+msgid "Neutral"
+msgstr "Neutrální"
+
+msgctxt "#31550"
+msgid "Fanart"
+msgstr "Fanart"
+
+msgctxt "#31551"
+msgid "Colors"
+msgstr "Barvy"
+
+msgctxt "#31000"
+msgid "Kodi"
+msgstr "Kodi"
+
+msgctxt "#31001"
+msgid "ULTRA HD"
+msgstr "ULTRA HD"
+
+msgctxt "#31002"
+msgid "The pages that Up opens above this home menu item. Pick one, then use the buttons on the right."
+msgstr "Stránky, které Nahoru otevře nad touto položkou hlavní nabídky. Vyberte jednu a pak použijte tlačítka vpravo."
+
+msgctxt "#31003"
+msgid "+  Add item"
+msgstr "+  Přidat položku"
+
+msgctxt "#31004"
+msgid "Rename"
+msgstr "Přejmenovat"
+
+msgctxt "#31005"
+msgid "Select source"
+msgstr "Vybrat zdroj"
+
+msgctxt "#31006"
+msgid "Sort by"
+msgstr "Řadit podle"
+
+msgctxt "#31007"
+msgid "Reverse order"
+msgstr "Obrácené pořadí"
+
+msgctxt "#31008"
+msgid "Items in list"
+msgstr "Položek v seznamu"
+
+msgctxt "#31009"
+msgid "Seconds per item"
+msgstr "Sekund na položku"
+
+msgctxt "#31023"
+msgid "Autoscroll on / off"
+msgstr "Automatické posouvání"
+
+msgctxt "#31026"
+msgid "Hide / show"
+msgstr "Skrýt / zobrazit"
+
+msgctxt "#31027"
+msgid "Move up"
+msgstr "Posunout nahoru"
+
+msgctxt "#31028"
+msgid "Move down"
+msgstr "Posunout dolů"
+
+msgctxt "#31029"
+msgid "Add list..."
+msgstr "Přidat seznam..."
+
+msgctxt "#31031"
+msgid "Add folder items..."
+msgstr "Přidat položky složky..."
+
+msgctxt "#31032"
+msgid "Restore defaults"
+msgstr "Obnovit výchozí"
+
+msgctxt "#31033"
+msgid "The categories and rows shown under this home menu item (for Power: its actions)."
+msgstr "Kategorie a řady pod touto položkou hlavní nabídky (u Napájení: její akce)."
+
+msgctxt "#31034"
+msgid "Items in row"
+msgstr "Položek v řadě"
+
+msgctxt "#31035"
+msgid "Artwork type"
+msgstr "Typ obrázku"
+
+msgctxt "#31036"
+msgid "The full-screen widget pages that Up opens above this item: on or off, autoscroll, and the defaults for every list in them."
+msgstr "Celoobrazovkové stránky widgetů, které Nahoru otevře nad touto položkou: zapnuto nebo vypnuto, automatické posouvání a výchozí hodnoty každého seznamu."
+
+msgctxt "#31037"
+msgid "Widget (Up key after Spotlight)"
+msgstr "Widget (klávesa Nahoru po Spotlightu)"
+
+msgctxt "#31038"
+msgid "Autoscroll"
+msgstr "Automatické posouvání"
+
+msgctxt "#31039"
+msgid "Items per list"
+msgstr "Položek na seznam"
+
+msgctxt "#31049"
+msgid "The big Netflix-style spotlight above this item on Home: a rotating list of titles with fanart, logo, details and Play."
+msgstr "Velký Spotlight ve stylu Netflixu nad touto položkou Domů: střídající se seznam titulů s fanartem, logem, podrobnostmi a Přehrát."
+
+msgctxt "#31067"
+msgid "Label"
+msgstr "Popisek"
+
+msgctxt "#31068"
+msgid "Path"
+msgstr "Cesta"
+
+msgctxt "#31069"
+msgid "Items"
+msgstr "Položky"
+
+msgctxt "#31073"
+msgid "Widget screen options"
+msgstr "Volby obrazovek widgetů"
+
+msgctxt "#31074"
+msgid "Library background (Aeon)"
+msgstr "Pozadí knihovny (Aeon)"
+
+msgctxt "#31078"
+msgid "Choose a view"
+msgstr "Vyberte zobrazení"
+
+msgctxt "#31079"
+msgid "Left / Right to look, OK to switch"
+msgstr "Vlevo / Vpravo prohlížet, OK přepnout"
+
+msgctxt "#31083"
+msgid "Fanart list"
+msgstr "Seznam fanartů"
+
+msgctxt "#31084"
+msgid "Rows with A-Z keys"
+msgstr "Řádky s klávesami A-Z"
+
+msgctxt "#31088"
+msgid "Artist wall"
+msgstr "Stěna umělců"
+
+msgctxt "#31089"
+msgid "Cover grid"
+msgstr "Mřížka obalů"
+
+msgctxt "#31090"
+msgid "Album wall"
+msgstr "Stěna alb"
+
+msgctxt "#31091"
+msgid "Song wall"
+msgstr "Stěna skladeb"
+
+msgctxt "#31092"
+msgid "Artist showcase"
+msgstr "Výloha umělců"
+
+msgctxt "#31093"
+msgid "Big covers in a row"
+msgstr "Velké obaly v řadě"
+
+msgctxt "#31094"
+msgid "Album showcase"
+msgstr "Výloha alb"
+
+msgctxt "#31095"
+msgid "Song showcase"
+msgstr "Výloha skladeb"
+
+msgctxt "#31096"
+msgid "Artist rows"
+msgstr "Řady umělců"
+
+msgctxt "#31097"
+msgid "Rows with covers"
+msgstr "Řady s obaly"
+
+msgctxt "#31098"
+msgid "Album list"
+msgstr "Seznam alb"
+
+msgctxt "#31099"
+msgid "Song list"
+msgstr "Seznam skladeb"
+
+msgctxt "#31108"
+msgid "Compact song rows"
+msgstr "Kompaktní řady skladeb"
+
+msgctxt "#31109"
+msgid "Fanart wall"
+msgstr "Stěna fanartů"
+
+msgctxt "#31115"
+msgid "Portrait grid"
+msgstr "Svislá mřížka"
+
+msgctxt "#31116"
+msgid "Fanart and A-Z keys"
+msgstr "Fanart a klávesy A-Z"
+
+msgctxt "#31117"
+msgid "Show posters"
+msgstr "Zobrazit plakáty"
+
+msgctxt "#31118"
+msgid "Posters"
+msgstr "Plakáty"
+
+msgctxt "#31119"
+msgid "Season posters"
+msgstr "Plakáty sérií"
+
+msgctxt "#31130"
+msgid "Poster wall"
+msgstr "Stěna plakátů"
+
+msgctxt "#31131"
+msgid "Episode wall"
+msgstr "Stěna epizod"
+
+msgctxt "#31132"
+msgid "Landscape artwork"
+msgstr "Vodorovné obrázky"
+
+msgctxt "#31133"
+msgid "Landscape wall"
+msgstr "Vodorovná stěna"
+
+msgctxt "#31134"
+msgid "Square wall"
+msgstr "Čtvercová stěna"
+
+msgctxt "#31135"
+msgid "Square tiles"
+msgstr "Čtvercové dlaždice"
+
+msgctxt "#31136"
+msgid "Cards"
+msgstr "Karty"
+
+msgctxt "#31137"
+msgid "Artwork with details"
+msgstr "Obrázky s podrobnostmi"
+
+msgctxt "#31138"
+msgid "Showcase"
+msgstr "Výloha"
+
+msgctxt "#31139"
+msgid "One big poster"
+msgstr "Jeden velký plakát"
+
+msgctxt "#31140"
+msgid "Banner list"
+msgstr "Seznam bannerů"
+
+msgctxt "#31141"
+msgid "Wide banner rows"
+msgstr "Široké řady bannerů"
+
+msgctxt "#31142"
+msgid "Compact list"
+msgstr "Kompaktní seznam"
+
+msgctxt "#31143"
+msgid "Dense rows with poster"
+msgstr "Husté řady s plakátem"
+
+msgctxt "#31144"
+msgid "Episode list"
+msgstr "Seznam epizod"
+
+msgctxt "#31145"
+msgid "Rows with thumbs"
+msgstr "Řady s náhledy"
+
+msgctxt "#31146"
+msgid "Season list combined 3"
+msgstr "Seznam sérií s díly 3"
+
+msgctxt "#31147"
+msgid "Rows with posters"
+msgstr "Řady s plakáty"
+
+msgctxt "#31148"
+msgid "Low list"
+msgstr "Nízký seznam"
+
+msgctxt "#31149"
+msgid "Rows over fanart"
+msgstr "Řady přes fanart"
+
+msgctxt "#31150"
+msgid "Version"
+msgstr "Verze"
+
+msgctxt "#31151"
+msgid "Type"
+msgstr "Typ"
+
+msgctxt "#31152"
+msgid "Installed"
+msgstr "Nainstalováno"
+
+msgctxt "#31153"
+msgid "Updated"
+msgstr "Aktualizováno"
+
+msgctxt "#31154"
+msgid "Channel"
+msgstr "Kanál"
+
+msgctxt "#31155"
+msgid "Other"
+msgstr "Ostatní"
+
+msgctxt "#31156"
+msgid "Jump to now"
+msgstr "Přejít na teď"
+
+msgctxt "#31157"
+msgid "Choose channel"
+msgstr "Vybrat kanál"
+
+msgctxt "#31158"
+msgid "Choose channel group"
+msgstr "Vybrat skupinu kanálů"
+
+msgctxt "#31159"
+msgid "Choose date"
+msgstr "Vybrat datum"
+
+msgctxt "#31160"
+msgid "Recordings"
+msgstr "Nahrávky"
+
+msgctxt "#31161"
+msgid "Timers"
+msgstr "Časovače"
+
+msgctxt "#31162"
+msgid "Timer rules"
+msgstr "Pravidla časovačů"
+
+msgctxt "#31163"
+msgid "Search guide"
+msgstr "Hledat v průvodci"
+
+msgctxt "#31164"
+msgid "Return to guide"
+msgstr "Zpět do průvodce"
+
+msgctxt "#31165"
+msgid "Exit guide"
+msgstr "Opustit průvodce"
+
+msgctxt "#31166"
+msgid "Band"
+msgstr "Kapela"
+
+msgctxt "#31167"
+msgid "Artist"
+msgstr "Umělec"
+
+msgctxt "#31168"
+msgid "Title"
+msgstr "Název"
+
+msgctxt "#31169"
+msgid "Composer"
+msgstr "Skladatel"
+
+msgctxt "#31170"
+msgid "Conductor"
+msgstr "Dirigent"
+
+msgctxt "#31171"
+msgid "Album"
+msgstr "Album"
+
+msgctxt "#31172"
+msgid "Comment"
+msgstr "Komentář"
+
+msgctxt "#31173"
+msgid "Studio  ·  hotline"
+msgstr "Studio  ·  horká linka"
+
+msgctxt "#31174"
+msgid "Studio phone"
+msgstr "Telefon studia"
+
+msgctxt "#31175"
+msgid "Studio email"
+msgstr "E-mail studia"
+
+msgctxt "#31176"
+msgid "Studio SMS"
+msgstr "SMS do studia"
+
+msgctxt "#31177"
+msgid "Hotline phone"
+msgstr "Telefon horké linky"
+
+msgctxt "#31178"
+msgid "Hotline email"
+msgstr "E-mail horké linky"
+
+msgctxt "#31179"
+msgid "Programme"
+msgstr "Pořad"
+
+msgctxt "#31180"
+msgid "Style"
+msgstr "Styl"
+
+msgctxt "#31181"
+msgid "Station"
+msgstr "Stanice"
+
+msgctxt "#31182"
+msgid "Host"
+msgstr "Moderátor"
+
+msgctxt "#31183"
+msgid "Editorial"
+msgstr "Redakce"
+
+msgctxt "#31184"
+msgid "Website"
+msgstr "Web"
+
+msgctxt "#31185"
+msgid "Radiotext"
+msgstr "Radiotext"
+
+msgctxt "#31186"
+msgid "ENDS"
+msgstr "KONEC"
+
+msgctxt "#31187"
+msgid "Search manually…"
+msgstr "Hledat ručně…"
+
+msgctxt "#31189"
+msgid "TRUEHD  7.1"
+msgstr "TRUEHD  7.1"
+
+msgctxt "#31190"
+msgid "Some stories never end."
+msgstr "Některé příběhy nikdy nekončí."
+
+msgctxt "#31191"
+msgid "A retired detective is pulled back into a case he thought was closed, and the closer he looks the less of it makes sense."
+msgstr "Detektiv ve výslužbě je vtažen zpět do případu, který považoval za uzavřený, a čím blíž se dívá, tím méně dává smysl."
+
+msgctxt "#31194"
+msgid "Trakt 78"
+msgstr "Trakt 78"
+
+msgctxt "#31195"
+msgid "Controls stay hidden when you pause."
+msgstr "Ovládání zůstane při pozastavení skryté."
+
+msgctxt "#31196"
+msgid "Controls open 1 second after you pause."
+msgstr "Ovládání se otevře 1 sekundu po pozastavení."
+
+msgctxt "#31197"
+msgid "Controls open 3 seconds after you pause."
+msgstr "Ovládání se otevře 3 sekundy po pozastavení."
+
+msgctxt "#31198"
+msgid "Controls open 5 seconds after you pause."
+msgstr "Ovládání se otevře 5 sekund po pozastavení."
+
+msgctxt "#31199"
+msgid "Controls open 2 seconds after you pause."
+msgstr "Ovládání se otevře 2 sekundy po pozastavení."
+
+msgctxt "#31278"
+msgid "Play"
+msgstr "Přehrát"
+
+msgctxt "#31279"
+msgid "More information"
+msgstr "Další informace"
+
+msgctxt "#31295"
+msgid "NOW ON TV"
+msgstr "PRÁVĚ V TV"
+
+msgctxt "#31296"
+msgid "PRESS UP FOR THE FULL GUIDE"
+msgstr "STISKNĚTE NAHORU PRO CELÝ PRŮVODCE"
+
+msgctxt "#31297"
+msgid "NO LYRICS FOR THIS SONG"
+msgstr "K TÉTO SKLADBĚ NEJSOU TEXTY"
+
+msgctxt "#31298"
+msgid "Artists"
+msgstr "Umělci"
+
+msgctxt "#31299"
+msgid "Albums"
+msgstr "Alba"
+
+msgctxt "#31343"
+msgid "Songs"
+msgstr "Skladby"
+
+msgctxt "#31344"
+msgid "Genres"
+msgstr "Žánry"
+
+msgctxt "#31345"
+msgid "Menu: view, sort"
+msgstr "Nabídka: zobrazení, řazení"
+
+msgctxt "#31346"
+msgid "MUSIC LIBRARY"
+msgstr "HUDEBNÍ KNIHOVNA"
+
+msgctxt "#31347"
+msgid "SUBTITLES"
+msgstr "TITULKY"
+
+msgctxt "#31348"
+msgid "AUDIO"
+msgstr "ZVUK"
+
+msgctxt "#31349"
+msgid "VIDEO"
+msgstr "VIDEO"
+
+msgctxt "#31350"
+msgid "CHAPTERS"
+msgstr "KAPITOLY"
+
+msgctxt "#31351"
+msgid "INFO"
+msgstr "INFO"
+
+msgctxt "#31352"
+msgid "STATS"
+msgstr "STATISTIKY"
+
+msgctxt "#31353"
+msgid "TV SHOWS"
+msgstr "SERIÁLY"
+
+msgctxt "#31354"
+msgid "MOVIES"
+msgstr "FILMY"
+
+msgctxt "#31355"
+msgid "BUFFERING"
+msgstr "NAČÍTÁNÍ"
+
+msgctxt "#31356"
+msgid "PAUSED"
+msgstr "POZASTAVENO"
+
+msgctxt "#31357"
+msgid "ADDED"
+msgstr "PŘIDÁNO"
+
+msgctxt "#31358"
+msgid "Custom path"
+msgstr "Vlastní cesta"
+
+msgctxt "#31359"
+msgid "Recently added"
+msgstr "Nedávno přidané"
+
+msgctxt "#31360"
+msgid "Recently watched"
+msgstr "Nedávno zhlédnuté"
+
+msgctxt "#31361"
+msgid "In progress"
+msgstr "Rozkoukané"
+
+msgctxt "#31362"
+msgid "Top rated"
+msgstr "Nejlépe hodnocené"
+
+msgctxt "#31363"
+msgid "All movies"
+msgstr "Všechny filmy"
+
+msgctxt "#31364"
+msgid "Unwatched shows"
+msgstr "Nezhlédnuté seriály"
+
+msgctxt "#31365"
+msgid "Random shows"
+msgstr "Náhodné seriály"
+
+msgctxt "#31366"
+msgid "Top rated shows"
+msgstr "Nejlépe hodnocené seriály"
+
+msgctxt "#31367"
+msgid "All shows"
+msgstr "Všechny seriály"
+
+msgctxt "#31368"
+msgid "Recently played"
+msgstr "Nedávno přehrané"
+
+msgctxt "#31369"
+msgid "Random albums"
+msgstr "Náhodná alba"
+
+msgctxt "#31370"
+msgid "Shut down"
+msgstr "Vypnout"
+
+msgctxt "#31371"
+msgid "Reboot to Android"
+msgstr "Restartovat do Androidu"
+
+msgctxt "#31372"
+msgid "Quit Kodi"
+msgstr "Ukončit Kodi"
+
+msgctxt "#31373"
+msgid "Update video library"
+msgstr "Aktualizovat videoknihovnu"
+
+msgctxt "#31374"
+msgid "Update music library"
+msgstr "Aktualizovat hudební knihovnu"
+
+msgctxt "#31375"
+msgid "Clean video library"
+msgstr "Vyčistit videoknihovnu"
+
+msgctxt "#31376"
+msgid "Clean music library"
+msgstr "Vyčistit hudební knihovnu"
+
+msgctxt "#31377"
+msgid "Power menu"
+msgstr "Nabídka napájení"
+
+msgctxt "#31378"
+msgid "TV shows"
+msgstr "Seriály"
+
+msgctxt "#31379"
+msgid "MUSIC"
+msgstr "HUDBA"
+
+msgctxt "#31380"
+msgid "LISTEN"
+msgstr "POSLOUCHAT"
+
+msgctxt "#31381"
+msgid "WATCH"
+msgstr "SLEDOVAT"
+
+msgctxt "#31382"
+msgid "Latest added"
+msgstr "Naposledy přidané"
+
+msgctxt "#31383"
+msgid "Last played"
+msgstr "Naposledy přehrané"
+
+msgctxt "#31384"
+msgid "Movies, TV shows, Music or Power"
+msgstr "Filmy, Seriály, Hudba nebo Napájení"
+
+msgctxt "#31385"
+msgid "Position 1 is the first page you reach with Up"
+msgstr "Pozice 1 je první stránka, na kterou se dostanete klávesou Nahoru"
+
+msgctxt "#31386"
+msgid "What this position shows. Off hides it"
+msgstr "Co tato pozice ukazuje. Vypnuto ji skryje"
+
+msgctxt "#31387"
+msgid "OK types a name, Left clears it"
+msgstr "OK napíše název, Vlevo ho vymaže"
+
+msgctxt "#31388"
+msgid "Used when Category = Custom path (a library path, playlist or add-on folder)"
+msgstr "Použije se, když Kategorie = Vlastní cesta (cesta knihovny, seznam skladeb nebo složka doplňku)"
+
+msgctxt "#31389"
+msgid "How many items the page cycles through (default 15)"
+msgstr "Kolik položek stránka prochází (výchozí 15)"
+
+msgctxt "#31390"
+msgid "Order of the items on this page"
+msgstr "Pořadí položek na této stránce"
+
+msgctxt "#31391"
+msgid "Flip the sort order"
+msgstr "Obrátit řazení"
+
+msgctxt "#31392"
+msgid "Step through the items by itself"
+msgstr "Procházet položky samo"
+
+msgctxt "#31393"
+msgid "Seconds each item stays (default 10)"
+msgstr "Sekund na položku (výchozí 10)"
+
+msgctxt "#31394"
+msgid "SERIES PREMIERE"
+msgstr "PREMIÉRA SERIÁLU"
+
+msgctxt "#31395"
+msgid "SEASON PREMIERE"
+msgstr "PREMIÉRA SÉRIE"
+
+msgctxt "#31396"
+msgid "SERIES FINALE"
+msgstr "FINÁLE SERIÁLU"
+
+msgctxt "#31397"
+msgid "SEASON FINALE"
+msgstr "FINÁLE SÉRIE"
+
+msgctxt "#31398"
+msgid "Movie sets"
+msgstr "Filmové kolekce"
+
+msgctxt "#31399"
+msgid "Autoscroll off"
+msgstr "Automatické posouvání vyp."
+
+msgctxt "#31400"
+msgid "Random movies"
+msgstr "Náhodné filmy"
+
+msgctxt "#31401"
+msgid "Recently added movies"
+msgstr "Nedávno přidané filmy"
+
+msgctxt "#31402"
+msgid "Recently played movies"
+msgstr "Nedávno přehrané filmy"
+
+msgctxt "#31403"
+msgid "Top rated movies"
+msgstr "Nejlépe hodnocené filmy"
+
+msgctxt "#31404"
+msgid "Most played movies"
+msgstr "Nejpřehrávanější filmy"
+
+msgctxt "#31405"
+msgid "Newest movies"
+msgstr "Nejnovější filmy"
+
+msgctxt "#31406"
+msgid "Title movies"
+msgstr "Filmy podle názvu"
+
+msgctxt "#31407"
+msgid "Recently added shows"
+msgstr "Nedávno přidané seriály"
+
+msgctxt "#31408"
+msgid "Recently played shows"
+msgstr "Nedávno přehrané seriály"
+
+msgctxt "#31409"
+msgid "Most played shows"
+msgstr "Nejpřehrávanější seriály"
+
+msgctxt "#31410"
+msgid "Newest shows"
+msgstr "Nejnovější seriály"
+
+msgctxt "#31411"
+msgid "Title shows"
+msgstr "Seriály podle názvu"
+
+msgctxt "#31412"
+msgid "Recently added albums"
+msgstr "Nedávno přidaná alba"
+
+msgctxt "#31413"
+msgid "Recently played albums"
+msgstr "Nedávno přehraná alba"
+
+msgctxt "#31414"
+msgid "Top rated albums"
+msgstr "Nejlépe hodnocená alba"
+
+msgctxt "#31415"
+msgid "Most played albums"
+msgstr "Nejpřehrávanější alba"
+
+msgctxt "#31416"
+msgid "Newest albums"
+msgstr "Nejnovější alba"
+
+msgctxt "#31417"
+msgid "Title albums"
+msgstr "Alba podle názvu"
+
+msgctxt "#31418"
+msgid "FULL HD"
+msgstr "FULL HD"
+
+msgctxt "#31419"
+msgid "DOLBY VISION"
+msgstr "DOLBY VISION"
+
+msgctxt "#31420"
+msgid "TRUEHD ATMOS"
+msgstr "TRUEHD ATMOS"
+
+msgctxt "#31421"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31422"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31423"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31424"
+msgid "TRUEHD"
+msgstr "TRUEHD"
+
+msgctxt "#31425"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31426"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31427"
+msgid "FLAC"
+msgstr "FLAC"
+
+msgctxt "#31428"
+msgid "ALAC"
+msgstr "ALAC"
+
+msgctxt "#31429"
+msgid "OPUS"
+msgstr "OPUS"
+
+msgctxt "#31430"
+msgid "VORBIS"
+msgstr "VORBIS"
+
+msgctxt "#31431"
+msgid "RATED NC-17"
+msgstr "PŘÍSTUPNOST NC-17"
+
+msgctxt "#31432"
+msgid "RATED PG-13"
+msgstr "PŘÍSTUPNOST PG-13"
+
+msgctxt "#31433"
+msgid "RATED PG"
+msgstr "PŘÍSTUPNOST PG"
+
+msgctxt "#31434"
+msgid "RATED R"
+msgstr "PŘÍSTUPNOST R"
+
+msgctxt "#31435"
+msgid "RATED G"
+msgstr "PŘÍSTUPNOST G"
+
+msgctxt "#31436"
+msgid "RATED TV-MA"
+msgstr "PŘÍSTUPNOST TV-MA"
+
+msgctxt "#31437"
+msgid "RATED TV-14"
+msgstr "PŘÍSTUPNOST TV-14"
+
+msgctxt "#31438"
+msgid "RATED TV-PG"
+msgstr "PŘÍSTUPNOST TV-PG"
+
+msgctxt "#31439"
+msgid "RATED TV-Y7"
+msgstr "PŘÍSTUPNOST TV-Y7"
+
+msgctxt "#31440"
+msgid "RATED TV-Y"
+msgstr "PŘÍSTUPNOST TV-Y"
+
+msgctxt "#31441"
+msgid "RATED TV-G"
+msgstr "PŘÍSTUPNOST TV-G"
+
+msgctxt "#31442"
+msgid "ULTRA"
+msgstr "ULTRA"
+
+msgctxt "#31443"
+msgid "FULL"
+msgstr "FULL"
+
+msgctxt "#31444"
+msgid "READY"
+msgstr "READY"
+
+msgctxt "#31445"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31446"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31447"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31448"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31449"
+msgid "MEDIA"
+msgstr "MÉDIA"
+
+msgctxt "#31450"
+msgid "RATING"
+msgstr "HODNOCENÍ"
+
+msgctxt "#31451"
+msgid "CERTIFICATION"
+msgstr "PŘÍSTUPNOST"
+
+msgctxt "#31452"
+msgid "CREDITS"
+msgstr "TVŮRCI"
+
+msgctxt "#31453"
+msgid "FIRST AIRED"
+msgstr "PRVNÍ VYSÍLÁNÍ"
+
+msgctxt "#31454"
+msgid "STUDIO"
+msgstr "STUDIO"
+
+msgctxt "#31455"
+msgid "GENRE"
+msgstr "ŽÁNR"
+
+msgctxt "#31456"
+msgid "CAST"
+msgstr "OBSAZENÍ"
+
+msgctxt "#31457"
+msgid "HD READY"
+msgstr "HD READY"
+
+msgctxt "#31458"
+msgid "BOXED SET"
+msgstr "KOLEKCE"
+
+msgctxt "#31459"
+msgid "* ALL SEASONS"
+msgstr "* VŠECHNY SÉRIE"
+
+msgctxt "#31460"
+msgid "For now"
+msgstr "Teď"
+
+msgctxt "#31461"
+msgid "Kept all day"
+msgstr "Drží se celý den"
+
+msgctxt "#31462"
+msgid "Past midnight"
+msgstr "Po půlnoci"
+
+msgctxt "#31463"
+msgid "Still up?"
+msgstr "Ještě vzhůru?"
+
+msgctxt "#31464"
+msgid "Nearly bedtime."
+msgstr "Brzy čas jít spát."
+
+msgctxt "#31465"
+msgid "Good evening."
+msgstr "Dobrý večer."
+
+msgctxt "#31466"
+msgid "Good afternoon."
+msgstr "Dobré odpoledne."
+
+msgctxt "#31467"
+msgid "Good morning."
+msgstr "Dobré ráno."
+
+msgctxt "#31468"
+msgid "Short ones: under 100 minutes"
+msgstr "Krátké: pod 100 minut"
+
+msgctxt "#31469"
+msgid "The evening is yours"
+msgstr "Večer patří vám"
+
+msgctxt "#31470"
+msgid "A free afternoon: something long"
+msgstr "Volné odpoledne: něco dlouhého"
+
+msgctxt "#31471"
+msgid "Plenty of aeon left"
+msgstr "Času je ještě dost"
+
+msgctxt "#31472"
+msgid "Sunday morning: take it slow"
+msgstr "Nedělní ráno: v klidu"
+
+msgctxt "#31473"
+msgid "A slow start: something light"
+msgstr "Pomalý začátek: něco lehkého"
+
+msgctxt "#31474"
+msgid "Needs a weather add-on in Kodi's settings"
+msgstr "Vyžaduje doplněk počasí v nastavení Kodi"
+
+msgctxt "#31475"
+msgid "From the weather add-on set in Kodi"
+msgstr "Z doplňku počasí nastaveného v Kodi"
+
+msgctxt "#31476"
+msgid "Tropical storm"
+msgstr "Tropická bouře"
+
+msgctxt "#31477"
+msgid "Severe storms"
+msgstr "Silné bouřky"
+
+msgctxt "#31478"
+msgid "Rain and snow"
+msgstr "Déšť se sněhem"
+
+msgctxt "#31479"
+msgid "Rain and sleet"
+msgstr "Déšť a krupky"
+
+msgctxt "#31480"
+msgid "Snow and sleet"
+msgstr "Sníh a krupky"
+
+msgctxt "#31481"
+msgid "Freezing drizzle"
+msgstr "Mrznoucí mrholení"
+
+msgctxt "#31482"
+msgid "Freezing rain"
+msgstr "Mrznoucí déšť"
+
+msgctxt "#31483"
+msgid "Snow flurries"
+msgstr "Sněhové vločky"
+
+msgctxt "#31484"
+msgid "Light snow"
+msgstr "Slabé sněžení"
+
+msgctxt "#31485"
+msgid "Blowing snow"
+msgstr "Zvířený sníh"
+
+msgctxt "#31486"
+msgid "Mostly cloudy"
+msgstr "Převážně oblačno"
+
+msgctxt "#31487"
+msgid "Partly cloudy"
+msgstr "Polojasno"
+
+msgctxt "#31488"
+msgid "Rain and hail"
+msgstr "Déšť a kroupy"
+
+msgctxt "#31489"
+msgid "Isolated storms"
+msgstr "Ojedinělé bouřky"
+
+msgctxt "#31490"
+msgid "Scattered storms"
+msgstr "Místy bouřky"
+
+msgctxt "#31491"
+msgid "Scattered showers"
+msgstr "Místy přeháňky"
+
+msgctxt "#31492"
+msgid "Heavy snow"
+msgstr "Silné sněžení"
+
+msgctxt "#31493"
+msgid "Snow showers"
+msgstr "Sněhové přeháňky"
+
+msgctxt "#31494"
+msgid "More under 100 minutes"
+msgstr "Další pod 100 minut"
+
+msgctxt "#31495"
+msgid "Sunday morning: documentaries"
+msgstr "Nedělní ráno: dokumenty"
+
+msgctxt "#31496"
+msgid "Morning shorts: under 100 minutes"
+msgstr "Krátké na ráno: pod 100 minut"
+
+msgctxt "#31497"
+msgid "A long afternoon film"
+msgstr "Dlouhý odpolední film"
+
+msgctxt "#31498"
+msgid "Top rated, still unwatched"
+msgstr "Nejlépe hodnocené, ještě nezhlédnuté"
+
+msgctxt "#31499"
+msgid "Tonight's top rated"
+msgstr "Nejlépe hodnocené na dnešní večer"
+
+msgctxt "#31500"
+msgid "Before bed"
+msgstr "Před spaním"
+
+msgctxt "#31501"
+msgid "This morning"
+msgstr "Dnes ráno"
+
+msgctxt "#31502"
+msgid "This afternoon"
+msgstr "Dnes odpoledne"
+
+msgctxt "#31503"
+msgid "Later today"
+msgstr "Později dnes"
+
+msgctxt "#31504"
+msgid "One more episode"
+msgstr "Ještě jedna epizoda"
+
+msgctxt "#31505"
+msgid "Next up"
+msgstr "Následuje"
+
+msgctxt "#31506"
+msgid "It's snowing: something long"
+msgstr "Sněží: něco dlouhého"
+
+msgctxt "#31507"
+msgid "Still raining: under an hour"
+msgstr "Pořád prší: pod hodinu"
+
+msgctxt "#31508"
+msgid "It's raining: something long"
+msgstr "Prší: něco dlouhého"
+
+msgctxt "#31509"
+msgid "Just added"
+msgstr "Právě přidáno"
+
+msgctxt "#31510"
+msgid "Download subtitles"
+msgstr "Stáhnout titulky"
+
+msgctxt "#31511"
+msgid "Subtitle settings"
+msgstr "Nastavení titulků"
+
+msgctxt "#31512"
+msgid "What's new"
+msgstr "Co je nového"
+
+msgctxt "#31513"
+msgid "Nothing to suggest right now."
+msgstr "Teď není co doporučit."
+
+msgctxt "#31514"
+msgid "Clean library?"
+msgstr "Vyčistit knihovnu?"
+
+msgctxt "#31515"
+msgid "Music videos"
+msgstr "Hudební videa"
+
+msgctxt "#31516"
+msgid "Kodi takes out the songs, albums and artists it can no longer find. Your files stay where they are."
+msgstr "Kodi odebere skladby, alba a umělce, které už nenajde. Vaše soubory zůstanou, kde jsou."
+
+msgctxt "#31517"
+msgid "Kodi takes out the films, shows and episodes it can no longer find. Your files stay where they are."
+msgstr "Kodi odebere filmy, seriály a epizody, které už nenajde. Vaše soubory zůstanou, kde jsou."
+
+msgctxt "#31518"
+msgid "Add-on settings"
+msgstr "Nastavení doplňku"
+
+msgctxt "#31519"
+msgid "Get more"
+msgstr "Získat další"
+
+msgctxt "#31520"
+msgid "Slideshow"
+msgstr "Prezentace"
+
+msgctxt "#31521"
+msgid "Recursive slideshow"
+msgstr "Rekurzivní prezentace"
+
+msgctxt "#31522"
+msgid "Randomise"
+msgstr "Náhodně"
+
+msgctxt "#31523"
+msgid "Edited  locked"
+msgstr "Upraveno  uzamčeno"
+
+msgctxt "#31524"
+msgid "Shuffle  ·  Repeat one"
+msgstr "Náhodně  ·  Opakovat jednu"
+
+msgctxt "#31525"
+msgid "Shuffle  ·  Repeat all"
+msgstr "Náhodně  ·  Opakovat vše"
+
+msgctxt "#31526"
+msgid "Repeat one"
+msgstr "Opakovat jednu"
+
+msgctxt "#31527"
+msgid "Repeat all"
+msgstr "Opakovat vše"
+
+msgctxt "#31528"
+msgid "Video queue"
+msgstr "Fronta videí"
+
+msgctxt "#31529"
+msgid "Shuffle: on"
+msgstr "Náhodně: zap."
+
+msgctxt "#31530"
+msgid "Shuffle: off"
+msgstr "Náhodně: vyp."
+
+msgctxt "#31531"
+msgid "Play all"
+msgstr "Přehrát vše"
+
+msgctxt "#31532"
+msgid "Shuffle"
+msgstr "Náhodně"
+
+msgctxt "#31533"
+msgid "Refresh"
+msgstr "Obnovit"
+
+msgctxt "#31534"
+msgid "Added"
+msgstr "Přidáno"
+
+msgctxt "#31535"
+msgid "Plays"
+msgstr "Přehrání"
+
+msgctxt "#31536"
+msgid "Mood"
+msgstr "Nálada"
+
+msgctxt "#31537"
+msgid "Album info"
+msgstr "Info o albu"
+
+msgctxt "#31538"
+msgid "Artist info"
+msgstr "Info o umělci"
+
+msgctxt "#31539"
+msgid "About the artist"
+msgstr "O umělci"
+
+msgctxt "#31552"
+msgid "About the song"
+msgstr "O skladbě"
+
+msgctxt "#31553"
+msgid "About the album"
+msgstr "O albu"
+
+msgctxt "#31554"
+msgid "OK reads all of it"
+msgstr "OK přečte vše"
+
+msgctxt "#31555"
+msgid "Up returns to the buttons"
+msgstr "Nahoru vrací k tlačítkům"
+
+msgctxt "#31556"
+msgid "Right for the full story"
+msgstr "Vpravo pro celý příběh"
+
+msgctxt "#31557"
+msgid "Shuffle on"
+msgstr "Náhodně zapnuto"
+
+msgctxt "#31558"
+msgid "Music video"
+msgstr "Hudební video"
+
+msgctxt "#31559"
+msgid "HEVC"
+msgstr "HEVC"
+
+msgctxt "#31560"
+msgid "Dolby Vision"
+msgstr "Dolby Vision"
+
+msgctxt "#31561"
+msgid "TrueHD Atmos"
+msgstr "TrueHD Atmos"
+
+msgctxt "#31562"
+msgid "DD+ Atmos"
+msgstr "DD+ Atmos"
+
+msgctxt "#31563"
+msgid "Video"
+msgstr "Video"
+
+msgctxt "#31564"
+msgid "Chapters"
+msgstr "Kapitoly"
+
+msgctxt "#31565"
+msgid "Info"
+msgstr "Info"
+
+msgctxt "#31566"
+msgid "Stats"
+msgstr "Statistiky"
+
+msgctxt "#31567"
+msgid "Sleeping after this"
+msgstr "Po tomto usne"
+
+msgctxt "#31568"
+msgid "Sleep after this"
+msgstr "Po tomto uspat"
+
+msgctxt "#31569"
+msgid "1 RESULT"
+msgstr "1 VÝSLEDEK"
+
+msgctxt "#31575"
+msgid "Colors, backdrop and the look of the settings screens."
+msgstr "Barvy, pozadí a vzhled obrazovek nastavení."
+
+msgctxt "#31576"
+msgid "Show a dimmed copy of the last fanart you looked at behind the settings screens."
+msgstr "Zobrazit ztlumenou kopii posledního prohlíženého fanartu za obrazovkami nastavení."
+
+msgctxt "#31577"
+msgid "Background of the A-Z / scroll bar strip in the library views: dark (default) or white like Aeon 2."
+msgstr "Pozadí lišty A-Z / posuvníku v zobrazeních knihovny: tmavé (výchozí) nebo bílé jako v Aeon 2."
+
+msgctxt "#31578"
+msgid "Aeon style: neutral (flat dark), the faint fanart, or a color that follows the artwork and fades between titles. Override it per home menu item (Edit spotlight)."
+msgstr "Styl Aeon: neutrální (plochá tmavá), bledý fanart nebo barva, která sleduje obrázek a prolíná se mezi tituly. Lze změnit pro každou položku hlavní nabídky (Upravit Spotlight)."
+
+msgctxt "#31579"
+msgid "Aeon: flat dark panels and a white highlight bar (like the Aeon 2 list). Aeon Glass: translucent panels and a soft highlight. Applies to every library view."
+msgstr "Aeon: ploché tmavé panely a bílý pruh výběru (jako seznam Aeon 2). Aeon Glass: průsvitné panely a jemný výběr. Platí pro všechna zobrazení knihovny."
+
+msgctxt "#31580"
+msgid "Where the music that is playing shows on Home: Slot (lower left, default), Corner (top left), Line (above the menu) or Bar (bottom)."
+msgstr "Kde se na Domů ukazuje hrající hudba: Pozice (vlevo dole, výchozí), Roh (vlevo nahoře), Řádek (nad nabídkou) nebo Lišta (dole)."
+
+msgctxt "#31581"
+msgid "How visible the fanart backdrop is."
+msgstr "Jak viditelné je pozadí s fanartem."
+
+msgctxt "#31582"
+msgid "Tags, plot text and logos in the movie and episode views."
+msgstr "Štítky, děj a loga v zobrazeních filmů a epizod."
+
+msgctxt "#31583"
+msgid "Resolution and video codec in the tag line under a film or episode."
+msgstr "Rozlišení a videokodek v řádku štítků pod filmem nebo epizodou."
+
+msgctxt "#31584"
+msgid "Shows HDR10, HLG or Dolby Vision in the tag line when the file has it."
+msgstr "Ukáže HDR10, HLG nebo Dolby Vision v řádku štítků, když je soubor má."
+
+msgctxt "#31585"
+msgid "Audio codec and channel count in the tag line."
+msgstr "Zvukový kodek a počet kanálů v řádku štítků."
+
+msgctxt "#31586"
+msgid "What the text under a film shows: the full plot, or the tagline when the film has one."
+msgstr "Co ukazuje text pod filmem: celý děj, nebo slogan, pokud ho film má."
+
+msgctxt "#31587"
+msgid "Long plots scroll by themselves after a few seconds."
+msgstr "Dlouhé popisy děje se po pár sekundách samy posouvají."
+
+msgctxt "#31588"
+msgid "The studio logo beside seasons and episodes (needs the studio logos resource add-on)."
+msgstr "Logo studia vedle sérií a epizod (vyžaduje doplněk zdrojů s logy studií)."
+
+msgctxt "#31589"
+msgid "Which rating sources show, and whether the score is colored."
+msgstr "Které zdroje hodnocení se zobrazí a zda je skóre barevné."
+
+msgctxt "#31590"
+msgid "Green from 7, amber from 5, red below."
+msgstr "Zelená od 7, jantarová od 5, pod tím červená."
+
+msgctxt "#31591"
+msgid "Shows the IMDb score when the library has one. Several sources can be on at once."
+msgstr "Zobrazí hodnocení IMDb, když ho knihovna má. Zapnuto může být více zdrojů najednou."
+
+msgctxt "#31592"
+msgid "Shows the TMDb score when the library has one."
+msgstr "Zobrazí hodnocení TMDb, když ho knihovna má."
+
+msgctxt "#31593"
+msgid "Shows the Tomatometer when your scraper or TMDb Helper provides it."
+msgstr "Zobrazí Tomatometer, když ho dodá váš scraper nebo TMDb Helper."
+
+msgctxt "#31594"
+msgid "Shows the Trakt score when it is in the library."
+msgstr "Zobrazí hodnocení Trakt, když je v knihovně."
+
+msgctxt "#31595"
+msgid "Seek bar, pause behaviour and the Back button."
+msgstr "Posuvník, chování při pozastavení a tlačítko Zpět."
+
+msgctxt "#31596"
+msgid "What the right-hand time of the seek bar shows: the total length, the time left, or when it ends."
+msgstr "Co ukazuje pravý čas posuvníku: celkovou délku, zbývající čas nebo kdy skončí."
+
+msgctxt "#31597"
+msgid "The player controls open by themselves when you pause."
+msgstr "Ovládání přehrávače se při pozastavení otevře samo."
+
+msgctxt "#31598"
+msgid "How long after pausing the controls open."
+msgstr "Za jak dlouho po pozastavení se ovládání otevře."
+
+msgctxt "#31599"
+msgid "Back goes up one level, or straight to the home screen."
+msgstr "Zpět jde o úroveň výš, nebo rovnou na domovskou obrazovku."
+
+msgctxt "#31600"
+msgid "Extra fanart and the artist slideshow."
+msgstr "Další fanarty a prezentace umělce."
+
+msgctxt "#31601"
+msgid "Home and the library cycle through a film or show's extra fanart. Needs extra fanart in the library (fanart1, fanart2 ...)."
+msgstr "Domů a knihovna střídají další fanarty filmu nebo seriálu. Vyžaduje další fanarty v knihovně (fanart1, fanart2 ...)."
+
+msgctxt "#31602"
+msgid "How long each fanart image stays."
+msgstr "Jak dlouho zůstane každý obrázek fanartu."
+
+msgctxt "#31603"
+msgid "Now playing shows the Artist Slideshow add-on pictures of the artist (needs script.artistslideshow)."
+msgstr "Právě hraje ukazuje fotky umělce z doplňku Artist Slideshow (vyžaduje script.artistslideshow)."
+
+msgctxt "#31604"
+msgid "What the full-screen widget pages (Up on a home item) show."
+msgstr "Co ukazují celoobrazovkové stránky widgetů (Nahoru na položce Domů)."
+
+msgctxt "#31605"
+msgid "Resolution, codec, HDR and audio tags on the full-screen widget pages (the choices under Details apply)."
+msgstr "Štítky rozlišení, kodeku, HDR a zvuku na celoobrazovkových stránkách widgetů (platí volby v Podrobnostech)."
+
+msgctxt "#31606"
+msgid "The rating line, with the sources you chose under Ratings, on the full-screen widget pages."
+msgstr "Řádek hodnocení se zdroji vybranými v Hodnocení na celoobrazovkových stránkách widgetů."
+
+msgctxt "#31607"
+msgid "The studio logo, or the network logo for episodes, on the full-screen widget pages (needs the studio logos add-on)."
+msgstr "Logo studia, u epizod logo stanice, na celoobrazovkových stránkách widgetů (vyžaduje doplněk s logy studií)."
+
+msgctxt "#31608"
+msgid "Watched markers on posters, the trailer button and logos instead of titles."
+msgstr "Značky zhlédnutí na plakátech, tlačítko traileru a loga místo názvů."
+
+msgctxt "#31609"
+msgid "How the playback controls behave."
+msgstr "Jak se chová ovládání přehrávání."
+
+msgctxt "#31610"
+msgid "Fonts for each part of the skin, calmer animations, and a way back to the default settings."
+msgstr "Písma pro každou část vzhledu, klidnější animace a cesta zpět k výchozímu nastavení."
+
+msgctxt "#31611"
+msgid "Unwatched: a small dot. Watched: a check disc. Shows add the number of unwatched episodes."
+msgstr "Nezhlédnuté: malá tečka. Zhlédnuté: zaškrtnutí. Seriály přidají počet nezhlédnutých epizod."
+
+msgctxt "#31612"
+msgid "Shows a Trailer button next to Play when a film has a trailer link (played through the YouTube add-on)."
+msgstr "Zobrazí tlačítko Trailer vedle Přehrát, když má film odkaz na trailer (přehrává se přes doplněk YouTube)."
+
+msgctxt "#31613"
+msgid "How long the playback controls stay up after your last button press. They stay while paused and while a menu is open."
+msgstr "Jak dlouho ovládání zůstane po posledním stisku. Zůstává při pozastavení a s otevřenou nabídkou."
+
+msgctxt "#31614"
+msgid "Where the subtitle and audio offset strip appears while you sync. Top keeps bottom subtitles in view."
+msgstr "Kde se při synchronizaci objeví pruh posunu titulků a zvuku. Nahoře nechá viditelné titulky dole."
+
+msgctxt "#31615"
+msgid "Replaces zooms, slides and the rain with short fades. Focus changes stay instant."
+msgstr "Nahradí přiblížení, posuny a déšť krátkými prolínačkami. Změny výběru zůstanou okamžité."
+
+msgctxt "#31616"
+msgid "Puts every skin setting back to its default and reloads the skin. Press OK twice to confirm."
+msgstr "Vrátí každé nastavení vzhledu na výchozí a znovu načte vzhled. Pro potvrzení dvakrát stiskněte OK."
+
+msgctxt "#31617"
+msgid "Aeon Fuse options. Kodi's settings live under Settings; switch skins in Settings > Interface > Skin."
+msgstr "Volby Aeon Fuse. Nastavení Kodi jsou v Nastavení; vzhled změníte v Nastavení > Rozhraní > Vzhled."
+
+msgctxt "#31618"
+msgid "Resume"
+msgstr "Pokračovat"
+
+msgctxt "#31619"
+msgid "From start"
+msgstr "Od začátku"
+
+msgctxt "#31620"
+msgid "Browse"
+msgstr "Procházet"
+
+msgctxt "#31621"
+msgid "Trailer"
+msgstr "Trailer"
+
+msgctxt "#31622"
+msgid "Collection"
+msgstr "Kolekce"
+
+msgctxt "#31623"
+msgid "More by the director"
+msgstr "Další od režiséra"
+
+msgctxt "#31624"
+msgid "Versions"
+msgstr "Verze"
+
+msgctxt "#31625"
+msgid "Extras"
+msgstr "Bonusy"
+
+msgctxt "#31626"
+msgid "Choose art"
+msgstr "Vybrat obrázek"
+
+msgctxt "#31627"
+msgid "Choose fanart"
+msgstr "Vybrat fanart"
+
+msgctxt "#31628"
+msgid "Films in this collection"
+msgstr "Filmy v této kolekci"
+
+msgctxt "#31629"
+msgid "OK reads the whole story"
+msgstr "OK přečte celý děj"
+
+msgctxt "#31630"
+msgid "Up or Back returns to the buttons"
+msgstr "Nahoru nebo Zpět se vrátí k tlačítkům"
+
+msgctxt "#31631"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31632"
+msgid "No story written for this one yet."
+msgstr "Pro tento titul zatím není děj."
+
+msgctxt "#31633"
+msgid "Shows in progress"
+msgstr "Rozkoukané seriály"
+
+msgctxt "#31635"
+msgid "A collection: OK opens its films."
+msgstr "Kolekce: OK otevře její filmy."
+
+msgctxt "#31636"
+msgid "Nothing left: a good time for something new."
+msgstr "Nic nezbývá: dobrá chvíle na něco nového."
+
+msgctxt "#31637"
+msgid "Ending at"
+msgstr "Končí v"
+
+msgctxt "#31638"
+msgid "PRESETS"
+msgstr "PŘEDVOLBY"
+
+msgctxt "#31639"
+msgid "LYRICS"
+msgstr "TEXTY"
+
+msgctxt "#31640"
+msgid "No guide data. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "Žádná data průvodce. Povolte doplněk klienta PVR v nastavení PVR a živého vysílání."
+
+msgctxt "#31641"
+msgid "Feels like"
+msgstr "Pocitová teplota"
+
+msgctxt "#31642"
+msgid "Humidity"
+msgstr "Vlhkost"
+
+msgctxt "#31643"
+msgid "Wind"
+msgstr "Vítr"
+
+msgctxt "#31644"
+msgid "Precipitation"
+msgstr "Srážky"
+
+msgctxt "#31645"
+msgid "UV index"
+msgstr "UV index"
+
+msgctxt "#31646"
+msgid "Sunrise"
+msgstr "Východ slunce"
+
+msgctxt "#31647"
+msgid "Sunset"
+msgstr "Západ slunce"
+
+msgctxt "#31648"
+msgid "Next location"
+msgstr "Další místo"
+
+msgctxt "#31649"
+msgid "Skin"
+msgstr "Vzhled"
+
+msgctxt "#31650"
+msgid "Address"
+msgstr "Adresa"
+
+msgctxt "#31651"
+msgid "Screen"
+msgstr "Obrazovka"
+
+msgctxt "#31652"
+msgid "Aeon Fuse options: look, details, ratings, behaviour, backgrounds and the home menu (order, widgets, submenus)."
+msgstr "Volby Aeon Fuse: vzhled, podrobnosti, hodnocení, chování, pozadí a hlavní nabídka (pořadí, widgety, podnabídky)."
+
+msgctxt "#31653"
+msgid "Video and music playback, refresh-rate matching, subtitle languages and look, discs."
+msgstr "Přehrávání videa a hudby, přizpůsobení obnovovací frekvence, jazyky a vzhled titulků, disky."
+
+msgctxt "#31654"
+msgid "Library behaviour, scrapers, file lists, artwork and what OK does on an item."
+msgstr "Chování knihovny, scrapery, seznamy souborů, obrázky a co dělá OK na položce."
+
+msgctxt "#31655"
+msgid "Skin, colors, fonts, region and language, screensaver. Switch to another skin here: Skin > Skin."
+msgstr "Vzhled, barvy, písma, oblast a jazyk, spořič obrazovky. Na jiný vzhled přepnete zde: Vzhled > Vzhled."
+
+msgctxt "#31656"
+msgid "Browse, update, configure or install add-ons."
+msgstr "Procházet, aktualizovat, nastavovat nebo instalovat doplňky."
+
+msgctxt "#31657"
+msgid "Web server and JSON-RPC control, UPnP, AirPlay, Zeroconf, SMB client."
+msgstr "Webový server a ovládání JSON-RPC, UPnP, AirPlay, Zeroconf, klient SMB."
+
+msgctxt "#31658"
+msgid "Display, audio output and passthrough, input, power saving, logging."
+msgstr "Displej, zvukový výstup a passthrough, vstup, úspora energie, protokolování."
+
+msgctxt "#31659"
+msgid "Copy, move and delete files; add network sources."
+msgstr "Kopírovat, přesouvat a mazat soubory; přidat síťové zdroje."
+
+msgctxt "#31660"
+msgid "Kodi version, video renderer, storage, network and hardware details."
+msgstr "Verze Kodi, video renderer, úložiště, síť a hardware."
+
+msgctxt "#31661"
+msgid "What Kodi has done recently: scans, add-on updates, errors."
+msgstr "Co Kodi nedávno dělalo: skenování, aktualizace doplňků, chyby."
+
+msgctxt "#31662"
+msgid "Profiles and the login screen."
+msgstr "Profily a přihlašovací obrazovka."
+
+msgctxt "#31663"
+msgid "Live TV and PVR."
+msgstr "Živé vysílání a PVR."
+
+msgctxt "#31664"
+msgid "Games and controllers."
+msgstr "Hry a ovladače."
+
+msgctxt "#31665"
+msgid "Dark"
+msgstr "Tmavé"
+
+msgctxt "#31666"
+msgid "White"
+msgstr "Bílé"
+
+msgctxt "#31667"
+msgid "Menu"
+msgstr "Nabídka"
+
+msgctxt "#31668"
+msgid "Position"
+msgstr "Pozice"
+
+msgctxt "#31669"
+msgid "Category"
+msgstr "Kategorie"
+
+msgctxt "#31670"
+msgid "Hold time"
+msgstr "Doba zobrazení"
+
+msgctxt "#31671"
+msgid "Pick an item, then use the buttons on the right. Add item puts a new one at the end."
+msgstr "Vyberte položku a použijte tlačítka vpravo. Přidat položku vloží novou na konec."
+
+msgctxt "#31672"
+msgid "Light"
+msgstr "Lehké"
+
+msgctxt "#31673"
+msgid "Strong"
+msgstr "Silné"
+
+msgctxt "#31674"
+msgid "Slot"
+msgstr "Pozice"
+
+msgctxt "#31675"
+msgid "Corner"
+msgstr "Roh"
+
+msgctxt "#31676"
+msgid "Line"
+msgstr "Řádek"
+
+msgctxt "#31677"
+msgid "Bar"
+msgstr "Lišta"
+
+msgctxt "#31678"
+msgid "Aeon"
+msgstr "Aeon"
+
+msgctxt "#31679"
+msgid "Aeon Glass"
+msgstr "Aeon Glass"
+
+msgctxt "#31680"
+msgid "Color"
+msgstr "Barva"
+
+msgctxt "#31681"
+msgid "PREVIEW"
+msgstr "NÁHLED"
+
+msgctxt "#31682"
+msgid "LIBRARY LISTS"
+msgstr "SEZNAMY KNIHOVNY"
+
+msgctxt "#31683"
+msgid "Focused row"
+msgstr "Vybraný řádek"
+
+msgctxt "#31684"
+msgid "Other row"
+msgstr "Jiný řádek"
+
+msgctxt "#31685"
+msgid "MUSIC PLAYING"
+msgstr "HRAJE HUDBA"
+
+msgctxt "#31686"
+msgid "SAMPLE"
+msgstr "UKÁZKA"
+
+msgctxt "#31687"
+msgid "BACKDROP"
+msgstr "POZADÍ"
+
+msgctxt "#31688"
+msgid "SCREENSAVER"
+msgstr "SPOŘIČ OBRAZOVKY"
+
+msgctxt "#31689"
+msgid "TITLE"
+msgstr "NÁZEV"
+
+msgctxt "#31690"
+msgid "Plot"
+msgstr "Děj"
+
+msgctxt "#31691"
+msgid "Tagline"
+msgstr "Slogan"
+
+msgctxt "#31692"
+msgid "TAG LINE"
+msgstr "ŘÁDEK ŠTÍTKŮ"
+
+msgctxt "#31693"
+msgid "UNDER THE TITLE"
+msgstr "POD NÁZVEM"
+
+msgctxt "#31694"
+msgid "PLOT TEXT"
+msgstr "TEXT DĚJE"
+
+msgctxt "#31695"
+msgid "Long plots scroll slowly by themselves, so you can read them without a button press."
+msgstr "Dlouhé popisy děje se pomalu posouvají samy, takže je přečtete bez stisknutí tlačítka."
+
+msgctxt "#31696"
+msgid "The studio logo shows beside a season or episode when the studio logos add-on is installed."
+msgstr "Logo studia se zobrazí vedle série nebo epizody, když je nainstalován doplněk s logy studií."
+
+msgctxt "#31697"
+msgid "THEME SONG"
+msgstr "ZNĚLKA"
+
+msgctxt "#31699"
+msgid "Plays while a movie or show is selected, if its folder has a theme file."
+msgstr "Hraje, když je vybrán film nebo seriál, pokud má jeho složka soubor s motivem."
+
+msgctxt "#31700"
+msgid "Total"
+msgstr "Celkem"
+
+msgctxt "#31701"
+msgid "Left"
+msgstr "Zbývá"
+
+msgctxt "#31702"
+msgid "Ends at"
+msgstr "Končí v"
+
+msgctxt "#31703"
+msgid "SEEK BAR"
+msgstr "POSUVNÍK"
+
+msgctxt "#31704"
+msgid "ON PAUSE"
+msgstr "PŘI POZASTAVENÍ"
+
+msgctxt "#31705"
+msgid "BACK BUTTON"
+msgstr "TLAČÍTKO ZPĚT"
+
+msgctxt "#31706"
+msgid "Pressing Back in a library list goes up one level, or straight to the home screen if you choose Home."
+msgstr "Zpět v seznamu knihovny jde o úroveň výš, nebo rovnou Domů, pokud zvolíte Domů."
+
+msgctxt "#31707"
+msgid "PLAYER CONTROLS"
+msgstr "OVLÁDÁNÍ PŘEHRÁVAČE"
+
+msgctxt "#31708"
+msgid "Needs disc art for the album or movie."
+msgstr "Vyžaduje obrázek disku k albu nebo filmu."
+
+msgctxt "#31709"
+msgid "FANART"
+msgstr "FANART"
+
+msgctxt "#31710"
+msgid "NOW PLAYING"
+msgstr "PRÁVĚ HRAJE"
+
+msgctxt "#31711"
+msgid "Pictures of the artist from the Artist Slideshow add-on fade in behind the album cover."
+msgstr "Fotky umělce z doplňku Artist Slideshow se prolínají za obalem alba."
+
+msgctxt "#31712"
+msgid "Slide"
+msgstr "Posun"
+
+msgctxt "#31713"
+msgid "Fade"
+msgstr "Prolnutí"
+
+msgctxt "#31714"
+msgid "Cut"
+msgstr "Střih"
+
+msgctxt "#31715"
+msgid "MEDIA INFO"
+msgstr "INFO O MÉDIU"
+
+msgctxt "#31716"
+msgid "STUDIO / NETWORK"
+msgstr "STUDIO / STANICE"
+
+msgctxt "#31717"
+msgid "The logo of the studio, or of the network for episodes, under the date ring."
+msgstr "Logo studia, u epizod stanice, pod kroužkem s datem."
+
+msgctxt "#31718"
+msgid "SPOTLIGHT"
+msgstr "SPOTLIGHT"
+
+msgctxt "#31719"
+msgid "Selected item:"
+msgstr "Vybraná položka:"
+
+msgctxt "#31720"
+msgid "Set path / content"
+msgstr "Nastavit cestu / obsah"
+
+msgctxt "#31721"
+msgid "Edit widgets"
+msgstr "Upravit widgety"
+
+msgctxt "#31722"
+msgid "Edit submenu"
+msgstr "Upravit podnabídku"
+
+msgctxt "#31723"
+msgid "Edit spotlight"
+msgstr "Upravit Spotlight"
+
+msgctxt "#31724"
+msgid "Restore default order"
+msgstr "Obnovit výchozí pořadí"
+
+msgctxt "#31725"
+msgid "Theme & style"
+msgstr "Motiv a styl"
+
+msgctxt "#31726"
+msgid "Look"
+msgstr "Styl"
+
+msgctxt "#31727"
+msgid "Player"
+msgstr "Přehrávač"
+
+msgctxt "#31728"
+msgid "Music player"
+msgstr "Hudební přehrávač"
+
+msgctxt "#31729"
+msgid "Backgrounds"
+msgstr "Pozadí"
+
+msgctxt "#31730"
+msgid "Widget & Spotlight screens"
+msgstr "Obrazovky widgetů a Spotlight"
+
+msgctxt "#31731"
+msgid "System"
+msgstr "Systém"
+
+msgctxt "#31732"
+msgid "Home menu"
+msgstr "Hlavní nabídka"
+
+msgctxt "#31733"
+msgid "Auto"
+msgstr "Auto"
+
+msgctxt "#31734"
+msgid "Morning"
+msgstr "Ráno"
+
+msgctxt "#31735"
+msgid "Afternoon"
+msgstr "Odpoledne"
+
+msgctxt "#31736"
+msgid "Evening"
+msgstr "Večer"
+
+msgctxt "#31737"
+msgid "Night"
+msgstr "Noc"
+
+msgctxt "#31738"
+msgid "Bedtime"
+msgstr "Večerka"
+
+msgctxt "#31739"
+msgid "Countdown and fits-before rows"
+msgstr "Řady s odpočtem a „stihnete do“"
+
+msgctxt "#31740"
+msgid "Weather row and rain"
+msgstr "Řada počasí a déšť"
+
+msgctxt "#31741"
+msgid "Borrowed color"
+msgstr "Vypůjčená barva"
+
+msgctxt "#31742"
+msgid "The focused film tints the light"
+msgstr "Vybraný film zabarví světlo"
+
+msgctxt "#31743"
+msgid "Dots and checks on posters"
+msgstr "Tečky a značky na plakátech"
+
+msgctxt "#31744"
+msgid "Unwatched"
+msgstr "Nové"
+
+msgctxt "#31745"
+msgid "Only when a film has a trailer"
+msgstr "Jen když má film trailer"
+
+msgctxt "#31746"
+msgid "Logos instead of titles"
+msgstr "Loga místo názvů"
+
+msgctxt "#31747"
+msgid "Clearlogos in the OSD, screensaver and Now playing"
+msgstr "Clearlogo v OSD, spořiči a Právě hraje"
+
+msgctxt "#31748"
+msgid "Library side strip"
+msgstr "Boční pruh knihovny"
+
+msgctxt "#31749"
+msgid "OSD auto-hide"
+msgstr "Automatické skrytí OSD"
+
+msgctxt "#31750"
+msgid "Controls close by themselves"
+msgstr "Ovládání se zavírá samo"
+
+msgctxt "#31751"
+msgid "Subtitle offset strip"
+msgstr "Lišta posunu titulků"
+
+msgctxt "#31752"
+msgid "Subtitle / audio sync strip"
+msgstr "Pruh synchronizace titulků / zvuku"
+
+msgctxt "#31753"
+msgid "Top"
+msgstr "Nahoře"
+
+msgctxt "#31754"
+msgid "Bottom"
+msgstr "Dole"
+
+msgctxt "#31755"
+msgid "Fades instead of zooms and slides"
+msgstr "Prolínání místo přiblížení a posunů"
+
+msgctxt "#31756"
+msgid "Back to the defaults"
+msgstr "Zpět na výchozí"
+
+msgctxt "#31757"
+msgid "Needs a PVR add-on"
+msgstr "Vyžaduje doplněk PVR"
+
+msgctxt "#31758"
+msgid "Power and library actions (Home sub-menu)"
+msgstr "Akce napájení a knihovny (podnabídka Domů)"
+
+msgctxt "#31759"
+msgid "Spotlight: menu item 1"
+msgstr "Spotlight: položka nabídky 1"
+
+msgctxt "#31760"
+msgid "Featured slider for this item (needs a library or add-on folder)"
+msgstr "Posuvník položky (vyžaduje složku knihovny nebo doplňku)"
+
+msgctxt "#31761"
+msgid "Spotlight: menu item 2"
+msgstr "Spotlight: položka nabídky 2"
+
+msgctxt "#31762"
+msgid "Spotlight: menu item 3"
+msgstr "Spotlight: položka nabídky 3"
+
+msgctxt "#31763"
+msgid "Fanart Menu Backdrop"
+msgstr "Fanart pozadí nabídek"
+
+msgctxt "#31764"
+msgid "Menu Backdrop Strength"
+msgstr "Síla pozadí nabídek"
+
+msgctxt "#31765"
+msgid "Now playing on Home"
+msgstr "Právě hraje na Domů"
+
+msgctxt "#31766"
+msgid "Theme"
+msgstr "Motiv"
+
+msgctxt "#31767"
+msgid "Library background"
+msgstr "Pozadí knihovny"
+
+msgctxt "#31768"
+msgid "Screensaver background"
+msgstr "Pozadí spořiče obrazovky"
+
+msgctxt "#31769"
+msgid "Resolution and codec"
+msgstr "Rozlišení a kodek"
+
+msgctxt "#31770"
+msgid "HDR tag"
+msgstr "Štítek HDR"
+
+msgctxt "#31771"
+msgid "Audio codec and channels"
+msgstr "Zvukový kodek a kanály"
+
+msgctxt "#31772"
+msgid "Plotline"
+msgstr "Řádek děje"
+
+msgctxt "#31773"
+msgid "Autoscroll plot text"
+msgstr "Automaticky posouvat text děje"
+
+msgctxt "#31774"
+msgid "Studio logo"
+msgstr "Logo studia"
+
+msgctxt "#31775"
+msgid "Theme songs"
+msgstr "Znělky"
+
+msgctxt "#31776"
+msgid "Color the rating"
+msgstr "Barevné hodnocení"
+
+msgctxt "#31777"
+msgid "IMDb rating"
+msgstr "Hodnocení IMDb"
+
+msgctxt "#31778"
+msgid "TMDb rating"
+msgstr "Hodnocení TMDb"
+
+msgctxt "#31779"
+msgid "Rotten Tomatoes"
+msgstr "Rotten Tomatoes"
+
+msgctxt "#31780"
+msgid "Trakt rating"
+msgstr "Hodnocení Trakt"
+
+msgctxt "#31781"
+msgid "Seek bar time"
+msgstr "Čas na posuvníku"
+
+msgctxt "#31782"
+msgid "Controls on pause"
+msgstr "Ovládání při pozastavení"
+
+msgctxt "#31783"
+msgid "Delay before they open"
+msgstr "Prodleva před otevřením"
+
+msgctxt "#31784"
+msgid "Back button in the library"
+msgstr "Tlačítko Zpět v knihovně"
+
+msgctxt "#31785"
+msgid "Show poster on OSD controls"
+msgstr "Zobrazit plakát u ovládání OSD"
+
+msgctxt "#31786"
+msgid "Spinning disc art"
+msgstr "Rotující obrázek disku"
+
+msgctxt "#31787"
+msgid "Cycle extra fanart"
+msgstr "Střídat další fanarty"
+
+msgctxt "#31788"
+msgid "Seconds between images"
+msgstr "Sekund mezi obrázky"
+
+msgctxt "#31789"
+msgid "Artist slideshow"
+msgstr "Prezentace umělce"
+
+msgctxt "#31790"
+msgid "Studio / network"
+msgstr "Studio / stanice"
+
+msgctxt "#31791"
+msgid "Home spotlight: background"
+msgstr "Spotlight na Domů: pozadí"
+
+msgctxt "#31792"
+msgid "Home spotlight: transition"
+msgstr "Spotlight na Domů: přechod"
+
+msgctxt "#31793"
+msgid "Rules"
+msgstr "Pravidla"
+
+msgctxt "#31800"
+msgid "Settings strip"
+msgstr "Pruh nastavení"
+
+msgctxt "#31801"
+msgid "Overlay"
+msgstr "Překryvný"
+
+msgctxt "#31802"
+msgid "Permanent"
+msgstr "Trvalý"
+
+msgctxt "#31803"
+msgid "Box colors from artwork"
+msgstr "Barvy boxů z obrázku"
+
+msgctxt "#31804"
+msgid "Show clock on OSD"
+msgstr "Zobrazit hodiny v OSD"
+
+msgctxt "#31805"
+msgid "Show weather on OSD"
+msgstr "Zobrazit počasí v OSD"
+
+msgctxt "#31806"
+msgid "Lyrics style"
+msgstr "Styl textů"
+
+msgctxt "#31807"
+msgid "Lines"
+msgstr "Řádky"
+
+msgctxt "#31808"
+msgid "Words"
+msgstr "Slova"
+
+msgctxt "#31280"
+msgid "VERSION"
+msgstr "VERZE"
+
+msgctxt "#31281"
+msgid "SYSTEM"
+msgstr "SYSTÉM"
+
+msgctxt "#31282"
+msgid "HARDWARE"
+msgstr "HARDWARE"
+
+msgctxt "#31283"
+msgid "LIBRARY"
+msgstr "KNIHOVNA"
+
+msgctxt "#31574"
+msgid "Build"
+msgstr "Sestavení"
+
+msgctxt "#31634"
+msgid "Name"
+msgstr "Název"
+
+msgctxt "#31698"
+msgid "Profile"
+msgstr "Profil"
+
+msgctxt "#31794"
+msgid "Uptime"
+msgstr "Doba provozu"
+
+msgctxt "#31795"
+msgid "Total uptime"
+msgstr "Provoz celkem"
+
+msgctxt "#31796"
+msgid "IP address"
+msgstr "IP adresa"
+
+msgctxt "#31797"
+msgid "MAC address"
+msgstr "MAC adresa"
+
+msgctxt "#31798"
+msgid "Internet"
+msgstr "Internet"
+
+msgctxt "#31799"
+msgid "CPU usage"
+msgstr "Využití procesoru"
+
+msgctxt "#31809"
+msgid "Memory"
+msgstr "Paměť"
+
+msgctxt "#31810"
+msgid "Used"
+msgstr "Využito"
+
+msgctxt "#31811"
+msgid "CPU temperature"
+msgstr "Teplota procesoru"
+
+msgctxt "#31812"
+msgid "GPU temperature"
+msgstr "Teplota GPU"
+
+msgctxt "#31813"
+msgid "Movies"
+msgstr "Filmy"
+
+msgctxt "#31814"
+msgid "Lyrics take focus"
+msgstr "Texty převezmou výběr"
+
+msgctxt "#31815"
+msgid "Artist list"
+msgstr "Seznam umělců"
+
+msgctxt "#31816"
+msgid "Artist wall (covers)"
+msgstr "Stěna umělců (obaly)"
+
+msgctxt "#31817"
+msgid "Album wall (fanart)"
+msgstr "Stěna alb (fanart)"
+
+msgctxt "#31824"
+msgid "LIBRARY VIEW"
+msgstr "ZOBRAZENÍ KNIHOVNY"
+
+msgctxt "#31825"
+msgid "Overlay: the strip slides in with Left or the Menu key. Permanent: it is always there. View settings can set this per view."
+msgstr "Překryvný: pruh vyjede s Vlevo nebo klávesou Menu. Trvalý: je tam pořád. Nastavení zobrazení to může určit pro každé zobrazení."
+
+msgctxt "#31826"
+msgid "BOXES"
+msgstr "BOXY"
+
+msgctxt "#31827"
+msgid "On: the clock and count boxes take the color of the poster or cover in focus (needs the KarmaMole helper)."
+msgstr "Zapnuto: boxy s hodinami a počtem převezmou barvu vybraného plakátu nebo obalu (vyžaduje pomocníka KarmaMole)."
+
+msgctxt "#31828"
+msgid "The controls close by themselves after this many seconds without a key press."
+msgstr "Ovládání se samo zavře po tolika sekundách bez stisku klávesy."
+
+msgctxt "#31829"
+msgid "SYNC STRIP"
+msgstr "PRUH SYNCHRONIZACE"
+
+msgctxt "#31830"
+msgid "Where the subtitle / audio offset strip sits while you adjust it."
+msgstr "Kde je pruh posunu titulků / zvuku během úprav."
+
+msgctxt "#31831"
+msgid "Clock box at the top right of the player controls."
+msgstr "Box s hodinami vpravo nahoře na ovládání přehrávače."
+
+msgctxt "#31832"
+msgid "Weather box under the clock (needs a weather add-on)."
+msgstr "Box s počasím pod hodinami (vyžaduje doplněk počasí)."
+
+msgctxt "#31833"
+msgid "BIG"
+msgstr "VELKÝ"
+
+msgctxt "#31834"
+msgid "COLORED"
+msgstr "BAREVNÝ"
+
+msgctxt "#31835"
+msgid "WORDS"
+msgstr "SLOVA"
+
+msgctxt "#31836"
+msgid "Lines: the current line between its neighbours. Words: the animated lyrics of Estuary MOD V2 (needs that skin installed for its fonts)."
+msgstr "Řádky: aktuální řádek mezi sousedy. Slova: animované texty z Estuary MOD V2 (vyžaduje nainstalovaný tento vzhled kvůli písmům)."
+
+msgctxt "#31837"
+msgid "Off: OK opens the music controls. On: Up / Down pick a line, OK jumps to it; Back lets go of the lines and the lyrics keep running."
+msgstr "Vypnuto: OK otevře ovládání hudby. Zapnuto: Nahoru / Dolů vybírá řádek, OK na něj skočí; Zpět řádky pustí a text běží dál."
+
+msgctxt "#31818"
+msgid "Words style placement"
+msgstr "Umístění stylu Slova"
+
+msgctxt "#31819"
+msgid "Full screen"
+msgstr "Celá obrazovka"
+
+msgctxt "#31820"
+msgid "On the cover"
+msgstr "Na obalu"
+
+msgctxt "#31821"
+msgid "Home vignette"
+msgstr "Vinětace na Domů"
+
+msgctxt "#31822"
+msgid "Fonts"
+msgstr "Písma"
+
+msgctxt "#31823"
+msgid "Own family for Home, library, headings, settings, player"
+msgstr "Vlastní rodina pro Domů, knihovnu, nadpisy, nastavení, přehrávač"
+
+msgctxt "#31838"
+msgid "Fonts per section"
+msgstr "Písma podle části"
+
+msgctxt "#31839"
+msgid "Follow the font set"
+msgstr "Podle sady písem"
+
+msgctxt "#31840"
+msgid "Headings"
+msgstr "Nadpisy"
+
+msgctxt "#31841"
+msgid "Settings pages"
+msgstr "Stránky nastavení"
+
+msgctxt "#31842"
+msgid "Player"
+msgstr "Přehrávač"
+
+msgctxt "#31843"
+msgid "Font for: %s"
+msgstr "Písmo pro: %s"
+
+msgctxt "#31844"
+msgid "not installed"
+msgstr "není nainstalováno"
+
+msgctxt "#31845"
+msgid "Plots, biographies and hints look like this. The quick brown fox jumps over the lazy dog. 0123456789"
+msgstr "Popisy děje, životopisy a nápovědy vypadají takto. Příliš žluťoučký kůň úpěl ďábelské ódy. 0123456789"
+
+msgctxt "#31846"
+msgid "Preview"
+msgstr "Náhled"
+
+msgctxt "#31847"
+msgid "Categories"
+msgstr "Kategorie"
+
+msgctxt "#31848"
+msgid "Show weather on screensaver"
+msgstr "Zobrazit počasí na spořiči"
+
+msgctxt "#31849"
+msgid "Temperature and conditions in the top right corner"
+msgstr "Teplota a počasí vpravo nahoře"
+
+msgctxt "#31850"
+msgid "Videos · Music · Discs · Pictures · Language · Subtitles"
+msgstr "Videa · Hudba · Disky · Obrázky · Jazyk · Titulky"
+
+msgctxt "#31851"
+msgid "Library · General · Videos · Music · Pictures"
+msgstr "Knihovna · Obecné · Videa · Hudba · Obrázky"
+
+msgctxt "#31852"
+msgid "Skin · Regional · Screensaver · Master lock · Startup"
+msgstr "Vzhled · Místní · Spořič obrazovky · Hlavní zámek · Spuštění"
+
+msgctxt "#31853"
+msgid "General · Control · UPnP / DLNA · AirPlay · Weather"
+msgstr "Obecné · Ovládání · UPnP / DLNA · AirPlay · Počasí"
+
+msgctxt "#31854"
+msgid "Display · Audio · Input · Internet access · Power saving · Add-ons · Logging"
+msgstr "Displej · Zvuk · Vstup · Přístup k internetu · Úspora energie · Doplňky · Protokolování"
+
+msgctxt "#31855"
+msgid "General · Channels · Guide · Playback · Recording · Reminders"
+msgstr "Obecné · Kanály · Průvodce · Přehrávání · Nahrávání · Připomínky"
+
+msgctxt "#31856"
+msgid "Home menu position"
+msgstr "Pozice hlavní nabídky"
+
+msgctxt "#31857"
+msgid "Middle"
+msgstr "Uprostřed"
+
+msgctxt "#31858"
+msgid "Low"
+msgstr "Dole"
+
+msgctxt "#31859"
+msgid "General · Achievements"
+msgstr "Obecné · Úspěchy"
+
+msgctxt "#31860"
+msgid "Show clock on screensaver"
+msgstr "Zobrazit hodiny na spořiči"
+
+msgctxt "#31861"
+msgid "Poster / thumbnail"
+msgstr "Plakát / náhled"
+
+msgctxt "#31862"
+msgid "Season and episode counts"
+msgstr "Počty sérií a epizod"
+
+msgctxt "#31863"
+msgid "Watched status"
+msgstr "Stav zhlédnutí"
+
+msgctxt "#31864"
+msgid "The Long Way Home"
+msgstr "Dlouhá cesta domů"
+
+msgctxt "#31865"
+msgid "2019 | DRAMA / ADVENTURE"
+msgstr "2019 | DRAMA / DOBRODRUŽNÝ"
+
+msgctxt "#31866"
+msgid "Northern Lights"
+msgstr "Polární záře"
+
+msgctxt "#31867"
+msgid "2023 | DOCUMENTARY"
+msgstr "2023 | DOKUMENTÁRNÍ"
+
+msgctxt "#31868"
+msgid "A Quiet Harbour"
+msgstr "Tichý přístav"
+
+msgctxt "#31869"
+msgid "1998 | CRIME / THRILLER"
+msgstr "1998 | KRIMI / THRILLER"
+
+msgctxt "#31188"
+msgid "Item"
+msgstr "Položka"
+
+msgctxt "#31192"
+msgid "Screenshots"
+msgstr "Snímky obrazovky"
+
+msgctxt "#31193"
+msgid "Picture details"
+msgstr "Podrobnosti obrázku"
+
+msgctxt "#31284"
+msgid "EPG"
+msgstr "EPG"
+
+msgctxt "#31285"
+msgid "Tools"
+msgstr "Nástroje"
+
+msgctxt "#31286"
+msgid "Who is watching?"
+msgstr "Kdo se dívá?"
+
+msgctxt "#31287"
+msgid "Playlist editor"
+msgstr "Editor seznamů skladeb"
+
+msgctxt "#31288"
+msgid "Flix"
+msgstr "Flix"
+
+msgctxt "#31289"
+msgid "Fanart with one row"
+msgstr "Fanart s jednou řadou"
+
+msgctxt "#31290"
+msgid "Combined"
+msgstr "Kombinovaný"
+
+msgctxt "#31291"
+msgid "A row over its contents"
+msgstr "Řada nad obsahem"
+
+msgctxt "#31292"
+msgid "Circles"
+msgstr "Kruhy"
+
+msgctxt "#31293"
+msgid "Round portraits"
+msgstr "Kulaté portréty"
+
+msgctxt "#31294"
+msgid "Planner"
+msgstr "Plánovač"
+
+msgctxt "#31570"
+msgid "Episodes by date"
+msgstr "Epizody podle data"
+
+msgctxt "#31571"
+msgid "Recommended"
+msgstr "Doporučené"
+
+msgctxt "#31572"
+msgid "Similar titles"
+msgstr "Podobné tituly"
+
+msgctxt "#31573"
+msgid "Information"
+msgstr "Informace"
+
+msgctxt "#31870"
+msgid "Plot hidden until you have watched it."
+msgstr "Děj je skrytý, dokud to nezhlédnete."
+
+msgctxt "#31871"
+msgid "More options"
+msgstr "Další volby"
+
+msgctxt "#31872"
+msgid "Spoilers, pause and language flags"
+msgstr "Spoilery, pozastavení a vlajky jazyků"
+
+msgctxt "#31873"
+msgid "Hide spoilers of unwatched episodes"
+msgstr "Skrýt spoilery nezhlédnutých epizod"
+
+msgctxt "#31874"
+msgid "Seek bar while paused"
+msgstr "Posuvník při pozastavení"
+
+msgctxt "#31875"
+msgid "Show language flags on OSD"
+msgstr "Zobrazit vlajky jazyků v OSD"
+
+msgctxt "#31876"
+msgid "Always"
+msgstr "Vždy"
+
+msgctxt "#31877"
+msgid "5 seconds"
+msgstr "5 sekund"
+
+msgctxt "#31878"
+msgid "Never"
+msgstr "Nikdy"
+
+msgctxt "#31879"
+msgid "Stacked row on Home"
+msgstr "Vrstvená řada na Domů"
+
+msgctxt "#31880"
+msgid "Kiosk mode (lock views)"
+msgstr "Režim kiosku (zamknout zobrazení)"
+
+msgctxt "#31881"
+msgid "Last login"
+msgstr "Poslední přihlášení"
+
+msgctxt "#31882"
+msgid "Cinema mode: trailers before a film"
+msgstr "Kino režim: trailery před filmem"
+
+msgctxt "#31883"
+msgid "1 trailer"
+msgstr "1 trailer"
+
+msgctxt "#31884"
+msgid "2 trailers"
+msgstr "2 trailery"
+
+msgctxt "#31885"
+msgid "3 trailers"
+msgstr "3 trailery"
+
+msgctxt "#31886"
+msgid "Reviews"
+msgstr "Recenze"
+
+msgctxt "#31887"
+msgid "Top tracks"
+msgstr "Nejlepší skladby"
+
+msgctxt "#31888"
+msgid "Similar artists"
+msgstr "Podobní umělci"
+
+msgctxt "#31889"
+msgid "Not in your library"
+msgstr "Není v knihovně"
+
+msgctxt "#31890"
+msgid "Artist page: look up on Deezer"
+msgstr "Stránka umělce: vyhledat na Deezeru"
+
+msgctxt "#31891"
+msgid "Progress line on posters"
+msgstr "Čára průběhu na plakátech"
+
+msgctxt "#31892"
+msgid "Play trailers automatically"
+msgstr "Přehrávat trailery automaticky"
+
+msgctxt "#31893"
+msgid "Nothing planned"
+msgstr "Nic naplánováno"
+
+msgctxt "#31894"
+msgid "View"
+msgstr "Zobrazení"
+
+msgctxt "#31895"
+msgid "Week starts"
+msgstr "Týden začíná"
+
+msgctxt "#31896"
+msgid "Show"
+msgstr "Zobrazit"
+
+msgctxt "#31897"
+msgid "Day"
+msgstr "Den"
+
+msgctxt "#31898"
+msgid "Week"
+msgstr "Týden"
+
+msgctxt "#31899"
+msgid "Home spotlight"
+msgstr "Spotlight na Domů"
+
+msgctxt "#31903"
+msgid "Days ahead"
+msgstr "Dní dopředu"
+
+msgctxt "#31904"
+msgid "What is coming, shown one title at a time while the Planner is focused on Home. It starts with today."
+msgstr "Co se blíží, po jednom titulu, dokud je Plánovač vybrán na Domů. Začíná dneškem."
+
+msgctxt "#31905"
+msgid "Disable"
+msgstr "Zakázat"
+
+msgctxt "#31906"
+msgid "Enable"
+msgstr "Povolit"
+
+msgctxt "#31907"
+msgid "Empty"
+msgstr "Prázdné"
+
+msgctxt "#31908"
+msgid "Choose type"
+msgstr "Vybrat typ"
+
+msgctxt "#31909"
+msgid "Custom item"
+msgstr "Vlastní položka"
+
+msgctxt "#31910"
+msgid "Empty position"
+msgstr "Prázdná pozice"
+
+msgctxt "#31911"
+msgid "Type of position"
+msgstr "Typ pozice"
+
+msgctxt "#31912"
+msgid "All ten custom items are in use. Free one first."
+msgstr "Všech deset vlastních položek je obsazeno. Nejprve jednu uvolněte."
+
+msgctxt "#31913"
+msgid "Channel group"
+msgstr "Skupina kanálů"
+
+msgctxt "#31914"
+msgid "Watched last"
+msgstr "Naposledy sledované"
+
+msgctxt "#31915"
+msgid "None"
+msgstr "Žádná"
+
+msgctxt "#31916"
+msgid "No channel group"
+msgstr "Žádná skupina kanálů"
+
+msgctxt "#31917"
+msgid "With Live TV focused on Home: Up reaches the channels watched last, Right there shows the channel group chosen here. OK plays a channel."
+msgstr "Když je na Domů vybráno živé vysílání: Nahoru vede k naposledy sledovaným kanálům, Vpravo tam ukáže zde vybranou skupinu kanálů. OK přehraje kanál."
+
+msgctxt "#31918"
+msgid "UP: CHANNELS   |   OK: GUIDE"
+msgstr "NAHORU: KANÁLY   |   OK: PRŮVODCE"
+
+msgctxt "#31919"
+msgid "OK: WATCH   |   LEFT: WATCHED LAST"
+msgstr "OK: SLEDOVAT   |   VLEVO: NAPOSLEDY SLEDOVANÉ"
+
+msgctxt "#31920"
+msgid "OK: WATCH   |   RIGHT: CHANNEL GROUP"
+msgstr "OK: SLEDOVAT   |   VPRAVO: SKUPINA KANÁLŮ"
+
+msgctxt "#31921"
+msgid "OK: WATCH"
+msgstr "OK: SLEDOVAT"
+
+msgctxt "#31922"
+msgid "LEFT / RIGHT: OTHER TITLES   |   DOWN: MENU"
+msgstr "VLEVO / VPRAVO: DALŠÍ TITULY   |   DOLŮ: NABÍDKA"
+
+msgctxt "#31923"
+msgid "Coming up"
+msgstr "Brzy"
+
+msgctxt "#31924"
+msgid "Not in your library yet."
+msgstr "Zatím není ve vaší knihovně."
+
+msgctxt "#31925"
+msgid "On"
+msgstr "Zapnuto"
+
+msgctxt "#31926"
+msgid "Unwatched episodes show no thumbnail and no plot until you have seen them."
+msgstr "Nezhlédnuté epizody neukazují náhled ani děj, dokud je nezhlédnete."
+
+msgctxt "#31927"
+msgid "Top tracks and similar artists on the artist page come from Deezer (needs internet). Off: only your library."
+msgstr "Nejlepší skladby a podobní umělci na stránce umělce pocházejí z Deezeru (vyžaduje internet). Vypnuto: jen vaše knihovna."
+
+msgctxt "#31928"
+msgid "When the seek bar shows while a film is paused: always, for 5 seconds, or never."
+msgstr "Kdy se ukazuje posuvník u pozastaveného filmu: vždy, na 5 sekund nebo nikdy."
+
+msgctxt "#31929"
+msgid "Flags of the audio and subtitle languages on the player controls."
+msgstr "Vlajky jazyků zvuku a titulků na ovládání přehrávače."
+
+msgctxt "#31930"
+msgid "Trailers of other films play before the film you start: none, 1, 2 or 3."
+msgstr "Trailery jiných filmů před spuštěným filmem: žádný, 1, 2 nebo 3."
+
+msgctxt "#31931"
+msgid "A thin line under posters shows how much of a film, show or season you have watched."
+msgstr "Tenká čára pod plakáty ukazuje, kolik jste zhlédli z filmu, seriálu nebo série."
+
+msgctxt "#31932"
+msgid "A strip of small posters under the plot when a set or a show is in focus in the rows on Home."
+msgstr "Pruh malých plakátů pod dějem, když je v řadách na Domů vybrána kolekce nebo seriál."
+
+msgctxt "#31933"
+msgid "Locks the library views: no view settings and no left-hand settings strip."
+msgstr "Zamkne zobrazení knihovny: žádné nastavení zobrazení a žádný levý pruh nastavení."
+
+msgctxt "#31934"
+msgid "The library background takes the palette only with the Neutral backdrop. The highlight, boxes and strips follow it with every backdrop.[CR][CR]Use the Neutral backdrop in the libraries?"
+msgstr "Pozadí knihovny přebírá paletu jen s neutrálním pozadím. Výběr, boxy a pruhy ji následují u každého pozadí.[CR][CR]Použít v knihovnách neutrální pozadí?"
+
+msgctxt "#31935"
+msgid "Keep the backdrop"
+msgstr "Ponechat pozadí"
+
+msgctxt "#31936"
+msgid "Use Neutral"
+msgstr "Použít neutrální"
+
+msgctxt "#31937"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages. The library background takes it with the Neutral backdrop only."
+msgstr "Barva výběru, boxů, pruhů a stránek nastavení. Pozadí knihovny ji přebírá jen s neutrálním pozadím."
+
+msgctxt "#31938"
+msgid "Words"
+msgstr "Slova"
+
+msgctxt "#31939"
+msgid "Lines"
+msgstr "Řádky"
+
+msgctxt "#31958"
+msgid "Skippy: the skin's skip button"
+msgstr "Skippy: tlačítko přeskočení ve vzhledu"
+
+msgctxt "#31959"
+msgid "On: during a segment Skippy asks about (Ask), the player shows a Skip button in the skin's look; OK skips, Back hides it. Off: Skippy opens its own dialog. In Fused Glass, Up next at the end of an episode is the skin's too."
+msgstr "Zapnuto: během segmentu, na který se Skippy ptá (Zeptat se), přehrávač ukáže tlačítko Přeskočit ve vzhledu; OK přeskočí, Zpět ho skryje. Vypnuto: Skippy otevře vlastní dialog. Ve Fused Glass je i výzva Další díl na konci epizody ve vzhledu."
+
+msgctxt "#31960"
+msgid "Skippy: segment line in the player"
+msgstr "Skippy: řádek segmentu v přehrávači"
+
+msgctxt "#31961"
+msgid "Between the times on the player controls: the segment playing and the time left (Intro · 0:42 left), or the next segment and when it starts."
+msgstr "Mezi časy na ovládání přehrávače: hrající segment a zbývající čas (Intro · zbývá 0:42), nebo další segment a kdy začne."
+
+msgctxt "#31962"
+msgid "Skippy: up next in the player"
+msgstr "Skippy: následuje v přehrávači"
+
+msgctxt "#31963"
+msgid "Top right of the player controls: the next episode Skippy found, with its picture. Skippy's own next-episode prompt is not affected."
+msgstr "Vpravo nahoře na ovládání přehrávače: další epizoda, kterou Skippy našel, s obrázkem. Vlastní výzva Skippy k další epizodě zůstává."
+
+msgctxt "#31964"
+msgid "Skip"
+msgstr "Přeskočit"
+
+msgctxt "#31965"
+msgid "left"
+msgstr "zbývá"
+
+msgctxt "#31966"
+msgid "at"
+msgstr "v"
+
+msgctxt "#31967"
+msgid "Memory hand-back"
+msgstr "Vracení paměti"
+
+msgctxt "#31968"
+msgid "Linux boxes (CoreELEC, LibreELEC): Kodi keeps memory it has finished with. The helper hands it back to the system after a pause in key presses, or when free RAM gets low. Not on Windows."
+msgstr "Linuxová zařízení (CoreELEC, LibreELEC): Kodi si drží paměť, kterou už nepotřebuje. Pomocník ji vrátí systému po pauze v mačkání kláves, nebo když dochází volná RAM. Ne ve Windows."
+
+msgctxt "#31969"
+msgid "Pause before hand-back"
+msgstr "Pauza před vrácením"
+
+msgctxt "#31970"
+msgid "After a pause: seconds without a key press (2-30), not during a video. When free RAM is low: the least free memory the box keeps; within 256 MB of it the hand-back waits for a pause, below it it happens at once."
+msgstr "Po pauze: sekundy bez stisku (2-30), ne během videa. Při nedostatku volné RAM: nejmenší volná paměť, kterou si zařízení drží; do 256 MB od ní vracení čeká na pauzu, pod ní proběhne hned."
+
+msgctxt "#31971"
+msgid "Minimum free RAM"
+msgstr "Minimum volné RAM"
+
+msgctxt "#31972"
+msgid "Adds Clean library to the context menu in the libraries and on Home: entries whose files are gone are removed (it asks first)."
+msgstr "Přidá Vyčistit knihovnu do kontextové nabídky v knihovnách a na Domů: položky, jejichž soubory zmizely, se odeberou (nejdřív se zeptá)."
+
+msgctxt "#31973"
+msgid "Network · Connections · Updates · Hardware · Services"
+msgstr "Síť · Připojení · Aktualizace · Hardware · Služby"
+
+msgctxt "#31974"
+msgid "The box"
+msgstr "Zařízení"
+
+msgctxt "#31975"
+msgid "The box's own settings: network and Wi-Fi, updates, hardware, services such as SSH and Samba."
+msgstr "Vlastní nastavení zařízení: síť a Wi-Fi, aktualizace, hardware, služby jako SSH a Samba."
+
+msgctxt "#31976"
+msgid "Restart Kodi"
+msgstr "Restartovat Kodi"
+
+msgctxt "#31977"
+msgid "Widget screens: media info"
+msgstr "Obrazovky widgetů: info o médiu"
+
+msgctxt "#31978"
+msgid "Widget screens: ratings"
+msgstr "Obrazovky widgetů: hodnocení"
+
+msgctxt "#31979"
+msgid "Widget screens: studio / network"
+msgstr "Obrazovky widgetů: studio / stanice"
+
+msgctxt "#31996"
+msgid "The background of the spotlight at the top of Home. Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "Pozadí Spotlightu nahoře na Domů. Fanart: fanart titulu. Neutrální: tmavé. Barva: jemný barevný obrázek, který pomocník KarmaMole vytvoří z obrázku (do té doby se ukazuje fanart)."
+
+msgctxt "#31997"
+msgid "How the spotlight at the top of Home moves on to the next title: fade, slide or cut."
+msgstr "Jak Spotlight nahoře na Domů přechází na další titul: prolnutí, posun nebo střih."
+
+msgctxt "#31998"
+msgid "Widget screens: background"
+msgstr "Obrazovky widgetů: pozadí"
+
+msgctxt "#31999"
+msgid "The background of the full-screen widget pages (Up on a title on Home). Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "Pozadí celoobrazovkových stránek widgetů (Nahoru na titulu na Domů). Fanart: fanart titulu. Neutrální: tmavé. Barva: jemný barevný obrázek, který pomocník KarmaMole vytvoří z obrázku (do té doby se ukazuje fanart)."
+
+msgctxt "#32000"
+msgid "creator of the Aeon 2 concept"
+msgstr "tvůrce konceptu Aeon 2"
+
+msgctxt "#32001"
+msgid "1 of 1 episode watched"
+msgstr "1 z 1 epizody zhlédnuta"
+
+msgctxt "#32002"
+msgid "on"
+msgstr "u"
+
+msgctxt "#32003"
+msgid "9:00 PM"
+msgstr "21:00"
+
+msgctxt "#32004"
+msgid "9:30 PM"
+msgstr "21:30"
+
+msgctxt "#32005"
+msgid "10:00 PM"
+msgstr "22:00"
+
+msgctxt "#32006"
+msgid "10:30 PM"
+msgstr "22:30"
+
+msgctxt "#32007"
+msgid "11:00 PM"
+msgstr "23:00"
+
+msgctxt "#32008"
+msgid "11:30 PM"
+msgstr "23:30"
+
+msgctxt "#32009"
+msgid "12:00 AM"
+msgstr "0:00"
+
+msgctxt "#32010"
+msgid "12:30 AM"
+msgstr "0:30"
+
+msgctxt "#32011"
+msgid "1:00 AM"
+msgstr "1:00"
+
+msgctxt "#32012"
+msgid "1:30 AM"
+msgstr "1:30"
+
+msgctxt "#32013"
+msgid "2:00 AM"
+msgstr "2:00"
+
+msgctxt "#32015"
+msgid "Repositories checked"
+msgstr "Repozitáře zkontrolovány"
+
+msgctxt "#32016"
+msgid "Close Kodi"
+msgstr "Zavřít Kodi"
+
+msgctxt "#32017"
+msgid "Back to the profile screen"
+msgstr "Zpět na obrazovku profilů"
+
+msgctxt "#32018"
+msgid "Kodi only, the system keeps running"
+msgstr "Jen Kodi, systém běží dál"
+
+msgctxt "#32019"
+msgid "Restart the whole system"
+msgstr "Restartovat celý systém"
+
+msgctxt "#32020"
+msgid "Restart into Android"
+msgstr "Restartovat do Androidu"
+
+msgctxt "#32021"
+msgid "Switch the system off"
+msgstr "Vypnout systém"
+
+msgctxt "#32022"
+msgid "By"
+msgstr "Od"
+
+msgctxt "#32023"
+msgid "Running time"
+msgstr "Délka"
+
+msgctxt "#32024"
+msgid "min"
+msgstr "min"
+
+msgctxt "#32025"
+msgid "Widgets"
+msgstr "Widgety"
+
+msgctxt "#32026"
+msgid "hidden"
+msgstr "skryto"
+
+msgctxt "#32027"
+msgid "Hold"
+msgstr "Doba"
+
+msgctxt "#32028"
+msgid "Update the list"
+msgstr "Aktualizovat seznam"
+
+msgctxt "#32029"
+msgid "Update now"
+msgstr "Aktualizovat teď"
+
+msgctxt "#32030"
+msgid "ARTISTS"
+msgstr "UMĚLCI"
+
+msgctxt "#32031"
+msgid "ALBUMS"
+msgstr "ALBA"
+
+msgctxt "#32032"
+msgid "SONGS"
+msgstr "SKLADBY"
+
+msgctxt "#32033"
+msgid "Widget screens"
+msgstr "Obrazovky widgetů"
+
+msgctxt "#32034"
+msgid "Hide plot and thumb"
+msgstr "Skrýt děj a náhled"
+
+msgctxt "#32035"
+msgid "Start"
+msgstr "Začít"
+
+msgctxt "#32036"
+msgid "A handful of short steps"
+msgstr "Pár krátkých kroků"
+
+msgctxt "#32037"
+msgid "Backdrop, look, Home menu, libraries and motion."
+msgstr "Pozadí, vzhled, hlavní nabídka, knihovny a pohyb."
+
+msgctxt "#32038"
+msgid "Skip setup"
+msgstr "Přeskočit nastavení"
+
+msgctxt "#32039"
+msgid "Keep the defaults for now"
+msgstr "Zatím ponechat výchozí"
+
+msgctxt "#32040"
+msgid "Run the setup any time: Skin settings > Motion, memory, reset > Setup wizard."
+msgstr "Nastavení spustíte kdykoli: Nastavení vzhledu > Pohyb, paměť, obnovení > Průvodce nastavením."
+
+msgctxt "#32041"
+msgid "A calm backdrop in a palette of your choice"
+msgstr "Klidné pozadí v paletě podle vás"
+
+msgctxt "#32042"
+msgid "A dark, even background in the colours of the palette you pick next."
+msgstr "Tmavé, rovnoměrné pozadí v barvách palety, kterou zvolíte dál."
+
+msgctxt "#32043"
+msgid "The focused title's fanart, dimmed"
+msgstr "Fanart vybraného titulu, ztlumený"
+
+msgctxt "#32044"
+msgid "The artwork of the focused title fills the background, dimmed so text stays readable."
+msgstr "Obrázek vybraného titulu vyplní pozadí, ztlumený, aby byl text čitelný."
+
+msgctxt "#32045"
+msgid "A tint taken from the artwork"
+msgstr "Odstín převzatý z obrázku"
+
+msgctxt "#32046"
+msgid "A deep colour taken from the focused title's artwork."
+msgstr "Sytá barva převzatá z obrázku vybraného titulu."
+
+msgctxt "#32047"
+msgid "The palette shows after Kodi restarts at the end of the setup."
+msgstr "Paleta se ukáže po restartu Kodi na konci nastavení."
+
+msgctxt "#32048"
+msgid "Solid panels, palettes"
+msgstr "Plné panely, palety"
+
+msgctxt "#32049"
+msgid "The classic Aeon look: calm, solid surfaces and a white or coloured focus bar."
+msgstr "Klasický vzhled Aeon: klidné, plné plochy a bílý nebo barevný pruh výběru."
+
+msgctxt "#32050"
+msgid "Aeon with glass menus, no palettes"
+msgstr "Aeon se skleněnými nabídkami, bez palet"
+
+msgctxt "#32051"
+msgid "Panels of frosted glass over the fanart; the focus bar is a soft light."
+msgstr "Panely z matného skla nad fanartem; pruh výběru je měkké světlo."
+
+msgctxt "#32052"
+msgid "As the skin theme"
+msgstr "Podle tématu vzhledu"
+
+msgctxt "#32053"
+msgid "Flat rows with rules"
+msgstr "Ploché řádky s linkami"
+
+msgctxt "#32054"
+msgid "The menus of the Aeon or Aeon Glass theme you picked."
+msgstr "Nabídky zvoleného tématu Aeon nebo Aeon Glass."
+
+msgctxt "#32055"
+msgid "Rounded cards, like this setup"
+msgstr "Zaoblené karty, jako tento průvodce"
+
+msgctxt "#32056"
+msgid "Every row a soft card, the focused one solid; no rule lines."
+msgstr "Každý řádek měkká karta, vybraný plný; žádné linky."
+
+msgctxt "#32057"
+msgid "OK switches Movies on or off."
+msgstr "OK zapne nebo vypne Filmy."
+
+msgctxt "#32058"
+msgid "OK switches TV shows on or off."
+msgstr "OK zapne nebo vypne Seriály."
+
+msgctxt "#32059"
+msgid "OK switches Music on or off."
+msgstr "OK zapne nebo vypne Hudbu."
+
+msgctxt "#32060"
+msgid "OK switches Live TV on or off."
+msgstr "OK zapne nebo vypne Živé vysílání."
+
+msgctxt "#32061"
+msgid "OK switches Search on or off."
+msgstr "OK zapne nebo vypne Hledat."
+
+msgctxt "#32062"
+msgid "OK switches Movie sets on or off."
+msgstr "OK zapne nebo vypne Filmové kolekce."
+
+msgctxt "#32063"
+msgid "OK switches Favourites on or off."
+msgstr "OK zapne nebo vypne Oblíbené."
+
+msgctxt "#32064"
+msgid "OK switches Pictures on or off."
+msgstr "OK zapne nebo vypne Obrázky."
+
+msgctxt "#32065"
+msgid "OK switches Add-ons on or off."
+msgstr "OK zapne nebo vypne Doplňky."
+
+msgctxt "#32066"
+msgid "OK switches Weather on or off."
+msgstr "OK zapne nebo vypne Počasí."
+
+msgctxt "#32067"
+msgid "OK switches Planner on or off."
+msgstr "OK zapne nebo vypne Plánovač."
+
+msgctxt "#32068"
+msgid "OK switches Files on or off."
+msgstr "OK zapne nebo vypne Soubory."
+
+msgctxt "#32069"
+msgid "OK switches Settings on or off."
+msgstr "OK zapne nebo vypne Nastavení."
+
+msgctxt "#32070"
+msgid "OK switches Power on or off."
+msgstr "OK zapne nebo vypne Napájení."
+
+msgctxt "#32071"
+msgid "Continue"
+msgstr "Pokračovat"
+
+msgctxt "#32072"
+msgid "Next step"
+msgstr "Další krok"
+
+msgctxt "#32073"
+msgid "On to the Home menu position."
+msgstr "Dále umístění hlavní nabídky."
+
+msgctxt "#32074"
+msgid "The spotlight above, a row of posters below"
+msgstr "Spotlight nahoře, pod ním řada plakátů"
+
+msgctxt "#32075"
+msgid "The menu across the middle of the screen with a widget row underneath."
+msgstr "Nabídka přes střed obrazovky a pod ní řada widgetů."
+
+msgctxt "#32076"
+msgid "A taller spotlight, the menu near the bottom"
+msgstr "Vyšší Spotlight, nabídka u spodního okraje"
+
+msgctxt "#32077"
+msgid "More room for the spotlight; the menu sits low on the screen."
+msgstr "Více místa pro Spotlight; nabídka je nízko na obrazovce."
+
+msgctxt "#32078"
+msgid "The artwork of the spotlight title"
+msgstr "Obrázek titulu ve Spotlightu"
+
+msgctxt "#32079"
+msgid "Fanart of the title in the spotlight, with a soft fade from the left."
+msgstr "Fanart titulu ve Spotlightu s jemným přechodem zleva."
+
+msgctxt "#32080"
+msgid "A colour taken from the artwork"
+msgstr "Barva z obrázku"
+
+msgctxt "#32081"
+msgid "A warm or cool tint drawn from the title's artwork."
+msgstr "Teplý nebo studený odstín z obrázku titulu."
+
+msgctxt "#32082"
+msgid "A quiet dark background"
+msgstr "Klidné tmavé pozadí"
+
+msgctxt "#32083"
+msgid "No artwork behind the spotlight text."
+msgstr "Za textem Spotlightu žádný obrázek."
+
+msgctxt "#32084"
+msgid "One picture dissolves into the next"
+msgstr "Jeden obrázek přejde do dalšího"
+
+msgctxt "#32085"
+msgid "A soft cross-fade."
+msgstr "Jemné prolnutí."
+
+msgctxt "#32086"
+msgid "The next one pushes in from the right"
+msgstr "Další se zasune zprava"
+
+msgctxt "#32087"
+msgid "A sideways slide, like turning a page."
+msgstr "Posun do strany jako při otáčení stránky."
+
+msgctxt "#32088"
+msgid "Straight to the next"
+msgstr "Rovnou na další"
+
+msgctxt "#32089"
+msgid "No animation: the next title appears at once."
+msgstr "Bez animace: další titul se objeví hned."
+
+msgctxt "#32090"
+msgid "The colour of the artwork"
+msgstr "Barva obrázku"
+
+msgctxt "#32091"
+msgid "The boxes take a deep colour from the focused title's artwork."
+msgstr "Boxy přebírají sytou barvu z obrázku vybraného titulu."
+
+msgctxt "#32092"
+msgid "The palette's box colour"
+msgstr "Barva boxů z palety"
+
+msgctxt "#32093"
+msgid "Always the same calm colour of the palette."
+msgstr "Vždy stejná klidná barva palety."
+
+msgctxt "#32094"
+msgid "A window onto the fanart"
+msgstr "Okno do fanartu"
+
+msgctxt "#32095"
+msgid "Each box shows the part of the fanart behind it, darkened for the clock."
+msgstr "Každý box ukazuje část fanartu za sebou, ztmavenou kvůli hodinám."
+
+msgctxt "#32096"
+msgid "As the backdrop"
+msgstr "Podle pozadí"
+
+msgctxt "#32097"
+msgid "Follow the library backdrop"
+msgstr "Podle pozadí knihovny"
+
+msgctxt "#32098"
+msgid "Neutral, fanart or colour, whatever the library backdrop is."
+msgstr "Neutrální, fanart nebo barva, podle pozadí knihovny."
+
+msgctxt "#32099"
+msgid "Dots, checks and progress bars"
+msgstr "Tečky, fajfky a ukazatele průběhu"
+
+msgctxt "#32100"
+msgid "Unwatched titles get a dot, watched ones a check, started ones a progress bar."
+msgstr "Nezhlédnuté tituly dostanou tečku, zhlédnuté fajfku, rozkoukané ukazatel průběhu."
+
+msgctxt "#32101"
+msgid "Dots and progress bars"
+msgstr "Tečky a ukazatele průběhu"
+
+msgctxt "#32102"
+msgid "Only what is still to watch is marked."
+msgstr "Označí se jen to, co zbývá zhlédnout."
+
+msgctxt "#32103"
+msgid "Checks on what you have seen"
+msgstr "Fajfky u zhlédnutého"
+
+msgctxt "#32104"
+msgid "Only finished titles are marked."
+msgstr "Označí se jen dokoukané tituly."
+
+msgctxt "#32105"
+msgid "Clean posters"
+msgstr "Čisté plakáty"
+
+msgctxt "#32106"
+msgid "No markers at all."
+msgstr "Vůbec žádné značky."
+
+msgctxt "#32107"
+msgid "Logos"
+msgstr "Loga"
+
+msgctxt "#32108"
+msgid "The artwork's clear logo"
+msgstr "ClearLogo z obrázků"
+
+msgctxt "#32109"
+msgid "Clear logos from the artwork, text where a title has none."
+msgstr "ClearLoga z obrázků, text tam, kde titul žádné nemá."
+
+msgctxt "#32110"
+msgid "Plain text"
+msgstr "Prostý text"
+
+msgctxt "#32111"
+msgid "Always the name in the skin's own font."
+msgstr "Vždy název vlastním písmem vzhledu."
+
+msgctxt "#32112"
+msgid "FULL HD, 4K, aspect ratio"
+msgstr "FULL HD, 4K, poměr stran"
+
+msgctxt "#32113"
+msgid "OK switches the resolution chips on or off."
+msgstr "OK zapne nebo vypne štítky rozlišení."
+
+msgctxt "#32114"
+msgid "SDR, HDR10, Dolby Vision profile"
+msgstr "SDR, HDR10, profil Dolby Vision"
+
+msgctxt "#32115"
+msgid "OK switches the HDR chips on or off."
+msgstr "OK zapne nebo vypne štítky HDR."
+
+msgctxt "#32116"
+msgid "Codec and channels"
+msgstr "Kodek a kanály"
+
+msgctxt "#32117"
+msgid "OK switches the audio chips on or off."
+msgstr "OK zapne nebo vypne štítky zvuku."
+
+msgctxt "#32118"
+msgid "On to the extra fanart."
+msgstr "Dále extra fanart."
+
+msgctxt "#32119"
+msgid "Take turns"
+msgstr "Střídat"
+
+msgctxt "#32120"
+msgid "Every extra fanart in a slow cycle"
+msgstr "Každý extra fanart v pomalém střídání"
+
+msgctxt "#32121"
+msgid "The background changes picture every few seconds (Skin settings > Backgrounds sets how often)."
+msgstr "Pozadí mění obrázek každých pár sekund (jak často, určuje Nastavení vzhledu > Pozadí)."
+
+msgctxt "#32122"
+msgid "One picture"
+msgstr "Jeden obrázek"
+
+msgctxt "#32123"
+msgid "Only the main fanart"
+msgstr "Jen hlavní fanart"
+
+msgctxt "#32124"
+msgid "The background stays on the main fanart."
+msgstr "Pozadí zůstane na hlavním fanartu."
+
+msgctxt "#32125"
+msgid "Hide them"
+msgstr "Skrýt je"
+
+msgctxt "#32126"
+msgid "No thumbnail or plot until watched"
+msgstr "Bez náhledu a děje až do zhlédnutí"
+
+msgctxt "#32127"
+msgid "Unwatched episodes show a blurred picture and no plot."
+msgstr "Nezhlédnuté epizody ukazují rozmazaný obrázek a žádný děj."
+
+msgctxt "#32128"
+msgid "Show them"
+msgstr "Zobrazit je"
+
+msgctxt "#32129"
+msgid "Thumbnails and plots for all"
+msgstr "Náhledy a děj u všech"
+
+msgctxt "#32130"
+msgid "Every episode shows its picture and plot."
+msgstr "Každá epizoda ukazuje svůj obrázek a děj."
+
+msgctxt "#32131"
+msgid "Full motion"
+msgstr "Plný pohyb"
+
+msgctxt "#32132"
+msgid "Smooth slides and fades"
+msgstr "Plynulé posuny a prolínání"
+
+msgctxt "#32133"
+msgid "Rows slide in one after another, dialogs glide open."
+msgstr "Řádky se zasouvají jeden po druhém, dialogy se plynule otevírají."
+
+msgctxt "#32134"
+msgid "Everything appears at once"
+msgstr "Vše se objeví hned"
+
+msgctxt "#32135"
+msgid "No slides or zooms: calmer, and lighter on slow boxes."
+msgstr "Žádné posuny ani přiblížení: klidnější a méně náročné pro pomalá zařízení."
+
+msgctxt "#32136"
+msgid "When free RAM is low"
+msgstr "Když dochází volná RAM"
+
+msgctxt "#32137"
+msgid "Recommended: below 1 GB free"
+msgstr "Doporučeno: pod 1 GB volné"
+
+msgctxt "#32138"
+msgid "Kodi hands memory back when the free RAM drops below the minimum (Skin settings can change it)."
+msgstr "Kodi vrací paměť, když volná RAM klesne pod minimum (lze změnit v Nastavení vzhledu)."
+
+msgctxt "#32139"
+msgid "After a pause"
+msgstr "Po pauze"
+
+msgctxt "#32140"
+msgid "A few seconds after the last key press"
+msgstr "Pár sekund po posledním stisku klávesy"
+
+msgctxt "#32141"
+msgid "Kodi hands memory back whenever the remote has been quiet for a moment."
+msgstr "Kodi vrací paměť vždy, když je dálkový ovladač chvíli v klidu."
+
+msgctxt "#32142"
+msgid "Finish"
+msgstr "Dokončit"
+
+msgctxt "#32143"
+msgid "Change something"
+msgstr "Něco změnit"
+
+msgctxt "#32144"
+msgid "Go back to the previous step."
+msgstr "Zpět na předchozí krok."
+
+msgctxt "#32145"
+msgid "Huge thanks and credit go out to the following"
+msgstr "Velký dík patří"
+
+msgctxt "#32146"
+msgid "The Kodi development team"
+msgstr "Vývojový tým Kodi"
+
+msgctxt "#32147"
+msgid "OK  choose      BACK  previous step"
+msgstr "OK  vybrat      ZPĚT  předchozí krok"
+
+msgctxt "#32148"
+msgid "version"
+msgstr "verze"
+
+msgctxt "#32149"
+msgid "by"
+msgstr "autor"
+
+msgctxt "#32150"
+msgid "now"
+msgstr "nyní"
+
+msgctxt "#32151"
+msgid "night"
+msgstr "noc"
+
+msgctxt "#32152"
+msgid "evening"
+msgstr "večer"
+
+msgctxt "#32153"
+msgid "afternoon"
+msgstr "odpoledne"
+
+msgctxt "#32154"
+msgid "morning"
+msgstr "ráno"
+
+msgctxt "#32158"
+msgid "until midnight"
+msgstr "do půlnoci"
+
+msgctxt "#32159"
+msgid "tornado"
+msgstr "tornádo"
+
+msgctxt "#32160"
+msgid "tropical storm"
+msgstr "tropická bouře"
+
+msgctxt "#32161"
+msgid "hurricane"
+msgstr "hurikán"
+
+msgctxt "#32162"
+msgid "severe storms"
+msgstr "silné bouřky"
+
+msgctxt "#32163"
+msgid "thunderstorms"
+msgstr "bouřky"
+
+msgctxt "#32164"
+msgid "rain and snow"
+msgstr "déšť a sníh"
+
+msgctxt "#32165"
+msgid "rain and sleet"
+msgstr "déšť a déšť se sněhem"
+
+msgctxt "#32166"
+msgid "snow and sleet"
+msgstr "sníh a déšť se sněhem"
+
+msgctxt "#32167"
+msgid "freezing drizzle"
+msgstr "mrznoucí mrholení"
+
+msgctxt "#32168"
+msgid "drizzle"
+msgstr "mrholení"
+
+msgctxt "#32169"
+msgid "freezing rain"
+msgstr "mrznoucí déšť"
+
+msgctxt "#32170"
+msgid "showers"
+msgstr "přeháňky"
+
+msgctxt "#32171"
+msgid "snow flurries"
+msgstr "sněhové vločky"
+
+msgctxt "#32172"
+msgid "light snow"
+msgstr "slabé sněžení"
+
+msgctxt "#32173"
+msgid "blowing snow"
+msgstr "zvířený sníh"
+
+msgctxt "#32174"
+msgid "snow"
+msgstr "sníh"
+
+msgctxt "#32175"
+msgid "hail"
+msgstr "kroupy"
+
+msgctxt "#32176"
+msgid "sleet"
+msgstr "déšť se sněhem"
+
+msgctxt "#32177"
+msgid "dust"
+msgstr "prach"
+
+msgctxt "#32178"
+msgid "fog"
+msgstr "mlha"
+
+msgctxt "#32179"
+msgid "haze"
+msgstr "opar"
+
+msgctxt "#32180"
+msgid "smoke"
+msgstr "kouř"
+
+msgctxt "#32181"
+msgid "blustery"
+msgstr "nárazový vítr"
+
+msgctxt "#32182"
+msgid "windy"
+msgstr "větrno"
+
+msgctxt "#32183"
+msgid "cold"
+msgstr "chladno"
+
+msgctxt "#32184"
+msgid "cloudy"
+msgstr "oblačno"
+
+msgctxt "#32185"
+msgid "mostly cloudy"
+msgstr "převážně oblačno"
+
+msgctxt "#32186"
+msgid "partly cloudy"
+msgstr "polojasno"
+
+msgctxt "#32187"
+msgid "clear"
+msgstr "jasno"
+
+msgctxt "#32188"
+msgid "sunny"
+msgstr "slunečno"
+
+msgctxt "#32189"
+msgid "fair"
+msgstr "pěkně"
+
+msgctxt "#32190"
+msgid "rain and hail"
+msgstr "déšť a kroupy"
+
+msgctxt "#32191"
+msgid "hot"
+msgstr "horko"
+
+msgctxt "#32192"
+msgid "isolated storms"
+msgstr "ojedinělé bouřky"
+
+msgctxt "#32193"
+msgid "scattered storms"
+msgstr "místní bouřky"
+
+msgctxt "#32194"
+msgid "scattered showers"
+msgstr "místní přeháňky"
+
+msgctxt "#32195"
+msgid "heavy snow"
+msgstr "husté sněžení"
+
+msgctxt "#32196"
+msgid "snow showers"
+msgstr "sněhové přeháňky"
+
+msgctxt "#32197"
+msgid "thundershowers"
+msgstr "bouřkové přeháňky"
+
+msgctxt "#32198"
+msgid "Blustery"
+msgstr "Nárazový vítr"
+
+msgctxt "#32199"
+msgid "Hot"
+msgstr "Horko"
+
+msgctxt "#32200"
+msgid "Fits before midnight"
+msgstr "Stihnete do půlnoci"
+
+msgctxt "#32201"
+msgid "fits before midnight"
+msgstr "stihnete do půlnoci"
+
+msgctxt "#32202"
+msgid "under 100 minutes"
+msgstr "pod 100 minut"
+
+msgctxt "#32203"
+msgid "something light"
+msgstr "něco lehkého"
+
+msgctxt "#32204"
+msgid "a long one"
+msgstr "něco delšího"
+
+msgctxt "#32205"
+msgid "highly rated"
+msgstr "vysoce hodnocené"
+
+msgctxt "#32206"
+msgid "right at midnight"
+msgstr "přesně o půlnoci"
+
+msgctxt "#32207"
+msgid "past midnight"
+msgstr "po půlnoci"
+
+msgctxt "#32208"
+msgid "before midnight"
+msgstr "před půlnocí"
+
+msgctxt "#32209"
+msgid "kbps"
+msgstr "kb/s"
+
+msgctxt "#32210"
+msgid "ch"
+msgstr "kan."
+
+msgctxt "#32211"
+msgid "bit"
+msgstr "bit"
+
+msgctxt "#32212"
+msgid "kHz"
+msgstr "kHz"
+
+msgctxt "#32213"
+msgid "Hz"
+msgstr "Hz"
+
+msgctxt "#32214"
+msgid "TRACK"
+msgstr "SKLADBA"
+
+msgctxt "#32215"
+msgid "FROM THE ALBUM"
+msgstr "Z ALBA"
+
+msgctxt "#32216"
+msgid "Released in"
+msgstr "Vydáno"
+
+msgctxt "#32217"
+msgid "Record label"
+msgstr "Vydavatelství"
+
+msgctxt "#32218"
+msgid "Alphabetical"
+msgstr "Abecedně"
+
+msgctxt "#32219"
+msgid "Reversed"
+msgstr "Obráceně"
+
+msgctxt "#32220"
+msgid "MINS"
+msgstr "MIN"
+
+msgctxt "#32221"
+msgid "RATED"
+msgstr "KLASIFIKACE"
+
+msgctxt "#32222"
+msgid "NOT RATED"
+msgstr "BEZ KLASIFIKACE"
+
+msgctxt "#32223"
+msgid "AN ALBUM BY"
+msgstr "ALBUM ·"
+
+msgctxt "#32224"
+msgid "RELEASED IN"
+msgstr "VYDÁNO"
+
+msgctxt "#32225"
+msgid "A TV SHOW"
+msgstr "SERIÁL"
+
+msgctxt "#32226"
+msgid "FIRST AIRED IN"
+msgstr "PREMIÉRA"
+
+msgctxt "#32227"
+msgid "A MOVIE BY"
+msgstr "FILM ·"
+
+msgctxt "#32228"
+msgid "Active"
+msgstr "Aktivní"
+
+msgctxt "#32229"
+msgid "FORMED"
+msgstr "ZALOŽENO"
+
+msgctxt "#32230"
+msgid "DISBANDED"
+msgstr "ROZPUŠTĚNO"
+
+msgctxt "#32231"
+msgid "BORN"
+msgstr "NAROZEN"
+
+msgctxt "#32232"
+msgid "DIED"
+msgstr "ZEMŘEL"
+
+msgctxt "#32233"
+msgid "Refresh information"
+msgstr "Obnovit informace"
+
+msgctxt "#32234"
+msgid "Take screenshot"
+msgstr "Pořídit snímek obrazovky"
+
+msgctxt "#32235"
+msgid "Switch off"
+msgstr "Vypnout"
+
+msgctxt "#32236"
+msgid "Switch on"
+msgstr "Zapnout"
+
+msgctxt "#32237"
+msgid "Written by"
+msgstr "Scénář:"
+
+msgctxt "#32238"
+msgid "Directed by"
+msgstr "Režie:"
+
+msgctxt "#32239"
+msgid "SET"
+msgstr "KOLEKCE"
+
+msgctxt "#32240"
+msgid "VOTES"
+msgstr "HLASŮ"
+
+msgctxt "#32241"
+msgid "EPISODES"
+msgstr "EPIZOD"
+
+msgctxt "#32242"
+msgid "UNWATCHED"
+msgstr "NEZHLÉDNUTO"
+
+msgctxt "#32243"
+msgid "Setup"
+msgstr "Nastavení"
+
+msgctxt "#32244"
+msgid "Libraries"
+msgstr "Knihovny"
+
+msgctxt "#32245"
+msgid "Motion"
+msgstr "Pohyb"
+
+msgctxt "#32246"
+msgid "Welcome to Aeon Fuse"
+msgstr "Vítejte v Aeon Fuse"
+
+msgctxt "#32247"
+msgid "Library backdrop"
+msgstr "Pozadí knihovny"
+
+msgctxt "#32248"
+msgid "Pick a palette"
+msgstr "Zvolte paletu"
+
+msgctxt "#32249"
+msgid "Skin theme"
+msgstr "Téma vzhledu"
+
+msgctxt "#32250"
+msgid "Skin style"
+msgstr "Styl vzhledu"
+
+msgctxt "#32251"
+msgid "Home menu items"
+msgstr "Položky hlavní nabídky"
+
+msgctxt "#32252"
+msgid "Spotlight transition"
+msgstr "Přechod Spotlightu"
+
+msgctxt "#32253"
+msgid "Corner boxes"
+msgstr "Rohové boxy"
+
+msgctxt "#32254"
+msgid "Titles or logos"
+msgstr "Názvy nebo loga"
+
+msgctxt "#32255"
+msgid "Extra fanart"
+msgstr "Extra fanart"
+
+msgctxt "#32256"
+msgid "Spoilers"
+msgstr "Spoilery"
+
+msgctxt "#32257"
+msgid "All set"
+msgstr "Vše připraveno"
+
+msgctxt "#32258"
+msgid "A few quick choices make the skin yours. Every step shows a preview, and everything can be changed later in Skin settings."
+msgstr "Pár rychlých voleb udělá vzhled vaším. Každý krok ukazuje náhled a vše lze později změnit v Nastavení vzhledu."
+
+msgctxt "#32259"
+msgid "What fills the space behind the library views. With Neutral the next step lets you pick a palette."
+msgstr "Co vyplňuje prostor za zobrazeními knihovny. S neutrálním pozadím v dalším kroku zvolíte paletu."
+
+msgctxt "#32260"
+msgid "The palette colours the neutral backdrop, the focus bar, the boxes and the strips (Aeon theme)."
+msgstr "Paleta barví neutrální pozadí, pruh výběru, boxy a pruhy (téma Aeon)."
+
+msgctxt "#32261"
+msgid "Aeon draws solid panels with a bright focus bar. Aeon Glass lets the artwork shine through frosted panels."
+msgstr "Aeon kreslí plné panely s jasným pruhem výběru. Aeon Glass nechá obrázek prosvítat matnými panely."
+
+msgctxt "#32262"
+msgid "How settings, dialogs and side menus look: the skin theme's own menus, or Fuse, the rounded cards of this setup."
+msgstr "Jak vypadají nastavení, dialogy a boční nabídky: vlastní nabídky tématu vzhledu, nebo Fuse, zaoblené karty tohoto průvodce."
+
+msgctxt "#32263"
+msgid "Switch the items you want on the Home menu. Order, custom items (three are always free) and their lists: Skin settings > Home menu."
+msgstr "Zapněte položky, které chcete mít v hlavní nabídce. Pořadí, vlastní položky (tři jsou vždy volné) a jejich seznamy: Nastavení vzhledu > Hlavní nabídka."
+
+msgctxt "#32264"
+msgid "Where the main menu sits on the Home screen."
+msgstr "Kde je hlavní nabídka na domovské obrazovce."
+
+msgctxt "#32265"
+msgid "The backdrop of the spotlight at the top of Home."
+msgstr "Pozadí Spotlightu nahoře na Domů."
+
+msgctxt "#32266"
+msgid "How one spotlight title gives way to the next."
+msgstr "Jak jeden titul Spotlightu uvolní místo dalšímu."
+
+msgctxt "#32267"
+msgid "The clock box, the item count and the strip boxes in the corners of the library."
+msgstr "Box s hodinami, počet položek a boxy pruhů v rozích knihovny."
+
+msgctxt "#32268"
+msgid "Small markers on posters: a dot for unwatched, a check for watched, a bar for in progress."
+msgstr "Malé značky na plakátech: tečka pro nezhlédnuté, fajfka pro zhlédnuté, pruh pro rozkoukané."
+
+msgctxt "#32269"
+msgid "Show a title's clear logo where the skin has room for it, or its name in plain text."
+msgstr "Zobrazit ClearLogo titulu tam, kde na něj má vzhled místo, jinak název prostým textem."
+
+msgctxt "#32270"
+msgid "The chips under a title in the libraries and on the information page. Switch the ones you want."
+msgstr "Štítky pod titulem v knihovnách a na stránce informací. Zapněte ty, které chcete."
+
+msgctxt "#32271"
+msgid "Titles with more than one fanart can take turns showing them in the background."
+msgstr "Tituly s více fanarty je mohou střídavě ukazovat v pozadí."
+
+msgctxt "#32272"
+msgid "Unwatched episodes can keep their thumbnail and plot to themselves."
+msgstr "Nezhlédnuté epizody si mohou nechat náhled a děj pro sebe."
+
+msgctxt "#32273"
+msgid "Slides and fades when views, menus and dialogs open."
+msgstr "Posuny a prolínání při otevírání zobrazení, nabídek a dialogů."
+
+msgctxt "#32274"
+msgid "On small boxes Kodi keeps memory it no longer uses. The skin's helper can hand it back to the system."
+msgstr "Na malých zařízeních si Kodi drží paměť, kterou už nepoužívá. Pomocník vzhledu ji může vrátit systému."
+
+msgctxt "#32275"
+msgid "Your choices are saved. Run the setup again any time from Skin settings > Motion, memory, reset."
+msgstr "Vaše volby jsou uloženy. Průvodce znovu spustíte kdykoli: Nastavení vzhledu > Pohyb, paměť, obnovení."
+
+msgctxt "#32276"
+msgid "Kodi restarts to show the new look"
+msgstr "Kodi se restartuje, aby ukázal nový vzhled"
+
+msgctxt "#32277"
+msgid "Then restart Kodi once"
+msgstr "Pak Kodi jednou restartujte"
+
+msgctxt "#32278"
+msgid "Close the setup"
+msgstr "Zavřít průvodce"
+
+msgctxt "#32279"
+msgid "A new theme or palette needs Kodi to start again; it takes a few seconds."
+msgstr "Nové téma nebo paleta vyžaduje restart Kodi; trvá to pár sekund."
+
+msgctxt "#32280"
+msgid "The new look shows at once. Restart Kodi when you can: until then some settings may read wrong."
+msgstr "Nový vzhled se ukáže hned. Restartujte Kodi, až to půjde: do té doby mohou některá nastavení ukazovat špatné hodnoty."
+
+msgctxt "#32281"
+msgid "Enjoy Aeon Fuse."
+msgstr "Užijte si Aeon Fuse."
+
+msgctxt "#32282"
+msgid "ends"
+msgstr "konec"
+
+msgctxt "#32283"
+msgid "Nothing unwatched fits before midnight tonight."
+msgstr "Nic nezhlédnutého dnes do půlnoci nestihnete."
+
+msgctxt "#32285"
+msgid "of"
+msgstr "z"
+
+msgctxt "#32286"
+msgid "watched"
+msgstr "zhlédnuto"
+
+msgctxt "#32287"
+msgid "unwatched"
+msgstr "nezhlédnuto"
+
+msgctxt "#32288"
+msgid "Nothing unwatched fits this slot. Try Films for everything."
+msgstr "Nic nezhlédnutého se do tohoto času nevejde. Vše najdete ve Filmech."
+
+msgctxt "#32289"
+msgid "Nothing here yet."
+msgstr "Zatím tu nic není."
+
+msgctxt "#32290"
+msgid "Current"
+msgstr "Aktuální"
+
+msgctxt "#32291"
+msgid "Rec"
+msgstr "Nahr."
+
+msgctxt "#32292"
+msgid "Remind"
+msgstr "Připomenout"
+
+msgctxt "#32293"
+msgid "Archive"
+msgstr "Archiv"
+
+msgctxt "#32294"
+msgid "Edited"
+msgstr "Upraveno"
+
+msgctxt "#32295"
+msgid "About"
+msgstr "O doplňku"
+
+msgctxt "#32296"
+msgid "Group"
+msgstr "Skupina"
+
+msgctxt "#32297"
+msgid "Nothing here yet"
+msgstr "Zatím tu nic není"
+
+msgctxt "#32298"
+msgid "Tracklist"
+msgstr "Seznam skladeb"
+
+msgctxt "#32299"
+msgid "born"
+msgstr "narozen"
+
+msgctxt "#32300"
+msgid "formed"
+msgstr "založeno"
+
+msgctxt "#32301"
+msgid "minutes of music"
+msgstr "minut hudby"
+
+msgctxt "#32302"
+msgid "Start now, done by"
+msgstr "Spustit teď, konec v"
+
+msgctxt "#32303"
+msgid "The music stops at"
+msgstr "Hudba skončí v"
+
+msgctxt "#32304"
+msgid "OK for the controls."
+msgstr "OK otevře ovládání."
+
+msgctxt "#32305"
+msgid "Go to"
+msgstr "Přejít na"
+
+msgctxt "#32306"
+msgid "Sleeps when this ends  ·  bedtime"
+msgstr "Uspí se po skončení  ·  večerka"
+
+msgctxt "#32307"
+msgid "RESULTS"
+msgstr "VÝSLEDKŮ"
+
+msgctxt "#32308"
+msgid "track"
+msgstr "skladba"
+
+msgctxt "#32309"
+msgid "tracks"
+msgstr "skladeb"
+
+msgctxt "#32310"
+msgid "option"
+msgstr "možnost"
+
+msgctxt "#32311"
+msgid "options"
+msgstr "možností"
+
+msgctxt "#32312"
+msgid "item"
+msgstr "položka"
+
+msgctxt "#32313"
+msgid "album in your library"
+msgstr "album ve vaší knihovně"
+
+msgctxt "#32314"
+msgid "albums in your library"
+msgstr "alb ve vaší knihovně"
+
+msgctxt "#32315"
+msgid "film"
+msgstr "film"
+
+msgctxt "#32316"
+msgid "person"
+msgstr "osoba"
+
+msgctxt "#32317"
+msgid "people"
+msgstr "osob"
+
+msgctxt "#32318"
+msgid "episode"
+msgstr "epizoda"
+
+msgctxt "#32319"
+msgid "episodes"
+msgstr "epizod"
+
+msgctxt "#32320"
+msgid "film watched"
+msgstr "film zhlédnut"
+
+msgctxt "#32321"
+msgid "films watched"
+msgstr "filmů zhlédnuto"
+
+msgctxt "#32322"
+msgid "episode watched"
+msgstr "epizoda zhlédnuta"
+
+msgctxt "#32323"
+msgid "episodes watched"
+msgstr "epizod zhlédnuto"
+
+msgctxt "#32324"
+msgid "Midnight"
+msgstr "Půlnoc"
+
+msgctxt "#32325"
+msgid "The extra items Aeon Fuse adds to Kodi's context menu: which of them show and in what order."
+msgstr "Položky, které Aeon Fuse přidává do místní nabídky Kodi: které se zobrazí a v jakém pořadí."
+
+msgctxt "#32326"
+msgid "Kodi lists these after its own items (and before those of other add-ons that come later). Pick one, then use the buttons on the right."
+msgstr "Kodi je uvádí po svých vlastních položkách (a před položkami doplňků, které přijdou později). Vyberte jednu a pak použijte tlačítka vpravo."
+
+msgctxt "#32327"
+msgid "Shows or hides the selected item in the context menu."
+msgstr "Zobrazí nebo skryje vybranou položku v místní nabídce."
+
+msgctxt "#32328"
+msgid "Moves the selected item one place up in the context menu."
+msgstr "Posune vybranou položku v místní nabídce o jedno místo nahoru."
+
+msgctxt "#32329"
+msgid "Moves the selected item one place down in the context menu."
+msgstr "Posune vybranou položku v místní nabídce o jedno místo dolů."
+
+msgctxt "#32330"
+msgid "The backdrop of the widget screens (Up on a Home item) slowly zooms in with every title. Reduce motion stops it too."
+msgstr "Pozadí obrazovek widgetů (Nahoru na položce Domů) se u každého titulu pomalu přibližuje. Omezit pohyb to také zastaví."
+
+msgctxt "#32331"
+msgid "A font family for each part of the skin: Home, the libraries, headings, the settings pages and the player."
+msgstr "Rodina písem pro každou část vzhledu: Domů, knihovny, nadpisy, stránky nastavení a přehrávač."
+
+msgctxt "#32332"
+msgid "Film"
+msgstr "Film"
+
+msgctxt "#32333"
+msgid "Resume now: done by"
+msgstr "Pokračovat teď: konec v"
+
+msgctxt "#32334"
+msgid "Start now: ends"
+msgstr "Spustit teď: konec"
+
+msgctxt "#32336"
+msgid "Down for the films"
+msgstr "Dolů: filmy"
+
+msgctxt "#32337"
+msgid "Down for the cast"
+msgstr "Dolů: obsazení"
+
+msgctxt "#32338"
+msgid "Story"
+msgstr "Příběh"
+
+msgctxt "#32339"
+msgid "split"
+msgstr "rozpuštěno"
+
+msgctxt "#32340"
+msgid "died"
+msgstr "zemřel"
+
+msgctxt "#32341"
+msgid "Resume at"
+msgstr "Pokračovat od"
+
+msgctxt "#32342"
+msgid "added"
+msgstr "přidáno"
+
+msgctxt "#32343"
+msgid "season"
+msgstr "řada"
+
+msgctxt "#32344"
+msgid "seasons"
+msgstr "řad"
+
+msgctxt "#32345"
+msgid "Aired"
+msgstr "Vysíláno"
+
+msgctxt "#32346"
+msgid "Resume now and you're done by"
+msgstr "Pokračujte teď a skončíte v"
+
+msgctxt "#32347"
+msgid "Start now and it ends at"
+msgstr "Spusťte teď a skončí v"
+
+msgctxt "#32348"
+msgid "after midnight"
+msgstr "po půlnoci"
+
+msgctxt "#32349"
+msgid "Start now and you're done by"
+msgstr "Spusťte teď a skončíte v"
+
+msgctxt "#32350"
+msgid "still to watch"
+msgstr "zbývá zhlédnout"
+
+msgctxt "#32351"
+msgid "aired"
+msgstr "vysíláno"
+
+msgctxt "#32352"
+msgid "rated"
+msgstr "hodnocení"
+
+msgctxt "#32353"
+msgid "With"
+msgstr "Hrají"
+
+msgctxt "#32354"
+msgid "Progress"
+msgstr "Průběh"
+
+msgctxt "#32355"
+msgid "to watch"
+msgstr "ke zhlédnutí"
+
+msgctxt "#32356"
+msgid "No channels. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "Žádné kanály. Povolte doplněk klienta PVR v nastavení PVR a živého vysílání."
+
+msgctxt "#32357"
+msgid "No recordings."
+msgstr "Žádné nahrávky."
+
+msgctxt "#32358"
+msgid "No results."
+msgstr "Žádné výsledky."
+
+msgctxt "#32359"
+msgid "No timers."
+msgstr "Žádné časovače."
+
+msgctxt "#32360"
+msgid "updated"
+msgstr "aktualizováno"
+
+msgctxt "#32361"
+msgid "Setup wizard"
+msgstr "Průvodce nastavením"
+
+msgctxt "#32362"
+msgid "Theme, palette, backgrounds, Home"
+msgstr "Téma, paleta, pozadí, Domů"
+
+msgctxt "#32363"
+msgid "Widget screens: slow zoom"
+msgstr "Obrazovky widgetů: pomalé přiblížení"
+
+msgctxt "#32364"
+msgid "Kodi shows these after its own items, in this order (items of other add-ons can follow). Update and Clean library show in the libraries and on Home, Refresh information on films, shows, episodes and music videos, Take screenshot everywhere."
+msgstr "Kodi je ukazuje po svých vlastních položkách v tomto pořadí (položky jiných doplňků mohou následovat). Aktualizovat a Vyčistit knihovnu jsou v knihovnách a na Domů, Obnovit informace u filmů, seriálů, epizod a hudebních videí, Pořídit snímek obrazovky všude."
+
+msgctxt "#32365"
+msgid "PICTURE"
+msgstr "OBRÁZEK"
+
+msgctxt "#32366"
+msgid "Smart playlist"
+msgstr "Chytrý seznam stop"
+
+msgctxt "#32367"
+msgid "Source"
+msgstr "Zdroj"
+
+msgctxt "#32368"
+msgid "fps"
+msgstr "sn./s"
+
+msgctxt "#32369"
+msgid "AR"
+msgstr "AR"
+
+msgctxt "#32370"
+msgid "Dynamic range"
+msgstr "Dynamický rozsah"
+
+msgctxt "#32371"
+msgid "Decoder"
+msgstr "Dekodér"
+
+msgctxt "#32372"
+msgid "Pixel format"
+msgstr "Formát pixelů"
+
+msgctxt "#32373"
+msgid "Deinterlace"
+msgstr "Odstranění prokládání"
+
+msgctxt "#32374"
+msgid "Display"
+msgstr "Displej"
+
+msgctxt "#32375"
+msgid "Audio output"
+msgstr "Zvukový výstup"
+
+msgctxt "#32376"
+msgid "Interface"
+msgstr "Rozhraní"
+
+msgctxt "#32377"
+msgid "memory"
+msgstr "paměť"
+
+msgctxt "#32378"
+msgid "FILE"
+msgstr "SOUBOR"
+
+msgctxt "#32379"
+msgid "SIZE"
+msgstr "VELIKOST"
+
+msgctxt "#32380"
+msgid "TAKEN"
+msgstr "POŘÍZENO"
+
+msgctxt "#32381"
+msgid "STATE"
+msgstr "STAV"
+
+msgctxt "#32382"
+msgid "until bedtime"
+msgstr "do večerky"
+
+msgctxt "#32383"
+msgid "Fits before bedtime"
+msgstr "Stihnete před večerkou"
+
+msgctxt "#32384"
+msgid "fits before bedtime"
+msgstr "stihnete před večerkou"
+
+msgctxt "#32385"
+msgid "Nothing unwatched fits before bedtime tonight."
+msgstr "Nic nezhlédnutého dnes před večerkou nestihnete."
+
+msgctxt "#32386"
+msgid "right at your bedtime"
+msgstr "přesně ve vaší večerku"
+
+msgctxt "#32387"
+msgid "past your bedtime"
+msgstr "po vaší večerce"
+
+msgctxt "#32388"
+msgid "before your bedtime"
+msgstr "před vaší večerkou"
+
+msgctxt "#32389"
+msgid "after your bedtime"
+msgstr "po vaší večerce"
+
+msgctxt "#32390"
+msgid "Continuing"
+msgstr "Pokračuje"
+
+msgctxt "#32391"
+msgid "Ended"
+msgstr "Ukončen"
+
+msgctxt "#32392"
+msgid "Cancelled"
+msgstr "Zrušen"
+
+msgctxt "#32393"
+msgid "In production"
+msgstr "Ve výrobě"
+
+msgctxt "#32394"
+msgid "Planned"
+msgstr "Plánován"
+
+msgctxt "#32395"
+msgid "Upcoming"
+msgstr "Připravuje se"
+
+msgctxt "#32396"
+msgid "Pilot"
+msgstr "Pilot"
+
+msgctxt "#32397"
+msgid "Now playing in"
+msgstr "Právě se přehrává –"
+
+msgctxt "#32398"
+msgid "Films of a set"
+msgstr "Filmy kolekce"
+
+msgctxt "#32399"
+msgid "Versions of a film"
+msgstr "Verze filmu"
+
+msgctxt "#32400"
+msgid "Grid"
+msgstr "Mřížka"
+
+msgctxt "#32401"
+msgid "One at a time"
+msgstr "Po jednom"
+
+msgctxt "#32402"
+msgid "Fused Glass"
+msgstr "Fused Glass"
+
+msgctxt "#32403"
+msgid "Next hours"
+msgstr "Příští hodiny"
+
+msgctxt "#32404"
+msgid "This week"
+msgstr "Tento týden"
+
+msgctxt "#32405"
+msgid "No weather yet. Choose a weather service in Settings > Services > Weather."
+msgstr "Zatím žádné počasí. Vyberte službu počasí v Nastavení > Služby > Počasí."
+
+msgctxt "#32406"
+msgid "Recent searches"
+msgstr "Nedávná hledání"
+
+msgctxt "#32407"
+msgid "In Fused Glass the music playing always sits beside the clock on Home; this setting is for the other themes."
+msgstr "Ve Fused Glass je přehrávaná hudba na domovské obrazovce vždy vedle hodin; toto nastavení platí pro ostatní motivy."
+
+msgctxt "#32408"
+msgid "Focus highlight"
+msgstr "Zvýraznění výběru"
+
+msgctxt "#32409"
+msgid "Pill"
+msgstr "Pilulka"
+
+msgctxt "#32410"
+msgid "Flat"
+msgstr "Plochý"
+
+msgctxt "#32411"
+msgid "Frosted"
+msgstr "Matné sklo"
+
+msgctxt "#32412"
+msgid "Outline"
+msgstr "Obrys"
+
+msgctxt "#32413"
+msgid "Tight"
+msgstr "Úzký"
+
+msgctxt "#32414"
+msgid "How the item in focus is marked in lists and menus. Changing it reloads the skin."
+msgstr "Jak je označena vybraná položka v seznamech a nabídkách. Změna znovu načte vzhled."
+
+msgctxt "#32415"
+msgid "Navigation animation"
+msgstr "Animace navigace"
+
+msgctxt "#32416"
+msgid "Pop"
+msgstr "Pop"
+
+msgctxt "#32417"
+msgid "Grow"
+msgstr "Růst"
+
+msgctxt "#32418"
+msgid "Fade"
+msgstr "Plynule"
+
+msgctxt "#32419"
+msgid "Glow"
+msgstr "Záře"
+
+msgctxt "#32420"
+msgid "Nudge"
+msgstr "Posun"
+
+msgctxt "#32421"
+msgid "Lift"
+msgstr "Zdvih"
+
+msgctxt "#32422"
+msgid "How the highlight moves when it lands on an item. Pop is the default."
+msgstr "Jak se zvýraznění pohne, když dopadne na položku. Výchozí je Pop."
+
+msgctxt "#32423"
+msgid "Font combination"
+msgstr "Kombinace písem"
+
+msgctxt "#32424"
+msgid "A heading and text font combination, shown before you pick it, or your own font for each part of the skin."
+msgstr "Kombinace písma nadpisů a textu s náhledem, nebo vlastní písmo pro každou část skinu."
+
+msgctxt "#32425"
+msgid "Home menu: only the focused item's name"
+msgstr "Hlavní nabídka: jen název vybrané položky"
+
+msgctxt "#32426"
+msgid "On: the other items of the Home menu show only their icon and the focused item shows its name."
+msgstr "Zapnuto: ostatní položky hlavní nabídky ukazují jen ikonu, vybraná položka ukazuje název."
+
+msgctxt "#32427"
+msgid "Segment skip button placement"
+msgstr "Umístění tlačítka přeskočení segmentu"
+
+msgctxt "#32428"
+msgid "Tab"
+msgstr "Záložka"
+
+msgctxt "#32429"
+msgid "Glass"
+msgstr "Sklo"
+
+msgctxt "#32430"
+msgid "How the skip button sits on the player controls and the small seek bar: a white tab on the card's edge, or a capsule of the card's glass above it."
+msgstr "Jak tlačítko přeskočení sedí na ovládání přehrávače a malém posuvníku: bílá záložka na okraji karty, nebo kapsle ze skla karty nad ní."
+
+msgctxt "#32431"
+msgid "Available in library"
+msgstr "Dostupné v knihovně"
+
+msgctxt "#32432"
+msgid "In library"
+msgstr "V knihovně"
+
+msgctxt "#32433"
+msgid "Random %s"
+msgstr "Náhodné %s"
+
+msgctxt "#32434"
+msgid "Recently added %s"
+msgstr "Nedávno přidané %s"
+
+msgctxt "#32435"
+msgid "Recently played %s"
+msgstr "Nedávno přehrané %s"
+
+msgctxt "#32436"
+msgid "Top rated %s"
+msgstr "Nejlépe hodnocené %s"
+
+msgctxt "#32437"
+msgid "Most played %s"
+msgstr "Nejpřehrávanější %s"
+
+msgctxt "#32438"
+msgid "Newest %s"
+msgstr "Nejnovější %s"
+
+msgctxt "#32439"
+msgid "%s by title"
+msgstr "%s podle názvu"
+
+msgctxt "#32440"
+msgid "Scroll through channels"
+msgstr "Procházet kanály"
+
+msgctxt "#32441"
+msgid "Auto-fix art with the wrong shape"
+msgstr "Opravovat obrázky špatného tvaru"
+
+msgctxt "#32442"
+msgid "Check library art now"
+msgstr "Zkontrolovat obrázky knihovny"
+
+msgctxt "#32443"
+msgid "Library art"
+msgstr "Obrázky knihovny"
+
+msgctxt "#32444"
+msgid "Now uses a picture from the same folder that fits"
+msgstr "Nyní používá vhodný obrázek ze stejné složky"
+
+msgctxt "#32445"
+msgid "Wrong shape, nothing in the folder fits"
+msgstr "Špatný tvar, ve složce není nic vhodného"
+
+msgctxt "#32446"
+msgid "Every picture has the right shape."
+msgstr "Všechny obrázky mají správný tvar."
+
+msgctxt "#32447"
+msgid "Fixed in the library: %d"
+msgstr "Opraveno v knihovně: %d"
+
+msgctxt "#32448"
+msgid "After a refresh or a library scan, a poster, banner, landscape or fanart of the wrong shape is replaced by a picture of the same name in the same folder that fits. Your files stay as they are."
+msgstr "Po obnovení nebo prohledání knihovny se plakát, banner, krajina nebo fanart špatného tvaru nahradí vhodným obrázkem stejného jména ze stejné složky. Vaše soubory zůstanou beze změny."
+
+msgctxt "#32449"
+msgid "Checks every picture Kodi has shown and fixes what it can. A list shows what was replaced and what is still the wrong shape."
+msgstr "Zkontroluje každý obrázek, který Kodi zobrazilo, a opraví, co jde. Seznam ukáže, co bylo nahrazeno a co má stále špatný tvar."
+
+msgctxt "#32450"
+msgid "Slot left empty: the skin shows the show's picture until season art is added"
+msgstr "Pole ponecháno prázdné: skin ukazuje obrázek seriálu, dokud nepřibude obrázek řady"
+
+msgctxt "#32451"
+msgid "Only Kodi's library changed. Your files are untouched."
+msgstr "Změnila se jen knihovna Kodi. Vaše soubory zůstaly beze změny."
+
+msgctxt "#32452"
+msgid "Mosaic"
+msgstr "Mozaika"
+
+msgctxt "#32453"
+msgid "Ledger"
+msgstr "Kniha"
+
+msgctxt "#32454"
+msgid "Bridge"
+msgstr "Most"
+
+msgctxt "#32455"
+msgid "Tab slab"
+msgstr "Karta"
+
+msgctxt "#32456"
+msgid "How the menus join their boxes: Mosaic, Ledger, Bridge or Tab slab. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "Jak menu spojují své boxy: Mozaika, Kniha, Most nebo Karta. Fuse používá zaoblené karty a vyžaduje nové spuštění Kodi."
+
+msgctxt "#32457"
+msgid "Aeon Glass keeps its own menus. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "Aeon Glass si ponechává vlastní menu. Fuse používá zaoblené karty a vyžaduje nové spuštění Kodi."
+
+msgctxt "#32458"
+msgid "Library options"
+msgstr "Možnosti knihovny"
+
+msgctxt "#32459"
+msgid "Strip"
+msgstr "Lišta"
+
+msgctxt "#32460"
+msgid "Box"
+msgstr "Box"
+
+msgctxt "#32461"
+msgid "Left at the edge of a view or the Menu key opens the side strip, or a big box in the menu style."
+msgstr "Vlevo na okraji zobrazení nebo klávesa Menu otevře boční lištu, nebo velký box ve stylu menu."
+
+msgctxt "#32462"
+msgid "Skippy: skip button style"
+msgstr "Skippy: styl tlačítka přeskočení"
+
+msgctxt "#32463"
+msgid "Box pair"
+msgstr "Dvojice boxů"
+
+msgctxt "#32464"
+msgid "Clock dock"
+msgstr "U hodin"
+
+msgctxt "#32465"
+msgid "Aeon theme: a palette tile and a label box at the bottom right (above the player controls when they are open), or a row at the top right that ends in the clock box."
+msgstr "Motiv Aeon: barevná dlaždice a popisek vpravo dole (nad ovládáním přehrávače, když je otevřené), nebo řada vpravo nahoře zakončená boxem s hodinami."
+
+msgctxt "#32466"
+msgid "Use the palette for"
+msgstr "Použít paletu pro"
+
+msgctxt "#32467"
+msgid "Menus and library views"
+msgstr "Nabídky a zobrazení knihovny"
+
+msgctxt "#32468"
+msgid "Menus only"
+msgstr "Jen nabídky"
+
+msgctxt "#32469"
+msgid "Library views only"
+msgstr "Jen zobrazení knihovny"
+
+msgctxt "#32470"
+msgid "Colors: the colour of the artwork; in the library with the Neutral backdrop and a palette other than Aeon, the palette's own darker box colour. Neutral: always the palette's box colour. Fanart: a window onto the fanart. Backdrop: as the library backdrop. View settings sets it per view."
+msgstr "Barvy: barva obrázku; v knihovně s neutrálním pozadím a jinou paletou než Aeon vlastní tmavší barva boxů palety. Neutrální: vždy barva boxů palety. Fanart: okno do fanartu. Pozadí: jako pozadí knihovny. Nastavení zobrazení to nastaví pro každé zobrazení."
+
+msgctxt "#32471"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages, for the menus and the library views, the menus only or the library views only. The library background takes it with the Neutral backdrop only."
+msgstr "Barva zvýraznění, boxů, pruhů a stránek nastavení, pro nabídky i zobrazení knihovny, jen pro nabídky nebo jen pro zobrazení knihovny. Pozadí knihovny ji přebírá jen s neutrálním pozadím."
+
+msgctxt "#32472"
+msgid "Band under the Home menu"
+msgstr "Pruh pod hlavní nabídkou"
+
+msgctxt "#32473"
+msgid "A dark band from the Home menu down to the bottom of the screen, with a thin line on top, over the spotlight pictures. It follows the menu: middle or low."
+msgstr "Tmavý pruh od hlavní nabídky až ke spodnímu okraji obrazovky s tenkou linkou nahoře, přes obrázky spotlightu. Řídí se nabídkou: uprostřed nebo dole."
+
+msgctxt "#32474"
+msgid "Toasts expand from clock pill"
+msgstr "Oznámení se rozbalují z kapsle hodin"
+
+msgctxt "#32475"
+msgid "A notification widens the clock pill to the left and shows itself in it, instead of a capsule of its own. Library views and full-screen video keep the capsule."
+msgstr "Oznámení rozšíří kapsli s hodinami doleva a zobrazí se v ní, místo vlastní kapsle. Zobrazení knihovny a video na celou obrazovku si kapsli ponechají."
+
+msgctxt "#32476"
+msgid "Clearlogo in Now playing"
+msgstr "Clearlogo v Právě hraje"
+
+msgctxt "#32477"
+msgid "Live"
+msgstr "Živě"
+
+msgctxt "#32478"
+msgid "Fused Glass player: the clearlogo of the show or film in the Now playing pill at the top left, instead of its title. Off: the title."
+msgstr "Přehrávač Fused Glass: clearlogo seriálu nebo filmu v kapsli Právě hraje vlevo nahoře místo názvu. Vypnuto: název."
+
+msgctxt "#32479"
+msgid "Overview"
+msgstr "Přehled"
+
+msgctxt "#32480"
+msgid "File and season"
+msgstr "Soubor a řada"
+
+msgctxt "#32481"
+msgid "In this file"
+msgstr "V tomto souboru"
+
+msgctxt "#32482"
+msgid "File"
+msgstr "Soubor"
+
+msgctxt "#32483"
+msgid "Size"
+msgstr "Velikost"
+
+msgctxt "#32484"
+msgid "Playing on"
+msgstr "Přehrává se na"
+
+msgctxt "#32485"
+msgid "Cast photos in the information screen"
+msgstr "Fotky herců na informační obrazovce"
+
+msgctxt "#32486"
+msgid "Fused Glass player: the information screen shows the cast as round photos with the name and the character under each, in one row you scroll through. Off: the names as chips."
+msgstr "Přehrávač Fused Glass: informační obrazovka ukáže herce jako kulaté fotky se jménem a postavou pod každou, v jedné řadě, kterou procházíte. Vypnuto: jména jako štítky."
+
+msgctxt "#32487"
+msgid "Up"
+msgstr "Nahoru"
+
+msgctxt "#32488"
+msgid "Down"
+msgstr "Dolů"
+
+msgctxt "#32489"
+msgid "Kodi running for"
+msgstr "Kodi běží"
+
+msgctxt "#32490"
+msgid "Box up for"
+msgstr "Zařízení běží"
+
+msgctxt "#32491"
+msgid "Nothing is playing"
+msgstr "Nic se nepřehrává"
+
+msgctxt "#32492"
+msgid "Sleep"
+msgstr "Spánek"
+
+msgctxt "#32493"
+msgid "Restart Kodi"
+msgstr "Restartovat Kodi"
+
+msgctxt "#32495"
+msgid "Reboot to Android"
+msgstr "Restartovat do Androidu"
+
+msgctxt "#32496"
+msgid "Shut down"
+msgstr "Vypnout"
+
+msgctxt "#32497"
+msgid "OK again to confirm"
+msgstr "Potvrďte dalším OK"
+
+msgctxt "#32498"
+msgid "Log off"
+msgstr "Odhlásit"
+
+msgctxt "#32499"
+msgid "Exit Kodi"
+msgstr "Ukončit Kodi"
+
+msgctxt "#32500"
+msgid "When this ends"
+msgstr "Až toto skončí"
+
+msgctxt "#32501"
+msgid "min"
+msgstr "min"
+
+msgctxt "#32502"
+msgid "Health"
+msgstr "Stav"
+
+msgctxt "#32503"
+msgid "All good"
+msgstr "Vše v pořádku"
+
+msgctxt "#32504"
+msgid "Running warm"
+msgstr "Zahřívá se"
+
+msgctxt "#32505"
+msgid "Memory almost full"
+msgstr "Paměť je téměř plná"
+
+msgctxt "#32506"
+msgid "Processor"
+msgstr "Procesor"
+
+msgctxt "#32507"
+msgid "Shortcuts"
+msgstr "Zkratky"
+
+msgctxt "#32508"
+msgid "Recently used add-ons"
+msgstr "Nedávno použité doplňky"
+
+msgctxt "#32509"
+msgid "Library jobs"
+msgstr "Úlohy knihovny"
+
+msgctxt "#32510"
+msgid "All episodes"
+msgstr "Všechny díly"
+
+msgctxt "#32511"
+msgid "to the tile"
+msgstr "zpět na dlaždici"
+
+msgctxt "#32512"
+msgid "{n} min left"
+msgstr "zbývá {n} min"
+
+msgctxt "#32513"
+msgid "{episode} airs {date}"
+msgstr "{episode} vyjde {date}"
+
+msgctxt "#32514"
+msgid "{n} more waiting in season {season}"
+msgstr "v řadě {season} čeká ještě {n}"
+
+msgctxt "#32515"
+msgid "1 more waiting in season {season}"
+msgstr "v řadě {season} čeká ještě 1"
+
+msgctxt "#32516"
+msgid "Search your library"
+msgstr "Hledat v knihovně"
+
+msgctxt "#32517"
+msgid "Films, shows, episodes, music, people"
+msgstr "Filmy, seriály, díly, hudba, lidé"
+
+msgctxt "#32518"
+msgid "You're on {episode}"
+msgstr "Jste na {episode}"
+
+msgctxt "#32519"
+msgid "Last search:"
+msgstr "Poslední hledání:"
+
+msgctxt "#32520"
+msgid "Also search"
+msgstr "Hledat také"
+
+msgctxt "#32521"
+msgid "TMDb, not in the library"
+msgstr "TMDb, mimo knihovnu"
+
+msgctxt "#32522"
+msgid "People"
+msgstr "Lidé"
+
+msgctxt "#32523"
+msgid "Online"
+msgstr "Online"
+
+msgctxt "#32524"
+msgid "Next 7 days"
+msgstr "Příštích 7 dní"
+
+msgctxt "#32525"
+msgid "Shows you watch"
+msgstr "Seriály, které sledujete"
+
+msgctxt "#32526"
+msgid "View settings"
+msgstr "Nastavení zobrazení"
+
+msgctxt "#32527"
+msgid "Background"
+msgstr "Pozadí"
+
+msgctxt "#32528"
+msgid "Nothing out"
+msgstr "Nic nevychází"
+
+msgctxt "#32529"
+msgid "{n} this week"
+msgstr "{n} tento týden"
+
+msgctxt "#32530"
+msgid "1 episode"
+msgstr "1 díl"
+
+msgctxt "#32531"
+msgid "{n} episodes"
+msgstr "{n} dílů"
+
+msgctxt "#32532"
+msgid "1 film"
+msgstr "1 film"
+
+msgctxt "#32533"
+msgid "{n} films"
+msgstr "{n} filmů"
+
+msgctxt "#32534"
+msgid "Week: seven days side by side. Day: one day at a time."
+msgstr "Týden: sedm dní vedle sebe. Den: jeden den najednou."
+
+msgctxt "#32535"
+msgid "Episodes, films or both."
+msgstr "Díly, filmy nebo obojí."
+
+msgctxt "#32536"
+msgid "Only the episodes of shows you have watched before."
+msgstr "Jen díly seriálů, které jste už sledovali."
+
+msgctxt "#32537"
+msgid "Colors: the colours of the selected title's artwork. Neutral: plain. Fanart: the picture itself."
+msgstr "Barvy: barvy obrázku vybraného titulu. Neutrální: jednobarevné. Fanart: samotný obrázek."
+
+msgctxt "#32538"
+msgid "The first day of a week. Today: always the next seven days."
+msgstr "První den týdne. Dnes: vždy příštích sedm dní."
+
+msgctxt "#32539"
+msgid "This week"
+msgstr "Tento týden"
+
+msgctxt "#32540"
+msgid "Next week"
+msgstr "Příští týden"
+
+msgctxt "#32541"
+msgid "{n} in progress"
+msgstr "{n} rozkoukané"
+
+msgctxt "#32542"
+msgid "{n} unwatched"
+msgstr "{n} nezhlédnuté"
+
+msgctxt "#32543"
+msgid "All watched"
+msgstr "Vše zhlédnuto"
+
+msgctxt "#32544"
+msgid "Episode combined"
+msgstr "Díly v kartě"
+
+msgctxt "#32545"
+msgid "Season buttons, the episodes in a card and the one in focus beside it"
+msgstr "Tlačítka řad, díly v kartě a vybraný díl vedle"
+
+msgctxt "#32546"
+msgid "{time} of {total}"
+msgstr "{time} z {total}"
+
+msgctxt "#32547"
+msgid "Frost"
+msgstr "Mráz"
+
+msgctxt "#32548"
+msgid "Raised"
+msgstr "Vyvýšené"
+
+msgctxt "#32549"
+msgid "Clear"
+msgstr "Čiré"
+
+msgctxt "#32550"
+msgid "Library view theme"
+msgstr "Téma knihovny"
+
+msgctxt "#32551"
+msgid "The glass of the frosted panels: library views, Home panels and the Home bar. Menus and dialogs follow Menu theme. Frost: lighter. Raised: lit rim, deep shadow. Clear: thin, no blur. Dark: darker."
+msgstr "Sklo matných panelů: zobrazení knihovny, panely Domů a lišta Domů. Nabídky a dialogy se řídí Tématem nabídek. Mráz: světlejší. Vyvýšené: světlý okraj, hluboký stín. Čiré: tenké, bez rozostření. Tmavé: tmavší."
+
+msgctxt "#32552"
+msgid "Earlier days"
+msgstr "Dřívější dny"
+
+msgctxt "#32553"
+msgid "Also show what aired on the days of this week before today (episodes in your library)."
+msgstr "Zobrazit i to, co vyšlo v dnech tohoto týdne před dneškem (díly v knihovně)."
+
+msgctxt "#32554"
+msgid "Menu names in capitals"
+msgstr "Názvy nabídky velkými písmeny"
+
+msgctxt "#32555"
+msgid "Fused Glass: the Home menu names in capital letters instead of sentence case."
+msgstr "Fused Glass: názvy v domovské nabídce velkými písmeny."
+
+msgctxt "#32556"
+msgid "In cinemas now"
+msgstr "Nyní v kinech"
+
+msgctxt "#32557"
+msgid "Airing today"
+msgstr "Vysílá se dnes"
+
+msgctxt "#32558"
+msgid "Airing tomorrow"
+msgstr "Vysílá se zítra"
+
+msgctxt "#32559"
+msgid "Save lyrics next to the song"
+msgstr "Ukládat texty vedle skladby"
+
+msgctxt "#32560"
+msgid "Lyrics that CU LRC Lyrics finds are also saved as a file next to the song (.lrc or .txt), so they are there next time and for other players. The music folder must be writable."
+msgstr "Texty, které najde CU LRC Lyrics, se uloží i jako soubor vedle skladby (.lrc nebo .txt), takže budou příště k dispozici i pro jiné přehrávače. Do složky s hudbou musí jít zapisovat."
+
+msgctxt "#32561"
+msgid "Home spotlight: recently watched sets"
+msgstr "Spotlight: nedávno zhlédnuté kolekce"
+
+msgctxt "#32562"
+msgid "The spotlight of a Home item that shows movie sets (Sets, for example) lists the sets you watched last, newest first. Off: all sets, as its spotlight settings say."
+msgstr "Spotlight položky Domů, která ukazuje filmové kolekce (třeba Kolekce), ukáže kolekce, které jste sledovali naposledy, od nejnovější. Vypnuto: všechny kolekce podle nastavení jejího Spotlightu."
+
+msgctxt "#32563"
+msgid "Progress rings"
+msgstr "Kroužky průběhu"
+
+msgctxt "#32564"
+msgid "Season list combined 1"
+msgstr "Seznam sérií s díly 1"
+
+msgctxt "#32565"
+msgid "Seasons, episodes, facts"
+msgstr "Série, díly, údaje"
+
+msgctxt "#32566"
+msgid "Season list combined 2"
+msgstr "Seznam sérií s díly 2"
+
+msgctxt "#32567"
+msgid "Poster with episode stills"
+msgstr "Plakát a snímky dílů"
+
+msgctxt "#32568"
+msgid "Smooth song progress"
+msgstr "Plynulý průběh skladby"
+
+msgctxt "#32569"
+msgid "Fused Glass Now playing: the song's progress behind the waveform glides instead of jumping 1 % at a time. Uses a little more processor time while the screen is open."
+msgstr "Právě hraje ve Fused Glass: průběh skladby za vlnou se posouvá plynule místo skoků po 1 %. Když je obrazovka otevřená, spotřebuje trochu víc výkonu procesoru."
+
+msgctxt "#32570"
+msgid "Progress bar updates per second"
+msgstr "Aktualizace ukazatele za sekundu"
+
+msgctxt "#32571"
+msgid "Screen"
+msgstr "Obrazovka"
+
+msgctxt "#32572"
+msgid "How often a second Smooth song progress moves the fill. Screen: as often as Kodi draws the screen. Fewer updates use less processor time; on a long song even 10 looks smooth."
+msgstr "Jak často za sekundu plynulý průběh skladby posune výplň. Obrazovka: tak často, jak Kodi kreslí obrazovku. Méně aktualizací spotřebuje méně výkonu procesoru; u dlouhé skladby vypadá plynule i 10."
+
+msgctxt "#32590"
+msgid "Season poster wall combined"
+msgstr "Stěna plakátů sérií s díly"
+
+msgctxt "#32573"
+msgid "Dark"
+msgstr "Tmavé"
+
+msgctxt "#32574"
+msgid "Dark: dark panels. Clear: thin glass that shows more of the backdrop. Frost: light frosted glass over the blurred backdrop. Fused Glass: the System screen's menus, full screen with thin rules and a white bar on the row in focus; Kodi starts again."
+msgstr "Tmavé: tmavé panely. Čiré: tenké sklo, které ukazuje víc z pozadí. Mráz: světlé matné sklo nad rozmazaným pozadím. Fused Glass: nabídky jako obrazovka Systém, přes celou obrazovku s tenkými linkami a bílým pruhem u vybraného řádku; Kodi se spustí znovu."
+
+msgctxt "#32575"
+msgid "Home bar"
+msgstr "Lišta Domů"
+
+msgctxt "#32576"
+msgid "Bar"
+msgstr "Kapsle"
+
+msgctxt "#32577"
+msgid "Keys"
+msgstr "Klávesy"
+
+msgctxt "#32578"
+msgid "Shelf"
+msgstr "Pás"
+
+msgctxt "#32579"
+msgid "Frosted glass behind the Home menu, in the material chosen under Look. Bar: one capsule. Keys: glass under each icon. Shelf: a band across the screen."
+msgstr "Matné sklo za nabídkou Domů v materiálu zvoleném ve Styl. Kapsle: jedna kapsle. Klávesy: sklo pod každou ikonou. Pás: pruh přes celou obrazovku."
+
+msgctxt "#32591"
+msgid "Add item"
+msgstr "Přidat položku"
+
+msgctxt "#32592"
+msgid "Puts a new item at the end of the menu: one of the skin's items that is not on it yet, or a custom item with its own path, Spotlight and lists.[CR][CR]OK opens the list of types."
+msgstr "Vloží novou položku na konec nabídky: položku vzhledu, která v ní ještě není, nebo vlastní položku s vlastní cestou, Spotlightem a seznamy.[CR][CR]OK otevře seznam typů."
+
+msgctxt "#32593"
+msgid "Reload EPG"
+msgstr "Znovu načíst EPG"
+
+msgctxt "#32594"
+msgid "Aeon accent colour"
+msgstr "Barva akcentu Aeon"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "Zlatá"
+
+msgctxt "#32596"
+msgid "Slate"
+msgstr "Břidlicová"
+
+msgctxt "#32597"
+msgid "Teal"
+msgstr "Modrozelená"
+
+msgctxt "#32598"
+msgid "Moss"
+msgstr "Mechová"
+
+msgctxt "#32599"
+msgid "Side"
+msgstr "Boční"
+
+msgctxt "#32600"
+msgid "Vignette shape"
+msgstr "Tvar vinětace"
+
+msgctxt "#32601"
+msgid "Round"
+msgstr "Kulatá"
+
+msgctxt "#32602"
+msgid "Round darkens the edges all round. Side darkens the screen from the left and fades out to the right, under the Home text. The row above sets how strong it is."
+msgstr "Kulatá ztmaví okraje dokola. Boční ztmaví obrazovku zleva a doprava slábne, pod textem na domovské obrazovce. Sílu nastavuje řádek nad tímto."
+
+msgctxt "#32603"
+msgid "Heavy"
+msgstr "Těžké"
+
+msgctxt "#32604"
+msgid "All themes"
+msgstr "Všechna témata"
+
+msgctxt "#32605"
+msgid "Next episode"
+msgstr "Další epizoda"
+
+msgctxt "#32606"
+msgid "{t} left"
+msgstr "zbývá {t}"
+
+msgctxt "#32607"
+msgid "Home menu underline"
+msgstr "Podtržení v menu Domů"
+
+msgctxt "#32608"
+msgid "Library fanart look"
+msgstr "Vzhled fanartu knihovny"
+
+msgctxt "#32609"
+msgid "Dimmed"
+msgstr "Ztlumený"
+
+msgctxt "#32610"
+msgid "Ratings shown as"
+msgstr "Hodnocení zobrazit jako"
+
+msgctxt "#32611"
+msgid "Text"
+msgstr "Text"
+
+msgctxt "#32612"
+msgid "The accent line under the focused Home menu item, as in Fused Glass."
+msgstr "Zvýrazňující čára pod vybranou položkou menu Domů, jako ve Fused Glass."
+
+msgctxt "#32613"
+msgid "The fanart behind the library views: dimmed under a dark veil, or light with a frosted colour tint."
+msgstr "Fanart za zobrazeními knihovny: ztlumený pod tmavým závojem, nebo světlý s matným barevným nádechem."
+
+msgctxt "#32614"
+msgid "Show the rating providers as their icons or as their names."
+msgstr "Zobrazit poskytovatele hodnocení jako ikony nebo jako názvy."
+
+msgctxt "#32615"
+msgid "Media info from sidecars"
+msgstr "Informace o médiu ze sidecar souborů"
+
+msgctxt "#32616"
+msgid "Off: only what Kodi's library knows (the chips above). On: also the source (UHD Remux, Blu-ray, WEB-DL, DVD...), the edition, the audio and subtitle tracks and the chapters, read from a mediainfo sidecar next to each video file: <name>.cmm_mediainfo.xml from Curator Media Manager (used first) or <name>-mediainfo.xml from tinyMediaManager. Without sidecars nothing extra shows."
+msgstr "Vypnuto: jen to, co zná knihovna Kodi (štítky výše). Zapnuto: také zdroj (UHD Remux, Blu-ray, WEB-DL, DVD...), edice, zvukové stopy, titulky a kapitoly ze souboru mediainfo vedle každého videa: <název>.cmm_mediainfo.xml z Curator Media Manager (má přednost) nebo <název>-mediainfo.xml z tinyMediaManager. Bez těchto souborů se nic navíc nezobrazí."
+
+msgctxt "#32617"
+msgid "Commentary"
+msgstr "Komentář"
+
+msgctxt "#32618"
+msgid "Chapters"
+msgstr "Kapitoly"
+
+msgctxt "#32619"
+msgid "In cinemas now: films from"
+msgstr "V kinech: filmy z"
+
+msgctxt "#32620"
+msgid "Everywhere"
+msgstr "Odkudkoli"
+
+msgctxt "#32621"
+msgid "In cinemas now (the screensaver and the widgets) is what TMDb Helper's country has in cinemas: the United States unless TMDb Helper's language is set to another country. Pick your country to keep only films made in the United States or there; Everywhere keeps them all."
+msgstr "V kinech (spořič a widgety) ukazuje, co je v kinech v zemi TMDb Helperu: ve Spojených státech, pokud jazyk TMDb Helperu není nastaven na jinou zemi. Vyberte svou zemi a zůstanou jen filmy natočené ve Spojených státech nebo v ní; Odkudkoli ponechá všechny."
+
+msgctxt "#32622"
+msgid "Getting Home ready"
+msgstr "Připravuje se Domů"
+
+msgctxt "#32623"
+msgid "Home rows"
+msgstr "Řádky Domů"
+
+msgctxt "#32624"
+msgid "OK or Back skips"
+msgstr "OK nebo Zpět přeskočí"
+
+msgctxt "#32625"
+msgid "Live TV guide"
+msgstr "TV průvodce"
+
+msgctxt "#32626"
+msgid "Tint"
+msgstr "Tónování"
+
+msgctxt "#32627"
+msgid "Picture"
+msgstr "Obraz"
+
+msgctxt "#32628"
+msgid "blurred"
+msgstr "rozmazaný"
+
+msgctxt "#32629"
+msgid "Newest folder"
+msgstr "Nejnovější složka"
+
+msgctxt "#32630"
+msgid "Folders, newest first"
+msgstr "Složky, nejnovější první"
+
+msgctxt "#32631"
+msgid "photos"
+msgstr "fotek"
+
+msgctxt "#32632"
+msgid "photo"
+msgstr "fotka"
+
+msgctxt "#32633"
+msgid "videos"
+msgstr "videí"
+
+msgctxt "#32634"
+msgid "video"
+msgstr "video"
+
+msgctxt "#32635"
+msgid "OK plays the folder as a slideshow · Down for the folders"
+msgstr "OK spustí prezentaci složky · Dolů pro složky"
+
+msgctxt "#32636"
+msgid "All pictures"
+msgstr "Všechny obrázky"
+
+msgctxt "#32637"
+msgid "sources"
+msgstr "zdrojů"
+
+msgctxt "#32638"
+msgid "source"
+msgstr "zdroj"
+
+msgctxt "#32639"
+msgid "No pictures yet"
+msgstr "Zatím žádné obrázky"
+
+msgctxt "#32640"
+msgid "Add a folder of photos as a picture source in the Pictures window. OK opens it."
+msgstr "V okně Obrázky přidejte složku s fotkami jako zdroj obrázků. OK ho otevře."
+
+msgctxt "#32641"
+msgid "Photos"
+msgstr "Fotky"
+
+msgctxt "#32642"
+msgid "OK opens the photo · Up for sort, slideshow and view"
+msgstr "OK otevře fotku · Nahoru pro řazení, prezentaci a zobrazení"
+
+msgctxt "#32643"
+msgid "View"
+msgstr "Zobrazení"
+
+msgctxt "#32644"
+msgid "waits until loading is done"
+msgstr "počká, až se vše načte"
+
+msgctxt "#32645"
+msgid "Media info chips"
+msgstr "Čipy s informacemi o médiu"
+
+msgctxt "#32646"
+msgid "Which chips the information page, Home and the library panels show. The sidecar chips need Media info from sidecars."
+msgstr "Které čipy ukazuje stránka informací, Domů a panely knihovny. Čipy ze sidecar potřebují Informace o médiu ze sidecar."
+
+msgctxt "#32647"
+msgid "Resolution"
+msgstr "Rozlišení"
+
+msgctxt "#32648"
+msgid "Aspect ratio"
+msgstr "Poměr stran"
+
+msgctxt "#32649"
+msgid "HDR and Dolby Vision"
+msgstr "HDR a Dolby Vision"
+
+msgctxt "#32650"
+msgid "Dolby Vision profile"
+msgstr "Profil Dolby Vision"
+
+msgctxt "#32651"
+msgid "Audio format"
+msgstr "Formát zvuku"
+
+msgctxt "#32652"
+msgid "Audio channels"
+msgstr "Zvukové kanály"
+
+msgctxt "#32653"
+msgid "Source format (sidecar)"
+msgstr "Formát zdroje (sidecar)"
+
+msgctxt "#32654"
+msgid "Container (sidecar)"
+msgstr "Kontejner (sidecar)"
+
+msgctxt "#32655"
+msgid "Bit rate (sidecar)"
+msgstr "Datový tok (sidecar)"
+
+msgctxt "#32656"
+msgid "File size (sidecar)"
+msgstr "Velikost souboru (sidecar)"
+
+msgctxt "#32657"
+msgid "Subtitles (sidecar)"
+msgstr "Titulky (sidecar)"
+
+msgctxt "#32658"
+msgid "Chapters (sidecar)"
+msgstr "Kapitoly (sidecar)"
+
+msgctxt "#32659"
+msgid "Commentary (sidecar)"
+msgstr "Komentář (sidecar)"
+
+msgctxt "#32660"
+msgid "3D (sidecar)"
+msgstr "3D (sidecar)"
+
+msgctxt "#32661"
+msgid "chapters"
+msgstr "kapitol"
+
+msgctxt "#32662"
+msgid "commentary"
+msgstr "komentář"
+
+msgctxt "#32663"
+msgid "Combine multi-episode files into a single row in library"
+msgstr "Spojit soubory s více epizodami do jednoho řádku v knihovně"
+
+msgctxt "#32664"
+msgid "Episodes stored in one video file (a double episode, three cartoons) show as one row: 1–2, one title, the file's running time. The season's list then comes from Aeon Fuse Helper."
+msgstr "Díly uložené v jednom videosouboru (dvojdíl, tři kreslené grotesky) se ukážou jako jeden řádek: 1–2, jeden název, délka souboru. Seznam řady pak dodává Aeon Fuse Helper."
+
+msgctxt "#32665"
+msgid "Video source (sidecar)"
+msgstr "Zdroj videa (sidecar)"
+
+msgctxt "#32666"
+msgid "Video codec (sidecar)"
+msgstr "Kodek videa (sidecar)"
+
+msgctxt "#32667"
+msgid "Version (sidecar)"
+msgstr "Verze (sidecar)"
+
+msgctxt "#32668"
+msgid "Panel shadow"
+msgstr "Stín panelů"
+
+msgctxt "#32669"
+msgid "How high the glass panels seem to float: their shadow grows and drops. Mild: close to the page. Medium: as before. Strong: higher. Heavy: highest."
+msgstr "Jak vysoko se skleněné panely zdají vznášet: jejich stín roste a klesá. Mírný: těsně nad stránkou. Střední: jako dosud. Silný: výš. Těžký: nejvýš."
+
+msgctxt "#32670"
+msgid "Mild"
+msgstr "Jemný"
+
+msgctxt "#32671"
+msgid "Heavy"
+msgstr "Těžký"
+
+msgctxt "#32672"
+msgid "Expert settings"
+msgstr "Pokročilá nastavení"
+
+msgctxt "#32673"
+msgid "Shows the rows below for fine-tuning the glass panels and the fanart behind the library views."
+msgstr "Zobrazí řádky níže pro jemné doladění skleněných panelů a fanartu za zobrazeními knihovny."
+
+msgctxt "#32674"
+msgid "Panel opacity"
+msgstr "Krytí panelů"
+
+msgctxt "#32675"
+msgid "How solid the glass panels are, around the Skin style's own value. -2: most see-through. +2: most solid."
+msgstr "Jak plné jsou skleněné panely kolem hodnoty stylu vzhledu. -2: nejprůhlednější. +2: nejplnější."
+
+msgctxt "#32676"
+msgid "Panel blur"
+msgstr "Rozmazání panelů"
+
+msgctxt "#32677"
+msgid "How strongly the panels blur the picture behind them. Off: no blur."
+msgstr "Jak silně panely rozmazávají obraz za sebou. Vypnuto: bez rozmazání."
+
+msgctxt "#32678"
+msgid "Panel tint"
+msgstr "Odstín panelů"
+
+msgctxt "#32679"
+msgid "The colour of the panels' glass, around the Skin style's own. -2: darkest. +2: lightest frost."
+msgstr "Barva skla panelů kolem odstínu stylu vzhledu. -2: nejtmavší. +2: nejsvětlejší mráz."
+
+msgctxt "#32680"
+msgid "Library fanart opacity"
+msgstr "Krytí fanartu knihovny"
+
+msgctxt "#32681"
+msgid "How much of the fanart behind the library views shows, on top of Backdrop strength. -2: faintest. +2: strongest."
+msgstr "Kolik fanartu za zobrazeními knihovny je vidět, navíc k síle pozadí. -2: nejslabší. +2: nejsilnější."
+
+msgctxt "#32682"
+msgid "Library fanart blur"
+msgstr "Rozmazání fanartu knihovny"
+
+msgctxt "#32683"
+msgid "Blurs the fanart behind the library views: -2 a little, +2 the most; 0 is the default. Off: sharp."
+msgstr "Rozmaže fanart za zobrazeními knihovny: -2 trochu, +2 nejvíc; 0 je výchozí. Vypnuto: ostrý."
+
+msgctxt "#32684"
+msgid "Library fanart tint"
+msgstr "Tónování fanartu knihovny"
+
+msgctxt "#32685"
+msgid "The colour tint of the Frosted fanart look. Off: no tint."
+msgstr "Barevný nádech vzhledu fanartu Mráz. Vypnuto: bez nádechu."
+
+msgctxt "#32686"
+msgid "Reset expert settings"
+msgstr "Obnovit pokročilá nastavení"
+
+msgctxt "#32687"
+msgid "Puts every expert setting back to its default."
+msgstr "Vrátí všechna pokročilá nastavení na výchozí hodnoty."
+
+msgctxt "#32688"
+msgid "Expert settings are back to their defaults."
+msgstr "Pokročilá nastavení mají znovu výchozí hodnoty."
+
+msgctxt "#32689"
+msgid "Menu background"
+msgstr "Pozadí nabídek"
+
+msgctxt "#32690"
+msgid "Screen"
+msgstr "Obrazovka"
+
+msgctxt "#32691"
+msgid "Menus and dialogs in the Fused Glass style. Fanart: the item's fanart behind them. Screen: the screen they opened on, dimmed."
+msgstr "Nabídky a dialogy ve stylu Fused Glass. Fanart: fanart položky za nimi. Obrazovka: ztlumená obrazovka, na které se otevřely."
+
+msgctxt "#32692"
+msgid "OK runs it  ·  Back closes"
+msgstr "OK spustí  ·  Zpět zavře"
+
+msgctxt "#32693"
+msgid "OK chooses  ·  Back closes"
+msgstr "OK vybere  ·  Zpět zavře"
+
+msgctxt "#32694"
+msgid "Its own library views and menus: rounded glass cards with soft shadows float over the artwork, in Dark, Clear, Frost or the Fused Glass style."
+msgstr "Vlastní zobrazení knihovny a nabídky: zaoblené skleněné karty s jemnými stíny se vznášejí nad obrázky, ve stylu Tmavý, Čirý, Matný nebo Fused Glass."
+
+msgctxt "#32695"
+msgid "Use the defaults"
+msgstr "Použít výchozí"
+
+msgctxt "#32696"
+msgid "The chosen theme as it comes, at once. Everything can be changed later in Skin settings."
+msgstr "Zvolený motiv tak, jak je, hned. Vše lze později změnit v nastavení skinu."
+
+msgctxt "#32697"
+msgid "Customise"
+msgstr "Přizpůsobit"
+
+msgctxt "#32698"
+msgid "Go through the look, libraries, Home and backgrounds page by page. Every row shows a preview of its choice."
+msgstr "Projděte vzhled, knihovny, Domů a pozadí stránku po stránce. Každý řádek ukazuje náhled své volby."
+
+msgctxt "#32699"
+msgid "Keep my current settings"
+msgstr "Ponechat současná nastavení"
+
+msgctxt "#32700"
+msgid "Leave every setting as it is: only the theme you picked changes."
+msgstr "Všechna nastavení zůstanou, jak jsou: změní se jen vybraný motiv."
+
+msgctxt "#32701"
+msgid "Aeon with glass menus: the same layout and library views as Aeon, with see-through glass menus and dialogs instead of solid ones. No palettes."
+msgstr "Aeon se skleněnými nabídkami: stejné rozvržení a zobrazení knihovny jako Aeon, s průhlednými skleněnými nabídkami a dialogy místo plných. Bez palet."
+
+msgctxt "#32702"
+msgid "The Planner of upcoming episodes and films, online rows and extra ratings."
+msgstr "Plánovač nadcházejících epizod a filmů, online řádky a další hodnocení."
+
+msgctxt "#32703"
+msgid "The Next up row: the next episode of every show you are watching."
+msgstr "Řádek Další na řadě: další epizoda každého seriálu, který sledujete."
+
+msgctxt "#32704"
+msgid "Lyrics on the Now playing screen, line by line or word by word."
+msgstr "Texty písní na obrazovce Právě hraje, po řádcích nebo po slovech."
+
+msgctxt "#32705"
+msgid "Artist pictures behind the Now playing screen."
+msgstr "Fotografie interpreta za obrazovkou Právě hraje."
+
+msgctxt "#32706"
+msgid "Box colours taken from the artwork."
+msgstr "Barvy boxů převzaté z obrázků."
+
+msgctxt "#32707"
+msgid "Skip intro, recap and credits buttons in the player."
+msgstr "Tlačítka pro přeskočení úvodu, rekapitulace a titulků v přehrávači."
+
+msgctxt "#32708"
+msgid "Thumbnail previews on the seek bar."
+msgstr "Náhledy na liště posunu."
+
+msgctxt "#32709"
+msgid "Studio and network logos in the libraries and on the information page."
+msgstr "Loga studií a stanic v knihovnách a na stránce informací."
+
+msgctxt "#32710"
+msgid "Record label logos for albums."
+msgstr "Loga vydavatelství u alb."
+
+msgctxt "#32711"
+msgid "Language flags in the video information."
+msgstr "Vlajky jazyků v informacích o videu."
+
+msgctxt "#32712"
+msgid "The skin's own screensaver: library pictures with a slow zoom and slide, and what is playing."
+msgstr "Vlastní spořič obrazovky skinu: obrázky z knihovny s pomalým přiblížením a posunem a to, co právě hraje."
+
+msgctxt "#32713"
+msgid "Aeon: solid panels in a palette you pick. Aeon Glass: the same Aeon layout and views with glass menus, no palettes. Fused Glass: its own library views, rounded glass cards over the artwork."
+msgstr "Aeon: plné panely v paletě, kterou si vyberete. Aeon Glass: stejné rozvržení a zobrazení Aeon se skleněnými nabídkami, bez palet. Fused Glass: vlastní zobrazení knihovny, zaoblené skleněné karty nad obrázky."
+
+msgctxt "#32714"
+msgid "Its own views, glass cards"
+msgstr "Vlastní zobrazení, skleněné karty"
+
+msgctxt "#32715"
+msgid "Take the theme as it comes, or go through its look step by step. Everything can be changed later in Skin settings."
+msgstr "Vezměte motiv, jak je, nebo projděte jeho vzhled krok za krokem. Vše lze později změnit v nastavení skinu."
+
+msgctxt "#32716"
+msgid "How the settings strip of the library views shows: over the view (Overlay) or always beside it (Permanent)."
+msgstr "Jak se zobrazuje pruh nastavení v zobrazeních knihovny: přes zobrazení (Překryv) nebo stále vedle něj (Trvale)."
+
+msgctxt "#32717"
+msgid "How much the edges of the Home screen darken behind the menu and the text."
+msgstr "Jak moc ztmavnou okraje obrazovky Domů za nabídkou a textem."
+
+msgctxt "#32718"
+msgid "The colour of the clock box and the corner boxes with the Aeon palette."
+msgstr "Barva boxu hodin a rohových boxů s paletou Aeon."
+
+msgctxt "#32719"
+msgid "Optional add-ons that give the skin more to show. Install the ones you want; the rest can wait."
+msgstr "Volitelné doplňky, díky kterým skin ukáže víc. Nainstalujte ty, které chcete; ostatní počkají."
+
+msgctxt "#32720"
+msgid "The disc art spinning beside the poster on the player controls: for videos, for music, for both, or off."
+msgstr "Točící se obal disku vedle plakátu v ovládání přehrávače: pro videa, pro hudbu, pro obojí, nebo vypnuto."
+
+msgctxt "#32721"
+msgid "What the text under a title shows in every library view: the plot, the tagline (when there is one) or both."
+msgstr "Co ukazuje text pod titulem ve všech zobrazeních knihovny: děj, slogan (pokud existuje) nebo obojí."
+
+msgctxt "#32722"
+msgid "Libraries"
+msgstr "Knihovny"
+
+msgctxt "#32723"
+msgid "Information"
+msgstr "Informace"
+
+msgctxt "#32724"
+msgid "Screensaver & backdrops"
+msgstr "Spořič obrazovky a pozadí"
+
+msgctxt "#32725"
+msgid "Export skin settings"
+msgstr "Exportovat nastavení vzhledu"
+
+msgctxt "#32726"
+msgid "Import skin settings"
+msgstr "Importovat nastavení vzhledu"
+
+msgctxt "#32727"
+msgid "Save"
+msgstr "Uložit"
+
+msgctxt "#32728"
+msgid "Load"
+msgstr "Načíst"
+
+msgctxt "#32729"
+msgid "Saves every Aeon Fuse setting, with the theme, palette and fonts, to a file in a folder you pick."
+msgstr "Uloží všechna nastavení Aeon Fuse včetně motivu, palety a písem do souboru ve složce, kterou vyberete."
+
+msgctxt "#32730"
+msgid "Loads a file saved with Export skin settings. Your current skin settings are replaced."
+msgstr "Načte soubor uložený přes Exportovat nastavení vzhledu. Současná nastavení vzhledu budou nahrazena."
+
+msgctxt "#32731"
+msgid "Folder for the settings file"
+msgstr "Složka pro soubor s nastavením"
+
+msgctxt "#32732"
+msgid "Settings file to load"
+msgstr "Soubor s nastavením k načtení"
+
+msgctxt "#32733"
+msgid "Saved: %s"
+msgstr "Uloženo: %s"
+
+msgctxt "#32734"
+msgid "Load the settings saved on %s? Your current skin settings are replaced."
+msgstr "Načíst nastavení uložená %s? Současná nastavení vzhledu budou nahrazena."
+
+msgctxt "#32735"
+msgid "This file does not hold Aeon Fuse settings."
+msgstr "Tento soubor neobsahuje nastavení Aeon Fuse."
+
+msgctxt "#32736"
+msgid "The file could not be written."
+msgstr "Soubor nelze zapsat."
+
+msgctxt "#32737"
+msgid "Kodi restarts to apply them."
+msgstr "Kodi se restartuje, aby je použilo."
+
+msgctxt "#32738"
+msgid "The skin reloads; restart Kodi afterwards so every setting is read again."
+msgstr "Vzhled se znovu načte; poté Kodi restartujte, aby se všechna nastavení načetla znovu."
+
+msgctxt "#32739"
+msgid "These settings are already in use."
+msgstr "Tato nastavení se už používají."
+
+msgctxt "#32740"
+msgid "Soft"
+msgstr "Jemný"
+
+msgctxt "#32741"
+msgid "Home gradient"
+msgstr "Přechod na Domů"
+
+msgctxt "#32742"
+msgid "Beside the clock"
+msgstr "Vedle hodin"
+
+msgctxt "#32743"
+msgid "Left corner"
+msgstr "Levý roh"
+
+msgctxt "#32744"
+msgid "The fade from the bottom of the screen up to the Home menu: off, soft (the look so far) or strong."
+msgstr "Přechod od spodního okraje obrazovky k hlavní nabídce: vypnuto, jemný (dosavadní vzhled) nebo silný."
+
+msgctxt "#32745"
+msgid "Where the Now playing capsule sits on Home while music plays: beside the clock or in the lower left corner."
+msgstr "Kde na Domů sedí kapsle Právě hraje, když hraje hudba: vedle hodin nebo v levém dolním rohu."
+
+msgctxt "#32746"
+msgid "How the skip button sits on the player controls: a white tab on their top edge, or a glass capsule above them."
+msgstr "Jak sedí tlačítko přeskočení na ovládání přehrávače: bílá záložka na jeho horním okraji, nebo skleněná kapsle nad ním."
+
+msgctxt "#32747"
+msgid "How strongly the picture behind the menus and dialogs is blurred. Off: sharp, as before."
+msgstr "Jak silně se rozmaže obrázek za nabídkami a dialogy. Vypnuto: ostrý, jako dosud."
+
+msgctxt "#32748"
+msgid "Left / Right: choose an option. OK: set it. Up, Down or Back: keep the one in use."
+msgstr "Vlevo / Vpravo: vyberte možnost. OK: nastavte ji. Nahoru, Dolů nebo Zpět: ponechte stávající."
+
+msgctxt "#32749"
+msgid "Start on"
+msgstr "Začít na"
+
+msgctxt "#32750"
+msgid "The Home menu item that has the focus when Kodi starts, once the splash has gone."
+msgstr "Položka hlavní nabídky, na které je výběr při spuštění Kodi, jakmile zmizí úvodní obrazovka."
+
+msgctxt "#32751"
+msgid "Ratings shown in"
+msgstr "Hodnocení zobrazit v"
+
+msgctxt "#32752"
+msgid "Media info shown in"
+msgstr "Informace o médiu zobrazit v"
+
+msgctxt "#32753"
+msgid "Library views"
+msgstr "Zobrazení knihovny"
+
+msgctxt "#32754"
+msgid "Information pages"
+msgstr "Stránky informací"
+
+msgctxt "#32755"
+msgid "Widget & Spotlight screens"
+msgstr "Obrazovky widgetů a Spotlightu"
+
+msgctxt "#32756"
+msgid "Home spotlights"
+msgstr "Spotlighty na hlavní obrazovce"
+
+msgctxt "#32757"
+msgid "Player info"
+msgstr "Informace přehrávače"
+
+msgctxt "#32758"
+msgid "Screensaver"
+msgstr "Spořič obrazovky"
+
+msgctxt "#32759"
+msgid "Live TV"
+msgstr "Živá TV"
+
+msgctxt "#32760"
+msgid "Where the ratings (IMDb, TMDb, Rotten Tomatoes, Trakt) appear. OK opens the list: tick the places."
+msgstr "Kde se zobrazí hodnocení (IMDb, TMDb, Rotten Tomatoes, Trakt). OK otevře seznam: zaškrtněte místa."
+
+msgctxt "#32761"
+msgid "Where the media info chips (resolution, HDR, audio ...) appear. OK opens the list: tick the places. Which chips: Media info chips."
+msgstr "Kde se zobrazí štítky médií (rozlišení, HDR, zvuk ...). OK otevře seznam: zaškrtněte místa. Které štítky: Štítky informací o médiu."
+
+msgctxt "#32762"
+msgid "Recommended add-ons"
+msgstr "Doporučené doplňky"
+
+msgctxt "#32764"
+msgid "Installed"
+msgstr "Nainstalováno"
+
+msgctxt "#32765"
+msgid "Not installed"
+msgstr "Nenainstalováno"
+
+msgctxt "#32766"
+msgid "%s needs the %s repository. Install that repository first?"
+msgstr "%s potřebuje repozitář %s. Nainstalovat nejprve tento repozitář?"
+
+msgctxt "#32767"
+msgid "White weather icons for the weather forecast."
+msgstr "Bílé ikony počasí pro předpověď."
+
+msgctxt "#32768"
+msgid "The playback info button in the video controls."
+msgstr "Tlačítko informací o přehrávání v ovládání videa."
+
+msgctxt "#32769"
+msgid "The Inter (Copacetic) font set."
+msgstr "Sada písem Inter (Copacetic)."
+
+msgctxt "#32770"
+msgid "The Roboto CJKSC font set for Chinese, Japanese and Korean."
+msgstr "Sada písem Roboto CJKSC pro čínštinu, japonštinu a korejštinu."
+
+msgctxt "#32771"
+msgid "Update and clean on another Kodi"
+msgstr "Aktualizovat a čistit na jiném Kodi"
+
+msgctxt "#32772"
+msgid "Address"
+msgstr "Adresa"
+
+msgctxt "#32773"
+msgid "User name"
+msgstr "Uživatelské jméno"
+
+msgctxt "#32774"
+msgid "Password"
+msgstr "Heslo"
+
+msgctxt "#32775"
+msgid "Test connection"
+msgstr "Otestovat spojení"
+
+msgctxt "#32776"
+msgid "Library update and clean from this skin (Home, the library panel, the context menu) go to another Kodi, a headless one for instance, instead of this one."
+msgstr "Aktualizace a čištění knihovny z tohoto vzhledu (hlavní obrazovka, panel knihovny, kontextová nabídka) jdou na jiné Kodi, například bez obrazovky, místo tohoto."
+
+msgctxt "#32777"
+msgid "The other Kodi's web address and port, for example http://192.168.10.10:8080 (there: Settings > Services > Control > Allow remote control via HTTP)."
+msgstr "Webová adresa a port druhého Kodi, například http://192.168.10.10:8080 (tam: Nastavení > Služby > Ovládání > Povolit vzdálené ovládání přes HTTP)."
+
+msgctxt "#32778"
+msgid "The web server user name and password of the other Kodi."
+msgstr "Uživatelské jméno a heslo webového serveru druhého Kodi."
+
+msgctxt "#32779"
+msgid "Asks the other Kodi for its version: checks the address, user name and password."
+msgstr "Zeptá se druhého Kodi na verzi: ověří adresu, uživatelské jméno a heslo."
+
+msgctxt "#32780"
+msgid "Not set"
+msgstr "Nenastaveno"
+
+msgctxt "#32781"
+msgid "Library update sent"
+msgstr "Aktualizace knihovny odeslána"
+
+msgctxt "#32782"
+msgid "Library clean sent"
+msgstr "Čištění knihovny odesláno"
+
+msgctxt "#32783"
+msgid "Could not reach %s: %s"
+msgstr "Nelze se spojit s %s: %s"
+
+msgctxt "#32784"
+msgid "%s answers: %s"
+msgstr "%s odpovídá: %s"
+
+msgctxt "#32785"
+msgid "Wrong user name or password"
+msgstr "Špatné uživatelské jméno nebo heslo"
+
+msgctxt "#32786"
+msgid "Library update finished"
+msgstr "Aktualizace knihovny dokončena"
+
+msgctxt "#32789"
+msgid "Failed"
+msgstr "Selhalo"
+
+msgctxt "#32790"
+msgid "Could not install the repository"
+msgstr "Repozitář nelze nainstalovat"
+
+msgctxt "#32791"
+msgid "Pick the add-ons you want: OK ticks one, Next installs the ticked ones while you go on. The picture shows what each adds. Later: Skin settings > System > Recommended add-ons."
+msgstr "Vyberte doplňky, které chcete: OK jeden zaškrtne, Další nainstaluje zaškrtnuté, zatímco pokračujete. Obrázek ukazuje, co každý přidá. Později: Nastavení vzhledu > Systém > Doporučené doplňky."
+
+msgctxt "#32792"
+msgid "Will be installed"
+msgstr "Bude nainstalováno"
+
+msgctxt "#32793"
+msgid "Installs the ticked add-ons"
+msgstr "Nainstaluje zaškrtnuté doplňky"
+
+msgctxt "#32794"
+msgid "Installed: %s"
+msgstr "Nainstalováno: %s"
+
+msgctxt "#32795"
+msgid "Delete %s? Its name, path, icon, widgets and submenu are removed; the items below it move up one place."
+msgstr "Smazat %s? Jeho název, cesta, ikona, widgety a podnabídka budou odstraněny; položky pod ní se posunou o jedno místo nahoru."
+
+msgctxt "#32796"
+msgid "Custom items only"
+msgstr "Jen vlastní položky"
+
+msgctxt "#32797"
+msgid "A calm, thin waveform on the Now playing card, drawn in the skin's own box and smoothed so loud passages do not spike. The build for this device is installed."
+msgstr "Klidná tenká vlna na kartě Právě hraje, kreslená v rámečku vzhledu a vyhlazená, aby hlasité pasáže nevystřelovaly. Nainstaluje se verze pro toto zařízení."
+
+msgctxt "#32798"
+msgid "More by the artist"
+msgstr "Další od interpreta"
+
+msgctxt "#32799"
+msgid "Intermission at"
+msgstr "Přestávka v"
+
+msgctxt "#32800"
+msgid "Your languages"
+msgstr "Vaše jazyky"
+
+msgctxt "#32801"
+msgid "All others"
+msgstr "Ostatní"
+
+msgctxt "#32802"
+msgid "In your library"
+msgstr "Ve vaší knihovně"
+
+msgctxt "#32803"
+msgid "Sort and show"
+msgstr "Řazení a zobrazení"
+
+msgctxt "#32804"
+msgid "Sort by"
+msgstr "Řadit podle"
+
+msgctxt "#32805"
+msgid "Show only"
+msgstr "Zobrazit jen"
+
+msgctxt "#32806"
+msgid "OK again flips the order"
+msgstr "Další OK obrátí pořadí"
+
+msgctxt "#32807"
+msgid "Several versions"
+msgstr "Více verzí"
+
+msgctxt "#32808"
+msgid "Decade"
+msgstr "Desetiletí"
+
+msgctxt "#32809"
+msgid "Clear all"
+msgstr "Zrušit vše"
+
+msgctxt "#32810"
+msgid "Never played"
+msgstr "Nikdy nepřehráno"
+
+msgctxt "#32811"
+msgid "Played"
+msgstr "Přehráno"

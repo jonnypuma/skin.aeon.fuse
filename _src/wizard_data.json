@@ -1,0 +1,594 @@
+{
+ "palettes": [
+  {
+   "label": "Aeon",
+   "icon": "aeon/wizard/pal_defaults.png",
+   "val": "SKINDEFAULT",
+   "swatch": "ffe9e9e9",
+   "pk": "ff1a1a1a",
+   "pk2": "aa1a1a1a",
+   "pa": "ffffffff"
+  },
+  {
+   "label": "Abyss",
+   "icon": "aeon/wizard/pal_Abyss.png",
+   "val": "Abyss",
+   "swatch": "ff97aec5",
+   "pk": "ff10171d",
+   "pk2": "aa10171d",
+   "pa": "ff97aec5"
+  },
+  {
+   "label": "Amethyst",
+   "icon": "aeon/wizard/pal_Amethyst.png",
+   "val": "Amethyst",
+   "swatch": "ffd9a4d9",
+   "pk": "ff200e20",
+   "pk2": "aa200e20",
+   "pa": "ffd9a4d9"
+  },
+  {
+   "label": "Aquamarine",
+   "icon": "aeon/wizard/pal_Aquamarine.png",
+   "val": "Aquamarine",
+   "swatch": "ff14bfaf",
+   "pk": "ff0d211f",
+   "pk2": "aa0d211f",
+   "pa": "ff14bfaf"
+  },
+  {
+   "label": "Black",
+   "icon": "aeon/wizard/pal_Black.png",
+   "val": "Black",
+   "swatch": "ffffffff",
+   "pk": "ff171717",
+   "pk2": "aa171717",
+   "pa": "ffffffff"
+  },
+  {
+   "label": "Carol",
+   "icon": "aeon/wizard/pal_Carol.png",
+   "val": "Carol",
+   "swatch": "ffaaaaaa",
+   "pk": "ff171717",
+   "pk2": "aa171717",
+   "pa": "ffaaaaaa"
+  },
+  {
+   "label": "Dark",
+   "icon": "aeon/wizard/pal_Dark.png",
+   "val": "Dark",
+   "swatch": "ffaaaaaa",
+   "pk": "ff171717",
+   "pk2": "aa171717",
+   "pa": "ffaaaaaa"
+  },
+  {
+   "label": "Dracula",
+   "icon": "aeon/wizard/pal_Dracula.png",
+   "val": "Dracula",
+   "swatch": "ff50fa7b",
+   "pk": "ff0d2112",
+   "pk2": "aa0d2112",
+   "pa": "ff50fa7b"
+  },
+  {
+   "label": "Dreamscape",
+   "icon": "aeon/wizard/pal_Dreamscape.png",
+   "val": "Dreamscape",
+   "swatch": "ffee8ea2",
+   "pk": "ff210d11",
+   "pk2": "aa210d11",
+   "pa": "ffee8ea2"
+  },
+  {
+   "label": "Dune",
+   "icon": "aeon/wizard/pal_Dune.png",
+   "val": "Dune",
+   "swatch": "ffe0b07a",
+   "pk": "ff21180d",
+   "pk2": "aa21180d",
+   "pa": "ffe0b07a"
+  },
+  {
+   "label": "Ember",
+   "icon": "aeon/wizard/pal_Ember.png",
+   "val": "Ember",
+   "swatch": "ffffb066",
+   "pk": "ff21170d",
+   "pk2": "aa21170d",
+   "pa": "ffffb066"
+  },
+  {
+   "label": "Flamingo",
+   "icon": "aeon/wizard/pal_Flamingo.png",
+   "val": "Flamingo",
+   "swatch": "fffad0c4",
+   "pk": "ff21110d",
+   "pk2": "aa21110d",
+   "pa": "fffad0c4"
+  },
+  {
+   "label": "Forest",
+   "icon": "aeon/wizard/pal_Forest.png",
+   "val": "Forest",
+   "swatch": "ffa6d99a",
+   "pk": "ff11210d",
+   "pk2": "aa11210d",
+   "pa": "ffa6d99a"
+  },
+  {
+   "label": "Frappe",
+   "icon": "aeon/wizard/pal_Frappe.png",
+   "val": "Frappe",
+   "swatch": "ff89b4fa",
+   "pk": "ff0d1421",
+   "pk2": "aa0d1421",
+   "pa": "ff89b4fa"
+  },
+  {
+   "label": "Graphite",
+   "icon": "aeon/wizard/pal_Graphite.png",
+   "val": "Graphite",
+   "swatch": "ffe9eef5",
+   "pk": "ff0e1620",
+   "pk2": "aa0e1620",
+   "pa": "ffe9eef5"
+  },
+  {
+   "label": "Harbor",
+   "icon": "aeon/wizard/pal_Harbor.png",
+   "val": "Harbor",
+   "swatch": "ff7ec8c3",
+   "pk": "ff0e201f",
+   "pk2": "aa0e201f",
+   "pa": "ff7ec8c3"
+  },
+  {
+   "label": "Hearth",
+   "icon": "aeon/wizard/pal_Hearth.png",
+   "val": "Hearth",
+   "swatch": "fff19090",
+   "pk": "ff210d0d",
+   "pk2": "aa210d0d",
+   "pa": "fff19090"
+  },
+  {
+   "label": "Hotline",
+   "icon": "aeon/wizard/pal_Hotline.png",
+   "val": "Hotline",
+   "swatch": "fff98dc9",
+   "pk": "ff210d18",
+   "pk2": "aa210d18",
+   "pa": "fff98dc9"
+  },
+  {
+   "label": "Hotpink",
+   "icon": "aeon/wizard/pal_Hotpink.png",
+   "val": "Hotpink",
+   "swatch": "fffd879d",
+   "pk": "ff210d10",
+   "pk2": "aa210d10",
+   "pa": "fffd879d"
+  },
+  {
+   "label": "Ibracorp",
+   "icon": "aeon/wizard/pal_Ibracorp.png",
+   "val": "Ibracorp",
+   "swatch": "fff28f87",
+   "pk": "ff210e0d",
+   "pk2": "aa210e0d",
+   "pa": "fff28f87"
+  },
+  {
+   "label": "Iris",
+   "icon": "aeon/wizard/pal_Iris.png",
+   "val": "Iris",
+   "swatch": "ffc4b5fd",
+   "pk": "ff110d21",
+   "pk2": "aa110d21",
+   "pa": "ffc4b5fd"
+  },
+  {
+   "label": "Macchiato",
+   "icon": "aeon/wizard/pal_Macchiato.png",
+   "val": "Macchiato",
+   "swatch": "ff89b4fa",
+   "pk": "ff0d1421",
+   "pk2": "aa0d1421",
+   "pa": "ff89b4fa"
+  },
+  {
+   "label": "Maroon",
+   "icon": "aeon/wizard/pal_Maroon.png",
+   "val": "Maroon",
+   "swatch": "ffeb8dc0",
+   "pk": "ff210d18",
+   "pk2": "aa210d18",
+   "pa": "ffeb8dc0"
+  },
+  {
+   "label": "Martian",
+   "icon": "aeon/wizard/pal_Martian.png",
+   "val": "Martian",
+   "swatch": "ff43e97b",
+   "pk": "ff0d2114",
+   "pk2": "aa0d2114",
+   "pa": "ff43e97b"
+  },
+  {
+   "label": "Midnight",
+   "icon": "aeon/wizard/pal_Midnight.png",
+   "val": "Midnight",
+   "swatch": "ff8fb8ff",
+   "pk": "ff0d1421",
+   "pk2": "aa0d1421",
+   "pa": "ff8fb8ff"
+  },
+  {
+   "label": "Mind",
+   "icon": "aeon/wizard/pal_Mind.png",
+   "val": "Mind",
+   "swatch": "ffe4d800",
+   "pk": "ff21200d",
+   "pk2": "aa21200d",
+   "pa": "ffe4d800"
+  },
+  {
+   "label": "Mocha",
+   "icon": "aeon/wizard/pal_Mocha.png",
+   "val": "Mocha",
+   "swatch": "ff89b4fa",
+   "pk": "ff0d1421",
+   "pk2": "aa0d1421",
+   "pa": "ff89b4fa"
+  },
+  {
+   "label": "Noir",
+   "icon": "aeon/wizard/pal_Noir.png",
+   "val": "Noir",
+   "swatch": "ffe6e6e6",
+   "pk": "ff171717",
+   "pk2": "aa171717",
+   "pa": "ffe6e6e6"
+  },
+  {
+   "label": "Nord",
+   "icon": "aeon/wizard/pal_Nord.png",
+   "val": "Nord",
+   "swatch": "ff79b8ca",
+   "pk": "ff0d1c21",
+   "pk2": "aa0d1c21",
+   "pa": "ff79b8ca"
+  },
+  {
+   "label": "Ocean",
+   "icon": "aeon/wizard/pal_Ocean.png",
+   "val": "Ocean",
+   "swatch": "ff6fdcd6",
+   "pk": "ff0d2120",
+   "pk2": "aa0d2120",
+   "pa": "ff6fdcd6"
+  },
+  {
+   "label": "OneDark",
+   "icon": "aeon/wizard/pal_OneDark.png",
+   "val": "OneDark",
+   "swatch": "ff98c379",
+   "pk": "ff16200e",
+   "pk2": "aa16200e",
+   "pa": "ff98c379"
+  },
+  {
+   "label": "Organizr",
+   "icon": "aeon/wizard/pal_Organizr.png",
+   "val": "Organizr",
+   "swatch": "ff45b5e6",
+   "pk": "ff0d1b21",
+   "pk2": "aa0d1b21",
+   "pa": "ff45b5e6"
+  },
+  {
+   "label": "Overseerr",
+   "icon": "aeon/wizard/pal_Overseerr.png",
+   "val": "Overseerr",
+   "swatch": "ffb49cfb",
+   "pk": "ff120d21",
+   "pk2": "aa120d21",
+   "pa": "ffb49cfb"
+  },
+  {
+   "label": "Pine Shadow",
+   "icon": "aeon/wizard/pal_Pine-Shadow.png",
+   "val": "Pine-Shadow",
+   "swatch": "ffe5a00d",
+   "pk": "ff211b0d",
+   "pk2": "aa211b0d",
+   "pa": "ffe5a00d"
+  },
+  {
+   "label": "Plex",
+   "icon": "aeon/wizard/pal_Plex.png",
+   "val": "Plex",
+   "swatch": "ffe5a00d",
+   "pk": "ff211b0d",
+   "pk2": "aa211b0d",
+   "pa": "ffe5a00d"
+  },
+  {
+   "label": "Power",
+   "icon": "aeon/wizard/pal_Power.png",
+   "val": "Power",
+   "swatch": "ffe48ed2",
+   "pk": "ff210d1d",
+   "pk2": "aa210d1d",
+   "pa": "ffe48ed2"
+  },
+  {
+   "label": "Pumpkin",
+   "icon": "aeon/wizard/pal_Pumpkin.png",
+   "val": "Pumpkin",
+   "swatch": "ffff8c05",
+   "pk": "ff21180d",
+   "pk2": "aa21180d",
+   "pa": "ffff8c05"
+  },
+  {
+   "label": "Reality",
+   "icon": "aeon/wizard/pal_Reality.png",
+   "val": "Reality",
+   "swatch": "fff98b8b",
+   "pk": "ff210d0d",
+   "pk2": "aa210d0d",
+   "pa": "fff98b8b"
+  },
+  {
+   "label": "Rose Pine",
+   "icon": "aeon/wizard/pal_Rose-Pine.png",
+   "val": "Rose-Pine",
+   "swatch": "ffef8eaa",
+   "pk": "ff210d12",
+   "pk2": "aa210d12",
+   "pa": "ffef8eaa"
+  },
+  {
+   "label": "Rose Pine Moon",
+   "icon": "aeon/wizard/pal_Rose-Pine-Moon.png",
+   "val": "Rose-Pine-Moon",
+   "swatch": "ffef8eaa",
+   "pk": "ff210d12",
+   "pk2": "aa210d12",
+   "pa": "ffef8eaa"
+  },
+  {
+   "label": "Royal",
+   "icon": "aeon/wizard/pal_Royal.png",
+   "val": "Royal",
+   "swatch": "ffb9aa9f",
+   "pk": "ff1b1613",
+   "pk2": "aa1b1613",
+   "pa": "ffb9aa9f"
+  },
+  {
+   "label": "Sand",
+   "icon": "aeon/wizard/pal_Sand.png",
+   "val": "Sand",
+   "swatch": "fff0dcae",
+   "pk": "ff211b0d",
+   "pk2": "aa211b0d",
+   "pa": "fff0dcae"
+  },
+  {
+   "label": "Shadow",
+   "icon": "aeon/wizard/pal_Shadow.png",
+   "val": "Shadow",
+   "swatch": "ff9cadb9",
+   "pk": "ff13181b",
+   "pk2": "aa13181b",
+   "pa": "ff9cadb9"
+  },
+  {
+   "label": "Sleek",
+   "icon": "aeon/wizard/pal_Sleek.png",
+   "val": "Sleek",
+   "swatch": "ff84a9f8",
+   "pk": "ff0d1321",
+   "pk2": "aa0d1321",
+   "pa": "ff84a9f8"
+  },
+  {
+   "label": "Solar",
+   "icon": "aeon/wizard/pal_Solar.png",
+   "val": "Solar",
+   "swatch": "fff6d365",
+   "pk": "ff211c0d",
+   "pk2": "aa211c0d",
+   "pa": "fff6d365"
+  },
+  {
+   "label": "Soul",
+   "icon": "aeon/wizard/pal_Soul.png",
+   "val": "Soul",
+   "swatch": "ffff9900",
+   "pk": "ff21190d",
+   "pk2": "aa21190d",
+   "pa": "ffff9900"
+  },
+  {
+   "label": "Space",
+   "icon": "aeon/wizard/pal_Space.png",
+   "val": "Space",
+   "swatch": "ff78acff",
+   "pk": "ff0d1521",
+   "pk2": "aa0d1521",
+   "pa": "ff78acff"
+  },
+  {
+   "label": "Space Gray",
+   "icon": "aeon/wizard/pal_Space-Gray.png",
+   "val": "Space-Gray",
+   "swatch": "ff8eafbe",
+   "pk": "ff11191d",
+   "pk2": "aa11191d",
+   "pa": "ff8eafbe"
+  },
+  {
+   "label": "Time",
+   "icon": "aeon/wizard/pal_Time.png",
+   "val": "Time",
+   "swatch": "ff6df751",
+   "pk": "ff10210d",
+   "pk2": "aa10210d",
+   "pa": "ff6df751"
+  },
+  {
+   "label": "TrueBlack",
+   "icon": "aeon/wizard/pal_TrueBlack.png",
+   "val": "TrueBlack",
+   "swatch": "ffaaaaaa",
+   "pk": "ff171717",
+   "pk2": "aa171717",
+   "pa": "ffaaaaaa"
+  },
+  {
+   "label": "Vanta",
+   "icon": "aeon/wizard/pal_Vanta.png",
+   "val": "Vanta",
+   "swatch": "ffaaaaaa",
+   "pk": "ff171717",
+   "pk2": "aa171717",
+   "pa": "ffaaaaaa"
+  },
+  {
+   "label": "Wine",
+   "icon": "aeon/wizard/pal_Wine.png",
+   "val": "Wine",
+   "swatch": "fff29bb0",
+   "pk": "ff210d12",
+   "pk2": "aa210d12",
+   "pa": "fff29bb0"
+  }
+ ],
+ "menu": [
+  {
+   "label": "$VAR[Aeon_Name_movies]",
+   "label2": "",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "on",
+   "cur": "$VAR[Aeon_WizMenu_movies]",
+   "more": "$ADDON[skin.aeon.fuse 32057]"
+  },
+  {
+   "label": "$VAR[Aeon_Name_tv]",
+   "label2": "",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "on",
+   "cur": "$VAR[Aeon_WizMenu_tv]",
+   "more": "$ADDON[skin.aeon.fuse 32058]"
+  },
+  {
+   "label": "$VAR[Aeon_Name_music]",
+   "label2": "",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "on",
+   "cur": "$VAR[Aeon_WizMenu_music]",
+   "more": "$ADDON[skin.aeon.fuse 32059]"
+  },
+  {
+   "label": "$VAR[Aeon_Name_livetv]",
+   "label2": "",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "on",
+   "cur": "$VAR[Aeon_WizMenu_livetv]",
+   "more": "$ADDON[skin.aeon.fuse 32060]"
+  },
+  {
+   "label": "$VAR[Aeon_Name_search]",
+   "label2": "",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "on",
+   "cur": "$VAR[Aeon_WizMenu_search]",
+   "more": "$ADDON[skin.aeon.fuse 32061]"
+  },
+  {
+   "label": "$VAR[Aeon_Name_sets]",
+   "label2": "",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "on",
+   "cur": "$VAR[Aeon_WizMenu_sets]",
+   "more": "$ADDON[skin.aeon.fuse 32062]"
+  },
+  {
+   "label": "$VAR[Aeon_Name_favourites]",
+   "label2": "",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "on",
+   "cur": "$VAR[Aeon_WizMenu_favourites]",
+   "more": "$ADDON[skin.aeon.fuse 32063]"
+  },
+  {
+   "label": "$VAR[Aeon_Name_pictures]",
+   "label2": "",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "on",
+   "cur": "$VAR[Aeon_WizMenu_pictures]",
+   "more": "$ADDON[skin.aeon.fuse 32064]"
+  },
+  {
+   "label": "$VAR[Aeon_Name_addons]",
+   "label2": "",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "on",
+   "cur": "$VAR[Aeon_WizMenu_addons]",
+   "more": "$ADDON[skin.aeon.fuse 32065]"
+  },
+  {
+   "label": "$VAR[Aeon_Name_weather]",
+   "label2": "",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "on",
+   "cur": "$VAR[Aeon_WizMenu_weather]",
+   "more": "$ADDON[skin.aeon.fuse 32066]"
+  },
+  {
+   "label": "$VAR[Aeon_Name_planner]",
+   "label2": "",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "on",
+   "cur": "$VAR[Aeon_WizMenu_planner]",
+   "more": "$ADDON[skin.aeon.fuse 32067]"
+  },
+  {
+   "label": "$VAR[Aeon_Name_files]",
+   "label2": "",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "on",
+   "cur": "$VAR[Aeon_WizMenu_files]",
+   "more": "$ADDON[skin.aeon.fuse 32068]"
+  },
+  {
+   "label": "$VAR[Aeon_Name_system]",
+   "label2": "",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "on",
+   "cur": "$VAR[Aeon_WizMenu_system]",
+   "more": "$ADDON[skin.aeon.fuse 32069]"
+  },
+  {
+   "label": "$VAR[Aeon_Name_power]",
+   "label2": "",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "on",
+   "cur": "$VAR[Aeon_WizMenu_power]",
+   "more": "$ADDON[skin.aeon.fuse 32070]"
+  },
+  {
+   "label": "$ADDON[skin.aeon.fuse 32071]",
+   "label2": "$ADDON[skin.aeon.fuse 32072]",
+   "icon": "aeon/wizard/menu_middle.jpg",
+   "val": "next",
+   "cur": "",
+   "more": "$ADDON[skin.aeon.fuse 32073]"
+  }
+ ]
+}

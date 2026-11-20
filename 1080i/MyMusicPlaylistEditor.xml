@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Music playlist editor (SPEC 5 Minimal, M4; Builder C). Two text lists side by side:
+	library browser on the left, the playlist being built on the right.
+
+	Kodi id contract (Estuary Omega MyMusicPlaylistEditor.xml / GUIWindowMusicPlaylistEditor.cpp):
+	  menucontrol 9000 with 6 open, 7 save, 8 clear; 50 = browse list (view, <views>50</views>),
+	  100 = playlist list, 12 = file count label, 101 = playlist count label (Kodi fills both);
+	  60 / 61 scrollbars. OK on list 50 adds the item, OK on 100 offers move / remove (Kodi).
+	Navigation: sub-nav Down -> 50; 50 Right -> 100, 100 Left -> 50; Up from either -> sub-nav.
+	Back -> previous window (Kodi).
+-->
+<window>
+	<defaultcontrol always="true">50</defaultcontrol>
+	<menucontrol>9000</menucontrol>
+	<backgroundcolor>ff000000</backgroundcolor>
+	<views>50</views>
+	<include>Anim_WindowOpenClose</include>
+	<controls>
+		<include>AG_Background</include>
+		<include content="AG_TopBar">
+			<param name="index" value="04"/>
+			<param name="title" value="$LOCALIZE[31287]"/>
+		</include>
+		<include condition="!$EXP[FGS]">MPE_Classic</include>
+		<include condition="$EXP[FGS]">FGS_PlaylistEditor</include><!-- 0.56.53 fgsplaylisted -->
+	</controls>
+</window>

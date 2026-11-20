@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Palette "Hotpink" of Aeon Fuse (from the SABnzbd scheme Hotpink): only the colours that differ from defaults.xml. -->
+<colors>
+    <!-- 0.40.4: palette "Hotpink" for the menus only: library views keep the Aeon colours (lib_ names of defaults.xml) -->
+    <color name="aeon_white">fffd879d</color>
+    <color name="aeon_accent">fffd879d</color>
+    <color name="aeon_onbar">ff210d10</color>
+    <color name="aeon_onbar_cc">cc210d10</color>
+    <color name="aeon_onbar_bb">bb210d10</color>
+    <color name="aeon_onbar_aa">aa210d10</color>
+    <color name="aeon_onbar_99">99210d10</color>
+    <color name="aeon_onaccent">ff210d10</color>
+    <color name="aeon_box">ff923349</color>
+    <color name="aeon_sbbar">88fd879d</color>
+    <color name="x_column">26fb3f62</color>
+    <color name="x_ground">ff184045</color>
+    <color name="x_panel">ff002d32</color>
+    <color name="x_surface">ff002d32</color>
+    <color name="x_raised">ff113b3f</color>
+    <color name="x_line">ff34575b</color>
+    <color name="x_line2">ff47676a</color>
+    <color name="x_accent">fffd879d</color>
+    <color name="x_accenttext">fffd879d</color>
+    <color name="x_onaccent">ff210d10</color>
+    <color name="x_deep">ff002d32</color>
+    <color name="x_deep_f0">f0002d32</color>
+    <color name="x_deep_e6">e6002d32</color>
+    <color name="x_deep_cc">cc002d32</color>
+    <color name="x_deep_8c">8c002d32</color>
+</colors>

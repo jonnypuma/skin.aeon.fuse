@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Palette "Flamingo" of Aeon Fuse (from the SABnzbd scheme Blackberry-Flamingo): only the colours that differ from defaults.xml. -->
+<colors>
+    <!-- 0.40.4: palette "Flamingo" for the menus only: library views keep the Aeon colours (lib_ names of defaults.xml) -->
+    <color name="aeon_white">fffad0c4</color>
+    <color name="aeon_accent">fffad0c4</color>
+    <color name="aeon_onbar">ff21110d</color>
+    <color name="aeon_onbar_cc">cc21110d</color>
+    <color name="aeon_onbar_bb">bb21110d</color>
+    <color name="aeon_onbar_aa">aa21110d</color>
+    <color name="aeon_onbar_99">9921110d</color>
+    <color name="aeon_onaccent">ff21110d</color>
+    <color name="aeon_box">ff7f433d</color>
+    <color name="aeon_sbbar">88fad0c4</color>
+    <color name="x_column">26fad0c4</color>
+    <color name="x_ground">ff69181b</color>
+    <color name="x_panel">ff5a0004</color>
+    <color name="x_surface">ff5a0004</color>
+    <color name="x_raised">ff641114</color>
+    <color name="x_line">ff7b3437</color>
+    <color name="x_line2">ff86474a</color>
+    <color name="x_accent">fffad0c4</color>
+    <color name="x_accenttext">fffad0c4</color>
+    <color name="x_onaccent">ff21110d</color>
+    <color name="x_deep">ff5a0004</color>
+    <color name="x_deep_f0">f05a0004</color>
+    <color name="x_deep_e6">e65a0004</color>
+    <color name="x_deep_cc">cc5a0004</color>
+    <color name="x_deep_8c">8c5a0004</color>
+</colors>

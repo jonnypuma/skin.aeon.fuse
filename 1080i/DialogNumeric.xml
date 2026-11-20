@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Numeric input (PINs, times, IP) - M4 look via the shared key / dialog includes (Builder E).
+	Id contract (Estuary Omega): heading textbox 1, input label 4,
+	digits 10-19, 20 previous / 22 next (time and IP fields), 21 done, 23 backspace.
+-->
+<window>
+	<defaultcontrol always="true">21</defaultcontrol>
+	<include>Anim_DialogOpenClose</include>
+	<controls>
+		<include condition="!$EXP[Aeon_MS]">Num_Classic</include>
+		<include condition="$EXP[Aeon_MS_mosaic]">MS_Num_mosaic</include>
+		<include condition="$EXP[Aeon_MS_ledger]">MS_Num_ledger</include>
+		<include condition="$EXP[Aeon_MS_bridge]">MS_Num_bridge</include>
+		<include condition="$EXP[Aeon_MS_tabslab]">MS_Num_tabslab</include>
+	</controls>
+</window>

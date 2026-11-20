@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	DialogSelect (M4, Builder E). Generic select: skin chooser (Settings > Interface > Skin),
+	add-on choices, video versions/extras, and - on Omega, which has no dedicated audio/subtitle
+	select windows - the audio / subtitle STREAM lists opened from the OSD settings.
+	  · over fullscreen video: right-hand 720px track picker (mockups/Tracks.dc.html)
+	  · otherwise: centred Index dialog
+	Include conditions are re-evaluated each time the dialog opens (Kodi reloads the window when
+	they change), so one window serves both looks.
+	Id contract (Estuary Omega Includes_DialogSelect.xml): heading 1, list 3 (simple) / 6 (detailed),
+	scrollbar 61, buttons 5 / 8 (extra, Kodi shows when used) / 7 (cancel) in grouplist 9001.
+	Aeon ids (panel only): grouplist 9100, 9101 download subtitles, 9102 subtitle settings.
+	Game save / filter layouts (Estuary game windows) fall back to the centred list.
+-->
+<window>
+	<defaultcontrol always="true">3</defaultcontrol>
+	<include condition="!$EXP[Dlg_IsTrackPanel]">Anim_DialogOpenClose</include>
+	<controls>
+		<include condition="!$EXP[Dlg_IsTrackPanel] + ![$EXP[Aeon_MS] + $EXP[MS_SelPlain]] + ![$EXP[FGS] + String.IsEmpty(Window(Home).Property(aeon.palpick)) + String.IsEmpty(Window(Home).Property(aeon.iconpick))]">Dlg_SelectCentred</include>
+		<include condition="!$EXP[Dlg_IsTrackPanel] + $EXP[FGS] + String.IsEmpty(Window(Home).Property(aeon.palpick)) + String.IsEmpty(Window(Home).Property(aeon.iconpick))">FGS_Select</include><!-- 0.56.32 fgs_dialogs -->
+		<include condition="$EXP[Dlg_IsTrackPanel] + !$EXP[Aeon_MS]">Dlg_SelectPanel</include>
+		<include condition="$EXP[Dlg_IsTrackPanel] + $EXP[Aeon_MS_mosaic]">MS_TrackSel_mosaic</include>
+		<include condition="$EXP[Dlg_IsTrackPanel] + $EXP[Aeon_MS_ledger]">MS_TrackSel_ledger</include>
+		<include condition="$EXP[Dlg_IsTrackPanel] + $EXP[Aeon_MS_bridge]">MS_TrackSel_bridge</include>
+		<include condition="$EXP[Dlg_IsTrackPanel] + $EXP[Aeon_MS_tabslab]">MS_TrackSel_tabslab</include>
+		<!-- Aeon theme menu styles (_src/ms_menus.py) -->
+		<include condition="!$EXP[Dlg_IsTrackPanel] + $EXP[MS_SelPlain] + $EXP[Aeon_MS_mosaic]">MS_Select_mosaic</include>
+		<include condition="!$EXP[Dlg_IsTrackPanel] + $EXP[MS_SelPlain] + $EXP[Aeon_MS_ledger]">MS_Select_ledger</include>
+		<include condition="!$EXP[Dlg_IsTrackPanel] + $EXP[MS_SelPlain] + $EXP[Aeon_MS_bridge]">MS_Select_bridge</include>
+		<include condition="!$EXP[Dlg_IsTrackPanel] + $EXP[MS_SelPlain] + $EXP[Aeon_MS_tabslab]">MS_Select_tabslab</include>
+	</controls>
+</window>

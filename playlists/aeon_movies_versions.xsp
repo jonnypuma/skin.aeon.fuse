@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<smartplaylist type="movies">
+	<name>Movies with versions</name>
+	<match>all</match>
+	<rule field="hasversions" operator="true"/>
+	<limit>30</limit>
+	<order direction="descending">random</order>
+</smartplaylist>

@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Common building blocks (Aeon language): mood background with pre-rendered light, top line,
+	soft cards, pill buttons, focus rings around rounded art, watched markers. Prefix AG_.
+	Every colour is a mood token ($VAR[AG_*], Includes_Aeon.xml).
+-->
+<includes>
+	<!-- ============================================================ page -->
+
+	<!-- Mood ground + ambient light (two pre-rendered dithered glows tinted per mood), the focused
+	     item's borrowed colour (TMDb Helper Colors.Main, normalised per mood) and the rain overlay.
+	     First control of every full-screen window. -->
+	<!-- 0.56.9 the add-on's fanart behind the add-on browser, its information and its settings, over the backdrop and
+	     dimmed as the backdrop is (the user: "kodi addons, repos don't show fanart") -->
+	<!-- 0.56.10 the add-on browser's Hide foreign / Hide incompatible pills: a gold dot while the filter is on -->
+	<variable name="AB_FilterDot7">
+		<value condition="System.GetBool(general.addonforeignfilter)">[COLOR fg_mark]●[/COLOR]  </value>
+		<value>[COLOR 73a0a6b0]●[/COLOR]  </value>
+	</variable>
+	<variable name="AB_FilterDot8">
+		<value condition="System.GetBool(general.addonbrokenfilter)">[COLOR fg_mark]●[/COLOR]  </value>
+		<value>[COLOR 73a0a6b0]●[/COLOR]  </value>
+	</variable>
+	<include name="Aeon_AddonFanart">
+		<param name="art"></param>
+		<param name="cond">false</param>
+		<definition>
+			<control type="group">
+				<visible>$PARAM[cond] + !Skin.HasSetting(aeon.nobackdrop)</visible>
+				<!-- 0.56.53 its own ground first: the add-on's fanart is drawn see-through (Aeon_BackdropAlpha), and the general
+				     backdrop under it showed through, so the settings page looked like the backdrop, not the add-on -->
+				<control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><texture colordiffuse="$VAR[AG_Ground]">common/white.png</texture></control>
+				<control type="image"><left>-40</left><top>-40</top><width>2000</width><height>1160</height><aspectratio>scale</aspectratio><fadetime>400</fadetime><texture background="true" colordiffuse="$VAR[Aeon_BackdropAlpha]">$PARAM[art]</texture></control>
+				<control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><texture colordiffuse="$VAR[FG_BackdropDim]">common/white.png</texture></control>
+			</control>
+		</definition>
+	</include>
+	<include name="AG_Background">
+		<control type="group">
+			<description>AG_Background</description>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>screen_w</width>
+				<height>screen_h</height>
+				<texture colordiffuse="$VAR[AG_Ground]">common/white.png</texture>
+			</control>
+			<!-- Fuse: the setup wizard's ground -->
+			<control type="image"><width>screen_w</width><height>screen_h</height><texture colordiffuse="x_deep">common/white.png</texture><visible>$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]</visible></control>
+			<control type="image"><left>-300</left><top>-300</top><width>1400</width><height>1000</height><texture colordiffuse="18ffffff">aeon/glow_soft.png</texture><visible>$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]</visible></control>
+			<control type="image"><left>1100</left><top>500</top><width>1100</width><height>800</height><texture colordiffuse="0cffffff">aeon/glow_soft.png</texture><visible>$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]</visible></control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>screen_w</width>
+				<height>screen_h</height>
+				<aspectratio>scale</aspectratio>
+				<texture>common/aeon_bg_default.png</texture>
+				<visible>!$EXP[Aeon_SettingsWin] + $EXP[Aeon_VGlass]</visible>
+			</control>
+			<control type="group"><visible>$EXP[Aeon_VGlass]</visible><include>Aeon_Backdrop</include></control>
+		</control>
+	</include>
+	<!-- AG_Background_L: the library windows' copy of AG_Background (lib_ colours: palette for menus / library / both, 0.40.4) -->
+	<include name="AG_Background_L">
+		<control type="group">
+			<description>AG_Background</description>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>screen_w</width>
+				<height>screen_h</height>
+				<texture colordiffuse="$VAR[AG_Ground_L]">common/white.png</texture>
+			</control>
+			<!-- Fuse: the setup wizard's ground -->
+			<control type="image"><width>screen_w</width><height>screen_h</height><texture colordiffuse="lib_x_deep">common/white.png</texture><visible>$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]</visible></control>
+			<control type="image"><left>-300</left><top>-300</top><width>1400</width><height>1000</height><texture colordiffuse="18ffffff">aeon/glow_soft.png</texture><visible>$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]</visible></control>
+			<control type="image"><left>1100</left><top>500</top><width>1100</width><height>800</height><texture colordiffuse="0cffffff">aeon/glow_soft.png</texture><visible>$EXP[Aeon_Fused] + !$EXP[Aeon_VGlass]</visible></control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>screen_w</width>
+				<height>screen_h</height>
+				<aspectratio>scale</aspectratio>
+				<texture>common/aeon_bg_default.png</texture>
+				<visible>!$EXP[Aeon_SettingsWin] + $EXP[Aeon_VGlass]</visible>
+			</control>
+			<control type="group"><visible>$EXP[Aeon_VGlass] + !$EXP[Aeon_FGlass]</visible><include>Aeon_Backdrop</include></control><!-- 0.56.53 libneutral: no random backdrop under the Fused Glass library -->
+		</control>
+	</include>
+
+	<!-- Slow rain streaks at ~7 % while it rains (weather setting on, reduce motion off). -->
+	<include name="AG_RainOverlay">
+		<control type="group">
+			<visible>$EXP[AG_RainOverlay]</visible>
+			<include>Anim_FadeVisible</include>
+			<control type="group">
+				<animation effect="slide" start="0,-1080" end="0,0" time="14000" reversible="false" loop="true" condition="[true] + !Skin.HasSetting(aeon.reducemotion)">Conditional</animation>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>1920</width>
+					<height>1080</height>
+					<texture colordiffuse="$VAR[AG_RainTint]">aeon/rain.png</texture>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>1080</top>
+					<width>1920</width>
+					<height>1080</height>
+					<texture colordiffuse="$VAR[AG_RainTint]">aeon/rain.png</texture>
+				</control>
+			</control>
+		</control>
+	</include>
+
+	<!-- Rules are not part of the Aeon language: kept as thin token lines for the engine's few
+	     list dividers. params: top, left, width, color -->
+	<include name="AG_Rule">
+		<param name="top">0</param>
+		<param name="left">page_margin</param>
+		<param name="width">page_width</param>
+		<param name="color">$VAR[AG_Line]</param>
+		<definition>
+			<control type="image">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>rule_h</height>
+				<texture colordiffuse="$PARAM[color]">common/hairline.png</texture>
+			</control>
+		</definition>
+	</include>
+
+	<!-- No header rule in Aeon (the top line floats on the ground). -->
+	<include name="AG_TopRule">
+		<description>no rule</description>
+	</include>
+
+	<!-- Right end of the top line: weather + clock (mockup: clock 30px semibold, tabular). -->
+	<include name="AG_Clock">
+		<control type="grouplist">
+			<left>page_margin</left>
+			<top>topbar_item_top</top>
+			<width>page_width</width>
+			<height>topbar_item_h</height>
+			<orientation>horizontal</orientation>
+			<align>right</align>
+			<itemgap>14</itemgap>
+			<usecontrolcoords>true</usecontrolcoords>
+			<control type="image">
+				<top>14</top>
+				<width>24</width>
+				<height>24</height>
+				<texture colordiffuse="$VAR[AG_Ink2]">$VAR[AG_WeatherIcon]</texture>
+				<visible>$EXP[AG_HasWeather]</visible>
+			</control>
+			<control type="label">
+				<width>auto</width>
+				<height>topbar_item_h</height>
+				<font>ui_22</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<label>$VAR[AG_WeatherShort]</label>
+				<visible>$EXP[AG_HasWeather]</visible>
+			</control>
+			<control type="image">
+				<width>14</width>
+				<height>topbar_item_h</height>
+				<texture></texture>
+				<visible>$EXP[AG_HasWeather]</visible>
+			</control>
+			<control type="label">
+				<width>auto</width>
+				<height>topbar_item_h</height>
+				<font>clock_30</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<label>$VAR[ClockLabel]</label>
+			</control>
+		</control>
+	</include>
+
+	<!-- Left end of the top line on Home and libraries: mood icon + "Sunday evening" -->
+	<include name="AG_MoodLine">
+		<control type="grouplist">
+			<left>page_margin</left>
+			<top>topbar_item_top</top>
+			<width>660</width>  <!-- 0.9.8: ends before the library Options pill (x 840) -->
+			<height>topbar_item_h</height>
+			<orientation>horizontal</orientation>
+			<itemgap>14</itemgap>
+			<usecontrolcoords>true</usecontrolcoords>
+			<control type="image">
+				<top>11</top>
+				<width>30</width>
+				<height>30</height>
+				<texture colordiffuse="$VAR[AG_Accent]">$VAR[AG_MoodIcon]</texture>
+			</control>
+			<control type="label">
+				<width>auto</width>
+				<height>topbar_item_h</height>
+				<font>ui_22_semibold</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<label>$VAR[AG_DayPart]</label>
+			</control>
+			<control type="label">
+				<width>auto</width>
+				<height>topbar_item_h</height>
+				<font>ui_22_semibold</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<label>·</label>
+				<visible>$EXP[AG_HasWeather]</visible>
+			</control>
+			<control type="image">
+				<top>14</top>
+				<width>24</width>
+				<height>24</height>
+				<texture colordiffuse="$VAR[AG_Ink2]">$VAR[AG_WeatherIcon]</texture>
+				<visible>$EXP[AG_HasWeather]</visible>
+			</control>
+			<control type="label">
+				<width>auto</width>
+				<height>topbar_item_h</height>
+				<font>ui_22</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<label>$VAR[AG_WeatherShort]</label>
+				<visible>$EXP[AG_HasWeather]</visible>
+			</control>
+		</control>
+	</include>
+	<!-- AG_MoodLine_L: the library windows' copy of AG_MoodLine (lib_ colours: palette for menus / library / both, 0.40.4) -->
+	<include name="AG_MoodLine_L">
+		<control type="grouplist">
+			<left>page_margin</left>
+			<top>topbar_item_top</top>
+			<width>660</width>  <!-- 0.9.8: ends before the library Options pill (x 840) -->
+			<height>topbar_item_h</height>
+			<orientation>horizontal</orientation>
+			<itemgap>14</itemgap>
+			<usecontrolcoords>true</usecontrolcoords>
+			<control type="image">
+				<top>11</top>
+				<width>30</width>
+				<height>30</height>
+				<texture colordiffuse="$VAR[AG_Accent_L]">$VAR[AG_MoodIcon]</texture>
+			</control>
+			<control type="label">
+				<width>auto</width>
+				<height>topbar_item_h</height>
+				<font>ui_22_semibold</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<label>$VAR[AG_DayPart]</label>
+			</control>
+			<control type="label">
+				<width>auto</width>
+				<height>topbar_item_h</height>
+				<font>ui_22_semibold</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<label>·</label>
+				<visible>$EXP[AG_HasWeather]</visible>
+			</control>
+			<control type="image">
+				<top>14</top>
+				<width>24</width>
+				<height>24</height>
+				<texture colordiffuse="$VAR[AG_Ink2]">$VAR[AG_WeatherIcon]</texture>
+				<visible>$EXP[AG_HasWeather]</visible>
+			</control>
+			<control type="label">
+				<width>auto</width>
+				<height>topbar_item_h</height>
+				<font>ui_22</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<label>$VAR[AG_WeatherShort]</label>
+				<visible>$EXP[AG_HasWeather]</visible>
+			</control>
+		</control>
+	</include>
+	<!-- Clock only (right end of the top line, when the mood line already shows the weather) -->
+	<include name="AG_ClockOnly">
+		<control type="label">
+			<left>1500</left>
+			<top>topbar_item_top</top>
+			<width>300</width>
+			<height>topbar_item_h</height>
+			<align>right</align>
+			<font>clock_30</font>
+			<textcolor>$VAR[AG_Ink]</textcolor>
+			<label>$VAR[ClockLabel]</label>
+		</control>
+	</include>
+
+	<!-- Page header for library / settings windows: serif page name + optional quiet caption.
+	     params: index (ignored, kept for engine callers), title, sub -->
+	<include name="AG_PageHeader">
+		<param name="index"></param>
+		<param name="title"></param>
+		<param name="sub"></param>
+		<definition>
+			<control type="grouplist">
+				<left>page_margin</left>
+				<top>topbar_item_top</top>
+				<width>1100</width>
+				<height>topbar_item_h</height>
+				<orientation>horizontal</orientation>
+				<itemgap>18</itemgap>
+				<usecontrolcoords>true</usecontrolcoords>
+				<control type="image">
+					<top>11</top>
+					<width>30</width>
+					<height>30</height>
+					<texture colordiffuse="$VAR[AG_Accent]">$VAR[AG_MoodIcon]</texture>
+				</control>
+				<control type="label">
+					<width max="760">auto</width>
+					<height>topbar_item_h</height>
+					<font>hd_serif_34</font>
+					<textcolor>$VAR[AG_Ink]</textcolor>
+					<label>$PARAM[title]</label>
+				</control>
+				<control type="label">
+					<width max="320">auto</width>
+					<height>topbar_item_h</height>
+					<font>ui_22</font>
+					<textcolor>$VAR[AG_Ink2]</textcolor>
+					<label>$PARAM[sub]</label>
+				</control>
+			</control>
+		</definition>
+	</include>
+
+	<!-- Full top line for non-Home windows: header + weather/clock. rule: when the hairline under the header shows
+	     (0.46.5: the File manager hides it in the Aeon look, where its cards reach up to the clock box) -->
+	<include name="AG_TopBar">
+		<param name="lead">$LOCALIZE[31000]</param>
+		<param name="index"></param>
+		<param name="title"></param>
+		<param name="sub"></param>
+		<param name="rule">true</param>
+		<definition>
+			<include content="Aeon_MenuHeader"><param name="lead" value="$PARAM[lead]"/><param name="label" value="$PARAM[title]"/></include>
+			<include>Aeon_ClockBox</include>
+			<control type="image"><left>120</left><top>168</top><width>1680</width><height>1</height><texture colordiffuse="30ffffff">common/white.png</texture><visible>[$PARAM[rule]] + !$EXP[Aeon_Fused] + !$EXP[Aeon_FGlass]</visible></control>
+		</definition>
+	</include>
+	<!-- AG_TopBar_L: the library windows' copy of AG_TopBar (lib_ colours: palette for menus / library / both, 0.40.4) -->
+	<include name="AG_TopBar_L">
+		<param name="lead">$LOCALIZE[31000]</param>
+		<param name="index"></param>
+		<param name="title"></param>
+		<param name="sub"></param>
+		<definition>
+			<include content="Aeon_MenuHeader_L"><param name="lead" value="$PARAM[lead]"/><param name="label" value="$PARAM[title]"/></include>
+			<include>Aeon_ClockBox_L</include>
+			<control type="image"><left>120</left><top>168</top><width>1680</width><height>1</height><texture colordiffuse="30ffffff">common/white.png</texture><visible>!$EXP[Aeon_Fused] + !$EXP[Aeon_FGlass]</visible></control>
+		</definition>
+	</include>
+
+	<!-- ===================================================== nav pills -->
+	<!-- Top-line navigation: For now · Films · Shows · Music · Search · system menu (Home + libraries).
+	     0.9.11: Films / Shows / Music / Search can be hidden (HideMenu.*); the rest slide right to the gear,
+	     Left / Right fall through hidden ids. For now and the gear never hide.
+	     Pill positions measured from Figtree SemiBold 22 (+22 px padding, 26 for "For now"), 6 px gaps,
+	     ending 36 px before a 130 px clock box at the right margin.
+	     params: gid (group id), p (id prefix: ids p1..p6), ondown, active1..active4 (page conditions),
+	     click1 (For now action) -->
+	<include name="AG_NavPills">
+		<param name="active1">false</param>
+		<param name="active2">false</param>
+		<param name="active3">false</param>
+		<param name="active4">false</param>
+		<param name="click1">ActivateWindow(Home)</param>
+		<param name="ondown">noop</param>
+		<param name="open">ActivateWindow</param>
+		<param name="options">false</param>
+		<!-- 0.9.17: custom = true on Home: the custom main-menu pills 9011-9013 between Search and the gear
+		     (Includes_CustomMenuPills.xml, _src/make_custom_pills.py); the pills to their left slide left -->
+		<param name="custom">false</param>
+		<definition>
+			<control type="group" id="$PARAM[gid]">
+				<defaultcontrol always="true">$PARAM[p]1</defaultcontrol>
+				<!-- 0.9.8: "Options" (the Library panel 1160) left of the nav in the library windows (param options).
+				     For now -Left-> it -Left-> gear; gear -Right-> it -Right-> For now. Hidden elsewhere: the
+				     numeric moves fall through it (its own onleft / onright) to the gear / For now. -->
+				<control type="group">
+					<visible>$PARAM[options]</visible>
+					<animation effect="slide" start="0,0" end="102,0" time="0" condition="Skin.HasSetting(HideMenu.Movies)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="116,0" time="0" condition="Skin.HasSetting(HideMenu.TVShows)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="109,0" time="0" condition="Skin.HasSetting(HideMenu.Music)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="120,0" time="0" condition="Skin.HasSetting(HideMenu.Search)">Conditional</animation>
+					<include content="AG_NavPill">
+						<param name="id" value="$PARAM[p]7"/><param name="x" value="840"/><param name="w" value="132"/>
+						<param name="label" value="$LOCALIZE[31272]"/>
+						<param name="onclick" value="ActivateWindow(1160)"/><param name="ondown" value="$PARAM[ondown]"/>
+						<param name="onleft" value="$PARAM[p]6"/><param name="onright" value="$PARAM[p]1"/>
+					</include>
+					<control type="image">
+						<left>983</left>
+						<top>78</top>
+						<width>2</width>
+						<height>24</height>
+						<texture colordiffuse="$VAR[AG_Line2]">common/white.png</texture>
+					</control>
+				</control>
+				<include content="AG_NavPill">
+					<param name="id" value="$PARAM[p]1"/><param name="custom" value="$PARAM[custom]"/><param name="x" value="996"/><param name="w" value="133"/>
+					<param name="label" value="$LOCALIZE[31460]"/><param name="active" value="$PARAM[active1]"/>
+					<param name="s1" value="Skin.HasSetting(HideMenu.Movies)"/><param name="d1" value="102"/><param name="s2" value="Skin.HasSetting(HideMenu.TVShows)"/><param name="d2" value="116"/><param name="s3" value="Skin.HasSetting(HideMenu.Music)"/><param name="d3" value="109"/><param name="s4" value="Skin.HasSetting(HideMenu.Search)"/><param name="d4" value="120"/>
+					<param name="onclick" value="$PARAM[click1]"/><param name="ondown" value="$PARAM[ondown]"/>
+					<param name="onleft" value="$PARAM[p]7"/><param name="onright" value="$PARAM[p]2"/>
+				</include>
+				<include content="AG_NavPill">
+					<param name="id" value="$PARAM[p]2"/><param name="custom" value="$PARAM[custom]"/><param name="x" value="1135"/><param name="w" value="96"/>
+					<param name="label" value="$LOCALIZE[31331]"/><param name="shown" value="!Skin.HasSetting(HideMenu.Movies)"/><param name="s1" value="Skin.HasSetting(HideMenu.TVShows)"/><param name="d1" value="116"/><param name="s2" value="Skin.HasSetting(HideMenu.Music)"/><param name="d2" value="109"/><param name="s3" value="Skin.HasSetting(HideMenu.Search)"/><param name="d3" value="120"/><param name="active" value="$PARAM[active2]"/>
+					<param name="onclick" value="$PARAM[open](Videos,videodb://movies/titles/,return)"/><param name="ondown" value="$PARAM[ondown]"/>
+					<param name="onleft" value="$PARAM[p]1"/><param name="onright" value="$PARAM[p]3"/>
+				</include>
+				<include content="AG_NavPill">
+					<param name="id" value="$PARAM[p]3"/><param name="custom" value="$PARAM[custom]"/><param name="x" value="1237"/><param name="w" value="110"/>
+					<param name="label" value="$LOCALIZE[31332]"/><param name="shown" value="!Skin.HasSetting(HideMenu.TVShows)"/><param name="s1" value="Skin.HasSetting(HideMenu.Music)"/><param name="d1" value="109"/><param name="s2" value="Skin.HasSetting(HideMenu.Search)"/><param name="d2" value="120"/><param name="active" value="$PARAM[active3]"/>
+					<param name="onclick" value="$PARAM[open](Videos,videodb://tvshows/titles/,return)"/><param name="ondown" value="$PARAM[ondown]"/>
+					<param name="onleft" value="$PARAM[p]2"/><param name="onright" value="$PARAM[p]4"/>
+				</include>
+				<include content="AG_NavPill">
+					<param name="id" value="$PARAM[p]4"/><param name="custom" value="$PARAM[custom]"/><param name="x" value="1353"/><param name="w" value="103"/>
+					<param name="label" value="$LOCALIZE[31305]"/><param name="shown" value="!Skin.HasSetting(HideMenu.Music)"/><param name="s1" value="Skin.HasSetting(HideMenu.Search)"/><param name="d1" value="120"/><param name="active" value="$PARAM[active4]"/>
+					<param name="onclick" value="$PARAM[open](Music,musicdb://albums/,return)"/><param name="ondown" value="$PARAM[ondown]"/>
+					<param name="onleft" value="$PARAM[p]3"/><param name="onright" value="$PARAM[p]5"/>
+				</include>
+				<include content="AG_NavPill" condition="!$PARAM[custom]">
+					<param name="id" value="$PARAM[p]5"/><param name="x" value="1462"/><param name="w" value="114"/>
+					<param name="label" value="$LOCALIZE[31302]"/><param name="shown" value="!Skin.HasSetting(HideMenu.Search)"/>
+					<param name="onclick" value="$PARAM[open](1150)"/><param name="ondown" value="$PARAM[ondown]"/>
+					<param name="onleft" value="$PARAM[p]4"/><param name="onright" value="$PARAM[p]6"/>
+				</include>
+				<include content="AG_NavPill" condition="$PARAM[custom]">
+					<param name="id" value="$PARAM[p]5"/><param name="x" value="1462"/><param name="w" value="114"/><param name="custom" value="true"/>
+					<param name="label" value="$LOCALIZE[31302]"/><param name="shown" value="!Skin.HasSetting(HideMenu.Search)"/>
+					<param name="onclick" value="$PARAM[open](1150)"/><param name="ondown" value="$PARAM[ondown]"/>
+					<param name="onleft" value="$PARAM[p]4"/><param name="onright" value="9011"/>
+				</include>
+				<include content="AG_CustomMenuPills" condition="$PARAM[custom]">
+					<param name="p" value="$PARAM[p]"/><param name="ondown" value="$PARAM[ondown]"/>
+				</include>
+				<control type="group">
+					<left>1582</left>
+					<top>topbar_item_top</top>
+					<width>52</width>
+					<height>52</height>
+					<control type="button" id="$PARAM[p]6">
+						<width>52</width>
+						<height>52</height>
+						<label></label>
+						<texturefocus colordiffuse="$VAR[AG_Accent]">aeon/circle_64.png</texturefocus>
+						<texturenofocus />
+						<onclick>ActivateWindow(1151)</onclick>
+						<onleft condition="$PARAM[custom]">9013</onleft>
+						<onleft condition="!$PARAM[custom]">$PARAM[p]5</onleft>
+						<onright>$PARAM[p]7</onright>
+						<ondown>$PARAM[ondown]</ondown>
+					</control>
+					<control type="image">
+						<left>13</left>
+						<top>13</top>
+						<width>26</width>
+						<height>26</height>
+						<texture colordiffuse="$VAR[AG_OnAccent]">aeon/icons/settings.png</texture>
+						<visible>Control.HasFocus($PARAM[p]6)</visible>
+					</control>
+					<control type="image">
+						<left>13</left>
+						<top>13</top>
+						<width>26</width>
+						<height>26</height>
+						<texture colordiffuse="$VAR[AG_Ink2]">aeon/icons/settings.png</texture>
+						<visible>!Control.HasFocus($PARAM[p]6)</visible>
+					</control>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<!-- AG_NavPills_L: the library windows' copy of AG_NavPills (lib_ colours: palette for menus / library / both, 0.40.4) -->
+	<include name="AG_NavPills_L">
+		<param name="active1">false</param>
+		<param name="active2">false</param>
+		<param name="active3">false</param>
+		<param name="active4">false</param>
+		<param name="click1">ActivateWindow(Home)</param>
+		<param name="ondown">noop</param>
+		<param name="open">ActivateWindow</param>
+		<param name="options">false</param>
+		<!-- 0.9.17: custom = true on Home: the custom main-menu pills 9011-9013 between Search and the gear
+		     (Includes_CustomMenuPills.xml, _src/make_custom_pills.py); the pills to their left slide left -->
+		<param name="custom">false</param>
+		<definition>
+			<control type="group" id="$PARAM[gid]">
+				<defaultcontrol always="true">$PARAM[p]1</defaultcontrol>
+				<!-- 0.9.8: "Options" (the Library panel 1160) left of the nav in the library windows (param options).
+				     For now -Left-> it -Left-> gear; gear -Right-> it -Right-> For now. Hidden elsewhere: the
+				     numeric moves fall through it (its own onleft / onright) to the gear / For now. -->
+				<control type="group">
+					<visible>$PARAM[options]</visible>
+					<animation effect="slide" start="0,0" end="102,0" time="0" condition="Skin.HasSetting(HideMenu.Movies)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="116,0" time="0" condition="Skin.HasSetting(HideMenu.TVShows)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="109,0" time="0" condition="Skin.HasSetting(HideMenu.Music)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="120,0" time="0" condition="Skin.HasSetting(HideMenu.Search)">Conditional</animation>
+					<include content="AG_NavPill_L">
+						<param name="id" value="$PARAM[p]7"/><param name="x" value="840"/><param name="w" value="132"/>
+						<param name="label" value="$LOCALIZE[31272]"/>
+						<param name="onclick" value="ActivateWindow(1160)"/><param name="ondown" value="$PARAM[ondown]"/>
+						<param name="onleft" value="$PARAM[p]6"/><param name="onright" value="$PARAM[p]1"/>
+					</include>
+					<control type="image">
+						<left>983</left>
+						<top>78</top>
+						<width>2</width>
+						<height>24</height>
+						<texture colordiffuse="$VAR[AG_Line2_L]">common/white.png</texture>
+					</control>
+				</control>
+				<include content="AG_NavPill_L">
+					<param name="id" value="$PARAM[p]1"/><param name="custom" value="$PARAM[custom]"/><param name="x" value="996"/><param name="w" value="133"/>
+					<param name="label" value="$LOCALIZE[31460]"/><param name="active" value="$PARAM[active1]"/>
+					<param name="s1" value="Skin.HasSetting(HideMenu.Movies)"/><param name="d1" value="102"/><param name="s2" value="Skin.HasSetting(HideMenu.TVShows)"/><param name="d2" value="116"/><param name="s3" value="Skin.HasSetting(HideMenu.Music)"/><param name="d3" value="109"/><param name="s4" value="Skin.HasSetting(HideMenu.Search)"/><param name="d4" value="120"/>
+					<param name="onclick" value="$PARAM[click1]"/><param name="ondown" value="$PARAM[ondown]"/>
+					<param name="onleft" value="$PARAM[p]7"/><param name="onright" value="$PARAM[p]2"/>
+				</include>
+				<include content="AG_NavPill_L">
+					<param name="id" value="$PARAM[p]2"/><param name="custom" value="$PARAM[custom]"/><param name="x" value="1135"/><param name="w" value="96"/>
+					<param name="label" value="$LOCALIZE[31331]"/><param name="shown" value="!Skin.HasSetting(HideMenu.Movies)"/><param name="s1" value="Skin.HasSetting(HideMenu.TVShows)"/><param name="d1" value="116"/><param name="s2" value="Skin.HasSetting(HideMenu.Music)"/><param name="d2" value="109"/><param name="s3" value="Skin.HasSetting(HideMenu.Search)"/><param name="d3" value="120"/><param name="active" value="$PARAM[active2]"/>
+					<param name="onclick" value="$PARAM[open](Videos,videodb://movies/titles/,return)"/><param name="ondown" value="$PARAM[ondown]"/>
+					<param name="onleft" value="$PARAM[p]1"/><param name="onright" value="$PARAM[p]3"/>
+				</include>
+				<include content="AG_NavPill_L">
+					<param name="id" value="$PARAM[p]3"/><param name="custom" value="$PARAM[custom]"/><param name="x" value="1237"/><param name="w" value="110"/>
+					<param name="label" value="$LOCALIZE[31332]"/><param name="shown" value="!Skin.HasSetting(HideMenu.TVShows)"/><param name="s1" value="Skin.HasSetting(HideMenu.Music)"/><param name="d1" value="109"/><param name="s2" value="Skin.HasSetting(HideMenu.Search)"/><param name="d2" value="120"/><param name="active" value="$PARAM[active3]"/>
+					<param name="onclick" value="$PARAM[open](Videos,videodb://tvshows/titles/,return)"/><param name="ondown" value="$PARAM[ondown]"/>
+					<param name="onleft" value="$PARAM[p]2"/><param name="onright" value="$PARAM[p]4"/>
+				</include>
+				<include content="AG_NavPill_L">
+					<param name="id" value="$PARAM[p]4"/><param name="custom" value="$PARAM[custom]"/><param name="x" value="1353"/><param name="w" value="103"/>
+					<param name="label" value="$LOCALIZE[31305]"/><param name="shown" value="!Skin.HasSetting(HideMenu.Music)"/><param name="s1" value="Skin.HasSetting(HideMenu.Search)"/><param name="d1" value="120"/><param name="active" value="$PARAM[active4]"/>
+					<param name="onclick" value="$PARAM[open](Music,musicdb://albums/,return)"/><param name="ondown" value="$PARAM[ondown]"/>
+					<param name="onleft" value="$PARAM[p]3"/><param name="onright" value="$PARAM[p]5"/>
+				</include>
+				<include content="AG_NavPill_L" condition="!$PARAM[custom]">
+					<param name="id" value="$PARAM[p]5"/><param name="x" value="1462"/><param name="w" value="114"/>
+					<param name="label" value="$LOCALIZE[31302]"/><param name="shown" value="!Skin.HasSetting(HideMenu.Search)"/>
+					<param name="onclick" value="$PARAM[open](1150)"/><param name="ondown" value="$PARAM[ondown]"/>
+					<param name="onleft" value="$PARAM[p]4"/><param name="onright" value="$PARAM[p]6"/>
+				</include>
+				<include content="AG_NavPill_L" condition="$PARAM[custom]">
+					<param name="id" value="$PARAM[p]5"/><param name="x" value="1462"/><param name="w" value="114"/><param name="custom" value="true"/>
+					<param name="label" value="$LOCALIZE[31302]"/><param name="shown" value="!Skin.HasSetting(HideMenu.Search)"/>
+					<param name="onclick" value="$PARAM[open](1150)"/><param name="ondown" value="$PARAM[ondown]"/>
+					<param name="onleft" value="$PARAM[p]4"/><param name="onright" value="9011"/>
+				</include>
+				<include content="AG_CustomMenuPills_L" condition="$PARAM[custom]">
+					<param name="p" value="$PARAM[p]"/><param name="ondown" value="$PARAM[ondown]"/>
+				</include>
+				<control type="group">
+					<left>1582</left>
+					<top>topbar_item_top</top>
+					<width>52</width>
+					<height>52</height>
+					<control type="button" id="$PARAM[p]6">
+						<width>52</width>
+						<height>52</height>
+						<label></label>
+						<texturefocus colordiffuse="$VAR[AG_Accent_L]">aeon/circle_64.png</texturefocus>
+						<texturenofocus />
+						<onclick>ActivateWindow(1151)</onclick>
+						<onleft condition="$PARAM[custom]">9013</onleft>
+						<onleft condition="!$PARAM[custom]">$PARAM[p]5</onleft>
+						<onright>$PARAM[p]7</onright>
+						<ondown>$PARAM[ondown]</ondown>
+					</control>
+					<control type="image">
+						<left>13</left>
+						<top>13</top>
+						<width>26</width>
+						<height>26</height>
+						<texture colordiffuse="$VAR[AG_OnAccent_L]">aeon/icons/settings.png</texture>
+						<visible>Control.HasFocus($PARAM[p]6)</visible>
+					</control>
+					<control type="image">
+						<left>13</left>
+						<top>13</top>
+						<width>26</width>
+						<height>26</height>
+						<texture colordiffuse="$VAR[AG_Ink2]">aeon/icons/settings.png</texture>
+						<visible>!Control.HasFocus($PARAM[p]6)</visible>
+					</control>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<!-- One nav pill. params: id, x, w, label, active (this page), onclick, onleft, onright, ondown -->
+	<include name="AG_NavPill">
+		<param name="active">false</param>
+		<!-- shown: false when hidden in Skin settings (HideMenu.*); s1..s4 / d1..d4: slide right by the width of hidden
+		     pills to the right of this one (the row is anchored at the gear) -->
+		<param name="shown">true</param>
+		<param name="s1">false</param>
+		<param name="d1">0</param>
+		<param name="s2">false</param>
+		<param name="d2">0</param>
+		<param name="s3">false</param>
+		<param name="d3">0</param>
+		<param name="s4">false</param>
+		<param name="d4">0</param>
+		<param name="custom">false</param>
+		<definition>
+			<control type="group">
+				<left>$PARAM[x]</left>
+				<top>topbar_item_top</top>
+				<width>$PARAM[w]</width>
+				<height>52</height>
+				<visible>$PARAM[shown]</visible>
+				<animation effect="slide" start="0,0" end="$PARAM[d1],0" time="0" condition="$PARAM[s1]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="$PARAM[d2],0" time="0" condition="$PARAM[s2]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="$PARAM[d3],0" time="0" condition="$PARAM[s3]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="$PARAM[d4],0" time="0" condition="$PARAM[s4]">Conditional</animation>
+				<include condition="$PARAM[custom]">AG_CMShift1</include>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<right>0</right>
+					<bottom>0</bottom>
+					<texture border="26,0,26,0" colordiffuse="$VAR[AG_Surface]">aeon/pill_52.png</texture>
+					<visible>$PARAM[active]</visible>
+				</control>
+				<control type="button" id="$PARAM[id]">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[w]</width>
+					<height>52</height>
+					<label>$PARAM[label]</label>
+					<font>ui_22_semibold</font>
+					<align>center</align>
+					<textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[AG_Ink2]</textcolor>
+					<focusedcolor>$VAR[AG_OnAccent]</focusedcolor>
+					<texturefocus border="26,0,26,0" colordiffuse="$VAR[AG_Accent]">aeon/pill_52.png</texturefocus>
+					<texturenofocus />
+					<onclick>$PARAM[onclick]</onclick>
+					<onleft>$PARAM[onleft]</onleft>
+					<onright>$PARAM[onright]</onright>
+					<ondown>$PARAM[ondown]</ondown>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[w]</width>
+					<height>52</height>
+					<align>center</align>
+					<font>ui_22_semibold</font>
+					<textcolor>$VAR[AG_Ink]</textcolor>
+					<label>$PARAM[label]</label>
+					<visible>$PARAM[active] + !Control.HasFocus($PARAM[id])</visible>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<!-- AG_NavPill_L: the library windows' copy of AG_NavPill (lib_ colours: palette for menus / library / both, 0.40.4) -->
+	<include name="AG_NavPill_L">
+		<param name="active">false</param>
+		<!-- shown: false when hidden in Skin settings (HideMenu.*); s1..s4 / d1..d4: slide right by the width of hidden
+		     pills to the right of this one (the row is anchored at the gear) -->
+		<param name="shown">true</param>
+		<param name="s1">false</param>
+		<param name="d1">0</param>
+		<param name="s2">false</param>
+		<param name="d2">0</param>
+		<param name="s3">false</param>
+		<param name="d3">0</param>
+		<param name="s4">false</param>
+		<param name="d4">0</param>
+		<param name="custom">false</param>
+		<definition>
+			<control type="group">
+				<left>$PARAM[x]</left>
+				<top>topbar_item_top</top>
+				<width>$PARAM[w]</width>
+				<height>52</height>
+				<visible>$PARAM[shown]</visible>
+				<animation effect="slide" start="0,0" end="$PARAM[d1],0" time="0" condition="$PARAM[s1]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="$PARAM[d2],0" time="0" condition="$PARAM[s2]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="$PARAM[d3],0" time="0" condition="$PARAM[s3]">Conditional</animation>
+				<animation effect="slide" start="0,0" end="$PARAM[d4],0" time="0" condition="$PARAM[s4]">Conditional</animation>
+				<include condition="$PARAM[custom]">AG_CMShift1</include>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<right>0</right>
+					<bottom>0</bottom>
+					<texture border="26,0,26,0" colordiffuse="$VAR[AG_Surface_L]">aeon/pill_52.png</texture>
+					<visible>$PARAM[active]</visible>
+				</control>
+				<control type="button" id="$PARAM[id]">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[w]</width>
+					<height>52</height>
+					<label>$PARAM[label]</label>
+					<font>ui_22_semibold</font>
+					<align>center</align>
+					<textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[AG_Ink2]</textcolor>
+					<focusedcolor>$VAR[AG_OnAccent_L]</focusedcolor>
+					<texturefocus border="26,0,26,0" colordiffuse="$VAR[AG_Accent_L]">aeon/pill_52.png</texturefocus>
+					<texturenofocus />
+					<onclick>$PARAM[onclick]</onclick>
+					<onleft>$PARAM[onleft]</onleft>
+					<onright>$PARAM[onright]</onright>
+					<ondown>$PARAM[ondown]</ondown>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[w]</width>
+					<height>52</height>
+					<align>center</align>
+					<font>ui_22_semibold</font>
+					<textcolor>$VAR[AG_Ink]</textcolor>
+					<label>$PARAM[label]</label>
+					<visible>$PARAM[active] + !Control.HasFocus($PARAM[id])</visible>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<!-- Library top line: mood line left, nav pills, clock. params: gid, p, ondown, active2..4 -->
+	<include name="AG_LibraryTopLine">
+		<param name="active2">false</param>
+		<param name="active3">false</param>
+		<param name="active4">false</param>
+		<param name="ondown">noop</param>
+		<param name="options">false</param>
+		<definition>
+			<include>AG_MoodLine</include>
+			<control type="label">
+				<left>1600</left>
+				<top>topbar_item_top</top>
+				<width>200</width>
+				<height>topbar_item_h</height>
+				<align>right</align>
+				<font>clock_30</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<label>$VAR[ClockLabel]</label>
+			</control>
+			<include content="AG_NavPills">
+				<param name="gid" value="$PARAM[gid]"/>
+				<param name="p" value="$PARAM[p]"/>
+				<param name="ondown" value="$PARAM[ondown]"/>
+				<param name="active2" value="$PARAM[active2]"/>
+				<param name="active3" value="$PARAM[active3]"/>
+				<param name="active4" value="$PARAM[active4]"/>
+				<param name="options" value="$PARAM[options]"/>
+				<param name="open" value="ReplaceWindow"/>
+			</include>
+		</definition>
+	</include>
+	<!-- AG_LibraryTopLine_L: the library windows' copy of AG_LibraryTopLine (lib_ colours: palette for menus / library / both, 0.40.4) -->
+	<include name="AG_LibraryTopLine_L">
+		<param name="active2">false</param>
+		<param name="active3">false</param>
+		<param name="active4">false</param>
+		<param name="ondown">noop</param>
+		<param name="options">false</param>
+		<definition>
+			<include>AG_MoodLine_L</include>
+			<control type="label">
+				<left>1600</left>
+				<top>topbar_item_top</top>
+				<width>200</width>
+				<height>topbar_item_h</height>
+				<align>right</align>
+				<font>clock_30</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<label>$VAR[ClockLabel]</label>
+			</control>
+			<include content="AG_NavPills_L">
+				<param name="gid" value="$PARAM[gid]"/>
+				<param name="p" value="$PARAM[p]"/>
+				<param name="ondown" value="$PARAM[ondown]"/>
+				<param name="active2" value="$PARAM[active2]"/>
+				<param name="active3" value="$PARAM[active3]"/>
+				<param name="active4" value="$PARAM[active4]"/>
+				<param name="options" value="$PARAM[options]"/>
+				<param name="open" value="ReplaceWindow"/>
+			</include>
+		</definition>
+	</include>
+
+	<!-- ===================================================== cards -->
+	<!-- Soft card: pre-rendered shadow + 28 px radius surface. Inside a group sized to the card.
+	     params: color (surface token), shadow (true/false) -->
+	<include name="AG_Card">
+		<param name="color">$VAR[AG_Surface]</param>
+		<param name="shadow">true</param>
+		<definition>
+			<include>Aeon_Glass</include>
+		</definition>
+	</include>
+	<!-- 0.56.20 fuse_survey2: AG_Card with a dark layer in Aeon Glass, for pages of lists and long text over fanart -->
+	<include name="AG_CardDense">
+		<definition>
+			<include>Aeon_Glass</include>
+			<control type="image"><left>0</left><top>0</top><right>0</right><bottom>0</bottom><texture border="28" colordiffuse="a60c0c10">fg/r28.png</texture><visible>$EXP[Aeon_VGlass] + !$EXP[Aeon_FGlass]</visible></control>
+		</definition>
+	</include>
+	<!-- AG_Card_L: the library windows' copy of AG_Card (lib_ colours: palette for menus / library / both, 0.40.4) -->
+	<include name="AG_Card_L">
+		<param name="color">$VAR[AG_Surface_L]</param>
+		<param name="shadow">true</param>
+		<definition>
+			<include>Aeon_Glass_L</include>
+		</definition>
+	</include>
+
+	<!-- ===================================================== focus frames -->
+	<!-- Aeon focus around rounded art: 5 px surface gap + 4 px accent ring (+ soft accent glow).
+	     Put inside a group sized to the item. params: visible, r (14/16/20/28), gap (surface token) -->
+	<include name="AG_FocusRing">
+		<param name="visible">true</param>
+		<param name="r">20</param>
+		<param name="gap">$VAR[AG_Surface]</param>
+		<definition>
+			<control type="group">
+				<visible>$PARAM[visible]</visible>
+				<control type="image">
+					<left>-44</left>
+					<top>-44</top>
+					<right>-44</right>
+					<bottom>-44</bottom>
+					<texture border="60" colordiffuse="$VAR[AG_Halo]">aeon/ring_glow_out_$PARAM[r].png</texture>
+				</control>
+				<control type="image">
+					<left>-5</left>
+					<top>-5</top>
+					<right>-5</right>
+					<bottom>-5</bottom>
+					<texture border="32" colordiffuse="$PARAM[gap]">aeon/ring_gap_$PARAM[r].png</texture>
+				</control>
+				<control type="image">
+					<left>-9</left>
+					<top>-9</top>
+					<right>-9</right>
+					<bottom>-9</bottom>
+					<texture border="36" colordiffuse="$VAR[AG_Accent]">aeon/ring_$PARAM[r].png</texture>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<!-- AG_FocusRing_L: the library windows' copy of AG_FocusRing (lib_ colours: palette for menus / library / both, 0.40.4) -->
+	<include name="AG_FocusRing_L">
+		<param name="visible">true</param>
+		<param name="r">20</param>
+		<param name="gap">$VAR[AG_Surface_L]</param>
+		<definition>
+			<control type="group">
+				<visible>$PARAM[visible]</visible>
+				<control type="image">
+					<left>-44</left>
+					<top>-44</top>
+					<right>-44</right>
+					<bottom>-44</bottom>
+					<texture border="60" colordiffuse="$VAR[AG_Halo]">aeon/ring_glow_out_$PARAM[r].png</texture>
+				</control>
+				<control type="image">
+					<left>-5</left>
+					<top>-5</top>
+					<right>-5</right>
+					<bottom>-5</bottom>
+					<texture border="32" colordiffuse="$PARAM[gap]">aeon/ring_gap_$PARAM[r].png</texture>
+				</control>
+				<control type="image">
+					<left>-9</left>
+					<top>-9</top>
+					<right>-9</right>
+					<bottom>-9</bottom>
+					<texture border="36" colordiffuse="$VAR[AG_Accent_L]">aeon/ring_$PARAM[r].png</texture>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="AG_FocusFrameAlways">
+		<param name="visible">true</param>
+		<definition>
+			<control type="image">
+				<left>focus_out</left>
+				<top>focus_out</top>
+				<right>focus_out</right>
+				<bottom>focus_out</bottom>
+				<texture border="16" colordiffuse="$VAR[AG_Accent]">focus/outline_3_round.png</texture>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
+
+	<!-- ========================================================== posters -->
+	<!-- Poster/cover with rounded mask and a soft placeholder. Sits inside a group of the poster size.
+	     params: art, mask_round, mask_square (unused, engine compat), title -->
+	<include name="AG_Artwork">
+		<param name="art">$INFO[ListItem.Art(poster)]</param>
+		<param name="mask_round">masks/poster_round8.png</param>
+		<param name="mask_square">masks/poster_square.png</param>
+		<param name="title">$INFO[ListItem.Label]</param>
+		<definition>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<right>0</right>
+				<bottom>0</bottom>
+				<texture diffuse="$PARAM[mask_round]" colordiffuse="$VAR[AG_Raised]">common/white.png</texture>
+			</control>
+			<control type="label">
+				<left>16</left>
+				<right>16</right>
+				<top>14</top>
+				<height>60</height>
+				<font>small_20_semibold</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<label>$PARAM[title]</label>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<right>0</right>
+				<bottom>0</bottom>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<fadetime>200</fadetime>
+				<texture background="true" diffuse="$PARAM[mask_round]" colordiffuse="$VAR[AG_ArtDim]">$PARAM[art]</texture>
+			</control>
+		</definition>
+	</include>
+
+	<!-- Watched markers on a poster: unwatched = small accent dot, watched = white check disc,
+	     in progress = rounded accent bar inside the bottom edge. Inside the poster group. -->
+	<include name="AG_WatchedMarkers">
+		<control type="image">
+			<right>14</right>
+			<top>14</top>
+			<width>14</width>
+			<height>14</height>
+			<texture colordiffuse="$VAR[AG_Accent]">aeon/circle_12.png</texture>
+			<visible>$EXP[ShowUnwatchedMarkers] + $EXP[ListItemIsVideoFile] + $EXP[ListItemUnwatched]</visible>
+		</control>
+		<control type="image">
+			<right>8</right>
+			<top>8</top>
+			<width>40</width>
+			<height>40</height>
+			<texture>markers/watched.png</texture>
+			<visible>$EXP[ShowWatchedMarkers] + $EXP[ListItemIsVideoFile] + $EXP[ListItemWatched]</visible>
+		</control>
+		<control type="progress">
+			<left>12</left>
+			<right>12</right>
+			<bottom>12</bottom>
+			<height>8</height>
+			<texturebg border="4,0,4,0" colordiffuse="$VAR[AG_ScrimTrack]">aeon/track_8.png</texturebg>
+			<midtexture subpixel="true" border="4,0,4,0" colordiffuse="$VAR[AG_Accent]">aeon/track_8.png</midtexture>
+			<info>ListItem.PercentPlayed</info>
+			<visible>$EXP[ShowUnwatchedMarkers] + ListItem.IsResumable</visible>
+		</control>
+	</include>
+	<!-- AG_WatchedMarkers_L: the library windows' copy of AG_WatchedMarkers (lib_ colours: palette for menus / library / both, 0.40.4) -->
+	<include name="AG_WatchedMarkers_L">
+		<control type="image">
+			<right>14</right>
+			<top>14</top>
+			<width>14</width>
+			<height>14</height>
+			<texture colordiffuse="$VAR[AG_Accent_L]">aeon/circle_12.png</texture>
+			<visible>$EXP[ShowUnwatchedMarkers] + $EXP[ListItemIsVideoFile] + $EXP[ListItemUnwatched]</visible>
+		</control>
+		<control type="image">
+			<right>8</right>
+			<top>8</top>
+			<width>40</width>
+			<height>40</height>
+			<texture>markers/watched.png</texture>
+			<visible>$EXP[ShowWatchedMarkers] + $EXP[ListItemIsVideoFile] + $EXP[ListItemWatched]</visible>
+		</control>
+		<control type="progress">
+			<left>12</left>
+			<right>12</right>
+			<bottom>12</bottom>
+			<height>8</height>
+			<texturebg border="4,0,4,0" colordiffuse="$VAR[AG_ScrimTrack]">aeon/track_8.png</texturebg>
+			<midtexture subpixel="true" border="4,0,4,0" colordiffuse="$VAR[AG_Accent_L]">aeon/track_8.png</midtexture>
+			<info>ListItem.PercentPlayed</info>
+			<visible>$EXP[ShowUnwatchedMarkers] + ListItem.IsResumable</visible>
+		</control>
+	</include>
+
+	<!-- ========================================================== buttons -->
+	<!-- Pill textures (56 px). Focused = accent fill; unfocused = 2 px line pill. -->
+	<!-- primary button: pill in Glass, flat block in Aeon (button textures cannot read a variable, so two named includes) -->
+	<include name="AG_Tex_ButtonPrimary_g">
+		<texturefocus border="28,0,28,0" colordiffuse="$VAR[AG_Accent]">aeon/pill_56.png</texturefocus>
+		<texturenofocus border="28,0,28,0" colordiffuse="$VAR[AG_Line2]">aeon/pill_56_line.png</texturenofocus>
+	</include>
+	<include name="AG_Tex_ButtonPrimary_f">
+		<texturefocus colordiffuse="aeon_white">common/white.png</texturefocus>
+		<texturenofocus border="8" colordiffuse="$VAR[AG_Line2]">common/aeon_outline_sq.png</texturenofocus>
+	</include>
+	<!-- 0.56.20 fuse_survey: Aeon + Fuse: AG_Tex_ButtonPrimary_g's shape, AG_Tex_ButtonPrimary_f's colours -->
+	<include name="AG_Tex_ButtonPrimary_fu">
+		<texturefocus border="28,0,28,0" colordiffuse="aeon_white">aeon/pill_56.png</texturefocus>
+		<texturenofocus border="28,0,28,0" colordiffuse="$VAR[AG_Line2]">aeon/pill_56_line.png</texturenofocus>
+	</include>
+	<include name="AG_Tex_ButtonPrimary">
+		<include condition="Skin.HasSetting(aeon.vglass)">AG_Tex_ButtonPrimary_g</include>
+		<include condition="!Skin.HasSetting(aeon.vglass) + !$EXP[Aeon_Fused]">AG_Tex_ButtonPrimary_f</include>
+		<include condition="!Skin.HasSetting(aeon.vglass) + $EXP[Aeon_Fused]">AG_Tex_ButtonPrimary_fu</include>
+	</include>
+
+	<!-- Focus halo behind a focused 56 px pill (ring 5 px at 22 % + soft glow). params: id -->
+	<include name="AG_PillHalo">
+		<param name="h">56</param>
+		<param name="ring">$VAR[AG_Halo]</param>
+		<definition>
+			<control type="image">
+				<left>-24</left>
+				<top>-14</top>
+				<right>-24</right>
+				<bottom>-34</bottom>
+				<texture border="52,0,52,0" colordiffuse="$VAR[AG_Halo]">aeon/pill_$PARAM[h]_glow.png</texture>
+				<visible>Skin.HasSetting(aeon.vglass)</visible>
+			</control>
+			<control type="image">
+				<left>-5</left>
+				<top>-5</top>
+				<right>-5</right>
+				<bottom>-5</bottom>
+				<texture border="33,0,33,0" colordiffuse="$PARAM[ring]">aeon/pill_$PARAM[h]_ring.png</texture>
+			</control>
+		</definition>
+	</include>
+
+	<!-- Pill button with an optional leading icon. One look for primary and secondary: the focused
+	     button is the accent pill (scaled 1.05 with a halo), the rest are quiet line pills.
+	     params: id, left, top, width, label, onclick, visible, onleft, onright, onup, ondown, icon;
+	     onleft_if / onright_if gate the move, onleft_pre / onright_pre (+ _if) run first (0.9.3, hero browse) -->
+	<include name="AG_ButtonPrimary">
+		<param name="visible">true</param>
+		<param name="top">0</param>
+		<param name="icon">aeon/icons/play.png</param>
+		<param name="onup">noop</param>
+		<param name="ondown">noop</param>
+		<param name="onleft">noop</param>
+		<param name="onright">noop</param>
+		<param name="onback">noop</param>
+		<param name="onleft_if">true</param>
+		<param name="onright_if">true</param>
+		<param name="onleft_pre">noop</param>
+		<param name="onleft_pre_if">false</param>
+		<param name="onright_pre">noop</param>
+		<param name="onright_pre_if">false</param>
+		<param name="onfocus">noop</param>
+		<definition>
+			<control type="group">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>button_h</height>
+				<visible>$PARAM[visible]</visible>
+				<animation type="Conditional" condition="Control.HasFocus($PARAM[id]) + !$EXP[ReduceMotion]" reversible="true">
+					<effect type="zoom" start="100" end="105" center="auto" time="150" tween="cubic" easing="out"/>
+				</animation>
+				<control type="group">
+					<visible>Control.HasFocus($PARAM[id])</visible>
+					<include>AG_PillHalo</include>
+				</control>
+				<control type="button" id="$PARAM[id]">
+					<label></label>
+					<include>AG_Tex_ButtonPrimary</include>
+					<onclick>$PARAM[onclick]</onclick>
+					<onup>$PARAM[onup]</onup>
+					<ondown>$PARAM[ondown]</ondown>
+					<onleft condition="$PARAM[onleft_pre_if]">$PARAM[onleft_pre]</onleft>
+					<onleft condition="$PARAM[onleft_if]">$PARAM[onleft]</onleft>
+					<onright condition="$PARAM[onright_pre_if]">$PARAM[onright_pre]</onright>
+					<onright condition="$PARAM[onright_if]">$PARAM[onright]</onright>
+					<onback>$PARAM[onback]</onback>
+					<onfocus>$PARAM[onfocus]</onfocus>
+				</control>
+				<control type="image">
+					<left>24</left>
+					<top>17</top>
+					<width>22</width>
+					<height>22</height>
+					<texture colordiffuse="$VAR[AG_OnAccent]">$PARAM[icon]</texture>
+					<visible>Control.HasFocus($PARAM[id])</visible>
+				</control>
+				<control type="image">
+					<left>24</left>
+					<top>17</top>
+					<width>22</width>
+					<height>22</height>
+					<texture colordiffuse="$VAR[AG_Ink]">$PARAM[icon]</texture>
+					<visible>!Control.HasFocus($PARAM[id])</visible>
+				</control>
+				<control type="label">
+					<left>56</left>
+					<top>0</top>
+					<right>20</right>
+					<height>button_h</height>
+					<font>ui_22_bold</font>
+					<textcolor>$VAR[AG_OnAccent]</textcolor>
+					<label>$PARAM[label]</label>
+					<visible>Control.HasFocus($PARAM[id])</visible>
+				</control>
+				<control type="label">
+					<left>56</left>
+					<top>0</top>
+					<right>20</right>
+					<height>button_h</height>
+					<font>ui_22_bold</font>
+					<textcolor>$VAR[AG_Ink]</textcolor>
+					<label>$PARAM[label]</label>
+					<visible>!Control.HasFocus($PARAM[id])</visible>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="AG_ButtonSecondary">
+		<param name="visible">true</param>
+		<param name="top">0</param>
+		<param name="focus_also">false</param>
+		<param name="onclick2">noop</param>
+		<param name="onclick3">noop</param>
+		<param name="onup">noop</param>
+		<param name="ondown">noop</param>
+		<param name="onleft">noop</param>
+		<param name="onright">noop</param>
+		<param name="onback">noop</param>
+		<param name="onleft_if">true</param>
+		<param name="onright_if">true</param>
+		<param name="onleft_pre">noop</param>
+		<param name="onleft_pre_if">false</param>
+		<param name="onright_pre">noop</param>
+		<param name="onright_pre_if">false</param>
+		<param name="onfocus">noop</param>
+		<definition>
+			<control type="group">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>button_h</height>
+				<visible>$PARAM[visible]</visible>
+				<animation type="Conditional" condition="Control.HasFocus($PARAM[id]) + !$EXP[ReduceMotion]" reversible="true">
+					<effect type="zoom" start="100" end="105" center="auto" time="150" tween="cubic" easing="out"/>
+				</animation>
+				<control type="group">
+					<visible>Control.HasFocus($PARAM[id]) | $PARAM[focus_also]</visible>
+					<include>AG_PillHalo</include>
+				</control>
+				<control type="button" id="$PARAM[id]">
+					<label>$PARAM[label]</label>
+					<font>ui_22_semibold</font>
+					<textcolor>$VAR[AG_Ink]</textcolor>
+					<focusedcolor>$VAR[AG_OnAccent]</focusedcolor>
+					<align>center</align>
+					<textoffsetx>0</textoffsetx>
+					<include>AG_Tex_ButtonPrimary</include>
+					<onclick>$PARAM[onclick]</onclick>
+					<onclick>$PARAM[onclick2]</onclick>
+					<onclick>$PARAM[onclick3]</onclick>
+					<onup>$PARAM[onup]</onup>
+					<ondown>$PARAM[ondown]</ondown>
+					<onleft condition="$PARAM[onleft_pre_if]">$PARAM[onleft_pre]</onleft>
+					<onleft condition="$PARAM[onleft_if]">$PARAM[onleft]</onleft>
+					<onright condition="$PARAM[onright_pre_if]">$PARAM[onright_pre]</onright>
+					<onright condition="$PARAM[onright_if]">$PARAM[onright]</onright>
+					<onback>$PARAM[onback]</onback>
+					<onfocus>$PARAM[onfocus]</onfocus>
+				</control>
+			</control>
+		</definition>
+	</include>
+
+	<!-- Small pill (library header bar, OSD text buttons): accent pill + on-accent text on focus.
+	     params: id, label, onclick, visible; w + align (0.9.3: fixed width for labels that toggle) -->
+	<!-- 0.56.37 the sub-nav buttons' looks: the pill (AG_SubNavLook) and, in the Fused Glass style for the windows that
+	     ask for it (param fgs), a grid cell: 70 high, capitals, the white bar on focus (FGS_SubNavLook) -->
+	<include name="AG_SubNavLook">
+		<height>subnav_h</height>
+		<font>ui_22_semibold</font>
+		<textcolor>$VAR[AG_Ink2]</textcolor>
+		<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+		<textoffsetx>20</textoffsetx>
+		<include>FG_SubNavFocus</include>
+		<include>FG_SubNavNoFocus</include>
+	</include>
+	<include name="FGS_SubNavLook">
+		<height>69</height>
+		<font>uc_st_small_20_semibold</font>
+		<textcolor>66ffffff</textcolor>
+		<focusedcolor>ffffffff</focusedcolor>
+		<textoffsetx>30</textoffsetx>
+		<aligny>center</aligny>
+		<texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus>
+		<texturenofocus border="0,0,2,0" colordiffuse="1affffff">fg/fgs_sep_r.png</texturenofocus>
+		<include>FGS_RowAnim</include>
+	</include>
+	<include name="AG_SubNavButton">
+		<param name="visible">true</param>
+		<param name="onclick">noop</param>
+		<param name="w">auto</param>
+		<param name="align">left</param>
+		<param name="fgs">false</param>
+		<definition>
+			<control type="button" id="$PARAM[id]">
+				<width>$PARAM[w]</width>
+				<align>$PARAM[align]</align>
+				<include condition="$PARAM[fgs] + $EXP[FGS]">FGS_SubNavLook</include>
+				<include condition="![$PARAM[fgs] + $EXP[FGS]]">AG_SubNavLook</include>
+				<label>$PARAM[label]</label>
+				<onclick>$PARAM[onclick]</onclick>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
+	<!-- AG_SubNavButton_L: the library windows' copy of AG_SubNavButton (lib_ colours: palette for menus / library / both, 0.40.4) -->
+	<include name="AG_SubNavButton_L">
+		<param name="visible">true</param>
+		<param name="onclick">noop</param>
+		<param name="w">auto</param>
+		<param name="align">left</param>
+		<definition>
+			<control type="button" id="$PARAM[id]">
+				<width>$PARAM[w]</width>
+				<align>$PARAM[align]</align>
+				<height>subnav_h</height>
+				<font>ui_22_semibold</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<focusedcolor>$VAR[Aeon_OnBarInk_L]</focusedcolor>
+				<textoffsetx>20</textoffsetx>
+				<include>FG_SubNavFocus_L</include>
+				<include>FG_SubNavNoFocus</include>
+				<label>$PARAM[label]</label>
+				<onclick>$PARAM[onclick]</onclick>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
+
+	<!-- Off-screen object (template/hidden controls Kodi needs but the user never sees) -->
+	<include name="AG_Hidden">
+		<left>offscreen</left>
+		<top>offscreen</top>
+		<width>1</width>
+		<height>1</height>
+		<texturefocus />
+		<texturenofocus />
+	</include>
+</includes>

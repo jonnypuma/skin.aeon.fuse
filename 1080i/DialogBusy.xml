@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Busy indicator: a thin arc going round in the top right corner, where the clock box is (it covers the clock while Kodi
+	works). No full-screen dim, so the page stays readable. Kodi writes a percentage into label 10 when it knows one; it shows
+	under the arc. The arc is a drawn animation (common/aeon_spinner.gif); with Reduce motion it stands still.
+	Hidden at start-up and while the player caches (the player shows buffering itself).
+	Fused Glass (0.39.9): a capsule beside the clock capsule, like the toast: spinner disc, "Loading...", the percentage.
+-->
+<window>
+	<animation type="WindowOpen"><effect type="fade" start="0" end="100" time="150"/></animation>
+	<animation type="WindowClose"><effect type="fade" start="100" end="0" time="150"/></animation>
+	<controls>
+		<include condition="!$EXP[FGS]">Busy_PageClassic</include>
+		<include condition="$EXP[FGS]">Busy_PageFGS</include>
+	</controls>
+</window>

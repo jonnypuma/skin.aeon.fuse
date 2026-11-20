@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Aeon 2 style music Now Playing. Reference notes: ../AEON2_DESIGN_NOTES.md ("Music Now Playing").
+
+	A dark card on the left (artist / track / album / released / label), a thin audio wave across it,
+	and a lighter grey block that grows from the left edge as the song progresses; elapsed + total at
+	the bottom, codec + bitrate tag. Large cover art on the right, dimmed fanart behind.
+
+	The wave is Kodi's visualisation control (id 2) clipped to the band inside the card: Kodi can only draw
+	audio-reactive graphics through a visualisation add-on, so enable a waveform one
+	(Settings > Player > Music > Visualisation, e.g. visualization.waveform) to see it.
+-->
+<includes>
+	<constant name="aeon_np_x">140</constant>
+	<constant name="aeon_np_y">190</constant>
+	<constant name="aeon_np_w">820</constant>
+	<constant name="aeon_np_h">700</constant>
+	<!-- 0.52.1 Smooth song progress (on by default since 0.52.3): the helper (script.aeon.helper smoothprog.py) is
+	     driving the card's fill 4801 -->
+	<expression name="Aeon_SmoothProgress">!Skin.HasSetting(aeon.smoothprogress.off) + String.IsEqual(Window(Home).Property(aeon.smoothprog),1)</expression>
+
+	<variable name="Aeon_NP_Fanart">
+		<value condition="String.IsEqual(Window(Home).Property(aeon.npfan),1) + !String.IsEmpty(Player.Art(artist.fanart1))">$INFO[Player.Art(artist.fanart1)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.npfan),1) + !String.IsEmpty(Player.Art(fanart1))">$INFO[Player.Art(fanart1)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.npfan),2) + !String.IsEmpty(Player.Art(artist.fanart2))">$INFO[Player.Art(artist.fanart2)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.npfan),2) + !String.IsEmpty(Player.Art(fanart2))">$INFO[Player.Art(fanart2)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.npfan),3) + !String.IsEmpty(Player.Art(artist.fanart3))">$INFO[Player.Art(artist.fanart3)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.npfan),3) + !String.IsEmpty(Player.Art(fanart3))">$INFO[Player.Art(fanart3)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.npfan),4) + !String.IsEmpty(Player.Art(artist.fanart4))">$INFO[Player.Art(artist.fanart4)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.npfan),4) + !String.IsEmpty(Player.Art(fanart4))">$INFO[Player.Art(fanart4)]</value>
+		<value condition="!String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Player.Art(artist.fanart))">$INFO[Player.Art(artist.fanart)]</value>
+		<value>$INFO[Player.Art(thumb)]</value>
+	</variable>
+	<!-- 0.46.0: the main fanart under the cycling one (Aeon_NowPlaying), shown while the next picture loads -->
+	<variable name="Aeon_NP_FanartBase">
+		<value condition="!String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Player.Art(artist.fanart))">$INFO[Player.Art(artist.fanart)]</value>
+		<value>$INFO[Player.Art(thumb)]</value>
+	</variable>
+	<variable name="Aeon_NP_Disc">
+		<value condition="!String.IsEmpty(Player.Art(album.discart))">$INFO[Player.Art(album.discart)]</value>
+		<value condition="!String.IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
+		<value>$INFO[Player.Art(albumartist.discart)]</value>
+	</variable>
+	<!-- times of what is playing: big bold part . light part (minutes . seconds, or hours . minutes from one hour up) -->
+	<variable name="Aeon_NP_Time">
+		<value condition="Integer.IsGreater(Player.Duration(hh),0)">[B]$INFO[Player.Time(h)][/B]  ·  $INFO[Player.Time(mm)]  ·  [COLOR 99ffffff]$INFO[Player.Time(ss)][/COLOR]</value>
+		<value>$INFO[Player.Time(m)]  ·  [COLOR 99ffffff]$INFO[Player.Time(ss)][/COLOR]</value>
+	</variable>
+	<variable name="Aeon_NP_Dur">
+		<value condition="Integer.IsGreater(Player.Duration(hh),0)">[B]$INFO[Player.Duration(h)][/B]  ·  $INFO[Player.Duration(mm)]  ·  [COLOR 99ffffff]$INFO[Player.Duration(ss)][/COLOR]</value>
+		<value>$INFO[Player.Duration(m)]  ·  [COLOR 99ffffff]$INFO[Player.Duration(ss)][/COLOR]</value>
+	</variable>
+	<variable name="Aeon_NP_Cover">
+		<value condition="!String.IsEmpty(Player.Art(thumb))">$INFO[Player.Art(thumb)]</value>
+		<value>$INFO[Player.Art(album.thumb)]</value>
+	</variable>
+	<variable name="Aeon_NP_ArtistLogo">
+		<value condition="!String.IsEmpty(Player.Art(artist.clearlogo))">$INFO[Player.Art(artist.clearlogo)]</value>
+		<value>$INFO[Player.Art(clearlogo)]</value>
+	</variable>
+	<!-- audio quality line: codec | bit depth | sample rate | bit rate | channels; the tags of the song first, what the player
+	     decodes when a tag is missing (streams, files outside the library) -->
+	<variable name="Aeon_NP_Codec">
+		<value condition="!String.IsEmpty(MusicPlayer.Codec)">[UPPERCASE]$INFO[MusicPlayer.Codec]$VAR[Aeon_NP_Bits]$VAR[Aeon_NP_Rate]$INFO[MusicPlayer.BitRate,  |  , $ADDON[skin.aeon.fuse 32209]]$INFO[MusicPlayer.Channels,  |  , $ADDON[skin.aeon.fuse 32210]][/UPPERCASE]</value>
+		<value condition="!String.IsEmpty(Player.Process(audiodecoder))">[UPPERCASE]$INFO[Player.Process(audiodecoder)]$VAR[Aeon_NP_Bits]$VAR[Aeon_NP_Rate]$INFO[MusicPlayer.BitRate,  |  , $ADDON[skin.aeon.fuse 32209]]$INFO[MusicPlayer.Channels,  |  , $ADDON[skin.aeon.fuse 32210]][/UPPERCASE]</value>
+	</variable>
+	<variable name="Aeon_NP_Bits">
+		<value condition="Integer.IsGreater(MusicPlayer.BitsPerSample,0)">$INFO[MusicPlayer.BitsPerSample,  |  , $ADDON[skin.aeon.fuse 32211]]</value>
+		<value condition="Integer.IsGreater(Player.Process(audiobitspersample),0)">$INFO[Player.Process(audiobitspersample),  |  , $ADDON[skin.aeon.fuse 32211]]</value>
+	</variable>
+	<variable name="Aeon_NP_Rate">
+		<value condition="!String.IsEmpty(MusicPlayer.SampleRate)">$INFO[MusicPlayer.SampleRate,  |  , $ADDON[skin.aeon.fuse 32212]]</value>
+		<value condition="Integer.IsGreater(Player.Process(audiosamplerate),0)">$INFO[Player.Process(audiosamplerate),  |  , $ADDON[skin.aeon.fuse 32213]]</value>
+	</variable>
+
+	<include name="Aeon_NowPlaying">
+		<!-- the visualisation first, full screen, exactly like Estuary (choose one in Settings > Player > Music > Visualisation);
+		     everything above it is translucent so the wave shows through the fanart and the card -->
+		<!-- 0.46.0: the main fanart under the cycling one, and the artist's other fanarts loaded ahead (1 px under the opaque layers) -->
+		<control type="image"><left>0</left><top>0</top><width>1</width><height>1</height><texture background="true">$INFO[Player.Art(artist.fanart1)]</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>1</width><height>1</height><texture background="true">$INFO[Player.Art(fanart1)]</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>1</width><height>1</height><texture background="true">$INFO[Player.Art(artist.fanart2)]</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>1</width><height>1</height><texture background="true">$INFO[Player.Art(fanart2)]</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>1</width><height>1</height><texture background="true">$INFO[Player.Art(artist.fanart3)]</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>1</width><height>1</height><texture background="true">$INFO[Player.Art(fanart3)]</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>1</width><height>1</height><texture background="true">$INFO[Player.Art(artist.fanart4)]</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>1</width><height>1</height><texture background="true">$INFO[Player.Art(fanart4)]</texture></control>
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<aspectratio>scale</aspectratio>
+			<fadetime>600</fadetime>
+			<texture subpixel="true" mipmap="true" background="true" colordiffuse="ffb0b0b0">$VAR[Aeon_NP_FanartBase]</texture>
+			<!-- the same slow zoom and drift as the Home spotlight pages; the picture changes every 16 s when the artist has more fanart -->
+			<animation type="Conditional" condition="!Skin.HasSetting(aeon.reducemotion)" loop="true">
+				<effect type="zoom" start="100" end="110" center="960,540" time="16000" tween="sine" easing="inout"/>
+				<effect type="slide" start="0,0" end="-24,-10" time="16000" tween="sine" easing="inout"/>
+				<effect type="zoom" start="100" end="90.91" center="960,540" delay="16000" time="16000" tween="sine" easing="inout"/>
+				<effect type="slide" start="0,0" end="24,10" delay="16000" time="16000" tween="sine" easing="inout"/>
+			</animation>
+		</control>
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<aspectratio>scale</aspectratio>
+			<fadetime>1500</fadetime>
+			<texture subpixel="true" mipmap="true" background="true" colordiffuse="ffb0b0b0">$VAR[Aeon_NP_Fanart]</texture>
+			<!-- the same slow zoom and drift as the Home spotlight pages; the picture changes every 16 s when the artist has more fanart -->
+			<animation type="Conditional" condition="!Skin.HasSetting(aeon.reducemotion)" loop="true">
+				<effect type="zoom" start="100" end="110" center="960,540" time="16000" tween="sine" easing="inout"/>
+				<effect type="slide" start="0,0" end="-24,-10" time="16000" tween="sine" easing="inout"/>
+				<effect type="zoom" start="100" end="90.91" center="960,540" delay="16000" time="16000" tween="sine" easing="inout"/>
+				<effect type="slide" start="0,0" end="24,10" delay="16000" time="16000" tween="sine" easing="inout"/>
+			</animation>
+		</control>
+
+		<control type="multiimage">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<aspectratio>scale</aspectratio>
+			<imagepath background="true" colordiffuse="b0ffffff">$INFO[Window(Home).Property(ArtistSlideshow)]</imagepath>
+			<timeperimage>8000</timeperimage>
+			<fadetime>1500</fadetime>
+			<randomize>true</randomize>
+			<loop>yes</loop>
+			<visible>Skin.HasSetting(aeon.artistslideshow) + !String.IsEmpty(Window(Home).Property(ArtistSlideshow))</visible>
+		</control>
+
+		<!-- colour wash from the artwork (Kodi Fanart.Color1), as the Aeon music pages tint everything -->
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<texture colordiffuse="$INFO[Fanart.Color1]">common/white.png</texture>
+			<animation effect="fade" end="22" time="0" condition="true">Conditional</animation>
+		</control>
+
+		<!-- the card -->
+		<control type="group">
+			<left>aeon_np_x</left>
+			<top>aeon_np_y</top>
+			<!-- the player controls cover the lower part of the screen: the whole picture (card, text, cover, lyrics, disc) steps back
+			     together to 84 %, anchored at the card's top left corner, so it ends above the controls (y 778) -->
+			<animation effect="zoom" start="100" end="84" center="140,190" time="300" tween="cubic" easing="out" reversible="true" condition="Window.IsVisible(musicosd)">Conditional</animation>
+			<animation type="WindowOpen" tween="cubic" easing="out" condition="!Skin.HasSetting(aeon.reducemotion)">
+				<effect type="slide" start="-80" end="0" time="500"/>
+				<effect type="fade" start="0" end="100" time="500"/>
+			</animation>
+			<animation type="WindowClose" tween="cubic" easing="in">
+				<effect type="fade" start="100" end="0" time="200"/>
+			</animation>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>aeon_np_w</width>
+				<height>aeon_np_h</height>
+				<texture colordiffuse="88101010">common/white.png</texture>
+				<visible>!$EXP[Aeon_FGlass]</visible>
+			</control>
+			<!-- Fused Glass (0.39.7): a frosted r28 card; the song's progress revealed from the left inside the same shape -->
+			<control type="image"><width>aeon_np_w</width><height>aeon_np_h</height><texture border="28" colordiffuse="$VAR[FG_Frost]">fg/r28.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+			<control type="progress"><width>aeon_np_w</width><height>aeon_np_h</height><reveal>true</reveal><texturebg border="28" colordiffuse="00ffffff">fg/r28.png</texturebg><midtexture subpixel="true" border="28" colordiffuse="24ffffff">fg/r28.png</midtexture><info>Player.Progress</info><visible>$EXP[Aeon_FGlass] + !$EXP[Aeon_SmoothProgress]</visible></control>
+			<!-- 0.52.1 Skin settings > Motion, memory, reset > Smooth song progress: Kodi reads Player.Progress as a whole percent
+			     (an 8 px step every 1 %); this twin has no <info>, the helper sets its percent as a fraction (as often as Kodi
+			     draws the screen, or 10 / 25 / 30 / 60 times a second) and shows it by Window(Home).Property(aeon.smoothprog) -->
+			<control type="progress" id="4801"><width>aeon_np_w</width><height>aeon_np_h</height><reveal>true</reveal><texturebg border="28" colordiffuse="00ffffff">fg/r28.png</texturebg><midtexture subpixel="true" border="28" colordiffuse="24ffffff">fg/r28.png</midtexture><visible>$EXP[Aeon_FGlass] + $EXP[Aeon_SmoothProgress]</visible></control>
+			<control type="image"><width>aeon_np_w</width><height>aeon_np_h</height><texture border="28" colordiffuse="$VAR[FG_Edge]">fg/e28.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+			<!-- progress: a lighter block growing from the left edge across the whole card (35 bars of 20 px, drawn at 19 % together) -->
+			<control type="group">
+				<visible>!$EXP[Aeon_FGlass]</visible>
+				<animation effect="fade" end="19" time="0" condition="true">Conditional</animation>
+				<control type="progress">
+					<left>0</left>
+					<top>0</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>20</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>40</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>60</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>80</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>100</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>120</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>140</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>160</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>180</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>200</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>220</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>240</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>260</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>280</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>300</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>320</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>340</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>360</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>380</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>400</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>420</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>440</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>460</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>480</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>500</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>520</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>540</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>560</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>580</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>600</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>620</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>640</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>660</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+				<control type="progress">
+					<left>0</left>
+					<top>680</top>
+					<width>aeon_np_w</width>
+					<height>20</height>
+					<reveal>true</reveal>
+					<texturebg colordiffuse="00ffffff">common/aeon_fill_20.png</texturebg>
+					<lefttexture></lefttexture>
+					<midtexture subpixel="true">common/aeon_fill_20.png</midtexture>
+					<righttexture subpixel="true"></righttexture>
+					<overlaytexture></overlaytexture>
+					<info>Player.Progress</info>
+				</control>
+			</control>
+			<!-- thin edge lines -->
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>1</width>
+				<height>aeon_np_h</height>
+				<texture colordiffuse="30ffffff">common/white.png</texture>
+				<visible>!$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="image">
+				<left>aeon_np_w</left>
+				<top>0</top>
+				<width>1</width>
+				<height>aeon_np_h</height>
+				<texture colordiffuse="30ffffff">common/white.png</texture>
+				<visible>!$EXP[Aeon_FGlass]</visible>
+			</control>
+
+		</control>
+		<!-- the card text -->
+		<control type="group">
+			<left>aeon_np_x</left>
+			<top>aeon_np_y</top>
+			<animation effect="zoom" start="100" end="84" center="140,190" time="300" tween="cubic" easing="out" reversible="true" condition="Window.IsVisible(musicosd)">Conditional</animation>
+			<animation type="WindowOpen" tween="cubic" easing="out" condition="!Skin.HasSetting(aeon.reducemotion)">
+				<effect type="slide" start="-80" end="0" time="500"/>
+				<effect type="fade" start="0" end="100" time="500"/>
+			</animation>
+			<animation type="WindowClose" tween="cubic" easing="in">
+				<effect type="fade" start="100" end="0" time="200"/>
+			</animation>
+
+			<!-- text -->
+			<control type="image">
+				<left>48</left>
+				<top>40</top>
+				<width>520</width>
+				<height>56</height>
+				<aspectratio align="left" aligny="center">keep</aspectratio>
+				<texture background="true">$VAR[Aeon_NP_ArtistLogo]</texture>
+				<visible>!Skin.HasSetting(aeon.nologos) + [!String.IsEmpty(Player.Art(artist.clearlogo)) | !String.IsEmpty(Player.Art(clearlogo))]</visible>
+			</control>
+			<control type="label">
+				<left>48</left>
+				<top>70</top>
+				<width>720</width>
+				<height>36</height>
+				<font>pl_ui_26</font>
+				<textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor>
+				<label>[UPPERCASE]$INFO[MusicPlayer.Artist][/UPPERCASE]</label>
+				<visible>Skin.HasSetting(aeon.nologos) | [String.IsEmpty(Player.Art(artist.clearlogo)) + String.IsEmpty(Player.Art(clearlogo))]</visible>
+			</control>
+			<control type="label">
+				<left>48</left>
+				<top>108</top>
+				<width>720</width>
+				<height>44</height>
+				<font>pl_ui_28_bold</font>
+				<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+				<scroll>true</scroll>
+				<label>[UPPERCASE]$INFO[MusicPlayer.Title][/UPPERCASE]</label>
+			</control>
+			<control type="label">
+				<left>48</left>
+				<top>190</top>
+				<width>720</width>
+				<height>30</height>
+				<font>pl_small_20</font>
+				<textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor>
+				<label>$INFO[MusicPlayer.TrackNumber,$ADDON[skin.aeon.fuse 32214] , $ADDON[skin.aeon.fuse 32215]]</label>
+			</control>
+			<control type="label">
+				<left>48</left>
+				<top>222</top>
+				<width>720</width>
+				<height>34</height>
+				<font>pl_ui_24_bold</font>
+				<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+				<label>[UPPERCASE]$INFO[MusicPlayer.Album][/UPPERCASE]</label>
+			</control>
+			<control type="label">
+				<left>48</left>
+				<top>290</top>
+				<width>720</width>
+				<height>30</height>
+				<font>pl_small_20</font>
+				<textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor>
+				<label>[UPPERCASE]$INFO[MusicPlayer.Year,$ADDON[skin.aeon.fuse 32216] ]$INFO[MusicPlayer.Property(Album_Label),  $ADDON[skin.aeon.fuse 32002] ,][/UPPERCASE]</label>
+			</control>
+
+			<!-- hairline, the quality line under it, then the times. Only the times fade out while the player controls show (the
+			     controls show the same times just below); the hairline and the quality line stay (the controls have none) -->
+			<control type="label">
+				<left>48</left>
+				<top>600</top>
+				<width>724</width>
+				<height>26</height>
+				<font>pl_small_20</font>
+				<textcolor>66ffffff</textcolor><selectedcolor>66ffffff</selectedcolor>
+				<label>$VAR[Aeon_NP_Codec]</label>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>590</top>
+				<width>aeon_np_w</width>
+				<height>1</height>
+				<texture colordiffuse="30ffffff">common/white.png</texture>
+			</control>
+			<control type="label">
+				<left>48</left>
+				<top>642</top>
+				<width>300</width>
+				<height>34</height>
+				<font>pl_small_20</font>
+				<textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor>
+				<label>$VAR[Aeon_NP_Time]</label>
+				<animation effect="fade" start="100" end="0" time="200" reversible="true" condition="Window.IsVisible(musicosd)">Conditional</animation>
+			</control>
+			<control type="label">
+				<left>472</left>
+				<top>642</top>
+				<width>300</width>
+				<height>34</height>
+				<align>right</align>
+				<font>pl_small_20</font>
+				<textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor>
+				<label>$VAR[Aeon_NP_Dur]</label>
+				<animation effect="fade" start="100" end="0" time="200" reversible="true" condition="Window.IsVisible(musicosd)">Conditional</animation>
+			</control>
+		</control>
+
+		<!-- lyrics over the cover (button LYRICS on the music OSD; text comes from the song's lyrics tag / a lyrics add-on) -->
+		<control type="group">
+			<left>1040</left>
+			<top>aeon_np_y</top>
+			<visible>Skin.HasSetting(aeon.lyricson)</visible>
+			<animation effect="zoom" start="100" end="84" center="140,190" time="300" tween="cubic" easing="out" reversible="true" condition="Window.IsVisible(musicosd)">Conditional</animation>
+			<include>Anim_FadeVisible</include>
+			<control type="image">
+				<width>aeon_np_h</width>
+				<height>aeon_np_h</height>
+				<texture colordiffuse="d8000000">common/white.png</texture>
+				<visible>!$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="image"><width>aeon_np_h</width><height>aeon_np_h</height><texture border="28" colordiffuse="d8000000">fg/r28.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+			<control type="textbox">
+				<left>50</left>
+				<top>50</top>
+				<width>600</width>
+				<height>600</height>
+				<font>pl_ui_28</font>
+				<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+				<align>center</align>
+				<label>$INFO[MusicPlayer.Lyrics]</label>
+				<autoscroll delay="5000" time="2500" repeat="3000">true</autoscroll>
+				<visible>!String.IsEmpty(MusicPlayer.Lyrics)</visible>
+			</control>
+			<control type="label">
+				<left>0</left>
+				<top>0</top>
+				<width>aeon_np_h</width>
+				<height>aeon_np_h</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>pl_cap_20</font>
+				<textcolor>99ffffff</textcolor><selectedcolor>99ffffff</selectedcolor>
+				<label>$LOCALIZE[31297]</label>
+				<visible>String.IsEmpty(MusicPlayer.Lyrics)</visible>
+			</control>
+		</control>
+		<!-- disc art (album or single): rises out of the top of the cover and turns while the music plays (it stops, not reverses, on pause) -->
+		<control type="image">
+			<left>1110</left>
+			<top>14</top>
+			<width>560</width>
+			<height>560</height>
+			<aspectratio>keep</aspectratio>
+			<fadetime>400</fadetime>
+			<!-- a circle the size of the disc: disc art saved on a square background spins as a disc, not a square -->
+			<texture background="true" diffuse="aeon/mask_circle.png">$VAR[Aeon_NP_Disc]</texture>
+			<animation effect="zoom" start="100" end="84" center="140,190" time="300" tween="cubic" easing="out" reversible="true" condition="Window.IsVisible(musicosd)">Conditional</animation>
+			<animation type="Conditional" condition="Player.Playing + !Player.Paused + !Skin.HasSetting(aeon.reducemotion)" loop="true" reversible="false"><effect type="rotate" start="0" end="-360" center="auto" time="9000" tween="linear"/></animation>
+			<animation type="WindowOpen" tween="cubic" easing="out" delay="500" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="slide" start="0,176" end="0,0" time="500"/><effect type="fade" start="0" end="100" time="300"/></animation>
+		</control>
+		<!-- cover -->
+		<control type="image">
+			<left>1040</left>
+			<top>aeon_np_y</top>
+			<width>aeon_np_h</width>
+			<height>aeon_np_h</height>
+			<aspectratio>scale</aspectratio>
+			<fadetime>400</fadetime>
+			<texture background="true">$VAR[Aeon_NP_Cover]</texture>
+			<visible>!$EXP[Aeon_FGlass]</visible>
+			<animation effect="zoom" start="100" end="84" center="140,190" time="300" tween="cubic" easing="out" reversible="true" condition="Window.IsVisible(musicosd)">Conditional</animation>
+			<animation type="WindowOpen" tween="cubic" easing="out" delay="150" condition="!Skin.HasSetting(aeon.reducemotion)">
+				<effect type="slide" start="120" end="0" time="500"/>
+				<effect type="fade" start="0" end="100" time="500"/>
+			</animation>
+		</control>
+		<!-- Fused Glass (0.39.7): the cover with the round corners of the large covers (r28) -->
+		<control type="image">
+			<left>1040</left>
+			<top>aeon_np_y</top>
+			<width>aeon_np_h</width>
+			<height>aeon_np_h</height>
+			<aspectratio scalediffuse="false">scale</aspectratio>
+			<fadetime>400</fadetime>
+			<texture background="true" diffuse="fg/m700x700.png">$VAR[Aeon_NP_Cover]</texture>
+			<visible>$EXP[Aeon_FGlass]</visible>
+			<animation effect="zoom" start="100" end="84" center="140,190" time="300" tween="cubic" easing="out" reversible="true" condition="Window.IsVisible(musicosd)">Conditional</animation>
+			<animation type="WindowOpen" tween="cubic" easing="out" delay="150" condition="!Skin.HasSetting(aeon.reducemotion)">
+				<effect type="slide" start="120" end="0" time="500"/>
+				<effect type="fade" start="0" end="100" time="500"/>
+			</animation>
+		</control>
+		<!-- The wave. Made for Aeon Fuse Waveform Visualizer (visualization.aeonwave, built from Kodi's Waveform 22.1.1 for Linux ARM64 /
+		     ARM 32-bit / x86-64 and Windows x64): one thin line through the middle of its box, swinging at most 90 % of half
+		     its height, drawn exactly inside the box on every system. The box is the empty band of the card between the
+		     RELEASED line and the hairline, the card's full width, centred on y 645 (Aeon_NP_WaveBox: y 505-785; the line
+		     swings at most 90 % of half of it, so its loudest peaks reach y 519 / 771, just inside the text and the hairline).
+		     The stock Waveform: on Linux / Android it also draws inside the box (its two channels at 25 % / 75 %: y 595 / 695).
+		     On Windows it adds the control's left/top a second time and spans twice the width, so there it gets a box of its
+		     own (Aeon_NP_WaveBoxWindows, measured on screen: its upper line at about y = 2 x 264 + 0.25 x 450 = 640 inside the
+		     card, the lower one clipped below the box). Visualisation.Name tells which add-on is set (Settings > Player >
+		     Music > Visualisation); the two controls never show together. 0.56.53: the visualizer is four add-ons, one per
+		     build (visualization.aeonwave.linux-arm64 / .linux-armv7 / .linux-x86_64 / .windows-x64, names "Aeon Fuse Waveform
+		     Visualizer (<platform>)"; the older visualization.aeonwave too): their names start with Aeon and hold Waveform.
+		     It shrinks with the page while the player controls show (Kodi moves the drawing area with the control's animation). -->
+		<include condition="!System.Platform.Windows">Aeon_NP_Vis</include>
+		<include condition="System.Platform.Windows">Aeon_NP_VisWindows</include>
+	</include>
+	<include name="Aeon_NP_Vis">
+		<control type="visualisation" id="2">
+			<include>Aeon_NP_WaveBox</include>
+			<animation effect="zoom" start="100" end="84" center="140,190" time="300" tween="cubic" easing="out" reversible="true" condition="Window.IsVisible(musicosd)">Conditional</animation>
+			<visible>Player.HasAudio</visible>
+		</control>
+	</include>
+	<!-- Windows: the stock box first (it keeps id 2 for visualisations with presets), Aeon Fuse Waveform Visualizer's band second -->
+	<include name="Aeon_NP_VisWindows">
+		<control type="visualisation" id="2">
+			<include>Aeon_NP_WaveBoxWindows</include>
+			<animation effect="zoom" start="100" end="84" center="140,190" time="300" tween="cubic" easing="out" reversible="true" condition="Window.IsVisible(musicosd)">Conditional</animation>
+			<visible>Player.HasAudio + ![String.StartsWith(Visualisation.Name,Aeon) + String.Contains(Visualisation.Name,Waveform)]</visible>
+		</control>
+		<control type="visualisation" id="2">
+			<include>Aeon_NP_WaveBox</include>
+			<animation effect="zoom" start="100" end="84" center="140,190" time="300" tween="cubic" easing="out" reversible="true" condition="Window.IsVisible(musicosd)">Conditional</animation>
+			<visible>Player.HasAudio + [String.StartsWith(Visualisation.Name,Aeon) + String.Contains(Visualisation.Name,Waveform)]</visible>
+		</control>
+	</include>
+	<include name="Aeon_NP_WaveBoxWindows">
+		<left>70</left>
+		<top>264</top>
+		<width>890</width>
+		<height>450</height>
+	</include>
+	<include name="Aeon_NP_WaveBox">
+		<left>141</left>
+		<top>505</top>
+		<width>818</width>
+		<height>280</height>
+	</include>
+</includes>

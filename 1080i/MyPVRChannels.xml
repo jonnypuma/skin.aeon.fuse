@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	TV / Radio channels (SPEC 5: Minimal). Builder F, M4. PVR is unused by Omar: correct, readable,
+	never stranding (empty state offers PVR settings, Back always works).
+	Kodi id contract (Estuary Omega MyPVRChannels.xml + GUIWindowPVRBase.h): view container 50,
+	menucontrol 9000, sort 3 / 4, channel-group button 28, header labels 29 / 30, filter radio 31,
+	show-hidden radio 6. Estuary's second view (51) and side blade are not used.
+-->
+<window>
+	<defaultcontrol always="true">9100</defaultcontrol>
+	<!-- 0.39.3: opened with Left / Right on the area tabs: the focus stays on the tabs -->
+	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.pvrnav))">SetFocus(100)</onload>
+	<onload>ClearProperty(aeon.pvrnav,home)</onload>
+	<menucontrol>9000</menucontrol>
+	<backgroundcolor>ff000000</backgroundcolor>
+	<views>50</views>
+	<include>Anim_WindowOpenClose</include>
+	<controls>
+		<include>AG_Background</include>
+		<include content="Misc_PVRFrame">
+			<param name="title" value="$LOCALIZE[19019]"/>
+			<param name="show_group" value="true"/>
+			<param name="options" value="Misc_PVROptions_Channels"/>
+			<param name="group_label" value="$INFO[Control.GetLabel(29)]"/>
+			<param name="fg_subnav_slide" value="2,-36"/>
+			<param name="subnav_cond" value="!Skin.HasSetting(aeon.fglass)"/>
+		</include>
+		<include condition="Skin.HasSetting(aeon.fglass)">FG_PVRChannels</include>
+		<!-- 0.56.6: the sort row over the channels card in Fused Glass (drawn first, the card's glass dimmed it:
+		     strongly with Material Dark) -->
+		<include content="Misc_PVRSubNav" condition="Skin.HasSetting(aeon.fglass)">
+			<param name="show_group" value="true"/>
+			<param name="options" value="Misc_PVROptions_Channels"/>
+			<param name="group_label" value="$INFO[Control.GetLabel(29)]"/>
+			<param name="fg_subnav_slide" value="2,-36"/>
+		</include>
+		<include content="Misc_PVRList" condition="!Skin.HasSetting(aeon.fglass)">
+			<param name="number" value="$INFO[ListItem.ChannelNumberLabel]"/>
+			<param name="text_x" value="196"/>
+			<param name="logo" value="true"/>
+			<param name="logo_x" value="108"/>
+			<param name="label2" value="$INFO[ListItem.Title]"/>
+			<param name="progress" value="ListItem.HasEpg + !ListItem.IsRecording"/>
+			<param name="empty_label" value="$ADDON[skin.aeon.fuse 32356]"/>
+		</include>
+	</controls>
+</window>

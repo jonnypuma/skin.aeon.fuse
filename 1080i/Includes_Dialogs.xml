@@ -1,0 +1,1974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Dialog building blocks (owner: Builder E · Settings + core dialogs, M4 styling pass).
+	Aeon vocabulary: soft rounded card with a pre-rendered shadow, Fraunces heading, no rules;
+	focused list row = raised rounded fill + accent ring; buttons = soft raised pill at rest, accent
+	fill + on-accent text on focus. Right-hand playback sheet floats with rounded corners.
+
+	Shared names other builders may use (params unchanged from M1, look restyled):
+	  AG_GenericDialog, AG_DialogButton, AG_ListLayout, AG_Scrollbar,
+	  AG_ToastFrame, AG_KeyboardKey, AG_KeyboardFunc
+	Builder E's own: Dlg_* (constants dlg_*).
+-->
+<includes>
+	<!-- ============================================================ constants -->
+	<constant name="dlg_panel_x">1200</constant>          <!-- right-hand playback panel (mockups/Tracks, AVSettings) -->
+	<constant name="dlg_panel_w">720</constant>
+	<constant name="dlg_panel_pad">72</constant>          <!-- inner left/right padding -->
+	<constant name="dlg_panel_in_w">576</constant>        <!-- 720 - 2 x 72 -->
+	<constant name="dlg_panel_top">64</constant>
+	<constant name="dlg_track_row_h">58</constant>
+	<constant name="dlg_osd_row_h">76</constant>
+	<constant name="dlg_row_pad">16</constant>            <!-- text inset inside a list row -->
+	<constant name="dlg_check">22</constant>              <!-- current-item check -->
+	<constant name="dlg_check_gutter">56</constant>       <!-- label x when a check column precedes it -->
+	<constant name="dlg_btn_h">60</constant>
+
+	<!-- ============================================================ expressions -->
+	<!-- DialogSelect shows the right-hand track panel only over fullscreen video -->
+	<expression name="Dlg_IsTrackPanel">Player.HasVideo + Window.IsActive(fullscreenvideo)</expression>
+	<!-- the select list was opened from the OSD subtitle settings (subtitle stream list) -->
+	<expression name="Dlg_FromSubtitleSettings">Window.IsVisible(osdsubtitlesettings)</expression>
+	<!-- DialogSettings is one of the OSD playback settings dialogs -->
+	<!-- DialogSettings.xml picks its look with this in include conditions, which Kodi evaluates while it loads the dialog:
+	     the dialog is not active yet then, so the playing window decides (the OSD settings only open during playback) -->
+	<expression name="Dlg_IsOSDSettings">[Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation) | Window.IsActive(osdaudiosettings) | Window.IsActive(osdsubtitlesettings) | Window.IsActive(osdvideosettings) | Window.IsActive(osdcmssettings)]</expression>
+
+	<!-- ============================================================ variables -->
+	<!-- Track panel kicker: "SUBTITLES · 16 TRACKS" -->
+	<variable name="Dlg_SelectKicker">
+		<value condition="Window.IsVisible(osdsubtitlesettings)">$LOCALIZE[287]$VAR[PL_Container_3_NumItems_Track]</value>
+		<value condition="Window.IsVisible(osdaudiosettings)">$LOCALIZE[292]$VAR[PL_Container_3_NumItems_Track]</value>
+		<value condition="Window.IsVisible(osdvideosettings)">$LOCALIZE[291]$VAR[PL_Container_3_NumItems_Option]</value>
+		<value condition="Control.IsVisible(6)">$LOCALIZE[424]$VAR[PL_Container_6_NumItems_Item]</value>
+		<value>$LOCALIZE[424]$VAR[PL_Container_3_NumItems_Item]</value>
+	</variable>
+	<!-- Centred select: "03 / 16" in the header -->
+	<variable name="Dlg_SelectPosition">
+		<value condition="Control.IsVisible(6)">$INFO[Container(6).CurrentItem]$INFO[Container(6).NumItems, / ,]</value>
+		<value>$INFO[Container(3).CurrentItem]$INFO[Container(3).NumItems, / ,]</value>
+	</variable>
+	<!-- What is playing, under the track panel: "PAUSED · 1:02:31 / 2:14:00" -->
+	<variable name="Dlg_PlayState">
+		<value condition="Player.Paused">$LOCALIZE[112]  ·  $INFO[Player.Time]$INFO[Player.Duration, / ,]</value>
+		<value>$INFO[Player.Time]$INFO[Player.Duration, / ,]</value>
+	</variable>
+	<variable name="Dlg_PlayTitle">
+		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.TVShowTitle]</value>
+		<value>$INFO[VideoPlayer.Title]</value>
+	</variable>
+
+	<variable name="Dlg_AddonNewsLabel">
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.addonnews))">$LOCALIZE[21821]</value>
+		<value>$LOCALIZE[31512]</value>
+	</variable>
+
+	<!-- ============================================================ texture switches -->
+	<!-- (button textures can't take $VAR, so corners / outline weight are picked at window load) -->
+	<include name="Dlg_Tex_DialogButton">
+		<include condition="true">Dlg_Tex_DialogButton_Round</include>
+		<include condition="false">Dlg_Tex_DialogButton_Square</include>
+	</include>
+	<include name="Dlg_Tex_DialogButton_Square">
+		<texturefocus border="10" colordiffuse="$VAR[AG_Accent]">common/rect_square.png</texturefocus>
+		<texturenofocus border="10" colordiffuse="$VAR[AG_Line2]">common/rect_outline_1.png</texturenofocus>
+	</include>
+	<include name="Dlg_Tex_DialogButton_Round">
+		<include>Aeon_T_19cd9c02</include>
+		<include>Aeon_T_23b6fccf</include>
+	</include>
+
+	<!-- Accent frame drawn AT the control rect (stroke sits 1-3px inside), for Kodi-cloned rows -->
+	<include name="Dlg_Tex_RowFocus">
+		<include condition="false + !String.IsEqual(Skin.String(aeon.focusoutline),medium)">Dlg_Tex_RowFocus_S2</include>
+		<include condition="false + String.IsEqual(Skin.String(aeon.focusoutline),medium)">Dlg_Tex_RowFocus_S3</include>
+		<include condition="true + !String.IsEqual(Skin.String(aeon.focusoutline),medium)">Dlg_Tex_RowFocus_R2</include>
+		<include condition="true + String.IsEqual(Skin.String(aeon.focusoutline),medium)">Dlg_Tex_RowFocus_R3</include>
+	</include>
+	<include name="Dlg_Tex_RowFocus_S2"><include>Aeon_TexRowFocus</include></include>
+	<include name="Dlg_Tex_RowFocus_S3"><include>Aeon_TexRowFocus</include></include>
+	<include name="Dlg_Tex_RowFocus_R2"><include>Aeon_TexRowFocus</include></include>
+	<include name="Dlg_Tex_RowFocus_R3"><include>Aeon_TexRowFocus</include></include>
+
+	<!-- Hairline under a row (texturenofocus of Kodi-cloned rows). flip = true gives a top rule. -->
+	<include name="Dlg_Tex_RowRule">
+		<param name="color">$VAR[AG_Line]</param>
+		<param name="flip">false</param>
+		<definition>
+			<texturenofocus border="0,0,0,1" flipy="$PARAM[flip]">common/aeon_rule_h.png</texturenofocus>
+		</definition>
+	</include>
+
+	<!-- Coloured box (Aeon palette) behind a Kodi-cloned row, 3px gap below. param: color -->
+	<include name="Dlg_Tex_RowBox">
+		<param name="color">40000000</param>
+		<definition>
+			<texturenofocus border="0,0,0,3" colordiffuse="$PARAM[color]">common/aeon_box.png</texturenofocus>
+		</definition>
+	</include>
+	<!-- ============================================================ generic dialog -->
+	<!-- Centred modal frame. Put inside a group positioned/sized like the dialog.
+	     params: width, height, header_id (Kodi heading id, "" if none), header_label,
+	             kicker (optional mono caption, right side of the header, accent) -->
+	<include name="AG_GenericDialog">
+		<param name="header_id"></param>
+		<param name="header_label"></param>
+		<param name="header_visible">true</param>
+		<param name="kicker"></param>
+		<param name="dense">false</param>
+		<param name="card_visible">true</param>
+		<definition>
+			<control type="image">
+				<description>backdrop dim</description>
+				<left>-2000</left>
+				<top>-2000</top>
+				<width>6000</width>
+				<height>6000</height>
+				<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+				<texture colordiffuse="$VAR[AG_DimDialog]">common/white.png</texture>
+				<visible>![$EXP[Aeon_SettingsBehind] + $EXP[Aeon_VGlass]]</visible>
+			</control>
+			<control type="image">
+				<description>settings background</description>
+				<left>-2000</left>
+				<top>-2000</top>
+				<width>6000</width>
+				<height>6000</height>
+				<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+				<texture colordiffuse="ff000000">common/white.png</texture>
+				<visible>$EXP[Aeon_SettingsBehind] + $EXP[Aeon_VGlass]</visible>
+			</control>
+			<control type="group">
+				<description>panel: soft card</description>
+				<left>0</left>
+				<top>0</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+				<include>AG_Card</include>
+				<control type="image"><left>0</left><top>0</top><right>0</right><bottom>0</bottom><texture border="28" colordiffuse="a60c0c10">fg/r28.png</texture><visible>$PARAM[dense] + $EXP[Aeon_VGlass] + !$EXP[Aeon_FGlass]</visible></control><!-- 0.56.20 fuse_survey2 -->
+				<visible>$PARAM[card_visible]</visible>
+			</control>
+			<control type="label" id="$PARAM[header_id]">
+				<description>heading</description>
+				<left>dialog_pad</left>
+				<top>0</top>
+				<right>260</right>
+				<height>dialog_header_h</height>
+				<font>ui_28_bold</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<label>$PARAM[header_label]</label>
+				<visible>$PARAM[header_visible]</visible>
+			</control>
+			<control type="label">
+				<description>kicker</description>
+				<right>dialog_pad</right>
+				<top>0</top>
+				<width>220</width>
+				<height>dialog_header_h</height>
+				<align>right</align>
+				<font>small_20_semibold</font>
+				<textcolor>$VAR[AG_AccentText]</textcolor>
+				<label>$PARAM[kicker]</label>
+			</control>
+			<control type="image">
+				<left>dialog_pad</left>
+				<top>dialog_header_h</top>
+				<right>dialog_pad</right>
+				<height>2</height>
+				<texture colordiffuse="$VAR[AG_Line]">common/white.png</texture>
+			</control>
+		</definition>
+	</include>
+
+	<!-- Dialog button: 1px outline at rest, accent fill + ink text on focus (always visible focus).
+	     params: id, label, width, height, onclick, onclick2 (second action), visible -->
+	<!-- No <enable>: Kodi enables/disables its own dialog buttons (5/7/8, 28-30); a skin <enable> would override it. -->
+	<include name="AG_DialogButton">
+		<param name="width">300</param>
+		<param name="height">dialog_row_h</param>
+		<param name="label"></param>
+		<param name="onclick">noop</param>
+		<param name="onclick2">noop</param>
+		<param name="visible">true</param>
+		<definition>
+			<control type="button" id="$PARAM[id]">
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<label>$PARAM[label]</label>
+				<font>ui_22_semibold</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<focusedcolor>$VAR[Aeon_AccentText]</focusedcolor>
+				<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+				<align>center</align>
+				<textoffsetx>16</textoffsetx>
+				<include>Dlg_Tex_DialogButton</include>
+				<onclick>$PARAM[onclick]</onclick>
+				<onclick>$PARAM[onclick2]</onclick>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
+
+	<!-- Definition-list fact (mono field label + value), 40px pitch. params: top, label, value, valuew -->
+	<include name="Dlg_FactRow">
+		<param name="valuew">620</param>
+		<definition>
+			<control type="label">
+				<left>0</left>
+				<top>$PARAM[top]</top>
+				<width>160</width>
+				<height>28</height>
+				<font>cap_20</font>
+				<textcolor>$VAR[AG_Ink3]</textcolor>
+				<label>$PARAM[label]</label>
+			</control>
+			<control type="label">
+				<left>160</left>
+				<top>$PARAM[top]</top>
+				<width>$PARAM[valuew]</width>
+				<height>28</height>
+				<font>num_20</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<label>$PARAM[value]</label>
+			</control>
+		</definition>
+	</include>
+
+	<!-- ============================================================ list rows -->
+	<!-- Focused-row treatment inside a <focusedlayout>: raised fill + 2px accent frame (inset).
+	     Shown only while the list has focus, so an unfocused list never looks "selected".
+	     params: list_id, width, height -->
+	<include name="Dlg_RowFocus">
+		<!-- Fused Glass: the bar sits fg_l / fg_r inside the row (0.54.3: 12 px from the card edge when the row starts at it) -->
+		<param name="fg_l">12</param>
+		<param name="fg_r">12</param>
+		<definition>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<texture border="20" colordiffuse="$VAR[Aeon_MenuFocusColR]">$VAR[Aeon_MenuFocusRowTex]</texture>
+				<visible>[Control.HasFocus($PARAM[list_id])] + !$EXP[Aeon_FGlass]</visible>
+				<include>Aeon_RowFade</include>
+			</control>
+			<control type="image">
+				<left>$PARAM[fg_l]</left>
+				<top>0</top>
+				<right>$PARAM[fg_r]</right>
+				<height>$PARAM[height]</height>
+				<texture border="20" colordiffuse="$VAR[Aeon_MenuFocusColR]">$VAR[Aeon_MenuFocusRowTex]</texture>
+				<visible>[Control.HasFocus($PARAM[list_id])] + $EXP[Aeon_FGlass]</visible>
+				<include>Aeon_RowFade</include>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<texture border="20" colordiffuse="14ffffff">$VAR[Aeon_MenuRowTex]</texture>
+				<visible>[!Control.HasFocus($PARAM[list_id])] + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="image">
+				<left>$PARAM[fg_l]</left>
+				<top>0</top>
+				<right>$PARAM[fg_r]</right>
+				<height>$PARAM[height]</height>
+				<texture border="20" colordiffuse="$VAR[Aeon_ParentCol]">$VAR[Dlg_ParentRowTex]</texture>
+				<visible>[!Control.HasFocus($PARAM[list_id])] + $EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>3</width>
+				<height>$PARAM[height]</height>
+				<texture colordiffuse="55ffffff">common/white.png</texture>
+				<visible>[!Control.HasFocus($PARAM[list_id])] + !$EXP[Aeon_Fused] + !$EXP[Aeon_FGlass]</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="Dlg_RowFocusGrey">
+		<!-- Fused Glass: the bar sits fg_l / fg_r inside the row (0.54.3: 12 px from the card edge when the row starts at it) -->
+		<param name="fg_l">12</param>
+		<param name="fg_r">12</param>
+		<definition>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<texture border="20" colordiffuse="$VAR[Aeon_MenuFocusColR]">$VAR[Aeon_MenuFocusRowTex]</texture>
+				<visible>[Control.HasFocus($PARAM[list_id])] + !$EXP[Aeon_FGlass]</visible>
+				<include>Aeon_RowFade</include>
+			</control>
+			<control type="image">
+				<left>$PARAM[fg_l]</left>
+				<top>0</top>
+				<right>$PARAM[fg_r]</right>
+				<height>$PARAM[height]</height>
+				<texture border="20" colordiffuse="$VAR[Aeon_MenuFocusColR]">$VAR[Aeon_MenuFocusRowTex]</texture>
+				<visible>[Control.HasFocus($PARAM[list_id])] + $EXP[Aeon_FGlass]</visible>
+				<include>Aeon_RowFade</include>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<texture border="20" colordiffuse="$VAR[Aeon_ParentCol]">$VAR[Dlg_ParentRowTex]</texture>
+				<visible>[!Control.HasFocus($PARAM[list_id])] + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="image">
+				<left>$PARAM[fg_l]</left>
+				<top>0</top>
+				<right>$PARAM[fg_r]</right>
+				<height>$PARAM[height]</height>
+				<texture border="20" colordiffuse="$VAR[Aeon_ParentCol]">$VAR[Dlg_ParentRowTex]</texture>
+				<visible>[!Control.HasFocus($PARAM[list_id])] + $EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>3</width>
+				<height>$PARAM[height]</height>
+				<texture colordiffuse="$VAR[Aeon_ParentCol]">common/white.png</texture>
+				<visible>[!Control.HasFocus($PARAM[list_id])] + !$EXP[Aeon_Fused] + !$EXP[Aeon_FGlass]</visible>
+			</control>
+		</definition>
+	</include>
+	<!-- 0.46.4: the row a list keeps while it does not have the focus (file manager, file browser, select lists). Fused
+	     Glass draws it in the focus highlight's shape (rounded pill; square for "flat", small corners for "tight") and
+	     without the 3 px edge, which stuck out as a rectangle; the other looks keep their row. -->
+	<variable name="Dlg_ParentRowTex">
+		<value condition="Skin.HasSetting(aeon.fglass) + String.IsEqual(Skin.String(aeon.fgfocus),flat)">fg/fx_flat.png</value>
+		<value condition="Skin.HasSetting(aeon.fglass) + String.IsEqual(Skin.String(aeon.fgfocus),tight)">fg/fx_tight.png</value>
+		<value condition="Skin.HasSetting(aeon.fglass)">fg/fx_pill.png</value>
+		<value>$VAR[Aeon_MenuRowTex]</value>
+	</variable>
+
+	<!-- Text list: check column (current / selected item), label, mono label2 on the right,
+	     hairline under each row. params: width, height, label, label2, list_id -->
+	<include name="AG_ListLayout">
+		<param name="fg_l">12</param>
+		<param name="fg_r">12</param>
+		<param name="width">800</param>
+		<param name="label_right">240</param>
+		<param name="height">64</param>
+		<param name="label">$INFO[ListItem.Label]</param>
+		<param name="label2">$INFO[ListItem.Label2]</param>
+		<param name="list_id">50</param>
+		<definition>
+			<itemlayout width="$PARAM[width]" height="$PARAM[height]">
+					<control type="image"><left>0</left><top>0</top><right>0</right><bottom>0</bottom><texture border="20" colordiffuse="10ffffff">aeon/card_row.png</texture><visible>$EXP[Aeon_Fused]</visible></control>
+				<control type="image">
+					<left>0</left>
+					<bottom>0</bottom>
+					<width>$PARAM[width]</width>
+					<height>rule_h</height>
+					<texture colordiffuse="30ffffff">common/hairline.png</texture>
+				<visible>!$EXP[Aeon_Fused]</visible></control>
+				<control type="image">
+					<left>dlg_row_pad</left>
+					<centertop>50%</centertop>
+					<width>dlg_check</width>
+					<height>dlg_check</height>
+					<texture colordiffuse="$VAR[AG_Accent]">markers/check.png</texture>
+					<visible>ListItem.IsSelected</visible>
+				</control>
+				<control type="label">
+					<left>dlg_check_gutter</left>
+					<top>0</top>
+					<right>$PARAM[label_right]</right>
+					<height>$PARAM[height]</height>
+					<font>ui_24_semibold</font>
+					<textcolor>$VAR[AG_Ink2]</textcolor><selectedcolor>$VAR[AG_Ink2]</selectedcolor>
+					<label>$PARAM[label]</label>
+				</control>
+				<control type="label">
+					<right>24</right>
+					<top>0</top>
+					<width>210</width>
+					<height>$PARAM[height]</height>
+					<align>right</align>
+					<font>num_20</font>
+					<textcolor>$VAR[AG_Ink3]</textcolor><selectedcolor>$VAR[AG_Ink3]</selectedcolor>
+					<label>$PARAM[label2]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout width="$PARAM[width]" height="$PARAM[height]">
+					<control type="image"><left>0</left><top>0</top><right>0</right><bottom>0</bottom><texture border="20" colordiffuse="10ffffff">aeon/card_row.png</texture><visible>$EXP[Aeon_Fused]</visible></control>
+				<control type="image">
+					<left>0</left>
+					<bottom>0</bottom>
+					<width>$PARAM[width]</width>
+					<height>rule_h</height>
+					<texture colordiffuse="30ffffff">common/hairline.png</texture>
+				<visible>!$EXP[Aeon_Fused]</visible></control>
+				<include content="Dlg_RowFocusGrey">
+					<param name="fg_l" value="$PARAM[fg_l]"/><param name="fg_r" value="$PARAM[fg_r]"/>
+					<param name="list_id" value="$PARAM[list_id]"/>
+					<param name="width" value="$PARAM[width]"/>
+					<param name="height" value="$PARAM[height]"/>
+				</include>
+				<control type="image">
+					<left>dlg_row_pad</left>
+					<centertop>50%</centertop>
+					<width>dlg_check</width>
+					<height>dlg_check</height>
+					<texture colordiffuse="$VAR[Aeon_ParentInk]">markers/check.png</texture>
+					<visible>[ListItem.IsSelected] + !Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<left>dlg_row_pad</left>
+					<centertop>50%</centertop>
+					<width>dlg_check</width>
+					<height>dlg_check</height>
+					<texture colordiffuse="$VAR[Aeon_OnBarInk]">markers/check.png</texture>
+					<visible>[ListItem.IsSelected] + Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>dlg_check_gutter</left>
+					<top>0</top>
+					<right>$PARAM[label_right]</right>
+					<height>$PARAM[height]</height>
+					<font>ui_24_bold</font>
+					<textcolor>$VAR[Aeon_ParentInk]</textcolor><selectedcolor>$VAR[Aeon_ParentInk]</selectedcolor>
+					<scroll>true</scroll>
+					<label>$PARAM[label]</label>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>dlg_check_gutter</left>
+					<top>0</top>
+					<right>$PARAM[label_right]</right>
+					<height>$PARAM[height]</height>
+					<font>ui_24_bold</font>
+					<textcolor>$VAR[Aeon_OnBarInk]</textcolor><selectedcolor>$VAR[Aeon_OnBarInk]</selectedcolor>
+					<scroll>true</scroll>
+					<label>$PARAM[label]</label>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<right>24</right>
+					<top>0</top>
+					<width>210</width>
+					<height>$PARAM[height]</height>
+					<align>right</align>
+					<font>num_20</font>
+					<textcolor>$VAR[Aeon_ParentInk2]</textcolor><selectedcolor>$VAR[Aeon_ParentInk2]</selectedcolor>
+					<label>$PARAM[label2]</label>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<right>24</right>
+					<top>0</top>
+					<width>210</width>
+					<height>$PARAM[height]</height>
+					<align>right</align>
+					<font>num_20</font>
+					<textcolor>$VAR[Aeon_OnBarInk]</textcolor><selectedcolor>$VAR[Aeon_OnBarInk]</selectedcolor>
+					<label>$PARAM[label2]</label>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+
+	<include name="Dlg_IndexListLayout">
+		<param name="fg_l">12</param>
+		<param name="fg_r">12</param>
+		<param name="width">860</param>
+		<param name="height">72</param>
+		<param name="list_id">9000</param>
+		<definition>
+			<itemlayout width="$PARAM[width]" height="$PARAM[height]">
+					<control type="image"><left>0</left><top>0</top><right>0</right><bottom>0</bottom><texture border="20" colordiffuse="10ffffff">aeon/card_row.png</texture><visible>$EXP[Aeon_Fused]</visible></control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width]</width>
+					<height>rule_h</height>
+					<texture colordiffuse="30ffffff">common/hairline.png</texture>
+				<visible>!$EXP[Aeon_Fused]</visible></control>
+				<control type="label">
+					<left>24</left>
+					<top>0</top>
+					<right>128</right>
+					<height>$PARAM[height]</height>
+					<font>ui_24_semibold</font>
+					<textcolor>$VAR[AG_Ink2]</textcolor><selectedcolor>$VAR[AG_Ink2]</selectedcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<control type="label">
+					<right>24</right>
+					<top>0</top>
+					<width>320</width>
+					<height>$PARAM[height]</height>
+					<align>right</align>
+					<font>cap_20</font>
+					<textcolor>$VAR[AG_Ink3]</textcolor><selectedcolor>$VAR[AG_Ink3]</selectedcolor>
+					<label>$INFO[ListItem.Label2]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout width="$PARAM[width]" height="$PARAM[height]">
+					<control type="image"><left>0</left><top>0</top><right>0</right><bottom>0</bottom><texture border="20" colordiffuse="10ffffff">aeon/card_row.png</texture><visible>$EXP[Aeon_Fused]</visible></control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width]</width>
+					<height>rule_h</height>
+					<texture colordiffuse="30ffffff">common/hairline.png</texture>
+				<visible>!$EXP[Aeon_Fused]</visible></control>
+				<include content="Dlg_RowFocusGrey">
+					<param name="fg_l" value="$PARAM[fg_l]"/><param name="fg_r" value="$PARAM[fg_r]"/>
+					<param name="list_id" value="$PARAM[list_id]"/>
+					<param name="width" value="$PARAM[width]"/>
+					<param name="height" value="$PARAM[height]"/>
+				</include>
+				<control type="label">
+					<left>24</left>
+					<top>0</top>
+					<right>128</right>
+					<height>$PARAM[height]</height>
+					<font>ui_24_bold</font>
+					<textcolor>$VAR[Aeon_ParentInk]</textcolor><selectedcolor>$VAR[Aeon_ParentInk]</selectedcolor>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<left>24</left>
+					<top>0</top>
+					<right>128</right>
+					<height>$PARAM[height]</height>
+					<font>ui_24_bold</font>
+					<textcolor>$VAR[Aeon_OnBarInk]</textcolor><selectedcolor>$VAR[Aeon_OnBarInk]</selectedcolor>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<right>24</right>
+					<top>0</top>
+					<width>320</width>
+					<height>$PARAM[height]</height>
+					<align>right</align>
+					<font>cap_20</font>
+					<textcolor>$VAR[Aeon_ParentInk2]</textcolor><selectedcolor>$VAR[Aeon_ParentInk2]</selectedcolor>
+					<label>$INFO[ListItem.Label2]</label>
+					<visible>!Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="label">
+					<right>24</right>
+					<top>0</top>
+					<width>320</width>
+					<height>$PARAM[height]</height>
+					<align>right</align>
+					<font>cap_20</font>
+					<textcolor>$VAR[Aeon_OnBarInk]</textcolor><selectedcolor>$VAR[Aeon_OnBarInk]</selectedcolor>
+					<label>$INFO[ListItem.Label2]</label>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+
+	<!-- Track rows (mockups/Tracks): 58px, check for the current track, name (bold when current),
+	     mono meta (label2) on the right, #1c1c1c-ish divider (bg_ghost). params: list_id -->
+	<include name="Dlg_TrackListLayout">
+		<param name="fg_l">12</param>
+		<param name="fg_r">12</param>
+		<param name="list_id">3</param>
+		<definition>
+			<itemlayout width="dlg_panel_in_w" height="dlg_track_row_h">
+				<control type="image">
+					<left>0</left>
+					<bottom>0</bottom>
+					<width>dlg_panel_in_w</width>
+					<height>rule_h</height>
+					<texture colordiffuse="30ffffff">common/hairline.png</texture>
+				</control>
+				<include>Dlg_TrackRowContent</include>
+			</itemlayout>
+			<focusedlayout width="dlg_panel_in_w" height="dlg_track_row_h">
+				<control type="image">
+					<left>0</left>
+					<bottom>0</bottom>
+					<width>dlg_panel_in_w</width>
+					<height>rule_h</height>
+					<texture colordiffuse="30ffffff">common/hairline.png</texture>
+				</control>
+				<include content="Dlg_RowFocus">
+					<param name="fg_l" value="$PARAM[fg_l]"/><param name="fg_r" value="$PARAM[fg_r]"/>
+					<param name="list_id" value="$PARAM[list_id]"/>
+					<param name="width" value="dlg_panel_in_w"/>
+					<param name="height" value="dlg_track_row_h"/>
+				</include>
+				<include content="Dlg_TrackRowContent">
+					<param name="focused" value="true"/>
+					<param name="list_id" value="$PARAM[list_id]"/>
+				</include>
+			</focusedlayout>
+		</definition>
+	</include>
+	<include name="Dlg_TrackRowContent">
+		<param name="focused">false</param>
+		<param name="list_id">0</param>
+		<definition>
+			<control type="image">
+				<left>dlg_row_pad</left>
+				<top>19</top>
+				<width>20</width>
+				<height>20</height>
+				<texture colordiffuse="$VAR[AG_Accent]">markers/check.png</texture>
+				<visible>[ListItem.IsSelected] + [!$PARAM[focused] | !Control.HasFocus($PARAM[list_id])]</visible>
+			</control>
+			<control type="image">
+				<left>dlg_row_pad</left>
+				<top>19</top>
+				<width>20</width>
+				<height>20</height>
+				<texture colordiffuse="$VAR[Aeon_OnBarInk]">markers/check.png</texture>
+				<visible>[ListItem.IsSelected] + $PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
+			</control>
+			<control type="label">
+				<left>56</left>
+				<top>0</top>
+				<right>150</right>
+				<height>dlg_track_row_h</height>
+				<font>ui_22_semibold</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>[!ListItem.IsSelected] + [!$PARAM[focused] | !Control.HasFocus($PARAM[list_id])]</visible>
+			</control>
+			<control type="label">
+				<left>56</left>
+				<top>0</top>
+				<right>150</right>
+				<height>dlg_track_row_h</height>
+				<font>ui_22_semibold</font>
+				<textcolor>$VAR[Aeon_OnBarInk]</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>[!ListItem.IsSelected] + $PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
+			</control>
+			<control type="label">
+				<left>56</left>
+				<top>0</top>
+				<right>150</right>
+				<height>dlg_track_row_h</height>
+				<font>ui_22_bold</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>[ListItem.IsSelected] + [!$PARAM[focused] | !Control.HasFocus($PARAM[list_id])]</visible>
+			</control>
+			<control type="label">
+				<left>56</left>
+				<top>0</top>
+				<right>150</right>
+				<height>dlg_track_row_h</height>
+				<font>ui_22_bold</font>
+				<textcolor>$VAR[Aeon_OnBarInk]</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>[ListItem.IsSelected] + $PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
+			</control>
+			<control type="label">
+				<right>dlg_row_pad</right>
+				<top>0</top>
+				<width>130</width>
+				<height>dlg_track_row_h</height>
+				<align>right</align>
+				<font>cap_20</font>
+				<textcolor>$VAR[AG_Ink3]</textcolor>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>[!$PARAM[focused] | !Control.HasFocus($PARAM[list_id])]</visible>
+			</control>
+			<control type="label">
+				<right>dlg_row_pad</right>
+				<top>0</top>
+				<width>130</width>
+				<height>dlg_track_row_h</height>
+				<align>right</align>
+				<font>cap_20</font>
+				<textcolor>$VAR[Aeon_OnBarInk]</textcolor>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
+			</control>
+		</definition>
+	</include>
+	<!-- Fused Glass (0.54.4): the panel's rows run the card's width (1184..1896), the highlight 12 px in. 0.54.5: the text
+	     column of both playback side panels is 1232..1848 (40 px in from the row ends), so the OSD settings slider rows
+	     fit; the other looks keep 1272..1848 -->
+	<include name="Dlg_PanelCol_fg"><left>32</left><width>616</width></include>
+	<include name="Dlg_PanelCol"><left>dlg_panel_pad</left><width>dlg_panel_in_w</width></include>
+	<include name="Dlg_PanelShift_fg"><left>-40</left></include>
+	<include name="Dlg_SidePanelCard_fg"><left>-16</left><top>12</top><width>712</width><height>1056</height></include>
+	<include name="Dlg_SidePanelCard"><left>-24</left><top>24</top><width>800</width><height>1032</height></include>
+	<include name="Dlg_TrackListGeo_fg"><left>-16</left><width>712</width></include>
+	<include name="Dlg_TrackListGeo"><left>dlg_panel_pad</left><width>dlg_panel_in_w</width></include>
+	<include name="Dlg_TrackListLayout_fg">
+		<param name="fg_l">12</param>
+		<param name="fg_r">12</param>
+		<param name="list_id">3</param>
+		<definition>
+			<itemlayout width="712" height="dlg_track_row_h">
+				<control type="image">
+					<left>48</left>
+					<bottom>0</bottom>
+					<width>616</width>
+					<height>rule_h</height>
+					<texture colordiffuse="30ffffff">common/hairline.png</texture>
+				</control>
+				<include>Dlg_TrackRowContent_fg</include>
+			</itemlayout>
+			<focusedlayout width="712" height="dlg_track_row_h">
+				<control type="image">
+					<left>48</left>
+					<bottom>0</bottom>
+					<width>616</width>
+					<height>rule_h</height>
+					<texture colordiffuse="30ffffff">common/hairline.png</texture>
+				</control>
+				<include content="Dlg_RowFocus">
+					<param name="fg_l" value="$PARAM[fg_l]"/><param name="fg_r" value="$PARAM[fg_r]"/>
+					<param name="list_id" value="$PARAM[list_id]"/>
+					<param name="width" value="712"/>
+					<param name="height" value="dlg_track_row_h"/>
+				</include>
+				<include content="Dlg_TrackRowContent_fg">
+					<param name="focused" value="true"/>
+					<param name="list_id" value="$PARAM[list_id]"/>
+				</include>
+			</focusedlayout>
+		</definition>
+	</include>
+	<include name="Dlg_TrackRowContent_fg">
+		<param name="focused">false</param>
+		<param name="list_id">0</param>
+		<definition>
+			<control type="image">
+				<left>64</left>
+				<top>19</top>
+				<width>20</width>
+				<height>20</height>
+				<texture colordiffuse="$VAR[AG_Accent]">markers/check.png</texture>
+				<visible>[ListItem.IsSelected] + [!$PARAM[focused] | !Control.HasFocus($PARAM[list_id])]</visible>
+			</control>
+			<control type="image">
+				<left>64</left>
+				<top>19</top>
+				<width>20</width>
+				<height>20</height>
+				<texture colordiffuse="$VAR[Aeon_OnBarInk]">markers/check.png</texture>
+				<visible>[ListItem.IsSelected] + $PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
+			</control>
+			<control type="label">
+				<left>104</left>
+				<top>0</top>
+				<right>198</right>
+				<height>dlg_track_row_h</height>
+				<font>ui_22_semibold</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>[!ListItem.IsSelected] + [!$PARAM[focused] | !Control.HasFocus($PARAM[list_id])]</visible>
+			</control>
+			<control type="label">
+				<left>104</left>
+				<top>0</top>
+				<right>198</right>
+				<height>dlg_track_row_h</height>
+				<font>ui_22_semibold</font>
+				<textcolor>$VAR[Aeon_OnBarInk]</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>[!ListItem.IsSelected] + $PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
+			</control>
+			<control type="label">
+				<left>104</left>
+				<top>0</top>
+				<right>198</right>
+				<height>dlg_track_row_h</height>
+				<font>ui_22_bold</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>[ListItem.IsSelected] + [!$PARAM[focused] | !Control.HasFocus($PARAM[list_id])]</visible>
+			</control>
+			<control type="label">
+				<left>104</left>
+				<top>0</top>
+				<right>198</right>
+				<height>dlg_track_row_h</height>
+				<font>ui_22_bold</font>
+				<textcolor>$VAR[Aeon_OnBarInk]</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>[ListItem.IsSelected] + $PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
+			</control>
+			<control type="label">
+				<right>48</right>
+				<top>0</top>
+				<width>130</width>
+				<height>dlg_track_row_h</height>
+				<align>right</align>
+				<font>cap_20</font>
+				<textcolor>$VAR[AG_Ink3]</textcolor>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>[!$PARAM[focused] | !Control.HasFocus($PARAM[list_id])]</visible>
+			</control>
+			<control type="label">
+				<right>48</right>
+				<top>0</top>
+				<width>130</width>
+				<height>dlg_track_row_h</height>
+				<align>right</align>
+				<font>cap_20</font>
+				<textcolor>$VAR[Aeon_OnBarInk]</textcolor>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
+			</control>
+		</definition>
+	</include>
+
+	<!-- Thin scroll-position line paired with a list (2px; thumb brightens to accent when focused).
+	     params: id, left, top, height, onleft, onright -->
+	<!-- Caption / value row for detail lists (picture EXIF, system info...): caption left in Ink2,
+	     value right in Ink; focused row = accent card. Width 560 by default. params: id, focused, width -->
+	<include name="AG_DetailRow">
+		<param name="focused">false</param>
+		<param name="width">560</param>
+		<definition>
+			<control type="image">
+				<left>0</left>
+				<top>4</top>
+				<width>$PARAM[width]</width>
+				<height>52</height>
+				<texture border="20" colordiffuse="$VAR[Aeon_MenuFocusColR]">$VAR[Aeon_MenuFocusTex]</texture>
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[id])</visible>
+			<include>Aeon_RowFade</include></control>
+			<control type="label">
+				<left>18</left>
+				<top>0</top>
+				<width>240</width>
+				<height>60</height>
+				<font>small_20_semibold</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>!$PARAM[focused] | !Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="label">
+				<left>18</left>
+				<top>0</top>
+				<width>240</width>
+				<height>60</height>
+				<font>small_20_semibold</font>
+				<textcolor>$VAR[Aeon_OnBarInk]</textcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="label">
+				<left>260</left>
+				<top>0</top>
+				<right>18</right>
+				<height>60</height>
+				<align>right</align>
+				<font>ui_22</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>!$PARAM[focused] | !Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="label">
+				<left>260</left>
+				<top>0</top>
+				<right>18</right>
+				<height>60</height>
+				<align>right</align>
+				<font>ui_22_semibold</font>
+				<textcolor>$VAR[Aeon_OnBarInk]</textcolor>
+				<scroll>true</scroll>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="image">
+				<left>18</left>
+				<top>59</top>
+				<width>$PARAM[width]</width>
+				<height>1</height>
+				<texture colordiffuse="$VAR[AG_Line]">common/white.png</texture>
+				<visible>!$PARAM[focused] | !Control.HasFocus($PARAM[id])</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="AG_Scrollbar">
+		<param name="onleft">noop</param>
+		<param name="onright">noop</param>
+		<param name="onback">noop</param>
+		<param name="visible">true</param>
+		<param name="showonepage">true</param>
+		<definition>
+			<include content="AG_ScrollbarFGS" condition="$EXP[FGS]"><param name="id" value="$PARAM[id]"/><param name="left" value="$PARAM[left]"/><param name="top" value="$PARAM[top]"/><param name="height" value="$PARAM[height]"/><param name="onleft" value="$PARAM[onleft]"/><param name="onright" value="$PARAM[onright]"/><param name="onback" value="$PARAM[onback]"/><param name="visible" value="$PARAM[visible]"/><param name="showonepage" value="$PARAM[showonepage]"/></include>
+			<include content="AG_ScrollbarRound" condition="!$EXP[FGS]"><param name="id" value="$PARAM[id]"/><param name="left" value="$PARAM[left]"/><param name="top" value="$PARAM[top]"/><param name="height" value="$PARAM[height]"/><param name="onleft" value="$PARAM[onleft]"/><param name="onright" value="$PARAM[onright]"/><param name="onback" value="$PARAM[onback]"/><param name="visible" value="$PARAM[visible]"/><param name="showonepage" value="$PARAM[showonepage]"/></include>
+		</definition>
+	</include>
+	<include name="AG_ScrollbarRound">
+		<param name="onleft">noop</param>
+		<param name="onright">noop</param>
+		<param name="onback">noop</param>
+		<param name="visible">true</param>
+		<param name="showonepage">true</param>
+		<definition>
+			<control type="scrollbar" id="$PARAM[id]">
+				<visible>$PARAM[visible]</visible>
+				<showonepage>$PARAM[showonepage]</showonepage>
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<width>6</width>
+				<height>$PARAM[height]</height>
+				<texturesliderbackground border="3" colordiffuse="$VAR[AG_Line]">aeon/track_8.png</texturesliderbackground>
+				<texturesliderbar border="3" colordiffuse="$VAR[AG_Line2]">aeon/track_8.png</texturesliderbar>
+				<texturesliderbarfocus border="3" colordiffuse="$VAR[Aeon_SBFocus]">aeon/track_8.png</texturesliderbarfocus>
+				<onleft>$PARAM[onleft]</onleft>
+				<onright>$PARAM[onright]</onright>
+				<onback>$PARAM[onback]</onback>
+				<orientation>vertical</orientation>
+			</control>
+		</definition>
+	</include>
+	<!-- 0.56.53 the scroll bar gutter (Fused Glass style): two lines 20 apart around the old bar, the square bar between -->
+	<include name="AG_ScrollbarFGS">
+		<param name="onleft">noop</param>
+		<param name="onright">noop</param>
+		<param name="onback">noop</param>
+		<param name="visible">true</param>
+		<param name="showonepage">true</param>
+		<definition>
+			<control type="group">
+				<left>$PARAM[left]</left>
+				<top>$PARAM[top]</top>
+				<visible>$PARAM[visible]</visible>
+				<control type="image"><left>-7</left><top>0</top><width>1</width><height>$PARAM[height]</height><texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture></control>
+				<control type="image"><left>13</left><top>0</top><width>1</width><height>$PARAM[height]</height><texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture></control>
+				<control type="scrollbar" id="$PARAM[id]">
+					<showonepage>$PARAM[showonepage]</showonepage>
+					<left>-6</left>
+					<top>0</top>
+					<width>19</width>
+					<height>$PARAM[height]</height>
+					<include>FGS_SBTex</include>
+					<textureslidernib /><textureslidernibfocus />
+					<onleft>$PARAM[onleft]</onleft>
+					<onright>$PARAM[onright]</onright>
+					<onback>$PARAM[onback]</onback>
+					<orientation>vertical</orientation>
+				</control>
+			</control>
+		</definition>
+	</include>
+
+	<!-- ============================================================ right-hand playback panel -->
+	<!-- Full-screen dim over the paused frame + the 720px panel with its left hairline.
+	     Place at window level (absolute coords). -->
+	<include name="Dlg_SidePanelFrame">
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>screen_w</width>
+			<height>screen_h</height>
+			<!-- own fades: without them Kodi draws this dim over the dialog (seen on Shield 2026-10-18) -->
+			<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+			<texture colordiffuse="$VAR[AG_DimDialog]">common/white.png</texture>
+		</control>
+		<control type="group">
+			<left>dlg_panel_x</left>
+			<include content="Anim_SidePanel"><param name="offset" value="80"/></include>
+			<control type="group">
+				<!-- Fused Glass (0.54.4): a floating card like the OSD settings panel (load time) -->
+				<include condition="Skin.HasSetting(aeon.fglass)">Dlg_SidePanelCard_fg</include>
+				<include condition="!Skin.HasSetting(aeon.fglass)">Dlg_SidePanelCard</include>
+				<include content="AG_Card">
+					<param name="color" value="$VAR[AG_Panel]"/>
+				</include>
+			</control>
+		</control>
+	</include>
+
+	<!-- ============================================================ DialogSelect -->
+	<!-- Centred select (id contract from Estuary Omega Includes_DialogSelect.xml: heading 1,
+	     list 3 simple / 6 detailed, scrollbar 61, buttons 5 / 8 / 7 (cancel) in grouplist 9001). -->
+	<include name="Dlg_SelectCentred">
+		<control type="group">
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>1120</width>
+			<height>800</height>
+			<animation effect="slide" end="0,170" time="0" condition="Control.IsVisible(3) + !Integer.IsGreater(Container(3).NumItems,4)">Conditional</animation>
+			<animation effect="slide" end="0,136" time="0" condition="Control.IsVisible(3) + Integer.IsEqual(Container(3).NumItems,5)">Conditional</animation>
+			<animation effect="slide" end="0,102" time="0" condition="Control.IsVisible(3) + Integer.IsEqual(Container(3).NumItems,6)">Conditional</animation>
+			<animation effect="slide" end="0,68" time="0" condition="Control.IsVisible(3) + Integer.IsEqual(Container(3).NumItems,7)">Conditional</animation>
+			<animation effect="slide" end="0,34" time="0" condition="Control.IsVisible(3) + Integer.IsEqual(Container(3).NumItems,8)">Conditional</animation>
+			<include content="AG_GenericDialog">
+				<param name="width" value="1120"/>
+				<param name="height" value="800"/>
+				<param name="header_id" value="1"/>
+				<param name="kicker" value="$VAR[Dlg_SelectPosition]"/>
+				<param name="card_visible" value="!Control.IsVisible(3) | Integer.IsGreater(Container(3).NumItems,8)"/>
+			</include>
+			<!-- 0.56.20 fuse_survey2: the card follows the rows (4 to 8; 9 and more: the 800 card) -->
+			<control type="group"><left>0</left><top>0</top><width>1120</width><height>460</height><animation effect="fade" start="0" end="100" time="200">WindowOpen</animation><animation effect="fade" start="100" end="0" time="150">WindowClose</animation><include>AG_Card</include><visible>Control.IsVisible(3) + !Integer.IsGreater(Container(3).NumItems,4)</visible></control>
+			<control type="group"><left>0</left><top>0</top><width>1120</width><height>528</height><animation effect="fade" start="0" end="100" time="200">WindowOpen</animation><animation effect="fade" start="100" end="0" time="150">WindowClose</animation><include>AG_Card</include><visible>Control.IsVisible(3) + Integer.IsEqual(Container(3).NumItems,5)</visible></control>
+			<control type="group"><left>0</left><top>0</top><width>1120</width><height>596</height><animation effect="fade" start="0" end="100" time="200">WindowOpen</animation><animation effect="fade" start="100" end="0" time="150">WindowClose</animation><include>AG_Card</include><visible>Control.IsVisible(3) + Integer.IsEqual(Container(3).NumItems,6)</visible></control>
+			<control type="group"><left>0</left><top>0</top><width>1120</width><height>664</height><animation effect="fade" start="0" end="100" time="200">WindowOpen</animation><animation effect="fade" start="100" end="0" time="150">WindowClose</animation><include>AG_Card</include><visible>Control.IsVisible(3) + Integer.IsEqual(Container(3).NumItems,7)</visible></control>
+			<control type="group"><left>0</left><top>0</top><width>1120</width><height>732</height><animation effect="fade" start="0" end="100" time="200">WindowOpen</animation><animation effect="fade" start="100" end="0" time="150">WindowClose</animation><include>AG_Card</include><visible>Control.IsVisible(3) + Integer.IsEqual(Container(3).NumItems,8)</visible></control>
+
+			<control type="list" id="3">
+				<left>0</left>
+				<top>dialog_content_top</top>
+				<width>792</width>
+				<height>612</height>  <!-- 9 rows of 68 (audit 2026-10-30): at 640 a tenth row showed cut in half at the bottom -->
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<onleft>9001</onleft>
+				<onright condition="Control.IsVisible(61)">61</onright><onright condition="!Control.IsVisible(61)">9001</onright>
+				<pagecontrol>61</pagecontrol>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<!-- palette picker: every row in its own palette's colours (script.aeon.helper palette.py sets the pal.* properties) -->
+				<itemlayout width="792" height="68" condition="!String.IsEmpty(Window(Home).Property(aeon.palpick))">
+					<control type="image"><left>8</left><top>5</top><width>776</width><height>58</height><texture border="20" colordiffuse="$INFO[ListItem.Property(pal.ground)]">aeon/card_menu.png</texture></control>
+					<control type="image"><left>30</left><top>22</top><width>24</width><height>24</height><texture colordiffuse="$INFO[ListItem.Property(pal.swatch)]">aeon/circle_24.png</texture></control>
+					<control type="label"><left>74</left><top>5</top><width>620</width><height>58</height><aligny>center</aligny><font>ui_24_semibold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>[COLOR $INFO[ListItem.Property(pal.ink)]]$INFO[ListItem.Label][/COLOR]</label></control>
+					<control type="image"><left>732</left><top>22</top><width>24</width><height>24</height><texture colordiffuse="$INFO[ListItem.Property(pal.ink)]">markers/check.png</texture><visible>!String.IsEmpty(ListItem.Property(pal.current))</visible></control>
+				</itemlayout>
+				<focusedlayout width="792" height="68" condition="!String.IsEmpty(Window(Home).Property(aeon.palpick))">
+					<control type="image"><left>8</left><top>5</top><width>776</width><height>58</height><texture border="20" colordiffuse="$INFO[ListItem.Property(pal.ground)]">aeon/card_menu.png</texture><visible>!Control.HasFocus(3)</visible></control>
+					<control type="image"><left>8</left><top>5</top><width>776</width><height>58</height><texture border="20" colordiffuse="$INFO[ListItem.Property(pal.bar)]">aeon/card_menu.png</texture><visible>Control.HasFocus(3)</visible></control>
+					<control type="image"><left>30</left><top>22</top><width>24</width><height>24</height><texture colordiffuse="$INFO[ListItem.Property(pal.swatch)]">aeon/circle_24.png</texture><visible>!Control.HasFocus(3)</visible></control>
+					<control type="image"><left>30</left><top>22</top><width>24</width><height>24</height><texture colordiffuse="$INFO[ListItem.Property(pal.barink)]">aeon/circle_24.png</texture><visible>Control.HasFocus(3)</visible></control>
+					<control type="label"><left>74</left><top>5</top><width>620</width><height>58</height><aligny>center</aligny><font>ui_24_semibold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>[COLOR $INFO[ListItem.Property(pal.ink)]]$INFO[ListItem.Label][/COLOR]</label><visible>!Control.HasFocus(3)</visible></control>
+					<control type="label"><left>74</left><top>5</top><width>620</width><height>58</height><aligny>center</aligny><font>ui_24_semibold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>[COLOR $INFO[ListItem.Property(pal.barink)]]$INFO[ListItem.Label][/COLOR]</label><visible>Control.HasFocus(3)</visible></control>
+					<control type="image"><left>732</left><top>22</top><width>24</width><height>24</height><texture colordiffuse="$INFO[ListItem.Property(pal.barink)]">markers/check.png</texture><visible>!String.IsEmpty(ListItem.Property(pal.current)) + Control.HasFocus(3)</visible></control>
+					<control type="image"><left>732</left><top>22</top><width>24</width><height>24</height><texture colordiffuse="$INFO[ListItem.Property(pal.ink)]">markers/check.png</texture><visible>!String.IsEmpty(ListItem.Property(pal.current)) + !Control.HasFocus(3)</visible></control>
+				</focusedlayout>
+				<include content="AG_ListLayout">
+					<param name="width" value="792"/>
+					<param name="height" value="dialog_row_h"/>
+					<param name="list_id" value="3"/>
+				</include>
+			</control>
+			<!-- detailed rows; the Home menu icon picker (script.aeon.helper icon, Home property aeon.iconpick) gets a grid instead.
+			     Include conditions: Kodi reloads the dialog when they change, so each opening gets the right one. -->
+			<include condition="String.IsEmpty(Window(Home).Property(aeon.iconpick))">Dlg_SelectDetailList</include>
+			<include condition="!String.IsEmpty(Window(Home).Property(aeon.iconpick))">Dlg_SelectIconGrid</include>
+			<!-- empty state (Kodi then focuses the buttons) -->
+			<control type="label">
+				<left>64</left>
+				<top>dialog_content_top</top>
+				<width>700</width>
+				<height>dialog_row_h</height>
+				<font>cap_20</font>
+				<textcolor>$VAR[AG_Ink3]</textcolor>
+				<label>$LOCALIZE[31226]</label>
+				<visible>[Control.IsVisible(3) + Integer.IsEqual(Container(3).NumItems,0)] | [Control.IsVisible(6) + Integer.IsEqual(Container(6).NumItems,0)]</visible>
+			</control>
+			<!-- scroll bar: Right from the list reaches it (quick paging through a long list), Left goes back, Right on to the buttons -->
+			<control type="scrollbar" id="61">
+				<left>798</left>
+				<top>dialog_content_top</top>
+				<width>10</width>
+				<height>612</height>
+				<texturesliderbackground border="3" colordiffuse="$VAR[AG_Line]">aeon/track_8.png</texturesliderbackground>
+				<texturesliderbar border="3" colordiffuse="$VAR[AG_Line2]">aeon/track_8.png</texturesliderbar>
+				<texturesliderbarfocus border="3" colordiffuse="$VAR[Aeon_SBFocus]">aeon/track_8.png</texturesliderbarfocus>
+				<onleft condition="Control.IsVisible(3)">3</onleft>
+				<onleft condition="Control.IsVisible(6)">6</onleft>
+				<onright>9001</onright>
+				<orientation>vertical</orientation>
+				<showonepage>false</showonepage>
+			</control>
+			<control type="grouplist" id="9001">
+				<animation effect="slide" end="16,0" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation>
+				<left>820</left>
+				<top>dialog_content_top</top>
+				<width>276</width>
+				<height>400</height>
+				<orientation>vertical</orientation>
+				<itemgap>12</itemgap>
+				<onleft condition="Control.IsVisible(61)">61</onleft>
+				<onleft condition="!Control.IsVisible(61) + Control.IsVisible(3)">3</onleft>
+				<onleft condition="!Control.IsVisible(61) + Control.IsVisible(6)">6</onleft>
+				<onright condition="Control.IsVisible(3)">3</onright>
+				<onright condition="Control.IsVisible(6)">6</onright>
+				<onup>9001</onup>
+				<ondown>9001</ondown>
+				<include content="AG_DialogButton">
+					<param name="id" value="5"/>
+					<param name="width" value="276"/>
+				</include>
+				<include content="AG_DialogButton">
+					<param name="id" value="8"/>
+					<param name="width" value="276"/>
+				</include>
+				<include content="AG_DialogButton">
+					<param name="id" value="7"/>
+					<param name="label" value="$LOCALIZE[222]"/>
+					<param name="width" value="276"/>
+				</include>
+			</control>
+		</control>
+	</include>
+	<include name="Dlg_SelectDetailList">
+		<control type="list" id="6">
+			<left>0</left>
+			<top>dialog_content_top</top>
+			<width>792</width>
+			<height>636</height>
+			<onup>6</onup>
+			<ondown>6</ondown>
+			<onleft>9001</onleft>
+			<onright condition="Control.IsVisible(61)">61</onright><onright condition="!Control.IsVisible(61)">9001</onright>
+			<pagecontrol>61</pagecontrol>
+			<scrolltime tween="cubic" easing="out">200</scrolltime>
+			<itemlayout width="792" height="106">
+				<control type="image"><left>0</left><top>0</top><right>0</right><bottom>0</bottom><texture border="20" colordiffuse="10ffffff">aeon/card_row.png</texture><visible>$EXP[Aeon_Fused]</visible></control>
+				<control type="image">
+					<left>0</left>
+					<bottom>0</bottom>
+					<width>792</width>
+					<height>rule_h</height>
+					<texture colordiffuse="30ffffff">common/hairline.png</texture>
+				<visible>!$EXP[Aeon_Fused]</visible></control>
+				<include>Dlg_SelectDetailRow</include>
+			</itemlayout>
+			<focusedlayout width="792" height="106">
+				<control type="image"><left>0</left><top>0</top><right>0</right><bottom>0</bottom><texture border="20" colordiffuse="10ffffff">aeon/card_row.png</texture><visible>$EXP[Aeon_Fused]</visible></control>
+				<control type="image">
+					<left>0</left>
+					<bottom>0</bottom>
+					<width>792</width>
+					<height>rule_h</height>
+					<texture colordiffuse="30ffffff">common/hairline.png</texture>
+				<visible>!$EXP[Aeon_Fused]</visible></control>
+<include content="Dlg_RowFocus">
+					<param name="list_id" value="6"/>
+					<param name="width" value="792"/>
+					<param name="height" value="106"/>
+				</include>
+				<include content="Dlg_SelectDetailRow">
+					<param name="focused" value="true"/>
+					<param name="list_id" value="6"/>
+				</include>
+			</focusedlayout>
+		</control>
+	</include>
+	<!-- icon picker: 6 x 4 tiles of 132 x 159, the icon (64) over its name; the current one has a check -->
+	<include name="Dlg_SelectIconGrid">
+		<control type="panel" id="6">
+			<left>0</left>
+			<top>dialog_content_top</top>
+			<width>792</width>
+			<height>636</height>
+			<onup>6</onup>
+			<ondown>6</ondown>
+			<onleft>9001</onleft>
+			<onright condition="Control.IsVisible(61)">61</onright><onright condition="!Control.IsVisible(61)">9001</onright>
+			<pagecontrol>61</pagecontrol>
+			<orientation>vertical</orientation>
+			<scrolltime tween="cubic" easing="out">200</scrolltime>
+			<itemlayout width="132" height="159">
+				<control type="image"><left>4</left><top>4</top><width>124</width><height>151</height><texture border="20" colordiffuse="0cffffff">$VAR[Aeon_MenuRowTex]</texture></control>
+				<control type="image"><left>34</left><top>26</top><width>64</width><height>64</height><aspectratio>keep</aspectratio><texture background="true">$VAR[Dlg_SelIcon]</texture></control>
+				<control type="label"><left>8</left><top>104</top><width>116</width><height>34</height><align>center</align><aligny>center</aligny><font>small_20</font><textcolor>$VAR[AG_Ink2]</textcolor><selectedcolor>$VAR[AG_Ink2]</selectedcolor><label>$INFO[ListItem.Label]</label></control>
+				<control type="image"><right>10</right><top>10</top><width>24</width><height>24</height><texture colordiffuse="$VAR[AG_Accent]">markers/check.png</texture><visible>ListItem.IsSelected</visible></control>
+			</itemlayout>
+			<focusedlayout width="132" height="159">
+				<control type="image"><left>4</left><top>4</top><width>124</width><height>151</height><texture border="20" colordiffuse="0cffffff">$VAR[Aeon_MenuRowTex]</texture><visible>!Control.HasFocus(6)</visible></control>
+				<control type="image"><left>4</left><top>4</top><width>124</width><height>151</height><texture border="20" colordiffuse="$VAR[Aeon_MenuFocusColR]">$VAR[Aeon_MenuFocusRowTex]</texture><visible>Control.HasFocus(6)</visible></control>
+				<control type="image"><left>34</left><top>26</top><width>64</width><height>64</height><aspectratio>keep</aspectratio><texture background="true">$VAR[Dlg_SelIcon]</texture><visible>!Control.HasFocus(6)</visible></control>
+				<!-- on the focus tile the (mostly white) icons take the bar's ink -->
+				<control type="image"><left>34</left><top>26</top><width>64</width><height>64</height><aspectratio>keep</aspectratio><texture background="true" colordiffuse="$VAR[Aeon_OnBarIcon]">$VAR[Dlg_SelIcon]</texture><visible>Control.HasFocus(6)</visible></control>
+				<control type="label"><left>8</left><top>104</top><width>116</width><height>34</height><align>center</align><aligny>center</aligny><font>small_20</font><textcolor>$VAR[AG_Ink]</textcolor><selectedcolor>$VAR[AG_Ink]</selectedcolor><scroll>true</scroll><label>$INFO[ListItem.Label]</label><visible>!Control.HasFocus(6)</visible></control>
+				<control type="label"><left>8</left><top>104</top><width>116</width><height>34</height><align>center</align><aligny>center</aligny><font>small_20</font><textcolor>$VAR[Aeon_OnBarInk]</textcolor><selectedcolor>$VAR[Aeon_OnBarInk]</selectedcolor><scroll>true</scroll><label>$INFO[ListItem.Label]</label><visible>Control.HasFocus(6)</visible></control>
+				<control type="image"><right>10</right><top>10</top><width>24</width><height>24</height><texture colordiffuse="$VAR[Aeon_OnBarIcon]">markers/check.png</texture><visible>ListItem.IsSelected + Control.HasFocus(6)</visible></control>
+				<control type="image"><right>10</right><top>10</top><width>24</width><height>24</height><texture colordiffuse="$VAR[AG_Accent]">markers/check.png</texture><visible>ListItem.IsSelected + !Control.HasFocus(6)</visible></control>
+			</focusedlayout>
+		</control>
+	</include>
+	<include name="Dlg_SelectDetailRow">
+		<param name="focused">false</param>
+		<param name="list_id">0</param>
+		<definition>
+			<control type="image">
+				<left>dlg_row_pad</left>
+				<top>13</top>
+				<width>80</width>
+				<height>80</height>
+				<aspectratio>keep</aspectratio>
+				<texture background="true">$VAR[ListItemArt]</texture>
+				<visible>![$PARAM[focused] + Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(aeon.vglass) + [String.Contains(ListItem.Icon,aeon_mi_) | String.Contains(ListItem.Art(thumb),aeon_mi_)]]</visible>
+			</control>
+			<!-- the skin's white outline icons turn dark on the white focus bar -->
+			<control type="image">
+				<left>dlg_row_pad</left>
+				<top>13</top>
+				<width>80</width>
+				<height>80</height>
+				<aspectratio>keep</aspectratio>
+				<texture background="true" colordiffuse="aeon_onbar">$VAR[ListItemArt]</texture>
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(aeon.vglass) + [String.Contains(ListItem.Icon,aeon_mi_) | String.Contains(ListItem.Art(thumb),aeon_mi_)]</visible>
+			</control>
+			<control type="image">
+				<right>dlg_row_pad</right>
+				<top>42</top>
+				<width>dlg_check</width>
+				<height>dlg_check</height>
+				<texture colordiffuse="$VAR[AG_Accent]">markers/check.png</texture>
+				<visible>[ListItem.IsSelected] + [!$PARAM[focused] | !Control.HasFocus($PARAM[list_id])]</visible>
+			</control>
+			<control type="image">
+				<right>dlg_row_pad</right>
+				<top>42</top>
+				<width>dlg_check</width>
+				<height>dlg_check</height>
+				<texture colordiffuse="$VAR[Aeon_OnBarIcon]">markers/check.png</texture>
+				<visible>[ListItem.IsSelected] + $PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
+			</control>
+			<control type="label">
+				<left>116</left>
+				<top>14</top>
+				<right>56</right>
+				<height>40</height>
+				<font>ui_24_semibold</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<selectedcolor>$VAR[AG_Ink]</selectedcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>[!$PARAM[focused] | !Control.HasFocus($PARAM[list_id])]</visible>
+			</control>
+			<control type="label">
+				<left>116</left>
+				<top>14</top>
+				<right>56</right>
+				<height>40</height>
+				<font>ui_24_semibold</font>
+				<textcolor>$VAR[Aeon_OnBarInk]</textcolor>
+				<selectedcolor>$VAR[Aeon_OnBarInk]</selectedcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
+			</control>
+			<control type="label">
+				<left>116</left>
+				<top>56</top>
+				<right>56</right>
+				<height>34</height>
+				<font>small_20</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<selectedcolor>$VAR[AG_Ink2]</selectedcolor>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>[!$PARAM[focused] | !Control.HasFocus($PARAM[list_id])]</visible>
+			</control>
+			<control type="label">
+				<left>116</left>
+				<top>56</top>
+				<right>56</right>
+				<height>34</height>
+				<font>small_20</font>
+				<textcolor>$VAR[Aeon_OnBarInk]</textcolor>
+				<selectedcolor>$VAR[Aeon_OnBarInk]</selectedcolor>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
+			</control>
+		</definition>
+	</include>
+
+	<!-- Right-hand track picker (mockups/Tracks) for selects over fullscreen video.
+	     Same id contract; adds Aeon buttons 9101 (download subtitles) / 9102 (subtitle settings)
+	     in grouplist 9100 when the list came from the OSD subtitle settings. -->
+	<include name="Dlg_SelectPanel">
+		<include>Dlg_SidePanelFrame</include>
+		<!-- what's playing, bottom-left over the dimmed frame -->
+		<control type="group">
+			<left>page_margin</left>
+			<top>874</top>
+			<width>1000</width>
+			<include>Anim_FadeVisible</include>
+			<control type="label">
+				<left>0</left>
+				<top>0</top>
+				<width>1000</width>
+				<height>24</height>
+				<font>cap_20</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<label>$VAR[Dlg_PlayState]</label>
+			</control>
+			<control type="label">
+				<left>0</left>
+				<top>34</top>
+				<width>1000</width>
+				<height>60</height>
+				<font>hd_font45_title</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<label>$VAR[Dlg_PlayTitle]</label>
+			</control>
+		</control>
+		<control type="group">
+			<left>dlg_panel_x</left>
+			<include content="Anim_SidePanel"><param name="offset" value="80"/></include>
+			<control type="label">
+				<description>kicker</description>
+				<include condition="Skin.HasSetting(aeon.fglass)">Dlg_PanelCol_fg</include>
+				<include condition="!Skin.HasSetting(aeon.fglass)">Dlg_PanelCol</include>
+				<top>dlg_panel_top</top>
+				<height>20</height>
+				<font>cap_20</font>
+				<textcolor>$VAR[AG_Accent]</textcolor>
+				<label>$VAR[Dlg_SelectKicker]</label>
+			</control>
+			<control type="label" id="1">
+				<description>heading (Kodi)</description>
+				<include condition="Skin.HasSetting(aeon.fglass)">Dlg_PanelCol_fg</include>
+				<include condition="!Skin.HasSetting(aeon.fglass)">Dlg_PanelCol</include>
+				<top>94</top>
+				<height>56</height>
+				<font>hd_font45_title</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+			</control>
+			<control type="image">
+				<include condition="Skin.HasSetting(aeon.fglass)">Dlg_PanelCol_fg</include>
+				<include condition="!Skin.HasSetting(aeon.fglass)">Dlg_PanelCol</include>
+				<top>176</top>
+				<height>rule_h</height>
+				<texture colordiffuse="30ffffff">common/hairline.png</texture>
+			</control>
+			<control type="list" id="3">
+				<include condition="Skin.HasSetting(aeon.fglass)">Dlg_TrackListGeo_fg</include>
+				<include condition="!Skin.HasSetting(aeon.fglass)">Dlg_TrackListGeo</include>
+				<top>177</top>
+				<height>754</height>
+				<onup>9100</onup>
+				<ondown>9100</ondown>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+				<pagecontrol>61</pagecontrol>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<include content="Dlg_TrackListLayout" condition="!Skin.HasSetting(aeon.fglass)"><param name="list_id" value="3"/></include><include content="Dlg_TrackListLayout_fg" condition="Skin.HasSetting(aeon.fglass)"><param name="list_id" value="3"/></include>
+			</control>
+			<control type="list" id="6">
+				<include condition="Skin.HasSetting(aeon.fglass)">Dlg_TrackListGeo_fg</include>
+				<include condition="!Skin.HasSetting(aeon.fglass)">Dlg_TrackListGeo</include>
+				<top>177</top>
+				<height>754</height>
+				<onup>9100</onup>
+				<ondown>9100</ondown>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+				<pagecontrol>61</pagecontrol>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<include content="Dlg_TrackListLayout" condition="!Skin.HasSetting(aeon.fglass)"><param name="list_id" value="6"/></include><include content="Dlg_TrackListLayout_fg" condition="Skin.HasSetting(aeon.fglass)"><param name="list_id" value="6"/></include>
+			</control>
+			<control type="label">
+				<include condition="Skin.HasSetting(aeon.fglass)">Dlg_PanelCol_fg</include>
+				<include condition="!Skin.HasSetting(aeon.fglass)">Dlg_PanelCol</include>
+				<top>177</top>
+				<height>dlg_track_row_h</height>
+				<textoffsetx>56</textoffsetx>
+				<font>cap_20</font>
+				<textcolor>$VAR[AG_Ink3]</textcolor>
+				<label>$LOCALIZE[31226]</label>
+				<visible>[Control.IsVisible(3) + Integer.IsEqual(Container(3).NumItems,0)] | [Control.IsVisible(6) + Integer.IsEqual(Container(6).NumItems,0)]</visible>
+			</control>
+			<control type="scrollbar" id="61">
+				<left>646</left>
+				<animation effect="slide" end="57,0" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation>
+				<top>177</top>
+				<width>2</width>
+				<height>754</height>
+				<texturesliderbackground colordiffuse="$VAR[AG_Surface]">common/white.png</texturesliderbackground>
+				<texturesliderbar colordiffuse="$VAR[AG_Line2]">common/white.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="$VAR[Aeon_SBFocus]">common/white.png</texturesliderbarfocus>
+				<orientation>vertical</orientation>
+			</control>
+			<control type="grouplist" id="9100">
+				<include condition="Skin.HasSetting(aeon.fglass)">Dlg_PanelCol_fg</include>
+				<include condition="!Skin.HasSetting(aeon.fglass)">Dlg_PanelCol</include>
+				<top>964</top>
+				<height>dlg_btn_h</height>
+				<orientation>horizontal</orientation>
+				<itemgap>14</itemgap>
+				<onleft>9100</onleft>
+				<onright>9100</onright>
+				<onup condition="Control.IsVisible(3)">3</onup>
+				<onup condition="Control.IsVisible(6)">6</onup>
+				<ondown condition="Control.IsVisible(3)">3</ondown>
+				<ondown condition="Control.IsVisible(6)">6</ondown>
+				<include content="AG_DialogButton">
+					<param name="id" value="9101"/>
+					<param name="label" value="$LOCALIZE[31510]"/>
+					<param name="width" value="281"/>
+					<param name="height" value="dlg_btn_h"/>
+					<param name="onclick" value="Dialog.Close(selectdialog)"/>
+					<param name="onclick2" value="ActivateWindow(SubtitleSearch)"/>
+					<param name="visible" value="$EXP[Dlg_FromSubtitleSettings]"/>
+				</include>
+				<include content="AG_DialogButton">
+					<param name="id" value="9102"/>
+					<param name="label" value="$LOCALIZE[31511]"/>
+					<param name="width" value="281"/>
+					<param name="height" value="dlg_btn_h"/>
+					<param name="onclick" value="Dialog.Close(selectdialog)"/>
+					<param name="visible" value="$EXP[Dlg_FromSubtitleSettings]"/>
+				</include>
+				<include content="AG_DialogButton">
+					<param name="id" value="5"/>
+					<param name="width" value="181"/>
+					<param name="height" value="dlg_btn_h"/>
+				</include>
+				<include content="AG_DialogButton">
+					<param name="id" value="8"/>
+					<param name="width" value="181"/>
+					<param name="height" value="dlg_btn_h"/>
+				</include>
+				<include content="AG_DialogButton">
+					<param name="id" value="7"/>
+					<param name="label" value="$LOCALIZE[222]"/>
+					<param name="width" value="181"/>
+					<param name="height" value="dlg_btn_h"/>
+					<param name="visible" value="!$EXP[Dlg_FromSubtitleSettings]"/>
+				</include>
+			</control>
+		</control>
+	</include>
+
+	<!-- Mono sub-nav radio (add-on browser filters): same look as AG_SubNavButton - accent fill +
+	     ink on focus - with a small check / box on the right. -->
+	<include name="Dlg_SubNavRadio">
+		<width>380</width>
+		<height>subnav_h</height>
+		<font>cap_20</font>
+		<textcolor>$VAR[AG_Ink2]</textcolor>
+		<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+		<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+		<textoffsetx>12</textoffsetx>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
+		<include>Aeon_TexRowFocus</include>
+		<texturenofocus />
+		<radiowidth>18</radiowidth>
+		<radioheight>18</radioheight>
+		<radioposx>350</radioposx>
+		<textureradioonfocus colordiffuse="$VAR[Aeon_OnBarInk]">markers/check.png</textureradioonfocus>
+		<textureradioonnofocus colordiffuse="$VAR[AG_Accent]">markers/check.png</textureradioonnofocus>
+		<textureradioofffocus border="10" colordiffuse="$VAR[Aeon_OnBarInk]">common/rect_outline_1.png</textureradioofffocus>
+		<textureradiooffnofocus border="10" colordiffuse="$VAR[AG_Line2]">common/rect_outline_1.png</textureradiooffnofocus>
+	</include>
+
+	<!-- ============================================================ toasts -->
+	<!-- Toast panel (notification / background progress): bg + hairline frame, no accent bar.
+	     params: height -->
+	<include name="AG_ToastFrame">
+		<param name="height">104</param>
+		<definition>
+			<control type="group">
+				<left>0</left>
+				<top>0</top>
+				<width>toast_w</width>
+				<height>$PARAM[height]</height>
+				<include>AG_Card</include>
+			</control>
+		</definition>
+	</include>
+
+	<!-- ============================================================ keyboard keys -->
+	<!-- On-screen keyboard / numeric keys. Kodi writes the key labels. 1px outline at rest,
+	     accent fill + ink on focus; corners follow the setting (picked at window load). -->
+	<include name="AG_KeyboardKey">
+		<font>ui_26</font>
+		<textcolor>99ffffff</textcolor>
+		<focusedcolor>$VAR[Aeon_AccentText]</focusedcolor>
+		<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+		<textoffsetx>0</textoffsetx>
+		<pulseonselect>false</pulseonselect>
+		<include condition="true">Dlg_Tex_Key_Round</include>
+		<include condition="false">Dlg_Tex_Key_Square</include>
+	</include>
+	<include name="AG_KeyboardFunc">
+		<font>cap_20</font>
+		<textcolor>$VAR[AG_Ink2]</textcolor>
+		<focusedcolor>$VAR[Aeon_AccentText]</focusedcolor>
+		<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+		<align>center</align>
+		<aligny>center</aligny>
+		<textoffsetx>0</textoffsetx>
+		<pulseonselect>false</pulseonselect>
+		<include condition="true">Dlg_Tex_Key_Round</include>
+		<include condition="false">Dlg_Tex_Key_Square</include>
+	</include>
+	<include name="Dlg_Tex_Key_Square">
+		<texturefocus border="10" colordiffuse="$VAR[AG_Accent]">common/rect_square.png</texturefocus>
+		<texturenofocus border="10" colordiffuse="$VAR[AG_Line2]">common/rect_outline_1.png</texturenofocus>
+	</include>
+	<!-- 0.56.20 misc d: Aeon Glass and the Fuse menu theme focus a rounded key -->
+	<include name="Dlg_Tex_Key_Fu">
+		<texturefocus border="12" colordiffuse="$VAR[AG_Accent]">fg/r12.png</texturefocus>
+		<texturenofocus colordiffuse="00ffffff">common/white.png</texturenofocus>
+	</include>
+	<include name="Dlg_Tex_Key_Round">
+		<include condition="Skin.HasSetting(aeon.fglass)">Dlg_Tex_Key_FG</include>
+		<include condition="!Skin.HasSetting(aeon.fglass) + [Skin.HasSetting(aeon.vglass) | $EXP[Aeon_Fused]]">Dlg_Tex_Key_Fu</include>
+		<include condition="!Skin.HasSetting(aeon.fglass) + ![!Skin.HasSetting(aeon.fglass) + [Skin.HasSetting(aeon.vglass) | $EXP[Aeon_Fused]]]">Dlg_Tex_Key_Plain</include>
+	</include>
+	<include name="Dlg_Tex_Key_Plain">
+		<texturefocus colordiffuse="$VAR[AG_Accent]">common/white.png</texturefocus>
+		<texturenofocus colordiffuse="00ffffff">common/white.png</texturenofocus>
+	</include>
+	<!-- 0.53.2 Fused Glass: rounded keys on the rounded keyboard card (_src/fg_keyboard.py) -->
+	<include name="Dlg_Tex_Key_FG">
+		<texturefocus border="14" colordiffuse="$VAR[AG_Accent]">fg/r14.png</texturefocus>
+		<texturenofocus colordiffuse="00ffffff">common/white.png</texturenofocus>
+	</include>
+	<!-- Context menu outside the Aeon theme's menu styles (Glass, Fuse, Fused Glass): moved here from DialogContextMenu.xml -->
+	<expression name="Ctx_ViewRowVis">!Skin.HasSetting(aeon.kiosk) + [Window.IsActive(videos) | Window.IsActive(music)] + [String.IsEqual(Control.GetLabel(1001),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1001),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1002),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1002),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1003),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1003),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1004),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1004),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1005),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1005),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1006),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1006),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1007),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1007),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1008),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1008),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1009),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1009),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1010),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1010),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1011),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1011),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1012),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1012),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1013),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1013),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1014),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1014),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1015),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1015),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1016),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1016),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1017),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1017),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1018),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1018),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1019),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1019),$LOCALIZE[14077]) | String.IsEqual(Control.GetLabel(1020),$LOCALIZE[14076]) | String.IsEqual(Control.GetLabel(1020),$LOCALIZE[14077])]</expression>
+		<!-- context menu row width (0.54.3): Fused Glass 548 (6 px in from each card edge), the other looks 560 -->
+	<include name="Ctx_RowW_fg"><width>548</width></include>
+	<!-- 0.56.20 fuse_survey: the rows of Fused Glass (inset pill) for Aeon Glass + Fuse too; Aeon Glass's focused text dark on its white bar -->
+	<expression name="Ctx_PillRows">$EXP[Aeon_FGlass] | [Skin.HasSetting(aeon.vglass) + $EXP[Aeon_Fused]]</expression>
+	<include name="Ctx_InkGlass"><focusedcolor>aeon_onbar</focusedcolor></include>
+	<include name="Ctx_RowW"><width>560</width></include>
+<include name="Ctx_Classic">
+		<control type="group">
+			<description>the menu</description>
+			<control type="image">
+				<left>-1920</left>
+				<top>-1080</top>
+				<width>5760</width>
+				<height>3240</height>
+				<!-- own fades: without them Kodi draws this dim over the dialog (seen on Shield 2026-10-18) -->
+				<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+				<texture colordiffuse="$VAR[AG_DimDialog]">common/white.png</texture>
+			</control>
+			<!-- centred: 560 wide; one row (64 + 16 padding) sits on the screen centre and every extra button
+			     Kodi clones (ids 1002...) lifts the panel half a row, up to the 12-row grouplist cap (816 = 12 x 68) -->
+			<control type="group">
+				<left>680</left>
+				<top>494</top>
+				<animation effect="slide" end="0,-34" time="0" condition="Control.IsVisible(990) + !Control.IsVisible(1012)">Conditional</animation>
+				<animation effect="slide" end="0,-34" time="0" condition="Control.IsVisible(1002)">Conditional</animation>
+				<animation effect="slide" end="0,-34" time="0" condition="Control.IsVisible(1003)">Conditional</animation>
+				<animation effect="slide" end="0,-34" time="0" condition="Control.IsVisible(1004)">Conditional</animation>
+				<animation effect="slide" end="0,-34" time="0" condition="Control.IsVisible(1005)">Conditional</animation>
+				<animation effect="slide" end="0,-34" time="0" condition="Control.IsVisible(1006)">Conditional</animation>
+				<animation effect="slide" end="0,-34" time="0" condition="Control.IsVisible(1007)">Conditional</animation>
+				<animation effect="slide" end="0,-34" time="0" condition="Control.IsVisible(1008)">Conditional</animation>
+				<animation effect="slide" end="0,-34" time="0" condition="Control.IsVisible(1009)">Conditional</animation>
+				<animation effect="slide" end="0,-34" time="0" condition="Control.IsVisible(1010)">Conditional</animation>
+				<animation effect="slide" end="0,-34" time="0" condition="Control.IsVisible(1011)">Conditional</animation>
+				<animation effect="slide" end="0,-34" time="0" condition="Control.IsVisible(1012)">Conditional</animation>
+				<control type="image" id="999">
+					<description>background (Kodi sizes it)</description>
+					<left>-40</left>
+					<top>-40</top>
+					<width>640</width>
+					<height>916</height>
+					<texture border="72">$VAR[AG_PanelTex]</texture>
+					<visible>false</visible>
+				</control>
+				<!-- Options reach v2: Kodi sizes 999 for its own buttons only, not for row 990, so 999 stays hidden (Kodi's
+				     contract) and the panel is drawn here: 100 + 68 per row, for each count of Kodi rows (1001...) with and
+				     without 990, up to the 12-row grouplist cap (816 = 12 x 68). Without 990 it is the size Kodi gave 999. -->
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>168</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1001) + !Control.IsVisible(1002) + !Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>236</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1002) + !Control.IsVisible(1003) + !Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>304</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1003) + !Control.IsVisible(1004) + !Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>372</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1004) + !Control.IsVisible(1005) + !Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>440</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1005) + !Control.IsVisible(1006) + !Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>508</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1006) + !Control.IsVisible(1007) + !Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>576</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1007) + !Control.IsVisible(1008) + !Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>644</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1008) + !Control.IsVisible(1009) + !Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>712</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1009) + !Control.IsVisible(1010) + !Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>780</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1010) + !Control.IsVisible(1011) + !Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>848</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1011) + !Control.IsVisible(1012) + !Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>916</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1012) + !Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>236</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1001) + !Control.IsVisible(1002) + Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>304</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1002) + !Control.IsVisible(1003) + Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>372</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1003) + !Control.IsVisible(1004) + Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>440</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1004) + !Control.IsVisible(1005) + Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>508</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1005) + !Control.IsVisible(1006) + Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>576</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1006) + !Control.IsVisible(1007) + Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>644</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1007) + !Control.IsVisible(1008) + Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>712</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1008) + !Control.IsVisible(1009) + Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>780</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1009) + !Control.IsVisible(1010) + Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>848</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1010) + !Control.IsVisible(1011) + Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>916</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1011) + !Control.IsVisible(1012) + Control.IsVisible(990)</visible></control>
+				<control type="image"><left>-40</left><top>-40</top><width>640</width><height>916</height><texture border="72">$VAR[AG_PanelTex]</texture><visible>Control.IsVisible(1012) + Control.IsVisible(990)</visible></control>
+				<control type="grouplist" id="996">
+					<!-- Fused Glass (0.54.3): rows 6 px in and 12 px narrower (the button texture is white from 6 px in), so the highlight is 12 px from both card edges -->
+					<animation effect="slide" end="6,0" time="0" condition="$EXP[Ctx_PillRows]">Conditional</animation><!-- 0.56.20 fuse_survey: also Aeon Glass + Fuse -->
+					<description>grouplist for context buttons</description>
+					<left>0</left>
+					<top>12</top>
+					<width>560</width>
+					<height max="816">auto</height>
+					<usecontrolcoords>true</usecontrolcoords>
+					<!-- Options reach v2: the skin's own row, first; Kodi's buttons (1001...) follow -->
+					<control type="button" id="990">
+						<include condition="$EXP[Ctx_PillRows]">Ctx_RowW_fg</include><include condition="!$EXP[Ctx_PillRows]">Ctx_RowW</include><include condition="Skin.HasSetting(aeon.vglass) + !Skin.HasSetting(aeon.fglass)">Ctx_InkGlass</include>
+						<height>dialog_row_h</height>
+						<font>ui_24_semibold</font>
+						<!-- 0.56.43: the same focus picture as Kodi's rows (template 1000); without it the default square bar showed
+						     hard corners in the card's rounded top -->
+						<include>FG_CtxRowTex</include>
+						<label>$LOCALIZE[31342]</label>
+						<onclick>Dialog.Close(contextmenu)</onclick>
+						<onclick>AlarmClock(aeonopen,ActivateWindow(1160),00:00,silent)</onclick>
+						<visible>$EXP[Ctx_ViewRowVis]</visible>
+					</control>
+				</control>
+			</control>
+		</control>
+		<control type="button" id="1000">
+			<description>button template</description>
+			<left>0</left>
+			<top>0</top>
+			<include condition="$EXP[Ctx_PillRows]">Ctx_RowW_fg</include><include condition="!$EXP[Ctx_PillRows]">Ctx_RowW</include><include condition="Skin.HasSetting(aeon.vglass) + !Skin.HasSetting(aeon.fglass)">Ctx_InkGlass</include>
+			<height>dialog_row_h</height>
+			<font>ui_24_semibold</font>
+			<include>FG_CtxRowTex</include>
+		</control>
+	</include>
+	<!-- DialogConfirm outside the Aeon theme's menu styles (Glass, Fuse, Fused Glass): moved here from DialogConfirm.xml -->
+	<include name="Confirm_Classic">
+		<control type="group">
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>960</width>
+			<height>420</height>
+			<include content="AG_GenericDialog">
+				<param name="width" value="960"/>
+				<param name="height" value="420"/>
+				<param name="header_id" value="1"/>
+			</include>
+			<!-- 0.56.43 CoreELEC asks (its update question at start-up): its icon in the card's top right corner -->
+			<control type="image"><left>856</left><top>24</top><width>64</width><height>64</height><aspectratio>keep</aspectratio><texture background="true">$INFO[System.AddonIcon(service.coreelec.settings)]</texture><visible>String.Contains(Control.GetLabel(1),CoreELEC)</visible></control>
+			<control type="textbox" id="9">
+				<left>dialog_pad</left>
+				<top>dialog_content_top</top>
+				<width>880</width>
+				<height>180</height>  <!-- 5 lines; progress at 300 exactly: no half-clipped line at the bottom -->
+				<font>body_24</font>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+			</control>
+			<control type="progress" id="20">
+				<left>dialog_pad</left>
+				<top>300</top>
+				<width>880</width>
+				<height>2</height>
+				<info>System.Progressbar</info>
+			</control>
+			<control type="grouplist" id="9000">
+				<left>dialog_pad</left>
+				<top>328</top>
+				<width>880</width>
+				<height>dialog_row_h</height>
+				<orientation>horizontal</orientation>
+				<align>right</align>
+				<itemgap>16</itemgap>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<include content="AG_DialogButton">
+					<param name="id" value="11"/>
+					<param name="width" value="240"/>
+				</include>
+				<include content="AG_DialogButton">
+					<param name="id" value="10"/>
+					<param name="width" value="240"/>
+				</include>
+				<include content="AG_DialogButton">
+					<param name="id" value="12"/>
+					<param name="width" value="240"/>
+				</include>
+			</control>
+		</control>
+	</include>
+	<!-- 0.56.38: DialogAddonInfo outside the Fused Glass style (moved from the window file unchanged) -->
+	<include name="AddonInfo_Classic">
+		<!-- ====== hero card -->
+		<control type="group">
+			<left>page_margin</left>
+			<top>content_top</top>
+			<width>page_width</width>
+			<height>412</height>
+			<include>AG_Card</include>
+			<!-- icon -->
+			<control type="image">
+				<left>40</left>
+				<top>40</top>
+				<width>332</width>
+				<height>332</height>
+				<texture diffuse="aeon/mask_cover.png" colordiffuse="$VAR[AG_Raised]">common/white.png</texture>
+			</control>
+			<control type="image">
+				<left>72</left>
+				<top>72</top>
+				<width>268</width>
+				<height>268</height>
+				<aspectratio>keep</aspectratio>
+				<fadetime>150</fadetime>
+				<texture background="true">$INFO[ListItem.Art(thumb)]</texture>
+			</control>
+			<!-- text -->
+			<control type="group">
+				<left>412</left>
+				<top>44</top>
+				<width>620</width>
+				<height>340</height>
+				<control type="image">
+					<left>0</left>
+					<top>9</top>
+					<width>10</width>
+					<height>10</height>
+					<texture colordiffuse="$VAR[AG_Accent]">aeon/circle_12.png</texture>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>0</top>
+					<width>600</width>
+					<height>28</height>
+					<font>lb_ui_22_semibold</font>
+					<textcolor>$VAR[AG_AccentText]</textcolor>
+					<label>$INFO[ListItem.AddonType]$INFO[ListItem.AddonVersion,  ·  $ADDON[skin.aeon.fuse 32148] ,]</label>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>36</top>
+					<width>620</width>
+					<height>80</height>
+					<font>lb_display_52</font>
+					<label>$INFO[ListItem.AddonName]</label>
+				</control>
+				<control type="textbox">
+					<left>0</left>
+					<top>124</top>
+					<width>620</width>
+					<height>76</height>
+					<font>lb_ui_26_semibold</font>
+					<textcolor>$VAR[AG_Ink]</textcolor>
+					<label>$INFO[ListItem.AddonSummary]</label>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>212</top>
+					<width>620</width>
+					<height>32</height>
+					<font>lb_ui_22</font>
+					<textcolor>$VAR[AG_Ink2]</textcolor>
+					<label>$INFO[ListItem.AddonCreator,$ADDON[skin.aeon.fuse 32149] ,]$INFO[ListItem.AddonOrigin,  ·  ,]</label>
+				</control>
+				<!-- deprecated / broken -->
+				<control type="group">
+					<top>262</top>
+					<visible>String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170]) | String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])</visible>
+					<control type="label">
+						<left>0</left>
+						<top>0</top>
+						<width>620</width>
+						<height>30</height>
+						<font>lb_small_20_bold</font>
+						<textcolor>$VAR[AG_AccentText]</textcolor>
+						<label>$INFO[ListItem.AddonLifecycleType]</label>
+					</control>
+					<control type="textbox">
+						<left>0</left>
+						<top>30</top>
+						<width>620</width>
+						<height>52</height>
+						<font>lb_small_20</font>
+						<textcolor>$VAR[AG_Ink2]</textcolor>
+						<label>$INFO[ListItem.AddonLifecycleDesc]</label>
+					</control>
+				</control>
+			</control>
+			<!-- screenshots (Kodi fills panel 50) -->
+			<control type="label">
+				<left>1064</left>
+				<top>40</top>
+				<width>576</width>
+				<height>30</height>
+				<font>lb_small_20_bold</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<label>$LOCALIZE[31192]$INFO[Container(50).NumItems,  ·  ,]</label>
+				<visible>Integer.IsGreater(Container(50).NumItems,0)</visible>
+			</control>
+			<control type="panel" id="50">
+				<left>1048</left>
+				<top>76</top>
+				<width>608</width>
+				<height>336</height>
+				<orientation>horizontal</orientation>
+				<onup>noop</onup>
+				<ondown>9000</ondown>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<preloaditems>1</preloaditems>
+				<itemlayout width="608" height="336">
+					<include>AddonInfo_Shot</include>
+				</itemlayout>
+				<focusedlayout width="608" height="336">
+					<include content="AddonInfo_Shot">
+						<param name="focused" value="true"/>
+					</include>
+				</focusedlayout>
+			</control>
+			<control type="image">
+				<left>1064</left>
+				<top>92</top>
+				<width>576</width>
+				<height>280</height>
+				<aspectratio>keep</aspectratio>
+				<texture colordiffuse="$VAR[AG_ArtDim]" background="true">$INFO[ListItem.Art(fanart)]</texture>
+				<visible>!Integer.IsGreater(Container(50).NumItems,0)</visible>
+			</control>
+		</control>
+
+		<!-- ====== buttons -->
+		<control type="grouplist" id="9000">
+			<left>page_margin</left>
+			<top>612</top>
+			<width>page_width</width>
+			<height>dialog_row_h</height>
+			<orientation>horizontal</orientation>
+			<itemgap>10</itemgap>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup condition="Integer.IsGreater(Container(50).NumItems,0)">50</onup>
+			<onup condition="!Integer.IsGreater(Container(50).NumItems,0)">noop</onup>
+			<ondown condition="Control.IsVisible(9202)">9202</ondown>
+			<ondown condition="!Control.IsVisible(9202)">noop</ondown>
+			<include content="AG_DialogButton">
+				<param name="id" value="12"/>
+				<param name="label" value="$LOCALIZE[518]"/>
+				<param name="width" value="200"/>
+				<param name="visible" value="Control.IsEnabled(12)"/>
+			</include>
+			<include content="AG_DialogButton">
+				<param name="id" value="9"/>
+				<param name="label" value="$LOCALIZE[24020]"/>
+				<param name="width" value="200"/>
+				<param name="visible" value="Control.IsEnabled(9)"/>
+			</include>
+			<control type="radiobutton" id="13">
+				<description>auto-update (Kodi labels it)</description>
+				<width>238</width>
+				<height>dialog_row_h</height>
+				<font>lb_ui_22_semibold</font>
+				<textoffsetx>16</textoffsetx>
+				<radiowidth>18</radiowidth>
+				<radioheight>18</radioheight>
+				<include>Dlg_Tex_DialogButton</include>
+				<textureradioonnofocus colordiffuse="$VAR[AG_AccentText]">markers/check.png</textureradioonnofocus>
+				<textureradioofffocus colordiffuse="$VAR[Aeon_OnBarInk]">aeon/nib_ring.png</textureradioofffocus>
+				<textureradiooffnofocus colordiffuse="$VAR[AG_Line2]">aeon/nib_ring.png</textureradiooffnofocus>
+				<visible>Control.IsEnabled(13)</visible>
+			</control>
+			<include content="AG_DialogButton">
+				<param name="id" value="10"/>
+				<param name="label" value="$LOCALIZE[39024]"/>
+				<param name="width" value="220"/>
+				<param name="visible" value="Control.IsEnabled(10)"/>
+			</include>
+			<include content="AG_DialogButton">
+				<param name="id" value="7"/>
+				<param name="width" value="200"/>
+				<param name="visible" value="Control.IsEnabled(7)"/>
+			</include>
+			<include content="AG_DialogButton">
+				<param name="id" value="8"/>
+				<param name="label" value="$LOCALIZE[24138]"/>
+				<param name="width" value="200"/>
+				<param name="visible" value="Control.IsEnabled(8)"/>
+			</include>
+			<include content="AG_DialogButton">
+				<param name="id" value="14"/>
+				<param name="label" value="$LOCALIZE[24069]"/>
+				<param name="width" value="200"/>
+				<param name="visible" value="Control.IsEnabled(14)"/>
+			</include>
+			<include content="AG_DialogButton">
+				<param name="id" value="6"/>
+				<param name="width" value="200"/>
+				<param name="visible" value="Control.IsEnabled(6)"/>
+			</include>
+		</control>
+
+		<!-- ====== description card -->
+		<control type="group">
+			<left>page_margin</left>
+			<top>724</top>
+			<width>1040</width>
+			<height>292</height>
+			<include>AG_Card</include>
+			<control type="label">
+				<left>40</left>
+				<top>26</top>
+				<width>600</width>
+				<height>36</height>
+				<font>lb_serif_28</font>
+				<label>$VAR[AddonInfo_TextTitle]</label>
+			</control>
+			<control type="button" id="9202">
+				<left>760</left>
+				<top>22</top>
+				<width>240</width>
+				<height>44</height>
+				<font>lb_ui_22_semibold</font>
+				<align>center</align>
+				<textoffsetx>0</textoffsetx>
+				<include>Aeon_TexRowFocus</include>
+				<texturenofocus />
+				<label>$VAR[Dlg_AddonNewsLabel]</label>
+				<onclick condition="String.IsEmpty(Window(Home).Property(aeon.addonnews))">SetProperty(aeon.addonnews,1,home)</onclick>
+				<onclick condition="!String.IsEmpty(Window(Home).Property(aeon.addonnews))">ClearProperty(aeon.addonnews,home)</onclick>
+				<onup>9000</onup>
+				<ondown>noop</ondown>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+				<visible>!String.IsEmpty(ListItem.AddonNews)</visible>
+			</control>
+			<control type="textbox">
+				<left>40</left>
+				<top>80</top>
+				<width>960</width>
+				<height>180</height>
+				<font>lb_body_24</font>
+				<label>$VAR[AddonInfo_Text]</label>
+				<autoscroll time="3000" delay="6000" repeat="6000">true</autoscroll>
+			</control>
+		</control>
+
+		<!-- ====== details card -->
+		<control type="group">
+			<left>1196</left>
+			<top>724</top>
+			<width>604</width>
+			<height>292</height>
+			<include>AG_Card</include>
+			<control type="label">
+				<left>36</left>
+				<top>26</top>
+				<width>532</width>
+				<height>36</height>
+				<font>lb_serif_28</font>
+				<label>$LOCALIZE[31105]</label>
+			</control>
+			<control type="group">
+				<left>36</left>
+				<top>80</top>
+				<include content="Dlg_FactRow"><param name="top" value="0"/><param name="label" value="$LOCALIZE[31150]"/><param name="value" value="$INFO[ListItem.AddonVersion]"/><param name="valuew" value="360"/></include>
+				<include content="Dlg_FactRow"><param name="top" value="40"/><param name="label" value="$LOCALIZE[31151]"/><param name="value" value="$INFO[ListItem.AddonType]"/><param name="valuew" value="360"/></include>
+				<include content="Dlg_FactRow"><param name="top" value="80"/><param name="label" value="$LOCALIZE[31152]"/><param name="value" value="$INFO[ListItem.AddonInstallDate]"/><param name="valuew" value="360"/></include>
+				<include content="Dlg_FactRow"><param name="top" value="120"/><param name="label" value="$LOCALIZE[31219]"/><param name="value" value="$INFO[ListItem.Property(Addon.Status)]"/><param name="valuew" value="360"/></include>
+				<include content="Dlg_FactRow"><param name="top" value="160"/><param name="label" value="$LOCALIZE[31153]"/><param name="value" value="$INFO[ListItem.AddonLastUpdated]"/><param name="valuew" value="360"/></include>
+			</control>
+		</control>
+	</include>
+</includes>

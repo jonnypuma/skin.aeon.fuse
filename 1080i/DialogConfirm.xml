@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Yes/No, OK and progress dialogs (Kodi 21 routes all three through DialogConfirm) - M4, Builder E.
+	Used by "Keep this skin?" - must always work. Like Estuary there is no <defaultcontrol>: Kodi
+	focuses its own default button (yes or no, per caller).
+	Id contract (Estuary Omega): heading 1, text 9, progress 20, buttons 11 (yes) / 10 (no) /
+	12 (custom) in grouplist 9000, Estuary order 11, 10, 12. Kodi hides the unused ones.
+-->
+<window>
+	<include>Anim_DialogOpenClose</include>
+	<!-- 0.56.22 splash_b: a dialog held back by the splash opens on the guard button -->
+	<onload condition="$EXP[Aeon_SplHold]">SetFocus(9990)</onload>
+	<controls>
+		<control type="group">
+			<!-- 0.56.22 splash: while the start-up splash is up the dialog waits below the screen (it keeps its buttons and focus) -->
+			<animation effect="slide" end="0,4000" time="0" condition="$EXP[Aeon_SplHold]">Conditional</animation>
+			<include condition="!$EXP[Aeon_MS] + !$EXP[FGS]">Confirm_Classic</include>
+			<include condition="$EXP[FGS]">FGS_Confirm</include><!-- 0.56.32 fgs_dialogs -->
+			<include condition="$EXP[Aeon_MS_mosaic]">MS_Confirm_mosaic</include>
+			<include condition="$EXP[Aeon_MS_ledger]">MS_Confirm_ledger</include>
+			<include condition="$EXP[Aeon_MS_bridge]">MS_Confirm_bridge</include>
+			<include condition="$EXP[Aeon_MS_tabslab]">MS_Confirm_tabslab</include>
+		</control>
+		<!-- 0.56.22 splash_b: the guard while the dialog is held: OK or Back ends the splash, then No has the focus -->
+		<control type="button" id="9990"><left>0</left><top>0</top><width>1</width><height>1</height><label></label><texturefocus></texturefocus><texturenofocus></texturenofocus><onup>noop</onup><ondown>noop</ondown><onleft>noop</onleft><onright>noop</onright><onclick>ClearProperty(aeon.splash,home)</onclick><onclick>SetFocus(10)</onclick><onback>ClearProperty(aeon.splash,home)</onback><onback>SetFocus(10)</onback></control>
+		<!-- 0.56.22 splash: the toast on the splash: the dialog's heading, "waits until loading is done" -->
+		<control type="group">
+			<visible>$EXP[Aeon_SplHold]</visible>
+			<animation type="Visible" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="fade" start="0" end="100" time="300"/><effect type="slide" start="0,24" end="0,0" time="300" tween="cubic" easing="out"/></animation>
+			<control type="grouplist">
+				<left>0</left><top>880</top><width>1920</width><height>64</height><orientation>horizontal</orientation><align>center</align><itemgap>0</itemgap><usecontrolcoords>true</usecontrolcoords>
+				<control type="button"><width min="200" max="1500">auto</width><height>64</height><label>$INFO[Control.GetLabel(1),[B],[/B]  ·  ]$ADDON[skin.aeon.fuse 32644]</label><font>hm_ui_22</font><textcolor>f2ffffff</textcolor><disabledcolor>f2ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>32</textoffsetx><enable>false</enable><texturenofocus border="32" colordiffuse="e61a1b20">fg/r32.png</texturenofocus><texturefocus border="32" colordiffuse="e61a1b20">fg/r32.png</texturefocus></control>
+			</control>
+		</control>
+	</controls>
+</window>

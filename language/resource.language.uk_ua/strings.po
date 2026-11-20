@@ -1,0 +1,7177 @@
+# Kodi add-on strings - skin.aeon.fuse (uk_ua)
+msgid ""
+msgstr ""
+"Project-Id-Version: skin.aeon.fuse\n"
+"Language: uk_UA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgctxt "#31010"
+msgid "Sort"
+msgstr "Порядок"
+
+msgctxt "#31011"
+msgid "View"
+msgstr "Вигляд"
+
+msgctxt "#31012"
+msgid "Nothing here"
+msgstr "Тут порожньо"
+
+msgctxt "#31013"
+msgid "Working"
+msgstr "Виконується"
+
+msgctxt "#31014"
+msgid "Up / down to page, OK to close"
+msgstr "Вгору / вниз — гортати, OK — закрити"
+
+msgctxt "#31015"
+msgid "Muted"
+msgstr "Без звуку"
+
+msgctxt "#31016"
+msgid "Buffering"
+msgstr "Буферизація"
+
+msgctxt "#31017"
+msgid "Now playing"
+msgstr "Зараз грає"
+
+msgctxt "#31018"
+msgid "Next:"
+msgstr "Далі:"
+
+msgctxt "#31019"
+msgid "Home"
+msgstr "Головна"
+
+msgctxt "#31020"
+msgid "System"
+msgstr "Система"
+
+msgctxt "#31021"
+msgid "Skin settings"
+msgstr "Налаштування оболонки"
+
+msgctxt "#31022"
+msgid "Power"
+msgstr "Живлення"
+
+msgctxt "#31024"
+msgid "Aeon Fuse"
+msgstr "Aeon Fuse"
+
+msgctxt "#31025"
+msgid "Skin settings holds Aeon Fuse's own options. To switch skins: Interface > Skin > Skin."
+msgstr "Налаштування оболонки містять власні параметри Aeon Fuse. Змінити оболонку: Інтерфейс > Оболонка > Оболонка."
+
+msgctxt "#31030"
+msgid "Ends"
+msgstr "Кінець"
+
+msgctxt "#31040"
+msgid "Symbols"
+msgstr "Символи"
+
+msgctxt "#31041"
+msgid "Caps"
+msgstr "Великі"
+
+msgctxt "#31042"
+msgid "Shift"
+msgstr "Shift"
+
+msgctxt "#31043"
+msgid "Space"
+msgstr "Пробіл"
+
+msgctxt "#31044"
+msgid "Delete"
+msgstr "Видалити"
+
+msgctxt "#31045"
+msgid "Queue"
+msgstr "Черга"
+
+msgctxt "#31046"
+msgid "Cover showcase"
+msgstr "Вітрина обкладинок"
+
+msgctxt "#31047"
+msgid "03  Performance"
+msgstr "03  Продуктивність"
+
+msgctxt "#31048"
+msgid "Pause"
+msgstr "Пауза"
+
+msgctxt "#31050"
+msgid "Palette"
+msgstr "Палітра"
+
+msgctxt "#31051"
+msgid "Slightly rounded corners"
+msgstr "Злегка заокруглені кути"
+
+msgctxt "#31052"
+msgid "Focus outline"
+msgstr "Контур фокуса"
+
+msgctxt "#31053"
+msgid "Artwork background"
+msgstr "Тло із зображенням"
+
+msgctxt "#31054"
+msgid "Trailer button"
+msgstr "Кнопка трейлера"
+
+msgctxt "#31055"
+msgid "Watched indicators"
+msgstr "Позначки перегляду"
+
+msgctxt "#31056"
+msgid "Spotlight rotation"
+msgstr "Зміна в Spotlight"
+
+msgctxt "#31057"
+msgid "Newest row on Home"
+msgstr "Ряд новинок на головній"
+
+msgctxt "#31058"
+msgid "Reduce motion"
+msgstr "Менше анімації"
+
+msgctxt "#31059"
+msgid "Reset all skin settings"
+msgstr "Скинути налаштування оболонки"
+
+msgctxt "#31060"
+msgid "Signal"
+msgstr "Сигнал"
+
+msgctxt "#31061"
+msgid "Cobalt"
+msgstr "Кобальт"
+
+msgctxt "#31062"
+msgid "Mint"
+msgstr "М'ята"
+
+msgctxt "#31063"
+msgid "Amber"
+msgstr "Бурштин"
+
+msgctxt "#31064"
+msgid "Rose"
+msgstr "Троянда"
+
+msgctxt "#31065"
+msgid "Ice"
+msgstr "Лід"
+
+msgctxt "#31066"
+msgid "Bone"
+msgstr "Кістка"
+
+msgctxt "#31070"
+msgid "Thin"
+msgstr "Тонка"
+
+msgctxt "#31071"
+msgid "Medium"
+msgstr "Середній"
+
+msgctxt "#31072"
+msgid "Off"
+msgstr "Вимк."
+
+msgctxt "#31075"
+msgid "Faint"
+msgstr "Слабкий"
+
+msgctxt "#31076"
+msgid "Soft"
+msgstr "М'який"
+
+msgctxt "#31077"
+msgid "Visible"
+msgstr "Помітний"
+
+msgctxt "#31080"
+msgid "Both"
+msgstr "Обидва"
+
+msgctxt "#31081"
+msgid "Unwatched only"
+msgstr "Лише непереглянуті"
+
+msgctxt "#31082"
+msgid "Watched only"
+msgstr "Лише переглянуті"
+
+msgctxt "#31085"
+msgid "Date added"
+msgstr "Дата додавання"
+
+msgctxt "#31086"
+msgid "Release date"
+msgstr "Дата виходу"
+
+msgctxt "#31087"
+msgid "Both rows"
+msgstr "Обидва ряди"
+
+msgctxt "#31100"
+msgid "Spotlight / unwatched / top rated"
+msgstr "Spotlight / непереглянуті / з найвищим рейтингом"
+
+msgctxt "#31101"
+msgid "Year"
+msgstr "Рік"
+
+msgctxt "#31102"
+msgid "Runtime"
+msgstr "Тривалість"
+
+msgctxt "#31103"
+msgid "Rating"
+msgstr "Рейтинг"
+
+msgctxt "#31104"
+msgid "Rated"
+msgstr "Віковий рейтинг"
+
+msgctxt "#31105"
+msgid "Details"
+msgstr "Подробиці"
+
+msgctxt "#31106"
+msgid "Fig. 01: random pick, unwatched, rated 7.5+"
+msgstr "Рис. 01: випадковий вибір, не переглянуто, рейтинг 7,5+"
+
+msgctxt "#31107"
+msgid "No unwatched films rated 7.5+ yet"
+msgstr "Ще немає непереглянутих фільмів із рейтингом 7,5+"
+
+msgctxt "#31110"
+msgid "Newest additions"
+msgstr "Нові надходження"
+
+msgctxt "#31111"
+msgid "Sorted by date added ↓"
+msgstr "За датою додавання ↓"
+
+msgctxt "#31112"
+msgid "Newest releases"
+msgstr "Нові релізи"
+
+msgctxt "#31113"
+msgid "Sorted by release date ↓"
+msgstr "За датою виходу ↓"
+
+msgctxt "#31114"
+msgid "films"
+msgstr "фільмів"
+
+msgctxt "#31120"
+msgid "Seek  ◀ ▶"
+msgstr "Перемотування  ◀ ▶"
+
+msgctxt "#31121"
+msgid "Previous"
+msgstr "Попередній"
+
+msgctxt "#31122"
+msgid "Rewind"
+msgstr "Назад"
+
+msgctxt "#31123"
+msgid "Play / pause"
+msgstr "Відтворення / пауза"
+
+msgctxt "#31124"
+msgid "Stop"
+msgstr "Стоп"
+
+msgctxt "#31125"
+msgid "Forward"
+msgstr "Вперед"
+
+msgctxt "#31126"
+msgid "Next"
+msgstr "Наступний"
+
+msgctxt "#31127"
+msgid "Subtitles"
+msgstr "Субтитри"
+
+msgctxt "#31128"
+msgid "Audio"
+msgstr "Аудіо"
+
+msgctxt "#31129"
+msgid "Video settings"
+msgstr "Налаштування відео"
+
+msgctxt "#31318"
+msgid "Visualiser presets"
+msgstr "Передустановки візуалізації"
+
+msgctxt "#31319"
+msgid "OK, then ← for presets"
+msgstr "OK, потім ← пресети"
+
+msgctxt "#31900"
+msgid "Aeon Fuse (Figtree)"
+msgstr "Aeon Fuse (Figtree)"
+
+msgctxt "#31901"
+msgid "Arial (wider script coverage)"
+msgstr "Arial (більше писемностей)"
+
+msgctxt "#31902"
+msgid "Episode code"
+msgstr "Код епізоду"
+
+msgctxt "#31200"
+msgid "Aeon Fuse settings"
+msgstr "Налаштування Aeon Fuse"
+
+msgctxt "#31201"
+msgid "Live TV"
+msgstr "Пряме ТБ"
+
+msgctxt "#31202"
+msgid "Media"
+msgstr "Медіа"
+
+msgctxt "#31203"
+msgid "Update library"
+msgstr "Оновити медіатеку"
+
+msgctxt "#31204"
+msgid "Library"
+msgstr "Медіатека"
+
+msgctxt "#31205"
+msgid "Clean library"
+msgstr "Очистити медіатеку"
+
+msgctxt "#31206"
+msgid "More"
+msgstr "Ще"
+
+msgctxt "#31207"
+msgid "Add-on"
+msgstr "Доповнення"
+
+msgctxt "#31208"
+msgid "About this setting"
+msgstr "Про це налаштування"
+
+msgctxt "#31209"
+msgid "Timer"
+msgstr "Таймер"
+
+msgctxt "#31210"
+msgid "Left / right: channel group"
+msgstr "Ліворуч / праворуч: група каналів"
+
+msgctxt "#31211"
+msgid "Add group"
+msgstr "Додати групу"
+
+msgctxt "#31212"
+msgid "Rename group"
+msgstr "Перейменувати групу"
+
+msgctxt "#31213"
+msgid "Delete group"
+msgstr "Видалити групу"
+
+msgctxt "#31214"
+msgid "Jump through the guide  ·  Back to close"
+msgstr "Перехід телегідом  ·  «Назад» закриває"
+
+msgctxt "#31215"
+msgid "Playing on this Shield"
+msgstr "Грає на цьому Shield"
+
+msgctxt "#31216"
+msgid "OK or Back closes"
+msgstr "OK або «Назад» закриває"
+
+msgctxt "#31217"
+msgid "Find subtitles"
+msgstr "Знайти субтитри"
+
+msgctxt "#31218"
+msgid "Service"
+msgstr "Сервіс"
+
+msgctxt "#31219"
+msgid "Status"
+msgstr "Стан"
+
+msgctxt "#31220"
+msgid "This file already has subtitle tracks"
+msgstr "Цей файл уже має доріжки субтитрів"
+
+msgctxt "#31221"
+msgid "Sync = timed to your file"
+msgstr "Sync = підігнано під ваш файл"
+
+msgctxt "#31222"
+msgid "No subtitles listed yet. Pick a service or search manually."
+msgstr "Субтитрів немає. Оберіть сервіс або шукайте самі."
+
+msgctxt "#31223"
+msgid "Order:"
+msgstr "Порядок:"
+
+msgctxt "#31224"
+msgid "Nothing has happened yet."
+msgstr "Поки нічого не сталося."
+
+msgctxt "#31225"
+msgid "Back to continue"
+msgstr "«Назад», щоб продовжити"
+
+msgctxt "#31226"
+msgid "Nothing to choose"
+msgstr "Нема чого вибрати"
+
+msgctxt "#31227"
+msgid "Browse the whole library instead."
+msgstr "Краще перегляньте всю медіатеку."
+
+msgctxt "#31228"
+msgid "See all"
+msgstr "Показати все"
+
+msgctxt "#31229"
+msgid "No shows in progress. Start one from Shows."
+msgstr "Немає розпочатих серіалів. Почніть у розділі «Серіали»."
+
+msgctxt "#31230"
+msgid "Nothing here."
+msgstr "Тут порожньо."
+
+msgctxt "#31231"
+msgid "PVR & Live TV settings"
+msgstr "Налаштування PVR і ТБ"
+
+msgctxt "#31232"
+msgid "Up one level"
+msgstr "На рівень вище"
+
+msgctxt "#31233"
+msgid "Nothing else is known about this one yet."
+msgstr "Більше про це поки нічого не відомо."
+
+msgctxt "#31234"
+msgid "Up and down scroll  ·  Back closes"
+msgstr "Вгору і вниз — прокручування  ·  «Назад» закриває"
+
+msgctxt "#31235"
+msgid "Up next"
+msgstr "Далі"
+
+msgctxt "#31236"
+msgid "The last one in the queue"
+msgstr "Останній у черзі"
+
+msgctxt "#31237"
+msgid "Sync"
+msgstr "Sync"
+
+msgctxt "#31238"
+msgid "No matches"
+msgstr "Немає збігів"
+
+msgctxt "#31239"
+msgid "Searching"
+msgstr "Пошук"
+
+msgctxt "#31240"
+msgid "Films, shows, albums, artists"
+msgstr "Фільми, серіали, альбоми, виконавці"
+
+msgctxt "#31241"
+msgid "OK to type  ·  Down for results  ·  Back to close"
+msgstr "OK — введення  ·  Вниз — результати  ·  «Назад» — закрити"
+
+msgctxt "#31242"
+msgid "Films and shows match on title, albums on album name, artists on name. Library only."
+msgstr "Фільми й серіали — за назвою, альбоми — за назвою альбому, виконавці — за ім'ям. Лише медіатека."
+
+msgctxt "#31243"
+msgid "Offsets apply to this film only. Choosing an offset hides this panel so you can sync against the picture."
+msgstr "Зсуви діють лише для цього фільму. Вибір зсуву ховає цю панель, щоб можна було звірити із зображенням."
+
+msgctxt "#31244"
+msgid "More for this title"
+msgstr "Ще про це"
+
+msgctxt "#31245"
+msgid "Back"
+msgstr "Назад"
+
+msgctxt "#31246"
+msgid "Unwatched only is on: choose the pill above to show everything."
+msgstr "«Лише непереглянуті» увімкнено: кнопка вище покаже все."
+
+msgctxt "#31247"
+msgid "Left and right to seek  ·  Down returns"
+msgstr "Ліворуч і праворуч — перемотування  ·  Вниз — назад"
+
+msgctxt "#31248"
+msgid "Choose Albums, Artists, Songs or Genres above."
+msgstr "Виберіть вище «Альбоми», «Виконавці», «Композиції» або «Жанри»."
+
+msgctxt "#31249"
+msgid "Playlist"
+msgstr "Плейлист"
+
+msgctxt "#31250"
+msgid "Empty. Pick songs or albums on the left and press OK to add them."
+msgstr "Порожньо. Додайте пісні чи альбоми зліва кнопкою OK."
+
+msgctxt "#31251"
+msgid "The queue is empty"
+msgstr "Черга порожня"
+
+msgctxt "#31252"
+msgid "No weather yet."
+msgstr "Погоди поки немає."
+
+msgctxt "#31253"
+msgid "Choose a weather service under Settings, Services, Weather."
+msgstr "Виберіть сервіс погоди в розділі Налаштування, Служби, Погода."
+
+msgctxt "#31254"
+msgid "The next few days"
+msgstr "Найближчі дні"
+
+msgctxt "#31255"
+msgid "Look, behaviour, home menu"
+msgstr "Вигляд, поведінка, головне меню"
+
+msgctxt "#31256"
+msgid "Playback, subtitles"
+msgstr "Відтворення, субтитри"
+
+msgctxt "#31257"
+msgid "Library, files"
+msgstr "Медіатека, файли"
+
+msgctxt "#31258"
+msgid "Skin, region"
+msgstr "Оболонка, регіон"
+
+msgctxt "#31259"
+msgid "Installed, updates"
+msgstr "Встановлені, оновлення"
+
+msgctxt "#31260"
+msgid "Remote, sharing"
+msgstr "Пульт, спільний доступ"
+
+msgctxt "#31261"
+msgid "Display, audio"
+msgstr "Екран, звук"
+
+msgctxt "#31262"
+msgid "Sources, files"
+msgstr "Джерела, файли"
+
+msgctxt "#31263"
+msgid "Hardware, storage"
+msgstr "Обладнання, сховище"
+
+msgctxt "#31264"
+msgid "Event log"
+msgstr "Журнал подій"
+
+msgctxt "#31265"
+msgid "Recent events"
+msgstr "Останні події"
+
+msgctxt "#31266"
+msgid "Users"
+msgstr "Користувачі"
+
+msgctxt "#31267"
+msgid "Not used"
+msgstr "Не використовується"
+
+msgctxt "#31268"
+msgid "Controllers"
+msgstr "Контролери"
+
+msgctxt "#31269"
+msgid "This box"
+msgstr "Цей пристрій"
+
+msgctxt "#31270"
+msgid "Login screen"
+msgstr "Екран входу"
+
+msgctxt "#31271"
+msgid "Auto login"
+msgstr "Автовхід"
+
+msgctxt "#31272"
+msgid "Options"
+msgstr "Параметри"
+
+msgctxt "#31273"
+msgid "Order direction"
+msgstr "Напрям сортування"
+
+msgctxt "#31274"
+msgid "Select a rule to edit it. Use the context menu to delete a rule."
+msgstr "Виберіть правило, щоб змінити його. Видалити правило можна через контекстне меню."
+
+msgctxt "#31275"
+msgid "Value"
+msgstr "Значення"
+
+msgctxt "#31276"
+msgid "No chapters or bookmarks yet. Create one with the first button."
+msgstr "Розділів і закладок поки немає. Створіть закладку першою кнопкою."
+
+msgctxt "#31277"
+msgid "OK jumps there  ·  Back closes"
+msgstr "OK — перейти  ·  «Назад» — закрити"
+
+msgctxt "#31300"
+msgid "Order"
+msgstr "Порядок"
+
+msgctxt "#31301"
+msgid "Watched"
+msgstr "Перегл."
+
+msgctxt "#31302"
+msgid "Search"
+msgstr "Пошук"
+
+msgctxt "#31303"
+msgid "Stop updating"
+msgstr "Зупинити оновлення"
+
+msgctxt "#31304"
+msgid "Library settings"
+msgstr "Налаштування медіатеки"
+
+msgctxt "#31305"
+msgid "Music"
+msgstr "Музика"
+
+msgctxt "#31306"
+msgid "Update"
+msgstr "Оновити"
+
+msgctxt "#31307"
+msgid "Clean"
+msgstr "Очистити"
+
+msgctxt "#31308"
+msgid "Collections"
+msgstr "Колекції"
+
+msgctxt "#31309"
+msgid "Films and shows"
+msgstr "Фільми й серіали"
+
+msgctxt "#31310"
+msgid "No, keep it as it is"
+msgstr "Ні, залишити як є"
+
+msgctxt "#31311"
+msgid "Yes, clean it now"
+msgstr "Так, очистити зараз"
+
+msgctxt "#31312"
+msgid "Grid"
+msgstr "Сітка"
+
+msgctxt "#31313"
+msgid "Wall"
+msgstr "Стіна"
+
+msgctxt "#31314"
+msgid "Episodes"
+msgstr "Епізоди"
+
+msgctxt "#31315"
+msgid "List"
+msgstr "Список"
+
+msgctxt "#31316"
+msgid "OK to reset"
+msgstr "OK для скидання"
+
+msgctxt "#31317"
+msgid "Press OK again to reset everything"
+msgstr "Натисніть OK ще раз, щоб скинути все"
+
+msgctxt "#31320"
+msgid "Spotlight"
+msgstr "Spotlight"
+
+msgctxt "#31321"
+msgid "Wide"
+msgstr "Широкий"
+
+msgctxt "#31322"
+msgid "Time"
+msgstr "Час"
+
+msgctxt "#31323"
+msgid "No runtime"
+msgstr "Без тривалості"
+
+msgctxt "#31324"
+msgid "Now"
+msgstr "Зараз"
+
+msgctxt "#31325"
+msgid "+1 h"
+msgstr "+1 h"
+
+msgctxt "#31326"
+msgid "+2 h"
+msgstr "+2 h"
+
+msgctxt "#31327"
+msgid "+3 h"
+msgstr "+3 h"
+
+msgctxt "#31328"
+msgid "+4 h"
+msgstr "+4 h"
+
+msgctxt "#31329"
+msgid "Rows"
+msgstr "Ряди"
+
+msgctxt "#31330"
+msgid "Main menu"
+msgstr "Головне меню"
+
+msgctxt "#31331"
+msgid "Films"
+msgstr "Фільми"
+
+msgctxt "#31332"
+msgid "Shows"
+msgstr "Серіали"
+
+msgctxt "#31333"
+msgid "Music"
+msgstr "Музика"
+
+msgctxt "#31334"
+msgid "Search"
+msgstr "Пошук"
+
+msgctxt "#31335"
+msgid "Pill, hero and film cards"
+msgstr "Кнопка, вітрина й картки фільмів"
+
+msgctxt "#31336"
+msgid "Pill and the Next up card"
+msgstr "Кнопка й картка «Далі»"
+
+msgctxt "#31337"
+msgid "Pill in the top line"
+msgstr "Кнопка у верхньому рядку"
+
+msgctxt "#31338"
+msgid "Which pills the top line shows. Hidden pills disappear on Home and in the libraries; the rest close up. For now and the gear (system menu, settings) always stay, so you can always come back here.[CR][CR]Up / Down picks a group, Right enters it."
+msgstr "Які кнопки показує верхній рядок. Приховані кнопки зникають з головної та з медіатек; решта зсуваються. «На зараз» і шестірня (системне меню, налаштування) лишаються завжди, щоб сюди завжди можна було повернутися.[CR][CR]Вгору / вниз вибирає групу, праворуч — входить у неї."
+
+msgctxt "#31339"
+msgid "Films also takes the hero and the film cards off For now; Shows takes the Next up card. The libraries themselves stay: Search finds them, and the system menu has Files."
+msgstr "«Фільми» прибирає з «На зараз» і вітрину, і картки фільмів; «Серіали» — картку «Далі». Самі медіатеки лишаються: пошук їх знаходить, а в системному меню є «Файли»."
+
+msgctxt "#31340"
+msgid "Show"
+msgstr "Показати"
+
+msgctxt "#31341"
+msgid "Hide"
+msgstr "Сховати"
+
+msgctxt "#31342"
+msgid "View, sort, filter…"
+msgstr "Вигляд, сортування, фільтр…"
+
+msgctxt "#31940"
+msgid "Custom rows"
+msgstr "Власні ряди"
+
+msgctxt "#31941"
+msgid "Row 1"
+msgstr "Ряд 1"
+
+msgctxt "#31942"
+msgid "Row 2"
+msgstr "Ряд 2"
+
+msgctxt "#31943"
+msgid "Row 3"
+msgstr "Ряд 3"
+
+msgctxt "#31944"
+msgid "Not set"
+msgstr "Не задано"
+
+msgctxt "#31945"
+msgid "Add-on, playlist or library…"
+msgstr "Доповнення, плейлист або медіатека…"
+
+msgctxt "#31946"
+msgid "A favourite…"
+msgstr "Улюблене…"
+
+msgctxt "#31947"
+msgid "Rename…"
+msgstr "Перейменувати…"
+
+msgctxt "#31948"
+msgid "Clear"
+msgstr "Очистити"
+
+msgctxt "#31949"
+msgid "This favourite opens no folder"
+msgstr "Це улюблене не відкриває теку"
+
+msgctxt "#31950"
+msgid "Add up to three rows of your own to Home: a folder of an add-on (for example JellyCon's Continue Watching), a smart playlist, a library node or a favourite that opens a folder. A row shows only when it has something in it.[CR][CR]OK opens the row's options: choose what it shows, rename it or clear it."
+msgstr "Додайте на головну до трьох власних рядів: теку доповнення (наприклад «Продовжити перегляд» з JellyCon), розумний плейлист, вузол медіатеки або улюблене, що відкриває теку. Ряд видно, лише якщо в ньому щось є.[CR][CR]OK відкриває параметри ряду: вибрати, що він показує, перейменувати або очистити."
+
+msgctxt "#31951"
+msgid "Custom row"
+msgstr "Власний ряд"
+
+msgctxt "#31952"
+msgid "Loading…"
+msgstr "Завантаження…"
+
+msgctxt "#31953"
+msgid "1 item"
+msgstr "1 елемент"
+
+msgctxt "#31954"
+msgid "items"
+msgstr "елементів"
+
+msgctxt "#31955"
+msgid "Add-on · playlist · library · favourite"
+msgstr "Доповнення · плейлист · медіатека · обране"
+
+msgctxt "#31956"
+msgid "The add-on of this favourite isn't installed"
+msgstr "Доповнення цього улюбленого не встановлено"
+
+msgctxt "#31957"
+msgid "Rows of your own on Home: an add-on folder, a playlist, a library node or a favourite. OK opens the row's options."
+msgstr "Власні ряди на головній: тека доповнення, плейлист, вузол медіатеки або улюблене. OK відкриває параметри ряду."
+
+msgctxt "#31980"
+msgid "Custom menu items"
+msgstr "Власні пункти меню"
+
+msgctxt "#31981"
+msgid "Menu item 1"
+msgstr "Пункт меню 1"
+
+msgctxt "#31982"
+msgid "Menu item 2"
+msgstr "Пункт меню 2"
+
+msgctxt "#31983"
+msgid "Menu item 3"
+msgstr "Пункт меню 3"
+
+msgctxt "#31984"
+msgid "Put up to three add-ons, favourites or library folders on the main menu, after the skin's own items. An item shows only while its add-on is installed.[CR][CR]OK opens the item's options: choose what it opens, rename it or clear it."
+msgstr "Додайте до головного меню до трьох доповнень, улюблених або тек медіатеки після власних пунктів оболонки. Пункт видно, лише поки його доповнення встановлено.[CR][CR]OK відкриває параметри пункту: вибрати, що він відкриває, перейменувати або очистити."
+
+msgctxt "#31985"
+msgid "Add-on · favourite · library · folder"
+msgstr "Доповнення · улюблене · медіатека · тека"
+
+msgctxt "#31986"
+msgid "Opens"
+msgstr "Відкриває"
+
+msgctxt "#31987"
+msgid "Menu item"
+msgstr "Пункт меню"
+
+msgctxt "#31988"
+msgid "add-on not installed"
+msgstr "доповнення не встановлено"
+
+msgctxt "#31989"
+msgid "Add-on"
+msgstr "Доповнення"
+
+msgctxt "#31990"
+msgid "Playlist"
+msgstr "Плейлист"
+
+msgctxt "#31991"
+msgid "Library"
+msgstr "Медіатека"
+
+msgctxt "#31992"
+msgid "Folder"
+msgstr "Тека"
+
+msgctxt "#31993"
+msgid "Shortcut"
+msgstr "Ярлик"
+
+msgctxt "#31994"
+msgid "Your own items on the main menu: an add-on, a favourite, a library node or a folder. OK opens the item's options."
+msgstr "Ваші пункти в головному меню: доповнення, улюблене, вузол медіатеки або тека. OK відкриває параметри пункту."
+
+msgctxt "#31995"
+msgid "OK to open"
+msgstr "OK — відкрити"
+
+msgctxt "#31540"
+msgid "View settings"
+msgstr "Налаштування вигляду"
+
+msgctxt "#31541"
+msgid "Ratings"
+msgstr "Рейтинги"
+
+msgctxt "#31542"
+msgid "Media info"
+msgstr "Відомості про медіа"
+
+msgctxt "#31543"
+msgid "Backdrop"
+msgstr "Тло"
+
+msgctxt "#31544"
+msgid "Reset"
+msgstr "Скинути"
+
+msgctxt "#31545"
+msgid "Global settings"
+msgstr "Загальні налаштування"
+
+msgctxt "#31546"
+msgid "Default"
+msgstr "Типово"
+
+msgctxt "#31547"
+msgid "On"
+msgstr "Увімк."
+
+msgctxt "#31548"
+msgid "Off"
+msgstr "Вимк."
+
+msgctxt "#31549"
+msgid "Neutral"
+msgstr "Простий"
+
+msgctxt "#31550"
+msgid "Fanart"
+msgstr "Фанарт"
+
+msgctxt "#31551"
+msgid "Colors"
+msgstr "Кольори"
+
+msgctxt "#31000"
+msgid "Kodi"
+msgstr "Kodi"
+
+msgctxt "#31001"
+msgid "ULTRA HD"
+msgstr "ULTRA HD"
+
+msgctxt "#31002"
+msgid "The pages that Up opens above this home menu item. Pick one, then use the buttons on the right."
+msgstr "Сторінки, які кнопка «Вгору» відкриває над цим пунктом головного меню. Виберіть одну, а тоді скористайтеся кнопками праворуч."
+
+msgctxt "#31003"
+msgid "+  Add item"
+msgstr "+  Додати елемент"
+
+msgctxt "#31004"
+msgid "Rename"
+msgstr "Перейменувати"
+
+msgctxt "#31005"
+msgid "Select source"
+msgstr "Вибрати джерело"
+
+msgctxt "#31006"
+msgid "Sort by"
+msgstr "Сортувати за"
+
+msgctxt "#31007"
+msgid "Reverse order"
+msgstr "Зворотний порядок"
+
+msgctxt "#31008"
+msgid "Items in list"
+msgstr "Елементів у списку"
+
+msgctxt "#31009"
+msgid "Seconds per item"
+msgstr "Секунд на елемент"
+
+msgctxt "#31023"
+msgid "Autoscroll on / off"
+msgstr "Автопрокручування"
+
+msgctxt "#31026"
+msgid "Hide / show"
+msgstr "Сховати / показати"
+
+msgctxt "#31027"
+msgid "Move up"
+msgstr "Посунути вгору"
+
+msgctxt "#31028"
+msgid "Move down"
+msgstr "Посунути вниз"
+
+msgctxt "#31029"
+msgid "Add list..."
+msgstr "Додати список..."
+
+msgctxt "#31031"
+msgid "Add folder items..."
+msgstr "Додати елементи теки..."
+
+msgctxt "#31032"
+msgid "Restore defaults"
+msgstr "Відновити типові"
+
+msgctxt "#31033"
+msgid "The categories and rows shown under this home menu item (for Power: its actions)."
+msgstr "Категорії та ряди під цим пунктом головного меню (для «Живлення»: його дії)."
+
+msgctxt "#31034"
+msgid "Items in row"
+msgstr "Елементів у ряду"
+
+msgctxt "#31035"
+msgid "Artwork type"
+msgstr "Тип зображення"
+
+msgctxt "#31036"
+msgid "The full-screen widget pages that Up opens above this item: on or off, autoscroll, and the defaults for every list in them."
+msgstr "Сторінки віджетів, які «Вгору» відкриває над цим пунктом: увімк. чи вимк., автопрокручування й типові значення списків."
+
+msgctxt "#31037"
+msgid "Widget (Up key after Spotlight)"
+msgstr "Віджет («Вгору» після Spotlight)"
+
+msgctxt "#31038"
+msgid "Autoscroll"
+msgstr "Автопрокручування"
+
+msgctxt "#31039"
+msgid "Items per list"
+msgstr "Елементів у списку"
+
+msgctxt "#31049"
+msgid "The big Netflix-style spotlight above this item on Home: a rotating list of titles with fanart, logo, details and Play."
+msgstr "Великий Spotlight у стилі Netflix над цим пунктом головної: змінний список із фанартом, логотипом, подробицями та кнопкою «Відтворити»."
+
+msgctxt "#31067"
+msgid "Label"
+msgstr "Мітка"
+
+msgctxt "#31068"
+msgid "Path"
+msgstr "Шлях"
+
+msgctxt "#31069"
+msgid "Items"
+msgstr "Елементи"
+
+msgctxt "#31073"
+msgid "Widget screen options"
+msgstr "Екрани віджетів"
+
+msgctxt "#31074"
+msgid "Library background (Aeon)"
+msgstr "Тло медіатеки (Aeon)"
+
+msgctxt "#31078"
+msgid "Choose a view"
+msgstr "Виберіть вигляд"
+
+msgctxt "#31079"
+msgid "Left / Right to look, OK to switch"
+msgstr "Ліворуч / праворуч — дивитися, OK — перемкнути"
+
+msgctxt "#31083"
+msgid "Fanart list"
+msgstr "Список фанартів"
+
+msgctxt "#31084"
+msgid "Rows with A-Z keys"
+msgstr "Рядки з кнопками А-Я"
+
+msgctxt "#31088"
+msgid "Artist wall"
+msgstr "Стіна виконавців"
+
+msgctxt "#31089"
+msgid "Cover grid"
+msgstr "Сітка обкладинок"
+
+msgctxt "#31090"
+msgid "Album wall"
+msgstr "Стіна альбомів"
+
+msgctxt "#31091"
+msgid "Song wall"
+msgstr "Стіна композицій"
+
+msgctxt "#31092"
+msgid "Artist showcase"
+msgstr "Вітрина виконавців"
+
+msgctxt "#31093"
+msgid "Big covers in a row"
+msgstr "Великі обкладинки в ряд"
+
+msgctxt "#31094"
+msgid "Album showcase"
+msgstr "Вітрина альбомів"
+
+msgctxt "#31095"
+msgid "Song showcase"
+msgstr "Вітрина композицій"
+
+msgctxt "#31096"
+msgid "Artist rows"
+msgstr "Ряди виконавців"
+
+msgctxt "#31097"
+msgid "Rows with covers"
+msgstr "Ряди з обкладинками"
+
+msgctxt "#31098"
+msgid "Album list"
+msgstr "Список альбомів"
+
+msgctxt "#31099"
+msgid "Song list"
+msgstr "Список композицій"
+
+msgctxt "#31108"
+msgid "Compact song rows"
+msgstr "Компактні ряди композицій"
+
+msgctxt "#31109"
+msgid "Fanart wall"
+msgstr "Стіна фанартів"
+
+msgctxt "#31115"
+msgid "Portrait grid"
+msgstr "Вертикальна сітка"
+
+msgctxt "#31116"
+msgid "Fanart and A-Z keys"
+msgstr "Фанарт і кнопки А-Я"
+
+msgctxt "#31117"
+msgid "Show posters"
+msgstr "Показувати постери"
+
+msgctxt "#31118"
+msgid "Posters"
+msgstr "Постери"
+
+msgctxt "#31119"
+msgid "Season posters"
+msgstr "Постери сезонів"
+
+msgctxt "#31130"
+msgid "Poster wall"
+msgstr "Стіна постерів"
+
+msgctxt "#31131"
+msgid "Episode wall"
+msgstr "Стіна епізодів"
+
+msgctxt "#31132"
+msgid "Landscape artwork"
+msgstr "Горизонтальні зображення"
+
+msgctxt "#31133"
+msgid "Landscape wall"
+msgstr "Горизонтальна стіна"
+
+msgctxt "#31134"
+msgid "Square wall"
+msgstr "Квадратна стіна"
+
+msgctxt "#31135"
+msgid "Square tiles"
+msgstr "Квадратні плитки"
+
+msgctxt "#31136"
+msgid "Cards"
+msgstr "Картки"
+
+msgctxt "#31137"
+msgid "Artwork with details"
+msgstr "Зображення з подробицями"
+
+msgctxt "#31138"
+msgid "Showcase"
+msgstr "Вітрина"
+
+msgctxt "#31139"
+msgid "One big poster"
+msgstr "Один великий постер"
+
+msgctxt "#31140"
+msgid "Banner list"
+msgstr "Список банерів"
+
+msgctxt "#31141"
+msgid "Wide banner rows"
+msgstr "Широкі ряди банерів"
+
+msgctxt "#31142"
+msgid "Compact list"
+msgstr "Компактний список"
+
+msgctxt "#31143"
+msgid "Dense rows with poster"
+msgstr "Щільні ряди з постером"
+
+msgctxt "#31144"
+msgid "Episode list"
+msgstr "Список епізодів"
+
+msgctxt "#31145"
+msgid "Rows with thumbs"
+msgstr "Ряди з мініатюрами"
+
+msgctxt "#31146"
+msgid "Season list combined 3"
+msgstr "Список сезонів разом 3"
+
+msgctxt "#31147"
+msgid "Rows with posters"
+msgstr "Ряди з постерами"
+
+msgctxt "#31148"
+msgid "Low list"
+msgstr "Низький список"
+
+msgctxt "#31149"
+msgid "Rows over fanart"
+msgstr "Ряди поверх фанарту"
+
+msgctxt "#31150"
+msgid "Version"
+msgstr "Версія"
+
+msgctxt "#31151"
+msgid "Type"
+msgstr "Тип"
+
+msgctxt "#31152"
+msgid "Installed"
+msgstr "Встановлено"
+
+msgctxt "#31153"
+msgid "Updated"
+msgstr "Оновлено"
+
+msgctxt "#31154"
+msgid "Channel"
+msgstr "Канал"
+
+msgctxt "#31155"
+msgid "Other"
+msgstr "Інше"
+
+msgctxt "#31156"
+msgid "Jump to now"
+msgstr "Перейти до поточного"
+
+msgctxt "#31157"
+msgid "Choose channel"
+msgstr "Вибрати канал"
+
+msgctxt "#31158"
+msgid "Choose channel group"
+msgstr "Вибрати групу каналів"
+
+msgctxt "#31159"
+msgid "Choose date"
+msgstr "Вибрати дату"
+
+msgctxt "#31160"
+msgid "Recordings"
+msgstr "Записи"
+
+msgctxt "#31161"
+msgid "Timers"
+msgstr "Таймери"
+
+msgctxt "#31162"
+msgid "Timer rules"
+msgstr "Правила таймерів"
+
+msgctxt "#31163"
+msgid "Search guide"
+msgstr "Пошук у телегіді"
+
+msgctxt "#31164"
+msgid "Return to guide"
+msgstr "Повернутися до телегіда"
+
+msgctxt "#31165"
+msgid "Exit guide"
+msgstr "Вийти з телегіда"
+
+msgctxt "#31166"
+msgid "Band"
+msgstr "Гурт"
+
+msgctxt "#31167"
+msgid "Artist"
+msgstr "Виконавець"
+
+msgctxt "#31168"
+msgid "Title"
+msgstr "Назва"
+
+msgctxt "#31169"
+msgid "Composer"
+msgstr "Композитор"
+
+msgctxt "#31170"
+msgid "Conductor"
+msgstr "Диригент"
+
+msgctxt "#31171"
+msgid "Album"
+msgstr "Альбом"
+
+msgctxt "#31172"
+msgid "Comment"
+msgstr "Коментар"
+
+msgctxt "#31173"
+msgid "Studio  ·  hotline"
+msgstr "Студія  ·  гаряча лінія"
+
+msgctxt "#31174"
+msgid "Studio phone"
+msgstr "Телефон студії"
+
+msgctxt "#31175"
+msgid "Studio email"
+msgstr "Ел. пошта студії"
+
+msgctxt "#31176"
+msgid "Studio SMS"
+msgstr "SMS до студії"
+
+msgctxt "#31177"
+msgid "Hotline phone"
+msgstr "Гаряча лінія"
+
+msgctxt "#31178"
+msgid "Hotline email"
+msgstr "E-mail гар. лінії"
+
+msgctxt "#31179"
+msgid "Programme"
+msgstr "Передача"
+
+msgctxt "#31180"
+msgid "Style"
+msgstr "Стиль"
+
+msgctxt "#31181"
+msgid "Station"
+msgstr "Станція"
+
+msgctxt "#31182"
+msgid "Host"
+msgstr "Ведучий"
+
+msgctxt "#31183"
+msgid "Editorial"
+msgstr "Редакція"
+
+msgctxt "#31184"
+msgid "Website"
+msgstr "Сайт"
+
+msgctxt "#31185"
+msgid "Radiotext"
+msgstr "Радіотекст"
+
+msgctxt "#31186"
+msgid "ENDS"
+msgstr "КІНЕЦЬ"
+
+msgctxt "#31187"
+msgid "Search manually…"
+msgstr "Шукати вручну…"
+
+msgctxt "#31189"
+msgid "TRUEHD  7.1"
+msgstr "TRUEHD  7.1"
+
+msgctxt "#31190"
+msgid "Some stories never end."
+msgstr "Деякі історії ніколи не закінчуються."
+
+msgctxt "#31191"
+msgid "A retired detective is pulled back into a case he thought was closed, and the closer he looks the less of it makes sense."
+msgstr "Детектива у відставці знову втягують у справу, яку він вважав закритою, і що уважніше він дивиться, то менше в ній сенсу."
+
+msgctxt "#31194"
+msgid "Trakt 78"
+msgstr "Trakt 78"
+
+msgctxt "#31195"
+msgid "Controls stay hidden when you pause."
+msgstr "Під час паузи елементи керування лишаються прихованими."
+
+msgctxt "#31196"
+msgid "Controls open 1 second after you pause."
+msgstr "Елементи керування відкриваються через 1 секунду після паузи."
+
+msgctxt "#31197"
+msgid "Controls open 3 seconds after you pause."
+msgstr "Елементи керування відкриваються через 3 секунди після паузи."
+
+msgctxt "#31198"
+msgid "Controls open 5 seconds after you pause."
+msgstr "Елементи керування відкриваються через 5 секунд після паузи."
+
+msgctxt "#31199"
+msgid "Controls open 2 seconds after you pause."
+msgstr "Елементи керування відкриваються через 2 секунди після паузи."
+
+msgctxt "#31278"
+msgid "Play"
+msgstr "Запуск"
+
+msgctxt "#31279"
+msgid "More information"
+msgstr "Докладніше"
+
+msgctxt "#31295"
+msgid "NOW ON TV"
+msgstr "ЗАРАЗ В ЕФІРІ"
+
+msgctxt "#31296"
+msgid "PRESS UP FOR THE FULL GUIDE"
+msgstr "НАТИСНІТЬ ВГОРУ ДЛЯ ПОВНОГО ТЕЛЕГІДА"
+
+msgctxt "#31297"
+msgid "NO LYRICS FOR THIS SONG"
+msgstr "ДЛЯ ЦІЄЇ ПІСНІ НЕМАЄ ТЕКСТУ"
+
+msgctxt "#31298"
+msgid "Artists"
+msgstr "Артисти"
+
+msgctxt "#31299"
+msgid "Albums"
+msgstr "Альбоми"
+
+msgctxt "#31343"
+msgid "Songs"
+msgstr "Пісні"
+
+msgctxt "#31344"
+msgid "Genres"
+msgstr "Жанри"
+
+msgctxt "#31345"
+msgid "Menu: view, sort"
+msgstr "Меню: вигляд, сортування"
+
+msgctxt "#31346"
+msgid "MUSIC LIBRARY"
+msgstr "МУЗИЧНА МЕДІАТЕКА"
+
+msgctxt "#31347"
+msgid "SUBTITLES"
+msgstr "СУБТИТРИ"
+
+msgctxt "#31348"
+msgid "AUDIO"
+msgstr "АУДІО"
+
+msgctxt "#31349"
+msgid "VIDEO"
+msgstr "ВІДЕО"
+
+msgctxt "#31350"
+msgid "CHAPTERS"
+msgstr "РОЗДІЛИ"
+
+msgctxt "#31351"
+msgid "INFO"
+msgstr "ІНФО"
+
+msgctxt "#31352"
+msgid "STATS"
+msgstr "СТАТИСТИКА"
+
+msgctxt "#31353"
+msgid "TV SHOWS"
+msgstr "СЕРІАЛИ"
+
+msgctxt "#31354"
+msgid "MOVIES"
+msgstr "ФІЛЬМИ"
+
+msgctxt "#31355"
+msgid "BUFFERING"
+msgstr "БУФЕРИЗАЦІЯ"
+
+msgctxt "#31356"
+msgid "PAUSED"
+msgstr "ПАУЗА"
+
+msgctxt "#31357"
+msgid "ADDED"
+msgstr "ДОДАНО"
+
+msgctxt "#31358"
+msgid "Custom path"
+msgstr "Власний шлях"
+
+msgctxt "#31359"
+msgid "Recently added"
+msgstr "Нещодавно додані"
+
+msgctxt "#31360"
+msgid "Recently watched"
+msgstr "Нещодавно переглянуті"
+
+msgctxt "#31361"
+msgid "In progress"
+msgstr "Розпочаті"
+
+msgctxt "#31362"
+msgid "Top rated"
+msgstr "З найвищим рейтингом"
+
+msgctxt "#31363"
+msgid "All movies"
+msgstr "Усі фільми"
+
+msgctxt "#31364"
+msgid "Unwatched shows"
+msgstr "Непереглянуті серіали"
+
+msgctxt "#31365"
+msgid "Random shows"
+msgstr "Випадкові серіали"
+
+msgctxt "#31366"
+msgid "Top rated shows"
+msgstr "Серіали з найвищим рейтингом"
+
+msgctxt "#31367"
+msgid "All shows"
+msgstr "Усі серіали"
+
+msgctxt "#31368"
+msgid "Recently played"
+msgstr "Нещодавно прослухані"
+
+msgctxt "#31369"
+msgid "Random albums"
+msgstr "Випадкові альбоми"
+
+msgctxt "#31370"
+msgid "Shut down"
+msgstr "Вимкнути"
+
+msgctxt "#31371"
+msgid "Reboot to Android"
+msgstr "Перезавантаження в Android"
+
+msgctxt "#31372"
+msgid "Quit Kodi"
+msgstr "Вийти з Kodi"
+
+msgctxt "#31373"
+msgid "Update video library"
+msgstr "Оновити відеотеку"
+
+msgctxt "#31374"
+msgid "Update music library"
+msgstr "Оновити фонотеку"
+
+msgctxt "#31375"
+msgid "Clean video library"
+msgstr "Очистити відеотеку"
+
+msgctxt "#31376"
+msgid "Clean music library"
+msgstr "Очистити фонотеку"
+
+msgctxt "#31377"
+msgid "Power menu"
+msgstr "Меню живлення"
+
+msgctxt "#31378"
+msgid "TV shows"
+msgstr "Серіали"
+
+msgctxt "#31379"
+msgid "MUSIC"
+msgstr "МУЗИКА"
+
+msgctxt "#31380"
+msgid "LISTEN"
+msgstr "СЛУХАТИ"
+
+msgctxt "#31381"
+msgid "WATCH"
+msgstr "ДИВИТИСЯ"
+
+msgctxt "#31382"
+msgid "Latest added"
+msgstr "Останні додані"
+
+msgctxt "#31383"
+msgid "Last played"
+msgstr "Останні відтворені"
+
+msgctxt "#31384"
+msgid "Movies, TV shows, Music or Power"
+msgstr "Фільми, Серіали, Музика або Живлення"
+
+msgctxt "#31385"
+msgid "Position 1 is the first page you reach with Up"
+msgstr "Позиція 1 — перша сторінка, на яку ви потрапляєте кнопкою «Вгору»"
+
+msgctxt "#31386"
+msgid "What this position shows. Off hides it"
+msgstr "Що показує ця позиція. «Вимк.» ховає її"
+
+msgctxt "#31387"
+msgid "OK types a name, Left clears it"
+msgstr "OK — ввести назву, ліворуч — очистити"
+
+msgctxt "#31388"
+msgid "Used when Category = Custom path (a library path, playlist or add-on folder)"
+msgstr "Використовується, коли Категорія = Власний шлях (шлях медіатеки, плейлист або тека доповнення)"
+
+msgctxt "#31389"
+msgid "How many items the page cycles through (default 15)"
+msgstr "Скільки елементів перебирає сторінка (типово 15)"
+
+msgctxt "#31390"
+msgid "Order of the items on this page"
+msgstr "Порядок елементів на цій сторінці"
+
+msgctxt "#31391"
+msgid "Flip the sort order"
+msgstr "Обернути сортування"
+
+msgctxt "#31392"
+msgid "Step through the items by itself"
+msgstr "Перебирати елементи самостійно"
+
+msgctxt "#31393"
+msgid "Seconds each item stays (default 10)"
+msgstr "Секунд на елемент (типово 10)"
+
+msgctxt "#31394"
+msgid "SERIES PREMIERE"
+msgstr "ПРЕМ'ЄРА СЕРІАЛУ"
+
+msgctxt "#31395"
+msgid "SEASON PREMIERE"
+msgstr "ПРЕМ'ЄРА СЕЗОНУ"
+
+msgctxt "#31396"
+msgid "SERIES FINALE"
+msgstr "ФІНАЛ СЕРІАЛУ"
+
+msgctxt "#31397"
+msgid "SEASON FINALE"
+msgstr "ФІНАЛ СЕЗОНУ"
+
+msgctxt "#31398"
+msgid "Movie sets"
+msgstr "Кіноколекції"
+
+msgctxt "#31399"
+msgid "Autoscroll off"
+msgstr "Автопрокручування вимк."
+
+msgctxt "#31400"
+msgid "Random movies"
+msgstr "Випадкові фільми"
+
+msgctxt "#31401"
+msgid "Recently added movies"
+msgstr "Нещодавно додані фільми"
+
+msgctxt "#31402"
+msgid "Recently played movies"
+msgstr "Нещодавно переглянуті фільми"
+
+msgctxt "#31403"
+msgid "Top rated movies"
+msgstr "Фільми з найвищим рейтингом"
+
+msgctxt "#31404"
+msgid "Most played movies"
+msgstr "Найпереглядаваніші фільми"
+
+msgctxt "#31405"
+msgid "Newest movies"
+msgstr "Найновіші фільми"
+
+msgctxt "#31406"
+msgid "Title movies"
+msgstr "Фільми за назвою"
+
+msgctxt "#31407"
+msgid "Recently added shows"
+msgstr "Нещодавно додані серіали"
+
+msgctxt "#31408"
+msgid "Recently played shows"
+msgstr "Нещодавно переглянуті серіали"
+
+msgctxt "#31409"
+msgid "Most played shows"
+msgstr "Найпереглядаваніші серіали"
+
+msgctxt "#31410"
+msgid "Newest shows"
+msgstr "Найновіші серіали"
+
+msgctxt "#31411"
+msgid "Title shows"
+msgstr "Серіали за назвою"
+
+msgctxt "#31412"
+msgid "Recently added albums"
+msgstr "Нещодавно додані альбоми"
+
+msgctxt "#31413"
+msgid "Recently played albums"
+msgstr "Нещодавно прослухані альбоми"
+
+msgctxt "#31414"
+msgid "Top rated albums"
+msgstr "Альбоми з найвищим рейтингом"
+
+msgctxt "#31415"
+msgid "Most played albums"
+msgstr "Найпрослуховуваніші альбоми"
+
+msgctxt "#31416"
+msgid "Newest albums"
+msgstr "Найновіші альбоми"
+
+msgctxt "#31417"
+msgid "Title albums"
+msgstr "Альбоми за назвою"
+
+msgctxt "#31418"
+msgid "FULL HD"
+msgstr "FULL HD"
+
+msgctxt "#31419"
+msgid "DOLBY VISION"
+msgstr "DOLBY VISION"
+
+msgctxt "#31420"
+msgid "TRUEHD ATMOS"
+msgstr "TRUEHD ATMOS"
+
+msgctxt "#31421"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31422"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31423"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31424"
+msgid "TRUEHD"
+msgstr "TRUEHD"
+
+msgctxt "#31425"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31426"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31427"
+msgid "FLAC"
+msgstr "FLAC"
+
+msgctxt "#31428"
+msgid "ALAC"
+msgstr "ALAC"
+
+msgctxt "#31429"
+msgid "OPUS"
+msgstr "OPUS"
+
+msgctxt "#31430"
+msgid "VORBIS"
+msgstr "VORBIS"
+
+msgctxt "#31431"
+msgid "RATED NC-17"
+msgstr "РЕЙТИНГ NC-17"
+
+msgctxt "#31432"
+msgid "RATED PG-13"
+msgstr "РЕЙТИНГ PG-13"
+
+msgctxt "#31433"
+msgid "RATED PG"
+msgstr "РЕЙТИНГ PG"
+
+msgctxt "#31434"
+msgid "RATED R"
+msgstr "РЕЙТИНГ R"
+
+msgctxt "#31435"
+msgid "RATED G"
+msgstr "РЕЙТИНГ G"
+
+msgctxt "#31436"
+msgid "RATED TV-MA"
+msgstr "РЕЙТИНГ TV-MA"
+
+msgctxt "#31437"
+msgid "RATED TV-14"
+msgstr "РЕЙТИНГ TV-14"
+
+msgctxt "#31438"
+msgid "RATED TV-PG"
+msgstr "РЕЙТИНГ TV-PG"
+
+msgctxt "#31439"
+msgid "RATED TV-Y7"
+msgstr "РЕЙТИНГ TV-Y7"
+
+msgctxt "#31440"
+msgid "RATED TV-Y"
+msgstr "РЕЙТИНГ TV-Y"
+
+msgctxt "#31441"
+msgid "RATED TV-G"
+msgstr "РЕЙТИНГ TV-G"
+
+msgctxt "#31442"
+msgid "ULTRA"
+msgstr "ULTRA"
+
+msgctxt "#31443"
+msgid "FULL"
+msgstr "FULL"
+
+msgctxt "#31444"
+msgid "READY"
+msgstr "READY"
+
+msgctxt "#31445"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31446"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31447"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31448"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31449"
+msgid "MEDIA"
+msgstr "МЕДІА"
+
+msgctxt "#31450"
+msgid "RATING"
+msgstr "РЕЙТИНГ"
+
+msgctxt "#31451"
+msgid "CERTIFICATION"
+msgstr "ВІКОВИЙ РЕЙТИНГ"
+
+msgctxt "#31452"
+msgid "CREDITS"
+msgstr "ТВОРЦІ"
+
+msgctxt "#31453"
+msgid "FIRST AIRED"
+msgstr "ПЕРШИЙ ПОКАЗ"
+
+msgctxt "#31454"
+msgid "STUDIO"
+msgstr "СТУДІЯ"
+
+msgctxt "#31455"
+msgid "GENRE"
+msgstr "ЖАНР"
+
+msgctxt "#31456"
+msgid "CAST"
+msgstr "У РОЛЯХ"
+
+msgctxt "#31457"
+msgid "HD READY"
+msgstr "HD READY"
+
+msgctxt "#31458"
+msgid "BOXED SET"
+msgstr "БОКС-СЕТ"
+
+msgctxt "#31459"
+msgid "* ALL SEASONS"
+msgstr "* УСІ СЕЗОНИ"
+
+msgctxt "#31460"
+msgid "For now"
+msgstr "На зараз"
+
+msgctxt "#31461"
+msgid "Kept all day"
+msgstr "Тримається весь день"
+
+msgctxt "#31462"
+msgid "Past midnight"
+msgstr "За північ"
+
+msgctxt "#31463"
+msgid "Still up?"
+msgstr "Ще не спите?"
+
+msgctxt "#31464"
+msgid "Nearly bedtime."
+msgstr "Скоро час спати."
+
+msgctxt "#31465"
+msgid "Good evening."
+msgstr "Добрий вечір."
+
+msgctxt "#31466"
+msgid "Good afternoon."
+msgstr "Добрий день."
+
+msgctxt "#31467"
+msgid "Good morning."
+msgstr "Доброго ранку."
+
+msgctxt "#31468"
+msgid "Short ones: under 100 minutes"
+msgstr "Короткі: до 100 хвилин"
+
+msgctxt "#31469"
+msgid "The evening is yours"
+msgstr "Вечір у вашому розпорядженні"
+
+msgctxt "#31470"
+msgid "A free afternoon: something long"
+msgstr "Вільний день: щось довге"
+
+msgctxt "#31471"
+msgid "Plenty of aeon left"
+msgstr "Часу ще вдосталь"
+
+msgctxt "#31472"
+msgid "Sunday morning: take it slow"
+msgstr "Недільний ранок: без поспіху"
+
+msgctxt "#31473"
+msgid "A slow start: something light"
+msgstr "Неквапливий початок: щось легке"
+
+msgctxt "#31474"
+msgid "Needs a weather add-on in Kodi's settings"
+msgstr "Потрібне погодне доповнення в налаштуваннях Kodi"
+
+msgctxt "#31475"
+msgid "From the weather add-on set in Kodi"
+msgstr "З погодного доповнення, вибраного в Kodi"
+
+msgctxt "#31476"
+msgid "Tropical storm"
+msgstr "Тропічний шторм"
+
+msgctxt "#31477"
+msgid "Severe storms"
+msgstr "Сильні грози"
+
+msgctxt "#31478"
+msgid "Rain and snow"
+msgstr "Дощ зі снігом"
+
+msgctxt "#31479"
+msgid "Rain and sleet"
+msgstr "Дощ і крупа"
+
+msgctxt "#31480"
+msgid "Snow and sleet"
+msgstr "Сніг і крупа"
+
+msgctxt "#31481"
+msgid "Freezing drizzle"
+msgstr "Крижана мряка"
+
+msgctxt "#31482"
+msgid "Freezing rain"
+msgstr "Крижаний дощ"
+
+msgctxt "#31483"
+msgid "Snow flurries"
+msgstr "Снігові заряди"
+
+msgctxt "#31484"
+msgid "Light snow"
+msgstr "Невеликий сніг"
+
+msgctxt "#31485"
+msgid "Blowing snow"
+msgstr "Поземок"
+
+msgctxt "#31486"
+msgid "Mostly cloudy"
+msgstr "Переважно хмарно"
+
+msgctxt "#31487"
+msgid "Partly cloudy"
+msgstr "Мінлива хмарність"
+
+msgctxt "#31488"
+msgid "Rain and hail"
+msgstr "Дощ і град"
+
+msgctxt "#31489"
+msgid "Isolated storms"
+msgstr "Місцями грози"
+
+msgctxt "#31490"
+msgid "Scattered storms"
+msgstr "Короткочасні грози"
+
+msgctxt "#31491"
+msgid "Scattered showers"
+msgstr "Короткочасні зливи"
+
+msgctxt "#31492"
+msgid "Heavy snow"
+msgstr "Сильний сніг"
+
+msgctxt "#31493"
+msgid "Snow showers"
+msgstr "Снігопад"
+
+msgctxt "#31494"
+msgid "More under 100 minutes"
+msgstr "Ще до 100 хвилин"
+
+msgctxt "#31495"
+msgid "Sunday morning: documentaries"
+msgstr "Недільний ранок: документальне"
+
+msgctxt "#31496"
+msgid "Morning shorts: under 100 minutes"
+msgstr "Короткі на ранок: до 100 хвилин"
+
+msgctxt "#31497"
+msgid "A long afternoon film"
+msgstr "Довгий фільм на день"
+
+msgctxt "#31498"
+msgid "Top rated, still unwatched"
+msgstr "З найвищим рейтингом, ще не переглянуті"
+
+msgctxt "#31499"
+msgid "Tonight's top rated"
+msgstr "Найкраще на сьогоднішній вечір"
+
+msgctxt "#31500"
+msgid "Before bed"
+msgstr "Перед сном"
+
+msgctxt "#31501"
+msgid "This morning"
+msgstr "Сьогодні вранці"
+
+msgctxt "#31502"
+msgid "This afternoon"
+msgstr "Сьогодні вдень"
+
+msgctxt "#31503"
+msgid "Later today"
+msgstr "Пізніше сьогодні"
+
+msgctxt "#31504"
+msgid "One more episode"
+msgstr "Ще одна серія"
+
+msgctxt "#31505"
+msgid "Next up"
+msgstr "Далі"
+
+msgctxt "#31506"
+msgid "It's snowing: something long"
+msgstr "Падає сніг: щось довге"
+
+msgctxt "#31507"
+msgid "Still raining: under an hour"
+msgstr "Досі дощ: до години"
+
+msgctxt "#31508"
+msgid "It's raining: something long"
+msgstr "Іде дощ: щось довге"
+
+msgctxt "#31509"
+msgid "Just added"
+msgstr "Щойно додано"
+
+msgctxt "#31510"
+msgid "Download subtitles"
+msgstr "Завантажити субтитри"
+
+msgctxt "#31511"
+msgid "Subtitle settings"
+msgstr "Налаштування субтитрів"
+
+msgctxt "#31512"
+msgid "What's new"
+msgstr "Що нового"
+
+msgctxt "#31513"
+msgid "Nothing to suggest right now."
+msgstr "Зараз нічого запропонувати."
+
+msgctxt "#31514"
+msgid "Clean library?"
+msgstr "Очистити медіатеку?"
+
+msgctxt "#31515"
+msgid "Music videos"
+msgstr "Музичні кліпи"
+
+msgctxt "#31516"
+msgid "Kodi takes out the songs, albums and artists it can no longer find. Your files stay where they are."
+msgstr "Kodi прибере композиції, альбоми й виконавців, яких більше не знаходить. Ваші файли залишаться на місці."
+
+msgctxt "#31517"
+msgid "Kodi takes out the films, shows and episodes it can no longer find. Your files stay where they are."
+msgstr "Kodi прибере фільми, серіали й епізоди, яких більше не знаходить. Ваші файли залишаться на місці."
+
+msgctxt "#31518"
+msgid "Add-on settings"
+msgstr "Налаштування доповнення"
+
+msgctxt "#31519"
+msgid "Get more"
+msgstr "Отримати ще"
+
+msgctxt "#31520"
+msgid "Slideshow"
+msgstr "Слайд-шоу"
+
+msgctxt "#31521"
+msgid "Recursive slideshow"
+msgstr "Рекурсивне слайд-шоу"
+
+msgctxt "#31522"
+msgid "Randomise"
+msgstr "Перемішати"
+
+msgctxt "#31523"
+msgid "Edited  locked"
+msgstr "Змінено  заблоковано"
+
+msgctxt "#31524"
+msgid "Shuffle  ·  Repeat one"
+msgstr "Перемішати  ·  Повтор одного"
+
+msgctxt "#31525"
+msgid "Shuffle  ·  Repeat all"
+msgstr "Перемішати  ·  Повтор усіх"
+
+msgctxt "#31526"
+msgid "Repeat one"
+msgstr "Повтор одного"
+
+msgctxt "#31527"
+msgid "Repeat all"
+msgstr "Повтор усіх"
+
+msgctxt "#31528"
+msgid "Video queue"
+msgstr "Черга відео"
+
+msgctxt "#31529"
+msgid "Shuffle: on"
+msgstr "Перемішування: увімк."
+
+msgctxt "#31530"
+msgid "Shuffle: off"
+msgstr "Перемішування: вимк."
+
+msgctxt "#31531"
+msgid "Play all"
+msgstr "Відтворити все"
+
+msgctxt "#31532"
+msgid "Shuffle"
+msgstr "Перемішати"
+
+msgctxt "#31533"
+msgid "Refresh"
+msgstr "Оновити"
+
+msgctxt "#31534"
+msgid "Added"
+msgstr "Додано"
+
+msgctxt "#31535"
+msgid "Plays"
+msgstr "Відтворення"
+
+msgctxt "#31536"
+msgid "Mood"
+msgstr "Настрій"
+
+msgctxt "#31537"
+msgid "Album info"
+msgstr "Інфо про альбом"
+
+msgctxt "#31538"
+msgid "Artist info"
+msgstr "Інфо про виконавця"
+
+msgctxt "#31539"
+msgid "About the artist"
+msgstr "Про виконавця"
+
+msgctxt "#31552"
+msgid "About the song"
+msgstr "Про композицію"
+
+msgctxt "#31553"
+msgid "About the album"
+msgstr "Про альбом"
+
+msgctxt "#31554"
+msgid "OK reads all of it"
+msgstr "OK — читати повністю"
+
+msgctxt "#31555"
+msgid "Up returns to the buttons"
+msgstr "Вгору — назад до кнопок"
+
+msgctxt "#31556"
+msgid "Right for the full story"
+msgstr "Праворуч — уся історія"
+
+msgctxt "#31557"
+msgid "Shuffle on"
+msgstr "Перемішування увімк."
+
+msgctxt "#31558"
+msgid "Music video"
+msgstr "Музичний кліп"
+
+msgctxt "#31559"
+msgid "HEVC"
+msgstr "HEVC"
+
+msgctxt "#31560"
+msgid "Dolby Vision"
+msgstr "Dolby Vision"
+
+msgctxt "#31561"
+msgid "TrueHD Atmos"
+msgstr "TrueHD Atmos"
+
+msgctxt "#31562"
+msgid "DD+ Atmos"
+msgstr "DD+ Atmos"
+
+msgctxt "#31563"
+msgid "Video"
+msgstr "Відео"
+
+msgctxt "#31564"
+msgid "Chapters"
+msgstr "Розділи"
+
+msgctxt "#31565"
+msgid "Info"
+msgstr "Інфо"
+
+msgctxt "#31566"
+msgid "Stats"
+msgstr "Дані"
+
+msgctxt "#31567"
+msgid "Sleeping after this"
+msgstr "Сон після цього"
+
+msgctxt "#31568"
+msgid "Sleep after this"
+msgstr "Заснути після цього"
+
+msgctxt "#31569"
+msgid "1 RESULT"
+msgstr "1 РЕЗУЛЬТАТ"
+
+msgctxt "#31575"
+msgid "Colors, backdrop and the look of the settings screens."
+msgstr "Кольори, тло й вигляд екранів налаштувань."
+
+msgctxt "#31576"
+msgid "Show a dimmed copy of the last fanart you looked at behind the settings screens."
+msgstr "Показувати затемнену копію останнього переглянутого фанарту за екранами налаштувань."
+
+msgctxt "#31577"
+msgid "Background of the A-Z / scroll bar strip in the library views: dark (default) or white like Aeon 2."
+msgstr "Тло смуги А-Я / прокручування у виглядах медіатеки: темне (типово) або біле, як в Aeon 2."
+
+msgctxt "#31578"
+msgid "Aeon style: neutral (flat dark), the faint fanart, or a color that follows the artwork and fades between titles. Override it per home menu item (Edit spotlight)."
+msgstr "Стиль Aeon: нейтральний (рівний темний), блідий фанарт або колір, що слідує за зображенням і плавно змінюється між назвами. Можна змінити для кожного пункту головного меню (Змінити Spotlight)."
+
+msgctxt "#31579"
+msgid "Aeon: flat dark panels and a white highlight bar (like the Aeon 2 list). Aeon Glass: translucent panels and a soft highlight. Applies to every library view."
+msgstr "Aeon: рівні темні панелі й біла смуга виділення (як список Aeon 2). Aeon Glass: напівпрозорі панелі й м'яке виділення. Діє в усіх виглядах медіатеки."
+
+msgctxt "#31580"
+msgid "Where the music that is playing shows on Home: Slot (lower left, default), Corner (top left), Line (above the menu) or Bar (bottom)."
+msgstr "Де на головній показується музика, що грає: Слот (внизу ліворуч, типово), Кут (вгорі ліворуч), Рядок (над меню) або Смуга (внизу)."
+
+msgctxt "#31581"
+msgid "How visible the fanart backdrop is."
+msgstr "Наскільки помітне тло з фанарту."
+
+msgctxt "#31582"
+msgid "Tags, plot text and logos in the movie and episode views."
+msgstr "Мітки, сюжет і логотипи у виглядах фільмів та епізодів."
+
+msgctxt "#31583"
+msgid "Resolution and video codec in the tag line under a film or episode."
+msgstr "Роздільність і відеокодек у рядку міток під фільмом або епізодом."
+
+msgctxt "#31584"
+msgid "Shows HDR10, HLG or Dolby Vision in the tag line when the file has it."
+msgstr "Показує HDR10, HLG або Dolby Vision у рядку міток, якщо вони є у файлі."
+
+msgctxt "#31585"
+msgid "Audio codec and channel count in the tag line."
+msgstr "Аудіокодек і кількість каналів у рядку міток."
+
+msgctxt "#31586"
+msgid "What the text under a film shows: the full plot, or the tagline when the film has one."
+msgstr "Що показує текст під фільмом: увесь сюжет або гасло, якщо воно є у фільму."
+
+msgctxt "#31587"
+msgid "Long plots scroll by themselves after a few seconds."
+msgstr "Довгі описи за кілька секунд прокручуються самі."
+
+msgctxt "#31588"
+msgid "The studio logo beside seasons and episodes (needs the studio logos resource add-on)."
+msgstr "Логотип студії поруч із сезонами та епізодами (потрібне доповнення-ресурс із логотипами студій)."
+
+msgctxt "#31589"
+msgid "Which rating sources show, and whether the score is colored."
+msgstr "Які джерела рейтингу показуються і чи кольоровий бал."
+
+msgctxt "#31590"
+msgid "Green from 7, amber from 5, red below."
+msgstr "Зелений від 7, бурштиновий від 5, нижче — червоний."
+
+msgctxt "#31591"
+msgid "Shows the IMDb score when the library has one. Several sources can be on at once."
+msgstr "Показує оцінку IMDb, якщо вона є в медіатеці. Можна ввімкнути кілька джерел одночасно."
+
+msgctxt "#31592"
+msgid "Shows the TMDb score when the library has one."
+msgstr "Показує оцінку TMDb, якщо вона є в медіатеці."
+
+msgctxt "#31593"
+msgid "Shows the Tomatometer when your scraper or TMDb Helper provides it."
+msgstr "Показує Tomatometer, якщо його дає ваш скрейпер або TMDb Helper."
+
+msgctxt "#31594"
+msgid "Shows the Trakt score when it is in the library."
+msgstr "Показує оцінку Trakt, якщо вона є в медіатеці."
+
+msgctxt "#31595"
+msgid "Seek bar, pause behaviour and the Back button."
+msgstr "Смуга перемотування, поведінка під час паузи й кнопка «Назад»."
+
+msgctxt "#31596"
+msgid "What the right-hand time of the seek bar shows: the total length, the time left, or when it ends."
+msgstr "Що показує правий час смуги перемотування: загальну тривалість, час, що лишився, або час завершення."
+
+msgctxt "#31597"
+msgid "The player controls open by themselves when you pause."
+msgstr "Елементи керування плеєром відкриваються самі під час паузи."
+
+msgctxt "#31598"
+msgid "How long after pausing the controls open."
+msgstr "Через скільки після паузи відкриваються елементи керування."
+
+msgctxt "#31599"
+msgid "Back goes up one level, or straight to the home screen."
+msgstr "«Назад» піднімається на рівень вище або одразу на головний екран."
+
+msgctxt "#31600"
+msgid "Extra fanart and the artist slideshow."
+msgstr "Додатковий фанарт і слайд-шоу виконавця."
+
+msgctxt "#31601"
+msgid "Home and the library cycle through a film or show's extra fanart. Needs extra fanart in the library (fanart1, fanart2 ...)."
+msgstr "Головна й медіатека перебирають додатковий фанарт фільму або серіалу. Потрібен додатковий фанарт у медіатеці (fanart1, fanart2 ...)."
+
+msgctxt "#31602"
+msgid "How long each fanart image stays."
+msgstr "Скільки тримається кожне зображення фанарту."
+
+msgctxt "#31603"
+msgid "Now playing shows the Artist Slideshow add-on pictures of the artist (needs script.artistslideshow)."
+msgstr "«Зараз грає» показує фото виконавця з доповнення Artist Slideshow (потрібен script.artistslideshow)."
+
+msgctxt "#31604"
+msgid "What the full-screen widget pages (Up on a home item) show."
+msgstr "Що показують повноекранні сторінки віджетів («Вгору» на пункті головної)."
+
+msgctxt "#31605"
+msgid "Resolution, codec, HDR and audio tags on the full-screen widget pages (the choices under Details apply)."
+msgstr "Мітки роздільності, кодека, HDR і звуку на повноекранних сторінках віджетів (діють параметри з «Подробиць»)."
+
+msgctxt "#31606"
+msgid "The rating line, with the sources you chose under Ratings, on the full-screen widget pages."
+msgstr "Рядок рейтингів із джерелами, вибраними в «Рейтингах», на повноекранних сторінках віджетів."
+
+msgctxt "#31607"
+msgid "The studio logo, or the network logo for episodes, on the full-screen widget pages (needs the studio logos add-on)."
+msgstr "Логотип студії, а для епізодів — каналу, на повноекранних сторінках віджетів (потрібне доповнення з логотипами студій)."
+
+msgctxt "#31608"
+msgid "Watched markers on posters, the trailer button and logos instead of titles."
+msgstr "Позначки перегляду на постерах, кнопка трейлера й логотипи замість назв."
+
+msgctxt "#31609"
+msgid "How the playback controls behave."
+msgstr "Як поводяться елементи керування відтворенням."
+
+msgctxt "#31610"
+msgid "Fonts for each part of the skin, calmer animations, and a way back to the default settings."
+msgstr "Шрифти для кожної частини оболонки, спокійніша анімація і шлях назад до типових налаштувань."
+
+msgctxt "#31611"
+msgid "Unwatched: a small dot. Watched: a check disc. Shows add the number of unwatched episodes."
+msgstr "Не переглянуто: маленька крапка. Переглянуто: галочка. У серіалів ще кількість непереглянутих епізодів."
+
+msgctxt "#31612"
+msgid "Shows a Trailer button next to Play when a film has a trailer link (played through the YouTube add-on)."
+msgstr "Показує кнопку «Трейлер» біля «Відтворити», якщо фільм має посилання на трейлер (відтворюється через доповнення YouTube)."
+
+msgctxt "#31613"
+msgid "How long the playback controls stay up after your last button press. They stay while paused and while a menu is open."
+msgstr "Скільки елементи керування лишаються після останнього натискання. Під час паузи й з відкритим меню вони лишаються."
+
+msgctxt "#31614"
+msgid "Where the subtitle and audio offset strip appears while you sync. Top keeps bottom subtitles in view."
+msgstr "Де з'являється смуга зсуву субтитрів і звуку під час синхронізації. Згори — нижні субтитри лишаються видимими."
+
+msgctxt "#31615"
+msgid "Replaces zooms, slides and the rain with short fades. Focus changes stay instant."
+msgstr "Замінює масштабування, зсуви й дощ короткими переходами. Зміна фокуса лишається миттєвою."
+
+msgctxt "#31616"
+msgid "Puts every skin setting back to its default and reloads the skin. Press OK twice to confirm."
+msgstr "Скидає кожне налаштування оболонки до типового й перезавантажує оболонку. Натисніть OK двічі для підтвердження."
+
+msgctxt "#31617"
+msgid "Aeon Fuse options. Kodi's settings live under Settings; switch skins in Settings > Interface > Skin."
+msgstr "Параметри Aeon Fuse. Налаштування Kodi — у розділі «Налаштування»; змінити оболонку: Налаштування > Інтерфейс > Оболонка."
+
+msgctxt "#31618"
+msgid "Resume"
+msgstr "Продовжити"
+
+msgctxt "#31619"
+msgid "From start"
+msgstr "З початку"
+
+msgctxt "#31620"
+msgid "Browse"
+msgstr "Огляд"
+
+msgctxt "#31621"
+msgid "Trailer"
+msgstr "Трейлер"
+
+msgctxt "#31622"
+msgid "Collection"
+msgstr "Колекція"
+
+msgctxt "#31623"
+msgid "More by the director"
+msgstr "Ще від режисера"
+
+msgctxt "#31624"
+msgid "Versions"
+msgstr "Версії"
+
+msgctxt "#31625"
+msgid "Extras"
+msgstr "Додатково"
+
+msgctxt "#31626"
+msgid "Choose art"
+msgstr "Вибрати зображення"
+
+msgctxt "#31627"
+msgid "Choose fanart"
+msgstr "Вибрати фанарт"
+
+msgctxt "#31628"
+msgid "Films in this collection"
+msgstr "Фільми колекції"
+
+msgctxt "#31629"
+msgid "OK reads the whole story"
+msgstr "OK — читати весь сюжет"
+
+msgctxt "#31630"
+msgid "Up or Back returns to the buttons"
+msgstr "Вгору або «Назад» — до кнопок"
+
+msgctxt "#31631"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31632"
+msgid "No story written for this one yet."
+msgstr "Сюжет для цього ще не написано."
+
+msgctxt "#31633"
+msgid "Shows in progress"
+msgstr "Розпочаті серіали"
+
+msgctxt "#31635"
+msgid "A collection: OK opens its films."
+msgstr "Колекція: OK відкриває її фільми."
+
+msgctxt "#31636"
+msgid "Nothing left: a good time for something new."
+msgstr "Нічого не лишилося: саме час для нового."
+
+msgctxt "#31637"
+msgid "Ending at"
+msgstr "Завершення о"
+
+msgctxt "#31638"
+msgid "PRESETS"
+msgstr "ПЕРЕДУСТАНОВКИ"
+
+msgctxt "#31639"
+msgid "LYRICS"
+msgstr "ТЕКСТ"
+
+msgctxt "#31640"
+msgid "No guide data. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "Немає даних телегіда. Увімкніть доповнення-клієнт PVR у налаштуваннях PVR і прямого ТБ."
+
+msgctxt "#31641"
+msgid "Feels like"
+msgstr "Відчувається"
+
+msgctxt "#31642"
+msgid "Humidity"
+msgstr "Вологість"
+
+msgctxt "#31643"
+msgid "Wind"
+msgstr "Вітер"
+
+msgctxt "#31644"
+msgid "Precipitation"
+msgstr "Опади"
+
+msgctxt "#31645"
+msgid "UV index"
+msgstr "УФ-індекс"
+
+msgctxt "#31646"
+msgid "Sunrise"
+msgstr "Схід сонця"
+
+msgctxt "#31647"
+msgid "Sunset"
+msgstr "Захід сонця"
+
+msgctxt "#31648"
+msgid "Next location"
+msgstr "Наступне місце"
+
+msgctxt "#31649"
+msgid "Skin"
+msgstr "Оболонка"
+
+msgctxt "#31650"
+msgid "Address"
+msgstr "Адреса"
+
+msgctxt "#31651"
+msgid "Screen"
+msgstr "Екран"
+
+msgctxt "#31652"
+msgid "Aeon Fuse options: look, details, ratings, behaviour, backgrounds and the home menu (order, widgets, submenus)."
+msgstr "Параметри Aeon Fuse: вигляд, подробиці, рейтинги, поведінка, тла і головне меню (порядок, віджети, підменю)."
+
+msgctxt "#31653"
+msgid "Video and music playback, refresh-rate matching, subtitle languages and look, discs."
+msgstr "Відтворення відео й музики, підлаштування частоти, мови й вигляд субтитрів, диски."
+
+msgctxt "#31654"
+msgid "Library behaviour, scrapers, file lists, artwork and what OK does on an item."
+msgstr "Поведінка медіатеки, скрейпери, списки файлів, зображення і що робить OK на елементі."
+
+msgctxt "#31655"
+msgid "Skin, colors, fonts, region and language, screensaver. Switch to another skin here: Skin > Skin."
+msgstr "Оболонка, кольори, шрифти, регіон і мова, заставка. Тут можна змінити оболонку: Оболонка > Оболонка."
+
+msgctxt "#31656"
+msgid "Browse, update, configure or install add-ons."
+msgstr "Перегляд, оновлення, налаштування або встановлення доповнень."
+
+msgctxt "#31657"
+msgid "Web server and JSON-RPC control, UPnP, AirPlay, Zeroconf, SMB client."
+msgstr "Вебсервер і керування JSON-RPC, UPnP, AirPlay, Zeroconf, клієнт SMB."
+
+msgctxt "#31658"
+msgid "Display, audio output and passthrough, input, power saving, logging."
+msgstr "Екран, аудіовихід і passthrough, введення, енергозбереження, журнал."
+
+msgctxt "#31659"
+msgid "Copy, move and delete files; add network sources."
+msgstr "Копіювати, переміщувати й видаляти файли; додавати мережеві джерела."
+
+msgctxt "#31660"
+msgid "Kodi version, video renderer, storage, network and hardware details."
+msgstr "Версія Kodi, відеорендерер, сховище, мережа й обладнання."
+
+msgctxt "#31661"
+msgid "What Kodi has done recently: scans, add-on updates, errors."
+msgstr "Що Kodi робив нещодавно: сканування, оновлення доповнень, помилки."
+
+msgctxt "#31662"
+msgid "Profiles and the login screen."
+msgstr "Профілі й екран входу."
+
+msgctxt "#31663"
+msgid "Live TV and PVR."
+msgstr "Пряме ТБ і PVR."
+
+msgctxt "#31664"
+msgid "Games and controllers."
+msgstr "Ігри й контролери."
+
+msgctxt "#31665"
+msgid "Dark"
+msgstr "Темний"
+
+msgctxt "#31666"
+msgid "White"
+msgstr "Білий"
+
+msgctxt "#31667"
+msgid "Menu"
+msgstr "Меню"
+
+msgctxt "#31668"
+msgid "Position"
+msgstr "Позиція"
+
+msgctxt "#31669"
+msgid "Category"
+msgstr "Категорія"
+
+msgctxt "#31670"
+msgid "Hold time"
+msgstr "Час показу"
+
+msgctxt "#31671"
+msgid "Pick an item, then use the buttons on the right. Add item puts a new one at the end."
+msgstr "Виберіть пункт, а тоді кнопки праворуч. «Додати пункт» ставить новий у кінець."
+
+msgctxt "#31672"
+msgid "Light"
+msgstr "Легкий"
+
+msgctxt "#31673"
+msgid "Strong"
+msgstr "Сильний"
+
+msgctxt "#31674"
+msgid "Slot"
+msgstr "Слот"
+
+msgctxt "#31675"
+msgid "Corner"
+msgstr "Кут"
+
+msgctxt "#31676"
+msgid "Line"
+msgstr "Рядок"
+
+msgctxt "#31677"
+msgid "Bar"
+msgstr "Смуга"
+
+msgctxt "#31678"
+msgid "Aeon"
+msgstr "Aeon"
+
+msgctxt "#31679"
+msgid "Aeon Glass"
+msgstr "Aeon Glass"
+
+msgctxt "#31680"
+msgid "Color"
+msgstr "Колір"
+
+msgctxt "#31681"
+msgid "PREVIEW"
+msgstr "Перегляд"
+
+msgctxt "#31682"
+msgid "LIBRARY LISTS"
+msgstr "СПИСКИ МЕДІАТЕКИ"
+
+msgctxt "#31683"
+msgid "Focused row"
+msgstr "Ряд у фокусі"
+
+msgctxt "#31684"
+msgid "Other row"
+msgstr "Інший рядок"
+
+msgctxt "#31685"
+msgid "MUSIC PLAYING"
+msgstr "ГРАЄ МУЗИКА"
+
+msgctxt "#31686"
+msgid "SAMPLE"
+msgstr "ПРИКЛАД"
+
+msgctxt "#31687"
+msgid "BACKDROP"
+msgstr "ТЛО"
+
+msgctxt "#31688"
+msgid "SCREENSAVER"
+msgstr "ЗАСТАВКА"
+
+msgctxt "#31689"
+msgid "TITLE"
+msgstr "НАЗВА"
+
+msgctxt "#31690"
+msgid "Plot"
+msgstr "Сюжет"
+
+msgctxt "#31691"
+msgid "Tagline"
+msgstr "Гасло"
+
+msgctxt "#31692"
+msgid "TAG LINE"
+msgstr "РЯДОК МІТОК"
+
+msgctxt "#31693"
+msgid "UNDER THE TITLE"
+msgstr "ПІД НАЗВОЮ"
+
+msgctxt "#31694"
+msgid "PLOT TEXT"
+msgstr "ТЕКСТ СЮЖЕТУ"
+
+msgctxt "#31695"
+msgid "Long plots scroll slowly by themselves, so you can read them without a button press."
+msgstr "Довгі описи повільно прокручуються самі, тож їх можна читати без натискань."
+
+msgctxt "#31696"
+msgid "The studio logo shows beside a season or episode when the studio logos add-on is installed."
+msgstr "Логотип студії показується поруч із сезоном або епізодом, якщо встановлено доповнення з логотипами студій."
+
+msgctxt "#31697"
+msgid "THEME SONG"
+msgstr "ТЕМА"
+
+msgctxt "#31699"
+msgid "Plays while a movie or show is selected, if its folder has a theme file."
+msgstr "Звучить, поки вибрано фільм або серіал, якщо в його теці є файл теми."
+
+msgctxt "#31700"
+msgid "Total"
+msgstr "Усього"
+
+msgctxt "#31701"
+msgid "Left"
+msgstr "Лишилося"
+
+msgctxt "#31702"
+msgid "Ends at"
+msgstr "Кінець о"
+
+msgctxt "#31703"
+msgid "SEEK BAR"
+msgstr "Смуга перемотки"
+
+msgctxt "#31704"
+msgid "ON PAUSE"
+msgstr "ПІД ЧАС ПАУЗИ"
+
+msgctxt "#31705"
+msgid "BACK BUTTON"
+msgstr "КНОПКА «НАЗАД»"
+
+msgctxt "#31706"
+msgid "Pressing Back in a library list goes up one level, or straight to the home screen if you choose Home."
+msgstr "«Назад» у списку медіатеки піднімається на рівень вище або одразу на головну, якщо вибрати «Головна»."
+
+msgctxt "#31707"
+msgid "PLAYER CONTROLS"
+msgstr "КЕРУВАННЯ ПЛЕЄРОМ"
+
+msgctxt "#31708"
+msgid "Needs disc art for the album or movie."
+msgstr "Потрібна обкладинка диска для альбому або фільму."
+
+msgctxt "#31709"
+msgid "FANART"
+msgstr "ФАНАРТ"
+
+msgctxt "#31710"
+msgid "NOW PLAYING"
+msgstr "ЗАРАЗ ГРАЄ"
+
+msgctxt "#31711"
+msgid "Pictures of the artist from the Artist Slideshow add-on fade in behind the album cover."
+msgstr "Фото виконавця з доповнення Artist Slideshow плавно з'являються за обкладинкою альбому."
+
+msgctxt "#31712"
+msgid "Slide"
+msgstr "Зсув"
+
+msgctxt "#31713"
+msgid "Fade"
+msgstr "Наплив"
+
+msgctxt "#31714"
+msgid "Cut"
+msgstr "Різкий"
+
+msgctxt "#31715"
+msgid "MEDIA INFO"
+msgstr "ВІДОМОСТІ ПРО МЕДІА"
+
+msgctxt "#31716"
+msgid "STUDIO / NETWORK"
+msgstr "СТУДІЯ / КАНАЛ"
+
+msgctxt "#31717"
+msgid "The logo of the studio, or of the network for episodes, under the date ring."
+msgstr "Логотип студії, а для епізодів — каналу, під кільцем дати."
+
+msgctxt "#31718"
+msgid "SPOTLIGHT"
+msgstr "SPOTLIGHT"
+
+msgctxt "#31719"
+msgid "Selected item:"
+msgstr "Вибраний елемент:"
+
+msgctxt "#31720"
+msgid "Set path / content"
+msgstr "Шлях / вміст"
+
+msgctxt "#31721"
+msgid "Edit widgets"
+msgstr "Змінити віджети"
+
+msgctxt "#31722"
+msgid "Edit submenu"
+msgstr "Змінити підменю"
+
+msgctxt "#31723"
+msgid "Edit spotlight"
+msgstr "Змінити Spotlight"
+
+msgctxt "#31724"
+msgid "Restore default order"
+msgstr "Типовий порядок"
+
+msgctxt "#31725"
+msgid "Theme & style"
+msgstr "Тема і стиль"
+
+msgctxt "#31726"
+msgid "Look"
+msgstr "Вигляд"
+
+msgctxt "#31727"
+msgid "Player"
+msgstr "Програвач"
+
+msgctxt "#31728"
+msgid "Music player"
+msgstr "Музичний програвач"
+
+msgctxt "#31729"
+msgid "Backgrounds"
+msgstr "Тла"
+
+msgctxt "#31730"
+msgid "Widget & Spotlight screens"
+msgstr "Екрани віджетів і Spotlight"
+
+msgctxt "#31731"
+msgid "System"
+msgstr "Система"
+
+msgctxt "#31732"
+msgid "Home menu"
+msgstr "Головне меню"
+
+msgctxt "#31733"
+msgid "Auto"
+msgstr "Авто"
+
+msgctxt "#31734"
+msgid "Morning"
+msgstr "Ранок"
+
+msgctxt "#31735"
+msgid "Afternoon"
+msgstr "День"
+
+msgctxt "#31736"
+msgid "Evening"
+msgstr "Вечір"
+
+msgctxt "#31737"
+msgid "Night"
+msgstr "Ніч"
+
+msgctxt "#31738"
+msgid "Bedtime"
+msgstr "Час сну"
+
+msgctxt "#31739"
+msgid "Countdown and fits-before rows"
+msgstr "Ряди з відліком і «встигнете до»"
+
+msgctxt "#31740"
+msgid "Weather row and rain"
+msgstr "Ряд погоди й дощ"
+
+msgctxt "#31741"
+msgid "Borrowed color"
+msgstr "Запозичений колір"
+
+msgctxt "#31742"
+msgid "The focused film tints the light"
+msgstr "Фільм у фокусі забарвлює світло"
+
+msgctxt "#31743"
+msgid "Dots and checks on posters"
+msgstr "Крапки й галочки на постерах"
+
+msgctxt "#31744"
+msgid "Unwatched"
+msgstr "Нові"
+
+msgctxt "#31745"
+msgid "Only when a film has a trailer"
+msgstr "Лише якщо фільм має трейлер"
+
+msgctxt "#31746"
+msgid "Logos instead of titles"
+msgstr "Логотипи замість назв"
+
+msgctxt "#31747"
+msgid "Clearlogos in the OSD, screensaver and Now playing"
+msgstr "Клір-логотипи в OSD, заставці й «Зараз грає»"
+
+msgctxt "#31748"
+msgid "Library side strip"
+msgstr "Бічна смуга медіатеки"
+
+msgctxt "#31749"
+msgid "OSD auto-hide"
+msgstr "Автоприховування OSD"
+
+msgctxt "#31750"
+msgid "Controls close by themselves"
+msgstr "Керування закривається саме"
+
+msgctxt "#31751"
+msgid "Subtitle offset strip"
+msgstr "Смуга зсуву субтитрів"
+
+msgctxt "#31752"
+msgid "Subtitle / audio sync strip"
+msgstr "Смуга синхронізації субтитрів / звуку"
+
+msgctxt "#31753"
+msgid "Top"
+msgstr "Згори"
+
+msgctxt "#31754"
+msgid "Bottom"
+msgstr "Знизу"
+
+msgctxt "#31755"
+msgid "Fades instead of zooms and slides"
+msgstr "Переходи замість масштабу й зсувів"
+
+msgctxt "#31756"
+msgid "Back to the defaults"
+msgstr "Повернути типові"
+
+msgctxt "#31757"
+msgid "Needs a PVR add-on"
+msgstr "Потрібне доповнення PVR"
+
+msgctxt "#31758"
+msgid "Power and library actions (Home sub-menu)"
+msgstr "Дії живлення й медіатеки (підменю головної)"
+
+msgctxt "#31759"
+msgid "Spotlight: menu item 1"
+msgstr "Spotlight: пункт меню 1"
+
+msgctxt "#31760"
+msgid "Featured slider for this item (needs a library or add-on folder)"
+msgstr "Карусель (тека медіатеки або доповнення)"
+
+msgctxt "#31761"
+msgid "Spotlight: menu item 2"
+msgstr "Spotlight: пункт меню 2"
+
+msgctxt "#31762"
+msgid "Spotlight: menu item 3"
+msgstr "Spotlight: пункт меню 3"
+
+msgctxt "#31763"
+msgid "Fanart Menu Backdrop"
+msgstr "Фанарт-тло меню"
+
+msgctxt "#31764"
+msgid "Menu Backdrop Strength"
+msgstr "Сила тла меню"
+
+msgctxt "#31765"
+msgid "Now playing on Home"
+msgstr "«Зараз грає» на головній"
+
+msgctxt "#31766"
+msgid "Theme"
+msgstr "Тема"
+
+msgctxt "#31767"
+msgid "Library background"
+msgstr "Тло медіатеки"
+
+msgctxt "#31768"
+msgid "Screensaver background"
+msgstr "Тло заставки"
+
+msgctxt "#31769"
+msgid "Resolution and codec"
+msgstr "Роздільність і кодек"
+
+msgctxt "#31770"
+msgid "HDR tag"
+msgstr "Мітка HDR"
+
+msgctxt "#31771"
+msgid "Audio codec and channels"
+msgstr "Аудіокодек і канали"
+
+msgctxt "#31772"
+msgid "Plotline"
+msgstr "Рядок сюжету"
+
+msgctxt "#31773"
+msgid "Autoscroll plot text"
+msgstr "Автопрокручування сюжету"
+
+msgctxt "#31774"
+msgid "Studio logo"
+msgstr "Логотип студії"
+
+msgctxt "#31775"
+msgid "Theme songs"
+msgstr "Музичні теми"
+
+msgctxt "#31776"
+msgid "Color the rating"
+msgstr "Фарбувати рейтинг"
+
+msgctxt "#31777"
+msgid "IMDb rating"
+msgstr "Рейтинг IMDb"
+
+msgctxt "#31778"
+msgid "TMDb rating"
+msgstr "Рейтинг TMDb"
+
+msgctxt "#31779"
+msgid "Rotten Tomatoes"
+msgstr "Rotten Tomatoes"
+
+msgctxt "#31780"
+msgid "Trakt rating"
+msgstr "Рейтинг Trakt"
+
+msgctxt "#31781"
+msgid "Seek bar time"
+msgstr "Час на смузі перемотування"
+
+msgctxt "#31782"
+msgid "Controls on pause"
+msgstr "Керування під час паузи"
+
+msgctxt "#31783"
+msgid "Delay before they open"
+msgstr "Затримка перед відкриттям"
+
+msgctxt "#31784"
+msgid "Back button in the library"
+msgstr "Кнопка «Назад» у медіатеці"
+
+msgctxt "#31785"
+msgid "Show poster on OSD controls"
+msgstr "Показувати постер біля елементів OSD"
+
+msgctxt "#31786"
+msgid "Spinning disc art"
+msgstr "Обертовий диск"
+
+msgctxt "#31787"
+msgid "Cycle extra fanart"
+msgstr "Зміна додаткового фанарту"
+
+msgctxt "#31788"
+msgid "Seconds between images"
+msgstr "Секунд між зображеннями"
+
+msgctxt "#31789"
+msgid "Artist slideshow"
+msgstr "Слайд-шоу виконавця"
+
+msgctxt "#31790"
+msgid "Studio / network"
+msgstr "Студія / канал"
+
+msgctxt "#31791"
+msgid "Home spotlight: background"
+msgstr "Spotlight головної: тло"
+
+msgctxt "#31792"
+msgid "Home spotlight: transition"
+msgstr "Spotlight головної: перехід"
+
+msgctxt "#31793"
+msgid "Rules"
+msgstr "Правила"
+
+msgctxt "#31800"
+msgid "Settings strip"
+msgstr "Смуга налаштувань"
+
+msgctxt "#31801"
+msgid "Overlay"
+msgstr "Поверх"
+
+msgctxt "#31802"
+msgid "Permanent"
+msgstr "Постійно"
+
+msgctxt "#31803"
+msgid "Box colors from artwork"
+msgstr "Кольори блоків із зображення"
+
+msgctxt "#31804"
+msgid "Show clock on OSD"
+msgstr "Показувати годинник в OSD"
+
+msgctxt "#31805"
+msgid "Show weather on OSD"
+msgstr "Показувати погоду в OSD"
+
+msgctxt "#31806"
+msgid "Lyrics style"
+msgstr "Стиль тексту пісні"
+
+msgctxt "#31807"
+msgid "Lines"
+msgstr "Рядки"
+
+msgctxt "#31808"
+msgid "Words"
+msgstr "Слова"
+
+msgctxt "#31280"
+msgid "VERSION"
+msgstr "ВЕРСІЯ"
+
+msgctxt "#31281"
+msgid "SYSTEM"
+msgstr "СИСТЕМА"
+
+msgctxt "#31282"
+msgid "HARDWARE"
+msgstr "ОБЛАДНАННЯ"
+
+msgctxt "#31283"
+msgid "LIBRARY"
+msgstr "МЕДІАТЕКА"
+
+msgctxt "#31574"
+msgid "Build"
+msgstr "Збірка"
+
+msgctxt "#31634"
+msgid "Name"
+msgstr "Ім'я"
+
+msgctxt "#31698"
+msgid "Profile"
+msgstr "Профіль"
+
+msgctxt "#31794"
+msgid "Uptime"
+msgstr "Час роботи"
+
+msgctxt "#31795"
+msgid "Total uptime"
+msgstr "Час загалом"
+
+msgctxt "#31796"
+msgid "IP address"
+msgstr "IP-адреса"
+
+msgctxt "#31797"
+msgid "MAC address"
+msgstr "MAC-адреса"
+
+msgctxt "#31798"
+msgid "Internet"
+msgstr "Інтернет"
+
+msgctxt "#31799"
+msgid "CPU usage"
+msgstr "Навантаж. ЦП"
+
+msgctxt "#31809"
+msgid "Memory"
+msgstr "Пам'ять"
+
+msgctxt "#31810"
+msgid "Used"
+msgstr "Зайнято"
+
+msgctxt "#31811"
+msgid "CPU temperature"
+msgstr "Темп. ЦП"
+
+msgctxt "#31812"
+msgid "GPU temperature"
+msgstr "Темп. GPU"
+
+msgctxt "#31813"
+msgid "Movies"
+msgstr "Фільми"
+
+msgctxt "#31814"
+msgid "Lyrics take focus"
+msgstr "Текст пісні отримує фокус"
+
+msgctxt "#31815"
+msgid "Artist list"
+msgstr "Список виконавців"
+
+msgctxt "#31816"
+msgid "Artist wall (covers)"
+msgstr "Стіна виконавців (обкладинки)"
+
+msgctxt "#31817"
+msgid "Album wall (fanart)"
+msgstr "Стіна альбомів (фанарт)"
+
+msgctxt "#31824"
+msgid "LIBRARY VIEW"
+msgstr "ВИГЛЯД МЕДІАТЕКИ"
+
+msgctxt "#31825"
+msgid "Overlay: the strip slides in with Left or the Menu key. Permanent: it is always there. View settings can set this per view."
+msgstr "Поверх: смуга виїжджає за кнопкою «Ліворуч» або «Меню». Постійно: вона завжди на місці. Налаштування вигляду можуть задати це для кожного вигляду."
+
+msgctxt "#31826"
+msgid "BOXES"
+msgstr "БЛОКИ"
+
+msgctxt "#31827"
+msgid "On: the clock and count boxes take the color of the poster or cover in focus (needs the KarmaMole helper)."
+msgstr "Увімк.: блоки годинника й лічильника беруть колір постера або обкладинки у фокусі (потрібен помічник KarmaMole)."
+
+msgctxt "#31828"
+msgid "The controls close by themselves after this many seconds without a key press."
+msgstr "Керування закривається саме через стільки секунд без натискань."
+
+msgctxt "#31829"
+msgid "SYNC STRIP"
+msgstr "Смуга синхр."
+
+msgctxt "#31830"
+msgid "Where the subtitle / audio offset strip sits while you adjust it."
+msgstr "Де стоїть смуга зсуву субтитрів / звуку під час налаштування."
+
+msgctxt "#31831"
+msgid "Clock box at the top right of the player controls."
+msgstr "Годинник у правому верхньому куті панелі керування."
+
+msgctxt "#31832"
+msgid "Weather box under the clock (needs a weather add-on)."
+msgstr "Погода під годинником (потрібне погодне доповнення)."
+
+msgctxt "#31833"
+msgid "BIG"
+msgstr "ВЕЛИКИЙ"
+
+msgctxt "#31834"
+msgid "COLORED"
+msgstr "КОЛЬОРОВИЙ"
+
+msgctxt "#31835"
+msgid "WORDS"
+msgstr "СЛОВА"
+
+msgctxt "#31836"
+msgid "Lines: the current line between its neighbours. Words: the animated lyrics of Estuary MOD V2 (needs that skin installed for its fonts)."
+msgstr "Рядки: поточний рядок між сусідніми. Слова: анімований текст з Estuary MOD V2 (потрібна встановлена оболонка заради її шрифтів)."
+
+msgctxt "#31837"
+msgid "Off: OK opens the music controls. On: Up / Down pick a line, OK jumps to it; Back lets go of the lines and the lyrics keep running."
+msgstr "Вимк.: OK відкриває керування музикою. Увімк.: вгору / вниз вибирає рядок, OK переходить до нього; «Назад» відпускає рядки, і текст іде далі."
+
+msgctxt "#31818"
+msgid "Words style placement"
+msgstr "Розташування стилю «Слова»"
+
+msgctxt "#31819"
+msgid "Full screen"
+msgstr "Повний екран"
+
+msgctxt "#31820"
+msgid "On the cover"
+msgstr "На обкладинці"
+
+msgctxt "#31821"
+msgid "Home vignette"
+msgstr "Віньєтка на головній"
+
+msgctxt "#31822"
+msgid "Fonts"
+msgstr "Шрифти"
+
+msgctxt "#31823"
+msgid "Own family for Home, library, headings, settings, player"
+msgstr "Власна родина для головної, медіатеки, заголовків, налаштувань, плеєра"
+
+msgctxt "#31838"
+msgid "Fonts per section"
+msgstr "Шрифти за розділами"
+
+msgctxt "#31839"
+msgid "Follow the font set"
+msgstr "Слідувати набору шрифтів"
+
+msgctxt "#31840"
+msgid "Headings"
+msgstr "Заголовки"
+
+msgctxt "#31841"
+msgid "Settings pages"
+msgstr "Сторінки налаштувань"
+
+msgctxt "#31842"
+msgid "Player"
+msgstr "Плеєр"
+
+msgctxt "#31843"
+msgid "Font for: %s"
+msgstr "Шрифт для: %s"
+
+msgctxt "#31844"
+msgid "not installed"
+msgstr "не встановлено"
+
+msgctxt "#31845"
+msgid "Plots, biographies and hints look like this. The quick brown fox jumps over the lazy dog. 0123456789"
+msgstr "Сюжети, біографії й підказки виглядають так. Чуєш їх, доцю, га? Кумедна ж ти, прощайся без ґольфів! 0123456789"
+
+msgctxt "#31846"
+msgid "Preview"
+msgstr "Попередній перегляд"
+
+msgctxt "#31847"
+msgid "Categories"
+msgstr "Категорії"
+
+msgctxt "#31848"
+msgid "Show weather on screensaver"
+msgstr "Показувати погоду на заставці"
+
+msgctxt "#31849"
+msgid "Temperature and conditions in the top right corner"
+msgstr "Температура й погода в правому верхньому куті"
+
+msgctxt "#31850"
+msgid "Videos · Music · Discs · Pictures · Language · Subtitles"
+msgstr "Відео · Музика · Диски · Зображення · Мова · Субтитри"
+
+msgctxt "#31851"
+msgid "Library · General · Videos · Music · Pictures"
+msgstr "Медіатека · Загальні · Відео · Музика · Зображення"
+
+msgctxt "#31852"
+msgid "Skin · Regional · Screensaver · Master lock · Startup"
+msgstr "Оболонка · Регіональні · Заставка · Головне блокування · Запуск"
+
+msgctxt "#31853"
+msgid "General · Control · UPnP / DLNA · AirPlay · Weather"
+msgstr "Загальні · Керування · UPnP / DLNA · AirPlay · Погода"
+
+msgctxt "#31854"
+msgid "Display · Audio · Input · Internet access · Power saving · Add-ons · Logging"
+msgstr "Екран · Звук · Введення · Доступ до інтернету · Енергозбереження · Доповнення · Журнал"
+
+msgctxt "#31855"
+msgid "General · Channels · Guide · Playback · Recording · Reminders"
+msgstr "Загальні · Канали · Телегід · Відтворення · Запис · Нагадування"
+
+msgctxt "#31856"
+msgid "Home menu position"
+msgstr "Положення головного меню"
+
+msgctxt "#31857"
+msgid "Middle"
+msgstr "Посередині"
+
+msgctxt "#31858"
+msgid "Low"
+msgstr "Внизу"
+
+msgctxt "#31859"
+msgid "General · Achievements"
+msgstr "Загальні · Досягнення"
+
+msgctxt "#31860"
+msgid "Show clock on screensaver"
+msgstr "Показувати годинник на заставці"
+
+msgctxt "#31861"
+msgid "Poster / thumbnail"
+msgstr "Постер / мініатюра"
+
+msgctxt "#31862"
+msgid "Season and episode counts"
+msgstr "Кількість сезонів і епізодів"
+
+msgctxt "#31863"
+msgid "Watched status"
+msgstr "Стан перегляду"
+
+msgctxt "#31864"
+msgid "The Long Way Home"
+msgstr "Довга дорога додому"
+
+msgctxt "#31865"
+msgid "2019 | DRAMA / ADVENTURE"
+msgstr "2019 | ДРАМА / ПРИГОДИ"
+
+msgctxt "#31866"
+msgid "Northern Lights"
+msgstr "Північне сяйво"
+
+msgctxt "#31867"
+msgid "2023 | DOCUMENTARY"
+msgstr "2023 | ДОКУМЕНТАЛЬНИЙ"
+
+msgctxt "#31868"
+msgid "A Quiet Harbour"
+msgstr "Тиха гавань"
+
+msgctxt "#31869"
+msgid "1998 | CRIME / THRILLER"
+msgstr "1998 | КРИМІНАЛ / ТРИЛЕР"
+
+msgctxt "#31188"
+msgid "Item"
+msgstr "Елемент"
+
+msgctxt "#31192"
+msgid "Screenshots"
+msgstr "Знімки екрана"
+
+msgctxt "#31193"
+msgid "Picture details"
+msgstr "Відомості про зображення"
+
+msgctxt "#31284"
+msgid "EPG"
+msgstr "EPG"
+
+msgctxt "#31285"
+msgid "Tools"
+msgstr "Інструменти"
+
+msgctxt "#31286"
+msgid "Who is watching?"
+msgstr "Хто дивиться?"
+
+msgctxt "#31287"
+msgid "Playlist editor"
+msgstr "Редактор плейлистів"
+
+msgctxt "#31288"
+msgid "Flix"
+msgstr "Flix"
+
+msgctxt "#31289"
+msgid "Fanart with one row"
+msgstr "Фанарт з одним рядом"
+
+msgctxt "#31290"
+msgid "Combined"
+msgstr "Комбінований"
+
+msgctxt "#31291"
+msgid "A row over its contents"
+msgstr "Ряд над вмістом"
+
+msgctxt "#31292"
+msgid "Circles"
+msgstr "Кола"
+
+msgctxt "#31293"
+msgid "Round portraits"
+msgstr "Круглі портрети"
+
+msgctxt "#31294"
+msgid "Planner"
+msgstr "Планувальник"
+
+msgctxt "#31570"
+msgid "Episodes by date"
+msgstr "Епізоди за датою"
+
+msgctxt "#31571"
+msgid "Recommended"
+msgstr "Рекомендоване"
+
+msgctxt "#31572"
+msgid "Similar titles"
+msgstr "Схожі"
+
+msgctxt "#31573"
+msgid "Information"
+msgstr "Інформація"
+
+msgctxt "#31870"
+msgid "Plot hidden until you have watched it."
+msgstr "Сюжет приховано, доки ви це не переглянете."
+
+msgctxt "#31871"
+msgid "More options"
+msgstr "Інші параметри"
+
+msgctxt "#31872"
+msgid "Spoilers, pause and language flags"
+msgstr "Спойлери, пауза й прапорці мов"
+
+msgctxt "#31873"
+msgid "Hide spoilers of unwatched episodes"
+msgstr "Приховувати спойлери нових серій"
+
+msgctxt "#31874"
+msgid "Seek bar while paused"
+msgstr "Смуга перемотування під час паузи"
+
+msgctxt "#31875"
+msgid "Show language flags on OSD"
+msgstr "Показувати прапори мов в OSD"
+
+msgctxt "#31876"
+msgid "Always"
+msgstr "Завжди"
+
+msgctxt "#31877"
+msgid "5 seconds"
+msgstr "5 секунд"
+
+msgctxt "#31878"
+msgid "Never"
+msgstr "Ніколи"
+
+msgctxt "#31879"
+msgid "Stacked row on Home"
+msgstr "Багаторівневий ряд на головній"
+
+msgctxt "#31880"
+msgid "Kiosk mode (lock views)"
+msgstr "Кіоск (вигляди заблоковано)"
+
+msgctxt "#31881"
+msgid "Last login"
+msgstr "Останній вхід"
+
+msgctxt "#31882"
+msgid "Cinema mode: trailers before a film"
+msgstr "Кінотеатр: трейлери до фільму"
+
+msgctxt "#31883"
+msgid "1 trailer"
+msgstr "1 трейлер"
+
+msgctxt "#31884"
+msgid "2 trailers"
+msgstr "2 трейлери"
+
+msgctxt "#31885"
+msgid "3 trailers"
+msgstr "3 трейлери"
+
+msgctxt "#31886"
+msgid "Reviews"
+msgstr "Рецензії"
+
+msgctxt "#31887"
+msgid "Top tracks"
+msgstr "Найкращі треки"
+
+msgctxt "#31888"
+msgid "Similar artists"
+msgstr "Схожі виконавці"
+
+msgctxt "#31889"
+msgid "Not in your library"
+msgstr "Не в медіатеці"
+
+msgctxt "#31890"
+msgid "Artist page: look up on Deezer"
+msgstr "Сторінка виконавця: шукати в Deezer"
+
+msgctxt "#31891"
+msgid "Progress line on posters"
+msgstr "Лінія прогресу на постерах"
+
+msgctxt "#31892"
+msgid "Play trailers automatically"
+msgstr "Відтворювати трейлери автоматично"
+
+msgctxt "#31893"
+msgid "Nothing planned"
+msgstr "Нічого не заплановано"
+
+msgctxt "#31894"
+msgid "View"
+msgstr "Вигляд"
+
+msgctxt "#31895"
+msgid "Week starts"
+msgstr "Тиждень починається з"
+
+msgctxt "#31896"
+msgid "Show"
+msgstr "Показати"
+
+msgctxt "#31897"
+msgid "Day"
+msgstr "День"
+
+msgctxt "#31898"
+msgid "Week"
+msgstr "Тиждень"
+
+msgctxt "#31899"
+msgid "Home spotlight"
+msgstr "Spotlight головної"
+
+msgctxt "#31903"
+msgid "Days ahead"
+msgstr "Днів наперед"
+
+msgctxt "#31904"
+msgid "What is coming, shown one title at a time while the Planner is focused on Home. It starts with today."
+msgstr "Що попереду, по одній назві, поки «Планувальник» у фокусі на головній. Починається з сьогоднішнього дня."
+
+msgctxt "#31905"
+msgid "Disable"
+msgstr "Вимкнути"
+
+msgctxt "#31906"
+msgid "Enable"
+msgstr "Увімкнути"
+
+msgctxt "#31907"
+msgid "Empty"
+msgstr "Порожньо"
+
+msgctxt "#31908"
+msgid "Choose type"
+msgstr "Вибрати тип"
+
+msgctxt "#31909"
+msgid "Custom item"
+msgstr "Власний пункт"
+
+msgctxt "#31910"
+msgid "Empty position"
+msgstr "Порожня позиція"
+
+msgctxt "#31911"
+msgid "Type of position"
+msgstr "Тип позиції"
+
+msgctxt "#31912"
+msgid "All ten custom items are in use. Free one first."
+msgstr "Усі десять власних пунктів зайняті. Спершу звільніть один."
+
+msgctxt "#31913"
+msgid "Channel group"
+msgstr "Група каналів"
+
+msgctxt "#31914"
+msgid "Watched last"
+msgstr "Останні переглянуті"
+
+msgctxt "#31915"
+msgid "None"
+msgstr "Немає"
+
+msgctxt "#31916"
+msgid "No channel group"
+msgstr "Без групи каналів"
+
+msgctxt "#31917"
+msgid "With Live TV focused on Home: Up reaches the channels watched last, Right there shows the channel group chosen here. OK plays a channel."
+msgstr "Коли «Пряме ТБ» у фокусі на головній: «Вгору» веде до останніх каналів, «Праворуч» там показує вибрану тут групу. OK вмикає канал."
+
+msgctxt "#31918"
+msgid "UP: CHANNELS   |   OK: GUIDE"
+msgstr "ВГОРУ: КАНАЛИ   |   OK: ТЕЛЕГІД"
+
+msgctxt "#31919"
+msgid "OK: WATCH   |   LEFT: WATCHED LAST"
+msgstr "OK: ДИВИТИСЯ   |   ЛІВОРУЧ: ОСТАННІ"
+
+msgctxt "#31920"
+msgid "OK: WATCH   |   RIGHT: CHANNEL GROUP"
+msgstr "OK: ДИВИТИСЯ   |   ПРАВОРУЧ: ГРУПА КАНАЛІВ"
+
+msgctxt "#31921"
+msgid "OK: WATCH"
+msgstr "OK: ДИВИТИСЯ"
+
+msgctxt "#31922"
+msgid "LEFT / RIGHT: OTHER TITLES   |   DOWN: MENU"
+msgstr "ЛІВОРУЧ / ПРАВОРУЧ: ІНШІ НАЗВИ   |   ВНИЗ: МЕНЮ"
+
+msgctxt "#31923"
+msgid "Coming up"
+msgstr "Незабаром"
+
+msgctxt "#31924"
+msgid "Not in your library yet."
+msgstr "Ще немає у вашій медіатеці."
+
+msgctxt "#31925"
+msgid "On"
+msgstr "Увімк."
+
+msgctxt "#31926"
+msgid "Unwatched episodes show no thumbnail and no plot until you have seen them."
+msgstr "У непереглянутих епізодах не видно мініатюри й сюжету, доки ви їх не переглянете."
+
+msgctxt "#31927"
+msgid "Top tracks and similar artists on the artist page come from Deezer (needs internet). Off: only your library."
+msgstr "Найкращі треки й схожі виконавці на сторінці виконавця беруться з Deezer (потрібен інтернет). Вимк.: лише ваша медіатека."
+
+msgctxt "#31928"
+msgid "When the seek bar shows while a film is paused: always, for 5 seconds, or never."
+msgstr "Коли видно смугу перемотування під час паузи фільму: завжди, 5 секунд або ніколи."
+
+msgctxt "#31929"
+msgid "Flags of the audio and subtitle languages on the player controls."
+msgstr "Прапорці мов звуку й субтитрів на панелі керування плеєром."
+
+msgctxt "#31930"
+msgid "Trailers of other films play before the film you start: none, 1, 2 or 3."
+msgstr "Трейлери інших фільмів перед запущеним фільмом: жодного, 1, 2 або 3."
+
+msgctxt "#31931"
+msgid "A thin line under posters shows how much of a film, show or season you have watched."
+msgstr "Тонка лінія під постерами показує, скільки ви переглянули з фільму, серіалу чи сезону."
+
+msgctxt "#31932"
+msgid "A strip of small posters under the plot when a set or a show is in focus in the rows on Home."
+msgstr "Смуга малих постерів під сюжетом, коли колекція або серіал у фокусі в рядах головної."
+
+msgctxt "#31933"
+msgid "Locks the library views: no view settings and no left-hand settings strip."
+msgstr "Блокує вигляди медіатеки: без налаштувань вигляду й без лівої смуги налаштувань."
+
+msgctxt "#31934"
+msgid "The library background takes the palette only with the Neutral backdrop. The highlight, boxes and strips follow it with every backdrop.[CR][CR]Use the Neutral backdrop in the libraries?"
+msgstr "Тло медіатеки бере палітру лише з нейтральним тлом. Виділення, блоки й смуги слідують їй з будь-яким тлом.[CR][CR]Використати нейтральне тло в медіатеках?"
+
+msgctxt "#31935"
+msgid "Keep the backdrop"
+msgstr "Залишити тло"
+
+msgctxt "#31936"
+msgid "Use Neutral"
+msgstr "Нейтральне"
+
+msgctxt "#31937"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages. The library background takes it with the Neutral backdrop only."
+msgstr "Колір виділення, блоків, смуг і сторінок налаштувань. Тло медіатеки бере його лише з нейтральним тлом."
+
+msgctxt "#31938"
+msgid "Words"
+msgstr "Слова"
+
+msgctxt "#31939"
+msgid "Lines"
+msgstr "Рядки"
+
+msgctxt "#31958"
+msgid "Skippy: the skin's skip button"
+msgstr "Skippy: кнопка пропуску оболонки"
+
+msgctxt "#31959"
+msgid "On: during a segment Skippy asks about (Ask), the player shows a Skip button in the skin's look; OK skips, Back hides it. Off: Skippy opens its own dialog. In Fused Glass, Up next at the end of an episode is the skin's too."
+msgstr "Увімк.: під час сегмента, про який питає Skippy («Питати»), плеєр показує кнопку «Пропустити» в стилі оболонки; OK пропускає, «Назад» її ховає. Вимк.: Skippy відкриває власне вікно. У Fused Glass підказка «Далі» наприкінці серії теж у стилі оболонки."
+
+msgctxt "#31960"
+msgid "Skippy: segment line in the player"
+msgstr "Skippy: рядок сегмента в плеєрі"
+
+msgctxt "#31961"
+msgid "Between the times on the player controls: the segment playing and the time left (Intro · 0:42 left), or the next segment and when it starts."
+msgstr "Між часом на панелі керування: поточний сегмент і час, що лишився (Заставка · лишилося 0:42), або наступний сегмент і коли він почнеться."
+
+msgctxt "#31962"
+msgid "Skippy: up next in the player"
+msgstr "Skippy: далі в плеєрі"
+
+msgctxt "#31963"
+msgid "Top right of the player controls: the next episode Skippy found, with its picture. Skippy's own next-episode prompt is not affected."
+msgstr "Праворуч угорі на панелі керування: наступний епізод, знайдений Skippy, з картинкою. Власне вікно Skippy про наступний епізод не змінюється."
+
+msgctxt "#31964"
+msgid "Skip"
+msgstr "Пропустити"
+
+msgctxt "#31965"
+msgid "left"
+msgstr "лишилося"
+
+msgctxt "#31966"
+msgid "at"
+msgstr "о"
+
+msgctxt "#31967"
+msgid "Memory hand-back"
+msgstr "Повернення пам'яті"
+
+msgctxt "#31968"
+msgid "Linux boxes (CoreELEC, LibreELEC): Kodi keeps memory it has finished with. The helper hands it back to the system after a pause in key presses, or when free RAM gets low. Not on Windows."
+msgstr "Пристрої на Linux (CoreELEC, LibreELEC): Kodi тримає пам'ять, яка йому вже не потрібна. Помічник повертає її системі після паузи в натисканнях або коли вільної RAM стає мало. Не у Windows."
+
+msgctxt "#31969"
+msgid "Pause before hand-back"
+msgstr "Пауза перед поверненням"
+
+msgctxt "#31970"
+msgid "After a pause: seconds without a key press (2-30), not during a video. When free RAM is low: the least free memory the box keeps; within 256 MB of it the hand-back waits for a pause, below it it happens at once."
+msgstr "Після паузи: секунди без натискань (2-30), не під час відео. Коли бракує RAM: мінімум вільної пам'яті, який зберігає пристрій; у межах 256 МБ від нього повернення чекає паузи, нижче — відбувається одразу."
+
+msgctxt "#31971"
+msgid "Minimum free RAM"
+msgstr "Мінімум вільної RAM"
+
+msgctxt "#31972"
+msgid "Adds Clean library to the context menu in the libraries and on Home: entries whose files are gone are removed (it asks first)."
+msgstr "Додає «Очистити медіатеку» до контекстного меню в медіатеках і на головній: записи без файлів прибираються (спершу питає)."
+
+msgctxt "#31973"
+msgid "Network · Connections · Updates · Hardware · Services"
+msgstr "Мережа · Підключення · Оновлення · Обладнання · Служби"
+
+msgctxt "#31974"
+msgid "The box"
+msgstr "Пристрій"
+
+msgctxt "#31975"
+msgid "The box's own settings: network and Wi-Fi, updates, hardware, services such as SSH and Samba."
+msgstr "Власні налаштування пристрою: мережа й Wi-Fi, оновлення, обладнання, служби на кшталт SSH і Samba."
+
+msgctxt "#31976"
+msgid "Restart Kodi"
+msgstr "Перезапустити Kodi"
+
+msgctxt "#31977"
+msgid "Widget screens: media info"
+msgstr "Екрани віджетів: інфо про медіа"
+
+msgctxt "#31978"
+msgid "Widget screens: ratings"
+msgstr "Екрани віджетів: рейтинги"
+
+msgctxt "#31979"
+msgid "Widget screens: studio / network"
+msgstr "Екрани віджетів: студія / канал"
+
+msgctxt "#31996"
+msgid "The background of the spotlight at the top of Home. Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "Тло Spotlight угорі головної. Фанарт: фанарт назви. Нейтральне: темне. Колір: м'яке кольорове зображення, яке помічник KarmaMole робить з картинки (поки воно не готове, видно фанарт)."
+
+msgctxt "#31997"
+msgid "How the spotlight at the top of Home moves on to the next title: fade, slide or cut."
+msgstr "Як Spotlight угорі головної переходить до наступної назви: згасання, зсув або різкий перехід."
+
+msgctxt "#31998"
+msgid "Widget screens: background"
+msgstr "Екрани віджетів: тло"
+
+msgctxt "#31999"
+msgid "The background of the full-screen widget pages (Up on a title on Home). Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "Тло повноекранних сторінок віджетів («Вгору» на назві на головній). Фанарт: фанарт назви. Нейтральне: темне. Колір: м'яке кольорове зображення, яке помічник KarmaMole робить з картинки (поки воно не готове, видно фанарт)."
+
+msgctxt "#32000"
+msgid "creator of the Aeon 2 concept"
+msgstr "автор концепції Aeon 2"
+
+msgctxt "#32001"
+msgid "1 of 1 episode watched"
+msgstr "1 з 1 епізоду переглянуто"
+
+msgctxt "#32002"
+msgid "on"
+msgstr "на лейблі"
+
+msgctxt "#32003"
+msgid "9:00 PM"
+msgstr "21:00"
+
+msgctxt "#32004"
+msgid "9:30 PM"
+msgstr "21:30"
+
+msgctxt "#32005"
+msgid "10:00 PM"
+msgstr "22:00"
+
+msgctxt "#32006"
+msgid "10:30 PM"
+msgstr "22:30"
+
+msgctxt "#32007"
+msgid "11:00 PM"
+msgstr "23:00"
+
+msgctxt "#32008"
+msgid "11:30 PM"
+msgstr "23:30"
+
+msgctxt "#32009"
+msgid "12:00 AM"
+msgstr "0:00"
+
+msgctxt "#32010"
+msgid "12:30 AM"
+msgstr "0:30"
+
+msgctxt "#32011"
+msgid "1:00 AM"
+msgstr "1:00"
+
+msgctxt "#32012"
+msgid "1:30 AM"
+msgstr "1:30"
+
+msgctxt "#32013"
+msgid "2:00 AM"
+msgstr "2:00"
+
+msgctxt "#32015"
+msgid "Repositories checked"
+msgstr "Репозиторії перевірено"
+
+msgctxt "#32016"
+msgid "Close Kodi"
+msgstr "Закрити Kodi"
+
+msgctxt "#32017"
+msgid "Back to the profile screen"
+msgstr "Повернутися до екрана профілів"
+
+msgctxt "#32018"
+msgid "Kodi only, the system keeps running"
+msgstr "Лише Kodi, система працює далі"
+
+msgctxt "#32019"
+msgid "Restart the whole system"
+msgstr "Перезавантажити всю систему"
+
+msgctxt "#32020"
+msgid "Restart into Android"
+msgstr "Перезавантаження в Android"
+
+msgctxt "#32021"
+msgid "Switch the system off"
+msgstr "Вимкнути систему"
+
+msgctxt "#32022"
+msgid "By"
+msgstr "Від"
+
+msgctxt "#32023"
+msgid "Running time"
+msgstr "Тривалість"
+
+msgctxt "#32024"
+msgid "min"
+msgstr "хв"
+
+msgctxt "#32025"
+msgid "Widgets"
+msgstr "Віджети"
+
+msgctxt "#32026"
+msgid "hidden"
+msgstr "приховано"
+
+msgctxt "#32027"
+msgid "Hold"
+msgstr "Показ"
+
+msgctxt "#32028"
+msgid "Update the list"
+msgstr "Оновити список"
+
+msgctxt "#32029"
+msgid "Update now"
+msgstr "Оновити зараз"
+
+msgctxt "#32030"
+msgid "ARTISTS"
+msgstr "ВИКОНАВЦІ"
+
+msgctxt "#32031"
+msgid "ALBUMS"
+msgstr "АЛЬБОМИ"
+
+msgctxt "#32032"
+msgid "SONGS"
+msgstr "КОМПОЗИЦІЇ"
+
+msgctxt "#32033"
+msgid "Widget screens"
+msgstr "Екрани віджетів"
+
+msgctxt "#32034"
+msgid "Hide plot and thumb"
+msgstr "Приховувати сюжет і мініатюру"
+
+msgctxt "#32035"
+msgid "Start"
+msgstr "Почати"
+
+msgctxt "#32036"
+msgid "A handful of short steps"
+msgstr "Кілька коротких кроків"
+
+msgctxt "#32037"
+msgid "Backdrop, look, Home menu, libraries and motion."
+msgstr "Тло, вигляд, головне меню, медіатеки й рух."
+
+msgctxt "#32038"
+msgid "Skip setup"
+msgstr "Пропустити налаштування"
+
+msgctxt "#32039"
+msgid "Keep the defaults for now"
+msgstr "Поки залишити типові"
+
+msgctxt "#32040"
+msgid "Run the setup any time: Skin settings > Motion, memory, reset > Setup wizard."
+msgstr "Запустити налаштування можна будь-коли: Налаштування оболонки > Рух, ОЗП, скидання > Майстер налаштування."
+
+msgctxt "#32041"
+msgid "A calm backdrop in a palette of your choice"
+msgstr "Спокійне тло в палітрі на ваш вибір"
+
+msgctxt "#32042"
+msgid "A dark, even background in the colours of the palette you pick next."
+msgstr "Темне рівне тло в кольорах палітри, яку ви виберете далі."
+
+msgctxt "#32043"
+msgid "The focused title's fanart, dimmed"
+msgstr "Фанарт назви у фокусі, затемнений"
+
+msgctxt "#32044"
+msgid "The artwork of the focused title fills the background, dimmed so text stays readable."
+msgstr "Зображення назви у фокусі заповнює тло, затемнене, щоб текст читався."
+
+msgctxt "#32045"
+msgid "A tint taken from the artwork"
+msgstr "Відтінок із зображення"
+
+msgctxt "#32046"
+msgid "A deep colour taken from the focused title's artwork."
+msgstr "Насичений колір із зображення назви у фокусі."
+
+msgctxt "#32047"
+msgid "The palette shows after Kodi restarts at the end of the setup."
+msgstr "Палітра з'явиться після перезапуску Kodi наприкінці налаштування."
+
+msgctxt "#32048"
+msgid "Solid panels, palettes"
+msgstr "Суцільні панелі, палітри"
+
+msgctxt "#32049"
+msgid "The classic Aeon look: calm, solid surfaces and a white or coloured focus bar."
+msgstr "Класичний вигляд Aeon: спокійні суцільні поверхні й біла або кольорова смуга виділення."
+
+msgctxt "#32050"
+msgid "Aeon with glass menus, no palettes"
+msgstr "Aeon зі скляними меню, без палітр"
+
+msgctxt "#32051"
+msgid "Panels of frosted glass over the fanart; the focus bar is a soft light."
+msgstr "Панелі з матового скла поверх фанарту; смуга виділення — м'яке світло."
+
+msgctxt "#32052"
+msgid "As the skin theme"
+msgstr "Як тема оболонки"
+
+msgctxt "#32053"
+msgid "Flat rows with rules"
+msgstr "Пласкі рядки з лініями"
+
+msgctxt "#32054"
+msgid "The menus of the Aeon or Aeon Glass theme you picked."
+msgstr "Меню вибраної теми Aeon або Aeon Glass."
+
+msgctxt "#32055"
+msgid "Rounded cards, like this setup"
+msgstr "Заокруглені картки, як у цьому налаштуванні"
+
+msgctxt "#32056"
+msgid "Every row a soft card, the focused one solid; no rule lines."
+msgstr "Кожен рядок — м'яка картка, вибрана залита; без ліній."
+
+msgctxt "#32057"
+msgid "OK switches Movies on or off."
+msgstr "OK вмикає або вимикає Фільми."
+
+msgctxt "#32058"
+msgid "OK switches TV shows on or off."
+msgstr "OK вмикає або вимикає Серіали."
+
+msgctxt "#32059"
+msgid "OK switches Music on or off."
+msgstr "OK вмикає або вимикає Музику."
+
+msgctxt "#32060"
+msgid "OK switches Live TV on or off."
+msgstr "OK вмикає або вимикає Пряме ТБ."
+
+msgctxt "#32061"
+msgid "OK switches Search on or off."
+msgstr "OK вмикає або вимикає Пошук."
+
+msgctxt "#32062"
+msgid "OK switches Movie sets on or off."
+msgstr "OK вмикає або вимикає Кіноколекції."
+
+msgctxt "#32063"
+msgid "OK switches Favourites on or off."
+msgstr "OK вмикає або вимикає Вибране."
+
+msgctxt "#32064"
+msgid "OK switches Pictures on or off."
+msgstr "OK вмикає або вимикає Зображення."
+
+msgctxt "#32065"
+msgid "OK switches Add-ons on or off."
+msgstr "OK вмикає або вимикає Доповнення."
+
+msgctxt "#32066"
+msgid "OK switches Weather on or off."
+msgstr "OK вмикає або вимикає Погоду."
+
+msgctxt "#32067"
+msgid "OK switches Planner on or off."
+msgstr "OK вмикає або вимикає Планувальник."
+
+msgctxt "#32068"
+msgid "OK switches Files on or off."
+msgstr "OK вмикає або вимикає Файли."
+
+msgctxt "#32069"
+msgid "OK switches Settings on or off."
+msgstr "OK вмикає або вимикає Налаштування."
+
+msgctxt "#32070"
+msgid "OK switches Power on or off."
+msgstr "OK вмикає або вимикає Живлення."
+
+msgctxt "#32071"
+msgid "Continue"
+msgstr "Продовжити"
+
+msgctxt "#32072"
+msgid "Next step"
+msgstr "Наступний крок"
+
+msgctxt "#32073"
+msgid "On to the Home menu position."
+msgstr "Далі — розташування головного меню."
+
+msgctxt "#32074"
+msgid "The spotlight above, a row of posters below"
+msgstr "Spotlight угорі, ряд постерів унизу"
+
+msgctxt "#32075"
+msgid "The menu across the middle of the screen with a widget row underneath."
+msgstr "Меню впоперек середини екрана, під ним ряд віджетів."
+
+msgctxt "#32076"
+msgid "A taller spotlight, the menu near the bottom"
+msgstr "Вищий Spotlight, меню біля нижнього краю"
+
+msgctxt "#32077"
+msgid "More room for the spotlight; the menu sits low on the screen."
+msgstr "Більше місця для Spotlight; меню розташоване низько на екрані."
+
+msgctxt "#32078"
+msgid "The artwork of the spotlight title"
+msgstr "Зображення назви в Spotlight"
+
+msgctxt "#32079"
+msgid "Fanart of the title in the spotlight, with a soft fade from the left."
+msgstr "Фанарт назви в Spotlight з м'яким згасанням зліва."
+
+msgctxt "#32080"
+msgid "A colour taken from the artwork"
+msgstr "Колір із зображення"
+
+msgctxt "#32081"
+msgid "A warm or cool tint drawn from the title's artwork."
+msgstr "Теплий або холодний відтінок із зображення назви."
+
+msgctxt "#32082"
+msgid "A quiet dark background"
+msgstr "Спокійне темне тло"
+
+msgctxt "#32083"
+msgid "No artwork behind the spotlight text."
+msgstr "Без зображення за текстом Spotlight."
+
+msgctxt "#32084"
+msgid "One picture dissolves into the next"
+msgstr "Одна картинка перетікає в наступну"
+
+msgctxt "#32085"
+msgid "A soft cross-fade."
+msgstr "М'яке перехресне згасання."
+
+msgctxt "#32086"
+msgid "The next one pushes in from the right"
+msgstr "Наступна заїжджає справа"
+
+msgctxt "#32087"
+msgid "A sideways slide, like turning a page."
+msgstr "Зсув убік, як гортання сторінки."
+
+msgctxt "#32088"
+msgid "Straight to the next"
+msgstr "Одразу до наступної"
+
+msgctxt "#32089"
+msgid "No animation: the next title appears at once."
+msgstr "Без анімації: наступна назва з'являється одразу."
+
+msgctxt "#32090"
+msgid "The colour of the artwork"
+msgstr "Колір зображення"
+
+msgctxt "#32091"
+msgid "The boxes take a deep colour from the focused title's artwork."
+msgstr "Блоки беруть глибокий колір із зображення вибраної назви."
+
+msgctxt "#32092"
+msgid "The palette's box colour"
+msgstr "Колір блоків із палітри"
+
+msgctxt "#32093"
+msgid "Always the same calm colour of the palette."
+msgstr "Завжди той самий спокійний колір палітри."
+
+msgctxt "#32094"
+msgid "A window onto the fanart"
+msgstr "Вікно у фанарт"
+
+msgctxt "#32095"
+msgid "Each box shows the part of the fanart behind it, darkened for the clock."
+msgstr "Кожен блок показує частину фанарту за собою, затемнену для годинника."
+
+msgctxt "#32096"
+msgid "As the backdrop"
+msgstr "Як тло"
+
+msgctxt "#32097"
+msgid "Follow the library backdrop"
+msgstr "Слідувати тлу медіатеки"
+
+msgctxt "#32098"
+msgid "Neutral, fanart or colour, whatever the library backdrop is."
+msgstr "Нейтральне, фанарт або колір — як тло медіатеки."
+
+msgctxt "#32099"
+msgid "Dots, checks and progress bars"
+msgstr "Крапки, позначки й смуги поступу"
+
+msgctxt "#32100"
+msgid "Unwatched titles get a dot, watched ones a check, started ones a progress bar."
+msgstr "Непереглянуті назви отримують крапку, переглянуті — позначку, розпочаті — смугу поступу."
+
+msgctxt "#32101"
+msgid "Dots and progress bars"
+msgstr "Крапки й смуги поступу"
+
+msgctxt "#32102"
+msgid "Only what is still to watch is marked."
+msgstr "Позначається лише те, що залишилося подивитися."
+
+msgctxt "#32103"
+msgid "Checks on what you have seen"
+msgstr "Позначки на переглянутому"
+
+msgctxt "#32104"
+msgid "Only finished titles are marked."
+msgstr "Позначаються лише додивлені назви."
+
+msgctxt "#32105"
+msgid "Clean posters"
+msgstr "Чисті постери"
+
+msgctxt "#32106"
+msgid "No markers at all."
+msgstr "Жодних позначок."
+
+msgctxt "#32107"
+msgid "Logos"
+msgstr "Логотипи"
+
+msgctxt "#32108"
+msgid "The artwork's clear logo"
+msgstr "ClearLogo із зображень"
+
+msgctxt "#32109"
+msgid "Clear logos from the artwork, text where a title has none."
+msgstr "ClearLogo із зображень, текст, якщо в назви його немає."
+
+msgctxt "#32110"
+msgid "Plain text"
+msgstr "Простий текст"
+
+msgctxt "#32111"
+msgid "Always the name in the skin's own font."
+msgstr "Завжди назва шрифтом оболонки."
+
+msgctxt "#32112"
+msgid "FULL HD, 4K, aspect ratio"
+msgstr "FULL HD, 4K, співвідношення сторін"
+
+msgctxt "#32113"
+msgid "OK switches the resolution chips on or off."
+msgstr "OK вмикає або вимикає мітки роздільності."
+
+msgctxt "#32114"
+msgid "SDR, HDR10, Dolby Vision profile"
+msgstr "SDR, HDR10, профіль Dolby Vision"
+
+msgctxt "#32115"
+msgid "OK switches the HDR chips on or off."
+msgstr "OK вмикає або вимикає мітки HDR."
+
+msgctxt "#32116"
+msgid "Codec and channels"
+msgstr "Кодек і канали"
+
+msgctxt "#32117"
+msgid "OK switches the audio chips on or off."
+msgstr "OK вмикає або вимикає мітки звуку."
+
+msgctxt "#32118"
+msgid "On to the extra fanart."
+msgstr "Далі — додатковий фанарт."
+
+msgctxt "#32119"
+msgid "Take turns"
+msgstr "По черзі"
+
+msgctxt "#32120"
+msgid "Every extra fanart in a slow cycle"
+msgstr "Увесь додатковий фанарт у повільній зміні"
+
+msgctxt "#32121"
+msgid "The background changes picture every few seconds (Skin settings > Backgrounds sets how often)."
+msgstr "Тло змінює картинку кожні кілька секунд (як часто — задає Налаштування оболонки > Тла)."
+
+msgctxt "#32122"
+msgid "One picture"
+msgstr "Одна картинка"
+
+msgctxt "#32123"
+msgid "Only the main fanart"
+msgstr "Лише основний фанарт"
+
+msgctxt "#32124"
+msgid "The background stays on the main fanart."
+msgstr "Тло залишається на основному фанарті."
+
+msgctxt "#32125"
+msgid "Hide them"
+msgstr "Приховати"
+
+msgctxt "#32126"
+msgid "No thumbnail or plot until watched"
+msgstr "Без мініатюри й сюжету до перегляду"
+
+msgctxt "#32127"
+msgid "Unwatched episodes show a blurred picture and no plot."
+msgstr "Непереглянуті епізоди показують розмиту картинку й не показують сюжет."
+
+msgctxt "#32128"
+msgid "Show them"
+msgstr "Показати"
+
+msgctxt "#32129"
+msgid "Thumbnails and plots for all"
+msgstr "Мініатюри й сюжети для всіх"
+
+msgctxt "#32130"
+msgid "Every episode shows its picture and plot."
+msgstr "Кожен епізод показує свою картинку й сюжет."
+
+msgctxt "#32131"
+msgid "Full motion"
+msgstr "Повний рух"
+
+msgctxt "#32132"
+msgid "Smooth slides and fades"
+msgstr "Плавні зсуви й згасання"
+
+msgctxt "#32133"
+msgid "Rows slide in one after another, dialogs glide open."
+msgstr "Рядки заїжджають один за одним, діалоги плавно відкриваються."
+
+msgctxt "#32134"
+msgid "Everything appears at once"
+msgstr "Усе з'являється одразу"
+
+msgctxt "#32135"
+msgid "No slides or zooms: calmer, and lighter on slow boxes."
+msgstr "Без зсувів і масштабування: спокійніше й легше для повільних приставок."
+
+msgctxt "#32136"
+msgid "When free RAM is low"
+msgstr "Коли мало вільної RAM"
+
+msgctxt "#32137"
+msgid "Recommended: below 1 GB free"
+msgstr "Рекомендовано: менше 1 ГБ вільно"
+
+msgctxt "#32138"
+msgid "Kodi hands memory back when the free RAM drops below the minimum (Skin settings can change it)."
+msgstr "Kodi повертає пам'ять, коли вільна RAM падає нижче мінімуму (змінюється в налаштуваннях оболонки)."
+
+msgctxt "#32139"
+msgid "After a pause"
+msgstr "Після паузи"
+
+msgctxt "#32140"
+msgid "A few seconds after the last key press"
+msgstr "За кілька секунд після останнього натискання"
+
+msgctxt "#32141"
+msgid "Kodi hands memory back whenever the remote has been quiet for a moment."
+msgstr "Kodi повертає пам'ять щоразу, коли пульт ненадовго затихає."
+
+msgctxt "#32142"
+msgid "Finish"
+msgstr "Готово"
+
+msgctxt "#32143"
+msgid "Change something"
+msgstr "Щось змінити"
+
+msgctxt "#32144"
+msgid "Go back to the previous step."
+msgstr "Повернутися до попереднього кроку."
+
+msgctxt "#32145"
+msgid "Huge thanks and credit go out to the following"
+msgstr "Величезна подяка"
+
+msgctxt "#32146"
+msgid "The Kodi development team"
+msgstr "Команді розробників Kodi"
+
+msgctxt "#32147"
+msgid "OK  choose      BACK  previous step"
+msgstr "OK  вибрати      НАЗАД  попередній крок"
+
+msgctxt "#32148"
+msgid "version"
+msgstr "версія"
+
+msgctxt "#32149"
+msgid "by"
+msgstr "автор"
+
+msgctxt "#32150"
+msgid "now"
+msgstr "зараз"
+
+msgctxt "#32151"
+msgid "night"
+msgstr "ніч"
+
+msgctxt "#32152"
+msgid "evening"
+msgstr "вечір"
+
+msgctxt "#32153"
+msgid "afternoon"
+msgstr "день"
+
+msgctxt "#32154"
+msgid "morning"
+msgstr "ранок"
+
+msgctxt "#32158"
+msgid "until midnight"
+msgstr "до півночі"
+
+msgctxt "#32159"
+msgid "tornado"
+msgstr "торнадо"
+
+msgctxt "#32160"
+msgid "tropical storm"
+msgstr "тропічний шторм"
+
+msgctxt "#32161"
+msgid "hurricane"
+msgstr "ураган"
+
+msgctxt "#32162"
+msgid "severe storms"
+msgstr "сильні грози"
+
+msgctxt "#32163"
+msgid "thunderstorms"
+msgstr "грози"
+
+msgctxt "#32164"
+msgid "rain and snow"
+msgstr "дощ зі снігом"
+
+msgctxt "#32165"
+msgid "rain and sleet"
+msgstr "дощ і мокрий сніг"
+
+msgctxt "#32166"
+msgid "snow and sleet"
+msgstr "сніг і мокрий сніг"
+
+msgctxt "#32167"
+msgid "freezing drizzle"
+msgstr "крижана мряка"
+
+msgctxt "#32168"
+msgid "drizzle"
+msgstr "мряка"
+
+msgctxt "#32169"
+msgid "freezing rain"
+msgstr "крижаний дощ"
+
+msgctxt "#32170"
+msgid "showers"
+msgstr "зливи"
+
+msgctxt "#32171"
+msgid "snow flurries"
+msgstr "невеликий сніг"
+
+msgctxt "#32172"
+msgid "light snow"
+msgstr "слабкий сніг"
+
+msgctxt "#32173"
+msgid "blowing snow"
+msgstr "заметіль"
+
+msgctxt "#32174"
+msgid "snow"
+msgstr "сніг"
+
+msgctxt "#32175"
+msgid "hail"
+msgstr "град"
+
+msgctxt "#32176"
+msgid "sleet"
+msgstr "мокрий сніг"
+
+msgctxt "#32177"
+msgid "dust"
+msgstr "пил"
+
+msgctxt "#32178"
+msgid "fog"
+msgstr "туман"
+
+msgctxt "#32179"
+msgid "haze"
+msgstr "серпанок"
+
+msgctxt "#32180"
+msgid "smoke"
+msgstr "дим"
+
+msgctxt "#32181"
+msgid "blustery"
+msgstr "поривчастий вітер"
+
+msgctxt "#32182"
+msgid "windy"
+msgstr "вітряно"
+
+msgctxt "#32183"
+msgid "cold"
+msgstr "холодно"
+
+msgctxt "#32184"
+msgid "cloudy"
+msgstr "хмарно"
+
+msgctxt "#32185"
+msgid "mostly cloudy"
+msgstr "переважно хмарно"
+
+msgctxt "#32186"
+msgid "partly cloudy"
+msgstr "мінлива хмарність"
+
+msgctxt "#32187"
+msgid "clear"
+msgstr "ясно"
+
+msgctxt "#32188"
+msgid "sunny"
+msgstr "сонячно"
+
+msgctxt "#32189"
+msgid "fair"
+msgstr "гарна погода"
+
+msgctxt "#32190"
+msgid "rain and hail"
+msgstr "дощ і град"
+
+msgctxt "#32191"
+msgid "hot"
+msgstr "спекотно"
+
+msgctxt "#32192"
+msgid "isolated storms"
+msgstr "місцями грози"
+
+msgctxt "#32193"
+msgid "scattered storms"
+msgstr "короткочасні грози"
+
+msgctxt "#32194"
+msgid "scattered showers"
+msgstr "короткочасні зливи"
+
+msgctxt "#32195"
+msgid "heavy snow"
+msgstr "сильний сніг"
+
+msgctxt "#32196"
+msgid "snow showers"
+msgstr "снігопади"
+
+msgctxt "#32197"
+msgid "thundershowers"
+msgstr "грозові зливи"
+
+msgctxt "#32198"
+msgid "Blustery"
+msgstr "Поривчастий вітер"
+
+msgctxt "#32199"
+msgid "Hot"
+msgstr "Спекотно"
+
+msgctxt "#32200"
+msgid "Fits before midnight"
+msgstr "Встигнете до півночі"
+
+msgctxt "#32201"
+msgid "fits before midnight"
+msgstr "встигнете до півночі"
+
+msgctxt "#32202"
+msgid "under 100 minutes"
+msgstr "менше 100 хвилин"
+
+msgctxt "#32203"
+msgid "something light"
+msgstr "щось легке"
+
+msgctxt "#32204"
+msgid "a long one"
+msgstr "щось довге"
+
+msgctxt "#32205"
+msgid "highly rated"
+msgstr "високий рейтинг"
+
+msgctxt "#32206"
+msgid "right at midnight"
+msgstr "рівно опівночі"
+
+msgctxt "#32207"
+msgid "past midnight"
+msgstr "після півночі"
+
+msgctxt "#32208"
+msgid "before midnight"
+msgstr "до півночі"
+
+msgctxt "#32209"
+msgid "kbps"
+msgstr "кбіт/с"
+
+msgctxt "#32210"
+msgid "ch"
+msgstr "кан."
+
+msgctxt "#32211"
+msgid "bit"
+msgstr "біт"
+
+msgctxt "#32212"
+msgid "kHz"
+msgstr "кГц"
+
+msgctxt "#32213"
+msgid "Hz"
+msgstr "Гц"
+
+msgctxt "#32214"
+msgid "TRACK"
+msgstr "ТРЕК"
+
+msgctxt "#32215"
+msgid "FROM THE ALBUM"
+msgstr "З АЛЬБОМУ"
+
+msgctxt "#32216"
+msgid "Released in"
+msgstr "Випуск"
+
+msgctxt "#32217"
+msgid "Record label"
+msgstr "Лейбл"
+
+msgctxt "#32218"
+msgid "Alphabetical"
+msgstr "За абеткою"
+
+msgctxt "#32219"
+msgid "Reversed"
+msgstr "У зворотному порядку"
+
+msgctxt "#32220"
+msgid "MINS"
+msgstr "ХВ"
+
+msgctxt "#32221"
+msgid "RATED"
+msgstr "РЕЙТИНГ"
+
+msgctxt "#32222"
+msgid "NOT RATED"
+msgstr "БЕЗ РЕЙТИНГУ"
+
+msgctxt "#32223"
+msgid "AN ALBUM BY"
+msgstr "АЛЬБОМ ·"
+
+msgctxt "#32224"
+msgid "RELEASED IN"
+msgstr "ВИПУСК"
+
+msgctxt "#32225"
+msgid "A TV SHOW"
+msgstr "СЕРІАЛ"
+
+msgctxt "#32226"
+msgid "FIRST AIRED IN"
+msgstr "ПРЕМ'ЄРА"
+
+msgctxt "#32227"
+msgid "A MOVIE BY"
+msgstr "ФІЛЬМ ·"
+
+msgctxt "#32228"
+msgid "Active"
+msgstr "Активність"
+
+msgctxt "#32229"
+msgid "FORMED"
+msgstr "ЗАСНОВАНО"
+
+msgctxt "#32230"
+msgid "DISBANDED"
+msgstr "РОЗПАЛАСЯ"
+
+msgctxt "#32231"
+msgid "BORN"
+msgstr "НАРОДИВСЯ"
+
+msgctxt "#32232"
+msgid "DIED"
+msgstr "ПОМЕР"
+
+msgctxt "#32233"
+msgid "Refresh information"
+msgstr "Оновити інформацію"
+
+msgctxt "#32234"
+msgid "Take screenshot"
+msgstr "Зробити знімок екрана"
+
+msgctxt "#32235"
+msgid "Switch off"
+msgstr "Вимкнути"
+
+msgctxt "#32236"
+msgid "Switch on"
+msgstr "Увімкнути"
+
+msgctxt "#32237"
+msgid "Written by"
+msgstr "Сценарій:"
+
+msgctxt "#32238"
+msgid "Directed by"
+msgstr "Режисер:"
+
+msgctxt "#32239"
+msgid "SET"
+msgstr "КОЛЕКЦІЯ"
+
+msgctxt "#32240"
+msgid "VOTES"
+msgstr "ГОЛОСІВ"
+
+msgctxt "#32241"
+msgid "EPISODES"
+msgstr "ЕПІЗОДІВ"
+
+msgctxt "#32242"
+msgid "UNWATCHED"
+msgstr "НЕ ПЕРЕГЛЯНУТО"
+
+msgctxt "#32243"
+msgid "Setup"
+msgstr "Налаштування"
+
+msgctxt "#32244"
+msgid "Libraries"
+msgstr "Медіатеки"
+
+msgctxt "#32245"
+msgid "Motion"
+msgstr "Рух"
+
+msgctxt "#32246"
+msgid "Welcome to Aeon Fuse"
+msgstr "Ласкаво просимо до Aeon Fuse"
+
+msgctxt "#32247"
+msgid "Library backdrop"
+msgstr "Тло медіатеки"
+
+msgctxt "#32248"
+msgid "Pick a palette"
+msgstr "Виберіть палітру"
+
+msgctxt "#32249"
+msgid "Skin theme"
+msgstr "Тема оболонки"
+
+msgctxt "#32250"
+msgid "Skin style"
+msgstr "Стиль оболонки"
+
+msgctxt "#32251"
+msgid "Home menu items"
+msgstr "Пункти головного меню"
+
+msgctxt "#32252"
+msgid "Spotlight transition"
+msgstr "Перехід Spotlight"
+
+msgctxt "#32253"
+msgid "Corner boxes"
+msgstr "Кутові блоки"
+
+msgctxt "#32254"
+msgid "Titles or logos"
+msgstr "Назви або логотипи"
+
+msgctxt "#32255"
+msgid "Extra fanart"
+msgstr "Додатковий фанарт"
+
+msgctxt "#32256"
+msgid "Spoilers"
+msgstr "Спойлери"
+
+msgctxt "#32257"
+msgid "All set"
+msgstr "Усе готово"
+
+msgctxt "#32258"
+msgid "A few quick choices make the skin yours. Every step shows a preview, and everything can be changed later in Skin settings."
+msgstr "Кілька швидких рішень зроблять оболонку вашою. Кожен крок показує попередній перегляд, а все можна змінити пізніше в налаштуваннях оболонки."
+
+msgctxt "#32259"
+msgid "What fills the space behind the library views. With Neutral the next step lets you pick a palette."
+msgstr "Що заповнює простір за видами медіатеки. З нейтральним тлом на наступному кроці можна вибрати палітру."
+
+msgctxt "#32260"
+msgid "The palette colours the neutral backdrop, the focus bar, the boxes and the strips (Aeon theme)."
+msgstr "Палітра фарбує нейтральне тло, смугу виділення, блоки й смуги (тема Aeon)."
+
+msgctxt "#32261"
+msgid "Aeon draws solid panels with a bright focus bar. Aeon Glass lets the artwork shine through frosted panels."
+msgstr "Aeon малює суцільні панелі з яскравою смугою виділення. Aeon Glass дає зображенню просвічувати крізь матові панелі."
+
+msgctxt "#32262"
+msgid "How settings, dialogs and side menus look: the skin theme's own menus, or Fuse, the rounded cards of this setup."
+msgstr "Який вигляд мають налаштування, діалоги й бічні меню: власні меню теми оболонки або Fuse — заокруглені картки цього налаштування."
+
+msgctxt "#32263"
+msgid "Switch the items you want on the Home menu. Order, custom items (three are always free) and their lists: Skin settings > Home menu."
+msgstr "Увімкніть потрібні пункти головного меню. Порядок, власні пункти (три завжди вільні) та їхні списки: Налаштування оболонки > Головне меню."
+
+msgctxt "#32264"
+msgid "Where the main menu sits on the Home screen."
+msgstr "Де розташоване головне меню на головному екрані."
+
+msgctxt "#32265"
+msgid "The backdrop of the spotlight at the top of Home."
+msgstr "Тло Spotlight угорі головної."
+
+msgctxt "#32266"
+msgid "How one spotlight title gives way to the next."
+msgstr "Як одна назва Spotlight поступається наступній."
+
+msgctxt "#32267"
+msgid "The clock box, the item count and the strip boxes in the corners of the library."
+msgstr "Блок годинника, кількість елементів і блоки смуг у кутах медіатеки."
+
+msgctxt "#32268"
+msgid "Small markers on posters: a dot for unwatched, a check for watched, a bar for in progress."
+msgstr "Невеликі позначки на постерах: крапка — не переглянуто, позначка — переглянуто, смуга — розпочато."
+
+msgctxt "#32269"
+msgid "Show a title's clear logo where the skin has room for it, or its name in plain text."
+msgstr "Показувати ClearLogo назви там, де оболонці вистачає місця, інакше назву простим текстом."
+
+msgctxt "#32270"
+msgid "The chips under a title in the libraries and on the information page. Switch the ones you want."
+msgstr "Мітки під назвою в медіатеках і на сторінці інформації. Увімкніть потрібні."
+
+msgctxt "#32271"
+msgid "Titles with more than one fanart can take turns showing them in the background."
+msgstr "Назви з кількома фанартами можуть показувати їх по черзі на тлі."
+
+msgctxt "#32272"
+msgid "Unwatched episodes can keep their thumbnail and plot to themselves."
+msgstr "Непереглянуті епізоди можуть приховувати свою мініатюру й сюжет."
+
+msgctxt "#32273"
+msgid "Slides and fades when views, menus and dialogs open."
+msgstr "Зсуви й згасання під час відкриття видів, меню й діалогів."
+
+msgctxt "#32274"
+msgid "On small boxes Kodi keeps memory it no longer uses. The skin's helper can hand it back to the system."
+msgstr "На слабких приставках Kodi тримає пам'ять, яка йому вже не потрібна. Помічник оболонки може повернути її системі."
+
+msgctxt "#32275"
+msgid "Your choices are saved. Run the setup again any time from Skin settings > Motion, memory, reset."
+msgstr "Ваш вибір збережено. Запустити налаштування знову можна будь-коли: Налаштування оболонки > Рух, ОЗП, скидання."
+
+msgctxt "#32276"
+msgid "Kodi restarts to show the new look"
+msgstr "Kodi перезапуститься, щоб показати новий вигляд"
+
+msgctxt "#32277"
+msgid "Then restart Kodi once"
+msgstr "Потім один раз перезапустіть Kodi"
+
+msgctxt "#32278"
+msgid "Close the setup"
+msgstr "Закрити налаштування"
+
+msgctxt "#32279"
+msgid "A new theme or palette needs Kodi to start again; it takes a few seconds."
+msgstr "Нова тема або палітра потребує перезапуску Kodi; це займе кілька секунд."
+
+msgctxt "#32280"
+msgid "The new look shows at once. Restart Kodi when you can: until then some settings may read wrong."
+msgstr "Новий вигляд з'явиться одразу. Перезапустіть Kodi, коли зможете: доти деякі налаштування можуть показувати неправильні значення."
+
+msgctxt "#32281"
+msgid "Enjoy Aeon Fuse."
+msgstr "Приємного перегляду з Aeon Fuse."
+
+msgctxt "#32282"
+msgid "ends"
+msgstr "кінець"
+
+msgctxt "#32283"
+msgid "Nothing unwatched fits before midnight tonight."
+msgstr "Нічого непереглянутого сьогодні до півночі не встигнути."
+
+msgctxt "#32285"
+msgid "of"
+msgstr "з"
+
+msgctxt "#32286"
+msgid "watched"
+msgstr "переглянуто"
+
+msgctxt "#32287"
+msgid "unwatched"
+msgstr "не переглянуто"
+
+msgctxt "#32288"
+msgid "Nothing unwatched fits this slot. Try Films for everything."
+msgstr "У цей проміжок не вміщається нічого непереглянутого. Усе інше — у розділі Фільми."
+
+msgctxt "#32289"
+msgid "Nothing here yet."
+msgstr "Тут поки нічого немає."
+
+msgctxt "#32290"
+msgid "Current"
+msgstr "Поточний"
+
+msgctxt "#32291"
+msgid "Rec"
+msgstr "Зап."
+
+msgctxt "#32292"
+msgid "Remind"
+msgstr "Нагадати"
+
+msgctxt "#32293"
+msgid "Archive"
+msgstr "Архів"
+
+msgctxt "#32294"
+msgid "Edited"
+msgstr "Змінено"
+
+msgctxt "#32295"
+msgid "About"
+msgstr "Про доповнення"
+
+msgctxt "#32296"
+msgid "Group"
+msgstr "Група"
+
+msgctxt "#32297"
+msgid "Nothing here yet"
+msgstr "Тут поки нічого немає"
+
+msgctxt "#32298"
+msgid "Tracklist"
+msgstr "Список треків"
+
+msgctxt "#32299"
+msgid "born"
+msgstr "народився"
+
+msgctxt "#32300"
+msgid "formed"
+msgstr "засновано"
+
+msgctxt "#32301"
+msgid "minutes of music"
+msgstr "хвилин музики"
+
+msgctxt "#32302"
+msgid "Start now, done by"
+msgstr "Почніть зараз, кінець о"
+
+msgctxt "#32303"
+msgid "The music stops at"
+msgstr "Музика зупиниться о"
+
+msgctxt "#32304"
+msgid "OK for the controls."
+msgstr "OK — керування."
+
+msgctxt "#32305"
+msgid "Go to"
+msgstr "Перейти до"
+
+msgctxt "#32306"
+msgid "Sleeps when this ends  ·  bedtime"
+msgstr "Сон після завершення  ·  відбій"
+
+msgctxt "#32307"
+msgid "RESULTS"
+msgstr "РЕЗУЛЬТАТІВ"
+
+msgctxt "#32308"
+msgid "track"
+msgstr "трек"
+
+msgctxt "#32309"
+msgid "tracks"
+msgstr "треків"
+
+msgctxt "#32310"
+msgid "option"
+msgstr "варіант"
+
+msgctxt "#32311"
+msgid "options"
+msgstr "варіантів"
+
+msgctxt "#32312"
+msgid "item"
+msgstr "елемент"
+
+msgctxt "#32313"
+msgid "album in your library"
+msgstr "альбом у вашій медіатеці"
+
+msgctxt "#32314"
+msgid "albums in your library"
+msgstr "альбомів у вашій медіатеці"
+
+msgctxt "#32315"
+msgid "film"
+msgstr "фільм"
+
+msgctxt "#32316"
+msgid "person"
+msgstr "особа"
+
+msgctxt "#32317"
+msgid "people"
+msgstr "осіб"
+
+msgctxt "#32318"
+msgid "episode"
+msgstr "епізод"
+
+msgctxt "#32319"
+msgid "episodes"
+msgstr "епізодів"
+
+msgctxt "#32320"
+msgid "film watched"
+msgstr "фільм переглянуто"
+
+msgctxt "#32321"
+msgid "films watched"
+msgstr "фільмів переглянуто"
+
+msgctxt "#32322"
+msgid "episode watched"
+msgstr "епізод переглянуто"
+
+msgctxt "#32323"
+msgid "episodes watched"
+msgstr "епізодів переглянуто"
+
+msgctxt "#32324"
+msgid "Midnight"
+msgstr "Північ"
+
+msgctxt "#32325"
+msgid "The extra items Aeon Fuse adds to Kodi's context menu: which of them show and in what order."
+msgstr "Пункти, які Aeon Fuse додає до контекстного меню Kodi: які показуються і в якому порядку."
+
+msgctxt "#32326"
+msgid "Kodi lists these after its own items (and before those of other add-ons that come later). Pick one, then use the buttons on the right."
+msgstr "Kodi показує їх після своїх пунктів (і перед пунктами доповнень, що йдуть пізніше). Виберіть пункт, потім скористайтеся кнопками праворуч."
+
+msgctxt "#32327"
+msgid "Shows or hides the selected item in the context menu."
+msgstr "Показує або приховує вибраний пункт у контекстному меню."
+
+msgctxt "#32328"
+msgid "Moves the selected item one place up in the context menu."
+msgstr "Переміщує вибраний пункт контекстного меню на одну позицію вгору."
+
+msgctxt "#32329"
+msgid "Moves the selected item one place down in the context menu."
+msgstr "Переміщує вибраний пункт контекстного меню на одну позицію вниз."
+
+msgctxt "#32330"
+msgid "The backdrop of the widget screens (Up on a Home item) slowly zooms in with every title. Reduce motion stops it too."
+msgstr "Тло екранів віджетів (Угору на пункті головної) повільно наближається з кожною назвою. «Менше анімації» теж це зупиняє."
+
+msgctxt "#32331"
+msgid "A font family for each part of the skin: Home, the libraries, headings, the settings pages and the player."
+msgstr "Родина шрифтів для кожної частини оболонки: головна, медіатеки, заголовки, сторінки налаштувань і програвач."
+
+msgctxt "#32332"
+msgid "Film"
+msgstr "Фільм"
+
+msgctxt "#32333"
+msgid "Resume now: done by"
+msgstr "Продовжити зараз: кінець о"
+
+msgctxt "#32334"
+msgid "Start now: ends"
+msgstr "Почати зараз: кінець о"
+
+msgctxt "#32336"
+msgid "Down for the films"
+msgstr "Униз: фільми"
+
+msgctxt "#32337"
+msgid "Down for the cast"
+msgstr "Униз: актори"
+
+msgctxt "#32338"
+msgid "Story"
+msgstr "Сюжет"
+
+msgctxt "#32339"
+msgid "split"
+msgstr "розпалася"
+
+msgctxt "#32340"
+msgid "died"
+msgstr "помер"
+
+msgctxt "#32341"
+msgid "Resume at"
+msgstr "Продовжити з"
+
+msgctxt "#32342"
+msgid "added"
+msgstr "додано"
+
+msgctxt "#32343"
+msgid "season"
+msgstr "сезон"
+
+msgctxt "#32344"
+msgid "seasons"
+msgstr "сезонів"
+
+msgctxt "#32345"
+msgid "Aired"
+msgstr "Показ"
+
+msgctxt "#32346"
+msgid "Resume now and you're done by"
+msgstr "Продовжте зараз і закінчите о"
+
+msgctxt "#32347"
+msgid "Start now and it ends at"
+msgstr "Почніть зараз — кінець о"
+
+msgctxt "#32348"
+msgid "after midnight"
+msgstr "після півночі"
+
+msgctxt "#32349"
+msgid "Start now and you're done by"
+msgstr "Почніть зараз і закінчите о"
+
+msgctxt "#32350"
+msgid "still to watch"
+msgstr "ще не переглянуто"
+
+msgctxt "#32351"
+msgid "aired"
+msgstr "показ"
+
+msgctxt "#32352"
+msgid "rated"
+msgstr "рейтинг"
+
+msgctxt "#32353"
+msgid "With"
+msgstr "У ролях:"
+
+msgctxt "#32354"
+msgid "Progress"
+msgstr "Поступ"
+
+msgctxt "#32355"
+msgid "to watch"
+msgstr "до перегляду"
+
+msgctxt "#32356"
+msgid "No channels. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "Немає каналів. Увімкніть доповнення-клієнт PVR у налаштуваннях PVR і ТБ."
+
+msgctxt "#32357"
+msgid "No recordings."
+msgstr "Немає записів."
+
+msgctxt "#32358"
+msgid "No results."
+msgstr "Немає результатів."
+
+msgctxt "#32359"
+msgid "No timers."
+msgstr "Немає таймерів."
+
+msgctxt "#32360"
+msgid "updated"
+msgstr "оновлено"
+
+msgctxt "#32361"
+msgid "Setup wizard"
+msgstr "Майстер налаштування"
+
+msgctxt "#32362"
+msgid "Theme, palette, backgrounds, Home"
+msgstr "Тема, палітра, тла, головна"
+
+msgctxt "#32363"
+msgid "Widget screens: slow zoom"
+msgstr "Екрани віджетів: повільний зум"
+
+msgctxt "#32364"
+msgid "Kodi shows these after its own items, in this order (items of other add-ons can follow). Update and Clean library show in the libraries and on Home, Refresh information on films, shows, episodes and music videos, Take screenshot everywhere."
+msgstr "Kodi показує їх після своїх пунктів у цьому порядку (пункти інших доповнень можуть іти далі). «Оновити» й «Очистити медіатеку» — у медіатеках і на головній, «Оновити інформацію» — у фільмів, серіалів, епізодів і кліпів, «Зробити знімок екрана» — скрізь."
+
+msgctxt "#32365"
+msgid "PICTURE"
+msgstr "ЗОБРАЖЕННЯ"
+
+msgctxt "#32366"
+msgid "Smart playlist"
+msgstr "Розумний список відтворення"
+
+msgctxt "#32367"
+msgid "Source"
+msgstr "Джерело"
+
+msgctxt "#32368"
+msgid "fps"
+msgstr "кадр/с"
+
+msgctxt "#32369"
+msgid "AR"
+msgstr "AR"
+
+msgctxt "#32370"
+msgid "Dynamic range"
+msgstr "Динам. діапазон"
+
+msgctxt "#32371"
+msgid "Decoder"
+msgstr "Декодер"
+
+msgctxt "#32372"
+msgid "Pixel format"
+msgstr "Формат пікселів"
+
+msgctxt "#32373"
+msgid "Deinterlace"
+msgstr "Деінтерлейсинг"
+
+msgctxt "#32374"
+msgid "Display"
+msgstr "Дисплей"
+
+msgctxt "#32375"
+msgid "Audio output"
+msgstr "Аудіовихід"
+
+msgctxt "#32376"
+msgid "Interface"
+msgstr "Інтерфейс"
+
+msgctxt "#32377"
+msgid "memory"
+msgstr "пам'ять"
+
+msgctxt "#32378"
+msgid "FILE"
+msgstr "ФАЙЛ"
+
+msgctxt "#32379"
+msgid "SIZE"
+msgstr "РОЗМІР"
+
+msgctxt "#32380"
+msgid "TAKEN"
+msgstr "ЗНЯТО"
+
+msgctxt "#32381"
+msgid "STATE"
+msgstr "СТАН"
+
+msgctxt "#32382"
+msgid "until bedtime"
+msgstr "до відбою"
+
+msgctxt "#32383"
+msgid "Fits before bedtime"
+msgstr "Встигнете до відбою"
+
+msgctxt "#32384"
+msgid "fits before bedtime"
+msgstr "встигнете до відбою"
+
+msgctxt "#32385"
+msgid "Nothing unwatched fits before bedtime tonight."
+msgstr "Нічого непереглянутого сьогодні до відбою не встигнути."
+
+msgctxt "#32386"
+msgid "right at your bedtime"
+msgstr "рівно до відбою"
+
+msgctxt "#32387"
+msgid "past your bedtime"
+msgstr "після відбою"
+
+msgctxt "#32388"
+msgid "before your bedtime"
+msgstr "до відбою"
+
+msgctxt "#32389"
+msgid "after your bedtime"
+msgstr "після відбою"
+
+msgctxt "#32390"
+msgid "Continuing"
+msgstr "Триває"
+
+msgctxt "#32391"
+msgid "Ended"
+msgstr "Завершено"
+
+msgctxt "#32392"
+msgid "Cancelled"
+msgstr "Скасовано"
+
+msgctxt "#32393"
+msgid "In production"
+msgstr "У виробництві"
+
+msgctxt "#32394"
+msgid "Planned"
+msgstr "Заплановано"
+
+msgctxt "#32395"
+msgid "Upcoming"
+msgstr "Незабаром"
+
+msgctxt "#32396"
+msgid "Pilot"
+msgstr "Пілот"
+
+msgctxt "#32397"
+msgid "Now playing in"
+msgstr "Зараз відтворюється –"
+
+msgctxt "#32398"
+msgid "Films of a set"
+msgstr "Фільми колекції"
+
+msgctxt "#32399"
+msgid "Versions of a film"
+msgstr "Версії фільму"
+
+msgctxt "#32400"
+msgid "Grid"
+msgstr "Сітка"
+
+msgctxt "#32401"
+msgid "One at a time"
+msgstr "По одному"
+
+msgctxt "#32402"
+msgid "Fused Glass"
+msgstr "Fused Glass"
+
+msgctxt "#32403"
+msgid "Next hours"
+msgstr "Найближчі години"
+
+msgctxt "#32404"
+msgid "This week"
+msgstr "Цього тижня"
+
+msgctxt "#32405"
+msgid "No weather yet. Choose a weather service in Settings > Services > Weather."
+msgstr "Погоди ще немає. Виберіть службу в Налаштування > Служби > Погода."
+
+msgctxt "#32406"
+msgid "Recent searches"
+msgstr "Нещодавні пошуки"
+
+msgctxt "#32407"
+msgid "In Fused Glass the music playing always sits beside the clock on Home; this setting is for the other themes."
+msgstr "У Fused Glass музика, що грає, на головному екрані завжди поруч із годинником; це налаштування для інших тем."
+
+msgctxt "#32408"
+msgid "Focus highlight"
+msgstr "Виділення фокуса"
+
+msgctxt "#32409"
+msgid "Pill"
+msgstr "Пігулка"
+
+msgctxt "#32410"
+msgid "Flat"
+msgstr "Пласке"
+
+msgctxt "#32411"
+msgid "Frosted"
+msgstr "Матове"
+
+msgctxt "#32412"
+msgid "Outline"
+msgstr "Контур"
+
+msgctxt "#32413"
+msgid "Tight"
+msgstr "Вузьке"
+
+msgctxt "#32414"
+msgid "How the item in focus is marked in lists and menus. Changing it reloads the skin."
+msgstr "Як виділяється вибраний елемент у списках і меню. Зміна перезавантажує скін."
+
+msgctxt "#32415"
+msgid "Navigation animation"
+msgstr "Анімація навігації"
+
+msgctxt "#32416"
+msgid "Pop"
+msgstr "Поп"
+
+msgctxt "#32417"
+msgid "Grow"
+msgstr "Ріст"
+
+msgctxt "#32418"
+msgid "Fade"
+msgstr "Плавно"
+
+msgctxt "#32419"
+msgid "Glow"
+msgstr "Сяйво"
+
+msgctxt "#32420"
+msgid "Nudge"
+msgstr "Поштовх"
+
+msgctxt "#32421"
+msgid "Lift"
+msgstr "Підйом"
+
+msgctxt "#32422"
+msgid "How the highlight moves when it lands on an item. Pop is the default."
+msgstr "Як підсвічування рухається, потрапляючи на елемент. Типово — Поп."
+
+msgctxt "#32423"
+msgid "Font combination"
+msgstr "Поєднання шрифтів"
+
+msgctxt "#32424"
+msgid "A heading and text font combination, shown before you pick it, or your own font for each part of the skin."
+msgstr "Поєднання шрифтів заголовків і тексту з попереднім переглядом або власний шрифт для кожної частини скіна."
+
+msgctxt "#32425"
+msgid "Home menu: only the focused item's name"
+msgstr "Головне меню: назва лише у вибраного пункту"
+
+msgctxt "#32426"
+msgid "On: the other items of the Home menu show only their icon and the focused item shows its name."
+msgstr "Увімк.: інші пункти головного меню показують лише значок, вибраний пункт — свою назву."
+
+msgctxt "#32427"
+msgid "Segment skip button placement"
+msgstr "Розташування кнопки пропуску фрагмента"
+
+msgctxt "#32428"
+msgid "Tab"
+msgstr "Вкладка"
+
+msgctxt "#32429"
+msgid "Glass"
+msgstr "Скло"
+
+msgctxt "#32430"
+msgid "How the skip button sits on the player controls and the small seek bar: a white tab on the card's edge, or a capsule of the card's glass above it."
+msgstr "Як кнопка пропуску розташована на керуванні плеєром і малій смузі перемотування: біла вкладка на краю картки або капсула зі скла картки над нею."
+
+msgctxt "#32431"
+msgid "Available in library"
+msgstr "Є в медіатеці"
+
+msgctxt "#32432"
+msgid "In library"
+msgstr "У медіатеці"
+
+msgctxt "#32433"
+msgid "Random %s"
+msgstr "Випадкові %s"
+
+msgctxt "#32434"
+msgid "Recently added %s"
+msgstr "Нещодавно додані %s"
+
+msgctxt "#32435"
+msgid "Recently played %s"
+msgstr "Нещодавно переглянуті %s"
+
+msgctxt "#32436"
+msgid "Top rated %s"
+msgstr "%s з найвищим рейтингом"
+
+msgctxt "#32437"
+msgid "Most played %s"
+msgstr "Найпереглядаваніші %s"
+
+msgctxt "#32438"
+msgid "Newest %s"
+msgstr "Найновіші %s"
+
+msgctxt "#32439"
+msgid "%s by title"
+msgstr "%s за назвою"
+
+msgctxt "#32440"
+msgid "Scroll through channels"
+msgstr "Прокрутка каналів"
+
+msgctxt "#32441"
+msgid "Auto-fix art with the wrong shape"
+msgstr "Виправляти зображення неправильної форми"
+
+msgctxt "#32442"
+msgid "Check library art now"
+msgstr "Перевірити зображення медіатеки зараз"
+
+msgctxt "#32443"
+msgid "Library art"
+msgstr "Зображення медіатеки"
+
+msgctxt "#32444"
+msgid "Now uses a picture from the same folder that fits"
+msgstr "Тепер використовує відповідне зображення з тієї ж теки"
+
+msgctxt "#32445"
+msgid "Wrong shape, nothing in the folder fits"
+msgstr "Неправильна форма, у теці немає відповідного"
+
+msgctxt "#32446"
+msgid "Every picture has the right shape."
+msgstr "Усі зображення мають правильну форму."
+
+msgctxt "#32447"
+msgid "Fixed in the library: %d"
+msgstr "Виправлено в медіатеці: %d"
+
+msgctxt "#32448"
+msgid "After a refresh or a library scan, a poster, banner, landscape or fanart of the wrong shape is replaced by a picture of the same name in the same folder that fits. Your files stay as they are."
+msgstr "Після оновлення або сканування медіатеки постер, банер, пейзаж чи фанарт неправильної форми замінюється відповідним зображенням з тією ж назвою з тієї ж теки. Ваші файли не змінюються."
+
+msgctxt "#32449"
+msgid "Checks every picture Kodi has shown and fixes what it can. A list shows what was replaced and what is still the wrong shape."
+msgstr "Перевіряє кожне зображення, яке показував Kodi, і виправляє, що можна. Список показує, що замінено і що досі неправильної форми."
+
+msgctxt "#32450"
+msgid "Slot left empty: the skin shows the show's picture until season art is added"
+msgstr "Поле залишено порожнім: оболонка показує зображення серіалу, доки не з'явиться зображення сезону"
+
+msgctxt "#32451"
+msgid "Only Kodi's library changed. Your files are untouched."
+msgstr "Змінилася лише медіатека Kodi. Ваші файли не змінено."
+
+msgctxt "#32452"
+msgid "Mosaic"
+msgstr "Мозаїка"
+
+msgctxt "#32453"
+msgid "Ledger"
+msgstr "Реєстр"
+
+msgctxt "#32454"
+msgid "Bridge"
+msgstr "Міст"
+
+msgctxt "#32455"
+msgid "Tab slab"
+msgstr "Вкладка"
+
+msgctxt "#32456"
+msgid "How the menus join their boxes: Mosaic, Ledger, Bridge or Tab slab. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "Як меню поєднують свої блоки: Мозаїка, Реєстр, Міст або Вкладка. Fuse використовує заокруглені картки й потребує перезапуску Kodi."
+
+msgctxt "#32457"
+msgid "Aeon Glass keeps its own menus. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "Aeon Glass зберігає власні меню. Fuse використовує заокруглені картки й потребує перезапуску Kodi."
+
+msgctxt "#32458"
+msgid "Library options"
+msgstr "Параметри медіатеки"
+
+msgctxt "#32459"
+msgid "Strip"
+msgstr "Смуга"
+
+msgctxt "#32460"
+msgid "Box"
+msgstr "Вікно"
+
+msgctxt "#32461"
+msgid "Left at the edge of a view or the Menu key opens the side strip, or a big box in the menu style."
+msgstr "Ліворуч біля краю вигляду або клавіша «Меню» відкриває бічну смугу або велике вікно у стилі меню."
+
+msgctxt "#32462"
+msgid "Skippy: skip button style"
+msgstr "Skippy: стиль кнопки пропуску"
+
+msgctxt "#32463"
+msgid "Box pair"
+msgstr "Пара блоків"
+
+msgctxt "#32464"
+msgid "Clock dock"
+msgstr "Біля годинника"
+
+msgctxt "#32465"
+msgid "Aeon theme: a palette tile and a label box at the bottom right (above the player controls when they are open), or a row at the top right that ends in the clock box."
+msgstr "Тема Aeon: кольорова плитка й блок із текстом праворуч унизу (над керуванням плеєром, коли воно відкрите) або ряд праворуч угорі, що закінчується блоком годинника."
+
+msgctxt "#32466"
+msgid "Use the palette for"
+msgstr "Використовувати палітру для"
+
+msgctxt "#32467"
+msgid "Menus and library views"
+msgstr "Меню та видів бібліотеки"
+
+msgctxt "#32468"
+msgid "Menus only"
+msgstr "Лише меню"
+
+msgctxt "#32469"
+msgid "Library views only"
+msgstr "Лише видів бібліотеки"
+
+msgctxt "#32470"
+msgid "Colors: the colour of the artwork; in the library with the Neutral backdrop and a palette other than Aeon, the palette's own darker box colour. Neutral: always the palette's box colour. Fanart: a window onto the fanart. Backdrop: as the library backdrop. View settings sets it per view."
+msgstr "Кольори: колір обкладинки; у бібліотеці з нейтральним тлом і палітрою не Aeon — власний темніший колір блоків палітри. Нейтральний: завжди колір блоків палітри. Фанарт: вікно на фанарт. Тло: як тло бібліотеки. Налаштування виду задають це для кожного виду."
+
+msgctxt "#32471"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages, for the menus and the library views, the menus only or the library views only. The library background takes it with the Neutral backdrop only."
+msgstr "Колір виділення, блоків, смуг і сторінок налаштувань — для меню та видів бібліотеки, лише для меню або лише для видів бібліотеки. Тло бібліотеки бере його лише з нейтральним тлом."
+
+msgctxt "#32472"
+msgid "Band under the Home menu"
+msgstr "Смуга під головним меню"
+
+msgctxt "#32473"
+msgid "A dark band from the Home menu down to the bottom of the screen, with a thin line on top, over the spotlight pictures. It follows the menu: middle or low."
+msgstr "Темна смуга від головного меню до низу екрана з тонкою лінією вгорі, поверх зображень spotlight. Вона йде за меню: посередині або внизу."
+
+msgctxt "#32474"
+msgid "Toasts expand from clock pill"
+msgstr "Сповіщення розгортаються з капсули годинника"
+
+msgctxt "#32475"
+msgid "A notification widens the clock pill to the left and shows itself in it, instead of a capsule of its own. Library views and full-screen video keep the capsule."
+msgstr "Сповіщення розширює капсулу годинника ліворуч і з’являється в ній, а не у власній капсулі. Види бібліотеки та повноекранне відео зберігають капсулу."
+
+msgctxt "#32476"
+msgid "Clearlogo in Now playing"
+msgstr "Clearlogo у «Зараз грає»"
+
+msgctxt "#32477"
+msgid "Live"
+msgstr "Наживо"
+
+msgctxt "#32478"
+msgid "Fused Glass player: the clearlogo of the show or film in the Now playing pill at the top left, instead of its title. Off: the title."
+msgstr "Програвач Fused Glass: clearlogo серіалу чи фільму в капсулі «Зараз грає» вгорі ліворуч замість назви. Вимк.: назва."
+
+msgctxt "#32479"
+msgid "Overview"
+msgstr "Огляд"
+
+msgctxt "#32480"
+msgid "File and season"
+msgstr "Файл і сезон"
+
+msgctxt "#32481"
+msgid "In this file"
+msgstr "У цьому файлі"
+
+msgctxt "#32482"
+msgid "File"
+msgstr "Файл"
+
+msgctxt "#32483"
+msgid "Size"
+msgstr "Розмір"
+
+msgctxt "#32484"
+msgid "Playing on"
+msgstr "Відтворюється на"
+
+msgctxt "#32485"
+msgid "Cast photos in the information screen"
+msgstr "Фото акторів на екрані інформації"
+
+msgctxt "#32486"
+msgid "Fused Glass player: the information screen shows the cast as round photos with the name and the character under each, in one row you scroll through. Off: the names as chips."
+msgstr "Програвач Fused Glass: екран інформації показує акторів круглими фото з іменем і роллю під кожним, в одному прокручуваному ряду. Вимк.: імена ярликами."
+
+msgctxt "#32487"
+msgid "Up"
+msgstr "Вгору"
+
+msgctxt "#32488"
+msgid "Down"
+msgstr "Вниз"
+
+msgctxt "#32489"
+msgid "Kodi running for"
+msgstr "Kodi працює"
+
+msgctxt "#32490"
+msgid "Box up for"
+msgstr "Приставка працює"
+
+msgctxt "#32491"
+msgid "Nothing is playing"
+msgstr "Нічого не відтворюється"
+
+msgctxt "#32492"
+msgid "Sleep"
+msgstr "Сон"
+
+msgctxt "#32493"
+msgid "Restart Kodi"
+msgstr "Перезапустити Kodi"
+
+msgctxt "#32495"
+msgid "Reboot to Android"
+msgstr "Перезавантажити в Android"
+
+msgctxt "#32496"
+msgid "Shut down"
+msgstr "Вимкнути"
+
+msgctxt "#32497"
+msgid "OK again to confirm"
+msgstr "Ще раз OK для підтвердження"
+
+msgctxt "#32498"
+msgid "Log off"
+msgstr "Вийти з профілю"
+
+msgctxt "#32499"
+msgid "Exit Kodi"
+msgstr "Вийти з Kodi"
+
+msgctxt "#32500"
+msgid "When this ends"
+msgstr "Коли це закінчиться"
+
+msgctxt "#32501"
+msgid "min"
+msgstr "хв"
+
+msgctxt "#32502"
+msgid "Health"
+msgstr "Стан"
+
+msgctxt "#32503"
+msgid "All good"
+msgstr "Усе гаразд"
+
+msgctxt "#32504"
+msgid "Running warm"
+msgstr "Нагрівається"
+
+msgctxt "#32505"
+msgid "Memory almost full"
+msgstr "Пам'ять майже заповнена"
+
+msgctxt "#32506"
+msgid "Processor"
+msgstr "Процесор"
+
+msgctxt "#32507"
+msgid "Shortcuts"
+msgstr "Ярлики"
+
+msgctxt "#32508"
+msgid "Recently used add-ons"
+msgstr "Нещодавні доповнення"
+
+msgctxt "#32509"
+msgid "Library jobs"
+msgstr "Завдання медіатеки"
+
+msgctxt "#32510"
+msgid "All episodes"
+msgstr "Усі серії"
+
+msgctxt "#32511"
+msgid "to the tile"
+msgstr "до плитки"
+
+msgctxt "#32512"
+msgid "{n} min left"
+msgstr "лишилось {n} хв"
+
+msgctxt "#32513"
+msgid "{episode} airs {date}"
+msgstr "{episode} вийде {date}"
+
+msgctxt "#32514"
+msgid "{n} more waiting in season {season}"
+msgstr "Ще {n} чекають у сезоні {season}"
+
+msgctxt "#32515"
+msgid "1 more waiting in season {season}"
+msgstr "Ще 1 чекає у сезоні {season}"
+
+msgctxt "#32516"
+msgid "Search your library"
+msgstr "Пошук у медіатеці"
+
+msgctxt "#32517"
+msgid "Films, shows, episodes, music, people"
+msgstr "Фільми, серіали, серії, музика, люди"
+
+msgctxt "#32518"
+msgid "You're on {episode}"
+msgstr "Ви на {episode}"
+
+msgctxt "#32519"
+msgid "Last search:"
+msgstr "Останній пошук:"
+
+msgctxt "#32520"
+msgid "Also search"
+msgstr "Шукати також"
+
+msgctxt "#32521"
+msgid "TMDb, not in the library"
+msgstr "TMDb, не в медіатеці"
+
+msgctxt "#32522"
+msgid "People"
+msgstr "Люди"
+
+msgctxt "#32523"
+msgid "Online"
+msgstr "Онлайн"
+
+msgctxt "#32524"
+msgid "Next 7 days"
+msgstr "Найближчі 7 днів"
+
+msgctxt "#32525"
+msgid "Shows you watch"
+msgstr "Серіали, які ви дивитеся"
+
+msgctxt "#32526"
+msgid "View settings"
+msgstr "Налаштування вигляду"
+
+msgctxt "#32527"
+msgid "Background"
+msgstr "Тло"
+
+msgctxt "#32528"
+msgid "Nothing out"
+msgstr "Нічого не виходить"
+
+msgctxt "#32529"
+msgid "{n} this week"
+msgstr "{n} цього тижня"
+
+msgctxt "#32530"
+msgid "1 episode"
+msgstr "1 серія"
+
+msgctxt "#32531"
+msgid "{n} episodes"
+msgstr "Серій: {n}"
+
+msgctxt "#32532"
+msgid "1 film"
+msgstr "1 фільм"
+
+msgctxt "#32533"
+msgid "{n} films"
+msgstr "Фільмів: {n}"
+
+msgctxt "#32534"
+msgid "Week: seven days side by side. Day: one day at a time."
+msgstr "Тиждень: сім днів поруч. День: по одному дню."
+
+msgctxt "#32535"
+msgid "Episodes, films or both."
+msgstr "Серії, фільми або все разом."
+
+msgctxt "#32536"
+msgid "Only the episodes of shows you have watched before."
+msgstr "Лише серії серіалів, які ви вже дивилися."
+
+msgctxt "#32537"
+msgid "Colors: the colours of the selected title's artwork. Neutral: plain. Fanart: the picture itself."
+msgstr "Кольори: кольори зображення вибраної назви. Нейтральний: однотонний. Fanart: саме зображення."
+
+msgctxt "#32538"
+msgid "The first day of a week. Today: always the next seven days."
+msgstr "Перший день тижня. Сьогодні: завжди найближчі сім днів."
+
+msgctxt "#32539"
+msgid "This week"
+msgstr "Цей тиждень"
+
+msgctxt "#32540"
+msgid "Next week"
+msgstr "Наступний тиждень"
+
+msgctxt "#32541"
+msgid "{n} in progress"
+msgstr "У процесі: {n}"
+
+msgctxt "#32542"
+msgid "{n} unwatched"
+msgstr "Не переглянуто: {n}"
+
+msgctxt "#32543"
+msgid "All watched"
+msgstr "Усе переглянуто"
+
+msgctxt "#32544"
+msgid "Episode combined"
+msgstr "Серії разом"
+
+msgctxt "#32545"
+msgid "Season buttons, the episodes in a card and the one in focus beside it"
+msgstr "Кнопки сезонів, серії на картці й вибрана поруч"
+
+msgctxt "#32546"
+msgid "{time} of {total}"
+msgstr "{time} з {total}"
+
+msgctxt "#32547"
+msgid "Frost"
+msgstr "Іній"
+
+msgctxt "#32548"
+msgid "Raised"
+msgstr "Піднятий"
+
+msgctxt "#32549"
+msgid "Clear"
+msgstr "Прозорий"
+
+msgctxt "#32550"
+msgid "Library view theme"
+msgstr "Тема бібліотеки"
+
+msgctxt "#32551"
+msgid "The glass of the frosted panels: library views, Home panels and the Home bar. Menus and dialogs follow Menu theme. Frost: lighter. Raised: lit rim, deep shadow. Clear: thin, no blur. Dark: darker."
+msgstr "Скло матових панелей: види бібліотеки, панелі й смуга головного екрана. Меню й діалоги слідують темі меню. Іній: світліше. Піднятий: світлий край, глибока тінь. Прозорий: тонке. Темна: темніше."
+
+msgctxt "#32552"
+msgid "Earlier days"
+msgstr "Минулі дні"
+
+msgctxt "#32553"
+msgid "Also show what aired on the days of this week before today (episodes in your library)."
+msgstr "Показувати й те, що вийшло в дні цього тижня до сьогодні (серії в медіатеці)."
+
+msgctxt "#32554"
+msgid "Menu names in capitals"
+msgstr "Назви меню великими"
+
+msgctxt "#32555"
+msgid "Fused Glass: the Home menu names in capital letters instead of sentence case."
+msgstr "Fused Glass: назви в головному меню великими літерами."
+
+msgctxt "#32556"
+msgid "In cinemas now"
+msgstr "Зараз у кіно"
+
+msgctxt "#32557"
+msgid "Airing today"
+msgstr "Виходить сьогодні"
+
+msgctxt "#32558"
+msgid "Airing tomorrow"
+msgstr "Виходить завтра"
+
+msgctxt "#32559"
+msgid "Save lyrics next to the song"
+msgstr "Зберігати тексти поруч із піснею"
+
+msgctxt "#32560"
+msgid "Lyrics that CU LRC Lyrics finds are also saved as a file next to the song (.lrc or .txt), so they are there next time and for other players. The music folder must be writable."
+msgstr "Тексти, знайдені CU LRC Lyrics, також зберігаються файлом поруч із піснею (.lrc або .txt), щоб вони були наступного разу й для інших плеєрів. Тека з музикою має бути доступна для запису."
+
+msgctxt "#32561"
+msgid "Home spotlight: recently watched sets"
+msgstr "Spotlight: нещодавно переглянуті колекції"
+
+msgctxt "#32562"
+msgid "The spotlight of a Home item that shows movie sets (Sets, for example) lists the sets you watched last, newest first. Off: all sets, as its spotlight settings say."
+msgstr "Spotlight пункту головної з колекціями фільмів (наприклад, «Колекції») показує нещодавно переглянуті колекції, починаючи з найновішої. Вимк.: усі колекції за налаштуваннями його Spotlight."
+
+msgctxt "#32563"
+msgid "Progress rings"
+msgstr "Кільця прогресу"
+
+msgctxt "#32564"
+msgid "Season list combined 1"
+msgstr "Список сезонів разом 1"
+
+msgctxt "#32565"
+msgid "Seasons, episodes, facts"
+msgstr "Сезони, серії, відомості"
+
+msgctxt "#32566"
+msgid "Season list combined 2"
+msgstr "Список сезонів разом 2"
+
+msgctxt "#32567"
+msgid "Poster with episode stills"
+msgstr "Постер і кадри"
+
+msgctxt "#32568"
+msgid "Smooth song progress"
+msgstr "Плавний поступ пісні"
+
+msgctxt "#32569"
+msgid "Fused Glass Now playing: the song's progress behind the waveform glides instead of jumping 1 % at a time. Uses a little more processor time while the screen is open."
+msgstr "«Зараз грає» у Fused Glass: поступ пісні за хвилею рухається плавно, а не стрибками по 1 %. Трохи більше навантажує процесор, поки екран відкритий."
+
+msgctxt "#32570"
+msgid "Progress bar updates per second"
+msgstr "Оновлень смуги за секунду"
+
+msgctxt "#32571"
+msgid "Screen"
+msgstr "Екран"
+
+msgctxt "#32572"
+msgid "How often a second Smooth song progress moves the fill. Screen: as often as Kodi draws the screen. Fewer updates use less processor time; on a long song even 10 looks smooth."
+msgstr "Скільки разів на секунду плавний поступ пісні зсуває заливку. Екран: так часто, як Kodi малює екран. Менше оновлень — менше навантаження на процесор; для довгої пісні плавно виглядає навіть 10."
+
+msgctxt "#32590"
+msgid "Season poster wall combined"
+msgstr "Стіна постерів сезонів разом"
+
+msgctxt "#32573"
+msgid "Dark"
+msgstr "Темна"
+
+msgctxt "#32574"
+msgid "Dark: dark panels. Clear: thin glass that shows more of the backdrop. Frost: light frosted glass over the blurred backdrop. Fused Glass: the System screen's menus, full screen with thin rules and a white bar on the row in focus; Kodi starts again."
+msgstr "Темна: темні панелі. Прозорий: тонке скло, крізь яке видно більше тла. Іній: світле матове скло над розмитим тлом. Fused Glass: меню екрана «Система», на весь екран, з тонкими лініями й білою смугою біля вибраного рядка; Kodi перезапуститься."
+
+msgctxt "#32575"
+msgid "Home bar"
+msgstr "Смуга меню"
+
+msgctxt "#32576"
+msgid "Bar"
+msgstr "Смуга"
+
+msgctxt "#32577"
+msgid "Keys"
+msgstr "Клавіші"
+
+msgctxt "#32578"
+msgid "Shelf"
+msgstr "Полиця"
+
+msgctxt "#32579"
+msgid "Frosted glass behind the Home menu, in the material chosen under Look. Bar: one capsule. Keys: glass under each icon. Shelf: a band across the screen."
+msgstr "Матове скло за головним меню з матеріалу у Вигляді. Смуга: одна капсула. Клавіші: скло під кожною піктограмою. Полиця: стрічка на всю ширину."
+
+msgctxt "#32591"
+msgid "Add item"
+msgstr "Додати пункт"
+
+msgctxt "#32592"
+msgid "Puts a new item at the end of the menu: one of the skin's items that is not on it yet, or a custom item with its own path, Spotlight and lists.[CR][CR]OK opens the list of types."
+msgstr "Додає новий пункт у кінець меню: пункт оболонки, якого в ньому ще немає, або власний пункт із власним шляхом, Spotlight і списками.[CR][CR]OK відкриває список типів."
+
+msgctxt "#32593"
+msgid "Reload EPG"
+msgstr "Перезавантажити EPG"
+
+msgctxt "#32594"
+msgid "Aeon accent colour"
+msgstr "Акцентний колір Aeon"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "Золото"
+
+msgctxt "#32596"
+msgid "Slate"
+msgstr "Сланець"
+
+msgctxt "#32597"
+msgid "Teal"
+msgstr "Синьо-зелений"
+
+msgctxt "#32598"
+msgid "Moss"
+msgstr "Мох"
+
+msgctxt "#32599"
+msgid "Side"
+msgstr "Бічна"
+
+msgctxt "#32600"
+msgid "Vignette shape"
+msgstr "Форма віньєтки"
+
+msgctxt "#32601"
+msgid "Round"
+msgstr "Кругла"
+
+msgctxt "#32602"
+msgid "Round darkens the edges all round. Side darkens the screen from the left and fades out to the right, under the Home text. The row above sets how strong it is."
+msgstr "Кругла затемнює краї довкола. Бічна затемнює екран зліва й згасає праворуч, під текстом головного екрана. Силу задає рядок вище."
+
+msgctxt "#32603"
+msgid "Heavy"
+msgstr "Щільний"
+
+msgctxt "#32604"
+msgid "All themes"
+msgstr "Усі теми"
+
+msgctxt "#32605"
+msgid "Next episode"
+msgstr "Наступна серія"
+
+msgctxt "#32606"
+msgid "{t} left"
+msgstr "лишилось {t}"
+
+msgctxt "#32607"
+msgid "Home menu underline"
+msgstr "Підкреслення в головному меню"
+
+msgctxt "#32608"
+msgid "Library fanart look"
+msgstr "Вигляд фанарту медіатеки"
+
+msgctxt "#32609"
+msgid "Dimmed"
+msgstr "Затемнений"
+
+msgctxt "#32610"
+msgid "Ratings shown as"
+msgstr "Показувати рейтинги як"
+
+msgctxt "#32611"
+msgid "Text"
+msgstr "Текст"
+
+msgctxt "#32612"
+msgid "The accent line under the focused Home menu item, as in Fused Glass."
+msgstr "Акцентна лінія під вибраним пунктом головного меню, як у Fused Glass."
+
+msgctxt "#32613"
+msgid "The fanart behind the library views: dimmed under a dark veil, or light with a frosted colour tint."
+msgstr "Фанарт за виглядами бібліотеки: затемнений під темною вуаллю або світлий з матовим кольоровим відтінком."
+
+msgctxt "#32614"
+msgid "Show the rating providers as their icons or as their names."
+msgstr "Показувати джерела рейтингів значками або назвами."
+
+msgctxt "#32615"
+msgid "Media info from sidecars"
+msgstr "Відомості про медіа з файлів sidecar"
+
+msgctxt "#32616"
+msgid "Off: only what Kodi's library knows (the chips above). On: also the source (UHD Remux, Blu-ray, WEB-DL, DVD...), the edition, the audio and subtitle tracks and the chapters, read from a mediainfo sidecar next to each video file: <name>.cmm_mediainfo.xml from Curator Media Manager (used first) or <name>-mediainfo.xml from tinyMediaManager. Without sidecars nothing extra shows."
+msgstr "Вимк.: лише те, що знає бібліотека Kodi (мітки вище). Увімк.: також джерело (UHD Remux, Blu-ray, WEB-DL, DVD...), видання, звукові доріжки, субтитри й розділи з файлу mediainfo поруч із кожним відео: <назва>.cmm_mediainfo.xml від Curator Media Manager (спершу) або <назва>-mediainfo.xml від tinyMediaManager. Без цих файлів нічого додаткового не показується."
+
+msgctxt "#32617"
+msgid "Commentary"
+msgstr "Коментар"
+
+msgctxt "#32618"
+msgid "Chapters"
+msgstr "Розділи"
+
+msgctxt "#32619"
+msgid "In cinemas now: films from"
+msgstr "Зараз у кіно: фільми з"
+
+msgctxt "#32620"
+msgid "Everywhere"
+msgstr "Звідусіль"
+
+msgctxt "#32621"
+msgid "In cinemas now (the screensaver and the widgets) is what TMDb Helper's country has in cinemas: the United States unless TMDb Helper's language is set to another country. Pick your country to keep only films made in the United States or there; Everywhere keeps them all."
+msgstr "«Зараз у кіно» (заставка й віджети) показує, що йде в кінотеатрах країни TMDb Helper: у США, якщо мова TMDb Helper не задає іншу країну. Виберіть свою країну, щоб лишилися тільки фільми, зняті в США або там; «Звідусіль» лишає всі."
+
+msgctxt "#32622"
+msgid "Getting Home ready"
+msgstr "Підготовка головного екрана"
+
+msgctxt "#32623"
+msgid "Home rows"
+msgstr "Рядки головного екрана"
+
+msgctxt "#32624"
+msgid "OK or Back skips"
+msgstr "OK або Назад — пропустити"
+
+msgctxt "#32625"
+msgid "Live TV guide"
+msgstr "Телепрограма"
+
+msgctxt "#32626"
+msgid "Tint"
+msgstr "Відтінок"
+
+msgctxt "#32627"
+msgid "Picture"
+msgstr "Зображення"
+
+msgctxt "#32628"
+msgid "blurred"
+msgstr "розмите"
+
+msgctxt "#32629"
+msgid "Newest folder"
+msgstr "Найновіша тека"
+
+msgctxt "#32630"
+msgid "Folders, newest first"
+msgstr "Теки, спершу нові"
+
+msgctxt "#32631"
+msgid "photos"
+msgstr "фото"
+
+msgctxt "#32632"
+msgid "photo"
+msgstr "фото"
+
+msgctxt "#32633"
+msgid "videos"
+msgstr "відео"
+
+msgctxt "#32634"
+msgid "video"
+msgstr "відео"
+
+msgctxt "#32635"
+msgid "OK plays the folder as a slideshow · Down for the folders"
+msgstr "OK показує теку слайд-шоу · Вниз до тек"
+
+msgctxt "#32636"
+msgid "All pictures"
+msgstr "Усі зображення"
+
+msgctxt "#32637"
+msgid "sources"
+msgstr "джерел"
+
+msgctxt "#32638"
+msgid "source"
+msgstr "джерело"
+
+msgctxt "#32639"
+msgid "No pictures yet"
+msgstr "Зображень ще немає"
+
+msgctxt "#32640"
+msgid "Add a folder of photos as a picture source in the Pictures window. OK opens it."
+msgstr "Додайте теку з фото як джерело зображень у вікні «Зображення». OK відкриває його."
+
+msgctxt "#32641"
+msgid "Photos"
+msgstr "Фото"
+
+msgctxt "#32642"
+msgid "OK opens the photo · Up for sort, slideshow and view"
+msgstr "OK відкриває фото · Вгору для сортування, слайд-шоу та вигляду"
+
+msgctxt "#32643"
+msgid "View"
+msgstr "Вигляд"
+
+msgctxt "#32644"
+msgid "waits until loading is done"
+msgstr "чекає завершення завантаження"
+
+msgctxt "#32645"
+msgid "Media info chips"
+msgstr "Значки відомостей про медіа"
+
+msgctxt "#32646"
+msgid "Which chips the information page, Home and the library panels show. The sidecar chips need Media info from sidecars."
+msgstr "Які значки показують сторінка відомостей, Головна та панелі бібліотеки. Значкам із sidecar потрібні Відомості про медіа з sidecar."
+
+msgctxt "#32647"
+msgid "Resolution"
+msgstr "Роздільність"
+
+msgctxt "#32648"
+msgid "Aspect ratio"
+msgstr "Співвідношення сторін"
+
+msgctxt "#32649"
+msgid "HDR and Dolby Vision"
+msgstr "HDR і Dolby Vision"
+
+msgctxt "#32650"
+msgid "Dolby Vision profile"
+msgstr "Профіль Dolby Vision"
+
+msgctxt "#32651"
+msgid "Audio format"
+msgstr "Формат звуку"
+
+msgctxt "#32652"
+msgid "Audio channels"
+msgstr "Канали звуку"
+
+msgctxt "#32653"
+msgid "Source format (sidecar)"
+msgstr "Формат джерела (sidecar)"
+
+msgctxt "#32654"
+msgid "Container (sidecar)"
+msgstr "Контейнер (sidecar)"
+
+msgctxt "#32655"
+msgid "Bit rate (sidecar)"
+msgstr "Бітрейт (sidecar)"
+
+msgctxt "#32656"
+msgid "File size (sidecar)"
+msgstr "Розмір файлу (sidecar)"
+
+msgctxt "#32657"
+msgid "Subtitles (sidecar)"
+msgstr "Субтитри (sidecar)"
+
+msgctxt "#32658"
+msgid "Chapters (sidecar)"
+msgstr "Розділи (sidecar)"
+
+msgctxt "#32659"
+msgid "Commentary (sidecar)"
+msgstr "Коментарі (sidecar)"
+
+msgctxt "#32660"
+msgid "3D (sidecar)"
+msgstr "3D (sidecar)"
+
+msgctxt "#32661"
+msgid "chapters"
+msgstr "розділів"
+
+msgctxt "#32662"
+msgid "commentary"
+msgstr "коментарі"
+
+msgctxt "#32663"
+msgid "Combine multi-episode files into a single row in library"
+msgstr "Об'єднувати файли з кількома епізодами в один рядок у медіатеці"
+
+msgctxt "#32664"
+msgid "Episodes stored in one video file (a double episode, three cartoons) show as one row: 1–2, one title, the file's running time. The season's list then comes from Aeon Fuse Helper."
+msgstr "Серії в одному відеофайлі (подвійна серія, три мультфільми) показуються одним рядком: 1–2, одна назва, тривалість файлу. Список сезону тоді дає Aeon Fuse Helper."
+
+msgctxt "#32665"
+msgid "Video source (sidecar)"
+msgstr "Джерело відео (sidecar)"
+
+msgctxt "#32666"
+msgid "Video codec (sidecar)"
+msgstr "Відеокодек (sidecar)"
+
+msgctxt "#32667"
+msgid "Version (sidecar)"
+msgstr "Версія (sidecar)"
+
+msgctxt "#32668"
+msgid "Panel shadow"
+msgstr "Тінь панелей"
+
+msgctxt "#32669"
+msgid "How high the glass panels seem to float: their shadow grows and drops. Mild: close to the page. Medium: as before. Strong: higher. Heavy: highest."
+msgstr "Наскільки високо здаються ширяти скляні панелі: їхня тінь зростає й опускається. М’яка: близько до сторінки. Середня: як раніше. Сильна: вище. Важка: найвище."
+
+msgctxt "#32670"
+msgid "Mild"
+msgstr "М'яка"
+
+msgctxt "#32671"
+msgid "Heavy"
+msgstr "Важка"
+
+msgctxt "#32672"
+msgid "Expert settings"
+msgstr "Експертні налаштування"
+
+msgctxt "#32673"
+msgid "Shows the rows below for fine-tuning the glass panels and the fanart behind the library views."
+msgstr "Показує рядки нижче для тонкого налаштування скляних панелей і фанарту за видами бібліотеки."
+
+msgctxt "#32674"
+msgid "Panel opacity"
+msgstr "Непрозорість панелей"
+
+msgctxt "#32675"
+msgid "How solid the glass panels are, around the Skin style's own value. -2: most see-through. +2: most solid."
+msgstr "Наскільки щільні скляні панелі відносно значення стилю. -2: найпрозоріші. +2: найщільніші."
+
+msgctxt "#32676"
+msgid "Panel blur"
+msgstr "Розмиття панелей"
+
+msgctxt "#32677"
+msgid "How strongly the panels blur the picture behind them. Off: no blur."
+msgstr "Наскільки сильно панелі розмивають зображення позаду. Вимк.: без розмиття."
+
+msgctxt "#32678"
+msgid "Panel tint"
+msgstr "Відтінок панелей"
+
+msgctxt "#32679"
+msgid "The colour of the panels' glass, around the Skin style's own. -2: darkest. +2: lightest frost."
+msgstr "Колір скла відносно кольору стилю. -2: найтемніший. +2: найсвітліший іній."
+
+msgctxt "#32680"
+msgid "Library fanart opacity"
+msgstr "Непрозорість фанарту медіатеки"
+
+msgctxt "#32681"
+msgid "How much of the fanart behind the library views shows, on top of Backdrop strength. -2: faintest. +2: strongest."
+msgstr "Наскільки видно фанарт за видами бібліотеки, понад силу тла. -2: найслабше. +2: найсильніше."
+
+msgctxt "#32682"
+msgid "Library fanart blur"
+msgstr "Розмиття фанарту медіатеки"
+
+msgctxt "#32683"
+msgid "Blurs the fanart behind the library views: -2 a little, +2 the most; 0 is the default. Off: sharp."
+msgstr "Розмиває фанарт за видами медіатеки: -2 трохи, +2 найсильніше; 0 за замовчуванням. Вимк.: чітко."
+
+msgctxt "#32684"
+msgid "Library fanart tint"
+msgstr "Відтінок фанарту медіатеки"
+
+msgctxt "#32685"
+msgid "The colour tint of the Frosted fanart look. Off: no tint."
+msgstr "Колірний відтінок вигляду фанарту Іній. Вимк.: без відтінку."
+
+msgctxt "#32686"
+msgid "Reset expert settings"
+msgstr "Скинути експертні налаштування"
+
+msgctxt "#32687"
+msgid "Puts every expert setting back to its default."
+msgstr "Повертає всі експертні налаштування до типових."
+
+msgctxt "#32688"
+msgid "Expert settings are back to their defaults."
+msgstr "Експертні налаштування знову типові."
+
+msgctxt "#32689"
+msgid "Menu background"
+msgstr "Тло меню"
+
+msgctxt "#32690"
+msgid "Screen"
+msgstr "Екран"
+
+msgctxt "#32691"
+msgid "Menus and dialogs in the Fused Glass style. Fanart: the item's fanart behind them. Screen: the screen they opened on, dimmed."
+msgstr "Меню та діалоги у стилі Fused Glass. Фанарт: фанарт елемента позаду. Екран: екран, на якому вони відкрилися, затемнений."
+
+msgctxt "#32692"
+msgid "OK runs it  ·  Back closes"
+msgstr "OK — виконати  ·  Назад — закрити"
+
+msgctxt "#32693"
+msgid "OK chooses  ·  Back closes"
+msgstr "OK — вибрати  ·  Назад — закрити"
+
+msgctxt "#32694"
+msgid "Its own library views and menus: rounded glass cards with soft shadows float over the artwork, in Dark, Clear, Frost or the Fused Glass style."
+msgstr "Власні види медіатеки та меню: заокруглені скляні картки з м’якими тінями ширяють над зображеннями, у стилі Темний, Прозорий, Іній або Fused Glass."
+
+msgctxt "#32695"
+msgid "Use the defaults"
+msgstr "Використати типові налаштування"
+
+msgctxt "#32696"
+msgid "The chosen theme as it comes, at once. Everything can be changed later in Skin settings."
+msgstr "Вибрана тема як є, одразу. Усе можна змінити пізніше в налаштуваннях оболонки."
+
+msgctxt "#32697"
+msgid "Customise"
+msgstr "Налаштувати"
+
+msgctxt "#32698"
+msgid "Go through the look, libraries, Home and backgrounds page by page. Every row shows a preview of its choice."
+msgstr "Пройдіть зовнішній вигляд, медіатеки, головний екран і фони сторінка за сторінкою. Кожен рядок показує попередній перегляд свого вибору."
+
+msgctxt "#32699"
+msgid "Keep my current settings"
+msgstr "Залишити поточні налаштування"
+
+msgctxt "#32700"
+msgid "Leave every setting as it is: only the theme you picked changes."
+msgstr "Усі налаштування залишаються як є: змінюється лише вибрана тема."
+
+msgctxt "#32701"
+msgid "Aeon with glass menus: the same layout and library views as Aeon, with see-through glass menus and dialogs instead of solid ones. No palettes."
+msgstr "Aeon зі скляними меню: та сама розкладка й види медіатеки, що в Aeon, але меню та діалоги з напівпрозорого скла замість суцільних. Без палітр."
+
+msgctxt "#32702"
+msgid "The Planner of upcoming episodes and films, online rows and extra ratings."
+msgstr "Планувальник майбутніх епізодів і фільмів, онлайн-ряди та додаткові рейтинги."
+
+msgctxt "#32703"
+msgid "The Next up row: the next episode of every show you are watching."
+msgstr "Ряд «Далі»: наступний епізод кожного серіалу, який ви дивитеся."
+
+msgctxt "#32704"
+msgid "Lyrics on the Now playing screen, line by line or word by word."
+msgstr "Тексти пісень на екрані «Зараз грає», рядок за рядком або слово за словом."
+
+msgctxt "#32705"
+msgid "Artist pictures behind the Now playing screen."
+msgstr "Фото виконавця за екраном «Зараз грає»."
+
+msgctxt "#32706"
+msgid "Box colours taken from the artwork."
+msgstr "Кольори блоків, узяті із зображень."
+
+msgctxt "#32707"
+msgid "Skip intro, recap and credits buttons in the player."
+msgstr "Кнопки пропуску заставки, короткого змісту й титрів у програвачі."
+
+msgctxt "#32708"
+msgid "Thumbnail previews on the seek bar."
+msgstr "Мініатюри попереднього перегляду на смузі перемотування."
+
+msgctxt "#32709"
+msgid "Studio and network logos in the libraries and on the information page."
+msgstr "Логотипи студій і каналів у медіатеках і на сторінці інформації."
+
+msgctxt "#32710"
+msgid "Record label logos for albums."
+msgstr "Логотипи лейблів для альбомів."
+
+msgctxt "#32711"
+msgid "Language flags in the video information."
+msgstr "Прапори мов в інформації про відео."
+
+msgctxt "#32712"
+msgid "The skin's own screensaver: library pictures with a slow zoom and slide, and what is playing."
+msgstr "Власна заставка оболонки: зображення з медіатеки з повільним наближенням і зсувом, і те, що зараз грає."
+
+msgctxt "#32713"
+msgid "Aeon: solid panels in a palette you pick. Aeon Glass: the same Aeon layout and views with glass menus, no palettes. Fused Glass: its own library views, rounded glass cards over the artwork."
+msgstr "Aeon: суцільні панелі у вибраній палітрі. Aeon Glass: та сама розкладка й види Aeon зі скляними меню, без палітр. Fused Glass: власні види медіатеки, заокруглені скляні картки над зображеннями."
+
+msgctxt "#32714"
+msgid "Its own views, glass cards"
+msgstr "Власні види, скляні картки"
+
+msgctxt "#32715"
+msgid "Take the theme as it comes, or go through its look step by step. Everything can be changed later in Skin settings."
+msgstr "Візьміть тему як є або налаштуйте її вигляд крок за кроком. Усе можна змінити пізніше в налаштуваннях оболонки."
+
+msgctxt "#32716"
+msgid "How the settings strip of the library views shows: over the view (Overlay) or always beside it (Permanent)."
+msgstr "Як показується смуга налаштувань у видах медіатеки: поверх вигляду (Накладка) або завжди поруч (Постійно)."
+
+msgctxt "#32717"
+msgid "How much the edges of the Home screen darken behind the menu and the text."
+msgstr "Наскільки темніють краї головного екрана за меню й текстом."
+
+msgctxt "#32718"
+msgid "The colour of the clock box and the corner boxes with the Aeon palette."
+msgstr "Колір блока годинника та кутових блоків з палітрою Aeon."
+
+msgctxt "#32719"
+msgid "Optional add-ons that give the skin more to show. Install the ones you want; the rest can wait."
+msgstr "Додаткові доповнення, з якими оболонка покаже більше. Установіть потрібні; решта зачекає."
+
+msgctxt "#32720"
+msgid "The disc art spinning beside the poster on the player controls: for videos, for music, for both, or off."
+msgstr "Обертовий диск поруч із постером в елементах програвача: для відео, для музики, для обох або вимкнено."
+
+msgctxt "#32721"
+msgid "What the text under a title shows in every library view: the plot, the tagline (when there is one) or both."
+msgstr "Що показує текст під назвою в усіх видах медіатеки: сюжет, гасло (якщо є) або обидва."
+
+msgctxt "#32722"
+msgid "Libraries"
+msgstr "Медіатеки"
+
+msgctxt "#32723"
+msgid "Information"
+msgstr "Інформація"
+
+msgctxt "#32724"
+msgid "Screensaver & backdrops"
+msgstr "Заставка і тла"
+
+msgctxt "#32725"
+msgid "Export skin settings"
+msgstr "Експорт налаштувань оболонки"
+
+msgctxt "#32726"
+msgid "Import skin settings"
+msgstr "Імпорт налаштувань оболонки"
+
+msgctxt "#32727"
+msgid "Save"
+msgstr "Зберегти"
+
+msgctxt "#32728"
+msgid "Load"
+msgstr "Завантажити"
+
+msgctxt "#32729"
+msgid "Saves every Aeon Fuse setting, with the theme, palette and fonts, to a file in a folder you pick."
+msgstr "Зберігає всі налаштування Aeon Fuse разом із темою, палітрою та шрифтами у файл у вибраній теці."
+
+msgctxt "#32730"
+msgid "Loads a file saved with Export skin settings. Your current skin settings are replaced."
+msgstr "Завантажує файл, збережений через «Експорт налаштувань оболонки». Поточні налаштування оболонки буде замінено."
+
+msgctxt "#32731"
+msgid "Folder for the settings file"
+msgstr "Тека для файлу налаштувань"
+
+msgctxt "#32732"
+msgid "Settings file to load"
+msgstr "Файл налаштувань для завантаження"
+
+msgctxt "#32733"
+msgid "Saved: %s"
+msgstr "Збережено: %s"
+
+msgctxt "#32734"
+msgid "Load the settings saved on %s? Your current skin settings are replaced."
+msgstr "Завантажити налаштування, збережені %s? Поточні налаштування оболонки буде замінено."
+
+msgctxt "#32735"
+msgid "This file does not hold Aeon Fuse settings."
+msgstr "Цей файл не містить налаштувань Aeon Fuse."
+
+msgctxt "#32736"
+msgid "The file could not be written."
+msgstr "Не вдалося записати файл."
+
+msgctxt "#32737"
+msgid "Kodi restarts to apply them."
+msgstr "Kodi перезапуститься, щоб застосувати їх."
+
+msgctxt "#32738"
+msgid "The skin reloads; restart Kodi afterwards so every setting is read again."
+msgstr "Оболонка перезавантажиться; потім перезапустіть Kodi, щоб усі налаштування прочиталися знову."
+
+msgctxt "#32739"
+msgid "These settings are already in use."
+msgstr "Ці налаштування вже використовуються."
+
+msgctxt "#32740"
+msgid "Soft"
+msgstr "М’який"
+
+msgctxt "#32741"
+msgid "Home gradient"
+msgstr "Градієнт на головній"
+
+msgctxt "#32742"
+msgid "Beside the clock"
+msgstr "Поруч із годинником"
+
+msgctxt "#32743"
+msgid "Left corner"
+msgstr "Лівий кут"
+
+msgctxt "#32744"
+msgid "The fade from the bottom of the screen up to the Home menu: off, soft (the look so far) or strong."
+msgstr "Перехід від нижнього краю екрана до головного меню: вимк., м’який (як досі) або сильний."
+
+msgctxt "#32745"
+msgid "Where the Now playing capsule sits on Home while music plays: beside the clock or in the lower left corner."
+msgstr "Де на головній розташована капсула «Зараз грає» під час музики: поруч із годинником або в лівому нижньому куті."
+
+msgctxt "#32746"
+msgid "How the skip button sits on the player controls: a white tab on their top edge, or a glass capsule above them."
+msgstr "Як кнопка пропуску розташована на елементах керування програвача: біла вкладка на їх верхньому краю або скляна капсула над ними."
+
+msgctxt "#32747"
+msgid "How strongly the picture behind the menus and dialogs is blurred. Off: sharp, as before."
+msgstr "Наскільки сильно розмивається зображення за меню та діалогами. Вимк.: чітке, як раніше."
+
+msgctxt "#32748"
+msgid "Left / Right: choose an option. OK: set it. Up, Down or Back: keep the one in use."
+msgstr "Вліво / Вправо: виберіть варіант. OK: застосувати. Вгору, Вниз або Назад: залишити поточний."
+
+msgctxt "#32749"
+msgid "Start on"
+msgstr "Починати з"
+
+msgctxt "#32750"
+msgid "The Home menu item that has the focus when Kodi starts, once the splash has gone."
+msgstr "Пункт головного меню, на якому фокус під час запуску Kodi, коли зникне заставка."
+
+msgctxt "#32751"
+msgid "Ratings shown in"
+msgstr "Рейтинги показувати в"
+
+msgctxt "#32752"
+msgid "Media info shown in"
+msgstr "Інформацію про медіа показувати в"
+
+msgctxt "#32753"
+msgid "Library views"
+msgstr "Види бібліотеки"
+
+msgctxt "#32754"
+msgid "Information pages"
+msgstr "Сторінки інформації"
+
+msgctxt "#32755"
+msgid "Widget & Spotlight screens"
+msgstr "Екрани віджетів і Spotlight"
+
+msgctxt "#32756"
+msgid "Home spotlights"
+msgstr "Spotlight на головному екрані"
+
+msgctxt "#32757"
+msgid "Player info"
+msgstr "Інформація плеєра"
+
+msgctxt "#32758"
+msgid "Screensaver"
+msgstr "Заставка"
+
+msgctxt "#32759"
+msgid "Live TV"
+msgstr "ТБ наживо"
+
+msgctxt "#32760"
+msgid "Where the ratings (IMDb, TMDb, Rotten Tomatoes, Trakt) appear. OK opens the list: tick the places."
+msgstr "Де показуються рейтинги (IMDb, TMDb, Rotten Tomatoes, Trakt). OK відкриває список: позначте місця."
+
+msgctxt "#32761"
+msgid "Where the media info chips (resolution, HDR, audio ...) appear. OK opens the list: tick the places. Which chips: Media info chips."
+msgstr "Де показуються мітки медіа (роздільність, HDR, звук ...). OK відкриває список: позначте місця. Які мітки: Мітки інформації про медіа."
+
+msgctxt "#32762"
+msgid "Recommended add-ons"
+msgstr "Рекомендовані доповнення"
+
+msgctxt "#32764"
+msgid "Installed"
+msgstr "Встановлено"
+
+msgctxt "#32765"
+msgid "Not installed"
+msgstr "Не встановлено"
+
+msgctxt "#32766"
+msgid "%s needs the %s repository. Install that repository first?"
+msgstr "%s потрібен репозиторій %s. Спочатку встановити цей репозиторій?"
+
+msgctxt "#32767"
+msgid "White weather icons for the weather forecast."
+msgstr "Білі значки погоди для прогнозу."
+
+msgctxt "#32768"
+msgid "The playback info button in the video controls."
+msgstr "Кнопка відомостей про відтворення в керуванні відео."
+
+msgctxt "#32769"
+msgid "The Inter (Copacetic) font set."
+msgstr "Набір шрифтів Inter (Copacetic)."
+
+msgctxt "#32770"
+msgid "The Roboto CJKSC font set for Chinese, Japanese and Korean."
+msgstr "Набір шрифтів Roboto CJKSC для китайської, японської та корейської."
+
+msgctxt "#32771"
+msgid "Update and clean on another Kodi"
+msgstr "Оновлювати й очищати на іншому Kodi"
+
+msgctxt "#32772"
+msgid "Address"
+msgstr "Адреса"
+
+msgctxt "#32773"
+msgid "User name"
+msgstr "Ім'я користувача"
+
+msgctxt "#32774"
+msgid "Password"
+msgstr "Пароль"
+
+msgctxt "#32775"
+msgid "Test connection"
+msgstr "Перевірити з'єднання"
+
+msgctxt "#32776"
+msgid "Library update and clean from this skin (Home, the library panel, the context menu) go to another Kodi, a headless one for instance, instead of this one."
+msgstr "Оновлення й очищення бібліотеки з цієї обкладинки (головний екран, панель бібліотеки, контекстне меню) йдуть на інший Kodi, наприклад без екрана, а не на цей."
+
+msgctxt "#32777"
+msgid "The other Kodi's web address and port, for example http://192.168.10.10:8080 (there: Settings > Services > Control > Allow remote control via HTTP)."
+msgstr "Веб-адреса й порт іншого Kodi, наприклад http://192.168.10.10:8080 (там: Налаштування > Служби > Керування > Дозволити віддалене керування через HTTP)."
+
+msgctxt "#32778"
+msgid "The web server user name and password of the other Kodi."
+msgstr "Ім'я користувача й пароль веб-сервера іншого Kodi."
+
+msgctxt "#32779"
+msgid "Asks the other Kodi for its version: checks the address, user name and password."
+msgstr "Запитує версію в іншого Kodi: перевіряє адресу, ім'я користувача й пароль."
+
+msgctxt "#32780"
+msgid "Not set"
+msgstr "Не задано"
+
+msgctxt "#32781"
+msgid "Library update sent"
+msgstr "Оновлення бібліотеки надіслано"
+
+msgctxt "#32782"
+msgid "Library clean sent"
+msgstr "Очищення бібліотеки надіслано"
+
+msgctxt "#32783"
+msgid "Could not reach %s: %s"
+msgstr "Не вдалося зв'язатися з %s: %s"
+
+msgctxt "#32784"
+msgid "%s answers: %s"
+msgstr "%s відповідає: %s"
+
+msgctxt "#32785"
+msgid "Wrong user name or password"
+msgstr "Неправильне ім'я користувача або пароль"
+
+msgctxt "#32786"
+msgid "Library update finished"
+msgstr "Оновлення бібліотеки завершено"
+
+msgctxt "#32789"
+msgid "Failed"
+msgstr "Помилка"
+
+msgctxt "#32790"
+msgid "Could not install the repository"
+msgstr "Не вдалося встановити репозиторій"
+
+msgctxt "#32791"
+msgid "Pick the add-ons you want: OK ticks one, Next installs the ticked ones while you go on. The picture shows what each adds. Later: Skin settings > System > Recommended add-ons."
+msgstr "Виберіть потрібні доповнення: OK позначає, Далі встановлює позначені, поки ви продовжуєте. Малюнок показує, що додає кожне. Пізніше: Налаштування обкладинки > Система > Рекомендовані доповнення."
+
+msgctxt "#32792"
+msgid "Will be installed"
+msgstr "Буде встановлено"
+
+msgctxt "#32793"
+msgid "Installs the ticked add-ons"
+msgstr "Встановлює позначені доповнення"
+
+msgctxt "#32794"
+msgid "Installed: %s"
+msgstr "Встановлено: %s"
+
+msgctxt "#32795"
+msgid "Delete %s? Its name, path, icon, widgets and submenu are removed; the items below it move up one place."
+msgstr "Видалити %s? Назву, шлях, значок, віджети й підменю буде видалено; пункти нижче піднімуться на одне місце."
+
+msgctxt "#32796"
+msgid "Custom items only"
+msgstr "Лише власні пункти"
+
+msgctxt "#32797"
+msgid "A calm, thin waveform on the Now playing card, drawn in the skin's own box and smoothed so loud passages do not spike. The build for this device is installed."
+msgstr "Спокійна тонка хвиля на картці «Зараз грає», у рамці оболонки, згладжена, щоб гучні місця не давали піків. Встановлюється збірка для цього пристрою."
+
+msgctxt "#32798"
+msgid "More by the artist"
+msgstr "Більше від виконавця"
+
+msgctxt "#32799"
+msgid "Intermission at"
+msgstr "Антракт о"
+
+msgctxt "#32800"
+msgid "Your languages"
+msgstr "Ваші мови"
+
+msgctxt "#32801"
+msgid "All others"
+msgstr "Усі інші"
+
+msgctxt "#32802"
+msgid "In your library"
+msgstr "У вашій медіатеці"
+
+msgctxt "#32803"
+msgid "Sort and show"
+msgstr "Сортування і показ"
+
+msgctxt "#32804"
+msgid "Sort by"
+msgstr "Сортувати за"
+
+msgctxt "#32805"
+msgid "Show only"
+msgstr "Показувати лише"
+
+msgctxt "#32806"
+msgid "OK again flips the order"
+msgstr "Повторне OK змінює порядок"
+
+msgctxt "#32807"
+msgid "Several versions"
+msgstr "Кілька версій"
+
+msgctxt "#32808"
+msgid "Decade"
+msgstr "Десятиліття"
+
+msgctxt "#32809"
+msgid "Clear all"
+msgstr "Скинути все"
+
+msgctxt "#32810"
+msgid "Never played"
+msgstr "Жодного разу не відтворено"
+
+msgctxt "#32811"
+msgid "Played"
+msgstr "Відтворено"

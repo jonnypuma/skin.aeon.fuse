@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	File browser (paths for settings / sources) - M4, Builder E: centred Index dialog, hairline
+	list with the check column, buttons on the right, mono path line at the bottom.
+	Id contract (Estuary Omega): heading 411, list 450 (451 = thumbs variant, not used), path
+	label 412, buttons 413 OK / 414 cancel / 415 new folder / 416 mirror image in grouplist 9000,
+	scrollbar 60.
+-->
+<window>
+	<defaultcontrol always="true">450</defaultcontrol>
+	<onunload>ClearProperty(aeon.arttype,home)</onunload>
+	<include>Anim_DialogOpenClose</include>
+	<controls>
+		<include condition="!$EXP[FGS]">FB_Classic</include>
+		<include condition="$EXP[FGS]">FGS_FileBrowser3</include><!-- 0.56.53 fgsfilebrowser -->
+	</controls>
+</window>

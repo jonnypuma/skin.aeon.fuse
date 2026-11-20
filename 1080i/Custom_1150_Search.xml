@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Aeon Search - custom window 1150 (replaces Estuary's Custom_1107_SearchDialog; SPEC 5 / T16).
+	Owner: Builder A. Opened from Home's search icon: ActivateWindow(1150).
+	No Kodi-owned control ids. Pieces live in Includes_Search.xml.
+
+	Flow: the window opens on the edit field and, when it is empty, opens the keyboard straight away.
+	Done -> results load (library only). Down walks Movies -> TV shows -> Albums -> Artists (empty rows
+	are skipped). OK on a result does Kodi's normal action (play/info per select action, open show /
+	album / artist). Back from a row -> edit field; Back from the edit field -> Home.
+-->
+<window type="window" id="1150">
+	<defaultcontrol always="true">9099</defaultcontrol>
+	<backgroundcolor>ff000000</backgroundcolor>
+	<include>Anim_WindowOpenClose</include>
+	<!-- the encoded query (Includes_Search.xml) must not outlive the window: a stale one would show old rows -->
+	<onunload>ClearProperty(Aeon.Search.Encoded,home)</onunload>
+	<!-- Fused Glass (0.42.0): the query lives in aeon.q; a fresh window starts empty unless the helper opened it
+	     with a recent search (aeon.q.keep) -->
+	<onload condition="Skin.HasSetting(aeon.fglass) + String.IsEmpty(Window(Home).Property(aeon.q.keep))">ClearProperty(aeon.q,home)</onload>
+	<onload>ClearProperty(aeon.q.keep,home)</onload>
+	<controls>
+		<include condition="Skin.HasSetting(aeon.fglass)">FG_SearchWindow</include>
+		<include condition="!Skin.HasSetting(aeon.fglass)">Search_WindowClassic</include>
+	</controls>
+</window>

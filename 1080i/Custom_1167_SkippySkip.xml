@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Skippy's skip button in the skin's look (Skin settings > Behaviour > Skippy: the skin's skip button).
+	While that setting is on the skin sets Window(Home).Property(Skippy.SkinSkipButton) = true (Home.xml and
+	VideoFullScreen.xml onload, and the settings row), so Skippy opens no dialog of its own for Ask segments.
+	A dialog opened by its window-level <visible> never gets the keys, so two empty watcher dialogs do the work:
+	Custom_1171 opens this one (ActivateWindow, so it has focus) during such a segment, Custom_1172 closes it when the
+	segment ends or something else comes on top. OK skips (RunScript(service.skippy,skip_current)), Back hides it for
+	this segment, Left / Right step through the video, Up / Down open the player controls.
+-->
+<window type="dialog" id="1167">
+	<zorder>2</zorder>
+	<defaultcontrol always="true">10</defaultcontrol>
+	<onunload condition="String.IsEmpty(Window(Home).Property(Skippy.Segment.Type))">ClearProperty(aeon.skippy.hidden,home)</onunload>
+	<controls>
+		<control type="group">
+			<right>100</right>
+			<bottom>150</bottom>
+			<width>420</width>
+			<height>96</height>
+			<animation type="WindowOpen" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="slide" start="120,0" end="0,0" time="300" tween="cubic" easing="out"/><effect type="fade" start="0" end="100" time="200"/></animation>
+			<animation type="WindowClose"><effect type="fade" start="100" end="0" time="200"/></animation>
+			<!-- Fused Glass (0.36.0): a white capsule with a soft shadow; on its left a dark disc with the skip icon inside a
+			     ring that fills as the segment plays (fg/pring/N.png, Skippy.Segment.Progress is a whole per cent), then
+			     "Skip Intro" and the time left. The button itself draws nothing in Fused Glass. -->
+			<control type="group">
+				<visible>$EXP[Aeon_FGlass] + !Window.IsVisible(seekbar)</visible>
+				<control type="image"><left>-40</left><top>-26</top><width>500</width><height>176</height><texture border="72" colordiffuse="$VAR[FG_PanelSh_a6]">$VAR[FG_Sh_sh32]</texture></control>
+				<control type="image"><left>0</left><top>4</top><width>420</width><height>88</height><texture border="44" colordiffuse="ffffffff">fg/pill88.png</texture></control>
+				<control type="image"><left>12</left><top>16</top><width>64</width><height>64</height><texture colordiffuse="fg_ink">fg/circle.png</texture></control>
+				<control type="image"><left>12</left><top>16</top><width>64</width><height>64</height><texture colordiffuse="40ffffff">fg/pring/track.png</texture></control>
+				<control type="image"><left>12</left><top>16</top><width>64</width><height>64</height><texture colordiffuse="ffffffff">$VAR[Aeon_SkipRingTex]</texture></control>
+				<control type="image"><left>32</left><top>36</top><width>24</width><height>24</height><aspectratio>keep</aspectratio><texture colordiffuse="ffffffff">aeon/icons/next.png</texture></control>
+				<control type="label">
+					<left>94</left><top>4</top><width>222</width><height>88</height><aligny>center</aligny>
+					<font>pl_ui_24_bold</font><textcolor>fg_ink</textcolor>
+					<label>$LOCALIZE[31964] $INFO[Window(Home).Property(Skippy.Segment.Type)]</label>
+				</control>
+				<control type="label">
+					<left>316</left><top>4</top><width>80</width><height>88</height><align>right</align><aligny>center</aligny>
+					<font>pl_small_20_semibold</font><textcolor>990f1115</textcolor>
+					<label>$INFO[Window(Home).Property(Skippy.Segment.Remaining)]</label>
+				</control>
+			</control>
+			<!-- over the small seek bar (0.39.0): the player card's skip button, Tab or Glass (Skin settings > Behaviour). The
+			     dialog sits at 1400,834; the seek bar's card is 120..1800 x 862..1016 -->
+			<control type="group">
+				<visible>$EXP[Aeon_FGlass] + Window.IsVisible(seekbar)</visible>
+				<animation effect="slide" end="-4,-4" time="0" condition="!$EXP[FG_SkipGlass]">Conditional</animation>
+				<animation effect="slide" end="-24,-52" time="0" condition="$EXP[FG_SkipGlass]">Conditional</animation>
+				<include content="FG_SkipTab"><param name="vis" value="!$EXP[FG_SkipGlass]"/></include>
+				<include content="FG_SkipGlass"><param name="vis" value="$EXP[FG_SkipGlass]"/></include>
+			</control>
+			<control type="button" id="10">
+				<left>0</left><top>0</top><width>420</width><height>96</height>
+				<label></label>
+				<include>FG_SkipBtnTex</include>
+				<onclick>RunScript(service.skippy,skip_current)</onclick>
+				<onback>SetProperty(aeon.skippy.hidden,$INFO[Window(Home).Property(Skippy.Segment.Start)],home)</onback>
+				<onback>SetProperty(aeon.skippy.hidfile,$INFO[Player.FilenameAndPath],home)</onback>
+				<onleft>PlayerControl(SmallSkipBackward)</onleft>
+				<onright>PlayerControl(SmallSkipForward)</onright>
+				<onup>ActivateWindow(videoosd)</onup>
+				<ondown>ActivateWindow(videoosd)</ondown>
+			</control>
+			<control type="image">
+				<left>28</left><top>28</top><width>40</width><height>40</height>
+				<texture colordiffuse="aeon_onbar">aeon/icons/next.png</texture>
+				<visible>Skin.HasSetting(aeon.vglass) + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="label">
+				<left>88</left><top>0</top><width>210</width><height>96</height><aligny>center</aligny>
+				<font>pl_ui_26</font><textcolor>aeon_onbar</textcolor>
+				<label>[B][UPPERCASE]$LOCALIZE[31964] $INFO[Window(Home).Property(Skippy.Segment.Type)][/UPPERCASE][/B]</label>
+				<visible>Skin.HasSetting(aeon.vglass) + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="label">
+				<left>300</left><top>0</top><width>96</width><height>96</height><align>right</align><aligny>center</aligny>
+				<font>pl_small_20_bold</font><textcolor>aeon_onbar_99</textcolor>
+				<label>$INFO[Window(Home).Property(Skippy.Segment.Remaining)]</label>
+				<visible>Skin.HasSetting(aeon.vglass) + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<!-- how much of the segment has played -->
+			<control type="progress">
+				<left>0</left><top>90</top><width>420</width><height>6</height>
+				<texturebg colordiffuse="22000000">common/aeon_line_6.png</texturebg>
+				<midtexture subpixel="true" colordiffuse="aeon_onbar_99">common/aeon_line_6.png</midtexture>
+				<info>Window(Home).Property(Skippy.Segment.Progress)</info>
+				<visible>Skin.HasSetting(aeon.vglass) + !$EXP[Aeon_FGlass] + !String.IsEqual(Window(Home).Property(Skippy.Segment.SmoothProgress),true) + !Addon.SettingBool(service.skippy,progress_bar_countdown)</visible>
+			</control>
+			<!-- 0.52.6: the same bar, driven by Skippy every video frame (Skippy.SkinSkipProgress.Control); in the other looks it
+			     stays hidden, their ring and bar follow Skippy.Segment.Frame -->
+			<control type="progress" id="31">
+				<left>0</left><top>90</top><width>420</width><height>6</height>
+				<texturebg colordiffuse="22000000">common/aeon_line_6.png</texturebg>
+				<midtexture subpixel="true" colordiffuse="aeon_onbar_99">common/aeon_line_6.png</midtexture>
+				<visible>Skin.HasSetting(aeon.vglass) + !$EXP[Aeon_FGlass] + String.IsEqual(Window(Home).Property(Skippy.Segment.SmoothProgress),true) + !Addon.SettingBool(service.skippy,progress_bar_countdown)</visible>
+			</control>
+			<control type="image"><left>0</left><top>90</top><width>420</width><height>6</height><texture colordiffuse="22000000">common/white.png</texture><visible>Skin.HasSetting(aeon.vglass) + !$EXP[Aeon_FGlass] + Addon.SettingBool(service.skippy,progress_bar_countdown)</visible></control>
+			<control type="image"><left>0</left><top>90</top><width>420</width><height>6</height><texture colordiffuse="aeon_onbar_99">$VAR[Aeon_SkipBarTex]</texture><visible>Skin.HasSetting(aeon.vglass) + !$EXP[Aeon_FGlass] + Addon.SettingBool(service.skippy,progress_bar_countdown)</visible></control>
+		</control>
+		<!-- Aeon theme (0.40.3): the box pair at the bottom right, or the row of tile, label cell and clock box at the top right -->
+		<control type="group">
+			<left>1464</left><top>834</top>
+			<visible>$EXP[Aeon_SkipPair]</visible>
+			<!-- the pause / seek panel holds the bottom: the pair goes up above its title -->
+			<animation effect="slide" start="0,0" end="0,-258" time="250" tween="cubic" easing="out" condition="Window.IsVisible(seekbar) + !$EXP[OSD_SeekBarHidden] + !Player.HasGame">Conditional</animation>
+			<animation type="WindowOpen" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="slide" start="120,0" end="0,0" time="300" tween="cubic" easing="out"/><effect type="fade" start="0" end="100" time="200"/></animation>
+			<animation type="WindowClose"><effect type="fade" start="100" end="0" time="200"/></animation>
+			<include content="Aeon_SkipCells96"><param name="lit" value="true"/></include>
+		</control>
+		<control type="group">
+			<visible>$EXP[Aeon_SkipClock]</visible>
+			<animation type="WindowOpen" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="slide" start="0,-108" end="0,0" time="300" tween="cubic" easing="out"/><effect type="fade" start="0" end="100" time="200"/></animation>
+			<animation type="WindowClose"><effect type="fade" start="100" end="0" time="200"/></animation>
+			<control type="group">
+				<left>1292</left><top>0</top>
+				<include content="Aeon_SkipCells108"><param name="lit" value="true"/></include>
+			</control>
+			<include>Aeon_ClockBoxAeon</include>
+		</control>
+	</controls>
+</window>

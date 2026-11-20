@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	PVR channel manager (SPEC 5: Minimal, AG_GenericDialog). Builder F, M4.
+	Kodi id contract (Estuary Omega DialogPVRChannelManager.xml): heading 2, channel list 20 +
+	scrollbar 60; channel options in grouplist 9002: 7 active (radio), 8 name (edit), 9 logo,
+	12 EPG active (radio), 13 EPG source (spin), 14 parental lock (radio); misc in grouplist 9003:
+	35 refresh logos, 31 new channel, 30 group manager, 34 TV/radio toggle; buttons 4 OK, 5 apply,
+	6 cancel in grouplist 9000. Item properties: Number, Name, icon, ActiveChannel, Changed,
+	ParentalLocked, ClientName.
+-->
+<window>
+	<defaultcontrol always="true">4</defaultcontrol>
+	<include>Anim_DialogOpenClose</include>
+	<controls>
+		<include condition="!$EXP[FGS]">PVRChMgr_PageClassic</include>
+		<include condition="$EXP[FGS]">PVRChMgr_PageFGS</include>
+	</controls>
+</window>

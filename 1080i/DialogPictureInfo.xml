@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Picture details / EXIF (Aeon). A soft card on the right with the file name and Kodi's detail
+	list; the picture sits in a rounded frame on the left unless the slideshow is behind the dialog
+	(then the card floats over the photo on the panel colour).
+	Kodi id contract (Estuary Omega DialogPictureInfo.xml): group 9000 holding info list 5 and its
+	scrollbar 60. Left / Right on the list close the dialog and step to the previous / next picture
+	(Estuary behaviour). Back closes.
+-->
+<window>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<onload>SetProperty(aeon.pic.path,$ESCINFO[ListItem.FolderPath],home)</onload>
+	<onunload>ClearProperty(aeon.pic.path,home)</onunload>
+	<include>Anim_DialogOpenClose</include>
+	<controls>
+		<include condition="!$EXP[FGS]">PicInfo_PageClassic</include>
+		<include condition="$EXP[FGS]">PicInfo_PageFGS</include>
+	</controls>
+</window>

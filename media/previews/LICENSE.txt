@@ -1,0 +1,6 @@
+clear_movies.jpg, clear_tvshows.jpg, clear_music.jpg and clear_video.jpg are smaller copies (960 px wide) of
+movies.jpg, tvshows.jpg, music.jpg and video.jpg from "Skin Backgrounds - Clear Design"
+(resource.images.skinbackgrounds.clear 1.0.1) by Orna Post and Benny Buchnik.
+
+They stay under the licence of that pack: Creative Commons Attribution-Share Alike 3.0 United States
+(https://creativecommons.org/licenses/by-sa/3.0/us/). Aeon Fuse shows them behind the Skin settings preview cards.

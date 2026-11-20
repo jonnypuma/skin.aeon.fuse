@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	EPG tools, Aeon style: a flat side panel that slides in from the right when Back is pressed in the guide
+	(MyPVRGuide.xml: <onback> on the grid). The buttons use Kodi's PVR.EpgGridControl builtin on the guide underneath
+	(CurrentProgramme = jump to now, SelectDate, SelectGroup, FirstChannel / PlayingChannel / LastChannel), the
+	TV windows for recordings / timers / timer rules / search, Back / Return = close, Exit = home.
+-->
+<window>
+	<defaultcontrol always="true">9701</defaultcontrol>
+	<include>Anim_DialogOpenClose</include>
+	<controls>
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+			<texture colordiffuse="$VAR[FG_EpgDim]">common/white.png</texture>
+		</control>
+		<control type="group">
+			<left>1320</left>
+			<animation type="WindowOpen" tween="cubic" easing="out" condition="!Skin.HasSetting(aeon.reducemotion)">
+				<effect type="slide" start="600" end="0" time="300"/>
+				<effect type="fade" start="0" end="100" time="300"/>
+			</animation>
+			<animation type="WindowClose" tween="cubic" easing="in" condition="!Skin.HasSetting(aeon.reducemotion)">
+				<effect type="slide" start="0" end="600" time="200"/>
+				<effect type="fade" start="100" end="0" time="200"/>
+			</animation>
+			<control type="image">
+				<width>600</width>
+				<height>1080</height>
+				<texture colordiffuse="f2101010">common/white.png</texture>
+				<visible>!$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="image">
+				<width>1</width>
+				<height>1080</height>
+				<texture colordiffuse="40ffffff">common/white.png</texture>
+				<visible>!$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="group">
+				<visible>$EXP[Aeon_FGlass]</visible>
+				<control type="image"><left>-40</left><top>0</top><width>640</width><height>1080</height><texture border="68" colordiffuse="$VAR[FG_PanelSh_a6]">$VAR[FG_Sh_sho28]</texture></control>
+				<control type="image"><left>0</left><top>40</top><width>560</width><height>1000</height><texture border="28" colordiffuse="$VAR[FG_MenuFill]">fg/r28.png</texture></control>
+				<control type="image"><left>0</left><top>40</top><width>560</width><height>1000</height><texture border="28" colordiffuse="$VAR[FG_EdgeM]">fg/e28.png</texture></control>
+				<control type="image"><left>32</left><top>124</top><width>496</width><height>1</height><texture colordiffuse="1fffffff">common/white.png</texture></control>
+			</control>
+			<control type="label">
+				<left>60</left>
+				<top>48</top>
+				<width>500</width>
+				<height>40</height>
+				<font>ui_26</font>
+				<animation effect="slide" end="-6,24" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation>
+				<textcolor>ccffffff</textcolor>
+				<label>[UPPERCASE]$LOCALIZE[31284] [B]$LOCALIZE[31285][/B][/UPPERCASE]</label>
+			</control>
+			<control type="grouplist" id="9700">
+				<left>0</left>
+				<top>130</top>
+				<animation effect="slide" end="0,14" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation>
+				<width>600</width>
+				<height>900</height>
+				<orientation>vertical</orientation>
+				<itemgap>0</itemgap>
+				<usecontrolcoords>true</usecontrolcoords>
+				<onback>Dialog.Close(pvrguidecontrols)</onback>
+				<control type="button" id="9701">
+					<include>FG_EpgToolRow</include>
+					<label>$LOCALIZE[31156]</label>
+					<font>ui_24_semibold</font>
+					<textcolor>99ffffff</textcolor>
+					<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+					<aligny>center</aligny>
+					<include>Aeon_TexRowFocus</include>
+					<onclick>Dialog.Close(pvrguidecontrols)</onclick>
+					<onclick>PVR.EpgGridControl(CurrentProgramme)</onclick>
+					<onup>9710</onup>
+					<ondown>9702</ondown>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+				</control>
+				<control type="button" id="9702">
+					<include>FG_EpgToolRow</include>
+					<label>$LOCALIZE[31157]</label>
+					<font>ui_24_semibold</font>
+					<textcolor>99ffffff</textcolor>
+					<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+					<aligny>center</aligny>
+					<include>Aeon_TexRowFocus</include>
+					<onclick>Dialog.Close(pvrguidecontrols)</onclick>
+					<onclick>PVR.EpgGridControl(PlayingChannel)</onclick>
+					<onup>9701</onup>
+					<ondown>9703</ondown>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+				</control>
+				<control type="button" id="9703">
+					<include>FG_EpgToolRow</include>
+					<label>$LOCALIZE[31158]</label>
+					<font>ui_24_semibold</font>
+					<textcolor>99ffffff</textcolor>
+					<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+					<aligny>center</aligny>
+					<include>Aeon_TexRowFocus</include>
+					<!-- 0.39.6: the helper closes this card, opens the group list and then goes to the new group's first channel -->
+					<onclick>RunScript(script.aeon.helper,epggroup)</onclick>
+					<onup>9702</onup>
+					<ondown>9711</ondown>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+				</control>
+				<control type="button" id="9711">
+					<!-- 0.39.8: the scroll bar, for a fast way through many channels (Up / Down page; Left / Right / Back: the grid) -->
+					<include>FG_EpgToolRow</include>
+					<label>$ADDON[skin.aeon.fuse 32440]</label>
+					<font>ui_24_semibold</font>
+					<textcolor>99ffffff</textcolor>
+					<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+					<aligny>center</aligny>
+					<include>Aeon_TexRowFocus</include>
+					<onclick>Dialog.Close(pvrguidecontrols,true)</onclick>
+					<onclick>SetFocus(60)</onclick>
+					<onup>9703</onup>
+					<ondown>9704</ondown>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+				</control>
+				<control type="button" id="9704">
+					<include>FG_EpgToolRow</include>
+					<label>$LOCALIZE[31159]</label>
+					<font>ui_24_semibold</font>
+					<textcolor>99ffffff</textcolor>
+					<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+					<aligny>center</aligny>
+					<include>Aeon_TexRowFocus</include>
+					<onclick>Dialog.Close(pvrguidecontrols)</onclick>
+					<onclick>PVR.EpgGridControl(SelectDate)</onclick>
+					<onup>9711</onup>
+					<ondown>9705</ondown>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+				</control>
+				<control type="button" id="9705">
+					<include>FG_EpgToolRow</include>
+					<label>$LOCALIZE[31160]</label>
+					<font>ui_24_semibold</font>
+					<textcolor>99ffffff</textcolor>
+					<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+					<aligny>center</aligny>
+					<include>Aeon_TexRowFocus</include>
+					<onclick>Dialog.Close(pvrguidecontrols,true)</onclick>
+					<onclick>ActivateWindow(TVRecordings)</onclick>
+					<onup>9704</onup>
+					<ondown>9706</ondown>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+				</control>
+				<control type="button" id="9706">
+					<include>FG_EpgToolRow</include>
+					<label>$LOCALIZE[31161]</label>
+					<font>ui_24_semibold</font>
+					<textcolor>99ffffff</textcolor>
+					<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+					<aligny>center</aligny>
+					<include>Aeon_TexRowFocus</include>
+					<onclick>Dialog.Close(pvrguidecontrols,true)</onclick>
+					<onclick>ActivateWindow(TVTimers)</onclick>
+					<onup>9705</onup>
+					<ondown>9707</ondown>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+				</control>
+				<control type="button" id="9707">
+					<include>FG_EpgToolRow</include>
+					<label>$LOCALIZE[31162]</label>
+					<font>ui_24_semibold</font>
+					<textcolor>99ffffff</textcolor>
+					<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+					<aligny>center</aligny>
+					<include>Aeon_TexRowFocus</include>
+					<onclick>Dialog.Close(pvrguidecontrols,true)</onclick>
+					<onclick>ActivateWindow(TVTimerRules)</onclick>
+					<onup>9706</onup>
+					<ondown>9708</ondown>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+				</control>
+				<control type="button" id="9708">
+					<include>FG_EpgToolRow</include>
+					<label>$LOCALIZE[31163]</label>
+					<font>ui_24_semibold</font>
+					<textcolor>99ffffff</textcolor>
+					<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+					<aligny>center</aligny>
+					<include>Aeon_TexRowFocus</include>
+					<onclick>Dialog.Close(pvrguidecontrols,true)</onclick>
+					<onclick>ActivateWindow(TVSearch)</onclick>
+					<onup>9707</onup>
+					<ondown>9712</ondown>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+				</control>
+				<control type="button" id="9712">
+					<!-- 0.55.2: reload the guide data: the helper restarts the PVR add-on(s) and puts the playing channel back -->
+					<include>FG_EpgToolRow</include>
+					<label>$ADDON[skin.aeon.fuse 32593]</label>
+					<font>ui_24_semibold</font>
+					<textcolor>99ffffff</textcolor>
+					<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+					<aligny>center</aligny>
+					<include>Aeon_TexRowFocus</include>
+					<onclick>RunScript(script.aeon.helper,epgreload)</onclick>
+					<onup>9708</onup>
+					<ondown>9709</ondown>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+				</control>
+				<control type="button" id="9709">
+					<include>FG_EpgToolRow</include>
+					<label>$LOCALIZE[31164]</label>
+					<font>ui_24_semibold</font>
+					<textcolor>99ffffff</textcolor>
+					<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+					<aligny>center</aligny>
+					<include>Aeon_TexRowFocus</include>
+					<onclick>Dialog.Close(pvrguidecontrols)</onclick>
+					<onup>9712</onup>
+					<ondown>9710</ondown>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+				</control>
+				<control type="button" id="9710">
+					<include>FG_EpgToolRow</include>
+					<label>$LOCALIZE[31165]</label>
+					<font>ui_24_semibold</font>
+					<textcolor>99ffffff</textcolor>
+					<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+					<aligny>center</aligny>
+					<include>Aeon_TexRowFocus</include>
+					<onclick>Dialog.Close(pvrguidecontrols,true)</onclick>
+					<onclick>ActivateWindow(Home)</onclick>
+					<onup>9709</onup>
+					<ondown>9701</ondown>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

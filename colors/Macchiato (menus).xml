@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Palette "Macchiato" of Aeon Fuse (from the SABnzbd scheme Catppuccin-Macchiato): only the colours that differ from defaults.xml. -->
+<colors>
+    <!-- 0.40.4: palette "Macchiato" for the menus only: library views keep the Aeon colours (lib_ names of defaults.xml) -->
+    <color name="aeon_white">ff89b4fa</color>
+    <color name="aeon_accent">ff89b4fa</color>
+    <color name="aeon_onbar">ff0d1421</color>
+    <color name="aeon_onbar_cc">cc0d1421</color>
+    <color name="aeon_onbar_bb">bb0d1421</color>
+    <color name="aeon_onbar_aa">aa0d1421</color>
+    <color name="aeon_onbar_99">990d1421</color>
+    <color name="aeon_onaccent">ff0d1421</color>
+    <color name="aeon_box">ff3c5480</color>
+    <color name="aeon_sbbar">8889b4fa</color>
+    <color name="x_column">2689b4fa</color>
+    <color name="x_ground">ff35384d</color>
+    <color name="x_panel">ff24273a</color>
+    <color name="x_surface">ff24273a</color>
+    <color name="x_raised">ff303347</color>
+    <color name="x_line">ff494d63</color>
+    <color name="x_line2">ff565b72</color>
+    <color name="x_accent">ff89b4fa</color>
+    <color name="x_accenttext">ff89b4fa</color>
+    <color name="x_onaccent">ff0d1421</color>
+    <color name="x_deep">ff24273a</color>
+    <color name="x_deep_f0">f024273a</color>
+    <color name="x_deep_e6">e624273a</color>
+    <color name="x_deep_cc">cc24273a</color>
+    <color name="x_deep_8c">8c24273a</color>
+</colors>

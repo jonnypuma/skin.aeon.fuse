@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Settings hub (window "settings"): a soft list (label + quiet hint) + a right-hand column with what the focused entry holds and a few system facts.
+	No Kodi-owned ids; entries/actions copied from Estuary Omega Settings.xml, Aeon's settings
+	first. File manager / System info / Event log / Profiles windows come from Builder F.
+-->
+<window>
+	<onload>ClearProperty(aeon.fromcat,home)</onload>
+	<defaultcontrol>9000</defaultcontrol>
+	<onload condition="Skin.HasSetting(aeon.vglass) + !$EXP[Aeon_Fused]">SetFocus(9001)</onload>
+	<backgroundcolor>ff000000</backgroundcolor>
+	<include>Anim_WindowOpenClose</include>
+	<controls>
+		<include>AG_Background</include>
+		<include condition="!$EXP[Aeon_MS]">Hub_Classic</include>
+		<include condition="$EXP[Aeon_MS_mosaic]">MS_Hub_mosaic</include>
+		<include condition="$EXP[Aeon_MS_ledger]">MS_Hub_ledger</include>
+		<include condition="$EXP[Aeon_MS_bridge]">MS_Hub_bridge</include>
+		<include condition="$EXP[Aeon_MS_tabslab]">MS_Hub_tabslab</include>
+		<!-- the Aeon theme menu styles: the caption and clock box of the settings pages (the top bar's rule would cross the boxes) -->
+		<control type="group"><visible>$EXP[Aeon_MS]</visible><include content="Aeon_MenuHeader"><param name="lead" value="$LOCALIZE[31000]"/><param name="label" value="$LOCALIZE[5]"/></include><include>Aeon_ClockBox</include></control>
+		<!-- Glass look: icon column, the focused entry with its name and what it holds, the others dimmed but readable -->
+		<control type="group">
+			<visible>Skin.HasSetting(aeon.vglass) + !$EXP[Aeon_Fused]</visible><!-- 0.56.20 fuse_survey2: Aeon Glass + Fuse takes the Fuse hub -->
+			<include content="Aeon_MenuHeader2"><param name="lead" value="$LOCALIZE[31000]"/><param name="label" value="$LOCALIZE[5]"/></include>
+			<include>Aeon_ClockBox</include>
+			<control type="list" id="9001">
+				<left>0</left>
+				<top>140</top>
+				<width>1920</width>
+				<height>900</height>
+				<onback>SetProperty(aeon.fromsys,1,home)</onback>
+				<onback>ActivateWindow(home)</onback>
+				<onup>9001</onup>
+				<ondown>9001</ondown>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<itemlayout width="1920" height="100">
+					<include content="Aeon_MenuRow"><param name="id" value="9001"/></include>
+				</itemlayout>
+				<focusedlayout width="1920" height="100">
+					<include content="Aeon_MenuRow"><param name="id" value="9001"/><param name="focused" value="true"/></include>
+				</focusedlayout>
+				<include>Aeon_SettingsItems</include>
+			</control>
+		</control>
+	</controls>
+</window>

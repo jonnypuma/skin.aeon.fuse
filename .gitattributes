@@ -1,0 +1,22 @@
+# Aeon Fuse skin
+
+# Text files are stored and checked out with LF line endings (Kodi reads both)
+* text=auto eol=lf
+
+# Binary files: no line-ending changes, no text diffs
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ttf binary
+*.otf binary
+*.xbt binary
+*.zip binary
+
+# Hunk headers in diffs
+*.py diff=python
+*.md diff=markdown
+
+# Left out of `git archive` (the add-on zip)
+.gitignore export-ignore
+.gitattributes export-ignore

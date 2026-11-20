@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Recently played: watched or stopped partway (a resume point), last played first -->
+<smartplaylist type="episodes">
+	<name>Recently played</name>
+	<match>one</match>
+	<rule field="playcount" operator="greaterthan"><value>0</value></rule>
+	<rule field="inprogress" operator="true" />
+	<limit>30</limit>
+	<order direction="descending">lastplayed</order>
+</smartplaylist>

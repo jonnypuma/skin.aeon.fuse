@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Video OSD, Aeon style (not copied from Aeon 2: its video never shows the OSD). Pieces: Includes_Aeon_OSD.xml.
+	Id contract (Estuary Omega VideoOSD.xml): 602 play/pause (default), 603 stop, 600 previous / 607 next,
+	87 hidden seek stepper (Left/Right = StepBack/StepForward, frame advance when paused), 200 = controls group,
+	70043 info, 70044 chapters, 70046 subtitles, 70048 video settings, 70049 audio, 70051 player stats.
+	Focus map: open -> 602. Left/Right walk the row (wraps). Up from any button -> 87; Down from 87 -> the row.
+	The chrome hides while a playback dialog is on top ($EXP[OSD_PanelOpen]).
+-->
+<window>
+	<!-- Live TV without timeshift cannot pause; Stop is not on its row in Fused Glass, so the focus stays on Play / Pause -->
+	<onload condition="!Player.PauseEnabled + ![Skin.HasSetting(aeon.fglass) + $EXP[FG_OSDLive]]">SetFocus(603)</onload>
+	<!-- 0.46.0: Live TV has no play / pause button: the controls open on Channel + -->
+	<onload condition="Skin.HasSetting(aeon.fglass) + $EXP[FG_OSDLive]">SetFocus(611)</onload>
+	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.guide.back))">SetFocus(70053)</onload>
+	<onload>ClearProperty(aeon.guide.back,home)</onload>
+	<defaultcontrol always="true">602</defaultcontrol>
+	<include>Anim_OSDSlideUp</include>
+	<controls>
+		<control type="group">
+			<visible>!$EXP[OSD_PanelOpen]</visible>
+			<visible>String.IsEmpty(Window(Home).Property(Skippy.Skipping))</visible>
+			<include>Anim_FadeVisible</include>
+			<include>Aeon_OSD</include>
+		</control>
+	</controls>
+</window>

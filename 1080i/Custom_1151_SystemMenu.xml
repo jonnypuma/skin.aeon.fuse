@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Aeon System menu (custom dialog 1151) - the gear pill of the top line, the escape hatch. A soft
+	card drops under the gear: Aeon settings, Settings, File manager, System info, Add-ons, then
+	Power: Exit / Reboot / Power off / Power menu. 0.9.8: Update library / Clean library (Library panel
+	1160 with aeon.libmode = update / clean: choose Films and shows or Music; Clean asks first).
+	Back closes. No Kodi-owned ids.
+-->
+<window type="dialog" id="1151">
+	<defaultcontrol always="true">100</defaultcontrol>
+	<include>Anim_DialogOpenClose</include>
+	<controls>
+		<!-- the same ground as the settings pages (colour and fanart follow Skin settings > Appearance > Fanart backdrop / strength),
+		     not a near-black dim with the Home menu showing through -->
+		<control type="group">
+			<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+			<include>AG_Background</include>
+			<!-- 0.56.20 system_screen: the dark ground and the fanart backdrop in every theme, as in Fused Glass -->
+			<control type="group"><visible>!Skin.HasSetting(aeon.fglass)</visible><control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><texture colordiffuse="ff0b0c10">common/white.png</texture></control><include>Aeon_Backdrop</include></control>
+		</control>
+		<control type="group">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<!-- panel sized to the visible items (power entries depend on the platform) -->
+			<include content="Aeon_MenuHeader2"><param name="lead" value="$LOCALIZE[31000]"/><param name="label" value="$LOCALIZE[31020]"/></include>
+			<control type="list" id="100">
+				<left>0</left>
+				<top>140</top>
+				<width>1920</width>
+				<height>900</height>
+				<onup>100</onup>
+				<ondown>100</ondown>
+				<onleft>noop</onleft>
+				<onright condition="!String.IsEmpty(Container(100).ListItem.Property(sub))">SendClick(100)</onright>
+				<onright condition="String.IsEmpty(Container(100).ListItem.Property(sub))">noop</onright>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<itemlayout width="1920" height="100">
+					<include content="Aeon_MenuRow"><param name="id" value="100"/></include>
+				</itemlayout>
+				<focusedlayout width="1920" height="100">
+					<include content="Aeon_MenuRow"><param name="id" value="100"/><param name="focused" value="true"/></include>
+				</focusedlayout>
+				<content>
+					<item>
+						<label>$LOCALIZE[31200]</label>
+						<property name="cats">$LOCALIZE[31725]  •  $LOCALIZE[10000]  •  $ADDON[skin.aeon.fuse 32722]  •  $ADDON[skin.aeon.fuse 32723]  •  $LOCALIZE[31727]  •  $LOCALIZE[31731]</property>
+						<property name="icon">common/aeon_mi_caret.png</property>
+						<label2></label2>
+						<property name="index">[UPPERCASE]01[/UPPERCASE]</property>
+						<onclick>SetProperty(aeon.fromsys,1,home)</onclick>
+						<onclick>Dialog.Close(1151,true)</onclick>
+						<onclick>ActivateWindow(skinsettings)</onclick>
+					</item>
+					<item>
+						<label>$LOCALIZE[5]</label>
+						<property name="cats">$LOCALIZE[14200]  •  $LOCALIZE[14211]  •  $LOCALIZE[14022]  •  $LOCALIZE[14204]  •  $LOCALIZE[14036]  •  $LOCALIZE[14206]  •  $LOCALIZE[857]</property>
+						<property name="icon">common/aeon_mi_gear.png</property>
+						<label2>$LOCALIZE[31000]</label2>
+						<property name="index">[UPPERCASE]02[/UPPERCASE]</property>
+						<onclick>SetProperty(aeon.fromsys,1,home)</onclick>
+						<onclick>Dialog.Close(1151,true)</onclick>
+						<onclick>ActivateWindow(settings)</onclick>
+					</item>
+					<item>
+						<label>$LOCALIZE[10003]</label>
+						<property name="cats">$LOCALIZE[115]  •  $LOCALIZE[116]  •  $LOCALIZE[118]  •  $LOCALIZE[117]</property>
+						<property name="icon">common/aeon_mi_folder.png</property>
+						<property name="index">[UPPERCASE]03[/UPPERCASE]</property>
+						<onclick>SetProperty(aeon.fromsys,1,home)</onclick>
+						<onclick>Dialog.Close(1151,true)</onclick>
+						<onclick>ActivateWindow(filemanager)</onclick>
+					</item>
+					<item>
+						<label>$LOCALIZE[138]</label>
+						<property name="cats">$LOCALIZE[20037]  •  $LOCALIZE[154]  •  $LOCALIZE[705]  •  $LOCALIZE[157]  •  $LOCALIZE[13281]</property>
+						<property name="icon">common/aeon_mi_info.png</property>
+						<property name="index">[UPPERCASE]04[/UPPERCASE]</property>
+						<onclick>SetProperty(aeon.fromsys,1,home)</onclick>
+						<onclick>Dialog.Close(1151,true)</onclick>
+						<onclick>ActivateWindow(systeminfo)</onclick>
+					</item>
+					<item>
+						<label>CoreELEC</label>
+						<property name="cats">$LOCALIZE[857]  •  $LOCALIZE[14303]  •  $LOCALIZE[705]  •  Bluetooth  •  $LOCALIZE[14036]</property>
+						<property name="icon">common/aeon_mi_box.png</property>
+						<label2>$LOCALIZE[31974]</label2>
+						<property name="index">[UPPERCASE]05[/UPPERCASE]</property>
+						<onclick>SetProperty(aeon.fromsys,1,home)</onclick>
+						<onclick>Dialog.Close(1151,true)</onclick>
+						<onclick>RunAddon(service.coreelec.settings)</onclick>
+						<visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
+					</item>
+					<item>
+						<label>LibreELEC</label>
+						<property name="cats">$LOCALIZE[857]  •  $LOCALIZE[14303]  •  $LOCALIZE[705]  •  Bluetooth  •  $LOCALIZE[14036]</property>
+						<property name="icon">common/aeon_mi_box.png</property>
+						<label2>$LOCALIZE[31974]</label2>
+						<property name="index">[UPPERCASE]05[/UPPERCASE]</property>
+						<onclick>SetProperty(aeon.fromsys,1,home)</onclick>
+						<onclick>Dialog.Close(1151,true)</onclick>
+						<onclick>RunAddon(service.libreelec.settings)</onclick>
+						<visible>System.AddonIsEnabled(service.libreelec.settings)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[24001]</label>
+						<property name="cats">$LOCALIZE[24998]  •  $LOCALIZE[24033]  •  $LOCALIZE[14303]</property>
+						<property name="icon">common/aeon_mi_box.png</property>
+						<property name="index">[UPPERCASE]06[/UPPERCASE]</property>
+						<onclick>SetProperty(aeon.fromsys,1,home)</onclick>
+						<onclick>Dialog.Close(1151,true)</onclick>
+						<onclick>ActivateWindow(addonbrowser)</onclick>
+					</item>
+					<item>
+						<label>$LOCALIZE[744]</label>
+						<property name="cats">$LOCALIZE[3]  •  $LOCALIZE[2]  •  $LOCALIZE[1]</property>
+						<property name="icon">common/aeon_mi_film.png</property>
+						<label2>$LOCALIZE[31202]</label2>
+						<property name="index">[UPPERCASE]07[/UPPERCASE]</property>
+						<onclick>Dialog.Close(1151,true)</onclick>
+						<onclick>ActivateWindow(Videos,sources://video/,return)</onclick>
+					</item>
+					<item>
+						<label>$LOCALIZE[31203]</label>
+						<property name="icon">common/aeon_mi_refresh.png</property>
+						<property name="sub">1</property>
+						<label2>$INFO[Window(Home).Property(aeon.count.movies),, $LOCALIZE[342]]$INFO[Window(Home).Property(aeon.count.tvshows), · , $LOCALIZE[20343]]$INFO[Window(Home).Property(aeon.count.albums), · , $LOCALIZE[132]]</label2>
+						<onclick>Dialog.Close(1151,true)</onclick>
+						<onclick>SetProperty(aeon.libmode,update,home)</onclick>
+						<onclick>ActivateWindow(1160)</onclick>
+					</item>
+					<item>
+						<label>$LOCALIZE[31205]</label>
+						<property name="cats">$LOCALIZE[3]  •  $LOCALIZE[2]</property>
+						<property name="icon">common/aeon_mi_bin.png</property>
+						<property name="sub">1</property>
+						<label2>$LOCALIZE[31204]</label2>
+						<onclick>Dialog.Close(1151,true)</onclick>
+						<onclick>SetProperty(aeon.libmode,clean,home)</onclick>
+						<onclick>ActivateWindow(1160)</onclick>
+					</item>
+					<item>
+						<label>$LOCALIZE[13012]</label>
+						<property name="icon">common/aeon_mi_exit.png</property>
+						<label2>$ADDON[skin.aeon.fuse 32016]</label2>
+						<property name="index">[UPPERCASE]08[/UPPERCASE]</property>
+						<onclick>Quit()</onclick>
+						<visible>System.ShowExitButton</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[20126]</label>
+						<property name="icon">common/aeon_mi_person.png</property>
+						<label2>$ADDON[skin.aeon.fuse 32017]</label2>
+						<property name="index">[UPPERCASE]09[/UPPERCASE]</property>
+						<onclick>Dialog.Close(1151,true)</onclick>
+						<onclick>System.LogOff</onclick>
+					</item>
+					<item>
+						<label>$LOCALIZE[31976]</label>
+						<property name="icon">common/aeon_mi_restart.png</property>
+						<label2>$ADDON[skin.aeon.fuse 32018]</label2>
+						<property name="index">[UPPERCASE]10[/UPPERCASE]</property>
+						<onclick>RestartApp</onclick>
+						<visible>System.Platform.Linux | System.Platform.Windows</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[13013]</label>
+						<property name="icon">common/aeon_mi_refresh.png</property>
+						<label2>$ADDON[skin.aeon.fuse 32019]</label2>
+						<property name="index">[UPPERCASE]11[/UPPERCASE]</property>
+						<onclick>Reset()</onclick>
+						<visible>System.CanReboot</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31371]</label>
+						<property name="icon">common/aeon_mi_box.png</property>
+						<label2>$ADDON[skin.aeon.fuse 32020]</label2>
+						<property name="index">[UPPERCASE]12[/UPPERCASE]</property>
+						<onclick>RunScript(script.aeon.helper,android)</onclick>
+						<visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[13016]</label>
+						<property name="icon">common/aeon_mi_power.png</property>
+						<label2>$ADDON[skin.aeon.fuse 32021]</label2>
+						<property name="index">[UPPERCASE]13[/UPPERCASE]</property>
+						<onclick>Powerdown()</onclick>
+						<visible>System.CanPowerDown</visible>
+					</item>
+				</content>
+			</control>
+		</control>
+	</controls>
+</window>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Full-screen video layer (M3, Builder D). Nothing is drawn over the picture except:
+	  * Kodi's debug lines 10/11/12 (only when Kodi fills them), on a small scrim, top-left;
+	  * the buffering tab while Player.Caching (centre, mono % + 2px hairline progress, delayed
+	    300 ms so short stalls never flash).
+	Pause / seek / skip feedback lives in DialogSeekBar, info in DialogFullScreenInfo, controls in
+	VideoOSD.
+
+	Id contract (Estuary Omega VideoFullScreen.xml): group 0 holding labels 10/11/12 (Kodi's
+	codec/debug info), group 1 = buffering indicator.
+-->
+<window>
+	<defaultcontrol></defaultcontrol>
+	<!-- fullscreen video has been shown: lifts the play-start curtain (Custom_1153_PlayCurtain.xml) -->
+	<onload>SetProperty(aeon.fsseen,1,home)</onload>
+	<!-- 0.46.1: Back from the Live TV guide over the picture: the player controls again, Guide in focus -->
+	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.guide.back))">ActivateWindow(videoosd)</onload>
+	<!-- Skippy: tell it whether the skin draws the skip button (Skin settings > Behaviour) -->
+	<onload condition="Skin.HasSetting(aeon.skippy.button)">SetProperty(Skippy.SkinSkipButton,true,home)</onload>
+	<onload condition="[Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">SetProperty(Skippy.SkinNextEpisode,true,home)</onload>
+	<onload condition="![Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">ClearProperty(Skippy.SkinNextEpisode,home)</onload>
+	<onload condition="[Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">SetProperty(Skippy.SkinNextEpisodeProgress.Window,11174,home)</onload>
+	<onload condition="[Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">SetProperty(Skippy.SkinNextEpisodeProgress.Control,30,home)</onload>
+	<onload condition="[Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">SetProperty(Skippy.SkinNextEpisodeProgress.Frames,421,home)</onload>
+	<onload condition="![Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">ClearProperty(Skippy.SkinNextEpisodeProgress.Window,home)</onload>
+	<onload condition="![Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">ClearProperty(Skippy.SkinNextEpisodeProgress.Control,home)</onload>
+	<onload condition="![Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">ClearProperty(Skippy.SkinNextEpisodeProgress.Frames,home)</onload>
+	<onload condition="!Skin.HasSetting(aeon.skippy.button)">ClearProperty(Skippy.SkinSkipButton,home)</onload>
+	<onload condition="Skin.HasSetting(aeon.skippy.button)">SetProperty(Skippy.SkinSkipProgress.Window,11167,home)</onload>
+	<onload condition="Skin.HasSetting(aeon.skippy.button)">SetProperty(Skippy.SkinSkipProgress.Control,31,home)</onload>
+	<onload condition="Skin.HasSetting(aeon.skippy.button)">SetProperty(Skippy.SkinSkipProgress.Frames,421,home)</onload>
+	<onload condition="!Skin.HasSetting(aeon.skippy.button)">ClearProperty(Skippy.SkinSkipProgress.Window,home)</onload>
+	<onload condition="!Skin.HasSetting(aeon.skippy.button)">ClearProperty(Skippy.SkinSkipProgress.Control,home)</onload>
+	<onload condition="!Skin.HasSetting(aeon.skippy.button)">ClearProperty(Skippy.SkinSkipProgress.Frames,home)</onload>
+	<!-- a skip button hidden with Back stays hidden for that segment of this playback only -->
+	<onload>ClearProperty(aeon.skippy.hidden,home)</onload>
+	<controls>
+		<control type="image">
+			<description>pause dim</description>
+			<left>0</left><top>0</top><width>1920</width><height>1080</height>
+			<texture colordiffuse="66000000">common/white.png</texture>
+			<visible>Player.Paused + !Player.Seeking</visible>
+			<animation type="Visible" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="fade" start="0" end="100" time="300"/></animation>
+			<animation type="Hidden" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="fade" start="100" end="0" time="200"/></animation>
+		</control>
+		<control type="group" id="0">
+			<control type="image">
+				<left>72</left>
+				<top>28</top>
+				<width>1776</width>
+				<height>124</height>
+				<texture colordiffuse="$VAR[AG_ScrimTrack]">common/white.png</texture>
+				<visible>!String.IsEmpty(Control.GetLabel(10)) | !String.IsEmpty(Control.GetLabel(11)) | !String.IsEmpty(Control.GetLabel(12))</visible>
+			</control>
+			<control type="label" id="10">
+				<left>page_margin</left>
+				<top>40</top>
+				<width>page_width</width>
+				<height>30</height>
+				<font>pl_num_20</font>
+			</control>
+			<control type="label" id="11">
+				<left>page_margin</left>
+				<top>72</top>
+				<width>page_width</width>
+				<height>30</height>
+				<font>pl_num_20</font>
+			</control>
+			<control type="label" id="12">
+				<left>page_margin</left>
+				<top>104</top>
+				<width>page_width</width>
+				<height>30</height>
+				<font>pl_num_20</font>
+			</control>
+		</control>
+
+		<control type="group" id="1">
+			<!-- shown at 0% too (Estuary hides it at 0, and no other dialog covers caching here) -->
+			<visible>Player.Caching</visible>
+			<visible>!Window.IsVisible(videoosd) + !Window.IsVisible(fullscreeninfo)</visible>
+			<animation effect="fade" delay="300" time="150">Visible</animation>
+			<animation effect="fade" time="150">Hidden</animation>
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>320</width>
+			<height>72</height>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>320</width>
+				<height>72</height>
+				<texture colordiffuse="$VAR[AG_ScrimTrack]">common/white.png</texture>
+			</control>
+			<control type="label">
+				<left>24</left>
+				<top>12</top>
+				<width>272</width>
+				<height>30</height>
+				<font>pl_cap_20</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<label>$LOCALIZE[31016]</label>
+			</control>
+			<control type="label">
+				<left>24</left>
+				<top>12</top>
+				<width>272</width>
+				<height>30</height>
+				<align>right</align>
+				<font>pl_num_20</font>
+				<textcolor>$VAR[AG_Accent]</textcolor>
+				<label>$INFO[Player.CacheLevel,,%]</label>
+			</control>
+			<control type="progress">
+				<left>24</left>
+				<top>52</top>
+				<width>272</width>
+				<height>2</height>
+				<info>Player.CacheLevel</info>
+				<texturebg colordiffuse="$VAR[AG_Line2]">common/white.png</texturebg>
+				<midtexture subpixel="true" colordiffuse="$VAR[AG_Accent]">common/white.png</midtexture>
+			</control>
+		</control>
+	</controls>
+</window>

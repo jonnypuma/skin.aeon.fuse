@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Library settings strip (dialog 1160): a narrow icon column on the left edge of every library view, in the style of the
+	A-Z strip on the right. The focused setting expands into a white bar with its name and current value.
+	View, View settings, Sort, Order, Unwatched only, Sets, Search, Update / Clean library, Library settings.
+	Opened by Left at the left edge of a view, the Menu key, and the System menu (Update / Clean library,
+	aeon.libmode = update / clean). Kodi's CleanLibrary() has no confirmation of its own, so list 200 asks first.
+	The bottom box shows moving spectrum bars while music plays.
+	Aeon theme menu styles (0.40.1): the same items (LibPanel_Items) in MS_LibPanel_<style> (_src/ms_menus.py).
+-->
+<window type="dialog" id="1160">
+	<defaultcontrol always="true">100</defaultcontrol>
+	<onload>SetFocus(100,0,absolute)</onload>
+	<onunload>ClearProperty(aeon.libclean,home)</onunload>
+	<onunload>ClearProperty(aeon.libmode,home)</onunload>
+	<controls>
+		<!-- the side strip is the default; Skin settings > Look > Library options = Box opens the menu style's box -->
+		<include condition="!$EXP[Aeon_MS] | !Skin.HasSetting(aeon.libpanel.box)">LibPanel_Classic</include>
+		<include condition="$EXP[Aeon_MS_mosaic] + Skin.HasSetting(aeon.libpanel.box)">MS_LibPanel_mosaic</include>
+		<include condition="$EXP[Aeon_MS_ledger] + Skin.HasSetting(aeon.libpanel.box)">MS_LibPanel_ledger</include>
+		<include condition="$EXP[Aeon_MS_bridge] + Skin.HasSetting(aeon.libpanel.box)">MS_LibPanel_bridge</include>
+		<include condition="$EXP[Aeon_MS_tabslab] + Skin.HasSetting(aeon.libpanel.box)">MS_LibPanel_tabslab</include>
+	</controls>
+</window>

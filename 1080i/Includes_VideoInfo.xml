@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	DialogVideoInfo pieces (Aeon): a big hero card (poster, title, meta, buttons, fanart fading in
+	from the right), a Story card and a When-to-watch card underneath, the cast on a second "page".
+	Shared labels: Includes_Views_Video.xml (VidView_*). Prefix VidInfo_.
+-->
+<includes>
+	<!-- Collection button (0.9.2 Back audit): inside the library the set opens in place (one Back returns
+	     to the grid); from Home it opens the library window with return (one Back returns Home). Opening it
+	     with ActivateWindow from the library left Back walking up through videodb nodes. -->
+	<variable name="VidInfo_CollectionAction">
+		<value condition="Window.IsActive(Videos)">Container.Update(videodb://movies/sets/$INFO[ListItem.SetId]/?setid=$INFO[ListItem.SetId])</value>
+		<value>ActivateWindow(Videos,videodb://movies/sets/$INFO[ListItem.SetId]/?setid=$INFO[ListItem.SetId],return)</value>
+	</variable>
+	<!-- ================================================================== variables -->
+	<variable name="VidInfo_Kicker">
+		<value condition="String.IsEqual(ListItem.DBType,episode)">$VAR[VidView_EpCode]$INFO[ListItem.TVShowTitle,  ·  ,]</value>
+		<value condition="String.IsEqual(ListItem.DBType,season)">$INFO[ListItem.TVShowTitle]</value>
+		<value condition="String.IsEqual(ListItem.DBType,tvshow)">$LOCALIZE[20364]$INFO[ListItem.Studio,  ·  ,]</value>
+		<value condition="String.IsEqual(ListItem.DBType,set)">$LOCALIZE[31622]$VAR[PL_Total_Film]</value>
+		<value condition="!String.IsEmpty(ListItem.Set)">$ADDON[skin.aeon.fuse 32332]  ·  $INFO[ListItem.Set]</value>
+		<value>$VAR[VidView_Status]$INFO[ListItem.Studio,  ·  ,]</value>
+	</variable>
+	<!-- the hero's meta line: VidView_MetaLeft without the network (the kicker above the title shows it) -->
+	<variable name="VidInfo_MetaLeft">
+		<value condition="String.IsEqual(ListItem.DBType,tvshow)">$INFO[ListItem.Year]$VAR[PL_TotalEpisodes_Episode]</value>
+		<value>$VAR[VidView_MetaLeft]</value>
+	</variable>
+	<variable name="VidInfo_Title">
+		<value condition="!String.IsEmpty(ListItem.Title)">$INFO[ListItem.Title]$VAR[Aeon_Ver]</value>
+		<value>$INFO[ListItem.Label]</value>
+	</variable>
+	<variable name="VidInfo_Poster">
+		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Art(season.poster))">$INFO[ListItem.Art(season.poster)]</value>
+		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.poster))">$INFO[Window(Home).Property(aeon.fart.poster)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(tvshow.poster)]</value>
+		<value>$INFO[ListItem.Art(thumb)]</value>
+	</variable>
+	<variable name="VidInfo_Fanart">
+		<value condition="String.IsEqual(ListItem.DBType,episode) + !String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.fanart))">$INFO[Window(Home).Property(aeon.fart.fanart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.fanart))">$INFO[ListItem.Art(tvshow.fanart)]</value>
+		<value>$INFO[ListItem.Art(landscape)]</value>
+	</variable>
+	<!-- 0.56.16 misc_05616b: the fits tick only for what plays -->
+	<variable name="VidInfo_EndLine">
+		<!-- 0.56.16 misc_05616: a show its status, Ends only for what plays -->
+		<value condition="String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(ListItem.Status)">$VAR[Aeon_ShowStatus]</value>
+		<value condition="ListItem.IsResumable + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)]">$ADDON[skin.aeon.fuse 32333] $INFO[ListItem.EndTimeResume]</value>
+		<value condition="!String.IsEmpty(ListItem.Duration) + String.IsEmpty(ListItem.Property(aeon.missing)) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)]">$ADDON[skin.aeon.fuse 32334] $INFO[ListItem.EndTime]</value>
+	</variable>
+	<variable name="VidInfo_CastHeader">
+		<value condition="String.IsEqual(ListItem.DBType,set)">$LOCALIZE[31628]</value>
+		<value>$LOCALIZE[206]</value>
+	</variable>
+	<variable name="VidInfo_CastCount">
+		<value condition="String.IsEqual(ListItem.DBType,set)">$VAR[PL_Container_50_NumItems_Film]</value>
+		<value>$VAR[PL_Container_50_NumItems_Person]</value>
+	</variable>
+	<variable name="VidInfo_Hint">
+		<value condition="Control.HasFocus(9001)">$LOCALIZE[31629]</value>
+		<value condition="ControlGroup(9100).HasFocus()">$LOCALIZE[31630]</value>
+		<value condition="Integer.IsGreater(Container(50).NumItems,0)">$VAR[VidInfo_CastHeaderLower]</value>
+	</variable>
+	<variable name="VidInfo_CastHeaderLower">
+		<value condition="String.IsEqual(ListItem.DBType,set)">$ADDON[skin.aeon.fuse 32336]</value>
+		<value>$ADDON[skin.aeon.fuse 32337]</value>
+	</variable>
+	<variable name="VidInfo_CastArt">
+		<value condition="String.IsEqual(ListItem.DBType,movie)">$INFO[ListItem.Art(poster)]</value>
+		<value>$INFO[ListItem.Art(thumb)]</value>
+	</variable>
+	<variable name="VidInfo_CastLine2">
+		<value condition="String.IsEqual(ListItem.DBType,movie)">$INFO[ListItem.Year]</value>
+		<value>$INFO[ListItem.Label2]</value>
+	</variable>
+	<!-- media flags (values checked against reference skins) -->
+	<variable name="VidInfo_FlagRes">
+		<value condition="String.IsEqual(ListItem.VideoResolution,8K)">8K</value>
+		<value condition="String.IsEqual(ListItem.VideoResolution,4K) | String.IsEqual(ListItem.VideoResolution,2160)">4K</value>
+		<value condition="String.IsEqual(ListItem.VideoResolution,1080)">1080p</value>
+		<value condition="String.IsEqual(ListItem.VideoResolution,720)">720p</value>
+		<value condition="String.IsEqual(ListItem.VideoResolution,576) | String.IsEqual(ListItem.VideoResolution,540) | String.IsEqual(ListItem.VideoResolution,480)">SD</value>
+		<value>$INFO[ListItem.VideoResolution]</value>
+	</variable>
+	<variable name="VidInfo_FlagHDR">
+		<value condition="[String.IsEqual(ListItem.HdrType,dolbyvision) | String.IsEqual(ListItem.HdrType,dv) | String.IsEqual(ListItem.HdrType,dovi)]">$LOCALIZE[31560]</value>
+		<value condition="[String.IsEqual(ListItem.HdrType,hdr10) | String.IsEqual(ListItem.HdrType,hdr)]">HDR10</value>
+		<value condition="String.IsEqual(ListItem.HdrType,hlg)">HLG</value>
+		<value>$INFO[ListItem.HdrType]</value>
+	</variable>
+	<variable name="VidInfo_FlagVideo">
+		<value condition="[String.IsEqual(ListItem.VideoCodec,hevc) | String.IsEqual(ListItem.VideoCodec,x265) | String.IsEqual(ListItem.VideoCodec,h265) | String.IsEqual(ListItem.VideoCodec,h.265) | String.IsEqual(ListItem.VideoCodec,hev1) | String.IsEqual(ListItem.VideoCodec,hvc1)] | String.IsEqual(ListItem.VideoCodec,h265) | String.IsEqual(ListItem.VideoCodec,hev1) | String.IsEqual(ListItem.VideoCodec,hvc1)">$LOCALIZE[31559]</value>
+		<value condition="[String.IsEqual(ListItem.VideoCodec,h264) | String.IsEqual(ListItem.VideoCodec,x264) | String.IsEqual(ListItem.VideoCodec,avc) | String.IsEqual(ListItem.VideoCodec,avc1) | String.IsEqual(ListItem.VideoCodec,h.264)] | String.IsEqual(ListItem.VideoCodec,avc1) | String.IsEqual(ListItem.VideoCodec,avc)">H.264</value>
+		<value condition="String.IsEqual(ListItem.VideoCodec,av1)">AV1</value>
+		<value condition="String.IsEqual(ListItem.VideoCodec,mpeg2video) | [String.IsEqual(ListItem.VideoCodec,mpeg2) | String.IsEqual(ListItem.VideoCodec,mpeg2video) | String.IsEqual(ListItem.VideoCodec,mpeg-2)]">MPEG-2</value>
+		<value condition="[String.IsEqual(ListItem.VideoCodec,vc1) | String.IsEqual(ListItem.VideoCodec,vc-1) | String.IsEqual(ListItem.VideoCodec,wvc1)] | String.IsEqual(ListItem.VideoCodec,wvc1) | String.IsEqual(ListItem.VideoCodec,vc-1)">VC-1</value>
+		<value>$INFO[ListItem.VideoCodec]</value>
+	</variable>
+	<variable name="VidInfo_AudioCodec">
+		<value condition="[String.IsEqual(ListItem.AudioCodec,truehd_atmos) | [String.StartsWith(ListItem.AudioCodec,truehd) + String.Contains(ListItem.AudioCodec,atmos)]]">$LOCALIZE[31561]</value>
+		<value condition="[String.IsEqual(ListItem.AudioCodec,truehd) | String.StartsWith(ListItem.AudioCodec,truehd)]">TrueHD</value>
+		<value condition="[String.IsEqual(ListItem.AudioCodec,eac3_ddp_atmos) | [String.StartsWith(ListItem.AudioCodec,eac3) + String.Contains(ListItem.AudioCodec,atmos)] | [String.StartsWith(ListItem.AudioCodec,e-ac-3) + String.Contains(ListItem.AudioCodec,atmos)]]">$LOCALIZE[31562]</value>
+		<value condition="[String.IsEqual(ListItem.AudioCodec,eac3) | String.IsEqual(ListItem.AudioCodec,e-ac-3) | String.IsEqual(ListItem.AudioCodec,eac-3) | String.StartsWith(ListItem.AudioCodec,eac3)]">DD+</value>
+		<value condition="[String.IsEqual(ListItem.AudioCodec,ac3) | String.IsEqual(ListItem.AudioCodec,ac-3) | String.IsEqual(ListItem.AudioCodec,a52)] | String.IsEqual(ListItem.AudioCodec,dolbydigital)">$LOCALIZE[31631]</value>
+		<value condition="[String.IsEqual(ListItem.AudioCodec,dtshd_ma_x) | [String.StartsWith(ListItem.AudioCodec,dts) + String.EndsWith(ListItem.AudioCodec,x)] | String.IsEqual(ListItem.AudioCodec,dts_x)] | String.IsEqual(ListItem.AudioCodec,dtshd_ma_x_imax)">DTS:X</value>
+		<value condition="[String.IsEqual(ListItem.AudioCodec,dtshd_ma) | [String.StartsWith(ListItem.AudioCodec,dts-hd) + String.EndsWith(ListItem.AudioCodec,ma)]] | String.IsEqual(ListItem.AudioCodec,dtsma)">$LOCALIZE[31446]</value>
+		<value condition="[String.IsEqual(ListItem.AudioCodec,dtshd_hra) | [String.StartsWith(ListItem.AudioCodec,dts-hd) + String.EndsWith(ListItem.AudioCodec,hra)]]">$LOCALIZE[31447]</value>
+		<value condition="String.StartsWith(ListItem.AudioCodec,dts) | String.IsEqual(ListItem.AudioCodec,dca)">DTS</value>
+		<value condition="String.StartsWith(ListItem.AudioCodec,aac) | String.StartsWith(ListItem.AudioCodec,he_aac)">AAC</value>
+		<value condition="String.StartsWith(ListItem.AudioCodec,pcm)">PCM</value>
+		<value condition="String.StartsWith(ListItem.AudioCodec,mp3)">MP3</value>
+		<value>$INFO[ListItem.AudioCodec]</value>
+	</variable>
+	<variable name="VidInfo_AudioChannels">
+		<value condition="Integer.IsEqual(ListItem.AudioChannels,8)"> 7.1</value>
+		<value condition="Integer.IsEqual(ListItem.AudioChannels,7)"> 6.1</value>
+		<value condition="Integer.IsEqual(ListItem.AudioChannels,6)"> 5.1</value>
+		<value condition="Integer.IsEqual(ListItem.AudioChannels,3)"> 2.1</value>
+		<value condition="Integer.IsEqual(ListItem.AudioChannels,2)"> 2.0</value>
+		<value condition="Integer.IsEqual(ListItem.AudioChannels,1)"> 1.0</value>
+	</variable>
+
+	<!-- ==================================================================== buttons -->
+	<expression name="VidInfo_ShowResume">[Control.IsEnabled(9) + !$EXP[VidView_IsFolderType]] + String.IsEmpty(ListItem.Property(aeon.missing))</expression>
+	<expression name="VidInfo_ShowPlay">[!Control.IsEnabled(9) + !$EXP[VidView_IsFolderType]] + String.IsEmpty(ListItem.Property(aeon.missing))</expression>
+	<!-- Window(Home) aeon.trailer: set by RunScript(script.aeon.helper,trailer,probe) when the page opens - the local trailer file, else the library's address -->
+	<expression name="VidInfo_ShowTrailer">$EXP[ShowTrailerButton] + !String.IsEmpty(Window(Home).Property(aeon.trailer))</expression>
+	<!-- shared nav for buttons in the row. params: left1..left4 (+ _if), right1..right2 (+ _if) -->
+	<include name="VidInfo_ButtonNav">
+		<param name="left1">noop</param>
+		<param name="left1_if">false</param>
+		<param name="left2">noop</param>
+		<param name="left2_if">false</param>
+		<param name="left3">noop</param>
+		<param name="left3_if">false</param>
+		<param name="left4">noop</param>
+		<param name="left4_if">false</param>
+		<param name="right1">noop</param>
+		<param name="right1_if">false</param>
+		<param name="right2">noop</param>
+		<param name="right2_if">false</param>
+		<param name="down1">9001</param>
+		<param name="down2">50</param>
+		<definition>
+			<onleft condition="$PARAM[left1_if]">$PARAM[left1]</onleft>
+			<onleft condition="$PARAM[left2_if]">$PARAM[left2]</onleft>
+			<onleft condition="$PARAM[left3_if]">$PARAM[left3]</onleft>
+			<onleft condition="$PARAM[left4_if]">$PARAM[left4]</onleft>
+			<onright condition="$PARAM[right1_if]">$PARAM[right1]</onright>
+			<onright condition="$PARAM[right2_if]">$PARAM[right2]</onright>
+			<onup>noop</onup>
+			<ondown condition="Control.IsVisible($PARAM[down1])">$PARAM[down1]</ondown>
+			<ondown condition="!Control.IsVisible($PARAM[down1]) + Control.IsVisible($PARAM[down2])">$PARAM[down2]</ondown>
+		</definition>
+	</include>
+	<!-- Pill button in the row (group padded 24 px for the halo). params: id, width, label, icon
+	     (empty = centred text), onclick, visible + nav -->
+	<!-- 0.56.3: the gold accent round the focused button in Fused Glass (_src/fg_infogold.py) -->
+	<variable name="VidInfo_HaloRing">
+		<value condition="Skin.HasSetting(aeon.fglass)">fg_mark</value>
+		<value>$VAR[AG_Halo]</value>
+	</variable>
+	<include name="VidInfo_Button">
+		<param name="icon"></param>
+		<param name="text_x">56</param>
+		<param name="align">left</param>
+		<param name="onclick">noop</param>
+		<param name="visible">true</param>
+		<param name="left1">noop</param>
+		<param name="left1_if">false</param>
+		<param name="left2">noop</param>
+		<param name="left2_if">false</param>
+		<param name="left3">noop</param>
+		<param name="left3_if">false</param>
+		<param name="left4">noop</param>
+		<param name="left4_if">false</param>
+		<param name="right1">noop</param>
+		<param name="right1_if">false</param>
+		<param name="right2">noop</param>
+		<param name="right2_if">false</param>
+		<param name="down1">9001</param>
+		<param name="down2">50</param>
+		<param name="onclick2">noop</param>
+		<definition>
+			<control type="group">
+				<left>24</left>
+				<top>24</top>
+				<width>$PARAM[width]</width>
+				<height>button_h</height>
+				<visible>$PARAM[visible]</visible>
+				<animation type="Conditional" condition="Control.HasFocus($PARAM[id]) + !$EXP[ReduceMotion]" reversible="true">
+					<effect type="zoom" start="100" end="105" center="auto" time="150" tween="cubic" easing="out"/>
+				</animation>
+				<control type="group">
+					<visible>Control.HasFocus($PARAM[id])</visible>
+					<include content="AG_PillHalo"><param name="ring" value="$VAR[VidInfo_HaloRing]"/></include>
+				</control>
+				<control type="button" id="$PARAM[id]">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width]</width>
+					<height>button_h</height>
+					<label></label>
+					<textcolor>00ffffff</textcolor>
+					<focusedcolor>00ffffff</focusedcolor>
+					<disabledcolor>00ffffff</disabledcolor>
+					<include>AG_Tex_ButtonPrimary</include>
+					<onclick>$PARAM[onclick]</onclick>
+					<onclick>$PARAM[onclick2]</onclick>
+					<include content="VidInfo_ButtonNav">
+						<param name="left1" value="$PARAM[left1]"/>
+						<param name="left1_if" value="$PARAM[left1_if]"/>
+						<param name="left2" value="$PARAM[left2]"/>
+						<param name="left2_if" value="$PARAM[left2_if]"/>
+						<param name="left3" value="$PARAM[left3]"/>
+						<param name="left3_if" value="$PARAM[left3_if]"/>
+						<param name="left4" value="$PARAM[left4]"/>
+						<param name="left4_if" value="$PARAM[left4_if]"/>
+						<param name="right1" value="$PARAM[right1]"/>
+						<param name="right1_if" value="$PARAM[right1_if]"/>
+						<param name="right2" value="$PARAM[right2]"/>
+						<param name="right2_if" value="$PARAM[right2_if]"/>
+						<param name="down1" value="$PARAM[down1]"/>
+						<param name="down2" value="$PARAM[down2]"/>
+					</include>
+				</control>
+				<control type="image">
+					<left>24</left>
+					<top>17</top>
+					<width>22</width>
+					<height>22</height>
+					<texture colordiffuse="$VAR[AG_OnAccent]">$PARAM[icon]</texture>
+					<visible>Control.HasFocus($PARAM[id])</visible>
+				</control>
+				<control type="image">
+					<left>24</left>
+					<top>17</top>
+					<width>22</width>
+					<height>22</height>
+					<texture colordiffuse="$VAR[AG_Ink]">$PARAM[icon]</texture>
+					<visible>!Control.HasFocus($PARAM[id])</visible>
+				</control>
+				<control type="label">
+					<left>$PARAM[text_x]</left>
+					<top>0</top>
+					<right>20</right>
+					<height>button_h</height>
+					<align>$PARAM[align]</align>
+					<font>lb_ui_22_bold</font>
+					<textcolor>$VAR[AG_OnAccent]</textcolor>
+					<label>$PARAM[label]</label>
+					<visible>Control.HasFocus($PARAM[id])</visible>
+				</control>
+				<control type="label">
+					<left>$PARAM[text_x]</left>
+					<top>0</top>
+					<right>20</right>
+					<height>button_h</height>
+					<align>$PARAM[align]</align>
+					<font>lb_ui_22_bold</font>
+					<textcolor>$VAR[AG_Ink]</textcolor>
+					<label>$PARAM[label]</label>
+					<visible>!Control.HasFocus($PARAM[id])</visible>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<!-- "More" row pill. params: id, label, onclick, onclick2, visible -->
+	<!-- 0.56.6 the More row's buttons: like Play / Trailer / More in Fused Glass (_src/fg_morebuttons.py) -->
+	<include name="VidInfo_MoreLook_fg">
+		<width>auto</width>
+		<height>66</height>
+		<font>lb_ui_22_bold</font>
+		<textcolor>$VAR[AG_Ink]</textcolor>
+		<focusedcolor>$VAR[AG_OnAccent]</focusedcolor>
+		<textoffsetx>33</textoffsetx>
+		<texturefocus border="33,0,33,0" colordiffuse="ffffffff">fg/btn56f.png</texturefocus>
+		<texturenofocus border="33,0,33,0" colordiffuse="$VAR[AG_Line2]">fg/btn56n.png</texturenofocus>
+		<animation type="Focus" condition="!$EXP[ReduceMotion]"><effect type="zoom" start="100" end="105" center="auto" time="150" tween="cubic" easing="out"/></animation>
+		<animation type="Unfocus" condition="!$EXP[ReduceMotion]"><effect type="zoom" start="105" end="100" center="auto" time="150" tween="cubic" easing="out"/></animation>
+	</include>
+	<include name="VidInfo_MoreLook_aeon">
+		<include>VidView_PillLook</include>
+		<height>44</height>
+		<font>lb_ui_22_semibold</font>
+		<include>Aeon_T_7d6586af</include>
+		<include>Aeon_T_e6a0379c</include>
+	</include>
+	<include name="VidInfo_MoreRowBox_fg"><top>789</top><height>66</height></include>
+	<include name="VidInfo_MoreRowBox_aeon"><top>800</top><height>44</height></include>
+	<include name="VidInfo_MoreButton">
+		<param name="onclick">noop</param>
+		<param name="onclick2">noop</param>
+		<param name="visible">true</param>
+		<definition>
+			<control type="button" id="$PARAM[id]">
+				<include condition="Skin.HasSetting(aeon.fglass)">VidInfo_MoreLook_fg</include>
+				<include condition="!Skin.HasSetting(aeon.fglass)">VidInfo_MoreLook_aeon</include>
+				<label>$PARAM[label]</label>
+				<onclick>$PARAM[onclick]</onclick>
+				<onclick>$PARAM[onclick2]</onclick>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
+	<!-- media flag pill (enabled, never navigated to). params: label, visible -->
+	<include name="VidInfo_Flag">
+		<param name="visible">true</param>
+		<definition>
+			<control type="button">
+				<width>auto</width>
+				<height>40</height>
+				<font>lb_small_20_semibold</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<focusedcolor>$VAR[AG_Ink2]</focusedcolor>
+				<textoffsetx>16</textoffsetx>
+				<include>VidInfo_Tex_Flag</include>
+				<label>$PARAM[label]</label>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
+
+	<!-- ================================================================ page sections -->
+	<!-- Hero card: art, poster, kicker, title, meta, buttons -->
+	<include name="VidInfo_Hero">
+		<control type="group">
+			<left>page_margin</left>
+			<top>168</top>
+			<width>1700</width>
+			<height>520</height>
+			<include>AG_Card</include>
+			<control type="image">
+				<left>540</left>
+				<top>0</top>
+				<width>1160</width>
+				<height>520</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<include>Anim_BackgroundCrossfade</include>
+				<texture background="true" diffuse="fg/mhero1160.png" colordiffuse="$VAR[AG_ArtDim]">$VAR[VidInfo_Fanart]</texture><!-- 0.56.18 aeonglass_info: fades in from the left -->
+				<visible>Skin.HasSetting(aeon.vglass) + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<!-- Fused Glass: the art fades in from the left through its own mask (no fade strip over it) -->
+			<control type="image">
+				<left>540</left>
+				<top>0</top>
+				<width>1160</width>
+				<height>520</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<include>Anim_BackgroundCrossfade</include>
+				<texture background="true" diffuse="fg/mhero1160.png" colordiffuse="$VAR[AG_ArtDim]">$VAR[VidInfo_Fanart]</texture>
+				<visible>Skin.HasSetting(aeon.vglass) + $EXP[Aeon_FGlass]</visible>
+			</control>
+			<!-- Fused Glass: a soft shade over the foot of the art so the buttons read on bright fanart -->
+			<control type="image">
+				<left>540</left>
+				<top>0</top>
+				<width>1160</width>
+				<height>520</height>
+				<texture diffuse="fg/mhero1160.png" colordiffuse="c0000000">fg/scrim_b.png</texture>
+				<visible>Skin.HasSetting(aeon.vglass)</visible>
+			</control>
+			<control type="image">
+				<left>540</left>
+				<top>0</top>
+				<width>1160</width>
+				<height>520</height>
+				<aspectratio>scale</aspectratio>
+				<include>Anim_BackgroundCrossfade</include>
+				<texture background="true" colordiffuse="$VAR[AG_ArtDim]">$VAR[VidInfo_Fanart]</texture>
+				<visible>!Skin.HasSetting(aeon.vglass)</visible>
+			</control>
+			<control type="image">
+				<left>540</left>
+				<top>0</top>
+				<width>1160</width>
+				<height>520</height>
+				<texture colordiffuse="$VAR[AG_Surface]">aeon/hero_fade.png</texture>
+				<visible>!$EXP[Aeon_VGlass]</visible><!-- 0.56.18 aeonglass_infob: Aeon Glass fades through the mask -->
+			</control>
+			<!-- poster -->
+			<control type="group">
+				<left>48</left>
+				<top>65</top>
+				<width>260</width>
+				<height>390</height>
+				<control type="image">
+					<left>-120</left>
+					<top>-90</top>
+					<right>-120</right>
+					<bottom>-150</bottom>
+					<texture border="120" colordiffuse="$VAR[AG_Shadow]">aeon/card_shadow.png</texture>
+				</control>
+				<include content="VidView_ArtFallback">
+					<param name="mask" value="aeon/mask_poster_info.png"/>
+					<param name="label" value="$VAR[VidInfo_Title]"/>
+					<param name="label_visible" value="String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(tvshow.poster)) + String.IsEmpty(ListItem.Art(thumb))"/>
+				</include>
+				<include content="VidView_ArtImage">
+					<param name="art" value="$VAR[VidInfo_Poster]"/>
+					<param name="round" value="Skin.HasSetting(aeon.vglass) | $EXP[Aeon_Fused]"/>
+					<param name="mask" value="aeon/mask_poster_info.png"/>
+					<param name="fade" value="160"/>
+				</include>
+			</control>
+			<!-- text column -->
+			<control type="group">
+				<left>352</left>
+				<top>56</top>
+				<width>700</width>
+				<height>340</height>
+				<control type="image">
+					<left>0</left>
+					<top>9</top>
+					<width>10</width>
+					<height>10</height>
+					<texture colordiffuse="$VAR[AG_Accent]">aeon/circle_12.png</texture>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>0</top>
+					<width>680</width>
+					<height>28</height>
+					<font>lb_ui_22_semibold</font>
+					<textcolor>$VAR[AG_AccentText]</textcolor>
+					<label>$VAR[VidInfo_Kicker]</label>
+				</control>
+				<control type="grouplist">
+					<left>0</left>
+					<top>40</top>
+					<width>1290</width><!-- 0.56.20 / 0.56.26: the chip row inside (1290 wide) is clipped to this list -->
+					<height>300</height>
+					<orientation>vertical</orientation>
+					<itemgap>0</itemgap>
+					<usecontrolcoords>true</usecontrolcoords>
+					<!-- measuring copy (transparent): the meta follows a 1- or 2-line title -->
+					<include content="T_VidInfo_Measure">
+						<param name="label" value="$VAR[VidInfo_Title]"/>
+					</include>
+					<control type="image"><width>10</width><height>16</height><texture></texture></control>
+					<control type="grouplist">
+						<width>700</width>
+						<height>34</height>
+						<orientation>horizontal</orientation>
+						<itemgap>10</itemgap>
+						<usecontrolcoords>true</usecontrolcoords>
+						<control type="label">
+							<width max="520">auto</width>
+							<height>34</height>
+							<font>lb_ui_24_semibold</font>
+							<textcolor>$VAR[AG_Ink]</textcolor>
+							<label>$VAR[VidInfo_MetaLeft]</label>
+						</control>
+						<control type="label">
+							<width>auto</width>
+							<height>34</height>
+							<font>lb_ui_24_semibold</font>
+							<textcolor>$VAR[AG_Ink2]</textcolor>
+							<label>·</label>
+							<visible>$EXP[VidView_HasRating]</visible>
+						<visible>$EXP[Aeon_Rate_info]</visible></control>
+						<include content="Aeon_RatingIcons"><param name="place" value="info"/><param name="h" value="30"/><param name="font" value="lb_ui_24_semibold"/><param name="ink" value="$VAR[AG_Ink]"/></include>
+					</control>
+					<control type="label">
+						<width>700</width>
+						<height>32</height>
+						<font>lb_ui_22</font>
+						<textcolor>$VAR[AG_Ink2]</textcolor>
+						<label>$INFO[ListItem.Genre]</label>
+					</control>
+					<control type="image"><width>10</width><height>10</height><texture></texture></control>
+					<control type="grouplist">
+						<width>700</width>
+						<height>32</height>
+						<orientation>horizontal</orientation>
+						<itemgap>10</itemgap>
+						<usecontrolcoords>true</usecontrolcoords>
+						<visible>!String.IsEmpty(ListItem.Duration) | [String.IsEqual(ListItem.DBType,tvshow) + !String.IsEmpty(ListItem.Status)]</visible>
+						<control type="label">
+							<width max="420">auto</width>
+							<height>32</height>
+							<font>lb_ui_22</font>
+							<textcolor>$VAR[AG_Ink2]</textcolor>
+							<label>$VAR[VidInfo_EndLine]</label>
+						</control>
+						<control type="image">
+							<top>5</top>
+							<width>22</width>
+							<height>22</height>
+							<texture colordiffuse="$VAR[AG_AccentText]">aeon/icons/check.png</texture>
+							<visible>$EXP[AG_ItemFits] + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)]</visible>
+						</control>
+						<control type="label">
+							<width max="300">auto</width>
+							<height>32</height>
+							<font>lb_ui_22_semibold</font>
+							<textcolor>$VAR[AG_AccentText]</textcolor>
+							<label>$VAR[AG_Bed_Fits]</label>
+							<visible>$EXP[AG_ItemFits] + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)]</visible>
+						</control>
+					</control>
+						<!-- media chips: the same as the library bar (Skin settings > Details hides them) -->
+						<control type="image"><width>10</width><height>14</height><texture></texture></control>
+						<control type="grouplist">
+							<width>1290</width><height>34</height><orientation>horizontal</orientation><itemgap>8</itemgap><usecontrolcoords>true</usecontrolcoords><!-- 0.56.20 mediainfo_skin2 / 0.56.26 chips_05626: room for the sidecar chips -->
+							<visible>!String.IsEmpty(ListItem.VideoResolution) | !String.IsEmpty(ListItem.AudioCodec)</visible>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVRes]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.res) + !String.IsEmpty(ListItem.VideoResolution)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVAsp]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.res) + !String.IsEmpty(ListItem.VideoResolution)] + !Skin.HasSetting(aeon.hide.aspect)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVRes]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>!$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.res) + !String.IsEmpty(ListItem.VideoResolution)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVAsp]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.res) + !String.IsEmpty(ListItem.VideoResolution)] + !Skin.HasSetting(aeon.hide.aspect)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVHdr]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.hdr) + !String.IsEmpty(ListItem.VideoResolution)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$INFO[Window(Home).Property(aeon.dvp)]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.hdr) + !String.IsEmpty(ListItem.VideoResolution) + !String.IsEmpty(Window(Home).Property(aeon.dvp)) + String.IsEqual(Window(Home).Property(aeon.dvp.path),ListItem.FileNameAndPath)] + !Skin.HasSetting(aeon.hide.dvp)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVHdr]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>!$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.hdr) + !String.IsEmpty(ListItem.VideoResolution)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$INFO[Window(Home).Property(aeon.dvp)]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.hdr) + !String.IsEmpty(ListItem.VideoResolution) + !String.IsEmpty(Window(Home).Property(aeon.dvp)) + String.IsEqual(Window(Home).Property(aeon.dvp.path),ListItem.FileNameAndPath)] + !Skin.HasSetting(aeon.hide.dvp)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVAud]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.audio) + !String.IsEmpty(ListItem.AudioCodec)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVAud]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>!$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.audio) + !String.IsEmpty(ListItem.AudioCodec)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVCh]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.audio) + !String.IsEmpty(ListItem.AudioChannels)] + !Skin.HasSetting(aeon.hide.channels)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVCh]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.audio) + !String.IsEmpty(ListItem.AudioChannels)] + !Skin.HasSetting(aeon.hide.channels)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<!-- 0.56.20 mediainfo_skin: the sidecar's source and edition -->
+							<!-- 0.56.26 chips_05626: the sidecar's video source, before the source format -->
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.vsource)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.vsource)) + Skin.HasSetting(aeon.chip.vsource)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.vsource)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.vsource)) + Skin.HasSetting(aeon.chip.vsource)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.format)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.format))] + !Skin.HasSetting(aeon.hide.source)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.format)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.format))] + !Skin.HasSetting(aeon.hide.source)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<!-- 0.56.26 chips_05626: the sidecar's video codec and edition (Version) -->
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.vcodec)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.vcodec)) + Skin.HasSetting(aeon.chip.vcodec)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.vcodec)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.vcodec)) + Skin.HasSetting(aeon.chip.vcodec)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.edition)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.edition)) + Skin.HasSetting(aeon.chip.edition)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.edition)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.edition)) + Skin.HasSetting(aeon.chip.edition)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<!-- 0.56.22 chips: the sidecar chips you pick (Skin settings > Details > Media info chips), off by default -->
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.container)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.container)) + Skin.HasSetting(aeon.chip.container)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.container)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.container)) + Skin.HasSetting(aeon.chip.container)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.bitrate)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.bitrate)) + Skin.HasSetting(aeon.chip.bitrate)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.bitrate)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.bitrate)) + Skin.HasSetting(aeon.chip.bitrate)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.size)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.size)) + Skin.HasSetting(aeon.chip.size)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.size)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.size)) + Skin.HasSetting(aeon.chip.size)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.subs.count)] $LOCALIZE[287][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.subs.count)) + Skin.HasSetting(aeon.chip.subs)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.subs.count)] $LOCALIZE[287][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.subs.count)) + Skin.HasSetting(aeon.chip.subs)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.chapters)] $ADDON[skin.aeon.fuse 32661][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.chapters)) + Skin.HasSetting(aeon.chip.chapters)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.chapters)] $ADDON[skin.aeon.fuse 32661][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.chapters)) + Skin.HasSetting(aeon.chip.chapters)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$ADDON[skin.aeon.fuse 32662][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.commentary)) + Skin.HasSetting(aeon.chip.commentary)]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$ADDON[skin.aeon.fuse 32662][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.commentary)) + Skin.HasSetting(aeon.chip.commentary)]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]3D[/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.3d)) + Skin.HasSetting(aeon.chip.3d)]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]3D[/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.3d)) + Skin.HasSetting(aeon.chip.3d)]</visible></control>
+						</control>
+				</control>
+				<!-- visible title, unclipped -->
+				<control type="group">
+					<left>0</left>
+					<top>40</top>
+					<width>700</width>
+					<include content="T_VidInfo_Title">
+						<param name="label" value="$VAR[VidInfo_Title]"/>
+						<param name="color" value="$VAR[AG_Ink]"/>
+					</include>
+				</control>
+			</control>
+			<!-- studio / network logo: level with the buttons, at the card's right edge (0.39.12: 48 px in, the poster's margin
+			     on the left; it sat at the art's lower left, near the middle of the card) -->
+			<control type="image">
+				<left>1352</left><top>404</top><width>300</width><height>88</height>
+				<aspectratio align="right" aligny="center">keep</aspectratio>
+				<texture background="true">resource://resource.images.studios.white/$INFO[Window(Home).Property(aeon.studio)].png</texture>
+				<!-- the first studio (script.aeon.helper aeon.studio: Kodi joins them all, "A / B"), only while it is this item's -->
+				<visible>!Skin.HasSetting(aeon.nostudio) + !String.IsEmpty(Window(Home).Property(aeon.studio)) + String.IsEqual(Window(Home).Property(aeon.studio.of),ListItem.Studio)</visible>
+			</control>
+			<include>VidInfo_Buttons</include>
+		</control>
+	</include>
+
+	<!-- Buttons (inside the hero card, y 420 card-local). Kodi ids: 8 play (from the beginning when 9
+	     exists), 9 resume. 9016 = trailer (not Kodi's 11, which only knows the library's address). Browse (tvshow/season/set) and From start re-send 8. -->
+	<include name="VidInfo_Buttons">
+		<control type="grouplist" id="9000">
+			<left>328</left>
+			<top>396</top>
+			<width>1300</width>
+			<height>104</height>
+			<orientation>horizontal</orientation>
+			<usecontrolcoords>true</usecontrolcoords>
+			<itemgap>-4</itemgap>
+			<onup>noop</onup>
+			<ondown condition="Control.IsVisible(9001)">9001</ondown>
+			<ondown condition="!Control.IsVisible(9001) + Integer.IsGreater(Container(50).NumItems,0)">50</ondown>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
+			<include content="VidInfo_Button">
+				<param name="id" value="9"/>
+				<param name="width" value="160"/>
+				<param name="label" value="$LOCALIZE[31618]"/>
+				<param name="icon" value="aeon/icons/play.png"/>
+				<param name="visible" value="$EXP[VidInfo_ShowResume]"/>
+				<param name="right1" value="9013"/>
+				<param name="right1_if" value="true"/>
+			</include>
+			<include content="VidInfo_Button">
+				<param name="id" value="8"/>
+				<param name="width" value="140"/>
+				<param name="label" value="$LOCALIZE[31278]"/>
+				<param name="icon" value="aeon/icons/play.png"/>
+				<param name="visible" value="$EXP[VidInfo_ShowPlay]"/>
+				<param name="right1" value="9016"/>
+				<param name="right1_if" value="$EXP[VidInfo_ShowTrailer]"/>
+				<param name="right2" value="9010"/>
+				<param name="right2_if" value="!$EXP[VidInfo_ShowTrailer]"/>
+			</include>
+			<include content="VidInfo_Button">
+				<param name="id" value="9013"/>
+				<param name="width" value="160"/>
+				<param name="label" value="$LOCALIZE[31619]"/>
+				<param name="text_x" value="20"/>
+				<param name="align" value="center"/>
+				<param name="onclick" value="SendClick(8)"/>
+				<param name="visible" value="$EXP[VidInfo_ShowResume]"/>
+				<param name="left1" value="9"/>
+				<param name="left1_if" value="true"/>
+				<param name="right1" value="9016"/>
+				<param name="right1_if" value="$EXP[VidInfo_ShowTrailer]"/>
+				<param name="right2" value="9010"/>
+				<param name="right2_if" value="!$EXP[VidInfo_ShowTrailer]"/>
+			</include>
+			<include content="VidInfo_Button">
+				<param name="id" value="9012"/>
+				<param name="width" value="160"/>
+				<param name="label" value="$LOCALIZE[31620]"/>
+				<param name="icon" value="aeon/icons/chevron_right.png"/>
+				<param name="onclick" value="SendClick(8)"/>
+				<param name="visible" value="$EXP[VidView_IsFolderType]"/>
+				<param name="right1" value="9016"/>
+				<param name="right1_if" value="$EXP[VidInfo_ShowTrailer]"/>
+				<param name="right2" value="9010"/>
+				<param name="right2_if" value="!$EXP[VidInfo_ShowTrailer]"/>
+			</include>
+			<include content="VidInfo_Button">
+				<param name="id" value="9016"/>
+				<param name="width" value="123"/>
+				<param name="label" value="$LOCALIZE[31621]"/>
+				<!-- 0.39.9: through the helper, which closes the page first (as Kodi's own trailer button does); a slow
+				     YouTube trailer started by PlayMedia played behind the page -->
+				<param name="onclick" value="RunScript(script.aeon.helper,trailer,play,$ESCINFO[Window(Home).Property(aeon.trailer)])"/>
+				<param name="text_x" value="20"/>
+				<param name="align" value="center"/>
+				<param name="visible" value="$EXP[VidInfo_ShowTrailer]"/>
+				<param name="left1" value="9013"/>
+				<param name="left1_if" value="$EXP[VidInfo_ShowResume]"/>
+				<param name="left2" value="8"/>
+				<param name="left2_if" value="$EXP[VidInfo_ShowPlay]"/>
+				<param name="left3" value="9012"/>
+				<param name="left3_if" value="$EXP[VidView_IsFolderType]"/>
+				<param name="right1" value="9010"/>
+				<param name="right1_if" value="true"/>
+			</include>
+			<include content="VidInfo_Button">
+				<param name="id" value="9010"/>
+				<param name="width" value="111"/>
+				<param name="label" value="$LOCALIZE[31206]"/>
+				<param name="text_x" value="20"/>
+				<param name="align" value="center"/>
+				<param name="onclick" value="SetFocus(9100)"/>
+				<param name="left1" value="9016"/>
+				<param name="left1_if" value="$EXP[VidInfo_ShowTrailer]"/>
+				<param name="left2" value="9013"/>
+				<param name="left2_if" value="!$EXP[VidInfo_ShowTrailer] + $EXP[VidInfo_ShowResume]"/>
+				<param name="left3" value="8"/>
+				<param name="left3_if" value="!$EXP[VidInfo_ShowTrailer] + $EXP[VidInfo_ShowPlay]"/>
+				<param name="left4" value="9012"/>
+				<param name="left4_if" value="!$EXP[VidInfo_ShowTrailer] + $EXP[VidView_IsFolderType]"/>
+			</include>
+		</control>
+	</include>
+
+	<!-- Story card (OK = full plot) + When-to-watch / progress card -->
+	<include name="VidInfo_LowerCards">
+		<control type="group">
+			<visible>!ControlGroup(9100).HasFocus()</visible>
+			<include>Anim_FadeVisible</include>
+			<!-- story -->
+			<control type="group">
+				<left>page_margin</left>
+				<top>724</top>
+				<width>1040</width>
+				<height>292</height>
+				<include>AG_Card</include>
+				<include content="AG_FocusRing">
+					<param name="r" value="28"/>
+					<param name="gap" value="$VAR[AG_Ground]"/>
+					<param name="visible" value="Control.HasFocus(9001)"/>
+				</include>
+				<control type="label">
+					<left>40</left>
+					<top>28</top>
+					<width>600</width>
+					<height>36</height>
+					<font>lb_serif_28</font>
+					<textcolor>$VAR[AG_Ink]</textcolor>
+					<label>$VAR[VidInfo_StoryTitle]</label>
+				</control>
+				<control type="label">
+					<left>640</left>
+					<top>28</top>
+					<width>360</width>
+					<height>36</height>
+					<align>right</align>
+					<font>lb_small_20_semibold</font>
+					<textcolor>$VAR[AG_Ink2]</textcolor>
+					<label>$VAR[VidInfo_Hint]</label>
+				</control>
+				<control type="textbox">
+					<left>40</left>
+					<top>80</top>
+					<width>960</width>
+					<height>180</height>
+					<font>lb_body_24</font>
+					<textcolor>$VAR[AG_Body]</textcolor>
+					<label>$VAR[VidInfo_Story]</label>
+					<autoscroll delay="8000" time="3000" repeat="10000">!Control.HasFocus(9001)</autoscroll>
+				</control>
+				<control type="button" id="9001">
+					<description>story: OK opens the full plot</description>
+					<left>0</left>
+					<top>0</top>
+					<width>1040</width>
+					<height>292</height>
+					<label></label>
+					<texturefocus />
+					<texturenofocus />
+					<onup>9000</onup>
+					<ondown condition="Integer.IsGreater(Container(50).NumItems,0)">50</ondown>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+					<onclick>SetFocus(61)</onclick>
+					<visible>!String.IsEmpty(ListItem.Plot)</visible>
+				</control>
+			</control>
+			<!-- when to watch / progress + flags -->
+			<control type="group">
+				<left>1196</left>
+				<top>724</top>
+				<width>624</width>
+				<height>292</height>
+				<include>AG_Card</include>
+				<control type="image">
+					<left>36</left>
+					<top>32</top>
+					<width>24</width>
+					<height>24</height>
+					<texture colordiffuse="$VAR[AG_AccentText]">$VAR[VidView_WhenIcon]</texture>
+				</control>
+				<control type="label">
+					<left>70</left>
+					<top>28</top>
+					<width>500</width>
+					<height>32</height>
+					<font>lb_small_20_bold</font>
+					<textcolor>$VAR[AG_AccentText]</textcolor>
+					<label>$VAR[VidView_WhenHeading]</label>
+				</control>
+				<control type="label">
+					<left>36</left>
+					<top>70</top>
+					<width>540</width>
+					<height>42</height>
+					<font>lb_serif_30</font>
+					<textcolor>$VAR[AG_Ink]</textcolor>
+					<label>$VAR[VidView_WhenBig]</label>
+				</control>
+				<control type="textbox">
+					<left>36</left>
+					<top>118</top>
+					<width>540</width>
+					<height>55</height>
+					<font>lb_ui_22_reg</font>
+					<textcolor>$VAR[AG_Ink2]</textcolor>
+					<label>$VAR[VidView_WhenSmall]</label>
+				</control>
+				<control type="progress">
+					<left>36</left>
+					<top>162</top>
+					<width>532</width>
+					<height>8</height>
+					<texturebg border="4,0,4,0" colordiffuse="$VAR[AG_Line]">aeon/track_8.png</texturebg>
+					<midtexture subpixel="true" border="4,0,4,0" colordiffuse="$VAR[AG_Accent]">aeon/track_8.png</midtexture>
+					<info>ListItem.Property(WatchedEpisodePercent)</info>
+					<visible>$EXP[VidView_IsTVType]</visible>
+				</control>
+				<!-- 0.56.20 mediainfo_skin: what the mediainfo sidecar says (0.56.20 mediainfo_skin2: three lines that fit) -->
+				<control type="label"><left>36</left><top>186</top><width>552</width><height>30</height><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>$VAR[AG_Ink]</textcolor><label>$INFO[Window(Home).Property(aeon.mi.source)]$INFO[Window(Home).Property(aeon.mi.edition), · ]$INFO[Window(Home).Property(aeon.mi.3d), · ]$INFO[Window(Home).Property(aeon.mi.size), · ]$INFO[Window(Home).Property(aeon.mi.bitrate), · ]</label><visible>Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.from))</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+				<control type="label"><left>36</left><top>218</top><width>552</width><height>30</height><aligny>center</aligny><font>lb_small_20</font><textcolor>$VAR[AG_Ink2]</textcolor><label>$INFO[Window(Home).Property(aeon.mi.audio)]$INFO[Window(Home).Property(aeon.mi.audio.count), · $LOCALIZE[292] ]$INFO[Window(Home).Property(aeon.mi.commentary), · $ADDON[skin.aeon.fuse 32617] ]</label><visible>Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.from))</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+				<control type="label"><left>36</left><top>250</top><width>552</width><height>30</height><aligny>center</aligny><font>lb_small_20</font><textcolor>$VAR[AG_Ink2]</textcolor><label>$INFO[Window(Home).Property(aeon.mi.subs.count),$LOCALIZE[287] ]$INFO[Window(Home).Property(aeon.mi.sdh), ]$INFO[Window(Home).Property(aeon.mi.chapters), · $ADDON[skin.aeon.fuse 32618] ]</label><visible>Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.from))</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+			</control>
+		</control>
+	</include>
+	<variable name="VidInfo_StoryTitle">
+		<value condition="!String.IsEmpty(ListItem.Tagline)">$INFO[ListItem.Tagline]</value>
+		<value>$ADDON[skin.aeon.fuse 32338]</value>
+	</variable>
+	<variable name="VidInfo_Story">
+		<value condition="Skin.HasSetting(aeon.spoilers) + String.IsEqual(ListItem.DBType,episode) + !Integer.IsGreater(ListItem.PlayCount,0)">$LOCALIZE[31870]</value>
+		<value condition="!String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+		<value>$LOCALIZE[31632]</value>
+	</variable>
+
+	<!-- More row: Kodi's own info-dialog buttons (ids per Estuary Omega / CGUIDialogVideoInfo) -->
+	<include name="VidInfo_MoreRow">
+		<control type="group">
+			<left>page_margin</left>
+			<top>724</top>
+			<width>1700</width>
+			<height>200</height>
+			<visible>ControlGroup(9100).HasFocus()</visible>
+			<include>Anim_FadeVisible</include>
+			<include>AG_Card</include>
+			<control type="label">
+				<left>40</left>
+				<top>28</top>
+				<width>800</width>
+				<height>36</height>
+				<font>lb_serif_28</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<label>$LOCALIZE[31244]</label>
+			</control>
+		</control>
+		<control type="grouplist" id="9100">
+			<left>160</left>
+			<include condition="Skin.HasSetting(aeon.fglass)">VidInfo_MoreRowBox_fg</include>
+			<include condition="!Skin.HasSetting(aeon.fglass)">VidInfo_MoreRowBox_aeon</include>
+			<width>1600</width>
+			<orientation>horizontal</orientation>
+			<itemgap>12</itemgap>
+			<onup>9010</onup>
+			<ondown>9010</ondown>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
+			<onback>9010</onback>
+			<visible allowhiddenfocus="true">ControlGroup(9100).HasFocus()</visible>
+			<include content="VidInfo_MoreButton">
+				<param name="id" value="443"/>
+				<param name="label" value="$LOCALIZE[31622]"/>
+				<param name="onclick" value="Dialog.Close(all,true)"/>
+				<param name="onclick2" value="$VAR[VidInfo_CollectionAction]"/>
+				<param name="visible" value="!String.IsEmpty(ListItem.SetID)"/>
+			</include>
+			<include content="VidInfo_MoreButton">
+				<param name="id" value="13"/>
+				<param name="label" value="$LOCALIZE[31623]"/>
+				<param name="visible" value="!String.IsEmpty(ListItem.Director)"/>
+			</include>
+			<include content="VidInfo_MoreButton">
+				<param name="id" value="7"/>
+				<param name="label" value="$LOCALIZE[38018]$INFO[ListItem.UserRating,: ,]"/>
+				<param name="visible" value="Control.IsEnabled(7)"/>
+			</include>
+			<include content="VidInfo_MoreButton">
+				<param name="id" value="14"/>
+				<param name="label" value="$LOCALIZE[31624]"/>
+				<param name="visible" value="String.IsEqual(ListItem.DBType,movie)"/>
+			</include>
+			<include content="VidInfo_MoreButton">
+				<param name="id" value="15"/>
+				<param name="label" value="$LOCALIZE[31625]"/>
+				<param name="visible" value="String.IsEqual(ListItem.DBType,movie)"/>
+			</include>
+			<include content="VidInfo_MoreButton">
+				<param name="id" value="10"/>
+				<param name="label" value="$LOCALIZE[31626]"/>
+				<param name="visible" value="Control.IsEnabled(10)"/>
+			</include>
+			<include content="VidInfo_MoreButton">
+				<param name="id" value="12"/>
+				<param name="label" value="$LOCALIZE[31627]"/>
+				<param name="visible" value="Control.IsEnabled(12)"/>
+			</include>
+			<include content="VidInfo_MoreButton">
+				<param name="id" value="6"/>
+				<param name="label" value="$LOCALIZE[31533]"/>
+				<param name="visible" value="Control.IsEnabled(6)"/>
+			</include>
+		</control>
+	</include>
+
+	<!-- Cast (or the films of a collection): Kodi fills container 50. The page slides up 440 px
+	     while it has focus. -->
+	<include name="VidInfo_CastRow">
+		<control type="group">
+			<left>page_margin</left>
+			<top>1060</top>
+			<width>1700</width>
+			<height>396</height>
+			<visible>Integer.IsGreater(Container(50).NumItems,0)</visible>
+			<include>AG_Card</include>
+			<control type="label">
+				<left>40</left>
+				<top>26</top>
+				<width>900</width>
+				<height>36</height>
+				<font>lb_serif_28</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<label>$VAR[VidInfo_CastHeader]</label>
+			</control>
+			<control type="label">
+				<left>900</left>
+				<top>28</top>
+				<width>760</width>
+				<height>32</height>
+				<align>right</align>
+				<font>lb_small_20_semibold</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<label>$VAR[VidInfo_CastCount]</label>
+			</control>
+			<control type="list" id="50">
+				<left>22</left>
+				<top>66</top>
+				<width>1636</width>
+				<height>320</height>
+				<orientation>horizontal</orientation>
+				<preloaditems>1</preloaditems>
+				<scrolltime tween="cubic" easing="out">220</scrolltime>
+				<onup condition="Control.IsVisible(9001)">9001</onup>
+				<onup condition="!Control.IsVisible(9001)">9000</onup>
+				<ondown condition="Integer.IsGreater(Container(9301).NumItems,0)">9301</ondown>
+				<ondown condition="!Integer.IsGreater(Container(9301).NumItems,0) + Integer.IsGreater(Container(9302).NumItems,0)">9302</ondown>
+				<ondown condition="!Integer.IsGreater(Container(9301).NumItems,0) + !Integer.IsGreater(Container(9302).NumItems,0) + Integer.IsGreater(Container(9303).NumItems,0)">9303</ondown>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+				<itemlayout width="182" height="320">
+					<include>VidInfo_CastItem</include>
+				</itemlayout>
+				<focusedlayout width="182" height="320">
+					<include content="VidInfo_CastItem">
+						<param name="focused" value="true"/>
+					</include>
+				</focusedlayout>
+			</control>
+		</control>
+	</include>
+	<!-- ============================================================ online rows under the cast (TMDb Helper): Recommended, Similar.
+	     A list cannot hide itself by its own item count (it would never load), so the frames hide and Down skips empty rows. -->
+	<include name="VidInfo_Tex_Flag_g">
+		<texturefocus border="20,0,20,0" colordiffuse="$VAR[AG_Line2]">aeon/pill_40_line.png</texturefocus>
+		<texturenofocus border="20,0,20,0" colordiffuse="$VAR[AG_Line2]">aeon/pill_40_line.png</texturenofocus>
+	</include>
+	<include name="VidInfo_Tex_Flag_f">
+		<texturefocus border="8" colordiffuse="$VAR[AG_Line2]">common/aeon_outline_sq.png</texturefocus>
+		<texturenofocus border="8" colordiffuse="$VAR[AG_Line2]">common/aeon_outline_sq.png</texturenofocus>
+	</include>
+	<!-- 0.56.20 fuse_survey: Aeon + Fuse: VidInfo_Tex_Flag_g's shape, VidInfo_Tex_Flag_f's colours -->
+	<include name="VidInfo_Tex_Flag_fu">
+		<texturefocus border="20,0,20,0" colordiffuse="$VAR[AG_Line2]">aeon/pill_40_line.png</texturefocus>
+		<texturenofocus border="20,0,20,0" colordiffuse="$VAR[AG_Line2]">aeon/pill_40_line.png</texturenofocus>
+	</include>
+	<include name="VidInfo_Tex_Flag">
+		<include condition="Skin.HasSetting(aeon.vglass)">VidInfo_Tex_Flag_g</include>
+		<include condition="!Skin.HasSetting(aeon.vglass) + !$EXP[Aeon_Fused]">VidInfo_Tex_Flag_f</include>
+		<include condition="!Skin.HasSetting(aeon.vglass) + $EXP[Aeon_Fused]">VidInfo_Tex_Flag_fu</include>
+	</include>
+	<variable name="VidInfo_TMDbType">
+		<value condition="String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season) | String.IsEqual(ListItem.DBType,episode)">tv</value>
+		<value>movie</value>
+	</variable>
+	<variable name="VidInfo_TMDbQuery">
+		<value condition="!String.IsEmpty(ListItem.TVShowTitle)">$INFO[ListItem.TVShowTitle]</value>
+		<value>$INFO[ListItem.Title]</value>
+	</variable>
+	<variable name="VidInfo_TMDbYear">
+		<value condition="String.IsEqual(ListItem.DBType,movie)">$INFO[ListItem.Year]</value>
+	</variable>
+	<!-- 0.56.18 aeonglass_info: rounded in Fused Glass, Aeon Glass and the Fuse menu theme (Aeon_RoundInfo) -->
+	<include name="VidInfo_OnlineItem">
+		<param name="focused">false</param>
+		<definition>
+			<control type="image"><left>8</left><top>4</top><width>166</width><height>249</height><texture colordiffuse="$VAR[Aeon_Accent]">common/white.png</texture><visible>$PARAM[focused] + Control.HasFocus($PARAM[id]) + !$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>9</left><top>5</top><width>164</width><height>247</height><texture border="19" colordiffuse="ffffffff">fg/ring16.png</texture><visible>$PARAM[focused] + Control.HasFocus($PARAM[id]) + $EXP[Aeon_RoundInfo]</visible></control>
+			<control type="image"><left>12</left><top>8</top><width>158</width><height>241</height><texture colordiffuse="$VAR[AG_Raised]">common/white.png</texture><visible>!$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>12</left><top>8</top><width>158</width><height>241</height><texture border="16" colordiffuse="$VAR[AG_Raised]">fg/r16.png</texture><visible>$EXP[Aeon_RoundInfo]</visible></control>
+			<control type="image"><left>12</left><top>8</top><width>158</width><height>241</height><aspectratio>scale</aspectratio><texture background="true">$INFO[ListItem.Art(poster)]</texture><visible>!$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>12</left><top>8</top><width>158</width><height>241</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m158x241.png">$INFO[ListItem.Art(poster)]</texture><visible>$EXP[Aeon_RoundInfo]</visible></control>
+			<!-- not in the library: dimmed, except the title in focus (0.56.6, the user: "the artwork should not be dimmed
+			     when in focus"); in the library: a tick -->
+			<control type="image"><left>12</left><top>8</top><width>158</width><height>241</height><texture colordiffuse="b0000000">common/white.png</texture><visible>!String.IsEmpty(ListItem.Property(aeon.missing)) + !$EXP[Aeon_RoundInfo] + ![$PARAM[focused] + Control.HasFocus($PARAM[id])]</visible></control><control type="image"><left>12</left><top>8</top><width>158</width><height>241</height><texture border="16" colordiffuse="b0000000">fg/r16.png</texture><visible>!String.IsEmpty(ListItem.Property(aeon.missing)) + $EXP[Aeon_RoundInfo] + ![$PARAM[focused] + Control.HasFocus($PARAM[id])]</visible></control>
+			<control type="image"><left>138</left><top>14</top><width>26</width><height>26</height><texture colordiffuse="ffffffff">markers/check.png</texture><visible>!String.IsEmpty(ListItem.Property(aeon.owned))</visible></control>
+			<!-- plain title: add-ons colour the label of unreleased titles -->
+			<control type="label"><left>12</left><top>254</top><width>158</width><height>28</height><font>lb_cap_20</font><textcolor>$VAR[AG_Ink2]</textcolor><selectedcolor>$VAR[AG_Ink2]</selectedcolor><label>$INFO[ListItem.Title]</label><visible>!String.IsEmpty(ListItem.Title)</visible></control>
+			<control type="label"><left>12</left><top>254</top><width>158</width><height>28</height><font>lb_cap_20</font><textcolor>$VAR[AG_Ink2]</textcolor><selectedcolor>$VAR[AG_Ink2]</selectedcolor><label>$INFO[ListItem.Label]</label><visible>String.IsEmpty(ListItem.Title)</visible></control>
+			<control type="label"><left>12</left><top>280</top><width>158</width><height>26</height><font>lb_cap_20</font><textcolor>$VAR[AG_Ink3]</textcolor><selectedcolor>$VAR[AG_Ink3]</selectedcolor><label>$INFO[ListItem.Year]$INFO[ListItem.Property(year)]</label></control>
+		</definition>
+	</include>
+	<include name="VidInfo_OnlineRow">
+		<definition>
+			<control type="group">
+				<left>page_margin</left>
+				<top>$PARAM[top]</top>
+				<width>1700</width>
+				<height>396</height>
+				<control type="group">
+					<visible>Integer.IsGreater(Container($PARAM[id]).NumItems,0)</visible>
+					<include>AG_Card</include>
+					<control type="label"><left>40</left><top>26</top><width>900</width><height>36</height><font>lb_serif_28</font><textcolor>$VAR[AG_Ink]</textcolor><label>$PARAM[label]</label></control>
+					<control type="label"><left>900</left><top>28</top><width>760</width><height>32</height><align>right</align><font>lb_small_20_semibold</font><textcolor>$VAR[AG_Ink2]</textcolor><label>$INFO[Container($PARAM[id]).NumItems]</label></control>
+				</control>
+				<control type="list" id="$PARAM[id]">
+					<left>22</left>
+					<top>66</top>
+					<width>1636</width>
+					<height>320</height>
+					<orientation>horizontal</orientation>
+					<scrolltime tween="cubic" easing="out">200</scrolltime>
+					<onup>$PARAM[up]</onup>
+					<ondown condition="Integer.IsGreater(Container($PARAM[down]).NumItems,0)">$PARAM[down]</ondown>
+					<ondown condition="!Integer.IsGreater(Container($PARAM[down]).NumItems,0) + Integer.IsGreater(Container(9303).NumItems,0)">9303</ondown>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+					<onclick condition="!String.IsEmpty(ListItem.Property(aeon.missing))">noop</onclick>
+					<itemlayout width="182" height="320"><include content="VidInfo_OnlineItem"><param name="id" value="$PARAM[id]"/></include></itemlayout>
+					<focusedlayout width="182" height="320"><include content="VidInfo_OnlineItem"><param name="id" value="$PARAM[id]"/><param name="focused" value="true"/></include></focusedlayout>
+					<content limit="20">plugin://script.aeon.helper/?info=online&amp;bare=1&amp;list=$PARAM[info]&amp;type=$VAR[VidInfo_TMDbType]&amp;year=$VAR[VidInfo_TMDbYear]&amp;query=$VAR[VidInfo_TMDbQuery]</content>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<!-- Reviews from TMDb (through TMDb Helper): author and the start of the text; OK opens the whole review
+	     (RunScript(script.aeon.helper,review) reads the focused item). -->
+	<include name="VidInfo_ReviewRow">
+		<control type="group">
+			<left>page_margin</left>
+			<top>2320</top>
+			<width>1700</width>
+			<height>396</height>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(9303).NumItems,0)</visible>
+				<include>AG_Card</include>
+				<control type="label"><left>40</left><top>26</top><width>900</width><height>36</height><font>lb_serif_28</font><textcolor>$VAR[AG_Ink]</textcolor><label>$LOCALIZE[31886]</label></control>
+				<control type="label"><left>900</left><top>28</top><width>760</width><height>32</height><align>right</align><font>lb_small_20_semibold</font><textcolor>$VAR[AG_Ink2]</textcolor><label>$INFO[Container(9303).NumItems]</label></control>
+			</control>
+			<control type="list" id="9303">
+				<left>22</left>
+				<top>80</top>
+				<width>1636</width>
+				<height>300</height>
+				<orientation>horizontal</orientation>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<onup condition="Integer.IsGreater(Container(9302).NumItems,0)">9302</onup>
+				<onup condition="!Integer.IsGreater(Container(9302).NumItems,0) + Integer.IsGreater(Container(9301).NumItems,0)">9301</onup>
+				<onup condition="!Integer.IsGreater(Container(9302).NumItems,0) + !Integer.IsGreater(Container(9301).NumItems,0)">50</onup>
+				<ondown>noop</ondown>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+				<onclick>RunScript(script.aeon.helper,review)</onclick>
+				<itemlayout width="540" height="300"><control type="image"><left>18</left><top>4</top><width>504</width><height>280</height><texture colordiffuse="x_raised">common/white.png</texture><visible>!$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>18</left><top>4</top><width>504</width><height>280</height><texture border="20" colordiffuse="14ffffff">fg/r20.png</texture><visible>$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>18</left><top>4</top><width>504</width><height>280</height><texture border="20" colordiffuse="$VAR[FG_EdgeM]">fg/e20.png</texture><visible>$EXP[Aeon_RoundInfo]</visible></control><control type="label"><left>42</left><top>18</top><width>456</width><height>32</height><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label></control><control type="textbox"><left>42</left><top>58</top><width>456</width><height>194</height><font>lb_small_20</font><textcolor>ccffffff</textcolor><label>$INFO[ListItem.Plot]</label></control></itemlayout>
+				<focusedlayout width="540" height="300"><control type="image"><left>18</left><top>4</top><width>504</width><height>280</height><texture colordiffuse="x_raised">common/white.png</texture><visible>!$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>18</left><top>4</top><width>504</width><height>280</height><texture border="20" colordiffuse="14ffffff">fg/r20.png</texture><visible>$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>18</left><top>4</top><width>504</width><height>280</height><texture border="20" colordiffuse="$VAR[FG_EdgeM]">fg/e20.png</texture><visible>$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>14</left><top>0</top><width>512</width><height>288</height><texture border="8" colordiffuse="aeon_white">common/aeon_outline_sq.png</texture><visible>Control.HasFocus(9303) + !$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>15</left><top>1</top><width>510</width><height>286</height><texture border="23" colordiffuse="ffffffff">fg/ring20.png</texture><visible>Control.HasFocus(9303) + $EXP[Aeon_RoundInfo]</visible></control><control type="label"><left>42</left><top>18</top><width>456</width><height>32</height><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label></control><control type="textbox"><left>42</left><top>58</top><width>456</width><height>194</height><font>lb_small_20</font><textcolor>ccffffff</textcolor><label>$INFO[ListItem.Plot]</label></control></focusedlayout>
+				<content limit="20">plugin://plugin.video.themoviedb.helper/?info=reviews&amp;tmdb_type=$VAR[VidInfo_TMDbType]&amp;query=$VAR[VidInfo_TMDbQuery]&amp;year=$VAR[VidInfo_TMDbYear]</content>
+			</control>
+		</control>
+	</include>
+	<include name="VidInfo_OnlineRows">
+		<include content="VidInfo_OnlineRow"><param name="id" value="9301"/><param name="top" value="1480"/><param name="label" value="$LOCALIZE[31571]"/><param name="info" value="recommendations"/><param name="up" value="50"/><param name="down" value="9302"/></include>
+		<include content="VidInfo_OnlineRow"><param name="id" value="9302"/><param name="top" value="1900"/><param name="label" value="$LOCALIZE[31572]"/><param name="info" value="similar"/><param name="up" value="9301"/><param name="down" value="9303"/></include>
+		<include>VidInfo_ReviewRow</include>
+	</include>
+	<include name="VidInfo_CastItem">
+		<param name="focused">false</param>
+		<definition>
+			<!-- films of a collection: posters -->
+			<control type="group">
+				<left>18</left>
+				<top>18</top>
+				<width>146</width>
+				<height>219</height>
+				<visible>String.IsEqual(ListItem.DBType,movie)</visible>
+				<include condition="$PARAM[focused]">Anim_FocusZoom</include>
+				<include content="VidView_ArtFallback">
+					<param name="label_visible" value="false"/>
+					<param name="mask" value="aeon/mask_poster_s.png"/>
+				</include>
+				<include content="VidView_ArtImage">
+					<param name="art" value="$VAR[VidInfo_CastArt]"/>
+					<param name="mask" value="aeon/mask_poster_s.png"/>
+				</include>
+				<include>AG_WatchedMarkers</include>
+				<include content="AG_FocusRing" condition="$PARAM[focused]">
+					<param name="r" value="16"/>
+					<param name="visible" value="Control.HasFocus(50)"/>
+				</include>
+			</control>
+			<control type="label"><left>18</left><top>250</top><width>146</width><height>28</height><font>lb_small_20_semibold</font><textcolor>$VAR[AG_Ink]</textcolor><label>$INFO[ListItem.Label]</label><visible>String.IsEqual(ListItem.DBType,movie)</visible></control>
+			<control type="label"><left>18</left><top>278</top><width>146</width><height>26</height><font>lb_small_20</font><textcolor>$VAR[AG_Ink2]</textcolor><label>$VAR[VidInfo_CastLine2]</label><visible>String.IsEqual(ListItem.DBType,movie)</visible></control>
+			<!-- people: round portraits. The photo keeps its 2:3 frame and the circle (aeon/mask_cast.png) sits just
+			     above its middle, where the face is in a head shot; the group is the circle, so the focus zoom centres on it -->
+			<control type="group">
+				<left>18</left>
+				<top>61</top>
+				<width>146</width>
+				<height>146</height>
+				<visible>!String.IsEqual(ListItem.DBType,movie)</visible>
+				<include condition="$PARAM[focused]">Anim_FocusZoom</include>
+				<!-- 0.56.16 misc_05616: square in the Aeon theme (a frame in the accent while focused, the photo from its top) -->
+				<control type="image"><left>-6</left><top>-6</top><width>158</width><height>158</height><texture colordiffuse="$VAR[Aeon_Accent]">common/white.png</texture><visible>$PARAM[focused] + Control.HasFocus(50) + !$EXP[Aeon_VGlass]</visible></control>
+				<control type="image"><left>0</left><top>0</top><width>146</width><height>146</height><texture colordiffuse="$VAR[AG_Raised]">common/white.png</texture><visible>!$EXP[Aeon_VGlass]</visible></control>
+				<control type="image"><left>-6</left><top>-6</top><width>158</width><height>158</height><texture colordiffuse="$VAR[Aeon_Accent]">aeon/ring_cast.png</texture><visible>$PARAM[focused] + Control.HasFocus(50) + $EXP[Aeon_VGlass]</visible></control>
+				<control type="image"><left>0</left><top>0</top><width>146</width><height>146</height><texture colordiffuse="$VAR[AG_Raised]">aeon/disc_cast.png</texture><visible>$EXP[Aeon_VGlass]</visible></control>
+				<control type="image"><left>48</left><top>48</top><width>50</width><height>50</height><texture colordiffuse="$VAR[AG_Ink3]">aeon/icons/info.png</texture><visible>String.IsEmpty(ListItem.Art(thumb))</visible></control>
+				<control type="image">
+					<left>0</left>
+					<top>-15</top>
+					<width>146</width>
+					<height>219</height>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<fadetime>160</fadetime>
+					<texture background="true" diffuse="aeon/mask_cast.png">$INFO[ListItem.Art(thumb)]</texture>
+					<visible>$EXP[Aeon_VGlass]</visible>
+				</control>
+				<control type="image"><left>0</left><top>0</top><width>146</width><height>146</height><aspectratio align="center" aligny="top">scale</aspectratio><fadetime>160</fadetime><texture background="true">$INFO[ListItem.Art(thumb)]</texture><visible>!$EXP[Aeon_VGlass]</visible></control>
+			</control>
+			<control type="label"><left>8</left><top>224</top><width>166</width><height>28</height><align>center</align><font>lb_small_20_semibold</font><textcolor>$VAR[AG_Ink]</textcolor><label>$INFO[ListItem.Label]</label><visible>!String.IsEqual(ListItem.DBType,movie)</visible></control>
+			<control type="label"><left>8</left><top>252</top><width>166</width><height>26</height><align>center</align><font>lb_small_20</font><textcolor>$VAR[AG_Ink2]</textcolor><label>$VAR[VidInfo_CastLine2]</label><visible>!String.IsEqual(ListItem.DBType,movie)</visible></control>
+		</definition>
+	</include>
+
+	<!-- Full story overlay: shown while scrollbar 61 (inside group 9200) has focus. -->
+	<include name="VidInfo_FullPlot">
+		<control type="group" id="9200">
+			<visible allowhiddenfocus="true">ControlGroup(9200).HasFocus()</visible>
+			<include>Anim_FadeVisible</include>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>screen_w</width>
+				<height>screen_h</height>
+				<texture colordiffuse="$VAR[AG_DimDialog]">common/white.png</texture>
+			</control>
+			<control type="group">
+				<left>300</left>
+				<top>110</top>
+				<width>1320</width>
+				<height>860</height>
+				<include>AG_Card</include>
+				<control type="label">
+					<left>60</left>
+					<top>48</top>
+					<width>1200</width>
+					<height>28</height>
+					<font>lb_ui_22_semibold</font>
+					<textcolor>$VAR[AG_AccentText]</textcolor>
+					<label>$VAR[VidInfo_Kicker]</label>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<top>84</top>
+					<width>1200</width>
+					<height>76</height>
+					<font>lb_display_52</font>
+					<textcolor>$VAR[AG_Ink]</textcolor>
+					<label>$VAR[VidInfo_Title]</label>
+				</control>
+				<control type="textbox">
+					<left>60</left>
+					<top>186</top>
+					<width>1180</width>
+					<height>564</height>
+					<font>lb_body_26</font>
+					<textcolor>$VAR[AG_Body]</textcolor>
+					<pagecontrol>61</pagecontrol>
+					<label>$VAR[Aeon_PlotSafe]</label>
+				</control>
+				<control type="scrollbar" id="61">
+					<left>1268</left>
+					<top>186</top>
+					<width>8</width>
+					<height>576</height>
+					<orientation>vertical</orientation>
+					<showonepage>false</showonepage>
+					<onleft>9001</onleft>
+					<onright>9001</onright>
+					<onback>9001</onback>
+				</control>
+				<control type="label">
+					<left>60</left>
+					<top>786</top>
+					<width>1200</width>
+					<height>30</height>
+					<font>lb_small_20</font>
+					<textcolor>$VAR[AG_Ink2]</textcolor>
+					<label>$LOCALIZE[31234]</label>
+				</control>
+			</control>
+		</control>
+	</include>
+	<!-- 0.56.53: today's page, moved from DialogVideoInfo.xml unchanged (every theme and style but Fused Glass style) -->
+	<include name="VidInfo_PageClassic">
+		<include>AG_Background</include>
+		<!-- top line: mood line and text clock in Glass; the common header and the clock box in Aeon -->
+		<control type="group"><visible>Skin.HasSetting(aeon.vglass)</visible><include>AG_MoodLine</include></control>
+		<control type="group"><visible>!Skin.HasSetting(aeon.vglass) + ![Control.HasFocus(50) | Control.HasFocus(9301) | Control.HasFocus(9302) | Control.HasFocus(9303)]</visible><include content="Aeon_MenuHeader"><param name="lead" value="$LOCALIZE[31573]"/><param name="label" value="$VAR[VidInfo_TypeName]"/></include></control>
+		<include>Aeon_ClockBox</include>
+		<control type="group">
+			<description>page (slides up while the cast row has focus)</description>
+			<!-- 60 px up: the top card's right corner meets the clock box (1820, 108); every card ends at 1820 -->
+			<top>-60</top>
+			<animation type="Conditional" condition="Control.HasFocus(50) + !Skin.HasSetting(aeon.reducemotion)" reversible="true">
+				<effect type="slide" start="0,0" end="0,-440" time="340" tween="sine" easing="inout"/>
+			</animation>
+			<animation type="Conditional" condition="Control.HasFocus(50) + Skin.HasSetting(aeon.reducemotion)" reversible="true">
+				<effect type="slide" start="0,0" end="0,-440" time="0"/>
+			</animation>
+			<!-- further down: Recommended (9301), Similar (9302). 0.56.6: each move glides (340 ms, eases in and out) instead
+			     of snapping (200 ms, fast start): the user found the page jumped too much between the rows -->
+			<animation type="Conditional" condition="Control.HasFocus(9301) + !Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="slide" start="0,0" end="0,-860" time="340" tween="sine" easing="inout"/></animation>
+			<animation type="Conditional" condition="Control.HasFocus(9301) + Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="slide" start="0,0" end="0,-860" time="0"/></animation>
+			<animation type="Conditional" condition="Control.HasFocus(9302) + !Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="slide" start="0,0" end="0,-1280" time="340" tween="sine" easing="inout"/></animation>
+			<animation type="Conditional" condition="Control.HasFocus(9302) + Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="slide" start="0,0" end="0,-1280" time="0"/></animation>
+			<animation type="Conditional" condition="Control.HasFocus(9303) + !Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="slide" start="0,0" end="0,-1700" time="340" tween="sine" easing="inout"/></animation>
+			<animation type="Conditional" condition="Control.HasFocus(9303) + Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="slide" start="0,0" end="0,-1700" time="0"/></animation>
+			<include>VidInfo_Hero</include>
+			<include>VidInfo_LowerCards</include>
+			<include>VidInfo_MoreRow</include>
+			<include>VidInfo_CastRow</include>
+			<include>VidInfo_OnlineRows</include>
+		</control>
+		<include>VidInfo_FullPlot</include>
+	</include>
+	
+	
+	
+	
+	
+	
+	<!-- 0.56.53 fgs video info: begin -->
+	<include name="VidInfo_PageFGS">
+<control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><texture colordiffuse="ff08090c">common/white.png</texture></control><control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><aspectratio>scale</aspectratio><fadetime>300</fadetime><texture background="true">$VAR[VidInfo_Fanart]</texture><visible>!Skin.HasSetting(aeon.nobackdrop)</visible></control><control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><texture>fg/fgs_vi_l.png</texture></control><control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><texture>fg/fgs_vi_b.png</texture></control><control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><texture colordiffuse="b008090c">common/white.png</texture><visible>[Control.HasFocus(50) | Control.HasFocus(9301) | Control.HasFocus(9302) | Control.HasFocus(9303)]</visible><animation effect="fade" time="300">VisibleChange</animation></control><include content="FGS_DlgHeader"><param name="lead" value="$VAR[VidInfo_TypeName]"/><param name="leadvis" value="true"/><param name="label" value="$LOCALIZE[31573]"/></include><include>Aeon_ClockBox</include><control type="group"><visible>[Control.HasFocus(50) | Control.HasFocus(9301) | Control.HasFocus(9302) | Control.HasFocus(9303)]</visible><animation effect="fade" time="250">VisibleChange</animation><control type="image"><left>120</left><top>124</top><width>300</width><height>76</height><aspectratio align="left" aligny="center">keep</aspectratio><texture background="true">$INFO[ListItem.Art(clearlogo)]</texture><visible>!String.IsEmpty(ListItem.Art(clearlogo))</visible></control><control type="label"><left>120</left><top>124</top><width>300</width><height>76</height><aligny>center</aligny><font>st_ui_28_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$VAR[VidInfo_Title][/UPPERCASE]</label><visible>String.IsEmpty(ListItem.Art(clearlogo))</visible></control><control type="label"><left>444</left><top>124</top><width>1376</width><height>76</height><aligny>center</aligny><font>st_small_20</font><textcolor>a6ffffff</textcolor><label>$VAR[VidInfo_MetaLeft]$INFO[ListItem.Genre,  ·  ,]</label></control><control type="image"><left>120</left><top>226</top><width>1700</width><height>1</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control><control type="group"><animation type="Conditional" condition="Control.HasFocus(50) + !Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="slide" start="0,0" end="0,-608" time="340" tween="sine" easing="inout"/></animation><animation type="Conditional" condition="Control.HasFocus(50) + Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="slide" start="0,0" end="0,-608" time="0"/></animation><animation type="Conditional" condition="Control.HasFocus(9301) + !Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="slide" start="0,0" end="0,-1256" time="340" tween="sine" easing="inout"/></animation><animation type="Conditional" condition="Control.HasFocus(9301) + Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="slide" start="0,0" end="0,-1256" time="0"/></animation><animation type="Conditional" condition="Control.HasFocus(9302) + !Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="slide" start="0,0" end="0,-1756" time="340" tween="sine" easing="inout"/></animation><animation type="Conditional" condition="Control.HasFocus(9302) + Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="slide" start="0,0" end="0,-1756" time="0"/></animation><animation type="Conditional" condition="Control.HasFocus(9303) + !Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="slide" start="0,0" end="0,-2256" time="340" tween="sine" easing="inout"/></animation><animation type="Conditional" condition="Control.HasFocus(9303) + Skin.HasSetting(aeon.reducemotion)" reversible="true"><effect type="slide" start="0,0" end="0,-2256" time="0"/></animation><control type="group"><visible>![Control.HasFocus(50) | Control.HasFocus(9301) | Control.HasFocus(9302) | Control.HasFocus(9303)]</visible><animation effect="fade" time="200">VisibleChange</animation><control type="image"><left>80</left><top>86</top><width>380</width><height>530</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture></control><control type="image"><left>120</left><top>120</top><width>300</width><height>450</height><aspectratio scalediffuse="false">scale</aspectratio><fadetime>200</fadetime><texture background="true" diffuse="fg/m300x450.png">$VAR[VidInfo_Poster]</texture></control><control type="grouplist"><left>120</left><top>590</top><width>300</width><height>190</height><orientation>vertical</orientation><itemgap>4</itemgap><usecontrolcoords>true</usecontrolcoords><control type="label"><width>300</width><height>40</height><aligny>center</aligny><font>st_ui_24_semibold</font><textcolor>ffffffff</textcolor><label>$VAR[VidInfo_MetaLeft]</label></control><control type="label"><width>300</width><height>34</height><aligny>center</aligny><font>st_small_20</font><textcolor>b8ffffff</textcolor><label>[COLOR 73ffffff]$LOCALIZE[20339][/COLOR]  $INFO[ListItem.Director]</label><visible>!String.IsEmpty(ListItem.Director)</visible></control><control type="label"><width>300</width><height>34</height><aligny>center</aligny><font>st_small_20</font><textcolor>b8ffffff</textcolor><label>[COLOR 73ffffff]$LOCALIZE[20417][/COLOR]  $INFO[ListItem.Writer]</label><visible>!String.IsEmpty(ListItem.Writer)</visible></control><control type="label"><width>300</width><height>34</height><aligny>center</aligny><font>st_small_20</font><textcolor>b8ffffff</textcolor><label>[COLOR 73ffffff]$LOCALIZE[572][/COLOR]  $INFO[ListItem.Studio]</label><visible>!String.IsEmpty(ListItem.Studio)</visible></control></control><control type="image"><left>120</left><top>792</top><width>300</width><height>66</height><aspectratio align="left" aligny="center">keep</aspectratio><texture background="true">resource://resource.images.studios.white/$INFO[Window(Home).Property(aeon.studio)].png</texture><visible>!Skin.HasSetting(aeon.nostudio) + !String.IsEmpty(Window(Home).Property(aeon.studio)) + String.IsEqual(Window(Home).Property(aeon.studio.of),ListItem.Studio)</visible></control><control type="image"><left>480</left><top>120</top><width>760</width><height>130</height><aspectratio align="left" aligny="center">keep</aspectratio><fadetime>200</fadetime><texture background="true">$INFO[ListItem.Art(clearlogo)]</texture><visible>!String.IsEmpty(ListItem.Art(clearlogo))</visible></control><control type="label"><left>480</left><top>130</top><width>1340</width><height>120</height><aligny>bottom</aligny><wrapmultiline>true</wrapmultiline><font>st_display_52</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$VAR[VidInfo_Title][/UPPERCASE]</label><visible>String.IsEmpty(ListItem.Art(clearlogo))</visible></control><control type="label"><left>480</left><top>258</top><width>1340</width><height>34</height><aligny>center</aligny><font>st_small_20_bold</font><textcolor>fg_mark</textcolor><label>[UPPERCASE]$INFO[ListItem.Tagline][/UPPERCASE]</label></control><control type="grouplist"><left>480</left><top>298</top><width>1340</width><height>40</height><orientation>horizontal</orientation><itemgap>14</itemgap><usecontrolcoords>true</usecontrolcoords><include content="Aeon_RatingIcons"><param name="place" value="info"/><param name="h" value="40"/><param name="font" value="st_ui_24_semibold"/><param name="ink" value="ffffffff"/></include><control type="label"><width>auto</width><height>40</height><aligny>center</aligny><font>st_ui_24</font><textcolor>59ffffff</textcolor><label>·</label><visible>$EXP[VidView_HasRating] + $EXP[Aeon_Rate_info] + !String.IsEmpty(ListItem.Genre)</visible></control><control type="label"><width max="700">auto</width><height>40</height><aligny>center</aligny><font>st_ui_24</font><textcolor>e6ffffff</textcolor><label>$INFO[ListItem.Genre]</label></control><control type="label"><width>auto</width><height>40</height><aligny>center</aligny><font>st_ui_24</font><textcolor>59ffffff</textcolor><label>·</label><visible>!String.IsEmpty(ListItem.Genre) + !String.IsEmpty(ListItem.Duration)</visible></control><control type="label"><width max="500">auto</width><height>40</height><aligny>center</aligny><font>st_ui_24</font><textcolor>e6ffffff</textcolor><label>$VAR[VidInfo_EndLine]</label></control></control><control type="grouplist">
+							<left>480</left><top>352</top><width>1340</width><height>34</height><orientation>horizontal</orientation><itemgap>8</itemgap><usecontrolcoords>true</usecontrolcoords><!-- 0.56.20 mediainfo_skin2 / 0.56.26 chips_05626: room for the sidecar chips -->
+							<visible>!String.IsEmpty(ListItem.VideoResolution) | !String.IsEmpty(ListItem.AudioCodec)</visible>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVRes]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.res) + !String.IsEmpty(ListItem.VideoResolution)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVAsp]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.res) + !String.IsEmpty(ListItem.VideoResolution)] + !Skin.HasSetting(aeon.hide.aspect)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVRes]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>!$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.res) + !String.IsEmpty(ListItem.VideoResolution)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVAsp]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.res) + !String.IsEmpty(ListItem.VideoResolution)] + !Skin.HasSetting(aeon.hide.aspect)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVHdr]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.hdr) + !String.IsEmpty(ListItem.VideoResolution)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$INFO[Window(Home).Property(aeon.dvp)]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.hdr) + !String.IsEmpty(ListItem.VideoResolution) + !String.IsEmpty(Window(Home).Property(aeon.dvp)) + String.IsEqual(Window(Home).Property(aeon.dvp.path),ListItem.FileNameAndPath)] + !Skin.HasSetting(aeon.hide.dvp)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVHdr]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>!$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.hdr) + !String.IsEmpty(ListItem.VideoResolution)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$INFO[Window(Home).Property(aeon.dvp)]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.hdr) + !String.IsEmpty(ListItem.VideoResolution) + !String.IsEmpty(Window(Home).Property(aeon.dvp)) + String.IsEqual(Window(Home).Property(aeon.dvp.path),ListItem.FileNameAndPath)] + !Skin.HasSetting(aeon.hide.dvp)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVAud]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.audio) + !String.IsEmpty(ListItem.AudioCodec)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVAud]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>!$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.audio) + !String.IsEmpty(ListItem.AudioCodec)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVCh]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.audio) + !String.IsEmpty(ListItem.AudioChannels)] + !Skin.HasSetting(aeon.hide.channels)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>$VAR[Aeon_LVCh]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + !Skin.HasSetting(aeon.hide.audio) + !String.IsEmpty(ListItem.AudioChannels)] + !Skin.HasSetting(aeon.hide.channels)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<!-- 0.56.20 mediainfo_skin: the sidecar's source and edition -->
+							<!-- 0.56.26 chips_05626: the sidecar's video source, before the source format -->
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.vsource)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.vsource)) + Skin.HasSetting(aeon.chip.vsource)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.vsource)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.vsource)) + Skin.HasSetting(aeon.chip.vsource)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.format)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.format))] + !Skin.HasSetting(aeon.hide.source)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.format)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.format))] + !Skin.HasSetting(aeon.hide.source)</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<!-- 0.56.26 chips_05626: the sidecar's video codec and edition (Version) -->
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.vcodec)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.vcodec)) + Skin.HasSetting(aeon.chip.vcodec)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.vcodec)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.vcodec)) + Skin.HasSetting(aeon.chip.vcodec)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.edition)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.edition)) + Skin.HasSetting(aeon.chip.edition)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.edition)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.edition)) + Skin.HasSetting(aeon.chip.edition)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<!-- 0.56.22 chips: the sidecar chips you pick (Skin settings > Details > Media info chips), off by default -->
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.container)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.container)) + Skin.HasSetting(aeon.chip.container)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.container)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.container)) + Skin.HasSetting(aeon.chip.container)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.bitrate)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.bitrate)) + Skin.HasSetting(aeon.chip.bitrate)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.bitrate)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.bitrate)) + Skin.HasSetting(aeon.chip.bitrate)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.size)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.size)) + Skin.HasSetting(aeon.chip.size)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.size)][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.size)) + Skin.HasSetting(aeon.chip.size)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.subs.count)] $LOCALIZE[287][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.subs.count)) + Skin.HasSetting(aeon.chip.subs)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.subs.count)] $LOCALIZE[287][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.subs.count)) + Skin.HasSetting(aeon.chip.subs)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.chapters)] $ADDON[skin.aeon.fuse 32661][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.chapters)) + Skin.HasSetting(aeon.chip.chapters)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$INFO[Window(Home).Property(aeon.mi.chapters)] $ADDON[skin.aeon.fuse 32661][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.chapters)) + Skin.HasSetting(aeon.chip.chapters)]</visible><visible>$EXP[Aeon_Chip_info]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$ADDON[skin.aeon.fuse 32662][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.commentary)) + Skin.HasSetting(aeon.chip.commentary)]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]$ADDON[skin.aeon.fuse 32662][/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.commentary)) + Skin.HasSetting(aeon.chip.commentary)]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]3D[/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><texturefocus border="8" colordiffuse="55ffffff">fg/r8.png</texturefocus><include>FG_ChipTex</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.3d)) + Skin.HasSetting(aeon.chip.3d)]</visible></control>
+							<control type="button"><width min="46" max="520">auto</width><height>34</height><label>[UPPERCASE]3D[/UPPERCASE]</label><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><focusedcolor>ffffffff</focusedcolor><align>center</align><aligny>center</aligny><textoffsetx>12</textoffsetx><include>Aeon_T_7ef4bb21</include><include>Aeon_T_e9b54c61</include><onup>9000</onup><ondown>9000</ondown><onleft>9000</onleft><onright>9000</onright><visible>[!$EXP[Aeon_VGlass] + Skin.HasSetting(aeon.mi.sidecar) + String.IsEqual(Window(Home).Property(aeon.mi.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.mi.3d)) + Skin.HasSetting(aeon.chip.3d)]</visible></control>
+						</control><control type="image"><left>464</left><top>400</top><width>892</width><height>136</height><texture border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texture><visible>Control.HasFocus(9001)</visible></control><control type="textbox"><left>480</left><top>408</top><width>860</width><height>120</height><font>st_body_24</font><textcolor>e0ffffff</textcolor><label>$VAR[VidInfo_Story]</label><autoscroll delay="8000" time="3000" repeat="10000">!Control.HasFocus(9001)</autoscroll></control><control type="button" id="9001"><left>464</left><top>400</top><width>892</width><height>136</height><label></label><texturefocus /><texturenofocus /><onup>9000</onup><ondown condition="Integer.IsGreater(Container(50).NumItems,0)">50</ondown><onleft>noop</onleft><onright>noop</onright><onclick>SetFocus(61)</onclick><visible>!String.IsEmpty(ListItem.Plot)</visible></control><control type="progress"><left>480</left><top>556</top><width>860</width><height>8</height><texturebg border="2,0,2,0" colordiffuse="2effffff">fg/pillh.png</texturebg><midtexture subpixel="true" border="2,0,2,0" colordiffuse="fg_mark">fg/pillh.png</midtexture><info>ListItem.PercentPlayed</info><visible>ListItem.IsResumable</visible></control><control type="label"><left>480</left><top>572</top><width>400</width><height>30</height><aligny>center</aligny><font>st_small_20</font><textcolor>a6ffffff</textcolor><label>$INFO[ListItem.PercentPlayed,,%]</label><visible>ListItem.IsResumable</visible></control><control type="label"><left>880</left><top>572</top><width>460</width><height>30</height><align>right</align><aligny>center</aligny><font>st_small_20</font><textcolor>a6ffffff</textcolor><label>$VAR[VidInfo_EndLine]</label><visible>ListItem.IsResumable</visible></control><control type="image"><left>480</left><top>556</top><width>860</width><height>8</height><texture border="2,0,2,0" colordiffuse="2effffff">fg/pillh.png</texture><visible>!ListItem.IsResumable + String.IsEqual(Window(Home).Property(aeon.intm.path),Window(Home).Property(aeon.vi.path)) + !String.IsEmpty(Window(Home).Property(aeon.intm.ranges))</visible></control><control type="ranges"><left>480</left><top>550</top><width>860</width><height>20</height><texturebg></texturebg><lefttexture /><righttexture /><midtexture colordiffuse="ffffffff">fg/fgs_offmark.png</midtexture><info>Window(Home).Property(aeon.intm.ranges)</info><visible>String.IsEqual(Window(Home).Property(aeon.intm.path),Window(Home).Property(aeon.vi.path)) + !String.IsEmpty(Window(Home).Property(aeon.intm.ranges))</visible></control><control type="label"><left>480</left><top>572</top><width>860</width><height>30</height><align>center</align><aligny>center</aligny><font>st_small_20</font><textcolor>a6ffffff</textcolor><label>$ADDON[skin.aeon.fuse 32799] $INFO[Window(Home).Property(aeon.intm.time)]</label><visible>String.IsEqual(Window(Home).Property(aeon.intm.path),Window(Home).Property(aeon.vi.path)) + !String.IsEmpty(Window(Home).Property(aeon.intm.ranges))</visible></control><control type="image"><left>480</left><top>660</top><width>1340</width><height>1</height><texture colordiffuse="24ffffff">common/white.png</texture></control><control type="image"><left>480</left><top>730</top><width>1340</width><height>1</height><texture colordiffuse="24ffffff">common/white.png</texture></control><control type="image"><left>480</left><top>660</top><width>1</width><height>71</height><texture colordiffuse="24ffffff">common/white.png</texture></control><control type="grouplist" id="9000"><left>481</left><top>661</top><width>1339</width><height>70</height><orientation>horizontal</orientation><itemgap>0</itemgap><usecontrolcoords>true</usecontrolcoords><onup>noop</onup><onleft>noop</onleft><onright>noop</onright><ondown condition="Control.IsVisible(9001)">9001</ondown><ondown condition="!Control.IsVisible(9001) + Integer.IsGreater(Container(50).NumItems,0)">50</ondown><visible allowhiddenfocus="true">!ControlGroup(9100).HasFocus()</visible><control type="group"><width>220</width><height>70</height><visible>$EXP[VidInfo_ShowResume]</visible><control type="image"><left>-40</left><top>-34</top><width>300</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>Control.HasFocus(9) + $EXP[FGS_ShadowOn]</visible></control><control type="button" id="9"><left>0</left><top>0</top><width>220</width><height>70</height><font>uc_st_ui_22_bold</font><textcolor>ccffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>44ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>20</textoffsetx><label>$LOCALIZE[31618]</label><texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus><texturenofocus /><onup>noop</onup><ondown condition="Control.IsVisible(9001)">9001</ondown><ondown condition="!Control.IsVisible(9001) + Integer.IsGreater(Container(50).NumItems,0)">50</ondown><include>FGS_RowAnim</include></control><control type="image"><left>219</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control><control type="group"><width>180</width><height>70</height><visible>$EXP[VidInfo_ShowPlay]</visible><control type="image"><left>-40</left><top>-34</top><width>260</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>Control.HasFocus(8) + $EXP[FGS_ShadowOn]</visible></control><control type="button" id="8"><left>0</left><top>0</top><width>180</width><height>70</height><font>uc_st_ui_22_bold</font><textcolor>ccffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>44ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>20</textoffsetx><label>$LOCALIZE[31278]</label><texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus><texturenofocus /><onup>noop</onup><ondown condition="Control.IsVisible(9001)">9001</ondown><ondown condition="!Control.IsVisible(9001) + Integer.IsGreater(Container(50).NumItems,0)">50</ondown><include>FGS_RowAnim</include></control><control type="image"><left>179</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control><control type="group"><width>240</width><height>70</height><visible>$EXP[VidInfo_ShowResume]</visible><control type="image"><left>-40</left><top>-34</top><width>320</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>Control.HasFocus(9013) + $EXP[FGS_ShadowOn]</visible></control><control type="button" id="9013"><left>0</left><top>0</top><width>240</width><height>70</height><font>uc_st_ui_22_bold</font><textcolor>ccffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>44ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>20</textoffsetx><label>$LOCALIZE[31619]</label><texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus><texturenofocus /><onup>noop</onup><ondown condition="Control.IsVisible(9001)">9001</ondown><ondown condition="!Control.IsVisible(9001) + Integer.IsGreater(Container(50).NumItems,0)">50</ondown><onclick>SendClick(8)</onclick><include>FGS_RowAnim</include></control><control type="image"><left>239</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control><control type="group"><width>200</width><height>70</height><visible>$EXP[VidView_IsFolderType]</visible><control type="image"><left>-40</left><top>-34</top><width>280</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>Control.HasFocus(9012) + $EXP[FGS_ShadowOn]</visible></control><control type="button" id="9012"><left>0</left><top>0</top><width>200</width><height>70</height><font>uc_st_ui_22_bold</font><textcolor>ccffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>44ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>20</textoffsetx><label>$LOCALIZE[31620]</label><texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus><texturenofocus /><onup>noop</onup><ondown condition="Control.IsVisible(9001)">9001</ondown><ondown condition="!Control.IsVisible(9001) + Integer.IsGreater(Container(50).NumItems,0)">50</ondown><onclick>SendClick(8)</onclick><include>FGS_RowAnim</include></control><control type="image"><left>199</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control><control type="group"><width>200</width><height>70</height><visible>$EXP[VidInfo_ShowTrailer]</visible><control type="image"><left>-40</left><top>-34</top><width>280</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>Control.HasFocus(9016) + $EXP[FGS_ShadowOn]</visible></control><control type="button" id="9016"><left>0</left><top>0</top><width>200</width><height>70</height><font>uc_st_ui_22_bold</font><textcolor>ccffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>44ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>20</textoffsetx><label>$LOCALIZE[31621]</label><texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus><texturenofocus /><onup>noop</onup><ondown condition="Control.IsVisible(9001)">9001</ondown><ondown condition="!Control.IsVisible(9001) + Integer.IsGreater(Container(50).NumItems,0)">50</ondown><onclick>RunScript(script.aeon.helper,trailer,play,$ESCINFO[Window(Home).Property(aeon.trailer)])</onclick><include>FGS_RowAnim</include></control><control type="image"><left>199</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control><control type="group"><width>230</width><height>70</height><visible>String.IsEqual(ListItem.DBType,movie)</visible><control type="image"><left>-40</left><top>-34</top><width>310</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>Control.HasFocus(14) + $EXP[FGS_ShadowOn]</visible></control><control type="button" id="14"><left>0</left><top>0</top><width>230</width><height>70</height><font>uc_st_ui_22_bold</font><textcolor>ccffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>44ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>20</textoffsetx><label>$LOCALIZE[31624]</label><texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus><texturenofocus /><onup>noop</onup><ondown condition="Control.IsVisible(9001)">9001</ondown><ondown condition="!Control.IsVisible(9001) + Integer.IsGreater(Container(50).NumItems,0)">50</ondown><include>FGS_RowAnim</include></control><control type="image"><left>229</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control><control type="group"><width>210</width><height>70</height><visible>String.IsEqual(ListItem.DBType,movie)</visible><control type="image"><left>-40</left><top>-34</top><width>290</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>Control.HasFocus(15) + $EXP[FGS_ShadowOn]</visible></control><control type="button" id="15"><left>0</left><top>0</top><width>210</width><height>70</height><font>uc_st_ui_22_bold</font><textcolor>ccffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>44ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>20</textoffsetx><label>$LOCALIZE[31625]</label><texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus><texturenofocus /><onup>noop</onup><ondown condition="Control.IsVisible(9001)">9001</ondown><ondown condition="!Control.IsVisible(9001) + Integer.IsGreater(Container(50).NumItems,0)">50</ondown><include>FGS_RowAnim</include></control><control type="image"><left>209</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control><control type="group"><width>160</width><height>70</height><visible>true</visible><control type="image"><left>-40</left><top>-34</top><width>240</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>Control.HasFocus(9010) + $EXP[FGS_ShadowOn]</visible></control><control type="button" id="9010"><left>0</left><top>0</top><width>160</width><height>70</height><font>uc_st_ui_22_bold</font><textcolor>ccffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>44ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>20</textoffsetx><label>$LOCALIZE[31206]</label><texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus><texturenofocus /><onup>noop</onup><ondown condition="Control.IsVisible(9001)">9001</ondown><ondown condition="!Control.IsVisible(9001) + Integer.IsGreater(Container(50).NumItems,0)">50</ondown><onclick>SetFocus(9100)</onclick><include>FGS_RowAnim</include></control><control type="image"><left>159</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control></control><control type="grouplist" id="9100"><left>481</left><top>661</top><width>1339</width><height>70</height><orientation>horizontal</orientation><itemgap>0</itemgap><usecontrolcoords>true</usecontrolcoords><onup>9010</onup><ondown>9010</ondown><onleft>noop</onleft><onright>noop</onright><onback>9010</onback><visible allowhiddenfocus="true">ControlGroup(9100).HasFocus()</visible><control type="group"><width>260</width><height>70</height><visible>!String.IsEmpty(ListItem.SetID)</visible><control type="image"><left>-40</left><top>-34</top><width>340</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>Control.HasFocus(443) + $EXP[FGS_ShadowOn]</visible></control><control type="button" id="443"><left>0</left><top>0</top><width>260</width><height>70</height><font>uc_st_ui_22_bold</font><textcolor>ccffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>44ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>20</textoffsetx><label>$LOCALIZE[31622]</label><texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus><texturenofocus /><onup>9010</onup><ondown>9010</ondown><onclick>Dialog.Close(all,true)</onclick><onclick>$VAR[VidInfo_CollectionAction]</onclick><include>FGS_RowAnim</include></control><control type="image"><left>259</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control><control type="group"><width>260</width><height>70</height><visible>!String.IsEmpty(ListItem.Director)</visible><control type="image"><left>-40</left><top>-34</top><width>340</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>Control.HasFocus(13) + $EXP[FGS_ShadowOn]</visible></control><control type="button" id="13"><left>0</left><top>0</top><width>260</width><height>70</height><font>uc_st_ui_22_bold</font><textcolor>ccffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>44ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>20</textoffsetx><label>$LOCALIZE[31623]</label><texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus><texturenofocus /><onup>9010</onup><ondown>9010</ondown><include>FGS_RowAnim</include></control><control type="image"><left>259</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control><control type="group"><width>230</width><height>70</height><visible>Control.IsEnabled(7)</visible><control type="image"><left>-40</left><top>-34</top><width>310</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>Control.HasFocus(7) + $EXP[FGS_ShadowOn]</visible></control><control type="button" id="7"><left>0</left><top>0</top><width>230</width><height>70</height><font>uc_st_ui_22_bold</font><textcolor>ccffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>44ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>20</textoffsetx><label>$LOCALIZE[38018]$INFO[ListItem.UserRating,: ,]</label><texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus><texturenofocus /><onup>9010</onup><ondown>9010</ondown><include>FGS_RowAnim</include></control><control type="image"><left>229</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control><control type="group"><width>230</width><height>70</height><visible>Control.IsEnabled(10)</visible><control type="image"><left>-40</left><top>-34</top><width>310</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>Control.HasFocus(10) + $EXP[FGS_ShadowOn]</visible></control><control type="button" id="10"><left>0</left><top>0</top><width>230</width><height>70</height><font>uc_st_ui_22_bold</font><textcolor>ccffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>44ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>20</textoffsetx><label>$LOCALIZE[31626]</label><texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus><texturenofocus /><onup>9010</onup><ondown>9010</ondown><include>FGS_RowAnim</include></control><control type="image"><left>229</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control><control type="group"><width>230</width><height>70</height><visible>Control.IsEnabled(12)</visible><control type="image"><left>-40</left><top>-34</top><width>310</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>Control.HasFocus(12) + $EXP[FGS_ShadowOn]</visible></control><control type="button" id="12"><left>0</left><top>0</top><width>230</width><height>70</height><font>uc_st_ui_22_bold</font><textcolor>ccffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>44ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>20</textoffsetx><label>$LOCALIZE[31627]</label><texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus><texturenofocus /><onup>9010</onup><ondown>9010</ondown><include>FGS_RowAnim</include></control><control type="image"><left>229</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control><control type="group"><width>200</width><height>70</height><visible>Control.IsEnabled(6)</visible><control type="image"><left>-40</left><top>-34</top><width>280</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>Control.HasFocus(6) + $EXP[FGS_ShadowOn]</visible></control><control type="button" id="6"><left>0</left><top>0</top><width>200</width><height>70</height><font>uc_st_ui_22_bold</font><textcolor>ccffffff</textcolor><focusedcolor>ffffffff</focusedcolor><disabledcolor>44ffffff</disabledcolor><align>center</align><aligny>center</aligny><textoffsetx>20</textoffsetx><label>$LOCALIZE[31533]</label><texturefocus border="20" colordiffuse="ffffffff">fg/fgs_bar_dk.png</texturefocus><texturenofocus /><onup>9010</onup><ondown>9010</ondown><include>FGS_RowAnim</include></control><control type="image"><left>199</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control></control></control><control type="group"><visible>Integer.IsGreater(Container(50).NumItems,0) + ![Control.HasFocus(9301) | Control.HasFocus(9302) | Control.HasFocus(9303)]</visible><animation effect="fade" time="200">VisibleChange</animation><control type="group"><visible>true</visible><control type="label"><left>120</left><top>870</top><width>1000</width><height>40</height><aligny>center</aligny><font>st_ui_28_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$VAR[VidInfo_CastHeader][/UPPERCASE]</label></control><control type="label"><left>1120</left><top>870</top><width>700</width><height>40</height><align>right</align><aligny>center</aligny><font>st_small_20</font><textcolor>8cffffff</textcolor><label>$VAR[VidInfo_CastCount]</label></control></control></control><control type="list" id="50"><left>120</left><top>926</top><width>1700</width><height>290</height><orientation>horizontal</orientation><preloaditems>1</preloaditems><scrolltime tween="cubic" easing="out">220</scrolltime><onup condition="Control.IsVisible(9001)">9001</onup><onup condition="!Control.IsVisible(9001)">9000</onup><ondown condition="Integer.IsGreater(Container(9301).NumItems,0)">9301</ondown><ondown condition="!Integer.IsGreater(Container(9301).NumItems,0) + Integer.IsGreater(Container(9302).NumItems,0)">9302</ondown><ondown condition="!Integer.IsGreater(Container(9301).NumItems,0) + !Integer.IsGreater(Container(9302).NumItems,0) + Integer.IsGreater(Container(9303).NumItems,0)">9303</ondown><onleft>noop</onleft><onright>noop</onright><visible>![Control.HasFocus(9301) | Control.HasFocus(9302) | Control.HasFocus(9303)]</visible><animation effect="fade" time="200">VisibleChange</animation><itemlayout width="206" height="290"><control type="group"><left>19</left><top>10</top><width>168</width><height>168</height><visible>!String.IsEqual(ListItem.DBType,movie)</visible><control type="image"><left>0</left><top>0</top><width>168</width><height>168</height><texture colordiffuse="1fffffff">aeon/disc_cast.png</texture></control><control type="image"><left>59</left><top>59</top><width>50</width><height>50</height><texture colordiffuse="59ffffff">aeon/icons/info.png</texture><visible>String.IsEmpty(ListItem.Art(thumb))</visible></control><control type="image"><left>0</left><top>-17</top><width>168</width><height>252</height><aspectratio scalediffuse="false">scale</aspectratio><fadetime>160</fadetime><texture background="true" diffuse="aeon/mask_cast.png">$INFO[ListItem.Art(thumb)]</texture></control></control><control type="label"><left>0</left><top>192</top><width>206</width><height>30</height><align>center</align><aligny>center</aligny><font>st_small_20_semibold</font><textcolor>d9ffffff</textcolor><label>$INFO[ListItem.Label]</label><visible>!String.IsEqual(ListItem.DBType,movie)</visible></control><control type="label"><left>0</left><top>222</top><width>206</width><height>28</height><align>center</align><aligny>center</aligny><font>st_small_20</font><textcolor>8cffffff</textcolor><label>$VAR[VidInfo_CastLine2]</label><visible>!String.IsEqual(ListItem.DBType,movie)</visible></control><control type="group"><left>26</left><top>0</top><width>154</width><height>231</height><visible>String.IsEqual(ListItem.DBType,movie)</visible><control type="image"><left>0</left><top>0</top><width>154</width><height>231</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m154x231.png">$VAR[VidInfo_CastArt]</texture></control><control type="image"><left>-3</left><top>-3</top><width>160</width><height>237</height><texture border="19" colordiffuse="ffffffff">fg/ring16.png</texture><visible>false + Control.HasFocus(50)</visible></control></control><control type="label"><left>0</left><top>238</top><width>206</width><height>30</height><align>center</align><aligny>center</aligny><font>st_small_20_semibold</font><textcolor>d9ffffff</textcolor><label>$INFO[ListItem.Label]</label><visible>String.IsEqual(ListItem.DBType,movie)</visible></control></itemlayout><focusedlayout width="206" height="290"><control type="group"><left>19</left><top>10</top><width>168</width><height>168</height><visible>!String.IsEqual(ListItem.DBType,movie)</visible><include>Anim_FocusZoom</include><control type="image"><left>0</left><top>0</top><width>168</width><height>168</height><texture colordiffuse="1fffffff">aeon/disc_cast.png</texture></control><control type="image"><left>59</left><top>59</top><width>50</width><height>50</height><texture colordiffuse="59ffffff">aeon/icons/info.png</texture><visible>String.IsEmpty(ListItem.Art(thumb))</visible></control><control type="image"><left>0</left><top>-17</top><width>168</width><height>252</height><aspectratio scalediffuse="false">scale</aspectratio><fadetime>160</fadetime><texture background="true" diffuse="aeon/mask_cast.png">$INFO[ListItem.Art(thumb)]</texture></control><control type="image"><left>-6</left><top>-6</top><width>180</width><height>180</height><texture colordiffuse="ffffffff">aeon/ring_cast.png</texture><visible>Control.HasFocus(50)</visible></control></control><control type="label"><left>0</left><top>192</top><width>206</width><height>30</height><align>center</align><aligny>center</aligny><font>st_small_20_semibold</font><textcolor>ffffffff</textcolor><label>$INFO[ListItem.Label]</label><visible>!String.IsEqual(ListItem.DBType,movie)</visible></control><control type="label"><left>0</left><top>222</top><width>206</width><height>28</height><align>center</align><aligny>center</aligny><font>st_small_20</font><textcolor>8cffffff</textcolor><label>$VAR[VidInfo_CastLine2]</label><visible>!String.IsEqual(ListItem.DBType,movie)</visible></control><control type="group"><left>26</left><top>0</top><width>154</width><height>231</height><visible>String.IsEqual(ListItem.DBType,movie)</visible><include>Anim_FocusZoom</include><control type="image"><left>0</left><top>0</top><width>154</width><height>231</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m154x231.png">$VAR[VidInfo_CastArt]</texture></control><control type="image"><left>-3</left><top>-3</top><width>160</width><height>237</height><texture border="19" colordiffuse="ffffffff">fg/ring16.png</texture><visible>true + Control.HasFocus(50)</visible></control></control><control type="label"><left>0</left><top>238</top><width>206</width><height>30</height><align>center</align><aligny>center</aligny><font>st_small_20_semibold</font><textcolor>ffffffff</textcolor><label>$INFO[ListItem.Label]</label><visible>String.IsEqual(ListItem.DBType,movie)</visible></control></focusedlayout></control><control type="group"><visible>![Control.HasFocus(9301) | Control.HasFocus(9302) | Control.HasFocus(9303)]</visible><animation effect="fade" time="200">VisibleChange</animation><control type="grouplist"><left>120</left><top>1248</top><width>1700</width><height>56</height><orientation>horizontal</orientation><itemgap>16</itemgap><usecontrolcoords>true</usecontrolcoords><control type="button"><width min="80" max="700">auto</width><height>56</height><font>st_small_20_semibold</font><textcolor>e6ffffff</textcolor><focusedcolor>e6ffffff</focusedcolor><disabledcolor>e6ffffff</disabledcolor><textoffsetx>26</textoffsetx><aligny>center</aligny><enable>false</enable><label>[COLOR 8cffffff]$LOCALIZE[20339][/COLOR]   $INFO[ListItem.Director]</label><texturenofocus border="28,0,28,0" colordiffuse="38ffffff">fg/btn56n.png</texturenofocus><texturefocus border="28,0,28,0" colordiffuse="38ffffff">fg/btn56n.png</texturefocus><visible>!String.IsEmpty(ListItem.Director)</visible></control><control type="button"><width min="80" max="700">auto</width><height>56</height><font>st_small_20_semibold</font><textcolor>e6ffffff</textcolor><focusedcolor>e6ffffff</focusedcolor><disabledcolor>e6ffffff</disabledcolor><textoffsetx>26</textoffsetx><aligny>center</aligny><enable>false</enable><label>[COLOR 8cffffff]$LOCALIZE[20417][/COLOR]   $INFO[ListItem.Writer]</label><texturenofocus border="28,0,28,0" colordiffuse="38ffffff">fg/btn56n.png</texturenofocus><texturefocus border="28,0,28,0" colordiffuse="38ffffff">fg/btn56n.png</texturefocus><visible>!String.IsEmpty(ListItem.Writer)</visible></control><control type="button"><width min="80" max="700">auto</width><height>56</height><font>st_small_20_semibold</font><textcolor>e6ffffff</textcolor><focusedcolor>e6ffffff</focusedcolor><disabledcolor>e6ffffff</disabledcolor><textoffsetx>26</textoffsetx><aligny>center</aligny><enable>false</enable><label>[COLOR 8cffffff]$LOCALIZE[572][/COLOR]   $INFO[ListItem.Studio]</label><texturenofocus border="28,0,28,0" colordiffuse="38ffffff">fg/btn56n.png</texturenofocus><texturefocus border="28,0,28,0" colordiffuse="38ffffff">fg/btn56n.png</texturefocus><visible>!String.IsEmpty(ListItem.Studio)</visible></control></control><control type="image"><left>120</left><top>1344</top><width>1700</width><height>1</height><texture colordiffuse="24ffffff">common/white.png</texture></control><control type="image"><left>120</left><top>1414</top><width>1700</width><height>1</height><texture colordiffuse="24ffffff">common/white.png</texture></control><control type="image"><left>120</left><top>1344</top><width>1</width><height>71</height><texture colordiffuse="24ffffff">common/white.png</texture></control><control type="label"><left>144</left><top>1352</top><width>377</width><height>24</height><aligny>center</aligny><font>st_cap_14</font><textcolor>73ffffff</textcolor><label>[UPPERCASE]$LOCALIZE[291][/UPPERCASE]</label></control><control type="label"><left>144</left><top>1376</top><width>377</width><height>32</height><aligny>center</aligny><font>st_small_20</font><textcolor>e6ffffff</textcolor><label>$VAR[VidInfo_FlagRes]   $VAR[VidInfo_FlagVideo]   $VAR[VidInfo_FlagHDR]</label></control><control type="image"><left>545</left><top>1344</top><width>1</width><height>71</height><texture colordiffuse="24ffffff">common/white.png</texture></control><control type="label"><left>569</left><top>1352</top><width>377</width><height>24</height><aligny>center</aligny><font>st_cap_14</font><textcolor>73ffffff</textcolor><label>[UPPERCASE]$LOCALIZE[292][/UPPERCASE]</label></control><control type="label"><left>569</left><top>1376</top><width>377</width><height>32</height><aligny>center</aligny><font>st_small_20</font><textcolor>e6ffffff</textcolor><label>$VAR[VidInfo_AudioCodec]$VAR[VidInfo_AudioChannels]$INFO[ListItem.AudioLanguage,   ,]</label></control><control type="image"><left>970</left><top>1344</top><width>1</width><height>71</height><texture colordiffuse="24ffffff">common/white.png</texture></control><control type="label"><left>994</left><top>1352</top><width>377</width><height>24</height><aligny>center</aligny><font>st_cap_14</font><textcolor>73ffffff</textcolor><label>[UPPERCASE]$LOCALIZE[287][/UPPERCASE]</label></control><control type="label"><left>994</left><top>1376</top><width>377</width><height>32</height><aligny>center</aligny><font>st_small_20</font><textcolor>e6ffffff</textcolor><label>$INFO[ListItem.SubtitleLanguage]</label></control><control type="image"><left>1395</left><top>1344</top><width>1</width><height>71</height><texture colordiffuse="24ffffff">common/white.png</texture></control><control type="label"><left>1419</left><top>1352</top><width>377</width><height>24</height><aligny>center</aligny><font>st_cap_14</font><textcolor>73ffffff</textcolor><label>[UPPERCASE]$LOCALIZE[180][/UPPERCASE]</label></control><control type="label"><left>1419</left><top>1376</top><width>377</width><height>32</height><aligny>center</aligny><font>st_small_20</font><textcolor>e6ffffff</textcolor><label>$INFO[ListItem.Duration(hh:mm)]$INFO[ListItem.VideoAspect,   ,:1]</label></control><control type="image"><left>1819</left><top>1344</top><width>1</width><height>71</height><texture colordiffuse="24ffffff">common/white.png</texture></control></control><control type="group"><visible>Integer.IsGreater(Container(9301).NumItems,0) + ![Control.HasFocus(9302) | Control.HasFocus(9303)]</visible><control type="label"><left>120</left><top>1524</top><width>1000</width><height>40</height><aligny>center</aligny><font>st_ui_28_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$LOCALIZE[31571][/UPPERCASE]</label></control><control type="label"><left>1120</left><top>1524</top><width>700</width><height>40</height><align>right</align><aligny>center</aligny><font>st_small_20</font><textcolor>8cffffff</textcolor><label>$INFO[Container(9301).NumItems]</label></control></control><control type="list" id="9301"><left>106</left><top>1574</top><width>1728</width><height>420</height><orientation>horizontal</orientation><scrolltime tween="cubic" easing="out">200</scrolltime><onup>50</onup><ondown condition="Integer.IsGreater(Container(9302).NumItems,0)">9302</ondown><ondown condition="!Integer.IsGreater(Container(9302).NumItems,0) + Integer.IsGreater(Container(9303).NumItems,0)">9303</ondown><onleft>noop</onleft><onright>noop</onright><onclick condition="!String.IsEmpty(ListItem.Property(aeon.missing))">noop</onclick><visible>![Control.HasFocus(9302) | Control.HasFocus(9303)]</visible><animation effect="fade" time="200">VisibleChange</animation><itemlayout width="248" height="420"><control type="group"><left>14</left><top>10</top><width>220</width><height>330</height><control type="image"><left>0</left><top>0</top><width>220</width><height>330</height><texture border="16" colordiffuse="14ffffff">fg/r16.png</texture></control><control type="image"><left>0</left><top>0</top><width>220</width><height>330</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m220x330.png">$INFO[ListItem.Art(poster)]</texture></control><control type="image"><left>0</left><top>0</top><width>220</width><height>330</height><texture border="16" colordiffuse="b0000000">fg/r16.png</texture><visible>!String.IsEmpty(ListItem.Property(aeon.missing)) + ![false + Control.HasFocus(9301)]</visible></control><control type="image"><left>178</left><top>10</top><width>32</width><height>32</height><texture colordiffuse="ffffffff">markers/check.png</texture><visible>!String.IsEmpty(ListItem.Property(aeon.owned))</visible></control><control type="image"><left>-3</left><top>-3</top><width>226</width><height>336</height><texture border="19" colordiffuse="ffffffff">fg/ring16.png</texture><visible>false + Control.HasFocus(9301)</visible></control></control><control type="label"><left>14</left><top>352</top><width>220</width><height>30</height><aligny>center</aligny><font>st_small_20_semibold</font><textcolor>e6ffffff</textcolor><label>$INFO[ListItem.Title]</label><visible>!String.IsEmpty(ListItem.Title)</visible></control><control type="label"><left>14</left><top>352</top><width>220</width><height>30</height><aligny>center</aligny><font>st_small_20_semibold</font><textcolor>e6ffffff</textcolor><label>$INFO[ListItem.Label]</label><visible>String.IsEmpty(ListItem.Title)</visible></control><control type="label"><left>14</left><top>380</top><width>220</width><height>28</height><aligny>center</aligny><font>st_small_20</font><textcolor>8cffffff</textcolor><label>$INFO[ListItem.Year]$INFO[ListItem.Property(year)]</label></control></itemlayout><focusedlayout width="248" height="420"><control type="group"><left>14</left><top>10</top><width>220</width><height>330</height><include>Anim_FocusZoom</include><control type="image"><left>0</left><top>0</top><width>220</width><height>330</height><texture border="16" colordiffuse="14ffffff">fg/r16.png</texture></control><control type="image"><left>0</left><top>0</top><width>220</width><height>330</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m220x330.png">$INFO[ListItem.Art(poster)]</texture></control><control type="image"><left>0</left><top>0</top><width>220</width><height>330</height><texture border="16" colordiffuse="b0000000">fg/r16.png</texture><visible>!String.IsEmpty(ListItem.Property(aeon.missing)) + ![true + Control.HasFocus(9301)]</visible></control><control type="image"><left>178</left><top>10</top><width>32</width><height>32</height><texture colordiffuse="ffffffff">markers/check.png</texture><visible>!String.IsEmpty(ListItem.Property(aeon.owned))</visible></control><control type="image"><left>-3</left><top>-3</top><width>226</width><height>336</height><texture border="19" colordiffuse="ffffffff">fg/ring16.png</texture><visible>true + Control.HasFocus(9301)</visible></control></control><control type="label"><left>14</left><top>352</top><width>220</width><height>30</height><aligny>center</aligny><font>st_small_20_semibold</font><textcolor>e6ffffff</textcolor><label>$INFO[ListItem.Title]</label><visible>!String.IsEmpty(ListItem.Title)</visible></control><control type="label"><left>14</left><top>352</top><width>220</width><height>30</height><aligny>center</aligny><font>st_small_20_semibold</font><textcolor>e6ffffff</textcolor><label>$INFO[ListItem.Label]</label><visible>String.IsEmpty(ListItem.Title)</visible></control><control type="label"><left>14</left><top>380</top><width>220</width><height>28</height><aligny>center</aligny><font>st_small_20</font><textcolor>8cffffff</textcolor><label>$INFO[ListItem.Year]$INFO[ListItem.Property(year)]</label></control></focusedlayout><content limit="20">plugin://script.aeon.helper/?info=online&amp;bare=1&amp;list=recommendations&amp;type=$VAR[VidInfo_TMDbType]&amp;year=$VAR[VidInfo_TMDbYear]&amp;query=$VAR[VidInfo_TMDbQuery]</content></control><control type="group"><visible>Integer.IsGreater(Container(9302).NumItems,0) + !Control.HasFocus(9303)</visible><control type="label"><left>120</left><top>2024</top><width>1000</width><height>40</height><aligny>center</aligny><font>st_ui_28_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$LOCALIZE[31572][/UPPERCASE]</label></control><control type="label"><left>1120</left><top>2024</top><width>700</width><height>40</height><align>right</align><aligny>center</aligny><font>st_small_20</font><textcolor>8cffffff</textcolor><label>$INFO[Container(9302).NumItems]</label></control></control><control type="list" id="9302"><left>106</left><top>2074</top><width>1728</width><height>420</height><orientation>horizontal</orientation><scrolltime tween="cubic" easing="out">200</scrolltime><onup condition="Integer.IsGreater(Container(9301).NumItems,0)">9301</onup><onup condition="!Integer.IsGreater(Container(9301).NumItems,0)">50</onup><ondown condition="Integer.IsGreater(Container(9303).NumItems,0)">9303</ondown><ondown condition="!Integer.IsGreater(Container(9303).NumItems,0) + Integer.IsGreater(Container(9303).NumItems,0)">9303</ondown><onleft>noop</onleft><onright>noop</onright><onclick condition="!String.IsEmpty(ListItem.Property(aeon.missing))">noop</onclick><visible>!Control.HasFocus(9303)</visible><animation effect="fade" time="200">VisibleChange</animation><itemlayout width="248" height="420"><control type="group"><left>14</left><top>10</top><width>220</width><height>330</height><control type="image"><left>0</left><top>0</top><width>220</width><height>330</height><texture border="16" colordiffuse="14ffffff">fg/r16.png</texture></control><control type="image"><left>0</left><top>0</top><width>220</width><height>330</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m220x330.png">$INFO[ListItem.Art(poster)]</texture></control><control type="image"><left>0</left><top>0</top><width>220</width><height>330</height><texture border="16" colordiffuse="b0000000">fg/r16.png</texture><visible>!String.IsEmpty(ListItem.Property(aeon.missing)) + ![false + Control.HasFocus(9302)]</visible></control><control type="image"><left>178</left><top>10</top><width>32</width><height>32</height><texture colordiffuse="ffffffff">markers/check.png</texture><visible>!String.IsEmpty(ListItem.Property(aeon.owned))</visible></control><control type="image"><left>-3</left><top>-3</top><width>226</width><height>336</height><texture border="19" colordiffuse="ffffffff">fg/ring16.png</texture><visible>false + Control.HasFocus(9302)</visible></control></control><control type="label"><left>14</left><top>352</top><width>220</width><height>30</height><aligny>center</aligny><font>st_small_20_semibold</font><textcolor>e6ffffff</textcolor><label>$INFO[ListItem.Title]</label><visible>!String.IsEmpty(ListItem.Title)</visible></control><control type="label"><left>14</left><top>352</top><width>220</width><height>30</height><aligny>center</aligny><font>st_small_20_semibold</font><textcolor>e6ffffff</textcolor><label>$INFO[ListItem.Label]</label><visible>String.IsEmpty(ListItem.Title)</visible></control><control type="label"><left>14</left><top>380</top><width>220</width><height>28</height><aligny>center</aligny><font>st_small_20</font><textcolor>8cffffff</textcolor><label>$INFO[ListItem.Year]$INFO[ListItem.Property(year)]</label></control></itemlayout><focusedlayout width="248" height="420"><control type="group"><left>14</left><top>10</top><width>220</width><height>330</height><include>Anim_FocusZoom</include><control type="image"><left>0</left><top>0</top><width>220</width><height>330</height><texture border="16" colordiffuse="14ffffff">fg/r16.png</texture></control><control type="image"><left>0</left><top>0</top><width>220</width><height>330</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m220x330.png">$INFO[ListItem.Art(poster)]</texture></control><control type="image"><left>0</left><top>0</top><width>220</width><height>330</height><texture border="16" colordiffuse="b0000000">fg/r16.png</texture><visible>!String.IsEmpty(ListItem.Property(aeon.missing)) + ![true + Control.HasFocus(9302)]</visible></control><control type="image"><left>178</left><top>10</top><width>32</width><height>32</height><texture colordiffuse="ffffffff">markers/check.png</texture><visible>!String.IsEmpty(ListItem.Property(aeon.owned))</visible></control><control type="image"><left>-3</left><top>-3</top><width>226</width><height>336</height><texture border="19" colordiffuse="ffffffff">fg/ring16.png</texture><visible>true + Control.HasFocus(9302)</visible></control></control><control type="label"><left>14</left><top>352</top><width>220</width><height>30</height><aligny>center</aligny><font>st_small_20_semibold</font><textcolor>e6ffffff</textcolor><label>$INFO[ListItem.Title]</label><visible>!String.IsEmpty(ListItem.Title)</visible></control><control type="label"><left>14</left><top>352</top><width>220</width><height>30</height><aligny>center</aligny><font>st_small_20_semibold</font><textcolor>e6ffffff</textcolor><label>$INFO[ListItem.Label]</label><visible>String.IsEmpty(ListItem.Title)</visible></control><control type="label"><left>14</left><top>380</top><width>220</width><height>28</height><aligny>center</aligny><font>st_small_20</font><textcolor>8cffffff</textcolor><label>$INFO[ListItem.Year]$INFO[ListItem.Property(year)]</label></control></focusedlayout><content limit="20">plugin://script.aeon.helper/?info=online&amp;bare=1&amp;list=similar&amp;type=$VAR[VidInfo_TMDbType]&amp;year=$VAR[VidInfo_TMDbYear]&amp;query=$VAR[VidInfo_TMDbQuery]</content></control><control type="group"><visible>Integer.IsGreater(Container(9303).NumItems,0)</visible><control type="label"><left>120</left><top>2524</top><width>1000</width><height>40</height><aligny>center</aligny><font>st_ui_28_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$LOCALIZE[31886][/UPPERCASE]</label></control><control type="label"><left>1120</left><top>2524</top><width>700</width><height>40</height><align>right</align><aligny>center</aligny><font>st_small_20</font><textcolor>8cffffff</textcolor><label>$INFO[Container(9303).NumItems]</label></control></control><control type="list" id="9303">
+				<left>102</left>
+				<top>2574</top>
+				<width>1736</width>
+				<height>300</height>
+				<orientation>horizontal</orientation>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<onup condition="Integer.IsGreater(Container(9302).NumItems,0)">9302</onup>
+				<onup condition="!Integer.IsGreater(Container(9302).NumItems,0) + Integer.IsGreater(Container(9301).NumItems,0)">9301</onup>
+				<onup condition="!Integer.IsGreater(Container(9302).NumItems,0) + !Integer.IsGreater(Container(9301).NumItems,0)">50</onup>
+				<ondown>noop</ondown>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+				<onclick>RunScript(script.aeon.helper,review)</onclick>
+				<itemlayout width="540" height="300"><control type="image"><left>18</left><top>4</top><width>504</width><height>280</height><texture colordiffuse="x_raised">common/white.png</texture><visible>!$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>18</left><top>4</top><width>504</width><height>280</height><texture border="20" colordiffuse="14ffffff">fg/r20.png</texture><visible>$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>18</left><top>4</top><width>504</width><height>280</height><texture border="20" colordiffuse="$VAR[FG_EdgeM]">fg/e20.png</texture><visible>$EXP[Aeon_RoundInfo]</visible></control><control type="label"><left>42</left><top>18</top><width>456</width><height>32</height><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label></control><control type="textbox"><left>42</left><top>58</top><width>456</width><height>194</height><font>lb_small_20</font><textcolor>ccffffff</textcolor><label>$INFO[ListItem.Plot]</label></control></itemlayout>
+				<focusedlayout width="540" height="300"><control type="image"><left>18</left><top>4</top><width>504</width><height>280</height><texture colordiffuse="x_raised">common/white.png</texture><visible>!$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>18</left><top>4</top><width>504</width><height>280</height><texture border="20" colordiffuse="14ffffff">fg/r20.png</texture><visible>$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>18</left><top>4</top><width>504</width><height>280</height><texture border="20" colordiffuse="$VAR[FG_EdgeM]">fg/e20.png</texture><visible>$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>14</left><top>0</top><width>512</width><height>288</height><texture border="8" colordiffuse="aeon_white">common/aeon_outline_sq.png</texture><visible>Control.HasFocus(9303) + !$EXP[Aeon_RoundInfo]</visible></control><control type="image"><left>15</left><top>1</top><width>510</width><height>286</height><texture border="23" colordiffuse="ffffffff">fg/ring20.png</texture><visible>Control.HasFocus(9303) + $EXP[Aeon_RoundInfo]</visible></control><control type="label"><left>42</left><top>18</top><width>456</width><height>32</height><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>ffffffff</textcolor><label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label></control><control type="textbox"><left>42</left><top>58</top><width>456</width><height>194</height><font>lb_small_20</font><textcolor>ccffffff</textcolor><label>$INFO[ListItem.Plot]</label></control></focusedlayout>
+				<content limit="20">plugin://plugin.video.themoviedb.helper/?info=reviews&amp;tmdb_type=$VAR[VidInfo_TMDbType]&amp;query=$VAR[VidInfo_TMDbQuery]&amp;year=$VAR[VidInfo_TMDbYear]</content>
+			</control></control><include>VidInfo_FullPlot</include>
+</include>
+	<!-- 0.56.53 fgs video info: end -->
+</includes>

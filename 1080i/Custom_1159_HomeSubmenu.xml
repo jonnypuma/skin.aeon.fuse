@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Submenu editor (dialog 1159, same layout as 1158), opened from Skin settings > Home lists. Movies / TV shows / Music each own a list of
+	"Up" pages (the spotlight window). The data lives in the skinvariables node "aeonhome"
+	(addon_data/skin.aeon.fuse/skinvariables-shortcut-aeonhome.json); all editing is done by script.skinvariables
+	(add, delete, move, rename, choose a path, per-list sort / reverse / limit / hold time / autoscroll).
+-->
+<window type="dialog" id="1159">
+	<defaultcontrol always="true">9611</defaultcontrol>
+	<onload>SetFocus(9611)</onload>
+	<animation type="WindowOpen" tween="cubic" easing="out"><effect type="fade" start="0" end="100" time="200"/></animation>
+	<animation type="WindowClose" tween="cubic" easing="in"><effect type="fade" start="100" end="0" time="200"/></animation>
+	<controls>
+		<include condition="$EXP[Aeon_FGlass] + $EXP[FGS]">Ed1159_FGS</include>
+		<include condition="$EXP[Aeon_FGlass] + !$EXP[FGS]">Ed1159_FG</include>
+		<include condition="!$EXP[Aeon_FGlass]">Ed1159_Classic</include>
+	</controls>
+</window>

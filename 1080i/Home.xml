@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Home "For now" (mockups AeonEvening / AeonNight). Includes_Home.xml has the ids and focus map;
+	Includes_Aeon.xml decides the greeting, countdown, hero and rows from the clock, bedtime and weather.
+	Kodi hard-codes no control ids on Home. Home is KEEP_IN_MEMORY: <include condition> is evaluated
+	at skin load only, so everything here switches with <visible> / $VAR instead.
+-->
+<window>
+	<defaultcontrol always="true">9000</defaultcontrol>  <!-- 0.9.2: Home always opens on the main menu (For now), so Back from anywhere ends there -->
+	<menucontrol>9000</menucontrol>
+	<backgroundcolor>ff000000</backgroundcolor>
+	<!-- TMDb Helper borrowed colour (optional): colour service on, normalised per mood -->
+	<!-- 0.18: the Planner (upcoming episodes) joins the Home menu once, in the first position that is off -->
+	<!-- Skippy: tell it whether the skin draws the skip button (Skin settings > Behaviour) -->
+	<!-- first run: the setup wizard (dialog 1173) until it is finished or skipped -->
+	<!-- 0.56.3: Flat is gone (_src/fg_noflat.py): a Flat chosen before is the pill now -->
+	<onload condition="Skin.HasSetting(aeon.osd.disc) + String.IsEmpty(Skin.String(aeon.osd.discart))">Skin.SetString(aeon.osd.discart,both)</onload>
+	<onload condition="Skin.HasSetting(aeon.osd.disc)">Skin.Reset(aeon.osd.disc)</onload>
+	<onload condition="String.IsEqual(Skin.String(aeon.fgfocus),flat)">Skin.Reset(aeon.fgfocus)</onload>
+	<onload condition="!Skin.HasSetting(aeon.wizard.done) + !Player.HasMedia + !Window.IsVisible(1173)">RunScript(script.aeon.helper,wizard,open)</onload>
+	<onload condition="Skin.HasSetting(aeon.skippy.button)">SetProperty(Skippy.SkinSkipButton,true,home)</onload>
+	<onload condition="[Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">SetProperty(Skippy.SkinNextEpisode,true,home)</onload>
+	<onload condition="![Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">ClearProperty(Skippy.SkinNextEpisode,home)</onload>
+	<onload condition="[Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">SetProperty(Skippy.SkinNextEpisodeProgress.Window,11174,home)</onload>
+	<onload condition="[Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">SetProperty(Skippy.SkinNextEpisodeProgress.Control,30,home)</onload>
+	<onload condition="[Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">SetProperty(Skippy.SkinNextEpisodeProgress.Frames,421,home)</onload>
+	<onload condition="![Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">ClearProperty(Skippy.SkinNextEpisodeProgress.Window,home)</onload>
+	<onload condition="![Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">ClearProperty(Skippy.SkinNextEpisodeProgress.Control,home)</onload>
+	<onload condition="![Skin.HasSetting(aeon.skippy.button) + Skin.HasSetting(aeon.fglass)]">ClearProperty(Skippy.SkinNextEpisodeProgress.Frames,home)</onload>
+	<onload condition="!Skin.HasSetting(aeon.skippy.button)">ClearProperty(Skippy.SkinSkipButton,home)</onload>
+	<onload condition="Skin.HasSetting(aeon.skippy.button)">SetProperty(Skippy.SkinSkipProgress.Window,11167,home)</onload>
+	<onload condition="Skin.HasSetting(aeon.skippy.button)">SetProperty(Skippy.SkinSkipProgress.Control,31,home)</onload>
+	<onload condition="Skin.HasSetting(aeon.skippy.button)">SetProperty(Skippy.SkinSkipProgress.Frames,421,home)</onload>
+	<onload condition="!Skin.HasSetting(aeon.skippy.button)">ClearProperty(Skippy.SkinSkipProgress.Window,home)</onload>
+	<onload condition="!Skin.HasSetting(aeon.skippy.button)">ClearProperty(Skippy.SkinSkipProgress.Control,home)</onload>
+	<onload condition="!Skin.HasSetting(aeon.skippy.button)">ClearProperty(Skippy.SkinSkipProgress.Frames,home)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.planner.init)) + String.IsEqual(Skin.String(aeon.menu.1),off)">Skin.SetString(aeon.menu.1,planner)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.planner.init)) + String.IsEqual(Skin.String(aeon.menu.2),off) + !String.IsEqual(Skin.String(aeon.menu.1),off)">Skin.SetString(aeon.menu.2,planner)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.planner.init)) + String.IsEqual(Skin.String(aeon.menu.3),off) + !String.IsEqual(Skin.String(aeon.menu.1),off) + !String.IsEqual(Skin.String(aeon.menu.2),off)">Skin.SetString(aeon.menu.3,planner)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.planner.init)) + String.IsEqual(Skin.String(aeon.menu.4),off) + !String.IsEqual(Skin.String(aeon.menu.1),off) + !String.IsEqual(Skin.String(aeon.menu.2),off) + !String.IsEqual(Skin.String(aeon.menu.3),off)">Skin.SetString(aeon.menu.4,planner)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.planner.init)) + String.IsEqual(Skin.String(aeon.menu.5),off) + !String.IsEqual(Skin.String(aeon.menu.1),off) + !String.IsEqual(Skin.String(aeon.menu.2),off) + !String.IsEqual(Skin.String(aeon.menu.3),off) + !String.IsEqual(Skin.String(aeon.menu.4),off)">Skin.SetString(aeon.menu.5,planner)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.planner.init)) + String.IsEqual(Skin.String(aeon.menu.6),off) + !String.IsEqual(Skin.String(aeon.menu.1),off) + !String.IsEqual(Skin.String(aeon.menu.2),off) + !String.IsEqual(Skin.String(aeon.menu.3),off) + !String.IsEqual(Skin.String(aeon.menu.4),off) + !String.IsEqual(Skin.String(aeon.menu.5),off)">Skin.SetString(aeon.menu.6,planner)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.planner.init)) + String.IsEqual(Skin.String(aeon.menu.7),off) + !String.IsEqual(Skin.String(aeon.menu.1),off) + !String.IsEqual(Skin.String(aeon.menu.2),off) + !String.IsEqual(Skin.String(aeon.menu.3),off) + !String.IsEqual(Skin.String(aeon.menu.4),off) + !String.IsEqual(Skin.String(aeon.menu.5),off) + !String.IsEqual(Skin.String(aeon.menu.6),off)">Skin.SetString(aeon.menu.7,planner)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.planner.init)) + String.IsEqual(Skin.String(aeon.menu.8),off) + !String.IsEqual(Skin.String(aeon.menu.1),off) + !String.IsEqual(Skin.String(aeon.menu.2),off) + !String.IsEqual(Skin.String(aeon.menu.3),off) + !String.IsEqual(Skin.String(aeon.menu.4),off) + !String.IsEqual(Skin.String(aeon.menu.5),off) + !String.IsEqual(Skin.String(aeon.menu.6),off) + !String.IsEqual(Skin.String(aeon.menu.7),off)">Skin.SetString(aeon.menu.8,planner)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.planner.init)) + String.IsEqual(Skin.String(aeon.menu.9),off) + !String.IsEqual(Skin.String(aeon.menu.1),off) + !String.IsEqual(Skin.String(aeon.menu.2),off) + !String.IsEqual(Skin.String(aeon.menu.3),off) + !String.IsEqual(Skin.String(aeon.menu.4),off) + !String.IsEqual(Skin.String(aeon.menu.5),off) + !String.IsEqual(Skin.String(aeon.menu.6),off) + !String.IsEqual(Skin.String(aeon.menu.7),off) + !String.IsEqual(Skin.String(aeon.menu.8),off)">Skin.SetString(aeon.menu.9,planner)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.planner.init)) + String.IsEqual(Skin.String(aeon.menu.10),off) + !String.IsEqual(Skin.String(aeon.menu.1),off) + !String.IsEqual(Skin.String(aeon.menu.2),off) + !String.IsEqual(Skin.String(aeon.menu.3),off) + !String.IsEqual(Skin.String(aeon.menu.4),off) + !String.IsEqual(Skin.String(aeon.menu.5),off) + !String.IsEqual(Skin.String(aeon.menu.6),off) + !String.IsEqual(Skin.String(aeon.menu.7),off) + !String.IsEqual(Skin.String(aeon.menu.8),off) + !String.IsEqual(Skin.String(aeon.menu.9),off)">Skin.SetString(aeon.menu.10,planner)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.planner.init))">Skin.SetString(aeon.planner.init,1)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.vignette))">Skin.SetString(aeon.vignette,c)</onload>
+	<!-- back from a window that was opened from the System menu: show the menu again (one level up, not two).
+	     Through an alarm: a window opened while Home is still loading is dropped. -->
+	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.fromcat)) + [Window.Previous(systemsettings) | Window.Previous(interfacesettings) | Window.Previous(playersettings) | Window.Previous(mediasettings) | Window.Previous(servicesettings) | Window.Previous(pvrsettings) | Window.Previous(gamesettings)]">AlarmClock(aeonback,ActivateWindow(settings),00:00,silent)</onload>
+	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.fromsys)) + ![!String.IsEmpty(Window(Home).Property(aeon.fromcat)) + [Window.Previous(systemsettings) | Window.Previous(interfacesettings) | Window.Previous(playersettings) | Window.Previous(mediasettings) | Window.Previous(servicesettings) | Window.Previous(pvrsettings) | Window.Previous(gamesettings)]] + [Window.Previous(skinsettings) | Window.Previous(settings) | Window.Previous(filemanager) | Window.Previous(systeminfo) | Window.Previous(addonbrowser)]">AlarmClock(aeonback,ActivateWindow(1151),00:00,silent)</onload>
+	<!-- the marker never outlives one visit to Home, whatever window it was reached from -->
+	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.fromsys))">ClearProperty(aeon.fromsys,home)</onload>
+	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.fromcat))">ClearProperty(aeon.fromcat,home)</onload>
+	<onload condition="$EXP[AG_ArtColourOn] + !Skin.HasSetting(TMDbHelper.EnableColors)">Skin.SetBool(TMDbHelper.EnableColors)</onload>
+	<onload condition="!$EXP[AG_ArtColourOn] + Skin.HasSetting(TMDbHelper.EnableColors)">Skin.Reset(TMDbHelper.EnableColors)</onload>
+	<onload condition="$EXP[AG_ArtColourOn]">Skin.SetString(TMDbHelper.Colors.Luminance,$VAR[AG_ColorLum])</onload>
+	<onload condition="$EXP[AG_ArtColourOn]">Skin.SetString(TMDbHelper.Colors.Saturation,$VAR[AG_ColorSat])</onload>
+	<onload condition="$EXP[AG_ArtColourOn]">SetProperty(TMDbHelper.Colors.SourceImage,Art(poster)||Art(tvshow.poster)||Art(thumb)||Art(fanart),home)</onload>
+	<onload condition="$EXP[AG_ArtColourOn]">SetProperty(TMDbHelper.WidgetContainer,9101,home)</onload>
+	<onload>SetProperty(aeon.sp2.flip,$VAR[Aeon_SP2Flip],home)</onload>
+	<!-- other windows must not inherit Home's container id (TMDb Helper reads it globally) -->
+	<onunload>ClearProperty(TMDbHelper.WidgetContainer,home)</onunload>
+	<!-- 0.9.17: Back from a custom main-menu item comes home on its pill (it set aeon.custommenu on OK);
+	     Home otherwise opens on For now (defaultcontrol). Never focus a pill that no longer shows. -->
+	<onload>ClearProperty(aeon.custommenu,home)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.movies.1,recent)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.movies.2,watched)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.movies.3,progress)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.movies.4,unwatched)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.movies.5,random)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.movies.6,toprated)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.tv.1,recent)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.tv.2,progress)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.tv.3,watched)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.tv.4,unwatched)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.tv.5,random)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.tv.6,toprated)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.music.1,recent)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.music.2,played)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.music.3,random)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.music.4,artists)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.music.5,albums)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.music.6,genres)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.power.1,shutdown)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.power.2,reboot)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.power.3,quit)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.power.4,updvideo)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.power.5,updmusic)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.power.6,powermenu)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.sub.init))">Skin.SetString(aeon.sub.init,1)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.1,movies)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.2,tv)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.3,music)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.4,livetv)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.5,search)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.6,system)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.7,power)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.8,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.9,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.10,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.11,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.12,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.13,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.14,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.15,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.16,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.17,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.18,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.19,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.20,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.21,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.22,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.23,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.24,off)</onload>
+	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.init,1)</onload>
+	<!-- 0.56.20 splash: while the start-up splash shows, its button holds the focus (OK / Back: the menu) -->
+	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.splash))">SetFocus(9999)</onload>
+	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.splash))">AlarmClock(aeonsplashto,SetProperty(aeon.splash.to,1,home),00:40,silent)</onload><!-- 0.56.53 40 s (user: "Wait for 10s more") -->
+	<onunload>ClearProperty(aeon.splash,home)</onunload>
+	<include>Anim_WindowOpenClose</include>
+	<controls>
+		<include>Aeon_Home</include>
+		<include>Aeon_Splash</include>
+	</controls>
+</window>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Video library (mockup AeonFilms). Layout, ids and focus map: Includes_Views_Video.xml.
+	Kodi id contract (Estuary Omega MyVideoNav.xml + CGUIWindowVideoNav): <views> containers; 3 sort-by,
+	4 sort-order (hidden, clicked by the pills); 14 watched toggle (SendClick only); menucontrol 9000;
+	defaultcontrol 50 = Kodi focuses the active view.
+-->
+<window>
+	<defaultcontrol always="true">50</defaultcontrol>
+	<menucontrol>9390</menucontrol>
+	<backgroundcolor>ff000000</backgroundcolor>
+	<views>514,510,511,512,517,518,515,520,521,525,526,523,522,524,527,528,529,536,537,538,50</views>
+	<!-- borrowed colour (TMDb Helper, optional) + minutes left until bedtime for the "fits" checks -->
+	<onload condition="$EXP[AG_ArtColourOn] + !Skin.HasSetting(TMDbHelper.EnableColors)">Skin.SetBool(TMDbHelper.EnableColors)</onload>
+	<onload condition="$EXP[AG_ArtColourOn]">Skin.SetString(TMDbHelper.Colors.Luminance,$VAR[AG_ColorLum])</onload>
+	<onload condition="$EXP[AG_ArtColourOn]">Skin.SetString(TMDbHelper.Colors.Saturation,$VAR[AG_ColorSat])</onload>
+	<onload condition="$EXP[AG_ArtColourOn]">SetProperty(TMDbHelper.Colors.SourceImage,Art(poster)||Art(tvshow.poster)||Art(thumb)||Art(fanart),home)</onload>
+	<onload>SetProperty(aeon.leftmins,$VAR[AG_LeftMinsQ],home)</onload>
+	<onload condition="!Player.HasMedia">ClearProperty(aeon.info)</onload>
+	<!-- empty folder: Kodi can't focus an empty view, so land on the header pills instead -->
+	<onload condition="Integer.IsEqual(Container.NumItems,0) + !Container.IsUpdating">SetFocus(9000)</onload>
+	<include>Anim_WindowOpenClose</include>
+	<controls>
+		<include>VidView_Window</include>
+		<control type="group">
+			<visible>$EXP[Aeon_StripPerm]</visible>
+			<include>Aeon_StripPermanent</include>
+		</control>
+		<!-- Menu key: back to the view, then open the settings strip (the old header pills are not shown any more) -->
+		<control type="button" id="9390">
+			<left>-20</left><top>-20</top><width>1</width><height>1</height>
+			<texturefocus /><texturenofocus />
+			<onfocus>SetFocus(50)</onfocus>
+			<onfocus>ActivateWindow(1160)</onfocus>
+		</control>
+		<include>FG_FrostBehind</include>
+		<include condition="$EXP[FGS]">FGS_Files50_Video</include><!-- 0.56.53 fgsfiles: the top layer -->
+	</controls>
+</window>

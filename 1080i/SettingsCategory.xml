@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Kodi settings pages (Player, Media, Interface, System, Services, ...), Aeon 2 style.
+	Reference notes: ../AEON2_DESIGN_NOTES.md. Black ground; a boxed column of categories on the left with a
+	2 px white bar on the focused one; the settings list to its right (label left, value right, hairline rows,
+	white bar + faint fill on the focused row); the description of the focused setting under the list.
+	Id contract (Estuary Omega): section label 2, categories grouplist 3 + template 10, control area 5,
+	description textbox 6, templates 7-15, level button 20, scrollbar 60.
+-->
+<window>
+	<defaultcontrol>3</defaultcontrol>
+	<!-- Back from here leads to the Settings window, also when this page was opened straight from Home (see Home.xml) -->
+	<onload>SetProperty(aeon.fromcat,1,home)</onload>
+	<backgroundcolor>ff000000</backgroundcolor>
+	<include>Anim_WindowOpenClose</include>
+	<controls>
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<texture colordiffuse="$VAR[AG_Ground]">common/white.png</texture>
+		</control>
+		<control type="group"><visible>$EXP[Aeon_VGlass]</visible><include>Aeon_Backdrop</include></control>
+		<!-- Fuse: deep background, rounded panels instead of the frame -->
+		<control type="image"><width>1920</width><height>1080</height><texture colordiffuse="x_deep">common/white.png</texture><visible>$EXP[Aeon_Fused]</visible></control>
+		<control type="image"><left>-300</left><top>-300</top><width>1400</width><height>1000</height><texture colordiffuse="14ffffff">aeon/glow_soft.png</texture><visible>$EXP[Aeon_Fused]</visible></control>
+		<!-- 0.56.20 fuse_survey2: one card for the categories and the settings (two cards met in a line) -->
+		<control type="group"><left>100</left><top>180</top><width>1720</width><height>684</height><visible>!$EXP[Aeon_FGlass] + !$EXP[Aeon_MS]</visible><include>Aeon_Glass</include></control>
+		<include content="Aeon_MenuHeader"><param name="lead" value="$LOCALIZE[5]"/><param name="label" value="$INFO[Control.GetLabel(2)]"/></include>
+		<include>Aeon_ClockBox</include>
+
+		<include condition="!Skin.HasSetting(aeon.fglass) + !$EXP[Aeon_MS]">SetCat_Classic</include><include condition="$EXP[FGS]">FGS_SettingsPage</include><!-- 0.56.53 fgspage --><!-- 0.56.29 fgs_flush -->
+		<include condition="$EXP[Aeon_MS_mosaic]">MS_SetCat_mosaic</include>
+		<include condition="$EXP[Aeon_MS_ledger]">MS_SetCat_ledger</include>
+		<include condition="$EXP[Aeon_MS_bridge]">MS_SetCat_bridge</include>
+		<include condition="$EXP[Aeon_MS_tabslab]">MS_SetCat_tabslab</include>
+		<include condition="Skin.HasSetting(aeon.fglass) + !$EXP[FGS]">FG_SettingsPage</include>
+
+		<control type="label" id="2">
+			<description>section label (Kodi writes it; shown in the header)</description>
+			<visible>false</visible>
+		</control>
+	</controls>
+</window>

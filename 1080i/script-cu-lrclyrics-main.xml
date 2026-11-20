@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- CU LRC Lyrics, skinned: the lyrics sit as an overlay on the album cover of the Now playing page (cover = 1040,190, 700 x 700).
+     Ids the add-on needs: list 110 (it fills and scrolls it), label 200 (scraper name, hidden).
+
+     The list itself is parked off-screen, and the lines are drawn from it:
+     - the add-on seeks to the selected line when list 110 is CLICKED, which made OK jump the song back a few seconds.
+       By default the list hands its focus straight on to button 9900 (onfocus), so OK lands there and opens the music
+       OSD. (0.26.0: the list used to be disabled instead; but the add-on focuses it after every lyric line, a disabled
+       list cannot take focus, and so nothing had focus and the first OK only gave it back: OK had to be pressed twice.)
+     - Skin settings > Playback > Lyrics take focus = On: the list takes focus as the add-on intends (Up / Down pick a line,
+       OK seeks to it). The add-on closes its window on Back; here Back only lets go of the lines (aeon.lyricsblur) and asks
+       the add-on to show the lyrics again at once (culrc.force), so they keep running. Up / Down take the lines back.
+     - two looks (Skin settings > Playback > Lyrics style):
+       Lines   the current line in the accent colour between its neighbours.
+       Words   the animated lyrics of Estuary MOD V2: twenty layouts of big coloured words, full screen
+               (the add-on splits every line into up to four parts: ListItem.Property(part1..4)). -->
+<window>
+	<defaultcontrol always="true">9900</defaultcontrol>
+	<animation type="WindowOpen" reversible="false"><effect type="fade" start="0" end="100" time="200"/></animation>
+	<animation type="WindowClose" reversible="false"><effect type="fade" start="100" end="0" time="200"/></animation>
+	<coordinates>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<controls>
+		<control type="button" id="9900">
+			<left>-20</left><top>-20</top><width>1</width><height>1</height>
+			<label></label><texturefocus /><texturenofocus />
+			<onclick>ActivateWindow(musicosd)</onclick>
+			<onup condition="Skin.HasSetting(aeon.lyrics.focus)">ClearProperty(aeon.lyricsblur,home)</onup>
+			<onup condition="Skin.HasSetting(aeon.lyrics.focus)">SetFocus(110)</onup>
+			<ondown condition="Skin.HasSetting(aeon.lyrics.focus)">ClearProperty(aeon.lyricsblur,home)</ondown>
+			<ondown condition="Skin.HasSetting(aeon.lyrics.focus)">SetFocus(110)</ondown>
+			<!-- 0.39.7: scrub the song while the lyrics show, as on the plain Now playing page: Left / Right 10 s,
+			     Up / Down 60 s (Kodi's music seek steps). With Lyrics take focus on, Up / Down keep picking lines. -->
+			<onleft>PlayerControl(SmallSkipBackward)</onleft>
+			<onright>PlayerControl(SmallSkipForward)</onright>
+			<onup condition="!Skin.HasSetting(aeon.lyrics.focus)">PlayerControl(BigSkipForward)</onup>
+			<ondown condition="!Skin.HasSetting(aeon.lyrics.focus)">PlayerControl(BigSkipBackward)</ondown>
+		</control>
+		<control type="list" id="110">
+			<left>3000</left>
+			<top>0</top>
+			<width>10</width>
+			<height>640</height>
+			<!-- 0.39.7: the add-on focuses this list after every lyric line; while the music OSD is open that took the focus
+			     out of the OSD (its highlight vanished, the next arrow key started again on Pause). Disabled then. -->
+			<enable>!Window.IsVisible(musicosd)</enable>
+			<onleft>PlayerControl(SmallSkipBackward)</onleft>
+			<onright>PlayerControl(SmallSkipForward)</onright>
+			<!-- the lines keep the focus only with Lyrics take focus on and not let go (Back); otherwise the button gets it -->
+			<onfocus condition="!Skin.HasSetting(aeon.lyrics.focus) | !String.IsEmpty(Window(Home).Property(aeon.lyricsblur))">SetFocus(9900)</onfocus>
+			<onback>SetProperty(aeon.lyricsblur,1,home)</onback>
+			<onback>SetProperty(culrc.force,TRUE,home)</onback>
+			<onback>SetFocus(9900)</onback>
+			<scrolltime tween="quadratic" easing="out">200</scrolltime>
+			<focusposition>4</focusposition>
+			<itemlayout width="10" height="64"/>
+			<focusedlayout width="10" height="64"/>
+		</control>
+		<control type="label" id="200">
+			<visible>false</visible>
+		</control>
+
+		<!-- ============================================================ Lines -->
+		<!-- the music OSD shrinks the Now playing page to 84 percent (Includes_Aeon_Music.xml); the lyrics on the cover shrink with it,
+		     so their dark panel stays on the cover and the lines stay above the player controls -->
+		<control type="group">
+			<visible>!Skin.HasSetting(aeon.lyrics.words)</visible>
+			<animation effect="zoom" start="100" end="84" center="140,190" time="300" tween="cubic" easing="out" reversible="true" condition="Window.IsVisible(musicosd)">Conditional</animation>
+			<control type="image"><left>1040</left><top>190</top><width>700</width><height>700</height><texture colordiffuse="88000000">common/white.png</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+			<!-- 0.39.8 Fused Glass: the shade has the cover's round corners (r28) -->
+			<control type="image"><left>1040</left><top>190</top><width>700</width><height>700</height><texture border="28" colordiffuse="88000000">fg/r28.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+			<control type="label"><left>1060</left><top>284</top><width>660</width><height>64</height><align>center</align><aligny>center</aligny><font>pl_ui_24</font><textcolor>44ffffff</textcolor><label>$INFO[Container(110).ListItemNoWrap(-3).Label]</label></control>
+			<control type="label"><left>1060</left><top>348</top><width>660</width><height>64</height><align>center</align><aligny>center</aligny><font>pl_ui_24</font><textcolor>66ffffff</textcolor><label>$INFO[Container(110).ListItemNoWrap(-2).Label]</label></control>
+			<control type="label"><left>1060</left><top>412</top><width>660</width><height>64</height><align>center</align><aligny>center</aligny><font>pl_ui_24</font><textcolor>66ffffff</textcolor><label>$INFO[Container(110).ListItemNoWrap(-1).Label]</label></control>
+			<control type="textbox"><left>1060</left><top>476</top><width>660</width><height>128</height><align>center</align><aligny>center</aligny><font>pl_ui_28_bold</font><textcolor>$VAR[Aeon_Accent]</textcolor><label>$INFO[Container(110).ListItem.Label]</label></control>
+			<control type="image"><left>1040</left><top>476</top><width>6</width><height>128</height><texture colordiffuse="aeon_white">common/white.png</texture><visible>Control.HasFocus(110) + Skin.HasSetting(aeon.lyrics.focus) + String.IsEmpty(Window(Home).Property(aeon.lyricsblur))</visible></control>
+			<control type="label"><left>1060</left><top>604</top><width>660</width><height>64</height><align>center</align><aligny>center</aligny><font>pl_ui_24</font><textcolor>66ffffff</textcolor><label>$INFO[Container(110).ListItemNoWrap(1).Label]</label></control>
+			<control type="label"><left>1060</left><top>668</top><width>660</width><height>64</height><align>center</align><aligny>center</aligny><font>pl_ui_24</font><textcolor>66ffffff</textcolor><label>$INFO[Container(110).ListItemNoWrap(2).Label]</label></control>
+			<control type="label"><left>1060</left><top>732</top><width>660</width><height>64</height><align>center</align><aligny>center</aligny><font>pl_ui_24</font><textcolor>44ffffff</textcolor><label>$INFO[Container(110).ListItemNoWrap(3).Label]</label></control>
+		</control>
+
+		<!-- ============================================================ Words: the animated lyrics of Estuary MOD V2 (Includes_Aeon_LyricsMod.xml).
+		     Skin settings > Playback > Words lyrics size: full screen as in MOD V2, or scaled to sit on the album cover. -->
+		<control type="group">
+			<visible>Skin.HasSetting(aeon.lyrics.words)</visible>
+			<!-- on the cover: shrinks with the page; full screen: the words layouts move up by themselves while the OSD shows -->
+			<animation effect="zoom" start="100" end="84" center="140,190" time="300" tween="cubic" easing="out" reversible="true" condition="Window.IsVisible(musicosd) + Skin.HasSetting(aeon.lyrics.cover)">Conditional</animation>
+			<control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><texture colordiffuse="66000000">common/white.png</texture><visible>!Skin.HasSetting(aeon.lyrics.cover)</visible></control>
+			<control type="image"><left>1040</left><top>190</top><width>700</width><height>700</height><texture colordiffuse="b4000000">common/white.png</texture><visible>!$EXP[Aeon_FGlass] + Skin.HasSetting(aeon.lyrics.cover)</visible></control>
+			<!-- 0.39.8 Fused Glass: the shade has the cover's round corners (r28) -->
+			<control type="image"><left>1040</left><top>190</top><width>700</width><height>700</height><texture border="28" colordiffuse="b4000000">fg/r28.png</texture><visible>$EXP[Aeon_FGlass] + Skin.HasSetting(aeon.lyrics.cover)</visible></control>
+			<control type="group">
+				<animation effect="slide" end="430,100" time="0" condition="Skin.HasSetting(aeon.lyrics.cover)">Conditional</animation>
+				<control type="group">
+					<animation effect="zoom" end="50" center="960,440" time="0" condition="Skin.HasSetting(aeon.lyrics.cover)">Conditional</animation>
+					<include>ModLyrics_Body</include>
+				</control>
+			</control>
+		</control>
+
+		<control type="label">
+			<left>1070</left><top>204</top><width>640</width><height>40</height><align>center</align><aligny>center</aligny>
+			<font>pl_cap_20</font><textcolor>66ffffff</textcolor>
+			<label>$LOCALIZE[31639]</label>
+			<visible>!Skin.HasSetting(aeon.lyrics.words)</visible>
+			<animation effect="zoom" start="100" end="84" center="140,190" time="300" tween="cubic" easing="out" reversible="true" condition="Window.IsVisible(musicosd)">Conditional</animation>
+		</control>
+		<control type="label">
+			<left>1070</left><top>852</top><width>640</width><height>30</height><align>right</align><aligny>center</aligny>
+			<font>pl_cap_14</font><textcolor>66ffffff</textcolor>
+			<label>$INFO[Control.GetLabel(200)]</label>
+			<animation effect="zoom" start="100" end="84" center="140,190" time="300" tween="cubic" easing="out" reversible="true" condition="Window.IsVisible(musicosd)">Conditional</animation>
+		</control>
+	</controls>
+</window>

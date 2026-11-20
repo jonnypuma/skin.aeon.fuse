@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Aeon Fuse: the spotlight window (1157) advances to the next item after the hold time (Skin settings > Home sub-menus).
+     Any key press resets it. Hold time and item count of the focused page are in Window(Home) aeon.spot.holdnow / countnow. -->
+<timers>
+	<timer>
+		<name>aeonspot</name>
+		<description>Spotlight autoscroll</description>
+		<start>Window.IsVisible(1157)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>!Window.IsVisible(1157) | Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonspot),Window(Home).Property(aeon.spot.holdnow))</stop>
+		<onstop condition="Window.IsVisible(1157) + Control.HasFocus(9401) + [Integer.IsEqual(Container(9401).CurrentItem,Container(9401).NumItems) | Integer.IsGreaterOrEqual(Container(9401).CurrentItem,Window(Home).Property(aeon.spot.countnow))]">SetFocus(9401,0,absolute)</onstop>
+		<onstop condition="Window.IsVisible(1157) + Control.HasFocus(9401) + ![Integer.IsEqual(Container(9401).CurrentItem,Container(9401).NumItems) | Integer.IsGreaterOrEqual(Container(9401).CurrentItem,Window(Home).Property(aeon.spot.countnow))]">Control.Move(9401,1)</onstop>
+		<onstop condition="Window.IsVisible(1157) + Control.HasFocus(9402) + [Integer.IsEqual(Container(9402).CurrentItem,Container(9402).NumItems) | Integer.IsGreaterOrEqual(Container(9402).CurrentItem,Window(Home).Property(aeon.spot.countnow))]">SetFocus(9402,0,absolute)</onstop>
+		<onstop condition="Window.IsVisible(1157) + Control.HasFocus(9402) + ![Integer.IsEqual(Container(9402).CurrentItem,Container(9402).NumItems) | Integer.IsGreaterOrEqual(Container(9402).CurrentItem,Window(Home).Property(aeon.spot.countnow))]">Control.Move(9402,1)</onstop>
+		<onstop condition="Window.IsVisible(1157) + Control.HasFocus(9403) + [Integer.IsEqual(Container(9403).CurrentItem,Container(9403).NumItems) | Integer.IsGreaterOrEqual(Container(9403).CurrentItem,Window(Home).Property(aeon.spot.countnow))]">SetFocus(9403,0,absolute)</onstop>
+		<onstop condition="Window.IsVisible(1157) + Control.HasFocus(9403) + ![Integer.IsEqual(Container(9403).CurrentItem,Container(9403).NumItems) | Integer.IsGreaterOrEqual(Container(9403).CurrentItem,Window(Home).Property(aeon.spot.countnow))]">Control.Move(9403,1)</onstop>
+		<onstop condition="Window.IsVisible(1157) + Control.HasFocus(9404) + [Integer.IsEqual(Container(9404).CurrentItem,Container(9404).NumItems) | Integer.IsGreaterOrEqual(Container(9404).CurrentItem,Window(Home).Property(aeon.spot.countnow))]">SetFocus(9404,0,absolute)</onstop>
+		<onstop condition="Window.IsVisible(1157) + Control.HasFocus(9404) + ![Integer.IsEqual(Container(9404).CurrentItem,Container(9404).NumItems) | Integer.IsGreaterOrEqual(Container(9404).CurrentItem,Window(Home).Property(aeon.spot.countnow))]">Control.Move(9404,1)</onstop>
+		<onstop condition="Window.IsVisible(1157) + Control.HasFocus(9405) + [Integer.IsEqual(Container(9405).CurrentItem,Container(9405).NumItems) | Integer.IsGreaterOrEqual(Container(9405).CurrentItem,Window(Home).Property(aeon.spot.countnow))]">SetFocus(9405,0,absolute)</onstop>
+		<onstop condition="Window.IsVisible(1157) + Control.HasFocus(9405) + ![Integer.IsEqual(Container(9405).CurrentItem,Container(9405).NumItems) | Integer.IsGreaterOrEqual(Container(9405).CurrentItem,Window(Home).Property(aeon.spot.countnow))]">Control.Move(9405,1)</onstop>
+		<onstop condition="Window.IsVisible(1157) + Control.HasFocus(9406) + [Integer.IsEqual(Container(9406).CurrentItem,Container(9406).NumItems) | Integer.IsGreaterOrEqual(Container(9406).CurrentItem,Window(Home).Property(aeon.spot.countnow))]">SetFocus(9406,0,absolute)</onstop>
+		<onstop condition="Window.IsVisible(1157) + Control.HasFocus(9406) + ![Integer.IsEqual(Container(9406).CurrentItem,Container(9406).NumItems) | Integer.IsGreaterOrEqual(Container(9406).CurrentItem,Window(Home).Property(aeon.spot.countnow))]">Control.Move(9406,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonfanx</name>
+		<description>Extra fanart cycling</description>
+		<start>Skin.HasSetting(aeon.extrafanart)</start>
+		<stop>!Skin.HasSetting(aeon.extrafanart) | [[String.IsEmpty(Skin.String(aeon.extrafanart.interval)) | String.IsEqual(Skin.String(aeon.extrafanart.interval),10)] + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonfanx),10)] | [String.IsEqual(Skin.String(aeon.extrafanart.interval),15) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonfanx),15)] | [String.IsEqual(Skin.String(aeon.extrafanart.interval),30) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonfanx),30)] | [String.IsEqual(Skin.String(aeon.extrafanart.interval),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonfanx),5)]</stop>
+		<onstop condition="Skin.HasSetting(aeon.extrafanart) + [String.IsEmpty(Window(Home).Property(aeon.fanx)) | String.IsEqual(Window(Home).Property(aeon.fanx),0)]">SetProperty(aeon.fanx,1,home)</onstop>
+		<onstop condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),1)">SetProperty(aeon.fanx,2,home)</onstop>
+		<onstop condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),2)">SetProperty(aeon.fanx,3,home)</onstop>
+		<onstop condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),3)">SetProperty(aeon.fanx,4,home)</onstop>
+		<onstop condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),4)">SetProperty(aeon.fanx,5,home)</onstop>
+		<onstop condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),5)">SetProperty(aeon.fanx,0,home)</onstop>
+	</timer>
+	<timer>
+		<name>aeonpause</name>
+		<description>Controls open on pause</description>
+		<start>Player.Paused + Player.HasVideo + Skin.HasSetting(aeon.osdpause) + String.IsEmpty(Window(Home).Property(aeon.pauseosd))</start>
+		<stop>!Player.Paused | !Skin.HasSetting(aeon.osdpause) | [String.IsEqual(Skin.String(aeon.osdpause.delay),1) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonpause),1)] | [String.IsEqual(Skin.String(aeon.osdpause.delay),2) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonpause),2)] | [String.IsEqual(Skin.String(aeon.osdpause.delay),3) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonpause),3)] | [String.IsEqual(Skin.String(aeon.osdpause.delay),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonpause),5)] | [String.IsEmpty(Skin.String(aeon.osdpause.delay)) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonpause),2)]</stop>
+		<onstop condition="Player.Paused + Skin.HasSetting(aeon.osdpause) + Window.IsActive(fullscreenvideo)">SetProperty(aeon.pauseosd,1,home)</onstop>
+		<onstop condition="Player.Paused + Skin.HasSetting(aeon.osdpause) + Window.IsActive(fullscreenvideo)">ActivateWindow(videoosd)</onstop>
+	</timer>
+	<timer>
+		<name>aeonpauseclr</name>
+		<description>Re-arm controls on pause after resume</description>
+		<start>!Player.Paused + !String.IsEmpty(Window(Home).Property(aeon.pauseosd))</start>
+		<stop>true</stop>
+		<onstop>ClearProperty(aeon.pauseosd,home)</onstop>
+	</timer>
+	<timer>
+		<name>aeonstripart</name>
+		<description>Artwork type of the focused Home category</description>
+		<start>Window.IsActive(home)</start>
+		<stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonstripart),1)</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,movies)">SetProperty(aeon.stripfirst,$INFO[Container(9301).ListItemAbsolute(0).DBType],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,tv)">SetProperty(aeon.stripfirst,$INFO[Container(9302).ListItemAbsolute(0).DBType],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,music)">SetProperty(aeon.stripfirst,$INFO[Container(9303).ListItemAbsolute(0).DBType],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,movies) + [String.IsEmpty(Window(Home).Property(aeon.subsel.movies)) | String.IsEqual(Window(Home).Property(aeon.subsel.movies),1)]">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(0).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,movies) + String.IsEqual(Window(Home).Property(aeon.subsel.movies),2)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(1).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,movies) + String.IsEqual(Window(Home).Property(aeon.subsel.movies),3)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(2).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,movies) + String.IsEqual(Window(Home).Property(aeon.subsel.movies),4)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(3).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,movies) + String.IsEqual(Window(Home).Property(aeon.subsel.movies),5)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(4).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,movies) + String.IsEqual(Window(Home).Property(aeon.subsel.movies),6)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(5).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,tv) + [String.IsEmpty(Window(Home).Property(aeon.subsel.tv)) | String.IsEqual(Window(Home).Property(aeon.subsel.tv),1)]">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(0).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,tv) + String.IsEqual(Window(Home).Property(aeon.subsel.tv),2)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(1).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,tv) + String.IsEqual(Window(Home).Property(aeon.subsel.tv),3)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(2).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,tv) + String.IsEqual(Window(Home).Property(aeon.subsel.tv),4)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(3).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,tv) + String.IsEqual(Window(Home).Property(aeon.subsel.tv),5)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(4).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,tv) + String.IsEqual(Window(Home).Property(aeon.subsel.tv),6)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(5).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,music) + [String.IsEmpty(Window(Home).Property(aeon.subsel.music)) | String.IsEqual(Window(Home).Property(aeon.subsel.music),1)]">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(0).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,music) + String.IsEqual(Window(Home).Property(aeon.subsel.music),2)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(1).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,music) + String.IsEqual(Window(Home).Property(aeon.subsel.music),3)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(2).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,music) + String.IsEqual(Window(Home).Property(aeon.subsel.music),4)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(3).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,music) + String.IsEqual(Window(Home).Property(aeon.subsel.music),5)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(4).Property(art)],home)</onstop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,music) + String.IsEqual(Window(Home).Property(aeon.subsel.music),6)">SetProperty(aeon.stripart,$INFO[Container(9391).ListItemAbsolute(5).Property(art)],home)</onstop>
+	</timer>
+	<!-- aeonlastfan (the settings backdrop) is gone in 0.32.0: script.aeon.helper gives a random fanart from Home (aeon.bgfan) -->
+	<timer>
+		<name>aeonsp2movies</name>
+		<description>Home spotlight: next item (movies)</description>
+		<start>Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,movies) + !Skin.HasSetting(aeon.nosp2.movies) + Integer.IsGreater(Container(9421).NumItems,0) + !Control.HasFocus(9421)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>[String.IsEqual(Skin.String(aeon.sp2.movies.secs),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2movies),5)] | [String.IsEqual(Skin.String(aeon.sp2.movies.secs),15) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2movies),15)] | [String.IsEqual(Skin.String(aeon.sp2.movies.secs),20) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2movies),20)] | [String.IsEqual(Skin.String(aeon.sp2.movies.secs),30) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2movies),30)] | [[String.IsEmpty(Skin.String(aeon.sp2.movies.secs)) | String.IsEqual(Skin.String(aeon.sp2.movies.secs),10)] + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2movies),10)] | !Window.IsActive(home) | ![String.IsEqual(Container(9000).ListItem.Label2,movies) + !Skin.HasSetting(aeon.nosp2.movies)]</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,movies) + !Skin.HasSetting(aeon.nosp2.movies) + Integer.IsGreater(Container(9421).NumItems,0) + !Control.HasFocus(9421)">Control.Move(9421,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonsp2custom1</name>
+		<description>Home spotlight: next item (custom 1)</description>
+		<start>Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom1) + !Skin.HasSetting(aeon.nosp2.custom1) + Integer.IsGreater(Container(9411).NumItems,0) + !Control.HasFocus(9411)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>[String.IsEqual(Skin.String(aeon.sp2.custom1.secs),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom1),5)] | [String.IsEqual(Skin.String(aeon.sp2.custom1.secs),15) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom1),15)] | [String.IsEqual(Skin.String(aeon.sp2.custom1.secs),20) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom1),20)] | [String.IsEqual(Skin.String(aeon.sp2.custom1.secs),30) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom1),30)] | [[String.IsEmpty(Skin.String(aeon.sp2.custom1.secs)) | String.IsEqual(Skin.String(aeon.sp2.custom1.secs),10)] + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom1),10)] | !Window.IsActive(home) | ![String.IsEqual(Container(9000).ListItem.Label2,custom1) + !Skin.HasSetting(aeon.nosp2.custom1)]</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom1) + !Skin.HasSetting(aeon.nosp2.custom1) + Integer.IsGreater(Container(9411).NumItems,0) + !Control.HasFocus(9411)">Control.Move(9411,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonsp2custom2</name>
+		<description>Home spotlight: next item (custom 2)</description>
+		<start>Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom2) + !Skin.HasSetting(aeon.nosp2.custom2) + Integer.IsGreater(Container(9412).NumItems,0) + !Control.HasFocus(9412)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>[String.IsEqual(Skin.String(aeon.sp2.custom2.secs),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom2),5)] | [String.IsEqual(Skin.String(aeon.sp2.custom2.secs),15) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom2),15)] | [String.IsEqual(Skin.String(aeon.sp2.custom2.secs),20) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom2),20)] | [String.IsEqual(Skin.String(aeon.sp2.custom2.secs),30) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom2),30)] | [[String.IsEmpty(Skin.String(aeon.sp2.custom2.secs)) | String.IsEqual(Skin.String(aeon.sp2.custom2.secs),10)] + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom2),10)] | !Window.IsActive(home) | ![String.IsEqual(Container(9000).ListItem.Label2,custom2) + !Skin.HasSetting(aeon.nosp2.custom2)]</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom2) + !Skin.HasSetting(aeon.nosp2.custom2) + Integer.IsGreater(Container(9412).NumItems,0) + !Control.HasFocus(9412)">Control.Move(9412,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonsp2custom3</name>
+		<description>Home spotlight: next item (custom 3)</description>
+		<start>Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom3) + !Skin.HasSetting(aeon.nosp2.custom3) + Integer.IsGreater(Container(9413).NumItems,0) + !Control.HasFocus(9413)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>[String.IsEqual(Skin.String(aeon.sp2.custom3.secs),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom3),5)] | [String.IsEqual(Skin.String(aeon.sp2.custom3.secs),15) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom3),15)] | [String.IsEqual(Skin.String(aeon.sp2.custom3.secs),20) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom3),20)] | [String.IsEqual(Skin.String(aeon.sp2.custom3.secs),30) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom3),30)] | [[String.IsEmpty(Skin.String(aeon.sp2.custom3.secs)) | String.IsEqual(Skin.String(aeon.sp2.custom3.secs),10)] + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom3),10)] | !Window.IsActive(home) | ![String.IsEqual(Container(9000).ListItem.Label2,custom3) + !Skin.HasSetting(aeon.nosp2.custom3)]</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom3) + !Skin.HasSetting(aeon.nosp2.custom3) + Integer.IsGreater(Container(9413).NumItems,0) + !Control.HasFocus(9413)">Control.Move(9413,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonsp2custom4</name>
+		<description>Home spotlight: next item (custom 4)</description>
+		<start>Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom4) + !Skin.HasSetting(aeon.nosp2.custom4) + Integer.IsGreater(Container(9415).NumItems,0) + !Control.HasFocus(9415)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>[String.IsEqual(Skin.String(aeon.sp2.custom4.secs),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom4),5)] | [String.IsEqual(Skin.String(aeon.sp2.custom4.secs),15) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom4),15)] | [String.IsEqual(Skin.String(aeon.sp2.custom4.secs),20) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom4),20)] | [String.IsEqual(Skin.String(aeon.sp2.custom4.secs),30) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom4),30)] | [[String.IsEmpty(Skin.String(aeon.sp2.custom4.secs)) | String.IsEqual(Skin.String(aeon.sp2.custom4.secs),10)] + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom4),10)] | !Window.IsActive(home) | ![String.IsEqual(Container(9000).ListItem.Label2,custom4) + !Skin.HasSetting(aeon.nosp2.custom4)]</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom4) + !Skin.HasSetting(aeon.nosp2.custom4) + Integer.IsGreater(Container(9415).NumItems,0) + !Control.HasFocus(9415)">Control.Move(9415,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonsp2custom5</name>
+		<description>Home spotlight: next item (custom 5)</description>
+		<start>Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom5) + !Skin.HasSetting(aeon.nosp2.custom5) + Integer.IsGreater(Container(9416).NumItems,0) + !Control.HasFocus(9416)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>[String.IsEqual(Skin.String(aeon.sp2.custom5.secs),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom5),5)] | [String.IsEqual(Skin.String(aeon.sp2.custom5.secs),15) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom5),15)] | [String.IsEqual(Skin.String(aeon.sp2.custom5.secs),20) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom5),20)] | [String.IsEqual(Skin.String(aeon.sp2.custom5.secs),30) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom5),30)] | [[String.IsEmpty(Skin.String(aeon.sp2.custom5.secs)) | String.IsEqual(Skin.String(aeon.sp2.custom5.secs),10)] + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom5),10)] | !Window.IsActive(home) | ![String.IsEqual(Container(9000).ListItem.Label2,custom5) + !Skin.HasSetting(aeon.nosp2.custom5)]</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom5) + !Skin.HasSetting(aeon.nosp2.custom5) + Integer.IsGreater(Container(9416).NumItems,0) + !Control.HasFocus(9416)">Control.Move(9416,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonsp2custom6</name>
+		<description>Home spotlight: next item (custom 6)</description>
+		<start>Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom6) + !Skin.HasSetting(aeon.nosp2.custom6) + Integer.IsGreater(Container(9417).NumItems,0) + !Control.HasFocus(9417)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>[String.IsEqual(Skin.String(aeon.sp2.custom6.secs),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom6),5)] | [String.IsEqual(Skin.String(aeon.sp2.custom6.secs),15) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom6),15)] | [String.IsEqual(Skin.String(aeon.sp2.custom6.secs),20) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom6),20)] | [String.IsEqual(Skin.String(aeon.sp2.custom6.secs),30) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom6),30)] | [[String.IsEmpty(Skin.String(aeon.sp2.custom6.secs)) | String.IsEqual(Skin.String(aeon.sp2.custom6.secs),10)] + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom6),10)] | !Window.IsActive(home) | ![String.IsEqual(Container(9000).ListItem.Label2,custom6) + !Skin.HasSetting(aeon.nosp2.custom6)]</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom6) + !Skin.HasSetting(aeon.nosp2.custom6) + Integer.IsGreater(Container(9417).NumItems,0) + !Control.HasFocus(9417)">Control.Move(9417,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonsp2custom7</name>
+		<description>Home spotlight: next item (custom 7)</description>
+		<start>Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom7) + !Skin.HasSetting(aeon.nosp2.custom7) + Integer.IsGreater(Container(9418).NumItems,0) + !Control.HasFocus(9418)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>[String.IsEqual(Skin.String(aeon.sp2.custom7.secs),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom7),5)] | [String.IsEqual(Skin.String(aeon.sp2.custom7.secs),15) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom7),15)] | [String.IsEqual(Skin.String(aeon.sp2.custom7.secs),20) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom7),20)] | [String.IsEqual(Skin.String(aeon.sp2.custom7.secs),30) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom7),30)] | [[String.IsEmpty(Skin.String(aeon.sp2.custom7.secs)) | String.IsEqual(Skin.String(aeon.sp2.custom7.secs),10)] + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom7),10)] | !Window.IsActive(home) | ![String.IsEqual(Container(9000).ListItem.Label2,custom7) + !Skin.HasSetting(aeon.nosp2.custom7)]</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom7) + !Skin.HasSetting(aeon.nosp2.custom7) + Integer.IsGreater(Container(9418).NumItems,0) + !Control.HasFocus(9418)">Control.Move(9418,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonsp2custom8</name>
+		<description>Home spotlight: next item (custom 8)</description>
+		<start>Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom8) + !Skin.HasSetting(aeon.nosp2.custom8) + Integer.IsGreater(Container(9419).NumItems,0) + !Control.HasFocus(9419)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>[String.IsEqual(Skin.String(aeon.sp2.custom8.secs),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom8),5)] | [String.IsEqual(Skin.String(aeon.sp2.custom8.secs),15) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom8),15)] | [String.IsEqual(Skin.String(aeon.sp2.custom8.secs),20) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom8),20)] | [String.IsEqual(Skin.String(aeon.sp2.custom8.secs),30) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom8),30)] | [[String.IsEmpty(Skin.String(aeon.sp2.custom8.secs)) | String.IsEqual(Skin.String(aeon.sp2.custom8.secs),10)] + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom8),10)] | !Window.IsActive(home) | ![String.IsEqual(Container(9000).ListItem.Label2,custom8) + !Skin.HasSetting(aeon.nosp2.custom8)]</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom8) + !Skin.HasSetting(aeon.nosp2.custom8) + Integer.IsGreater(Container(9419).NumItems,0) + !Control.HasFocus(9419)">Control.Move(9419,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonsp2custom9</name>
+		<description>Home spotlight: next item (custom 9)</description>
+		<start>Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom9) + !Skin.HasSetting(aeon.nosp2.custom9) + Integer.IsGreater(Container(9420).NumItems,0) + !Control.HasFocus(9420)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>[String.IsEqual(Skin.String(aeon.sp2.custom9.secs),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom9),5)] | [String.IsEqual(Skin.String(aeon.sp2.custom9.secs),15) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom9),15)] | [String.IsEqual(Skin.String(aeon.sp2.custom9.secs),20) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom9),20)] | [String.IsEqual(Skin.String(aeon.sp2.custom9.secs),30) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom9),30)] | [[String.IsEmpty(Skin.String(aeon.sp2.custom9.secs)) | String.IsEqual(Skin.String(aeon.sp2.custom9.secs),10)] + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom9),10)] | !Window.IsActive(home) | ![String.IsEqual(Container(9000).ListItem.Label2,custom9) + !Skin.HasSetting(aeon.nosp2.custom9)]</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom9) + !Skin.HasSetting(aeon.nosp2.custom9) + Integer.IsGreater(Container(9420).NumItems,0) + !Control.HasFocus(9420)">Control.Move(9420,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonsp2custom10</name>
+		<description>Home spotlight: next item (custom 10)</description>
+		<start>Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom10) + !Skin.HasSetting(aeon.nosp2.custom10) + Integer.IsGreater(Container(9424).NumItems,0) + !Control.HasFocus(9424)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>[String.IsEqual(Skin.String(aeon.sp2.custom10.secs),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom10),5)] | [String.IsEqual(Skin.String(aeon.sp2.custom10.secs),15) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom10),15)] | [String.IsEqual(Skin.String(aeon.sp2.custom10.secs),20) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom10),20)] | [String.IsEqual(Skin.String(aeon.sp2.custom10.secs),30) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom10),30)] | [[String.IsEmpty(Skin.String(aeon.sp2.custom10.secs)) | String.IsEqual(Skin.String(aeon.sp2.custom10.secs),10)] + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2custom10),10)] | !Window.IsActive(home) | ![String.IsEqual(Container(9000).ListItem.Label2,custom10) + !Skin.HasSetting(aeon.nosp2.custom10)]</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,custom10) + !Skin.HasSetting(aeon.nosp2.custom10) + Integer.IsGreater(Container(9424).NumItems,0) + !Control.HasFocus(9424)">Control.Move(9424,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonsp2tv</name>
+		<description>Home spotlight: next item (tv)</description>
+		<start>Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,tv) + !Skin.HasSetting(aeon.nosp2.tv) + Integer.IsGreater(Container(9422).NumItems,0) + !Control.HasFocus(9422)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>[String.IsEqual(Skin.String(aeon.sp2.tv.secs),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2tv),5)] | [String.IsEqual(Skin.String(aeon.sp2.tv.secs),15) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2tv),15)] | [String.IsEqual(Skin.String(aeon.sp2.tv.secs),20) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2tv),20)] | [String.IsEqual(Skin.String(aeon.sp2.tv.secs),30) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2tv),30)] | [[String.IsEmpty(Skin.String(aeon.sp2.tv.secs)) | String.IsEqual(Skin.String(aeon.sp2.tv.secs),10)] + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2tv),10)] | !Window.IsActive(home) | ![String.IsEqual(Container(9000).ListItem.Label2,tv) + !Skin.HasSetting(aeon.nosp2.tv)]</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,tv) + !Skin.HasSetting(aeon.nosp2.tv) + Integer.IsGreater(Container(9422).NumItems,0) + !Control.HasFocus(9422)">Control.Move(9422,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonsp2music</name>
+		<description>Home spotlight: next item (music)</description>
+		<start>Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,music) + !Skin.HasSetting(aeon.nosp2.music) + Integer.IsGreater(Container(9423).NumItems,0) + !Control.HasFocus(9423)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>[String.IsEqual(Skin.String(aeon.sp2.music.secs),5) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2music),5)] | [String.IsEqual(Skin.String(aeon.sp2.music.secs),15) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2music),15)] | [String.IsEqual(Skin.String(aeon.sp2.music.secs),20) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2music),20)] | [String.IsEqual(Skin.String(aeon.sp2.music.secs),30) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2music),30)] | [[String.IsEmpty(Skin.String(aeon.sp2.music.secs)) | String.IsEqual(Skin.String(aeon.sp2.music.secs),10)] + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2music),10)] | !Window.IsActive(home) | ![String.IsEqual(Container(9000).ListItem.Label2,music) + !Skin.HasSetting(aeon.nosp2.music)]</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,music) + !Skin.HasSetting(aeon.nosp2.music) + Integer.IsGreater(Container(9423).NumItems,0) + !Control.HasFocus(9423)">Control.Move(9423,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonmusiccov</name>
+		<description>Music library: next album cover of the artist (Aeon / Glass; Fused Glass: aeoncycler, 0.56.6: both ran there and
+		     moved the List view's cycler twice per turn)</description>
+		<start>!Skin.HasSetting(aeon.fglass) + Control.IsVisible(513) + Container.Content(artists) + Integer.IsGreater(Container(5131).NumItems,1)</start>
+		<stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonmusiccov),5) | !Control.IsVisible(513) | !Container.Content(artists)</stop>
+		<onstop condition="Control.IsVisible(513) + Container.Content(artists)">Control.Move(5131,1)</onstop>
+	</timer>
+	<!-- 0.46.4, File manager: its scroll bars (60 / 61) give the focus back to their list two seconds after the last key
+	     press. Kodi hangs (tested on the box) when the window refreshes while anything but a list has the focus
+	     (CGUIWindowFileManager::Refresh reads its list array at focused id - 20); a refresh comes when a copy / move /
+	     delete finishes and on Container.Refresh, so the focus must not stay on a scroll bar. -->
+	<timer>
+		<name>aeonfmsb</name>
+		<description>File manager scroll bar: focus returns to its list</description>
+		<start>Window.IsActive(filemanager) + [Control.HasFocus(60) | Control.HasFocus(61)]</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>![Window.IsActive(filemanager) + [Control.HasFocus(60) | Control.HasFocus(61)]] | Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonfmsb),2)</stop>
+		<onstop condition="Window.IsActive(filemanager) + Control.HasFocus(60)">SetFocus(20)</onstop>
+		<onstop condition="Window.IsActive(filemanager) + Control.HasFocus(61)">SetFocus(21)</onstop>
+	</timer>
+	<!-- A scroll bar cannot take OK (Kodi gives it no click), so the list takes the focus back by itself two seconds after
+	     the last key press on the scroll bar of a library view. -->
+	<timer>
+		<name>aeonsbreturn</name>
+		<description>Scroll bar: focus returns to the list</description>
+		<start>[Control.HasFocus(5103) | Control.HasFocus(5130) | Control.HasFocus(5200050) | Control.HasFocus(5210050) | Control.HasFocus(5220050) | Control.HasFocus(5230050) | Control.HasFocus(5240050) | Control.HasFocus(5250050) | Control.HasFocus(5260050) | Control.HasFocus(5270050) | Control.HasFocus(5300050) | Control.HasFocus(5310050) | Control.HasFocus(5320050) | Control.HasFocus(5330050) | Control.HasFocus(5340050)]</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>![Control.HasFocus(5103) | Control.HasFocus(5130) | Control.HasFocus(5200050) | Control.HasFocus(5210050) | Control.HasFocus(5220050) | Control.HasFocus(5230050) | Control.HasFocus(5240050) | Control.HasFocus(5250050) | Control.HasFocus(5260050) | Control.HasFocus(5270050) | Control.HasFocus(5300050) | Control.HasFocus(5310050) | Control.HasFocus(5320050) | Control.HasFocus(5330050) | Control.HasFocus(5340050)] | Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsbreturn),2)</stop>
+		<onstop condition="[Control.HasFocus(5103) | Control.HasFocus(5130) | Control.HasFocus(5200050) | Control.HasFocus(5210050) | Control.HasFocus(5220050) | Control.HasFocus(5230050) | Control.HasFocus(5240050) | Control.HasFocus(5250050) | Control.HasFocus(5260050) | Control.HasFocus(5270050) | Control.HasFocus(5300050) | Control.HasFocus(5310050) | Control.HasFocus(5320050) | Control.HasFocus(5330050) | Control.HasFocus(5340050)]">SetFocus(50)</onstop>
+	</timer>
+	<!-- Now playing: step to the artist's next fanart every 16 seconds (aeon.npfan 0-4; a number without a picture shows the main one) -->
+	<timer>
+		<name>aeonnpfan</name>
+		<description>Now playing fanart cycling</description>
+		<start>[Window.IsActive(visualisation) + Player.HasAudio] | Window.IsActive(music)</start>
+		<stop>![[Window.IsActive(visualisation) + Player.HasAudio] | Window.IsActive(music)] | Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonnpfan),16)</stop>
+		<onstop condition="[Window.IsActive(visualisation) | Window.IsActive(music)] + [String.IsEmpty(Window(Home).Property(aeon.npfan)) | String.IsEqual(Window(Home).Property(aeon.npfan),0)]">SetProperty(aeon.npfan,1,home)</onstop>
+		<onstop condition="[Window.IsActive(visualisation) | Window.IsActive(music)] + String.IsEqual(Window(Home).Property(aeon.npfan),1)">SetProperty(aeon.npfan,2,home)</onstop>
+		<onstop condition="[Window.IsActive(visualisation) | Window.IsActive(music)] + String.IsEqual(Window(Home).Property(aeon.npfan),2)">SetProperty(aeon.npfan,3,home)</onstop>
+		<onstop condition="[Window.IsActive(visualisation) | Window.IsActive(music)] + String.IsEqual(Window(Home).Property(aeon.npfan),3)">SetProperty(aeon.npfan,4,home)</onstop>
+		<onstop condition="[Window.IsActive(visualisation) | Window.IsActive(music)] + String.IsEqual(Window(Home).Property(aeon.npfan),4)">SetProperty(aeon.npfan,0,home)</onstop>
+	</timer>
+	<!-- Flix view: four seconds after the selection came to rest, the trailer of the focused title plays behind the page: the trailer file
+	     next to the film or show if there is one, otherwise the address the library holds.
+	     aeon.flixtrailer marks "a trailer was started for this title"; moving on or leaving the view stops it. -->
+	<timer>
+		<name>aeonflix</name>
+		<description>Flix: start the trailer</description>
+		<start>Window.IsActive(videos) + Control.IsVisible(528) + String.IsEqual(Window(Home).Property(aeon.vo.trailer),on) + !Player.HasMedia + !System.HasActiveModalDialog + String.IsEmpty(Window(Home).Property(aeon.flixtrailer))</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonflix),4) | !Control.IsVisible(528) | Player.HasMedia</stop>
+		<onstop condition="Window.IsActive(videos) + Control.IsVisible(528) + String.IsEqual(Window(Home).Property(aeon.vo.trailer),on) + !Player.HasMedia + !System.HasActiveModalDialog + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonflix),4)">SetProperty(aeon.flixtrailer,1,home)</onstop>
+		<onstop condition="Window.IsActive(videos) + Control.IsVisible(528) + String.IsEqual(Window(Home).Property(aeon.vo.trailer),on) + !Player.HasMedia + !System.HasActiveModalDialog + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonflix),4)">RunScript(script.aeon.helper,trailer,flix)</onstop>
+	</timer>
+	<timer>
+		<name>aeonflixstop</name>
+		<description>Flix: stop the trailer when the selection moves or the view is left</description>
+		<start>!String.IsEmpty(Window(Home).Property(aeon.flixtrailer)) + [Container.OnNext | Container.OnPrevious | Container.Scrolling | !Control.IsVisible(528) | !Window.IsActive(videos)]</start>
+		<stop>true</stop>
+		<onstop condition="Player.HasVideo + String.IsEmpty(VideoPlayer.DBID) + !Window.IsActive(fullscreenvideo)">PlayerControl(Stop)</onstop>
+		<onstop>ClearProperty(aeon.flixtrailer,home)</onstop>
+	</timer>
+	<timer>
+		<name>aeonsp2planner</name>
+		<description>Home spotlight: next item (planner)</description>
+		<start>Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,planner) + !Skin.HasSetting(aeon.nosp2.planner) + Integer.IsGreater(Container(9414).NumItems,0) + !Control.HasFocus(9414)</start>
+		<reset>!System.IdleTime(1)</reset>
+		<stop>[Integer.IsGreater(Skin.String(aeon.planner.spotsecs),2) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2planner),Skin.String(aeon.planner.spotsecs))] | [!Integer.IsGreater(Skin.String(aeon.planner.spotsecs),2) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeonsp2planner),8)] | ![Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,planner) + !Skin.HasSetting(aeon.nosp2.planner) + Integer.IsGreater(Container(9414).NumItems,0) + !Control.HasFocus(9414)]</stop>
+		<onstop condition="Window.IsActive(home) + String.IsEqual(Container(9000).ListItem.Label2,planner) + !Skin.HasSetting(aeon.nosp2.planner) + Integer.IsGreater(Container(9414).NumItems,0) + !Control.HasFocus(9414)">Control.Move(9414,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonhomearm</name>
+		<description>0.56.4: Home strip of the focused Movies / TV shows / Music loads and stays loaded (_src/home_preload.py)</description>
+		<start>Window.IsActive(home) + [[String.IsEqual(Container(9000).ListItem.Label2,movies) + String.IsEmpty(Window(Home).Property(aeon.pl.movies))] | [String.IsEqual(Container(9000).ListItem.Label2,tv) + String.IsEmpty(Window(Home).Property(aeon.pl.tv))] | [String.IsEqual(Container(9000).ListItem.Label2,music) + String.IsEmpty(Window(Home).Property(aeon.pl.music))]]</start>
+		<stop>true</stop>
+		<onstop condition="String.IsEqual(Container(9000).ListItem.Label2,movies)">SetProperty(aeon.pl.movies,1,home)</onstop>
+		<onstop condition="String.IsEqual(Container(9000).ListItem.Label2,tv)">SetProperty(aeon.pl.tv,1,home)</onstop>
+		<onstop condition="String.IsEqual(Container(9000).ListItem.Label2,music)">SetProperty(aeon.pl.music,1,home)</onstop>
+	</timer>
+	<timer>
+		<name>aeoncycler</name>
+		<description>0.56.6: the album cover cycler of the Fused Glass music views moves on every 5 s (Kodi's autoscroll counted
+		     time only while the list was redrawn, so it stepped twice 0.6 s apart and then waited)</description>
+		<start>Skin.HasSetting(aeon.fglass) + Window.IsActive(music) + [[Control.IsVisible(5131) + Integer.IsGreater(Container(5131).NumItems,1)] | [Control.IsVisible(5300005) + Integer.IsGreater(Container(5300005).NumItems,1)] | [Control.IsVisible(5310005) + Integer.IsGreater(Container(5310005).NumItems,1)] | [Control.IsVisible(5320005) + Integer.IsGreater(Container(5320005).NumItems,1)] | [Control.IsVisible(5340005) + Integer.IsGreater(Container(5340005).NumItems,1)]]</start>
+		<stop>Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(aeoncycler),5) | !Window.IsActive(music)</stop>
+		<onstop condition="Control.IsVisible(5131) + Integer.IsGreater(Container(5131).NumItems,1)">Control.Move(5131,1)</onstop>
+		<onstop condition="Control.IsVisible(5300005) + Integer.IsGreater(Container(5300005).NumItems,1)">Control.Move(5300005,1)</onstop>
+		<onstop condition="Control.IsVisible(5310005) + Integer.IsGreater(Container(5310005).NumItems,1)">Control.Move(5310005,1)</onstop>
+		<onstop condition="Control.IsVisible(5320005) + Integer.IsGreater(Container(5320005).NumItems,1)">Control.Move(5320005,1)</onstop>
+		<onstop condition="Control.IsVisible(5340005) + Integer.IsGreater(Container(5340005).NumItems,1)">Control.Move(5340005,1)</onstop>
+	</timer>
+	<timer>
+		<name>aeonsplashend</name>
+		<description>0.56.20 splash: the start-up splash ends when the library, the Movies / TV shows / Music rows and the TV channels are in (weather is not waited for) or 40 s after Home opened (_src/splash_05620.py)</description>
+		<start>!String.IsEmpty(Window(Home).Property(aeon.splash)) + String.IsEmpty(Window(Home).Property(aeon.splash.ending)) + String.IsEmpty(Window(Home).Property(aeon.splash.hold)) + [[[Library.HasContent(movies) | Library.HasContent(tvshows) | Library.HasContent(music)] + [![Library.HasContent(movies)] | Integer.IsGreater(Container(9301).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.movies.in))] + [![Library.HasContent(tvshows)] | Integer.IsGreater(Container(9302).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.tv.in))] + [![Library.HasContent(music)] | Integer.IsGreater(Container(9303).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.music.in))] + [![System.HasPVRAddon] | PVR.HasTVChannels]] | !String.IsEmpty(Window(Home).Property(aeon.splash.to))]</start>
+		<stop>true</stop>
+		<!-- 0.56.53 one second more, so the last steps' ticks show (they used to land in the same moment it ended; user:
+		     "why does tv shows and music never get checkmark on the splash screen?"); aeonsplashfin ends it -->
+		<onstart>SetProperty(aeon.splash.ending,1,home)</onstart>
+		<onstart>AlarmClock(aeonsplashfin,SetProperty(aeon.splash.fin,1,home),00:01,silent)</onstart>
+	</timer>
+	<timer>
+		<name>aeonsplashfin</name>
+		<description>0.56.53 the splash ends one second after aeonsplashend saw everything in (or the 40 s cap)</description>
+		<start>!String.IsEmpty(Window(Home).Property(aeon.splash.fin))</start>
+		<stop>true</stop>
+		<onstart condition="Window.IsActive(home) + Control.HasFocus(9999)">SetFocus(9000)</onstart>
+		<onstart condition="Control.HasFocus(9990)">SetFocus(10)</onstart>
+		<onstart>ClearProperty(aeon.splash,home)</onstart>
+		<onstart>ClearProperty(aeon.splash.to,home)</onstart>
+		<onstart>ClearProperty(aeon.splash.fin,home)</onstart>
+		<onstart>ClearProperty(aeon.splash.ending,home)</onstart>
+	</timer>
+</timers>

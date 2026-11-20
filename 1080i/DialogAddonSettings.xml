@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Add-on settings (TMDb Helper, YouTube, subtitle services ...).
+	Same page as Kodi's own settings (SettingsCategory.xml): the framed column of categories on the left (76 px cells,
+	level button as the last cell), the settings list next to it, the description under the frame. The only extra is
+	the column of OK / Cancel / Defaults on the right.
+	Id contract (Estuary Omega): heading 2, categories grouplist 3 + template 10, control area 5,
+	description 6, templates 7-15, buttons 28 / 29 / 30 in grouplist 9000, level button 20,
+	scrollbars 60 / 61.
+-->
+<window>
+	<defaultcontrol>5</defaultcontrol>
+	<backgroundcolor>ff000000</backgroundcolor>
+	<include>Anim_WindowOpenClose</include>
+	<controls>
+		<control type="image"><left>0</left><top>0</top><width>1920</width><height>1080</height><texture colordiffuse="$VAR[AG_Ground]">common/white.png</texture></control>
+		<control type="group"><visible>$EXP[Aeon_VGlass]</visible><include>Aeon_Backdrop</include></control>
+		<!-- 0.56.9 the add-on's fanart (script.aeon.helper finds it by the name in the heading: aeon.as.fanart) -->
+		<include content="Aeon_AddonFanart"><param name="art" value="$INFO[Window(Home).Property(aeon.as.fanart)]"/><param name="cond" value="!String.IsEmpty(Window(Home).Property(aeon.as.fanart))"/></include>
+		<!-- Fuse: deep background, rounded panels instead of the frame; 0.56.53 not over the add-on's fanart (it covered it) -->
+		<control type="image"><width>1920</width><height>1080</height><texture colordiffuse="x_deep">common/white.png</texture><visible>$EXP[Aeon_Fused] + String.IsEmpty(Window(Home).Property(aeon.as.fanart))</visible></control>
+		<control type="image"><left>-300</left><top>-300</top><width>1400</width><height>1000</height><texture colordiffuse="14ffffff">aeon/glow_soft.png</texture><visible>$EXP[Aeon_Fused] + String.IsEmpty(Window(Home).Property(aeon.as.fanart))</visible></control>
+		<!-- 0.56.20 fuse_survey2: one card for the categories and the settings (two cards met in a line) -->
+		<control type="group"><left>100</left><top>180</top><width>1720</width><height>684</height><visible>!$EXP[Aeon_FGlass] + !$EXP[Aeon_MS]</visible><include>Aeon_Glass</include></control>
+		<!-- header: Kodi writes the add-on's name into label 2, kept off screen -->
+		<control type="label" id="2"><left>-3000</left><top>0</top><width>1200</width><height>40</height><font>st_ui_28</font></control>
+		<include content="Aeon_MenuHeader"><param name="lead" value="$LOCALIZE[31207]"/><param name="label" value="$INFO[Control.GetLabel(2)]"/></include>
+		<include>Aeon_ClockBox</include>
+
+		<include condition="!Skin.HasSetting(aeon.fglass) + !$EXP[Aeon_MS]">AddonSet_Classic</include><include condition="$EXP[FGS]">FGS_AddonSettingsPage</include><!-- 0.56.53 fgspage --><!-- 0.56.29 fgs_flush -->
+		<include condition="$EXP[Aeon_MS_mosaic]">MS_AddonSet_mosaic</include>
+		<include condition="$EXP[Aeon_MS_ledger]">MS_AddonSet_ledger</include>
+		<include condition="$EXP[Aeon_MS_bridge]">MS_AddonSet_bridge</include>
+		<include condition="$EXP[Aeon_MS_tabslab]">MS_AddonSet_tabslab</include>
+		<include condition="Skin.HasSetting(aeon.fglass) + !$EXP[FGS]">FG_AddonSettingsPage</include>
+
+	</controls>
+</window>

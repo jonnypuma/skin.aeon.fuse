@@ -1,0 +1,7177 @@
+# Kodi add-on strings - skin.aeon.fuse (da_dk)
+msgid ""
+msgstr ""
+"Project-Id-Version: skin.aeon.fuse\n"
+"Language: da_DK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#31010"
+msgid "Sort"
+msgstr "Sortering"
+
+msgctxt "#31011"
+msgid "View"
+msgstr "Visning"
+
+msgctxt "#31012"
+msgid "Nothing here"
+msgstr "Intet her"
+
+msgctxt "#31013"
+msgid "Working"
+msgstr "Arbejder"
+
+msgctxt "#31014"
+msgid "Up / down to page, OK to close"
+msgstr "Op / ned for at bladre, OK for at lukke"
+
+msgctxt "#31015"
+msgid "Muted"
+msgstr "Lyd fra"
+
+msgctxt "#31016"
+msgid "Buffering"
+msgstr "Buffer"
+
+msgctxt "#31017"
+msgid "Now playing"
+msgstr "Afspilles nu"
+
+msgctxt "#31018"
+msgid "Next:"
+msgstr "Næste:"
+
+msgctxt "#31019"
+msgid "Home"
+msgstr "Hjem"
+
+msgctxt "#31020"
+msgid "System"
+msgstr "System"
+
+msgctxt "#31021"
+msgid "Skin settings"
+msgstr "Skin-indstillinger"
+
+msgctxt "#31022"
+msgid "Power"
+msgstr "Tænd/sluk"
+
+msgctxt "#31024"
+msgid "Aeon Fuse"
+msgstr "Aeon Fuse"
+
+msgctxt "#31025"
+msgid "Skin settings holds Aeon Fuse's own options. To switch skins: Interface > Skin > Skin."
+msgstr "Skin-indstillingerne rummer Aeon Fuses egne valg. Skift skin: Brugerflade > Skin > Skin."
+
+msgctxt "#31030"
+msgid "Ends"
+msgstr "Slutter"
+
+msgctxt "#31040"
+msgid "Symbols"
+msgstr "Symboler"
+
+msgctxt "#31041"
+msgid "Caps"
+msgstr "Store bogst."
+
+msgctxt "#31042"
+msgid "Shift"
+msgstr "Skift"
+
+msgctxt "#31043"
+msgid "Space"
+msgstr "Mellemrum"
+
+msgctxt "#31044"
+msgid "Delete"
+msgstr "Slet"
+
+msgctxt "#31045"
+msgid "Queue"
+msgstr "Kø"
+
+msgctxt "#31046"
+msgid "Cover showcase"
+msgstr "Omslagsudstilling"
+
+msgctxt "#31047"
+msgid "03  Performance"
+msgstr "03  Ydelse"
+
+msgctxt "#31048"
+msgid "Pause"
+msgstr "Pause"
+
+msgctxt "#31050"
+msgid "Palette"
+msgstr "Palet"
+
+msgctxt "#31051"
+msgid "Slightly rounded corners"
+msgstr "Let afrundede hjørner"
+
+msgctxt "#31052"
+msgid "Focus outline"
+msgstr "Fokusramme"
+
+msgctxt "#31053"
+msgid "Artwork background"
+msgstr "Billedbaggrund"
+
+msgctxt "#31054"
+msgid "Trailer button"
+msgstr "Trailerknap"
+
+msgctxt "#31055"
+msgid "Watched indicators"
+msgstr "Set-markeringer"
+
+msgctxt "#31056"
+msgid "Spotlight rotation"
+msgstr "Spotlight-rotation"
+
+msgctxt "#31057"
+msgid "Newest row on Home"
+msgstr "Række med nyeste på Hjem"
+
+msgctxt "#31058"
+msgid "Reduce motion"
+msgstr "Reducér bevægelse"
+
+msgctxt "#31059"
+msgid "Reset all skin settings"
+msgstr "Nulstil alle skin-indstillinger"
+
+msgctxt "#31060"
+msgid "Signal"
+msgstr "Signal"
+
+msgctxt "#31061"
+msgid "Cobalt"
+msgstr "Kobolt"
+
+msgctxt "#31062"
+msgid "Mint"
+msgstr "Mint"
+
+msgctxt "#31063"
+msgid "Amber"
+msgstr "Rav"
+
+msgctxt "#31064"
+msgid "Rose"
+msgstr "Rosa"
+
+msgctxt "#31065"
+msgid "Ice"
+msgstr "Is"
+
+msgctxt "#31066"
+msgid "Bone"
+msgstr "Ben"
+
+msgctxt "#31070"
+msgid "Thin"
+msgstr "Tynd"
+
+msgctxt "#31071"
+msgid "Medium"
+msgstr "Mellem"
+
+msgctxt "#31072"
+msgid "Off"
+msgstr "Fra"
+
+msgctxt "#31075"
+msgid "Faint"
+msgstr "Svag"
+
+msgctxt "#31076"
+msgid "Soft"
+msgstr "Blød"
+
+msgctxt "#31077"
+msgid "Visible"
+msgstr "Synlig"
+
+msgctxt "#31080"
+msgid "Both"
+msgstr "Begge"
+
+msgctxt "#31081"
+msgid "Unwatched only"
+msgstr "Kun usete"
+
+msgctxt "#31082"
+msgid "Watched only"
+msgstr "Kun sete"
+
+msgctxt "#31085"
+msgid "Date added"
+msgstr "Dato tilføjet"
+
+msgctxt "#31086"
+msgid "Release date"
+msgstr "Udgivelsesdato"
+
+msgctxt "#31087"
+msgid "Both rows"
+msgstr "Begge rækker"
+
+msgctxt "#31100"
+msgid "Spotlight / unwatched / top rated"
+msgstr "Spotlight / usete / bedst bedømt"
+
+msgctxt "#31101"
+msgid "Year"
+msgstr "År"
+
+msgctxt "#31102"
+msgid "Runtime"
+msgstr "Spilletid"
+
+msgctxt "#31103"
+msgid "Rating"
+msgstr "Bedømmelse"
+
+msgctxt "#31104"
+msgid "Rated"
+msgstr "Aldersgrænse"
+
+msgctxt "#31105"
+msgid "Details"
+msgstr "Detaljer"
+
+msgctxt "#31106"
+msgid "Fig. 01: random pick, unwatched, rated 7.5+"
+msgstr "Fig. 01: tilfældigt valg, uset, bedømt 7,5+"
+
+msgctxt "#31107"
+msgid "No unwatched films rated 7.5+ yet"
+msgstr "Ingen usete film med bedømmelse 7,5+ endnu"
+
+msgctxt "#31110"
+msgid "Newest additions"
+msgstr "Nyeste tilføjelser"
+
+msgctxt "#31111"
+msgid "Sorted by date added ↓"
+msgstr "Sorteret efter dato tilføjet ↓"
+
+msgctxt "#31112"
+msgid "Newest releases"
+msgstr "Nyeste udgivelser"
+
+msgctxt "#31113"
+msgid "Sorted by release date ↓"
+msgstr "Sorteret efter udgivelsesdato ↓"
+
+msgctxt "#31114"
+msgid "films"
+msgstr "film"
+
+msgctxt "#31120"
+msgid "Seek  ◀ ▶"
+msgstr "Spol  ◀ ▶"
+
+msgctxt "#31121"
+msgid "Previous"
+msgstr "Forrige"
+
+msgctxt "#31122"
+msgid "Rewind"
+msgstr "Spol tilbage"
+
+msgctxt "#31123"
+msgid "Play / pause"
+msgstr "Afspil / pause"
+
+msgctxt "#31124"
+msgid "Stop"
+msgstr "Stop"
+
+msgctxt "#31125"
+msgid "Forward"
+msgstr "Spol frem"
+
+msgctxt "#31126"
+msgid "Next"
+msgstr "Næste"
+
+msgctxt "#31127"
+msgid "Subtitles"
+msgstr "Undertekster"
+
+msgctxt "#31128"
+msgid "Audio"
+msgstr "Lyd"
+
+msgctxt "#31129"
+msgid "Video settings"
+msgstr "Videoindstillinger"
+
+msgctxt "#31318"
+msgid "Visualiser presets"
+msgstr "Forudindstillinger for visualisering"
+
+msgctxt "#31319"
+msgid "OK, then ← for presets"
+msgstr "OK, så ← for forvalg"
+
+msgctxt "#31900"
+msgid "Aeon Fuse (Figtree)"
+msgstr "Aeon Fuse (Figtree)"
+
+msgctxt "#31901"
+msgid "Arial (wider script coverage)"
+msgstr "Arial (flere skriftsystemer)"
+
+msgctxt "#31902"
+msgid "Episode code"
+msgstr "Afsnitskode"
+
+msgctxt "#31200"
+msgid "Aeon Fuse settings"
+msgstr "Aeon Fuse-indstillinger"
+
+msgctxt "#31201"
+msgid "Live TV"
+msgstr "Live-tv"
+
+msgctxt "#31202"
+msgid "Media"
+msgstr "Medier"
+
+msgctxt "#31203"
+msgid "Update library"
+msgstr "Opdatér biblioteket"
+
+msgctxt "#31204"
+msgid "Library"
+msgstr "Bibliotek"
+
+msgctxt "#31205"
+msgid "Clean library"
+msgstr "Ryd op i biblioteket"
+
+msgctxt "#31206"
+msgid "More"
+msgstr "Mere"
+
+msgctxt "#31207"
+msgid "Add-on"
+msgstr "Tilføjelse"
+
+msgctxt "#31208"
+msgid "About this setting"
+msgstr "Om denne indstilling"
+
+msgctxt "#31209"
+msgid "Timer"
+msgstr "Timer"
+
+msgctxt "#31210"
+msgid "Left / right: channel group"
+msgstr "Venstre / højre: kanalgruppe"
+
+msgctxt "#31211"
+msgid "Add group"
+msgstr "Tilføj gruppe"
+
+msgctxt "#31212"
+msgid "Rename group"
+msgstr "Omdøb gruppe"
+
+msgctxt "#31213"
+msgid "Delete group"
+msgstr "Slet gruppe"
+
+msgctxt "#31214"
+msgid "Jump through the guide  ·  Back to close"
+msgstr "Spring gennem guiden  ·  Tilbage lukker"
+
+msgctxt "#31215"
+msgid "Playing on this Shield"
+msgstr "Afspilles på denne Shield"
+
+msgctxt "#31216"
+msgid "OK or Back closes"
+msgstr "OK eller Tilbage lukker"
+
+msgctxt "#31217"
+msgid "Find subtitles"
+msgstr "Find undertekster"
+
+msgctxt "#31218"
+msgid "Service"
+msgstr "Tjeneste"
+
+msgctxt "#31219"
+msgid "Status"
+msgstr "Status"
+
+msgctxt "#31220"
+msgid "This file already has subtitle tracks"
+msgstr "Denne fil har allerede underteksspor"
+
+msgctxt "#31221"
+msgid "Sync = timed to your file"
+msgstr "Synk = tilpasset din fil"
+
+msgctxt "#31222"
+msgid "No subtitles listed yet. Pick a service or search manually."
+msgstr "Ingen undertekster endnu. Vælg en tjeneste, eller søg manuelt."
+
+msgctxt "#31223"
+msgid "Order:"
+msgstr "Rækkefølge:"
+
+msgctxt "#31224"
+msgid "Nothing has happened yet."
+msgstr "Intet er sket endnu."
+
+msgctxt "#31225"
+msgid "Back to continue"
+msgstr "Tilbage for at fortsætte"
+
+msgctxt "#31226"
+msgid "Nothing to choose"
+msgstr "Intet at vælge"
+
+msgctxt "#31227"
+msgid "Browse the whole library instead."
+msgstr "Gennemse hele biblioteket i stedet."
+
+msgctxt "#31228"
+msgid "See all"
+msgstr "Se alle"
+
+msgctxt "#31229"
+msgid "No shows in progress. Start one from Shows."
+msgstr "Ingen serier i gang. Start en fra Serier."
+
+msgctxt "#31230"
+msgid "Nothing here."
+msgstr "Intet her."
+
+msgctxt "#31231"
+msgid "PVR & Live TV settings"
+msgstr "PVR- og live-tv-indstillinger"
+
+msgctxt "#31232"
+msgid "Up one level"
+msgstr "Op et niveau"
+
+msgctxt "#31233"
+msgid "Nothing else is known about this one yet."
+msgstr "Intet mere er kendt om denne endnu."
+
+msgctxt "#31234"
+msgid "Up and down scroll  ·  Back closes"
+msgstr "Op og ned ruller  ·  Tilbage lukker"
+
+msgctxt "#31235"
+msgid "Up next"
+msgstr "Næste"
+
+msgctxt "#31236"
+msgid "The last one in the queue"
+msgstr "Den sidste i køen"
+
+msgctxt "#31237"
+msgid "Sync"
+msgstr "Synk"
+
+msgctxt "#31238"
+msgid "No matches"
+msgstr "Ingen resultater"
+
+msgctxt "#31239"
+msgid "Searching"
+msgstr "Søger"
+
+msgctxt "#31240"
+msgid "Films, shows, albums, artists"
+msgstr "Film, serier, album, kunstnere"
+
+msgctxt "#31241"
+msgid "OK to type  ·  Down for results  ·  Back to close"
+msgstr "OK for at skrive  ·  Ned for resultater  ·  Tilbage for at lukke"
+
+msgctxt "#31242"
+msgid "Films and shows match on title, albums on album name, artists on name. Library only."
+msgstr "Film og serier efter titel, album efter albumnavn, kunstnere efter navn. Kun biblioteket."
+
+msgctxt "#31243"
+msgid "Offsets apply to this film only. Choosing an offset hides this panel so you can sync against the picture."
+msgstr "Forskydninger gælder kun denne film. Vælger du en forskydning, skjules panelet, så du kan synkronisere mod billedet."
+
+msgctxt "#31244"
+msgid "More for this title"
+msgstr "Mere om denne titel"
+
+msgctxt "#31245"
+msgid "Back"
+msgstr "Tilbage"
+
+msgctxt "#31246"
+msgid "Unwatched only is on: choose the pill above to show everything."
+msgstr "\"Kun usete\" er slået til: vælg knappen ovenfor for at vise alt."
+
+msgctxt "#31247"
+msgid "Left and right to seek  ·  Down returns"
+msgstr "Venstre og højre spoler  ·  Ned går tilbage"
+
+msgctxt "#31248"
+msgid "Choose Albums, Artists, Songs or Genres above."
+msgstr "Vælg Album, Kunstnere, Sange eller Genrer ovenfor."
+
+msgctxt "#31249"
+msgid "Playlist"
+msgstr "Afspilningsliste"
+
+msgctxt "#31250"
+msgid "Empty. Pick songs or albums on the left and press OK to add them."
+msgstr "Tom. Vælg sange eller album til venstre, og tryk OK for at tilføje dem."
+
+msgctxt "#31251"
+msgid "The queue is empty"
+msgstr "Køen er tom"
+
+msgctxt "#31252"
+msgid "No weather yet."
+msgstr "Intet vejr endnu."
+
+msgctxt "#31253"
+msgid "Choose a weather service under Settings, Services, Weather."
+msgstr "Vælg en vejrtjeneste under Indstillinger, Tjenester, Vejr."
+
+msgctxt "#31254"
+msgid "The next few days"
+msgstr "De næste dage"
+
+msgctxt "#31255"
+msgid "Look, behaviour, home menu"
+msgstr "Udseende, adfærd, hovedmenu"
+
+msgctxt "#31256"
+msgid "Playback, subtitles"
+msgstr "Afspilning, undertekster"
+
+msgctxt "#31257"
+msgid "Library, files"
+msgstr "Bibliotek, filer"
+
+msgctxt "#31258"
+msgid "Skin, region"
+msgstr "Skin, region"
+
+msgctxt "#31259"
+msgid "Installed, updates"
+msgstr "Installerede, opdateringer"
+
+msgctxt "#31260"
+msgid "Remote, sharing"
+msgstr "Fjernbetjening, deling"
+
+msgctxt "#31261"
+msgid "Display, audio"
+msgstr "Skærm, lyd"
+
+msgctxt "#31262"
+msgid "Sources, files"
+msgstr "Kilder, filer"
+
+msgctxt "#31263"
+msgid "Hardware, storage"
+msgstr "Hardware, lager"
+
+msgctxt "#31264"
+msgid "Event log"
+msgstr "Hændelseslog"
+
+msgctxt "#31265"
+msgid "Recent events"
+msgstr "Seneste hændelser"
+
+msgctxt "#31266"
+msgid "Users"
+msgstr "Brugere"
+
+msgctxt "#31267"
+msgid "Not used"
+msgstr "Ikke brugt"
+
+msgctxt "#31268"
+msgid "Controllers"
+msgstr "Controllere"
+
+msgctxt "#31269"
+msgid "This box"
+msgstr "Denne enhed"
+
+msgctxt "#31270"
+msgid "Login screen"
+msgstr "Login-skærm"
+
+msgctxt "#31271"
+msgid "Auto login"
+msgstr "Automatisk login"
+
+msgctxt "#31272"
+msgid "Options"
+msgstr "Valg"
+
+msgctxt "#31273"
+msgid "Order direction"
+msgstr "Sorteringsretning"
+
+msgctxt "#31274"
+msgid "Select a rule to edit it. Use the context menu to delete a rule."
+msgstr "Vælg en regel for at redigere den. Brug kontekstmenuen til at slette en regel."
+
+msgctxt "#31275"
+msgid "Value"
+msgstr "Værdi"
+
+msgctxt "#31276"
+msgid "No chapters or bookmarks yet. Create one with the first button."
+msgstr "Ingen kapitler eller bogmærker endnu. Opret et med den første knap."
+
+msgctxt "#31277"
+msgid "OK jumps there  ·  Back closes"
+msgstr "OK springer dertil  ·  Tilbage lukker"
+
+msgctxt "#31300"
+msgid "Order"
+msgstr "Rækkefølge"
+
+msgctxt "#31301"
+msgid "Watched"
+msgstr "Sete"
+
+msgctxt "#31302"
+msgid "Search"
+msgstr "Søg"
+
+msgctxt "#31303"
+msgid "Stop updating"
+msgstr "Stop opdateringen"
+
+msgctxt "#31304"
+msgid "Library settings"
+msgstr "Biblioteksindstillinger"
+
+msgctxt "#31305"
+msgid "Music"
+msgstr "Musik"
+
+msgctxt "#31306"
+msgid "Update"
+msgstr "Opdatér"
+
+msgctxt "#31307"
+msgid "Clean"
+msgstr "Ryd op"
+
+msgctxt "#31308"
+msgid "Collections"
+msgstr "Samlinger"
+
+msgctxt "#31309"
+msgid "Films and shows"
+msgstr "Film og serier"
+
+msgctxt "#31310"
+msgid "No, keep it as it is"
+msgstr "Nej, lad det være"
+
+msgctxt "#31311"
+msgid "Yes, clean it now"
+msgstr "Ja, ryd op nu"
+
+msgctxt "#31312"
+msgid "Grid"
+msgstr "Gitter"
+
+msgctxt "#31313"
+msgid "Wall"
+msgstr "Væg"
+
+msgctxt "#31314"
+msgid "Episodes"
+msgstr "Afsnit"
+
+msgctxt "#31315"
+msgid "List"
+msgstr "Liste"
+
+msgctxt "#31316"
+msgid "OK to reset"
+msgstr "OK for at nulstille"
+
+msgctxt "#31317"
+msgid "Press OK again to reset everything"
+msgstr "Tryk OK igen for at nulstille alt"
+
+msgctxt "#31320"
+msgid "Spotlight"
+msgstr "Spotlight"
+
+msgctxt "#31321"
+msgid "Wide"
+msgstr "Bred"
+
+msgctxt "#31322"
+msgid "Time"
+msgstr "Tid"
+
+msgctxt "#31323"
+msgid "No runtime"
+msgstr "Ingen spilletid"
+
+msgctxt "#31324"
+msgid "Now"
+msgstr "Nu"
+
+msgctxt "#31325"
+msgid "+1 h"
+msgstr "+1 h"
+
+msgctxt "#31326"
+msgid "+2 h"
+msgstr "+2 h"
+
+msgctxt "#31327"
+msgid "+3 h"
+msgstr "+3 h"
+
+msgctxt "#31328"
+msgid "+4 h"
+msgstr "+4 h"
+
+msgctxt "#31329"
+msgid "Rows"
+msgstr "Rækker"
+
+msgctxt "#31330"
+msgid "Main menu"
+msgstr "Hovedmenu"
+
+msgctxt "#31331"
+msgid "Films"
+msgstr "Film"
+
+msgctxt "#31332"
+msgid "Shows"
+msgstr "Serier"
+
+msgctxt "#31333"
+msgid "Music"
+msgstr "Musik"
+
+msgctxt "#31334"
+msgid "Search"
+msgstr "Søg"
+
+msgctxt "#31335"
+msgid "Pill, hero and film cards"
+msgstr "Knap, hero og filmkort"
+
+msgctxt "#31336"
+msgid "Pill and the Next up card"
+msgstr "Knap og Næste-kortet"
+
+msgctxt "#31337"
+msgid "Pill in the top line"
+msgstr "Knap i øverste linje"
+
+msgctxt "#31338"
+msgid "Which pills the top line shows. Hidden pills disappear on Home and in the libraries; the rest close up. For now and the gear (system menu, settings) always stay, so you can always come back here.[CR][CR]Up / Down picks a group, Right enters it."
+msgstr "Hvilke knapper øverste linje viser. Skjulte knapper forsvinder fra Hjem og bibliotekerne; resten rykker sammen. \"Lige nu\" og tandhjulet (systemmenu, indstillinger) bliver altid, så du altid kan komme tilbage hertil.[CR][CR]Op / Ned vælger en gruppe, Højre går ind i den."
+
+msgctxt "#31339"
+msgid "Films also takes the hero and the film cards off For now; Shows takes the Next up card. The libraries themselves stay: Search finds them, and the system menu has Files."
+msgstr "Film fjerner også hero og filmkortene fra \"Lige nu\"; Serier fjerner Næste-kortet. Bibliotekerne bliver: søgningen finder dem, og systemmenuen har Filer."
+
+msgctxt "#31340"
+msgid "Show"
+msgstr "Vis"
+
+msgctxt "#31341"
+msgid "Hide"
+msgstr "Skjul"
+
+msgctxt "#31342"
+msgid "View, sort, filter…"
+msgstr "Visning, sortering, filter…"
+
+msgctxt "#31940"
+msgid "Custom rows"
+msgstr "Egne rækker"
+
+msgctxt "#31941"
+msgid "Row 1"
+msgstr "Række 1"
+
+msgctxt "#31942"
+msgid "Row 2"
+msgstr "Række 2"
+
+msgctxt "#31943"
+msgid "Row 3"
+msgstr "Række 3"
+
+msgctxt "#31944"
+msgid "Not set"
+msgstr "Ikke angivet"
+
+msgctxt "#31945"
+msgid "Add-on, playlist or library…"
+msgstr "Tilføjelse, afspilningsliste eller bibliotek…"
+
+msgctxt "#31946"
+msgid "A favourite…"
+msgstr "En favorit…"
+
+msgctxt "#31947"
+msgid "Rename…"
+msgstr "Omdøb…"
+
+msgctxt "#31948"
+msgid "Clear"
+msgstr "Ryd"
+
+msgctxt "#31949"
+msgid "This favourite opens no folder"
+msgstr "Denne favorit åbner ingen mappe"
+
+msgctxt "#31950"
+msgid "Add up to three rows of your own to Home: a folder of an add-on (for example JellyCon's Continue Watching), a smart playlist, a library node or a favourite that opens a folder. A row shows only when it has something in it.[CR][CR]OK opens the row's options: choose what it shows, rename it or clear it."
+msgstr "Tilføj op til tre egne rækker på Hjem: en mappe fra en tilføjelse (for eksempel JellyCons Fortsæt med at se), en smart afspilningsliste, en biblioteksnode eller en favorit, der åbner en mappe. En række vises kun, når den har indhold.[CR][CR]OK åbner rækkens valg: vælg hvad den viser, omdøb den eller ryd den."
+
+msgctxt "#31951"
+msgid "Custom row"
+msgstr "Egen række"
+
+msgctxt "#31952"
+msgid "Loading…"
+msgstr "Indlæser…"
+
+msgctxt "#31953"
+msgid "1 item"
+msgstr "1 element"
+
+msgctxt "#31954"
+msgid "items"
+msgstr "elementer"
+
+msgctxt "#31955"
+msgid "Add-on · playlist · library · favourite"
+msgstr "Tilføjelse · afspilningsliste · bibliotek · favorit"
+
+msgctxt "#31956"
+msgid "The add-on of this favourite isn't installed"
+msgstr "Tilføjelsen til denne favorit er ikke installeret"
+
+msgctxt "#31957"
+msgid "Rows of your own on Home: an add-on folder, a playlist, a library node or a favourite. OK opens the row's options."
+msgstr "Egne rækker på Hjem: en tilføjelsesmappe, en afspilningsliste, en biblioteksnode eller en favorit. OK åbner rækkens valg."
+
+msgctxt "#31980"
+msgid "Custom menu items"
+msgstr "Egne menupunkter"
+
+msgctxt "#31981"
+msgid "Menu item 1"
+msgstr "Menupunkt 1"
+
+msgctxt "#31982"
+msgid "Menu item 2"
+msgstr "Menupunkt 2"
+
+msgctxt "#31983"
+msgid "Menu item 3"
+msgstr "Menupunkt 3"
+
+msgctxt "#31984"
+msgid "Put up to three add-ons, favourites or library folders on the main menu, after the skin's own items. An item shows only while its add-on is installed.[CR][CR]OK opens the item's options: choose what it opens, rename it or clear it."
+msgstr "Læg op til tre tilføjelser, favoritter eller biblioteksmapper i hovedmenuen, efter skin'ets egne punkter. Et punkt vises kun, mens dets tilføjelse er installeret.[CR][CR]OK åbner punktets valg: vælg hvad det åbner, omdøb det eller ryd det."
+
+msgctxt "#31985"
+msgid "Add-on · favourite · library · folder"
+msgstr "Tilføjelse · favorit · bibliotek · mappe"
+
+msgctxt "#31986"
+msgid "Opens"
+msgstr "Åbner"
+
+msgctxt "#31987"
+msgid "Menu item"
+msgstr "Menupunkt"
+
+msgctxt "#31988"
+msgid "add-on not installed"
+msgstr "tilføjelsen er ikke installeret"
+
+msgctxt "#31989"
+msgid "Add-on"
+msgstr "Tilføjelse"
+
+msgctxt "#31990"
+msgid "Playlist"
+msgstr "Afspilningsliste"
+
+msgctxt "#31991"
+msgid "Library"
+msgstr "Bibliotek"
+
+msgctxt "#31992"
+msgid "Folder"
+msgstr "Mappe"
+
+msgctxt "#31993"
+msgid "Shortcut"
+msgstr "Genvej"
+
+msgctxt "#31994"
+msgid "Your own items on the main menu: an add-on, a favourite, a library node or a folder. OK opens the item's options."
+msgstr "Dine egne punkter i hovedmenuen: en tilføjelse, en favorit, en biblioteksnode eller en mappe. OK åbner punktets valg."
+
+msgctxt "#31995"
+msgid "OK to open"
+msgstr "OK for at åbne"
+
+msgctxt "#31540"
+msgid "View settings"
+msgstr "Visningsindstillinger"
+
+msgctxt "#31541"
+msgid "Ratings"
+msgstr "Bedømmelser"
+
+msgctxt "#31542"
+msgid "Media info"
+msgstr "Medieinfo"
+
+msgctxt "#31543"
+msgid "Backdrop"
+msgstr "Baggrund"
+
+msgctxt "#31544"
+msgid "Reset"
+msgstr "Nulstil"
+
+msgctxt "#31545"
+msgid "Global settings"
+msgstr "Globale indstillinger"
+
+msgctxt "#31546"
+msgid "Default"
+msgstr "Standard"
+
+msgctxt "#31547"
+msgid "On"
+msgstr "Til"
+
+msgctxt "#31548"
+msgid "Off"
+msgstr "Fra"
+
+msgctxt "#31549"
+msgid "Neutral"
+msgstr "Neutral"
+
+msgctxt "#31550"
+msgid "Fanart"
+msgstr "Fanart"
+
+msgctxt "#31551"
+msgid "Colors"
+msgstr "Farver"
+
+msgctxt "#31000"
+msgid "Kodi"
+msgstr "Kodi"
+
+msgctxt "#31001"
+msgid "ULTRA HD"
+msgstr "ULTRA HD"
+
+msgctxt "#31002"
+msgid "The pages that Up opens above this home menu item. Pick one, then use the buttons on the right."
+msgstr "Siderne, som Op åbner over dette hovedmenupunkt. Vælg én, og brug så knapperne til højre."
+
+msgctxt "#31003"
+msgid "+  Add item"
+msgstr "+  Tilføj element"
+
+msgctxt "#31004"
+msgid "Rename"
+msgstr "Omdøb"
+
+msgctxt "#31005"
+msgid "Select source"
+msgstr "Vælg kilde"
+
+msgctxt "#31006"
+msgid "Sort by"
+msgstr "Sortér efter"
+
+msgctxt "#31007"
+msgid "Reverse order"
+msgstr "Omvendt rækkefølge"
+
+msgctxt "#31008"
+msgid "Items in list"
+msgstr "Elementer i listen"
+
+msgctxt "#31009"
+msgid "Seconds per item"
+msgstr "Sekunder pr. element"
+
+msgctxt "#31023"
+msgid "Autoscroll on / off"
+msgstr "Automatisk rulning til / fra"
+
+msgctxt "#31026"
+msgid "Hide / show"
+msgstr "Skjul / vis"
+
+msgctxt "#31027"
+msgid "Move up"
+msgstr "Flyt op"
+
+msgctxt "#31028"
+msgid "Move down"
+msgstr "Flyt ned"
+
+msgctxt "#31029"
+msgid "Add list..."
+msgstr "Tilføj liste..."
+
+msgctxt "#31031"
+msgid "Add folder items..."
+msgstr "Tilføj mappeelementer..."
+
+msgctxt "#31032"
+msgid "Restore defaults"
+msgstr "Gendan standard"
+
+msgctxt "#31033"
+msgid "The categories and rows shown under this home menu item (for Power: its actions)."
+msgstr "Kategorierne og rækkerne under dette hovedmenupunkt (for Tænd/sluk: dets handlinger)."
+
+msgctxt "#31034"
+msgid "Items in row"
+msgstr "Elementer i rækken"
+
+msgctxt "#31035"
+msgid "Artwork type"
+msgstr "Billedtype"
+
+msgctxt "#31036"
+msgid "The full-screen widget pages that Up opens above this item: on or off, autoscroll, and the defaults for every list in them."
+msgstr "Widgetsiderne i fuld skærm, som Op åbner over dette punkt: til eller fra, automatisk rulning og standarderne for hver liste i dem."
+
+msgctxt "#31037"
+msgid "Widget (Up key after Spotlight)"
+msgstr "Widget (Op-tasten efter Spotlight)"
+
+msgctxt "#31038"
+msgid "Autoscroll"
+msgstr "Automatisk rulning"
+
+msgctxt "#31039"
+msgid "Items per list"
+msgstr "Elementer pr. liste"
+
+msgctxt "#31049"
+msgid "The big Netflix-style spotlight above this item on Home: a rotating list of titles with fanart, logo, details and Play."
+msgstr "Den store Spotlight i Netflix-stil over dette punkt på Hjem: en roterende liste med titler med fanart, logo, detaljer og Afspil."
+
+msgctxt "#31067"
+msgid "Label"
+msgstr "Etiket"
+
+msgctxt "#31068"
+msgid "Path"
+msgstr "Sti"
+
+msgctxt "#31069"
+msgid "Items"
+msgstr "Elementer"
+
+msgctxt "#31073"
+msgid "Widget screen options"
+msgstr "Valg for widgetskærme"
+
+msgctxt "#31074"
+msgid "Library background (Aeon)"
+msgstr "Bibliotekets baggrund (Aeon)"
+
+msgctxt "#31078"
+msgid "Choose a view"
+msgstr "Vælg en visning"
+
+msgctxt "#31079"
+msgid "Left / Right to look, OK to switch"
+msgstr "Venstre / Højre for at se, OK for at skifte"
+
+msgctxt "#31083"
+msgid "Fanart list"
+msgstr "Fanartliste"
+
+msgctxt "#31084"
+msgid "Rows with A-Z keys"
+msgstr "Rækker med A-Å-taster"
+
+msgctxt "#31088"
+msgid "Artist wall"
+msgstr "Kunstnervæg"
+
+msgctxt "#31089"
+msgid "Cover grid"
+msgstr "Omslagsgitter"
+
+msgctxt "#31090"
+msgid "Album wall"
+msgstr "Albumvæg"
+
+msgctxt "#31091"
+msgid "Song wall"
+msgstr "Sangvæg"
+
+msgctxt "#31092"
+msgid "Artist showcase"
+msgstr "Kunstnerudstilling"
+
+msgctxt "#31093"
+msgid "Big covers in a row"
+msgstr "Store omslag på række"
+
+msgctxt "#31094"
+msgid "Album showcase"
+msgstr "Albumudstilling"
+
+msgctxt "#31095"
+msgid "Song showcase"
+msgstr "Sangudstilling"
+
+msgctxt "#31096"
+msgid "Artist rows"
+msgstr "Kunstnerrækker"
+
+msgctxt "#31097"
+msgid "Rows with covers"
+msgstr "Rækker med omslag"
+
+msgctxt "#31098"
+msgid "Album list"
+msgstr "Albumliste"
+
+msgctxt "#31099"
+msgid "Song list"
+msgstr "Sangliste"
+
+msgctxt "#31108"
+msgid "Compact song rows"
+msgstr "Kompakte sangrækker"
+
+msgctxt "#31109"
+msgid "Fanart wall"
+msgstr "Fanartvæg"
+
+msgctxt "#31115"
+msgid "Portrait grid"
+msgstr "Stående gitter"
+
+msgctxt "#31116"
+msgid "Fanart and A-Z keys"
+msgstr "Fanart og A-Å-taster"
+
+msgctxt "#31117"
+msgid "Show posters"
+msgstr "Vis plakater"
+
+msgctxt "#31118"
+msgid "Posters"
+msgstr "Plakater"
+
+msgctxt "#31119"
+msgid "Season posters"
+msgstr "Sæsonplakater"
+
+msgctxt "#31130"
+msgid "Poster wall"
+msgstr "Plakatvæg"
+
+msgctxt "#31131"
+msgid "Episode wall"
+msgstr "Afsnitsvæg"
+
+msgctxt "#31132"
+msgid "Landscape artwork"
+msgstr "Liggende billeder"
+
+msgctxt "#31133"
+msgid "Landscape wall"
+msgstr "Liggende væg"
+
+msgctxt "#31134"
+msgid "Square wall"
+msgstr "Kvadratisk væg"
+
+msgctxt "#31135"
+msgid "Square tiles"
+msgstr "Kvadratiske felter"
+
+msgctxt "#31136"
+msgid "Cards"
+msgstr "Kort"
+
+msgctxt "#31137"
+msgid "Artwork with details"
+msgstr "Billeder med detaljer"
+
+msgctxt "#31138"
+msgid "Showcase"
+msgstr "Udstilling"
+
+msgctxt "#31139"
+msgid "One big poster"
+msgstr "Én stor plakat"
+
+msgctxt "#31140"
+msgid "Banner list"
+msgstr "Bannerliste"
+
+msgctxt "#31141"
+msgid "Wide banner rows"
+msgstr "Brede bannerrækker"
+
+msgctxt "#31142"
+msgid "Compact list"
+msgstr "Kompakt liste"
+
+msgctxt "#31143"
+msgid "Dense rows with poster"
+msgstr "Tætte rækker med plakat"
+
+msgctxt "#31144"
+msgid "Episode list"
+msgstr "Afsnitsliste"
+
+msgctxt "#31145"
+msgid "Rows with thumbs"
+msgstr "Rækker med miniaturer"
+
+msgctxt "#31146"
+msgid "Season list combined 3"
+msgstr "Sæsonliste samlet 3"
+
+msgctxt "#31147"
+msgid "Rows with posters"
+msgstr "Rækker med plakater"
+
+msgctxt "#31148"
+msgid "Low list"
+msgstr "Lav liste"
+
+msgctxt "#31149"
+msgid "Rows over fanart"
+msgstr "Rækker over fanart"
+
+msgctxt "#31150"
+msgid "Version"
+msgstr "Version"
+
+msgctxt "#31151"
+msgid "Type"
+msgstr "Type"
+
+msgctxt "#31152"
+msgid "Installed"
+msgstr "Installeret"
+
+msgctxt "#31153"
+msgid "Updated"
+msgstr "Opdateret"
+
+msgctxt "#31154"
+msgid "Channel"
+msgstr "Kanal"
+
+msgctxt "#31155"
+msgid "Other"
+msgstr "Andet"
+
+msgctxt "#31156"
+msgid "Jump to now"
+msgstr "Spring til nu"
+
+msgctxt "#31157"
+msgid "Choose channel"
+msgstr "Vælg kanal"
+
+msgctxt "#31158"
+msgid "Choose channel group"
+msgstr "Vælg kanalgruppe"
+
+msgctxt "#31159"
+msgid "Choose date"
+msgstr "Vælg dato"
+
+msgctxt "#31160"
+msgid "Recordings"
+msgstr "Optagelser"
+
+msgctxt "#31161"
+msgid "Timers"
+msgstr "Timere"
+
+msgctxt "#31162"
+msgid "Timer rules"
+msgstr "Timerregler"
+
+msgctxt "#31163"
+msgid "Search guide"
+msgstr "Søg i guiden"
+
+msgctxt "#31164"
+msgid "Return to guide"
+msgstr "Tilbage til guiden"
+
+msgctxt "#31165"
+msgid "Exit guide"
+msgstr "Afslut guiden"
+
+msgctxt "#31166"
+msgid "Band"
+msgstr "Band"
+
+msgctxt "#31167"
+msgid "Artist"
+msgstr "Kunstner"
+
+msgctxt "#31168"
+msgid "Title"
+msgstr "Titel"
+
+msgctxt "#31169"
+msgid "Composer"
+msgstr "Komponist"
+
+msgctxt "#31170"
+msgid "Conductor"
+msgstr "Dirigent"
+
+msgctxt "#31171"
+msgid "Album"
+msgstr "Album"
+
+msgctxt "#31172"
+msgid "Comment"
+msgstr "Kommentar"
+
+msgctxt "#31173"
+msgid "Studio  ·  hotline"
+msgstr "Studie  ·  direkte linje"
+
+msgctxt "#31174"
+msgid "Studio phone"
+msgstr "Studietelefon"
+
+msgctxt "#31175"
+msgid "Studio email"
+msgstr "Studie-e-mail"
+
+msgctxt "#31176"
+msgid "Studio SMS"
+msgstr "Studie-sms"
+
+msgctxt "#31177"
+msgid "Hotline phone"
+msgstr "Direkte linjes telefon"
+
+msgctxt "#31178"
+msgid "Hotline email"
+msgstr "Direkte linjes e-mail"
+
+msgctxt "#31179"
+msgid "Programme"
+msgstr "Program"
+
+msgctxt "#31180"
+msgid "Style"
+msgstr "Stil"
+
+msgctxt "#31181"
+msgid "Station"
+msgstr "Station"
+
+msgctxt "#31182"
+msgid "Host"
+msgstr "Vært"
+
+msgctxt "#31183"
+msgid "Editorial"
+msgstr "Redaktion"
+
+msgctxt "#31184"
+msgid "Website"
+msgstr "Websted"
+
+msgctxt "#31185"
+msgid "Radiotext"
+msgstr "Radiotekst"
+
+msgctxt "#31186"
+msgid "ENDS"
+msgstr "SLUTTER"
+
+msgctxt "#31187"
+msgid "Search manually…"
+msgstr "Søg manuelt…"
+
+msgctxt "#31189"
+msgid "TRUEHD  7.1"
+msgstr "TRUEHD  7.1"
+
+msgctxt "#31190"
+msgid "Some stories never end."
+msgstr "Nogle historier slutter aldrig."
+
+msgctxt "#31191"
+msgid "A retired detective is pulled back into a case he thought was closed, and the closer he looks the less of it makes sense."
+msgstr "En pensioneret efterforsker trækkes tilbage til en sag, han troede var lukket, og jo nærmere han ser, jo mindre giver den mening."
+
+msgctxt "#31194"
+msgid "Trakt 78"
+msgstr "Trakt 78"
+
+msgctxt "#31195"
+msgid "Controls stay hidden when you pause."
+msgstr "Kontrollerne forbliver skjult, når du sætter på pause."
+
+msgctxt "#31196"
+msgid "Controls open 1 second after you pause."
+msgstr "Kontrollerne åbner 1 sekund efter pause."
+
+msgctxt "#31197"
+msgid "Controls open 3 seconds after you pause."
+msgstr "Kontrollerne åbner 3 sekunder efter pause."
+
+msgctxt "#31198"
+msgid "Controls open 5 seconds after you pause."
+msgstr "Kontrollerne åbner 5 sekunder efter pause."
+
+msgctxt "#31199"
+msgid "Controls open 2 seconds after you pause."
+msgstr "Kontrollerne åbner 2 sekunder efter pause."
+
+msgctxt "#31278"
+msgid "Play"
+msgstr "Afspil"
+
+msgctxt "#31279"
+msgid "More information"
+msgstr "Mere information"
+
+msgctxt "#31295"
+msgid "NOW ON TV"
+msgstr "NU I TV"
+
+msgctxt "#31296"
+msgid "PRESS UP FOR THE FULL GUIDE"
+msgstr "TRYK OP FOR HELE GUIDEN"
+
+msgctxt "#31297"
+msgid "NO LYRICS FOR THIS SONG"
+msgstr "INGEN SANGTEKST TIL DENNE SANG"
+
+msgctxt "#31298"
+msgid "Artists"
+msgstr "Kunstnere"
+
+msgctxt "#31299"
+msgid "Albums"
+msgstr "Album"
+
+msgctxt "#31343"
+msgid "Songs"
+msgstr "Sange"
+
+msgctxt "#31344"
+msgid "Genres"
+msgstr "Genrer"
+
+msgctxt "#31345"
+msgid "Menu: view, sort"
+msgstr "Menu: visning, sortering"
+
+msgctxt "#31346"
+msgid "MUSIC LIBRARY"
+msgstr "MUSIKBIBLIOTEK"
+
+msgctxt "#31347"
+msgid "SUBTITLES"
+msgstr "UNDERTEKSTER"
+
+msgctxt "#31348"
+msgid "AUDIO"
+msgstr "LYD"
+
+msgctxt "#31349"
+msgid "VIDEO"
+msgstr "VIDEO"
+
+msgctxt "#31350"
+msgid "CHAPTERS"
+msgstr "KAPITLER"
+
+msgctxt "#31351"
+msgid "INFO"
+msgstr "INFO"
+
+msgctxt "#31352"
+msgid "STATS"
+msgstr "STATISTIK"
+
+msgctxt "#31353"
+msgid "TV SHOWS"
+msgstr "TV-SERIER"
+
+msgctxt "#31354"
+msgid "MOVIES"
+msgstr "FILM"
+
+msgctxt "#31355"
+msgid "BUFFERING"
+msgstr "BUFFER"
+
+msgctxt "#31356"
+msgid "PAUSED"
+msgstr "PAUSE"
+
+msgctxt "#31357"
+msgid "ADDED"
+msgstr "TILFØJET"
+
+msgctxt "#31358"
+msgid "Custom path"
+msgstr "Egen sti"
+
+msgctxt "#31359"
+msgid "Recently added"
+msgstr "Senest tilføjet"
+
+msgctxt "#31360"
+msgid "Recently watched"
+msgstr "Senest set"
+
+msgctxt "#31361"
+msgid "In progress"
+msgstr "I gang"
+
+msgctxt "#31362"
+msgid "Top rated"
+msgstr "Bedst bedømt"
+
+msgctxt "#31363"
+msgid "All movies"
+msgstr "Alle film"
+
+msgctxt "#31364"
+msgid "Unwatched shows"
+msgstr "Usete serier"
+
+msgctxt "#31365"
+msgid "Random shows"
+msgstr "Tilfældige serier"
+
+msgctxt "#31366"
+msgid "Top rated shows"
+msgstr "Bedst bedømte serier"
+
+msgctxt "#31367"
+msgid "All shows"
+msgstr "Alle serier"
+
+msgctxt "#31368"
+msgid "Recently played"
+msgstr "Senest afspillet"
+
+msgctxt "#31369"
+msgid "Random albums"
+msgstr "Tilfældige album"
+
+msgctxt "#31370"
+msgid "Shut down"
+msgstr "Sluk"
+
+msgctxt "#31371"
+msgid "Reboot to Android"
+msgstr "Genstart i Android"
+
+msgctxt "#31372"
+msgid "Quit Kodi"
+msgstr "Afslut Kodi"
+
+msgctxt "#31373"
+msgid "Update video library"
+msgstr "Opdatér videobiblioteket"
+
+msgctxt "#31374"
+msgid "Update music library"
+msgstr "Opdatér musikbiblioteket"
+
+msgctxt "#31375"
+msgid "Clean video library"
+msgstr "Ryd op i videobiblioteket"
+
+msgctxt "#31376"
+msgid "Clean music library"
+msgstr "Ryd op i musikbiblioteket"
+
+msgctxt "#31377"
+msgid "Power menu"
+msgstr "Tænd/sluk-menu"
+
+msgctxt "#31378"
+msgid "TV shows"
+msgstr "Tv-serier"
+
+msgctxt "#31379"
+msgid "MUSIC"
+msgstr "MUSIK"
+
+msgctxt "#31380"
+msgid "LISTEN"
+msgstr "LYT"
+
+msgctxt "#31381"
+msgid "WATCH"
+msgstr "SE"
+
+msgctxt "#31382"
+msgid "Latest added"
+msgstr "Senest tilføjet"
+
+msgctxt "#31383"
+msgid "Last played"
+msgstr "Senest afspillet"
+
+msgctxt "#31384"
+msgid "Movies, TV shows, Music or Power"
+msgstr "Film, Tv-serier, Musik eller Tænd/sluk"
+
+msgctxt "#31385"
+msgid "Position 1 is the first page you reach with Up"
+msgstr "Position 1 er den første side, du når med Op"
+
+msgctxt "#31386"
+msgid "What this position shows. Off hides it"
+msgstr "Hvad denne position viser. Fra skjuler den"
+
+msgctxt "#31387"
+msgid "OK types a name, Left clears it"
+msgstr "OK skriver et navn, Venstre rydder det"
+
+msgctxt "#31388"
+msgid "Used when Category = Custom path (a library path, playlist or add-on folder)"
+msgstr "Bruges når Kategori = Egen sti (en bibliotekssti, afspilningsliste eller tilføjelsesmappe)"
+
+msgctxt "#31389"
+msgid "How many items the page cycles through (default 15)"
+msgstr "Hvor mange elementer siden gennemløber (standard 15)"
+
+msgctxt "#31390"
+msgid "Order of the items on this page"
+msgstr "Rækkefølgen af elementerne på siden"
+
+msgctxt "#31391"
+msgid "Flip the sort order"
+msgstr "Vend sorteringen"
+
+msgctxt "#31392"
+msgid "Step through the items by itself"
+msgstr "Gå gennem elementerne af sig selv"
+
+msgctxt "#31393"
+msgid "Seconds each item stays (default 10)"
+msgstr "Sekunder pr. element (standard 10)"
+
+msgctxt "#31394"
+msgid "SERIES PREMIERE"
+msgstr "SERIEPREMIERE"
+
+msgctxt "#31395"
+msgid "SEASON PREMIERE"
+msgstr "SÆSONPREMIERE"
+
+msgctxt "#31396"
+msgid "SERIES FINALE"
+msgstr "SERIEFINALE"
+
+msgctxt "#31397"
+msgid "SEASON FINALE"
+msgstr "SÆSONFINALE"
+
+msgctxt "#31398"
+msgid "Movie sets"
+msgstr "Filmsamlinger"
+
+msgctxt "#31399"
+msgid "Autoscroll off"
+msgstr "Automatisk rulning fra"
+
+msgctxt "#31400"
+msgid "Random movies"
+msgstr "Tilfældige film"
+
+msgctxt "#31401"
+msgid "Recently added movies"
+msgstr "Senest tilføjede film"
+
+msgctxt "#31402"
+msgid "Recently played movies"
+msgstr "Senest afspillede film"
+
+msgctxt "#31403"
+msgid "Top rated movies"
+msgstr "Bedst bedømte film"
+
+msgctxt "#31404"
+msgid "Most played movies"
+msgstr "Mest afspillede film"
+
+msgctxt "#31405"
+msgid "Newest movies"
+msgstr "Nyeste film"
+
+msgctxt "#31406"
+msgid "Title movies"
+msgstr "Film efter titel"
+
+msgctxt "#31407"
+msgid "Recently added shows"
+msgstr "Senest tilføjede serier"
+
+msgctxt "#31408"
+msgid "Recently played shows"
+msgstr "Senest afspillede serier"
+
+msgctxt "#31409"
+msgid "Most played shows"
+msgstr "Mest afspillede serier"
+
+msgctxt "#31410"
+msgid "Newest shows"
+msgstr "Nyeste serier"
+
+msgctxt "#31411"
+msgid "Title shows"
+msgstr "Serier efter titel"
+
+msgctxt "#31412"
+msgid "Recently added albums"
+msgstr "Senest tilføjede album"
+
+msgctxt "#31413"
+msgid "Recently played albums"
+msgstr "Senest afspillede album"
+
+msgctxt "#31414"
+msgid "Top rated albums"
+msgstr "Bedst bedømte album"
+
+msgctxt "#31415"
+msgid "Most played albums"
+msgstr "Mest afspillede album"
+
+msgctxt "#31416"
+msgid "Newest albums"
+msgstr "Nyeste album"
+
+msgctxt "#31417"
+msgid "Title albums"
+msgstr "Album efter titel"
+
+msgctxt "#31418"
+msgid "FULL HD"
+msgstr "FULL HD"
+
+msgctxt "#31419"
+msgid "DOLBY VISION"
+msgstr "DOLBY VISION"
+
+msgctxt "#31420"
+msgid "TRUEHD ATMOS"
+msgstr "TRUEHD ATMOS"
+
+msgctxt "#31421"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31422"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31423"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31424"
+msgid "TRUEHD"
+msgstr "TRUEHD"
+
+msgctxt "#31425"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31426"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31427"
+msgid "FLAC"
+msgstr "FLAC"
+
+msgctxt "#31428"
+msgid "ALAC"
+msgstr "ALAC"
+
+msgctxt "#31429"
+msgid "OPUS"
+msgstr "OPUS"
+
+msgctxt "#31430"
+msgid "VORBIS"
+msgstr "VORBIS"
+
+msgctxt "#31431"
+msgid "RATED NC-17"
+msgstr "ALDERSGRÆNSE NC-17"
+
+msgctxt "#31432"
+msgid "RATED PG-13"
+msgstr "ALDERSGRÆNSE PG-13"
+
+msgctxt "#31433"
+msgid "RATED PG"
+msgstr "ALDERSGRÆNSE PG"
+
+msgctxt "#31434"
+msgid "RATED R"
+msgstr "ALDERSGRÆNSE R"
+
+msgctxt "#31435"
+msgid "RATED G"
+msgstr "ALDERSGRÆNSE G"
+
+msgctxt "#31436"
+msgid "RATED TV-MA"
+msgstr "ALDERSGRÆNSE TV-MA"
+
+msgctxt "#31437"
+msgid "RATED TV-14"
+msgstr "ALDERSGRÆNSE TV-14"
+
+msgctxt "#31438"
+msgid "RATED TV-PG"
+msgstr "ALDERSGRÆNSE TV-PG"
+
+msgctxt "#31439"
+msgid "RATED TV-Y7"
+msgstr "ALDERSGRÆNSE TV-Y7"
+
+msgctxt "#31440"
+msgid "RATED TV-Y"
+msgstr "ALDERSGRÆNSE TV-Y"
+
+msgctxt "#31441"
+msgid "RATED TV-G"
+msgstr "ALDERSGRÆNSE TV-G"
+
+msgctxt "#31442"
+msgid "ULTRA"
+msgstr "ULTRA"
+
+msgctxt "#31443"
+msgid "FULL"
+msgstr "FULL"
+
+msgctxt "#31444"
+msgid "READY"
+msgstr "READY"
+
+msgctxt "#31445"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31446"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31447"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31448"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31449"
+msgid "MEDIA"
+msgstr "MEDIER"
+
+msgctxt "#31450"
+msgid "RATING"
+msgstr "BEDØMMELSE"
+
+msgctxt "#31451"
+msgid "CERTIFICATION"
+msgstr "ALDERSGRÆNSE"
+
+msgctxt "#31452"
+msgid "CREDITS"
+msgstr "KREDITERING"
+
+msgctxt "#31453"
+msgid "FIRST AIRED"
+msgstr "FØRST SENDT"
+
+msgctxt "#31454"
+msgid "STUDIO"
+msgstr "STUDIE"
+
+msgctxt "#31455"
+msgid "GENRE"
+msgstr "GENRE"
+
+msgctxt "#31456"
+msgid "CAST"
+msgstr "MEDVIRKENDE"
+
+msgctxt "#31457"
+msgid "HD READY"
+msgstr "HD READY"
+
+msgctxt "#31458"
+msgid "BOXED SET"
+msgstr "BOKSSÆT"
+
+msgctxt "#31459"
+msgid "* ALL SEASONS"
+msgstr "* ALLE SÆSONER"
+
+msgctxt "#31460"
+msgid "For now"
+msgstr "Lige nu"
+
+msgctxt "#31461"
+msgid "Kept all day"
+msgstr "Gemmes hele dagen"
+
+msgctxt "#31462"
+msgid "Past midnight"
+msgstr "Efter midnat"
+
+msgctxt "#31463"
+msgid "Still up?"
+msgstr "Stadig vågen?"
+
+msgctxt "#31464"
+msgid "Nearly bedtime."
+msgstr "Snart sengetid."
+
+msgctxt "#31465"
+msgid "Good evening."
+msgstr "God aften."
+
+msgctxt "#31466"
+msgid "Good afternoon."
+msgstr "God eftermiddag."
+
+msgctxt "#31467"
+msgid "Good morning."
+msgstr "Godmorgen."
+
+msgctxt "#31468"
+msgid "Short ones: under 100 minutes"
+msgstr "Korte: under 100 minutter"
+
+msgctxt "#31469"
+msgid "The evening is yours"
+msgstr "Aftenen er din"
+
+msgctxt "#31470"
+msgid "A free afternoon: something long"
+msgstr "En fri eftermiddag: noget langt"
+
+msgctxt "#31471"
+msgid "Plenty of aeon left"
+msgstr "Masser af tid tilbage"
+
+msgctxt "#31472"
+msgid "Sunday morning: take it slow"
+msgstr "Søndag morgen: tag det roligt"
+
+msgctxt "#31473"
+msgid "A slow start: something light"
+msgstr "En rolig start: noget let"
+
+msgctxt "#31474"
+msgid "Needs a weather add-on in Kodi's settings"
+msgstr "Kræver en vejrtilføjelse i Kodis indstillinger"
+
+msgctxt "#31475"
+msgid "From the weather add-on set in Kodi"
+msgstr "Fra vejrtilføjelsen valgt i Kodi"
+
+msgctxt "#31476"
+msgid "Tropical storm"
+msgstr "Tropisk storm"
+
+msgctxt "#31477"
+msgid "Severe storms"
+msgstr "Kraftigt tordenvejr"
+
+msgctxt "#31478"
+msgid "Rain and snow"
+msgstr "Regn og sne"
+
+msgctxt "#31479"
+msgid "Rain and sleet"
+msgstr "Regn og slud"
+
+msgctxt "#31480"
+msgid "Snow and sleet"
+msgstr "Sne og slud"
+
+msgctxt "#31481"
+msgid "Freezing drizzle"
+msgstr "Isslag"
+
+msgctxt "#31482"
+msgid "Freezing rain"
+msgstr "Underafkølet regn"
+
+msgctxt "#31483"
+msgid "Snow flurries"
+msgstr "Snefnug"
+
+msgctxt "#31484"
+msgid "Light snow"
+msgstr "Let sne"
+
+msgctxt "#31485"
+msgid "Blowing snow"
+msgstr "Snefygning"
+
+msgctxt "#31486"
+msgid "Mostly cloudy"
+msgstr "Mest skyet"
+
+msgctxt "#31487"
+msgid "Partly cloudy"
+msgstr "Delvist skyet"
+
+msgctxt "#31488"
+msgid "Rain and hail"
+msgstr "Regn og hagl"
+
+msgctxt "#31489"
+msgid "Isolated storms"
+msgstr "Spredt tordenvejr"
+
+msgctxt "#31490"
+msgid "Scattered storms"
+msgstr "Lokalt tordenvejr"
+
+msgctxt "#31491"
+msgid "Scattered showers"
+msgstr "Spredte byger"
+
+msgctxt "#31492"
+msgid "Heavy snow"
+msgstr "Kraftigt snefald"
+
+msgctxt "#31493"
+msgid "Snow showers"
+msgstr "Snebyger"
+
+msgctxt "#31494"
+msgid "More under 100 minutes"
+msgstr "Flere under 100 minutter"
+
+msgctxt "#31495"
+msgid "Sunday morning: documentaries"
+msgstr "Søndag morgen: dokumentarer"
+
+msgctxt "#31496"
+msgid "Morning shorts: under 100 minutes"
+msgstr "Korte morgenfilm: under 100 minutter"
+
+msgctxt "#31497"
+msgid "A long afternoon film"
+msgstr "En lang eftermiddagsfilm"
+
+msgctxt "#31498"
+msgid "Top rated, still unwatched"
+msgstr "Bedst bedømt, stadig uset"
+
+msgctxt "#31499"
+msgid "Tonight's top rated"
+msgstr "Aftenens bedst bedømte"
+
+msgctxt "#31500"
+msgid "Before bed"
+msgstr "Før sengetid"
+
+msgctxt "#31501"
+msgid "This morning"
+msgstr "I morges"
+
+msgctxt "#31502"
+msgid "This afternoon"
+msgstr "I eftermiddag"
+
+msgctxt "#31503"
+msgid "Later today"
+msgstr "Senere i dag"
+
+msgctxt "#31504"
+msgid "One more episode"
+msgstr "Ét afsnit mere"
+
+msgctxt "#31505"
+msgid "Next up"
+msgstr "Næste"
+
+msgctxt "#31506"
+msgid "It's snowing: something long"
+msgstr "Det sner: noget langt"
+
+msgctxt "#31507"
+msgid "Still raining: under an hour"
+msgstr "Det regner stadig: under en time"
+
+msgctxt "#31508"
+msgid "It's raining: something long"
+msgstr "Det regner: noget langt"
+
+msgctxt "#31509"
+msgid "Just added"
+msgstr "Lige tilføjet"
+
+msgctxt "#31510"
+msgid "Download subtitles"
+msgstr "Hent undertekster"
+
+msgctxt "#31511"
+msgid "Subtitle settings"
+msgstr "Undertekstindstillinger"
+
+msgctxt "#31512"
+msgid "What's new"
+msgstr "Nyheder"
+
+msgctxt "#31513"
+msgid "Nothing to suggest right now."
+msgstr "Intet at foreslå lige nu."
+
+msgctxt "#31514"
+msgid "Clean library?"
+msgstr "Ryd op i biblioteket?"
+
+msgctxt "#31515"
+msgid "Music videos"
+msgstr "Musikvideoer"
+
+msgctxt "#31516"
+msgid "Kodi takes out the songs, albums and artists it can no longer find. Your files stay where they are."
+msgstr "Kodi fjerner de sange, album og kunstnere, den ikke længere kan finde. Dine filer bliver, hvor de er."
+
+msgctxt "#31517"
+msgid "Kodi takes out the films, shows and episodes it can no longer find. Your files stay where they are."
+msgstr "Kodi fjerner de film, serier og afsnit, den ikke længere kan finde. Dine filer bliver, hvor de er."
+
+msgctxt "#31518"
+msgid "Add-on settings"
+msgstr "Tilføjelsesindstillinger"
+
+msgctxt "#31519"
+msgid "Get more"
+msgstr "Hent flere"
+
+msgctxt "#31520"
+msgid "Slideshow"
+msgstr "Diasshow"
+
+msgctxt "#31521"
+msgid "Recursive slideshow"
+msgstr "Rekursivt diasshow"
+
+msgctxt "#31522"
+msgid "Randomise"
+msgstr "Bland"
+
+msgctxt "#31523"
+msgid "Edited  locked"
+msgstr "Redigeret  låst"
+
+msgctxt "#31524"
+msgid "Shuffle  ·  Repeat one"
+msgstr "Bland  ·  Gentag én"
+
+msgctxt "#31525"
+msgid "Shuffle  ·  Repeat all"
+msgstr "Bland  ·  Gentag alle"
+
+msgctxt "#31526"
+msgid "Repeat one"
+msgstr "Gentag én"
+
+msgctxt "#31527"
+msgid "Repeat all"
+msgstr "Gentag alle"
+
+msgctxt "#31528"
+msgid "Video queue"
+msgstr "Videokø"
+
+msgctxt "#31529"
+msgid "Shuffle: on"
+msgstr "Bland: til"
+
+msgctxt "#31530"
+msgid "Shuffle: off"
+msgstr "Bland: fra"
+
+msgctxt "#31531"
+msgid "Play all"
+msgstr "Afspil alle"
+
+msgctxt "#31532"
+msgid "Shuffle"
+msgstr "Bland"
+
+msgctxt "#31533"
+msgid "Refresh"
+msgstr "Opdatér"
+
+msgctxt "#31534"
+msgid "Added"
+msgstr "Tilføjet"
+
+msgctxt "#31535"
+msgid "Plays"
+msgstr "Afspilninger"
+
+msgctxt "#31536"
+msgid "Mood"
+msgstr "Stemning"
+
+msgctxt "#31537"
+msgid "Album info"
+msgstr "Albuminfo"
+
+msgctxt "#31538"
+msgid "Artist info"
+msgstr "Kunstnerinfo"
+
+msgctxt "#31539"
+msgid "About the artist"
+msgstr "Om kunstneren"
+
+msgctxt "#31552"
+msgid "About the song"
+msgstr "Om sangen"
+
+msgctxt "#31553"
+msgid "About the album"
+msgstr "Om albummet"
+
+msgctxt "#31554"
+msgid "OK reads all of it"
+msgstr "OK læser det hele"
+
+msgctxt "#31555"
+msgid "Up returns to the buttons"
+msgstr "Op går tilbage til knapperne"
+
+msgctxt "#31556"
+msgid "Right for the full story"
+msgstr "Højre for hele historien"
+
+msgctxt "#31557"
+msgid "Shuffle on"
+msgstr "Bland til"
+
+msgctxt "#31558"
+msgid "Music video"
+msgstr "Musikvideo"
+
+msgctxt "#31559"
+msgid "HEVC"
+msgstr "HEVC"
+
+msgctxt "#31560"
+msgid "Dolby Vision"
+msgstr "Dolby Vision"
+
+msgctxt "#31561"
+msgid "TrueHD Atmos"
+msgstr "TrueHD Atmos"
+
+msgctxt "#31562"
+msgid "DD+ Atmos"
+msgstr "DD+ Atmos"
+
+msgctxt "#31563"
+msgid "Video"
+msgstr "Video"
+
+msgctxt "#31564"
+msgid "Chapters"
+msgstr "Kapitler"
+
+msgctxt "#31565"
+msgid "Info"
+msgstr "Info"
+
+msgctxt "#31566"
+msgid "Stats"
+msgstr "Statistik"
+
+msgctxt "#31567"
+msgid "Sleeping after this"
+msgstr "Går i dvale efter denne"
+
+msgctxt "#31568"
+msgid "Sleep after this"
+msgstr "Dvale efter denne"
+
+msgctxt "#31569"
+msgid "1 RESULT"
+msgstr "1 RESULTAT"
+
+msgctxt "#31575"
+msgid "Colors, backdrop and the look of the settings screens."
+msgstr "Farver, baggrund og udseendet af indstillingsskærmene."
+
+msgctxt "#31576"
+msgid "Show a dimmed copy of the last fanart you looked at behind the settings screens."
+msgstr "Vis en dæmpet kopi af den senest sete fanart bag indstillingsskærmene."
+
+msgctxt "#31577"
+msgid "Background of the A-Z / scroll bar strip in the library views: dark (default) or white like Aeon 2."
+msgstr "Baggrund for A-Å- / rullebjælken i biblioteksvisningerne: mørk (standard) eller hvid som i Aeon 2."
+
+msgctxt "#31578"
+msgid "Aeon style: neutral (flat dark), the faint fanart, or a color that follows the artwork and fades between titles. Override it per home menu item (Edit spotlight)."
+msgstr "Aeon-stil: neutral (flad mørk), den svage fanart eller en farve, der følger billedet og toner mellem titler. Kan ændres pr. hovedmenupunkt (Redigér Spotlight)."
+
+msgctxt "#31579"
+msgid "Aeon: flat dark panels and a white highlight bar (like the Aeon 2 list). Aeon Glass: translucent panels and a soft highlight. Applies to every library view."
+msgstr "Aeon: flade mørke paneler og en hvid markeringsbjælke (som Aeon 2-listen). Aeon Glass: gennemsigtige paneler og en blød markering. Gælder alle biblioteksvisninger."
+
+msgctxt "#31580"
+msgid "Where the music that is playing shows on Home: Slot (lower left, default), Corner (top left), Line (above the menu) or Bar (bottom)."
+msgstr "Hvor musikken, der spiller, vises på Hjem: Plads (nederst til venstre, standard), Hjørne (øverst til venstre), Linje (over menuen) eller Bjælke (nederst)."
+
+msgctxt "#31581"
+msgid "How visible the fanart backdrop is."
+msgstr "Hvor synlig fanart-baggrunden er."
+
+msgctxt "#31582"
+msgid "Tags, plot text and logos in the movie and episode views."
+msgstr "Tags, handling og logoer i film- og afsnitsvisningerne."
+
+msgctxt "#31583"
+msgid "Resolution and video codec in the tag line under a film or episode."
+msgstr "Opløsning og videocodec i taglinjen under en film eller et afsnit."
+
+msgctxt "#31584"
+msgid "Shows HDR10, HLG or Dolby Vision in the tag line when the file has it."
+msgstr "Viser HDR10, HLG eller Dolby Vision i taglinjen, når filen har det."
+
+msgctxt "#31585"
+msgid "Audio codec and channel count in the tag line."
+msgstr "Lydcodec og antal kanaler i taglinjen."
+
+msgctxt "#31586"
+msgid "What the text under a film shows: the full plot, or the tagline when the film has one."
+msgstr "Hvad teksten under en film viser: hele handlingen eller taglinen, når filmen har en."
+
+msgctxt "#31587"
+msgid "Long plots scroll by themselves after a few seconds."
+msgstr "Lange handlinger ruller af sig selv efter et par sekunder."
+
+msgctxt "#31588"
+msgid "The studio logo beside seasons and episodes (needs the studio logos resource add-on)."
+msgstr "Studielogoet ved siden af sæsoner og afsnit (kræver ressourcetilføjelsen med studielogoer)."
+
+msgctxt "#31589"
+msgid "Which rating sources show, and whether the score is colored."
+msgstr "Hvilke bedømmelseskilder der vises, og om scoren er farvet."
+
+msgctxt "#31590"
+msgid "Green from 7, amber from 5, red below."
+msgstr "Grøn fra 7, rav fra 5, rød derunder."
+
+msgctxt "#31591"
+msgid "Shows the IMDb score when the library has one. Several sources can be on at once."
+msgstr "Viser IMDb-scoren, når biblioteket har en. Flere kilder kan være slået til samtidig."
+
+msgctxt "#31592"
+msgid "Shows the TMDb score when the library has one."
+msgstr "Viser TMDb-scoren, når biblioteket har en."
+
+msgctxt "#31593"
+msgid "Shows the Tomatometer when your scraper or TMDb Helper provides it."
+msgstr "Viser Tomatometer, når din scraper eller TMDb Helper leverer det."
+
+msgctxt "#31594"
+msgid "Shows the Trakt score when it is in the library."
+msgstr "Viser Trakt-scoren, når den er i biblioteket."
+
+msgctxt "#31595"
+msgid "Seek bar, pause behaviour and the Back button."
+msgstr "Søgebjælke, pauseadfærd og Tilbage-knappen."
+
+msgctxt "#31596"
+msgid "What the right-hand time of the seek bar shows: the total length, the time left, or when it ends."
+msgstr "Hvad den højre tid på søgebjælken viser: den samlede længde, den resterende tid eller hvornår den slutter."
+
+msgctxt "#31597"
+msgid "The player controls open by themselves when you pause."
+msgstr "Afspillerkontrollerne åbner af sig selv, når du sætter på pause."
+
+msgctxt "#31598"
+msgid "How long after pausing the controls open."
+msgstr "Hvor længe efter pause kontrollerne åbner."
+
+msgctxt "#31599"
+msgid "Back goes up one level, or straight to the home screen."
+msgstr "Tilbage går et niveau op eller direkte til startskærmen."
+
+msgctxt "#31600"
+msgid "Extra fanart and the artist slideshow."
+msgstr "Ekstra fanart og kunstner-diasshowet."
+
+msgctxt "#31601"
+msgid "Home and the library cycle through a film or show's extra fanart. Needs extra fanart in the library (fanart1, fanart2 ...)."
+msgstr "Hjem og biblioteket skifter mellem en films eller series ekstra fanart. Kræver ekstra fanart i biblioteket (fanart1, fanart2 ...)."
+
+msgctxt "#31602"
+msgid "How long each fanart image stays."
+msgstr "Hvor længe hvert fanartbillede bliver."
+
+msgctxt "#31603"
+msgid "Now playing shows the Artist Slideshow add-on pictures of the artist (needs script.artistslideshow)."
+msgstr "Afspilles nu viser kunstnerbilleder fra tilføjelsen Artist Slideshow (kræver script.artistslideshow)."
+
+msgctxt "#31604"
+msgid "What the full-screen widget pages (Up on a home item) show."
+msgstr "Hvad widgetsiderne i fuld skærm (Op på et hjem-punkt) viser."
+
+msgctxt "#31605"
+msgid "Resolution, codec, HDR and audio tags on the full-screen widget pages (the choices under Details apply)."
+msgstr "Tags for opløsning, codec, HDR og lyd på widgetsiderne i fuld skærm (valgene under Detaljer gælder)."
+
+msgctxt "#31606"
+msgid "The rating line, with the sources you chose under Ratings, on the full-screen widget pages."
+msgstr "Bedømmelseslinjen, med de kilder du valgte under Bedømmelser, på widgetsiderne i fuld skærm."
+
+msgctxt "#31607"
+msgid "The studio logo, or the network logo for episodes, on the full-screen widget pages (needs the studio logos add-on)."
+msgstr "Studielogoet, eller kanallogoet for afsnit, på widgetsiderne i fuld skærm (kræver tilføjelsen med studielogoer)."
+
+msgctxt "#31608"
+msgid "Watched markers on posters, the trailer button and logos instead of titles."
+msgstr "Set-markeringer på plakater, trailerknappen og logoer i stedet for titler."
+
+msgctxt "#31609"
+msgid "How the playback controls behave."
+msgstr "Hvordan afspilningskontrollerne opfører sig."
+
+msgctxt "#31610"
+msgid "Fonts for each part of the skin, calmer animations, and a way back to the default settings."
+msgstr "Skrifttyper til hver del af skin'et, roligere animationer og en vej tilbage til standardindstillingerne."
+
+msgctxt "#31611"
+msgid "Unwatched: a small dot. Watched: a check disc. Shows add the number of unwatched episodes."
+msgstr "Uset: en lille prik. Set: et flueben. Serier viser også antallet af usete afsnit."
+
+msgctxt "#31612"
+msgid "Shows a Trailer button next to Play when a film has a trailer link (played through the YouTube add-on)."
+msgstr "Viser en Trailer-knap ved Afspil, når en film har et trailerlink (afspilles via YouTube-tilføjelsen)."
+
+msgctxt "#31613"
+msgid "How long the playback controls stay up after your last button press. They stay while paused and while a menu is open."
+msgstr "Hvor længe afspilningskontrollerne bliver efter dit sidste tryk. De bliver ved pause og med en åben menu."
+
+msgctxt "#31614"
+msgid "Where the subtitle and audio offset strip appears while you sync. Top keeps bottom subtitles in view."
+msgstr "Hvor striben for undertekst- og lydforskydning vises, mens du synkroniserer. Øverst holder undertekster nederst synlige."
+
+msgctxt "#31615"
+msgid "Replaces zooms, slides and the rain with short fades. Focus changes stay instant."
+msgstr "Erstatter zoom, glid og regnen med korte overgange. Fokusskift sker stadig med det samme."
+
+msgctxt "#31616"
+msgid "Puts every skin setting back to its default and reloads the skin. Press OK twice to confirm."
+msgstr "Sætter hver skin-indstilling tilbage til standard og genindlæser skin'et. Tryk OK to gange for at bekræfte."
+
+msgctxt "#31617"
+msgid "Aeon Fuse options. Kodi's settings live under Settings; switch skins in Settings > Interface > Skin."
+msgstr "Aeon Fuses valg. Kodis indstillinger findes under Indstillinger; skift skin under Indstillinger > Brugerflade > Skin."
+
+msgctxt "#31618"
+msgid "Resume"
+msgstr "Genoptag"
+
+msgctxt "#31619"
+msgid "From start"
+msgstr "Fra start"
+
+msgctxt "#31620"
+msgid "Browse"
+msgstr "Gennemse"
+
+msgctxt "#31621"
+msgid "Trailer"
+msgstr "Trailer"
+
+msgctxt "#31622"
+msgid "Collection"
+msgstr "Samling"
+
+msgctxt "#31623"
+msgid "More by the director"
+msgstr "Mere fra instruktøren"
+
+msgctxt "#31624"
+msgid "Versions"
+msgstr "Versioner"
+
+msgctxt "#31625"
+msgid "Extras"
+msgstr "Ekstramateriale"
+
+msgctxt "#31626"
+msgid "Choose art"
+msgstr "Vælg billede"
+
+msgctxt "#31627"
+msgid "Choose fanart"
+msgstr "Vælg fanart"
+
+msgctxt "#31628"
+msgid "Films in this collection"
+msgstr "Film i denne samling"
+
+msgctxt "#31629"
+msgid "OK reads the whole story"
+msgstr "OK læser hele handlingen"
+
+msgctxt "#31630"
+msgid "Up or Back returns to the buttons"
+msgstr "Op eller Tilbage går tilbage til knapperne"
+
+msgctxt "#31631"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31632"
+msgid "No story written for this one yet."
+msgstr "Ingen handling skrevet for denne endnu."
+
+msgctxt "#31633"
+msgid "Shows in progress"
+msgstr "Serier i gang"
+
+msgctxt "#31635"
+msgid "A collection: OK opens its films."
+msgstr "En samling: OK åbner dens film."
+
+msgctxt "#31636"
+msgid "Nothing left: a good time for something new."
+msgstr "Intet tilbage: tid til noget nyt."
+
+msgctxt "#31637"
+msgid "Ending at"
+msgstr "Slutter kl."
+
+msgctxt "#31638"
+msgid "PRESETS"
+msgstr "FORUDINDSTILLINGER"
+
+msgctxt "#31639"
+msgid "LYRICS"
+msgstr "SANGTEKST"
+
+msgctxt "#31640"
+msgid "No guide data. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "Ingen guidedata. Aktivér en PVR-klienttilføjelse i indstillingerne for PVR og live-tv."
+
+msgctxt "#31641"
+msgid "Feels like"
+msgstr "Føles som"
+
+msgctxt "#31642"
+msgid "Humidity"
+msgstr "Luftfugtighed"
+
+msgctxt "#31643"
+msgid "Wind"
+msgstr "Vind"
+
+msgctxt "#31644"
+msgid "Precipitation"
+msgstr "Nedbør"
+
+msgctxt "#31645"
+msgid "UV index"
+msgstr "UV-indeks"
+
+msgctxt "#31646"
+msgid "Sunrise"
+msgstr "Solopgang"
+
+msgctxt "#31647"
+msgid "Sunset"
+msgstr "Solnedgang"
+
+msgctxt "#31648"
+msgid "Next location"
+msgstr "Næste sted"
+
+msgctxt "#31649"
+msgid "Skin"
+msgstr "Skin"
+
+msgctxt "#31650"
+msgid "Address"
+msgstr "Adresse"
+
+msgctxt "#31651"
+msgid "Screen"
+msgstr "Skærm"
+
+msgctxt "#31652"
+msgid "Aeon Fuse options: look, details, ratings, behaviour, backgrounds and the home menu (order, widgets, submenus)."
+msgstr "Aeon Fuses valg: udseende, detaljer, bedømmelser, adfærd, baggrunde og hovedmenuen (rækkefølge, widgets, undermenuer)."
+
+msgctxt "#31653"
+msgid "Video and music playback, refresh-rate matching, subtitle languages and look, discs."
+msgstr "Video- og musikafspilning, opdateringsfrekvens, undertekstsprog og udseende, diske."
+
+msgctxt "#31654"
+msgid "Library behaviour, scrapers, file lists, artwork and what OK does on an item."
+msgstr "Bibliotekets adfærd, scrapere, fillister, billeder og hvad OK gør på et element."
+
+msgctxt "#31655"
+msgid "Skin, colors, fonts, region and language, screensaver. Switch to another skin here: Skin > Skin."
+msgstr "Skin, farver, skrifttyper, region og sprog, pauseskærm. Skift til et andet skin her: Skin > Skin."
+
+msgctxt "#31656"
+msgid "Browse, update, configure or install add-ons."
+msgstr "Gennemse, opdatér, konfigurér eller installér tilføjelser."
+
+msgctxt "#31657"
+msgid "Web server and JSON-RPC control, UPnP, AirPlay, Zeroconf, SMB client."
+msgstr "Webserver og JSON-RPC-styring, UPnP, AirPlay, Zeroconf, SMB-klient."
+
+msgctxt "#31658"
+msgid "Display, audio output and passthrough, input, power saving, logging."
+msgstr "Skærm, lydudgang og passthrough, input, strømbesparelse, logning."
+
+msgctxt "#31659"
+msgid "Copy, move and delete files; add network sources."
+msgstr "Kopiér, flyt og slet filer; tilføj netværkskilder."
+
+msgctxt "#31660"
+msgid "Kodi version, video renderer, storage, network and hardware details."
+msgstr "Kodi-version, videorenderer, lager, netværk og hardware."
+
+msgctxt "#31661"
+msgid "What Kodi has done recently: scans, add-on updates, errors."
+msgstr "Hvad Kodi har gjort for nylig: scanninger, tilføjelsesopdateringer, fejl."
+
+msgctxt "#31662"
+msgid "Profiles and the login screen."
+msgstr "Profiler og login-skærmen."
+
+msgctxt "#31663"
+msgid "Live TV and PVR."
+msgstr "Live-tv og PVR."
+
+msgctxt "#31664"
+msgid "Games and controllers."
+msgstr "Spil og controllere."
+
+msgctxt "#31665"
+msgid "Dark"
+msgstr "Mørk"
+
+msgctxt "#31666"
+msgid "White"
+msgstr "Hvid"
+
+msgctxt "#31667"
+msgid "Menu"
+msgstr "Menu"
+
+msgctxt "#31668"
+msgid "Position"
+msgstr "Position"
+
+msgctxt "#31669"
+msgid "Category"
+msgstr "Kategori"
+
+msgctxt "#31670"
+msgid "Hold time"
+msgstr "Visningstid"
+
+msgctxt "#31671"
+msgid "Pick an item, then use the buttons on the right. Add item puts a new one at the end."
+msgstr "Vælg et element, og brug knapperne til højre. Tilføj element sætter et nyt sidst."
+
+msgctxt "#31672"
+msgid "Light"
+msgstr "Let"
+
+msgctxt "#31673"
+msgid "Strong"
+msgstr "Stærk"
+
+msgctxt "#31674"
+msgid "Slot"
+msgstr "Plads"
+
+msgctxt "#31675"
+msgid "Corner"
+msgstr "Hjørne"
+
+msgctxt "#31676"
+msgid "Line"
+msgstr "Linje"
+
+msgctxt "#31677"
+msgid "Bar"
+msgstr "Bjælke"
+
+msgctxt "#31678"
+msgid "Aeon"
+msgstr "Aeon"
+
+msgctxt "#31679"
+msgid "Aeon Glass"
+msgstr "Aeon Glass"
+
+msgctxt "#31680"
+msgid "Color"
+msgstr "Farve"
+
+msgctxt "#31681"
+msgid "PREVIEW"
+msgstr "EKSEMPEL"
+
+msgctxt "#31682"
+msgid "LIBRARY LISTS"
+msgstr "BIBLIOTEKSLISTER"
+
+msgctxt "#31683"
+msgid "Focused row"
+msgstr "Række i fokus"
+
+msgctxt "#31684"
+msgid "Other row"
+msgstr "Anden række"
+
+msgctxt "#31685"
+msgid "MUSIC PLAYING"
+msgstr "MUSIK SPILLER"
+
+msgctxt "#31686"
+msgid "SAMPLE"
+msgstr "PRØVE"
+
+msgctxt "#31687"
+msgid "BACKDROP"
+msgstr "BAGGRUND"
+
+msgctxt "#31688"
+msgid "SCREENSAVER"
+msgstr "PAUSESKÆRM"
+
+msgctxt "#31689"
+msgid "TITLE"
+msgstr "TITEL"
+
+msgctxt "#31690"
+msgid "Plot"
+msgstr "Handling"
+
+msgctxt "#31691"
+msgid "Tagline"
+msgstr "Tagline"
+
+msgctxt "#31692"
+msgid "TAG LINE"
+msgstr "TAGLINJE"
+
+msgctxt "#31693"
+msgid "UNDER THE TITLE"
+msgstr "UNDER TITLEN"
+
+msgctxt "#31694"
+msgid "PLOT TEXT"
+msgstr "HANDLINGSTEKST"
+
+msgctxt "#31695"
+msgid "Long plots scroll slowly by themselves, so you can read them without a button press."
+msgstr "Lange handlinger ruller langsomt af sig selv, så du kan læse dem uden at trykke."
+
+msgctxt "#31696"
+msgid "The studio logo shows beside a season or episode when the studio logos add-on is installed."
+msgstr "Studielogoet vises ved en sæson eller et afsnit, når tilføjelsen med studielogoer er installeret."
+
+msgctxt "#31697"
+msgid "THEME SONG"
+msgstr "TEMASANG"
+
+msgctxt "#31699"
+msgid "Plays while a movie or show is selected, if its folder has a theme file."
+msgstr "Spiller, mens en film eller serie er valgt, hvis dens mappe har en temafil."
+
+msgctxt "#31700"
+msgid "Total"
+msgstr "I alt"
+
+msgctxt "#31701"
+msgid "Left"
+msgstr "Tilbage"
+
+msgctxt "#31702"
+msgid "Ends at"
+msgstr "Slutter kl."
+
+msgctxt "#31703"
+msgid "SEEK BAR"
+msgstr "SØGEBJÆLKE"
+
+msgctxt "#31704"
+msgid "ON PAUSE"
+msgstr "VED PAUSE"
+
+msgctxt "#31705"
+msgid "BACK BUTTON"
+msgstr "TILBAGE-KNAP"
+
+msgctxt "#31706"
+msgid "Pressing Back in a library list goes up one level, or straight to the home screen if you choose Home."
+msgstr "Tilbage i en biblioteksliste går et niveau op, eller direkte til Hjem, hvis du vælger Hjem."
+
+msgctxt "#31707"
+msgid "PLAYER CONTROLS"
+msgstr "AFSPILLERKONTROLLER"
+
+msgctxt "#31708"
+msgid "Needs disc art for the album or movie."
+msgstr "Kræver diskbillede til albummet eller filmen."
+
+msgctxt "#31709"
+msgid "FANART"
+msgstr "FANART"
+
+msgctxt "#31710"
+msgid "NOW PLAYING"
+msgstr "AFSPILLES NU"
+
+msgctxt "#31711"
+msgid "Pictures of the artist from the Artist Slideshow add-on fade in behind the album cover."
+msgstr "Billeder af kunstneren fra tilføjelsen Artist Slideshow toner ind bag albumomslaget."
+
+msgctxt "#31712"
+msgid "Slide"
+msgstr "Glid"
+
+msgctxt "#31713"
+msgid "Fade"
+msgstr "Overgang"
+
+msgctxt "#31714"
+msgid "Cut"
+msgstr "Klip"
+
+msgctxt "#31715"
+msgid "MEDIA INFO"
+msgstr "MEDIEINFO"
+
+msgctxt "#31716"
+msgid "STUDIO / NETWORK"
+msgstr "STUDIE / KANAL"
+
+msgctxt "#31717"
+msgid "The logo of the studio, or of the network for episodes, under the date ring."
+msgstr "Studiets logo, eller kanalens for afsnit, under datoringen."
+
+msgctxt "#31718"
+msgid "SPOTLIGHT"
+msgstr "SPOTLIGHT"
+
+msgctxt "#31719"
+msgid "Selected item:"
+msgstr "Valgt element:"
+
+msgctxt "#31720"
+msgid "Set path / content"
+msgstr "Angiv sti / indhold"
+
+msgctxt "#31721"
+msgid "Edit widgets"
+msgstr "Redigér widgets"
+
+msgctxt "#31722"
+msgid "Edit submenu"
+msgstr "Redigér undermenu"
+
+msgctxt "#31723"
+msgid "Edit spotlight"
+msgstr "Redigér Spotlight"
+
+msgctxt "#31724"
+msgid "Restore default order"
+msgstr "Standardrækkefølge"
+
+msgctxt "#31725"
+msgid "Theme & style"
+msgstr "Tema og stil"
+
+msgctxt "#31726"
+msgid "Look"
+msgstr "Stil"
+
+msgctxt "#31727"
+msgid "Player"
+msgstr "Afspiller"
+
+msgctxt "#31728"
+msgid "Music player"
+msgstr "Musikafspiller"
+
+msgctxt "#31729"
+msgid "Backgrounds"
+msgstr "Baggrunde"
+
+msgctxt "#31730"
+msgid "Widget & Spotlight screens"
+msgstr "Widget- og Spotlight-skærme"
+
+msgctxt "#31731"
+msgid "System"
+msgstr "System"
+
+msgctxt "#31732"
+msgid "Home menu"
+msgstr "Hovedmenu"
+
+msgctxt "#31733"
+msgid "Auto"
+msgstr "Auto"
+
+msgctxt "#31734"
+msgid "Morning"
+msgstr "Morgen"
+
+msgctxt "#31735"
+msgid "Afternoon"
+msgstr "Eftermiddag"
+
+msgctxt "#31736"
+msgid "Evening"
+msgstr "Aften"
+
+msgctxt "#31737"
+msgid "Night"
+msgstr "Nat"
+
+msgctxt "#31738"
+msgid "Bedtime"
+msgstr "Sengetid"
+
+msgctxt "#31739"
+msgid "Countdown and fits-before rows"
+msgstr "Nedtællings- og når-det-før-rækker"
+
+msgctxt "#31740"
+msgid "Weather row and rain"
+msgstr "Vejrrække og regn"
+
+msgctxt "#31741"
+msgid "Borrowed color"
+msgstr "Lånt farve"
+
+msgctxt "#31742"
+msgid "The focused film tints the light"
+msgstr "Filmen i fokus farver lyset"
+
+msgctxt "#31743"
+msgid "Dots and checks on posters"
+msgstr "Prikker og flueben på plakater"
+
+msgctxt "#31744"
+msgid "Unwatched"
+msgstr "Uset"
+
+msgctxt "#31745"
+msgid "Only when a film has a trailer"
+msgstr "Kun når en film har en trailer"
+
+msgctxt "#31746"
+msgid "Logos instead of titles"
+msgstr "Logoer i stedet for titler"
+
+msgctxt "#31747"
+msgid "Clearlogos in the OSD, screensaver and Now playing"
+msgstr "Clearlogos i OSD, pauseskærm og Afspilles nu"
+
+msgctxt "#31748"
+msgid "Library side strip"
+msgstr "Bibliotekets sidestribe"
+
+msgctxt "#31749"
+msgid "OSD auto-hide"
+msgstr "Skjul OSD automatisk"
+
+msgctxt "#31750"
+msgid "Controls close by themselves"
+msgstr "Kontrollerne lukker af sig selv"
+
+msgctxt "#31751"
+msgid "Subtitle offset strip"
+msgstr "Bjælke til undertekstforskydning"
+
+msgctxt "#31752"
+msgid "Subtitle / audio sync strip"
+msgstr "Synkstribe for undertekst / lyd"
+
+msgctxt "#31753"
+msgid "Top"
+msgstr "Øverst"
+
+msgctxt "#31754"
+msgid "Bottom"
+msgstr "Nederst"
+
+msgctxt "#31755"
+msgid "Fades instead of zooms and slides"
+msgstr "Overgange i stedet for zoom og glid"
+
+msgctxt "#31756"
+msgid "Back to the defaults"
+msgstr "Tilbage til standard"
+
+msgctxt "#31757"
+msgid "Needs a PVR add-on"
+msgstr "Kræver en PVR-tilføjelse"
+
+msgctxt "#31758"
+msgid "Power and library actions (Home sub-menu)"
+msgstr "Tænd/sluk- og bibliotekshandlinger (undermenu på Hjem)"
+
+msgctxt "#31759"
+msgid "Spotlight: menu item 1"
+msgstr "Spotlight: menupunkt 1"
+
+msgctxt "#31760"
+msgid "Featured slider for this item (needs a library or add-on folder)"
+msgstr "Karrusel til punktet (kræver biblioteks- eller tilføjelsesmappe)"
+
+msgctxt "#31761"
+msgid "Spotlight: menu item 2"
+msgstr "Spotlight: menupunkt 2"
+
+msgctxt "#31762"
+msgid "Spotlight: menu item 3"
+msgstr "Spotlight: menupunkt 3"
+
+msgctxt "#31763"
+msgid "Fanart Menu Backdrop"
+msgstr "Fanart-menubaggrund"
+
+msgctxt "#31764"
+msgid "Menu Backdrop Strength"
+msgstr "Menubaggrundens styrke"
+
+msgctxt "#31765"
+msgid "Now playing on Home"
+msgstr "Afspilles nu på Hjem"
+
+msgctxt "#31766"
+msgid "Theme"
+msgstr "Tema"
+
+msgctxt "#31767"
+msgid "Library background"
+msgstr "Biblioteksbaggrund"
+
+msgctxt "#31768"
+msgid "Screensaver background"
+msgstr "Pauseskærmens baggrund"
+
+msgctxt "#31769"
+msgid "Resolution and codec"
+msgstr "Opløsning og codec"
+
+msgctxt "#31770"
+msgid "HDR tag"
+msgstr "HDR-tag"
+
+msgctxt "#31771"
+msgid "Audio codec and channels"
+msgstr "Lydcodec og kanaler"
+
+msgctxt "#31772"
+msgid "Plotline"
+msgstr "Handlingslinje"
+
+msgctxt "#31773"
+msgid "Autoscroll plot text"
+msgstr "Rul handlingsteksten automatisk"
+
+msgctxt "#31774"
+msgid "Studio logo"
+msgstr "Studielogo"
+
+msgctxt "#31775"
+msgid "Theme songs"
+msgstr "Temasange"
+
+msgctxt "#31776"
+msgid "Color the rating"
+msgstr "Farv bedømmelsen"
+
+msgctxt "#31777"
+msgid "IMDb rating"
+msgstr "IMDb-score"
+
+msgctxt "#31778"
+msgid "TMDb rating"
+msgstr "TMDb-score"
+
+msgctxt "#31779"
+msgid "Rotten Tomatoes"
+msgstr "Rotten Tomatoes"
+
+msgctxt "#31780"
+msgid "Trakt rating"
+msgstr "Trakt-score"
+
+msgctxt "#31781"
+msgid "Seek bar time"
+msgstr "Tid på søgebjælken"
+
+msgctxt "#31782"
+msgid "Controls on pause"
+msgstr "Kontroller ved pause"
+
+msgctxt "#31783"
+msgid "Delay before they open"
+msgstr "Forsinkelse før de åbner"
+
+msgctxt "#31784"
+msgid "Back button in the library"
+msgstr "Tilbage-knappen i biblioteket"
+
+msgctxt "#31785"
+msgid "Show poster on OSD controls"
+msgstr "Vis plakat ved OSD-knapperne"
+
+msgctxt "#31786"
+msgid "Spinning disc art"
+msgstr "Roterende diskbillede"
+
+msgctxt "#31787"
+msgid "Cycle extra fanart"
+msgstr "Skift ekstra fanart"
+
+msgctxt "#31788"
+msgid "Seconds between images"
+msgstr "Sekunder mellem billeder"
+
+msgctxt "#31789"
+msgid "Artist slideshow"
+msgstr "Kunstner-diasshow"
+
+msgctxt "#31790"
+msgid "Studio / network"
+msgstr "Studie / kanal"
+
+msgctxt "#31791"
+msgid "Home spotlight: background"
+msgstr "Spotlight på Hjem: baggrund"
+
+msgctxt "#31792"
+msgid "Home spotlight: transition"
+msgstr "Spotlight på Hjem: overgang"
+
+msgctxt "#31793"
+msgid "Rules"
+msgstr "Regler"
+
+msgctxt "#31800"
+msgid "Settings strip"
+msgstr "Indstillingsstribe"
+
+msgctxt "#31801"
+msgid "Overlay"
+msgstr "Overlejret"
+
+msgctxt "#31802"
+msgid "Permanent"
+msgstr "Permanent"
+
+msgctxt "#31803"
+msgid "Box colors from artwork"
+msgstr "Boksfarver fra billedet"
+
+msgctxt "#31804"
+msgid "Show clock on OSD"
+msgstr "Vis ur i OSD"
+
+msgctxt "#31805"
+msgid "Show weather on OSD"
+msgstr "Vis vejr i OSD"
+
+msgctxt "#31806"
+msgid "Lyrics style"
+msgstr "Sangtekststil"
+
+msgctxt "#31807"
+msgid "Lines"
+msgstr "Linjer"
+
+msgctxt "#31808"
+msgid "Words"
+msgstr "Ord"
+
+msgctxt "#31280"
+msgid "VERSION"
+msgstr "VERSION"
+
+msgctxt "#31281"
+msgid "SYSTEM"
+msgstr "SYSTEM"
+
+msgctxt "#31282"
+msgid "HARDWARE"
+msgstr "HARDWARE"
+
+msgctxt "#31283"
+msgid "LIBRARY"
+msgstr "BIBLIOTEK"
+
+msgctxt "#31574"
+msgid "Build"
+msgstr "Build"
+
+msgctxt "#31634"
+msgid "Name"
+msgstr "Navn"
+
+msgctxt "#31698"
+msgid "Profile"
+msgstr "Profil"
+
+msgctxt "#31794"
+msgid "Uptime"
+msgstr "Oppetid"
+
+msgctxt "#31795"
+msgid "Total uptime"
+msgstr "Samlet oppetid"
+
+msgctxt "#31796"
+msgid "IP address"
+msgstr "IP-adresse"
+
+msgctxt "#31797"
+msgid "MAC address"
+msgstr "MAC-adresse"
+
+msgctxt "#31798"
+msgid "Internet"
+msgstr "Internet"
+
+msgctxt "#31799"
+msgid "CPU usage"
+msgstr "CPU-forbrug"
+
+msgctxt "#31809"
+msgid "Memory"
+msgstr "Hukommelse"
+
+msgctxt "#31810"
+msgid "Used"
+msgstr "Brugt"
+
+msgctxt "#31811"
+msgid "CPU temperature"
+msgstr "CPU-temperatur"
+
+msgctxt "#31812"
+msgid "GPU temperature"
+msgstr "GPU-temperatur"
+
+msgctxt "#31813"
+msgid "Movies"
+msgstr "Film"
+
+msgctxt "#31814"
+msgid "Lyrics take focus"
+msgstr "Sangteksten får fokus"
+
+msgctxt "#31815"
+msgid "Artist list"
+msgstr "Kunstnerliste"
+
+msgctxt "#31816"
+msgid "Artist wall (covers)"
+msgstr "Kunstnervæg (omslag)"
+
+msgctxt "#31817"
+msgid "Album wall (fanart)"
+msgstr "Albumvæg (fanart)"
+
+msgctxt "#31824"
+msgid "LIBRARY VIEW"
+msgstr "BIBLIOTEKSVISNING"
+
+msgctxt "#31825"
+msgid "Overlay: the strip slides in with Left or the Menu key. Permanent: it is always there. View settings can set this per view."
+msgstr "Overlejret: striben glider ind med Venstre eller Menu-tasten. Permanent: den er der altid. Visningsindstillinger kan angive dette pr. visning."
+
+msgctxt "#31826"
+msgid "BOXES"
+msgstr "BOKSE"
+
+msgctxt "#31827"
+msgid "On: the clock and count boxes take the color of the poster or cover in focus (needs the KarmaMole helper)."
+msgstr "Til: ur- og tællerboksen får farven fra plakaten eller omslaget i fokus (kræver KarmaMole-hjælperen)."
+
+msgctxt "#31828"
+msgid "The controls close by themselves after this many seconds without a key press."
+msgstr "Kontrollerne lukker af sig selv efter så mange sekunder uden tastetryk."
+
+msgctxt "#31829"
+msgid "SYNC STRIP"
+msgstr "SYNKSTRIBE"
+
+msgctxt "#31830"
+msgid "Where the subtitle / audio offset strip sits while you adjust it."
+msgstr "Hvor striben for undertekst- / lydforskydning sidder, mens du justerer den."
+
+msgctxt "#31831"
+msgid "Clock box at the top right of the player controls."
+msgstr "Urboks øverst til højre på afspillerkontrollerne."
+
+msgctxt "#31832"
+msgid "Weather box under the clock (needs a weather add-on)."
+msgstr "Vejrboks under uret (kræver en vejrtilføjelse)."
+
+msgctxt "#31833"
+msgid "BIG"
+msgstr "STOR"
+
+msgctxt "#31834"
+msgid "COLORED"
+msgstr "FARVET"
+
+msgctxt "#31835"
+msgid "WORDS"
+msgstr "ORD"
+
+msgctxt "#31836"
+msgid "Lines: the current line between its neighbours. Words: the animated lyrics of Estuary MOD V2 (needs that skin installed for its fonts)."
+msgstr "Linjer: den aktuelle linje mellem sine naboer. Ord: den animerede sangtekst fra Estuary MOD V2 (kræver at det skin er installeret for dets skrifttyper)."
+
+msgctxt "#31837"
+msgid "Off: OK opens the music controls. On: Up / Down pick a line, OK jumps to it; Back lets go of the lines and the lyrics keep running."
+msgstr "Fra: OK åbner musikkontrollerne. Til: Op / Ned vælger en linje, OK springer dertil; Tilbage slipper linjerne, og sangteksten kører videre."
+
+msgctxt "#31818"
+msgid "Words style placement"
+msgstr "Placering af Ord-stilen"
+
+msgctxt "#31819"
+msgid "Full screen"
+msgstr "Fuld skærm"
+
+msgctxt "#31820"
+msgid "On the cover"
+msgstr "På omslaget"
+
+msgctxt "#31821"
+msgid "Home vignette"
+msgstr "Vignet på Hjem"
+
+msgctxt "#31822"
+msgid "Fonts"
+msgstr "Skrifttyper"
+
+msgctxt "#31823"
+msgid "Own family for Home, library, headings, settings, player"
+msgstr "Egen familie til Hjem, bibliotek, overskrifter, indstillinger, afspiller"
+
+msgctxt "#31838"
+msgid "Fonts per section"
+msgstr "Skrifttyper pr. del"
+
+msgctxt "#31839"
+msgid "Follow the font set"
+msgstr "Følg skrifttypesættet"
+
+msgctxt "#31840"
+msgid "Headings"
+msgstr "Overskrifter"
+
+msgctxt "#31841"
+msgid "Settings pages"
+msgstr "Indstillingssider"
+
+msgctxt "#31842"
+msgid "Player"
+msgstr "Afspiller"
+
+msgctxt "#31843"
+msgid "Font for: %s"
+msgstr "Skrifttype til: %s"
+
+msgctxt "#31844"
+msgid "not installed"
+msgstr "ikke installeret"
+
+msgctxt "#31845"
+msgid "Plots, biographies and hints look like this. The quick brown fox jumps over the lazy dog. 0123456789"
+msgstr "Handlinger, biografier og tips ser sådan ud. Høj bly gom vandt fræk sexquiz på wc. 0123456789"
+
+msgctxt "#31846"
+msgid "Preview"
+msgstr "Eksempel"
+
+msgctxt "#31847"
+msgid "Categories"
+msgstr "Kategorier"
+
+msgctxt "#31848"
+msgid "Show weather on screensaver"
+msgstr "Vis vejr på pauseskærmen"
+
+msgctxt "#31849"
+msgid "Temperature and conditions in the top right corner"
+msgstr "Temperatur og vejr øverst til højre"
+
+msgctxt "#31850"
+msgid "Videos · Music · Discs · Pictures · Language · Subtitles"
+msgstr "Videoer · Musik · Diske · Billeder · Sprog · Undertekster"
+
+msgctxt "#31851"
+msgid "Library · General · Videos · Music · Pictures"
+msgstr "Bibliotek · Generelt · Videoer · Musik · Billeder"
+
+msgctxt "#31852"
+msgid "Skin · Regional · Screensaver · Master lock · Startup"
+msgstr "Skin · Regionalt · Pauseskærm · Hovedlås · Opstart"
+
+msgctxt "#31853"
+msgid "General · Control · UPnP / DLNA · AirPlay · Weather"
+msgstr "Generelt · Styring · UPnP / DLNA · AirPlay · Vejr"
+
+msgctxt "#31854"
+msgid "Display · Audio · Input · Internet access · Power saving · Add-ons · Logging"
+msgstr "Skærm · Lyd · Input · Internetadgang · Strømbesparelse · Tilføjelser · Logning"
+
+msgctxt "#31855"
+msgid "General · Channels · Guide · Playback · Recording · Reminders"
+msgstr "Generelt · Kanaler · Guide · Afspilning · Optagelse · Påmindelser"
+
+msgctxt "#31856"
+msgid "Home menu position"
+msgstr "Hovedmenuens placering"
+
+msgctxt "#31857"
+msgid "Middle"
+msgstr "Midten"
+
+msgctxt "#31858"
+msgid "Low"
+msgstr "Lav"
+
+msgctxt "#31859"
+msgid "General · Achievements"
+msgstr "Generelt · Præstationer"
+
+msgctxt "#31860"
+msgid "Show clock on screensaver"
+msgstr "Vis ur på pauseskærmen"
+
+msgctxt "#31861"
+msgid "Poster / thumbnail"
+msgstr "Plakat / miniature"
+
+msgctxt "#31862"
+msgid "Season and episode counts"
+msgstr "Antal sæsoner og afsnit"
+
+msgctxt "#31863"
+msgid "Watched status"
+msgstr "Set-status"
+
+msgctxt "#31864"
+msgid "The Long Way Home"
+msgstr "Den lange vej hjem"
+
+msgctxt "#31865"
+msgid "2019 | DRAMA / ADVENTURE"
+msgstr "2019 | DRAMA / EVENTYR"
+
+msgctxt "#31866"
+msgid "Northern Lights"
+msgstr "Nordlys"
+
+msgctxt "#31867"
+msgid "2023 | DOCUMENTARY"
+msgstr "2023 | DOKUMENTAR"
+
+msgctxt "#31868"
+msgid "A Quiet Harbour"
+msgstr "En stille havn"
+
+msgctxt "#31869"
+msgid "1998 | CRIME / THRILLER"
+msgstr "1998 | KRIMI / THRILLER"
+
+msgctxt "#31188"
+msgid "Item"
+msgstr "Element"
+
+msgctxt "#31192"
+msgid "Screenshots"
+msgstr "Skærmbilleder"
+
+msgctxt "#31193"
+msgid "Picture details"
+msgstr "Billeddetaljer"
+
+msgctxt "#31284"
+msgid "EPG"
+msgstr "EPG"
+
+msgctxt "#31285"
+msgid "Tools"
+msgstr "Værktøjer"
+
+msgctxt "#31286"
+msgid "Who is watching?"
+msgstr "Hvem ser med?"
+
+msgctxt "#31287"
+msgid "Playlist editor"
+msgstr "Afspilningslisteeditor"
+
+msgctxt "#31288"
+msgid "Flix"
+msgstr "Flix"
+
+msgctxt "#31289"
+msgid "Fanart with one row"
+msgstr "Fanart med én række"
+
+msgctxt "#31290"
+msgid "Combined"
+msgstr "Kombineret"
+
+msgctxt "#31291"
+msgid "A row over its contents"
+msgstr "En række over indholdet"
+
+msgctxt "#31292"
+msgid "Circles"
+msgstr "Cirkler"
+
+msgctxt "#31293"
+msgid "Round portraits"
+msgstr "Runde portrætter"
+
+msgctxt "#31294"
+msgid "Planner"
+msgstr "Planlægger"
+
+msgctxt "#31570"
+msgid "Episodes by date"
+msgstr "Afsnit efter dato"
+
+msgctxt "#31571"
+msgid "Recommended"
+msgstr "Anbefalet"
+
+msgctxt "#31572"
+msgid "Similar titles"
+msgstr "Lignende titler"
+
+msgctxt "#31573"
+msgid "Information"
+msgstr "Information"
+
+msgctxt "#31870"
+msgid "Plot hidden until you have watched it."
+msgstr "Handlingen skjules, til du har set den."
+
+msgctxt "#31871"
+msgid "More options"
+msgstr "Flere valg"
+
+msgctxt "#31872"
+msgid "Spoilers, pause and language flags"
+msgstr "Spoilere, pause og sprogflag"
+
+msgctxt "#31873"
+msgid "Hide spoilers of unwatched episodes"
+msgstr "Skjul spoilere for usete afsnit"
+
+msgctxt "#31874"
+msgid "Seek bar while paused"
+msgstr "Søgebjælke ved pause"
+
+msgctxt "#31875"
+msgid "Show language flags on OSD"
+msgstr "Vis sprogflag i OSD"
+
+msgctxt "#31876"
+msgid "Always"
+msgstr "Altid"
+
+msgctxt "#31877"
+msgid "5 seconds"
+msgstr "5 sekunder"
+
+msgctxt "#31878"
+msgid "Never"
+msgstr "Aldrig"
+
+msgctxt "#31879"
+msgid "Stacked row on Home"
+msgstr "Stablet række på Hjem"
+
+msgctxt "#31880"
+msgid "Kiosk mode (lock views)"
+msgstr "Kiosktilstand (lås visninger)"
+
+msgctxt "#31881"
+msgid "Last login"
+msgstr "Seneste login"
+
+msgctxt "#31882"
+msgid "Cinema mode: trailers before a film"
+msgstr "Biograftilstand: trailere før en film"
+
+msgctxt "#31883"
+msgid "1 trailer"
+msgstr "1 trailer"
+
+msgctxt "#31884"
+msgid "2 trailers"
+msgstr "2 trailere"
+
+msgctxt "#31885"
+msgid "3 trailers"
+msgstr "3 trailere"
+
+msgctxt "#31886"
+msgid "Reviews"
+msgstr "Anmeldelser"
+
+msgctxt "#31887"
+msgid "Top tracks"
+msgstr "Topnumre"
+
+msgctxt "#31888"
+msgid "Similar artists"
+msgstr "Lignende kunstnere"
+
+msgctxt "#31889"
+msgid "Not in your library"
+msgstr "Ikke i dit bibliotek"
+
+msgctxt "#31890"
+msgid "Artist page: look up on Deezer"
+msgstr "Kunstnerside: slå op på Deezer"
+
+msgctxt "#31891"
+msgid "Progress line on posters"
+msgstr "Statuslinje på plakater"
+
+msgctxt "#31892"
+msgid "Play trailers automatically"
+msgstr "Afspil trailere automatisk"
+
+msgctxt "#31893"
+msgid "Nothing planned"
+msgstr "Intet planlagt"
+
+msgctxt "#31894"
+msgid "View"
+msgstr "Visning"
+
+msgctxt "#31895"
+msgid "Week starts"
+msgstr "Ugen starter"
+
+msgctxt "#31896"
+msgid "Show"
+msgstr "Vis"
+
+msgctxt "#31897"
+msgid "Day"
+msgstr "Dag"
+
+msgctxt "#31898"
+msgid "Week"
+msgstr "Uge"
+
+msgctxt "#31899"
+msgid "Home spotlight"
+msgstr "Spotlight på Hjem"
+
+msgctxt "#31903"
+msgid "Days ahead"
+msgstr "Dage frem"
+
+msgctxt "#31904"
+msgid "What is coming, shown one title at a time while the Planner is focused on Home. It starts with today."
+msgstr "Det, der kommer, én titel ad gangen, mens Planlæggeren er i fokus på Hjem. Det starter med i dag."
+
+msgctxt "#31905"
+msgid "Disable"
+msgstr "Deaktivér"
+
+msgctxt "#31906"
+msgid "Enable"
+msgstr "Aktivér"
+
+msgctxt "#31907"
+msgid "Empty"
+msgstr "Tom"
+
+msgctxt "#31908"
+msgid "Choose type"
+msgstr "Vælg type"
+
+msgctxt "#31909"
+msgid "Custom item"
+msgstr "Eget element"
+
+msgctxt "#31910"
+msgid "Empty position"
+msgstr "Tom position"
+
+msgctxt "#31911"
+msgid "Type of position"
+msgstr "Type position"
+
+msgctxt "#31912"
+msgid "All ten custom items are in use. Free one first."
+msgstr "Alle ti egne elementer er i brug. Frigør ét først."
+
+msgctxt "#31913"
+msgid "Channel group"
+msgstr "Kanalgruppe"
+
+msgctxt "#31914"
+msgid "Watched last"
+msgstr "Senest set"
+
+msgctxt "#31915"
+msgid "None"
+msgstr "Ingen"
+
+msgctxt "#31916"
+msgid "No channel group"
+msgstr "Ingen kanalgruppe"
+
+msgctxt "#31917"
+msgid "With Live TV focused on Home: Up reaches the channels watched last, Right there shows the channel group chosen here. OK plays a channel."
+msgstr "Med live-tv i fokus på Hjem: Op når de senest sete kanaler, Højre dér viser den kanalgruppe, du vælger her. OK afspiller en kanal."
+
+msgctxt "#31918"
+msgid "UP: CHANNELS   |   OK: GUIDE"
+msgstr "OP: KANALER   |   OK: GUIDE"
+
+msgctxt "#31919"
+msgid "OK: WATCH   |   LEFT: WATCHED LAST"
+msgstr "OK: SE   |   VENSTRE: SENEST SET"
+
+msgctxt "#31920"
+msgid "OK: WATCH   |   RIGHT: CHANNEL GROUP"
+msgstr "OK: SE   |   HØJRE: KANALGRUPPE"
+
+msgctxt "#31921"
+msgid "OK: WATCH"
+msgstr "OK: SE"
+
+msgctxt "#31922"
+msgid "LEFT / RIGHT: OTHER TITLES   |   DOWN: MENU"
+msgstr "VENSTRE / HØJRE: ANDRE TITLER   |   NED: MENU"
+
+msgctxt "#31923"
+msgid "Coming up"
+msgstr "Kommer snart"
+
+msgctxt "#31924"
+msgid "Not in your library yet."
+msgstr "Endnu ikke i dit bibliotek."
+
+msgctxt "#31925"
+msgid "On"
+msgstr "Til"
+
+msgctxt "#31926"
+msgid "Unwatched episodes show no thumbnail and no plot until you have seen them."
+msgstr "Usete afsnit viser hverken miniature eller handling, før du har set dem."
+
+msgctxt "#31927"
+msgid "Top tracks and similar artists on the artist page come from Deezer (needs internet). Off: only your library."
+msgstr "Topnumre og lignende kunstnere på kunstnersiden kommer fra Deezer (kræver internet). Fra: kun dit bibliotek."
+
+msgctxt "#31928"
+msgid "When the seek bar shows while a film is paused: always, for 5 seconds, or never."
+msgstr "Hvornår søgebjælken vises, mens en film er sat på pause: altid, i 5 sekunder eller aldrig."
+
+msgctxt "#31929"
+msgid "Flags of the audio and subtitle languages on the player controls."
+msgstr "Flag for lyd- og undertekstsprogene på afspillerkontrollerne."
+
+msgctxt "#31930"
+msgid "Trailers of other films play before the film you start: none, 1, 2 or 3."
+msgstr "Trailere for andre film afspilles før den film, du starter: ingen, 1, 2 eller 3."
+
+msgctxt "#31931"
+msgid "A thin line under posters shows how much of a film, show or season you have watched."
+msgstr "En tynd linje under plakater viser, hvor meget af en film, serie eller sæson du har set."
+
+msgctxt "#31932"
+msgid "A strip of small posters under the plot when a set or a show is in focus in the rows on Home."
+msgstr "En stribe små plakater under handlingen, når en samling eller serie er i fokus i rækkerne på Hjem."
+
+msgctxt "#31933"
+msgid "Locks the library views: no view settings and no left-hand settings strip."
+msgstr "Låser biblioteksvisningerne: ingen visningsindstillinger og ingen indstillingsstribe til venstre."
+
+msgctxt "#31934"
+msgid "The library background takes the palette only with the Neutral backdrop. The highlight, boxes and strips follow it with every backdrop.[CR][CR]Use the Neutral backdrop in the libraries?"
+msgstr "Bibliotekets baggrund tager kun paletten med den neutrale baggrund. Markering, bokse og striber følger den med alle baggrunde.[CR][CR]Brug den neutrale baggrund i bibliotekerne?"
+
+msgctxt "#31935"
+msgid "Keep the backdrop"
+msgstr "Behold baggrunden"
+
+msgctxt "#31936"
+msgid "Use Neutral"
+msgstr "Brug Neutral"
+
+msgctxt "#31937"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages. The library background takes it with the Neutral backdrop only."
+msgstr "Farve på markeringen, boksene, striberne og indstillingssiderne. Bibliotekets baggrund tager den kun med den neutrale baggrund."
+
+msgctxt "#31938"
+msgid "Words"
+msgstr "Ord"
+
+msgctxt "#31939"
+msgid "Lines"
+msgstr "Linjer"
+
+msgctxt "#31958"
+msgid "Skippy: the skin's skip button"
+msgstr "Skippy: skin'ets spring over-knap"
+
+msgctxt "#31959"
+msgid "On: during a segment Skippy asks about (Ask), the player shows a Skip button in the skin's look; OK skips, Back hides it. Off: Skippy opens its own dialog. In Fused Glass, Up next at the end of an episode is the skin's too."
+msgstr "Til: under et segment, Skippy spørger om (Spørg), viser afspilleren en Spring over-knap i skin'ets stil; OK springer over, Tilbage skjuler den. Fra: Skippy åbner sin egen dialog. I Fused Glass er Næste afsnit ved slutningen af et afsnit også skin'ets."
+
+msgctxt "#31960"
+msgid "Skippy: segment line in the player"
+msgstr "Skippy: segmentlinje i afspilleren"
+
+msgctxt "#31961"
+msgid "Between the times on the player controls: the segment playing and the time left (Intro · 0:42 left), or the next segment and when it starts."
+msgstr "Mellem tiderne på afspillerkontrollerne: segmentet, der spiller, og resterende tid (Intro · 0:42 tilbage), eller næste segment og hvornår det starter."
+
+msgctxt "#31962"
+msgid "Skippy: up next in the player"
+msgstr "Skippy: næste i afspilleren"
+
+msgctxt "#31963"
+msgid "Top right of the player controls: the next episode Skippy found, with its picture. Skippy's own next-episode prompt is not affected."
+msgstr "Øverst til højre på afspillerkontrollerne: det næste afsnit, Skippy fandt, med billede. Skippys egen besked om næste afsnit påvirkes ikke."
+
+msgctxt "#31964"
+msgid "Skip"
+msgstr "Spring over"
+
+msgctxt "#31965"
+msgid "left"
+msgstr "tilbage"
+
+msgctxt "#31966"
+msgid "at"
+msgstr "kl."
+
+msgctxt "#31967"
+msgid "Memory hand-back"
+msgstr "Tilbagelevering af hukommelse"
+
+msgctxt "#31968"
+msgid "Linux boxes (CoreELEC, LibreELEC): Kodi keeps memory it has finished with. The helper hands it back to the system after a pause in key presses, or when free RAM gets low. Not on Windows."
+msgstr "Linux-enheder (CoreELEC, LibreELEC): Kodi beholder hukommelse, den er færdig med. Hjælperen giver den tilbage til systemet efter en pause i tastetryk, eller når fri RAM bliver lav. Ikke på Windows."
+
+msgctxt "#31969"
+msgid "Pause before hand-back"
+msgstr "Pause før tilbagelevering"
+
+msgctxt "#31970"
+msgid "After a pause: seconds without a key press (2-30), not during a video. When free RAM is low: the least free memory the box keeps; within 256 MB of it the hand-back waits for a pause, below it it happens at once."
+msgstr "Efter en pause: sekunder uden tastetryk (2-30), ikke under en video. Når fri RAM er lav: den mindste frie hukommelse, enheden beholder; inden for 256 MB fra den venter tilbageleveringen på en pause, under den sker den med det samme."
+
+msgctxt "#31971"
+msgid "Minimum free RAM"
+msgstr "Mindste fri RAM"
+
+msgctxt "#31972"
+msgid "Adds Clean library to the context menu in the libraries and on Home: entries whose files are gone are removed (it asks first)."
+msgstr "Tilføjer Ryd op i biblioteket til kontekstmenuen i bibliotekerne og på Hjem: poster, hvis filer er væk, fjernes (den spørger først)."
+
+msgctxt "#31973"
+msgid "Network · Connections · Updates · Hardware · Services"
+msgstr "Netværk · Forbindelser · Opdateringer · Hardware · Tjenester"
+
+msgctxt "#31974"
+msgid "The box"
+msgstr "Enheden"
+
+msgctxt "#31975"
+msgid "The box's own settings: network and Wi-Fi, updates, hardware, services such as SSH and Samba."
+msgstr "Enhedens egne indstillinger: netværk og Wi-Fi, opdateringer, hardware, tjenester som SSH og Samba."
+
+msgctxt "#31976"
+msgid "Restart Kodi"
+msgstr "Genstart Kodi"
+
+msgctxt "#31977"
+msgid "Widget screens: media info"
+msgstr "Widgetskærme: medieinfo"
+
+msgctxt "#31978"
+msgid "Widget screens: ratings"
+msgstr "Widgetskærme: bedømmelser"
+
+msgctxt "#31979"
+msgid "Widget screens: studio / network"
+msgstr "Widgetskærme: studie / kanal"
+
+msgctxt "#31996"
+msgid "The background of the spotlight at the top of Home. Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "Baggrunden for Spotlight øverst på Hjem. Fanart: titlens fanart. Neutral: mørk. Farve: et blødt farvebillede, som KarmaMole-hjælperen laver af billedet (fanart vises, til det er klar)."
+
+msgctxt "#31997"
+msgid "How the spotlight at the top of Home moves on to the next title: fade, slide or cut."
+msgstr "Hvordan Spotlight øverst på Hjem går videre til næste titel: overgang, glid eller klip."
+
+msgctxt "#31998"
+msgid "Widget screens: background"
+msgstr "Widgetskærme: baggrund"
+
+msgctxt "#31999"
+msgid "The background of the full-screen widget pages (Up on a title on Home). Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "Baggrunden for widgetsiderne i fuld skærm (Op på en titel på Hjem). Fanart: titlens fanart. Neutral: mørk. Farve: et blødt farvebillede, som KarmaMole-hjælperen laver af billedet (fanart vises, til det er klar)."
+
+msgctxt "#32000"
+msgid "creator of the Aeon 2 concept"
+msgstr "skaber af Aeon 2-konceptet"
+
+msgctxt "#32001"
+msgid "1 of 1 episode watched"
+msgstr "1 af 1 afsnit set"
+
+msgctxt "#32002"
+msgid "on"
+msgstr "på"
+
+msgctxt "#32003"
+msgid "9:00 PM"
+msgstr "21:00"
+
+msgctxt "#32004"
+msgid "9:30 PM"
+msgstr "21:30"
+
+msgctxt "#32005"
+msgid "10:00 PM"
+msgstr "22:00"
+
+msgctxt "#32006"
+msgid "10:30 PM"
+msgstr "22:30"
+
+msgctxt "#32007"
+msgid "11:00 PM"
+msgstr "23:00"
+
+msgctxt "#32008"
+msgid "11:30 PM"
+msgstr "23:30"
+
+msgctxt "#32009"
+msgid "12:00 AM"
+msgstr "0:00"
+
+msgctxt "#32010"
+msgid "12:30 AM"
+msgstr "0:30"
+
+msgctxt "#32011"
+msgid "1:00 AM"
+msgstr "1:00"
+
+msgctxt "#32012"
+msgid "1:30 AM"
+msgstr "1:30"
+
+msgctxt "#32013"
+msgid "2:00 AM"
+msgstr "2:00"
+
+msgctxt "#32015"
+msgid "Repositories checked"
+msgstr "Kilder tjekket"
+
+msgctxt "#32016"
+msgid "Close Kodi"
+msgstr "Luk Kodi"
+
+msgctxt "#32017"
+msgid "Back to the profile screen"
+msgstr "Tilbage til profilskærmen"
+
+msgctxt "#32018"
+msgid "Kodi only, the system keeps running"
+msgstr "Kun Kodi, systemet kører videre"
+
+msgctxt "#32019"
+msgid "Restart the whole system"
+msgstr "Genstart hele systemet"
+
+msgctxt "#32020"
+msgid "Restart into Android"
+msgstr "Genstart i Android"
+
+msgctxt "#32021"
+msgid "Switch the system off"
+msgstr "Sluk systemet"
+
+msgctxt "#32022"
+msgid "By"
+msgstr "Fra"
+
+msgctxt "#32023"
+msgid "Running time"
+msgstr "Spilletid"
+
+msgctxt "#32024"
+msgid "min"
+msgstr "min"
+
+msgctxt "#32025"
+msgid "Widgets"
+msgstr "Widgets"
+
+msgctxt "#32026"
+msgid "hidden"
+msgstr "skjult"
+
+msgctxt "#32027"
+msgid "Hold"
+msgstr "Tid"
+
+msgctxt "#32028"
+msgid "Update the list"
+msgstr "Opdatér listen"
+
+msgctxt "#32029"
+msgid "Update now"
+msgstr "Opdatér nu"
+
+msgctxt "#32030"
+msgid "ARTISTS"
+msgstr "KUNSTNERE"
+
+msgctxt "#32031"
+msgid "ALBUMS"
+msgstr "ALBUM"
+
+msgctxt "#32032"
+msgid "SONGS"
+msgstr "SANGE"
+
+msgctxt "#32033"
+msgid "Widget screens"
+msgstr "Widgetskærme"
+
+msgctxt "#32034"
+msgid "Hide plot and thumb"
+msgstr "Skjul handling og miniature"
+
+msgctxt "#32035"
+msgid "Start"
+msgstr "Start"
+
+msgctxt "#32036"
+msgid "A handful of short steps"
+msgstr "Et par korte trin"
+
+msgctxt "#32037"
+msgid "Backdrop, look, Home menu, libraries and motion."
+msgstr "Baggrund, udseende, hovedmenu, biblioteker og bevægelse."
+
+msgctxt "#32038"
+msgid "Skip setup"
+msgstr "Spring opsætningen over"
+
+msgctxt "#32039"
+msgid "Keep the defaults for now"
+msgstr "Behold standarderne indtil videre"
+
+msgctxt "#32040"
+msgid "Run the setup any time: Skin settings > Motion, memory, reset > Setup wizard."
+msgstr "Kør opsætningen når som helst: Skin-indstillinger > Bevægelse, RAM, nulstil > Opsætningsguide."
+
+msgctxt "#32041"
+msgid "A calm backdrop in a palette of your choice"
+msgstr "En rolig baggrund i en palet efter eget valg"
+
+msgctxt "#32042"
+msgid "A dark, even background in the colours of the palette you pick next."
+msgstr "En mørk, jævn baggrund i farverne fra den palet, du vælger derefter."
+
+msgctxt "#32043"
+msgid "The focused title's fanart, dimmed"
+msgstr "Fanart for titlen i fokus, dæmpet"
+
+msgctxt "#32044"
+msgid "The artwork of the focused title fills the background, dimmed so text stays readable."
+msgstr "Billedet af titlen i fokus fylder baggrunden, dæmpet så teksten er let at læse."
+
+msgctxt "#32045"
+msgid "A tint taken from the artwork"
+msgstr "En farvetone fra billedet"
+
+msgctxt "#32046"
+msgid "A deep colour taken from the focused title's artwork."
+msgstr "En dyb farve fra billedet af titlen i fokus."
+
+msgctxt "#32047"
+msgid "The palette shows after Kodi restarts at the end of the setup."
+msgstr "Paletten vises, når Kodi genstarter til sidst i opsætningen."
+
+msgctxt "#32048"
+msgid "Solid panels, palettes"
+msgstr "Faste paneler, paletter"
+
+msgctxt "#32049"
+msgid "The classic Aeon look: calm, solid surfaces and a white or coloured focus bar."
+msgstr "Det klassiske Aeon-udseende: rolige, faste flader og en hvid eller farvet markeringsbjælke."
+
+msgctxt "#32050"
+msgid "Aeon with glass menus, no palettes"
+msgstr "Aeon med glasmenuer, uden paletter"
+
+msgctxt "#32051"
+msgid "Panels of frosted glass over the fanart; the focus bar is a soft light."
+msgstr "Paneler af matteret glas over fanarten; markeringsbjælken er et blødt lys."
+
+msgctxt "#32052"
+msgid "As the skin theme"
+msgstr "Som skin-temaet"
+
+msgctxt "#32053"
+msgid "Flat rows with rules"
+msgstr "Flade rækker med streger"
+
+msgctxt "#32054"
+msgid "The menus of the Aeon or Aeon Glass theme you picked."
+msgstr "Menuerne i det Aeon- eller Aeon Glass-tema, du valgte."
+
+msgctxt "#32055"
+msgid "Rounded cards, like this setup"
+msgstr "Afrundede kort, som denne opsætning"
+
+msgctxt "#32056"
+msgid "Every row a soft card, the focused one solid; no rule lines."
+msgstr "Hver række et blødt kort, den markerede fyldt; ingen streger."
+
+msgctxt "#32057"
+msgid "OK switches Movies on or off."
+msgstr "OK slår Film til eller fra."
+
+msgctxt "#32058"
+msgid "OK switches TV shows on or off."
+msgstr "OK slår Tv-serier til eller fra."
+
+msgctxt "#32059"
+msgid "OK switches Music on or off."
+msgstr "OK slår Musik til eller fra."
+
+msgctxt "#32060"
+msgid "OK switches Live TV on or off."
+msgstr "OK slår Live-tv til eller fra."
+
+msgctxt "#32061"
+msgid "OK switches Search on or off."
+msgstr "OK slår Søg til eller fra."
+
+msgctxt "#32062"
+msgid "OK switches Movie sets on or off."
+msgstr "OK slår Filmsamlinger til eller fra."
+
+msgctxt "#32063"
+msgid "OK switches Favourites on or off."
+msgstr "OK slår Favoritter til eller fra."
+
+msgctxt "#32064"
+msgid "OK switches Pictures on or off."
+msgstr "OK slår Billeder til eller fra."
+
+msgctxt "#32065"
+msgid "OK switches Add-ons on or off."
+msgstr "OK slår Tilføjelser til eller fra."
+
+msgctxt "#32066"
+msgid "OK switches Weather on or off."
+msgstr "OK slår Vejr til eller fra."
+
+msgctxt "#32067"
+msgid "OK switches Planner on or off."
+msgstr "OK slår Planlægger til eller fra."
+
+msgctxt "#32068"
+msgid "OK switches Files on or off."
+msgstr "OK slår Filer til eller fra."
+
+msgctxt "#32069"
+msgid "OK switches Settings on or off."
+msgstr "OK slår Indstillinger til eller fra."
+
+msgctxt "#32070"
+msgid "OK switches Power on or off."
+msgstr "OK slår Tænd/sluk til eller fra."
+
+msgctxt "#32071"
+msgid "Continue"
+msgstr "Fortsæt"
+
+msgctxt "#32072"
+msgid "Next step"
+msgstr "Næste trin"
+
+msgctxt "#32073"
+msgid "On to the Home menu position."
+msgstr "Videre til hovedmenuens placering."
+
+msgctxt "#32074"
+msgid "The spotlight above, a row of posters below"
+msgstr "Spotlight foroven, en række plakater nedenunder"
+
+msgctxt "#32075"
+msgid "The menu across the middle of the screen with a widget row underneath."
+msgstr "Menuen hen over midten af skærmen med en widgetrække nedenunder."
+
+msgctxt "#32076"
+msgid "A taller spotlight, the menu near the bottom"
+msgstr "En højere Spotlight, menuen nær bunden"
+
+msgctxt "#32077"
+msgid "More room for the spotlight; the menu sits low on the screen."
+msgstr "Mere plads til Spotlight; menuen sidder lavt på skærmen."
+
+msgctxt "#32078"
+msgid "The artwork of the spotlight title"
+msgstr "Billedet til titlen i Spotlight"
+
+msgctxt "#32079"
+msgid "Fanart of the title in the spotlight, with a soft fade from the left."
+msgstr "Fanarten til titlen i Spotlight, med en blød overgang fra venstre."
+
+msgctxt "#32080"
+msgid "A colour taken from the artwork"
+msgstr "En farve hentet fra billedet"
+
+msgctxt "#32081"
+msgid "A warm or cool tint drawn from the title's artwork."
+msgstr "En varm eller kølig tone hentet fra titlens billede."
+
+msgctxt "#32082"
+msgid "A quiet dark background"
+msgstr "En rolig mørk baggrund"
+
+msgctxt "#32083"
+msgid "No artwork behind the spotlight text."
+msgstr "Intet billede bag Spotlight-teksten."
+
+msgctxt "#32084"
+msgid "One picture dissolves into the next"
+msgstr "Ét billede glider over i det næste"
+
+msgctxt "#32085"
+msgid "A soft cross-fade."
+msgstr "En blød overtoning."
+
+msgctxt "#32086"
+msgid "The next one pushes in from the right"
+msgstr "Det næste skubbes ind fra højre"
+
+msgctxt "#32087"
+msgid "A sideways slide, like turning a page."
+msgstr "En glidning til siden, som når man vender en side."
+
+msgctxt "#32088"
+msgid "Straight to the next"
+msgstr "Direkte til det næste"
+
+msgctxt "#32089"
+msgid "No animation: the next title appears at once."
+msgstr "Ingen animation: næste titel vises med det samme."
+
+msgctxt "#32090"
+msgid "The colour of the artwork"
+msgstr "Billedets farve"
+
+msgctxt "#32091"
+msgid "The boxes take a deep colour from the focused title's artwork."
+msgstr "Boksene får en dyb farve fra billedet til den markerede titel."
+
+msgctxt "#32092"
+msgid "The palette's box colour"
+msgstr "Palettens boksfarve"
+
+msgctxt "#32093"
+msgid "Always the same calm colour of the palette."
+msgstr "Altid den samme rolige farve fra paletten."
+
+msgctxt "#32094"
+msgid "A window onto the fanart"
+msgstr "Et vindue mod fanarten"
+
+msgctxt "#32095"
+msgid "Each box shows the part of the fanart behind it, darkened for the clock."
+msgstr "Hver boks viser den del af fanarten, der ligger bagved, mørklagt til uret."
+
+msgctxt "#32096"
+msgid "As the backdrop"
+msgstr "Som baggrunden"
+
+msgctxt "#32097"
+msgid "Follow the library backdrop"
+msgstr "Følg bibliotekets baggrund"
+
+msgctxt "#32098"
+msgid "Neutral, fanart or colour, whatever the library backdrop is."
+msgstr "Neutral, fanart eller farve, alt efter bibliotekets baggrund."
+
+msgctxt "#32099"
+msgid "Dots, checks and progress bars"
+msgstr "Prikker, flueben og statuslinjer"
+
+msgctxt "#32100"
+msgid "Unwatched titles get a dot, watched ones a check, started ones a progress bar."
+msgstr "Usete titler får en prik, sete et flueben, påbegyndte en statuslinje."
+
+msgctxt "#32101"
+msgid "Dots and progress bars"
+msgstr "Prikker og statuslinjer"
+
+msgctxt "#32102"
+msgid "Only what is still to watch is marked."
+msgstr "Kun det, der mangler at blive set, markeres."
+
+msgctxt "#32103"
+msgid "Checks on what you have seen"
+msgstr "Flueben på det, du har set"
+
+msgctxt "#32104"
+msgid "Only finished titles are marked."
+msgstr "Kun færdigsete titler markeres."
+
+msgctxt "#32105"
+msgid "Clean posters"
+msgstr "Rene plakater"
+
+msgctxt "#32106"
+msgid "No markers at all."
+msgstr "Ingen markeringer overhovedet."
+
+msgctxt "#32107"
+msgid "Logos"
+msgstr "Logoer"
+
+msgctxt "#32108"
+msgid "The artwork's clear logo"
+msgstr "Billedets ClearLogo"
+
+msgctxt "#32109"
+msgid "Clear logos from the artwork, text where a title has none."
+msgstr "ClearLogos fra billederne, tekst hvor en titel ikke har et."
+
+msgctxt "#32110"
+msgid "Plain text"
+msgstr "Almindelig tekst"
+
+msgctxt "#32111"
+msgid "Always the name in the skin's own font."
+msgstr "Altid navnet i skinnets egen skrifttype."
+
+msgctxt "#32112"
+msgid "FULL HD, 4K, aspect ratio"
+msgstr "FULL HD, 4K, billedformat"
+
+msgctxt "#32113"
+msgid "OK switches the resolution chips on or off."
+msgstr "OK slår opløsningsmærkerne til eller fra."
+
+msgctxt "#32114"
+msgid "SDR, HDR10, Dolby Vision profile"
+msgstr "SDR, HDR10, Dolby Vision-profil"
+
+msgctxt "#32115"
+msgid "OK switches the HDR chips on or off."
+msgstr "OK slår HDR-mærkerne til eller fra."
+
+msgctxt "#32116"
+msgid "Codec and channels"
+msgstr "Codec og kanaler"
+
+msgctxt "#32117"
+msgid "OK switches the audio chips on or off."
+msgstr "OK slår lydmærkerne til eller fra."
+
+msgctxt "#32118"
+msgid "On to the extra fanart."
+msgstr "Videre til ekstra fanart."
+
+msgctxt "#32119"
+msgid "Take turns"
+msgstr "Skiftevis"
+
+msgctxt "#32120"
+msgid "Every extra fanart in a slow cycle"
+msgstr "Al ekstra fanart i et langsomt skift"
+
+msgctxt "#32121"
+msgid "The background changes picture every few seconds (Skin settings > Backgrounds sets how often)."
+msgstr "Baggrunden skifter billede med få sekunders mellemrum (Skin-indstillinger > Baggrunde bestemmer hvor tit)."
+
+msgctxt "#32122"
+msgid "One picture"
+msgstr "Ét billede"
+
+msgctxt "#32123"
+msgid "Only the main fanart"
+msgstr "Kun hovedfanarten"
+
+msgctxt "#32124"
+msgid "The background stays on the main fanart."
+msgstr "Baggrunden bliver på hovedfanarten."
+
+msgctxt "#32125"
+msgid "Hide them"
+msgstr "Skjul dem"
+
+msgctxt "#32126"
+msgid "No thumbnail or plot until watched"
+msgstr "Ingen miniature eller handling før den er set"
+
+msgctxt "#32127"
+msgid "Unwatched episodes show a blurred picture and no plot."
+msgstr "Usete afsnit viser et sløret billede og ingen handling."
+
+msgctxt "#32128"
+msgid "Show them"
+msgstr "Vis dem"
+
+msgctxt "#32129"
+msgid "Thumbnails and plots for all"
+msgstr "Miniaturer og handling for alle"
+
+msgctxt "#32130"
+msgid "Every episode shows its picture and plot."
+msgstr "Hvert afsnit viser sit billede og sin handling."
+
+msgctxt "#32131"
+msgid "Full motion"
+msgstr "Fuld bevægelse"
+
+msgctxt "#32132"
+msgid "Smooth slides and fades"
+msgstr "Bløde glidninger og overgange"
+
+msgctxt "#32133"
+msgid "Rows slide in one after another, dialogs glide open."
+msgstr "Rækker glider ind efter hinanden, dialoger glider op."
+
+msgctxt "#32134"
+msgid "Everything appears at once"
+msgstr "Alt vises med det samme"
+
+msgctxt "#32135"
+msgid "No slides or zooms: calmer, and lighter on slow boxes."
+msgstr "Ingen glidninger eller zoom: roligere og lettere for langsomme bokse."
+
+msgctxt "#32136"
+msgid "When free RAM is low"
+msgstr "Når der er lidt ledig RAM"
+
+msgctxt "#32137"
+msgid "Recommended: below 1 GB free"
+msgstr "Anbefalet: under 1 GB ledig"
+
+msgctxt "#32138"
+msgid "Kodi hands memory back when the free RAM drops below the minimum (Skin settings can change it)."
+msgstr "Kodi giver hukommelse tilbage, når ledig RAM falder under minimum (kan ændres i Skin-indstillinger)."
+
+msgctxt "#32139"
+msgid "After a pause"
+msgstr "Efter en pause"
+
+msgctxt "#32140"
+msgid "A few seconds after the last key press"
+msgstr "Et par sekunder efter sidste tastetryk"
+
+msgctxt "#32141"
+msgid "Kodi hands memory back whenever the remote has been quiet for a moment."
+msgstr "Kodi giver hukommelse tilbage, hver gang fjernbetjeningen har været stille et øjeblik."
+
+msgctxt "#32142"
+msgid "Finish"
+msgstr "Afslut"
+
+msgctxt "#32143"
+msgid "Change something"
+msgstr "Ændr noget"
+
+msgctxt "#32144"
+msgid "Go back to the previous step."
+msgstr "Gå tilbage til forrige trin."
+
+msgctxt "#32145"
+msgid "Huge thanks and credit go out to the following"
+msgstr "En stor tak går til"
+
+msgctxt "#32146"
+msgid "The Kodi development team"
+msgstr "Kodis udviklingsteam"
+
+msgctxt "#32147"
+msgid "OK  choose      BACK  previous step"
+msgstr "OK  vælg      TILBAGE  forrige trin"
+
+msgctxt "#32148"
+msgid "version"
+msgstr "version"
+
+msgctxt "#32149"
+msgid "by"
+msgstr "af"
+
+msgctxt "#32150"
+msgid "now"
+msgstr "nu"
+
+msgctxt "#32151"
+msgid "night"
+msgstr "nat"
+
+msgctxt "#32152"
+msgid "evening"
+msgstr "aften"
+
+msgctxt "#32153"
+msgid "afternoon"
+msgstr "eftermiddag"
+
+msgctxt "#32154"
+msgid "morning"
+msgstr "morgen"
+
+msgctxt "#32158"
+msgid "until midnight"
+msgstr "til midnat"
+
+msgctxt "#32159"
+msgid "tornado"
+msgstr "tornado"
+
+msgctxt "#32160"
+msgid "tropical storm"
+msgstr "tropisk storm"
+
+msgctxt "#32161"
+msgid "hurricane"
+msgstr "orkan"
+
+msgctxt "#32162"
+msgid "severe storms"
+msgstr "kraftigt tordenvejr"
+
+msgctxt "#32163"
+msgid "thunderstorms"
+msgstr "tordenvejr"
+
+msgctxt "#32164"
+msgid "rain and snow"
+msgstr "regn og sne"
+
+msgctxt "#32165"
+msgid "rain and sleet"
+msgstr "regn og slud"
+
+msgctxt "#32166"
+msgid "snow and sleet"
+msgstr "sne og slud"
+
+msgctxt "#32167"
+msgid "freezing drizzle"
+msgstr "isslag"
+
+msgctxt "#32168"
+msgid "drizzle"
+msgstr "støvregn"
+
+msgctxt "#32169"
+msgid "freezing rain"
+msgstr "underafkølet regn"
+
+msgctxt "#32170"
+msgid "showers"
+msgstr "byger"
+
+msgctxt "#32171"
+msgid "snow flurries"
+msgstr "let snefald"
+
+msgctxt "#32172"
+msgid "light snow"
+msgstr "let sne"
+
+msgctxt "#32173"
+msgid "blowing snow"
+msgstr "snefygning"
+
+msgctxt "#32174"
+msgid "snow"
+msgstr "sne"
+
+msgctxt "#32175"
+msgid "hail"
+msgstr "hagl"
+
+msgctxt "#32176"
+msgid "sleet"
+msgstr "slud"
+
+msgctxt "#32177"
+msgid "dust"
+msgstr "støv"
+
+msgctxt "#32178"
+msgid "fog"
+msgstr "tåge"
+
+msgctxt "#32179"
+msgid "haze"
+msgstr "dis"
+
+msgctxt "#32180"
+msgid "smoke"
+msgstr "røg"
+
+msgctxt "#32181"
+msgid "blustery"
+msgstr "stormfuldt"
+
+msgctxt "#32182"
+msgid "windy"
+msgstr "blæsende"
+
+msgctxt "#32183"
+msgid "cold"
+msgstr "koldt"
+
+msgctxt "#32184"
+msgid "cloudy"
+msgstr "overskyet"
+
+msgctxt "#32185"
+msgid "mostly cloudy"
+msgstr "mest overskyet"
+
+msgctxt "#32186"
+msgid "partly cloudy"
+msgstr "delvis skyet"
+
+msgctxt "#32187"
+msgid "clear"
+msgstr "klart"
+
+msgctxt "#32188"
+msgid "sunny"
+msgstr "solrigt"
+
+msgctxt "#32189"
+msgid "fair"
+msgstr "godt vejr"
+
+msgctxt "#32190"
+msgid "rain and hail"
+msgstr "regn og hagl"
+
+msgctxt "#32191"
+msgid "hot"
+msgstr "varmt"
+
+msgctxt "#32192"
+msgid "isolated storms"
+msgstr "enkelte tordenbyger"
+
+msgctxt "#32193"
+msgid "scattered storms"
+msgstr "spredte tordenbyger"
+
+msgctxt "#32194"
+msgid "scattered showers"
+msgstr "spredte byger"
+
+msgctxt "#32195"
+msgid "heavy snow"
+msgstr "kraftigt snefald"
+
+msgctxt "#32196"
+msgid "snow showers"
+msgstr "snebyger"
+
+msgctxt "#32197"
+msgid "thundershowers"
+msgstr "tordenbyger"
+
+msgctxt "#32198"
+msgid "Blustery"
+msgstr "Stormfuldt"
+
+msgctxt "#32199"
+msgid "Hot"
+msgstr "Varmt"
+
+msgctxt "#32200"
+msgid "Fits before midnight"
+msgstr "Kan nås før midnat"
+
+msgctxt "#32201"
+msgid "fits before midnight"
+msgstr "kan nås før midnat"
+
+msgctxt "#32202"
+msgid "under 100 minutes"
+msgstr "under 100 minutter"
+
+msgctxt "#32203"
+msgid "something light"
+msgstr "noget let"
+
+msgctxt "#32204"
+msgid "a long one"
+msgstr "en lang en"
+
+msgctxt "#32205"
+msgid "highly rated"
+msgstr "højt bedømt"
+
+msgctxt "#32206"
+msgid "right at midnight"
+msgstr "lige ved midnat"
+
+msgctxt "#32207"
+msgid "past midnight"
+msgstr "efter midnat"
+
+msgctxt "#32208"
+msgid "before midnight"
+msgstr "før midnat"
+
+msgctxt "#32209"
+msgid "kbps"
+msgstr "kbps"
+
+msgctxt "#32210"
+msgid "ch"
+msgstr "kan."
+
+msgctxt "#32211"
+msgid "bit"
+msgstr "bit"
+
+msgctxt "#32212"
+msgid "kHz"
+msgstr "kHz"
+
+msgctxt "#32213"
+msgid "Hz"
+msgstr "Hz"
+
+msgctxt "#32214"
+msgid "TRACK"
+msgstr "SPOR"
+
+msgctxt "#32215"
+msgid "FROM THE ALBUM"
+msgstr "FRA ALBUMMET"
+
+msgctxt "#32216"
+msgid "Released in"
+msgstr "Udgivet"
+
+msgctxt "#32217"
+msgid "Record label"
+msgstr "Pladeselskab"
+
+msgctxt "#32218"
+msgid "Alphabetical"
+msgstr "Alfabetisk"
+
+msgctxt "#32219"
+msgid "Reversed"
+msgstr "Omvendt"
+
+msgctxt "#32220"
+msgid "MINS"
+msgstr "MIN"
+
+msgctxt "#32221"
+msgid "RATED"
+msgstr "ALDERSGRÆNSE"
+
+msgctxt "#32222"
+msgid "NOT RATED"
+msgstr "INGEN ALDERSGRÆNSE"
+
+msgctxt "#32223"
+msgid "AN ALBUM BY"
+msgstr "ET ALBUM AF"
+
+msgctxt "#32224"
+msgid "RELEASED IN"
+msgstr "UDGIVET"
+
+msgctxt "#32225"
+msgid "A TV SHOW"
+msgstr "EN TV-SERIE"
+
+msgctxt "#32226"
+msgid "FIRST AIRED IN"
+msgstr "FØRST VIST"
+
+msgctxt "#32227"
+msgid "A MOVIE BY"
+msgstr "EN FILM AF"
+
+msgctxt "#32228"
+msgid "Active"
+msgstr "Aktiv"
+
+msgctxt "#32229"
+msgid "FORMED"
+msgstr "DANNET"
+
+msgctxt "#32230"
+msgid "DISBANDED"
+msgstr "OPLØST"
+
+msgctxt "#32231"
+msgid "BORN"
+msgstr "FØDT"
+
+msgctxt "#32232"
+msgid "DIED"
+msgstr "DØD"
+
+msgctxt "#32233"
+msgid "Refresh information"
+msgstr "Opdater information"
+
+msgctxt "#32234"
+msgid "Take screenshot"
+msgstr "Tag skærmbillede"
+
+msgctxt "#32235"
+msgid "Switch off"
+msgstr "Slå fra"
+
+msgctxt "#32236"
+msgid "Switch on"
+msgstr "Slå til"
+
+msgctxt "#32237"
+msgid "Written by"
+msgstr "Manus:"
+
+msgctxt "#32238"
+msgid "Directed by"
+msgstr "Instruktion:"
+
+msgctxt "#32239"
+msgid "SET"
+msgstr "SAMLING"
+
+msgctxt "#32240"
+msgid "VOTES"
+msgstr "STEMMER"
+
+msgctxt "#32241"
+msgid "EPISODES"
+msgstr "AFSNIT"
+
+msgctxt "#32242"
+msgid "UNWATCHED"
+msgstr "USETE"
+
+msgctxt "#32243"
+msgid "Setup"
+msgstr "Opsætning"
+
+msgctxt "#32244"
+msgid "Libraries"
+msgstr "Biblioteker"
+
+msgctxt "#32245"
+msgid "Motion"
+msgstr "Bevægelse"
+
+msgctxt "#32246"
+msgid "Welcome to Aeon Fuse"
+msgstr "Velkommen til Aeon Fuse"
+
+msgctxt "#32247"
+msgid "Library backdrop"
+msgstr "Bibliotekets baggrund"
+
+msgctxt "#32248"
+msgid "Pick a palette"
+msgstr "Vælg en palet"
+
+msgctxt "#32249"
+msgid "Skin theme"
+msgstr "Skin-tema"
+
+msgctxt "#32250"
+msgid "Skin style"
+msgstr "Skin-stil"
+
+msgctxt "#32251"
+msgid "Home menu items"
+msgstr "Elementer i hovedmenuen"
+
+msgctxt "#32252"
+msgid "Spotlight transition"
+msgstr "Spotlight-overgang"
+
+msgctxt "#32253"
+msgid "Corner boxes"
+msgstr "Hjørnebokse"
+
+msgctxt "#32254"
+msgid "Titles or logos"
+msgstr "Titler eller logoer"
+
+msgctxt "#32255"
+msgid "Extra fanart"
+msgstr "Ekstra fanart"
+
+msgctxt "#32256"
+msgid "Spoilers"
+msgstr "Spoilere"
+
+msgctxt "#32257"
+msgid "All set"
+msgstr "Alt klar"
+
+msgctxt "#32258"
+msgid "A few quick choices make the skin yours. Every step shows a preview, and everything can be changed later in Skin settings."
+msgstr "Et par hurtige valg gør skinnet til dit. Hvert trin viser en forhåndsvisning, og alt kan ændres senere i Skin-indstillinger."
+
+msgctxt "#32259"
+msgid "What fills the space behind the library views. With Neutral the next step lets you pick a palette."
+msgstr "Det, der fylder pladsen bag biblioteksvisningerne. Med Neutral kan du vælge en palet i næste trin."
+
+msgctxt "#32260"
+msgid "The palette colours the neutral backdrop, the focus bar, the boxes and the strips (Aeon theme)."
+msgstr "Paletten farver den neutrale baggrund, markeringsbjælken, boksene og striberne (Aeon-tema)."
+
+msgctxt "#32261"
+msgid "Aeon draws solid panels with a bright focus bar. Aeon Glass lets the artwork shine through frosted panels."
+msgstr "Aeon tegner faste paneler med en lys markeringsbjælke. Aeon Glass lader billedet skinne gennem matterede paneler."
+
+msgctxt "#32262"
+msgid "How settings, dialogs and side menus look: the skin theme's own menus, or Fuse, the rounded cards of this setup."
+msgstr "Hvordan indstillinger, dialoger og sidemenuer ser ud: skin-temaets egne menuer, eller Fuse, de afrundede kort fra denne opsætning."
+
+msgctxt "#32263"
+msgid "Switch the items you want on the Home menu. Order, custom items (three are always free) and their lists: Skin settings > Home menu."
+msgstr "Slå de elementer til, du vil have i hovedmenuen. Rækkefølge, egne elementer (tre er altid ledige) og deres lister: Skin-indstillinger > Hovedmenu."
+
+msgctxt "#32264"
+msgid "Where the main menu sits on the Home screen."
+msgstr "Hvor hovedmenuen sidder på startskærmen."
+
+msgctxt "#32265"
+msgid "The backdrop of the spotlight at the top of Home."
+msgstr "Baggrunden for Spotlight øverst på Hjem."
+
+msgctxt "#32266"
+msgid "How one spotlight title gives way to the next."
+msgstr "Hvordan en Spotlight-titel giver plads til den næste."
+
+msgctxt "#32267"
+msgid "The clock box, the item count and the strip boxes in the corners of the library."
+msgstr "Urboksen, antallet af elementer og stribeboksene i bibliotekets hjørner."
+
+msgctxt "#32268"
+msgid "Small markers on posters: a dot for unwatched, a check for watched, a bar for in progress."
+msgstr "Små mærker på plakater: en prik for uset, et flueben for set, en linje for påbegyndt."
+
+msgctxt "#32269"
+msgid "Show a title's clear logo where the skin has room for it, or its name in plain text."
+msgstr "Vis en titels ClearLogo, hvor skinnet har plads til det, ellers navnet som almindelig tekst."
+
+msgctxt "#32270"
+msgid "The chips under a title in the libraries and on the information page. Switch the ones you want."
+msgstr "Mærkerne under en titel i bibliotekerne og på informationssiden. Slå dem til, du vil have."
+
+msgctxt "#32271"
+msgid "Titles with more than one fanart can take turns showing them in the background."
+msgstr "Titler med mere end én fanart kan vise dem på skift i baggrunden."
+
+msgctxt "#32272"
+msgid "Unwatched episodes can keep their thumbnail and plot to themselves."
+msgstr "Usete afsnit kan holde deres miniature og handling for sig selv."
+
+msgctxt "#32273"
+msgid "Slides and fades when views, menus and dialogs open."
+msgstr "Glidninger og overgange, når visninger, menuer og dialoger åbner."
+
+msgctxt "#32274"
+msgid "On small boxes Kodi keeps memory it no longer uses. The skin's helper can hand it back to the system."
+msgstr "På små bokse holder Kodi på hukommelse, det ikke længere bruger. Skinnets hjælper kan give den tilbage til systemet."
+
+msgctxt "#32275"
+msgid "Your choices are saved. Run the setup again any time from Skin settings > Motion, memory, reset."
+msgstr "Dine valg er gemt. Kør opsætningen igen når som helst fra Skin-indstillinger > Bevægelse, RAM, nulstil."
+
+msgctxt "#32276"
+msgid "Kodi restarts to show the new look"
+msgstr "Kodi genstarter for at vise det nye udseende"
+
+msgctxt "#32277"
+msgid "Then restart Kodi once"
+msgstr "Genstart derefter Kodi én gang"
+
+msgctxt "#32278"
+msgid "Close the setup"
+msgstr "Luk opsætningen"
+
+msgctxt "#32279"
+msgid "A new theme or palette needs Kodi to start again; it takes a few seconds."
+msgstr "Et nyt tema eller en ny palet kræver, at Kodi starter igen; det tager et par sekunder."
+
+msgctxt "#32280"
+msgid "The new look shows at once. Restart Kodi when you can: until then some settings may read wrong."
+msgstr "Det nye udseende vises med det samme. Genstart Kodi, når du kan: indtil da kan nogle indstillinger vise forkerte værdier."
+
+msgctxt "#32281"
+msgid "Enjoy Aeon Fuse."
+msgstr "God fornøjelse med Aeon Fuse."
+
+msgctxt "#32282"
+msgid "ends"
+msgstr "slut"
+
+msgctxt "#32283"
+msgid "Nothing unwatched fits before midnight tonight."
+msgstr "Intet uset kan nås før midnat i aften."
+
+msgctxt "#32285"
+msgid "of"
+msgstr "af"
+
+msgctxt "#32286"
+msgid "watched"
+msgstr "set"
+
+msgctxt "#32287"
+msgid "unwatched"
+msgstr "uset"
+
+msgctxt "#32288"
+msgid "Nothing unwatched fits this slot. Try Films for everything."
+msgstr "Intet uset passer i dette tidsrum. Prøv Film for alt."
+
+msgctxt "#32289"
+msgid "Nothing here yet."
+msgstr "Her er intet endnu."
+
+msgctxt "#32290"
+msgid "Current"
+msgstr "Aktuel"
+
+msgctxt "#32291"
+msgid "Rec"
+msgstr "Optag"
+
+msgctxt "#32292"
+msgid "Remind"
+msgstr "Påmind"
+
+msgctxt "#32293"
+msgid "Archive"
+msgstr "Arkiv"
+
+msgctxt "#32294"
+msgid "Edited"
+msgstr "Redigeret"
+
+msgctxt "#32295"
+msgid "About"
+msgstr "Om"
+
+msgctxt "#32296"
+msgid "Group"
+msgstr "Gruppe"
+
+msgctxt "#32297"
+msgid "Nothing here yet"
+msgstr "Her er intet endnu"
+
+msgctxt "#32298"
+msgid "Tracklist"
+msgstr "Sporliste"
+
+msgctxt "#32299"
+msgid "born"
+msgstr "født"
+
+msgctxt "#32300"
+msgid "formed"
+msgstr "dannet"
+
+msgctxt "#32301"
+msgid "minutes of music"
+msgstr "minutters musik"
+
+msgctxt "#32302"
+msgid "Start now, done by"
+msgstr "Start nu, færdig"
+
+msgctxt "#32303"
+msgid "The music stops at"
+msgstr "Musikken stopper"
+
+msgctxt "#32304"
+msgid "OK for the controls."
+msgstr "OK for knapperne."
+
+msgctxt "#32305"
+msgid "Go to"
+msgstr "Gå til"
+
+msgctxt "#32306"
+msgid "Sleeps when this ends  ·  bedtime"
+msgstr "Sover, når dette slutter  ·  sengetid"
+
+msgctxt "#32307"
+msgid "RESULTS"
+msgstr "RESULTATER"
+
+msgctxt "#32308"
+msgid "track"
+msgstr "spor"
+
+msgctxt "#32309"
+msgid "tracks"
+msgstr "spor"
+
+msgctxt "#32310"
+msgid "option"
+msgstr "valgmulighed"
+
+msgctxt "#32311"
+msgid "options"
+msgstr "valgmuligheder"
+
+msgctxt "#32312"
+msgid "item"
+msgstr "element"
+
+msgctxt "#32313"
+msgid "album in your library"
+msgstr "album i dit bibliotek"
+
+msgctxt "#32314"
+msgid "albums in your library"
+msgstr "album i dit bibliotek"
+
+msgctxt "#32315"
+msgid "film"
+msgstr "film"
+
+msgctxt "#32316"
+msgid "person"
+msgstr "person"
+
+msgctxt "#32317"
+msgid "people"
+msgstr "personer"
+
+msgctxt "#32318"
+msgid "episode"
+msgstr "afsnit"
+
+msgctxt "#32319"
+msgid "episodes"
+msgstr "afsnit"
+
+msgctxt "#32320"
+msgid "film watched"
+msgstr "film set"
+
+msgctxt "#32321"
+msgid "films watched"
+msgstr "film set"
+
+msgctxt "#32322"
+msgid "episode watched"
+msgstr "afsnit set"
+
+msgctxt "#32323"
+msgid "episodes watched"
+msgstr "afsnit set"
+
+msgctxt "#32324"
+msgid "Midnight"
+msgstr "Midnat"
+
+msgctxt "#32325"
+msgid "The extra items Aeon Fuse adds to Kodi's context menu: which of them show and in what order."
+msgstr "De ekstra elementer, Aeon Fuse føjer til Kodis genvejsmenu: hvilke der vises, og i hvilken rækkefølge."
+
+msgctxt "#32326"
+msgid "Kodi lists these after its own items (and before those of other add-ons that come later). Pick one, then use the buttons on the right."
+msgstr "Kodi viser dem efter sine egne elementer (og før dem fra andre tilføjelser, der kommer senere). Vælg ét, og brug så knapperne til højre."
+
+msgctxt "#32327"
+msgid "Shows or hides the selected item in the context menu."
+msgstr "Viser eller skjuler det valgte element i genvejsmenuen."
+
+msgctxt "#32328"
+msgid "Moves the selected item one place up in the context menu."
+msgstr "Flytter det valgte element én plads op i genvejsmenuen."
+
+msgctxt "#32329"
+msgid "Moves the selected item one place down in the context menu."
+msgstr "Flytter det valgte element én plads ned i genvejsmenuen."
+
+msgctxt "#32330"
+msgid "The backdrop of the widget screens (Up on a Home item) slowly zooms in with every title. Reduce motion stops it too."
+msgstr "Baggrunden på widgetskærmene (Op på et element på Hjem) zoomer langsomt ind for hver titel. Reducér bevægelse stopper det også."
+
+msgctxt "#32331"
+msgid "A font family for each part of the skin: Home, the libraries, headings, the settings pages and the player."
+msgstr "En skriftfamilie for hver del af skinnet: Hjem, bibliotekerne, overskrifter, indstillingssiderne og afspilleren."
+
+msgctxt "#32332"
+msgid "Film"
+msgstr "Film"
+
+msgctxt "#32333"
+msgid "Resume now: done by"
+msgstr "Genoptag nu: færdig"
+
+msgctxt "#32334"
+msgid "Start now: ends"
+msgstr "Start nu: slut"
+
+msgctxt "#32336"
+msgid "Down for the films"
+msgstr "Ned for filmene"
+
+msgctxt "#32337"
+msgid "Down for the cast"
+msgstr "Ned for rollelisten"
+
+msgctxt "#32338"
+msgid "Story"
+msgstr "Handling"
+
+msgctxt "#32339"
+msgid "split"
+msgstr "opløst"
+
+msgctxt "#32340"
+msgid "died"
+msgstr "død"
+
+msgctxt "#32341"
+msgid "Resume at"
+msgstr "Genoptag ved"
+
+msgctxt "#32342"
+msgid "added"
+msgstr "tilføjet"
+
+msgctxt "#32343"
+msgid "season"
+msgstr "sæson"
+
+msgctxt "#32344"
+msgid "seasons"
+msgstr "sæsoner"
+
+msgctxt "#32345"
+msgid "Aired"
+msgstr "Sendt"
+
+msgctxt "#32346"
+msgid "Resume now and you're done by"
+msgstr "Genoptag nu, og du er færdig"
+
+msgctxt "#32347"
+msgid "Start now and it ends at"
+msgstr "Start nu, og den slutter"
+
+msgctxt "#32348"
+msgid "after midnight"
+msgstr "efter midnat"
+
+msgctxt "#32349"
+msgid "Start now and you're done by"
+msgstr "Start nu, og du er færdig"
+
+msgctxt "#32350"
+msgid "still to watch"
+msgstr "tilbage at se"
+
+msgctxt "#32351"
+msgid "aired"
+msgstr "sendt"
+
+msgctxt "#32352"
+msgid "rated"
+msgstr "bedømt"
+
+msgctxt "#32353"
+msgid "With"
+msgstr "Med"
+
+msgctxt "#32354"
+msgid "Progress"
+msgstr "Fremskridt"
+
+msgctxt "#32355"
+msgid "to watch"
+msgstr "at se"
+
+msgctxt "#32356"
+msgid "No channels. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "Ingen kanaler. Aktivér en PVR-klienttilføjelse i indstillingerne for PVR og live-tv."
+
+msgctxt "#32357"
+msgid "No recordings."
+msgstr "Ingen optagelser."
+
+msgctxt "#32358"
+msgid "No results."
+msgstr "Ingen resultater."
+
+msgctxt "#32359"
+msgid "No timers."
+msgstr "Ingen timere."
+
+msgctxt "#32360"
+msgid "updated"
+msgstr "opdateret"
+
+msgctxt "#32361"
+msgid "Setup wizard"
+msgstr "Opsætningsguide"
+
+msgctxt "#32362"
+msgid "Theme, palette, backgrounds, Home"
+msgstr "Tema, palet, baggrunde, Hjem"
+
+msgctxt "#32363"
+msgid "Widget screens: slow zoom"
+msgstr "Widgetskærme: langsom zoom"
+
+msgctxt "#32364"
+msgid "Kodi shows these after its own items, in this order (items of other add-ons can follow). Update and Clean library show in the libraries and on Home, Refresh information on films, shows, episodes and music videos, Take screenshot everywhere."
+msgstr "Kodi viser dem efter sine egne elementer, i denne rækkefølge (elementer fra andre tilføjelser kan følge). Opdater og Ryd bibliotek vises i bibliotekerne og på Hjem, Opdater information på film, serier, afsnit og musikvideoer, Tag skærmbillede overalt."
+
+msgctxt "#32365"
+msgid "PICTURE"
+msgstr "BILLEDE"
+
+msgctxt "#32366"
+msgid "Smart playlist"
+msgstr "Smart afspilningsliste"
+
+msgctxt "#32367"
+msgid "Source"
+msgstr "Kilde"
+
+msgctxt "#32368"
+msgid "fps"
+msgstr "fps"
+
+msgctxt "#32369"
+msgid "AR"
+msgstr "AR"
+
+msgctxt "#32370"
+msgid "Dynamic range"
+msgstr "Dynamisk område"
+
+msgctxt "#32371"
+msgid "Decoder"
+msgstr "Dekoder"
+
+msgctxt "#32372"
+msgid "Pixel format"
+msgstr "Pixelformat"
+
+msgctxt "#32373"
+msgid "Deinterlace"
+msgstr "Deinterlacing"
+
+msgctxt "#32374"
+msgid "Display"
+msgstr "Skærm"
+
+msgctxt "#32375"
+msgid "Audio output"
+msgstr "Lydudgang"
+
+msgctxt "#32376"
+msgid "Interface"
+msgstr "Brugerflade"
+
+msgctxt "#32377"
+msgid "memory"
+msgstr "hukommelse"
+
+msgctxt "#32378"
+msgid "FILE"
+msgstr "FIL"
+
+msgctxt "#32379"
+msgid "SIZE"
+msgstr "STØRRELSE"
+
+msgctxt "#32380"
+msgid "TAKEN"
+msgstr "TAGET"
+
+msgctxt "#32381"
+msgid "STATE"
+msgstr "STATUS"
+
+msgctxt "#32382"
+msgid "until bedtime"
+msgstr "til sengetid"
+
+msgctxt "#32383"
+msgid "Fits before bedtime"
+msgstr "Kan nås før sengetid"
+
+msgctxt "#32384"
+msgid "fits before bedtime"
+msgstr "kan nås før sengetid"
+
+msgctxt "#32385"
+msgid "Nothing unwatched fits before bedtime tonight."
+msgstr "Intet uset kan nås før sengetid i aften."
+
+msgctxt "#32386"
+msgid "right at your bedtime"
+msgstr "lige ved din sengetid"
+
+msgctxt "#32387"
+msgid "past your bedtime"
+msgstr "efter din sengetid"
+
+msgctxt "#32388"
+msgid "before your bedtime"
+msgstr "før din sengetid"
+
+msgctxt "#32389"
+msgid "after your bedtime"
+msgstr "efter din sengetid"
+
+msgctxt "#32390"
+msgid "Continuing"
+msgstr "Kørende"
+
+msgctxt "#32391"
+msgid "Ended"
+msgstr "Afsluttet"
+
+msgctxt "#32392"
+msgid "Cancelled"
+msgstr "Aflyst"
+
+msgctxt "#32393"
+msgid "In production"
+msgstr "I produktion"
+
+msgctxt "#32394"
+msgid "Planned"
+msgstr "Planlagt"
+
+msgctxt "#32395"
+msgid "Upcoming"
+msgstr "Kommende"
+
+msgctxt "#32396"
+msgid "Pilot"
+msgstr "Pilot"
+
+msgctxt "#32397"
+msgid "Now playing in"
+msgstr "Afspiller nu i"
+
+msgctxt "#32398"
+msgid "Films of a set"
+msgstr "Film i en samling"
+
+msgctxt "#32399"
+msgid "Versions of a film"
+msgstr "Versioner af en film"
+
+msgctxt "#32400"
+msgid "Grid"
+msgstr "Gitter"
+
+msgctxt "#32401"
+msgid "One at a time"
+msgstr "Én ad gangen"
+
+msgctxt "#32402"
+msgid "Fused Glass"
+msgstr "Fused Glass"
+
+msgctxt "#32403"
+msgid "Next hours"
+msgstr "De næste timer"
+
+msgctxt "#32404"
+msgid "This week"
+msgstr "Denne uge"
+
+msgctxt "#32405"
+msgid "No weather yet. Choose a weather service in Settings > Services > Weather."
+msgstr "Intet vejr endnu. Vælg en vejrtjeneste under Indstillinger > Tjenester > Vejr."
+
+msgctxt "#32406"
+msgid "Recent searches"
+msgstr "Seneste søgninger"
+
+msgctxt "#32407"
+msgid "In Fused Glass the music playing always sits beside the clock on Home; this setting is for the other themes."
+msgstr "I Fused Glass står musikken, der spiller, altid ved siden af uret på Hjem; denne indstilling gælder de andre temaer."
+
+msgctxt "#32408"
+msgid "Focus highlight"
+msgstr "Fokusmarkering"
+
+msgctxt "#32409"
+msgid "Pill"
+msgstr "Pille"
+
+msgctxt "#32410"
+msgid "Flat"
+msgstr "Flad"
+
+msgctxt "#32411"
+msgid "Frosted"
+msgstr "Frostet"
+
+msgctxt "#32412"
+msgid "Outline"
+msgstr "Omrids"
+
+msgctxt "#32413"
+msgid "Tight"
+msgstr "Stram"
+
+msgctxt "#32414"
+msgid "How the item in focus is marked in lists and menus. Changing it reloads the skin."
+msgstr "Hvordan elementet i fokus markeres i lister og menuer. En ændring genindlæser skinnet."
+
+msgctxt "#32415"
+msgid "Navigation animation"
+msgstr "Navigationsanimation"
+
+msgctxt "#32416"
+msgid "Pop"
+msgstr "Pop"
+
+msgctxt "#32417"
+msgid "Grow"
+msgstr "Vokse"
+
+msgctxt "#32418"
+msgid "Fade"
+msgstr "Tone"
+
+msgctxt "#32419"
+msgid "Glow"
+msgstr "Glød"
+
+msgctxt "#32420"
+msgid "Nudge"
+msgstr "Puf"
+
+msgctxt "#32421"
+msgid "Lift"
+msgstr "Løft"
+
+msgctxt "#32422"
+msgid "How the highlight moves when it lands on an item. Pop is the default."
+msgstr "Hvordan markeringen bevæger sig, når den lander på et punkt. Pop er standard."
+
+msgctxt "#32423"
+msgid "Font combination"
+msgstr "Skrifttypekombination"
+
+msgctxt "#32424"
+msgid "A heading and text font combination, shown before you pick it, or your own font for each part of the skin."
+msgstr "En kombination af overskrifts- og tekstskrift med forhåndsvisning, eller din egen skrift til hver del af skinnet."
+
+msgctxt "#32425"
+msgid "Home menu: only the focused item's name"
+msgstr "Hjem-menu: kun navnet på det valgte punkt"
+
+msgctxt "#32426"
+msgid "On: the other items of the Home menu show only their icon and the focused item shows its name."
+msgstr "Til: de andre punkter i hjem-menuen viser kun deres ikon, og det valgte punkt viser sit navn."
+
+msgctxt "#32427"
+msgid "Segment skip button placement"
+msgstr "Placering af knap til at springe segment over"
+
+msgctxt "#32428"
+msgid "Tab"
+msgstr "Fane"
+
+msgctxt "#32429"
+msgid "Glass"
+msgstr "Glas"
+
+msgctxt "#32430"
+msgid "How the skip button sits on the player controls and the small seek bar: a white tab on the card's edge, or a capsule of the card's glass above it."
+msgstr "Hvordan spring over-knappen sidder på afspillerens kontroller og den lille søgebjælke: en hvid fane på kortets kant eller en kapsel af kortets glas over det."
+
+msgctxt "#32431"
+msgid "Available in library"
+msgstr "Tilgængelig i biblioteket"
+
+msgctxt "#32432"
+msgid "In library"
+msgstr "I biblioteket"
+
+msgctxt "#32433"
+msgid "Random %s"
+msgstr "Tilfældige %s"
+
+msgctxt "#32434"
+msgid "Recently added %s"
+msgstr "Senest tilføjede %s"
+
+msgctxt "#32435"
+msgid "Recently played %s"
+msgstr "Senest afspillede %s"
+
+msgctxt "#32436"
+msgid "Top rated %s"
+msgstr "Bedst bedømte %s"
+
+msgctxt "#32437"
+msgid "Most played %s"
+msgstr "Mest afspillede %s"
+
+msgctxt "#32438"
+msgid "Newest %s"
+msgstr "Nyeste %s"
+
+msgctxt "#32439"
+msgid "%s by title"
+msgstr "%s efter titel"
+
+msgctxt "#32440"
+msgid "Scroll through channels"
+msgstr "Rul gennem kanaler"
+
+msgctxt "#32441"
+msgid "Auto-fix art with the wrong shape"
+msgstr "Ret billeder med forkert form"
+
+msgctxt "#32442"
+msgid "Check library art now"
+msgstr "Tjek bibliotekets billeder nu"
+
+msgctxt "#32443"
+msgid "Library art"
+msgstr "Bibliotekets billeder"
+
+msgctxt "#32444"
+msgid "Now uses a picture from the same folder that fits"
+msgstr "Bruger nu et passende billede fra samme mappe"
+
+msgctxt "#32445"
+msgid "Wrong shape, nothing in the folder fits"
+msgstr "Forkert form, intet i mappen passer"
+
+msgctxt "#32446"
+msgid "Every picture has the right shape."
+msgstr "Alle billeder har den rigtige form."
+
+msgctxt "#32447"
+msgid "Fixed in the library: %d"
+msgstr "Rettet i biblioteket: %d"
+
+msgctxt "#32448"
+msgid "After a refresh or a library scan, a poster, banner, landscape or fanart of the wrong shape is replaced by a picture of the same name in the same folder that fits. Your files stay as they are."
+msgstr "Efter en opdatering eller biblioteksscanning erstattes en plakat, et banner, et landskab eller en fanart med forkert form af et passende billede med samme navn fra samme mappe. Dine filer forbliver uændrede."
+
+msgctxt "#32449"
+msgid "Checks every picture Kodi has shown and fixes what it can. A list shows what was replaced and what is still the wrong shape."
+msgstr "Tjekker alle billeder, Kodi har vist, og retter det, der kan rettes. En liste viser, hvad der blev erstattet, og hvad der stadig har forkert form."
+
+msgctxt "#32450"
+msgid "Slot left empty: the skin shows the show's picture until season art is added"
+msgstr "Feltet er tomt: skinnet viser seriens billede, indtil der kommer sæsonbilleder"
+
+msgctxt "#32451"
+msgid "Only Kodi's library changed. Your files are untouched."
+msgstr "Kun Kodis bibliotek er ændret. Dine filer er urørte."
+
+msgctxt "#32452"
+msgid "Mosaic"
+msgstr "Mosaik"
+
+msgctxt "#32453"
+msgid "Ledger"
+msgstr "Protokol"
+
+msgctxt "#32454"
+msgid "Bridge"
+msgstr "Bro"
+
+msgctxt "#32455"
+msgid "Tab slab"
+msgstr "Fane"
+
+msgctxt "#32456"
+msgid "How the menus join their boxes: Mosaic, Ledger, Bridge or Tab slab. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "Sådan samler menuerne deres bokse: Mosaik, Protokol, Bro eller Fane. Fuse bruger afrundede kort og kræver, at Kodi starter igen."
+
+msgctxt "#32457"
+msgid "Aeon Glass keeps its own menus. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "Aeon Glass beholder sine egne menuer. Fuse bruger afrundede kort og kræver, at Kodi starter igen."
+
+msgctxt "#32458"
+msgid "Library options"
+msgstr "Biblioteksvalg"
+
+msgctxt "#32459"
+msgid "Strip"
+msgstr "Bjælke"
+
+msgctxt "#32460"
+msgid "Box"
+msgstr "Boks"
+
+msgctxt "#32461"
+msgid "Left at the edge of a view or the Menu key opens the side strip, or a big box in the menu style."
+msgstr "Venstre ved kanten af en visning eller Menu-tasten åbner sidebjælken eller en stor boks i menustilen."
+
+msgctxt "#32462"
+msgid "Skippy: skip button style"
+msgstr "Skippy: stil for spring over-knap"
+
+msgctxt "#32463"
+msgid "Box pair"
+msgstr "Bokspar"
+
+msgctxt "#32464"
+msgid "Clock dock"
+msgstr "Ved uret"
+
+msgctxt "#32465"
+msgid "Aeon theme: a palette tile and a label box at the bottom right (above the player controls when they are open), or a row at the top right that ends in the clock box."
+msgstr "Aeon-tema: en farvet flise og en tekstboks nederst til højre (over afspillerens knapper, når de er åbne), eller en række øverst til højre, der ender i urboksen."
+
+msgctxt "#32466"
+msgid "Use the palette for"
+msgstr "Brug paletten til"
+
+msgctxt "#32467"
+msgid "Menus and library views"
+msgstr "Menuer og biblioteksvisninger"
+
+msgctxt "#32468"
+msgid "Menus only"
+msgstr "Kun menuer"
+
+msgctxt "#32469"
+msgid "Library views only"
+msgstr "Kun biblioteksvisninger"
+
+msgctxt "#32470"
+msgid "Colors: the colour of the artwork; in the library with the Neutral backdrop and a palette other than Aeon, the palette's own darker box colour. Neutral: always the palette's box colour. Fanart: a window onto the fanart. Backdrop: as the library backdrop. View settings sets it per view."
+msgstr "Farver: billedets farve; i biblioteket med neutral baggrund og en anden palet end Aeon, paletens egen mørkere boksfarve. Neutral: altid paletens boksfarve. Fanart: et vindue ind til fanart. Baggrund: som bibliotekets baggrund. Visningsindstillinger sætter det pr. visning."
+
+msgctxt "#32471"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages, for the menus and the library views, the menus only or the library views only. The library background takes it with the Neutral backdrop only."
+msgstr "Farve på markeringen, boksene, striberne og indstillingssiderne, til menuer og biblioteksvisninger, kun menuer eller kun biblioteksvisninger. Bibliotekets baggrund tager den kun med neutral baggrund."
+
+msgctxt "#32472"
+msgid "Band under the Home menu"
+msgstr "Bånd under hjemmemenuen"
+
+msgctxt "#32473"
+msgid "A dark band from the Home menu down to the bottom of the screen, with a thin line on top, over the spotlight pictures. It follows the menu: middle or low."
+msgstr "Et mørkt bånd fra hjemmemenuen ned til bunden af skærmen med en tynd linje øverst, over spotlight-billederne. Det følger menuen: midt eller lavt."
+
+msgctxt "#32474"
+msgid "Toasts expand from clock pill"
+msgstr "Notifikationer udfoldes fra urkapslen"
+
+msgctxt "#32475"
+msgid "A notification widens the clock pill to the left and shows itself in it, instead of a capsule of its own. Library views and full-screen video keep the capsule."
+msgstr "En meddelelse gør urets kapsel bredere mod venstre og vises i den i stedet for i sin egen kapsel. Biblioteksvisninger og video i fuld skærm beholder kapslen."
+
+msgctxt "#32476"
+msgid "Clearlogo in Now playing"
+msgstr "Clearlogo i Afspilles nu"
+
+msgctxt "#32477"
+msgid "Live"
+msgstr "Direkte"
+
+msgctxt "#32478"
+msgid "Fused Glass player: the clearlogo of the show or film in the Now playing pill at the top left, instead of its title. Off: the title."
+msgstr "Fused Glass-afspiller: clearlogoet for serien eller filmen i pillen Afspilles nu øverst til venstre i stedet for titlen. Fra: titlen."
+
+msgctxt "#32479"
+msgid "Overview"
+msgstr "Oversigt"
+
+msgctxt "#32480"
+msgid "File and season"
+msgstr "Fil og sæson"
+
+msgctxt "#32481"
+msgid "In this file"
+msgstr "I denne fil"
+
+msgctxt "#32482"
+msgid "File"
+msgstr "Fil"
+
+msgctxt "#32483"
+msgid "Size"
+msgstr "Størrelse"
+
+msgctxt "#32484"
+msgid "Playing on"
+msgstr "Afspilles på"
+
+msgctxt "#32485"
+msgid "Cast photos in the information screen"
+msgstr "Skuespillerfotos på informationsskærmen"
+
+msgctxt "#32486"
+msgid "Fused Glass player: the information screen shows the cast as round photos with the name and the character under each, in one row you scroll through. Off: the names as chips."
+msgstr "Fused Glass-afspiller: informationsskærmen viser de medvirkende som runde fotos med navn og rolle under hvert, i én række du ruller igennem. Fra: navnene som mærker."
+
+msgctxt "#32487"
+msgid "Up"
+msgstr "Op"
+
+msgctxt "#32488"
+msgid "Down"
+msgstr "Ned"
+
+msgctxt "#32489"
+msgid "Kodi running for"
+msgstr "Kodi har kørt i"
+
+msgctxt "#32490"
+msgid "Box up for"
+msgstr "Boksen har kørt i"
+
+msgctxt "#32491"
+msgid "Nothing is playing"
+msgstr "Intet afspilles"
+
+msgctxt "#32492"
+msgid "Sleep"
+msgstr "Dvale"
+
+msgctxt "#32493"
+msgid "Restart Kodi"
+msgstr "Genstart Kodi"
+
+msgctxt "#32495"
+msgid "Reboot to Android"
+msgstr "Genstart til Android"
+
+msgctxt "#32496"
+msgid "Shut down"
+msgstr "Sluk"
+
+msgctxt "#32497"
+msgid "OK again to confirm"
+msgstr "OK igen for at bekræfte"
+
+msgctxt "#32498"
+msgid "Log off"
+msgstr "Log af"
+
+msgctxt "#32499"
+msgid "Exit Kodi"
+msgstr "Afslut Kodi"
+
+msgctxt "#32500"
+msgid "When this ends"
+msgstr "Når dette slutter"
+
+msgctxt "#32501"
+msgid "min"
+msgstr "min"
+
+msgctxt "#32502"
+msgid "Health"
+msgstr "Tilstand"
+
+msgctxt "#32503"
+msgid "All good"
+msgstr "Alt er fint"
+
+msgctxt "#32504"
+msgid "Running warm"
+msgstr "Kører varmt"
+
+msgctxt "#32505"
+msgid "Memory almost full"
+msgstr "Hukommelsen er næsten fuld"
+
+msgctxt "#32506"
+msgid "Processor"
+msgstr "Processor"
+
+msgctxt "#32507"
+msgid "Shortcuts"
+msgstr "Genveje"
+
+msgctxt "#32508"
+msgid "Recently used add-ons"
+msgstr "Senest brugte tilføjelser"
+
+msgctxt "#32509"
+msgid "Library jobs"
+msgstr "Biblioteksopgaver"
+
+msgctxt "#32510"
+msgid "All episodes"
+msgstr "Alle afsnit"
+
+msgctxt "#32511"
+msgid "to the tile"
+msgstr "til flisen"
+
+msgctxt "#32512"
+msgid "{n} min left"
+msgstr "{n} min tilbage"
+
+msgctxt "#32513"
+msgid "{episode} airs {date}"
+msgstr "{episode} sendes {date}"
+
+msgctxt "#32514"
+msgid "{n} more waiting in season {season}"
+msgstr "{n} mere venter i sæson {season}"
+
+msgctxt "#32515"
+msgid "1 more waiting in season {season}"
+msgstr "1 mere venter i sæson {season}"
+
+msgctxt "#32516"
+msgid "Search your library"
+msgstr "Søg i dit bibliotek"
+
+msgctxt "#32517"
+msgid "Films, shows, episodes, music, people"
+msgstr "Film, serier, afsnit, musik, personer"
+
+msgctxt "#32518"
+msgid "You're on {episode}"
+msgstr "Du er på {episode}"
+
+msgctxt "#32519"
+msgid "Last search:"
+msgstr "Seneste søgning:"
+
+msgctxt "#32520"
+msgid "Also search"
+msgstr "Søg også"
+
+msgctxt "#32521"
+msgid "TMDb, not in the library"
+msgstr "TMDb, ikke i biblioteket"
+
+msgctxt "#32522"
+msgid "People"
+msgstr "Personer"
+
+msgctxt "#32523"
+msgid "Online"
+msgstr "Online"
+
+msgctxt "#32524"
+msgid "Next 7 days"
+msgstr "De næste 7 dage"
+
+msgctxt "#32525"
+msgid "Shows you watch"
+msgstr "Serier du ser"
+
+msgctxt "#32526"
+msgid "View settings"
+msgstr "Visningsindstillinger"
+
+msgctxt "#32527"
+msgid "Background"
+msgstr "Baggrund"
+
+msgctxt "#32528"
+msgid "Nothing out"
+msgstr "Intet udkommer"
+
+msgctxt "#32529"
+msgid "{n} this week"
+msgstr "{n} denne uge"
+
+msgctxt "#32530"
+msgid "1 episode"
+msgstr "1 afsnit"
+
+msgctxt "#32531"
+msgid "{n} episodes"
+msgstr "{n} afsnit"
+
+msgctxt "#32532"
+msgid "1 film"
+msgstr "1 film"
+
+msgctxt "#32533"
+msgid "{n} films"
+msgstr "{n} film"
+
+msgctxt "#32534"
+msgid "Week: seven days side by side. Day: one day at a time."
+msgstr "Uge: syv dage side om side. Dag: én dag ad gangen."
+
+msgctxt "#32535"
+msgid "Episodes, films or both."
+msgstr "Afsnit, film eller begge."
+
+msgctxt "#32536"
+msgid "Only the episodes of shows you have watched before."
+msgstr "Kun afsnit af serier, du har set før."
+
+msgctxt "#32537"
+msgid "Colors: the colours of the selected title's artwork. Neutral: plain. Fanart: the picture itself."
+msgstr "Farver: farverne fra den valgte titels billede. Neutral: ensfarvet. Fanart: selve billedet."
+
+msgctxt "#32538"
+msgid "The first day of a week. Today: always the next seven days."
+msgstr "Ugens første dag. I dag: altid de næste syv dage."
+
+msgctxt "#32539"
+msgid "This week"
+msgstr "Denne uge"
+
+msgctxt "#32540"
+msgid "Next week"
+msgstr "Næste uge"
+
+msgctxt "#32541"
+msgid "{n} in progress"
+msgstr "{n} i gang"
+
+msgctxt "#32542"
+msgid "{n} unwatched"
+msgstr "{n} ikke set"
+
+msgctxt "#32543"
+msgid "All watched"
+msgstr "Alt set"
+
+msgctxt "#32544"
+msgid "Episode combined"
+msgstr "Afsnit samlet"
+
+msgctxt "#32545"
+msgid "Season buttons, the episodes in a card and the one in focus beside it"
+msgstr "Sæsonknapper, afsnittene på et kort og det valgte ved siden af"
+
+msgctxt "#32546"
+msgid "{time} of {total}"
+msgstr "{time} af {total}"
+
+msgctxt "#32547"
+msgid "Frost"
+msgstr "Frost"
+
+msgctxt "#32548"
+msgid "Raised"
+msgstr "Hævet"
+
+msgctxt "#32549"
+msgid "Clear"
+msgstr "Klar"
+
+msgctxt "#32550"
+msgid "Library view theme"
+msgstr "Tema for bibliotek"
+
+msgctxt "#32551"
+msgid "The glass of the frosted panels: library views, Home panels and the Home bar. Menus and dialogs follow Menu theme. Frost: lighter. Raised: lit rim, deep shadow. Clear: thin, no blur. Dark: darker."
+msgstr "Glasset i de matte paneler: biblioteksvisninger, hjemmepaneler og hjemmebjælken. Menuer og dialoger følger Menutema. Frost: lysere. Hævet: lys kant, dyb skygge. Klar: tyndt, ingen sløring. Mørk: mørkere."
+
+msgctxt "#32552"
+msgid "Earlier days"
+msgstr "Tidligere dage"
+
+msgctxt "#32553"
+msgid "Also show what aired on the days of this week before today (episodes in your library)."
+msgstr "Vis også, hvad der blev sendt på ugens dage før i dag (afsnit i biblioteket)."
+
+msgctxt "#32554"
+msgid "Menu names in capitals"
+msgstr "Menunavne med store bogstaver"
+
+msgctxt "#32555"
+msgid "Fused Glass: the Home menu names in capital letters instead of sentence case."
+msgstr "Fused Glass: navnene i hjemmemenuen med store bogstaver."
+
+msgctxt "#32556"
+msgid "In cinemas now"
+msgstr "I biografen nu"
+
+msgctxt "#32557"
+msgid "Airing today"
+msgstr "Sendes i dag"
+
+msgctxt "#32558"
+msgid "Airing tomorrow"
+msgstr "Sendes i morgen"
+
+msgctxt "#32559"
+msgid "Save lyrics next to the song"
+msgstr "Gem sangtekster ved siden af sangen"
+
+msgctxt "#32560"
+msgid "Lyrics that CU LRC Lyrics finds are also saved as a file next to the song (.lrc or .txt), so they are there next time and for other players. The music folder must be writable."
+msgstr "Sangtekster, som CU LRC Lyrics finder, gemmes også som en fil ved siden af sangen (.lrc eller .txt), så de er der næste gang og for andre afspillere. Musikmappen skal være skrivbar."
+
+msgctxt "#32561"
+msgid "Home spotlight: recently watched sets"
+msgstr "Spotlight på Hjem: senest sete samlinger"
+
+msgctxt "#32562"
+msgid "The spotlight of a Home item that shows movie sets (Sets, for example) lists the sets you watched last, newest first. Off: all sets, as its spotlight settings say."
+msgstr "Spotlight for et Hjem-punkt, der viser filmsamlinger (f.eks. Samlinger), viser de samlinger, du senest har set, nyeste først. Fra: alle samlinger som valgt i dets Spotlight-indstillinger."
+
+msgctxt "#32563"
+msgid "Progress rings"
+msgstr "Fremskridtsringe"
+
+msgctxt "#32564"
+msgid "Season list combined 1"
+msgstr "Sæsonliste samlet 1"
+
+msgctxt "#32565"
+msgid "Seasons, episodes, facts"
+msgstr "Sæsoner, afsnit, fakta"
+
+msgctxt "#32566"
+msgid "Season list combined 2"
+msgstr "Sæsonliste samlet 2"
+
+msgctxt "#32567"
+msgid "Poster with episode stills"
+msgstr "Plakat med stillbilleder"
+
+msgctxt "#32568"
+msgid "Smooth song progress"
+msgstr "Glidende sangforløb"
+
+msgctxt "#32569"
+msgid "Fused Glass Now playing: the song's progress behind the waveform glides instead of jumping 1 % at a time. Uses a little more processor time while the screen is open."
+msgstr "Afspilles nu i Fused Glass: sangens forløb bag bølgeformen glider i stedet for at springe 1 % ad gangen. Bruger lidt mere processorkraft, mens skærmen er åben."
+
+msgctxt "#32570"
+msgid "Progress bar updates per second"
+msgstr "Opdateringer af statuslinjen pr. sekund"
+
+msgctxt "#32571"
+msgid "Screen"
+msgstr "Skærm"
+
+msgctxt "#32572"
+msgid "How often a second Smooth song progress moves the fill. Screen: as often as Kodi draws the screen. Fewer updates use less processor time; on a long song even 10 looks smooth."
+msgstr "Hvor mange gange i sekundet glidende sangforløb flytter fyldet. Skærm: lige så ofte som Kodi tegner skærmen. Færre opdateringer bruger mindre processorkraft; på en lang sang ser selv 10 jævnt ud."
+
+msgctxt "#32590"
+msgid "Season poster wall combined"
+msgstr "Sæsonplakatvæg samlet"
+
+msgctxt "#32573"
+msgid "Dark"
+msgstr "Mørk"
+
+msgctxt "#32574"
+msgid "Dark: dark panels. Clear: thin glass that shows more of the backdrop. Frost: light frosted glass over the blurred backdrop. Fused Glass: the System screen's menus, full screen with thin rules and a white bar on the row in focus; Kodi starts again."
+msgstr "Mørk: mørke paneler. Klar: tyndt glas, der viser mere af baggrunden. Frost: lyst frostet glas over den slørede baggrund. Fused Glass: menuerne fra System-skærmen, i fuld skærm med tynde linjer og en hvid bjælke ved rækken i fokus; Kodi starter igen."
+
+msgctxt "#32575"
+msgid "Home bar"
+msgstr "Hjemmebjælke"
+
+msgctxt "#32576"
+msgid "Bar"
+msgstr "Bjælke"
+
+msgctxt "#32577"
+msgid "Keys"
+msgstr "Taster"
+
+msgctxt "#32578"
+msgid "Shelf"
+msgstr "Hylde"
+
+msgctxt "#32579"
+msgid "Frosted glass behind the Home menu, in the material chosen under Look. Bar: one capsule. Keys: glass under each icon. Shelf: a band across the screen."
+msgstr "Matteret glas bag hjemmemenuen i materialet valgt under Stil. Bjælke: én kapsel. Taster: glas under hvert ikon. Hylde: et bånd over hele skærmen."
+
+msgctxt "#32591"
+msgid "Add item"
+msgstr "Tilføj element"
+
+msgctxt "#32592"
+msgid "Puts a new item at the end of the menu: one of the skin's items that is not on it yet, or a custom item with its own path, Spotlight and lists.[CR][CR]OK opens the list of types."
+msgstr "Sætter et nyt element sidst i menuen: et af skinnets elementer, der ikke er med endnu, eller et eget element med egen sti, Spotlight og lister.[CR][CR]OK åbner listen over typer."
+
+msgctxt "#32593"
+msgid "Reload EPG"
+msgstr "Genindlæs EPG"
+
+msgctxt "#32594"
+msgid "Aeon accent colour"
+msgstr "Aeon-accentfarve"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "Guld"
+
+msgctxt "#32596"
+msgid "Slate"
+msgstr "Skifer"
+
+msgctxt "#32597"
+msgid "Teal"
+msgstr "Blågrøn"
+
+msgctxt "#32598"
+msgid "Moss"
+msgstr "Mos"
+
+msgctxt "#32599"
+msgid "Side"
+msgstr "Side"
+
+msgctxt "#32600"
+msgid "Vignette shape"
+msgstr "Vignettens form"
+
+msgctxt "#32601"
+msgid "Round"
+msgstr "Rund"
+
+msgctxt "#32602"
+msgid "Round darkens the edges all round. Side darkens the screen from the left and fades out to the right, under the Home text. The row above sets how strong it is."
+msgstr "Rund gør kanterne mørkere hele vejen rundt. Side gør skærmen mørk fra venstre og toner ud mod højre under teksten på startskærmen. Rækken ovenfor bestemmer styrken."
+
+msgctxt "#32603"
+msgid "Heavy"
+msgstr "Kraftig"
+
+msgctxt "#32604"
+msgid "All themes"
+msgstr "Alle temaer"
+
+msgctxt "#32605"
+msgid "Next episode"
+msgstr "Næste afsnit"
+
+msgctxt "#32606"
+msgid "{t} left"
+msgstr "{t} tilbage"
+
+msgctxt "#32607"
+msgid "Home menu underline"
+msgstr "Understregning i Hjem-menuen"
+
+msgctxt "#32608"
+msgid "Library fanart look"
+msgstr "Bibliotekets fanart-udseende"
+
+msgctxt "#32609"
+msgid "Dimmed"
+msgstr "Dæmpet"
+
+msgctxt "#32610"
+msgid "Ratings shown as"
+msgstr "Vis bedømmelser som"
+
+msgctxt "#32611"
+msgid "Text"
+msgstr "Tekst"
+
+msgctxt "#32612"
+msgid "The accent line under the focused Home menu item, as in Fused Glass."
+msgstr "Accentstregen under det valgte punkt i Hjem-menuen, som i Fused Glass."
+
+msgctxt "#32613"
+msgid "The fanart behind the library views: dimmed under a dark veil, or light with a frosted colour tint."
+msgstr "Fanart bag biblioteksvisningerne: dæmpet under et mørkt slør eller lyst med en frostet farvetone."
+
+msgctxt "#32614"
+msgid "Show the rating providers as their icons or as their names."
+msgstr "Vis bedømmelsestjenesterne som deres ikoner eller deres navne."
+
+msgctxt "#32615"
+msgid "Media info from sidecars"
+msgstr "Medieinfo fra sidecar-filer"
+
+msgctxt "#32616"
+msgid "Off: only what Kodi's library knows (the chips above). On: also the source (UHD Remux, Blu-ray, WEB-DL, DVD...), the edition, the audio and subtitle tracks and the chapters, read from a mediainfo sidecar next to each video file: <name>.cmm_mediainfo.xml from Curator Media Manager (used first) or <name>-mediainfo.xml from tinyMediaManager. Without sidecars nothing extra shows."
+msgstr "Fra: kun det Kodis bibliotek ved (mærkerne ovenfor). Til: også kilden (UHD Remux, Blu-ray, WEB-DL, DVD...), udgaven, lyd- og undertekstspor og kapitler fra en mediainfo-fil ved siden af hver videofil: <navn>.cmm_mediainfo.xml fra Curator Media Manager (bruges først) eller <navn>-mediainfo.xml fra tinyMediaManager. Uden disse filer vises intet ekstra."
+
+msgctxt "#32617"
+msgid "Commentary"
+msgstr "Kommentar"
+
+msgctxt "#32618"
+msgid "Chapters"
+msgstr "Kapitler"
+
+msgctxt "#32619"
+msgid "In cinemas now: films from"
+msgstr "I biografen nu: film fra"
+
+msgctxt "#32620"
+msgid "Everywhere"
+msgstr "Overalt"
+
+msgctxt "#32621"
+msgid "In cinemas now (the screensaver and the widgets) is what TMDb Helper's country has in cinemas: the United States unless TMDb Helper's language is set to another country. Pick your country to keep only films made in the United States or there; Everywhere keeps them all."
+msgstr "I biografen nu (pauseskærm og widgets) er det, TMDb Helpers land har i biografen: USA, medmindre TMDb Helpers sprog er sat til et andet land. Vælg dit land for kun at beholde film lavet i USA eller dér; Overalt beholder dem alle."
+
+msgctxt "#32622"
+msgid "Getting Home ready"
+msgstr "Gør Hjem klar"
+
+msgctxt "#32623"
+msgid "Home rows"
+msgstr "Rækker på Hjem"
+
+msgctxt "#32624"
+msgid "OK or Back skips"
+msgstr "OK eller Tilbage springer over"
+
+msgctxt "#32625"
+msgid "Live TV guide"
+msgstr "TV-guide"
+
+msgctxt "#32626"
+msgid "Tint"
+msgstr "Toning"
+
+msgctxt "#32627"
+msgid "Picture"
+msgstr "Billede"
+
+msgctxt "#32628"
+msgid "blurred"
+msgstr "sløret"
+
+msgctxt "#32629"
+msgid "Newest folder"
+msgstr "Nyeste mappe"
+
+msgctxt "#32630"
+msgid "Folders, newest first"
+msgstr "Mapper, nyeste først"
+
+msgctxt "#32631"
+msgid "photos"
+msgstr "fotos"
+
+msgctxt "#32632"
+msgid "photo"
+msgstr "foto"
+
+msgctxt "#32633"
+msgid "videos"
+msgstr "videoer"
+
+msgctxt "#32634"
+msgid "video"
+msgstr "video"
+
+msgctxt "#32635"
+msgid "OK plays the folder as a slideshow · Down for the folders"
+msgstr "OK viser mappen som diasshow · Ned for mapperne"
+
+msgctxt "#32636"
+msgid "All pictures"
+msgstr "Alle billeder"
+
+msgctxt "#32637"
+msgid "sources"
+msgstr "kilder"
+
+msgctxt "#32638"
+msgid "source"
+msgstr "kilde"
+
+msgctxt "#32639"
+msgid "No pictures yet"
+msgstr "Ingen billeder endnu"
+
+msgctxt "#32640"
+msgid "Add a folder of photos as a picture source in the Pictures window. OK opens it."
+msgstr "Tilføj en mappe med fotos som billedkilde i vinduet Billeder. OK åbner det."
+
+msgctxt "#32641"
+msgid "Photos"
+msgstr "Fotos"
+
+msgctxt "#32642"
+msgid "OK opens the photo · Up for sort, slideshow and view"
+msgstr "OK åbner fotoet · Op for sortering, diasshow og visning"
+
+msgctxt "#32643"
+msgid "View"
+msgstr "Visning"
+
+msgctxt "#32644"
+msgid "waits until loading is done"
+msgstr "venter, til indlæsningen er færdig"
+
+msgctxt "#32645"
+msgid "Media info chips"
+msgstr "Medieinfo-chips"
+
+msgctxt "#32646"
+msgid "Which chips the information page, Home and the library panels show. The sidecar chips need Media info from sidecars."
+msgstr "Hvilke chips informationssiden, Hjem og bibliotekets paneler viser. Sidecar-chips kræver Medieinfo fra sidecar-filer."
+
+msgctxt "#32647"
+msgid "Resolution"
+msgstr "Opløsning"
+
+msgctxt "#32648"
+msgid "Aspect ratio"
+msgstr "Billedformat"
+
+msgctxt "#32649"
+msgid "HDR and Dolby Vision"
+msgstr "HDR og Dolby Vision"
+
+msgctxt "#32650"
+msgid "Dolby Vision profile"
+msgstr "Dolby Vision-profil"
+
+msgctxt "#32651"
+msgid "Audio format"
+msgstr "Lydformat"
+
+msgctxt "#32652"
+msgid "Audio channels"
+msgstr "Lydkanaler"
+
+msgctxt "#32653"
+msgid "Source format (sidecar)"
+msgstr "Kildeformat (sidecar)"
+
+msgctxt "#32654"
+msgid "Container (sidecar)"
+msgstr "Container (sidecar)"
+
+msgctxt "#32655"
+msgid "Bit rate (sidecar)"
+msgstr "Bitrate (sidecar)"
+
+msgctxt "#32656"
+msgid "File size (sidecar)"
+msgstr "Filstørrelse (sidecar)"
+
+msgctxt "#32657"
+msgid "Subtitles (sidecar)"
+msgstr "Undertekster (sidecar)"
+
+msgctxt "#32658"
+msgid "Chapters (sidecar)"
+msgstr "Kapitler (sidecar)"
+
+msgctxt "#32659"
+msgid "Commentary (sidecar)"
+msgstr "Kommentarspor (sidecar)"
+
+msgctxt "#32660"
+msgid "3D (sidecar)"
+msgstr "3D (sidecar)"
+
+msgctxt "#32661"
+msgid "chapters"
+msgstr "kapitler"
+
+msgctxt "#32662"
+msgid "commentary"
+msgstr "kommentar"
+
+msgctxt "#32663"
+msgid "Combine multi-episode files into a single row in library"
+msgstr "Saml filer med flere afsnit i én række i biblioteket"
+
+msgctxt "#32664"
+msgid "Episodes stored in one video file (a double episode, three cartoons) show as one row: 1–2, one title, the file's running time. The season's list then comes from Aeon Fuse Helper."
+msgstr "Afsnit i én videofil (et dobbeltafsnit, tre tegnefilm) vises som én række: 1–2, én titel, filens spilletid. Sæsonens liste kommer så fra Aeon Fuse Helper."
+
+msgctxt "#32665"
+msgid "Video source (sidecar)"
+msgstr "Videokilde (sidecar)"
+
+msgctxt "#32666"
+msgid "Video codec (sidecar)"
+msgstr "Videocodec (sidecar)"
+
+msgctxt "#32667"
+msgid "Version (sidecar)"
+msgstr "Version (sidecar)"
+
+msgctxt "#32668"
+msgid "Panel shadow"
+msgstr "Panelskygge"
+
+msgctxt "#32669"
+msgid "How high the glass panels seem to float: their shadow grows and drops. Mild: close to the page. Medium: as before. Strong: higher. Heavy: highest."
+msgstr "Hvor højt glaspanelerne ser ud til at svæve: deres skygge vokser og falder. Mild: tæt på siden. Medium: som før. Stærk: højere. Kraftig: højest."
+
+msgctxt "#32670"
+msgid "Mild"
+msgstr "Mild"
+
+msgctxt "#32671"
+msgid "Heavy"
+msgstr "Tung"
+
+msgctxt "#32672"
+msgid "Expert settings"
+msgstr "Ekspertindstillinger"
+
+msgctxt "#32673"
+msgid "Shows the rows below for fine-tuning the glass panels and the fanart behind the library views."
+msgstr "Viser rækkerne nedenfor til finjustering af glaspanelerne og fanart bag biblioteksvisningerne."
+
+msgctxt "#32674"
+msgid "Panel opacity"
+msgstr "Paneluigennemsigtighed"
+
+msgctxt "#32675"
+msgid "How solid the glass panels are, around the Skin style's own value. -2: most see-through. +2: most solid."
+msgstr "Hvor massive glaspanelerne er, omkring skin-stilens egen værdi. -2: mest gennemsigtig. +2: mest massiv."
+
+msgctxt "#32676"
+msgid "Panel blur"
+msgstr "Panelsløring"
+
+msgctxt "#32677"
+msgid "How strongly the panels blur the picture behind them. Off: no blur."
+msgstr "Hvor kraftigt panelerne slører billedet bag dem. Fra: ingen sløring."
+
+msgctxt "#32678"
+msgid "Panel tint"
+msgstr "Paneltone"
+
+msgctxt "#32679"
+msgid "The colour of the panels' glass, around the Skin style's own. -2: darkest. +2: lightest frost."
+msgstr "Farven på panelernes glas, omkring skin-stilens egen. -2: mørkest. +2: lyseste frost."
+
+msgctxt "#32680"
+msgid "Library fanart opacity"
+msgstr "Bibliotekets fanart-dækkevne"
+
+msgctxt "#32681"
+msgid "How much of the fanart behind the library views shows, on top of Backdrop strength. -2: faintest. +2: strongest."
+msgstr "Hvor meget af fanart bag biblioteksvisningerne der ses, oven i baggrundsstyrken. -2: svagest. +2: stærkest."
+
+msgctxt "#32682"
+msgid "Library fanart blur"
+msgstr "Bibliotekets fanart-sløring"
+
+msgctxt "#32683"
+msgid "Blurs the fanart behind the library views: -2 a little, +2 the most; 0 is the default. Off: sharp."
+msgstr "Slører fanart bag biblioteksvisningerne: -2 lidt, +2 mest; 0 er standard. Fra: skarp."
+
+msgctxt "#32684"
+msgid "Library fanart tint"
+msgstr "Bibliotekets fanart-toning"
+
+msgctxt "#32685"
+msgid "The colour tint of the Frosted fanart look. Off: no tint."
+msgstr "Farvetonen i fanart-udseendet Frost. Fra: ingen tone."
+
+msgctxt "#32686"
+msgid "Reset expert settings"
+msgstr "Nulstil ekspertindstillinger"
+
+msgctxt "#32687"
+msgid "Puts every expert setting back to its default."
+msgstr "Sætter alle ekspertindstillinger tilbage til standard."
+
+msgctxt "#32688"
+msgid "Expert settings are back to their defaults."
+msgstr "Ekspertindstillingerne er tilbage på standard."
+
+msgctxt "#32689"
+msgid "Menu background"
+msgstr "Menubaggrund"
+
+msgctxt "#32690"
+msgid "Screen"
+msgstr "Skærm"
+
+msgctxt "#32691"
+msgid "Menus and dialogs in the Fused Glass style. Fanart: the item's fanart behind them. Screen: the screen they opened on, dimmed."
+msgstr "Menuer og dialoger i Fused Glass-stilen. Fanart: elementets fanart bag dem. Skærm: skærmen de blev åbnet på, dæmpet."
+
+msgctxt "#32692"
+msgid "OK runs it  ·  Back closes"
+msgstr "OK kører  ·  Tilbage lukker"
+
+msgctxt "#32693"
+msgid "OK chooses  ·  Back closes"
+msgstr "OK vælger  ·  Tilbage lukker"
+
+msgctxt "#32694"
+msgid "Its own library views and menus: rounded glass cards with soft shadows float over the artwork, in Dark, Clear, Frost or the Fused Glass style."
+msgstr "Egne biblioteksvisninger og menuer: afrundede glaskort med bløde skygger svæver over billederne, i stilen Mørk, Klar, Frost eller Fused Glass."
+
+msgctxt "#32695"
+msgid "Use the defaults"
+msgstr "Brug standarderne"
+
+msgctxt "#32696"
+msgid "The chosen theme as it comes, at once. Everything can be changed later in Skin settings."
+msgstr "Det valgte tema, som det er, med det samme. Alt kan ændres senere i Skin-indstillinger."
+
+msgctxt "#32697"
+msgid "Customise"
+msgstr "Tilpas"
+
+msgctxt "#32698"
+msgid "Go through the look, libraries, Home and backgrounds page by page. Every row shows a preview of its choice."
+msgstr "Gå udseende, biblioteker, Hjem og baggrunde igennem side for side. Hver række viser en forhåndsvisning af valget."
+
+msgctxt "#32699"
+msgid "Keep my current settings"
+msgstr "Behold mine nuværende indstillinger"
+
+msgctxt "#32700"
+msgid "Leave every setting as it is: only the theme you picked changes."
+msgstr "Alle indstillinger forbliver som de er: kun det valgte tema ændres."
+
+msgctxt "#32701"
+msgid "Aeon with glass menus: the same layout and library views as Aeon, with see-through glass menus and dialogs instead of solid ones. No palettes."
+msgstr "Aeon med glasmenuer: samme layout og biblioteksvisninger som Aeon, med gennemsigtige glasmenuer og dialoger i stedet for faste. Ingen paletter."
+
+msgctxt "#32702"
+msgid "The Planner of upcoming episodes and films, online rows and extra ratings."
+msgstr "Planlæggeren med kommende afsnit og film, onlinerækker og ekstra bedømmelser."
+
+msgctxt "#32703"
+msgid "The Next up row: the next episode of every show you are watching."
+msgstr "Rækken Næste: det næste afsnit af hver serie, du ser."
+
+msgctxt "#32704"
+msgid "Lyrics on the Now playing screen, line by line or word by word."
+msgstr "Sangtekster på skærmen Afspilles nu, linje for linje eller ord for ord."
+
+msgctxt "#32705"
+msgid "Artist pictures behind the Now playing screen."
+msgstr "Kunstnerbilleder bag skærmen Afspilles nu."
+
+msgctxt "#32706"
+msgid "Box colours taken from the artwork."
+msgstr "Boksfarver taget fra billederne."
+
+msgctxt "#32707"
+msgid "Skip intro, recap and credits buttons in the player."
+msgstr "Knapper til at springe intro, resumé og rulletekster over i afspilleren."
+
+msgctxt "#32708"
+msgid "Thumbnail previews on the seek bar."
+msgstr "Miniaturevisninger på søgebjælken."
+
+msgctxt "#32709"
+msgid "Studio and network logos in the libraries and on the information page."
+msgstr "Studie- og kanallogoer i bibliotekerne og på informationssiden."
+
+msgctxt "#32710"
+msgid "Record label logos for albums."
+msgstr "Pladeselskabslogoer til albums."
+
+msgctxt "#32711"
+msgid "Language flags in the video information."
+msgstr "Sprogflag i videoinformationen."
+
+msgctxt "#32712"
+msgid "The skin's own screensaver: library pictures with a slow zoom and slide, and what is playing."
+msgstr "Skinnets egen pauseskærm: billeder fra biblioteket med langsom zoom og glidning, og det der afspilles."
+
+msgctxt "#32713"
+msgid "Aeon: solid panels in a palette you pick. Aeon Glass: the same Aeon layout and views with glass menus, no palettes. Fused Glass: its own library views, rounded glass cards over the artwork."
+msgstr "Aeon: faste paneler i en palet, du vælger. Aeon Glass: samme Aeon-layout og visninger med glasmenuer, uden paletter. Fused Glass: egne biblioteksvisninger, afrundede glaskort over billederne."
+
+msgctxt "#32714"
+msgid "Its own views, glass cards"
+msgstr "Egne visninger, glaskort"
+
+msgctxt "#32715"
+msgid "Take the theme as it comes, or go through its look step by step. Everything can be changed later in Skin settings."
+msgstr "Tag temaet, som det er, eller gå dets udseende igennem trin for trin. Alt kan ændres senere i Skin-indstillinger."
+
+msgctxt "#32716"
+msgid "How the settings strip of the library views shows: over the view (Overlay) or always beside it (Permanent)."
+msgstr "Hvordan indstillingsbjælken i biblioteksvisningerne vises: over visningen (Overlejring) eller altid ved siden af (Permanent)."
+
+msgctxt "#32717"
+msgid "How much the edges of the Home screen darken behind the menu and the text."
+msgstr "Hvor meget kanterne af Hjem-skærmen mørknes bag menuen og teksten."
+
+msgctxt "#32718"
+msgid "The colour of the clock box and the corner boxes with the Aeon palette."
+msgstr "Farven på urboksen og hjørneboksene med Aeon-paletten."
+
+msgctxt "#32719"
+msgid "Optional add-ons that give the skin more to show. Install the ones you want; the rest can wait."
+msgstr "Valgfrie tilføjelser, der giver skinnet mere at vise. Installer dem, du vil have; resten kan vente."
+
+msgctxt "#32720"
+msgid "The disc art spinning beside the poster on the player controls: for videos, for music, for both, or off."
+msgstr "Den roterende diskgrafik ved plakaten på afspillerknapperne: til videoer, til musik, til begge eller fra."
+
+msgctxt "#32721"
+msgid "What the text under a title shows in every library view: the plot, the tagline (when there is one) or both."
+msgstr "Hvad teksten under en titel viser i alle biblioteksvisninger: handlingen, taglinen (når der er en) eller begge."
+
+msgctxt "#32722"
+msgid "Libraries"
+msgstr "Biblioteker"
+
+msgctxt "#32723"
+msgid "Information"
+msgstr "Information"
+
+msgctxt "#32724"
+msgid "Screensaver & backdrops"
+msgstr "Pauseskærm og baggrunde"
+
+msgctxt "#32725"
+msgid "Export skin settings"
+msgstr "Eksportér skinindstillinger"
+
+msgctxt "#32726"
+msgid "Import skin settings"
+msgstr "Importér skinindstillinger"
+
+msgctxt "#32727"
+msgid "Save"
+msgstr "Gem"
+
+msgctxt "#32728"
+msgid "Load"
+msgstr "Indlæs"
+
+msgctxt "#32729"
+msgid "Saves every Aeon Fuse setting, with the theme, palette and fonts, to a file in a folder you pick."
+msgstr "Gemmer alle Aeon Fuse-indstillinger med tema, palet og skrifttyper i en fil i en mappe, du vælger."
+
+msgctxt "#32730"
+msgid "Loads a file saved with Export skin settings. Your current skin settings are replaced."
+msgstr "Indlæser en fil gemt med Eksportér skinindstillinger. Dine nuværende skinindstillinger erstattes."
+
+msgctxt "#32731"
+msgid "Folder for the settings file"
+msgstr "Mappe til indstillingsfilen"
+
+msgctxt "#32732"
+msgid "Settings file to load"
+msgstr "Indstillingsfil der skal indlæses"
+
+msgctxt "#32733"
+msgid "Saved: %s"
+msgstr "Gemt: %s"
+
+msgctxt "#32734"
+msgid "Load the settings saved on %s? Your current skin settings are replaced."
+msgstr "Indlæs indstillingerne gemt %s? Dine nuværende skinindstillinger erstattes."
+
+msgctxt "#32735"
+msgid "This file does not hold Aeon Fuse settings."
+msgstr "Denne fil indeholder ikke Aeon Fuse-indstillinger."
+
+msgctxt "#32736"
+msgid "The file could not be written."
+msgstr "Filen kunne ikke skrives."
+
+msgctxt "#32737"
+msgid "Kodi restarts to apply them."
+msgstr "Kodi genstarter for at anvende dem."
+
+msgctxt "#32738"
+msgid "The skin reloads; restart Kodi afterwards so every setting is read again."
+msgstr "Skinnet genindlæses; genstart Kodi bagefter, så alle indstillinger læses igen."
+
+msgctxt "#32739"
+msgid "These settings are already in use."
+msgstr "Disse indstillinger er allerede i brug."
+
+msgctxt "#32740"
+msgid "Soft"
+msgstr "Blød"
+
+msgctxt "#32741"
+msgid "Home gradient"
+msgstr "Gradient på Hjem"
+
+msgctxt "#32742"
+msgid "Beside the clock"
+msgstr "Ved siden af uret"
+
+msgctxt "#32743"
+msgid "Left corner"
+msgstr "Venstre hjørne"
+
+msgctxt "#32744"
+msgid "The fade from the bottom of the screen up to the Home menu: off, soft (the look so far) or strong."
+msgstr "Overgangen fra bunden af skærmen op til hovedmenuen: fra, blød (det hidtidige udseende) eller stærk."
+
+msgctxt "#32745"
+msgid "Where the Now playing capsule sits on Home while music plays: beside the clock or in the lower left corner."
+msgstr "Hvor Afspilles nu-kapslen sidder på Hjem, mens der spilles musik: ved siden af uret eller i nederste venstre hjørne."
+
+msgctxt "#32746"
+msgid "How the skip button sits on the player controls: a white tab on their top edge, or a glass capsule above them."
+msgstr "Hvordan spring over-knappen sidder på afspillerens knapper: en hvid fane på deres øverste kant eller en glaskapsel over dem."
+
+msgctxt "#32747"
+msgid "How strongly the picture behind the menus and dialogs is blurred. Off: sharp, as before."
+msgstr "Hvor kraftigt billedet bag menuer og dialoger sløres. Fra: skarpt, som hidtil."
+
+msgctxt "#32748"
+msgid "Left / Right: choose an option. OK: set it. Up, Down or Back: keep the one in use."
+msgstr "Venstre / Højre: vælg en mulighed. OK: indstil den. Op, Ned eller Tilbage: behold den nuværende."
+
+msgctxt "#32749"
+msgid "Start on"
+msgstr "Start på"
+
+msgctxt "#32750"
+msgid "The Home menu item that has the focus when Kodi starts, once the splash has gone."
+msgstr "Det punkt i hjemmemenuen, der har fokus, når Kodi starter, når startskærmen er væk."
+
+msgctxt "#32751"
+msgid "Ratings shown in"
+msgstr "Bedømmelser vises i"
+
+msgctxt "#32752"
+msgid "Media info shown in"
+msgstr "Medieinfo vises i"
+
+msgctxt "#32753"
+msgid "Library views"
+msgstr "Biblioteksvisninger"
+
+msgctxt "#32754"
+msgid "Information pages"
+msgstr "Informationssider"
+
+msgctxt "#32755"
+msgid "Widget & Spotlight screens"
+msgstr "Widget- og Spotlight-skærme"
+
+msgctxt "#32756"
+msgid "Home spotlights"
+msgstr "Spotlights på startskærmen"
+
+msgctxt "#32757"
+msgid "Player info"
+msgstr "Afspillerinfo"
+
+msgctxt "#32758"
+msgid "Screensaver"
+msgstr "Pauseskærm"
+
+msgctxt "#32759"
+msgid "Live TV"
+msgstr "Live-tv"
+
+msgctxt "#32760"
+msgid "Where the ratings (IMDb, TMDb, Rotten Tomatoes, Trakt) appear. OK opens the list: tick the places."
+msgstr "Hvor bedømmelserne (IMDb, TMDb, Rotten Tomatoes, Trakt) vises. OK åbner listen: sæt flueben ved stederne."
+
+msgctxt "#32761"
+msgid "Where the media info chips (resolution, HDR, audio ...) appear. OK opens the list: tick the places. Which chips: Media info chips."
+msgstr "Hvor medieinfo-mærkerne (opløsning, HDR, lyd ...) vises. OK åbner listen: sæt flueben ved stederne. Hvilke mærker: Medieinfo-mærker."
+
+msgctxt "#32762"
+msgid "Recommended add-ons"
+msgstr "Anbefalede tilføjelser"
+
+msgctxt "#32764"
+msgid "Installed"
+msgstr "Installeret"
+
+msgctxt "#32765"
+msgid "Not installed"
+msgstr "Ikke installeret"
+
+msgctxt "#32766"
+msgid "%s needs the %s repository. Install that repository first?"
+msgstr "%s kræver %s-kilden. Installer den kilde først?"
+
+msgctxt "#32767"
+msgid "White weather icons for the weather forecast."
+msgstr "Hvide vejrikoner til vejrudsigten."
+
+msgctxt "#32768"
+msgid "The playback info button in the video controls."
+msgstr "Knappen med afspilningsinfo i videokontrollerne."
+
+msgctxt "#32769"
+msgid "The Inter (Copacetic) font set."
+msgstr "Skrifttypesættet Inter (Copacetic)."
+
+msgctxt "#32770"
+msgid "The Roboto CJKSC font set for Chinese, Japanese and Korean."
+msgstr "Skrifttypesættet Roboto CJKSC til kinesisk, japansk og koreansk."
+
+msgctxt "#32771"
+msgid "Update and clean on another Kodi"
+msgstr "Opdater og ryd op på en anden Kodi"
+
+msgctxt "#32772"
+msgid "Address"
+msgstr "Adresse"
+
+msgctxt "#32773"
+msgid "User name"
+msgstr "Brugernavn"
+
+msgctxt "#32774"
+msgid "Password"
+msgstr "Adgangskode"
+
+msgctxt "#32775"
+msgid "Test connection"
+msgstr "Test forbindelsen"
+
+msgctxt "#32776"
+msgid "Library update and clean from this skin (Home, the library panel, the context menu) go to another Kodi, a headless one for instance, instead of this one."
+msgstr "Opdatering og oprydning af biblioteket fra dette skin (startskærm, bibliotekspanel, genvejsmenu) sendes til en anden Kodi, fx en uden skærm, i stedet for denne."
+
+msgctxt "#32777"
+msgid "The other Kodi's web address and port, for example http://192.168.10.10:8080 (there: Settings > Services > Control > Allow remote control via HTTP)."
+msgstr "Den anden Kodis webadresse og port, fx http://192.168.10.10:8080 (dér: Indstillinger > Tjenester > Styring > Tillad fjernstyring via HTTP)."
+
+msgctxt "#32778"
+msgid "The web server user name and password of the other Kodi."
+msgstr "Webserverens brugernavn og adgangskode på den anden Kodi."
+
+msgctxt "#32779"
+msgid "Asks the other Kodi for its version: checks the address, user name and password."
+msgstr "Spørger den anden Kodi om dens version: tjekker adresse, brugernavn og adgangskode."
+
+msgctxt "#32780"
+msgid "Not set"
+msgstr "Ikke angivet"
+
+msgctxt "#32781"
+msgid "Library update sent"
+msgstr "Biblioteksopdatering sendt"
+
+msgctxt "#32782"
+msgid "Library clean sent"
+msgstr "Biblioteksoprydning sendt"
+
+msgctxt "#32783"
+msgid "Could not reach %s: %s"
+msgstr "Kunne ikke nå %s: %s"
+
+msgctxt "#32784"
+msgid "%s answers: %s"
+msgstr "%s svarer: %s"
+
+msgctxt "#32785"
+msgid "Wrong user name or password"
+msgstr "Forkert brugernavn eller adgangskode"
+
+msgctxt "#32786"
+msgid "Library update finished"
+msgstr "Biblioteksopdatering færdig"
+
+msgctxt "#32789"
+msgid "Failed"
+msgstr "Mislykkedes"
+
+msgctxt "#32790"
+msgid "Could not install the repository"
+msgstr "Kunne ikke installere kilden"
+
+msgctxt "#32791"
+msgid "Pick the add-ons you want: OK ticks one, Next installs the ticked ones while you go on. The picture shows what each adds. Later: Skin settings > System > Recommended add-ons."
+msgstr "Vælg de tilføjelser, du vil have: OK sætter flueben, Næste installerer de afkrydsede, mens du fortsætter. Billedet viser, hvad hver tilføjer. Senere: Skin-indstillinger > System > Anbefalede tilføjelser."
+
+msgctxt "#32792"
+msgid "Will be installed"
+msgstr "Bliver installeret"
+
+msgctxt "#32793"
+msgid "Installs the ticked add-ons"
+msgstr "Installerer de afkrydsede tilføjelser"
+
+msgctxt "#32794"
+msgid "Installed: %s"
+msgstr "Installeret: %s"
+
+msgctxt "#32795"
+msgid "Delete %s? Its name, path, icon, widgets and submenu are removed; the items below it move up one place."
+msgstr "Slet %s? Navn, sti, ikon, widgets og undermenu fjernes; punkterne under det rykker én plads op."
+
+msgctxt "#32796"
+msgid "Custom items only"
+msgstr "Kun egne punkter"
+
+msgctxt "#32797"
+msgid "A calm, thin waveform on the Now playing card, drawn in the skin's own box and smoothed so loud passages do not spike. The build for this device is installed."
+msgstr "En rolig, tynd bølgeform på kortet Afspiller nu, tegnet i skinnets egen boks og udglattet, så høje passager ikke giver spidser. Versionen til denne enhed installeres."
+
+msgctxt "#32798"
+msgid "More by the artist"
+msgstr "Mere fra kunstneren"
+
+msgctxt "#32799"
+msgid "Intermission at"
+msgstr "Pause kl."
+
+msgctxt "#32800"
+msgid "Your languages"
+msgstr "Dine sprog"
+
+msgctxt "#32801"
+msgid "All others"
+msgstr "Alle andre"
+
+msgctxt "#32802"
+msgid "In your library"
+msgstr "I dit bibliotek"
+
+msgctxt "#32803"
+msgid "Sort and show"
+msgstr "Sortér og vis"
+
+msgctxt "#32804"
+msgid "Sort by"
+msgstr "Sortér efter"
+
+msgctxt "#32805"
+msgid "Show only"
+msgstr "Vis kun"
+
+msgctxt "#32806"
+msgid "OK again flips the order"
+msgstr "OK igen vender rækkefølgen"
+
+msgctxt "#32807"
+msgid "Several versions"
+msgstr "Flere versioner"
+
+msgctxt "#32808"
+msgid "Decade"
+msgstr "Årti"
+
+msgctxt "#32809"
+msgid "Clear all"
+msgstr "Ryd alle"
+
+msgctxt "#32810"
+msgid "Never played"
+msgstr "Aldrig afspillet"
+
+msgctxt "#32811"
+msgid "Played"
+msgstr "Afspillet"

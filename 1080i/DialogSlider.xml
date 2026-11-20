@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Slider dialog = minimal offset strip (M3, Builder D). Mockup: docs/mockups/Offset.dc.html,
+	SPEC decisions 10-12: a 720px strip, top-centre by default, holding only the caption (mono),
+	the value (accent mono) and a 2px hairline track with a zero tick and the playhead. No helper
+	text, no panel, never over the picture centre. Used for audio AND subtitle offset (and any
+	other DialogSlider Kodi opens, e.g. video settings sliders: same strip, no zero tick).
+
+	Position: skin setting aeon.offsetbar = empty/top (default, Omar's subtitles sit at the bottom)
+	or "bottom" (for top-aligned subtitles). Read live through a Conditional slide, so the strip
+	follows the setting without a skin reload.
+
+	Id contract (Estuary Omega DialogSlider.xml / GUIDialogSlider.cpp): 10 heading, 11 slider
+	(default), 12 value label. Mouse-only buttons 13/14 omitted (no pointer on the Shield).
+	DialogSettings (Builder E) hides its panel while Window.IsVisible(sliderdialog).
+-->
+<window>
+	<defaultcontrol always="true">11</defaultcontrol>
+	<controls>
+		<include condition="!$EXP[FGS]">Slider_PageClassic</include>
+		<include condition="$EXP[FGS]">Slider_PageFGS</include>
+	</controls>
+</window>

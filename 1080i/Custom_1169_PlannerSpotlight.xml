@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Spotlight of the Planner item on Home (dialog 1169): on / off, what it shows, days ahead (counted from today), number of
+     titles (at most 25), seconds per title. Opened from Settings > Home menu > Edit spotlight with the Planner selected, and from
+     the options of the Planner window. Same rows as the spotlight dialog of the other items (1163). -->
+<window type="dialog" id="1169">
+	<defaultcontrol always="true">9861</defaultcontrol>
+	<animation type="WindowOpen" tween="cubic" easing="out"><effect type="fade" start="0" end="100" time="200"/></animation>
+	<animation type="WindowClose" tween="cubic" easing="in"><effect type="fade" start="100" end="0" time="200"/></animation>
+	<controls>
+		<include condition="$EXP[Aeon_FGlass] + $EXP[FGS]">Spot1169_FGS</include>
+		<include condition="![$EXP[Aeon_FGlass] + $EXP[FGS]]">Spot1169_Classic</include>
+	</controls>
+</window>

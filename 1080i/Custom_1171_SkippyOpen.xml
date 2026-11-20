@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Skippy skip pill, opener: an empty dialog that shows itself (window-level <visible>) while Skippy asks about the
+     segment playing and the skin draws the button, and opens the pill (Custom_1167) with focus. Conditions written out
+     in full (window-level visible does not expand $EXP). -->
+<window type="dialog" id="1171">
+	<visible>Window.IsActive(fullscreenvideo) + Player.HasVideo + Skin.HasSetting(aeon.skippy.button) + String.IsEqual(Window(Home).Property(Skippy.SkinSkipButton),true) + String.IsEqual(Window(Home).Property(Skippy.Segment.Mode),ask) + !String.IsEmpty(Window(Home).Property(Skippy.Segment.Type)) + String.IsEmpty(Window(Home).Property(Skippy.Skipping)) + [!String.IsEqual(Window(Home).Property(aeon.skippy.hidden),Window(Home).Property(Skippy.Segment.Start)) | !String.IsEqual(Window(Home).Property(aeon.skippy.hidfile),Player.FilenameAndPath)] + ![Window.IsVisible(videoosd) | Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(osdsubtitlesettings) | Window.IsVisible(videobookmarks) | Window.IsVisible(playerprocessinfo) | Window.IsVisible(subtitlesearch) | Window.IsVisible(selectdialog) | Window.IsVisible(contextmenu) | Window.IsVisible(sliderdialog) | Window.IsVisible(pvrosdchannels) | Window.IsVisible(pvrchannelguide) | Window.IsVisible(fullscreeninfo) | Window.IsVisible(yesnodialog) | Window.IsVisible(okdialog)] + !Window.IsVisible(1167) + !Window.IsVisible(1174)</visible>
+	<onload>ActivateWindow(1167)</onload>
+	<controls/>
+</window>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Channel list over live TV (SPEC 5: Minimal). Builder F, M4. Left panel over the picture;
+	Left / Right on the list switch channel group (as Estuary).
+	Kodi id contract (Estuary Omega DialogPVRChannelsOSD.xml): list 11, scrollbar 60, header label 2.
+-->
+<window>
+	<defaultcontrol always="true">11</defaultcontrol>
+	<!-- 0.46.0: the player controls' Groups button opens the list with the group pill in focus -->
+	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.osdch.groups)) + Skin.HasSetting(aeon.fglass)">SetFocus(30)</onload>
+	<onload>ClearProperty(aeon.osdch.groups,home)</onload>
+	<include>Anim_DialogOpenClose</include>
+	<controls>
+		<include condition="Skin.HasSetting(aeon.fglass)">FG_ChOSD</include>
+		<include condition="!Skin.HasSetting(aeon.fglass)">ChOSD_Classic</include>
+	</controls>
+</window>

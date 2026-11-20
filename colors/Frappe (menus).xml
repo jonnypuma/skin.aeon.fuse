@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Palette "Frappe" of Aeon Fuse (from the SABnzbd scheme Catppuccin-Frappe): only the colours that differ from defaults.xml. -->
+<colors>
+    <!-- 0.40.4: palette "Frappe" for the menus only: library views keep the Aeon colours (lib_ names of defaults.xml) -->
+    <color name="aeon_white">ff89b4fa</color>
+    <color name="aeon_accent">ff89b4fa</color>
+    <color name="aeon_onbar">ff0d1421</color>
+    <color name="aeon_onbar_cc">cc0d1421</color>
+    <color name="aeon_onbar_bb">bb0d1421</color>
+    <color name="aeon_onbar_aa">aa0d1421</color>
+    <color name="aeon_onbar_99">990d1421</color>
+    <color name="aeon_onaccent">ff0d1421</color>
+    <color name="aeon_box">ff3d547d</color>
+    <color name="aeon_sbbar">8889b4fa</color>
+    <color name="x_column">2689b4fa</color>
+    <color name="x_ground">ff353948</color>
+    <color name="x_panel">ff292c3c</color>
+    <color name="x_surface">ff292c3c</color>
+    <color name="x_raised">ff303442</color>
+    <color name="x_line">ff484d5f</color>
+    <color name="x_line2">ff555a6f</color>
+    <color name="x_accent">ff89b4fa</color>
+    <color name="x_accenttext">ff89b4fa</color>
+    <color name="x_onaccent">ff0d1421</color>
+    <color name="x_deep">ff252835</color>
+    <color name="x_deep_f0">f0262937</color>
+    <color name="x_deep_e6">e6262937</color>
+    <color name="x_deep_cc">cc272a38</color>
+    <color name="x_deep_8c">8c262937</color>
+</colors>

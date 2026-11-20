@@ -1,0 +1,342 @@
+[
+    {
+        "label": "Movies",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0001",
+        "submenu": [
+            {
+                "label": "Sets",
+                "path": "videodb://movies/sets/",
+                "icon": "special://skin/media/DefaultFolder.png",
+                "target": "videos",
+                "guid": "guid-0cbc2478"
+            },
+            {
+                "label": "Upcoming movies",
+                "path": "plugin://script.aeon.helper/?info=online&list=upcoming&type=movie",
+                "icon": "special://skin/media/common/aeon_mi_film.png",
+                "target": "videos",
+                "guid": "guid-8f7eff25"
+            },
+            {
+                "label": "Recently added",
+                "icon": "",
+                "path": "videodb://recentlyaddedmovies/",
+                "target": "videos",
+                "guid": "guid-01ba390e"
+            },
+            {
+                "label": "Recently played",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_watched.xsp",
+                "target": "videos",
+                "guid": "guid-9e0b235d"
+            },
+            {
+                "label": "In progress",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_progress.xsp",
+                "target": "videos",
+                "guid": "guid-1f51410b"
+            },
+            {
+                "label": "Unwatched",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_unwatched.xsp",
+                "target": "videos",
+                "guid": "guid-f28cf9ca"
+            },
+            {
+                "label": "Random movies",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_random.xsp",
+                "target": "videos",
+                "guid": "guid-08ef7353"
+            },
+            {
+                "label": "Top rated",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_toprated.xsp",
+                "target": "videos",
+                "guid": "guid-371c87ea"
+            }
+        ],
+        "widgets": [
+            {
+                "label": "Recently added",
+                "icon": "",
+                "path": "videodb://recentlyaddedmovies/",
+                "target": "videos",
+                "sortby": "dateadded",
+                "guid": "guid-fea017af",
+                "reverse": "True"
+            },
+            {
+                "label": "Recently played",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_watched.xsp",
+                "target": "videos",
+                "sortby": "lastplayed",
+                "guid": "guid-817114a4",
+                "reverse": "True"
+            },
+            {
+                "label": "In progress",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_progress.xsp",
+                "target": "videos",
+                "sortby": "lastplayed",
+                "guid": "guid-50ccb504",
+                "noscroll": ""
+            },
+            {
+                "label": "Random movies",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_random.xsp",
+                "target": "videos",
+                "sortby": "random",
+                "guid": "guid-d9ff2be5"
+            },
+            {
+                "label": "Top rated",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_toprated.xsp",
+                "target": "videos",
+                "sortby": "rating",
+                "guid": "guid-0e588751"
+            },
+            {
+                "label": "Unwatched",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_movies_unwatched.xsp",
+                "target": "videos",
+                "sortby": "dateadded",
+                "guid": "guid-4703be60"
+            }
+        ]
+    },
+    {
+        "label": "TV shows",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0002",
+        "submenu": [
+            {
+                "label": "Recent episodes",
+                "icon": "",
+                "path": "videodb://recentlyaddedepisodes/",
+                "target": "videos",
+                "guid": "guid-db499e0a",
+                "art": ""
+            },
+            {
+                "label": "In progress shows",
+                "icon": "",
+                "path": "videodb://inprogresstvshows/",
+                "target": "videos",
+                "guid": "guid-3535f073",
+                "sortby": "lastplayed"
+            },
+            {
+                "label": "Recently played",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_tv_watched.xsp",
+                "target": "videos",
+                "guid": "guid-2b6debb2"
+            },
+            {
+                "label": "Unwatched shows",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_tv_unwatched.xsp",
+                "target": "videos",
+                "guid": "guid-e70c0a34"
+            },
+            {
+                "label": "Random shows",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_tv_random.xsp",
+                "target": "videos",
+                "guid": "guid-f2b58aa7"
+            },
+            {
+                "label": "Top rated shows",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_tv_toprated.xsp",
+                "target": "videos",
+                "guid": "guid-00cc870d"
+            }
+        ],
+        "widgets": [
+            {
+                "label": "Recent episodes",
+                "icon": "",
+                "path": "videodb://recentlyaddedepisodes/",
+                "target": "videos",
+                "sortby": "dateadded",
+                "guid": "guid-4c80ff19"
+            },
+            {
+                "label": "In progress shows",
+                "icon": "",
+                "path": "videodb://inprogresstvshows/",
+                "target": "videos",
+                "guid": "guid-dd2eb6c9",
+                "sortby": "lastplayed"
+            },
+            {
+                "label": "Recently played",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_tv_watched.xsp",
+                "target": "videos",
+                "sortby": "lastplayed",
+                "guid": "guid-edeb744b"
+            },
+            {
+                "label": "Random shows",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_tv_random.xsp",
+                "target": "videos",
+                "sortby": "random",
+                "guid": "guid-f1af837f"
+            },
+            {
+                "label": "Top rated shows",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_tv_toprated.xsp",
+                "target": "videos",
+                "sortby": "rating",
+                "guid": "guid-c5ce6e4b"
+            }
+        ]
+    },
+    {
+        "label": "Music",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0003",
+        "submenu": [
+            {
+                "label": "Recently added albums",
+                "icon": "",
+                "path": "musicdb://recentlyaddedalbums/",
+                "target": "music",
+                "guid": "guid-aa02fdef"
+            },
+            {
+                "label": "Recently played",
+                "icon": "",
+                "path": "musicdb://recentlyplayedalbums/",
+                "target": "music",
+                "guid": "guid-ca6d4296"
+            },
+            {
+                "label": "Random albums",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_music_random.xsp",
+                "target": "music",
+                "guid": "guid-f691fa7e"
+            },
+            {
+                "label": "Artists",
+                "icon": "",
+                "path": "musicdb://artists/",
+                "target": "music",
+                "guid": "guid-f65c4b13"
+            },
+            {
+                "label": "Albums",
+                "icon": "",
+                "path": "musicdb://albums/",
+                "target": "music",
+                "guid": "guid-a1935bba"
+            },
+            {
+                "label": "Genres",
+                "icon": "",
+                "path": "musicdb://genres/",
+                "target": "music",
+                "guid": "guid-c4fb53ee"
+            }
+        ],
+        "widgets": [
+            {
+                "label": "Recently added albums",
+                "icon": "",
+                "path": "musicdb://recentlyaddedalbums/",
+                "target": "music",
+                "guid": "guid-2ce50861"
+            },
+            {
+                "label": "Recently played",
+                "icon": "",
+                "path": "musicdb://recentlyplayedalbums/",
+                "target": "music",
+                "guid": "guid-7ca2e0db"
+            },
+            {
+                "label": "Random albums",
+                "icon": "",
+                "path": "special://skin/playlists/aeon_music_random.xsp",
+                "target": "music",
+                "sortby": "random",
+                "guid": "guid-2846ed26"
+            }
+        ]
+    },
+    {
+        "label": "Power",
+        "icon": "",
+        "path": "",
+        "target": "",
+        "guid": "guid-aeon0004",
+        "submenu": [
+            {
+                "label": "Switch user",
+                "icon": "",
+                "path": "ActivateWindow(loginscreen)",
+                "target": "",
+                "guid": "guid-dfa6bf56"
+            },
+            {
+                "label": "Log off",
+                "icon": "",
+                "path": "System.LogOff",
+                "target": "",
+                "guid": "guid-6f00db65"
+            },
+            {
+                "label": "Update video library",
+                "icon": "",
+                "path": "UpdateLibrary(video)",
+                "target": "",
+                "guid": "guid-7f18d297"
+            },
+            {
+                "label": "Update music library",
+                "icon": "",
+                "path": "UpdateLibrary(music)",
+                "target": "",
+                "guid": "guid-f519b6fe"
+            },
+            {
+                "label": "Reboot",
+                "icon": "",
+                "path": "Reset()",
+                "target": "",
+                "guid": "guid-7e58a9db"
+            },
+            {
+                "label": "Shut down",
+                "icon": "",
+                "path": "Powerdown()",
+                "target": "",
+                "guid": "guid-7a8c965e"
+            }
+        ],
+        "widgets": []
+    }
+]

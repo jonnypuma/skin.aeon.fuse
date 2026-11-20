@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Palette "Midnight" of Aeon Fuse (own): only the colours that differ from defaults.xml. -->
+<colors>
+    <color name="aeon_white">ff8fb8ff</color>
+    <color name="aeon_accent">ff8fb8ff</color>
+    <color name="aeon_onbar">ff0d1421</color>
+    <color name="aeon_onbar_cc">cc0d1421</color>
+    <color name="aeon_onbar_bb">bb0d1421</color>
+    <color name="aeon_onbar_aa">aa0d1421</color>
+    <color name="aeon_onbar_99">990d1421</color>
+    <color name="aeon_onaccent">ff0d1421</color>
+    <color name="aeon_box">ff2a3f6a</color>
+    <color name="aeon_sbbar">888fb8ff</color>
+    <color name="x_column">268fb8ff</color>
+    <color name="x_ground">ff1b2233</color>
+    <color name="x_panel">ff121826</color>
+    <color name="x_surface">ff121826</color>
+    <color name="x_raised">ff1a2132</color>
+    <color name="x_line">ff34405c</color>
+    <color name="x_line2">ff44506c</color>
+    <color name="x_accent">ff8fb8ff</color>
+    <color name="x_accenttext">ff8fb8ff</color>
+    <color name="x_onaccent">ff0d1421</color>
+    <color name="x_deep">ff10141f</color>
+    <color name="x_deep_f0">f0131825</color>
+    <color name="x_deep_e6">e6131825</color>
+    <color name="x_deep_cc">cc161b29</color>
+    <color name="x_deep_8c">8c131825</color>
+
+    <!-- 0.40.4: the library windows' names (lib_<name>), the same colours; "<palette> (menus).xml" leaves them out,
+         "<palette> (library).xml" has only these -->
+    <color name="lib_aeon_white">ff8fb8ff</color>
+    <color name="lib_aeon_accent">ff8fb8ff</color>
+    <color name="lib_aeon_onbar">ff0d1421</color>
+    <color name="lib_aeon_onbar_cc">cc0d1421</color>
+    <color name="lib_aeon_onbar_bb">bb0d1421</color>
+    <color name="lib_aeon_onbar_aa">aa0d1421</color>
+    <color name="lib_aeon_onbar_99">990d1421</color>
+    <color name="lib_aeon_onaccent">ff0d1421</color>
+    <color name="lib_aeon_box">ff2a3f6a</color>
+    <color name="lib_aeon_sbbar">888fb8ff</color>
+    <color name="lib_x_column">268fb8ff</color>
+    <color name="lib_x_ground">ff1b2233</color>
+    <color name="lib_x_panel">ff121826</color>
+    <color name="lib_x_surface">ff121826</color>
+    <color name="lib_x_raised">ff1a2132</color>
+    <color name="lib_x_line">ff34405c</color>
+    <color name="lib_x_line2">ff44506c</color>
+    <color name="lib_x_accent">ff8fb8ff</color>
+    <color name="lib_x_accenttext">ff8fb8ff</color>
+    <color name="lib_x_onaccent">ff0d1421</color>
+    <color name="lib_x_deep">ff10141f</color>
+    <color name="lib_x_deep_f0">f0131825</color>
+    <color name="lib_x_deep_e6">e6131825</color>
+    <color name="lib_x_deep_cc">cc161b29</color>
+    <color name="lib_x_deep_8c">8c131825</color>
+</colors>

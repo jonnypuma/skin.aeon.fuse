@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Startup: the splash from the first frame (0.56.49, _src/startup_05649.py). Kodi draws nothing until this window's
+	onload has run, so Home (7 s to load on the box) is asked for a second later, after this page is on screen; the
+	screen keeps it while Home loads, and Home's splash carries on from it. Goes to Kodi's configured startup window
+	(default Home), like Estuary, so "Settings > Interface > Startup window" keeps working.
+-->
+<window>
+	<onload>SetProperty(aeon.splash,1,home)</onload>
+	<onload>AlarmClock(aeonstartup,ReplaceWindow($INFO[System.StartupWindow]),00:01,silent)</onload>
+	<controls>
+		<control type="image"><width>1920</width><height>1080</height><texture colordiffuse="ff0b0b0e">common/white.png</texture></control>
+		<include content="Aeon_SplashFront"><param name="open" value="true"/></include>
+	</controls>
+</window>

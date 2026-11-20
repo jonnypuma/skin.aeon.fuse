@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Generic list window + view 50 for every media window that is not the video/music library
+	(programs, pictures, add-ons, files, PVR lists...). Same Aeon layout as Films: a detail panel
+	on the left, a soft card with the list on the right, header pills (9000) in the card.
+	Kodi media-window ids: 3 sort by, 4 sort order, 10 watched toggle (video windows), views in <views>.
+-->
+<includes>
+	<!-- One list row inside a card (1076 wide, 76 high). params: focused, id -->
+	<include name="AG_LibListRow">
+		<param name="focused">false</param>
+		<param name="id">50</param>
+		<param name="w">1134</param>
+		<param name="l2">858</param>
+		<definition>
+			<control type="image"><left>0</left><top>0</top><right>0</right><bottom>0</bottom><texture border="20" colordiffuse="10ffffff">aeon/card_row.png</texture><visible>$EXP[Aeon_Fused]</visible></control>
+			<control type="image">
+				<left>4</left>
+				<top>4</top>
+				<width>1126</width>
+				<height>68</height>
+				<texture border="24" colordiffuse="$VAR[AG_Accent]">$VAR[Aeon_TexCard20]</texture>
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[id]) + $EXP[Aeon_VGlass] + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<!-- Fused Glass (0.54.3): 12 px inside the row, in the focus bar's r16 shape -->
+			<control type="image"><left>12</left><top>4</top><right>12</right><height>68</height><texture border="20" colordiffuse="$VAR[AG_Accent]">$VAR[Aeon_MenuFocusRowTex]</texture><visible>$PARAM[focused] + Control.HasFocus($PARAM[id]) + $EXP[Aeon_FGlass]</visible></control>
+			<control type="image">
+				<left>4</left>
+				<top>4</top>
+				<width>1126</width>
+				<height>68</height>
+				<texture border="24" colordiffuse="$VAR[AG_Raised]">$VAR[Aeon_TexCard20]</texture>
+				<visible>$PARAM[focused] + !Control.HasFocus($PARAM[id]) + $EXP[Aeon_VGlass] + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<!-- Fused Glass (0.54.3): 12 px inside the row, in the focus bar's r16 shape -->
+			<control type="image"><left>12</left><top>4</top><right>12</right><height>68</height><texture border="20" colordiffuse="$VAR[AG_Raised]">$VAR[Dlg_ParentRowTex]</texture><visible>$PARAM[focused] + !Control.HasFocus($PARAM[id]) + $EXP[Aeon_FGlass]</visible></control>
+			<control type="image"><left>0</left><top>0</top><width>$PARAM[w]</width><height>76</height><texture border="20" colordiffuse="ffffffff">$VAR[Aeon_MenuRowTex]</texture><visible>$PARAM[focused] + Control.HasFocus($PARAM[id]) + !$EXP[Aeon_VGlass]</visible></control>
+			<control type="image"><left>0</left><top>0</top><width>$PARAM[w]</width><height>76</height><texture border="20" colordiffuse="22ffffff">$VAR[Aeon_MenuRowTex]</texture><visible>$PARAM[focused] + !Control.HasFocus($PARAM[id]) + !$EXP[Aeon_VGlass]</visible></control>
+			<control type="image"><left>0</left><top>75</top><width>$PARAM[w]</width><height>1</height><texture colordiffuse="18ffffff">common/white.png</texture><visible>[!$EXP[Aeon_VGlass]] + !$EXP[Aeon_Fused]</visible></control>
+			<control type="image">
+				<left>22</left>
+				<top>14</top>
+				<width>48</width>
+				<height>48</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<texture background="true" diffuse="masks/square_round8.png">$VAR[AG_RowIcon]</texture>
+				<visible>!$EXP[Aeon_FGlass]</visible>
+			</control>
+			<!-- 0.39.13 Fused Glass: radius 12, like the small tiles inside rows -->
+			<control type="image">
+				<left>22</left>
+				<top>14</top>
+				<width>48</width>
+				<height>48</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<texture background="true" diffuse="fg/m48x48.png">$VAR[AG_RowIcon]</texture>
+				<visible>$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="label">
+				<left>90</left>
+				<top>0</top>
+				<width>700</width>
+				<height>76</height>
+				<font>lb_ui_24</font>
+				<textcolor>$VAR[AG_Ink]</textcolor><selectedcolor>$VAR[AG_Ink]</selectedcolor>
+				<label>$VAR[AG_RowLabel]</label>
+				<visible>!$PARAM[focused] | !Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="label">
+				<left>90</left>
+				<top>0</top>
+				<width>700</width>
+				<height>76</height>
+				<font>lb_ui_24_semibold</font>
+				<textcolor>$VAR[AG_OnAccent]</textcolor><selectedcolor>$VAR[AG_OnAccent]</selectedcolor>
+				<label>$VAR[AG_RowLabel]</label>
+				<scroll>true</scroll>
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="label">
+				<left>$PARAM[l2]</left>
+				<top>0</top>
+				<width>250</width>
+				<height>76</height>
+				<align>right</align>
+				<font>lb_small_20</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor><selectedcolor>$VAR[AG_Ink2]</selectedcolor>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>!$PARAM[focused] | !Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="label">
+				<left>$PARAM[l2]</left>
+				<top>0</top>
+				<width>250</width>
+				<height>76</height>
+				<align>right</align>
+				<font>lb_small_20</font>
+				<textcolor>$VAR[AG_OnAccent]</textcolor><selectedcolor>$VAR[AG_OnAccent]</selectedcolor>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[id])</visible>
+			</control>
+		</definition>
+	</include>
+	<!-- AG_LibListRow_L: the library windows' copy of AG_LibListRow (lib_ colours: palette for menus / library / both, 0.40.4) -->
+	<include name="AG_LibListRow_L">
+		<param name="focused">false</param>
+		<param name="id">50</param>
+		<param name="w">1134</param>
+		<param name="l2">858</param>
+		<definition>
+			<control type="image"><left>0</left><top>0</top><right>0</right><bottom>0</bottom><texture border="20" colordiffuse="10ffffff">aeon/card_row.png</texture><visible>$EXP[Aeon_Fused]</visible></control>
+			<control type="image">
+				<left>4</left>
+				<top>4</top>
+				<width>1126</width>
+				<height>68</height>
+				<texture border="24" colordiffuse="$VAR[AG_Accent_L]">$VAR[Aeon_TexCard20]</texture>
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[id]) + $EXP[Aeon_VGlass] + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<!-- Fused Glass (0.54.3): 12 px inside the row, in the focus bar's r16 shape -->
+			<control type="image"><left>12</left><top>4</top><right>12</right><height>68</height><texture border="20" colordiffuse="$VAR[AG_Accent_L]">$VAR[Aeon_MenuFocusRowTex]</texture><visible>$PARAM[focused] + Control.HasFocus($PARAM[id]) + $EXP[Aeon_FGlass]</visible></control>
+			<control type="image">
+				<left>4</left>
+				<top>4</top>
+				<width>1126</width>
+				<height>68</height>
+				<texture border="24" colordiffuse="$VAR[AG_Raised_L]">$VAR[Aeon_TexCard20]</texture>
+				<visible>$PARAM[focused] + !Control.HasFocus($PARAM[id]) + $EXP[Aeon_VGlass] + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<!-- Fused Glass (0.54.3): 12 px inside the row, in the focus bar's r16 shape -->
+			<control type="image"><left>12</left><top>4</top><right>12</right><height>68</height><texture border="20" colordiffuse="$VAR[AG_Raised_L]">$VAR[Dlg_ParentRowTex]</texture><visible>$PARAM[focused] + !Control.HasFocus($PARAM[id]) + $EXP[Aeon_FGlass]</visible></control>
+			<control type="image"><left>0</left><top>0</top><width>$PARAM[w]</width><height>76</height><texture border="20" colordiffuse="ffffffff">$VAR[Aeon_MenuRowTex]</texture><visible>$PARAM[focused] + Control.HasFocus($PARAM[id]) + !$EXP[Aeon_VGlass]</visible></control>
+			<control type="image"><left>0</left><top>0</top><width>$PARAM[w]</width><height>76</height><texture border="20" colordiffuse="22ffffff">$VAR[Aeon_MenuRowTex]</texture><visible>$PARAM[focused] + !Control.HasFocus($PARAM[id]) + !$EXP[Aeon_VGlass]</visible></control>
+			<control type="image"><left>0</left><top>75</top><width>$PARAM[w]</width><height>1</height><texture colordiffuse="18ffffff">common/white.png</texture><visible>[!$EXP[Aeon_VGlass]] + !$EXP[Aeon_Fused]</visible></control>
+			<control type="image">
+				<left>22</left>
+				<top>14</top>
+				<width>48</width>
+				<height>48</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<texture background="true" diffuse="masks/square_round8.png">$VAR[AG_RowIcon]</texture>
+				<visible>!$EXP[Aeon_FGlass]</visible>
+			</control>
+			<!-- 0.39.13 Fused Glass: radius 12, like the small tiles inside rows -->
+			<control type="image">
+				<left>22</left>
+				<top>14</top>
+				<width>48</width>
+				<height>48</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<texture background="true" diffuse="fg/m48x48.png">$VAR[AG_RowIcon]</texture>
+				<visible>$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="label">
+				<left>90</left>
+				<top>0</top>
+				<width>700</width>
+				<height>76</height>
+				<font>lb_ui_24</font>
+				<textcolor>$VAR[AG_Ink]</textcolor><selectedcolor>$VAR[AG_Ink]</selectedcolor>
+				<label>$VAR[AG_RowLabel]</label>
+				<visible>!$PARAM[focused] | !Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="label">
+				<left>90</left>
+				<top>0</top>
+				<width>700</width>
+				<height>76</height>
+				<font>lb_ui_24_semibold</font>
+				<textcolor>$VAR[AG_OnAccent_L]</textcolor><selectedcolor>$VAR[AG_OnAccent_L]</selectedcolor>
+				<label>$VAR[AG_RowLabel]</label>
+				<scroll>true</scroll>
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="label">
+				<left>$PARAM[l2]</left>
+				<top>0</top>
+				<width>250</width>
+				<height>76</height>
+				<align>right</align>
+				<font>lb_small_20</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor><selectedcolor>$VAR[AG_Ink2]</selectedcolor>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>!$PARAM[focused] | !Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="label">
+				<left>$PARAM[l2]</left>
+				<top>0</top>
+				<width>250</width>
+				<height>76</height>
+				<align>right</align>
+				<font>lb_small_20</font>
+				<textcolor>$VAR[AG_OnAccent_L]</textcolor><selectedcolor>$VAR[AG_OnAccent_L]</selectedcolor>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>$PARAM[focused] + Control.HasFocus($PARAM[id])</visible>
+			</control>
+		</definition>
+	</include>
+	<variable name="AG_RowLabel">
+		<value condition="ListItem.IsParentFolder">$LOCALIZE[31245]</value>
+		<value>$INFO[ListItem.Label]</value>
+	</variable>
+	<variable name="AG_RowIcon">
+		<value condition="ListItem.IsParentFolder">aeon/icons/back.png</value>
+		<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.thumb))">$INFO[Window(Home).Property(aeon.fart.thumb)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.poster))">$INFO[Window(Home).Property(aeon.fart.poster)]</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
+
+	<!-- ============================================================ View 50 (generic) -->
+	<!-- 0.56.30 fgs_round2: the add-on browser's list in the Fused Glass style -->
+	<!-- 0.56.37 fgs_addons -->
+	<include name="FGS_AddonRow">
+		<param name="focused">false</param>
+		<param name="wide">false</param>
+		<definition>
+			<control type="image"><left>0</left><top>69</top><width>1180</width><height>1</height><texture colordiffuse="12ffffff">common/white.png</texture></control>
+			<control type="image"><left>450</left><top>0</top><width>1</width><height>70</height><texture colordiffuse="1affffff">common/white.png</texture></control>
+			<!-- 0.56.46 fgs_addonrow --> the focus: a line above and below (still), the white bar on the divider (animated)
+			<control type="group">
+				<visible>$PARAM[focused] + Control.HasFocus(50)</visible>
+				<control type="image"><left>0</left><top>-1</top><width>1180</width><height>1</height><texture colordiffuse="44ffffff">common/white.png</texture></control>
+				<control type="image"><left>0</left><top>69</top><width>1180</width><height>1</height><texture colordiffuse="44ffffff">common/white.png</texture></control>
+			</control>
+			<control type="group">
+				<visible>$PARAM[focused] + Control.HasFocus(50)</visible>
+				<include>FGS_RowAnim</include><!-- selgutter --><control type="image"><left>-40</left><top>-34</top><width>1260</width><height>150</height><texture border="56" colordiffuse="$VAR[FG_ShadowColM]">fg/sh16.png</texture><visible>$EXP[FGS_ShadowOn]</visible></control>
+				<control type="image"><left>448</left><top>0</top><width>5</width><height>70</height><texture>common/white.png</texture></control>
+			</control>
+			<!-- the icon: add-ons square, favourites wide; dim unless in focus -->
+			<control type="image"><left>331</left><top>8</top><width>54</width><height>54</height><aspectratio>keep</aspectratio><texture background="true" diffuse="fg/m72x72.png" colordiffuse="99ffffff">$INFO[ListItem.Icon]</texture><visible>!$PARAM[wide] + ![$PARAM[focused] + Control.HasFocus(50)]</visible></control>
+			<control type="image"><left>331</left><top>8</top><width>54</width><height>54</height><aspectratio>keep</aspectratio><texture background="true" diffuse="fg/m72x72.png">$INFO[ListItem.Icon]</texture><visible>!$PARAM[wide] + $PARAM[focused] + Control.HasFocus(50)</visible><animation type="Focus" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="zoom" start="85" end="100" center="auto" time="220" tween="back" easing="out"/></animation></control>
+			<control type="image"><left>302</left><top>8</top><width>96</width><height>54</height><aspectratio>keep</aspectratio><texture background="true" diffuse="fg/m128x72.png" colordiffuse="99ffffff">$INFO[ListItem.Icon]</texture><visible>$PARAM[wide] + ![$PARAM[focused] + Control.HasFocus(50)]</visible></control>
+			<control type="image"><left>302</left><top>8</top><width>96</width><height>54</height><aspectratio>keep</aspectratio><texture background="true" diffuse="fg/m128x72.png">$INFO[ListItem.Icon]</texture><visible>$PARAM[wide] + $PARAM[focused] + Control.HasFocus(50)</visible><animation type="Focus" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="zoom" start="88" end="100" center="auto" time="220" tween="back" easing="out"/></animation></control>
+			<!-- the name (capitals) with a second line: the summary, else label2; alone in the middle without one -->
+			<control type="group">
+				<visible>!String.IsEmpty(ListItem.AddonSummary) | !String.IsEmpty(ListItem.Label2)</visible>
+				<control type="label"><left>486</left><top>5</top><width>560</width><height>34</height><aligny>center</aligny><font>uc_st_ui_24_semibold</font><textcolor>66ffffff</textcolor><selectedcolor>66ffffff</selectedcolor><label>$INFO[ListItem.Label]</label><visible>!$PARAM[focused] | !Control.HasFocus(50)</visible></control>
+				<control type="label"><left>486</left><top>5</top><width>560</width><height>34</height><aligny>center</aligny><font>uc_st_ui_24_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[ListItem.Label]</label><scroll>true</scroll><visible>$PARAM[focused] + Control.HasFocus(50)</visible></control>
+				<control type="label"><left>486</left><top>37</top><width>660</width><height>26</height><aligny>center</aligny><font>st_small_20</font><textcolor>59ffffff</textcolor><selectedcolor>59ffffff</selectedcolor><label>$INFO[ListItem.AddonSummary]</label><visible>!String.IsEmpty(ListItem.AddonSummary)</visible></control>
+				<control type="label"><left>486</left><top>37</top><width>660</width><height>26</height><aligny>center</aligny><font>st_small_20</font><textcolor>59ffffff</textcolor><selectedcolor>59ffffff</selectedcolor><label>$INFO[ListItem.Label2]</label><visible>String.IsEmpty(ListItem.AddonSummary)</visible></control>
+			</control>
+			<control type="group">
+				<visible>String.IsEmpty(ListItem.AddonSummary) + String.IsEmpty(ListItem.Label2)</visible>
+				<control type="label"><left>486</left><top>0</top><width>660</width><height>70</height><aligny>center</aligny><font>uc_st_ui_24_semibold</font><textcolor>66ffffff</textcolor><selectedcolor>66ffffff</selectedcolor><label>$INFO[ListItem.Label]</label><visible>!$PARAM[focused] | !Control.HasFocus(50)</visible></control>
+				<control type="label"><left>486</left><top>0</top><width>660</width><height>70</height><aligny>center</aligny><font>uc_st_ui_24_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[ListItem.Label]</label><scroll>true</scroll><visible>$PARAM[focused] + Control.HasFocus(50)</visible></control>
+			</control>
+			<control type="label"><left>1030</left><top>5</top><width>114</width><height>34</height><align>right</align><aligny>center</aligny><font>st_small_20</font><textcolor>59ffffff</textcolor><selectedcolor>59ffffff</selectedcolor><label>$INFO[ListItem.AddonVersion]</label></control>
+		</definition>
+	</include>
+	<include name="FGS_View50">
+		<param name="wide">false</param>
+		<definition>
+		<control type="image"><left>360</left><top>180</top><width>1200</width><height>1</height><texture colordiffuse="1affffff">common/white.png</texture></control>
+		<control type="image"><left>360</left><top>250</top><width>1200</width><height>1</height><texture colordiffuse="12ffffff">common/white.png</texture></control>
+		<control type="image"><left>360</left><top>250</top><width>1180</width><height>1</height><texture colordiffuse="44ffffff">common/white.png</texture><visible>Control.HasFocus(50) + Integer.IsEqual(Container(50).Position,0)</visible></control>
+		<control type="label"><left>1160</left><top>128</top><width>400</width><height>40</height><align>right</align><aligny>center</aligny><font>st_small_20</font><textcolor>80ffffff</textcolor><label>$INFO[Container(50).CurrentItem]  /  $INFO[Container(50).NumItems]</label><visible>Integer.IsGreater(Container(50).NumItems,0)</visible></control>
+		<control type="group">
+			<visible>Control.IsVisible(50)</visible>
+			<include>Anim_VisibleFade</include>
+			<control type="list" id="50">
+				<left>360</left>
+				<top>251</top>
+				<width>1180</width>
+				<height>700</height>
+				<onup>9000</onup>
+				<ondown>Action(FirstPage)</ondown>
+				<onleft condition="Window.IsActive(addonbrowser) + $EXP[Aeon_FGlass] + Control.IsVisible(7700)">7700</onleft>
+				<onleft>noop</onleft>
+				<onright>60</onright>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<viewtype label="535">list</viewtype>
+				<itemlayout width="1180" height="70">
+					<include content="FGS_AddonRow"><param name="wide" value="$PARAM[wide]"/></include>
+				</itemlayout>
+				<focusedlayout width="1180" height="70">
+					<include content="FGS_AddonRow"><param name="focused" value="true"/><param name="wide" value="$PARAM[wide]"/></include>
+				</focusedlayout>
+			</control>
+			<!-- gutter --><!-- left frame line --><control type="image"><left>360</left><top>180</top><width>1</width><height>771</height><texture colordiffuse="1affffff">common/white.png</texture></control><control type="image"><left>1540</left><top>180</top><width>1</width><height>771</height><texture colordiffuse="1affffff">common/white.png</texture></control><control type="image"><left>1560</left><top>180</top><width>1</width><height>771</height><texture colordiffuse="1affffff">common/white.png</texture></control><control type="scrollbar" id="60"><left>1541</left><top>251</top><width>19</width><height>700</height><include>FGS_SBTex</include><textureslidernib /><textureslidernibfocus /><orientation>vertical</orientation><showonepage>false</showonepage><onleft>50</onleft><onright>noop</onright><onup>9000</onup></control>
+		</control>
+		</definition>
+	</include>
+	<include name="View_50_List">
+		<control type="group">
+			<visible>Control.IsVisible(50)</visible>
+			<include>Anim_VisibleFade</include>
+			<control type="list" id="50">
+				<left>666</left>
+				<top>262</top>
+				<width>1134</width>
+				<height>754</height>
+				<onup>9000</onup>
+				<ondown>Action(FirstPage)</ondown>
+				<onleft condition="Window.IsActive(addonbrowser) + $EXP[Aeon_FGlass] + Control.IsVisible(7700)">7700</onleft>
+				<onleft>noop</onleft>
+				<onright>60</onright>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<viewtype label="535">list</viewtype>
+				<itemlayout width="1134" height="76">
+					<include>AG_LibListRow</include>
+				</itemlayout>
+				<focusedlayout width="1134" height="76">
+					<include content="AG_LibListRow"><param name="focused" value="true"/></include>
+				</focusedlayout>
+			</control>
+			<control type="scrollbar" id="60">
+				<left>1786</left>
+				<top>262</top>
+				<width>10</width>
+				<height>754</height>
+				<texturesliderbackground colordiffuse="22ffffff">common/white.png</texturesliderbackground>
+				<texturesliderbar colordiffuse="66ffffff">common/white.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="$VAR[Aeon_SBFocus_L]">common/white.png</texturesliderbarfocus>
+				<textureslidernib colordiffuse="66ffffff">common/white.png</textureslidernib>
+				<textureslidernibfocus colordiffuse="ffffffff">common/white.png</textureslidernibfocus>
+				<orientation>vertical</orientation>
+				<!-- Fused Glass (0.56.8): beside the card, 12 px out, not in the focus bar's 12 px gap (the bar covered its left edge) -->
+				<animation effect="slide" end="26,0" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation>
+				<showonepage>false</showonepage>
+				<onleft>50</onleft>
+				<onright>noop</onright>
+				<onup>9000</onup>
+				<ondown>noop</ondown>
+				<onback>50</onback>
+			</control>
+		</control>
+	</include>
+	<!-- View_50_List_L: the library windows' copy of View_50_List (lib_ colours: palette for menus / library / both, 0.40.4) -->
+	<include name="View_50_List_L">
+		<control type="group">
+			<visible>Control.IsVisible(50)</visible>
+			<include>Anim_VisibleFade</include>
+			<control type="list" id="50">
+				<left>666</left>
+				<top>262</top>
+				<width>1134</width>
+				<height>754</height>
+				<onup>9000</onup>
+				<ondown>Action(FirstPage)</ondown>
+				<onleft condition="Window.IsActive(addonbrowser) + $EXP[Aeon_FGlass] + Control.IsVisible(7700)">7700</onleft>
+				<onleft>noop</onleft>
+				<onright>60</onright>
+				<pagecontrol>60</pagecontrol>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<viewtype label="535">list</viewtype>
+				<itemlayout width="1134" height="76">
+					<include>AG_LibListRow_L</include>
+				</itemlayout>
+				<focusedlayout width="1134" height="76">
+					<include content="AG_LibListRow_L"><param name="focused" value="true"/></include>
+				</focusedlayout>
+			</control>
+			<control type="scrollbar" id="60">
+				<left>1786</left>
+				<top>262</top>
+				<width>10</width>
+				<height>754</height>
+				<texturesliderbackground colordiffuse="22ffffff">common/white.png</texturesliderbackground>
+				<texturesliderbar colordiffuse="66ffffff">common/white.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="$VAR[Aeon_SBFocus_L]">common/white.png</texturesliderbarfocus>
+				<textureslidernib colordiffuse="66ffffff">common/white.png</textureslidernib>
+				<textureslidernibfocus colordiffuse="ffffffff">common/white.png</textureslidernibfocus>
+				<orientation>vertical</orientation>
+				<!-- Fused Glass (0.56.8): beside the card, 12 px out, not in the focus bar's 12 px gap (the bar covered its left edge) -->
+				<animation effect="slide" end="26,0" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation>
+				<showonepage>false</showonepage>
+				<onleft>50</onleft>
+				<onright>noop</onright>
+				<onup>9000</onup>
+				<ondown>noop</ondown>
+				<onback>50</onback>
+			</control>
+		</control>
+	</include>
+
+	<!-- Detail panel for generic windows: rounded art, title, label2, plot -->
+	<include name="AG_GenericDetail">
+		<control type="group">
+			<left>page_margin</left>
+			<top>168</top>
+			<width>500</width>
+			<height>848</height>
+			<visible>Integer.IsGreater(Container.NumItems,0)</visible>
+			<include>Anim_FadeVisible</include>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>500</width>
+				<height>420</height>
+				<aspectratio align="left" aligny="top">keep</aspectratio>
+				<fadetime>160</fadetime>
+				<texture background="true" colordiffuse="$VAR[AG_ArtDim]">$VAR[AG_RowIconLarge]</texture>
+				<visible>![$EXP[Aeon_FGlass] + Window.IsActive(addonbrowser)]</visible>
+			</control>
+			<control type="group">
+				<left>0</left>
+				<top>440</top>
+				<width>500</width>
+				<visible>![$EXP[Aeon_FGlass] + Window.IsActive(addonbrowser)]</visible>
+				<include content="T_Generic_Title">
+					<param name="label" value="$VAR[AG_RowLabel]"/>
+					<param name="color" value="$VAR[AG_Ink]"/>
+				</include>
+			</control>
+			<control type="label">
+				<left>0</left>
+				<top>588</top>
+				<width>500</width>
+				<height>30</height>
+				<font>lb_ui_22</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<label>$INFO[ListItem.Label2]</label>
+				<visible>![$EXP[Aeon_FGlass] + Window.IsActive(addonbrowser)]</visible>
+			</control>
+			<control type="textbox">
+				<visible>![$EXP[Aeon_FGlass] + Window.IsActive(addonbrowser)]</visible>
+				<left>0</left>
+				<top>632</top>
+				<width>500</width>
+				<height>180</height>
+				<font>lb_body_24</font>
+				<textcolor>$VAR[AG_Body]</textcolor>
+				<label>$INFO[ListItem.Plot]</label>
+				<autoscroll delay="8000" time="3000" repeat="10000">!Container.Scrolling</autoscroll>
+			</control>
+			<!-- 0.56.10 Fused Glass add-on browser, on a glass card (the user: "has to be on a card background", "bring them up
+			     closer to the icon, add addon description"): the fanart (or a plate with the icon) 16:9 at the top, the icon in
+			     its corner, then name, status, description and the screenshots (script.aeon.helper: aeon.ab.*) right under it -->
+			<control type="group">
+				<visible>$EXP[Aeon_FGlass] + Window.IsActive(addonbrowser)</visible>
+				<!-- 0.56.11 the same card as the list beside it (the user: "why is this panel different from other panels?") -->
+				<control type="group"><width>520</width><height>848</height><include>AG_Card</include></control>
+				<control type="image"><left>16</left><top>16</top><width>488</width><height>274</height><texture border="12" colordiffuse="1fffffff">fg/r12.png</texture></control>
+				<control type="image"><left>16</left><top>16</top><width>488</width><height>274</height><aspectratio scalediffuse="false">scale</aspectratio><fadetime>200</fadetime><texture background="true" diffuse="fg/m488x274.png">$INFO[ListItem.Art(fanart)]</texture><visible>!String.IsEmpty(ListItem.Art(fanart)) + !ListItem.IsParentFolder</visible></control>
+				<control type="image"><left>160</left><top>53</top><width>200</width><height>200</height><aspectratio scalediffuse="false">scale</aspectratio><fadetime>160</fadetime><texture background="true" diffuse="fg/m200x200.png">$VAR[AG_RowIconLarge]</texture><visible>![!String.IsEmpty(ListItem.Art(fanart)) + !ListItem.IsParentFolder]</visible></control>
+				<control type="group">
+					<visible>!String.IsEmpty(ListItem.Art(fanart)) + !ListItem.IsParentFolder + !String.IsEmpty(ListItem.Art(thumb))</visible>
+					<control type="image"><left>28</left><top>158</top><width>120</width><height>120</height><texture border="24" colordiffuse="e60c0e13">fg/r24.png</texture></control>
+					<control type="image"><left>32</left><top>162</top><width>112</width><height>112</height><aspectratio scalediffuse="false">scale</aspectratio><texture background="true" diffuse="fg/m112x112.png">$INFO[ListItem.Art(thumb)]</texture></control>
+				</control>
+				<control type="grouplist">
+					<left>20</left><top>306</top><width>480</width><height>526</height><orientation>vertical</orientation><itemgap>8</itemgap><usecontrolcoords>true</usecontrolcoords>
+					<control type="label"><left>4</left><width>472</width><height>50</height><aligny>center</aligny><font>lb_font36_title</font><textcolor>ffffffff</textcolor><label>$VAR[AG_RowLabel]</label></control>
+					<control type="label"><left>4</left><width>472</width><height>30</height><aligny>center</aligny><font>lb_ui_22</font><textcolor>ccffffff</textcolor><label>$INFO[ListItem.Label2]</label><visible>!String.IsEmpty(ListItem.Label2)</visible></control>
+					<control type="textbox"><left>4</left><width>472</width><height>145</height><font>lb_body_24</font><textcolor>d9ffffff</textcolor><label>$INFO[ListItem.AddonDescription]</label><autoscroll delay="8000" time="3000" repeat="10000">!Container.Scrolling</autoscroll><visible>!String.IsEmpty(ListItem.AddonDescription)</visible></control>
+					<control type="textbox"><left>4</left><width>472</width><height>145</height><font>lb_body_24</font><textcolor>d9ffffff</textcolor><label>$INFO[ListItem.Plot]</label><autoscroll delay="8000" time="3000" repeat="10000">!Container.Scrolling</autoscroll><visible>String.IsEmpty(ListItem.AddonDescription) + !String.IsEmpty(ListItem.Plot)</visible></control>
+					<control type="group"><width>480</width><height>230</height><visible>String.IsEqual(Window(Home).Property(aeon.ab.path),ListItem.FileNameAndPath) + !String.IsEmpty(Window(Home).Property(aeon.ab.shot1))</visible><control type="label"><left>4</left><top>0</top><width>472</width><height>26</height><aligny>center</aligny><font>lb_small_20_bold</font><textcolor>b3ffffff</textcolor><label>$LOCALIZE[31192]$INFO[Window(Home).Property(aeon.ab.shots),  ·  ,]</label></control><!-- 0.56.11 (the user: "need to be able to navigate to screenshots and view them"): Left from the list, OK shows it --><control type="panel" id="7700"><left>0</left><top>30</top><width>480</width><height>188</height><orientation>vertical</orientation><onright>50</onright><onleft>noop</onleft><onup>noop</onup><ondown>noop</ondown><onback>50</onback><scrolltime>200</scrolltime><itemlayout width="160" height="94"><control type="image"><left>4</left><top>4</top><width>152</width><height>86</height><texture border="10" colordiffuse="1fffffff">fg/r12.png</texture></control><control type="image"><left>4</left><top>4</top><width>152</width><height>86</height><aspectratio scalediffuse="false">scale</aspectratio><fadetime>200</fadetime><texture background="true" diffuse="fg/m152x86.png">$INFO[ListItem.Icon]</texture></control></itemlayout><focusedlayout width="160" height="94"><control type="image"><left>0</left><top>0</top><width>160</width><height>94</height><texture border="16" colordiffuse="ffffffff">fg/r16.png</texture><visible>Control.HasFocus(7700)</visible></control><control type="image"><left>4</left><top>4</top><width>152</width><height>86</height><texture border="10" colordiffuse="1fffffff">fg/r12.png</texture></control><control type="image"><left>4</left><top>4</top><width>152</width><height>86</height><aspectratio scalediffuse="false">scale</aspectratio><fadetime>200</fadetime><texture background="true" diffuse="fg/m152x86.png">$INFO[ListItem.Icon]</texture></control></focusedlayout><content><item><label>1</label><icon>$INFO[Window(Home).Property(aeon.ab.shot1)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot1)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot1))</visible></item><item><label>2</label><icon>$INFO[Window(Home).Property(aeon.ab.shot2)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot2)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot2))</visible></item><item><label>3</label><icon>$INFO[Window(Home).Property(aeon.ab.shot3)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot3)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot3))</visible></item><item><label>4</label><icon>$INFO[Window(Home).Property(aeon.ab.shot4)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot4)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot4))</visible></item><item><label>5</label><icon>$INFO[Window(Home).Property(aeon.ab.shot5)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot5)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot5))</visible></item><item><label>6</label><icon>$INFO[Window(Home).Property(aeon.ab.shot6)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot6)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot6))</visible></item><item><label>7</label><icon>$INFO[Window(Home).Property(aeon.ab.shot7)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot7)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot7))</visible></item><item><label>8</label><icon>$INFO[Window(Home).Property(aeon.ab.shot8)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot8)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot8))</visible></item><item><label>9</label><icon>$INFO[Window(Home).Property(aeon.ab.shot9)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot9)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot9))</visible></item><item><label>10</label><icon>$INFO[Window(Home).Property(aeon.ab.shot10)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot10)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot10))</visible></item><item><label>11</label><icon>$INFO[Window(Home).Property(aeon.ab.shot11)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot11)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot11))</visible></item><item><label>12</label><icon>$INFO[Window(Home).Property(aeon.ab.shot12)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot12)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot12))</visible></item><item><label>13</label><icon>$INFO[Window(Home).Property(aeon.ab.shot13)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot13)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot13))</visible></item><item><label>14</label><icon>$INFO[Window(Home).Property(aeon.ab.shot14)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot14)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot14))</visible></item><item><label>15</label><icon>$INFO[Window(Home).Property(aeon.ab.shot15)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot15)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot15))</visible></item><item><label>16</label><icon>$INFO[Window(Home).Property(aeon.ab.shot16)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot16)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot16))</visible></item><item><label>17</label><icon>$INFO[Window(Home).Property(aeon.ab.shot17)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot17)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot17))</visible></item><item><label>18</label><icon>$INFO[Window(Home).Property(aeon.ab.shot18)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot18)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot18))</visible></item><item><label>19</label><icon>$INFO[Window(Home).Property(aeon.ab.shot19)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot19)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot19))</visible></item><item><label>20</label><icon>$INFO[Window(Home).Property(aeon.ab.shot20)]</icon><onclick>ShowPicture($INFO[Window(Home).Property(aeon.ab.shot20)])</onclick><visible>!String.IsEmpty(Window(Home).Property(aeon.ab.shot20))</visible></item></content></control></control>
+				</control>
+			</control>
+		</control>
+	</include>
+	<variable name="AG_RowIconLarge">
+		<value condition="ListItem.IsParentFolder"></value>
+		<value condition="!String.IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.poster))">$INFO[Window(Home).Property(aeon.fart.poster)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.thumb))">$INFO[Window(Home).Property(aeon.fart.thumb)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.fanart))">$INFO[Window(Home).Property(aeon.fart.fanart)]</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
+
+	<!-- ===================================================== header pills (generic) -->
+
+	<!-- ========================================== generic list window -->
+</includes>

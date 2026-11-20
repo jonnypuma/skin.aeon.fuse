@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Control defaults (Kodi applies these to every control of the type unless overridden).
+	Aeon focus language: the focused control is a soft accent fill (rounded 16, aeon/card16.png)
+	with on-accent text; unfocused controls sit flat on the card. Every colour is a mood token.
+-->
+<includes>
+	<default type="image">
+		<aspectratio>stretch</aspectratio>
+	</default>
+	<default type="label">
+		<font>font13</font>
+		<textcolor>$VAR[AG_Ink]</textcolor>
+		<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+		<selectedcolor>$VAR[AG_Ink]</selectedcolor>
+		<align>left</align>
+		<aligny>center</aligny>
+		<scroll>false</scroll>
+		<scrollspeed>40</scrollspeed>
+	</default>
+	<default type="fadelabel">
+		<font>font13</font>
+		<textcolor>$VAR[AG_Ink]</textcolor>
+		<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+		<align>left</align>
+	</default>
+	<default type="textbox">
+		<font>font13</font>
+		<textcolor>$VAR[AG_Body]</textcolor>
+		<align>left</align>
+	</default>
+	<default type="button">
+		<font>font13</font>
+		<textcolor>$VAR[AG_Ink]</textcolor>
+		<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+		<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+		<texturefocus border="4,0,0,0" colordiffuse="aeon_white">common/aeon_row_flat.png</texturefocus>
+		<texturenofocus />
+		<textoffsetx>24</textoffsetx>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
+	</default>
+	<default type="togglebutton">
+		<font>font13</font>
+		<textcolor>$VAR[AG_Ink]</textcolor>
+		<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+		<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+		<texturefocus border="4,0,0,0" colordiffuse="aeon_white">common/aeon_row_flat.png</texturefocus>
+		<texturenofocus />
+		<alttexturefocus border="4,0,0,0" colordiffuse="aeon_white">common/aeon_row_flat.png</alttexturefocus>
+		<alttexturenofocus />
+		<textoffsetx>24</textoffsetx>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
+	</default>
+	<default type="radiobutton">
+		<font>font13</font>
+		<textcolor>$VAR[AG_Ink]</textcolor>
+		<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+		<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+		<texturefocus border="4,0,0,0" colordiffuse="aeon_white">common/aeon_row_flat.png</texturefocus>
+		<texturenofocus />
+		<radiowidth>26</radiowidth>
+		<radioheight>26</radioheight>
+		<textureradioonfocus colordiffuse="$VAR[Aeon_OnBarInk]">markers/check.png</textureradioonfocus>
+		<textureradioonnofocus colordiffuse="$VAR[AG_Accent]">markers/check.png</textureradioonnofocus>
+		<textureradioofffocus border="10" colordiffuse="$VAR[Aeon_OnBarInk]">common/rect_outline_1.png</textureradioofffocus>
+		<textureradiooffnofocus border="10" colordiffuse="$VAR[AG_Line2]">common/rect_outline_1.png</textureradiooffnofocus>
+		<textureradioondisabled colordiffuse="$VAR[AG_Disabled]">markers/check.png</textureradioondisabled>
+		<textureradiooffdisabled border="10" colordiffuse="$VAR[AG_Disabled]">common/rect_outline_1.png</textureradiooffdisabled>
+		<textoffsetx>24</textoffsetx>
+		<align>left</align>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
+	</default>
+	<default type="spincontrolex">
+		<font>font13</font>
+		<textcolor>$VAR[AG_Ink]</textcolor>
+		<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+		<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+		<texturefocus border="4,0,0,0" colordiffuse="aeon_white">common/aeon_row_flat.png</texturefocus>
+		<texturenofocus />
+		<spinwidth>24</spinwidth>
+		<spinheight>24</spinheight>
+		<textureup colordiffuse="$VAR[AG_Ink3]">icons/chevron_right.png</textureup>
+		<texturedown colordiffuse="$VAR[AG_Ink3]" flipx="true">icons/chevron_right.png</texturedown>
+		<textureupfocus colordiffuse="$VAR[Aeon_OnBarInk]">icons/chevron_right.png</textureupfocus>
+		<texturedownfocus colordiffuse="$VAR[Aeon_OnBarInk]" flipx="true">icons/chevron_right.png</texturedownfocus>
+		<textureupdisabled colordiffuse="$VAR[AG_Disabled]">icons/chevron_right.png</textureupdisabled>
+		<texturedowndisabled colordiffuse="$VAR[AG_Disabled]" flipx="true">icons/chevron_right.png</texturedowndisabled>
+		<textoffsetx>24</textoffsetx>
+		<aligny>center</aligny>
+		<reverse>yes</reverse>
+		<pulseonselect>false</pulseonselect>
+	</default>
+	<default type="spincontrol">
+		<font>font13</font>
+		<textcolor>$VAR[AG_Ink]</textcolor>
+		<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+		<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+		<width>24</width>
+		<height>24</height>
+		<textureup colordiffuse="$VAR[AG_Ink3]">icons/chevron_right.png</textureup>
+		<texturedown colordiffuse="$VAR[AG_Ink3]" flipx="true">icons/chevron_right.png</texturedown>
+		<textureupfocus colordiffuse="$VAR[Aeon_OnBarInk]">icons/chevron_right.png</textureupfocus>
+		<texturedownfocus colordiffuse="$VAR[Aeon_OnBarInk]" flipx="true">icons/chevron_right.png</texturedownfocus>
+		<textureupdisabled colordiffuse="$VAR[AG_Disabled]">icons/chevron_right.png</textureupdisabled>
+		<texturedowndisabled colordiffuse="$VAR[AG_Disabled]" flipx="true">icons/chevron_right.png</texturedowndisabled>
+		<align>right</align>
+		<reverse>yes</reverse>
+		<subtype>text</subtype>
+	</default>
+	<default type="sliderex">
+		<font>font13</font>
+		<textcolor>$VAR[AG_Ink]</textcolor>
+		<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+		<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+		<texturefocus border="4,0,0,0" colordiffuse="aeon_white">common/aeon_row_flat.png</texturefocus>
+		<texturenofocus />
+		<sliderwidth>240</sliderwidth>
+		<sliderheight>24</sliderheight>
+		<texturesliderbar colordiffuse="$VAR[AG_Line2]">common/aeon_slider_track.png</texturesliderbar>
+		<texturesliderbardisabled colordiffuse="$VAR[AG_Line]">common/aeon_slider_track.png</texturesliderbardisabled>
+		<textureslidernib colordiffuse="$VAR[AG_Ink2]">common/aeon_slider_nib.png</textureslidernib>
+		<textureslidernibfocus colordiffuse="$VAR[Aeon_OnBarInk]">common/aeon_slider_nib.png</textureslidernibfocus>
+		<textureslidernibdisabled colordiffuse="$VAR[AG_Disabled]">common/aeon_slider_nib.png</textureslidernibdisabled>
+		<textoffsetx>24</textoffsetx>
+		<aligny>center</aligny>
+	</default>
+	<default type="slider">
+		<texturesliderbar border="6,0,6,0" colordiffuse="$VAR[AG_Line2]">aeon/track_12.png</texturesliderbar>
+		<texturesliderbardisabled border="6,0,6,0" colordiffuse="$VAR[AG_Line]">aeon/track_12.png</texturesliderbardisabled>
+		<textureslidernib colordiffuse="$VAR[AG_Ink2]">aeon/circle_24.png</textureslidernib>
+		<textureslidernibfocus colordiffuse="$VAR[Aeon_OnBarInk]">aeon/circle_24.png</textureslidernibfocus>
+		<textureslidernibdisabled colordiffuse="$VAR[AG_Disabled]">aeon/circle_24.png</textureslidernibdisabled>
+		<orientation>horizontal</orientation>
+	</default>
+	<default type="colorbutton">
+		<font>font13</font>
+		<textcolor>$VAR[AG_Ink]</textcolor>
+		<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+		<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+		<texturefocus border="4,0,0,0" colordiffuse="aeon_white">common/aeon_row_flat.png</texturefocus>
+		<texturenofocus />
+		<colorwidth>60</colorwidth>
+		<colorheight>30</colorheight>
+		<texturecolormask>common/white.png</texturecolormask>
+		<texturecolordisabledmask colordiffuse="$VAR[AG_Disabled]">common/white.png</texturecolordisabledmask>
+		<textoffsetx>24</textoffsetx>
+		<align>left</align>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
+	</default>
+	<default type="edit">
+		<font>font13</font>
+		<textcolor>$VAR[AG_Ink]</textcolor>
+		<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+		<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+		<invalidcolor>$VAR[AG_Accent]</invalidcolor>
+		<texturefocus border="4,0,0,0" colordiffuse="aeon_white">common/aeon_row_flat.png</texturefocus>
+		<texturenofocus />
+		<textoffsetx>24</textoffsetx>
+		<aligny>center</aligny>
+		<pulseonselect>false</pulseonselect>
+	</default>
+	<default type="progress">
+		<texturebg border="6,0,6,0" colordiffuse="$VAR[AG_Line2]">aeon/track_12.png</texturebg>
+		<lefttexture />
+		<midtexture subpixel="true" border="6,0,6,0" colordiffuse="$VAR[AG_Accent]">aeon/track_12.png</midtexture>
+		<righttexture subpixel="true" />
+		<overlaytexture />
+	</default>
+	<default type="scrollbar">
+		<texturesliderbackground border="4" colordiffuse="$VAR[AG_Line]">aeon/track_8.png</texturesliderbackground>
+		<texturesliderbar border="4" colordiffuse="$VAR[AG_Ink3]">aeon/track_8.png</texturesliderbar>
+		<texturesliderbarfocus border="4" colordiffuse="$VAR[Aeon_SBFocus]">aeon/track_8.png</texturesliderbarfocus>
+		<textureslidernib />
+		<textureslidernibfocus />
+		<showonepage>false</showonepage>
+		<orientation>vertical</orientation>
+	</default>
+	<default type="grouplist">
+		<itemgap>0</itemgap>
+		<align>left</align>
+	</default>
+</includes>

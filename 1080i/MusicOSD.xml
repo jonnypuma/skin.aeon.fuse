@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Music OSD, Aeon style. A flat band along the bottom over Now playing: kicker + up next, transport icons
+	(previous, rewind, play/pause, forward, next, stop), shuffle / repeat / queue / visualiser presets as text
+	blocks, and a seek slider (87) along the very bottom. Buttons come from Includes_Aeon_OSD.xml.
+
+	Kodi id contract (Estuary Omega MusicOSD.xml): defaultcontrol 602 (603 stop when pause is not possible),
+	87 seek, group 200 holding the transport (602 play-pause, 603 stop, 600 previous, 607 next, 601 / 606 seek)
+	and 70054 shuffle, 70053 repeat, 70051 queue, 70056 visualiser presets; Aeon: 70055 lyrics, 70057 album.
+	Left / Right walk the row (grouplist, hidden buttons are skipped). Up -> 87 (Left / Right scrub, Down back).
+-->
+<window>
+	<onload condition="!Player.PauseEnabled">SetFocus(603)</onload>
+	<defaultcontrol always="true">602</defaultcontrol>
+	<include>Anim_OSDSlideUp</include>
+	<controls>
+		<control type="image">
+			<left>0</left>
+			<top>560</top>
+			<width>1920</width>
+			<height>520</height>
+			<texture colordiffuse="f0000000">aeon/osd_scrim_bottom.png</texture>
+		</control>
+		<control type="label">
+			<left>140</left>
+			<top>790</top>
+			<width>900</width>
+			<height>30</height>
+			<font>pl_cap_20</font>
+			<textcolor>ccffffff</textcolor>
+			<label>[UPPERCASE]$VAR[NP_Kicker][/UPPERCASE]</label>
+		</control>
+		<control type="label">
+			<left>1000</left>
+			<top>790</top>
+			<width>780</width>
+			<height>30</height>
+			<align>right</align>
+			<font>pl_cap_20</font>
+			<textcolor>99ffffff</textcolor>
+			<label>[UPPERCASE]$INFO[MusicPlayer.offset(1).Title,$LOCALIZE[31235]  ,]$INFO[MusicPlayer.offset(1).Artist,  |  ,][/UPPERCASE]</label>
+		</control>
+		<control type="group" id="200">
+			<left>140</left>
+			<top>916</top>
+			<width>1640</width>
+			<height>130</height>
+			<control type="grouplist">
+				<left>-140</left>
+				<top>0</top>
+				<width>1920</width>
+				<height>130</height>
+				<orientation>horizontal</orientation>
+				<itemgap>4</itemgap>
+				<usecontrolcoords>true</usecontrolcoords>
+				<!-- 0.56.43: centred on the screen (the user: "not centered on screen"); the list is the screen's width, so a
+				     label under the first or last button still has room -->
+				<align>center</align>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="nav" value="AeonM_"/>
+					<param name="id" value="600"/>
+					<param name="label" value="[B]$LOCALIZE[31121][/B]"/>
+					<param name="icon" value="aeon/icons/prev.png"/>
+					<param name="onclick" value="PlayerControl(Previous)"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="nav" value="AeonM_"/>
+					<param name="id" value="601"/>
+					<param name="label" value="[B]$LOCALIZE[31122][/B]"/>
+					<param name="icon" value="aeon/icons/rewind.png"/>
+					<param name="onclick" value="PlayerControl(Rewind)"/>
+					<param name="visible" value="Player.SeekEnabled"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="nav" value="AeonM_"/>
+					<param name="id" value="602"/>
+					<param name="label" value="$VAR[Aeon_OSD_LblPlay]"/>
+					<param name="icon" value="$VAR[Aeon_OSD_Play]"/>
+					<param name="onclick" value="PlayerControl(Play)"/>
+					<param name="visible" value="Player.PauseEnabled"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="nav" value="AeonM_"/>
+					<param name="id" value="606"/>
+					<param name="label" value="[B]$LOCALIZE[31125][/B]"/>
+					<param name="icon" value="aeon/icons/forward.png"/>
+					<param name="onclick" value="PlayerControl(Forward)"/>
+					<param name="visible" value="Player.SeekEnabled"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="nav" value="AeonM_"/>
+					<param name="id" value="607"/>
+					<param name="label" value="[B]$LOCALIZE[31126][/B]"/>
+					<param name="icon" value="aeon/icons/next.png"/>
+					<param name="onclick" value="PlayerControl(Next)"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="nav" value="AeonM_"/>
+					<param name="id" value="603"/>
+					<param name="label" value="[B]$LOCALIZE[31124][/B]"/>
+					<param name="icon" value="aeon/icons/stop.png"/>
+					<param name="onclick" value="PlayerControl(Stop)"/>
+				</include>
+				<control type="group"><width>26</width><height>90</height></control>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="nav" value="AeonM_"/>
+					<param name="id" value="70054"/>
+					<param name="label" value="$VAR[Aeon_OSD_LblShuffle]"/>
+					<param name="icon" value="aeon/icons/shuffle.png"/>
+					<param name="onclick" value="PlayerControl(Random)"/>
+					<param name="active" value="Playlist.IsRandom"/>
+					<param name="visible" value="!MusicPartyMode.Enabled"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="nav" value="AeonM_"/>
+					<param name="id" value="70053"/>
+					<param name="label" value="$VAR[Aeon_OSD_LblRepeat]"/>
+					<param name="icon" value="aeon/icons/repeat.png"/>
+					<param name="onclick" value="PlayerControl(Repeat)"/>
+					<param name="active" value="Playlist.IsRepeat | Playlist.IsRepeatOne"/>
+					<param name="visible" value="!MusicPartyMode.Enabled"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="nav" value="AeonM_"/>
+					<param name="id" value="70056"/>
+					<param name="label" value="$VAR[Aeon_OSD_LblPresets]"/>
+					<param name="icon" value="aeon/icons/sparkle.png"/>
+					<param name="onclick" value="ActivateWindow(visualisationpresetlist)"/>
+					<param name="visible" value="Visualisation.Enabled + Visualisation.HasPresets"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="nav" value="AeonM_"/>
+					<param name="id" value="70055"/>
+					<param name="label" value="$VAR[Aeon_OSD_LblLyrics]"/>
+					<param name="icon" value="common/aeon_ic_lyrics.png"/>
+					<param name="onclick" value="RunScript(script.aeon.helper,lyrics)"/>
+					<param name="active" value="Skin.HasSetting(aeon.lyricson)"/>
+				</include>
+				<include content="Aeon_OSD_IconBtn">
+					<param name="nav" value="AeonM_"/>
+					<param name="id" value="70051"/>
+					<param name="label" value="$VAR[Aeon_OSD_LblQueue]"/>
+					<param name="icon" value="common/aeon_ic_queue.png"/>
+					<!-- the controls are a modal dialog: Kodi will not open a window over it, so they close first -->
+					<param name="onclick" value="Dialog.Close(musicosd,true)"/>
+					<param name="onclick2" value="ActivateWindow(musicplaylist)"/>
+					<param name="visible" value="Integer.IsGreater(Playlist.Length(music),0)"/>
+				</include>
+				<!-- Album (0.26.0): the album of the song in the music library (script.aeon.helper closes the controls and the
+				     lyrics first; Kodi opens no window over a modal dialog). Library songs only. -->
+				<include content="Aeon_OSD_IconBtn">
+					<param name="nav" value="AeonM_"/>
+					<param name="id" value="70057"/>
+					<param name="label" value="$VAR[Aeon_OSD_LblAlbum]"/>
+					<param name="icon" value="aeon/icons/disc.png"/>
+					<param name="onclick" value="RunScript(script.aeon.helper,albumview)"/>
+					<param name="visible" value="Integer.IsGreater(MusicPlayer.DBID,0)"/>
+				</include>
+			</control>
+		</control>
+		<!-- 0.56.45 osdtracks -->
+		<control type="group" id="700">
+			<left>1516</left><top>190</top><width>324</width><height>588</height>
+			<visible>Integer.IsGreater(MusicPlayer.DBID,0) + !String.IsEmpty(Window(Home).Property(aeon.osd.alb.id))</visible>
+			<animation effect="fade" start="0" end="100" time="200" delay="150">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="150">Hidden</animation>
+			<control type="group"><include>Aeon_Glass</include></control>
+			<control type="image"><left>12</left><top>12</top><width>44</width><height>44</height><texture colordiffuse="ffffffff">fg/circle.png</texture><visible>Control.HasFocus(702)</visible></control>
+			<control type="button" id="702">
+				<left>12</left><top>12</top><width>44</width><height>44</height>
+				<label></label><texturefocus /><texturenofocus />
+				<onleft>noop</onleft><onright>703</onright><onup>noop</onup><ondown>701</ondown>
+				<onclick condition="!String.IsEmpty(Window(Home).Property(aeon.osd.alb.prev))">RunScript(script.aeon.helper,osdalbum,prev)</onclick>
+			</control>
+			<control type="image"><left>22</left><top>22</top><width>24</width><height>24</height><aspectratio>keep</aspectratio><texture colordiffuse="ccffffff">aeon/icons/chevron_left.png</texture><visible>!Control.HasFocus(702) + !String.IsEmpty(Window(Home).Property(aeon.osd.alb.prev))</visible></control>
+			<control type="image"><left>22</left><top>22</top><width>24</width><height>24</height><aspectratio>keep</aspectratio><texture colordiffuse="33ffffff">aeon/icons/chevron_left.png</texture><visible>!Control.HasFocus(702) + !!String.IsEmpty(Window(Home).Property(aeon.osd.alb.prev))</visible></control>
+			<control type="image"><left>22</left><top>22</top><width>24</width><height>24</height><aspectratio>keep</aspectratio><texture colordiffuse="ff0f1115">aeon/icons/chevron_left.png</texture><visible>Control.HasFocus(702)</visible></control>
+			<control type="image"><left>268</left><top>12</top><width>44</width><height>44</height><texture colordiffuse="ffffffff">fg/circle.png</texture><visible>Control.HasFocus(703)</visible></control>
+			<control type="button" id="703">
+				<left>268</left><top>12</top><width>44</width><height>44</height>
+				<label></label><texturefocus /><texturenofocus />
+				<onleft>702</onleft><onright>noop</onright><onup>noop</onup><ondown>701</ondown>
+				<onclick condition="!String.IsEmpty(Window(Home).Property(aeon.osd.alb.next))">RunScript(script.aeon.helper,osdalbum,next)</onclick>
+			</control>
+			<control type="image"><left>278</left><top>22</top><width>24</width><height>24</height><aspectratio>keep</aspectratio><texture colordiffuse="ccffffff">aeon/icons/chevron_right.png</texture><visible>!Control.HasFocus(703) + !String.IsEmpty(Window(Home).Property(aeon.osd.alb.next))</visible></control>
+			<control type="image"><left>278</left><top>22</top><width>24</width><height>24</height><aspectratio>keep</aspectratio><texture colordiffuse="33ffffff">aeon/icons/chevron_right.png</texture><visible>!Control.HasFocus(703) + !!String.IsEmpty(Window(Home).Property(aeon.osd.alb.next))</visible></control>
+			<control type="image"><left>278</left><top>22</top><width>24</width><height>24</height><aspectratio>keep</aspectratio><texture colordiffuse="ff0f1115">aeon/icons/chevron_right.png</texture><visible>Control.HasFocus(703)</visible></control>
+			<control type="label"><left>60</left><top>12</top><width>204</width><height>44</height><align>center</align><aligny>center</aligny><font>pl_cap_16</font><textcolor>99ffffff</textcolor><scroll>true</scroll><label>[UPPERCASE]$INFO[MusicPlayer.AlbumArtist][/UPPERCASE]</label><visible>!Control.HasFocus(702) + !Control.HasFocus(703)</visible></control>
+			<control type="label"><left>60</left><top>12</top><width>204</width><height>44</height><align>center</align><aligny>center</aligny><font>pl_small_20</font><textcolor>ffffffff</textcolor><scroll>true</scroll><label>$INFO[Window(Home).Property(aeon.osd.alb.prev.name)]</label><visible>Control.HasFocus(702)</visible></control>
+			<control type="label"><left>60</left><top>12</top><width>204</width><height>44</height><align>center</align><aligny>center</aligny><font>pl_small_20</font><textcolor>ffffffff</textcolor><scroll>true</scroll><label>$INFO[Window(Home).Property(aeon.osd.alb.next.name)]</label><visible>Control.HasFocus(703)</visible></control>
+			<control type="label"><left>14</left><top>62</top><width>296</width><height>60</height><font>pl_small_20_bold</font><textcolor>ffffffff</textcolor><wrapmultiline>true</wrapmultiline><label>$INFO[Window(Home).Property(aeon.osd.alb.name)]</label></control>
+			<control type="label"><left>14</left><top>120</top><width>296</width><height>24</height><font>pl_small_20</font><textcolor>80ffffff</textcolor><label>$INFO[Window(Home).Property(aeon.osd.alb.year)]</label></control>
+			<control type="image"><left>14</left><top>152</top><width>296</width><height>1</height><texture colordiffuse="26ffffff">common/white.png</texture></control>
+			<control type="list" id="701">
+				<left>12</left><top>162</top><width>300</width><height>414</height>
+				<onup>702</onup><ondown>87</ondown><onleft>602</onleft><onright>noop</onright>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<orientation>vertical</orientation>
+				<itemlayout width="300" height="46">
+					<control type="label"><left>12</left><top>0</top><width>36</width><height>44</height><aligny>center</aligny><font>pl_small_20</font><textcolor>80ffffff</textcolor><label>$INFO[ListItem.TrackNumber]</label><visible>!ListItem.IsPlaying</visible></control>
+					<control type="image"><left>14</left><top>12</top><width>20</width><height>20</height><texture colordiffuse="$VAR[Aeon_Accent]">common/aeon_eq_anim.gif</texture><visible>ListItem.IsPlaying</visible></control>
+					<control type="label"><left>48</left><top>0</top><width>240</width><height>44</height><aligny>center</aligny><font>pl_small_20</font><textcolor>ffffffff</textcolor><scroll>false</scroll><label>$INFO[ListItem.Title]</label></control>
+				</itemlayout>
+				<focusedlayout width="300" height="46"><control type="image"><left>0</left><top>0</top><width>300</width><height>44</height><texture border="20" colordiffuse="$VAR[Aeon_MenuFocusColR]">$VAR[Aeon_MenuFocusTex]</texture><visible>Control.HasFocus(701)</visible></control>
+					<control type="label"><left>12</left><top>0</top><width>36</width><height>44</height><aligny>center</aligny><font>pl_small_20</font><textcolor>$VAR[Aeon_OnBarInk3]</textcolor><label>$INFO[ListItem.TrackNumber]</label><visible>!ListItem.IsPlaying</visible></control>
+					<control type="image"><left>14</left><top>12</top><width>20</width><height>20</height><texture colordiffuse="$VAR[Aeon_OnBarInk]">common/aeon_eq_anim.gif</texture><visible>ListItem.IsPlaying</visible></control>
+					<control type="label"><left>48</left><top>0</top><width>240</width><height>44</height><aligny>center</aligny><font>pl_small_20</font><textcolor>$VAR[Aeon_OnBarInk]</textcolor><scroll>true</scroll><label>$INFO[ListItem.Title]</label></control>
+				</focusedlayout>
+				<content target="music" sortby="track" sortorder="ascending">$VAR[Aeon_OsdAlbumPath]</content>
+				<onclick>RunScript(script.aeon.helper,osdplay,$INFO[ListItem.DBID])</onclick>
+			</control>
+		</control>
+		<!-- elapsed / total and the seek bar, above the controls, same width -->
+		<control type="label">
+			<left>140</left>
+			<top>826</top>
+			<width>300</width>
+			<height>34</height>
+			<font>pl_small_20</font>
+			<textcolor>ccffffff</textcolor>
+			<label>$VAR[Aeon_NP_Time]</label>
+		</control>
+		<control type="label">
+			<left>1480</left>
+			<top>826</top>
+			<width>300</width>
+			<height>34</height>
+			<align>right</align>
+			<font>pl_small_20</font>
+			<textcolor>ccffffff</textcolor>
+			<label>$VAR[Aeon_NP_Dur]</label>
+		</control>
+		<control type="image">
+			<left>140</left>
+			<top>876</top>
+			<width>1640</width>
+			<height>4</height>
+			<texture colordiffuse="33ffffff">common/aeon_bar_4.png</texture>
+		</control>
+		<control type="progress">
+			<left>140</left>
+			<top>876</top>
+			<width>1640</width>
+			<height>4</height>
+			<reveal>true</reveal>
+			<texturebg colordiffuse="00ffffff">common/aeon_bar_4.png</texturebg>
+			<lefttexture></lefttexture>
+			<midtexture subpixel="true" colordiffuse="ffffffff">common/aeon_bar_4.png</midtexture>
+			<righttexture subpixel="true"></righttexture>
+			<overlaytexture></overlaytexture>
+			<info>Player.Progress</info>
+		</control>
+		<control type="progress">
+			<left>140</left>
+			<top>872</top>
+			<width>1640</width>
+			<height>8</height>
+			<reveal>true</reveal>
+			<texturebg colordiffuse="00ffffff">common/aeon_bar_8.png</texturebg>
+			<lefttexture></lefttexture>
+			<midtexture subpixel="true" colordiffuse="ffffffff">common/aeon_bar_8.png</midtexture>
+			<righttexture subpixel="true"></righttexture>
+			<overlaytexture></overlaytexture>
+			<info>Player.Progress</info>
+			<visible>Control.HasFocus(87)</visible>
+		</control>
+		<control type="slider" id="87">
+			<description>seek bar</description>
+			<left>140</left>
+			<top>862</top>
+			<width>1640</width>
+			<height>30</height>
+			<info>Player.Progress</info>
+			<action>seek</action>
+			<texturesliderbar colordiffuse="00ffffff">common/white.png</texturesliderbar>
+			<textureslidernib colordiffuse="00ffffff">common/aeon_nib.png</textureslidernib>
+			<textureslidernibfocus colordiffuse="00ffffff">common/aeon_nib.png</textureslidernibfocus>
+			<onup condition="Control.IsVisible(700)">701</onup><onup>noop</onup>
+			<ondown>602</ondown>
+			<visible>Player.SeekEnabled</visible>
+		</control>
+	</controls>
+</window>

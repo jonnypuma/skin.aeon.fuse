@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 0.40.4: palette "Harbor" for the library views only: the menus keep the Aeon colours -->
+<colors>
+    <color name="lib_aeon_white">ff7ec8c3</color>
+    <color name="lib_aeon_accent">ff7ec8c3</color>
+    <color name="lib_aeon_onbar">ff0e201f</color>
+    <color name="lib_aeon_onbar_cc">cc0e201f</color>
+    <color name="lib_aeon_onbar_bb">bb0e201f</color>
+    <color name="lib_aeon_onbar_aa">aa0e201f</color>
+    <color name="lib_aeon_onbar_99">990e201f</color>
+    <color name="lib_aeon_onaccent">ff0e201f</color>
+    <color name="lib_aeon_box">ff395a5c</color>
+    <color name="lib_aeon_sbbar">887ec8c3</color>
+    <color name="lib_x_column">267ec8c3</color>
+    <color name="lib_x_ground">ff222a37</color>
+    <color name="lib_x_panel">ff132033</color>
+    <color name="lib_x_surface">ff132033</color>
+    <color name="lib_x_raised">ff1b2331</color>
+    <color name="lib_x_line">ff3c4451</color>
+    <color name="lib_x_line2">ff4e5662</color>
+    <color name="lib_x_accent">ff7ec8c3</color>
+    <color name="lib_x_accenttext">ff7ec8c3</color>
+    <color name="lib_x_onaccent">ff0e201f</color>
+    <color name="lib_x_deep">ff0c1422</color>
+    <color name="lib_x_deep_f0">f00e1827</color>
+    <color name="lib_x_deep_e6">e60e1827</color>
+    <color name="lib_x_deep_cc">cc0f192a</color>
+    <color name="lib_x_deep_8c">8c0e1827</color>
+</colors>

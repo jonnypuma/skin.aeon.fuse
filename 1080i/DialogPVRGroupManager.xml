@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	PVR channel-group manager (SPEC 5: Minimal, AG_GenericDialog). Builder F, M4.
+	Kodi id contract (Estuary Omega DialogPVRGroupManager.xml): heading 1, groups list 13 +
+	scrollbar 73, ungrouped channels list 11 + scrollbar 71 + header label 21, grouped channels
+	list 12 + scrollbar 72 + header label 22, buttons in grouplist 9000: 29 OK, 26 add, 27 rename,
+	25 hide (radio), 28 delete, 35 regenerate thumbnail, 34 TV/radio toggle; hidden label 20
+	(Kodi passes the group name through it).
+-->
+<window>
+	<defaultcontrol always="true">29</defaultcontrol>
+	<include>Anim_DialogOpenClose</include>
+	<controls>
+		<include condition="!$EXP[FGS]">PVRGrpMgr_PageClassic</include>
+		<include condition="$EXP[FGS]">PVRGrpMgr_PageFGS</include>
+	</controls>
+</window>

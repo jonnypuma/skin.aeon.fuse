@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Volume (M4, Builder E): minimal top strip in the offset-strip vocabulary (mockups/Offset):
+	720px, top-centre, mono caption + mono value (accent) + 2px track. Volume is usually on the TV
+	via CEC, so this rarely shows. Hidden progress 29999 holds Player.Volume (Estuary contract) so
+	the label can read the percentage.
+-->
+<window>
+	<zorder>4</zorder>
+	<controls>
+		<include condition="!$EXP[FGS]">Vol_PageClassic</include>
+		<include condition="$EXP[FGS]">Vol_PageFGS</include>
+	</controls>
+</window>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<smartplaylist type="tvshows">
+	<name>Top rated shows</name>
+	<match>all</match>
+	<rule field="rating" operator="greaterthan"><value>7</value></rule>
+	<limit>30</limit>
+	<order direction="descending">rating</order>
+</smartplaylist>

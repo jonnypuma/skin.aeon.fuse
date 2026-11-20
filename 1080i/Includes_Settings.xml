@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Settings pieces (owner: Builder E). Used by Settings.xml, SettingsCategory.xml, DialogSettings.xml,
+	DialogAddonSettings.xml and SkinSettings.xml.
+
+	Kodi-cloned rows (templates 7-15, category 10): Kodi builds each setting as ONE control, so the
+	row look lives in its textures: <texturenofocus> = 1px hairline at the bottom (media/dialogs/
+	row_rule.png), <texturefocus> = 2px accent frame drawn inside the row. Kodi gives label and value
+	the same font/colour, so the value column can't be mono here (SkinSettings, which the skin draws
+	itself, does use mono/segmented values). Id plans copied from Estuary Omega.
+-->
+<includes>
+	<!-- PREVIEW PICTURES (_src/skin_previews.py) -->
+	<variable name="Aeon_PrevPic_movies">
+		<value>previews/clear_movies.jpg</value>
+	</variable>
+	<variable name="Aeon_PrevPic_tvshows">
+		<value>previews/clear_tvshows.jpg</value>
+	</variable>
+	<variable name="Aeon_PrevPic_music">
+		<value>previews/clear_music.jpg</value>
+	</variable>
+	<variable name="Aeon_PrevPic_video">
+		<value>previews/clear_video.jpg</value>
+	</variable>
+	<!-- /PREVIEW PICTURES -->
+	<!-- 0.56.53 libremote / recommended add-ons rows (helper remotelib.py, addonrec.py) -->
+	<variable name="Aeon_LibRemoteHost">
+		<value condition="!String.IsEmpty(Skin.String(aeon.libremote.host))">$INFO[Skin.String(aeon.libremote.host)]</value>
+		<value>$ADDON[skin.aeon.fuse 32780]</value>
+	</variable>
+	<variable name="Aeon_LibRemoteUser">
+		<value condition="!String.IsEmpty(Skin.String(aeon.libremote.user))">$INFO[Skin.String(aeon.libremote.user)]</value>
+		<value>$ADDON[skin.aeon.fuse 32780]</value>
+	</variable>
+	<variable name="Aeon_LibRemotePass">
+		<value condition="Skin.HasSetting(aeon.libremote.pwset)">&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;</value>
+		<value>$ADDON[skin.aeon.fuse 32780]</value>
+	</variable>
+	<variable name="Aeon_LibRemoteTest">
+		<value>$INFO[Skin.String(aeon.libremote.status)]</value>
+	</variable>
+	<variable name="Aeon_RecCount">
+		<value>$INFO[Skin.String(aeon.rec.count)]</value>
+	</variable>
+	<!-- 0.56.52 places: where ratings / media info chips are drawn (helper placepick; all on by default) -->
+	<variable name="Aeon_RatePlaces">
+		<value condition="!String.IsEmpty(Skin.String(aeon.rate.places))">$INFO[Skin.String(aeon.rate.places)]</value>
+		<value>6 / 6</value>
+	</variable>
+	<expression name="Aeon_Rate_lib">!Skin.HasSetting(aeon.rateoff.lib)</expression>
+	<expression name="Aeon_Rate_info">!Skin.HasSetting(aeon.rateoff.info)</expression>
+	<expression name="Aeon_Rate_widgets">!Skin.HasSetting(aeon.rateoff.widgets)</expression>
+	<expression name="Aeon_Rate_spot">!Skin.HasSetting(aeon.rateoff.spot)</expression>
+	<expression name="Aeon_Rate_player">!Skin.HasSetting(aeon.rateoff.player)</expression>
+	<expression name="Aeon_Rate_ss">!Skin.HasSetting(aeon.rateoff.ss)</expression>
+	<expression name="Aeon_Rate_pvr">!Skin.HasSetting(aeon.rateoff.pvr)</expression>
+	<variable name="Aeon_ChipPlaces">
+		<value condition="!String.IsEmpty(Skin.String(aeon.chip.places))">$INFO[Skin.String(aeon.chip.places)]</value>
+		<value>6 / 6</value>
+	</variable>
+	<expression name="Aeon_Chip_lib">!Skin.HasSetting(aeon.chipoff.lib)</expression>
+	<expression name="Aeon_Chip_info">!Skin.HasSetting(aeon.chipoff.info)</expression>
+	<expression name="Aeon_Chip_widgets">!Skin.HasSetting(aeon.chipoff.widgets)</expression>
+	<expression name="Aeon_Chip_spot">!Skin.HasSetting(aeon.chipoff.spot)</expression>
+	<expression name="Aeon_Chip_player">!Skin.HasSetting(aeon.chipoff.player)</expression>
+	<expression name="Aeon_Chip_ss">!Skin.HasSetting(aeon.chipoff.ss)</expression>
+	<expression name="Aeon_Chip_pvr">!Skin.HasSetting(aeon.chipoff.pvr)</expression>
+	<!-- 0.56.22 chips: Media info chips, how many are on (the helper writes it when you pick; 7 of 14 by default) -->
+	<variable name="Aeon_ChipsShown">
+		<value condition="!String.IsEmpty(Skin.String(aeon.chips.shown))">$INFO[Skin.String(aeon.chips.shown)]</value>
+		<value>7 / 17</value>
+	</variable>
+	<!-- 0.56.20 cinema_row: the In cinemas now row's value -->
+	<variable name="Aeon_CinemaFrom">
+		<value condition="!String.IsEmpty(Skin.String(aeon.cinema.country)) + !String.IsEmpty(Skin.String(aeon.cinema.countryname))">$INFO[Skin.String(aeon.cinema.countryname)]</value>
+		<value>$ADDON[skin.aeon.fuse 32620]</value>
+	</variable>
+	<!-- ============================================================ Kodi-cloned templates -->
+	<!-- Look of one setting row. params: width, height, font -->
+	<include name="AG_SettingRow">
+		<param name="width">1264</param>
+		<param name="height">settings_row_h</param>
+		<param name="font">st_ui_24_semibold</param>
+		<definition>
+			<width>$PARAM[width]</width>
+			<height>$PARAM[height]</height>
+			<font>$PARAM[font]</font>
+			<textcolor>99ffffff</textcolor>
+			<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+			<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+			<invalidcolor>ffe5484d</invalidcolor>
+			<selectedcolor>ccffffff</selectedcolor>
+			<textoffsetx>36</textoffsetx>
+			<aligny>center</aligny>
+			<pulseonselect>false</pulseonselect>
+			<include>Dlg_Tex_RowFocus</include>
+			<include content="Dlg_Tex_RowBox"><param name="color" value="48000000"/></include>
+		</definition>
+	</include>
+
+	<!-- The full template set (ids 7 button, 8 radio, 9 spin, 11 separator, 12 edit, 13 slider,
+	     14 group heading, 15 colour). params: width, height, font -->
+	<!-- Fused Glass (0.35.0): the rows of every settings dialog take the Settings mockup look (FG_SettingTemplates) -->
+	<include name="AG_SettingTemplates">
+		<param name="width">1264</param>
+		<param name="sliderwidth">220</param>
+		<param name="slidertail">Misc_None</param>
+		<param name="height">settings_row_h</param>
+		<param name="font">st_ui_24_semibold</param>
+		<definition>
+			<include content="AG_SettingTemplates_c" condition="!Skin.HasSetting(aeon.fglass)">
+				<param name="width" value="$PARAM[width]"/>
+				<param name="sliderwidth" value="$PARAM[sliderwidth]"/>
+				<param name="slidertail" value="$PARAM[slidertail]"/>
+				<param name="height" value="$PARAM[height]"/>
+				<param name="font" value="$PARAM[font]"/>
+			</include>
+			<include content="FG_SettingTemplates" condition="Skin.HasSetting(aeon.fglass)">
+				<param name="width" value="$PARAM[width]"/>
+			</include>
+		</definition>
+	</include>
+	<include name="AG_SettingTemplates_c">
+		<param name="width">1264</param>
+		<param name="sliderwidth">220</param>
+		<param name="slidertail">Misc_None</param>
+		<param name="height">settings_row_h</param>
+		<param name="font">st_ui_24_semibold</param>
+		<definition>
+			<control type="button" id="7">
+				<description>Default Button</description>
+				<include content="AG_SettingRow">
+					<param name="width" value="$PARAM[width]"/>
+					<param name="height" value="$PARAM[height]"/>
+					<param name="font" value="$PARAM[font]"/>
+				</include>
+			</control>
+			<control type="radiobutton" id="8">
+				<description>Default RadioButton</description>
+				<include content="AG_SettingRow">
+					<param name="width" value="$PARAM[width]"/>
+					<param name="height" value="$PARAM[height]"/>
+					<param name="font" value="$PARAM[font]"/>
+				</include>
+				<radiowidth>24</radiowidth>
+				<radioheight>24</radioheight>
+			</control>
+			<control type="spincontrolex" id="9">
+				<description>Default SpinControlex</description>
+				<include content="AG_SettingRow">
+					<param name="width" value="$PARAM[width]"/>
+					<param name="height" value="$PARAM[height]"/>
+					<param name="font" value="$PARAM[font]"/>
+				</include>
+			</control>
+			<control type="image" id="11">
+				<description>separator</description>
+				<width>$PARAM[width]</width>
+				<height>2</height>
+				<texture colordiffuse="$VAR[AG_Line]">common/white.png</texture>
+			</control>
+			<control type="edit" id="12">
+				<description>Default Edit</description>
+				<include content="AG_SettingRow">
+					<param name="width" value="$PARAM[width]"/>
+					<param name="height" value="$PARAM[height]"/>
+					<param name="font" value="$PARAM[font]"/>
+				</include>
+			</control>
+			<control type="sliderex" id="13">
+				<description>Default Slider</description>
+				<include content="AG_SettingRow">
+					<param name="width" value="$PARAM[width]"/>
+					<param name="height" value="$PARAM[height]"/>
+					<param name="font" value="$PARAM[font]"/>
+				</include>
+				<sliderwidth>$PARAM[sliderwidth]</sliderwidth>
+				<sliderheight>24</sliderheight>
+				<include content="$PARAM[slidertail]"/>
+			</control>
+			<control type="label" id="14">
+				<description>Default Label (group heading)</description>
+				<width>$PARAM[width]</width>
+				<height>64</height>
+				<textoffsetx>20</textoffsetx>
+				<font>st_ui_24_bold</font>
+				<textcolor>$VAR[AG_AccentText]</textcolor>
+				<aligny>center</aligny>
+			</control>
+			<control type="colorbutton" id="15">
+				<description>Default ColorButton</description>
+				<include content="AG_SettingRow">
+					<param name="width" value="$PARAM[width]"/>
+					<param name="height" value="$PARAM[height]"/>
+					<param name="font" value="$PARAM[font]"/>
+				</include>
+			</control>
+		</definition>
+	</include>
+
+	<!-- Category button template (id 10): Settings.dc.html categories - hairline on top, 28px label,
+	     tertiary at rest, primary + accent frame on focus. param: width -->
+	<include name="AG_SettingCategoryTemplate">
+		<param name="width">380</param>
+		<definition>
+			<control type="button" id="10">
+				<description>Default Category Button</description>
+				<width>$PARAM[width]</width>
+				<height>settings_row_h</height>
+				<font>st_ui_24_bold</font>
+				<textcolor>ccffffff</textcolor>
+				<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+				<selectedcolor>$VAR[Aeon_OnBarInk]</selectedcolor>
+				<disabledcolor>$VAR[AG_Disabled]</disabledcolor>
+				<textoffsetx>36</textoffsetx>
+				<aligny>center</aligny>
+				<pulseonselect>false</pulseonselect>
+				<include>Dlg_Tex_RowFocus</include>
+				<include content="Dlg_Tex_RowBox"><param name="color" value="ff3c3c3c"/></include>
+			</control>
+		</definition>
+	</include>
+
+	<!-- Settings level toggle (id 20: Basic / Standard / Advanced / Expert, Kodi writes the label).
+	     params: width, height, ondown, onleft, onright -->
+	<!-- the level button under the categories: Up goes to the last category (the one above it), Down to the first.
+	     Kodi numbers the category buttons from -200; a group would otherwise refocus the one used last. -->
+	<include name="AG_LevelTexPlain">
+		<include>Dlg_Tex_RowFocus</include>
+		<texturenofocus border="12" colordiffuse="$VAR[Aeon_LevelCol]">$VAR[Aeon_FuseBox12]</texturenofocus>
+	</include>
+	<include name="AG_LevelTexRound">
+		<texturefocus colordiffuse="aeon_accent">aeon/lvl_bl380.png</texturefocus>
+		<texturenofocus colordiffuse="$VAR[Aeon_LevelCol]">aeon/lvl_bl380w.png</texturenofocus>
+	</include>
+	<include name="AG_SettingLevelButton">
+		<param name="width">380</param>
+		<param name="ondown">SetFocus(-200)</param>
+		<param name="onleft">5</param>
+		<param name="onright">5</param>
+		<param name="height">56</param>
+		<param name="round">false</param>
+		<definition>
+			<control type="button" id="20">
+				<width>$PARAM[width]</width>
+				<include condition="$PARAM[round] + $EXP[FGS]">FGS_RowH</include>
+				<include content="Param_H" condition="![$PARAM[round] + $EXP[FGS]]"><param name="h" value="$PARAM[height]"/></include>
+				<include content="Param_F" condition="$EXP[FGS]"><param name="f" value="uc_st_small_20_semibold"/></include><include content="Param_F" condition="![$EXP[FGS]]"><param name="f" value="st_small_20_semibold"/></include>
+				<textcolor>ffffffff</textcolor>
+				<focusedcolor>$VAR[FGS_Aeon_OnBarInk]</focusedcolor>
+				<textoffsetx>20</textoffsetx>
+				<aligny>center</aligny>
+				<pulseonselect>false</pulseonselect>
+				<!-- 0.56.25 round = true (380 x 76 in the Aeon Glass card): the card's bottom-left corner (AG_LevelTexRound) -->
+				<include condition="$PARAM[round] + Skin.HasSetting(aeon.vglass) + !Skin.HasSetting(aeon.fglass) + !String.IsEqual(Skin.String(aeon.menutheme),fused)">AG_LevelTexRound</include>
+				<include condition="![$PARAM[round] + Skin.HasSetting(aeon.vglass) + !Skin.HasSetting(aeon.fglass) + !String.IsEqual(Skin.String(aeon.menutheme),fused)] + ![$PARAM[round] + $EXP[FGS]]">AG_LevelTexPlain</include>
+				<include condition="$PARAM[round] + $EXP[FGS]">FGS_RowTex</include>
+				<onclick>SettingsLevelChange</onclick>
+				<!-- Up: the last category (Kodi numbers the cloned category buttons -200, -199 ...). A plain
+				     navigation id here would run after these and win, and $VAR is not resolved in navigation. -->
+				<onup condition="Integer.IsEqual(Container(3).NumItems,1)">SetFocus(-200)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,2)">SetFocus(-199)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,3)">SetFocus(-198)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,4)">SetFocus(-197)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,5)">SetFocus(-196)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,6)">SetFocus(-195)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,7)">SetFocus(-194)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,8)">SetFocus(-193)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,9)">SetFocus(-192)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,10)">SetFocus(-191)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,11)">SetFocus(-190)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,12)">SetFocus(-189)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,13)">SetFocus(-188)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,14)">SetFocus(-187)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,15)">SetFocus(-186)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,16)">SetFocus(-185)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,17)">SetFocus(-184)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,18)">SetFocus(-183)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,19)">SetFocus(-182)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,20)">SetFocus(-181)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,21)">SetFocus(-180)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,22)">SetFocus(-179)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,23)">SetFocus(-178)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,24)">SetFocus(-177)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,25)">SetFocus(-176)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,26)">SetFocus(-175)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,27)">SetFocus(-174)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,28)">SetFocus(-173)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,29)">SetFocus(-172)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,30)">SetFocus(-171)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,31)">SetFocus(-170)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,32)">SetFocus(-169)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,33)">SetFocus(-168)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,34)">SetFocus(-167)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,35)">SetFocus(-166)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,36)">SetFocus(-165)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,37)">SetFocus(-164)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,38)">SetFocus(-163)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,39)">SetFocus(-162)</onup>
+				<onup condition="Integer.IsEqual(Container(3).NumItems,40)">SetFocus(-161)</onup>
+				<onup condition="Integer.IsGreater(Container(3).NumItems,40)">3</onup>
+				<ondown>$PARAM[ondown]</ondown>
+				<onleft>$PARAM[onleft]</onleft>
+				<onright>$PARAM[onright]</onright>
+			</control>
+		</definition>
+	</include>
+
+	<!-- ============================================================ DialogSettings layouts -->
+	<!-- Centred dialog (lock settings, content settings, PVR timers, profiles, sources ...).
+	     Ids (Estuary Omega): heading 2, control area 5, templates 7-15, scrollbar 60,
+	     buttons 28 / 29 / 30 in grouplist 9000 (Kodi labels/hides them). -->
+	<include name="Dlg_SettingsCentred">
+		<control type="group">
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<width>1280</width>
+			<height>880</height>
+			<visible>!Window.IsVisible(sliderdialog)</visible>
+			<include>Anim_FadeVisible</include>
+			<include content="AG_GenericDialog">
+				<param name="width" value="1280"/>
+				<param name="height" value="880"/>
+				<param name="header_id" value="2"/>
+			</include>
+			<control type="grouplist" id="5">
+				<description>control area</description>
+				<left>dialog_inset</left>
+				<top>dialog_content_top</top>
+				<width>920</width>
+				<height>744</height>
+				<itemgap>0</itemgap>
+				<pagecontrol>60</pagecontrol>
+				<onleft>9000</onleft>
+				<onright>9000</onright>
+				<onup>5</onup>
+				<ondown>5</ondown>
+			</control>
+			<include content="AG_SettingTemplates">
+				<param name="width" value="920"/>
+			</include>
+			<include content="AG_Scrollbar">
+				<param name="id" value="60"/>
+				<param name="left" value="956"/>
+				<param name="top" value="dialog_content_top"/>
+				<param name="height" value="744"/>
+				<param name="onleft" value="5"/>
+				<param name="onright" value="9000"/>
+			</include>
+			<control type="grouplist" id="9000">
+				<left>976</left>
+				<top>dialog_content_top</top>
+				<width>280</width>
+				<height>300</height>
+				<orientation>vertical</orientation>
+				<itemgap>12</itemgap>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<include content="AG_DialogButton"><param name="id" value="28"/><param name="width" value="280"/></include>
+				<include content="AG_DialogButton"><param name="id" value="29"/><param name="width" value="280"/></include>
+				<include content="AG_DialogButton"><param name="id" value="30"/><param name="width" value="280"/></include>
+			</control>
+		</control>
+	</include>
+
+	<!-- OSD playback settings (osdaudiosettings / osdsubtitlesettings / osdvideosettings / osdcmssettings),
+	     mockups/AVSettings: 720px right-hand panel, AUDIO / SUBTITLES / VIDEO tabs (9101-9103) that
+	     close this dialog and open the sibling. Hidden while the offset slider is up (Decision 10). -->
+	<!-- OSD settings option list (0.54.4): Fused Glass 1192..1888, the white 4 px inside -> 12 px from both card edges -->
+	<include name="Dlg_OsdListGeo_fg"><left>-8</left><width>696</width></include>
+	<!-- slider rows of that list (0.54.5). Kodi puts the value right-aligned one text offset left of the slider, so
+	     the label gets what the slider, the value and three offsets leave: capped (textwidth, truncated with ...) so a
+	     long translation cannot run into the value. Fused Glass: label 1232..1562, worst value ("-60.0 dB") from 1576,
+	     slider 1708..1848. Glass: label 1308..1589, value from 1601, slider 1722..1812 -->
+	<include name="Dlg_OsdSliderTail_fg"><textwidth>330</textwidth></include>
+	<include name="Dlg_OsdSliderTail"><textwidth>281</textwidth></include>
+	<include name="Dlg_OsdListGeo"><left>dlg_panel_pad</left><width>dlg_panel_in_w</width></include>
+	<include name="Dlg_SettingsPanel">
+		<control type="group">
+			<visible>!Window.IsVisible(sliderdialog)</visible>
+			<include>Anim_FadeVisible</include>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>screen_w</width>
+				<height>screen_h</height>
+				<!-- own fades: without them Kodi draws this dim over the dialog (seen on Shield 2026-10-18). Light, so the
+				     picture stays visible while its settings change -->
+				<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+				<texture colordiffuse="55000000">common/white.png</texture>
+			</control>
+			<control type="group">
+				<left>dlg_panel_x</left>
+				<!-- slide in on a fresh open, appear instantly when a tab swaps the dialog -->
+				<include content="Anim_SidePanel" condition="String.IsEmpty(Window(Home).Property(aeon.osdtab))"><param name="offset" value="80"/></include>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>dlg_panel_w</width>
+					<height>screen_h</height>
+					<texture colordiffuse="$VAR[AG_Ground]">common/white.png</texture>
+					<visible>!$EXP[Aeon_FGlass]</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>rule_h</width>
+					<height>screen_h</height>
+					<texture colordiffuse="$VAR[AG_Line]">common/hairline_v.png</texture>
+					<visible>!$EXP[Aeon_FGlass]</visible>
+				</control>
+				<!-- Fused Glass: a frosted rounded panel (r28 since 0.54.4), 12 px clear of the screen edges and 24 px on the right, where the scroll bar sits; the option highlight 12 px from both card edges; the text column 1232..1848 (0.54.5, 40 px in from the row ends: the slider rows need the room) -->
+				<control type="image"><left>-16</left><top>12</top><width>712</width><height>1056</height><texture border="28" colordiffuse="$VAR[FG_MenuPanel]">fg/r28.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+				<control type="image"><left>-16</left><top>12</top><width>712</width><height>1056</height><texture border="28" colordiffuse="$VAR[FG_EdgeM]">fg/e28.png</texture><visible>$EXP[Aeon_FGlass]</visible></control>
+				<!-- tabs -->
+				<control type="group">
+					<include condition="Skin.HasSetting(aeon.fglass)">Dlg_PanelShift_fg</include>
+					<top>dlg_panel_top</top>
+					<include content="Dlg_OSDTab">
+						<param name="id" value="9101"/>
+						<param name="onleft" value="noop"/>
+						<param name="onright" value="9102"/>
+						<param name="uwidth" value="55"/>
+						<param name="target" value="osdaudiosettings"/>
+						<param name="left" value="62"/>
+						<param name="width" value="75"/>
+						<param name="label" value="$LOCALIZE[31128]"/>
+						<param name="current" value="Window.IsActive(osdaudiosettings)"/>
+					</include>
+					<include content="Dlg_OSDTab">
+						<param name="id" value="9102"/>
+						<param name="onleft" value="9101"/>
+						<param name="onright" value="9103"/>
+						<param name="uwidth" value="99"/>
+						<param name="target" value="osdsubtitlesettings"/>
+						<param name="left" value="149"/>
+						<param name="width" value="119"/>
+						<param name="label" value="$LOCALIZE[31127]"/>
+						<param name="current" value="Window.IsActive(osdsubtitlesettings)"/>
+					</include>
+					<include content="Dlg_OSDTab">
+						<param name="id" value="9103"/>
+						<param name="onleft" value="9102"/>
+						<param name="onright" value="noop"/>
+						<param name="uwidth" value="55"/>
+						<param name="target" value="osdvideosettings"/>
+						<param name="left" value="280"/>
+						<param name="width" value="75"/>
+						<param name="label" value="$LOCALIZE[31563]"/>
+						<param name="current" value="Window.IsActive(osdvideosettings) | Window.IsActive(osdcmssettings)"/>
+					</include>
+				</control>
+				<control type="label" id="2">
+					<description>heading (Kodi: Audio settings / Subtitle settings / Video settings)</description>
+					<include condition="Skin.HasSetting(aeon.fglass)">Dlg_PanelCol_fg</include>
+					<include condition="!Skin.HasSetting(aeon.fglass)">Dlg_PanelCol</include>
+					<top>128</top>
+					<height>56</height>
+					<font>st_font45_title</font>
+					<textcolor>$VAR[AG_Ink]</textcolor>
+				</control>
+				<!-- 0.56.53 panel flag: the flag of the audio / subtitle language at the right end of the heading -->
+				<control type="grouplist"><include condition="Skin.HasSetting(aeon.fglass)">Dlg_PanelCol_fg</include><include condition="!Skin.HasSetting(aeon.fglass)">Dlg_PanelCol</include><top>134</top><height>44</height><orientation>horizontal</orientation><align>right</align><visible>!Skin.HasSetting(aeon.osd.noflags) + System.AddonIsEnabled(resource.images.languageflags.rounded)</visible><control type="image"><width>44</width><height>44</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.AudioLanguage,resource://resource.images.languageflags.rounded/,.png]</texture><visible>Window.IsActive(osdaudiosettings) + !String.IsEmpty(VideoPlayer.AudioLanguage)</visible></control><control type="image"><width>44</width><height>44</height><aspectratio>keep</aspectratio><texture>$INFO[VideoPlayer.SubtitlesLanguage,resource://resource.images.languageflags.rounded/,.png]</texture><visible>Window.IsActive(osdsubtitlesettings) + VideoPlayer.SubtitlesEnabled + !String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible></control></control>
+				<control type="image">
+					<include condition="Skin.HasSetting(aeon.fglass)">Dlg_PanelCol_fg</include>
+					<include condition="!Skin.HasSetting(aeon.fglass)">Dlg_PanelCol</include>
+					<top>208</top>
+					<height>rule_h</height>
+					<texture colordiffuse="$VAR[AG_Line]">common/hairline.png</texture>
+				</control>
+				<control type="grouplist" id="5">
+					<description>control area</description>
+					<include condition="Skin.HasSetting(aeon.fglass)">Dlg_OsdListGeo_fg</include>
+					<include condition="!Skin.HasSetting(aeon.fglass)">Dlg_OsdListGeo</include>
+					<top>209</top>
+					<height>608</height>
+					<itemgap>0</itemgap>
+					<pagecontrol>60</pagecontrol>
+					<onleft>noop</onleft>
+					<onright>noop</onright>
+					<onup condition="Window.IsActive(osdaudiosettings)">9101</onup>
+					<onup condition="Window.IsActive(osdsubtitlesettings)">9102</onup>
+					<onup condition="Window.IsActive(osdvideosettings) | Window.IsActive(osdcmssettings)">9103</onup><!-- 0.56.53 fallback: Kodi links the first row Up to the last row when no Up holds while it builds the rows --><onup condition="!Window.IsActive(osdaudiosettings) + !Window.IsActive(osdsubtitlesettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(osdcmssettings)">9101</onup>
+					<ondown condition="Control.IsVisible(28) | Control.IsVisible(29) | Control.IsVisible(30)">9000</ondown>
+					<ondown condition="!Control.IsVisible(28) + !Control.IsVisible(29) + !Control.IsVisible(30)">5</ondown>
+				</control>
+				<include content="AG_SettingTemplates" condition="!Skin.HasSetting(aeon.fglass)">
+					<param name="width" value="dlg_panel_in_w"/>
+					<param name="height" value="dlg_osd_row_h"/>
+					<param name="font" value="st_ui_22_semibold"/>
+					<param name="sliderwidth" value="90"/>
+					<param name="slidertail" value="Dlg_OsdSliderTail"/>
+				</include>
+				<include content="FG_SettingTemplates" condition="Skin.HasSetting(aeon.fglass)">
+					<param name="width" value="696"/>
+					<param name="textoffsetx" value="40"/>
+					<param name="sliderwidth" value="140"/>
+					<param name="slidertail" value="Dlg_OsdSliderTail_fg"/>
+				</include>
+				<control type="scrollbar" id="60">
+					<left>646</left>
+					<animation effect="slide" end="57,0" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation>
+					<top>209</top>
+					<width>2</width>
+					<height>608</height>
+					<texturesliderbackground colordiffuse="$VAR[AG_Surface]">common/white.png</texturesliderbackground>
+					<texturesliderbar colordiffuse="$VAR[AG_Line2]">common/white.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="$VAR[Aeon_SBFocus]">common/white.png</texturesliderbarfocus>
+					<orientation>vertical</orientation>
+				</control>
+				<control type="grouplist" id="9000">
+					<include condition="Skin.HasSetting(aeon.fglass)">Dlg_PanelCol_fg</include>
+					<include condition="!Skin.HasSetting(aeon.fglass)">Dlg_PanelCol</include>
+					<top>852</top>
+					<height>dlg_btn_h</height>
+					<orientation>horizontal</orientation>
+					<itemgap>14</itemgap>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<onup>5</onup>
+					<ondown>5</ondown>
+					<include content="AG_DialogButton"><param name="id" value="28"/><param name="width" value="181"/><param name="height" value="dlg_btn_h"/></include>
+					<include content="AG_DialogButton"><param name="id" value="29"/><param name="width" value="181"/><param name="height" value="dlg_btn_h"/></include>
+					<include content="AG_DialogButton"><param name="id" value="30"/><param name="width" value="181"/><param name="height" value="dlg_btn_h"/></include>
+				</control>
+				<control type="textbox">
+					<include condition="Skin.HasSetting(aeon.fglass)">Dlg_PanelCol_fg</include>
+					<include condition="!Skin.HasSetting(aeon.fglass)">Dlg_PanelCol</include>
+					<top>940</top>
+					<height>84</height>
+					<font>st_small_20</font>
+					<textcolor>$VAR[AG_Ink3]</textcolor>
+					<label>$LOCALIZE[31243]</label>
+					<visible>Window.IsActive(osdaudiosettings) | Window.IsActive(osdsubtitlesettings)</visible>
+				</control>
+			</control>
+		</control>
+	</include>
+
+	<!-- One OSD tab: mono label, 2px accent underline on the current tab, accent fill + ink on focus.
+	     Clicking a non-current tab closes whichever OSD settings dialog is open (only the current one
+	     is) and opens the target; aeon.osdtab suppresses the slide so the swap reads as a tab change.
+	     params: id, left, width, uwidth (underline = text width), label, current (condition), target,
+	     onleft, onright -->
+	<include name="Dlg_OSDTab">
+		<definition>
+			<control type="group">
+				<left>$PARAM[left]</left>
+				<top>0</top>
+				<width>$PARAM[width]</width>
+				<height>40</height>
+				<control type="button" id="$PARAM[id]">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width]</width>
+					<height>40</height>
+					<label>$PARAM[label]</label>
+					<font>st_cap_20</font>
+					<textcolor>$VAR[AG_Ink2]</textcolor>
+					<focusedcolor>$VAR[Aeon_OnBarInk]</focusedcolor>
+					<align>center</align>
+					<textoffsetx>0</textoffsetx>
+					<pulseonselect>false</pulseonselect>
+					<include>Aeon_TexRowFocus</include>
+					<texturenofocus />
+					<onleft>$PARAM[onleft]</onleft>
+					<onright>$PARAM[onright]</onright>
+					<onup>noop</onup>
+					<ondown>5</ondown>
+					<onclick condition="!Window.IsActive($PARAM[target])">SetProperty(aeon.osdtab,1,home)</onclick>
+					<onclick condition="!Window.IsActive($PARAM[target])">Dialog.Close(osdaudiosettings,true)</onclick>
+					<onclick condition="!Window.IsActive($PARAM[target])">Dialog.Close(osdsubtitlesettings,true)</onclick>
+					<onclick condition="!Window.IsActive($PARAM[target])">Dialog.Close(osdvideosettings,true)</onclick>
+					<onclick condition="!Window.IsActive($PARAM[target])">Dialog.Close(osdcmssettings,true)</onclick>
+					<onclick condition="!Window.IsActive($PARAM[target])">ActivateWindow($PARAM[target])</onclick>
+				</control>
+				<!-- current tab: primary text over the secondary one + underline -->
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width]</width>
+					<height>40</height>
+					<align>center</align>
+					<font>st_cap_20</font>
+					<textcolor>$VAR[AG_Ink]</textcolor>
+					<label>$PARAM[label]</label>
+					<visible>[$PARAM[current]] + !Control.HasFocus($PARAM[id])</visible>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>38</top>
+					<width>$PARAM[uwidth]</width>
+					<height>2</height>
+					<texture colordiffuse="$VAR[AG_Accent]">common/white.png</texture>
+					<visible>[$PARAM[current]] + !Control.HasFocus($PARAM[id])</visible>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<!-- ============================================================ SkinSettings pieces -->
+	<!-- Group entry: soft raised pill when active, accent pill on focus. Focus selects the group
+	     (Window(Home).Property(aeon.skincat)). params: id, top, label, key, onright, onup, ondown -->
+	<!-- Skin settings > Home menu side panel: its button list height (0.54.3). The Aeon menu styles show ten rows
+	     inside their box and scroll the rest; the other looks fit all eleven. -->
+	<include name="Dlg_HmPanelH_ms"><height>600</height></include>
+	<include name="Dlg_HmPanelH"><height>700</height></include>
+	<include name="Dlg_SkinCategory">
+		<param name="onclick">noop</param>
+		<param name="corner">false</param>
+		<param name="icon">aeon/icons/settings.png</param>
+		<param name="onright_skip">false</param>
+		<param name="onright_skipto">noop</param>
+		<definition>
+			<control type="group">
+				<left>0</left>
+				<top>$PARAM[top]</top>
+				<width>360</width>
+				<height>66</height>
+				<control type="image">
+					<left>0</left><top>-8</top><width>360</width><height>70</height>
+					<texture colordiffuse="x_raised">common/white.png</texture>
+					<visible>!Control.HasFocus($PARAM[id]) + !Skin.HasSetting(aeon.vglass) + !$EXP[Aeon_Fused]</visible>
+				</control>
+				<control type="image">
+					<left>0</left><top>-8</top><width>360</width><height>70</height>
+					<texture colordiffuse="$VAR[Aeon_ParentCol]">common/white.png</texture>
+					<visible>String.IsEqual(Window(Home).Property(aeon.skincat),$PARAM[key]) + !Control.HasFocus($PARAM[id]) + !$EXP[Aeon_Fused] + !$EXP[Aeon_FGlass] + ![$PARAM[corner] + $EXP[Aeon_VGlass]]</visible>
+				</control>
+				<!-- 0.56.25 corner = true (the last category) in Aeon Glass: the card's bottom-left corner -->
+				<control type="image">
+					<left>0</left><top>-8</top><width>360</width><height>70</height>
+					<texture colordiffuse="$VAR[Aeon_ParentCol]" diffuse="aeon/mask_bl360x70.png">common/white.png</texture>
+					<visible>String.IsEqual(Window(Home).Property(aeon.skincat),$PARAM[key]) + !Control.HasFocus($PARAM[id]) + !$EXP[Aeon_Fused] + !$EXP[Aeon_FGlass] + $PARAM[corner] + $EXP[Aeon_VGlass]</visible>
+				</control>
+				<!-- Fused Glass: the open category is a frosted inset pill (fill 16 %, edge 18 %) -->
+				<control type="image"><left>0</left><top>-8</top><width>360</width><height>70</height><texture border="16" colordiffuse="80ffffff">fg/selrow16.png</texture><visible>String.IsEqual(Window(Home).Property(aeon.skincat),$PARAM[key]) + !Control.HasFocus($PARAM[id]) + $EXP[Aeon_FGlass] + !$EXP[FGS]</visible></control>
+				<!-- 0.56.29 fgs_05629: the Fused Glass style marks the open category with the System bar, dimmed -->
+				<control type="image"><left>0</left><top>-8</top><width>360</width><height>70</height><texture border="20" colordiffuse="40ffffff">fg/fgs_bar.png</texture><visible>String.IsEqual(Window(Home).Property(aeon.skincat),$PARAM[key]) + !Control.HasFocus($PARAM[id]) + $EXP[FGS]</visible></control>
+				<!-- Fuse: categories are cards too; the open one in the parent colour -->
+				<control type="image"><left>0</left><top>-8</top><width>360</width><height>70</height><texture border="20" colordiffuse="12ffffff">aeon/card_menu.png</texture><visible>$EXP[Aeon_Fused] + !Control.HasFocus($PARAM[id]) + !String.IsEqual(Window(Home).Property(aeon.skincat),$PARAM[key])</visible></control>
+				<control type="image"><left>0</left><top>-8</top><width>360</width><height>70</height><texture border="20" colordiffuse="$VAR[Aeon_ParentCol]">aeon/card_menu.png</texture><visible>$EXP[Aeon_Fused] + !Control.HasFocus($PARAM[id]) + String.IsEqual(Window(Home).Property(aeon.skincat),$PARAM[key])</visible></control>
+				<control type="image">
+					<left>22</left><top>13</top><width>30</width><height>30</height>
+					<texture colordiffuse="$VAR[FGS_Aeon_OnBarIcon]">$PARAM[icon]</texture>
+					<visible>Control.HasFocus($PARAM[id])</visible>
+				</control>
+				<control type="image">
+					<left>22</left><top>13</top><width>30</width><height>30</height>
+					<texture colordiffuse="$VAR[FGS_Aeon_ParentInk]">$PARAM[icon]</texture>
+					<visible>!Control.HasFocus($PARAM[id]) + String.IsEqual(Window(Home).Property(aeon.skincat),$PARAM[key])</visible>
+				</control>
+				<control type="image">
+					<left>22</left><top>13</top><width>30</width><height>30</height>
+					<texture colordiffuse="$VAR[FGS_CatIcon]">$PARAM[icon]</texture>
+					<visible>!Control.HasFocus($PARAM[id]) + !String.IsEqual(Window(Home).Property(aeon.skincat),$PARAM[key])</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>4</width>
+					<height>66</height>
+					<texture colordiffuse="00ffffff">common/white.png</texture>
+					<visible>String.IsEqual(Window(Home).Property(aeon.skincat),$PARAM[key]) + !Control.HasFocus($PARAM[id])</visible>
+				</control>
+				<!-- one rule on the top edge of every cell (the first one lies on the frame): even spacing, none under the last cell -->
+				<control type="image"><left>0</left><top>-8</top><width>360</width><height>1</height><texture colordiffuse="$VAR[FGS_FrameCol]">common/white.png</texture><visible>!$EXP[Aeon_Fused] + [!$EXP[Aeon_FGlass] | $EXP[FGS]]</visible></control>
+				<control type="button" id="$PARAM[id]">
+					<left>0</left>
+					<top>0</top>
+					<width>360</width>
+					<height>66</height>
+					<label></label>
+					<texturefocus />
+					<texturenofocus />
+					<onfocus>SetProperty(aeon.skincat,$PARAM[key],home)</onfocus>
+					<onclick>$PARAM[onclick]</onclick>
+					<onback>ActivateWindow(home)</onback>
+					<onback>ActivateWindow(1151)</onback>
+					<onup>$PARAM[onup]</onup>
+					<ondown>$PARAM[ondown]</ondown>
+					<onleft>noop</onleft>
+					<onright condition="!$PARAM[onright_skip]">$PARAM[onright]</onright>
+					<onright condition="$PARAM[onright_skip]">$PARAM[onright_skipto]</onright>
+				</control>
+				<control type="label">
+					<left>70</left>
+					<top>-8</top>
+					<include content="Param_W" condition="$EXP[FGS]"><param name="w" value="290"/></include><include content="Param_W" condition="!$EXP[FGS]"><param name="w" value="284"/></include>
+					<animation effect="slide" start="0,0" end="-4,0" time="0" condition="$EXP[FGS]">Conditional</animation>
+					<height>70</height>
+					<include content="Param_F" condition="$EXP[FGS]"><param name="f" value="uc_st_ui_22_bold"/></include><include content="Param_F" condition="![$EXP[FGS]]"><param name="f" value="st_ui_24_bold"/></include>
+					<textcolor>$VAR[FGS_Aeon_OnBarInk]</textcolor>
+					<label>$PARAM[label]</label><wrapmultiline>true</wrapmultiline>
+					<visible>Control.HasFocus($PARAM[id])</visible>
+				</control>
+				<control type="label">
+					<left>70</left>
+					<top>-8</top>
+					<include content="Param_W" condition="$EXP[FGS]"><param name="w" value="290"/></include><include content="Param_W" condition="!$EXP[FGS]"><param name="w" value="284"/></include>
+					<animation effect="slide" start="0,0" end="-4,0" time="0" condition="$EXP[FGS]">Conditional</animation>
+					<height>70</height>
+					<include content="Param_F" condition="$EXP[FGS]"><param name="f" value="uc_st_ui_22_bold"/></include><include content="Param_F" condition="![$EXP[FGS]]"><param name="f" value="st_ui_24_bold"/></include>
+					<textcolor>$VAR[FGS_Aeon_ParentInk]</textcolor>
+					<label>$PARAM[label]</label><wrapmultiline>true</wrapmultiline>
+					<visible>!Control.HasFocus($PARAM[id]) + String.IsEqual(Window(Home).Property(aeon.skincat),$PARAM[key])</visible>
+				</control>
+				<control type="label">
+					<left>70</left>
+					<top>-8</top>
+					<include content="Param_W" condition="$EXP[FGS]"><param name="w" value="290"/></include><include content="Param_W" condition="!$EXP[FGS]"><param name="w" value="284"/></include>
+					<animation effect="slide" start="0,0" end="-4,0" time="0" condition="$EXP[FGS]">Conditional</animation>
+					<height>70</height>
+					<include content="Param_F" condition="$EXP[FGS]"><param name="f" value="uc_st_ui_22_semibold"/></include><include content="Param_F" condition="![$EXP[FGS]]"><param name="f" value="st_ui_24_semibold"/></include>
+					<textcolor>$VAR[FGS_CatText]</textcolor>
+					<label>$PARAM[label]</label><wrapmultiline>true</wrapmultiline>
+					<visible>!Control.HasFocus($PARAM[id]) + !String.IsEqual(Window(Home).Property(aeon.skincat),$PARAM[key])</visible>
+				</control>
+			</control>
+		</definition>
+	</include>
+
+	<!-- Row chrome (860 x 100): focused = raised rounded fill + accent ring, name + quiet hint.
+	     Place inside a group whose top is the row's y. params: id, label, hint, enable -->
+	<variable name="FG_SkinRowInk">
+		<value condition="$EXP[FGS]">66ffffff</value>
+		<value condition="Skin.HasSetting(aeon.fglass)">e0ffffff</value>
+		<value>99ffffff</value>
+	</variable>
+	<include name="Dlg_SkinRowChrome">
+		<param name="enable">true</param>
+		<param name="icon"></param>
+		<param name="labelx">16</param>
+		<param name="labelTop">4</param>
+		<param name="labelH">36</param>
+		<param name="hintw">520</param>
+		<param name="namew">520</param>
+		<param name="namefgs">621</param><!-- 0.56.18 picker_names: the name ends before the row's picker -->
+		<definition>
+			<!-- 0.56.31 the style: a faint rule on top of each row (the row under a heading draws its line) -->
+			<control type="image"><left>-119</left><top>0</top><width>1019</width><height>1</height><texture colordiffuse="12ffffff">common/white.png</texture><visible>$EXP[FGS] + !Control.HasFocus($PARAM[id])</visible></control>
+			<!-- Fuse: a faint card under every row instead of the rule -->
+			<control type="image"><left>-119</left><top>0</top><width>1019</width><height>70</height><texture border="20" colordiffuse="12ffffff">aeon/card_menu.png</texture><visible>$EXP[Aeon_Fused] + !Control.HasFocus($PARAM[id])</visible></control>
+			<control type="image">
+				<left>-119</left>
+				<top>69</top>
+				<width>1019</width>
+				<height>1</height>
+				<texture colordiffuse="30ffffff">common/white.png</texture>
+				<visible>!$EXP[Aeon_Fused] + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="image">
+				<left>2</left><top>20</top><width>30</width><height>30</height>
+				<animation effect="slide" start="0,0" end="-101,0" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation>
+				<texture colordiffuse="$VAR[FGS_RowIcon]">$PARAM[icon]</texture>
+				<visible>!Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="image">
+				<left>2</left><top>20</top><width>30</width><height>30</height>
+				<animation effect="slide" start="0,0" end="-101,0" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation>
+				<texture colordiffuse="$VAR[FGS_Aeon_OnBarIcon]">$PARAM[icon]</texture>
+				<visible>Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="label">
+				<left>$PARAM[labelx]</left>
+				<top>$PARAM[labelTop]</top>
+				<include content="Param_W" condition="$EXP[Aeon_FGlass]"><param name="w" value="$PARAM[namefgs]"/></include><include content="Param_W" condition="!$EXP[Aeon_FGlass]"><param name="w" value="$PARAM[namew]"/></include>
+				<animation effect="slide" start="0,0" end="-101,0" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation>
+				<height>$PARAM[labelH]</height>
+				<include content="Param_F" condition="$EXP[FGS]"><param name="f" value="uc_st_ui_24_bold"/></include><include content="Param_F" condition="![$EXP[FGS]]"><param name="f" value="st_ui_24_bold"/></include>
+				<textcolor>$VAR[FGS_Aeon_OnBarInk]</textcolor>
+				<label>$PARAM[label]</label><scroll>true</scroll>
+				<include>FG_LandVisible</include><include>FGS_LandGlow</include>
+				<visible>[$PARAM[enable]] + Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="label">
+				<left>$PARAM[labelx]</left>
+				<top>$PARAM[labelTop]</top>
+				<include content="Param_W" condition="$EXP[Aeon_FGlass]"><param name="w" value="$PARAM[namefgs]"/></include><include content="Param_W" condition="!$EXP[Aeon_FGlass]"><param name="w" value="$PARAM[namew]"/></include>
+				<animation effect="slide" start="0,0" end="-101,0" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation>
+				<height>$PARAM[labelH]</height>
+				<include content="Param_F" condition="$EXP[FGS]"><param name="f" value="uc_st_ui_24_semibold"/></include><include content="Param_F" condition="![$EXP[FGS]]"><param name="f" value="st_ui_24_semibold"/></include>
+				<textcolor>$VAR[FG_SkinRowInk]</textcolor>
+				<label>$PARAM[label]</label>
+				<visible>[$PARAM[enable]] + !Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="label">
+				<left>$PARAM[labelx]</left>
+				<top>$PARAM[labelTop]</top>
+				<include content="Param_W" condition="$EXP[Aeon_FGlass]"><param name="w" value="$PARAM[namefgs]"/></include><include content="Param_W" condition="!$EXP[Aeon_FGlass]"><param name="w" value="$PARAM[namew]"/></include>
+				<animation effect="slide" start="0,0" end="-101,0" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation>
+				<height>$PARAM[labelH]</height>
+				<include content="Param_F" condition="$EXP[FGS]"><param name="f" value="uc_st_ui_24_semibold"/></include><include content="Param_F" condition="![$EXP[FGS]]"><param name="f" value="st_ui_24_semibold"/></include>
+				<textcolor>$VAR[AG_Disabled]</textcolor>
+				<label>$PARAM[label]</label>
+				<visible>![$PARAM[enable]] + !Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<!-- a switched-off row in focus (white bar): its name in dimmed dark ink (0.35.0) -->
+			<control type="label">
+				<left>$PARAM[labelx]</left>
+				<top>$PARAM[labelTop]</top>
+				<include content="Param_W" condition="$EXP[Aeon_FGlass]"><param name="w" value="$PARAM[namefgs]"/></include><include content="Param_W" condition="!$EXP[Aeon_FGlass]"><param name="w" value="$PARAM[namew]"/></include>
+				<animation effect="slide" start="0,0" end="-101,0" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation>
+				<height>$PARAM[labelH]</height>
+				<include content="Param_F" condition="$EXP[FGS]"><param name="f" value="uc_st_ui_24_semibold"/></include><include content="Param_F" condition="![$EXP[FGS]]"><param name="f" value="st_ui_24_semibold"/></include>
+				<textcolor>$VAR[FGS_Aeon_OnBarInk]</textcolor><!-- 0.56.53 the focus ink of the style, dimmed (dark ink vanished on the dark FGS bar) -->
+				<animation effect="fade" start="100" end="45" time="0" condition="true">Conditional</animation>
+				<label>$PARAM[label]</label><scroll>true</scroll>
+				<visible>![$PARAM[enable]] + Control.HasFocus($PARAM[id])</visible>
+			</control>
+			<control type="label">
+				<left>$PARAM[labelx]</left>
+				<top>40</top>
+				<width>$PARAM[hintw]</width>
+				<animation effect="slide" start="0,0" end="-101,0" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation>
+				<height>28</height>
+				<font>st_small_20</font>
+				<textcolor>66ffffff</textcolor>
+				<label>$PARAM[hint]</label>
+			</control>
+		</definition>
+	</include>
+
+	<!-- The invisible focus target of a SkinSettings row (actions are written per row). -->
+	<include name="Dlg_SkinRowButton">
+		<left>-119</left>
+		<top>0</top>
+		<width>1019</width>
+		<height>70</height>
+		<label></label>
+		<texturefocus />
+		<texturenofocus />
+		<pulseonselect>false</pulseonselect>
+	</include>
+
+	<!-- Segmented pills: the current option is filled (accent while the row has focus, soft line
+	     colour otherwise); the frame is a 2 px pill outline drawn after the options.
+	     Dlg_SegOption params: left, width, label, selected (condition), row (row button id) -->
+	<include name="Dlg_SegOption">
+		<definition>
+			<control type="group">
+				<left>$PARAM[left]</left>
+				<top>9</top>
+				<width>$PARAM[width]</width>
+				<height>52</height>
+				<control type="image">
+					<left>12</left>
+					<top>48</top>
+					<width>$PARAM[width]</width>
+					<height>3</height>
+					<texture colordiffuse="$VAR[Aeon_OnBarFill]">common/white.png</texture>
+					<visible>[$PARAM[selected]] + Control.HasFocus($PARAM[row])</visible>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width]</width>
+					<height>52</height>
+					<align>center</align>
+					<font>st_ui_22_bold</font>
+					<textcolor>ffffffff</textcolor>
+					<label>$PARAM[label]</label>
+					<visible>[$PARAM[selected]] + !Control.HasFocus($PARAM[row])</visible>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width]</width>
+					<height>52</height>
+					<align>center</align>
+					<font>st_ui_22_bold</font>
+					<textcolor>$VAR[Aeon_OnBarInk]</textcolor>
+					<label>$PARAM[label]</label>
+					<visible>[$PARAM[selected]] + Control.HasFocus($PARAM[row])</visible>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width]</width>
+					<height>52</height>
+					<align>center</align>
+					<font>st_ui_22</font>
+					<textcolor>66ffffff</textcolor>
+					<label>$PARAM[label]</label>
+					<visible>![$PARAM[selected]] + !Control.HasFocus($PARAM[row])</visible>
+				</control>
+				<control type="label">
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width]</width>
+					<height>52</height>
+					<align>center</align>
+					<font>st_ui_22</font>
+					<textcolor>$VAR[Aeon_SegUnselF]</textcolor>
+					<label>$PARAM[label]</label>
+					<visible>![$PARAM[selected]] + Control.HasFocus($PARAM[row])</visible>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="Dlg_SegFrame">
+		<definition>
+			<control type="image">
+				<left>$PARAM[left]</left>
+				<top>9</top>
+				<width>1</width>
+				<height>1</height>
+				<texture colordiffuse="00ffffff">common/white.png</texture>
+			</control>
+		</definition>
+	</include>
+	<!-- A value with left / right chevrons (bedtime). params: row, label -->
+	<include name="Dlg_StepValue">
+		<definition>
+			<control type="group">
+				<left>560</left>
+				<top>9</top>
+				<width>300</width>
+				<height>52</height>
+				<control type="image">
+					<left>14</left>
+					<top>14</top>
+					<width>24</width>
+					<height>24</height>
+					<texture colordiffuse="$VAR[Dlg_StepInk]">aeon/icons/back.png</texture>
+				</control>
+				<control type="image">
+					<left>262</left>
+					<top>14</top>
+					<width>24</width>
+					<height>24</height>
+					<texture colordiffuse="$VAR[Dlg_StepInk]">aeon/icons/chevron_right.png</texture>
+				</control>
+				<control type="label">
+					<left>40</left>
+					<top>0</top>
+					<width>220</width>
+					<height>52</height>
+					<align>center</align>
+					<font>st_ui_22_bold</font>
+					<textcolor>$VAR[Dlg_StepInk]</textcolor>
+					<label>$PARAM[label]</label>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<variable name="Dlg_StepInk">
+		<value>ccffffff</value>
+	</variable>
+	<variable name="AG_BedtimeLabelLong">
+		<value condition="$EXP[AG_BedMidnight]">$ADDON[skin.aeon.fuse 32324]</value>
+		<value>$VAR[AG_BedtimeLabel]</value>
+	</variable>
+
+	<variable name="Dlg_SkinHelp">
+		<value condition="Control.HasFocus(9507)">$ADDON[skin.aeon.fuse 32719]</value>
+		<value condition="Control.HasFocus(9506)">$ADDON[skin.aeon.fuse 32779]</value>
+		<value condition="Control.HasFocus(9505)">$ADDON[skin.aeon.fuse 32778]</value>
+		<value condition="Control.HasFocus(9504)">$ADDON[skin.aeon.fuse 32778]</value>
+		<value condition="Control.HasFocus(9503)">$ADDON[skin.aeon.fuse 32777]</value>
+		<value condition="Control.HasFocus(9502)">$ADDON[skin.aeon.fuse 32776]</value>
+		<value condition="Control.HasFocus(9501)">$ADDON[skin.aeon.fuse 32761]</value>
+		<value condition="Control.HasFocus(9500)">$ADDON[skin.aeon.fuse 32760]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.pickrow))">$ADDON[skin.aeon.fuse 32748]</value>
+		<value condition="Control.HasFocus(9518)">$ADDON[skin.aeon.fuse 32747]</value>
+		<value condition="Control.HasFocus(9515)">$ADDON[skin.aeon.fuse 32414]</value>
+		<value condition="Control.HasFocus(9517)">$ADDON[skin.aeon.fuse 32745]</value>
+		<value condition="Control.HasFocus(9516)">$ADDON[skin.aeon.fuse 32744]</value>
+		<value condition="Control.HasFocus(9514)">$ADDON[skin.aeon.fuse 32730]</value>
+		<value condition="Control.HasFocus(9513)">$ADDON[skin.aeon.fuse 32729]</value>
+		<value condition="Control.HasFocus(9765)">$ADDON[skin.aeon.fuse 32602]</value>
+		<value condition="Control.HasFocus(9548)">$ADDON[skin.aeon.fuse 32448]</value>
+		<value condition="Control.HasFocus(9549)">$ADDON[skin.aeon.fuse 32449]</value>
+		<value condition="Control.HasFocus(9579)">$ADDON[skin.aeon.fuse 32569]</value>
+		<value condition="Control.HasFocus(9763)">$ADDON[skin.aeon.fuse 32572]</value>
+		<value condition="Control.HasFocus(9762)">$ADDON[skin.aeon.fuse 32560]</value>
+		<value condition="Control.HasFocus(9739) + !$EXP[Aeon_FGlass]">$ADDON[skin.aeon.fuse 32746]</value>
+		<value condition="Control.HasFocus(9739)">$ADDON[skin.aeon.fuse 32430]</value>
+		<value condition="Control.HasFocus(9738)">$ADDON[skin.aeon.fuse 32465]</value>
+		<value condition="Control.HasFocus(9737)">$ADDON[skin.aeon.fuse 32473]</value>
+		<value condition="Control.HasFocus(9528)">$ADDON[skin.aeon.fuse 32475]</value>
+		<value condition="Control.HasFocus(9546)">$ADDON[skin.aeon.fuse 32426]</value>
+		<value condition="Control.HasFocus(9759)">$ADDON[skin.aeon.fuse 32422]</value>
+		<value condition="Control.HasFocus(9749)">$ADDON[skin.aeon.fuse 32414]</value>
+		<value condition="Control.HasFocus(9743) + $EXP[Aeon_FGlass]">$ADDON[skin.aeon.fuse 32407]</value>
+		<value condition="Control.HasFocus(9707)">$LOCALIZE[31926]</value>
+		<value condition="Control.HasFocus(9708)">$LOCALIZE[31927]</value>
+		<value condition="Control.HasFocus(9537)">$LOCALIZE[31928]</value>
+		<value condition="Control.HasFocus(9538)">$LOCALIZE[31929]</value>
+		<value condition="Control.HasFocus(9539)">$LOCALIZE[31930]</value>
+		<value condition="Control.HasFocus(9550)">$ADDON[skin.aeon.fuse 32478]</value>
+		<value condition="Control.HasFocus(9761)">$ADDON[skin.aeon.fuse 32486]</value>
+		<value condition="Control.HasFocus(9776)">$ADDON[skin.aeon.fuse 32616]</value><!-- 0.56.20 settings_details -->
+		<value condition="Control.HasFocus(9780)">$ADDON[skin.aeon.fuse 32646]</value>
+		<value condition="Control.HasFocus(9781)">$ADDON[skin.aeon.fuse 32664]</value><!-- 0.56.23 epjoin --><!-- 0.56.22 chips -->
+		<value condition="Control.HasFocus(9527)">$LOCALIZE[31931]</value>
+		<value condition="Control.HasFocus(9755)">$LOCALIZE[31932]</value>
+		<value condition="Control.HasFocus(9726)">$LOCALIZE[31933]</value>
+		<value condition="Control.HasFocus(9727)">$LOCALIZE[31959]</value>
+		<value condition="Control.HasFocus(9728)">$LOCALIZE[31961]</value>
+		<value condition="Control.HasFocus(9729)">$LOCALIZE[31963]</value>
+		<value condition="Control.HasFocus(9543)">$LOCALIZE[31968]</value>
+		<value condition="Control.HasFocus(9544)">$LOCALIZE[31970]</value>
+		<value condition="Control.HasFocus(9559)">$ADDON[skin.aeon.fuse 32325]</value>
+		<value condition="Control.HasFocus(9672)">$ADDON[skin.aeon.fuse 32326]</value>
+		<value condition="Control.HasFocus(9673)">$ADDON[skin.aeon.fuse 32326]</value>
+		<value condition="Control.HasFocus(9674)">$ADDON[skin.aeon.fuse 32326]</value>
+		<value condition="Control.HasFocus(9675)">$ADDON[skin.aeon.fuse 32326]</value>
+		<value condition="Control.HasFocus(9676)">$ADDON[skin.aeon.fuse 32327]</value>
+		<value condition="Control.HasFocus(9677)">$ADDON[skin.aeon.fuse 32328]</value>
+		<value condition="Control.HasFocus(9678)">$ADDON[skin.aeon.fuse 32329]</value>
+		<value condition="Control.HasFocus(9600)">$LOCALIZE[31575]</value>
+		<value condition="Control.HasFocus(9740)">$ADDON[skin.aeon.fuse 32471]</value>
+		<value condition="Control.HasFocus(9747)">$ADDON[skin.aeon.fuse 32470]</value>
+		<value condition="Control.HasFocus(9741)">$LOCALIZE[31576]</value>
+		<value condition="Control.HasFocus(9524)">$LOCALIZE[31577]</value>
+		<value condition="Control.HasFocus(9547)">$ADDON[skin.aeon.fuse 32461]</value>
+		<value condition="Control.HasFocus(9745)">$LOCALIZE[31578]</value>
+		<value condition="Control.HasFocus(9744)">$LOCALIZE[31579]</value>
+		<value condition="Control.HasFocus(9764)">$ADDON[skin.aeon.fuse 32579]</value>
+		<value condition="Control.HasFocus(9748) + Skin.HasSetting(aeon.fglass)">$ADDON[skin.aeon.fuse 32574]</value>
+		<value condition="Control.HasFocus(9748) + !Skin.HasSetting(aeon.vglass)">$ADDON[skin.aeon.fuse 32456]</value>
+		<value condition="Control.HasFocus(9748)">$ADDON[skin.aeon.fuse 32457]</value>
+		<value condition="Control.HasFocus(9743)">$LOCALIZE[31580]</value>
+		<value condition="Control.HasFocus(9766)">$ADDON[skin.aeon.fuse 32612]</value>
+		<value condition="Control.HasFocus(9767)">$ADDON[skin.aeon.fuse 32613]</value>
+		<value condition="Control.HasFocus(9768)">$ADDON[skin.aeon.fuse 32614]</value>
+		<value condition="Control.HasFocus(9742)">$LOCALIZE[31581]</value>
+		<value condition="Control.HasFocus(9566)">$LOCALIZE[31582]</value>
+		<value condition="Control.HasFocus(9725)">$ADDON[skin.aeon.fuse 32720]</value>
+		<value condition="Control.HasFocus(9703)">$ADDON[skin.aeon.fuse 32721]</value>
+		<value condition="Control.HasFocus(9704)">$LOCALIZE[31587]</value>
+		<value condition="Control.HasFocus(9705)">$LOCALIZE[31588]</value>
+		<value condition="Control.HasFocus(9567)">$LOCALIZE[31589]</value>
+		<value condition="Control.HasFocus(9710)">$LOCALIZE[31590]</value>
+		<value condition="Control.HasFocus(9711)">$LOCALIZE[31591]</value>
+		<value condition="Control.HasFocus(9712)">$LOCALIZE[31592]</value>
+		<value condition="Control.HasFocus(9713)">$LOCALIZE[31593]</value>
+		<value condition="Control.HasFocus(9714)">$LOCALIZE[31594]</value>
+		<value condition="Control.HasFocus(9568)">$LOCALIZE[31595]</value>
+		<value condition="Control.HasFocus(9720)">$LOCALIZE[31596]</value>
+		<value condition="Control.HasFocus(9721)">$LOCALIZE[31597]</value>
+		<value condition="Control.HasFocus(9722)">$LOCALIZE[31598]</value>
+		<value condition="Control.HasFocus(9723)">$LOCALIZE[31599]</value>
+		<value condition="Control.HasFocus(9569)">$LOCALIZE[31600]</value>
+		<value condition="Control.HasFocus(9730)">$LOCALIZE[31601]</value>
+		<value condition="Control.HasFocus(9731)">$LOCALIZE[31602]</value>
+		<value condition="Control.HasFocus(9732)">$LOCALIZE[31603]</value>
+		<value condition="Control.HasFocus(9601)">$LOCALIZE[31604]</value>
+		<value condition="Control.HasFocus(9750)">$LOCALIZE[31605]</value>
+		<value condition="Control.HasFocus(9751)">$LOCALIZE[31606]</value>
+		<value condition="Control.HasFocus(9752)">$LOCALIZE[31607]</value>
+		<value condition="Control.HasFocus(9753)">$LOCALIZE[31996]</value>
+		<value condition="Control.HasFocus(9754)">$LOCALIZE[31997]</value>
+		<value condition="Control.HasFocus(9757)">$ADDON[skin.aeon.fuse 32562]</value>
+		<value condition="Control.HasFocus(9756)">$LOCALIZE[31999]</value>
+		<value condition="Control.HasFocus(9551)">$LOCALIZE[31608]</value>
+		<value condition="Control.HasFocus(9552)">$LOCALIZE[31609]</value>
+		<value condition="Control.HasFocus(9553)">$LOCALIZE[31610]</value>
+		<value condition="Control.HasFocus(9521)">$LOCALIZE[31611]</value>
+		<value condition="Control.HasFocus(9529)">$ADDON[skin.aeon.fuse 32669]</value>
+		<value condition="Control.HasFocus(9798)">$ADDON[skin.aeon.fuse 32691]</value>
+		<value condition="Control.HasFocus(9790)">$ADDON[skin.aeon.fuse 32673]</value>
+		<value condition="Control.HasFocus(9791)">$ADDON[skin.aeon.fuse 32675]</value>
+		<value condition="Control.HasFocus(9792)">$ADDON[skin.aeon.fuse 32677]</value>
+		<value condition="Control.HasFocus(9793)">$ADDON[skin.aeon.fuse 32679]</value>
+		<value condition="Control.HasFocus(9794)">$ADDON[skin.aeon.fuse 32681]</value>
+		<value condition="Control.HasFocus(9795)">$ADDON[skin.aeon.fuse 32683]</value>
+		<value condition="Control.HasFocus(9796)">$ADDON[skin.aeon.fuse 32685]</value>
+		<value condition="Control.HasFocus(9797)">$ADDON[skin.aeon.fuse 32687]</value>
+		<value condition="Control.HasFocus(9522)">$LOCALIZE[31612]</value>
+		<value condition="Control.HasFocus(9530)">$LOCALIZE[31613]</value>
+		<value condition="Control.HasFocus(9531)">$LOCALIZE[31614]</value>
+		<value condition="Control.HasFocus(9540)">$LOCALIZE[31615]</value>
+		<value condition="Control.HasFocus(9541)">$LOCALIZE[31616]</value>
+		<value condition="Control.HasFocus(9758)">$ADDON[skin.aeon.fuse 32330]</value>
+		<value condition="Control.HasFocus(9779)">$ADDON[skin.aeon.fuse 32621]</value><!-- 0.56.20 cinema_row -->
+		<value condition="Control.HasFocus(9542)">$ADDON[skin.aeon.fuse 32424]</value>
+		<value condition="Control.HasFocus(9554)">$LOCALIZE[31338]</value>
+		<value condition="Control.HasFocus(9560)">$LOCALIZE[31339]</value>
+		<value condition="Control.HasFocus(9561)">$LOCALIZE[31339]</value>
+		<value condition="Control.HasFocus(9562)">$LOCALIZE[31339]</value>
+		<value condition="Control.HasFocus(9563)">$LOCALIZE[31339]</value>
+		<value condition="Control.HasFocus(9555)">$LOCALIZE[31950]</value>
+		<value condition="Control.HasFocus(9570)">$LOCALIZE[31950]</value>
+		<value condition="Control.HasFocus(9571)">$LOCALIZE[31950]</value>
+		<value condition="Control.HasFocus(9572)">$LOCALIZE[31950]</value>
+		<value condition="Control.HasFocus(9556)">$LOCALIZE[31984]</value>
+		<value condition="Control.HasFocus(9573)">$LOCALIZE[31984]</value>
+		<value condition="Control.HasFocus(9574)">$LOCALIZE[31984]</value>
+		<value condition="Control.HasFocus(9575)">$LOCALIZE[31984]</value>
+		<value>$LOCALIZE[31617]</value>
+	</variable>
+	<!-- 0.56.12 Skin settings > Appearance: the heading over the theme's own rows -->
+	<variable name="Aeon_SetThemeName">
+		<value condition="Skin.HasSetting(aeon.fglass)">$ADDON[skin.aeon.fuse 32402]</value>
+		<value condition="Skin.HasSetting(aeon.vglass)">$LOCALIZE[31679]</value>
+		<value>$LOCALIZE[31678]</value>
+	</variable>
+	<!-- 0.56.16 settings_outline: a category has the focus -->
+	<expression name="Aeon_SkinCatFocus">Control.HasFocus(9600) | Control.HasFocus(9551) | Control.HasFocus(9566) | Control.HasFocus(9567) | Control.HasFocus(9552) | Control.HasFocus(9568) | Control.HasFocus(9569) | Control.HasFocus(9601) | Control.HasFocus(9553) | Control.HasFocus(9558) | Control.HasFocus(9559)</expression>
+</includes>

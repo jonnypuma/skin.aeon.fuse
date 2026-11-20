@@ -1,0 +1,7177 @@
+# Kodi add-on strings - skin.aeon.fuse (el_gr)
+msgid ""
+msgstr ""
+"Project-Id-Version: skin.aeon.fuse\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#31010"
+msgid "Sort"
+msgstr "Σειρά"
+
+msgctxt "#31011"
+msgid "View"
+msgstr "Προβολή"
+
+msgctxt "#31012"
+msgid "Nothing here"
+msgstr "Δεν υπάρχει τίποτα εδώ"
+
+msgctxt "#31013"
+msgid "Working"
+msgstr "Σε εξέλιξη"
+
+msgctxt "#31014"
+msgid "Up / down to page, OK to close"
+msgstr "Πάνω / κάτω για σελίδες, OK για κλείσιμο"
+
+msgctxt "#31015"
+msgid "Muted"
+msgstr "Σίγαση"
+
+msgctxt "#31016"
+msgid "Buffering"
+msgstr "Προσωρινή αποθήκευση"
+
+msgctxt "#31017"
+msgid "Now playing"
+msgstr "Αναπαράγεται τώρα"
+
+msgctxt "#31018"
+msgid "Next:"
+msgstr "Επόμενο:"
+
+msgctxt "#31019"
+msgid "Home"
+msgstr "Αρχική"
+
+msgctxt "#31020"
+msgid "System"
+msgstr "Σύστημα"
+
+msgctxt "#31021"
+msgid "Skin settings"
+msgstr "Ρυθμίσεις κελύφους"
+
+msgctxt "#31022"
+msgid "Power"
+msgstr "Τροφοδοσία"
+
+msgctxt "#31024"
+msgid "Aeon Fuse"
+msgstr "Aeon Fuse"
+
+msgctxt "#31025"
+msgid "Skin settings holds Aeon Fuse's own options. To switch skins: Interface > Skin > Skin."
+msgstr "Οι ρυθμίσεις κελύφους περιέχουν τις δικές επιλογές του Aeon Fuse. Αλλαγή κελύφους: Διεπαφή > Κέλυφος > Κέλυφος."
+
+msgctxt "#31030"
+msgid "Ends"
+msgstr "Λήξη"
+
+msgctxt "#31040"
+msgid "Symbols"
+msgstr "Σύμβολα"
+
+msgctxt "#31041"
+msgid "Caps"
+msgstr "Κεφαλαία"
+
+msgctxt "#31042"
+msgid "Shift"
+msgstr "Shift"
+
+msgctxt "#31043"
+msgid "Space"
+msgstr "Διάστημα"
+
+msgctxt "#31044"
+msgid "Delete"
+msgstr "Διαγραφή"
+
+msgctxt "#31045"
+msgid "Queue"
+msgstr "Ουρά"
+
+msgctxt "#31046"
+msgid "Cover showcase"
+msgstr "Βιτρίνα εξωφύλλων"
+
+msgctxt "#31047"
+msgid "03  Performance"
+msgstr "03  Επιδόσεις"
+
+msgctxt "#31048"
+msgid "Pause"
+msgstr "Παύση"
+
+msgctxt "#31050"
+msgid "Palette"
+msgstr "Παλέτα"
+
+msgctxt "#31051"
+msgid "Slightly rounded corners"
+msgstr "Ελαφρώς στρογγυλεμένες γωνίες"
+
+msgctxt "#31052"
+msgid "Focus outline"
+msgstr "Περίγραμμα εστίασης"
+
+msgctxt "#31053"
+msgid "Artwork background"
+msgstr "Φόντο με εικόνα"
+
+msgctxt "#31054"
+msgid "Trailer button"
+msgstr "Κουμπί τρέιλερ"
+
+msgctxt "#31055"
+msgid "Watched indicators"
+msgstr "Σήματα προβολής"
+
+msgctxt "#31056"
+msgid "Spotlight rotation"
+msgstr "Εναλλαγή Spotlight"
+
+msgctxt "#31057"
+msgid "Newest row on Home"
+msgstr "Σειρά νέων στην Αρχική"
+
+msgctxt "#31058"
+msgid "Reduce motion"
+msgstr "Λιγότερη κίνηση"
+
+msgctxt "#31059"
+msgid "Reset all skin settings"
+msgstr "Επαναφορά ρυθμίσεων κελύφους"
+
+msgctxt "#31060"
+msgid "Signal"
+msgstr "Σήμα"
+
+msgctxt "#31061"
+msgid "Cobalt"
+msgstr "Κοβάλτιο"
+
+msgctxt "#31062"
+msgid "Mint"
+msgstr "Μέντα"
+
+msgctxt "#31063"
+msgid "Amber"
+msgstr "Κεχριμπάρι"
+
+msgctxt "#31064"
+msgid "Rose"
+msgstr "Ροζ"
+
+msgctxt "#31065"
+msgid "Ice"
+msgstr "Πάγος"
+
+msgctxt "#31066"
+msgid "Bone"
+msgstr "Κόκαλο"
+
+msgctxt "#31070"
+msgid "Thin"
+msgstr "Λεπτή"
+
+msgctxt "#31071"
+msgid "Medium"
+msgstr "Μεσαίο"
+
+msgctxt "#31072"
+msgid "Off"
+msgstr "Όχι"
+
+msgctxt "#31075"
+msgid "Faint"
+msgstr "Αχνό"
+
+msgctxt "#31076"
+msgid "Soft"
+msgstr "Απαλό"
+
+msgctxt "#31077"
+msgid "Visible"
+msgstr "Ορατό"
+
+msgctxt "#31080"
+msgid "Both"
+msgstr "Και τα 2"
+
+msgctxt "#31081"
+msgid "Unwatched only"
+msgstr "Μόνο μη προβεβλημένα"
+
+msgctxt "#31082"
+msgid "Watched only"
+msgstr "Μόνο προβεβλημένα"
+
+msgctxt "#31085"
+msgid "Date added"
+msgstr "Ημερομηνία προσθήκης"
+
+msgctxt "#31086"
+msgid "Release date"
+msgstr "Ημερομηνία κυκλοφορίας"
+
+msgctxt "#31087"
+msgid "Both rows"
+msgstr "Και οι δύο σειρές"
+
+msgctxt "#31100"
+msgid "Spotlight / unwatched / top rated"
+msgstr "Spotlight / μη προβεβλημένα / κορυφαία"
+
+msgctxt "#31101"
+msgid "Year"
+msgstr "Έτος"
+
+msgctxt "#31102"
+msgid "Runtime"
+msgstr "Διάρκεια"
+
+msgctxt "#31103"
+msgid "Rating"
+msgstr "Βαθμολογία"
+
+msgctxt "#31104"
+msgid "Rated"
+msgstr "Καταλληλότητα"
+
+msgctxt "#31105"
+msgid "Details"
+msgstr "Λεπτομέρειες"
+
+msgctxt "#31106"
+msgid "Fig. 01: random pick, unwatched, rated 7.5+"
+msgstr "Εικ. 01: τυχαία επιλογή, μη προβεβλημένη, βαθμός 7,5+"
+
+msgctxt "#31107"
+msgid "No unwatched films rated 7.5+ yet"
+msgstr "Δεν υπάρχουν ακόμη μη προβεβλημένες ταινίες με βαθμό 7,5+"
+
+msgctxt "#31110"
+msgid "Newest additions"
+msgstr "Νεότερες προσθήκες"
+
+msgctxt "#31111"
+msgid "Sorted by date added ↓"
+msgstr "Κατά ημερομηνία προσθήκης ↓"
+
+msgctxt "#31112"
+msgid "Newest releases"
+msgstr "Νεότερες κυκλοφορίες"
+
+msgctxt "#31113"
+msgid "Sorted by release date ↓"
+msgstr "Κατά ημερομηνία κυκλοφορίας ↓"
+
+msgctxt "#31114"
+msgid "films"
+msgstr "ταινίες"
+
+msgctxt "#31120"
+msgid "Seek  ◀ ▶"
+msgstr "Μετάβαση  ◀ ▶"
+
+msgctxt "#31121"
+msgid "Previous"
+msgstr "Προηγούμενο"
+
+msgctxt "#31122"
+msgid "Rewind"
+msgstr "Γρήγορη επιστροφή"
+
+msgctxt "#31123"
+msgid "Play / pause"
+msgstr "Αναπαραγωγή / παύση"
+
+msgctxt "#31124"
+msgid "Stop"
+msgstr "Διακοπή"
+
+msgctxt "#31125"
+msgid "Forward"
+msgstr "Γρήγορη προώθηση"
+
+msgctxt "#31126"
+msgid "Next"
+msgstr "Επόμενο"
+
+msgctxt "#31127"
+msgid "Subtitles"
+msgstr "Υπότιτλοι"
+
+msgctxt "#31128"
+msgid "Audio"
+msgstr "Ήχος"
+
+msgctxt "#31129"
+msgid "Video settings"
+msgstr "Ρυθμίσεις βίντεο"
+
+msgctxt "#31318"
+msgid "Visualiser presets"
+msgstr "Προεπιλογές οπτικοποίησης"
+
+msgctxt "#31319"
+msgid "OK, then ← for presets"
+msgstr "OK, ← προεπιλογές"
+
+msgctxt "#31900"
+msgid "Aeon Fuse (Figtree)"
+msgstr "Aeon Fuse (Figtree)"
+
+msgctxt "#31901"
+msgid "Arial (wider script coverage)"
+msgstr "Arial (περισσότερα συστήματα γραφής)"
+
+msgctxt "#31902"
+msgid "Episode code"
+msgstr "Κωδικός επεισοδίου"
+
+msgctxt "#31200"
+msgid "Aeon Fuse settings"
+msgstr "Ρυθμίσεις Aeon Fuse"
+
+msgctxt "#31201"
+msgid "Live TV"
+msgstr "Ζωντανή TV"
+
+msgctxt "#31202"
+msgid "Media"
+msgstr "Πολυμέσα"
+
+msgctxt "#31203"
+msgid "Update library"
+msgstr "Ενημέρωση βιβλιοθήκης"
+
+msgctxt "#31204"
+msgid "Library"
+msgstr "Βιβλιοθήκη"
+
+msgctxt "#31205"
+msgid "Clean library"
+msgstr "Εκκαθάριση βιβλιοθήκης"
+
+msgctxt "#31206"
+msgid "More"
+msgstr "Περισσότερα"
+
+msgctxt "#31207"
+msgid "Add-on"
+msgstr "Πρόσθετο"
+
+msgctxt "#31208"
+msgid "About this setting"
+msgstr "Σχετικά με τη ρύθμιση"
+
+msgctxt "#31209"
+msgid "Timer"
+msgstr "Χρονοδιακόπτης"
+
+msgctxt "#31210"
+msgid "Left / right: channel group"
+msgstr "Αριστερά / δεξιά: ομάδα καναλιών"
+
+msgctxt "#31211"
+msgid "Add group"
+msgstr "Προσθήκη ομάδας"
+
+msgctxt "#31212"
+msgid "Rename group"
+msgstr "Μετονομασία ομάδας"
+
+msgctxt "#31213"
+msgid "Delete group"
+msgstr "Διαγραφή ομάδας"
+
+msgctxt "#31214"
+msgid "Jump through the guide  ·  Back to close"
+msgstr "Μετακίνηση στον οδηγό  ·  Πίσω για κλείσιμο"
+
+msgctxt "#31215"
+msgid "Playing on this Shield"
+msgstr "Αναπαράγεται σε αυτό το Shield"
+
+msgctxt "#31216"
+msgid "OK or Back closes"
+msgstr "OK ή Πίσω κλείνει"
+
+msgctxt "#31217"
+msgid "Find subtitles"
+msgstr "Εύρεση υποτίτλων"
+
+msgctxt "#31218"
+msgid "Service"
+msgstr "Υπηρεσία"
+
+msgctxt "#31219"
+msgid "Status"
+msgstr "Κατάσταση"
+
+msgctxt "#31220"
+msgid "This file already has subtitle tracks"
+msgstr "Αυτό το αρχείο έχει ήδη κομμάτια υποτίτλων"
+
+msgctxt "#31221"
+msgid "Sync = timed to your file"
+msgstr "Sync = συγχρονισμένο με το αρχείο σας"
+
+msgctxt "#31222"
+msgid "No subtitles listed yet. Pick a service or search manually."
+msgstr "Κανένας υπότιτλος. Διαλέξτε υπηρεσία ή ψάξτε."
+
+msgctxt "#31223"
+msgid "Order:"
+msgstr "Σειρά:"
+
+msgctxt "#31224"
+msgid "Nothing has happened yet."
+msgstr "Δεν έχει συμβεί τίποτα ακόμη."
+
+msgctxt "#31225"
+msgid "Back to continue"
+msgstr "Πίσω για συνέχεια"
+
+msgctxt "#31226"
+msgid "Nothing to choose"
+msgstr "Τίποτα για επιλογή"
+
+msgctxt "#31227"
+msgid "Browse the whole library instead."
+msgstr "Περιηγηθείτε καλύτερα σε όλη τη βιβλιοθήκη."
+
+msgctxt "#31228"
+msgid "See all"
+msgstr "Εμφάνιση όλων"
+
+msgctxt "#31229"
+msgid "No shows in progress. Start one from Shows."
+msgstr "Καμία σειρά σε εξέλιξη. Ξεκινήστε μία από τις Σειρές."
+
+msgctxt "#31230"
+msgid "Nothing here."
+msgstr "Δεν υπάρχει τίποτα εδώ."
+
+msgctxt "#31231"
+msgid "PVR & Live TV settings"
+msgstr "Ρυθμίσεις PVR & ζωντανής TV"
+
+msgctxt "#31232"
+msgid "Up one level"
+msgstr "Επίπεδο πάνω"
+
+msgctxt "#31233"
+msgid "Nothing else is known about this one yet."
+msgstr "Τίποτε άλλο δεν είναι γνωστό ακόμη."
+
+msgctxt "#31234"
+msgid "Up and down scroll  ·  Back closes"
+msgstr "Πάνω και κάτω για κύλιση  ·  Πίσω κλείνει"
+
+msgctxt "#31235"
+msgid "Up next"
+msgstr "Ακολουθεί"
+
+msgctxt "#31236"
+msgid "The last one in the queue"
+msgstr "Το τελευταίο στην ουρά"
+
+msgctxt "#31237"
+msgid "Sync"
+msgstr "Sync"
+
+msgctxt "#31238"
+msgid "No matches"
+msgstr "Καμία αντιστοιχία"
+
+msgctxt "#31239"
+msgid "Searching"
+msgstr "Αναζήτηση"
+
+msgctxt "#31240"
+msgid "Films, shows, albums, artists"
+msgstr "Ταινίες, σειρές, άλμπουμ, καλλιτέχνες"
+
+msgctxt "#31241"
+msgid "OK to type  ·  Down for results  ·  Back to close"
+msgstr "OK για πληκτρολόγηση  ·  Κάτω για αποτελέσματα  ·  Πίσω για κλείσιμο"
+
+msgctxt "#31242"
+msgid "Films and shows match on title, albums on album name, artists on name. Library only."
+msgstr "Ταινίες και σειρές κατά τίτλο, άλμπουμ κατά όνομα άλμπουμ, καλλιτέχνες κατά όνομα. Μόνο βιβλιοθήκη."
+
+msgctxt "#31243"
+msgid "Offsets apply to this film only. Choosing an offset hides this panel so you can sync against the picture."
+msgstr "Οι μετατοπίσεις ισχύουν μόνο για αυτή την ταινία. Η επιλογή μετατόπισης κρύβει το πλαίσιο ώστε να συγχρονίσετε με την εικόνα."
+
+msgctxt "#31244"
+msgid "More for this title"
+msgstr "Περισσότερα για τον τίτλο"
+
+msgctxt "#31245"
+msgid "Back"
+msgstr "Πίσω"
+
+msgctxt "#31246"
+msgid "Unwatched only is on: choose the pill above to show everything."
+msgstr "«Μόνο μη προβεβλημένα» ενεργό: το κουμπί επάνω δείχνει όλα."
+
+msgctxt "#31247"
+msgid "Left and right to seek  ·  Down returns"
+msgstr "Αριστερά και δεξιά για μετάβαση  ·  Κάτω επιστρέφει"
+
+msgctxt "#31248"
+msgid "Choose Albums, Artists, Songs or Genres above."
+msgstr "Επιλέξτε επάνω Άλμπουμ, Καλλιτέχνες, Τραγούδια ή Είδη."
+
+msgctxt "#31249"
+msgid "Playlist"
+msgstr "Λίστα αναπαραγωγής"
+
+msgctxt "#31250"
+msgid "Empty. Pick songs or albums on the left and press OK to add them."
+msgstr "Κενή. Διαλέξτε τραγούδια ή άλμπουμ αριστερά και OK."
+
+msgctxt "#31251"
+msgid "The queue is empty"
+msgstr "Η ουρά είναι κενή"
+
+msgctxt "#31252"
+msgid "No weather yet."
+msgstr "Δεν υπάρχει ακόμη καιρός."
+
+msgctxt "#31253"
+msgid "Choose a weather service under Settings, Services, Weather."
+msgstr "Επιλέξτε υπηρεσία καιρού στις Ρυθμίσεις, Υπηρεσίες, Καιρός."
+
+msgctxt "#31254"
+msgid "The next few days"
+msgstr "Οι επόμενες μέρες"
+
+msgctxt "#31255"
+msgid "Look, behaviour, home menu"
+msgstr "Εμφάνιση, συμπεριφορά, κεντρικό μενού"
+
+msgctxt "#31256"
+msgid "Playback, subtitles"
+msgstr "Αναπαραγωγή, υπότιτλοι"
+
+msgctxt "#31257"
+msgid "Library, files"
+msgstr "Βιβλιοθήκη, αρχεία"
+
+msgctxt "#31258"
+msgid "Skin, region"
+msgstr "Κέλυφος, περιοχή"
+
+msgctxt "#31259"
+msgid "Installed, updates"
+msgstr "Εγκατεστημένα, ενημερώσεις"
+
+msgctxt "#31260"
+msgid "Remote, sharing"
+msgstr "Τηλεχειριστήριο, κοινή χρήση"
+
+msgctxt "#31261"
+msgid "Display, audio"
+msgstr "Οθόνη, ήχος"
+
+msgctxt "#31262"
+msgid "Sources, files"
+msgstr "Πηγές, αρχεία"
+
+msgctxt "#31263"
+msgid "Hardware, storage"
+msgstr "Υλικό, αποθήκευση"
+
+msgctxt "#31264"
+msgid "Event log"
+msgstr "Αρχείο συμβάντων"
+
+msgctxt "#31265"
+msgid "Recent events"
+msgstr "Πρόσφατα συμβάντα"
+
+msgctxt "#31266"
+msgid "Users"
+msgstr "Χρήστες"
+
+msgctxt "#31267"
+msgid "Not used"
+msgstr "Δεν χρησιμοποιείται"
+
+msgctxt "#31268"
+msgid "Controllers"
+msgstr "Χειριστήρια"
+
+msgctxt "#31269"
+msgid "This box"
+msgstr "Αυτή η συσκευή"
+
+msgctxt "#31270"
+msgid "Login screen"
+msgstr "Οθόνη σύνδεσης"
+
+msgctxt "#31271"
+msgid "Auto login"
+msgstr "Αυτόματη σύνδεση"
+
+msgctxt "#31272"
+msgid "Options"
+msgstr "Επιλογές"
+
+msgctxt "#31273"
+msgid "Order direction"
+msgstr "Κατεύθυνση ταξινόμησης"
+
+msgctxt "#31274"
+msgid "Select a rule to edit it. Use the context menu to delete a rule."
+msgstr "Επιλέξτε κανόνα για επεξεργασία. Διαγράψτε κανόνα από το μενού περιβάλλοντος."
+
+msgctxt "#31275"
+msgid "Value"
+msgstr "Τιμή"
+
+msgctxt "#31276"
+msgid "No chapters or bookmarks yet. Create one with the first button."
+msgstr "Δεν υπάρχουν ακόμη κεφάλαια ή σελιδοδείκτες. Δημιουργήστε έναν με το πρώτο κουμπί."
+
+msgctxt "#31277"
+msgid "OK jumps there  ·  Back closes"
+msgstr "OK μεταβαίνει εκεί  ·  Πίσω κλείνει"
+
+msgctxt "#31300"
+msgid "Order"
+msgstr "Σειρά"
+
+msgctxt "#31301"
+msgid "Watched"
+msgstr "Ιδωμένα"
+
+msgctxt "#31302"
+msgid "Search"
+msgstr "Αναζήτηση"
+
+msgctxt "#31303"
+msgid "Stop updating"
+msgstr "Διακοπή ενημέρωσης"
+
+msgctxt "#31304"
+msgid "Library settings"
+msgstr "Ρυθμίσεις βιβλιοθήκης"
+
+msgctxt "#31305"
+msgid "Music"
+msgstr "Μουσική"
+
+msgctxt "#31306"
+msgid "Update"
+msgstr "Ενημέρωση"
+
+msgctxt "#31307"
+msgid "Clean"
+msgstr "Εκκαθάριση"
+
+msgctxt "#31308"
+msgid "Collections"
+msgstr "Συλλογές"
+
+msgctxt "#31309"
+msgid "Films and shows"
+msgstr "Ταινίες και σειρές"
+
+msgctxt "#31310"
+msgid "No, keep it as it is"
+msgstr "Όχι, να μείνει ως έχει"
+
+msgctxt "#31311"
+msgid "Yes, clean it now"
+msgstr "Ναι, εκκαθάριση τώρα"
+
+msgctxt "#31312"
+msgid "Grid"
+msgstr "Πλέγμα"
+
+msgctxt "#31313"
+msgid "Wall"
+msgstr "Τοίχος"
+
+msgctxt "#31314"
+msgid "Episodes"
+msgstr "Επεισόδια"
+
+msgctxt "#31315"
+msgid "List"
+msgstr "Λίστα"
+
+msgctxt "#31316"
+msgid "OK to reset"
+msgstr "OK για επαναφορά"
+
+msgctxt "#31317"
+msgid "Press OK again to reset everything"
+msgstr "Πατήστε ξανά OK για επαναφορά όλων"
+
+msgctxt "#31320"
+msgid "Spotlight"
+msgstr "Spotlight"
+
+msgctxt "#31321"
+msgid "Wide"
+msgstr "Φαρδιά"
+
+msgctxt "#31322"
+msgid "Time"
+msgstr "Ώρα"
+
+msgctxt "#31323"
+msgid "No runtime"
+msgstr "Χωρίς διάρκεια"
+
+msgctxt "#31324"
+msgid "Now"
+msgstr "Τώρα"
+
+msgctxt "#31325"
+msgid "+1 h"
+msgstr "+1 h"
+
+msgctxt "#31326"
+msgid "+2 h"
+msgstr "+2 h"
+
+msgctxt "#31327"
+msgid "+3 h"
+msgstr "+3 h"
+
+msgctxt "#31328"
+msgid "+4 h"
+msgstr "+4 h"
+
+msgctxt "#31329"
+msgid "Rows"
+msgstr "Σειρές"
+
+msgctxt "#31330"
+msgid "Main menu"
+msgstr "Κεντρικό μενού"
+
+msgctxt "#31331"
+msgid "Films"
+msgstr "Ταινίες"
+
+msgctxt "#31332"
+msgid "Shows"
+msgstr "Σειρές"
+
+msgctxt "#31333"
+msgid "Music"
+msgstr "Μουσική"
+
+msgctxt "#31334"
+msgid "Search"
+msgstr "Αναζήτηση"
+
+msgctxt "#31335"
+msgid "Pill, hero and film cards"
+msgstr "Κουμπί, προβολή και κάρτες ταινιών"
+
+msgctxt "#31336"
+msgid "Pill and the Next up card"
+msgstr "Κουμπί και κάρτα Ακολουθεί"
+
+msgctxt "#31337"
+msgid "Pill in the top line"
+msgstr "Κουμπί στην πάνω γραμμή"
+
+msgctxt "#31338"
+msgid "Which pills the top line shows. Hidden pills disappear on Home and in the libraries; the rest close up. For now and the gear (system menu, settings) always stay, so you can always come back here.[CR][CR]Up / Down picks a group, Right enters it."
+msgstr "Ποια κουμπιά δείχνει η πάνω γραμμή. Τα κρυμμένα κουμπιά χάνονται από την Αρχική και τις βιβλιοθήκες· τα υπόλοιπα πλησιάζουν. Το «Για τώρα» και το γρανάζι (μενού συστήματος, ρυθμίσεις) μένουν πάντα, για να μπορείτε πάντα να επιστρέψετε εδώ.[CR][CR]Πάνω / Κάτω επιλέγει ομάδα, Δεξιά μπαίνει σε αυτή."
+
+msgctxt "#31339"
+msgid "Films also takes the hero and the film cards off For now; Shows takes the Next up card. The libraries themselves stay: Search finds them, and the system menu has Files."
+msgstr "Οι Ταινίες βγάζουν επίσης την προβολή και τις κάρτες ταινιών από το «Για τώρα»· οι Σειρές την κάρτα Ακολουθεί. Οι βιβλιοθήκες μένουν: η αναζήτηση τις βρίσκει και το μενού συστήματος έχει Αρχεία."
+
+msgctxt "#31340"
+msgid "Show"
+msgstr "Εμφάνιση"
+
+msgctxt "#31341"
+msgid "Hide"
+msgstr "Απόκρυψη"
+
+msgctxt "#31342"
+msgid "View, sort, filter…"
+msgstr "Προβολή, ταξινόμηση, φίλτρο…"
+
+msgctxt "#31940"
+msgid "Custom rows"
+msgstr "Προσαρμοσμένες σειρές"
+
+msgctxt "#31941"
+msgid "Row 1"
+msgstr "Σειρά 1"
+
+msgctxt "#31942"
+msgid "Row 2"
+msgstr "Σειρά 2"
+
+msgctxt "#31943"
+msgid "Row 3"
+msgstr "Σειρά 3"
+
+msgctxt "#31944"
+msgid "Not set"
+msgstr "Δεν ορίστηκε"
+
+msgctxt "#31945"
+msgid "Add-on, playlist or library…"
+msgstr "Πρόσθετο, λίστα αναπαραγωγής ή βιβλιοθήκη…"
+
+msgctxt "#31946"
+msgid "A favourite…"
+msgstr "Ένα αγαπημένο…"
+
+msgctxt "#31947"
+msgid "Rename…"
+msgstr "Μετονομασία…"
+
+msgctxt "#31948"
+msgid "Clear"
+msgstr "Εκκαθάριση"
+
+msgctxt "#31949"
+msgid "This favourite opens no folder"
+msgstr "Αυτό το αγαπημένο δεν ανοίγει φάκελο"
+
+msgctxt "#31950"
+msgid "Add up to three rows of your own to Home: a folder of an add-on (for example JellyCon's Continue Watching), a smart playlist, a library node or a favourite that opens a folder. A row shows only when it has something in it.[CR][CR]OK opens the row's options: choose what it shows, rename it or clear it."
+msgstr "Προσθέστε έως τρεις δικές σας σειρές στην Αρχική: φάκελο πρόσθετου (για παράδειγμα το Συνέχεια παρακολούθησης του JellyCon), έξυπνη λίστα, κόμβο βιβλιοθήκης ή αγαπημένο που ανοίγει φάκελο. Μια σειρά εμφανίζεται μόνο όταν έχει κάτι.[CR][CR]Το OK ανοίγει τις επιλογές της σειράς: επιλέξτε τι δείχνει, μετονομάστε ή εκκαθαρίστε τη."
+
+msgctxt "#31951"
+msgid "Custom row"
+msgstr "Προσαρμοσμένη σειρά"
+
+msgctxt "#31952"
+msgid "Loading…"
+msgstr "Φόρτωση…"
+
+msgctxt "#31953"
+msgid "1 item"
+msgstr "1 στοιχείο"
+
+msgctxt "#31954"
+msgid "items"
+msgstr "στοιχεία"
+
+msgctxt "#31955"
+msgid "Add-on · playlist · library · favourite"
+msgstr "Πρόσθετο · λίστα · βιβλιοθήκη · αγαπημένο"
+
+msgctxt "#31956"
+msgid "The add-on of this favourite isn't installed"
+msgstr "Το πρόσθετο αυτού του αγαπημένου δεν είναι εγκατεστημένο"
+
+msgctxt "#31957"
+msgid "Rows of your own on Home: an add-on folder, a playlist, a library node or a favourite. OK opens the row's options."
+msgstr "Δικές σας σειρές στην Αρχική: φάκελος πρόσθετου, λίστα αναπαραγωγής, κόμβος βιβλιοθήκης ή αγαπημένο. Το OK ανοίγει τις επιλογές της σειράς."
+
+msgctxt "#31980"
+msgid "Custom menu items"
+msgstr "Προσαρμοσμένα στοιχεία μενού"
+
+msgctxt "#31981"
+msgid "Menu item 1"
+msgstr "Στοιχείο μενού 1"
+
+msgctxt "#31982"
+msgid "Menu item 2"
+msgstr "Στοιχείο μενού 2"
+
+msgctxt "#31983"
+msgid "Menu item 3"
+msgstr "Στοιχείο μενού 3"
+
+msgctxt "#31984"
+msgid "Put up to three add-ons, favourites or library folders on the main menu, after the skin's own items. An item shows only while its add-on is installed.[CR][CR]OK opens the item's options: choose what it opens, rename it or clear it."
+msgstr "Βάλτε έως τρία πρόσθετα, αγαπημένα ή φακέλους βιβλιοθήκης στο κεντρικό μενού, μετά τα στοιχεία του κελύφους. Ένα στοιχείο εμφανίζεται μόνο όσο είναι εγκατεστημένο το πρόσθετό του.[CR][CR]Το OK ανοίγει τις επιλογές του στοιχείου: επιλέξτε τι ανοίγει, μετονομάστε ή εκκαθαρίστε το."
+
+msgctxt "#31985"
+msgid "Add-on · favourite · library · folder"
+msgstr "Πρόσθετο · αγαπημένο · βιβλιοθήκη · φάκελος"
+
+msgctxt "#31986"
+msgid "Opens"
+msgstr "Ανοίγει"
+
+msgctxt "#31987"
+msgid "Menu item"
+msgstr "Στοιχείο μενού"
+
+msgctxt "#31988"
+msgid "add-on not installed"
+msgstr "το πρόσθετο δεν είναι εγκατεστημένο"
+
+msgctxt "#31989"
+msgid "Add-on"
+msgstr "Πρόσθετο"
+
+msgctxt "#31990"
+msgid "Playlist"
+msgstr "Λίστα αναπαραγωγής"
+
+msgctxt "#31991"
+msgid "Library"
+msgstr "Βιβλιοθήκη"
+
+msgctxt "#31992"
+msgid "Folder"
+msgstr "Φάκελος"
+
+msgctxt "#31993"
+msgid "Shortcut"
+msgstr "Συντόμευση"
+
+msgctxt "#31994"
+msgid "Your own items on the main menu: an add-on, a favourite, a library node or a folder. OK opens the item's options."
+msgstr "Δικά σας στοιχεία στο κεντρικό μενού: πρόσθετο, αγαπημένο, κόμβος βιβλιοθήκης ή φάκελος. Το OK ανοίγει τις επιλογές του στοιχείου."
+
+msgctxt "#31995"
+msgid "OK to open"
+msgstr "OK για άνοιγμα"
+
+msgctxt "#31540"
+msgid "View settings"
+msgstr "Ρυθμίσεις προβολής"
+
+msgctxt "#31541"
+msgid "Ratings"
+msgstr "Βαθμολογίες"
+
+msgctxt "#31542"
+msgid "Media info"
+msgstr "Πληροφορίες μέσου"
+
+msgctxt "#31543"
+msgid "Backdrop"
+msgstr "Φόντο"
+
+msgctxt "#31544"
+msgid "Reset"
+msgstr "Επαναφορά"
+
+msgctxt "#31545"
+msgid "Global settings"
+msgstr "Γενικές ρυθμίσεις"
+
+msgctxt "#31546"
+msgid "Default"
+msgstr "Προεπιλογή"
+
+msgctxt "#31547"
+msgid "On"
+msgstr "Ναι"
+
+msgctxt "#31548"
+msgid "Off"
+msgstr "Όχι"
+
+msgctxt "#31549"
+msgid "Neutral"
+msgstr "Ουδέτερο"
+
+msgctxt "#31550"
+msgid "Fanart"
+msgstr "Fanart"
+
+msgctxt "#31551"
+msgid "Colors"
+msgstr "Χρώματα"
+
+msgctxt "#31000"
+msgid "Kodi"
+msgstr "Kodi"
+
+msgctxt "#31001"
+msgid "ULTRA HD"
+msgstr "ULTRA HD"
+
+msgctxt "#31002"
+msgid "The pages that Up opens above this home menu item. Pick one, then use the buttons on the right."
+msgstr "Οι σελίδες που ανοίγει το Πάνω πάνω από αυτό το στοιχείο του κεντρικού μενού. Επιλέξτε μία και μετά χρησιμοποιήστε τα κουμπιά δεξιά."
+
+msgctxt "#31003"
+msgid "+  Add item"
+msgstr "+  Προσθήκη στοιχείου"
+
+msgctxt "#31004"
+msgid "Rename"
+msgstr "Μετονομασία"
+
+msgctxt "#31005"
+msgid "Select source"
+msgstr "Επιλογή πηγής"
+
+msgctxt "#31006"
+msgid "Sort by"
+msgstr "Ταξινόμηση κατά"
+
+msgctxt "#31007"
+msgid "Reverse order"
+msgstr "Αντίστροφη σειρά"
+
+msgctxt "#31008"
+msgid "Items in list"
+msgstr "Στοιχεία στη λίστα"
+
+msgctxt "#31009"
+msgid "Seconds per item"
+msgstr "Δευτ. ανά στοιχείο"
+
+msgctxt "#31023"
+msgid "Autoscroll on / off"
+msgstr "Αυτόματη κύλιση"
+
+msgctxt "#31026"
+msgid "Hide / show"
+msgstr "Απόκρυψη / εμφάνιση"
+
+msgctxt "#31027"
+msgid "Move up"
+msgstr "Μετακίνηση πάνω"
+
+msgctxt "#31028"
+msgid "Move down"
+msgstr "Μετακίνηση κάτω"
+
+msgctxt "#31029"
+msgid "Add list..."
+msgstr "Προσθήκη λίστας..."
+
+msgctxt "#31031"
+msgid "Add folder items..."
+msgstr "Προσθήκη από φάκελο..."
+
+msgctxt "#31032"
+msgid "Restore defaults"
+msgstr "Επαναφορά αρχικών"
+
+msgctxt "#31033"
+msgid "The categories and rows shown under this home menu item (for Power: its actions)."
+msgstr "Οι κατηγορίες και οι σειρές κάτω από αυτό το στοιχείο του κεντρικού μενού (για την Τροφοδοσία: οι ενέργειές της)."
+
+msgctxt "#31034"
+msgid "Items in row"
+msgstr "Στοιχεία στη σειρά"
+
+msgctxt "#31035"
+msgid "Artwork type"
+msgstr "Είδος εικόνας"
+
+msgctxt "#31036"
+msgid "The full-screen widget pages that Up opens above this item: on or off, autoscroll, and the defaults for every list in them."
+msgstr "Οι σελίδες widget πλήρους οθόνης που ανοίγει το Πάνω πάνω από αυτό το στοιχείο: ναι ή όχι, αυτόματη κύλιση, προεπιλογές λιστών."
+
+msgctxt "#31037"
+msgid "Widget (Up key after Spotlight)"
+msgstr "Widget (πλήκτρο Πάνω μετά το Spotlight)"
+
+msgctxt "#31038"
+msgid "Autoscroll"
+msgstr "Αυτόματη κύλιση"
+
+msgctxt "#31039"
+msgid "Items per list"
+msgstr "Στοιχεία ανά λίστα"
+
+msgctxt "#31049"
+msgid "The big Netflix-style spotlight above this item on Home: a rotating list of titles with fanart, logo, details and Play."
+msgstr "Το μεγάλο Spotlight τύπου Netflix πάνω από αυτό το στοιχείο: εναλλασσόμενοι τίτλοι με fanart, λογότυπο, λεπτομέρειες και Αναπαραγωγή."
+
+msgctxt "#31067"
+msgid "Label"
+msgstr "Ετικέτα"
+
+msgctxt "#31068"
+msgid "Path"
+msgstr "Διαδρομή"
+
+msgctxt "#31069"
+msgid "Items"
+msgstr "Στοιχεία"
+
+msgctxt "#31073"
+msgid "Widget screen options"
+msgstr "Επιλογές οθονών widget"
+
+msgctxt "#31074"
+msgid "Library background (Aeon)"
+msgstr "Φόντο βιβλιοθήκης (Aeon)"
+
+msgctxt "#31078"
+msgid "Choose a view"
+msgstr "Επιλογή προβολής"
+
+msgctxt "#31079"
+msgid "Left / Right to look, OK to switch"
+msgstr "Αριστερά / Δεξιά για ματιά, OK για αλλαγή"
+
+msgctxt "#31083"
+msgid "Fanart list"
+msgstr "Λίστα fanart"
+
+msgctxt "#31084"
+msgid "Rows with A-Z keys"
+msgstr "Γραμμές με πλήκτρα Α-Ω"
+
+msgctxt "#31088"
+msgid "Artist wall"
+msgstr "Τοίχος καλλιτεχνών"
+
+msgctxt "#31089"
+msgid "Cover grid"
+msgstr "Πλέγμα εξωφύλλων"
+
+msgctxt "#31090"
+msgid "Album wall"
+msgstr "Τοίχος άλμπουμ"
+
+msgctxt "#31091"
+msgid "Song wall"
+msgstr "Τοίχος τραγουδιών"
+
+msgctxt "#31092"
+msgid "Artist showcase"
+msgstr "Βιτρίνα καλλιτεχνών"
+
+msgctxt "#31093"
+msgid "Big covers in a row"
+msgstr "Μεγάλα εξώφυλλα σε σειρά"
+
+msgctxt "#31094"
+msgid "Album showcase"
+msgstr "Βιτρίνα άλμπουμ"
+
+msgctxt "#31095"
+msgid "Song showcase"
+msgstr "Βιτρίνα τραγουδιών"
+
+msgctxt "#31096"
+msgid "Artist rows"
+msgstr "Σειρές καλλιτεχνών"
+
+msgctxt "#31097"
+msgid "Rows with covers"
+msgstr "Σειρές με εξώφυλλα"
+
+msgctxt "#31098"
+msgid "Album list"
+msgstr "Λίστα άλμπουμ"
+
+msgctxt "#31099"
+msgid "Song list"
+msgstr "Λίστα τραγουδιών"
+
+msgctxt "#31108"
+msgid "Compact song rows"
+msgstr "Συμπαγείς σειρές τραγουδιών"
+
+msgctxt "#31109"
+msgid "Fanart wall"
+msgstr "Τοίχος fanart"
+
+msgctxt "#31115"
+msgid "Portrait grid"
+msgstr "Κάθετο πλέγμα"
+
+msgctxt "#31116"
+msgid "Fanart and A-Z keys"
+msgstr "Fanart και πλήκτρα Α-Ω"
+
+msgctxt "#31117"
+msgid "Show posters"
+msgstr "Εμφάνιση αφισών"
+
+msgctxt "#31118"
+msgid "Posters"
+msgstr "Αφίσες"
+
+msgctxt "#31119"
+msgid "Season posters"
+msgstr "Αφίσες κύκλων"
+
+msgctxt "#31130"
+msgid "Poster wall"
+msgstr "Τοίχος αφισών"
+
+msgctxt "#31131"
+msgid "Episode wall"
+msgstr "Τοίχος επεισοδίων"
+
+msgctxt "#31132"
+msgid "Landscape artwork"
+msgstr "Οριζόντιες εικόνες"
+
+msgctxt "#31133"
+msgid "Landscape wall"
+msgstr "Οριζόντιος τοίχος"
+
+msgctxt "#31134"
+msgid "Square wall"
+msgstr "Τετράγωνος τοίχος"
+
+msgctxt "#31135"
+msgid "Square tiles"
+msgstr "Τετράγωνα πλακίδια"
+
+msgctxt "#31136"
+msgid "Cards"
+msgstr "Κάρτες"
+
+msgctxt "#31137"
+msgid "Artwork with details"
+msgstr "Εικόνες με λεπτομέρειες"
+
+msgctxt "#31138"
+msgid "Showcase"
+msgstr "Βιτρίνα"
+
+msgctxt "#31139"
+msgid "One big poster"
+msgstr "Μία μεγάλη αφίσα"
+
+msgctxt "#31140"
+msgid "Banner list"
+msgstr "Λίστα banner"
+
+msgctxt "#31141"
+msgid "Wide banner rows"
+msgstr "Φαρδιές σειρές banner"
+
+msgctxt "#31142"
+msgid "Compact list"
+msgstr "Συμπαγής λίστα"
+
+msgctxt "#31143"
+msgid "Dense rows with poster"
+msgstr "Πυκνές σειρές με αφίσα"
+
+msgctxt "#31144"
+msgid "Episode list"
+msgstr "Λίστα επεισοδίων"
+
+msgctxt "#31145"
+msgid "Rows with thumbs"
+msgstr "Σειρές με μικρογραφίες"
+
+msgctxt "#31146"
+msgid "Season list combined 3"
+msgstr "Λίστα κύκλων μαζί 3"
+
+msgctxt "#31147"
+msgid "Rows with posters"
+msgstr "Σειρές με αφίσες"
+
+msgctxt "#31148"
+msgid "Low list"
+msgstr "Χαμηλή λίστα"
+
+msgctxt "#31149"
+msgid "Rows over fanart"
+msgstr "Σειρές πάνω σε fanart"
+
+msgctxt "#31150"
+msgid "Version"
+msgstr "Έκδοση"
+
+msgctxt "#31151"
+msgid "Type"
+msgstr "Τύπος"
+
+msgctxt "#31152"
+msgid "Installed"
+msgstr "Εγκατάσταση"
+
+msgctxt "#31153"
+msgid "Updated"
+msgstr "Ενημερώθηκε"
+
+msgctxt "#31154"
+msgid "Channel"
+msgstr "Κανάλι"
+
+msgctxt "#31155"
+msgid "Other"
+msgstr "Άλλο"
+
+msgctxt "#31156"
+msgid "Jump to now"
+msgstr "Μετάβαση στο τώρα"
+
+msgctxt "#31157"
+msgid "Choose channel"
+msgstr "Επιλογή καναλιού"
+
+msgctxt "#31158"
+msgid "Choose channel group"
+msgstr "Επιλογή ομάδας καναλιών"
+
+msgctxt "#31159"
+msgid "Choose date"
+msgstr "Επιλογή ημερομηνίας"
+
+msgctxt "#31160"
+msgid "Recordings"
+msgstr "Εγγραφές"
+
+msgctxt "#31161"
+msgid "Timers"
+msgstr "Χρονοδιακόπτες"
+
+msgctxt "#31162"
+msgid "Timer rules"
+msgstr "Κανόνες χρονοδιακόπτη"
+
+msgctxt "#31163"
+msgid "Search guide"
+msgstr "Αναζήτηση στον οδηγό"
+
+msgctxt "#31164"
+msgid "Return to guide"
+msgstr "Επιστροφή στον οδηγό"
+
+msgctxt "#31165"
+msgid "Exit guide"
+msgstr "Έξοδος από τον οδηγό"
+
+msgctxt "#31166"
+msgid "Band"
+msgstr "Συγκρότημα"
+
+msgctxt "#31167"
+msgid "Artist"
+msgstr "Καλλιτέχνης"
+
+msgctxt "#31168"
+msgid "Title"
+msgstr "Τίτλος"
+
+msgctxt "#31169"
+msgid "Composer"
+msgstr "Συνθέτης"
+
+msgctxt "#31170"
+msgid "Conductor"
+msgstr "Μαέστρος"
+
+msgctxt "#31171"
+msgid "Album"
+msgstr "Άλμπουμ"
+
+msgctxt "#31172"
+msgid "Comment"
+msgstr "Σχόλιο"
+
+msgctxt "#31173"
+msgid "Studio  ·  hotline"
+msgstr "Στούντιο  ·  γραμμή επικοινωνίας"
+
+msgctxt "#31174"
+msgid "Studio phone"
+msgstr "Τηλ. στούντιο"
+
+msgctxt "#31175"
+msgid "Studio email"
+msgstr "Email στούντιο"
+
+msgctxt "#31176"
+msgid "Studio SMS"
+msgstr "SMS στούντιο"
+
+msgctxt "#31177"
+msgid "Hotline phone"
+msgstr "Τηλ. γραμμής"
+
+msgctxt "#31178"
+msgid "Hotline email"
+msgstr "Email γραμμής"
+
+msgctxt "#31179"
+msgid "Programme"
+msgstr "Εκπομπή"
+
+msgctxt "#31180"
+msgid "Style"
+msgstr "Στυλ"
+
+msgctxt "#31181"
+msgid "Station"
+msgstr "Σταθμός"
+
+msgctxt "#31182"
+msgid "Host"
+msgstr "Παρουσιαστής"
+
+msgctxt "#31183"
+msgid "Editorial"
+msgstr "Σύνταξη"
+
+msgctxt "#31184"
+msgid "Website"
+msgstr "Ιστότοπος"
+
+msgctxt "#31185"
+msgid "Radiotext"
+msgstr "Ραδιοκείμενο"
+
+msgctxt "#31186"
+msgid "ENDS"
+msgstr "ΛΗΞΗ"
+
+msgctxt "#31187"
+msgid "Search manually…"
+msgstr "Χειροκίνητη αναζήτηση…"
+
+msgctxt "#31189"
+msgid "TRUEHD  7.1"
+msgstr "TRUEHD  7.1"
+
+msgctxt "#31190"
+msgid "Some stories never end."
+msgstr "Κάποιες ιστορίες δεν τελειώνουν ποτέ."
+
+msgctxt "#31191"
+msgid "A retired detective is pulled back into a case he thought was closed, and the closer he looks the less of it makes sense."
+msgstr "Ένας συνταξιούχος ντετέκτιβ ξαναμπλέκεται σε μια υπόθεση που νόμιζε κλειστή, και όσο πιο προσεκτικά κοιτάζει, τόσο λιγότερο βγάζει νόημα."
+
+msgctxt "#31194"
+msgid "Trakt 78"
+msgstr "Trakt 78"
+
+msgctxt "#31195"
+msgid "Controls stay hidden when you pause."
+msgstr "Τα χειριστήρια μένουν κρυφά όταν κάνετε παύση."
+
+msgctxt "#31196"
+msgid "Controls open 1 second after you pause."
+msgstr "Τα χειριστήρια ανοίγουν 1 δευτερόλεπτο μετά την παύση."
+
+msgctxt "#31197"
+msgid "Controls open 3 seconds after you pause."
+msgstr "Τα χειριστήρια ανοίγουν 3 δευτερόλεπτα μετά την παύση."
+
+msgctxt "#31198"
+msgid "Controls open 5 seconds after you pause."
+msgstr "Τα χειριστήρια ανοίγουν 5 δευτερόλεπτα μετά την παύση."
+
+msgctxt "#31199"
+msgid "Controls open 2 seconds after you pause."
+msgstr "Τα χειριστήρια ανοίγουν 2 δευτερόλεπτα μετά την παύση."
+
+msgctxt "#31278"
+msgid "Play"
+msgstr "Έναρξη"
+
+msgctxt "#31279"
+msgid "More information"
+msgstr "Πληροφορίες"
+
+msgctxt "#31295"
+msgid "NOW ON TV"
+msgstr "ΤΩΡΑ ΣΤΗΝ TV"
+
+msgctxt "#31296"
+msgid "PRESS UP FOR THE FULL GUIDE"
+msgstr "ΠΑΤΗΣΤΕ ΠΑΝΩ ΓΙΑ ΤΟΝ ΠΛΗΡΗ ΟΔΗΓΟ"
+
+msgctxt "#31297"
+msgid "NO LYRICS FOR THIS SONG"
+msgstr "ΔΕΝ ΥΠΑΡΧΟΥΝ ΣΤΙΧΟΙ ΓΙ' ΑΥΤΟ ΤΟ ΤΡΑΓΟΥΔΙ"
+
+msgctxt "#31298"
+msgid "Artists"
+msgstr "Μουσικοί"
+
+msgctxt "#31299"
+msgid "Albums"
+msgstr "Άλμπουμ"
+
+msgctxt "#31343"
+msgid "Songs"
+msgstr "Κομμάτια"
+
+msgctxt "#31344"
+msgid "Genres"
+msgstr "Είδη"
+
+msgctxt "#31345"
+msgid "Menu: view, sort"
+msgstr "Μενού: προβολή, ταξινόμηση"
+
+msgctxt "#31346"
+msgid "MUSIC LIBRARY"
+msgstr "ΜΟΥΣΙΚΗ ΒΙΒΛΙΟΘΗΚΗ"
+
+msgctxt "#31347"
+msgid "SUBTITLES"
+msgstr "ΥΠΟΤΙΤΛΟΙ"
+
+msgctxt "#31348"
+msgid "AUDIO"
+msgstr "ΗΧΟΣ"
+
+msgctxt "#31349"
+msgid "VIDEO"
+msgstr "ΒΙΝΤΕΟ"
+
+msgctxt "#31350"
+msgid "CHAPTERS"
+msgstr "ΚΕΦΑΛΑΙΑ"
+
+msgctxt "#31351"
+msgid "INFO"
+msgstr "ΠΛΗΡΟΦΟΡΙΕΣ"
+
+msgctxt "#31352"
+msgid "STATS"
+msgstr "ΣΤΑΤΙΣΤΙΚΑ"
+
+msgctxt "#31353"
+msgid "TV SHOWS"
+msgstr "ΣΕΙΡΕΣ"
+
+msgctxt "#31354"
+msgid "MOVIES"
+msgstr "ΤΑΙΝΙΕΣ"
+
+msgctxt "#31355"
+msgid "BUFFERING"
+msgstr "ΦΟΡΤΩΣΗ"
+
+msgctxt "#31356"
+msgid "PAUSED"
+msgstr "ΣΕ ΠΑΥΣΗ"
+
+msgctxt "#31357"
+msgid "ADDED"
+msgstr "ΠΡΟΣΤΕΘΗΚΕ"
+
+msgctxt "#31358"
+msgid "Custom path"
+msgstr "Δική σας διαδρομή"
+
+msgctxt "#31359"
+msgid "Recently added"
+msgstr "Προστέθηκαν πρόσφατα"
+
+msgctxt "#31360"
+msgid "Recently watched"
+msgstr "Προβλήθηκαν πρόσφατα"
+
+msgctxt "#31361"
+msgid "In progress"
+msgstr "Σε εξέλιξη"
+
+msgctxt "#31362"
+msgid "Top rated"
+msgstr "Κορυφαία"
+
+msgctxt "#31363"
+msgid "All movies"
+msgstr "Όλες οι ταινίες"
+
+msgctxt "#31364"
+msgid "Unwatched shows"
+msgstr "Μη προβεβλημένες σειρές"
+
+msgctxt "#31365"
+msgid "Random shows"
+msgstr "Τυχαίες σειρές"
+
+msgctxt "#31366"
+msgid "Top rated shows"
+msgstr "Κορυφαίες σειρές"
+
+msgctxt "#31367"
+msgid "All shows"
+msgstr "Όλες οι σειρές"
+
+msgctxt "#31368"
+msgid "Recently played"
+msgstr "Αναπαράχθηκαν πρόσφατα"
+
+msgctxt "#31369"
+msgid "Random albums"
+msgstr "Τυχαία άλμπουμ"
+
+msgctxt "#31370"
+msgid "Shut down"
+msgstr "Τερματισμός"
+
+msgctxt "#31371"
+msgid "Reboot to Android"
+msgstr "Επανεκκίνηση σε Android"
+
+msgctxt "#31372"
+msgid "Quit Kodi"
+msgstr "Έξοδος από το Kodi"
+
+msgctxt "#31373"
+msgid "Update video library"
+msgstr "Ενημέρωση βιβλιοθήκης βίντεο"
+
+msgctxt "#31374"
+msgid "Update music library"
+msgstr "Ενημέρωση βιβλιοθήκης μουσικής"
+
+msgctxt "#31375"
+msgid "Clean video library"
+msgstr "Εκκαθάριση βιβλιοθήκης βίντεο"
+
+msgctxt "#31376"
+msgid "Clean music library"
+msgstr "Εκκαθάριση βιβλιοθήκης μουσικής"
+
+msgctxt "#31377"
+msgid "Power menu"
+msgstr "Μενού τροφοδοσίας"
+
+msgctxt "#31378"
+msgid "TV shows"
+msgstr "Σειρές"
+
+msgctxt "#31379"
+msgid "MUSIC"
+msgstr "ΜΟΥΣΙΚΗ"
+
+msgctxt "#31380"
+msgid "LISTEN"
+msgstr "ΑΚΟΥΣΤΕ"
+
+msgctxt "#31381"
+msgid "WATCH"
+msgstr "ΔΕΙΤΕ"
+
+msgctxt "#31382"
+msgid "Latest added"
+msgstr "Τελευταίες προσθήκες"
+
+msgctxt "#31383"
+msgid "Last played"
+msgstr "Τελευταία αναπαραγωγή"
+
+msgctxt "#31384"
+msgid "Movies, TV shows, Music or Power"
+msgstr "Ταινίες, Σειρές, Μουσική ή Τροφοδοσία"
+
+msgctxt "#31385"
+msgid "Position 1 is the first page you reach with Up"
+msgstr "Η θέση 1 είναι η πρώτη σελίδα που φτάνετε με το Πάνω"
+
+msgctxt "#31386"
+msgid "What this position shows. Off hides it"
+msgstr "Τι δείχνει αυτή η θέση. Το Όχι την κρύβει"
+
+msgctxt "#31387"
+msgid "OK types a name, Left clears it"
+msgstr "OK πληκτρολογεί όνομα, Αριστερά το σβήνει"
+
+msgctxt "#31388"
+msgid "Used when Category = Custom path (a library path, playlist or add-on folder)"
+msgstr "Χρησιμοποιείται όταν Κατηγορία = Προσαρμοσμένη διαδρομή (διαδρομή βιβλιοθήκης, λίστα αναπαραγωγής ή φάκελος πρόσθετου)"
+
+msgctxt "#31389"
+msgid "How many items the page cycles through (default 15)"
+msgstr "Πόσα στοιχεία διατρέχει η σελίδα (προεπιλογή 15)"
+
+msgctxt "#31390"
+msgid "Order of the items on this page"
+msgstr "Σειρά των στοιχείων σε αυτή τη σελίδα"
+
+msgctxt "#31391"
+msgid "Flip the sort order"
+msgstr "Αντιστροφή ταξινόμησης"
+
+msgctxt "#31392"
+msgid "Step through the items by itself"
+msgstr "Διάτρεξη στοιχείων αυτόματα"
+
+msgctxt "#31393"
+msgid "Seconds each item stays (default 10)"
+msgstr "Δευτερόλεπτα ανά στοιχείο (προεπιλογή 10)"
+
+msgctxt "#31394"
+msgid "SERIES PREMIERE"
+msgstr "ΠΡΕΜΙΕΡΑ ΣΕΙΡΑΣ"
+
+msgctxt "#31395"
+msgid "SEASON PREMIERE"
+msgstr "ΠΡΕΜΙΕΡΑ ΚΥΚΛΟΥ"
+
+msgctxt "#31396"
+msgid "SERIES FINALE"
+msgstr "ΦΙΝΑΛΕ ΣΕΙΡΑΣ"
+
+msgctxt "#31397"
+msgid "SEASON FINALE"
+msgstr "ΦΙΝΑΛΕ ΚΥΚΛΟΥ"
+
+msgctxt "#31398"
+msgid "Movie sets"
+msgstr "Συλλογές ταινιών"
+
+msgctxt "#31399"
+msgid "Autoscroll off"
+msgstr "Αυτόματη κύλιση όχι"
+
+msgctxt "#31400"
+msgid "Random movies"
+msgstr "Τυχαίες ταινίες"
+
+msgctxt "#31401"
+msgid "Recently added movies"
+msgstr "Ταινίες που προστέθηκαν πρόσφατα"
+
+msgctxt "#31402"
+msgid "Recently played movies"
+msgstr "Ταινίες που αναπαράχθηκαν πρόσφατα"
+
+msgctxt "#31403"
+msgid "Top rated movies"
+msgstr "Κορυφαίες ταινίες"
+
+msgctxt "#31404"
+msgid "Most played movies"
+msgstr "Πιο πολυπαιγμένες ταινίες"
+
+msgctxt "#31405"
+msgid "Newest movies"
+msgstr "Νεότερες ταινίες"
+
+msgctxt "#31406"
+msgid "Title movies"
+msgstr "Ταινίες κατά τίτλο"
+
+msgctxt "#31407"
+msgid "Recently added shows"
+msgstr "Σειρές που προστέθηκαν πρόσφατα"
+
+msgctxt "#31408"
+msgid "Recently played shows"
+msgstr "Σειρές που αναπαράχθηκαν πρόσφατα"
+
+msgctxt "#31409"
+msgid "Most played shows"
+msgstr "Πιο πολυπαιγμένες σειρές"
+
+msgctxt "#31410"
+msgid "Newest shows"
+msgstr "Νεότερες σειρές"
+
+msgctxt "#31411"
+msgid "Title shows"
+msgstr "Σειρές κατά τίτλο"
+
+msgctxt "#31412"
+msgid "Recently added albums"
+msgstr "Άλμπουμ που προστέθηκαν πρόσφατα"
+
+msgctxt "#31413"
+msgid "Recently played albums"
+msgstr "Άλμπουμ που αναπαράχθηκαν πρόσφατα"
+
+msgctxt "#31414"
+msgid "Top rated albums"
+msgstr "Κορυφαία άλμπουμ"
+
+msgctxt "#31415"
+msgid "Most played albums"
+msgstr "Πιο πολυπαιγμένα άλμπουμ"
+
+msgctxt "#31416"
+msgid "Newest albums"
+msgstr "Νεότερα άλμπουμ"
+
+msgctxt "#31417"
+msgid "Title albums"
+msgstr "Άλμπουμ κατά τίτλο"
+
+msgctxt "#31418"
+msgid "FULL HD"
+msgstr "FULL HD"
+
+msgctxt "#31419"
+msgid "DOLBY VISION"
+msgstr "DOLBY VISION"
+
+msgctxt "#31420"
+msgid "TRUEHD ATMOS"
+msgstr "TRUEHD ATMOS"
+
+msgctxt "#31421"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31422"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31423"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31424"
+msgid "TRUEHD"
+msgstr "TRUEHD"
+
+msgctxt "#31425"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31426"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31427"
+msgid "FLAC"
+msgstr "FLAC"
+
+msgctxt "#31428"
+msgid "ALAC"
+msgstr "ALAC"
+
+msgctxt "#31429"
+msgid "OPUS"
+msgstr "OPUS"
+
+msgctxt "#31430"
+msgid "VORBIS"
+msgstr "VORBIS"
+
+msgctxt "#31431"
+msgid "RATED NC-17"
+msgstr "ΚΑΤΑΛΛΗΛΟΤΗΤΑ NC-17"
+
+msgctxt "#31432"
+msgid "RATED PG-13"
+msgstr "ΚΑΤΑΛΛΗΛΟΤΗΤΑ PG-13"
+
+msgctxt "#31433"
+msgid "RATED PG"
+msgstr "ΚΑΤΑΛΛΗΛΟΤΗΤΑ PG"
+
+msgctxt "#31434"
+msgid "RATED R"
+msgstr "ΚΑΤΑΛΛΗΛΟΤΗΤΑ R"
+
+msgctxt "#31435"
+msgid "RATED G"
+msgstr "ΚΑΤΑΛΛΗΛΟΤΗΤΑ G"
+
+msgctxt "#31436"
+msgid "RATED TV-MA"
+msgstr "ΚΑΤΑΛΛΗΛΟΤΗΤΑ TV-MA"
+
+msgctxt "#31437"
+msgid "RATED TV-14"
+msgstr "ΚΑΤΑΛΛΗΛΟΤΗΤΑ TV-14"
+
+msgctxt "#31438"
+msgid "RATED TV-PG"
+msgstr "ΚΑΤΑΛΛΗΛΟΤΗΤΑ TV-PG"
+
+msgctxt "#31439"
+msgid "RATED TV-Y7"
+msgstr "ΚΑΤΑΛΛΗΛΟΤΗΤΑ TV-Y7"
+
+msgctxt "#31440"
+msgid "RATED TV-Y"
+msgstr "ΚΑΤΑΛΛΗΛΟΤΗΤΑ TV-Y"
+
+msgctxt "#31441"
+msgid "RATED TV-G"
+msgstr "ΚΑΤΑΛΛΗΛΟΤΗΤΑ TV-G"
+
+msgctxt "#31442"
+msgid "ULTRA"
+msgstr "ULTRA"
+
+msgctxt "#31443"
+msgid "FULL"
+msgstr "FULL"
+
+msgctxt "#31444"
+msgid "READY"
+msgstr "READY"
+
+msgctxt "#31445"
+msgid "DD+ ATMOS"
+msgstr "DD+ ATMOS"
+
+msgctxt "#31446"
+msgid "DTS-HD MA"
+msgstr "DTS-HD MA"
+
+msgctxt "#31447"
+msgid "DTS-HD HRA"
+msgstr "DTS-HD HRA"
+
+msgctxt "#31448"
+msgid "DD+"
+msgstr "DD+"
+
+msgctxt "#31449"
+msgid "MEDIA"
+msgstr "ΠΟΛΥΜΕΣΑ"
+
+msgctxt "#31450"
+msgid "RATING"
+msgstr "ΒΑΘΜΟΛΟΓΙΑ"
+
+msgctxt "#31451"
+msgid "CERTIFICATION"
+msgstr "ΚΑΤΑΛΛΗΛΟΤΗΤΑ"
+
+msgctxt "#31452"
+msgid "CREDITS"
+msgstr "ΣΥΝΤΕΛΕΣΤΕΣ"
+
+msgctxt "#31453"
+msgid "FIRST AIRED"
+msgstr "ΠΡΩΤΗ ΠΡΟΒΟΛΗ"
+
+msgctxt "#31454"
+msgid "STUDIO"
+msgstr "ΣΤΟΥΝΤΙΟ"
+
+msgctxt "#31455"
+msgid "GENRE"
+msgstr "ΕΙΔΟΣ"
+
+msgctxt "#31456"
+msgid "CAST"
+msgstr "ΗΘΟΠΟΙΟΙ"
+
+msgctxt "#31457"
+msgid "HD READY"
+msgstr "HD READY"
+
+msgctxt "#31458"
+msgid "BOXED SET"
+msgstr "ΣΥΛΛΕΚΤΙΚΗ ΣΥΛΛΟΓΗ"
+
+msgctxt "#31459"
+msgid "* ALL SEASONS"
+msgstr "* ΟΛΟΙ ΟΙ ΚΥΚΛΟΙ"
+
+msgctxt "#31460"
+msgid "For now"
+msgstr "Για τώρα"
+
+msgctxt "#31461"
+msgid "Kept all day"
+msgstr "Μένει όλη τη μέρα"
+
+msgctxt "#31462"
+msgid "Past midnight"
+msgstr "Μετά τα μεσάνυχτα"
+
+msgctxt "#31463"
+msgid "Still up?"
+msgstr "Ακόμη ξύπνιος;"
+
+msgctxt "#31464"
+msgid "Nearly bedtime."
+msgstr "Σχεδόν ώρα για ύπνο."
+
+msgctxt "#31465"
+msgid "Good evening."
+msgstr "Καλησπέρα."
+
+msgctxt "#31466"
+msgid "Good afternoon."
+msgstr "Καλό απόγευμα."
+
+msgctxt "#31467"
+msgid "Good morning."
+msgstr "Καλημέρα."
+
+msgctxt "#31468"
+msgid "Short ones: under 100 minutes"
+msgstr "Σύντομες: κάτω από 100 λεπτά"
+
+msgctxt "#31469"
+msgid "The evening is yours"
+msgstr "Η βραδιά είναι δική σας"
+
+msgctxt "#31470"
+msgid "A free afternoon: something long"
+msgstr "Ελεύθερο απόγευμα: κάτι μεγάλο"
+
+msgctxt "#31471"
+msgid "Plenty of aeon left"
+msgstr "Υπάρχει άφθονος χρόνος"
+
+msgctxt "#31472"
+msgid "Sunday morning: take it slow"
+msgstr "Κυριακή πρωί: με την ησυχία σας"
+
+msgctxt "#31473"
+msgid "A slow start: something light"
+msgstr "Ήρεμο ξεκίνημα: κάτι ελαφρύ"
+
+msgctxt "#31474"
+msgid "Needs a weather add-on in Kodi's settings"
+msgstr "Χρειάζεται πρόσθετο καιρού στις ρυθμίσεις του Kodi"
+
+msgctxt "#31475"
+msgid "From the weather add-on set in Kodi"
+msgstr "Από το πρόσθετο καιρού που ορίστηκε στο Kodi"
+
+msgctxt "#31476"
+msgid "Tropical storm"
+msgstr "Τροπική καταιγίδα"
+
+msgctxt "#31477"
+msgid "Severe storms"
+msgstr "Ισχυρές καταιγίδες"
+
+msgctxt "#31478"
+msgid "Rain and snow"
+msgstr "Βροχή και χιόνι"
+
+msgctxt "#31479"
+msgid "Rain and sleet"
+msgstr "Βροχή και χιονόνερο"
+
+msgctxt "#31480"
+msgid "Snow and sleet"
+msgstr "Χιόνι και χιονόνερο"
+
+msgctxt "#31481"
+msgid "Freezing drizzle"
+msgstr "Παγωμένο ψιχάλισμα"
+
+msgctxt "#31482"
+msgid "Freezing rain"
+msgstr "Παγωμένη βροχή"
+
+msgctxt "#31483"
+msgid "Snow flurries"
+msgstr "Χιονονιφάδες"
+
+msgctxt "#31484"
+msgid "Light snow"
+msgstr "Ασθενής χιονόπτωση"
+
+msgctxt "#31485"
+msgid "Blowing snow"
+msgstr "Χιονοθύελλα"
+
+msgctxt "#31486"
+msgid "Mostly cloudy"
+msgstr "Κυρίως νεφελώδης"
+
+msgctxt "#31487"
+msgid "Partly cloudy"
+msgstr "Μερικώς νεφελώδης"
+
+msgctxt "#31488"
+msgid "Rain and hail"
+msgstr "Βροχή και χαλάζι"
+
+msgctxt "#31489"
+msgid "Isolated storms"
+msgstr "Μεμονωμένες καταιγίδες"
+
+msgctxt "#31490"
+msgid "Scattered storms"
+msgstr "Σποραδικές καταιγίδες"
+
+msgctxt "#31491"
+msgid "Scattered showers"
+msgstr "Σποραδικές μπόρες"
+
+msgctxt "#31492"
+msgid "Heavy snow"
+msgstr "Ισχυρή χιονόπτωση"
+
+msgctxt "#31493"
+msgid "Snow showers"
+msgstr "Χιονόπτωση"
+
+msgctxt "#31494"
+msgid "More under 100 minutes"
+msgstr "Κι άλλες κάτω από 100 λεπτά"
+
+msgctxt "#31495"
+msgid "Sunday morning: documentaries"
+msgstr "Κυριακή πρωί: ντοκιμαντέρ"
+
+msgctxt "#31496"
+msgid "Morning shorts: under 100 minutes"
+msgstr "Σύντομες για το πρωί: κάτω από 100 λεπτά"
+
+msgctxt "#31497"
+msgid "A long afternoon film"
+msgstr "Μια μεγάλη απογευματινή ταινία"
+
+msgctxt "#31498"
+msgid "Top rated, still unwatched"
+msgstr "Κορυφαίες, ακόμη μη προβεβλημένες"
+
+msgctxt "#31499"
+msgid "Tonight's top rated"
+msgstr "Οι κορυφαίες απόψε"
+
+msgctxt "#31500"
+msgid "Before bed"
+msgstr "Πριν τον ύπνο"
+
+msgctxt "#31501"
+msgid "This morning"
+msgstr "Σήμερα το πρωί"
+
+msgctxt "#31502"
+msgid "This afternoon"
+msgstr "Σήμερα το απόγευμα"
+
+msgctxt "#31503"
+msgid "Later today"
+msgstr "Αργότερα σήμερα"
+
+msgctxt "#31504"
+msgid "One more episode"
+msgstr "Ένα επεισόδιο ακόμη"
+
+msgctxt "#31505"
+msgid "Next up"
+msgstr "Ακολουθεί"
+
+msgctxt "#31506"
+msgid "It's snowing: something long"
+msgstr "Χιονίζει: κάτι μεγάλο"
+
+msgctxt "#31507"
+msgid "Still raining: under an hour"
+msgstr "Βρέχει ακόμη: κάτω από μία ώρα"
+
+msgctxt "#31508"
+msgid "It's raining: something long"
+msgstr "Βρέχει: κάτι μεγάλο"
+
+msgctxt "#31509"
+msgid "Just added"
+msgstr "Μόλις προστέθηκε"
+
+msgctxt "#31510"
+msgid "Download subtitles"
+msgstr "Λήψη υποτίτλων"
+
+msgctxt "#31511"
+msgid "Subtitle settings"
+msgstr "Ρυθμίσεις υποτίτλων"
+
+msgctxt "#31512"
+msgid "What's new"
+msgstr "Τι νέο υπάρχει"
+
+msgctxt "#31513"
+msgid "Nothing to suggest right now."
+msgstr "Τίποτα για πρόταση αυτή τη στιγμή."
+
+msgctxt "#31514"
+msgid "Clean library?"
+msgstr "Εκκαθάριση βιβλιοθήκης;"
+
+msgctxt "#31515"
+msgid "Music videos"
+msgstr "Μουσικά βίντεο"
+
+msgctxt "#31516"
+msgid "Kodi takes out the songs, albums and artists it can no longer find. Your files stay where they are."
+msgstr "Το Kodi αφαιρεί τα τραγούδια, τα άλμπουμ και τους καλλιτέχνες που δεν βρίσκει πια. Τα αρχεία σας μένουν εκεί που είναι."
+
+msgctxt "#31517"
+msgid "Kodi takes out the films, shows and episodes it can no longer find. Your files stay where they are."
+msgstr "Το Kodi αφαιρεί τις ταινίες, τις σειρές και τα επεισόδια που δεν βρίσκει πια. Τα αρχεία σας μένουν εκεί που είναι."
+
+msgctxt "#31518"
+msgid "Add-on settings"
+msgstr "Ρυθμίσεις πρόσθετου"
+
+msgctxt "#31519"
+msgid "Get more"
+msgstr "Λήψη περισσότερων"
+
+msgctxt "#31520"
+msgid "Slideshow"
+msgstr "Προβολή διαφανειών"
+
+msgctxt "#31521"
+msgid "Recursive slideshow"
+msgstr "Αναδρομική προβολή διαφανειών"
+
+msgctxt "#31522"
+msgid "Randomise"
+msgstr "Τυχαία"
+
+msgctxt "#31523"
+msgid "Edited  locked"
+msgstr "Επεξεργασμένο  κλειδωμένο"
+
+msgctxt "#31524"
+msgid "Shuffle  ·  Repeat one"
+msgstr "Τυχαία  ·  Επανάληψη ενός"
+
+msgctxt "#31525"
+msgid "Shuffle  ·  Repeat all"
+msgstr "Τυχαία  ·  Επανάληψη όλων"
+
+msgctxt "#31526"
+msgid "Repeat one"
+msgstr "Επανάληψη ενός"
+
+msgctxt "#31527"
+msgid "Repeat all"
+msgstr "Επανάληψη όλων"
+
+msgctxt "#31528"
+msgid "Video queue"
+msgstr "Ουρά βίντεο"
+
+msgctxt "#31529"
+msgid "Shuffle: on"
+msgstr "Τυχαία: ναι"
+
+msgctxt "#31530"
+msgid "Shuffle: off"
+msgstr "Τυχαία: όχι"
+
+msgctxt "#31531"
+msgid "Play all"
+msgstr "Αναπαραγωγή όλων"
+
+msgctxt "#31532"
+msgid "Shuffle"
+msgstr "Τυχαία"
+
+msgctxt "#31533"
+msgid "Refresh"
+msgstr "Ανανέωση"
+
+msgctxt "#31534"
+msgid "Added"
+msgstr "Προστέθηκε"
+
+msgctxt "#31535"
+msgid "Plays"
+msgstr "Αναπαραγωγές"
+
+msgctxt "#31536"
+msgid "Mood"
+msgstr "Διάθεση"
+
+msgctxt "#31537"
+msgid "Album info"
+msgstr "Πληροφορίες άλμπουμ"
+
+msgctxt "#31538"
+msgid "Artist info"
+msgstr "Πληροφορίες καλλιτέχνη"
+
+msgctxt "#31539"
+msgid "About the artist"
+msgstr "Για τον καλλιτέχνη"
+
+msgctxt "#31552"
+msgid "About the song"
+msgstr "Για το τραγούδι"
+
+msgctxt "#31553"
+msgid "About the album"
+msgstr "Για το άλμπουμ"
+
+msgctxt "#31554"
+msgid "OK reads all of it"
+msgstr "OK τα διαβάζει όλα"
+
+msgctxt "#31555"
+msgid "Up returns to the buttons"
+msgstr "Πάνω επιστρέφει στα κουμπιά"
+
+msgctxt "#31556"
+msgid "Right for the full story"
+msgstr "Δεξιά για όλη την ιστορία"
+
+msgctxt "#31557"
+msgid "Shuffle on"
+msgstr "Τυχαία ναι"
+
+msgctxt "#31558"
+msgid "Music video"
+msgstr "Μουσικό βίντεο"
+
+msgctxt "#31559"
+msgid "HEVC"
+msgstr "HEVC"
+
+msgctxt "#31560"
+msgid "Dolby Vision"
+msgstr "Dolby Vision"
+
+msgctxt "#31561"
+msgid "TrueHD Atmos"
+msgstr "TrueHD Atmos"
+
+msgctxt "#31562"
+msgid "DD+ Atmos"
+msgstr "DD+ Atmos"
+
+msgctxt "#31563"
+msgid "Video"
+msgstr "Βίντεο"
+
+msgctxt "#31564"
+msgid "Chapters"
+msgstr "Κεφάλαια"
+
+msgctxt "#31565"
+msgid "Info"
+msgstr "Πληροφ."
+
+msgctxt "#31566"
+msgid "Stats"
+msgstr "Δεδομένα"
+
+msgctxt "#31567"
+msgid "Sleeping after this"
+msgstr "Αναστολή μετά από αυτό"
+
+msgctxt "#31568"
+msgid "Sleep after this"
+msgstr "Ύπνος μετά από αυτό"
+
+msgctxt "#31569"
+msgid "1 RESULT"
+msgstr "1 ΑΠΟΤΕΛΕΣΜΑ"
+
+msgctxt "#31575"
+msgid "Colors, backdrop and the look of the settings screens."
+msgstr "Χρώματα, φόντο και εμφάνιση των οθονών ρυθμίσεων."
+
+msgctxt "#31576"
+msgid "Show a dimmed copy of the last fanart you looked at behind the settings screens."
+msgstr "Εμφάνιση σκοτεινού αντιγράφου του τελευταίου fanart πίσω από τις οθόνες ρυθμίσεων."
+
+msgctxt "#31577"
+msgid "Background of the A-Z / scroll bar strip in the library views: dark (default) or white like Aeon 2."
+msgstr "Φόντο της λωρίδας Α-Ω / κύλισης στις προβολές βιβλιοθήκης: σκούρο (προεπιλογή) ή λευκό όπως στο Aeon 2."
+
+msgctxt "#31578"
+msgid "Aeon style: neutral (flat dark), the faint fanart, or a color that follows the artwork and fades between titles. Override it per home menu item (Edit spotlight)."
+msgstr "Στυλ Aeon: ουδέτερο (επίπεδο σκούρο), το αχνό fanart ή ένα χρώμα που ακολουθεί την εικόνα και αλλάζει ομαλά μεταξύ τίτλων. Αλλάζει ανά στοιχείο του κεντρικού μενού (Επεξεργασία Spotlight)."
+
+msgctxt "#31579"
+msgid "Aeon: flat dark panels and a white highlight bar (like the Aeon 2 list). Aeon Glass: translucent panels and a soft highlight. Applies to every library view."
+msgstr "Aeon: επίπεδα σκούρα πάνελ και λευκή μπάρα επιλογής (όπως η λίστα του Aeon 2). Aeon Glass: ημιδιαφανή πάνελ και απαλή επιλογή. Ισχύει για κάθε προβολή βιβλιοθήκης."
+
+msgctxt "#31580"
+msgid "Where the music that is playing shows on Home: Slot (lower left, default), Corner (top left), Line (above the menu) or Bar (bottom)."
+msgstr "Πού εμφανίζεται στην Αρχική η μουσική που παίζει: Θέση (κάτω αριστερά, προεπιλογή), Γωνία (πάνω αριστερά), Γραμμή (πάνω από το μενού) ή Μπάρα (κάτω)."
+
+msgctxt "#31581"
+msgid "How visible the fanart backdrop is."
+msgstr "Πόσο ορατό είναι το φόντο fanart."
+
+msgctxt "#31582"
+msgid "Tags, plot text and logos in the movie and episode views."
+msgstr "Ετικέτες, πλοκή και λογότυπα στις προβολές ταινιών και επεισοδίων."
+
+msgctxt "#31583"
+msgid "Resolution and video codec in the tag line under a film or episode."
+msgstr "Ανάλυση και κωδικοποιητής βίντεο στη γραμμή ετικετών κάτω από ταινία ή επεισόδιο."
+
+msgctxt "#31584"
+msgid "Shows HDR10, HLG or Dolby Vision in the tag line when the file has it."
+msgstr "Δείχνει HDR10, HLG ή Dolby Vision στη γραμμή ετικετών όταν το αρχείο τα έχει."
+
+msgctxt "#31585"
+msgid "Audio codec and channel count in the tag line."
+msgstr "Κωδικοποιητής ήχου και αριθμός καναλιών στη γραμμή ετικετών."
+
+msgctxt "#31586"
+msgid "What the text under a film shows: the full plot, or the tagline when the film has one."
+msgstr "Τι δείχνει το κείμενο κάτω από μια ταινία: όλη την πλοκή ή το σλόγκαν, αν η ταινία έχει."
+
+msgctxt "#31587"
+msgid "Long plots scroll by themselves after a few seconds."
+msgstr "Οι μεγάλες πλοκές κυλούν μόνες τους μετά από λίγα δευτερόλεπτα."
+
+msgctxt "#31588"
+msgid "The studio logo beside seasons and episodes (needs the studio logos resource add-on)."
+msgstr "Το λογότυπο του στούντιο δίπλα σε κύκλους και επεισόδια (χρειάζεται το πρόσθετο πόρων με λογότυπα στούντιο)."
+
+msgctxt "#31589"
+msgid "Which rating sources show, and whether the score is colored."
+msgstr "Ποιες πηγές βαθμολογίας εμφανίζονται και αν ο βαθμός είναι χρωματιστός."
+
+msgctxt "#31590"
+msgid "Green from 7, amber from 5, red below."
+msgstr "Πράσινο από 7, κεχριμπαρένιο από 5, κόκκινο από κάτω."
+
+msgctxt "#31591"
+msgid "Shows the IMDb score when the library has one. Several sources can be on at once."
+msgstr "Δείχνει τη βαθμολογία IMDb όταν η βιβλιοθήκη έχει. Μπορούν να είναι ενεργές πολλές πηγές μαζί."
+
+msgctxt "#31592"
+msgid "Shows the TMDb score when the library has one."
+msgstr "Δείχνει τη βαθμολογία TMDb όταν η βιβλιοθήκη έχει."
+
+msgctxt "#31593"
+msgid "Shows the Tomatometer when your scraper or TMDb Helper provides it."
+msgstr "Δείχνει το Tomatometer όταν το δίνει ο scraper σας ή το TMDb Helper."
+
+msgctxt "#31594"
+msgid "Shows the Trakt score when it is in the library."
+msgstr "Δείχνει τη βαθμολογία Trakt όταν υπάρχει στη βιβλιοθήκη."
+
+msgctxt "#31595"
+msgid "Seek bar, pause behaviour and the Back button."
+msgstr "Μπάρα αναζήτησης, συμπεριφορά παύσης και κουμπί Πίσω."
+
+msgctxt "#31596"
+msgid "What the right-hand time of the seek bar shows: the total length, the time left, or when it ends."
+msgstr "Τι δείχνει η δεξιά ώρα της μπάρας: τη συνολική διάρκεια, τον υπόλοιπο χρόνο ή πότε τελειώνει."
+
+msgctxt "#31597"
+msgid "The player controls open by themselves when you pause."
+msgstr "Τα χειριστήρια αναπαραγωγής ανοίγουν μόνα τους στην παύση."
+
+msgctxt "#31598"
+msgid "How long after pausing the controls open."
+msgstr "Πόσο μετά την παύση ανοίγουν τα χειριστήρια."
+
+msgctxt "#31599"
+msgid "Back goes up one level, or straight to the home screen."
+msgstr "Το Πίσω ανεβαίνει ένα επίπεδο ή πηγαίνει κατευθείαν στην αρχική οθόνη."
+
+msgctxt "#31600"
+msgid "Extra fanart and the artist slideshow."
+msgstr "Επιπλέον fanart και η προβολή διαφανειών του καλλιτέχνη."
+
+msgctxt "#31601"
+msgid "Home and the library cycle through a film or show's extra fanart. Needs extra fanart in the library (fanart1, fanart2 ...)."
+msgstr "Η Αρχική και η βιβλιοθήκη εναλλάσσουν τα επιπλέον fanart μιας ταινίας ή σειράς. Χρειάζεται επιπλέον fanart στη βιβλιοθήκη (fanart1, fanart2 ...)."
+
+msgctxt "#31602"
+msgid "How long each fanart image stays."
+msgstr "Πόσο μένει κάθε εικόνα fanart."
+
+msgctxt "#31603"
+msgid "Now playing shows the Artist Slideshow add-on pictures of the artist (needs script.artistslideshow)."
+msgstr "Το «Αναπαράγεται τώρα» δείχνει φωτογραφίες του καλλιτέχνη από το πρόσθετο Artist Slideshow (χρειάζεται script.artistslideshow)."
+
+msgctxt "#31604"
+msgid "What the full-screen widget pages (Up on a home item) show."
+msgstr "Τι δείχνουν οι σελίδες widget πλήρους οθόνης (Πάνω σε στοιχείο της Αρχικής)."
+
+msgctxt "#31605"
+msgid "Resolution, codec, HDR and audio tags on the full-screen widget pages (the choices under Details apply)."
+msgstr "Ετικέτες ανάλυσης, κωδικοποιητή, HDR και ήχου στις σελίδες widget πλήρους οθόνης (ισχύουν οι επιλογές στις Λεπτομέρειες)."
+
+msgctxt "#31606"
+msgid "The rating line, with the sources you chose under Ratings, on the full-screen widget pages."
+msgstr "Η γραμμή βαθμολογιών, με τις πηγές που επιλέξατε στις Βαθμολογίες, στις σελίδες widget πλήρους οθόνης."
+
+msgctxt "#31607"
+msgid "The studio logo, or the network logo for episodes, on the full-screen widget pages (needs the studio logos add-on)."
+msgstr "Το λογότυπο του στούντιο, ή του καναλιού για επεισόδια, στις σελίδες widget πλήρους οθόνης (χρειάζεται το πρόσθετο λογοτύπων στούντιο)."
+
+msgctxt "#31608"
+msgid "Watched markers on posters, the trailer button and logos instead of titles."
+msgstr "Σήματα προβολής στις αφίσες, το κουμπί τρέιλερ και λογότυπα αντί για τίτλους."
+
+msgctxt "#31609"
+msgid "How the playback controls behave."
+msgstr "Πώς συμπεριφέρονται τα χειριστήρια αναπαραγωγής."
+
+msgctxt "#31610"
+msgid "Fonts for each part of the skin, calmer animations, and a way back to the default settings."
+msgstr "Γραμματοσειρές για κάθε μέρος του κελύφους, πιο ήρεμα εφέ και ένας δρόμος πίσω στις προεπιλογές."
+
+msgctxt "#31611"
+msgid "Unwatched: a small dot. Watched: a check disc. Shows add the number of unwatched episodes."
+msgstr "Μη προβεβλημένο: μια μικρή κουκκίδα. Προβεβλημένο: ένα τικ. Οι σειρές δείχνουν και τον αριθμό μη προβεβλημένων επεισοδίων."
+
+msgctxt "#31612"
+msgid "Shows a Trailer button next to Play when a film has a trailer link (played through the YouTube add-on)."
+msgstr "Δείχνει κουμπί Τρέιλερ δίπλα στην Αναπαραγωγή όταν μια ταινία έχει σύνδεσμο τρέιλερ (παίζει μέσω του πρόσθετου YouTube)."
+
+msgctxt "#31613"
+msgid "How long the playback controls stay up after your last button press. They stay while paused and while a menu is open."
+msgstr "Πόσο μένουν τα χειριστήρια μετά το τελευταίο πάτημα. Μένουν σε παύση και με ανοιχτό μενού."
+
+msgctxt "#31614"
+msgid "Where the subtitle and audio offset strip appears while you sync. Top keeps bottom subtitles in view."
+msgstr "Πού εμφανίζεται η λωρίδα μετατόπισης υποτίτλων και ήχου κατά τον συγχρονισμό. Το Πάνω αφήνει ορατούς τους κάτω υποτίτλους."
+
+msgctxt "#31615"
+msgid "Replaces zooms, slides and the rain with short fades. Focus changes stay instant."
+msgstr "Αντικαθιστά τα ζουμ, τις ολισθήσεις και τη βροχή με σύντομες μεταβάσεις. Οι αλλαγές εστίασης μένουν άμεσες."
+
+msgctxt "#31616"
+msgid "Puts every skin setting back to its default and reloads the skin. Press OK twice to confirm."
+msgstr "Επαναφέρει κάθε ρύθμιση κελύφους στην προεπιλογή και φορτώνει ξανά το κέλυφος. Πατήστε OK δύο φορές για επιβεβαίωση."
+
+msgctxt "#31617"
+msgid "Aeon Fuse options. Kodi's settings live under Settings; switch skins in Settings > Interface > Skin."
+msgstr "Επιλογές του Aeon Fuse. Οι ρυθμίσεις του Kodi είναι στις Ρυθμίσεις· αλλάξτε κέλυφος στις Ρυθμίσεις > Διεπαφή > Κέλυφος."
+
+msgctxt "#31618"
+msgid "Resume"
+msgstr "Συνέχεια"
+
+msgctxt "#31619"
+msgid "From start"
+msgstr "Από την αρχή"
+
+msgctxt "#31620"
+msgid "Browse"
+msgstr "Περιήγηση"
+
+msgctxt "#31621"
+msgid "Trailer"
+msgstr "Τρέιλερ"
+
+msgctxt "#31622"
+msgid "Collection"
+msgstr "Συλλογή"
+
+msgctxt "#31623"
+msgid "More by the director"
+msgstr "Περισσότερα από τον σκηνοθέτη"
+
+msgctxt "#31624"
+msgid "Versions"
+msgstr "Εκδόσεις"
+
+msgctxt "#31625"
+msgid "Extras"
+msgstr "Επιπλέον υλικό"
+
+msgctxt "#31626"
+msgid "Choose art"
+msgstr "Επιλογή εικόνας"
+
+msgctxt "#31627"
+msgid "Choose fanart"
+msgstr "Επιλογή fanart"
+
+msgctxt "#31628"
+msgid "Films in this collection"
+msgstr "Ταινίες της συλλογής"
+
+msgctxt "#31629"
+msgid "OK reads the whole story"
+msgstr "OK διαβάζει όλη την πλοκή"
+
+msgctxt "#31630"
+msgid "Up or Back returns to the buttons"
+msgstr "Πάνω ή Πίσω επιστρέφει στα κουμπιά"
+
+msgctxt "#31631"
+msgid "DD"
+msgstr "DD"
+
+msgctxt "#31632"
+msgid "No story written for this one yet."
+msgstr "Δεν έχει γραφτεί ακόμη πλοκή γι' αυτό."
+
+msgctxt "#31633"
+msgid "Shows in progress"
+msgstr "Σειρές σε εξέλιξη"
+
+msgctxt "#31635"
+msgid "A collection: OK opens its films."
+msgstr "Μια συλλογή: OK ανοίγει τις ταινίες της."
+
+msgctxt "#31636"
+msgid "Nothing left: a good time for something new."
+msgstr "Δεν έμεινε τίποτα: καλή ώρα για κάτι νέο."
+
+msgctxt "#31637"
+msgid "Ending at"
+msgstr "Τελειώνει στις"
+
+msgctxt "#31638"
+msgid "PRESETS"
+msgstr "ΠΡΟΕΠΙΛΟΓΕΣ"
+
+msgctxt "#31639"
+msgid "LYRICS"
+msgstr "ΣΤΙΧΟΙ"
+
+msgctxt "#31640"
+msgid "No guide data. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "Δεν υπάρχουν δεδομένα οδηγού. Ενεργοποιήστε πρόσθετο πελάτη PVR στις ρυθμίσεις PVR & ζωντανής TV."
+
+msgctxt "#31641"
+msgid "Feels like"
+msgstr "Αίσθηση"
+
+msgctxt "#31642"
+msgid "Humidity"
+msgstr "Υγρασία"
+
+msgctxt "#31643"
+msgid "Wind"
+msgstr "Άνεμος"
+
+msgctxt "#31644"
+msgid "Precipitation"
+msgstr "Υετός"
+
+msgctxt "#31645"
+msgid "UV index"
+msgstr "Δείκτης UV"
+
+msgctxt "#31646"
+msgid "Sunrise"
+msgstr "Ανατολή"
+
+msgctxt "#31647"
+msgid "Sunset"
+msgstr "Δύση"
+
+msgctxt "#31648"
+msgid "Next location"
+msgstr "Επόμενη τοποθεσία"
+
+msgctxt "#31649"
+msgid "Skin"
+msgstr "Κέλυφος"
+
+msgctxt "#31650"
+msgid "Address"
+msgstr "Διεύθυνση"
+
+msgctxt "#31651"
+msgid "Screen"
+msgstr "Οθόνη"
+
+msgctxt "#31652"
+msgid "Aeon Fuse options: look, details, ratings, behaviour, backgrounds and the home menu (order, widgets, submenus)."
+msgstr "Επιλογές του Aeon Fuse: εμφάνιση, λεπτομέρειες, βαθμολογίες, συμπεριφορά, φόντα και το κεντρικό μενού (σειρά, widget, υπομενού)."
+
+msgctxt "#31653"
+msgid "Video and music playback, refresh-rate matching, subtitle languages and look, discs."
+msgstr "Αναπαραγωγή βίντεο και μουσικής, προσαρμογή ρυθμού ανανέωσης, γλώσσες και εμφάνιση υποτίτλων, δίσκοι."
+
+msgctxt "#31654"
+msgid "Library behaviour, scrapers, file lists, artwork and what OK does on an item."
+msgstr "Συμπεριφορά βιβλιοθήκης, scrapers, λίστες αρχείων, εικόνες και τι κάνει το OK σε στοιχείο."
+
+msgctxt "#31655"
+msgid "Skin, colors, fonts, region and language, screensaver. Switch to another skin here: Skin > Skin."
+msgstr "Κέλυφος, χρώματα, γραμματοσειρές, περιοχή και γλώσσα, προφύλαξη οθόνης. Αλλάξτε σε άλλο κέλυφος εδώ: Κέλυφος > Κέλυφος."
+
+msgctxt "#31656"
+msgid "Browse, update, configure or install add-ons."
+msgstr "Περιήγηση, ενημέρωση, ρύθμιση ή εγκατάσταση πρόσθετων."
+
+msgctxt "#31657"
+msgid "Web server and JSON-RPC control, UPnP, AirPlay, Zeroconf, SMB client."
+msgstr "Διακομιστής ιστού και έλεγχος JSON-RPC, UPnP, AirPlay, Zeroconf, πελάτης SMB."
+
+msgctxt "#31658"
+msgid "Display, audio output and passthrough, input, power saving, logging."
+msgstr "Οθόνη, έξοδος ήχου και passthrough, είσοδος, εξοικονόμηση ενέργειας, καταγραφή."
+
+msgctxt "#31659"
+msgid "Copy, move and delete files; add network sources."
+msgstr "Αντιγραφή, μετακίνηση και διαγραφή αρχείων· προσθήκη πηγών δικτύου."
+
+msgctxt "#31660"
+msgid "Kodi version, video renderer, storage, network and hardware details."
+msgstr "Έκδοση Kodi, απόδοση βίντεο, αποθήκευση, δίκτυο και υλικό."
+
+msgctxt "#31661"
+msgid "What Kodi has done recently: scans, add-on updates, errors."
+msgstr "Τι έκανε πρόσφατα το Kodi: σαρώσεις, ενημερώσεις πρόσθετων, σφάλματα."
+
+msgctxt "#31662"
+msgid "Profiles and the login screen."
+msgstr "Προφίλ και η οθόνη σύνδεσης."
+
+msgctxt "#31663"
+msgid "Live TV and PVR."
+msgstr "Ζωντανή TV και PVR."
+
+msgctxt "#31664"
+msgid "Games and controllers."
+msgstr "Παιχνίδια και χειριστήρια."
+
+msgctxt "#31665"
+msgid "Dark"
+msgstr "Σκούρο"
+
+msgctxt "#31666"
+msgid "White"
+msgstr "Λευκό"
+
+msgctxt "#31667"
+msgid "Menu"
+msgstr "Μενού"
+
+msgctxt "#31668"
+msgid "Position"
+msgstr "Θέση"
+
+msgctxt "#31669"
+msgid "Category"
+msgstr "Κατηγορία"
+
+msgctxt "#31670"
+msgid "Hold time"
+msgstr "Χρόνος παραμονής"
+
+msgctxt "#31671"
+msgid "Pick an item, then use the buttons on the right. Add item puts a new one at the end."
+msgstr "Επιλέξτε στοιχείο και μετά τα κουμπιά δεξιά. Η Προσθήκη στοιχείου βάζει νέο στο τέλος."
+
+msgctxt "#31672"
+msgid "Light"
+msgstr "Ελαφρύ"
+
+msgctxt "#31673"
+msgid "Strong"
+msgstr "Έντονο"
+
+msgctxt "#31674"
+msgid "Slot"
+msgstr "Θέση"
+
+msgctxt "#31675"
+msgid "Corner"
+msgstr "Γωνία"
+
+msgctxt "#31676"
+msgid "Line"
+msgstr "Γραμμή"
+
+msgctxt "#31677"
+msgid "Bar"
+msgstr "Μπάρα"
+
+msgctxt "#31678"
+msgid "Aeon"
+msgstr "Aeon"
+
+msgctxt "#31679"
+msgid "Aeon Glass"
+msgstr "Aeon Glass"
+
+msgctxt "#31680"
+msgid "Color"
+msgstr "Χρώμα"
+
+msgctxt "#31681"
+msgid "PREVIEW"
+msgstr "ΠΡΟΕΠΙΣΚΟΠΗΣΗ"
+
+msgctxt "#31682"
+msgid "LIBRARY LISTS"
+msgstr "ΛΙΣΤΕΣ ΒΙΒΛΙΟΘΗΚΗΣ"
+
+msgctxt "#31683"
+msgid "Focused row"
+msgstr "Ενεργή γραμμή"
+
+msgctxt "#31684"
+msgid "Other row"
+msgstr "Άλλη γραμμή"
+
+msgctxt "#31685"
+msgid "MUSIC PLAYING"
+msgstr "ΠΑΙΖΕΙ ΜΟΥΣΙΚΗ"
+
+msgctxt "#31686"
+msgid "SAMPLE"
+msgstr "ΔΕΙΓΜΑ"
+
+msgctxt "#31687"
+msgid "BACKDROP"
+msgstr "ΦΟΝΤΟ"
+
+msgctxt "#31688"
+msgid "SCREENSAVER"
+msgstr "ΠΡΟΦΥΛΑΞΗ ΟΘΟΝΗΣ"
+
+msgctxt "#31689"
+msgid "TITLE"
+msgstr "ΤΙΤΛΟΣ"
+
+msgctxt "#31690"
+msgid "Plot"
+msgstr "Πλοκή"
+
+msgctxt "#31691"
+msgid "Tagline"
+msgstr "Σλόγκαν"
+
+msgctxt "#31692"
+msgid "TAG LINE"
+msgstr "ΓΡΑΜΜΗ ΕΤΙΚΕΤΩΝ"
+
+msgctxt "#31693"
+msgid "UNDER THE TITLE"
+msgstr "ΚΑΤΩ ΑΠΟ ΤΟΝ ΤΙΤΛΟ"
+
+msgctxt "#31694"
+msgid "PLOT TEXT"
+msgstr "ΚΕΙΜΕΝΟ ΠΛΟΚΗΣ"
+
+msgctxt "#31695"
+msgid "Long plots scroll slowly by themselves, so you can read them without a button press."
+msgstr "Οι μεγάλες πλοκές κυλούν αργά μόνες τους, για να τις διαβάζετε χωρίς πάτημα κουμπιού."
+
+msgctxt "#31696"
+msgid "The studio logo shows beside a season or episode when the studio logos add-on is installed."
+msgstr "Το λογότυπο του στούντιο εμφανίζεται δίπλα σε κύκλο ή επεισόδιο όταν είναι εγκατεστημένο το πρόσθετο λογοτύπων στούντιο."
+
+msgctxt "#31697"
+msgid "THEME SONG"
+msgstr "ΜΟΥΣΙΚΟ ΘΕΜΑ"
+
+msgctxt "#31699"
+msgid "Plays while a movie or show is selected, if its folder has a theme file."
+msgstr "Παίζει όσο είναι επιλεγμένη μια ταινία ή σειρά, αν ο φάκελός της έχει αρχείο θέματος."
+
+msgctxt "#31700"
+msgid "Total"
+msgstr "Σύνολο"
+
+msgctxt "#31701"
+msgid "Left"
+msgstr "Υπόλοιπο"
+
+msgctxt "#31702"
+msgid "Ends at"
+msgstr "Λήξη στις"
+
+msgctxt "#31703"
+msgid "SEEK BAR"
+msgstr "ΜΠΑΡΑ ΑΝΑΖΗΤΗΣΗΣ"
+
+msgctxt "#31704"
+msgid "ON PAUSE"
+msgstr "ΣΤΗΝ ΠΑΥΣΗ"
+
+msgctxt "#31705"
+msgid "BACK BUTTON"
+msgstr "ΚΟΥΜΠΙ ΠΙΣΩ"
+
+msgctxt "#31706"
+msgid "Pressing Back in a library list goes up one level, or straight to the home screen if you choose Home."
+msgstr "Το Πίσω σε λίστα βιβλιοθήκης ανεβαίνει ένα επίπεδο, ή πάει κατευθείαν στην Αρχική αν επιλέξετε Αρχική."
+
+msgctxt "#31707"
+msgid "PLAYER CONTROLS"
+msgstr "Χειριστήρια"
+
+msgctxt "#31708"
+msgid "Needs disc art for the album or movie."
+msgstr "Χρειάζεται εικόνα δίσκου για το άλμπουμ ή την ταινία."
+
+msgctxt "#31709"
+msgid "FANART"
+msgstr "FANART"
+
+msgctxt "#31710"
+msgid "NOW PLAYING"
+msgstr "ΑΝΑΠΑΡΑΓΕΤΑΙ ΤΩΡΑ"
+
+msgctxt "#31711"
+msgid "Pictures of the artist from the Artist Slideshow add-on fade in behind the album cover."
+msgstr "Φωτογραφίες του καλλιτέχνη από το πρόσθετο Artist Slideshow εμφανίζονται πίσω από το εξώφυλλο."
+
+msgctxt "#31712"
+msgid "Slide"
+msgstr "Ολίσθηση"
+
+msgctxt "#31713"
+msgid "Fade"
+msgstr "Σβήσιμο"
+
+msgctxt "#31714"
+msgid "Cut"
+msgstr "Κοπή"
+
+msgctxt "#31715"
+msgid "MEDIA INFO"
+msgstr "ΠΛΗΡΟΦΟΡΙΕΣ ΜΕΣΟΥ"
+
+msgctxt "#31716"
+msgid "STUDIO / NETWORK"
+msgstr "ΣΤΟΥΝΤΙΟ / ΚΑΝΑΛΙ"
+
+msgctxt "#31717"
+msgid "The logo of the studio, or of the network for episodes, under the date ring."
+msgstr "Το λογότυπο του στούντιο, ή του καναλιού για επεισόδια, κάτω από τον δακτύλιο ημερομηνίας."
+
+msgctxt "#31718"
+msgid "SPOTLIGHT"
+msgstr "SPOTLIGHT"
+
+msgctxt "#31719"
+msgid "Selected item:"
+msgstr "Επιλεγμένο:"
+
+msgctxt "#31720"
+msgid "Set path / content"
+msgstr "Διαδρομή / είδος"
+
+msgctxt "#31721"
+msgid "Edit widgets"
+msgstr "Επεξ. widget"
+
+msgctxt "#31722"
+msgid "Edit submenu"
+msgstr "Επεξ. υπομενού"
+
+msgctxt "#31723"
+msgid "Edit spotlight"
+msgstr "Επεξ. Spotlight"
+
+msgctxt "#31724"
+msgid "Restore default order"
+msgstr "Αρχική σειρά"
+
+msgctxt "#31725"
+msgid "Theme & style"
+msgstr "Θέμα και στυλ"
+
+msgctxt "#31726"
+msgid "Look"
+msgstr "Όψη"
+
+msgctxt "#31727"
+msgid "Player"
+msgstr "Αναπαραγωγή"
+
+msgctxt "#31728"
+msgid "Music player"
+msgstr "Αναπαραγωγή μουσικής"
+
+msgctxt "#31729"
+msgid "Backgrounds"
+msgstr "Φόντα"
+
+msgctxt "#31730"
+msgid "Widget & Spotlight screens"
+msgstr "Οθόνες widget & Spotlight"
+
+msgctxt "#31731"
+msgid "System"
+msgstr "Σύστημα"
+
+msgctxt "#31732"
+msgid "Home menu"
+msgstr "Κεντρικό μενού"
+
+msgctxt "#31733"
+msgid "Auto"
+msgstr "Αυτόμ."
+
+msgctxt "#31734"
+msgid "Morning"
+msgstr "Πρωί"
+
+msgctxt "#31735"
+msgid "Afternoon"
+msgstr "Απόγευμα"
+
+msgctxt "#31736"
+msgid "Evening"
+msgstr "Βράδυ"
+
+msgctxt "#31737"
+msgid "Night"
+msgstr "Νύχτα"
+
+msgctxt "#31738"
+msgid "Bedtime"
+msgstr "Ώρα ύπνου"
+
+msgctxt "#31739"
+msgid "Countdown and fits-before rows"
+msgstr "Αντίστροφη μέτρηση και «προλαβαίνετε»"
+
+msgctxt "#31740"
+msgid "Weather row and rain"
+msgstr "Σειρά καιρού και βροχή"
+
+msgctxt "#31741"
+msgid "Borrowed color"
+msgstr "Δανεικό χρώμα"
+
+msgctxt "#31742"
+msgid "The focused film tints the light"
+msgstr "Η ταινία με εστίαση χρωματίζει το φως"
+
+msgctxt "#31743"
+msgid "Dots and checks on posters"
+msgstr "Κουκκίδες και τικ στις αφίσες"
+
+msgctxt "#31744"
+msgid "Unwatched"
+msgstr "Αθέατα"
+
+msgctxt "#31745"
+msgid "Only when a film has a trailer"
+msgstr "Μόνο όταν μια ταινία έχει τρέιλερ"
+
+msgctxt "#31746"
+msgid "Logos instead of titles"
+msgstr "Λογότυπα αντί για τίτλους"
+
+msgctxt "#31747"
+msgid "Clearlogos in the OSD, screensaver and Now playing"
+msgstr "Clearlogo στο OSD, την προφύλαξη και το Αναπαράγεται τώρα"
+
+msgctxt "#31748"
+msgid "Library side strip"
+msgstr "Πλαϊνή λωρίδα βιβλιοθήκης"
+
+msgctxt "#31749"
+msgid "OSD auto-hide"
+msgstr "Αυτόματη απόκρυψη OSD"
+
+msgctxt "#31750"
+msgid "Controls close by themselves"
+msgstr "Τα χειριστήρια κλείνουν μόνα τους"
+
+msgctxt "#31751"
+msgid "Subtitle offset strip"
+msgstr "Λωρίδα μετατόπισης υποτίτλων"
+
+msgctxt "#31752"
+msgid "Subtitle / audio sync strip"
+msgstr "Λωρίδα συγχρονισμού υποτίτλων / ήχου"
+
+msgctxt "#31753"
+msgid "Top"
+msgstr "Πάνω"
+
+msgctxt "#31754"
+msgid "Bottom"
+msgstr "Κάτω"
+
+msgctxt "#31755"
+msgid "Fades instead of zooms and slides"
+msgstr "Σβησίματα αντί για ζουμ και ολισθήσεις"
+
+msgctxt "#31756"
+msgid "Back to the defaults"
+msgstr "Πίσω στις προεπιλογές"
+
+msgctxt "#31757"
+msgid "Needs a PVR add-on"
+msgstr "Χρειάζεται πρόσθετο PVR"
+
+msgctxt "#31758"
+msgid "Power and library actions (Home sub-menu)"
+msgstr "Τροφοδοσία και βιβλιοθήκη (υπομενού Αρχικής)"
+
+msgctxt "#31759"
+msgid "Spotlight: menu item 1"
+msgstr "Spotlight: στοιχείο μενού 1"
+
+msgctxt "#31760"
+msgid "Featured slider for this item (needs a library or add-on folder)"
+msgstr "Καρουζέλ (φάκελος βιβλιοθήκης ή πρόσθετου)"
+
+msgctxt "#31761"
+msgid "Spotlight: menu item 2"
+msgstr "Spotlight: στοιχείο μενού 2"
+
+msgctxt "#31762"
+msgid "Spotlight: menu item 3"
+msgstr "Spotlight: στοιχείο μενού 3"
+
+msgctxt "#31763"
+msgid "Fanart Menu Backdrop"
+msgstr "Φόντο μενού με fanart"
+
+msgctxt "#31764"
+msgid "Menu Backdrop Strength"
+msgstr "Ένταση φόντου μενού"
+
+msgctxt "#31765"
+msgid "Now playing on Home"
+msgstr "Τώρα παίζει στην Αρχική"
+
+msgctxt "#31766"
+msgid "Theme"
+msgstr "Θέμα"
+
+msgctxt "#31767"
+msgid "Library background"
+msgstr "Φόντο βιβλιοθήκης"
+
+msgctxt "#31768"
+msgid "Screensaver background"
+msgstr "Φόντο προφύλαξης οθόνης"
+
+msgctxt "#31769"
+msgid "Resolution and codec"
+msgstr "Ανάλυση και κωδικοποιητής"
+
+msgctxt "#31770"
+msgid "HDR tag"
+msgstr "Ετικέτα HDR"
+
+msgctxt "#31771"
+msgid "Audio codec and channels"
+msgstr "Κωδικοποιητής ήχου και κανάλια"
+
+msgctxt "#31772"
+msgid "Plotline"
+msgstr "Γραμμή πλοκής"
+
+msgctxt "#31773"
+msgid "Autoscroll plot text"
+msgstr "Αυτόματη κύλιση πλοκής"
+
+msgctxt "#31774"
+msgid "Studio logo"
+msgstr "Λογότυπο στούντιο"
+
+msgctxt "#31775"
+msgid "Theme songs"
+msgstr "Μουσικά θέματα"
+
+msgctxt "#31776"
+msgid "Color the rating"
+msgstr "Χρωματισμός βαθμολογίας"
+
+msgctxt "#31777"
+msgid "IMDb rating"
+msgstr "Βαθμολογία IMDb"
+
+msgctxt "#31778"
+msgid "TMDb rating"
+msgstr "Βαθμολογία TMDb"
+
+msgctxt "#31779"
+msgid "Rotten Tomatoes"
+msgstr "Rotten Tomatoes"
+
+msgctxt "#31780"
+msgid "Trakt rating"
+msgstr "Βαθμολογία Trakt"
+
+msgctxt "#31781"
+msgid "Seek bar time"
+msgstr "Ώρα της μπάρας αναζήτησης"
+
+msgctxt "#31782"
+msgid "Controls on pause"
+msgstr "Χειριστήρια στην παύση"
+
+msgctxt "#31783"
+msgid "Delay before they open"
+msgstr "Καθυστέρηση πριν ανοίξουν"
+
+msgctxt "#31784"
+msgid "Back button in the library"
+msgstr "Κουμπί Πίσω στη βιβλιοθήκη"
+
+msgctxt "#31785"
+msgid "Show poster on OSD controls"
+msgstr "Εμφάνιση αφίσας στα χειριστήρια OSD"
+
+msgctxt "#31786"
+msgid "Spinning disc art"
+msgstr "Περιστρεφόμενος δίσκος"
+
+msgctxt "#31787"
+msgid "Cycle extra fanart"
+msgstr "Εναλλαγή επιπλέον fanart"
+
+msgctxt "#31788"
+msgid "Seconds between images"
+msgstr "Δευτερόλεπτα μεταξύ εικόνων"
+
+msgctxt "#31789"
+msgid "Artist slideshow"
+msgstr "Προβολή διαφανειών καλλιτέχνη"
+
+msgctxt "#31790"
+msgid "Studio / network"
+msgstr "Στούντιο / κανάλι"
+
+msgctxt "#31791"
+msgid "Home spotlight: background"
+msgstr "Spotlight Αρχικής: φόντο"
+
+msgctxt "#31792"
+msgid "Home spotlight: transition"
+msgstr "Spotlight Αρχικής: μετάβαση"
+
+msgctxt "#31793"
+msgid "Rules"
+msgstr "Κανόνες"
+
+msgctxt "#31800"
+msgid "Settings strip"
+msgstr "Λωρίδα ρυθμίσεων"
+
+msgctxt "#31801"
+msgid "Overlay"
+msgstr "Επικάλυψη"
+
+msgctxt "#31802"
+msgid "Permanent"
+msgstr "Μόνιμη"
+
+msgctxt "#31803"
+msgid "Box colors from artwork"
+msgstr "Χρώματα πλαισίων από την εικόνα"
+
+msgctxt "#31804"
+msgid "Show clock on OSD"
+msgstr "Εμφάνιση ρολογιού στο OSD"
+
+msgctxt "#31805"
+msgid "Show weather on OSD"
+msgstr "Εμφάνιση καιρού στο OSD"
+
+msgctxt "#31806"
+msgid "Lyrics style"
+msgstr "Στυλ στίχων"
+
+msgctxt "#31807"
+msgid "Lines"
+msgstr "Γραμμές"
+
+msgctxt "#31808"
+msgid "Words"
+msgstr "Λέξεις"
+
+msgctxt "#31280"
+msgid "VERSION"
+msgstr "ΕΚΔΟΣΗ"
+
+msgctxt "#31281"
+msgid "SYSTEM"
+msgstr "ΣΥΣΤΗΜΑ"
+
+msgctxt "#31282"
+msgid "HARDWARE"
+msgstr "ΥΛΙΚΟ"
+
+msgctxt "#31283"
+msgid "LIBRARY"
+msgstr "ΒΙΒΛΙΟΘΗΚΗ"
+
+msgctxt "#31574"
+msgid "Build"
+msgstr "Έκδοση build"
+
+msgctxt "#31634"
+msgid "Name"
+msgstr "Όνομα"
+
+msgctxt "#31698"
+msgid "Profile"
+msgstr "Προφίλ"
+
+msgctxt "#31794"
+msgid "Uptime"
+msgstr "Λειτουργία"
+
+msgctxt "#31795"
+msgid "Total uptime"
+msgstr "Συνολικά"
+
+msgctxt "#31796"
+msgid "IP address"
+msgstr "Διεύθυνση IP"
+
+msgctxt "#31797"
+msgid "MAC address"
+msgstr "Διεύθυνση MAC"
+
+msgctxt "#31798"
+msgid "Internet"
+msgstr "Διαδίκτυο"
+
+msgctxt "#31799"
+msgid "CPU usage"
+msgstr "Χρήση CPU"
+
+msgctxt "#31809"
+msgid "Memory"
+msgstr "Μνήμη"
+
+msgctxt "#31810"
+msgid "Used"
+msgstr "Σε χρήση"
+
+msgctxt "#31811"
+msgid "CPU temperature"
+msgstr "Θερμ. CPU"
+
+msgctxt "#31812"
+msgid "GPU temperature"
+msgstr "Θερμ. GPU"
+
+msgctxt "#31813"
+msgid "Movies"
+msgstr "Ταινίες"
+
+msgctxt "#31814"
+msgid "Lyrics take focus"
+msgstr "Οι στίχοι παίρνουν την εστίαση"
+
+msgctxt "#31815"
+msgid "Artist list"
+msgstr "Λίστα καλλιτεχνών"
+
+msgctxt "#31816"
+msgid "Artist wall (covers)"
+msgstr "Τοίχος καλλιτεχνών (εξώφυλλα)"
+
+msgctxt "#31817"
+msgid "Album wall (fanart)"
+msgstr "Τοίχος άλμπουμ (fanart)"
+
+msgctxt "#31824"
+msgid "LIBRARY VIEW"
+msgstr "Προβολή συλλογής"
+
+msgctxt "#31825"
+msgid "Overlay: the strip slides in with Left or the Menu key. Permanent: it is always there. View settings can set this per view."
+msgstr "Επικάλυψη: η λωρίδα μπαίνει με Αριστερά ή το πλήκτρο Μενού. Μόνιμη: είναι πάντα εκεί. Οι ρυθμίσεις προβολής μπορούν να το ορίσουν ανά προβολή."
+
+msgctxt "#31826"
+msgid "BOXES"
+msgstr "ΠΛΑΙΣΙΑ"
+
+msgctxt "#31827"
+msgid "On: the clock and count boxes take the color of the poster or cover in focus (needs the KarmaMole helper)."
+msgstr "Ναι: τα πλαίσια ρολογιού και μετρητή παίρνουν το χρώμα της αφίσας ή του εξωφύλλου με εστίαση (χρειάζεται τον βοηθό KarmaMole)."
+
+msgctxt "#31828"
+msgid "The controls close by themselves after this many seconds without a key press."
+msgstr "Τα χειριστήρια κλείνουν μόνα τους μετά από τόσα δευτερόλεπτα χωρίς πάτημα."
+
+msgctxt "#31829"
+msgid "SYNC STRIP"
+msgstr "Λωρίδα συγχρον."
+
+msgctxt "#31830"
+msgid "Where the subtitle / audio offset strip sits while you adjust it."
+msgstr "Πού βρίσκεται η λωρίδα μετατόπισης υποτίτλων / ήχου όσο τη ρυθμίζετε."
+
+msgctxt "#31831"
+msgid "Clock box at the top right of the player controls."
+msgstr "Πλαίσιο ρολογιού πάνω δεξιά στα χειριστήρια."
+
+msgctxt "#31832"
+msgid "Weather box under the clock (needs a weather add-on)."
+msgstr "Πλαίσιο καιρού κάτω από το ρολόι (χρειάζεται πρόσθετο καιρού)."
+
+msgctxt "#31833"
+msgid "BIG"
+msgstr "ΜΕΓΑΛΟ"
+
+msgctxt "#31834"
+msgid "COLORED"
+msgstr "ΧΡΩΜΑΤΙΣΤΟ"
+
+msgctxt "#31835"
+msgid "WORDS"
+msgstr "ΛΕΞΕΙΣ"
+
+msgctxt "#31836"
+msgid "Lines: the current line between its neighbours. Words: the animated lyrics of Estuary MOD V2 (needs that skin installed for its fonts)."
+msgstr "Γραμμές: η τρέχουσα γραμμή ανάμεσα στις γειτονικές. Λέξεις: οι κινούμενοι στίχοι του Estuary MOD V2 (χρειάζεται εγκατεστημένο αυτό το κέλυφος για τις γραμματοσειρές του)."
+
+msgctxt "#31837"
+msgid "Off: OK opens the music controls. On: Up / Down pick a line, OK jumps to it; Back lets go of the lines and the lyrics keep running."
+msgstr "Όχι: το OK ανοίγει τα χειριστήρια μουσικής. Ναι: Πάνω / Κάτω επιλέγει γραμμή, OK πηγαίνει εκεί· το Πίσω αφήνει τις γραμμές και οι στίχοι συνεχίζουν."
+
+msgctxt "#31818"
+msgid "Words style placement"
+msgstr "Θέση του στυλ Λέξεις"
+
+msgctxt "#31819"
+msgid "Full screen"
+msgstr "Πλήρης οθόνη"
+
+msgctxt "#31820"
+msgid "On the cover"
+msgstr "Στο εξώφυλλο"
+
+msgctxt "#31821"
+msgid "Home vignette"
+msgstr "Βινιέτα Αρχικής"
+
+msgctxt "#31822"
+msgid "Fonts"
+msgstr "Γραμματοσειρές"
+
+msgctxt "#31823"
+msgid "Own family for Home, library, headings, settings, player"
+msgstr "Δική της οικογένεια για Αρχική, βιβλιοθήκη, επικεφαλίδες, ρυθμίσεις, αναπαραγωγή"
+
+msgctxt "#31838"
+msgid "Fonts per section"
+msgstr "Γραμματοσειρές ανά ενότητα"
+
+msgctxt "#31839"
+msgid "Follow the font set"
+msgstr "Ακολουθία συνόλου γραμματοσειρών"
+
+msgctxt "#31840"
+msgid "Headings"
+msgstr "Επικεφαλίδες"
+
+msgctxt "#31841"
+msgid "Settings pages"
+msgstr "Σελίδες ρυθμίσεων"
+
+msgctxt "#31842"
+msgid "Player"
+msgstr "Αναπαραγωγή"
+
+msgctxt "#31843"
+msgid "Font for: %s"
+msgstr "Γραμματοσειρά για: %s"
+
+msgctxt "#31844"
+msgid "not installed"
+msgstr "δεν είναι εγκατεστημένο"
+
+msgctxt "#31845"
+msgid "Plots, biographies and hints look like this. The quick brown fox jumps over the lazy dog. 0123456789"
+msgstr "Οι πλοκές, οι βιογραφίες και οι υποδείξεις φαίνονται έτσι. Ξεσκεπάζω την ψυχοφθόρα βδελυγμία. 0123456789"
+
+msgctxt "#31846"
+msgid "Preview"
+msgstr "Προεπισκόπηση"
+
+msgctxt "#31847"
+msgid "Categories"
+msgstr "Κατηγορίες"
+
+msgctxt "#31848"
+msgid "Show weather on screensaver"
+msgstr "Εμφάνιση καιρού στην προφύλαξη οθόνης"
+
+msgctxt "#31849"
+msgid "Temperature and conditions in the top right corner"
+msgstr "Θερμοκρασία και καιρός πάνω δεξιά"
+
+msgctxt "#31850"
+msgid "Videos · Music · Discs · Pictures · Language · Subtitles"
+msgstr "Βίντεο · Μουσική · Δίσκοι · Εικόνες · Γλώσσα · Υπότιτλοι"
+
+msgctxt "#31851"
+msgid "Library · General · Videos · Music · Pictures"
+msgstr "Βιβλιοθήκη · Γενικά · Βίντεο · Μουσική · Εικόνες"
+
+msgctxt "#31852"
+msgid "Skin · Regional · Screensaver · Master lock · Startup"
+msgstr "Κέλυφος · Τοπικές · Προφύλαξη οθόνης · Κύριο κλείδωμα · Εκκίνηση"
+
+msgctxt "#31853"
+msgid "General · Control · UPnP / DLNA · AirPlay · Weather"
+msgstr "Γενικά · Έλεγχος · UPnP / DLNA · AirPlay · Καιρός"
+
+msgctxt "#31854"
+msgid "Display · Audio · Input · Internet access · Power saving · Add-ons · Logging"
+msgstr "Οθόνη · Ήχος · Είσοδος · Πρόσβαση στο διαδίκτυο · Εξοικονόμηση ενέργειας · Πρόσθετα · Καταγραφή"
+
+msgctxt "#31855"
+msgid "General · Channels · Guide · Playback · Recording · Reminders"
+msgstr "Γενικά · Κανάλια · Οδηγός · Αναπαραγωγή · Εγγραφή · Υπενθυμίσεις"
+
+msgctxt "#31856"
+msgid "Home menu position"
+msgstr "Θέση κεντρικού μενού"
+
+msgctxt "#31857"
+msgid "Middle"
+msgstr "Μέση"
+
+msgctxt "#31858"
+msgid "Low"
+msgstr "Χαμηλά"
+
+msgctxt "#31859"
+msgid "General · Achievements"
+msgstr "Γενικά · Επιτεύγματα"
+
+msgctxt "#31860"
+msgid "Show clock on screensaver"
+msgstr "Εμφάνιση ρολογιού στην προφύλαξη οθόνης"
+
+msgctxt "#31861"
+msgid "Poster / thumbnail"
+msgstr "Αφίσα / μικρογραφία"
+
+msgctxt "#31862"
+msgid "Season and episode counts"
+msgstr "Αριθμοί κύκλων και επεισοδίων"
+
+msgctxt "#31863"
+msgid "Watched status"
+msgstr "Κατάσταση προβολής"
+
+msgctxt "#31864"
+msgid "The Long Way Home"
+msgstr "Ο μακρύς δρόμος για το σπίτι"
+
+msgctxt "#31865"
+msgid "2019 | DRAMA / ADVENTURE"
+msgstr "2019 | ΔΡΑΜΑ / ΠΕΡΙΠΕΤΕΙΑ"
+
+msgctxt "#31866"
+msgid "Northern Lights"
+msgstr "Βόρειο σέλας"
+
+msgctxt "#31867"
+msgid "2023 | DOCUMENTARY"
+msgstr "2023 | ΝΤΟΚΙΜΑΝΤΕΡ"
+
+msgctxt "#31868"
+msgid "A Quiet Harbour"
+msgstr "Ένα ήσυχο λιμάνι"
+
+msgctxt "#31869"
+msgid "1998 | CRIME / THRILLER"
+msgstr "1998 | ΑΣΤΥΝΟΜΙΚΗ / ΘΡΙΛΕΡ"
+
+msgctxt "#31188"
+msgid "Item"
+msgstr "Στοιχείο"
+
+msgctxt "#31192"
+msgid "Screenshots"
+msgstr "Στιγμιότυπα οθόνης"
+
+msgctxt "#31193"
+msgid "Picture details"
+msgstr "Λεπτομέρειες εικόνας"
+
+msgctxt "#31284"
+msgid "EPG"
+msgstr "EPG"
+
+msgctxt "#31285"
+msgid "Tools"
+msgstr "Εργαλεία"
+
+msgctxt "#31286"
+msgid "Who is watching?"
+msgstr "Ποιος βλέπει;"
+
+msgctxt "#31287"
+msgid "Playlist editor"
+msgstr "Επεξεργασία λιστών αναπαραγωγής"
+
+msgctxt "#31288"
+msgid "Flix"
+msgstr "Flix"
+
+msgctxt "#31289"
+msgid "Fanart with one row"
+msgstr "Fanart με μία σειρά"
+
+msgctxt "#31290"
+msgid "Combined"
+msgstr "Συνδυαστική"
+
+msgctxt "#31291"
+msgid "A row over its contents"
+msgstr "Μια σειρά πάνω από το περιεχόμενό της"
+
+msgctxt "#31292"
+msgid "Circles"
+msgstr "Κύκλοι"
+
+msgctxt "#31293"
+msgid "Round portraits"
+msgstr "Στρογγυλά πορτρέτα"
+
+msgctxt "#31294"
+msgid "Planner"
+msgstr "Προγραμματιστής"
+
+msgctxt "#31570"
+msgid "Episodes by date"
+msgstr "Επεισόδια κατά ημερομηνία"
+
+msgctxt "#31571"
+msgid "Recommended"
+msgstr "Προτεινόμενα"
+
+msgctxt "#31572"
+msgid "Similar titles"
+msgstr "Παρόμοιοι τίτλοι"
+
+msgctxt "#31573"
+msgid "Information"
+msgstr "Πληροφορίες"
+
+msgctxt "#31870"
+msgid "Plot hidden until you have watched it."
+msgstr "Η πλοκή μένει κρυφή μέχρι να το δείτε."
+
+msgctxt "#31871"
+msgid "More options"
+msgstr "Περισσότερες επιλογές"
+
+msgctxt "#31872"
+msgid "Spoilers, pause and language flags"
+msgstr "Spoiler, παύση και σημαίες γλωσσών"
+
+msgctxt "#31873"
+msgid "Hide spoilers of unwatched episodes"
+msgstr "Απόκρυψη spoiler νέων επεισοδίων"
+
+msgctxt "#31874"
+msgid "Seek bar while paused"
+msgstr "Μπάρα αναζήτησης στην παύση"
+
+msgctxt "#31875"
+msgid "Show language flags on OSD"
+msgstr "Εμφάνιση σημαιών γλώσσας στο OSD"
+
+msgctxt "#31876"
+msgid "Always"
+msgstr "Πάντα"
+
+msgctxt "#31877"
+msgid "5 seconds"
+msgstr "5 δευτερόλεπτα"
+
+msgctxt "#31878"
+msgid "Never"
+msgstr "Ποτέ"
+
+msgctxt "#31879"
+msgid "Stacked row on Home"
+msgstr "Στοιβαγμένη σειρά στην Αρχική"
+
+msgctxt "#31880"
+msgid "Kiosk mode (lock views)"
+msgstr "Περίπτερο (κλείδωμα προβολών)"
+
+msgctxt "#31881"
+msgid "Last login"
+msgstr "Τελευταία σύνδεση"
+
+msgctxt "#31882"
+msgid "Cinema mode: trailers before a film"
+msgstr "Σινεμά: τρέιλερ πριν την ταινία"
+
+msgctxt "#31883"
+msgid "1 trailer"
+msgstr "1 τρέιλερ"
+
+msgctxt "#31884"
+msgid "2 trailers"
+msgstr "2 τρέιλερ"
+
+msgctxt "#31885"
+msgid "3 trailers"
+msgstr "3 τρέιλερ"
+
+msgctxt "#31886"
+msgid "Reviews"
+msgstr "Κριτικές"
+
+msgctxt "#31887"
+msgid "Top tracks"
+msgstr "Κορυφαία κομμάτια"
+
+msgctxt "#31888"
+msgid "Similar artists"
+msgstr "Παρόμοιοι καλλιτέχνες"
+
+msgctxt "#31889"
+msgid "Not in your library"
+msgstr "Μη διαθέσιμο"
+
+msgctxt "#31890"
+msgid "Artist page: look up on Deezer"
+msgstr "Καλλιτέχνης: αναζήτηση στο Deezer"
+
+msgctxt "#31891"
+msgid "Progress line on posters"
+msgstr "Γραμμή προόδου στις αφίσες"
+
+msgctxt "#31892"
+msgid "Play trailers automatically"
+msgstr "Αυτόματη αναπαραγωγή τρέιλερ"
+
+msgctxt "#31893"
+msgid "Nothing planned"
+msgstr "Τίποτα προγραμματισμένο"
+
+msgctxt "#31894"
+msgid "View"
+msgstr "Προβολή"
+
+msgctxt "#31895"
+msgid "Week starts"
+msgstr "Η εβδομάδα ξεκινά"
+
+msgctxt "#31896"
+msgid "Show"
+msgstr "Εμφάνιση"
+
+msgctxt "#31897"
+msgid "Day"
+msgstr "Ημέρα"
+
+msgctxt "#31898"
+msgid "Week"
+msgstr "Εβδομάδα"
+
+msgctxt "#31899"
+msgid "Home spotlight"
+msgstr "Spotlight Αρχικής"
+
+msgctxt "#31903"
+msgid "Days ahead"
+msgstr "Ημέρες μπροστά"
+
+msgctxt "#31904"
+msgid "What is coming, shown one title at a time while the Planner is focused on Home. It starts with today."
+msgstr "Ό,τι έρχεται, ένας τίτλος τη φορά όσο ο Προγραμματιστής έχει εστίαση στην Αρχική. Ξεκινά από σήμερα."
+
+msgctxt "#31905"
+msgid "Disable"
+msgstr "Απενεργοποίηση"
+
+msgctxt "#31906"
+msgid "Enable"
+msgstr "Ενεργοποίηση"
+
+msgctxt "#31907"
+msgid "Empty"
+msgstr "Κενό"
+
+msgctxt "#31908"
+msgid "Choose type"
+msgstr "Επιλογή τύπου"
+
+msgctxt "#31909"
+msgid "Custom item"
+msgstr "Προσαρμοσμένο στοιχείο"
+
+msgctxt "#31910"
+msgid "Empty position"
+msgstr "Κενή θέση"
+
+msgctxt "#31911"
+msgid "Type of position"
+msgstr "Τύπος θέσης"
+
+msgctxt "#31912"
+msgid "All ten custom items are in use. Free one first."
+msgstr "Και τα δέκα προσαρμοσμένα στοιχεία χρησιμοποιούνται. Ελευθερώστε πρώτα ένα."
+
+msgctxt "#31913"
+msgid "Channel group"
+msgstr "Ομάδα καναλιών"
+
+msgctxt "#31914"
+msgid "Watched last"
+msgstr "Τελευταία που είδατε"
+
+msgctxt "#31915"
+msgid "None"
+msgstr "Καμία"
+
+msgctxt "#31916"
+msgid "No channel group"
+msgstr "Χωρίς ομάδα καναλιών"
+
+msgctxt "#31917"
+msgid "With Live TV focused on Home: Up reaches the channels watched last, Right there shows the channel group chosen here. OK plays a channel."
+msgstr "Ζωντανή TV στην Αρχική: το Πάνω δείχνει τα τελευταία κανάλια, το Δεξιά την ομάδα καναλιών που επιλέγετε εδώ. Το OK παίζει κανάλι."
+
+msgctxt "#31918"
+msgid "UP: CHANNELS   |   OK: GUIDE"
+msgstr "ΠΑΝΩ: ΚΑΝΑΛΙΑ   |   OK: ΟΔΗΓΟΣ"
+
+msgctxt "#31919"
+msgid "OK: WATCH   |   LEFT: WATCHED LAST"
+msgstr "OK: ΠΡΟΒΟΛΗ   |   ΑΡΙΣΤΕΡΑ: ΤΕΛΕΥΤΑΙΑ"
+
+msgctxt "#31920"
+msgid "OK: WATCH   |   RIGHT: CHANNEL GROUP"
+msgstr "OK: ΠΡΟΒΟΛΗ   |   ΔΕΞΙΑ: ΟΜΑΔΑ ΚΑΝΑΛΙΩΝ"
+
+msgctxt "#31921"
+msgid "OK: WATCH"
+msgstr "OK: ΠΡΟΒΟΛΗ"
+
+msgctxt "#31922"
+msgid "LEFT / RIGHT: OTHER TITLES   |   DOWN: MENU"
+msgstr "ΑΡΙΣΤΕΡΑ / ΔΕΞΙΑ: ΑΛΛΟΙ ΤΙΤΛΟΙ   |   ΚΑΤΩ: ΜΕΝΟΥ"
+
+msgctxt "#31923"
+msgid "Coming up"
+msgstr "Έρχεται"
+
+msgctxt "#31924"
+msgid "Not in your library yet."
+msgstr "Δεν υπάρχει ακόμη στη βιβλιοθήκη σας."
+
+msgctxt "#31925"
+msgid "On"
+msgstr "Ναι"
+
+msgctxt "#31926"
+msgid "Unwatched episodes show no thumbnail and no plot until you have seen them."
+msgstr "Τα μη προβεβλημένα επεισόδια δεν δείχνουν μικρογραφία ούτε πλοκή μέχρι να τα δείτε."
+
+msgctxt "#31927"
+msgid "Top tracks and similar artists on the artist page come from Deezer (needs internet). Off: only your library."
+msgstr "Τα κορυφαία κομμάτια και οι παρόμοιοι καλλιτέχνες στη σελίδα καλλιτέχνη έρχονται από το Deezer (χρειάζεται διαδίκτυο). Όχι: μόνο η βιβλιοθήκη σας."
+
+msgctxt "#31928"
+msgid "When the seek bar shows while a film is paused: always, for 5 seconds, or never."
+msgstr "Πότε εμφανίζεται η μπάρα αναζήτησης όταν μια ταινία είναι σε παύση: πάντα, για 5 δευτερόλεπτα ή ποτέ."
+
+msgctxt "#31929"
+msgid "Flags of the audio and subtitle languages on the player controls."
+msgstr "Σημαίες των γλωσσών ήχου και υποτίτλων στα χειριστήρια αναπαραγωγής."
+
+msgctxt "#31930"
+msgid "Trailers of other films play before the film you start: none, 1, 2 or 3."
+msgstr "Τρέιλερ άλλων ταινιών πριν από την ταινία που ξεκινάτε: κανένα, 1, 2 ή 3."
+
+msgctxt "#31931"
+msgid "A thin line under posters shows how much of a film, show or season you have watched."
+msgstr "Μια λεπτή γραμμή κάτω από τις αφίσες δείχνει πόσο έχετε δει από μια ταινία, σειρά ή κύκλο."
+
+msgctxt "#31932"
+msgid "A strip of small posters under the plot when a set or a show is in focus in the rows on Home."
+msgstr "Μια λωρίδα μικρών αφισών κάτω από την πλοκή όταν μια συλλογή ή σειρά έχει εστίαση στις σειρές της Αρχικής."
+
+msgctxt "#31933"
+msgid "Locks the library views: no view settings and no left-hand settings strip."
+msgstr "Κλειδώνει τις προβολές βιβλιοθήκης: χωρίς ρυθμίσεις προβολής και χωρίς αριστερή λωρίδα ρυθμίσεων."
+
+msgctxt "#31934"
+msgid "The library background takes the palette only with the Neutral backdrop. The highlight, boxes and strips follow it with every backdrop.[CR][CR]Use the Neutral backdrop in the libraries?"
+msgstr "Το φόντο της βιβλιοθήκης παίρνει την παλέτα μόνο με το ουδέτερο φόντο. Η επιλογή, τα πλαίσια και οι λωρίδες την ακολουθούν με κάθε φόντο.[CR][CR]Χρήση του ουδέτερου φόντου στις βιβλιοθήκες;"
+
+msgctxt "#31935"
+msgid "Keep the backdrop"
+msgstr "Διατήρηση φόντου"
+
+msgctxt "#31936"
+msgid "Use Neutral"
+msgstr "Χρήση ουδέτερου"
+
+msgctxt "#31937"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages. The library background takes it with the Neutral backdrop only."
+msgstr "Χρώμα της επιλογής, των πλαισίων, των λωρίδων και των σελίδων ρυθμίσεων. Το φόντο της βιβλιοθήκης το παίρνει μόνο με το ουδέτερο φόντο."
+
+msgctxt "#31938"
+msgid "Words"
+msgstr "Λέξεις"
+
+msgctxt "#31939"
+msgid "Lines"
+msgstr "Γραμμές"
+
+msgctxt "#31958"
+msgid "Skippy: the skin's skip button"
+msgstr "Skippy: κουμπί παράλειψης κελύφους"
+
+msgctxt "#31959"
+msgid "On: during a segment Skippy asks about (Ask), the player shows a Skip button in the skin's look; OK skips, Back hides it. Off: Skippy opens its own dialog. In Fused Glass, Up next at the end of an episode is the skin's too."
+msgstr "Ναι: σε ένα τμήμα για το οποίο ρωτά το Skippy (Ερώτηση), η αναπαραγωγή δείχνει κουμπί Παράλειψη στο στυλ του κελύφους· το OK παραλείπει, το Πίσω το κρύβει. Όχι: το Skippy ανοίγει το δικό του παράθυρο. Στο Fused Glass, και το «Επόμενο» στο τέλος ενός επεισοδίου είναι του κελύφους."
+
+msgctxt "#31960"
+msgid "Skippy: segment line in the player"
+msgstr "Skippy: γραμμή τμημάτων"
+
+msgctxt "#31961"
+msgid "Between the times on the player controls: the segment playing and the time left (Intro · 0:42 left), or the next segment and when it starts."
+msgstr "Ανάμεσα στις ώρες των χειριστηρίων: το τρέχον τμήμα και ο υπόλοιπος χρόνος (Εισαγωγή · απομένουν 0:42), ή το επόμενο τμήμα και πότε ξεκινά."
+
+msgctxt "#31962"
+msgid "Skippy: up next in the player"
+msgstr "Skippy: ακολουθεί στην αναπαραγωγή"
+
+msgctxt "#31963"
+msgid "Top right of the player controls: the next episode Skippy found, with its picture. Skippy's own next-episode prompt is not affected."
+msgstr "Πάνω δεξιά στα χειριστήρια: το επόμενο επεισόδιο που βρήκε το Skippy, με εικόνα. Η δική του ειδοποίηση για το επόμενο επεισόδιο δεν αλλάζει."
+
+msgctxt "#31964"
+msgid "Skip"
+msgstr "Παράλειψη"
+
+msgctxt "#31965"
+msgid "left"
+msgstr "απομένουν"
+
+msgctxt "#31966"
+msgid "at"
+msgstr "στις"
+
+msgctxt "#31967"
+msgid "Memory hand-back"
+msgstr "Επιστροφή μνήμης"
+
+msgctxt "#31968"
+msgid "Linux boxes (CoreELEC, LibreELEC): Kodi keeps memory it has finished with. The helper hands it back to the system after a pause in key presses, or when free RAM gets low. Not on Windows."
+msgstr "Συσκευές Linux (CoreELEC, LibreELEC): το Kodi κρατά μνήμη που δεν χρειάζεται πια. Ο βοηθός την επιστρέφει στο σύστημα μετά από παύση στα πλήκτρα ή όταν η ελεύθερη RAM λιγοστεύει. Όχι στα Windows."
+
+msgctxt "#31969"
+msgid "Pause before hand-back"
+msgstr "Παύση πριν την επιστροφή"
+
+msgctxt "#31970"
+msgid "After a pause: seconds without a key press (2-30), not during a video. When free RAM is low: the least free memory the box keeps; within 256 MB of it the hand-back waits for a pause, below it it happens at once."
+msgstr "Μετά από παύση: δευτερόλεπτα χωρίς πάτημα (2-30), όχι κατά τη διάρκεια βίντεο. Με λίγη ελεύθερη RAM: η ελάχιστη ελεύθερη μνήμη που κρατά η συσκευή· σε απόσταση 256 MB από αυτήν η επιστροφή περιμένει παύση, κάτω από αυτήν γίνεται αμέσως."
+
+msgctxt "#31971"
+msgid "Minimum free RAM"
+msgstr "Ελάχιστη ελεύθερη RAM"
+
+msgctxt "#31972"
+msgid "Adds Clean library to the context menu in the libraries and on Home: entries whose files are gone are removed (it asks first)."
+msgstr "Προσθέτει την Εκκαθάριση βιβλιοθήκης στο μενού περιβάλλοντος στις βιβλιοθήκες και στην Αρχική: οι εγγραφές με αρχεία που χάθηκαν αφαιρούνται (ρωτά πρώτα)."
+
+msgctxt "#31973"
+msgid "Network · Connections · Updates · Hardware · Services"
+msgstr "Δίκτυο · Συνδέσεις · Ενημερώσεις · Υλικό · Υπηρεσίες"
+
+msgctxt "#31974"
+msgid "The box"
+msgstr "Η συσκευή"
+
+msgctxt "#31975"
+msgid "The box's own settings: network and Wi-Fi, updates, hardware, services such as SSH and Samba."
+msgstr "Οι ρυθμίσεις της ίδιας της συσκευής: δίκτυο και Wi-Fi, ενημερώσεις, υλικό, υπηρεσίες όπως SSH και Samba."
+
+msgctxt "#31976"
+msgid "Restart Kodi"
+msgstr "Επανεκκίνηση Kodi"
+
+msgctxt "#31977"
+msgid "Widget screens: media info"
+msgstr "Οθόνες widget: πληροφορίες μέσου"
+
+msgctxt "#31978"
+msgid "Widget screens: ratings"
+msgstr "Οθόνες widget: βαθμολογίες"
+
+msgctxt "#31979"
+msgid "Widget screens: studio / network"
+msgstr "Οθόνες widget: στούντιο / κανάλι"
+
+msgctxt "#31996"
+msgid "The background of the spotlight at the top of Home. Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "Το φόντο του Spotlight στην κορυφή της Αρχικής. Fanart: το fanart του τίτλου. Ουδέτερο: σκούρο. Χρώμα: μια απαλή χρωματική εικόνα που φτιάχνει από την εικόνα ο βοηθός KarmaMole (μέχρι να ετοιμαστεί φαίνεται το fanart)."
+
+msgctxt "#31997"
+msgid "How the spotlight at the top of Home moves on to the next title: fade, slide or cut."
+msgstr "Πώς το Spotlight στην κορυφή της Αρχικής περνά στον επόμενο τίτλο: σβήσιμο, ολίσθηση ή κοπή."
+
+msgctxt "#31998"
+msgid "Widget screens: background"
+msgstr "Οθόνες widget: φόντο"
+
+msgctxt "#31999"
+msgid "The background of the full-screen widget pages (Up on a title on Home). Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr "Το φόντο των σελίδων widget πλήρους οθόνης (Πάνω σε τίτλο της Αρχικής). Fanart: το fanart του τίτλου. Ουδέτερο: σκούρο. Χρώμα: μια απαλή χρωματική εικόνα που φτιάχνει από την εικόνα ο βοηθός KarmaMole (μέχρι να ετοιμαστεί φαίνεται το fanart)."
+
+msgctxt "#32000"
+msgid "creator of the Aeon 2 concept"
+msgstr "δημιουργός της ιδέας του Aeon 2"
+
+msgctxt "#32001"
+msgid "1 of 1 episode watched"
+msgstr "1 από 1 επεισόδιο προβλήθηκε"
+
+msgctxt "#32002"
+msgid "on"
+msgstr "από τη"
+
+msgctxt "#32003"
+msgid "9:00 PM"
+msgstr "21:00"
+
+msgctxt "#32004"
+msgid "9:30 PM"
+msgstr "21:30"
+
+msgctxt "#32005"
+msgid "10:00 PM"
+msgstr "22:00"
+
+msgctxt "#32006"
+msgid "10:30 PM"
+msgstr "22:30"
+
+msgctxt "#32007"
+msgid "11:00 PM"
+msgstr "23:00"
+
+msgctxt "#32008"
+msgid "11:30 PM"
+msgstr "23:30"
+
+msgctxt "#32009"
+msgid "12:00 AM"
+msgstr "0:00"
+
+msgctxt "#32010"
+msgid "12:30 AM"
+msgstr "0:30"
+
+msgctxt "#32011"
+msgid "1:00 AM"
+msgstr "1:00"
+
+msgctxt "#32012"
+msgid "1:30 AM"
+msgstr "1:30"
+
+msgctxt "#32013"
+msgid "2:00 AM"
+msgstr "2:00"
+
+msgctxt "#32015"
+msgid "Repositories checked"
+msgstr "Αποθετήρια ελέγχθηκαν"
+
+msgctxt "#32016"
+msgid "Close Kodi"
+msgstr "Κλείσιμο Kodi"
+
+msgctxt "#32017"
+msgid "Back to the profile screen"
+msgstr "Επιστροφή στην οθόνη προφίλ"
+
+msgctxt "#32018"
+msgid "Kodi only, the system keeps running"
+msgstr "Μόνο το Kodi, το σύστημα συνεχίζει"
+
+msgctxt "#32019"
+msgid "Restart the whole system"
+msgstr "Επανεκκίνηση όλου του συστήματος"
+
+msgctxt "#32020"
+msgid "Restart into Android"
+msgstr "Επανεκκίνηση σε Android"
+
+msgctxt "#32021"
+msgid "Switch the system off"
+msgstr "Απενεργοποίηση του συστήματος"
+
+msgctxt "#32022"
+msgid "By"
+msgstr "Από"
+
+msgctxt "#32023"
+msgid "Running time"
+msgstr "Διάρκεια"
+
+msgctxt "#32024"
+msgid "min"
+msgstr "λεπ."
+
+msgctxt "#32025"
+msgid "Widgets"
+msgstr "Widget"
+
+msgctxt "#32026"
+msgid "hidden"
+msgstr "κρυφό"
+
+msgctxt "#32027"
+msgid "Hold"
+msgstr "Χρόνος"
+
+msgctxt "#32028"
+msgid "Update the list"
+msgstr "Ενημέρωση λίστας"
+
+msgctxt "#32029"
+msgid "Update now"
+msgstr "Ενημέρωση τώρα"
+
+msgctxt "#32030"
+msgid "ARTISTS"
+msgstr "ΚΑΛΛΙΤΕΧΝΕΣ"
+
+msgctxt "#32031"
+msgid "ALBUMS"
+msgstr "ΑΛΜΠΟΥΜ"
+
+msgctxt "#32032"
+msgid "SONGS"
+msgstr "ΤΡΑΓΟΥΔΙΑ"
+
+msgctxt "#32033"
+msgid "Widget screens"
+msgstr "Οθόνες widget"
+
+msgctxt "#32034"
+msgid "Hide plot and thumb"
+msgstr "Απόκρυψη πλοκής και μικρογραφίας"
+
+msgctxt "#32035"
+msgid "Start"
+msgstr "Έναρξη"
+
+msgctxt "#32036"
+msgid "A handful of short steps"
+msgstr "Μερικά σύντομα βήματα"
+
+msgctxt "#32037"
+msgid "Backdrop, look, Home menu, libraries and motion."
+msgstr "Φόντο, εμφάνιση, κεντρικό μενού, βιβλιοθήκες και κίνηση."
+
+msgctxt "#32038"
+msgid "Skip setup"
+msgstr "Παράλειψη ρύθμισης"
+
+msgctxt "#32039"
+msgid "Keep the defaults for now"
+msgstr "Προς το παρόν οι προεπιλογές"
+
+msgctxt "#32040"
+msgid "Run the setup any time: Skin settings > Motion, memory, reset > Setup wizard."
+msgstr "Εκτελέστε τη ρύθμιση όποτε θέλετε: Ρυθμίσεις κελύφους > Εφέ, RAM, επαναφορά > Οδηγός ρύθμισης."
+
+msgctxt "#32041"
+msgid "A calm backdrop in a palette of your choice"
+msgstr "Ένα ήρεμο φόντο σε παλέτα της επιλογής σας"
+
+msgctxt "#32042"
+msgid "A dark, even background in the colours of the palette you pick next."
+msgstr "Ένα σκούρο, ομοιόμορφο φόντο στα χρώματα της παλέτας που θα επιλέξετε μετά."
+
+msgctxt "#32043"
+msgid "The focused title's fanart, dimmed"
+msgstr "Το fanart του τίτλου με εστίαση, σκουρόχρωμο"
+
+msgctxt "#32044"
+msgid "The artwork of the focused title fills the background, dimmed so text stays readable."
+msgstr "Η εικόνα του τίτλου με εστίαση γεμίζει το φόντο, σκουρόχρωμη ώστε το κείμενο να διαβάζεται."
+
+msgctxt "#32045"
+msgid "A tint taken from the artwork"
+msgstr "Μια απόχρωση από την εικόνα"
+
+msgctxt "#32046"
+msgid "A deep colour taken from the focused title's artwork."
+msgstr "Ένα βαθύ χρώμα από την εικόνα του τίτλου με εστίαση."
+
+msgctxt "#32047"
+msgid "The palette shows after Kodi restarts at the end of the setup."
+msgstr "Η παλέτα εμφανίζεται αφού το Kodi επανεκκινήσει στο τέλος της ρύθμισης."
+
+msgctxt "#32048"
+msgid "Solid panels, palettes"
+msgstr "Συμπαγή πάνελ, παλέτες"
+
+msgctxt "#32049"
+msgid "The classic Aeon look: calm, solid surfaces and a white or coloured focus bar."
+msgstr "Η κλασική εμφάνιση Aeon: ήρεμες, συμπαγείς επιφάνειες και λευκή ή χρωματιστή μπάρα επιλογής."
+
+msgctxt "#32050"
+msgid "Aeon with glass menus, no palettes"
+msgstr "Aeon με γυάλινα μενού, χωρίς παλέτες"
+
+msgctxt "#32051"
+msgid "Panels of frosted glass over the fanart; the focus bar is a soft light."
+msgstr "Πάνελ από θαμπό γυαλί πάνω από το fanart· η μπάρα επιλογής είναι ένα απαλό φως."
+
+msgctxt "#32052"
+msgid "As the skin theme"
+msgstr "Όπως το θέμα του κελύφους"
+
+msgctxt "#32053"
+msgid "Flat rows with rules"
+msgstr "Επίπεδες γραμμές με διαχωριστικά"
+
+msgctxt "#32054"
+msgid "The menus of the Aeon or Aeon Glass theme you picked."
+msgstr "Τα μενού του θέματος Aeon ή Aeon Glass που επιλέξατε."
+
+msgctxt "#32055"
+msgid "Rounded cards, like this setup"
+msgstr "Στρογγυλεμένες κάρτες, όπως αυτή η ρύθμιση"
+
+msgctxt "#32056"
+msgid "Every row a soft card, the focused one solid; no rule lines."
+msgstr "Κάθε γραμμή μια απαλή κάρτα, η επιλεγμένη γεμάτη· χωρίς διαχωριστικά."
+
+msgctxt "#32057"
+msgid "OK switches Movies on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τις Ταινίες."
+
+msgctxt "#32058"
+msgid "OK switches TV shows on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τις Σειρές."
+
+msgctxt "#32059"
+msgid "OK switches Music on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τη Μουσική."
+
+msgctxt "#32060"
+msgid "OK switches Live TV on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τη Ζωντανή TV."
+
+msgctxt "#32061"
+msgid "OK switches Search on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί την Αναζήτηση."
+
+msgctxt "#32062"
+msgid "OK switches Movie sets on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τις Συλλογές ταινιών."
+
+msgctxt "#32063"
+msgid "OK switches Favourites on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τα Αγαπημένα."
+
+msgctxt "#32064"
+msgid "OK switches Pictures on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τις Εικόνες."
+
+msgctxt "#32065"
+msgid "OK switches Add-ons on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τα Πρόσθετα."
+
+msgctxt "#32066"
+msgid "OK switches Weather on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τον Καιρό."
+
+msgctxt "#32067"
+msgid "OK switches Planner on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τον Προγραμματιστή."
+
+msgctxt "#32068"
+msgid "OK switches Files on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τα Αρχεία."
+
+msgctxt "#32069"
+msgid "OK switches Settings on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τις Ρυθμίσεις."
+
+msgctxt "#32070"
+msgid "OK switches Power on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί την Τροφοδοσία."
+
+msgctxt "#32071"
+msgid "Continue"
+msgstr "Συνέχεια"
+
+msgctxt "#32072"
+msgid "Next step"
+msgstr "Επόμενο βήμα"
+
+msgctxt "#32073"
+msgid "On to the Home menu position."
+msgstr "Συνεχίζουμε με τη θέση του κεντρικού μενού."
+
+msgctxt "#32074"
+msgid "The spotlight above, a row of posters below"
+msgstr "Το Spotlight επάνω, μια σειρά αφίσες από κάτω"
+
+msgctxt "#32075"
+msgid "The menu across the middle of the screen with a widget row underneath."
+msgstr "Το μενού στη μέση της οθόνης με μια σειρά widget από κάτω."
+
+msgctxt "#32076"
+msgid "A taller spotlight, the menu near the bottom"
+msgstr "Ψηλότερο Spotlight, το μενού κοντά στο κάτω μέρος"
+
+msgctxt "#32077"
+msgid "More room for the spotlight; the menu sits low on the screen."
+msgstr "Περισσότερος χώρος για το Spotlight· το μενού κάθεται χαμηλά στην οθόνη."
+
+msgctxt "#32078"
+msgid "The artwork of the spotlight title"
+msgstr "Η εικόνα του τίτλου στο Spotlight"
+
+msgctxt "#32079"
+msgid "Fanart of the title in the spotlight, with a soft fade from the left."
+msgstr "Το fanart του τίτλου στο Spotlight, με απαλό σβήσιμο από αριστερά."
+
+msgctxt "#32080"
+msgid "A colour taken from the artwork"
+msgstr "Ένα χρώμα από την εικόνα"
+
+msgctxt "#32081"
+msgid "A warm or cool tint drawn from the title's artwork."
+msgstr "Ένας ζεστός ή ψυχρός τόνος από την εικόνα του τίτλου."
+
+msgctxt "#32082"
+msgid "A quiet dark background"
+msgstr "Ένα ήρεμο σκούρο φόντο"
+
+msgctxt "#32083"
+msgid "No artwork behind the spotlight text."
+msgstr "Καμία εικόνα πίσω από το κείμενο του Spotlight."
+
+msgctxt "#32084"
+msgid "One picture dissolves into the next"
+msgstr "Η μία εικόνα λιώνει στην επόμενη"
+
+msgctxt "#32085"
+msgid "A soft cross-fade."
+msgstr "Ένα απαλό σταυρωτό σβήσιμο."
+
+msgctxt "#32086"
+msgid "The next one pushes in from the right"
+msgstr "Η επόμενη μπαίνει από δεξιά"
+
+msgctxt "#32087"
+msgid "A sideways slide, like turning a page."
+msgstr "Μια πλάγια ολίσθηση, σαν γύρισμα σελίδας."
+
+msgctxt "#32088"
+msgid "Straight to the next"
+msgstr "Κατευθείαν στην επόμενη"
+
+msgctxt "#32089"
+msgid "No animation: the next title appears at once."
+msgstr "Χωρίς κίνηση: ο επόμενος τίτλος εμφανίζεται αμέσως."
+
+msgctxt "#32090"
+msgid "The colour of the artwork"
+msgstr "Το χρώμα της εικόνας"
+
+msgctxt "#32091"
+msgid "The boxes take a deep colour from the focused title's artwork."
+msgstr "Τα πλαίσια παίρνουν ένα βαθύ χρώμα από την εικόνα του επιλεγμένου τίτλου."
+
+msgctxt "#32092"
+msgid "The palette's box colour"
+msgstr "Το χρώμα πλαισίων της παλέτας"
+
+msgctxt "#32093"
+msgid "Always the same calm colour of the palette."
+msgstr "Πάντα το ίδιο ήρεμο χρώμα της παλέτας."
+
+msgctxt "#32094"
+msgid "A window onto the fanart"
+msgstr "Ένα παράθυρο στο fanart"
+
+msgctxt "#32095"
+msgid "Each box shows the part of the fanart behind it, darkened for the clock."
+msgstr "Κάθε πλαίσιο δείχνει το κομμάτι του fanart πίσω του, σκουρυμένο για το ρολόι."
+
+msgctxt "#32096"
+msgid "As the backdrop"
+msgstr "Όπως το φόντο"
+
+msgctxt "#32097"
+msgid "Follow the library backdrop"
+msgstr "Ακολουθεί το φόντο της βιβλιοθήκης"
+
+msgctxt "#32098"
+msgid "Neutral, fanart or colour, whatever the library backdrop is."
+msgstr "Ουδέτερο, fanart ή χρώμα, ανάλογα με το φόντο της βιβλιοθήκης."
+
+msgctxt "#32099"
+msgid "Dots, checks and progress bars"
+msgstr "Κουκκίδες, τικ και μπάρες προόδου"
+
+msgctxt "#32100"
+msgid "Unwatched titles get a dot, watched ones a check, started ones a progress bar."
+msgstr "Οι τίτλοι που δεν έχετε δει παίρνουν κουκκίδα, όσοι έχετε δει τικ, όσοι έχουν ξεκινήσει μπάρα προόδου."
+
+msgctxt "#32101"
+msgid "Dots and progress bars"
+msgstr "Κουκκίδες και μπάρες προόδου"
+
+msgctxt "#32102"
+msgid "Only what is still to watch is marked."
+msgstr "Σημειώνεται μόνο ό,τι μένει να δείτε."
+
+msgctxt "#32103"
+msgid "Checks on what you have seen"
+msgstr "Τικ σε ό,τι έχετε δει"
+
+msgctxt "#32104"
+msgid "Only finished titles are marked."
+msgstr "Σημειώνονται μόνο οι τίτλοι που τελείωσαν."
+
+msgctxt "#32105"
+msgid "Clean posters"
+msgstr "Καθαρές αφίσες"
+
+msgctxt "#32106"
+msgid "No markers at all."
+msgstr "Καμία σήμανση."
+
+msgctxt "#32107"
+msgid "Logos"
+msgstr "Λογότυπα"
+
+msgctxt "#32108"
+msgid "The artwork's clear logo"
+msgstr "Το ClearLogo της εικόνας"
+
+msgctxt "#32109"
+msgid "Clear logos from the artwork, text where a title has none."
+msgstr "ClearLogo από τις εικόνες, κείμενο όπου ένας τίτλος δεν έχει."
+
+msgctxt "#32110"
+msgid "Plain text"
+msgstr "Απλό κείμενο"
+
+msgctxt "#32111"
+msgid "Always the name in the skin's own font."
+msgstr "Πάντα το όνομα με τη γραμματοσειρά του κελύφους."
+
+msgctxt "#32112"
+msgid "FULL HD, 4K, aspect ratio"
+msgstr "FULL HD, 4K, αναλογία εικόνας"
+
+msgctxt "#32113"
+msgid "OK switches the resolution chips on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τις ετικέτες ανάλυσης."
+
+msgctxt "#32114"
+msgid "SDR, HDR10, Dolby Vision profile"
+msgstr "SDR, HDR10, προφίλ Dolby Vision"
+
+msgctxt "#32115"
+msgid "OK switches the HDR chips on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τις ετικέτες HDR."
+
+msgctxt "#32116"
+msgid "Codec and channels"
+msgstr "Codec και κανάλια"
+
+msgctxt "#32117"
+msgid "OK switches the audio chips on or off."
+msgstr "Το OK ενεργοποιεί ή απενεργοποιεί τις ετικέτες ήχου."
+
+msgctxt "#32118"
+msgid "On to the extra fanart."
+msgstr "Συνεχίζουμε με το επιπλέον fanart."
+
+msgctxt "#32119"
+msgid "Take turns"
+msgstr "Εναλλάξ"
+
+msgctxt "#32120"
+msgid "Every extra fanart in a slow cycle"
+msgstr "Κάθε επιπλέον fanart σε αργή εναλλαγή"
+
+msgctxt "#32121"
+msgid "The background changes picture every few seconds (Skin settings > Backgrounds sets how often)."
+msgstr "Το φόντο αλλάζει εικόνα κάθε λίγα δευτερόλεπτα (το πόσο συχνά ορίζεται στις Ρυθμίσεις κελύφους > Φόντα)."
+
+msgctxt "#32122"
+msgid "One picture"
+msgstr "Μία εικόνα"
+
+msgctxt "#32123"
+msgid "Only the main fanart"
+msgstr "Μόνο το κύριο fanart"
+
+msgctxt "#32124"
+msgid "The background stays on the main fanart."
+msgstr "Το φόντο μένει στο κύριο fanart."
+
+msgctxt "#32125"
+msgid "Hide them"
+msgstr "Απόκρυψη"
+
+msgctxt "#32126"
+msgid "No thumbnail or plot until watched"
+msgstr "Χωρίς μικρογραφία και πλοκή μέχρι να το δείτε"
+
+msgctxt "#32127"
+msgid "Unwatched episodes show a blurred picture and no plot."
+msgstr "Τα επεισόδια που δεν έχετε δει δείχνουν θολή εικόνα και καμία πλοκή."
+
+msgctxt "#32128"
+msgid "Show them"
+msgstr "Εμφάνιση"
+
+msgctxt "#32129"
+msgid "Thumbnails and plots for all"
+msgstr "Μικρογραφίες και πλοκή για όλα"
+
+msgctxt "#32130"
+msgid "Every episode shows its picture and plot."
+msgstr "Κάθε επεισόδιο δείχνει την εικόνα και την πλοκή του."
+
+msgctxt "#32131"
+msgid "Full motion"
+msgstr "Πλήρης κίνηση"
+
+msgctxt "#32132"
+msgid "Smooth slides and fades"
+msgstr "Απαλές ολισθήσεις και σβησίματα"
+
+msgctxt "#32133"
+msgid "Rows slide in one after another, dialogs glide open."
+msgstr "Οι σειρές μπαίνουν η μία μετά την άλλη, οι διάλογοι ανοίγουν απαλά."
+
+msgctxt "#32134"
+msgid "Everything appears at once"
+msgstr "Όλα εμφανίζονται αμέσως"
+
+msgctxt "#32135"
+msgid "No slides or zooms: calmer, and lighter on slow boxes."
+msgstr "Χωρίς ολισθήσεις ή ζουμ: πιο ήρεμο και πιο ελαφρύ για αργές συσκευές."
+
+msgctxt "#32136"
+msgid "When free RAM is low"
+msgstr "Όταν η ελεύθερη RAM είναι λίγη"
+
+msgctxt "#32137"
+msgid "Recommended: below 1 GB free"
+msgstr "Προτείνεται: κάτω από 1 GB ελεύθερη"
+
+msgctxt "#32138"
+msgid "Kodi hands memory back when the free RAM drops below the minimum (Skin settings can change it)."
+msgstr "Το Kodi επιστρέφει μνήμη όταν η ελεύθερη RAM πέσει κάτω από το ελάχιστο (αλλάζει στις Ρυθμίσεις κελύφους)."
+
+msgctxt "#32139"
+msgid "After a pause"
+msgstr "Μετά από παύση"
+
+msgctxt "#32140"
+msgid "A few seconds after the last key press"
+msgstr "Λίγα δευτερόλεπτα μετά το τελευταίο πάτημα"
+
+msgctxt "#32141"
+msgid "Kodi hands memory back whenever the remote has been quiet for a moment."
+msgstr "Το Kodi επιστρέφει μνήμη κάθε φορά που το τηλεχειριστήριο μένει ήσυχο για λίγο."
+
+msgctxt "#32142"
+msgid "Finish"
+msgstr "Τέλος"
+
+msgctxt "#32143"
+msgid "Change something"
+msgstr "Αλλαγή κάποιας επιλογής"
+
+msgctxt "#32144"
+msgid "Go back to the previous step."
+msgstr "Επιστροφή στο προηγούμενο βήμα."
+
+msgctxt "#32145"
+msgid "Huge thanks and credit go out to the following"
+msgstr "Θερμές ευχαριστίες στους εξής"
+
+msgctxt "#32146"
+msgid "The Kodi development team"
+msgstr "Την ομάδα ανάπτυξης του Kodi"
+
+msgctxt "#32147"
+msgid "OK  choose      BACK  previous step"
+msgstr "OK  επιλογή      ΠΙΣΩ  προηγούμενο βήμα"
+
+msgctxt "#32148"
+msgid "version"
+msgstr "έκδοση"
+
+msgctxt "#32149"
+msgid "by"
+msgstr "από"
+
+msgctxt "#32150"
+msgid "now"
+msgstr "τώρα"
+
+msgctxt "#32151"
+msgid "night"
+msgstr "νύχτα"
+
+msgctxt "#32152"
+msgid "evening"
+msgstr "βράδυ"
+
+msgctxt "#32153"
+msgid "afternoon"
+msgstr "απόγευμα"
+
+msgctxt "#32154"
+msgid "morning"
+msgstr "πρωί"
+
+msgctxt "#32158"
+msgid "until midnight"
+msgstr "ως τα μεσάνυχτα"
+
+msgctxt "#32159"
+msgid "tornado"
+msgstr "ανεμοστρόβιλος"
+
+msgctxt "#32160"
+msgid "tropical storm"
+msgstr "τροπική καταιγίδα"
+
+msgctxt "#32161"
+msgid "hurricane"
+msgstr "τυφώνας"
+
+msgctxt "#32162"
+msgid "severe storms"
+msgstr "ισχυρές καταιγίδες"
+
+msgctxt "#32163"
+msgid "thunderstorms"
+msgstr "καταιγίδες"
+
+msgctxt "#32164"
+msgid "rain and snow"
+msgstr "βροχή και χιόνι"
+
+msgctxt "#32165"
+msgid "rain and sleet"
+msgstr "βροχή και χιονόνερο"
+
+msgctxt "#32166"
+msgid "snow and sleet"
+msgstr "χιόνι και χιονόνερο"
+
+msgctxt "#32167"
+msgid "freezing drizzle"
+msgstr "παγωμένο ψιχάλισμα"
+
+msgctxt "#32168"
+msgid "drizzle"
+msgstr "ψιχάλισμα"
+
+msgctxt "#32169"
+msgid "freezing rain"
+msgstr "παγωμένη βροχή"
+
+msgctxt "#32170"
+msgid "showers"
+msgstr "μπόρες"
+
+msgctxt "#32171"
+msgid "snow flurries"
+msgstr "νιφάδες χιονιού"
+
+msgctxt "#32172"
+msgid "light snow"
+msgstr "ασθενής χιονόπτωση"
+
+msgctxt "#32173"
+msgid "blowing snow"
+msgstr "χιονοθύελλα"
+
+msgctxt "#32174"
+msgid "snow"
+msgstr "χιόνι"
+
+msgctxt "#32175"
+msgid "hail"
+msgstr "χαλάζι"
+
+msgctxt "#32176"
+msgid "sleet"
+msgstr "χιονόνερο"
+
+msgctxt "#32177"
+msgid "dust"
+msgstr "σκόνη"
+
+msgctxt "#32178"
+msgid "fog"
+msgstr "ομίχλη"
+
+msgctxt "#32179"
+msgid "haze"
+msgstr "αχλή"
+
+msgctxt "#32180"
+msgid "smoke"
+msgstr "καπνός"
+
+msgctxt "#32181"
+msgid "blustery"
+msgstr "ριπαίοι άνεμοι"
+
+msgctxt "#32182"
+msgid "windy"
+msgstr "θυελλώδεις άνεμοι"
+
+msgctxt "#32183"
+msgid "cold"
+msgstr "κρύο"
+
+msgctxt "#32184"
+msgid "cloudy"
+msgstr "συννεφιά"
+
+msgctxt "#32185"
+msgid "mostly cloudy"
+msgstr "κυρίως συννεφιά"
+
+msgctxt "#32186"
+msgid "partly cloudy"
+msgstr "λίγα σύννεφα"
+
+msgctxt "#32187"
+msgid "clear"
+msgstr "αίθριος"
+
+msgctxt "#32188"
+msgid "sunny"
+msgstr "ηλιοφάνεια"
+
+msgctxt "#32189"
+msgid "fair"
+msgstr "καλοκαιρία"
+
+msgctxt "#32190"
+msgid "rain and hail"
+msgstr "βροχή και χαλάζι"
+
+msgctxt "#32191"
+msgid "hot"
+msgstr "ζέστη"
+
+msgctxt "#32192"
+msgid "isolated storms"
+msgstr "μεμονωμένες καταιγίδες"
+
+msgctxt "#32193"
+msgid "scattered storms"
+msgstr "σποραδικές καταιγίδες"
+
+msgctxt "#32194"
+msgid "scattered showers"
+msgstr "σποραδικές μπόρες"
+
+msgctxt "#32195"
+msgid "heavy snow"
+msgstr "ισχυρή χιονόπτωση"
+
+msgctxt "#32196"
+msgid "snow showers"
+msgstr "χιονοπτώσεις"
+
+msgctxt "#32197"
+msgid "thundershowers"
+msgstr "καταιγίδες με βροχή"
+
+msgctxt "#32198"
+msgid "Blustery"
+msgstr "Ριπαίοι άνεμοι"
+
+msgctxt "#32199"
+msgid "Hot"
+msgstr "Ζέστη"
+
+msgctxt "#32200"
+msgid "Fits before midnight"
+msgstr "Προλαβαίνετε πριν τα μεσάνυχτα"
+
+msgctxt "#32201"
+msgid "fits before midnight"
+msgstr "προλαβαίνετε πριν τα μεσάνυχτα"
+
+msgctxt "#32202"
+msgid "under 100 minutes"
+msgstr "κάτω από 100 λεπτά"
+
+msgctxt "#32203"
+msgid "something light"
+msgstr "κάτι ελαφρύ"
+
+msgctxt "#32204"
+msgid "a long one"
+msgstr "κάτι μεγάλο"
+
+msgctxt "#32205"
+msgid "highly rated"
+msgstr "υψηλή βαθμολογία"
+
+msgctxt "#32206"
+msgid "right at midnight"
+msgstr "ακριβώς τα μεσάνυχτα"
+
+msgctxt "#32207"
+msgid "past midnight"
+msgstr "μετά τα μεσάνυχτα"
+
+msgctxt "#32208"
+msgid "before midnight"
+msgstr "πριν τα μεσάνυχτα"
+
+msgctxt "#32209"
+msgid "kbps"
+msgstr "kbps"
+
+msgctxt "#32210"
+msgid "ch"
+msgstr "καν."
+
+msgctxt "#32211"
+msgid "bit"
+msgstr "bit"
+
+msgctxt "#32212"
+msgid "kHz"
+msgstr "kHz"
+
+msgctxt "#32213"
+msgid "Hz"
+msgstr "Hz"
+
+msgctxt "#32214"
+msgid "TRACK"
+msgstr "ΚΟΜΜΑΤΙ"
+
+msgctxt "#32215"
+msgid "FROM THE ALBUM"
+msgstr "ΑΠΟ ΤΟ ΑΛΜΠΟΥΜ"
+
+msgctxt "#32216"
+msgid "Released in"
+msgstr "Κυκλοφορία"
+
+msgctxt "#32217"
+msgid "Record label"
+msgstr "Δισκογραφική"
+
+msgctxt "#32218"
+msgid "Alphabetical"
+msgstr "Αλφαβητικά"
+
+msgctxt "#32219"
+msgid "Reversed"
+msgstr "Αντίστροφα"
+
+msgctxt "#32220"
+msgid "MINS"
+msgstr "ΛΕΠΤΑ"
+
+msgctxt "#32221"
+msgid "RATED"
+msgstr "ΚΑΤΑΛΛΗΛΟΤΗΤΑ"
+
+msgctxt "#32222"
+msgid "NOT RATED"
+msgstr "ΧΩΡΙΣ ΚΑΤΑΤΑΞΗ"
+
+msgctxt "#32223"
+msgid "AN ALBUM BY"
+msgstr "ΑΛΜΠΟΥΜ ΤΟΥ"
+
+msgctxt "#32224"
+msgid "RELEASED IN"
+msgstr "ΚΥΚΛΟΦΟΡΙΑ"
+
+msgctxt "#32225"
+msgid "A TV SHOW"
+msgstr "ΤΗΛΕΟΠΤΙΚΗ ΣΕΙΡΑ"
+
+msgctxt "#32226"
+msgid "FIRST AIRED IN"
+msgstr "ΠΡΕΜΙΕΡΑ"
+
+msgctxt "#32227"
+msgid "A MOVIE BY"
+msgstr "ΤΑΙΝΙΑ ΤΟΥ"
+
+msgctxt "#32228"
+msgid "Active"
+msgstr "Δράση"
+
+msgctxt "#32229"
+msgid "FORMED"
+msgstr "ΙΔΡΥΣΗ"
+
+msgctxt "#32230"
+msgid "DISBANDED"
+msgstr "ΔΙΑΛΥΣΗ"
+
+msgctxt "#32231"
+msgid "BORN"
+msgstr "ΓΕΝΝΗΣΗ"
+
+msgctxt "#32232"
+msgid "DIED"
+msgstr "ΘΑΝΑΤΟΣ"
+
+msgctxt "#32233"
+msgid "Refresh information"
+msgstr "Ανανέωση πληροφοριών"
+
+msgctxt "#32234"
+msgid "Take screenshot"
+msgstr "Λήψη στιγμιότυπου"
+
+msgctxt "#32235"
+msgid "Switch off"
+msgstr "Απενεργοποίηση"
+
+msgctxt "#32236"
+msgid "Switch on"
+msgstr "Ενεργοποίηση"
+
+msgctxt "#32237"
+msgid "Written by"
+msgstr "Σενάριο:"
+
+msgctxt "#32238"
+msgid "Directed by"
+msgstr "Σκηνοθεσία:"
+
+msgctxt "#32239"
+msgid "SET"
+msgstr "ΣΥΛΛΟΓΗ"
+
+msgctxt "#32240"
+msgid "VOTES"
+msgstr "ΨΗΦΟΙ"
+
+msgctxt "#32241"
+msgid "EPISODES"
+msgstr "ΕΠΕΙΣΟΔΙΑ"
+
+msgctxt "#32242"
+msgid "UNWATCHED"
+msgstr "ΑΔΕΙ"
+
+msgctxt "#32243"
+msgid "Setup"
+msgstr "Ρύθμιση"
+
+msgctxt "#32244"
+msgid "Libraries"
+msgstr "Βιβλιοθήκες"
+
+msgctxt "#32245"
+msgid "Motion"
+msgstr "Κίνηση"
+
+msgctxt "#32246"
+msgid "Welcome to Aeon Fuse"
+msgstr "Καλώς ήρθατε στο Aeon Fuse"
+
+msgctxt "#32247"
+msgid "Library backdrop"
+msgstr "Φόντο βιβλιοθήκης"
+
+msgctxt "#32248"
+msgid "Pick a palette"
+msgstr "Επιλέξτε παλέτα"
+
+msgctxt "#32249"
+msgid "Skin theme"
+msgstr "Θέμα κελύφους"
+
+msgctxt "#32250"
+msgid "Skin style"
+msgstr "Στυλ κελύφους"
+
+msgctxt "#32251"
+msgid "Home menu items"
+msgstr "Στοιχεία κεντρικού μενού"
+
+msgctxt "#32252"
+msgid "Spotlight transition"
+msgstr "Μετάβαση Spotlight"
+
+msgctxt "#32253"
+msgid "Corner boxes"
+msgstr "Γωνιακά πλαίσια"
+
+msgctxt "#32254"
+msgid "Titles or logos"
+msgstr "Τίτλοι ή λογότυπα"
+
+msgctxt "#32255"
+msgid "Extra fanart"
+msgstr "Επιπλέον fanart"
+
+msgctxt "#32256"
+msgid "Spoilers"
+msgstr "Spoiler"
+
+msgctxt "#32257"
+msgid "All set"
+msgstr "Όλα έτοιμα"
+
+msgctxt "#32258"
+msgid "A few quick choices make the skin yours. Every step shows a preview, and everything can be changed later in Skin settings."
+msgstr "Λίγες γρήγορες επιλογές κάνουν το κέλυφος δικό σας. Κάθε βήμα δείχνει προεπισκόπηση και όλα αλλάζουν αργότερα στις Ρυθμίσεις κελύφους."
+
+msgctxt "#32259"
+msgid "What fills the space behind the library views. With Neutral the next step lets you pick a palette."
+msgstr "Τι γεμίζει τον χώρο πίσω από τις προβολές της βιβλιοθήκης. Με το Ουδέτερο, στο επόμενο βήμα επιλέγετε παλέτα."
+
+msgctxt "#32260"
+msgid "The palette colours the neutral backdrop, the focus bar, the boxes and the strips (Aeon theme)."
+msgstr "Η παλέτα χρωματίζει το ουδέτερο φόντο, τη μπάρα επιλογής, τα πλαίσια και τις λωρίδες (θέμα Aeon)."
+
+msgctxt "#32261"
+msgid "Aeon draws solid panels with a bright focus bar. Aeon Glass lets the artwork shine through frosted panels."
+msgstr "Το Aeon σχεδιάζει συμπαγή πάνελ με φωτεινή μπάρα επιλογής. Το Aeon Glass αφήνει την εικόνα να λάμπει μέσα από θαμπά πάνελ."
+
+msgctxt "#32262"
+msgid "How settings, dialogs and side menus look: the skin theme's own menus, or Fuse, the rounded cards of this setup."
+msgstr "Πώς φαίνονται ρυθμίσεις, διάλογοι και πλαϊνά μενού: τα δικά μενού του θέματος κελύφους ή το Fuse, οι στρογγυλεμένες κάρτες αυτής της ρύθμισης."
+
+msgctxt "#32263"
+msgid "Switch the items you want on the Home menu. Order, custom items (three are always free) and their lists: Skin settings > Home menu."
+msgstr "Ενεργοποιήστε τα στοιχεία που θέλετε στο κεντρικό μενού. Σειρά, δικά σας στοιχεία (τρία είναι πάντα ελεύθερα) και οι λίστες τους: Ρυθμίσεις κελύφους > Κεντρικό μενού."
+
+msgctxt "#32264"
+msgid "Where the main menu sits on the Home screen."
+msgstr "Πού βρίσκεται το κεντρικό μενού στην αρχική οθόνη."
+
+msgctxt "#32265"
+msgid "The backdrop of the spotlight at the top of Home."
+msgstr "Το φόντο του Spotlight στην κορυφή της Αρχικής."
+
+msgctxt "#32266"
+msgid "How one spotlight title gives way to the next."
+msgstr "Πώς ένας τίτλος του Spotlight δίνει τη θέση του στον επόμενο."
+
+msgctxt "#32267"
+msgid "The clock box, the item count and the strip boxes in the corners of the library."
+msgstr "Το πλαίσιο του ρολογιού, ο αριθμός στοιχείων και τα πλαίσια των λωρίδων στις γωνίες της βιβλιοθήκης."
+
+msgctxt "#32268"
+msgid "Small markers on posters: a dot for unwatched, a check for watched, a bar for in progress."
+msgstr "Μικρά σημάδια στις αφίσες: κουκκίδα για όσα δεν έχετε δει, τικ για όσα έχετε δει, μπάρα για όσα είναι σε εξέλιξη."
+
+msgctxt "#32269"
+msgid "Show a title's clear logo where the skin has room for it, or its name in plain text."
+msgstr "Εμφάνιση του ClearLogo ενός τίτλου όπου το κέλυφος έχει χώρο, αλλιώς του ονόματος σε απλό κείμενο."
+
+msgctxt "#32270"
+msgid "The chips under a title in the libraries and on the information page. Switch the ones you want."
+msgstr "Οι ετικέτες κάτω από έναν τίτλο στις βιβλιοθήκες και στη σελίδα πληροφοριών. Ενεργοποιήστε όσες θέλετε."
+
+msgctxt "#32271"
+msgid "Titles with more than one fanart can take turns showing them in the background."
+msgstr "Τίτλοι με περισσότερα από ένα fanart μπορούν να τα δείχνουν εναλλάξ στο φόντο."
+
+msgctxt "#32272"
+msgid "Unwatched episodes can keep their thumbnail and plot to themselves."
+msgstr "Τα επεισόδια που δεν έχετε δει μπορούν να κρατούν για τον εαυτό τους τη μικρογραφία και την πλοκή."
+
+msgctxt "#32273"
+msgid "Slides and fades when views, menus and dialogs open."
+msgstr "Ολισθήσεις και σβησίματα όταν ανοίγουν προβολές, μενού και διάλογοι."
+
+msgctxt "#32274"
+msgid "On small boxes Kodi keeps memory it no longer uses. The skin's helper can hand it back to the system."
+msgstr "Σε μικρές συσκευές το Kodi κρατά μνήμη που δεν χρησιμοποιεί πια. Ο βοηθός του κελύφους μπορεί να την επιστρέψει στο σύστημα."
+
+msgctxt "#32275"
+msgid "Your choices are saved. Run the setup again any time from Skin settings > Motion, memory, reset."
+msgstr "Οι επιλογές σας αποθηκεύτηκαν. Εκτελέστε ξανά τη ρύθμιση όποτε θέλετε από Ρυθμίσεις κελύφους > Εφέ, RAM, επαναφορά."
+
+msgctxt "#32276"
+msgid "Kodi restarts to show the new look"
+msgstr "Το Kodi επανεκκινείται για να δείξει τη νέα εμφάνιση"
+
+msgctxt "#32277"
+msgid "Then restart Kodi once"
+msgstr "Μετά επανεκκινήστε το Kodi μία φορά"
+
+msgctxt "#32278"
+msgid "Close the setup"
+msgstr "Κλείσιμο ρύθμισης"
+
+msgctxt "#32279"
+msgid "A new theme or palette needs Kodi to start again; it takes a few seconds."
+msgstr "Νέο θέμα ή παλέτα χρειάζεται επανεκκίνηση του Kodi· παίρνει λίγα δευτερόλεπτα."
+
+msgctxt "#32280"
+msgid "The new look shows at once. Restart Kodi when you can: until then some settings may read wrong."
+msgstr "Η νέα εμφάνιση φαίνεται αμέσως. Επανεκκινήστε το Kodi όταν μπορείτε: ως τότε κάποιες ρυθμίσεις ίσως δείχνουν λάθος τιμές."
+
+msgctxt "#32281"
+msgid "Enjoy Aeon Fuse."
+msgstr "Απολαύστε το Aeon Fuse."
+
+msgctxt "#32282"
+msgid "ends"
+msgstr "λήξη"
+
+msgctxt "#32283"
+msgid "Nothing unwatched fits before midnight tonight."
+msgstr "Τίποτα αθέατο δεν χωρά απόψε πριν τα μεσάνυχτα."
+
+msgctxt "#32285"
+msgid "of"
+msgstr "από"
+
+msgctxt "#32286"
+msgid "watched"
+msgstr "προβλήθηκαν"
+
+msgctxt "#32287"
+msgid "unwatched"
+msgstr "αθέατα"
+
+msgctxt "#32288"
+msgid "Nothing unwatched fits this slot. Try Films for everything."
+msgstr "Τίποτα αθέατο δεν χωρά σε αυτό το διάστημα. Δείτε τις Ταινίες για όλα."
+
+msgctxt "#32289"
+msgid "Nothing here yet."
+msgstr "Δεν υπάρχει τίποτα ακόμα."
+
+msgctxt "#32290"
+msgid "Current"
+msgstr "Τρέχον"
+
+msgctxt "#32291"
+msgid "Rec"
+msgstr "Εγγρ."
+
+msgctxt "#32292"
+msgid "Remind"
+msgstr "Υπενθύμιση"
+
+msgctxt "#32293"
+msgid "Archive"
+msgstr "Αρχείο"
+
+msgctxt "#32294"
+msgid "Edited"
+msgstr "Επεξεργασμένο"
+
+msgctxt "#32295"
+msgid "About"
+msgstr "Σχετικά"
+
+msgctxt "#32296"
+msgid "Group"
+msgstr "Ομάδα"
+
+msgctxt "#32297"
+msgid "Nothing here yet"
+msgstr "Δεν υπάρχει τίποτα ακόμα"
+
+msgctxt "#32298"
+msgid "Tracklist"
+msgstr "Λίστα κομματιών"
+
+msgctxt "#32299"
+msgid "born"
+msgstr "γέννηση"
+
+msgctxt "#32300"
+msgid "formed"
+msgstr "ίδρυση"
+
+msgctxt "#32301"
+msgid "minutes of music"
+msgstr "λεπτά μουσικής"
+
+msgctxt "#32302"
+msgid "Start now, done by"
+msgstr "Ξεκινήστε τώρα, τέλος στις"
+
+msgctxt "#32303"
+msgid "The music stops at"
+msgstr "Η μουσική σταματά στις"
+
+msgctxt "#32304"
+msgid "OK for the controls."
+msgstr "OK για τα χειριστήρια."
+
+msgctxt "#32305"
+msgid "Go to"
+msgstr "Μετάβαση σε"
+
+msgctxt "#32306"
+msgid "Sleeps when this ends  ·  bedtime"
+msgstr "Ύπνος στο τέλος  ·  ώρα ύπνου"
+
+msgctxt "#32307"
+msgid "RESULTS"
+msgstr "ΑΠΟΤΕΛΕΣΜΑΤΑ"
+
+msgctxt "#32308"
+msgid "track"
+msgstr "κομμάτι"
+
+msgctxt "#32309"
+msgid "tracks"
+msgstr "κομμάτια"
+
+msgctxt "#32310"
+msgid "option"
+msgstr "επιλογή"
+
+msgctxt "#32311"
+msgid "options"
+msgstr "επιλογές"
+
+msgctxt "#32312"
+msgid "item"
+msgstr "στοιχείο"
+
+msgctxt "#32313"
+msgid "album in your library"
+msgstr "άλμπουμ στη βιβλιοθήκη σας"
+
+msgctxt "#32314"
+msgid "albums in your library"
+msgstr "άλμπουμ στη βιβλιοθήκη σας"
+
+msgctxt "#32315"
+msgid "film"
+msgstr "ταινία"
+
+msgctxt "#32316"
+msgid "person"
+msgstr "άτομο"
+
+msgctxt "#32317"
+msgid "people"
+msgstr "άτομα"
+
+msgctxt "#32318"
+msgid "episode"
+msgstr "επεισόδιο"
+
+msgctxt "#32319"
+msgid "episodes"
+msgstr "επεισόδια"
+
+msgctxt "#32320"
+msgid "film watched"
+msgstr "ταινία προβλήθηκε"
+
+msgctxt "#32321"
+msgid "films watched"
+msgstr "ταινίες προβλήθηκαν"
+
+msgctxt "#32322"
+msgid "episode watched"
+msgstr "επεισόδιο προβλήθηκε"
+
+msgctxt "#32323"
+msgid "episodes watched"
+msgstr "επεισόδια προβλήθηκαν"
+
+msgctxt "#32324"
+msgid "Midnight"
+msgstr "Μεσάνυχτα"
+
+msgctxt "#32325"
+msgid "The extra items Aeon Fuse adds to Kodi's context menu: which of them show and in what order."
+msgstr "Τα στοιχεία που προσθέτει το Aeon Fuse στο μενού περιβάλλοντος του Kodi: ποια εμφανίζονται και με ποια σειρά."
+
+msgctxt "#32326"
+msgid "Kodi lists these after its own items (and before those of other add-ons that come later). Pick one, then use the buttons on the right."
+msgstr "Το Kodi τα δείχνει μετά τα δικά του στοιχεία (και πριν από εκείνα άλλων πρόσθετων που έρχονται μετά). Επιλέξτε ένα και χρησιμοποιήστε τα κουμπιά δεξιά."
+
+msgctxt "#32327"
+msgid "Shows or hides the selected item in the context menu."
+msgstr "Εμφανίζει ή κρύβει το επιλεγμένο στοιχείο στο μενού περιβάλλοντος."
+
+msgctxt "#32328"
+msgid "Moves the selected item one place up in the context menu."
+msgstr "Μετακινεί το επιλεγμένο στοιχείο μία θέση πάνω στο μενού περιβάλλοντος."
+
+msgctxt "#32329"
+msgid "Moves the selected item one place down in the context menu."
+msgstr "Μετακινεί το επιλεγμένο στοιχείο μία θέση κάτω στο μενού περιβάλλοντος."
+
+msgctxt "#32330"
+msgid "The backdrop of the widget screens (Up on a Home item) slowly zooms in with every title. Reduce motion stops it too."
+msgstr "Το φόντο των οθονών widget (Πάνω σε στοιχείο της Αρχικής) κάνει αργό ζουμ σε κάθε τίτλο. Το «Λιγότερη κίνηση» το σταματά επίσης."
+
+msgctxt "#32331"
+msgid "A font family for each part of the skin: Home, the libraries, headings, the settings pages and the player."
+msgstr "Μια οικογένεια γραμματοσειρών για κάθε μέρος του κελύφους: Αρχική, βιβλιοθήκες, επικεφαλίδες, σελίδες ρυθμίσεων και πρόγραμμα αναπαραγωγής."
+
+msgctxt "#32332"
+msgid "Film"
+msgstr "Ταινία"
+
+msgctxt "#32333"
+msgid "Resume now: done by"
+msgstr "Συνέχεια τώρα: τέλος στις"
+
+msgctxt "#32334"
+msgid "Start now: ends"
+msgstr "Έναρξη τώρα: λήξη"
+
+msgctxt "#32336"
+msgid "Down for the films"
+msgstr "Κάτω για τις ταινίες"
+
+msgctxt "#32337"
+msgid "Down for the cast"
+msgstr "Κάτω για τους ηθοποιούς"
+
+msgctxt "#32338"
+msgid "Story"
+msgstr "Ιστορία"
+
+msgctxt "#32339"
+msgid "split"
+msgstr "διάλυση"
+
+msgctxt "#32340"
+msgid "died"
+msgstr "θάνατος"
+
+msgctxt "#32341"
+msgid "Resume at"
+msgstr "Συνέχεια στο"
+
+msgctxt "#32342"
+msgid "added"
+msgstr "προστέθηκε"
+
+msgctxt "#32343"
+msgid "season"
+msgstr "σεζόν"
+
+msgctxt "#32344"
+msgid "seasons"
+msgstr "σεζόν"
+
+msgctxt "#32345"
+msgid "Aired"
+msgstr "Προβολή"
+
+msgctxt "#32346"
+msgid "Resume now and you're done by"
+msgstr "Συνεχίστε τώρα και τελειώνετε στις"
+
+msgctxt "#32347"
+msgid "Start now and it ends at"
+msgstr "Ξεκινήστε τώρα και τελειώνει στις"
+
+msgctxt "#32348"
+msgid "after midnight"
+msgstr "μετά τα μεσάνυχτα"
+
+msgctxt "#32349"
+msgid "Start now and you're done by"
+msgstr "Ξεκινήστε τώρα και τελειώνετε στις"
+
+msgctxt "#32350"
+msgid "still to watch"
+msgstr "ακόμα να δείτε"
+
+msgctxt "#32351"
+msgid "aired"
+msgstr "προβολή"
+
+msgctxt "#32352"
+msgid "rated"
+msgstr "βαθμολογία"
+
+msgctxt "#32353"
+msgid "With"
+msgstr "Με τους"
+
+msgctxt "#32354"
+msgid "Progress"
+msgstr "Πρόοδος"
+
+msgctxt "#32355"
+msgid "to watch"
+msgstr "να δείτε"
+
+msgctxt "#32356"
+msgid "No channels. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr "Δεν υπάρχουν κανάλια. Ενεργοποιήστε ένα πρόσθετο πελάτη PVR στις ρυθμίσεις PVR και Ζωντανής TV."
+
+msgctxt "#32357"
+msgid "No recordings."
+msgstr "Δεν υπάρχουν εγγραφές."
+
+msgctxt "#32358"
+msgid "No results."
+msgstr "Δεν υπάρχουν αποτελέσματα."
+
+msgctxt "#32359"
+msgid "No timers."
+msgstr "Δεν υπάρχουν χρονοδιακόπτες."
+
+msgctxt "#32360"
+msgid "updated"
+msgstr "ενημέρωση"
+
+msgctxt "#32361"
+msgid "Setup wizard"
+msgstr "Οδηγός ρύθμισης"
+
+msgctxt "#32362"
+msgid "Theme, palette, backgrounds, Home"
+msgstr "Θέμα, παλέτα, φόντα, Αρχική"
+
+msgctxt "#32363"
+msgid "Widget screens: slow zoom"
+msgstr "Οθόνες widget: αργό ζουμ"
+
+msgctxt "#32364"
+msgid "Kodi shows these after its own items, in this order (items of other add-ons can follow). Update and Clean library show in the libraries and on Home, Refresh information on films, shows, episodes and music videos, Take screenshot everywhere."
+msgstr "Το Kodi τα δείχνει μετά τα δικά του στοιχεία, με αυτή τη σειρά (στοιχεία άλλων πρόσθετων μπορεί να ακολουθούν). Η Ενημέρωση και ο Καθαρισμός βιβλιοθήκης εμφανίζονται στις βιβλιοθήκες και στην Αρχική, η Ανανέωση πληροφοριών σε ταινίες, σειρές, επεισόδια και μουσικά βίντεο, η Λήψη στιγμιότυπου παντού."
+
+msgctxt "#32365"
+msgid "PICTURE"
+msgstr "ΕΙΚΟΝΑ"
+
+msgctxt "#32366"
+msgid "Smart playlist"
+msgstr "Έξυπνη λίστα"
+
+msgctxt "#32367"
+msgid "Source"
+msgstr "Πηγή"
+
+msgctxt "#32368"
+msgid "fps"
+msgstr "fps"
+
+msgctxt "#32369"
+msgid "AR"
+msgstr "AR"
+
+msgctxt "#32370"
+msgid "Dynamic range"
+msgstr "Δυναμικό εύρος"
+
+msgctxt "#32371"
+msgid "Decoder"
+msgstr "Αποκωδικ."
+
+msgctxt "#32372"
+msgid "Pixel format"
+msgstr "Μορφή pixel"
+
+msgctxt "#32373"
+msgid "Deinterlace"
+msgstr "Αφαίρεση πλέξης"
+
+msgctxt "#32374"
+msgid "Display"
+msgstr "Οθόνη"
+
+msgctxt "#32375"
+msgid "Audio output"
+msgstr "Έξοδος ήχου"
+
+msgctxt "#32376"
+msgid "Interface"
+msgstr "Διεπαφή"
+
+msgctxt "#32377"
+msgid "memory"
+msgstr "μνήμη"
+
+msgctxt "#32378"
+msgid "FILE"
+msgstr "ΑΡΧΕΙΟ"
+
+msgctxt "#32379"
+msgid "SIZE"
+msgstr "ΜΕΓΕΘΟΣ"
+
+msgctxt "#32380"
+msgid "TAKEN"
+msgstr "ΛΗΨΗ"
+
+msgctxt "#32381"
+msgid "STATE"
+msgstr "ΚΑΤΑΣΤΑΣΗ"
+
+msgctxt "#32382"
+msgid "until bedtime"
+msgstr "ως την ώρα ύπνου"
+
+msgctxt "#32383"
+msgid "Fits before bedtime"
+msgstr "Προλαβαίνετε πριν τον ύπνο"
+
+msgctxt "#32384"
+msgid "fits before bedtime"
+msgstr "προλαβαίνετε πριν τον ύπνο"
+
+msgctxt "#32385"
+msgid "Nothing unwatched fits before bedtime tonight."
+msgstr "Τίποτα αθέατο δεν χωρά απόψε πριν την ώρα ύπνου σας."
+
+msgctxt "#32386"
+msgid "right at your bedtime"
+msgstr "ακριβώς στην ώρα ύπνου σας"
+
+msgctxt "#32387"
+msgid "past your bedtime"
+msgstr "μετά την ώρα ύπνου σας"
+
+msgctxt "#32388"
+msgid "before your bedtime"
+msgstr "πριν την ώρα ύπνου σας"
+
+msgctxt "#32389"
+msgid "after your bedtime"
+msgstr "μετά την ώρα ύπνου σας"
+
+msgctxt "#32390"
+msgid "Continuing"
+msgstr "Συνεχίζεται"
+
+msgctxt "#32391"
+msgid "Ended"
+msgstr "Ολοκληρώθηκε"
+
+msgctxt "#32392"
+msgid "Cancelled"
+msgstr "Ακυρώθηκε"
+
+msgctxt "#32393"
+msgid "In production"
+msgstr "Σε παραγωγή"
+
+msgctxt "#32394"
+msgid "Planned"
+msgstr "Προγραμματισμένη"
+
+msgctxt "#32395"
+msgid "Upcoming"
+msgstr "Σύντομα"
+
+msgctxt "#32396"
+msgid "Pilot"
+msgstr "Πιλότος"
+
+msgctxt "#32397"
+msgid "Now playing in"
+msgstr "Παίζει τώρα –"
+
+msgctxt "#32398"
+msgid "Films of a set"
+msgstr "Ταινίες συλλογής"
+
+msgctxt "#32399"
+msgid "Versions of a film"
+msgstr "Εκδοχές ταινίας"
+
+msgctxt "#32400"
+msgid "Grid"
+msgstr "Πλέγμα"
+
+msgctxt "#32401"
+msgid "One at a time"
+msgstr "Μία τη φορά"
+
+msgctxt "#32402"
+msgid "Fused Glass"
+msgstr "Fused Glass"
+
+msgctxt "#32403"
+msgid "Next hours"
+msgstr "Επόμενες ώρες"
+
+msgctxt "#32404"
+msgid "This week"
+msgstr "Αυτή την εβδομάδα"
+
+msgctxt "#32405"
+msgid "No weather yet. Choose a weather service in Settings > Services > Weather."
+msgstr "Δεν υπάρχει ακόμη καιρός. Επιλέξτε υπηρεσία καιρού στις Ρυθμίσεις > Υπηρεσίες > Καιρός."
+
+msgctxt "#32406"
+msgid "Recent searches"
+msgstr "Πρόσφατες αναζητήσεις"
+
+msgctxt "#32407"
+msgid "In Fused Glass the music playing always sits beside the clock on Home; this setting is for the other themes."
+msgstr "Στο Fused Glass η μουσική που παίζει εμφανίζεται πάντα δίπλα στο ρολόι στην Αρχική· η ρύθμιση αφορά τα άλλα θέματα."
+
+msgctxt "#32408"
+msgid "Focus highlight"
+msgstr "Επισήμανση εστίασης"
+
+msgctxt "#32409"
+msgid "Pill"
+msgstr "Χάπι"
+
+msgctxt "#32410"
+msgid "Flat"
+msgstr "Επίπεδη"
+
+msgctxt "#32411"
+msgid "Frosted"
+msgstr "Θαμπό γυαλί"
+
+msgctxt "#32412"
+msgid "Outline"
+msgstr "Περίγραμμα"
+
+msgctxt "#32413"
+msgid "Tight"
+msgstr "Στενή"
+
+msgctxt "#32414"
+msgid "How the item in focus is marked in lists and menus. Changing it reloads the skin."
+msgstr "Πώς σημειώνεται το επιλεγμένο στοιχείο σε λίστες και μενού. Η αλλαγή φορτώνει ξανά το θέμα."
+
+msgctxt "#32415"
+msgid "Navigation animation"
+msgstr "Κίνηση πλοήγησης"
+
+msgctxt "#32416"
+msgid "Pop"
+msgstr "Pop"
+
+msgctxt "#32417"
+msgid "Grow"
+msgstr "Αύξηση"
+
+msgctxt "#32418"
+msgid "Fade"
+msgstr "Σβήσιμο"
+
+msgctxt "#32419"
+msgid "Glow"
+msgstr "Λάμψη"
+
+msgctxt "#32420"
+msgid "Nudge"
+msgstr "Ώθηση"
+
+msgctxt "#32421"
+msgid "Lift"
+msgstr "Άρση"
+
+msgctxt "#32422"
+msgid "How the highlight moves when it lands on an item. Pop is the default."
+msgstr "Πώς κινείται η επισήμανση όταν φτάνει σε ένα στοιχείο. Προεπιλογή είναι το Pop."
+
+msgctxt "#32423"
+msgid "Font combination"
+msgstr "Συνδυασμός γραμματοσειρών"
+
+msgctxt "#32424"
+msgid "A heading and text font combination, shown before you pick it, or your own font for each part of the skin."
+msgstr "Ένας συνδυασμός γραμματοσειράς τίτλων και κειμένου με προεπισκόπηση ή δική σας γραμματοσειρά για κάθε μέρος του skin."
+
+msgctxt "#32425"
+msgid "Home menu: only the focused item's name"
+msgstr "Αρχικό μενού: μόνο το όνομα του επιλεγμένου"
+
+msgctxt "#32426"
+msgid "On: the other items of the Home menu show only their icon and the focused item shows its name."
+msgstr "Ναι: τα άλλα στοιχεία του αρχικού μενού δείχνουν μόνο το εικονίδιό τους και το επιλεγμένο δείχνει το όνομά του."
+
+msgctxt "#32427"
+msgid "Segment skip button placement"
+msgstr "Θέση κουμπιού παράλειψης τμήματος"
+
+msgctxt "#32428"
+msgid "Tab"
+msgstr "Καρτέλα"
+
+msgctxt "#32429"
+msgid "Glass"
+msgstr "Γυαλί"
+
+msgctxt "#32430"
+msgid "How the skip button sits on the player controls and the small seek bar: a white tab on the card's edge, or a capsule of the card's glass above it."
+msgstr "Πώς κάθεται το κουμπί παράλειψης στα χειριστήρια και στη μικρή μπάρα αναζήτησης: λευκή καρτέλα στην άκρη της κάρτας ή κάψουλα από το γυαλί της κάρτας από πάνω."
+
+msgctxt "#32431"
+msgid "Available in library"
+msgstr "Διαθέσιμο στη βιβλιοθήκη"
+
+msgctxt "#32432"
+msgid "In library"
+msgstr "Στη βιβλιοθήκη"
+
+msgctxt "#32433"
+msgid "Random %s"
+msgstr "Τυχαίες %s"
+
+msgctxt "#32434"
+msgid "Recently added %s"
+msgstr "%s που προστέθηκαν πρόσφατα"
+
+msgctxt "#32435"
+msgid "Recently played %s"
+msgstr "%s που αναπαράχθηκαν πρόσφατα"
+
+msgctxt "#32436"
+msgid "Top rated %s"
+msgstr "Κορυφαίες %s"
+
+msgctxt "#32437"
+msgid "Most played %s"
+msgstr "Πιο πολυπαιγμένες %s"
+
+msgctxt "#32438"
+msgid "Newest %s"
+msgstr "Νεότερες %s"
+
+msgctxt "#32439"
+msgid "%s by title"
+msgstr "%s κατά τίτλο"
+
+msgctxt "#32440"
+msgid "Scroll through channels"
+msgstr "Κύλιση στα κανάλια"
+
+msgctxt "#32441"
+msgid "Auto-fix art with the wrong shape"
+msgstr "Αυτόματη διόρθωση εικόνων με λάθος σχήμα"
+
+msgctxt "#32442"
+msgid "Check library art now"
+msgstr "Έλεγχος εικόνων βιβλιοθήκης τώρα"
+
+msgctxt "#32443"
+msgid "Library art"
+msgstr "Εικόνες βιβλιοθήκης"
+
+msgctxt "#32444"
+msgid "Now uses a picture from the same folder that fits"
+msgstr "Χρησιμοποιεί τώρα κατάλληλη εικόνα από τον ίδιο φάκελο"
+
+msgctxt "#32445"
+msgid "Wrong shape, nothing in the folder fits"
+msgstr "Λάθος σχήμα, τίποτα στον φάκελο δεν ταιριάζει"
+
+msgctxt "#32446"
+msgid "Every picture has the right shape."
+msgstr "Όλες οι εικόνες έχουν το σωστό σχήμα."
+
+msgctxt "#32447"
+msgid "Fixed in the library: %d"
+msgstr "Διορθώθηκαν στη βιβλιοθήκη: %d"
+
+msgctxt "#32448"
+msgid "After a refresh or a library scan, a poster, banner, landscape or fanart of the wrong shape is replaced by a picture of the same name in the same folder that fits. Your files stay as they are."
+msgstr "Μετά από ανανέωση ή σάρωση της βιβλιοθήκης, μια αφίσα, ένα banner, ένα landscape ή ένα fanart με λάθος σχήμα αντικαθίσταται από κατάλληλη εικόνα με το ίδιο όνομα από τον ίδιο φάκελο. Τα αρχεία σας μένουν ως έχουν."
+
+msgctxt "#32449"
+msgid "Checks every picture Kodi has shown and fixes what it can. A list shows what was replaced and what is still the wrong shape."
+msgstr "Ελέγχει κάθε εικόνα που έχει εμφανίσει το Kodi και διορθώνει ό,τι μπορεί. Μια λίστα δείχνει τι αντικαταστάθηκε και τι έχει ακόμα λάθος σχήμα."
+
+msgctxt "#32450"
+msgid "Slot left empty: the skin shows the show's picture until season art is added"
+msgstr "Η θέση έμεινε κενή: το skin δείχνει την εικόνα της σειράς μέχρι να προστεθεί εικόνα σεζόν"
+
+msgctxt "#32451"
+msgid "Only Kodi's library changed. Your files are untouched."
+msgstr "Άλλαξε μόνο η βιβλιοθήκη του Kodi. Τα αρχεία σας δεν άλλαξαν."
+
+msgctxt "#32452"
+msgid "Mosaic"
+msgstr "Ψηφιδωτό"
+
+msgctxt "#32453"
+msgid "Ledger"
+msgstr "Κατάστιχο"
+
+msgctxt "#32454"
+msgid "Bridge"
+msgstr "Γέφυρα"
+
+msgctxt "#32455"
+msgid "Tab slab"
+msgstr "Καρτέλα"
+
+msgctxt "#32456"
+msgid "How the menus join their boxes: Mosaic, Ledger, Bridge or Tab slab. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "Πώς τα μενού ενώνουν τα πλαίσιά τους: Ψηφιδωτό, Κατάστιχο, Γέφυρα ή Καρτέλα. Το Fuse χρησιμοποιεί στρογγυλεμένες κάρτες και θέλει επανεκκίνηση του Kodi."
+
+msgctxt "#32457"
+msgid "Aeon Glass keeps its own menus. Fuse uses rounded cards and needs Kodi to start again."
+msgstr "Το Aeon Glass κρατά τα δικά του μενού. Το Fuse χρησιμοποιεί στρογγυλεμένες κάρτες και θέλει επανεκκίνηση του Kodi."
+
+msgctxt "#32458"
+msgid "Library options"
+msgstr "Επιλογές βιβλιοθήκης"
+
+msgctxt "#32459"
+msgid "Strip"
+msgstr "Λωρίδα"
+
+msgctxt "#32460"
+msgid "Box"
+msgstr "Πλαίσιο"
+
+msgctxt "#32461"
+msgid "Left at the edge of a view or the Menu key opens the side strip, or a big box in the menu style."
+msgstr "Αριστερά στην άκρη μιας προβολής ή το πλήκτρο Μενού ανοίγει την πλαϊνή λωρίδα ή ένα μεγάλο πλαίσιο στο στυλ του μενού."
+
+msgctxt "#32462"
+msgid "Skippy: skip button style"
+msgstr "Skippy: στυλ κουμπιού παράλειψης"
+
+msgctxt "#32463"
+msgid "Box pair"
+msgstr "Ζεύγος πλαισίων"
+
+msgctxt "#32464"
+msgid "Clock dock"
+msgstr "Στο ρολόι"
+
+msgctxt "#32465"
+msgid "Aeon theme: a palette tile and a label box at the bottom right (above the player controls when they are open), or a row at the top right that ends in the clock box."
+msgstr "Θέμα Aeon: ένα χρωματιστό πλακίδιο και ένα πλαίσιο κειμένου κάτω δεξιά (πάνω από τα χειριστήρια όταν είναι ανοιχτά), ή μια σειρά πάνω δεξιά που τελειώνει στο πλαίσιο του ρολογιού."
+
+msgctxt "#32466"
+msgid "Use the palette for"
+msgstr "Χρήση της παλέτας για"
+
+msgctxt "#32467"
+msgid "Menus and library views"
+msgstr "Μενού και προβολές βιβλιοθήκης"
+
+msgctxt "#32468"
+msgid "Menus only"
+msgstr "Μόνο μενού"
+
+msgctxt "#32469"
+msgid "Library views only"
+msgstr "Μόνο προβολές βιβλιοθήκης"
+
+msgctxt "#32470"
+msgid "Colors: the colour of the artwork; in the library with the Neutral backdrop and a palette other than Aeon, the palette's own darker box colour. Neutral: always the palette's box colour. Fanart: a window onto the fanart. Backdrop: as the library backdrop. View settings sets it per view."
+msgstr "Χρώματα: το χρώμα της εικόνας· στη βιβλιοθήκη με ουδέτερο φόντο και παλέτα άλλη από την Aeon, το δικό της πιο σκούρο χρώμα πλαισίων. Ουδέτερο: πάντα το χρώμα πλαισίων της παλέτας. Fanart: ένα παράθυρο στο fanart. Φόντο: όπως το φόντο της βιβλιοθήκης. Οι ρυθμίσεις προβολής το ορίζουν ανά προβολή."
+
+msgctxt "#32471"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages, for the menus and the library views, the menus only or the library views only. The library background takes it with the Neutral backdrop only."
+msgstr "Χρώμα της επισήμανσης, των πλαισίων, των λωρίδων και των σελίδων ρυθμίσεων, για μενού και προβολές βιβλιοθήκης, μόνο για μενού ή μόνο για προβολές βιβλιοθήκης. Το φόντο της βιβλιοθήκης το παίρνει μόνο με ουδέτερο φόντο."
+
+msgctxt "#32472"
+msgid "Band under the Home menu"
+msgstr "Λωρίδα κάτω από το κεντρικό μενού"
+
+msgctxt "#32473"
+msgid "A dark band from the Home menu down to the bottom of the screen, with a thin line on top, over the spotlight pictures. It follows the menu: middle or low."
+msgstr "Μια σκούρα λωρίδα από το κεντρικό μενού ως το κάτω μέρος της οθόνης με μια λεπτή γραμμή στην κορυφή, πάνω από τις εικόνες του spotlight. Ακολουθεί το μενού: στη μέση ή χαμηλά."
+
+msgctxt "#32474"
+msgid "Toasts expand from clock pill"
+msgstr "Οι ειδοποιήσεις ανοίγουν από την κάψουλα του ρολογιού"
+
+msgctxt "#32475"
+msgid "A notification widens the clock pill to the left and shows itself in it, instead of a capsule of its own. Library views and full-screen video keep the capsule."
+msgstr "Μια ειδοποίηση φαρδαίνει την κάψουλα του ρολογιού προς τα αριστερά και εμφανίζεται μέσα της, αντί για δική της κάψουλα. Οι προβολές βιβλιοθήκης και το βίντεο σε πλήρη οθόνη κρατούν την κάψουλα."
+
+msgctxt "#32476"
+msgid "Clearlogo in Now playing"
+msgstr "Clearlogo στο Αναπαράγεται τώρα"
+
+msgctxt "#32477"
+msgid "Live"
+msgstr "Ζωντανά"
+
+msgctxt "#32478"
+msgid "Fused Glass player: the clearlogo of the show or film in the Now playing pill at the top left, instead of its title. Off: the title."
+msgstr "Πρόγραμμα αναπαραγωγής Fused Glass: το clearlogo της σειράς ή της ταινίας στην κάψουλα «Αναπαράγεται τώρα» πάνω αριστερά, αντί για τον τίτλο. Ανενεργό: ο τίτλος."
+
+msgctxt "#32479"
+msgid "Overview"
+msgstr "Επισκόπηση"
+
+msgctxt "#32480"
+msgid "File and season"
+msgstr "Αρχείο και σεζόν"
+
+msgctxt "#32481"
+msgid "In this file"
+msgstr "Σε αυτό το αρχείο"
+
+msgctxt "#32482"
+msgid "File"
+msgstr "Αρχείο"
+
+msgctxt "#32483"
+msgid "Size"
+msgstr "Μέγεθος"
+
+msgctxt "#32484"
+msgid "Playing on"
+msgstr "Αναπαραγωγή σε"
+
+msgctxt "#32485"
+msgid "Cast photos in the information screen"
+msgstr "Φωτογραφίες ηθοποιών στην οθόνη πληροφοριών"
+
+msgctxt "#32486"
+msgid "Fused Glass player: the information screen shows the cast as round photos with the name and the character under each, in one row you scroll through. Off: the names as chips."
+msgstr "Πρόγραμμα αναπαραγωγής Fused Glass: η οθόνη πληροφοριών δείχνει τους ηθοποιούς ως στρογγυλές φωτογραφίες με το όνομα και τον ρόλο κάτω από την καθεμία, σε μία σειρά που κυλά. Ανενεργό: τα ονόματα ως ετικέτες."
+
+msgctxt "#32487"
+msgid "Up"
+msgstr "Πάνω"
+
+msgctxt "#32488"
+msgid "Down"
+msgstr "Κάτω"
+
+msgctxt "#32489"
+msgid "Kodi running for"
+msgstr "Το Kodi τρέχει"
+
+msgctxt "#32490"
+msgid "Box up for"
+msgstr "Η συσκευή τρέχει"
+
+msgctxt "#32491"
+msgid "Nothing is playing"
+msgstr "Δεν παίζει τίποτα"
+
+msgctxt "#32492"
+msgid "Sleep"
+msgstr "Αναστολή"
+
+msgctxt "#32493"
+msgid "Restart Kodi"
+msgstr "Επανεκκίνηση Kodi"
+
+msgctxt "#32495"
+msgid "Reboot to Android"
+msgstr "Επανεκκίνηση σε Android"
+
+msgctxt "#32496"
+msgid "Shut down"
+msgstr "Τερματισμός"
+
+msgctxt "#32497"
+msgid "OK again to confirm"
+msgstr "Ξανά OK για επιβεβαίωση"
+
+msgctxt "#32498"
+msgid "Log off"
+msgstr "Αποσύνδεση"
+
+msgctxt "#32499"
+msgid "Exit Kodi"
+msgstr "Έξοδος από το Kodi"
+
+msgctxt "#32500"
+msgid "When this ends"
+msgstr "Όταν τελειώσει αυτό"
+
+msgctxt "#32501"
+msgid "min"
+msgstr "λεπ."
+
+msgctxt "#32502"
+msgid "Health"
+msgstr "Κατάσταση"
+
+msgctxt "#32503"
+msgid "All good"
+msgstr "Όλα καλά"
+
+msgctxt "#32504"
+msgid "Running warm"
+msgstr "Ζεσταίνεται"
+
+msgctxt "#32505"
+msgid "Memory almost full"
+msgstr "Η μνήμη σχεδόν γεμάτη"
+
+msgctxt "#32506"
+msgid "Processor"
+msgstr "Επεξεργαστής"
+
+msgctxt "#32507"
+msgid "Shortcuts"
+msgstr "Συντομεύσεις"
+
+msgctxt "#32508"
+msgid "Recently used add-ons"
+msgstr "Πρόσφατα πρόσθετα"
+
+msgctxt "#32509"
+msgid "Library jobs"
+msgstr "Εργασίες βιβλιοθήκης"
+
+msgctxt "#32510"
+msgid "All episodes"
+msgstr "Όλα τα επεισόδια"
+
+msgctxt "#32511"
+msgid "to the tile"
+msgstr "στο πλακίδιο"
+
+msgctxt "#32512"
+msgid "{n} min left"
+msgstr "απομένουν {n} λεπ."
+
+msgctxt "#32513"
+msgid "{episode} airs {date}"
+msgstr "Το {episode} προβάλλεται {date}"
+
+msgctxt "#32514"
+msgid "{n} more waiting in season {season}"
+msgstr "Άλλα {n} περιμένουν στη σεζόν {season}"
+
+msgctxt "#32515"
+msgid "1 more waiting in season {season}"
+msgstr "Άλλο 1 περιμένει στη σεζόν {season}"
+
+msgctxt "#32516"
+msgid "Search your library"
+msgstr "Αναζήτηση στη βιβλιοθήκη"
+
+msgctxt "#32517"
+msgid "Films, shows, episodes, music, people"
+msgstr "Ταινίες, σειρές, επεισόδια, μουσική, άτομα"
+
+msgctxt "#32518"
+msgid "You're on {episode}"
+msgstr "Είστε στο {episode}"
+
+msgctxt "#32519"
+msgid "Last search:"
+msgstr "Τελευταία αναζήτηση:"
+
+msgctxt "#32520"
+msgid "Also search"
+msgstr "Αναζήτηση και σε"
+
+msgctxt "#32521"
+msgid "TMDb, not in the library"
+msgstr "TMDb, εκτός βιβλιοθήκης"
+
+msgctxt "#32522"
+msgid "People"
+msgstr "Άτομα"
+
+msgctxt "#32523"
+msgid "Online"
+msgstr "Online"
+
+msgctxt "#32524"
+msgid "Next 7 days"
+msgstr "Επόμενες 7 ημέρες"
+
+msgctxt "#32525"
+msgid "Shows you watch"
+msgstr "Σειρές που βλέπετε"
+
+msgctxt "#32526"
+msgid "View settings"
+msgstr "Ρυθμίσεις προβολής"
+
+msgctxt "#32527"
+msgid "Background"
+msgstr "Φόντο"
+
+msgctxt "#32528"
+msgid "Nothing out"
+msgstr "Τίποτα δεν βγαίνει"
+
+msgctxt "#32529"
+msgid "{n} this week"
+msgstr "{n} αυτή την εβδομάδα"
+
+msgctxt "#32530"
+msgid "1 episode"
+msgstr "1 επεισόδιο"
+
+msgctxt "#32531"
+msgid "{n} episodes"
+msgstr "{n} επεισόδια"
+
+msgctxt "#32532"
+msgid "1 film"
+msgstr "1 ταινία"
+
+msgctxt "#32533"
+msgid "{n} films"
+msgstr "{n} ταινίες"
+
+msgctxt "#32534"
+msgid "Week: seven days side by side. Day: one day at a time."
+msgstr "Εβδομάδα: επτά ημέρες δίπλα δίπλα. Ημέρα: μία ημέρα τη φορά."
+
+msgctxt "#32535"
+msgid "Episodes, films or both."
+msgstr "Επεισόδια, ταινίες ή και τα δύο."
+
+msgctxt "#32536"
+msgid "Only the episodes of shows you have watched before."
+msgstr "Μόνο επεισόδια σειρών που έχετε ήδη δει."
+
+msgctxt "#32537"
+msgid "Colors: the colours of the selected title's artwork. Neutral: plain. Fanart: the picture itself."
+msgstr "Χρώματα: τα χρώματα της εικόνας του επιλεγμένου τίτλου. Ουδέτερο: απλό. Fanart: η ίδια η εικόνα."
+
+msgctxt "#32538"
+msgid "The first day of a week. Today: always the next seven days."
+msgstr "Η πρώτη ημέρα της εβδομάδας. Σήμερα: πάντα οι επόμενες επτά ημέρες."
+
+msgctxt "#32539"
+msgid "This week"
+msgstr "Αυτή την εβδομάδα"
+
+msgctxt "#32540"
+msgid "Next week"
+msgstr "Επόμενη εβδομάδα"
+
+msgctxt "#32541"
+msgid "{n} in progress"
+msgstr "{n} σε εξέλιξη"
+
+msgctxt "#32542"
+msgid "{n} unwatched"
+msgstr "{n} δεν έχουν προβληθεί"
+
+msgctxt "#32543"
+msgid "All watched"
+msgstr "Όλα προβλήθηκαν"
+
+msgctxt "#32544"
+msgid "Episode combined"
+msgstr "Επεισόδια μαζί"
+
+msgctxt "#32545"
+msgid "Season buttons, the episodes in a card and the one in focus beside it"
+msgstr "Κουμπιά σεζόν, τα επεισόδια σε κάρτα και το επιλεγμένο δίπλα"
+
+msgctxt "#32546"
+msgid "{time} of {total}"
+msgstr "{time} από {total}"
+
+msgctxt "#32547"
+msgid "Frost"
+msgstr "Παγωμένο"
+
+msgctxt "#32548"
+msgid "Raised"
+msgstr "Ανυψωμένο"
+
+msgctxt "#32549"
+msgid "Clear"
+msgstr "Διάφανο"
+
+msgctxt "#32550"
+msgid "Library view theme"
+msgstr "Θέμα βιβλιοθήκης"
+
+msgctxt "#32551"
+msgid "The glass of the frosted panels: library views, Home panels and the Home bar. Menus and dialogs follow Menu theme. Frost: lighter. Raised: lit rim, deep shadow. Clear: thin, no blur. Dark: darker."
+msgstr "Γυαλί των θαμπών πλαισίων: βιβλιοθήκη, πλαίσια και μπάρα Αρχικής. Τα μενού και οι διάλογοι ακολουθούν το Θέμα μενού. Παγωμένο: πιο ανοιχτό. Ανυψωμένο: φωτεινό χείλος, βαθιά σκιά. Διάφανο: λεπτό. Σκούρο: πιο σκούρο."
+
+msgctxt "#32552"
+msgid "Earlier days"
+msgstr "Προηγούμενες ημέρες"
+
+msgctxt "#32553"
+msgid "Also show what aired on the days of this week before today (episodes in your library)."
+msgstr "Εμφάνιση και όσων προβλήθηκαν τις ημέρες της εβδομάδας πριν από σήμερα (επεισόδια στη βιβλιοθήκη)."
+
+msgctxt "#32554"
+msgid "Menu names in capitals"
+msgstr "Ονόματα μενού με κεφαλαία"
+
+msgctxt "#32555"
+msgid "Fused Glass: the Home menu names in capital letters instead of sentence case."
+msgstr "Fused Glass: τα ονόματα του αρχικού μενού με κεφαλαία."
+
+msgctxt "#32556"
+msgid "In cinemas now"
+msgstr "Τώρα στους κινηματογράφους"
+
+msgctxt "#32557"
+msgid "Airing today"
+msgstr "Προβάλλεται σήμερα"
+
+msgctxt "#32558"
+msgid "Airing tomorrow"
+msgstr "Προβάλλεται αύριο"
+
+msgctxt "#32559"
+msgid "Save lyrics next to the song"
+msgstr "Αποθήκευση στίχων δίπλα στο τραγούδι"
+
+msgctxt "#32560"
+msgid "Lyrics that CU LRC Lyrics finds are also saved as a file next to the song (.lrc or .txt), so they are there next time and for other players. The music folder must be writable."
+msgstr "Οι στίχοι που βρίσκει το CU LRC Lyrics αποθηκεύονται και ως αρχείο δίπλα στο τραγούδι (.lrc ή .txt), ώστε να υπάρχουν την επόμενη φορά και για άλλες εφαρμογές. Ο φάκελος μουσικής πρέπει να είναι εγγράψιμος."
+
+msgctxt "#32561"
+msgid "Home spotlight: recently watched sets"
+msgstr "Spotlight: συλλογές που είδατε πρόσφατα"
+
+msgctxt "#32562"
+msgid "The spotlight of a Home item that shows movie sets (Sets, for example) lists the sets you watched last, newest first. Off: all sets, as its spotlight settings say."
+msgstr "Το Spotlight ενός στοιχείου της Αρχικής με συλλογές ταινιών (π.χ. Συλλογές) δείχνει τις συλλογές που είδατε τελευταίες, πρώτα τη νεότερη. Ανενεργό: όλες οι συλλογές, όπως στις ρυθμίσεις του Spotlight."
+
+msgctxt "#32563"
+msgid "Progress rings"
+msgstr "Δακτύλιοι προόδου"
+
+msgctxt "#32564"
+msgid "Season list combined 1"
+msgstr "Λίστα κύκλων μαζί 1"
+
+msgctxt "#32565"
+msgid "Seasons, episodes, facts"
+msgstr "Κύκλοι, επεισόδια, στοιχεία"
+
+msgctxt "#32566"
+msgid "Season list combined 2"
+msgstr "Λίστα κύκλων μαζί 2"
+
+msgctxt "#32567"
+msgid "Poster with episode stills"
+msgstr "Αφίσα με εικόνες"
+
+msgctxt "#32568"
+msgid "Smooth song progress"
+msgstr "Ομαλή πρόοδος τραγουδιού"
+
+msgctxt "#32569"
+msgid "Fused Glass Now playing: the song's progress behind the waveform glides instead of jumping 1 % at a time. Uses a little more processor time while the screen is open."
+msgstr "Αναπαράγεται τώρα στο Fused Glass: η πρόοδος του τραγουδιού πίσω από την κυματομορφή κυλά ομαλά αντί να πηδά ανά 1 %. Χρησιμοποιεί λίγο περισσότερο τον επεξεργαστή όσο η οθόνη είναι ανοιχτή."
+
+msgctxt "#32570"
+msgid "Progress bar updates per second"
+msgstr "Ενημερώσεις μπάρας ανά δευτ."
+
+msgctxt "#32571"
+msgid "Screen"
+msgstr "Οθόνη"
+
+msgctxt "#32572"
+msgid "How often a second Smooth song progress moves the fill. Screen: as often as Kodi draws the screen. Fewer updates use less processor time; on a long song even 10 looks smooth."
+msgstr "Πόσες φορές το δευτερόλεπτο η ομαλή πρόοδος τραγουδιού μετακινεί τη γέμιση. Οθόνη: όσο συχνά σχεδιάζει το Kodi την οθόνη. Λιγότερες ενημερώσεις θέλουν λιγότερο επεξεργαστή· σε μεγάλο τραγούδι και το 10 φαίνεται ομαλό."
+
+msgctxt "#32590"
+msgid "Season poster wall combined"
+msgstr "Τοίχος αφισών κύκλων μαζί"
+
+msgctxt "#32573"
+msgid "Dark"
+msgstr "Σκούρο"
+
+msgctxt "#32574"
+msgid "Dark: dark panels. Clear: thin glass that shows more of the backdrop. Frost: light frosted glass over the blurred backdrop. Fused Glass: the System screen's menus, full screen with thin rules and a white bar on the row in focus; Kodi starts again."
+msgstr "Σκούρο: σκούρα πλαίσια. Διάφανο: λεπτό γυαλί που δείχνει περισσότερο φόντο. Παγωμένο: ανοιχτό θαμπό γυαλί πάνω από το θολό φόντο. Fused Glass: τα μενού της οθόνης Σύστημα, σε πλήρη οθόνη με λεπτές γραμμές και λευκή μπάρα στη γραμμή εστίασης· το Kodi ξεκινά ξανά."
+
+msgctxt "#32575"
+msgid "Home bar"
+msgstr "Μπάρα Αρχικής"
+
+msgctxt "#32576"
+msgid "Bar"
+msgstr "Μπάρα"
+
+msgctxt "#32577"
+msgid "Keys"
+msgstr "Πλήκτρα"
+
+msgctxt "#32578"
+msgid "Shelf"
+msgstr "Ράφι"
+
+msgctxt "#32579"
+msgid "Frosted glass behind the Home menu, in the material chosen under Look. Bar: one capsule. Keys: glass under each icon. Shelf: a band across the screen."
+msgstr "Θαμπό γυαλί πίσω από το κεντρικό μενού, με το υλικό της Όψης. Μπάρα: μία κάψουλα. Πλήκτρα: γυαλί κάτω από κάθε εικονίδιο. Ράφι: λωρίδα σε όλο το πλάτος."
+
+msgctxt "#32591"
+msgid "Add item"
+msgstr "Προσθήκη στοιχείου"
+
+msgctxt "#32592"
+msgid "Puts a new item at the end of the menu: one of the skin's items that is not on it yet, or a custom item with its own path, Spotlight and lists.[CR][CR]OK opens the list of types."
+msgstr "Βάζει νέο στοιχείο στο τέλος του μενού: ένα στοιχείο του θέματος που δεν υπάρχει ακόμη ή ένα προσαρμοσμένο στοιχείο με δική του διαδρομή, Spotlight και λίστες.[CR][CR]Το OK ανοίγει τη λίστα τύπων."
+
+msgctxt "#32593"
+msgid "Reload EPG"
+msgstr "Επαναφόρτωση EPG"
+
+msgctxt "#32594"
+msgid "Aeon accent colour"
+msgstr "Χρώμα έμφασης Aeon"
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr "Χρυσό"
+
+msgctxt "#32596"
+msgid "Slate"
+msgstr "Σχιστόλιθος"
+
+msgctxt "#32597"
+msgid "Teal"
+msgstr "Πετρόλ"
+
+msgctxt "#32598"
+msgid "Moss"
+msgstr "Βρύο"
+
+msgctxt "#32599"
+msgid "Side"
+msgstr "Πλάγια"
+
+msgctxt "#32600"
+msgid "Vignette shape"
+msgstr "Σχήμα βινιέτας"
+
+msgctxt "#32601"
+msgid "Round"
+msgstr "Στρογγυλή"
+
+msgctxt "#32602"
+msgid "Round darkens the edges all round. Side darkens the screen from the left and fades out to the right, under the Home text. The row above sets how strong it is."
+msgstr "Η στρογγυλή σκουραίνει τις άκρες γύρω-γύρω. Η πλάγια σκουραίνει την οθόνη από αριστερά και σβήνει προς τα δεξιά, κάτω από το κείμενο της αρχικής οθόνης. Η ένταση ορίζεται στην παραπάνω γραμμή."
+
+msgctxt "#32603"
+msgid "Heavy"
+msgstr "Βαρύ"
+
+msgctxt "#32604"
+msgid "All themes"
+msgstr "Όλα τα θέματα"
+
+msgctxt "#32605"
+msgid "Next episode"
+msgstr "Επόμενο επεισόδιο"
+
+msgctxt "#32606"
+msgid "{t} left"
+msgstr "απομένουν {t}"
+
+msgctxt "#32607"
+msgid "Home menu underline"
+msgstr "Υπογράμμιση στο μενού Αρχικής"
+
+msgctxt "#32608"
+msgid "Library fanart look"
+msgstr "Εμφάνιση fanart βιβλιοθήκης"
+
+msgctxt "#32609"
+msgid "Dimmed"
+msgstr "Σκοτεινιασμένο"
+
+msgctxt "#32610"
+msgid "Ratings shown as"
+msgstr "Εμφάνιση βαθμολογιών ως"
+
+msgctxt "#32611"
+msgid "Text"
+msgstr "Κείμενο"
+
+msgctxt "#32612"
+msgid "The accent line under the focused Home menu item, as in Fused Glass."
+msgstr "Η γραμμή έμφασης κάτω από το επιλεγμένο στοιχείο του μενού Αρχικής, όπως στο Fused Glass."
+
+msgctxt "#32613"
+msgid "The fanart behind the library views: dimmed under a dark veil, or light with a frosted colour tint."
+msgstr "Το fanart πίσω από τις προβολές της βιβλιοθήκης: σκοτεινιασμένο κάτω από σκούρο πέπλο ή φωτεινό με παγωμένη χρωματική απόχρωση."
+
+msgctxt "#32614"
+msgid "Show the rating providers as their icons or as their names."
+msgstr "Εμφάνιση των παρόχων βαθμολογίας ως εικονίδια ή ως ονόματα."
+
+msgctxt "#32615"
+msgid "Media info from sidecars"
+msgstr "Πληροφορίες μέσου από αρχεία sidecar"
+
+msgctxt "#32616"
+msgid "Off: only what Kodi's library knows (the chips above). On: also the source (UHD Remux, Blu-ray, WEB-DL, DVD...), the edition, the audio and subtitle tracks and the chapters, read from a mediainfo sidecar next to each video file: <name>.cmm_mediainfo.xml from Curator Media Manager (used first) or <name>-mediainfo.xml from tinyMediaManager. Without sidecars nothing extra shows."
+msgstr "Ανενεργό: μόνο όσα ξέρει η βιβλιοθήκη του Kodi (οι ετικέτες πάνω). Ενεργό: επίσης η πηγή (UHD Remux, Blu-ray, WEB-DL, DVD...), η έκδοση, τα κανάλια ήχου και υποτίτλων και τα κεφάλαια από ένα αρχείο mediainfo δίπλα σε κάθε βίντεο: <όνομα>.cmm_mediainfo.xml από το Curator Media Manager (πρώτο) ή <όνομα>-mediainfo.xml από το tinyMediaManager. Χωρίς αυτά τα αρχεία δεν εμφανίζεται τίποτα επιπλέον."
+
+msgctxt "#32617"
+msgid "Commentary"
+msgstr "Σχολιασμός"
+
+msgctxt "#32618"
+msgid "Chapters"
+msgstr "Κεφάλαια"
+
+msgctxt "#32619"
+msgid "In cinemas now: films from"
+msgstr "Τώρα στους κινηματογράφους: ταινίες από"
+
+msgctxt "#32620"
+msgid "Everywhere"
+msgstr "Παντού"
+
+msgctxt "#32621"
+msgid "In cinemas now (the screensaver and the widgets) is what TMDb Helper's country has in cinemas: the United States unless TMDb Helper's language is set to another country. Pick your country to keep only films made in the United States or there; Everywhere keeps them all."
+msgstr "Το Τώρα στους κινηματογράφους (προφύλαξη οθόνης και widgets) δείχνει ό,τι παίζεται στη χώρα του TMDb Helper: στις ΗΠΑ, εκτός αν η γλώσσα του TMDb Helper έχει οριστεί σε άλλη χώρα. Επιλέξτε τη χώρα σας για να μείνουν μόνο ταινίες από τις ΗΠΑ ή από εκεί· το Παντού τις κρατά όλες."
+
+msgctxt "#32622"
+msgid "Getting Home ready"
+msgstr "Προετοιμασία της Αρχικής"
+
+msgctxt "#32623"
+msgid "Home rows"
+msgstr "Σειρές της Αρχικής"
+
+msgctxt "#32624"
+msgid "OK or Back skips"
+msgstr "OK ή Πίσω για παράλειψη"
+
+msgctxt "#32625"
+msgid "Live TV guide"
+msgstr "Οδηγός TV"
+
+msgctxt "#32626"
+msgid "Tint"
+msgstr "Απόχρωση"
+
+msgctxt "#32627"
+msgid "Picture"
+msgstr "Εικόνα"
+
+msgctxt "#32628"
+msgid "blurred"
+msgstr "θολή"
+
+msgctxt "#32629"
+msgid "Newest folder"
+msgstr "Νεότερος φάκελος"
+
+msgctxt "#32630"
+msgid "Folders, newest first"
+msgstr "Φάκελοι, νεότεροι πρώτα"
+
+msgctxt "#32631"
+msgid "photos"
+msgstr "φωτογραφίες"
+
+msgctxt "#32632"
+msgid "photo"
+msgstr "φωτογραφία"
+
+msgctxt "#32633"
+msgid "videos"
+msgstr "βίντεο"
+
+msgctxt "#32634"
+msgid "video"
+msgstr "βίντεο"
+
+msgctxt "#32635"
+msgid "OK plays the folder as a slideshow · Down for the folders"
+msgstr "Το OK παίζει τον φάκελο ως προβολή · Κάτω για τους φακέλους"
+
+msgctxt "#32636"
+msgid "All pictures"
+msgstr "Όλες οι εικόνες"
+
+msgctxt "#32637"
+msgid "sources"
+msgstr "πηγές"
+
+msgctxt "#32638"
+msgid "source"
+msgstr "πηγή"
+
+msgctxt "#32639"
+msgid "No pictures yet"
+msgstr "Δεν υπάρχουν εικόνες ακόμη"
+
+msgctxt "#32640"
+msgid "Add a folder of photos as a picture source in the Pictures window. OK opens it."
+msgstr "Προσθέστε έναν φάκελο με φωτογραφίες ως πηγή εικόνων στο παράθυρο Εικόνες. Το OK το ανοίγει."
+
+msgctxt "#32641"
+msgid "Photos"
+msgstr "Φωτογραφίες"
+
+msgctxt "#32642"
+msgid "OK opens the photo · Up for sort, slideshow and view"
+msgstr "Το OK ανοίγει τη φωτογραφία · Πάνω για ταξινόμηση, προβολή και εμφάνιση"
+
+msgctxt "#32643"
+msgid "View"
+msgstr "Εμφάνιση"
+
+msgctxt "#32644"
+msgid "waits until loading is done"
+msgstr "περιμένει να ολοκληρωθεί η φόρτωση"
+
+msgctxt "#32645"
+msgid "Media info chips"
+msgstr "Ετικέτες πληροφοριών μέσου"
+
+msgctxt "#32646"
+msgid "Which chips the information page, Home and the library panels show. The sidecar chips need Media info from sidecars."
+msgstr "Ποιες ετικέτες δείχνουν η σελίδα πληροφοριών, η Αρχική και τα πάνελ της βιβλιοθήκης. Οι ετικέτες sidecar χρειάζονται Πληροφορίες μέσου από sidecar."
+
+msgctxt "#32647"
+msgid "Resolution"
+msgstr "Ανάλυση"
+
+msgctxt "#32648"
+msgid "Aspect ratio"
+msgstr "Αναλογία εικόνας"
+
+msgctxt "#32649"
+msgid "HDR and Dolby Vision"
+msgstr "HDR και Dolby Vision"
+
+msgctxt "#32650"
+msgid "Dolby Vision profile"
+msgstr "Προφίλ Dolby Vision"
+
+msgctxt "#32651"
+msgid "Audio format"
+msgstr "Μορφή ήχου"
+
+msgctxt "#32652"
+msgid "Audio channels"
+msgstr "Κανάλια ήχου"
+
+msgctxt "#32653"
+msgid "Source format (sidecar)"
+msgstr "Μορφή πηγής (sidecar)"
+
+msgctxt "#32654"
+msgid "Container (sidecar)"
+msgstr "Περιέκτης (sidecar)"
+
+msgctxt "#32655"
+msgid "Bit rate (sidecar)"
+msgstr "Ρυθμός bit (sidecar)"
+
+msgctxt "#32656"
+msgid "File size (sidecar)"
+msgstr "Μέγεθος αρχείου (sidecar)"
+
+msgctxt "#32657"
+msgid "Subtitles (sidecar)"
+msgstr "Υπότιτλοι (sidecar)"
+
+msgctxt "#32658"
+msgid "Chapters (sidecar)"
+msgstr "Κεφάλαια (sidecar)"
+
+msgctxt "#32659"
+msgid "Commentary (sidecar)"
+msgstr "Σχολιασμός (sidecar)"
+
+msgctxt "#32660"
+msgid "3D (sidecar)"
+msgstr "3D (sidecar)"
+
+msgctxt "#32661"
+msgid "chapters"
+msgstr "κεφάλαια"
+
+msgctxt "#32662"
+msgid "commentary"
+msgstr "σχολιασμός"
+
+msgctxt "#32663"
+msgid "Combine multi-episode files into a single row in library"
+msgstr "Συνένωση αρχείων πολλών επεισοδίων σε μία γραμμή στη βιβλιοθήκη"
+
+msgctxt "#32664"
+msgid "Episodes stored in one video file (a double episode, three cartoons) show as one row: 1–2, one title, the file's running time. The season's list then comes from Aeon Fuse Helper."
+msgstr "Επεισόδια σε ένα αρχείο βίντεο (διπλό επεισόδιο, τρία καρτούν) εμφανίζονται ως μία γραμμή: 1–2, ένας τίτλος, η διάρκεια του αρχείου. Η λίστα της σεζόν έρχεται τότε από το Aeon Fuse Helper."
+
+msgctxt "#32665"
+msgid "Video source (sidecar)"
+msgstr "Πηγή βίντεο (sidecar)"
+
+msgctxt "#32666"
+msgid "Video codec (sidecar)"
+msgstr "Κωδικοποιητής βίντεο (sidecar)"
+
+msgctxt "#32667"
+msgid "Version (sidecar)"
+msgstr "Έκδοση (sidecar)"
+
+msgctxt "#32668"
+msgid "Panel shadow"
+msgstr "Σκιά πλαισίων"
+
+msgctxt "#32669"
+msgid "How high the glass panels seem to float: their shadow grows and drops. Mild: close to the page. Medium: as before. Strong: higher. Heavy: highest."
+msgstr "Πόσο ψηλά φαίνεται να αιωρούνται τα γυάλινα πάνελ: η σκιά τους μεγαλώνει και κατεβαίνει. Ήπια: κοντά στη σελίδα. Μέτρια: όπως πριν. Έντονη: ψηλότερα. Βαριά: ψηλότερα από όλα."
+
+msgctxt "#32670"
+msgid "Mild"
+msgstr "Ήπια"
+
+msgctxt "#32671"
+msgid "Heavy"
+msgstr "Βαριά"
+
+msgctxt "#32672"
+msgid "Expert settings"
+msgstr "Ρυθμίσεις για προχωρημένους"
+
+msgctxt "#32673"
+msgid "Shows the rows below for fine-tuning the glass panels and the fanart behind the library views."
+msgstr "Δείχνει τις γραμμές παρακάτω για λεπτή ρύθμιση των γυάλινων πλαισίων και του fanart πίσω από τις προβολές βιβλιοθήκης."
+
+msgctxt "#32674"
+msgid "Panel opacity"
+msgstr "Αδιαφάνεια πλαισίων"
+
+msgctxt "#32675"
+msgid "How solid the glass panels are, around the Skin style's own value. -2: most see-through. +2: most solid."
+msgstr "Πόσο συμπαγή είναι τα γυάλινα πλαίσια, γύρω από την τιμή του στυλ. -2: πιο διάφανα. +2: πιο συμπαγή."
+
+msgctxt "#32676"
+msgid "Panel blur"
+msgstr "Θόλωμα πλαισίων"
+
+msgctxt "#32677"
+msgid "How strongly the panels blur the picture behind them. Off: no blur."
+msgstr "Πόσο έντονα θολώνουν τα πλαίσια την εικόνα πίσω τους. Ανενεργό: χωρίς θόλωμα."
+
+msgctxt "#32678"
+msgid "Panel tint"
+msgstr "Απόχρωση πλαισίων"
+
+msgctxt "#32679"
+msgid "The colour of the panels' glass, around the Skin style's own. -2: darkest. +2: lightest frost."
+msgstr "Το χρώμα του γυαλιού, γύρω από αυτό του στυλ. -2: πιο σκούρο. +2: πιο ανοιχτό παγωμένο."
+
+msgctxt "#32680"
+msgid "Library fanart opacity"
+msgstr "Αδιαφάνεια fanart βιβλιοθήκης"
+
+msgctxt "#32681"
+msgid "How much of the fanart behind the library views shows, on top of Backdrop strength. -2: faintest. +2: strongest."
+msgstr "Πόσο φαίνεται το fanart πίσω από τις προβολές βιβλιοθήκης, πέρα από την ένταση φόντου. -2: πιο αχνό. +2: πιο έντονο."
+
+msgctxt "#32682"
+msgid "Library fanart blur"
+msgstr "Θόλωμα fanart βιβλιοθήκης"
+
+msgctxt "#32683"
+msgid "Blurs the fanart behind the library views: -2 a little, +2 the most; 0 is the default. Off: sharp."
+msgstr "Θολώνει το fanart πίσω από τις προβολές βιβλιοθήκης: -2 λίγο, +2 περισσότερο· 0 είναι το προεπιλεγμένο. Ανενεργό: καθαρό."
+
+msgctxt "#32684"
+msgid "Library fanart tint"
+msgstr "Απόχρωση fanart βιβλιοθήκης"
+
+msgctxt "#32685"
+msgid "The colour tint of the Frosted fanart look. Off: no tint."
+msgstr "Η χρωματική απόχρωση της εμφάνισης Παγωμένο. Ανενεργό: χωρίς απόχρωση."
+
+msgctxt "#32686"
+msgid "Reset expert settings"
+msgstr "Επαναφορά ρυθμίσεων για προχωρημένους"
+
+msgctxt "#32687"
+msgid "Puts every expert setting back to its default."
+msgstr "Επαναφέρει όλες τις ρυθμίσεις για προχωρημένους στις προεπιλογές."
+
+msgctxt "#32688"
+msgid "Expert settings are back to their defaults."
+msgstr "Οι ρυθμίσεις για προχωρημένους επανήλθαν στις προεπιλογές."
+
+msgctxt "#32689"
+msgid "Menu background"
+msgstr "Φόντο μενού"
+
+msgctxt "#32690"
+msgid "Screen"
+msgstr "Οθόνη"
+
+msgctxt "#32691"
+msgid "Menus and dialogs in the Fused Glass style. Fanart: the item's fanart behind them. Screen: the screen they opened on, dimmed."
+msgstr "Μενού και διάλογοι στο στυλ Fused Glass. Fanart: το fanart του στοιχείου από πίσω. Οθόνη: η οθόνη όπου άνοιξαν, σκοτεινιασμένη."
+
+msgctxt "#32692"
+msgid "OK runs it  ·  Back closes"
+msgstr "OK εκτελεί  ·  Πίσω κλείνει"
+
+msgctxt "#32693"
+msgid "OK chooses  ·  Back closes"
+msgstr "OK επιλέγει  ·  Πίσω κλείνει"
+
+msgctxt "#32694"
+msgid "Its own library views and menus: rounded glass cards with soft shadows float over the artwork, in Dark, Clear, Frost or the Fused Glass style."
+msgstr "Δικές του προβολές βιβλιοθήκης και μενού: στρογγυλεμένες γυάλινες κάρτες με απαλές σκιές αιωρούνται πάνω από τις εικόνες, σε στυλ Σκοτεινό, Διάφανο, Παγωμένο ή Fused Glass."
+
+msgctxt "#32695"
+msgid "Use the defaults"
+msgstr "Χρήση προεπιλογών"
+
+msgctxt "#32696"
+msgid "The chosen theme as it comes, at once. Everything can be changed later in Skin settings."
+msgstr "Το επιλεγμένο θέμα όπως είναι, αμέσως. Όλα αλλάζουν αργότερα στις ρυθμίσεις κελύφους."
+
+msgctxt "#32697"
+msgid "Customise"
+msgstr "Προσαρμογή"
+
+msgctxt "#32698"
+msgid "Go through the look, libraries, Home and backgrounds page by page. Every row shows a preview of its choice."
+msgstr "Περάστε από την εμφάνιση, τις βιβλιοθήκες, την Αρχική και τα φόντα σελίδα προς σελίδα. Κάθε γραμμή δείχνει προεπισκόπηση της επιλογής της."
+
+msgctxt "#32699"
+msgid "Keep my current settings"
+msgstr "Διατήρηση των τρεχουσών ρυθμίσεων"
+
+msgctxt "#32700"
+msgid "Leave every setting as it is: only the theme you picked changes."
+msgstr "Όλες οι ρυθμίσεις μένουν ως έχουν: αλλάζει μόνο το θέμα που επιλέξατε."
+
+msgctxt "#32701"
+msgid "Aeon with glass menus: the same layout and library views as Aeon, with see-through glass menus and dialogs instead of solid ones. No palettes."
+msgstr "Aeon με γυάλινα μενού: η ίδια διάταξη και προβολές βιβλιοθήκης με το Aeon, με διάφανα γυάλινα μενού και διαλόγους αντί για συμπαγή. Χωρίς παλέτες."
+
+msgctxt "#32702"
+msgid "The Planner of upcoming episodes and films, online rows and extra ratings."
+msgstr "Ο Προγραμματιστής με επερχόμενα επεισόδια και ταινίες, διαδικτυακές σειρές και επιπλέον βαθμολογίες."
+
+msgctxt "#32703"
+msgid "The Next up row: the next episode of every show you are watching."
+msgstr "Η σειρά Επόμενο: το επόμενο επεισόδιο κάθε σειράς που παρακολουθείτε."
+
+msgctxt "#32704"
+msgid "Lyrics on the Now playing screen, line by line or word by word."
+msgstr "Στίχοι στην οθόνη Αναπαράγεται τώρα, γραμμή προς γραμμή ή λέξη προς λέξη."
+
+msgctxt "#32705"
+msgid "Artist pictures behind the Now playing screen."
+msgstr "Φωτογραφίες καλλιτέχνη πίσω από την οθόνη Αναπαράγεται τώρα."
+
+msgctxt "#32706"
+msgid "Box colours taken from the artwork."
+msgstr "Χρώματα πλαισίων από τις εικόνες."
+
+msgctxt "#32707"
+msgid "Skip intro, recap and credits buttons in the player."
+msgstr "Κουμπιά παράλειψης εισαγωγής, ανακεφαλαίωσης και τίτλων τέλους στο πρόγραμμα αναπαραγωγής."
+
+msgctxt "#32708"
+msgid "Thumbnail previews on the seek bar."
+msgstr "Μικρογραφίες προεπισκόπησης στη γραμμή αναζήτησης."
+
+msgctxt "#32709"
+msgid "Studio and network logos in the libraries and on the information page."
+msgstr "Λογότυπα στούντιο και καναλιών στις βιβλιοθήκες και στη σελίδα πληροφοριών."
+
+msgctxt "#32710"
+msgid "Record label logos for albums."
+msgstr "Λογότυπα δισκογραφικών εταιρειών για άλμπουμ."
+
+msgctxt "#32711"
+msgid "Language flags in the video information."
+msgstr "Σημαίες γλωσσών στις πληροφορίες βίντεο."
+
+msgctxt "#32712"
+msgid "The skin's own screensaver: library pictures with a slow zoom and slide, and what is playing."
+msgstr "Η δική του προφύλαξη οθόνης του κελύφους: εικόνες της βιβλιοθήκης με αργό ζουμ και ολίσθηση, και ό,τι παίζει."
+
+msgctxt "#32713"
+msgid "Aeon: solid panels in a palette you pick. Aeon Glass: the same Aeon layout and views with glass menus, no palettes. Fused Glass: its own library views, rounded glass cards over the artwork."
+msgstr "Aeon: συμπαγή πάνελ σε παλέτα της επιλογής σας. Aeon Glass: η ίδια διάταξη και προβολές Aeon με γυάλινα μενού, χωρίς παλέτες. Fused Glass: δικές του προβολές βιβλιοθήκης, στρογγυλεμένες γυάλινες κάρτες πάνω από τις εικόνες."
+
+msgctxt "#32714"
+msgid "Its own views, glass cards"
+msgstr "Δικές του προβολές, γυάλινες κάρτες"
+
+msgctxt "#32715"
+msgid "Take the theme as it comes, or go through its look step by step. Everything can be changed later in Skin settings."
+msgstr "Πάρτε το θέμα όπως είναι ή περάστε την εμφάνισή του βήμα προς βήμα. Όλα αλλάζουν αργότερα στις ρυθμίσεις κελύφους."
+
+msgctxt "#32716"
+msgid "How the settings strip of the library views shows: over the view (Overlay) or always beside it (Permanent)."
+msgstr "Πώς εμφανίζεται η λωρίδα ρυθμίσεων στις προβολές βιβλιοθήκης: πάνω από την προβολή (Επικάλυψη) ή πάντα δίπλα της (Μόνιμα)."
+
+msgctxt "#32717"
+msgid "How much the edges of the Home screen darken behind the menu and the text."
+msgstr "Πόσο σκουραίνουν οι άκρες της Αρχικής οθόνης πίσω από το μενού και το κείμενο."
+
+msgctxt "#32718"
+msgid "The colour of the clock box and the corner boxes with the Aeon palette."
+msgstr "Το χρώμα του πλαισίου ρολογιού και των γωνιακών πλαισίων με την παλέτα Aeon."
+
+msgctxt "#32719"
+msgid "Optional add-ons that give the skin more to show. Install the ones you want; the rest can wait."
+msgstr "Προαιρετικά πρόσθετα που δίνουν στο κέλυφος περισσότερα να δείξει. Εγκαταστήστε όσα θέλετε· τα υπόλοιπα μπορούν να περιμένουν."
+
+msgctxt "#32720"
+msgid "The disc art spinning beside the poster on the player controls: for videos, for music, for both, or off."
+msgstr "Η περιστρεφόμενη εικόνα δίσκου δίπλα στην αφίσα στα χειριστήρια: για βίντεο, για μουσική, και για τα δύο ή ανενεργή."
+
+msgctxt "#32721"
+msgid "What the text under a title shows in every library view: the plot, the tagline (when there is one) or both."
+msgstr "Τι δείχνει το κείμενο κάτω από έναν τίτλο σε κάθε προβολή βιβλιοθήκης: την πλοκή, το σλόγκαν (όταν υπάρχει) ή και τα δύο."
+
+msgctxt "#32722"
+msgid "Libraries"
+msgstr "Βιβλιοθήκες"
+
+msgctxt "#32723"
+msgid "Information"
+msgstr "Πληροφορίες"
+
+msgctxt "#32724"
+msgid "Screensaver & backdrops"
+msgstr "Προφύλαξη οθόνης & φόντα"
+
+msgctxt "#32725"
+msgid "Export skin settings"
+msgstr "Εξαγωγή ρυθμίσεων κελύφους"
+
+msgctxt "#32726"
+msgid "Import skin settings"
+msgstr "Εισαγωγή ρυθμίσεων κελύφους"
+
+msgctxt "#32727"
+msgid "Save"
+msgstr "Αποθήκευση"
+
+msgctxt "#32728"
+msgid "Load"
+msgstr "Φόρτωση"
+
+msgctxt "#32729"
+msgid "Saves every Aeon Fuse setting, with the theme, palette and fonts, to a file in a folder you pick."
+msgstr "Αποθηκεύει όλες τις ρυθμίσεις του Aeon Fuse, με θέμα, παλέτα και γραμματοσειρές, σε αρχείο σε φάκελο της επιλογής σας."
+
+msgctxt "#32730"
+msgid "Loads a file saved with Export skin settings. Your current skin settings are replaced."
+msgstr "Φορτώνει αρχείο που αποθηκεύτηκε με την Εξαγωγή ρυθμίσεων κελύφους. Οι τρέχουσες ρυθμίσεις κελύφους αντικαθίστανται."
+
+msgctxt "#32731"
+msgid "Folder for the settings file"
+msgstr "Φάκελος για το αρχείο ρυθμίσεων"
+
+msgctxt "#32732"
+msgid "Settings file to load"
+msgstr "Αρχείο ρυθμίσεων για φόρτωση"
+
+msgctxt "#32733"
+msgid "Saved: %s"
+msgstr "Αποθηκεύτηκε: %s"
+
+msgctxt "#32734"
+msgid "Load the settings saved on %s? Your current skin settings are replaced."
+msgstr "Φόρτωση των ρυθμίσεων που αποθηκεύτηκαν στις %s; Οι τρέχουσες ρυθμίσεις κελύφους αντικαθίστανται."
+
+msgctxt "#32735"
+msgid "This file does not hold Aeon Fuse settings."
+msgstr "Αυτό το αρχείο δεν περιέχει ρυθμίσεις του Aeon Fuse."
+
+msgctxt "#32736"
+msgid "The file could not be written."
+msgstr "Δεν ήταν δυνατή η εγγραφή του αρχείου."
+
+msgctxt "#32737"
+msgid "Kodi restarts to apply them."
+msgstr "Το Kodi επανεκκινείται για να τις εφαρμόσει."
+
+msgctxt "#32738"
+msgid "The skin reloads; restart Kodi afterwards so every setting is read again."
+msgstr "Το κέλυφος φορτώνεται ξανά· επανεκκινήστε μετά το Kodi ώστε να διαβαστούν ξανά όλες οι ρυθμίσεις."
+
+msgctxt "#32739"
+msgid "These settings are already in use."
+msgstr "Αυτές οι ρυθμίσεις χρησιμοποιούνται ήδη."
+
+msgctxt "#32740"
+msgid "Soft"
+msgstr "Απαλή"
+
+msgctxt "#32741"
+msgid "Home gradient"
+msgstr "Διαβάθμιση Αρχικής"
+
+msgctxt "#32742"
+msgid "Beside the clock"
+msgstr "Δίπλα στο ρολόι"
+
+msgctxt "#32743"
+msgid "Left corner"
+msgstr "Αριστερή γωνία"
+
+msgctxt "#32744"
+msgid "The fade from the bottom of the screen up to the Home menu: off, soft (the look so far) or strong."
+msgstr "Η διαβάθμιση από το κάτω μέρος της οθόνης ως το κεντρικό μενού: ανενεργή, απαλή (όπως ως τώρα) ή έντονη."
+
+msgctxt "#32745"
+msgid "Where the Now playing capsule sits on Home while music plays: beside the clock or in the lower left corner."
+msgstr "Πού βρίσκεται η κάψουλα «Τώρα παίζει» στην Αρχική όταν παίζει μουσική: δίπλα στο ρολόι ή κάτω αριστερά."
+
+msgctxt "#32746"
+msgid "How the skip button sits on the player controls: a white tab on their top edge, or a glass capsule above them."
+msgstr "Πώς βρίσκεται το κουμπί παράλειψης στα χειριστήρια: λευκή καρτέλα στο πάνω άκρο τους ή γυάλινη κάψουλα από πάνω."
+
+msgctxt "#32747"
+msgid "How strongly the picture behind the menus and dialogs is blurred. Off: sharp, as before."
+msgstr "Πόσο έντονα θολώνει η εικόνα πίσω από τα μενού και τους διαλόγους. Ανενεργό: καθαρή, όπως πριν."
+
+msgctxt "#32748"
+msgid "Left / Right: choose an option. OK: set it. Up, Down or Back: keep the one in use."
+msgstr "Αριστερά / Δεξιά: επιλέξτε. OK: ορίστε το. Πάνω, Κάτω ή Πίσω: κρατήστε το τρέχον."
+
+msgctxt "#32749"
+msgid "Start on"
+msgstr "Έναρξη σε"
+
+msgctxt "#32750"
+msgid "The Home menu item that has the focus when Kodi starts, once the splash has gone."
+msgstr "Το στοιχείο του αρχικού μενού που έχει την εστίαση όταν ξεκινά το Kodi, μόλις φύγει η οθόνη εκκίνησης."
+
+msgctxt "#32751"
+msgid "Ratings shown in"
+msgstr "Βαθμολογίες σε"
+
+msgctxt "#32752"
+msgid "Media info shown in"
+msgstr "Πληροφορίες μέσου σε"
+
+msgctxt "#32753"
+msgid "Library views"
+msgstr "Προβολές βιβλιοθήκης"
+
+msgctxt "#32754"
+msgid "Information pages"
+msgstr "Σελίδες πληροφοριών"
+
+msgctxt "#32755"
+msgid "Widget & Spotlight screens"
+msgstr "Οθόνες widget και Spotlight"
+
+msgctxt "#32756"
+msgid "Home spotlights"
+msgstr "Spotlight αρχικής οθόνης"
+
+msgctxt "#32757"
+msgid "Player info"
+msgstr "Πληροφορίες αναπαραγωγής"
+
+msgctxt "#32758"
+msgid "Screensaver"
+msgstr "Προφύλαξη οθόνης"
+
+msgctxt "#32759"
+msgid "Live TV"
+msgstr "Ζωντανή TV"
+
+msgctxt "#32760"
+msgid "Where the ratings (IMDb, TMDb, Rotten Tomatoes, Trakt) appear. OK opens the list: tick the places."
+msgstr "Πού εμφανίζονται οι βαθμολογίες (IMDb, TMDb, Rotten Tomatoes, Trakt). Το OK ανοίγει τη λίστα: σημειώστε τα σημεία."
+
+msgctxt "#32761"
+msgid "Where the media info chips (resolution, HDR, audio ...) appear. OK opens the list: tick the places. Which chips: Media info chips."
+msgstr "Πού εμφανίζονται οι ετικέτες μέσου (ανάλυση, HDR, ήχος ...). Το OK ανοίγει τη λίστα: σημειώστε τα σημεία. Ποιες ετικέτες: Ετικέτες πληροφοριών μέσου."
+
+msgctxt "#32762"
+msgid "Recommended add-ons"
+msgstr "Προτεινόμενα πρόσθετα"
+
+msgctxt "#32764"
+msgid "Installed"
+msgstr "Εγκατεστημένο"
+
+msgctxt "#32765"
+msgid "Not installed"
+msgstr "Μη εγκατεστημένο"
+
+msgctxt "#32766"
+msgid "%s needs the %s repository. Install that repository first?"
+msgstr "Το %s χρειάζεται το αποθετήριο %s. Να εγκατασταθεί πρώτα αυτό το αποθετήριο;"
+
+msgctxt "#32767"
+msgid "White weather icons for the weather forecast."
+msgstr "Λευκά εικονίδια καιρού για την πρόγνωση."
+
+msgctxt "#32768"
+msgid "The playback info button in the video controls."
+msgstr "Το κουμπί πληροφοριών αναπαραγωγής στα χειριστήρια βίντεο."
+
+msgctxt "#32769"
+msgid "The Inter (Copacetic) font set."
+msgstr "Η γραμματοσειρά Inter (Copacetic)."
+
+msgctxt "#32770"
+msgid "The Roboto CJKSC font set for Chinese, Japanese and Korean."
+msgstr "Η γραμματοσειρά Roboto CJKSC για κινεζικά, ιαπωνικά και κορεατικά."
+
+msgctxt "#32771"
+msgid "Update and clean on another Kodi"
+msgstr "Ενημέρωση και καθαρισμός σε άλλο Kodi"
+
+msgctxt "#32772"
+msgid "Address"
+msgstr "Διεύθυνση"
+
+msgctxt "#32773"
+msgid "User name"
+msgstr "Όνομα χρήστη"
+
+msgctxt "#32774"
+msgid "Password"
+msgstr "Κωδικός"
+
+msgctxt "#32775"
+msgid "Test connection"
+msgstr "Δοκιμή σύνδεσης"
+
+msgctxt "#32776"
+msgid "Library update and clean from this skin (Home, the library panel, the context menu) go to another Kodi, a headless one for instance, instead of this one."
+msgstr "Η ενημέρωση και ο καθαρισμός της βιβλιοθήκης από αυτό το skin (αρχική, πάνελ βιβλιοθήκης, μενού επιλογών) πάνε σε άλλο Kodi, π.χ. χωρίς οθόνη, αντί για αυτό."
+
+msgctxt "#32777"
+msgid "The other Kodi's web address and port, for example http://192.168.10.10:8080 (there: Settings > Services > Control > Allow remote control via HTTP)."
+msgstr "Η διεύθυνση web και η θύρα του άλλου Kodi, π.χ. http://192.168.10.10:8080 (εκεί: Ρυθμίσεις > Υπηρεσίες > Έλεγχος > Απομακρυσμένος έλεγχος μέσω HTTP)."
+
+msgctxt "#32778"
+msgid "The web server user name and password of the other Kodi."
+msgstr "Το όνομα χρήστη και ο κωδικός του web server του άλλου Kodi."
+
+msgctxt "#32779"
+msgid "Asks the other Kodi for its version: checks the address, user name and password."
+msgstr "Ρωτά το άλλο Kodi για την έκδοσή του: ελέγχει διεύθυνση, όνομα χρήστη και κωδικό."
+
+msgctxt "#32780"
+msgid "Not set"
+msgstr "Δεν έχει οριστεί"
+
+msgctxt "#32781"
+msgid "Library update sent"
+msgstr "Η ενημέρωση βιβλιοθήκης στάλθηκε"
+
+msgctxt "#32782"
+msgid "Library clean sent"
+msgstr "Ο καθαρισμός βιβλιοθήκης στάλθηκε"
+
+msgctxt "#32783"
+msgid "Could not reach %s: %s"
+msgstr "Δεν ήταν δυνατή η σύνδεση με %s: %s"
+
+msgctxt "#32784"
+msgid "%s answers: %s"
+msgstr "%s απαντά: %s"
+
+msgctxt "#32785"
+msgid "Wrong user name or password"
+msgstr "Λάθος όνομα χρήστη ή κωδικός"
+
+msgctxt "#32786"
+msgid "Library update finished"
+msgstr "Η ενημέρωση βιβλιοθήκης ολοκληρώθηκε"
+
+msgctxt "#32789"
+msgid "Failed"
+msgstr "Απέτυχε"
+
+msgctxt "#32790"
+msgid "Could not install the repository"
+msgstr "Δεν ήταν δυνατή η εγκατάσταση του αποθετηρίου"
+
+msgctxt "#32791"
+msgid "Pick the add-ons you want: OK ticks one, Next installs the ticked ones while you go on. The picture shows what each adds. Later: Skin settings > System > Recommended add-ons."
+msgstr "Διαλέξτε τα πρόσθετα που θέλετε: το OK σημειώνει ένα, το Επόμενο εγκαθιστά τα σημειωμένα ενώ συνεχίζετε. Η εικόνα δείχνει τι προσθέτει το καθένα. Αργότερα: Ρυθμίσεις skin > Σύστημα > Προτεινόμενα πρόσθετα."
+
+msgctxt "#32792"
+msgid "Will be installed"
+msgstr "Θα εγκατασταθεί"
+
+msgctxt "#32793"
+msgid "Installs the ticked add-ons"
+msgstr "Εγκαθιστά τα σημειωμένα πρόσθετα"
+
+msgctxt "#32794"
+msgid "Installed: %s"
+msgstr "Εγκαταστάθηκαν: %s"
+
+msgctxt "#32795"
+msgid "Delete %s? Its name, path, icon, widgets and submenu are removed; the items below it move up one place."
+msgstr "Διαγραφή %s; Το όνομα, η διαδρομή, το εικονίδιο, τα widgets και το υπομενού του αφαιρούνται· τα στοιχεία από κάτω ανεβαίνουν μία θέση."
+
+msgctxt "#32796"
+msgid "Custom items only"
+msgstr "Μόνο προσαρμοσμένα στοιχεία"
+
+msgctxt "#32797"
+msgid "A calm, thin waveform on the Now playing card, drawn in the skin's own box and smoothed so loud passages do not spike. The build for this device is installed."
+msgstr "Μια ήρεμη, λεπτή κυματομορφή στην κάρτα Αναπαραγωγή τώρα, στο πλαίσιο του κελύφους, εξομαλυμένη ώστε τα δυνατά σημεία να μην πετάγονται. Εγκαθίσταται η έκδοση για αυτή τη συσκευή."
+
+msgctxt "#32798"
+msgid "More by the artist"
+msgstr "Περισσότερα από τον καλλιτέχνη"
+
+msgctxt "#32799"
+msgid "Intermission at"
+msgstr "Διάλειμμα στο"
+
+msgctxt "#32800"
+msgid "Your languages"
+msgstr "Οι γλώσσες σας"
+
+msgctxt "#32801"
+msgid "All others"
+msgstr "Όλες οι άλλες"
+
+msgctxt "#32802"
+msgid "In your library"
+msgstr "Στη βιβλιοθήκη σας"
+
+msgctxt "#32803"
+msgid "Sort and show"
+msgstr "Ταξινόμηση και προβολή"
+
+msgctxt "#32804"
+msgid "Sort by"
+msgstr "Ταξινόμηση κατά"
+
+msgctxt "#32805"
+msgid "Show only"
+msgstr "Εμφάνιση μόνο"
+
+msgctxt "#32806"
+msgid "OK again flips the order"
+msgstr "Ξανά OK αντιστρέφει τη σειρά"
+
+msgctxt "#32807"
+msgid "Several versions"
+msgstr "Πολλές εκδόσεις"
+
+msgctxt "#32808"
+msgid "Decade"
+msgstr "Δεκαετία"
+
+msgctxt "#32809"
+msgid "Clear all"
+msgstr "Εκκαθάριση όλων"
+
+msgctxt "#32810"
+msgid "Never played"
+msgstr "Δεν έχει παιχτεί"
+
+msgctxt "#32811"
+msgid "Played"
+msgstr "Έχει παιχτεί"

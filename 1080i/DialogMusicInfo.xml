@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Album / artist / song information (Aeon). Same page as the film info: hero card (cover, title,
+	meta, pill buttons, artist fanart fading in from the right), a Tracklist / Discography card and an
+	About card. Pieces: Includes_MusicInfo.xml (MusInfo_*). Kodi also loads this file for songs.
+
+	Kodi id contract (Estuary Omega DialogMusicInfo.xml, GUIDialogMusicInfo.cpp / GUIDialogSongInfo.cpp):
+	  50 list Kodi fills (album -> songs, artist -> discography; OK opens that album's info)
+	  6 refresh (hidden by Kodi for songs) | 8 play (hidden for artists) | 12 artist / album info
+	  (hidden for artists). 7 user rating and 10 choose art are deliberately not shipped.
+	Aeon ids: 9000 button row (default), 9011 shuffle, 9012 play all (artist), 9001 about card
+	  (OK = full text), 9200 full text overlay with scrollbar 61.
+
+	Focus map: buttons -Down-> list 50 (the page slides up 440 px) -Right-> about 9001; Up from the
+	list's top row or the about card -> buttons. Back closes (Kodi).
+-->
+<window>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<!-- artist page: its id for the Top tracks and Similar artists rows (the item itself changes while the list has focus) -->
+	<onload>ClearProperty(aeon.artist.id,home)</onload>
+	<onload condition="String.IsEqual(ListItem.DBType,artist) + !String.IsEmpty(ListItem.DBID)">SetProperty(aeon.artist.id,$INFO[ListItem.DBID],home)</onload>
+	<onload>SetProperty(aeon.mus.type,$INFO[ListItem.DBType],home)</onload>
+	<onload>SetProperty(aeon.mus.id,$INFO[ListItem.DBID],home)</onload>
+	<onload>SetProperty(aeon.mus.title,$ESCINFO[ListItem.Label],home)</onload>
+	<onload>SetProperty(aeon.mus.artist,$ESCINFO[ListItem.Artist],home)</onload>
+	<onload>SetProperty(aeon.mus.year,$INFO[ListItem.Year],home)</onload>
+	<onload>SetProperty(aeon.mus.thumb,$ESCINFO[ListItem.Art(thumb)],home)</onload>
+	<onunload>ClearProperty(aeon.mus.type,home)</onunload>
+	<onunload>ClearProperty(aeon.mus.id,home)</onunload>
+	<onunload>ClearProperty(aeon.mus.title,home)</onunload>
+	<onunload>ClearProperty(aeon.mus.artist,home)</onunload>
+	<onunload>ClearProperty(aeon.mus.year,home)</onunload>
+	<onunload>ClearProperty(aeon.mus.thumb,home)</onunload>
+	<onunload>ClearProperty(aeon.artist.id,home)</onunload>
+	<include content="Music_BlurSourceOnload">
+		<param name="slot" value="aeon.blursrc.prev.musicinfo"/>
+	</include>
+	<include>Anim_DialogOpenClose</include>
+	<controls>
+		<include condition="!$EXP[FGS]">MusInfo_PageClassic</include>
+		<include condition="$EXP[FGS]">MusInfo_PageFGS</include>
+	</controls>
+</window>

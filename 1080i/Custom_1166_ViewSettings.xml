@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Library view settings (dialog 1166): ratings / media info / plot / backdrop style for the view on screen, kept per media type AND per view.
+     Default = follow the global setting. Same left strip as the library settings (1160), opened wide so every value is readable; the view
+     stays visible beside it, so a change shows at once.
+     The helper service (script.aeon.helper) publishes the key of the view underneath as Window(Home).Property(aeon.vo.base)
+     ("aeon.vo.<content>.<viewmode>."), reads the skin strings <base><option> and publishes them as Home properties aeon.vo.<option>,
+     which the library views read. Music views have a backdrop only. -->
+<window type="dialog" id="1166">
+	<defaultcontrol always="true">100</defaultcontrol>
+	<onload>SetFocus(100,0,absolute)</onload>
+	<controls>
+		<!-- the side strip is the default; Skin settings > Look > Library options = Box opens the menu style's box -->
+		<include condition="!$EXP[Aeon_MS] | !Skin.HasSetting(aeon.libpanel.box)">ViewSet_Classic</include>
+		<include condition="$EXP[Aeon_MS_mosaic] + Skin.HasSetting(aeon.libpanel.box)">MS_ViewSet_mosaic</include>
+		<include condition="$EXP[Aeon_MS_ledger] + Skin.HasSetting(aeon.libpanel.box)">MS_ViewSet_ledger</include>
+		<include condition="$EXP[Aeon_MS_bridge] + Skin.HasSetting(aeon.libpanel.box)">MS_ViewSet_bridge</include>
+		<include condition="$EXP[Aeon_MS_tabslab] + Skin.HasSetting(aeon.libpanel.box)">MS_ViewSet_tabslab</include>
+		<!-- music playing: the same band as the settings strip (cover, artist, song), not just the bars (0.45.1) -->
+		<include condition="Skin.HasSetting(aeon.fglass)">FG_StripNP</include>
+	</controls>
+</window>

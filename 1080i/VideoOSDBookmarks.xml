@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Chapters and bookmarks, in the Video OSD's look (0.28.1): the player top bar (heading and count on the left, Skippy's
+	next episode, clock box, weather box), a dark scrim at the bottom with the three buttons and the playing time, then
+	a strip of 16:9 thumbs (chapters + bookmarks; Kodi lists both, label = name, label2 = time). Opened from the OSD
+	chapters button (70044) and with Down from the OSD buttons.
+
+	Thumbs: Kodi's own (a frame it extracts per chapter, often never arriving on large files, or a bookmark's picture)
+	drawn over the cell of the Trickplay sprites next to the video, which the helper crops when this opens
+	(RunScript(script.aeon.helper,chapthumbs), Window(Home).Property(aeon.chap.prefix)). So the Trickplay picture shows
+	wherever Kodi has none.
+
+	Id contract (Estuary Omega VideoOSDBookmarks.xml / GUIDialogVideoBookmarks.cpp): 2 add bookmark
+	(default, always), 3 clear bookmarks, 4 add episode bookmark (Kodi enables it for episodes),
+	11 thumbs panel (OK jumps to the chapter/bookmark). 9001 = button row.
+	Focus map: buttons Left/Right, Down -> thumbs, Up from thumbs -> buttons. Back closes.
+-->
+<window>
+	<defaultcontrol always="true">2</defaultcontrol>
+	<onload>RunScript(script.aeon.helper,chapthumbs)</onload>
+	<!-- opened with Down from the player: land on the chapter thumbnails, Up reaches the buttons -->
+	<onload condition="$EXP[OSD_HasChapters]">AlarmClock(aeonchap,SetFocus(11),00:00,silent)</onload>
+	<include>Anim_OSDSlideUp</include>
+	<controls>
+		<include condition="Skin.HasSetting(aeon.fglass)">FG_Bookmarks</include>
+		<include condition="!Skin.HasSetting(aeon.fglass)">OSD_Bookmarks_Classic</include>
+	</controls>
+</window>

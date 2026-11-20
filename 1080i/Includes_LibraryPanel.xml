@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Library panel (Custom_1160_LibraryPanel.xml) and view picker (Custom_1161_ViewPicker.xml): shared
+	variables and the picker card. docs/requests/library-panel/BRIEF.md.
+	Window(Home) properties:
+	  aeon.libmode   empty = the panel of the library underneath (Videos / Music window);
+	                     update / clean = opened from the System menu (choose Films and shows or Music)
+	  aeon.libclean  video / music = the Clean library confirmation is showing
+	Both are cleared when the panel closes.
+	Inside these dialogs Container.* (Content, Viewmode, SortMethod, ViewCount, PluginName) reads the
+	media window underneath; Control.IsVisible / Container(id) would look in the dialog itself.
+-->
+<includes>
+	<!-- Sets row (Library panel): films in the library (not inside a set already, not a plug-in folder) and the library has sets -->
+	<expression name="LibPanel_ShowSets">[Window.IsActive(videos) + [Container.Content(movies) | String.IsEqual(Container.FolderPath,videodb://movies/) | String.IsEqual(Container.FolderPath,library://video/movies/)] + !String.StartsWith(Container.FolderPath,videodb://movies/sets/) + String.IsEmpty(Container.PluginName) + Library.HasContent(moviesets)]</expression>
+	<variable name="LibPanel_Title">
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.libclean))">$LOCALIZE[31514]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.libmode),update)">$LOCALIZE[31203]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.libmode),clean)">$LOCALIZE[31205]</value>
+		<value>$LOCALIZE[33063]</value>
+	</variable>
+	<variable name="LibPanel_Where">
+		<value condition="!String.IsEmpty(Window(Home).Property(aeon.libmode)) | !String.IsEmpty(Window(Home).Property(aeon.libclean))"></value>
+		<value condition="Container.Content(movies) | Container.Content(sets) | String.StartsWith(Container.FolderPath,videodb://movies)">$LOCALIZE[31331]</value>
+		<value condition="Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | String.StartsWith(Container.FolderPath,videodb://tvshows)">$LOCALIZE[31332]</value>
+		<value condition="Container.Content(musicvideos)">$LOCALIZE[31515]</value>
+		<value condition="Window.IsActive(music)">$LOCALIZE[249]</value>
+		<value condition="!String.IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
+	</variable>
+	<variable name="LibPanel_LookName">
+		<value condition="Skin.HasSetting(aeon.libpanel.box)">$ADDON[skin.aeon.fuse 32460]</value>
+		<value>$ADDON[skin.aeon.fuse 32459]</value>
+	</variable>
+	<variable name="LibPanel_Unwatched">
+		<value condition="System.Setting(hidewatched)">$LOCALIZE[31547]</value>
+		<value>$LOCALIZE[31072]</value>
+	</variable>
+	<variable name="LibPanel_Direction">
+		<value condition="Container.SortDirection(descending)">$LOCALIZE[585]</value>
+		<value>$LOCALIZE[584]</value>
+	</variable>
+	<variable name="LibPanel_CleanText">
+		<value condition="String.IsEqual(Window(Home).Property(aeon.libclean),music)">$LOCALIZE[31516]</value>
+		<value>$LOCALIZE[31517]</value>
+	</variable>
+
+	<!-- view picker: "Current" under the view the library shows now (Container.Viewmode = viewtype label) -->
+	<variable name="Pick_Cur_Grid"><value condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31312])">$ADDON[skin.aeon.fuse 32290]</value></variable>
+	<variable name="Pick_Cur_Wall"><value condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31313])">$ADDON[skin.aeon.fuse 32290]</value></variable>
+	<variable name="Pick_Cur_Episodes"><value condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31314])">$ADDON[skin.aeon.fuse 32290]</value></variable>
+	<variable name="Pick_Cur_Spotlight"><value condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31320])">$ADDON[skin.aeon.fuse 32290]</value></variable>
+	<variable name="Pick_Cur_Wide"><value condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31321])">$ADDON[skin.aeon.fuse 32290]</value></variable>
+	<variable name="Pick_Cur_Time"><value condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31322])">$ADDON[skin.aeon.fuse 32290]</value></variable>
+	<variable name="Pick_Cur_Rows"><value condition="String.IsEqual(Container.Viewmode,$LOCALIZE[31329])">$ADDON[skin.aeon.fuse 32290]</value></variable>
+	<variable name="Pick_Cur_List"><value condition="String.IsEqual(Container.Viewmode,$LOCALIZE[535])">$ADDON[skin.aeon.fuse 32290]</value></variable>
+
+	<!-- One preview: seven white-alpha layers tinted with the live mood colours
+	     (_src/make_view_previews.py), so it matches the page at any time of day. Icon = media/views/<name>. -->
+	<include name="Pick_Layers">
+		<control type="image"><left>0</left><top>0</top><width>240</width><height>135</height><texture colordiffuse="$VAR[AG_Ground]">$INFO[ListItem.Property(prev)]_ground.png</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>240</width><height>135</height><texture colordiffuse="$VAR[AG_Surface]">$INFO[ListItem.Property(prev)]_surface.png</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>240</width><height>135</height><texture colordiffuse="$VAR[AG_Raised]">$INFO[ListItem.Property(prev)]_raised.png</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>240</width><height>135</height><texture colordiffuse="$VAR[AG_Ink]">$INFO[ListItem.Property(prev)]_ink.png</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>240</width><height>135</height><texture colordiffuse="$VAR[AG_Ink2]">$INFO[ListItem.Property(prev)]_ink2.png</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>240</width><height>135</height><texture colordiffuse="$VAR[AG_Accent]">$INFO[ListItem.Property(prev)]_accent.png</texture></control>
+		<control type="image"><left>0</left><top>0</top><width>240</width><height>135</height><texture colordiffuse="$VAR[AG_OnAccent]">$INFO[ListItem.Property(prev)]_onaccent.png</texture></control>
+	</include>
+	<!-- One picker card: preview, name, accent dot + "Current". Focus = Aeon's accent ring + 6 %. -->
+	<include name="Pick_Item">
+		<param name="focused">false</param>
+		<definition>
+			<control type="group">
+				<left>20</left>
+				<top>24</top>
+				<width>240</width>
+				<height>135</height>
+				<animation type="Focus" reversible="true" condition="[$PARAM[focused] + !$EXP[ReduceMotion]] + !Skin.HasSetting(aeon.reducemotion)">
+					<effect type="zoom" start="100" end="106" center="auto" time="150" tween="cubic" easing="out"/>
+				</animation>
+				<!-- reduce motion: a time-0 Conditional, not a second Focus animation (Kodi resets only the first Focus on
+				     unfocus, so a time-0 twin stayed at 106 %; LESSONS, Groove device pass 2) -->
+				<animation effect="zoom" start="100" end="106" center="auto" time="0" condition="$PARAM[focused] + $EXP[ReduceMotion] + Control.HasFocus(100)">Conditional</animation>
+				<include>Pick_Layers</include>
+				<include content="AG_FocusRing" condition="$PARAM[focused]">
+					<param name="r" value="14"/>
+					<param name="visible" value="Control.HasFocus(100)"/>
+				</include>
+			</control>
+			<control type="label">
+				<left>20</left>
+				<top>174</top>
+				<width>240</width>
+				<height>34</height>
+				<font>lb_ui_24_semibold</font>
+				<textcolor>$VAR[AG_Ink2]</textcolor>
+				<selectedcolor>$VAR[AG_Ink2]</selectedcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>!$PARAM[focused] | !Control.HasFocus(100)</visible>
+			</control>
+			<control type="label">
+				<left>20</left>
+				<top>174</top>
+				<width>240</width>
+				<height>34</height>
+				<font>lb_ui_24_bold</font>
+				<textcolor>$VAR[AG_Ink]</textcolor>
+				<selectedcolor>$VAR[AG_Ink]</selectedcolor>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>$PARAM[focused] + Control.HasFocus(100)</visible>
+			</control>
+			<control type="image">
+				<left>21</left>
+				<top>222</top>
+				<width>12</width>
+				<height>12</height>
+				<texture colordiffuse="$VAR[AG_Accent]">aeon/circle_12.png</texture>
+				<visible>!String.IsEmpty(ListItem.Label2)</visible>
+			</control>
+			<control type="label">
+				<left>42</left>
+				<top>214</top>
+				<width>220</width>
+				<height>28</height>
+				<font>lb_small_20_semibold</font>
+				<textcolor>$VAR[AG_AccentText]</textcolor>
+				<selectedcolor>$VAR[AG_AccentText]</selectedcolor>
+				<label>$INFO[ListItem.Label2]</label>
+			</control>
+		</definition>
+	</include>
+	<!-- 0.40.1: the panels' items and their earlier look, shared with the Aeon theme menu styles -->
+	<!-- 0.56.15 libpanel_music: the music section on screen -->
+	<variable name="LibPanel_MusicNow_31298"><value condition="Container.Content(artists) + String.StartsWith(Container.FolderPath,musicdb://artists/)">$ADDON[skin.aeon.fuse 32290]</value></variable>
+	<variable name="LibPanel_MusicNow_31299"><value condition="Container.Content(albums) + String.StartsWith(Container.FolderPath,musicdb://albums/)">$ADDON[skin.aeon.fuse 32290]</value></variable>
+	<variable name="LibPanel_MusicNow_31343"><value condition="Container.Content(songs) + String.StartsWith(Container.FolderPath,musicdb://songs/)">$ADDON[skin.aeon.fuse 32290]</value></variable>
+	<variable name="LibPanel_MusicNow_31344"><value condition="Container.Content(genres) + String.StartsWith(Container.FolderPath,musicdb://genres/)">$ADDON[skin.aeon.fuse 32290]</value></variable>
+	<include name="LibPanel_Items">
+					<!-- 0.56.15 libpanel_music: music sections, as the top menu -->
+					<item>
+						<label>$LOCALIZE[31298]</label>
+						<label2>$VAR[LibPanel_MusicNow_31298]</label2>
+						<icon>common/aeon_ic_person.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>Container.Update(musicdb://artists/)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(music)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31299]</label>
+						<label2>$VAR[LibPanel_MusicNow_31299]</label2>
+						<icon>common/aeon_ic_disc.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>Container.Update(musicdb://albums/)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(music)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31343]</label>
+						<label2>$VAR[LibPanel_MusicNow_31343]</label2>
+						<icon>common/aeon_ic_note.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>Container.Update(musicdb://songs/)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(music)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31344]</label>
+						<label2>$VAR[LibPanel_MusicNow_31344]</label2>
+						<icon>common/aeon_ic_genre.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>Container.Update(musicdb://genres/)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(music)</visible>
+					</item>
+					<!-- Planner (1168): its own settings -->
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32028]</label>
+						<label2>$INFO[Window(Home).Property(aeon.planner.refreshname)]</label2>
+						<icon>aeon/icons/clock.png</icon>
+						<onclick>RunScript(script.aeon.helper,planner,refresh)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(1168)</visible>
+					</item>
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32029]</label>
+						<label2>$INFO[Window(Home).Property(aeon.planner.updated)]</label2>
+						<icon>common/aeon_ic_refresh.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>RunScript(script.aeon.helper,planner,update)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(1168)</visible>
+					</item>
+					<!-- Planner sources (0.33.0): Radarr / Sonarr / Lidarr, the helper's own settings -->
+					<item>
+						<label>$ADDON[script.aeon.helper 32030]</label>
+						<label2>$INFO[Window(Home).Property(aeon.arr.summary)]</label2>
+						<icon>aeon/icons/cloud.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>Addon.OpenSettings(script.aeon.helper)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(1168)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31543]</label>
+						<label2>$VAR[Aeon_PlBgName]</label2>
+						<icon>common/aeon_ic_screen.png</icon>
+						<onclick>Skin.ToggleSetting(aeon.planner.nobg)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(1168)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31764]</label>
+						<label2>$VAR[Aeon_PlBgsName]</label2>
+						<icon>common/aeon_ic_sliders.png</icon>
+						<onclick condition="String.IsEmpty(Skin.String(aeon.planner.bgs))">Skin.SetString(aeon.planner.bgs,strong)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(aeon.planner.bgs),strong)">Skin.SetString(aeon.planner.bgs,light)</onclick>
+						<onclick condition="String.IsEqual(Skin.String(aeon.planner.bgs),light)">Skin.Reset(aeon.planner.bgs)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(1168) + !Skin.HasSetting(aeon.planner.nobg)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31011]</label>
+						<label2>$VAR[Aeon_ViewName]</label2>
+						<icon>common/aeon_ic_view.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick condition="Window.IsActive(music) | Window.IsActive(videos)">SetProperty(aeon.curview,$INFO[Container.Viewmode],home)</onclick>
+						<onclick condition="Window.IsActive(music)">ActivateWindow(1164)</onclick>
+						<onclick condition="Window.IsActive(videos)">ActivateWindow(1165)</onclick>
+						<onclick condition="!Window.IsActive(music) + !Window.IsActive(videos)">Container.NextViewMode</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Integer.IsGreater(Container.ViewCount,1)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31540]</label>
+						<icon>common/aeon_ic_sliders.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>ActivateWindow(1166)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + [Window.IsActive(videos) | Window.IsActive(music)] + !String.IsEmpty(Window(Home).Property(aeon.vo.base))</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31010]</label>
+						<label2>$INFO[Container.SortMethod]</label2>
+						<icon>common/aeon_ic_sort.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick condition="$EXP[FGS] + String.StartsWith(Container.FolderPath,videodb://movies/titles/)">SetProperty(aeon.ss.kind,movies,home)</onclick>
+						<onclick condition="$EXP[FGS] + String.StartsWith(Container.FolderPath,videodb://tvshows/titles/)">SetProperty(aeon.ss.kind,tvshows,home)</onclick>
+						<onclick condition="$EXP[FGS] + String.StartsWith(Container.FolderPath,musicdb://albums/)">SetProperty(aeon.ss.kind,albums,home)</onclick>
+						<onclick condition="$EXP[FGS] + String.StartsWith(Container.FolderPath,musicdb://artists/)">SetProperty(aeon.ss.kind,artists,home)</onclick>
+						<onclick condition="$EXP[FGS] + [String.StartsWith(Container.FolderPath,videodb://movies/titles/) | String.StartsWith(Container.FolderPath,videodb://tvshows/titles/) | String.StartsWith(Container.FolderPath,musicdb://albums/) | String.StartsWith(Container.FolderPath,musicdb://artists/)]">ActivateWindow(1179)</onclick>
+						<onclick condition="![$EXP[FGS] + [String.StartsWith(Container.FolderPath,videodb://movies/titles/) | String.StartsWith(Container.FolderPath,videodb://tvshows/titles/) | String.StartsWith(Container.FolderPath,musicdb://albums/) | String.StartsWith(Container.FolderPath,musicdb://artists/)]]">SendClick(3)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + !String.IsEmpty(Container.SortMethod)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31300]</label>
+						<label2>$VAR[LibPanel_Direction]</label2>
+						<icon>common/aeon_ic_order.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick condition="Window.IsActive(videos)">SendClick(4)</onclick>
+						<onclick condition="!Window.IsActive(videos)">Container.SetSortDirection</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + !String.IsEmpty(Container.SortMethod)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31081]</label>
+						<label2>$VAR[LibPanel_Unwatched]</label2>
+						<icon>common/aeon_ic_filter.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>SendClick(14)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(videos) + !String.StartsWith(Container.FolderPath,videodb://inprogresstvshows) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[20434]</label>
+						<label2>$LOCALIZE[31308]</label2>
+						<icon>common/aeon_layers.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>SetFocus(50)</onclick>
+						<onclick>Container.Update(videodb://movies/sets/)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + $EXP[LibPanel_ShowSets]</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31302]</label>
+						<icon>aeon/icons/search.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>ActivateWindow(1150)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + !Window.IsActive(1168)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31203]</label>
+						<label2>$LOCALIZE[31309]</label2>
+						<icon>common/aeon_ic_refresh.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>RunScript(script.aeon.helper,lib,update,video)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(videos) + !Library.IsScanningVideo + String.IsEmpty(Container.PluginName) + !Container.Content(addons)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31303]</label>
+						<label2>$LOCALIZE[31309]</label2>
+						<icon>common/aeon_ic_refresh.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>RunScript(script.aeon.helper,lib,update,video)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(videos) + Library.IsScanningVideo + String.IsEmpty(Container.PluginName) + !Container.Content(addons)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31203]</label>
+						<label2>$LOCALIZE[31305]</label2>
+						<icon>common/aeon_ic_refresh.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>RunScript(script.aeon.helper,lib,update,music)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(music) + !Library.IsScanningMusic + String.IsEmpty(Container.PluginName) + !Container.Content(addons)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31303]</label>
+						<label2>$LOCALIZE[31305]</label2>
+						<icon>common/aeon_ic_refresh.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>RunScript(script.aeon.helper,lib,update,music)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(music) + Library.IsScanningMusic + String.IsEmpty(Container.PluginName) + !Container.Content(addons)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31205]</label>
+						<label2>$LOCALIZE[31309]</label2>
+						<icon>common/aeon_ic_clean.png</icon>
+						<onclick>SetProperty(aeon.libclean,video,home)</onclick>
+						<onclick>SetFocus(200,0,absolute)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(videos) + String.IsEmpty(Container.PluginName) + !Container.Content(addons)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31205]</label>
+						<label2>$LOCALIZE[31305]</label2>
+						<icon>common/aeon_ic_clean.png</icon>
+						<onclick>SetProperty(aeon.libclean,music,home)</onclick>
+						<onclick>SetFocus(200,0,absolute)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + Window.IsActive(music) + String.IsEmpty(Container.PluginName) + !Container.Content(addons)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31304]</label>
+						<label2>$LOCALIZE[31000]</label2>
+						<icon>aeon/icons/settings.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>ActivateWindow(MediaSettings)</onclick>
+						<visible>String.IsEmpty(Window(Home).Property(aeon.libmode)) + !Window.IsActive(1168)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31309]</label>
+						<label2>$INFO[Window(Home).Property(aeon.count.movies),, $LOCALIZE[31354]]$INFO[Window(Home).Property(aeon.count.tvshows),  ·  , $LOCALIZE[31353]]</label2>
+						<icon>common/aeon_film.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>RunScript(script.aeon.helper,lib,update,video)</onclick>
+						<visible>String.IsEqual(Window(Home).Property(aeon.libmode),update) + !Library.IsScanningVideo</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31309]</label>
+						<label2>$LOCALIZE[31303]</label2>
+						<icon>common/aeon_film.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>RunScript(script.aeon.helper,lib,update,video)</onclick>
+						<visible>String.IsEqual(Window(Home).Property(aeon.libmode),update) + Library.IsScanningVideo</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31305]</label>
+						<label2>$INFO[Window(Home).Property(aeon.count.artists),, $ADDON[skin.aeon.fuse 32030]]$INFO[Window(Home).Property(aeon.count.albums),  ·  , $ADDON[skin.aeon.fuse 32031]]$INFO[Window(Home).Property(aeon.count.songs),  ·  , $ADDON[skin.aeon.fuse 32032]]</label2>
+						<icon>common/aeon_headphones.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>RunScript(script.aeon.helper,lib,update,music)</onclick>
+						<visible>String.IsEqual(Window(Home).Property(aeon.libmode),update) + !Library.IsScanningMusic</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31305]</label>
+						<label2>$LOCALIZE[31303]</label2>
+						<icon>common/aeon_headphones.png</icon>
+						<onclick>Dialog.Close(1160,true)</onclick>
+						<onclick>RunScript(script.aeon.helper,lib,update,music)</onclick>
+						<visible>String.IsEqual(Window(Home).Property(aeon.libmode),update) + Library.IsScanningMusic</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31309]</label>
+						<label2>$LOCALIZE[31307]</label2>
+						<icon>common/aeon_film.png</icon>
+						<onclick>SetProperty(aeon.libclean,video,home)</onclick>
+						<onclick>SetFocus(200,0,absolute)</onclick>
+						<visible>String.IsEqual(Window(Home).Property(aeon.libmode),clean)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31305]</label>
+						<label2>$LOCALIZE[31307]</label2>
+						<icon>common/aeon_headphones.png</icon>
+						<onclick>SetProperty(aeon.libclean,music,home)</onclick>
+						<onclick>SetFocus(200,0,absolute)</onclick>
+						<visible>String.IsEqual(Window(Home).Property(aeon.libmode),clean)</visible>
+					</item>
+	</include>
+	<include name="LibPanel_CleanItems">
+					<item>
+						<label>$LOCALIZE[31205]</label>
+						<label2>$LOCALIZE[31310]</label2>
+						<icon>aeon/icons/back.png</icon>
+						<onclick>ClearProperty(aeon.libclean,home)</onclick>
+						<onclick>SetFocus(100)</onclick>
+					</item>
+					<item>
+						<label>$LOCALIZE[31205]</label>
+						<label2>$LOCALIZE[31311]</label2>
+						<icon>aeon/icons/check.png</icon>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.libclean),video)">RunScript(script.aeon.helper,lib,clean,video)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.libclean),music)">RunScript(script.aeon.helper,lib,clean,music)</onclick>
+						<onclick>Dialog.Close(1160,true)</onclick>
+					</item>
+	</include>
+	<include name="LibPanel_Classic">
+		<control type="group">
+			<animation type="WindowOpen" tween="cubic" easing="out" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="slide" start="-420,0" end="0,0" time="200"/><effect type="fade" start="0" end="100" time="150"/></animation>
+			<animation type="WindowClose" tween="cubic" easing="in" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="slide" start="0,0" end="-420,0" time="150"/><effect type="fade" start="100" end="0" time="150"/></animation>
+			<include>Aeon_StripFrame</include>
+			<control type="list" id="100">
+				<left>0</left><top>108</top><width>452</width><height>864</height>
+				<onup>100</onup><ondown condition="Player.HasAudio">300</ondown><ondown condition="!Player.HasAudio">100</ondown><onleft>noop</onleft><onright>Dialog.Close(1160)</onright>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<visible allowhiddenfocus="true">String.IsEmpty(Window(Home).Property(aeon.libclean))</visible>
+				<itemlayout width="452" height="80"><include content="Aeon_StripRow"><param name="id" value="100"/><param name="open" value="false"/></include></itemlayout>
+				<focusedlayout width="452" height="80"><include content="Aeon_StripRow"><param name="id" value="100"/><param name="focused" value="true"/><param name="open" value="false"/></include></focusedlayout>
+				<content><include>LibPanel_Items</include></content>
+			</control>
+			<!-- music playing: Down from the last setting reaches the spectrum icon. Focused, cover and artist / title slide out of it;
+			     OK opens the now-playing screen. Dark marks on the white bar. -->
+			<control type="button" id="300">
+				<left>0</left><top>972</top><width>80</width><height>108</height>
+				<label></label>
+				<include>FG_StripNPBtnFocus</include>
+				<texturenofocus />
+				<onup>100</onup><ondown>noop</ondown><onleft>noop</onleft><onright>Dialog.Close(1160)</onright>
+				<onclick>Dialog.Close(1160,true)</onclick>
+				<onclick>ActivateWindow(1177)</onclick>
+				<visible>Player.HasAudio + String.IsEmpty(Window(Home).Property(aeon.libclean))</visible>
+			</control>
+			<control type="group">
+				<visible>Control.HasFocus(300) + !$EXP[Aeon_FGlass]</visible>
+				<control type="image"><left>19</left><top>1000</top><width>42</width><height>50</height><texture colordiffuse="aeon_onbar">common/aeon_eq_anim.gif</texture><visible>Player.Playing + !Player.Paused + !Skin.HasSetting(aeon.reducemotion) + !$EXP[Aeon_FGlass]</visible></control>
+				<control type="image"><left>19</left><top>1000</top><width>42</width><height>50</height><texture colordiffuse="aeon_onbar">common/aeon_eq_still.png</texture><visible>![Player.Playing + !Player.Paused + !Skin.HasSetting(aeon.reducemotion)] + !$EXP[Aeon_FGlass]</visible></control>
+				<include content="FG_EqBarsM"><param name="left" value="24"/><param name="top" value="1013"/><param name="col" value="fg_ink"/><param name="vis" value="$EXP[Aeon_FGlass]"/></include>
+				<control type="group">
+					<animation type="Visible" tween="cubic" easing="out" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="slide" start="-120,0" end="0,0" time="200"/><effect type="fade" start="0" end="100" time="200"/></animation>
+					<control type="image"><left>80</left><top>972</top><width>440</width><height>108</height><texture colordiffuse="aeon_white">common/white.png</texture></control>
+					<control type="image"><left>80</left><top>972</top><width>108</width><height>108</height><aspectratio>scale</aspectratio><texture background="true">$VAR[Aeon_NP_Cover]</texture></control>
+					<control type="label"><left>206</left><top>996</top><width>300</width><height>28</height><font>lb_cap_20</font><textcolor>aeon_onbar</textcolor><selectedcolor>aeon_onbar</selectedcolor><label>[UPPERCASE]$INFO[MusicPlayer.Artist][/UPPERCASE]</label></control>
+					<control type="label"><left>206</left><top>1024</top><width>300</width><height>30</height><font>lb_small_20_bold</font><textcolor>aeon_onbar</textcolor><selectedcolor>aeon_onbar</selectedcolor><label>[UPPERCASE]$INFO[MusicPlayer.Title][/UPPERCASE]</label></control>
+					<control type="progress"><left>206</left><top>1062</top><width>300</width><height>3</height><texturebg colordiffuse="33000000">common/white.png</texturebg><midtexture subpixel="true" colordiffuse="aeon_onbar">common/white.png</midtexture><info>Player.Progress</info></control>
+				</control>
+			</control>
+			<!-- 0.39.3 Fused Glass: music playing as a section of the open panel -->
+			<include>FG_StripNP</include>
+			<!-- Clean library: ask first ("No" is focused) -->
+			<control type="list" id="200">
+				<left>0</left><top>108</top><width>452</width><height>864</height>
+				<onup>200</onup><ondown>200</ondown><onleft>noop</onleft><onright>noop</onright>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<visible allowhiddenfocus="true">!String.IsEmpty(Window(Home).Property(aeon.libclean))</visible>
+				<itemlayout width="452" height="80"><include content="Aeon_StripRow"><param name="id" value="200"/><param name="open" value="true"/></include></itemlayout>
+				<focusedlayout width="452" height="80"><include content="Aeon_StripRow"><param name="id" value="200"/><param name="focused" value="true"/><param name="open" value="true"/></include></focusedlayout>
+				<content><include>LibPanel_CleanItems</include></content>
+			</control>
+		</control>
+	</include>
+	<include name="ViewSet_Items">
+					<item>
+						<label>$LOCALIZE[31541]</label>
+						<label2>$VAR[Aeon_VOS_ratings]</label2>
+						<icon>aeon/icons/star.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.ratings))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]ratings,on)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.ratings),on)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]ratings,off)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.ratings),off)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]ratings)</onclick>
+						<visible>Window.IsActive(videos)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31542]</label>
+						<label2>$VAR[Aeon_VOS_mediainfo]</label2>
+						<icon>aeon/icons/info.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.mediainfo))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]mediainfo,on)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.mediainfo),on)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]mediainfo,off)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.mediainfo),off)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]mediainfo)</onclick>
+						<visible>Window.IsActive(videos)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[207]</label>
+						<label2>$VAR[Aeon_VOS_plot]</label2>
+						<icon>aeon/icons/chapters.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.plot))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]plot,on)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.plot),on)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]plot,off)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.plot),off)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]plot)</onclick>
+						<visible>Window.IsActive(videos)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31861]</label>
+						<label2>$VAR[Aeon_VOS_art]</label2>
+						<icon>common/aeon_mi_picture.png</icon>
+						<onclick condition="!String.IsEqual(Window(Home).Property(aeon.vo.art),off)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]art,off)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.art),off)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]art)</onclick>
+						<visible>Window.IsActive(videos) + String.Contains(Window(Home).Property(aeon.vo.base),.$LOCALIZE[31148].)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31862]</label>
+						<label2>$VAR[Aeon_VOS_counts]</label2>
+						<icon>common/aeon_ic_stats.png</icon>
+						<onclick condition="!String.IsEqual(Window(Home).Property(aeon.vo.counts),off)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]counts,off)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.counts),off)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]counts)</onclick>
+						<visible>Window.IsActive(videos) + String.Contains(Window(Home).Property(aeon.vo.base),.$LOCALIZE[31148].)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31863]</label>
+						<label2>$VAR[FG_VOS_watched]</label2>
+						<icon>aeon/icons/check.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.watched))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]watched,on)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.watched),on)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]watched,off)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.watched),off)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]watched)</onclick>
+						<visible>Window.IsActive(videos) + [String.Contains(Window(Home).Property(aeon.vo.base),.$LOCALIZE[31148].) | Skin.HasSetting(aeon.fglass)]</visible>
+					</item>
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32563]</label>
+						<label2>$VAR[FG_VOS_rings]</label2>
+						<icon>fg/ring/a65.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.rings))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]rings,on)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.rings),on)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]rings,off)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.rings),off)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]rings)</onclick>
+						<visible>Window.IsActive(videos) + Skin.HasSetting(aeon.fglass)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31746]</label>
+						<label2>$VAR[FG_VOS_logos]</label2>
+						<icon>aeon/icons/image.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.logos))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]logos,on)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.logos),on)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]logos,off)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.logos),off)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]logos)</onclick>
+						<visible>Window.IsActive(videos) + Skin.HasSetting(aeon.fglass)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31892]</label>
+						<label2>$VAR[Aeon_VOS_trailer]</label2>
+						<icon>common/aeon_mi_play.png</icon>
+						<onclick condition="!String.IsEqual(Window(Home).Property(aeon.vo.trailer),on)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]trailer,on)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.trailer),on)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]trailer)</onclick>
+						<visible>Window.IsActive(videos) + String.Contains(Window(Home).Property(aeon.vo.base),.Flix.)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31050]</label>
+						<label2>$VAR[Aeon_PaletteName]</label2>
+						<icon>aeon/icons/drop.png</icon>
+						<onclick>RunScript(script.aeon.helper,palette)</onclick>
+						<visible>!Skin.HasSetting(aeon.vglass)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31543]</label>
+						<label2>$VAR[Aeon_VOS_bg]</label2>
+						<icon>common/aeon_ic_view.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.bg))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]bg,neutral)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.bg),neutral)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]bg,fanart)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.bg),fanart) + System.AddonIsEnabled(script.karmamole.helper)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]bg,color)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.bg),fanart) + !System.AddonIsEnabled(script.karmamole.helper)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]bg)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.bg),color)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]bg)</onclick>
+					</item>
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32253]</label>
+						<label2>$VAR[Aeon_VOS_boxbg]</label2>
+						<icon>aeon/icons/clock.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.boxbg)) + System.AddonIsEnabled(script.karmamole.helper)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]boxbg,colors)</onclick>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.boxbg)) + !System.AddonIsEnabled(script.karmamole.helper)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]boxbg,neutral)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.boxbg),colors)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]boxbg,neutral)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.boxbg),neutral)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]boxbg,fanart)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.boxbg),fanart)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]boxbg,follow)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.boxbg),follow)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]boxbg)</onclick>
+						<visible>!$EXP[Aeon_FGlass] + [Window.IsActive(videos) | Window.IsActive(music)]</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[21887]</label>
+						<label2>$VAR[Aeon_VOS_bio]</label2>
+						<icon>aeon/icons/info.png</icon>
+						<onclick condition="!String.IsEqual(Window(Home).Property(aeon.vo.bio),off)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]bio,off)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.bio),off)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]bio)</onclick>
+						<visible>Window.IsActive(music)</visible>
+					</item>
+					<!-- 0.56.42 viewfan_05642: the fanart's opacity, blur and tint for this view (Default = Skin settings) -->
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32680]</label>
+						<label2>$VAR[Aeon_VOS_fop]</label2>
+						<icon>aeon/icons/image.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.fop))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]fop,m2)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.fop),m2)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]fop,m1)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.fop),m1)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]fop,z)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.fop),z)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]fop,p1)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.fop),p1)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]fop,p2)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.fop),p2)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]fop)</onclick>
+						<visible>$EXP[Aeon_FanShown]</visible>
+					</item>
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32682]</label>
+						<label2>$VAR[Aeon_VOS_fblur]</label2>
+						<icon>aeon/icons/blur.png</icon>
+												<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.fblur))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]fblur,off)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.fblur),off)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]fblur,m2)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.fblur),m2)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]fblur,m1)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.fblur),m1)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]fblur,z)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.fblur),z)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]fblur,p1)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.fblur),p1)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]fblur,p2)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.fblur),p2)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]fblur)</onclick>
+						<visible>$EXP[Aeon_FanShown]</visible>
+					</item>
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32684]</label>
+						<label2>$VAR[Aeon_VOS_ftint]</label2>
+						<icon>aeon/icons/sparkle.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.ftint))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]ftint,off)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.ftint),off)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]ftint,light)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.ftint),light)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]ftint,def)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.ftint),def)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]ftint,strong)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.ftint),strong)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]ftint)</onclick>
+						<visible>$EXP[Aeon_FanShown]</visible>
+					</item>
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32668]</label>
+						<label2>$VAR[Aeon_VOS_pshadow]</label2>
+						<icon>aeon/icons/layers.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.pshadow))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]pshadow,mild)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.pshadow),mild)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]pshadow,medium)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.pshadow),medium)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]pshadow,strong)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.pshadow),strong)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]pshadow,heavy)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.pshadow),heavy)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]pshadow)</onclick>
+						<visible>Skin.HasSetting(aeon.vglass)</visible>
+					</item>
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32674]</label>
+						<label2>$VAR[Aeon_VOS_pop]</label2>
+						<icon>aeon/icons/layers.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.pop))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]pop,m2)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.pop),m2)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]pop,m1)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.pop),m1)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]pop,z)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.pop),z)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]pop,p1)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.pop),p1)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]pop,p2)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.pop),p2)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]pop)</onclick>
+						<visible>Skin.HasSetting(aeon.vglass)</visible>
+					</item>
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32676]</label>
+						<label2>$VAR[Aeon_VOS_pblur]</label2>
+						<icon>aeon/icons/blur.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.pblur))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]pblur,off)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.pblur),off)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]pblur,light)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.pblur),light)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]pblur,medium)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.pblur),medium)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]pblur,strong)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.pblur),strong)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]pblur)</onclick>
+						<visible>Skin.HasSetting(aeon.fglass)</visible>
+					</item>
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32678]</label>
+						<label2>$VAR[Aeon_VOS_ptint]</label2>
+						<icon>aeon/icons/sparkle.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.ptint))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]ptint,m2)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.ptint),m2)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]ptint,m1)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.ptint),m1)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]ptint,z)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.ptint),z)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]ptint,p1)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.ptint),p1)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]ptint,p2)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.ptint),p2)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]ptint)</onclick>
+						<visible>Skin.HasSetting(aeon.vglass)</visible>
+					</item>
+					<!-- hide plot and thumbnail of unwatched episodes (the skin-wide spoiler switch, also in Skin settings > Details) -->
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32034]</label>
+						<label2>$VAR[Aeon_VOS_spoil]</label2>
+						<icon>aeon/icons/poster.png</icon>
+						<onclick>Skin.ToggleSetting(aeon.spoilers)</onclick>
+						<visible>Window.IsActive(videos) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+					</item>
+					<!-- how a set's films and a film's versions show beside the list (skin-wide): in a grid, or one at a time
+					     with Up / Down -->
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32398]</label>
+						<label2>$VAR[Aeon_VOS_sets]</label2>
+						<icon>aeon/icons/grid.png</icon>
+						<onclick>Skin.ToggleSetting(aeon.sets.single)</onclick>
+						<visible>Window.IsActive(videos) + [Container.Content(movies) | Container.Content(sets)]</visible>
+					</item>
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32399]</label>
+						<label2>$VAR[Aeon_VOS_versions]</label2>
+						<icon>aeon/icons/layers.png</icon>
+						<onclick>Skin.ToggleSetting(aeon.versions.grid)</onclick>
+						<visible>Window.IsActive(videos) + [Container.Content(movies) | Container.Content(sets)]</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31800]</label>
+						<label2>$VAR[Aeon_VOS_strip]</label2>
+						<icon>common/aeon_ic_sliders.png</icon>
+						<onclick condition="String.IsEmpty(Window(Home).Property(aeon.vo.strip))">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]strip,on)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.strip),on)">Skin.SetString($INFO[Window(Home).Property(aeon.vo.base)]strip,off)</onclick>
+						<onclick condition="String.IsEqual(Window(Home).Property(aeon.vo.strip),off)">Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]strip)</onclick>
+						<visible>!Skin.HasSetting(aeon.fglass)</visible>
+					</item>
+					<!-- Library options (0.40.3): side strip or box, switched here too; the panel opens again in the other look -->
+					<item>
+						<label>$ADDON[skin.aeon.fuse 32458]</label>
+						<label2>$VAR[LibPanel_LookName]</label2>
+						<icon>aeon/icons/layers.png</icon>
+						<onclick>Skin.ToggleSetting(aeon.libpanel.box)</onclick>
+						<onclick>Dialog.Close(1166,true)</onclick>
+						<onclick>AlarmClock(aeonvsre,ActivateWindow(1166),00:00,silent)</onclick>
+						<visible>$EXP[Aeon_MS]</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[31544]</label>
+						<label2>$LOCALIZE[31545]</label2>
+						<icon>common/aeon_ic_refresh.png</icon>
+						<onclick>Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]ratings)</onclick>
+						<onclick>Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]mediainfo)</onclick>
+						<onclick>Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]plot)</onclick>
+						<onclick>Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]bg)</onclick>
+						<onclick>Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]strip)</onclick>
+						<onclick>Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]bgs)</onclick>
+						<onclick>Skin.Reset($INFO[Window(Home).Property(aeon.vo.base)]bio)</onclick>
+					</item>
+	</include>
+	<include name="ViewSet_Classic">
+		<control type="group">
+			<animation type="WindowOpen" tween="cubic" easing="out" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="slide" start="-420,0" end="0,0" time="200"/><effect type="fade" start="0" end="100" time="150"/></animation>
+			<animation type="WindowClose" tween="cubic" easing="in" condition="!Skin.HasSetting(aeon.reducemotion)"><effect type="slide" start="0,0" end="-420,0" time="150"/><effect type="fade" start="100" end="0" time="150"/></animation>
+			<control type="image"><left>80</left><top>0</top><width>340</width><height>1080</height><texture colordiffuse="$VAR[Aeon_StripBg]">common/white.png</texture></control>
+			<include>Aeon_StripFrame</include>
+			<control type="label"><left>96</left><top>24</top><width>300</width><height>30</height><align>right</align><font>lb_cap_20</font><textcolor>$VAR[Aeon_StripTxt]</textcolor><label>[UPPERCASE]$LOCALIZE[31540][/UPPERCASE]</label></control>
+			<control type="label"><left>96</left><top>52</top><width>300</width><height>34</height><align>right</align><font>lb_small_20_bold</font><textcolor>$VAR[Aeon_StripTxt2]</textcolor><label>[UPPERCASE]$VAR[Aeon_ViewName][/UPPERCASE]</label></control>
+			<control type="list" id="100">
+				<left>0</left><top>108</top><width>452</width><height>864</height>
+				<onup>100</onup><ondown>100</ondown><onleft>noop</onleft><onright>Dialog.Close(1166)</onright>
+				<scrolltime tween="cubic" easing="out">200</scrolltime>
+				<itemlayout width="452" height="80"><include content="Aeon_StripRow"><param name="id" value="100"/><param name="open" value="true"/></include></itemlayout>
+				<focusedlayout width="452" height="80"><include content="Aeon_StripRow"><param name="id" value="100"/><param name="focused" value="true"/><param name="open" value="true"/></include></focusedlayout>
+				<content><include>ViewSet_Items</include></content>
+			</control>
+		</control>
+	</include>
+</includes>

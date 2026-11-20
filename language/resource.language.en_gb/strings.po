@@ -1,0 +1,7178 @@
+# Kodi skin strings - skin.aeon.fuse (en_GB)
+# Ids 31000-31999: $LOCALIZE[id] or a bare id in <label>. Ids 32000 and up: $ADDON[skin.aeon.fuse id]
+# (Kodi 22 keeps only 31000-31999 of a skin's strings for $LOCALIZE; $ADDON reads this same file).
+msgid ""
+msgstr ""
+"Project-Id-Version: skin.aeon.fuse\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgctxt "#31010"
+msgid "Sort"
+msgstr ""
+
+msgctxt "#31011"
+msgid "View"
+msgstr ""
+
+msgctxt "#31012"
+msgid "Nothing here"
+msgstr ""
+
+msgctxt "#31013"
+msgid "Working"
+msgstr ""
+
+msgctxt "#31014"
+msgid "Up / down to page, OK to close"
+msgstr ""
+
+msgctxt "#31015"
+msgid "Muted"
+msgstr ""
+
+msgctxt "#31016"
+msgid "Buffering"
+msgstr ""
+
+msgctxt "#31017"
+msgid "Now playing"
+msgstr ""
+
+msgctxt "#31018"
+msgid "Next:"
+msgstr ""
+
+msgctxt "#31019"
+msgid "Home"
+msgstr ""
+
+msgctxt "#31020"
+msgid "System"
+msgstr ""
+
+msgctxt "#31021"
+msgid "Skin settings"
+msgstr ""
+
+msgctxt "#31022"
+msgid "Power"
+msgstr ""
+
+msgctxt "#31024"
+msgid "Aeon Fuse"
+msgstr ""
+
+msgctxt "#31025"
+msgid "Skin settings holds Aeon Fuse's own options. To switch skins: Interface > Skin > Skin."
+msgstr ""
+
+msgctxt "#31030"
+msgid "Ends"
+msgstr ""
+
+msgctxt "#31040"
+msgid "Symbols"
+msgstr ""
+
+msgctxt "#31041"
+msgid "Caps"
+msgstr ""
+
+msgctxt "#31042"
+msgid "Shift"
+msgstr ""
+
+msgctxt "#31043"
+msgid "Space"
+msgstr ""
+
+msgctxt "#31044"
+msgid "Delete"
+msgstr ""
+
+msgctxt "#31045"
+msgid "Queue"
+msgstr ""
+
+msgctxt "#31046"
+msgid "Cover showcase"
+msgstr ""
+
+msgctxt "#31047"
+msgid "03  Performance"
+msgstr ""
+
+msgctxt "#31048"
+msgid "Pause"
+msgstr ""
+
+msgctxt "#31050"
+msgid "Palette"
+msgstr ""
+
+msgctxt "#31051"
+msgid "Slightly rounded corners"
+msgstr ""
+
+msgctxt "#31052"
+msgid "Focus outline"
+msgstr ""
+
+msgctxt "#31053"
+msgid "Artwork background"
+msgstr ""
+
+msgctxt "#31054"
+msgid "Trailer button"
+msgstr ""
+
+msgctxt "#31055"
+msgid "Watched indicators"
+msgstr ""
+
+msgctxt "#31056"
+msgid "Spotlight rotation"
+msgstr ""
+
+msgctxt "#31057"
+msgid "Newest row on Home"
+msgstr ""
+
+msgctxt "#31058"
+msgid "Reduce motion"
+msgstr ""
+
+msgctxt "#31059"
+msgid "Reset all skin settings"
+msgstr ""
+
+msgctxt "#31060"
+msgid "Signal"
+msgstr ""
+
+msgctxt "#31061"
+msgid "Cobalt"
+msgstr ""
+
+msgctxt "#31062"
+msgid "Mint"
+msgstr ""
+
+msgctxt "#31063"
+msgid "Amber"
+msgstr ""
+
+msgctxt "#31064"
+msgid "Rose"
+msgstr ""
+
+msgctxt "#31065"
+msgid "Ice"
+msgstr ""
+
+msgctxt "#31066"
+msgid "Bone"
+msgstr ""
+
+msgctxt "#31070"
+msgid "Thin"
+msgstr ""
+
+msgctxt "#31071"
+msgid "Medium"
+msgstr ""
+
+msgctxt "#31072"
+msgid "Off"
+msgstr ""
+
+msgctxt "#31075"
+msgid "Faint"
+msgstr ""
+
+msgctxt "#31076"
+msgid "Soft"
+msgstr ""
+
+msgctxt "#31077"
+msgid "Visible"
+msgstr ""
+
+msgctxt "#31080"
+msgid "Both"
+msgstr ""
+
+msgctxt "#31081"
+msgid "Unwatched only"
+msgstr ""
+
+msgctxt "#31082"
+msgid "Watched only"
+msgstr ""
+
+msgctxt "#31085"
+msgid "Date added"
+msgstr ""
+
+msgctxt "#31086"
+msgid "Release date"
+msgstr ""
+
+msgctxt "#31087"
+msgid "Both rows"
+msgstr ""
+
+msgctxt "#31100"
+msgid "Spotlight / unwatched / top rated"
+msgstr ""
+
+msgctxt "#31101"
+msgid "Year"
+msgstr ""
+
+msgctxt "#31102"
+msgid "Runtime"
+msgstr ""
+
+msgctxt "#31103"
+msgid "Rating"
+msgstr ""
+
+msgctxt "#31104"
+msgid "Rated"
+msgstr ""
+
+msgctxt "#31105"
+msgid "Details"
+msgstr ""
+
+msgctxt "#31106"
+msgid "Fig. 01: random pick, unwatched, rated 7.5+"
+msgstr ""
+
+msgctxt "#31107"
+msgid "No unwatched films rated 7.5+ yet"
+msgstr ""
+
+msgctxt "#31110"
+msgid "Newest additions"
+msgstr ""
+
+msgctxt "#31111"
+msgid "Sorted by date added ↓"
+msgstr ""
+
+msgctxt "#31112"
+msgid "Newest releases"
+msgstr ""
+
+msgctxt "#31113"
+msgid "Sorted by release date ↓"
+msgstr ""
+
+msgctxt "#31114"
+msgid "films"
+msgstr ""
+
+msgctxt "#31120"
+msgid "Seek  ◀ ▶"
+msgstr ""
+
+msgctxt "#31121"
+msgid "Previous"
+msgstr ""
+
+msgctxt "#31122"
+msgid "Rewind"
+msgstr ""
+
+msgctxt "#31123"
+msgid "Play / pause"
+msgstr ""
+
+msgctxt "#31124"
+msgid "Stop"
+msgstr ""
+
+msgctxt "#31125"
+msgid "Forward"
+msgstr ""
+
+msgctxt "#31126"
+msgid "Next"
+msgstr ""
+
+msgctxt "#31127"
+msgid "Subtitles"
+msgstr ""
+
+msgctxt "#31128"
+msgid "Audio"
+msgstr ""
+
+msgctxt "#31129"
+msgid "Video settings"
+msgstr ""
+
+msgctxt "#31318"
+msgid "Visualiser presets"
+msgstr ""
+
+msgctxt "#31319"
+msgid "OK, then ← for presets"
+msgstr ""
+
+msgctxt "#31900"
+msgid "Aeon Fuse (Figtree)"
+msgstr ""
+
+msgctxt "#31901"
+msgid "Arial (wider script coverage)"
+msgstr ""
+
+msgctxt "#31902"
+msgid "Episode code"
+msgstr ""
+
+msgctxt "#31200"
+msgid "Aeon Fuse settings"
+msgstr ""
+
+msgctxt "#31201"
+msgid "Live TV"
+msgstr ""
+
+msgctxt "#31202"
+msgid "Media"
+msgstr ""
+
+msgctxt "#31203"
+msgid "Update library"
+msgstr ""
+
+msgctxt "#31204"
+msgid "Library"
+msgstr ""
+
+msgctxt "#31205"
+msgid "Clean library"
+msgstr ""
+
+msgctxt "#31206"
+msgid "More"
+msgstr ""
+
+msgctxt "#31207"
+msgid "Add-on"
+msgstr ""
+
+msgctxt "#31208"
+msgid "About this setting"
+msgstr ""
+
+msgctxt "#31209"
+msgid "Timer"
+msgstr ""
+
+msgctxt "#31210"
+msgid "Left / right: channel group"
+msgstr ""
+
+msgctxt "#31211"
+msgid "Add group"
+msgstr ""
+
+msgctxt "#31212"
+msgid "Rename group"
+msgstr ""
+
+msgctxt "#31213"
+msgid "Delete group"
+msgstr ""
+
+msgctxt "#31214"
+msgid "Jump through the guide  ·  Back to close"
+msgstr ""
+
+msgctxt "#31215"
+msgid "Playing on this Shield"
+msgstr ""
+
+msgctxt "#31216"
+msgid "OK or Back closes"
+msgstr ""
+
+msgctxt "#31217"
+msgid "Find subtitles"
+msgstr ""
+
+msgctxt "#31218"
+msgid "Service"
+msgstr ""
+
+msgctxt "#31219"
+msgid "Status"
+msgstr ""
+
+msgctxt "#31220"
+msgid "This file already has subtitle tracks"
+msgstr ""
+
+msgctxt "#31221"
+msgid "Sync = timed to your file"
+msgstr ""
+
+msgctxt "#31222"
+msgid "No subtitles listed yet. Pick a service or search manually."
+msgstr ""
+
+msgctxt "#31223"
+msgid "Order:"
+msgstr ""
+
+msgctxt "#31224"
+msgid "Nothing has happened yet."
+msgstr ""
+
+msgctxt "#31225"
+msgid "Back to continue"
+msgstr ""
+
+msgctxt "#31226"
+msgid "Nothing to choose"
+msgstr ""
+
+msgctxt "#31227"
+msgid "Browse the whole library instead."
+msgstr ""
+
+msgctxt "#31228"
+msgid "See all"
+msgstr ""
+
+msgctxt "#31229"
+msgid "No shows in progress. Start one from Shows."
+msgstr ""
+
+msgctxt "#31230"
+msgid "Nothing here."
+msgstr ""
+
+msgctxt "#31231"
+msgid "PVR & Live TV settings"
+msgstr ""
+
+msgctxt "#31232"
+msgid "Up one level"
+msgstr ""
+
+msgctxt "#31233"
+msgid "Nothing else is known about this one yet."
+msgstr ""
+
+msgctxt "#31234"
+msgid "Up and down scroll  ·  Back closes"
+msgstr ""
+
+msgctxt "#31235"
+msgid "Up next"
+msgstr ""
+
+msgctxt "#31236"
+msgid "The last one in the queue"
+msgstr ""
+
+msgctxt "#31237"
+msgid "Sync"
+msgstr ""
+
+msgctxt "#31238"
+msgid "No matches"
+msgstr ""
+
+msgctxt "#31239"
+msgid "Searching"
+msgstr ""
+
+msgctxt "#31240"
+msgid "Films, shows, albums, artists"
+msgstr ""
+
+msgctxt "#31241"
+msgid "OK to type  ·  Down for results  ·  Back to close"
+msgstr ""
+
+msgctxt "#31242"
+msgid "Films and shows match on title, albums on album name, artists on name. Library only."
+msgstr ""
+
+msgctxt "#31243"
+msgid "Offsets apply to this film only. Choosing an offset hides this panel so you can sync against the picture."
+msgstr ""
+
+msgctxt "#31244"
+msgid "More for this title"
+msgstr ""
+
+msgctxt "#31245"
+msgid "Back"
+msgstr ""
+
+msgctxt "#31246"
+msgid "Unwatched only is on: choose the pill above to show everything."
+msgstr ""
+
+msgctxt "#31247"
+msgid "Left and right to seek  ·  Down returns"
+msgstr ""
+
+msgctxt "#31248"
+msgid "Choose Albums, Artists, Songs or Genres above."
+msgstr ""
+
+msgctxt "#31249"
+msgid "Playlist"
+msgstr ""
+
+msgctxt "#31250"
+msgid "Empty. Pick songs or albums on the left and press OK to add them."
+msgstr ""
+
+msgctxt "#31251"
+msgid "The queue is empty"
+msgstr ""
+
+msgctxt "#31252"
+msgid "No weather yet."
+msgstr ""
+
+msgctxt "#31253"
+msgid "Choose a weather service under Settings, Services, Weather."
+msgstr ""
+
+msgctxt "#31254"
+msgid "The next few days"
+msgstr ""
+
+msgctxt "#31255"
+msgid "Look, behaviour, home menu"
+msgstr ""
+
+msgctxt "#31256"
+msgid "Playback, subtitles"
+msgstr ""
+
+msgctxt "#31257"
+msgid "Library, files"
+msgstr ""
+
+msgctxt "#31258"
+msgid "Skin, region"
+msgstr ""
+
+msgctxt "#31259"
+msgid "Installed, updates"
+msgstr ""
+
+msgctxt "#31260"
+msgid "Remote, sharing"
+msgstr ""
+
+msgctxt "#31261"
+msgid "Display, audio"
+msgstr ""
+
+msgctxt "#31262"
+msgid "Sources, files"
+msgstr ""
+
+msgctxt "#31263"
+msgid "Hardware, storage"
+msgstr ""
+
+msgctxt "#31264"
+msgid "Event log"
+msgstr ""
+
+msgctxt "#31265"
+msgid "Recent events"
+msgstr ""
+
+msgctxt "#31266"
+msgid "Users"
+msgstr ""
+
+msgctxt "#31267"
+msgid "Not used"
+msgstr ""
+
+msgctxt "#31268"
+msgid "Controllers"
+msgstr ""
+
+msgctxt "#31269"
+msgid "This box"
+msgstr ""
+
+msgctxt "#31270"
+msgid "Login screen"
+msgstr ""
+
+msgctxt "#31271"
+msgid "Auto login"
+msgstr ""
+
+msgctxt "#31272"
+msgid "Options"
+msgstr ""
+
+msgctxt "#31273"
+msgid "Order direction"
+msgstr ""
+
+msgctxt "#31274"
+msgid "Select a rule to edit it. Use the context menu to delete a rule."
+msgstr ""
+
+msgctxt "#31275"
+msgid "Value"
+msgstr ""
+
+msgctxt "#31276"
+msgid "No chapters or bookmarks yet. Create one with the first button."
+msgstr ""
+
+msgctxt "#31277"
+msgid "OK jumps there  ·  Back closes"
+msgstr ""
+
+msgctxt "#31300"
+msgid "Order"
+msgstr ""
+
+msgctxt "#31301"
+msgid "Watched"
+msgstr ""
+
+msgctxt "#31302"
+msgid "Search"
+msgstr ""
+
+msgctxt "#31303"
+msgid "Stop updating"
+msgstr ""
+
+msgctxt "#31304"
+msgid "Library settings"
+msgstr ""
+
+msgctxt "#31305"
+msgid "Music"
+msgstr ""
+
+msgctxt "#31306"
+msgid "Update"
+msgstr ""
+
+msgctxt "#31307"
+msgid "Clean"
+msgstr ""
+
+msgctxt "#31308"
+msgid "Collections"
+msgstr ""
+
+msgctxt "#31309"
+msgid "Films and shows"
+msgstr ""
+
+msgctxt "#31310"
+msgid "No, keep it as it is"
+msgstr ""
+
+msgctxt "#31311"
+msgid "Yes, clean it now"
+msgstr ""
+
+msgctxt "#31312"
+msgid "Grid"
+msgstr ""
+
+msgctxt "#31313"
+msgid "Wall"
+msgstr ""
+
+msgctxt "#31314"
+msgid "Episodes"
+msgstr ""
+
+msgctxt "#31315"
+msgid "List"
+msgstr ""
+
+msgctxt "#31316"
+msgid "OK to reset"
+msgstr ""
+
+msgctxt "#31317"
+msgid "Press OK again to reset everything"
+msgstr ""
+
+msgctxt "#31320"
+msgid "Spotlight"
+msgstr ""
+
+msgctxt "#31321"
+msgid "Wide"
+msgstr ""
+
+msgctxt "#31322"
+msgid "Time"
+msgstr ""
+
+msgctxt "#31323"
+msgid "No runtime"
+msgstr ""
+
+msgctxt "#31324"
+msgid "Now"
+msgstr ""
+
+msgctxt "#31325"
+msgid "+1 h"
+msgstr ""
+
+msgctxt "#31326"
+msgid "+2 h"
+msgstr ""
+
+msgctxt "#31327"
+msgid "+3 h"
+msgstr ""
+
+msgctxt "#31328"
+msgid "+4 h"
+msgstr ""
+
+msgctxt "#31329"
+msgid "Rows"
+msgstr ""
+
+msgctxt "#31330"
+msgid "Main menu"
+msgstr ""
+
+msgctxt "#31331"
+msgid "Films"
+msgstr ""
+
+msgctxt "#31332"
+msgid "Shows"
+msgstr ""
+
+msgctxt "#31333"
+msgid "Music"
+msgstr ""
+
+msgctxt "#31334"
+msgid "Search"
+msgstr ""
+
+msgctxt "#31335"
+msgid "Pill, hero and film cards"
+msgstr ""
+
+msgctxt "#31336"
+msgid "Pill and the Next up card"
+msgstr ""
+
+msgctxt "#31337"
+msgid "Pill in the top line"
+msgstr ""
+
+msgctxt "#31338"
+msgid "Which pills the top line shows. Hidden pills disappear on Home and in the libraries; the rest close up. For now and the gear (system menu, settings) always stay, so you can always come back here.[CR][CR]Up / Down picks a group, Right enters it."
+msgstr ""
+
+msgctxt "#31339"
+msgid "Films also takes the hero and the film cards off For now; Shows takes the Next up card. The libraries themselves stay: Search finds them, and the system menu has Files."
+msgstr ""
+
+msgctxt "#31340"
+msgid "Show"
+msgstr ""
+
+msgctxt "#31341"
+msgid "Hide"
+msgstr ""
+
+msgctxt "#31342"
+msgid "View, sort, filter…"
+msgstr ""
+
+msgctxt "#31940"
+msgid "Custom rows"
+msgstr ""
+
+msgctxt "#31941"
+msgid "Row 1"
+msgstr ""
+
+msgctxt "#31942"
+msgid "Row 2"
+msgstr ""
+
+msgctxt "#31943"
+msgid "Row 3"
+msgstr ""
+
+msgctxt "#31944"
+msgid "Not set"
+msgstr ""
+
+msgctxt "#31945"
+msgid "Add-on, playlist or library…"
+msgstr ""
+
+msgctxt "#31946"
+msgid "A favourite…"
+msgstr ""
+
+msgctxt "#31947"
+msgid "Rename…"
+msgstr ""
+
+msgctxt "#31948"
+msgid "Clear"
+msgstr ""
+
+msgctxt "#31949"
+msgid "This favourite opens no folder"
+msgstr ""
+
+msgctxt "#31950"
+msgid "Add up to three rows of your own to Home: a folder of an add-on (for example JellyCon's Continue Watching), a smart playlist, a library node or a favourite that opens a folder. A row shows only when it has something in it.[CR][CR]OK opens the row's options: choose what it shows, rename it or clear it."
+msgstr ""
+
+msgctxt "#31951"
+msgid "Custom row"
+msgstr ""
+
+msgctxt "#31952"
+msgid "Loading…"
+msgstr ""
+
+msgctxt "#31953"
+msgid "1 item"
+msgstr ""
+
+msgctxt "#31954"
+msgid "items"
+msgstr ""
+
+msgctxt "#31955"
+msgid "Add-on · playlist · library · favourite"
+msgstr ""
+
+msgctxt "#31956"
+msgid "The add-on of this favourite isn't installed"
+msgstr ""
+
+msgctxt "#31957"
+msgid "Rows of your own on Home: an add-on folder, a playlist, a library node or a favourite. OK opens the row's options."
+msgstr ""
+
+msgctxt "#31980"
+msgid "Custom menu items"
+msgstr ""
+
+msgctxt "#31981"
+msgid "Menu item 1"
+msgstr ""
+
+msgctxt "#31982"
+msgid "Menu item 2"
+msgstr ""
+
+msgctxt "#31983"
+msgid "Menu item 3"
+msgstr ""
+
+msgctxt "#31984"
+msgid "Put up to three add-ons, favourites or library folders on the main menu, after the skin's own items. An item shows only while its add-on is installed.[CR][CR]OK opens the item's options: choose what it opens, rename it or clear it."
+msgstr ""
+
+msgctxt "#31985"
+msgid "Add-on · favourite · library · folder"
+msgstr ""
+
+msgctxt "#31986"
+msgid "Opens"
+msgstr ""
+
+msgctxt "#31987"
+msgid "Menu item"
+msgstr ""
+
+msgctxt "#31988"
+msgid "add-on not installed"
+msgstr ""
+
+msgctxt "#31989"
+msgid "Add-on"
+msgstr ""
+
+msgctxt "#31990"
+msgid "Playlist"
+msgstr ""
+
+msgctxt "#31991"
+msgid "Library"
+msgstr ""
+
+msgctxt "#31992"
+msgid "Folder"
+msgstr ""
+
+msgctxt "#31993"
+msgid "Shortcut"
+msgstr ""
+
+msgctxt "#31994"
+msgid "Your own items on the main menu: an add-on, a favourite, a library node or a folder. OK opens the item's options."
+msgstr ""
+
+msgctxt "#31995"
+msgid "OK to open"
+msgstr ""
+
+msgctxt "#31540"
+msgid "View settings"
+msgstr ""
+
+msgctxt "#31541"
+msgid "Ratings"
+msgstr ""
+
+msgctxt "#31542"
+msgid "Media info"
+msgstr ""
+
+msgctxt "#31543"
+msgid "Backdrop"
+msgstr ""
+
+msgctxt "#31544"
+msgid "Reset"
+msgstr ""
+
+msgctxt "#31545"
+msgid "Global settings"
+msgstr ""
+
+msgctxt "#31546"
+msgid "Default"
+msgstr ""
+
+msgctxt "#31547"
+msgid "On"
+msgstr ""
+
+msgctxt "#31548"
+msgid "Off"
+msgstr ""
+
+msgctxt "#31549"
+msgid "Neutral"
+msgstr ""
+
+msgctxt "#31550"
+msgid "Fanart"
+msgstr ""
+
+msgctxt "#31551"
+msgid "Colors"
+msgstr ""
+
+msgctxt "#31000"
+msgid "Kodi"
+msgstr ""
+
+msgctxt "#31001"
+msgid "ULTRA HD"
+msgstr ""
+
+msgctxt "#31002"
+msgid "The pages that Up opens above this home menu item. Pick one, then use the buttons on the right."
+msgstr ""
+
+msgctxt "#31003"
+msgid "+  Add item"
+msgstr ""
+
+msgctxt "#31004"
+msgid "Rename"
+msgstr ""
+
+msgctxt "#31005"
+msgid "Select source"
+msgstr ""
+
+msgctxt "#31006"
+msgid "Sort by"
+msgstr ""
+
+msgctxt "#31007"
+msgid "Reverse order"
+msgstr ""
+
+msgctxt "#31008"
+msgid "Items in list"
+msgstr ""
+
+msgctxt "#31009"
+msgid "Seconds per item"
+msgstr ""
+
+msgctxt "#31023"
+msgid "Autoscroll on / off"
+msgstr ""
+
+msgctxt "#31026"
+msgid "Hide / show"
+msgstr ""
+
+msgctxt "#31027"
+msgid "Move up"
+msgstr ""
+
+msgctxt "#31028"
+msgid "Move down"
+msgstr ""
+
+msgctxt "#31029"
+msgid "Add list..."
+msgstr ""
+
+msgctxt "#31031"
+msgid "Add folder items..."
+msgstr ""
+
+msgctxt "#31032"
+msgid "Restore defaults"
+msgstr ""
+
+msgctxt "#31033"
+msgid "The categories and rows shown under this home menu item (for Power: its actions)."
+msgstr ""
+
+msgctxt "#31034"
+msgid "Items in row"
+msgstr ""
+
+msgctxt "#31035"
+msgid "Artwork type"
+msgstr ""
+
+msgctxt "#31036"
+msgid "The full-screen widget pages that Up opens above this item: on or off, autoscroll, and the defaults for every list in them."
+msgstr ""
+
+msgctxt "#31037"
+msgid "Widget (Up key after Spotlight)"
+msgstr ""
+
+msgctxt "#31038"
+msgid "Autoscroll"
+msgstr ""
+
+msgctxt "#31039"
+msgid "Items per list"
+msgstr ""
+
+msgctxt "#31049"
+msgid "The big Netflix-style spotlight above this item on Home: a rotating list of titles with fanart, logo, details and Play."
+msgstr ""
+
+msgctxt "#31067"
+msgid "Label"
+msgstr ""
+
+msgctxt "#31068"
+msgid "Path"
+msgstr ""
+
+msgctxt "#31069"
+msgid "Items"
+msgstr ""
+
+msgctxt "#31073"
+msgid "Widget screen options"
+msgstr ""
+
+msgctxt "#31074"
+msgid "Library background (Aeon)"
+msgstr ""
+
+msgctxt "#31078"
+msgid "Choose a view"
+msgstr ""
+
+msgctxt "#31079"
+msgid "Left / Right to look, OK to switch"
+msgstr ""
+
+msgctxt "#31083"
+msgid "Fanart list"
+msgstr ""
+
+msgctxt "#31084"
+msgid "Rows with A-Z keys"
+msgstr ""
+
+msgctxt "#31088"
+msgid "Artist wall"
+msgstr ""
+
+msgctxt "#31089"
+msgid "Cover grid"
+msgstr ""
+
+msgctxt "#31090"
+msgid "Album wall"
+msgstr ""
+
+msgctxt "#31091"
+msgid "Song wall"
+msgstr ""
+
+msgctxt "#31092"
+msgid "Artist showcase"
+msgstr ""
+
+msgctxt "#31093"
+msgid "Big covers in a row"
+msgstr ""
+
+msgctxt "#31094"
+msgid "Album showcase"
+msgstr ""
+
+msgctxt "#31095"
+msgid "Song showcase"
+msgstr ""
+
+msgctxt "#31096"
+msgid "Artist rows"
+msgstr ""
+
+msgctxt "#31097"
+msgid "Rows with covers"
+msgstr ""
+
+msgctxt "#31098"
+msgid "Album list"
+msgstr ""
+
+msgctxt "#31099"
+msgid "Song list"
+msgstr ""
+
+msgctxt "#31108"
+msgid "Compact song rows"
+msgstr ""
+
+msgctxt "#31109"
+msgid "Fanart wall"
+msgstr ""
+
+msgctxt "#31115"
+msgid "Portrait grid"
+msgstr ""
+
+msgctxt "#31116"
+msgid "Fanart and A-Z keys"
+msgstr ""
+
+msgctxt "#31117"
+msgid "Show posters"
+msgstr ""
+
+msgctxt "#31118"
+msgid "Posters"
+msgstr ""
+
+msgctxt "#31119"
+msgid "Season posters"
+msgstr ""
+
+msgctxt "#31130"
+msgid "Poster wall"
+msgstr ""
+
+msgctxt "#31131"
+msgid "Episode wall"
+msgstr ""
+
+msgctxt "#31132"
+msgid "Landscape artwork"
+msgstr ""
+
+msgctxt "#31133"
+msgid "Landscape wall"
+msgstr ""
+
+msgctxt "#31134"
+msgid "Square wall"
+msgstr ""
+
+msgctxt "#31135"
+msgid "Square tiles"
+msgstr ""
+
+msgctxt "#31136"
+msgid "Cards"
+msgstr ""
+
+msgctxt "#31137"
+msgid "Artwork with details"
+msgstr ""
+
+msgctxt "#31138"
+msgid "Showcase"
+msgstr ""
+
+msgctxt "#31139"
+msgid "One big poster"
+msgstr ""
+
+msgctxt "#31140"
+msgid "Banner list"
+msgstr ""
+
+msgctxt "#31141"
+msgid "Wide banner rows"
+msgstr ""
+
+msgctxt "#31142"
+msgid "Compact list"
+msgstr ""
+
+msgctxt "#31143"
+msgid "Dense rows with poster"
+msgstr ""
+
+msgctxt "#31144"
+msgid "Episode list"
+msgstr ""
+
+msgctxt "#31145"
+msgid "Rows with thumbs"
+msgstr ""
+
+msgctxt "#31146"
+msgid "Season list combined 3"
+msgstr ""
+
+msgctxt "#31147"
+msgid "Rows with posters"
+msgstr ""
+
+msgctxt "#31148"
+msgid "Low list"
+msgstr ""
+
+msgctxt "#31149"
+msgid "Rows over fanart"
+msgstr ""
+
+msgctxt "#31150"
+msgid "Version"
+msgstr ""
+
+msgctxt "#31151"
+msgid "Type"
+msgstr ""
+
+msgctxt "#31152"
+msgid "Installed"
+msgstr ""
+
+msgctxt "#31153"
+msgid "Updated"
+msgstr ""
+
+msgctxt "#31154"
+msgid "Channel"
+msgstr ""
+
+msgctxt "#31155"
+msgid "Other"
+msgstr ""
+
+msgctxt "#31156"
+msgid "Jump to now"
+msgstr ""
+
+msgctxt "#31157"
+msgid "Choose channel"
+msgstr ""
+
+msgctxt "#31158"
+msgid "Choose channel group"
+msgstr ""
+
+msgctxt "#31159"
+msgid "Choose date"
+msgstr ""
+
+msgctxt "#31160"
+msgid "Recordings"
+msgstr ""
+
+msgctxt "#31161"
+msgid "Timers"
+msgstr ""
+
+msgctxt "#31162"
+msgid "Timer rules"
+msgstr ""
+
+msgctxt "#31163"
+msgid "Search guide"
+msgstr ""
+
+msgctxt "#31164"
+msgid "Return to guide"
+msgstr ""
+
+msgctxt "#31165"
+msgid "Exit guide"
+msgstr ""
+
+msgctxt "#31166"
+msgid "Band"
+msgstr ""
+
+msgctxt "#31167"
+msgid "Artist"
+msgstr ""
+
+msgctxt "#31168"
+msgid "Title"
+msgstr ""
+
+msgctxt "#31169"
+msgid "Composer"
+msgstr ""
+
+msgctxt "#31170"
+msgid "Conductor"
+msgstr ""
+
+msgctxt "#31171"
+msgid "Album"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Comment"
+msgstr ""
+
+msgctxt "#31173"
+msgid "Studio  ·  hotline"
+msgstr ""
+
+msgctxt "#31174"
+msgid "Studio phone"
+msgstr ""
+
+msgctxt "#31175"
+msgid "Studio email"
+msgstr ""
+
+msgctxt "#31176"
+msgid "Studio SMS"
+msgstr ""
+
+msgctxt "#31177"
+msgid "Hotline phone"
+msgstr ""
+
+msgctxt "#31178"
+msgid "Hotline email"
+msgstr ""
+
+msgctxt "#31179"
+msgid "Programme"
+msgstr ""
+
+msgctxt "#31180"
+msgid "Style"
+msgstr ""
+
+msgctxt "#31181"
+msgid "Station"
+msgstr ""
+
+msgctxt "#31182"
+msgid "Host"
+msgstr ""
+
+msgctxt "#31183"
+msgid "Editorial"
+msgstr ""
+
+msgctxt "#31184"
+msgid "Website"
+msgstr ""
+
+msgctxt "#31185"
+msgid "Radiotext"
+msgstr ""
+
+msgctxt "#31186"
+msgid "ENDS"
+msgstr ""
+
+msgctxt "#31187"
+msgid "Search manually…"
+msgstr ""
+
+msgctxt "#31189"
+msgid "TRUEHD  7.1"
+msgstr ""
+
+msgctxt "#31190"
+msgid "Some stories never end."
+msgstr ""
+
+msgctxt "#31191"
+msgid "A retired detective is pulled back into a case he thought was closed, and the closer he looks the less of it makes sense."
+msgstr ""
+
+msgctxt "#31194"
+msgid "Trakt 78"
+msgstr ""
+
+msgctxt "#31195"
+msgid "Controls stay hidden when you pause."
+msgstr ""
+
+msgctxt "#31196"
+msgid "Controls open 1 second after you pause."
+msgstr ""
+
+msgctxt "#31197"
+msgid "Controls open 3 seconds after you pause."
+msgstr ""
+
+msgctxt "#31198"
+msgid "Controls open 5 seconds after you pause."
+msgstr ""
+
+msgctxt "#31199"
+msgid "Controls open 2 seconds after you pause."
+msgstr ""
+
+msgctxt "#31278"
+msgid "Play"
+msgstr ""
+
+msgctxt "#31279"
+msgid "More information"
+msgstr ""
+
+msgctxt "#31295"
+msgid "NOW ON TV"
+msgstr ""
+
+msgctxt "#31296"
+msgid "PRESS UP FOR THE FULL GUIDE"
+msgstr ""
+
+msgctxt "#31297"
+msgid "NO LYRICS FOR THIS SONG"
+msgstr ""
+
+msgctxt "#31298"
+msgid "Artists"
+msgstr ""
+
+msgctxt "#31299"
+msgid "Albums"
+msgstr ""
+
+msgctxt "#31343"
+msgid "Songs"
+msgstr ""
+
+msgctxt "#31344"
+msgid "Genres"
+msgstr ""
+
+msgctxt "#31345"
+msgid "Menu: view, sort"
+msgstr ""
+
+msgctxt "#31346"
+msgid "MUSIC LIBRARY"
+msgstr ""
+
+msgctxt "#31347"
+msgid "SUBTITLES"
+msgstr ""
+
+msgctxt "#31348"
+msgid "AUDIO"
+msgstr ""
+
+msgctxt "#31349"
+msgid "VIDEO"
+msgstr ""
+
+msgctxt "#31350"
+msgid "CHAPTERS"
+msgstr ""
+
+msgctxt "#31351"
+msgid "INFO"
+msgstr ""
+
+msgctxt "#31352"
+msgid "STATS"
+msgstr ""
+
+msgctxt "#31353"
+msgid "TV SHOWS"
+msgstr ""
+
+msgctxt "#31354"
+msgid "MOVIES"
+msgstr ""
+
+msgctxt "#31355"
+msgid "BUFFERING"
+msgstr ""
+
+msgctxt "#31356"
+msgid "PAUSED"
+msgstr ""
+
+msgctxt "#31357"
+msgid "ADDED"
+msgstr ""
+
+msgctxt "#31358"
+msgid "Custom path"
+msgstr ""
+
+msgctxt "#31359"
+msgid "Recently added"
+msgstr ""
+
+msgctxt "#31360"
+msgid "Recently watched"
+msgstr ""
+
+msgctxt "#31361"
+msgid "In progress"
+msgstr ""
+
+msgctxt "#31362"
+msgid "Top rated"
+msgstr ""
+
+msgctxt "#31363"
+msgid "All movies"
+msgstr ""
+
+msgctxt "#31364"
+msgid "Unwatched shows"
+msgstr ""
+
+msgctxt "#31365"
+msgid "Random shows"
+msgstr ""
+
+msgctxt "#31366"
+msgid "Top rated shows"
+msgstr ""
+
+msgctxt "#31367"
+msgid "All shows"
+msgstr ""
+
+msgctxt "#31368"
+msgid "Recently played"
+msgstr ""
+
+msgctxt "#31369"
+msgid "Random albums"
+msgstr ""
+
+msgctxt "#31370"
+msgid "Shut down"
+msgstr ""
+
+msgctxt "#31371"
+msgid "Reboot to Android"
+msgstr ""
+
+msgctxt "#31372"
+msgid "Quit Kodi"
+msgstr ""
+
+msgctxt "#31373"
+msgid "Update video library"
+msgstr ""
+
+msgctxt "#31374"
+msgid "Update music library"
+msgstr ""
+
+msgctxt "#31375"
+msgid "Clean video library"
+msgstr ""
+
+msgctxt "#31376"
+msgid "Clean music library"
+msgstr ""
+
+msgctxt "#31377"
+msgid "Power menu"
+msgstr ""
+
+msgctxt "#31378"
+msgid "TV shows"
+msgstr ""
+
+msgctxt "#31379"
+msgid "MUSIC"
+msgstr ""
+
+msgctxt "#31380"
+msgid "LISTEN"
+msgstr ""
+
+msgctxt "#31381"
+msgid "WATCH"
+msgstr ""
+
+msgctxt "#31382"
+msgid "Latest added"
+msgstr ""
+
+msgctxt "#31383"
+msgid "Last played"
+msgstr ""
+
+msgctxt "#31384"
+msgid "Movies, TV shows, Music or Power"
+msgstr ""
+
+msgctxt "#31385"
+msgid "Position 1 is the first page you reach with Up"
+msgstr ""
+
+msgctxt "#31386"
+msgid "What this position shows. Off hides it"
+msgstr ""
+
+msgctxt "#31387"
+msgid "OK types a name, Left clears it"
+msgstr ""
+
+msgctxt "#31388"
+msgid "Used when Category = Custom path (a library path, playlist or add-on folder)"
+msgstr ""
+
+msgctxt "#31389"
+msgid "How many items the page cycles through (default 15)"
+msgstr ""
+
+msgctxt "#31390"
+msgid "Order of the items on this page"
+msgstr ""
+
+msgctxt "#31391"
+msgid "Flip the sort order"
+msgstr ""
+
+msgctxt "#31392"
+msgid "Step through the items by itself"
+msgstr ""
+
+msgctxt "#31393"
+msgid "Seconds each item stays (default 10)"
+msgstr ""
+
+msgctxt "#31394"
+msgid "SERIES PREMIERE"
+msgstr ""
+
+msgctxt "#31395"
+msgid "SEASON PREMIERE"
+msgstr ""
+
+msgctxt "#31396"
+msgid "SERIES FINALE"
+msgstr ""
+
+msgctxt "#31397"
+msgid "SEASON FINALE"
+msgstr ""
+
+msgctxt "#31398"
+msgid "Movie sets"
+msgstr ""
+
+msgctxt "#31399"
+msgid "Autoscroll off"
+msgstr ""
+
+msgctxt "#31400"
+msgid "Random movies"
+msgstr ""
+
+msgctxt "#31401"
+msgid "Recently added movies"
+msgstr ""
+
+msgctxt "#31402"
+msgid "Recently played movies"
+msgstr ""
+
+msgctxt "#31403"
+msgid "Top rated movies"
+msgstr ""
+
+msgctxt "#31404"
+msgid "Most played movies"
+msgstr ""
+
+msgctxt "#31405"
+msgid "Newest movies"
+msgstr ""
+
+msgctxt "#31406"
+msgid "Title movies"
+msgstr ""
+
+msgctxt "#31407"
+msgid "Recently added shows"
+msgstr ""
+
+msgctxt "#31408"
+msgid "Recently played shows"
+msgstr ""
+
+msgctxt "#31409"
+msgid "Most played shows"
+msgstr ""
+
+msgctxt "#31410"
+msgid "Newest shows"
+msgstr ""
+
+msgctxt "#31411"
+msgid "Title shows"
+msgstr ""
+
+msgctxt "#31412"
+msgid "Recently added albums"
+msgstr ""
+
+msgctxt "#31413"
+msgid "Recently played albums"
+msgstr ""
+
+msgctxt "#31414"
+msgid "Top rated albums"
+msgstr ""
+
+msgctxt "#31415"
+msgid "Most played albums"
+msgstr ""
+
+msgctxt "#31416"
+msgid "Newest albums"
+msgstr ""
+
+msgctxt "#31417"
+msgid "Title albums"
+msgstr ""
+
+msgctxt "#31418"
+msgid "FULL HD"
+msgstr ""
+
+msgctxt "#31419"
+msgid "DOLBY VISION"
+msgstr ""
+
+msgctxt "#31420"
+msgid "TRUEHD ATMOS"
+msgstr ""
+
+msgctxt "#31421"
+msgid "DD+ ATMOS"
+msgstr ""
+
+msgctxt "#31422"
+msgid "DTS-HD MA"
+msgstr ""
+
+msgctxt "#31423"
+msgid "DTS-HD HRA"
+msgstr ""
+
+msgctxt "#31424"
+msgid "TRUEHD"
+msgstr ""
+
+msgctxt "#31425"
+msgid "DD+"
+msgstr ""
+
+msgctxt "#31426"
+msgid "DD"
+msgstr ""
+
+msgctxt "#31427"
+msgid "FLAC"
+msgstr ""
+
+msgctxt "#31428"
+msgid "ALAC"
+msgstr ""
+
+msgctxt "#31429"
+msgid "OPUS"
+msgstr ""
+
+msgctxt "#31430"
+msgid "VORBIS"
+msgstr ""
+
+msgctxt "#31431"
+msgid "RATED NC-17"
+msgstr ""
+
+msgctxt "#31432"
+msgid "RATED PG-13"
+msgstr ""
+
+msgctxt "#31433"
+msgid "RATED PG"
+msgstr ""
+
+msgctxt "#31434"
+msgid "RATED R"
+msgstr ""
+
+msgctxt "#31435"
+msgid "RATED G"
+msgstr ""
+
+msgctxt "#31436"
+msgid "RATED TV-MA"
+msgstr ""
+
+msgctxt "#31437"
+msgid "RATED TV-14"
+msgstr ""
+
+msgctxt "#31438"
+msgid "RATED TV-PG"
+msgstr ""
+
+msgctxt "#31439"
+msgid "RATED TV-Y7"
+msgstr ""
+
+msgctxt "#31440"
+msgid "RATED TV-Y"
+msgstr ""
+
+msgctxt "#31441"
+msgid "RATED TV-G"
+msgstr ""
+
+msgctxt "#31442"
+msgid "ULTRA"
+msgstr ""
+
+msgctxt "#31443"
+msgid "FULL"
+msgstr ""
+
+msgctxt "#31444"
+msgid "READY"
+msgstr ""
+
+msgctxt "#31445"
+msgid "DD+ ATMOS"
+msgstr ""
+
+msgctxt "#31446"
+msgid "DTS-HD MA"
+msgstr ""
+
+msgctxt "#31447"
+msgid "DTS-HD HRA"
+msgstr ""
+
+msgctxt "#31448"
+msgid "DD+"
+msgstr ""
+
+msgctxt "#31449"
+msgid "MEDIA"
+msgstr ""
+
+msgctxt "#31450"
+msgid "RATING"
+msgstr ""
+
+msgctxt "#31451"
+msgid "CERTIFICATION"
+msgstr ""
+
+msgctxt "#31452"
+msgid "CREDITS"
+msgstr ""
+
+msgctxt "#31453"
+msgid "FIRST AIRED"
+msgstr ""
+
+msgctxt "#31454"
+msgid "STUDIO"
+msgstr ""
+
+msgctxt "#31455"
+msgid "GENRE"
+msgstr ""
+
+msgctxt "#31456"
+msgid "CAST"
+msgstr ""
+
+msgctxt "#31457"
+msgid "HD READY"
+msgstr ""
+
+msgctxt "#31458"
+msgid "BOXED SET"
+msgstr ""
+
+msgctxt "#31459"
+msgid "* ALL SEASONS"
+msgstr ""
+
+msgctxt "#31460"
+msgid "For now"
+msgstr ""
+
+msgctxt "#31461"
+msgid "Kept all day"
+msgstr ""
+
+msgctxt "#31462"
+msgid "Past midnight"
+msgstr ""
+
+msgctxt "#31463"
+msgid "Still up?"
+msgstr ""
+
+msgctxt "#31464"
+msgid "Nearly bedtime."
+msgstr ""
+
+msgctxt "#31465"
+msgid "Good evening."
+msgstr ""
+
+msgctxt "#31466"
+msgid "Good afternoon."
+msgstr ""
+
+msgctxt "#31467"
+msgid "Good morning."
+msgstr ""
+
+msgctxt "#31468"
+msgid "Short ones: under 100 minutes"
+msgstr ""
+
+msgctxt "#31469"
+msgid "The evening is yours"
+msgstr ""
+
+msgctxt "#31470"
+msgid "A free afternoon: something long"
+msgstr ""
+
+msgctxt "#31471"
+msgid "Plenty of aeon left"
+msgstr ""
+
+msgctxt "#31472"
+msgid "Sunday morning: take it slow"
+msgstr ""
+
+msgctxt "#31473"
+msgid "A slow start: something light"
+msgstr ""
+
+msgctxt "#31474"
+msgid "Needs a weather add-on in Kodi's settings"
+msgstr ""
+
+msgctxt "#31475"
+msgid "From the weather add-on set in Kodi"
+msgstr ""
+
+msgctxt "#31476"
+msgid "Tropical storm"
+msgstr ""
+
+msgctxt "#31477"
+msgid "Severe storms"
+msgstr ""
+
+msgctxt "#31478"
+msgid "Rain and snow"
+msgstr ""
+
+msgctxt "#31479"
+msgid "Rain and sleet"
+msgstr ""
+
+msgctxt "#31480"
+msgid "Snow and sleet"
+msgstr ""
+
+msgctxt "#31481"
+msgid "Freezing drizzle"
+msgstr ""
+
+msgctxt "#31482"
+msgid "Freezing rain"
+msgstr ""
+
+msgctxt "#31483"
+msgid "Snow flurries"
+msgstr ""
+
+msgctxt "#31484"
+msgid "Light snow"
+msgstr ""
+
+msgctxt "#31485"
+msgid "Blowing snow"
+msgstr ""
+
+msgctxt "#31486"
+msgid "Mostly cloudy"
+msgstr ""
+
+msgctxt "#31487"
+msgid "Partly cloudy"
+msgstr ""
+
+msgctxt "#31488"
+msgid "Rain and hail"
+msgstr ""
+
+msgctxt "#31489"
+msgid "Isolated storms"
+msgstr ""
+
+msgctxt "#31490"
+msgid "Scattered storms"
+msgstr ""
+
+msgctxt "#31491"
+msgid "Scattered showers"
+msgstr ""
+
+msgctxt "#31492"
+msgid "Heavy snow"
+msgstr ""
+
+msgctxt "#31493"
+msgid "Snow showers"
+msgstr ""
+
+msgctxt "#31494"
+msgid "More under 100 minutes"
+msgstr ""
+
+msgctxt "#31495"
+msgid "Sunday morning: documentaries"
+msgstr ""
+
+msgctxt "#31496"
+msgid "Morning shorts: under 100 minutes"
+msgstr ""
+
+msgctxt "#31497"
+msgid "A long afternoon film"
+msgstr ""
+
+msgctxt "#31498"
+msgid "Top rated, still unwatched"
+msgstr ""
+
+msgctxt "#31499"
+msgid "Tonight's top rated"
+msgstr ""
+
+msgctxt "#31500"
+msgid "Before bed"
+msgstr ""
+
+msgctxt "#31501"
+msgid "This morning"
+msgstr ""
+
+msgctxt "#31502"
+msgid "This afternoon"
+msgstr ""
+
+msgctxt "#31503"
+msgid "Later today"
+msgstr ""
+
+msgctxt "#31504"
+msgid "One more episode"
+msgstr ""
+
+msgctxt "#31505"
+msgid "Next up"
+msgstr ""
+
+msgctxt "#31506"
+msgid "It's snowing: something long"
+msgstr ""
+
+msgctxt "#31507"
+msgid "Still raining: under an hour"
+msgstr ""
+
+msgctxt "#31508"
+msgid "It's raining: something long"
+msgstr ""
+
+msgctxt "#31509"
+msgid "Just added"
+msgstr ""
+
+msgctxt "#31510"
+msgid "Download subtitles"
+msgstr ""
+
+msgctxt "#31511"
+msgid "Subtitle settings"
+msgstr ""
+
+msgctxt "#31512"
+msgid "What's new"
+msgstr ""
+
+msgctxt "#31513"
+msgid "Nothing to suggest right now."
+msgstr ""
+
+msgctxt "#31514"
+msgid "Clean library?"
+msgstr ""
+
+msgctxt "#31515"
+msgid "Music videos"
+msgstr ""
+
+msgctxt "#31516"
+msgid "Kodi takes out the songs, albums and artists it can no longer find. Your files stay where they are."
+msgstr ""
+
+msgctxt "#31517"
+msgid "Kodi takes out the films, shows and episodes it can no longer find. Your files stay where they are."
+msgstr ""
+
+msgctxt "#31518"
+msgid "Add-on settings"
+msgstr ""
+
+msgctxt "#31519"
+msgid "Get more"
+msgstr ""
+
+msgctxt "#31520"
+msgid "Slideshow"
+msgstr ""
+
+msgctxt "#31521"
+msgid "Recursive slideshow"
+msgstr ""
+
+msgctxt "#31522"
+msgid "Randomise"
+msgstr ""
+
+msgctxt "#31523"
+msgid "Edited  locked"
+msgstr ""
+
+msgctxt "#31524"
+msgid "Shuffle  ·  Repeat one"
+msgstr ""
+
+msgctxt "#31525"
+msgid "Shuffle  ·  Repeat all"
+msgstr ""
+
+msgctxt "#31526"
+msgid "Repeat one"
+msgstr ""
+
+msgctxt "#31527"
+msgid "Repeat all"
+msgstr ""
+
+msgctxt "#31528"
+msgid "Video queue"
+msgstr ""
+
+msgctxt "#31529"
+msgid "Shuffle: on"
+msgstr ""
+
+msgctxt "#31530"
+msgid "Shuffle: off"
+msgstr ""
+
+msgctxt "#31531"
+msgid "Play all"
+msgstr ""
+
+msgctxt "#31532"
+msgid "Shuffle"
+msgstr ""
+
+msgctxt "#31533"
+msgid "Refresh"
+msgstr ""
+
+msgctxt "#31534"
+msgid "Added"
+msgstr ""
+
+msgctxt "#31535"
+msgid "Plays"
+msgstr ""
+
+msgctxt "#31536"
+msgid "Mood"
+msgstr ""
+
+msgctxt "#31537"
+msgid "Album info"
+msgstr ""
+
+msgctxt "#31538"
+msgid "Artist info"
+msgstr ""
+
+msgctxt "#31539"
+msgid "About the artist"
+msgstr ""
+
+msgctxt "#31552"
+msgid "About the song"
+msgstr ""
+
+msgctxt "#31553"
+msgid "About the album"
+msgstr ""
+
+msgctxt "#31554"
+msgid "OK reads all of it"
+msgstr ""
+
+msgctxt "#31555"
+msgid "Up returns to the buttons"
+msgstr ""
+
+msgctxt "#31556"
+msgid "Right for the full story"
+msgstr ""
+
+msgctxt "#31557"
+msgid "Shuffle on"
+msgstr ""
+
+msgctxt "#31558"
+msgid "Music video"
+msgstr ""
+
+msgctxt "#31559"
+msgid "HEVC"
+msgstr ""
+
+msgctxt "#31560"
+msgid "Dolby Vision"
+msgstr ""
+
+msgctxt "#31561"
+msgid "TrueHD Atmos"
+msgstr ""
+
+msgctxt "#31562"
+msgid "DD+ Atmos"
+msgstr ""
+
+msgctxt "#31563"
+msgid "Video"
+msgstr ""
+
+msgctxt "#31564"
+msgid "Chapters"
+msgstr ""
+
+msgctxt "#31565"
+msgid "Info"
+msgstr ""
+
+msgctxt "#31566"
+msgid "Stats"
+msgstr ""
+
+msgctxt "#31567"
+msgid "Sleeping after this"
+msgstr ""
+
+msgctxt "#31568"
+msgid "Sleep after this"
+msgstr ""
+
+msgctxt "#31569"
+msgid "1 RESULT"
+msgstr ""
+
+msgctxt "#31575"
+msgid "Colors, backdrop and the look of the settings screens."
+msgstr ""
+
+msgctxt "#31576"
+msgid "Show a dimmed copy of the last fanart you looked at behind the settings screens."
+msgstr ""
+
+msgctxt "#31577"
+msgid "Background of the A-Z / scroll bar strip in the library views: dark (default) or white like Aeon 2."
+msgstr ""
+
+msgctxt "#31578"
+msgid "Aeon style: neutral (flat dark), the faint fanart, or a color that follows the artwork and fades between titles. Override it per home menu item (Edit spotlight)."
+msgstr ""
+
+msgctxt "#31579"
+msgid "Aeon: flat dark panels and a white highlight bar (like the Aeon 2 list). Aeon Glass: translucent panels and a soft highlight. Applies to every library view."
+msgstr ""
+
+msgctxt "#31580"
+msgid "Where the music that is playing shows on Home: Slot (lower left, default), Corner (top left), Line (above the menu) or Bar (bottom)."
+msgstr ""
+
+msgctxt "#31581"
+msgid "How visible the fanart backdrop is."
+msgstr ""
+
+msgctxt "#31582"
+msgid "Tags, plot text and logos in the movie and episode views."
+msgstr ""
+
+msgctxt "#31583"
+msgid "Resolution and video codec in the tag line under a film or episode."
+msgstr ""
+
+msgctxt "#31584"
+msgid "Shows HDR10, HLG or Dolby Vision in the tag line when the file has it."
+msgstr ""
+
+msgctxt "#31585"
+msgid "Audio codec and channel count in the tag line."
+msgstr ""
+
+msgctxt "#31586"
+msgid "What the text under a film shows: the full plot, or the tagline when the film has one."
+msgstr ""
+
+msgctxt "#31587"
+msgid "Long plots scroll by themselves after a few seconds."
+msgstr ""
+
+msgctxt "#31588"
+msgid "The studio logo beside seasons and episodes (needs the studio logos resource add-on)."
+msgstr ""
+
+msgctxt "#31589"
+msgid "Which rating sources show, and whether the score is colored."
+msgstr ""
+
+msgctxt "#31590"
+msgid "Green from 7, amber from 5, red below."
+msgstr ""
+
+msgctxt "#31591"
+msgid "Shows the IMDb score when the library has one. Several sources can be on at once."
+msgstr ""
+
+msgctxt "#31592"
+msgid "Shows the TMDb score when the library has one."
+msgstr ""
+
+msgctxt "#31593"
+msgid "Shows the Tomatometer when your scraper or TMDb Helper provides it."
+msgstr ""
+
+msgctxt "#31594"
+msgid "Shows the Trakt score when it is in the library."
+msgstr ""
+
+msgctxt "#31595"
+msgid "Seek bar, pause behaviour and the Back button."
+msgstr ""
+
+msgctxt "#31596"
+msgid "What the right-hand time of the seek bar shows: the total length, the time left, or when it ends."
+msgstr ""
+
+msgctxt "#31597"
+msgid "The player controls open by themselves when you pause."
+msgstr ""
+
+msgctxt "#31598"
+msgid "How long after pausing the controls open."
+msgstr ""
+
+msgctxt "#31599"
+msgid "Back goes up one level, or straight to the home screen."
+msgstr ""
+
+msgctxt "#31600"
+msgid "Extra fanart and the artist slideshow."
+msgstr ""
+
+msgctxt "#31601"
+msgid "Home and the library cycle through a film or show's extra fanart. Needs extra fanart in the library (fanart1, fanart2 ...)."
+msgstr ""
+
+msgctxt "#31602"
+msgid "How long each fanart image stays."
+msgstr ""
+
+msgctxt "#31603"
+msgid "Now playing shows the Artist Slideshow add-on pictures of the artist (needs script.artistslideshow)."
+msgstr ""
+
+msgctxt "#31604"
+msgid "What the full-screen widget pages (Up on a home item) show."
+msgstr ""
+
+msgctxt "#31605"
+msgid "Resolution, codec, HDR and audio tags on the full-screen widget pages (the choices under Details apply)."
+msgstr ""
+
+msgctxt "#31606"
+msgid "The rating line, with the sources you chose under Ratings, on the full-screen widget pages."
+msgstr ""
+
+msgctxt "#31607"
+msgid "The studio logo, or the network logo for episodes, on the full-screen widget pages (needs the studio logos add-on)."
+msgstr ""
+
+msgctxt "#31608"
+msgid "Watched markers on posters, the trailer button and logos instead of titles."
+msgstr ""
+
+msgctxt "#31609"
+msgid "How the playback controls behave."
+msgstr ""
+
+msgctxt "#31610"
+msgid "Fonts for each part of the skin, calmer animations, and a way back to the default settings."
+msgstr ""
+
+msgctxt "#31611"
+msgid "Unwatched: a small dot. Watched: a check disc. Shows add the number of unwatched episodes."
+msgstr ""
+
+msgctxt "#31612"
+msgid "Shows a Trailer button next to Play when a film has a trailer link (played through the YouTube add-on)."
+msgstr ""
+
+msgctxt "#31613"
+msgid "How long the playback controls stay up after your last button press. They stay while paused and while a menu is open."
+msgstr ""
+
+msgctxt "#31614"
+msgid "Where the subtitle and audio offset strip appears while you sync. Top keeps bottom subtitles in view."
+msgstr ""
+
+msgctxt "#31615"
+msgid "Replaces zooms, slides and the rain with short fades. Focus changes stay instant."
+msgstr ""
+
+msgctxt "#31616"
+msgid "Puts every skin setting back to its default and reloads the skin. Press OK twice to confirm."
+msgstr ""
+
+msgctxt "#31617"
+msgid "Aeon Fuse options. Kodi's settings live under Settings; switch skins in Settings > Interface > Skin."
+msgstr ""
+
+msgctxt "#31618"
+msgid "Resume"
+msgstr ""
+
+msgctxt "#31619"
+msgid "From start"
+msgstr ""
+
+msgctxt "#31620"
+msgid "Browse"
+msgstr ""
+
+msgctxt "#31621"
+msgid "Trailer"
+msgstr ""
+
+msgctxt "#31622"
+msgid "Collection"
+msgstr ""
+
+msgctxt "#31623"
+msgid "More by the director"
+msgstr ""
+
+msgctxt "#31624"
+msgid "Versions"
+msgstr ""
+
+msgctxt "#31625"
+msgid "Extras"
+msgstr ""
+
+msgctxt "#31626"
+msgid "Choose art"
+msgstr ""
+
+msgctxt "#31627"
+msgid "Choose fanart"
+msgstr ""
+
+msgctxt "#31628"
+msgid "Films in this collection"
+msgstr ""
+
+msgctxt "#31629"
+msgid "OK reads the whole story"
+msgstr ""
+
+msgctxt "#31630"
+msgid "Up or Back returns to the buttons"
+msgstr ""
+
+msgctxt "#31631"
+msgid "DD"
+msgstr ""
+
+msgctxt "#31632"
+msgid "No story written for this one yet."
+msgstr ""
+
+msgctxt "#31633"
+msgid "Shows in progress"
+msgstr ""
+
+msgctxt "#31635"
+msgid "A collection: OK opens its films."
+msgstr ""
+
+msgctxt "#31636"
+msgid "Nothing left: a good time for something new."
+msgstr ""
+
+msgctxt "#31637"
+msgid "Ending at"
+msgstr ""
+
+msgctxt "#31638"
+msgid "PRESETS"
+msgstr ""
+
+msgctxt "#31639"
+msgid "LYRICS"
+msgstr ""
+
+msgctxt "#31640"
+msgid "No guide data. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr ""
+
+msgctxt "#31641"
+msgid "Feels like"
+msgstr ""
+
+msgctxt "#31642"
+msgid "Humidity"
+msgstr ""
+
+msgctxt "#31643"
+msgid "Wind"
+msgstr ""
+
+msgctxt "#31644"
+msgid "Precipitation"
+msgstr ""
+
+msgctxt "#31645"
+msgid "UV index"
+msgstr ""
+
+msgctxt "#31646"
+msgid "Sunrise"
+msgstr ""
+
+msgctxt "#31647"
+msgid "Sunset"
+msgstr ""
+
+msgctxt "#31648"
+msgid "Next location"
+msgstr ""
+
+msgctxt "#31649"
+msgid "Skin"
+msgstr ""
+
+msgctxt "#31650"
+msgid "Address"
+msgstr ""
+
+msgctxt "#31651"
+msgid "Screen"
+msgstr ""
+
+msgctxt "#31652"
+msgid "Aeon Fuse options: look, details, ratings, behaviour, backgrounds and the home menu (order, widgets, submenus)."
+msgstr ""
+
+msgctxt "#31653"
+msgid "Video and music playback, refresh-rate matching, subtitle languages and look, discs."
+msgstr ""
+
+msgctxt "#31654"
+msgid "Library behaviour, scrapers, file lists, artwork and what OK does on an item."
+msgstr ""
+
+msgctxt "#31655"
+msgid "Skin, colors, fonts, region and language, screensaver. Switch to another skin here: Skin > Skin."
+msgstr ""
+
+msgctxt "#31656"
+msgid "Browse, update, configure or install add-ons."
+msgstr ""
+
+msgctxt "#31657"
+msgid "Web server and JSON-RPC control, UPnP, AirPlay, Zeroconf, SMB client."
+msgstr ""
+
+msgctxt "#31658"
+msgid "Display, audio output and passthrough, input, power saving, logging."
+msgstr ""
+
+msgctxt "#31659"
+msgid "Copy, move and delete files; add network sources."
+msgstr ""
+
+msgctxt "#31660"
+msgid "Kodi version, video renderer, storage, network and hardware details."
+msgstr ""
+
+msgctxt "#31661"
+msgid "What Kodi has done recently: scans, add-on updates, errors."
+msgstr ""
+
+msgctxt "#31662"
+msgid "Profiles and the login screen."
+msgstr ""
+
+msgctxt "#31663"
+msgid "Live TV and PVR."
+msgstr ""
+
+msgctxt "#31664"
+msgid "Games and controllers."
+msgstr ""
+
+msgctxt "#31665"
+msgid "Dark"
+msgstr ""
+
+msgctxt "#31666"
+msgid "White"
+msgstr ""
+
+msgctxt "#31667"
+msgid "Menu"
+msgstr ""
+
+msgctxt "#31668"
+msgid "Position"
+msgstr ""
+
+msgctxt "#31669"
+msgid "Category"
+msgstr ""
+
+msgctxt "#31670"
+msgid "Hold time"
+msgstr ""
+
+msgctxt "#31671"
+msgid "Pick an item, then use the buttons on the right. Add item puts a new one at the end."
+msgstr ""
+
+msgctxt "#31672"
+msgid "Light"
+msgstr ""
+
+msgctxt "#31673"
+msgid "Strong"
+msgstr ""
+
+msgctxt "#31674"
+msgid "Slot"
+msgstr ""
+
+msgctxt "#31675"
+msgid "Corner"
+msgstr ""
+
+msgctxt "#31676"
+msgid "Line"
+msgstr ""
+
+msgctxt "#31677"
+msgid "Bar"
+msgstr ""
+
+msgctxt "#31678"
+msgid "Aeon"
+msgstr ""
+
+msgctxt "#31679"
+msgid "Aeon Glass"
+msgstr ""
+
+msgctxt "#31680"
+msgid "Color"
+msgstr ""
+
+msgctxt "#31681"
+msgid "PREVIEW"
+msgstr ""
+
+msgctxt "#31682"
+msgid "LIBRARY LISTS"
+msgstr ""
+
+msgctxt "#31683"
+msgid "Focused row"
+msgstr ""
+
+msgctxt "#31684"
+msgid "Other row"
+msgstr ""
+
+msgctxt "#31685"
+msgid "MUSIC PLAYING"
+msgstr ""
+
+msgctxt "#31686"
+msgid "SAMPLE"
+msgstr ""
+
+msgctxt "#31687"
+msgid "BACKDROP"
+msgstr ""
+
+msgctxt "#31688"
+msgid "SCREENSAVER"
+msgstr ""
+
+msgctxt "#31689"
+msgid "TITLE"
+msgstr ""
+
+msgctxt "#31690"
+msgid "Plot"
+msgstr ""
+
+msgctxt "#31691"
+msgid "Tagline"
+msgstr ""
+
+msgctxt "#31692"
+msgid "TAG LINE"
+msgstr ""
+
+msgctxt "#31693"
+msgid "UNDER THE TITLE"
+msgstr ""
+
+msgctxt "#31694"
+msgid "PLOT TEXT"
+msgstr ""
+
+msgctxt "#31695"
+msgid "Long plots scroll slowly by themselves, so you can read them without a button press."
+msgstr ""
+
+msgctxt "#31696"
+msgid "The studio logo shows beside a season or episode when the studio logos add-on is installed."
+msgstr ""
+
+msgctxt "#31697"
+msgid "THEME SONG"
+msgstr ""
+
+msgctxt "#31699"
+msgid "Plays while a movie or show is selected, if its folder has a theme file."
+msgstr ""
+
+msgctxt "#31700"
+msgid "Total"
+msgstr ""
+
+msgctxt "#31701"
+msgid "Left"
+msgstr ""
+
+msgctxt "#31702"
+msgid "Ends at"
+msgstr ""
+
+msgctxt "#31703"
+msgid "SEEK BAR"
+msgstr ""
+
+msgctxt "#31704"
+msgid "ON PAUSE"
+msgstr ""
+
+msgctxt "#31705"
+msgid "BACK BUTTON"
+msgstr ""
+
+msgctxt "#31706"
+msgid "Pressing Back in a library list goes up one level, or straight to the home screen if you choose Home."
+msgstr ""
+
+msgctxt "#31707"
+msgid "PLAYER CONTROLS"
+msgstr ""
+
+msgctxt "#31708"
+msgid "Needs disc art for the album or movie."
+msgstr ""
+
+msgctxt "#31709"
+msgid "FANART"
+msgstr ""
+
+msgctxt "#31710"
+msgid "NOW PLAYING"
+msgstr ""
+
+msgctxt "#31711"
+msgid "Pictures of the artist from the Artist Slideshow add-on fade in behind the album cover."
+msgstr ""
+
+msgctxt "#31712"
+msgid "Slide"
+msgstr ""
+
+msgctxt "#31713"
+msgid "Fade"
+msgstr ""
+
+msgctxt "#31714"
+msgid "Cut"
+msgstr ""
+
+msgctxt "#31715"
+msgid "MEDIA INFO"
+msgstr ""
+
+msgctxt "#31716"
+msgid "STUDIO / NETWORK"
+msgstr ""
+
+msgctxt "#31717"
+msgid "The logo of the studio, or of the network for episodes, under the date ring."
+msgstr ""
+
+msgctxt "#31718"
+msgid "SPOTLIGHT"
+msgstr ""
+
+msgctxt "#31719"
+msgid "Selected item:"
+msgstr ""
+
+msgctxt "#31720"
+msgid "Set path / content"
+msgstr ""
+
+msgctxt "#31721"
+msgid "Edit widgets"
+msgstr ""
+
+msgctxt "#31722"
+msgid "Edit submenu"
+msgstr ""
+
+msgctxt "#31723"
+msgid "Edit spotlight"
+msgstr ""
+
+msgctxt "#31724"
+msgid "Restore default order"
+msgstr ""
+
+msgctxt "#31725"
+msgid "Theme & style"
+msgstr ""
+
+msgctxt "#31726"
+msgid "Look"
+msgstr ""
+
+msgctxt "#31727"
+msgid "Player"
+msgstr ""
+
+msgctxt "#31728"
+msgid "Music player"
+msgstr ""
+
+msgctxt "#31729"
+msgid "Backgrounds"
+msgstr ""
+
+msgctxt "#31730"
+msgid "Widget & Spotlight screens"
+msgstr ""
+
+msgctxt "#31731"
+msgid "System"
+msgstr ""
+
+msgctxt "#31732"
+msgid "Home menu"
+msgstr ""
+
+msgctxt "#31733"
+msgid "Auto"
+msgstr ""
+
+msgctxt "#31734"
+msgid "Morning"
+msgstr ""
+
+msgctxt "#31735"
+msgid "Afternoon"
+msgstr ""
+
+msgctxt "#31736"
+msgid "Evening"
+msgstr ""
+
+msgctxt "#31737"
+msgid "Night"
+msgstr ""
+
+msgctxt "#31738"
+msgid "Bedtime"
+msgstr ""
+
+msgctxt "#31739"
+msgid "Countdown and fits-before rows"
+msgstr ""
+
+msgctxt "#31740"
+msgid "Weather row and rain"
+msgstr ""
+
+msgctxt "#31741"
+msgid "Borrowed color"
+msgstr ""
+
+msgctxt "#31742"
+msgid "The focused film tints the light"
+msgstr ""
+
+msgctxt "#31743"
+msgid "Dots and checks on posters"
+msgstr ""
+
+msgctxt "#31744"
+msgid "Unwatched"
+msgstr ""
+
+msgctxt "#31745"
+msgid "Only when a film has a trailer"
+msgstr ""
+
+msgctxt "#31746"
+msgid "Logos instead of titles"
+msgstr ""
+
+msgctxt "#31747"
+msgid "Clearlogos in the OSD, screensaver and Now playing"
+msgstr ""
+
+msgctxt "#31748"
+msgid "Library side strip"
+msgstr ""
+
+msgctxt "#31749"
+msgid "OSD auto-hide"
+msgstr ""
+
+msgctxt "#31750"
+msgid "Controls close by themselves"
+msgstr ""
+
+msgctxt "#31751"
+msgid "Subtitle offset strip"
+msgstr ""
+
+msgctxt "#31752"
+msgid "Subtitle / audio sync strip"
+msgstr ""
+
+msgctxt "#31753"
+msgid "Top"
+msgstr ""
+
+msgctxt "#31754"
+msgid "Bottom"
+msgstr ""
+
+msgctxt "#31755"
+msgid "Fades instead of zooms and slides"
+msgstr ""
+
+msgctxt "#31756"
+msgid "Back to the defaults"
+msgstr ""
+
+msgctxt "#31757"
+msgid "Needs a PVR add-on"
+msgstr ""
+
+msgctxt "#31758"
+msgid "Power and library actions (Home sub-menu)"
+msgstr ""
+
+msgctxt "#31759"
+msgid "Spotlight: menu item 1"
+msgstr ""
+
+msgctxt "#31760"
+msgid "Featured slider for this item (needs a library or add-on folder)"
+msgstr ""
+
+msgctxt "#31761"
+msgid "Spotlight: menu item 2"
+msgstr ""
+
+msgctxt "#31762"
+msgid "Spotlight: menu item 3"
+msgstr ""
+
+msgctxt "#31763"
+msgid "Fanart Menu Backdrop"
+msgstr ""
+
+msgctxt "#31764"
+msgid "Menu Backdrop Strength"
+msgstr ""
+
+msgctxt "#31765"
+msgid "Now playing on Home"
+msgstr ""
+
+msgctxt "#31766"
+msgid "Theme"
+msgstr ""
+
+msgctxt "#31767"
+msgid "Library background"
+msgstr ""
+
+msgctxt "#31768"
+msgid "Screensaver background"
+msgstr ""
+
+msgctxt "#31769"
+msgid "Resolution and codec"
+msgstr ""
+
+msgctxt "#31770"
+msgid "HDR tag"
+msgstr ""
+
+msgctxt "#31771"
+msgid "Audio codec and channels"
+msgstr ""
+
+msgctxt "#31772"
+msgid "Plotline"
+msgstr ""
+
+msgctxt "#31773"
+msgid "Autoscroll plot text"
+msgstr ""
+
+msgctxt "#31774"
+msgid "Studio logo"
+msgstr ""
+
+msgctxt "#31775"
+msgid "Theme songs"
+msgstr ""
+
+msgctxt "#31776"
+msgid "Color the rating"
+msgstr ""
+
+msgctxt "#31777"
+msgid "IMDb rating"
+msgstr ""
+
+msgctxt "#31778"
+msgid "TMDb rating"
+msgstr ""
+
+msgctxt "#31779"
+msgid "Rotten Tomatoes"
+msgstr ""
+
+msgctxt "#31780"
+msgid "Trakt rating"
+msgstr ""
+
+msgctxt "#31781"
+msgid "Seek bar time"
+msgstr ""
+
+msgctxt "#31782"
+msgid "Controls on pause"
+msgstr ""
+
+msgctxt "#31783"
+msgid "Delay before they open"
+msgstr ""
+
+msgctxt "#31784"
+msgid "Back button in the library"
+msgstr ""
+
+msgctxt "#31785"
+msgid "Show poster on OSD controls"
+msgstr ""
+
+msgctxt "#31786"
+msgid "Spinning disc art"
+msgstr ""
+
+msgctxt "#31787"
+msgid "Cycle extra fanart"
+msgstr ""
+
+msgctxt "#31788"
+msgid "Seconds between images"
+msgstr ""
+
+msgctxt "#31789"
+msgid "Artist slideshow"
+msgstr ""
+
+msgctxt "#31790"
+msgid "Studio / network"
+msgstr ""
+
+msgctxt "#31791"
+msgid "Home spotlight: background"
+msgstr ""
+
+msgctxt "#31792"
+msgid "Home spotlight: transition"
+msgstr ""
+
+msgctxt "#31793"
+msgid "Rules"
+msgstr ""
+
+msgctxt "#31800"
+msgid "Settings strip"
+msgstr ""
+
+msgctxt "#31801"
+msgid "Overlay"
+msgstr ""
+
+msgctxt "#31802"
+msgid "Permanent"
+msgstr ""
+
+msgctxt "#31803"
+msgid "Box colors from artwork"
+msgstr ""
+
+msgctxt "#31804"
+msgid "Show clock on OSD"
+msgstr ""
+
+msgctxt "#31805"
+msgid "Show weather on OSD"
+msgstr ""
+
+msgctxt "#31806"
+msgid "Lyrics style"
+msgstr ""
+
+msgctxt "#31807"
+msgid "Lines"
+msgstr ""
+
+msgctxt "#31808"
+msgid "Words"
+msgstr ""
+
+msgctxt "#31280"
+msgid "VERSION"
+msgstr ""
+
+msgctxt "#31281"
+msgid "SYSTEM"
+msgstr ""
+
+msgctxt "#31282"
+msgid "HARDWARE"
+msgstr ""
+
+msgctxt "#31283"
+msgid "LIBRARY"
+msgstr ""
+
+msgctxt "#31574"
+msgid "Build"
+msgstr ""
+
+msgctxt "#31634"
+msgid "Name"
+msgstr ""
+
+msgctxt "#31698"
+msgid "Profile"
+msgstr ""
+
+msgctxt "#31794"
+msgid "Uptime"
+msgstr ""
+
+msgctxt "#31795"
+msgid "Total uptime"
+msgstr ""
+
+msgctxt "#31796"
+msgid "IP address"
+msgstr ""
+
+msgctxt "#31797"
+msgid "MAC address"
+msgstr ""
+
+msgctxt "#31798"
+msgid "Internet"
+msgstr ""
+
+msgctxt "#31799"
+msgid "CPU usage"
+msgstr ""
+
+msgctxt "#31809"
+msgid "Memory"
+msgstr ""
+
+msgctxt "#31810"
+msgid "Used"
+msgstr ""
+
+msgctxt "#31811"
+msgid "CPU temperature"
+msgstr ""
+
+msgctxt "#31812"
+msgid "GPU temperature"
+msgstr ""
+
+msgctxt "#31813"
+msgid "Movies"
+msgstr ""
+
+msgctxt "#31814"
+msgid "Lyrics take focus"
+msgstr ""
+
+msgctxt "#31815"
+msgid "Artist list"
+msgstr ""
+
+msgctxt "#31816"
+msgid "Artist wall (covers)"
+msgstr ""
+
+msgctxt "#31817"
+msgid "Album wall (fanart)"
+msgstr ""
+
+msgctxt "#31824"
+msgid "LIBRARY VIEW"
+msgstr ""
+
+msgctxt "#31825"
+msgid "Overlay: the strip slides in with Left or the Menu key. Permanent: it is always there. View settings can set this per view."
+msgstr ""
+
+msgctxt "#31826"
+msgid "BOXES"
+msgstr ""
+
+msgctxt "#31827"
+msgid "On: the clock and count boxes take the color of the poster or cover in focus (needs the KarmaMole helper)."
+msgstr ""
+
+msgctxt "#31828"
+msgid "The controls close by themselves after this many seconds without a key press."
+msgstr ""
+
+msgctxt "#31829"
+msgid "SYNC STRIP"
+msgstr ""
+
+msgctxt "#31830"
+msgid "Where the subtitle / audio offset strip sits while you adjust it."
+msgstr ""
+
+msgctxt "#31831"
+msgid "Clock box at the top right of the player controls."
+msgstr ""
+
+msgctxt "#31832"
+msgid "Weather box under the clock (needs a weather add-on)."
+msgstr ""
+
+msgctxt "#31833"
+msgid "BIG"
+msgstr ""
+
+msgctxt "#31834"
+msgid "COLORED"
+msgstr ""
+
+msgctxt "#31835"
+msgid "WORDS"
+msgstr ""
+
+msgctxt "#31836"
+msgid "Lines: the current line between its neighbours. Words: the animated lyrics of Estuary MOD V2 (needs that skin installed for its fonts)."
+msgstr ""
+
+msgctxt "#31837"
+msgid "Off: OK opens the music controls. On: Up / Down pick a line, OK jumps to it; Back lets go of the lines and the lyrics keep running."
+msgstr ""
+
+msgctxt "#31818"
+msgid "Words style placement"
+msgstr ""
+
+msgctxt "#31819"
+msgid "Full screen"
+msgstr ""
+
+msgctxt "#31820"
+msgid "On the cover"
+msgstr ""
+
+msgctxt "#31821"
+msgid "Home vignette"
+msgstr ""
+
+msgctxt "#31822"
+msgid "Fonts"
+msgstr ""
+
+msgctxt "#31823"
+msgid "Own family for Home, library, headings, settings, player"
+msgstr ""
+
+msgctxt "#31838"
+msgid "Fonts per section"
+msgstr ""
+
+msgctxt "#31839"
+msgid "Follow the font set"
+msgstr ""
+
+msgctxt "#31840"
+msgid "Headings"
+msgstr ""
+
+msgctxt "#31841"
+msgid "Settings pages"
+msgstr ""
+
+msgctxt "#31842"
+msgid "Player"
+msgstr ""
+
+msgctxt "#31843"
+msgid "Font for: %s"
+msgstr ""
+
+msgctxt "#31844"
+msgid "not installed"
+msgstr ""
+
+msgctxt "#31845"
+msgid "Plots, biographies and hints look like this. The quick brown fox jumps over the lazy dog. 0123456789"
+msgstr ""
+
+msgctxt "#31846"
+msgid "Preview"
+msgstr ""
+
+msgctxt "#31847"
+msgid "Categories"
+msgstr ""
+
+msgctxt "#31848"
+msgid "Show weather on screensaver"
+msgstr ""
+
+msgctxt "#31849"
+msgid "Temperature and conditions in the top right corner"
+msgstr ""
+
+msgctxt "#31850"
+msgid "Videos · Music · Discs · Pictures · Language · Subtitles"
+msgstr ""
+
+msgctxt "#31851"
+msgid "Library · General · Videos · Music · Pictures"
+msgstr ""
+
+msgctxt "#31852"
+msgid "Skin · Regional · Screensaver · Master lock · Startup"
+msgstr ""
+
+msgctxt "#31853"
+msgid "General · Control · UPnP / DLNA · AirPlay · Weather"
+msgstr ""
+
+msgctxt "#31854"
+msgid "Display · Audio · Input · Internet access · Power saving · Add-ons · Logging"
+msgstr ""
+
+msgctxt "#31855"
+msgid "General · Channels · Guide · Playback · Recording · Reminders"
+msgstr ""
+
+msgctxt "#31856"
+msgid "Home menu position"
+msgstr ""
+
+msgctxt "#31857"
+msgid "Middle"
+msgstr ""
+
+msgctxt "#31858"
+msgid "Low"
+msgstr ""
+
+msgctxt "#31859"
+msgid "General · Achievements"
+msgstr ""
+
+msgctxt "#31860"
+msgid "Show clock on screensaver"
+msgstr ""
+
+msgctxt "#31861"
+msgid "Poster / thumbnail"
+msgstr ""
+
+msgctxt "#31862"
+msgid "Season and episode counts"
+msgstr ""
+
+msgctxt "#31863"
+msgid "Watched status"
+msgstr ""
+
+msgctxt "#31864"
+msgid "The Long Way Home"
+msgstr ""
+
+msgctxt "#31865"
+msgid "2019 | DRAMA / ADVENTURE"
+msgstr ""
+
+msgctxt "#31866"
+msgid "Northern Lights"
+msgstr ""
+
+msgctxt "#31867"
+msgid "2023 | DOCUMENTARY"
+msgstr ""
+
+msgctxt "#31868"
+msgid "A Quiet Harbour"
+msgstr ""
+
+msgctxt "#31869"
+msgid "1998 | CRIME / THRILLER"
+msgstr ""
+
+msgctxt "#31188"
+msgid "Item"
+msgstr ""
+
+msgctxt "#31192"
+msgid "Screenshots"
+msgstr ""
+
+msgctxt "#31193"
+msgid "Picture details"
+msgstr ""
+
+msgctxt "#31284"
+msgid "EPG"
+msgstr ""
+
+msgctxt "#31285"
+msgid "Tools"
+msgstr ""
+
+msgctxt "#31286"
+msgid "Who is watching?"
+msgstr ""
+
+msgctxt "#31287"
+msgid "Playlist editor"
+msgstr ""
+
+msgctxt "#31288"
+msgid "Flix"
+msgstr ""
+
+msgctxt "#31289"
+msgid "Fanart with one row"
+msgstr ""
+
+msgctxt "#31290"
+msgid "Combined"
+msgstr ""
+
+msgctxt "#31291"
+msgid "A row over its contents"
+msgstr ""
+
+msgctxt "#31292"
+msgid "Circles"
+msgstr ""
+
+msgctxt "#31293"
+msgid "Round portraits"
+msgstr ""
+
+msgctxt "#31294"
+msgid "Planner"
+msgstr ""
+
+msgctxt "#31570"
+msgid "Episodes by date"
+msgstr ""
+
+msgctxt "#31571"
+msgid "Recommended"
+msgstr ""
+
+msgctxt "#31572"
+msgid "Similar titles"
+msgstr ""
+
+msgctxt "#31573"
+msgid "Information"
+msgstr ""
+
+msgctxt "#31870"
+msgid "Plot hidden until you have watched it."
+msgstr ""
+
+msgctxt "#31871"
+msgid "More options"
+msgstr ""
+
+msgctxt "#31872"
+msgid "Spoilers, pause and language flags"
+msgstr ""
+
+msgctxt "#31873"
+msgid "Hide spoilers of unwatched episodes"
+msgstr ""
+
+msgctxt "#31874"
+msgid "Seek bar while paused"
+msgstr ""
+
+msgctxt "#31875"
+msgid "Show language flags on OSD"
+msgstr ""
+
+msgctxt "#31876"
+msgid "Always"
+msgstr ""
+
+msgctxt "#31877"
+msgid "5 seconds"
+msgstr ""
+
+msgctxt "#31878"
+msgid "Never"
+msgstr ""
+
+msgctxt "#31879"
+msgid "Stacked row on Home"
+msgstr ""
+
+msgctxt "#31880"
+msgid "Kiosk mode (lock views)"
+msgstr ""
+
+msgctxt "#31881"
+msgid "Last login"
+msgstr ""
+
+msgctxt "#31882"
+msgid "Cinema mode: trailers before a film"
+msgstr ""
+
+msgctxt "#31883"
+msgid "1 trailer"
+msgstr ""
+
+msgctxt "#31884"
+msgid "2 trailers"
+msgstr ""
+
+msgctxt "#31885"
+msgid "3 trailers"
+msgstr ""
+
+msgctxt "#31886"
+msgid "Reviews"
+msgstr ""
+
+msgctxt "#31887"
+msgid "Top tracks"
+msgstr ""
+
+msgctxt "#31888"
+msgid "Similar artists"
+msgstr ""
+
+msgctxt "#31889"
+msgid "Not in your library"
+msgstr ""
+
+msgctxt "#31890"
+msgid "Artist page: look up on Deezer"
+msgstr ""
+
+msgctxt "#31891"
+msgid "Progress line on posters"
+msgstr ""
+
+msgctxt "#31892"
+msgid "Play trailers automatically"
+msgstr ""
+
+msgctxt "#31893"
+msgid "Nothing planned"
+msgstr ""
+
+msgctxt "#31894"
+msgid "View"
+msgstr ""
+
+msgctxt "#31895"
+msgid "Week starts"
+msgstr ""
+
+msgctxt "#31896"
+msgid "Show"
+msgstr ""
+
+msgctxt "#31897"
+msgid "Day"
+msgstr ""
+
+msgctxt "#31898"
+msgid "Week"
+msgstr ""
+
+msgctxt "#31899"
+msgid "Home spotlight"
+msgstr ""
+
+msgctxt "#31903"
+msgid "Days ahead"
+msgstr ""
+
+msgctxt "#31904"
+msgid "What is coming, shown one title at a time while the Planner is focused on Home. It starts with today."
+msgstr ""
+
+msgctxt "#31905"
+msgid "Disable"
+msgstr ""
+
+msgctxt "#31906"
+msgid "Enable"
+msgstr ""
+
+msgctxt "#31907"
+msgid "Empty"
+msgstr ""
+
+msgctxt "#31908"
+msgid "Choose type"
+msgstr ""
+
+msgctxt "#31909"
+msgid "Custom item"
+msgstr ""
+
+msgctxt "#31910"
+msgid "Empty position"
+msgstr ""
+
+msgctxt "#31911"
+msgid "Type of position"
+msgstr ""
+
+msgctxt "#31912"
+msgid "All ten custom items are in use. Free one first."
+msgstr ""
+
+msgctxt "#31913"
+msgid "Channel group"
+msgstr ""
+
+msgctxt "#31914"
+msgid "Watched last"
+msgstr ""
+
+msgctxt "#31915"
+msgid "None"
+msgstr ""
+
+msgctxt "#31916"
+msgid "No channel group"
+msgstr ""
+
+msgctxt "#31917"
+msgid "With Live TV focused on Home: Up reaches the channels watched last, Right there shows the channel group chosen here. OK plays a channel."
+msgstr ""
+
+msgctxt "#31918"
+msgid "UP: CHANNELS   |   OK: GUIDE"
+msgstr ""
+
+msgctxt "#31919"
+msgid "OK: WATCH   |   LEFT: WATCHED LAST"
+msgstr ""
+
+msgctxt "#31920"
+msgid "OK: WATCH   |   RIGHT: CHANNEL GROUP"
+msgstr ""
+
+msgctxt "#31921"
+msgid "OK: WATCH"
+msgstr ""
+
+msgctxt "#31922"
+msgid "LEFT / RIGHT: OTHER TITLES   |   DOWN: MENU"
+msgstr ""
+
+msgctxt "#31923"
+msgid "Coming up"
+msgstr ""
+
+msgctxt "#31924"
+msgid "Not in your library yet."
+msgstr ""
+
+msgctxt "#31925"
+msgid "On"
+msgstr ""
+
+msgctxt "#31926"
+msgid "Unwatched episodes show no thumbnail and no plot until you have seen them."
+msgstr ""
+
+msgctxt "#31927"
+msgid "Top tracks and similar artists on the artist page come from Deezer (needs internet). Off: only your library."
+msgstr ""
+
+msgctxt "#31928"
+msgid "When the seek bar shows while a film is paused: always, for 5 seconds, or never."
+msgstr ""
+
+msgctxt "#31929"
+msgid "Flags of the audio and subtitle languages on the player controls."
+msgstr ""
+
+msgctxt "#31930"
+msgid "Trailers of other films play before the film you start: none, 1, 2 or 3."
+msgstr ""
+
+msgctxt "#31931"
+msgid "A thin line under posters shows how much of a film, show or season you have watched."
+msgstr ""
+
+msgctxt "#31932"
+msgid "A strip of small posters under the plot when a set or a show is in focus in the rows on Home."
+msgstr ""
+
+msgctxt "#31933"
+msgid "Locks the library views: no view settings and no left-hand settings strip."
+msgstr ""
+
+msgctxt "#31934"
+msgid "The library background takes the palette only with the Neutral backdrop. The highlight, boxes and strips follow it with every backdrop.[CR][CR]Use the Neutral backdrop in the libraries?"
+msgstr ""
+
+msgctxt "#31935"
+msgid "Keep the backdrop"
+msgstr ""
+
+msgctxt "#31936"
+msgid "Use Neutral"
+msgstr ""
+
+msgctxt "#31937"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages. The library background takes it with the Neutral backdrop only."
+msgstr ""
+
+msgctxt "#31938"
+msgid "Words"
+msgstr ""
+
+msgctxt "#31939"
+msgid "Lines"
+msgstr ""
+
+msgctxt "#31958"
+msgid "Skippy: the skin's skip button"
+msgstr ""
+
+msgctxt "#31959"
+msgid "On: during a segment Skippy asks about (Ask), the player shows a Skip button in the skin's look; OK skips, Back hides it. Off: Skippy opens its own dialog. In Fused Glass, Up next at the end of an episode is the skin's too."
+msgstr ""
+
+msgctxt "#31960"
+msgid "Skippy: segment line in the player"
+msgstr ""
+
+msgctxt "#31961"
+msgid "Between the times on the player controls: the segment playing and the time left (Intro · 0:42 left), or the next segment and when it starts."
+msgstr ""
+
+msgctxt "#31962"
+msgid "Skippy: up next in the player"
+msgstr ""
+
+msgctxt "#31963"
+msgid "Top right of the player controls: the next episode Skippy found, with its picture. Skippy's own next-episode prompt is not affected."
+msgstr ""
+
+msgctxt "#31964"
+msgid "Skip"
+msgstr ""
+
+msgctxt "#31965"
+msgid "left"
+msgstr ""
+
+msgctxt "#31966"
+msgid "at"
+msgstr ""
+
+msgctxt "#31967"
+msgid "Memory hand-back"
+msgstr ""
+
+msgctxt "#31968"
+msgid "Linux boxes (CoreELEC, LibreELEC): Kodi keeps memory it has finished with. The helper hands it back to the system after a pause in key presses, or when free RAM gets low. Not on Windows."
+msgstr ""
+
+msgctxt "#31969"
+msgid "Pause before hand-back"
+msgstr ""
+
+msgctxt "#31970"
+msgid "After a pause: seconds without a key press (2-30), not during a video. When free RAM is low: the least free memory the box keeps; within 256 MB of it the hand-back waits for a pause, below it it happens at once."
+msgstr ""
+
+msgctxt "#31971"
+msgid "Minimum free RAM"
+msgstr ""
+
+msgctxt "#31972"
+msgid "Adds Clean library to the context menu in the libraries and on Home: entries whose files are gone are removed (it asks first)."
+msgstr ""
+
+msgctxt "#31973"
+msgid "Network · Connections · Updates · Hardware · Services"
+msgstr ""
+
+msgctxt "#31974"
+msgid "The box"
+msgstr ""
+
+msgctxt "#31975"
+msgid "The box's own settings: network and Wi-Fi, updates, hardware, services such as SSH and Samba."
+msgstr ""
+
+msgctxt "#31976"
+msgid "Restart Kodi"
+msgstr ""
+
+msgctxt "#31977"
+msgid "Widget screens: media info"
+msgstr ""
+
+msgctxt "#31978"
+msgid "Widget screens: ratings"
+msgstr ""
+
+msgctxt "#31979"
+msgid "Widget screens: studio / network"
+msgstr ""
+
+msgctxt "#31996"
+msgid "The background of the spotlight at the top of Home. Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr ""
+
+msgctxt "#31997"
+msgid "How the spotlight at the top of Home moves on to the next title: fade, slide or cut."
+msgstr ""
+
+msgctxt "#31998"
+msgid "Widget screens: background"
+msgstr ""
+
+msgctxt "#31999"
+msgid "The background of the full-screen widget pages (Up on a title on Home). Fanart: the title's fanart. Neutral: dark. Color: a soft colour picture made from the artwork by the KarmaMole helper (the fanart shows until it is ready)."
+msgstr ""
+
+msgctxt "#32000"
+msgid "creator of the Aeon 2 concept"
+msgstr ""
+
+msgctxt "#32001"
+msgid "1 of 1 episode watched"
+msgstr ""
+
+msgctxt "#32002"
+msgid "on"
+msgstr ""
+
+msgctxt "#32003"
+msgid "9:00 PM"
+msgstr ""
+
+msgctxt "#32004"
+msgid "9:30 PM"
+msgstr ""
+
+msgctxt "#32005"
+msgid "10:00 PM"
+msgstr ""
+
+msgctxt "#32006"
+msgid "10:30 PM"
+msgstr ""
+
+msgctxt "#32007"
+msgid "11:00 PM"
+msgstr ""
+
+msgctxt "#32008"
+msgid "11:30 PM"
+msgstr ""
+
+msgctxt "#32009"
+msgid "12:00 AM"
+msgstr ""
+
+msgctxt "#32010"
+msgid "12:30 AM"
+msgstr ""
+
+msgctxt "#32011"
+msgid "1:00 AM"
+msgstr ""
+
+msgctxt "#32012"
+msgid "1:30 AM"
+msgstr ""
+
+msgctxt "#32013"
+msgid "2:00 AM"
+msgstr ""
+
+msgctxt "#32015"
+msgid "Repositories checked"
+msgstr ""
+
+msgctxt "#32016"
+msgid "Close Kodi"
+msgstr ""
+
+msgctxt "#32017"
+msgid "Back to the profile screen"
+msgstr ""
+
+msgctxt "#32018"
+msgid "Kodi only, the system keeps running"
+msgstr ""
+
+msgctxt "#32019"
+msgid "Restart the whole system"
+msgstr ""
+
+msgctxt "#32020"
+msgid "Restart into Android"
+msgstr ""
+
+msgctxt "#32021"
+msgid "Switch the system off"
+msgstr ""
+
+msgctxt "#32022"
+msgid "By"
+msgstr ""
+
+msgctxt "#32023"
+msgid "Running time"
+msgstr ""
+
+msgctxt "#32024"
+msgid "min"
+msgstr ""
+
+msgctxt "#32025"
+msgid "Widgets"
+msgstr ""
+
+msgctxt "#32026"
+msgid "hidden"
+msgstr ""
+
+msgctxt "#32027"
+msgid "Hold"
+msgstr ""
+
+msgctxt "#32028"
+msgid "Update the list"
+msgstr ""
+
+msgctxt "#32029"
+msgid "Update now"
+msgstr ""
+
+msgctxt "#32030"
+msgid "ARTISTS"
+msgstr ""
+
+msgctxt "#32031"
+msgid "ALBUMS"
+msgstr ""
+
+msgctxt "#32032"
+msgid "SONGS"
+msgstr ""
+
+msgctxt "#32033"
+msgid "Widget screens"
+msgstr ""
+
+msgctxt "#32034"
+msgid "Hide plot and thumb"
+msgstr ""
+
+msgctxt "#32035"
+msgid "Start"
+msgstr ""
+
+msgctxt "#32036"
+msgid "A handful of short steps"
+msgstr ""
+
+msgctxt "#32037"
+msgid "Backdrop, look, Home menu, libraries and motion."
+msgstr ""
+
+msgctxt "#32038"
+msgid "Skip setup"
+msgstr ""
+
+msgctxt "#32039"
+msgid "Keep the defaults for now"
+msgstr ""
+
+msgctxt "#32040"
+msgid "Run the setup any time: Skin settings > Motion, memory, reset > Setup wizard."
+msgstr ""
+
+msgctxt "#32041"
+msgid "A calm backdrop in a palette of your choice"
+msgstr ""
+
+msgctxt "#32042"
+msgid "A dark, even background in the colours of the palette you pick next."
+msgstr ""
+
+msgctxt "#32043"
+msgid "The focused title's fanart, dimmed"
+msgstr ""
+
+msgctxt "#32044"
+msgid "The artwork of the focused title fills the background, dimmed so text stays readable."
+msgstr ""
+
+msgctxt "#32045"
+msgid "A tint taken from the artwork"
+msgstr ""
+
+msgctxt "#32046"
+msgid "A deep colour taken from the focused title's artwork."
+msgstr ""
+
+msgctxt "#32047"
+msgid "The palette shows after Kodi restarts at the end of the setup."
+msgstr ""
+
+msgctxt "#32048"
+msgid "Solid panels, palettes"
+msgstr ""
+
+msgctxt "#32049"
+msgid "The classic Aeon look: calm, solid surfaces and a white or coloured focus bar."
+msgstr ""
+
+msgctxt "#32050"
+msgid "Aeon with glass menus, no palettes"
+msgstr ""
+
+msgctxt "#32051"
+msgid "Panels of frosted glass over the fanart; the focus bar is a soft light."
+msgstr ""
+
+msgctxt "#32052"
+msgid "As the skin theme"
+msgstr ""
+
+msgctxt "#32053"
+msgid "Flat rows with rules"
+msgstr ""
+
+msgctxt "#32054"
+msgid "The menus of the Aeon or Aeon Glass theme you picked."
+msgstr ""
+
+msgctxt "#32055"
+msgid "Rounded cards, like this setup"
+msgstr ""
+
+msgctxt "#32056"
+msgid "Every row a soft card, the focused one solid; no rule lines."
+msgstr ""
+
+msgctxt "#32057"
+msgid "OK switches Movies on or off."
+msgstr ""
+
+msgctxt "#32058"
+msgid "OK switches TV shows on or off."
+msgstr ""
+
+msgctxt "#32059"
+msgid "OK switches Music on or off."
+msgstr ""
+
+msgctxt "#32060"
+msgid "OK switches Live TV on or off."
+msgstr ""
+
+msgctxt "#32061"
+msgid "OK switches Search on or off."
+msgstr ""
+
+msgctxt "#32062"
+msgid "OK switches Movie sets on or off."
+msgstr ""
+
+msgctxt "#32063"
+msgid "OK switches Favourites on or off."
+msgstr ""
+
+msgctxt "#32064"
+msgid "OK switches Pictures on or off."
+msgstr ""
+
+msgctxt "#32065"
+msgid "OK switches Add-ons on or off."
+msgstr ""
+
+msgctxt "#32066"
+msgid "OK switches Weather on or off."
+msgstr ""
+
+msgctxt "#32067"
+msgid "OK switches Planner on or off."
+msgstr ""
+
+msgctxt "#32068"
+msgid "OK switches Files on or off."
+msgstr ""
+
+msgctxt "#32069"
+msgid "OK switches Settings on or off."
+msgstr ""
+
+msgctxt "#32070"
+msgid "OK switches Power on or off."
+msgstr ""
+
+msgctxt "#32071"
+msgid "Continue"
+msgstr ""
+
+msgctxt "#32072"
+msgid "Next step"
+msgstr ""
+
+msgctxt "#32073"
+msgid "On to the Home menu position."
+msgstr ""
+
+msgctxt "#32074"
+msgid "The spotlight above, a row of posters below"
+msgstr ""
+
+msgctxt "#32075"
+msgid "The menu across the middle of the screen with a widget row underneath."
+msgstr ""
+
+msgctxt "#32076"
+msgid "A taller spotlight, the menu near the bottom"
+msgstr ""
+
+msgctxt "#32077"
+msgid "More room for the spotlight; the menu sits low on the screen."
+msgstr ""
+
+msgctxt "#32078"
+msgid "The artwork of the spotlight title"
+msgstr ""
+
+msgctxt "#32079"
+msgid "Fanart of the title in the spotlight, with a soft fade from the left."
+msgstr ""
+
+msgctxt "#32080"
+msgid "A colour taken from the artwork"
+msgstr ""
+
+msgctxt "#32081"
+msgid "A warm or cool tint drawn from the title's artwork."
+msgstr ""
+
+msgctxt "#32082"
+msgid "A quiet dark background"
+msgstr ""
+
+msgctxt "#32083"
+msgid "No artwork behind the spotlight text."
+msgstr ""
+
+msgctxt "#32084"
+msgid "One picture dissolves into the next"
+msgstr ""
+
+msgctxt "#32085"
+msgid "A soft cross-fade."
+msgstr ""
+
+msgctxt "#32086"
+msgid "The next one pushes in from the right"
+msgstr ""
+
+msgctxt "#32087"
+msgid "A sideways slide, like turning a page."
+msgstr ""
+
+msgctxt "#32088"
+msgid "Straight to the next"
+msgstr ""
+
+msgctxt "#32089"
+msgid "No animation: the next title appears at once."
+msgstr ""
+
+msgctxt "#32090"
+msgid "The colour of the artwork"
+msgstr ""
+
+msgctxt "#32091"
+msgid "The boxes take a deep colour from the focused title's artwork."
+msgstr ""
+
+msgctxt "#32092"
+msgid "The palette's box colour"
+msgstr ""
+
+msgctxt "#32093"
+msgid "Always the same calm colour of the palette."
+msgstr ""
+
+msgctxt "#32094"
+msgid "A window onto the fanart"
+msgstr ""
+
+msgctxt "#32095"
+msgid "Each box shows the part of the fanart behind it, darkened for the clock."
+msgstr ""
+
+msgctxt "#32096"
+msgid "As the backdrop"
+msgstr ""
+
+msgctxt "#32097"
+msgid "Follow the library backdrop"
+msgstr ""
+
+msgctxt "#32098"
+msgid "Neutral, fanart or colour, whatever the library backdrop is."
+msgstr ""
+
+msgctxt "#32099"
+msgid "Dots, checks and progress bars"
+msgstr ""
+
+msgctxt "#32100"
+msgid "Unwatched titles get a dot, watched ones a check, started ones a progress bar."
+msgstr ""
+
+msgctxt "#32101"
+msgid "Dots and progress bars"
+msgstr ""
+
+msgctxt "#32102"
+msgid "Only what is still to watch is marked."
+msgstr ""
+
+msgctxt "#32103"
+msgid "Checks on what you have seen"
+msgstr ""
+
+msgctxt "#32104"
+msgid "Only finished titles are marked."
+msgstr ""
+
+msgctxt "#32105"
+msgid "Clean posters"
+msgstr ""
+
+msgctxt "#32106"
+msgid "No markers at all."
+msgstr ""
+
+msgctxt "#32107"
+msgid "Logos"
+msgstr ""
+
+msgctxt "#32108"
+msgid "The artwork's clear logo"
+msgstr ""
+
+msgctxt "#32109"
+msgid "Clear logos from the artwork, text where a title has none."
+msgstr ""
+
+msgctxt "#32110"
+msgid "Plain text"
+msgstr ""
+
+msgctxt "#32111"
+msgid "Always the name in the skin's own font."
+msgstr ""
+
+msgctxt "#32112"
+msgid "FULL HD, 4K, aspect ratio"
+msgstr ""
+
+msgctxt "#32113"
+msgid "OK switches the resolution chips on or off."
+msgstr ""
+
+msgctxt "#32114"
+msgid "SDR, HDR10, Dolby Vision profile"
+msgstr ""
+
+msgctxt "#32115"
+msgid "OK switches the HDR chips on or off."
+msgstr ""
+
+msgctxt "#32116"
+msgid "Codec and channels"
+msgstr ""
+
+msgctxt "#32117"
+msgid "OK switches the audio chips on or off."
+msgstr ""
+
+msgctxt "#32118"
+msgid "On to the extra fanart."
+msgstr ""
+
+msgctxt "#32119"
+msgid "Take turns"
+msgstr ""
+
+msgctxt "#32120"
+msgid "Every extra fanart in a slow cycle"
+msgstr ""
+
+msgctxt "#32121"
+msgid "The background changes picture every few seconds (Skin settings > Backgrounds sets how often)."
+msgstr ""
+
+msgctxt "#32122"
+msgid "One picture"
+msgstr ""
+
+msgctxt "#32123"
+msgid "Only the main fanart"
+msgstr ""
+
+msgctxt "#32124"
+msgid "The background stays on the main fanart."
+msgstr ""
+
+msgctxt "#32125"
+msgid "Hide them"
+msgstr ""
+
+msgctxt "#32126"
+msgid "No thumbnail or plot until watched"
+msgstr ""
+
+msgctxt "#32127"
+msgid "Unwatched episodes show a blurred picture and no plot."
+msgstr ""
+
+msgctxt "#32128"
+msgid "Show them"
+msgstr ""
+
+msgctxt "#32129"
+msgid "Thumbnails and plots for all"
+msgstr ""
+
+msgctxt "#32130"
+msgid "Every episode shows its picture and plot."
+msgstr ""
+
+msgctxt "#32131"
+msgid "Full motion"
+msgstr ""
+
+msgctxt "#32132"
+msgid "Smooth slides and fades"
+msgstr ""
+
+msgctxt "#32133"
+msgid "Rows slide in one after another, dialogs glide open."
+msgstr ""
+
+msgctxt "#32134"
+msgid "Everything appears at once"
+msgstr ""
+
+msgctxt "#32135"
+msgid "No slides or zooms: calmer, and lighter on slow boxes."
+msgstr ""
+
+msgctxt "#32136"
+msgid "When free RAM is low"
+msgstr ""
+
+msgctxt "#32137"
+msgid "Recommended: below 1 GB free"
+msgstr ""
+
+msgctxt "#32138"
+msgid "Kodi hands memory back when the free RAM drops below the minimum (Skin settings can change it)."
+msgstr ""
+
+msgctxt "#32139"
+msgid "After a pause"
+msgstr ""
+
+msgctxt "#32140"
+msgid "A few seconds after the last key press"
+msgstr ""
+
+msgctxt "#32141"
+msgid "Kodi hands memory back whenever the remote has been quiet for a moment."
+msgstr ""
+
+msgctxt "#32142"
+msgid "Finish"
+msgstr ""
+
+msgctxt "#32143"
+msgid "Change something"
+msgstr ""
+
+msgctxt "#32144"
+msgid "Go back to the previous step."
+msgstr ""
+
+msgctxt "#32145"
+msgid "Huge thanks and credit go out to the following"
+msgstr ""
+
+msgctxt "#32146"
+msgid "The Kodi development team"
+msgstr ""
+
+msgctxt "#32147"
+msgid "OK  choose      BACK  previous step"
+msgstr ""
+
+msgctxt "#32148"
+msgid "version"
+msgstr ""
+
+msgctxt "#32149"
+msgid "by"
+msgstr ""
+
+msgctxt "#32150"
+msgid "now"
+msgstr ""
+
+msgctxt "#32151"
+msgid "night"
+msgstr ""
+
+msgctxt "#32152"
+msgid "evening"
+msgstr ""
+
+msgctxt "#32153"
+msgid "afternoon"
+msgstr ""
+
+msgctxt "#32154"
+msgid "morning"
+msgstr ""
+
+msgctxt "#32158"
+msgid "until midnight"
+msgstr ""
+
+msgctxt "#32159"
+msgid "tornado"
+msgstr ""
+
+msgctxt "#32160"
+msgid "tropical storm"
+msgstr ""
+
+msgctxt "#32161"
+msgid "hurricane"
+msgstr ""
+
+msgctxt "#32162"
+msgid "severe storms"
+msgstr ""
+
+msgctxt "#32163"
+msgid "thunderstorms"
+msgstr ""
+
+msgctxt "#32164"
+msgid "rain and snow"
+msgstr ""
+
+msgctxt "#32165"
+msgid "rain and sleet"
+msgstr ""
+
+msgctxt "#32166"
+msgid "snow and sleet"
+msgstr ""
+
+msgctxt "#32167"
+msgid "freezing drizzle"
+msgstr ""
+
+msgctxt "#32168"
+msgid "drizzle"
+msgstr ""
+
+msgctxt "#32169"
+msgid "freezing rain"
+msgstr ""
+
+msgctxt "#32170"
+msgid "showers"
+msgstr ""
+
+msgctxt "#32171"
+msgid "snow flurries"
+msgstr ""
+
+msgctxt "#32172"
+msgid "light snow"
+msgstr ""
+
+msgctxt "#32173"
+msgid "blowing snow"
+msgstr ""
+
+msgctxt "#32174"
+msgid "snow"
+msgstr ""
+
+msgctxt "#32175"
+msgid "hail"
+msgstr ""
+
+msgctxt "#32176"
+msgid "sleet"
+msgstr ""
+
+msgctxt "#32177"
+msgid "dust"
+msgstr ""
+
+msgctxt "#32178"
+msgid "fog"
+msgstr ""
+
+msgctxt "#32179"
+msgid "haze"
+msgstr ""
+
+msgctxt "#32180"
+msgid "smoke"
+msgstr ""
+
+msgctxt "#32181"
+msgid "blustery"
+msgstr ""
+
+msgctxt "#32182"
+msgid "windy"
+msgstr ""
+
+msgctxt "#32183"
+msgid "cold"
+msgstr ""
+
+msgctxt "#32184"
+msgid "cloudy"
+msgstr ""
+
+msgctxt "#32185"
+msgid "mostly cloudy"
+msgstr ""
+
+msgctxt "#32186"
+msgid "partly cloudy"
+msgstr ""
+
+msgctxt "#32187"
+msgid "clear"
+msgstr ""
+
+msgctxt "#32188"
+msgid "sunny"
+msgstr ""
+
+msgctxt "#32189"
+msgid "fair"
+msgstr ""
+
+msgctxt "#32190"
+msgid "rain and hail"
+msgstr ""
+
+msgctxt "#32191"
+msgid "hot"
+msgstr ""
+
+msgctxt "#32192"
+msgid "isolated storms"
+msgstr ""
+
+msgctxt "#32193"
+msgid "scattered storms"
+msgstr ""
+
+msgctxt "#32194"
+msgid "scattered showers"
+msgstr ""
+
+msgctxt "#32195"
+msgid "heavy snow"
+msgstr ""
+
+msgctxt "#32196"
+msgid "snow showers"
+msgstr ""
+
+msgctxt "#32197"
+msgid "thundershowers"
+msgstr ""
+
+msgctxt "#32198"
+msgid "Blustery"
+msgstr ""
+
+msgctxt "#32199"
+msgid "Hot"
+msgstr ""
+
+msgctxt "#32200"
+msgid "Fits before midnight"
+msgstr ""
+
+msgctxt "#32201"
+msgid "fits before midnight"
+msgstr ""
+
+msgctxt "#32202"
+msgid "under 100 minutes"
+msgstr ""
+
+msgctxt "#32203"
+msgid "something light"
+msgstr ""
+
+msgctxt "#32204"
+msgid "a long one"
+msgstr ""
+
+msgctxt "#32205"
+msgid "highly rated"
+msgstr ""
+
+msgctxt "#32206"
+msgid "right at midnight"
+msgstr ""
+
+msgctxt "#32207"
+msgid "past midnight"
+msgstr ""
+
+msgctxt "#32208"
+msgid "before midnight"
+msgstr ""
+
+msgctxt "#32209"
+msgid "kbps"
+msgstr ""
+
+msgctxt "#32210"
+msgid "ch"
+msgstr ""
+
+msgctxt "#32211"
+msgid "bit"
+msgstr ""
+
+msgctxt "#32212"
+msgid "kHz"
+msgstr ""
+
+msgctxt "#32213"
+msgid "Hz"
+msgstr ""
+
+msgctxt "#32214"
+msgid "TRACK"
+msgstr ""
+
+msgctxt "#32215"
+msgid "FROM THE ALBUM"
+msgstr ""
+
+msgctxt "#32216"
+msgid "Released in"
+msgstr ""
+
+msgctxt "#32217"
+msgid "Record label"
+msgstr ""
+
+msgctxt "#32218"
+msgid "Alphabetical"
+msgstr ""
+
+msgctxt "#32219"
+msgid "Reversed"
+msgstr ""
+
+msgctxt "#32220"
+msgid "MINS"
+msgstr ""
+
+msgctxt "#32221"
+msgid "RATED"
+msgstr ""
+
+msgctxt "#32222"
+msgid "NOT RATED"
+msgstr ""
+
+msgctxt "#32223"
+msgid "AN ALBUM BY"
+msgstr ""
+
+msgctxt "#32224"
+msgid "RELEASED IN"
+msgstr ""
+
+msgctxt "#32225"
+msgid "A TV SHOW"
+msgstr ""
+
+msgctxt "#32226"
+msgid "FIRST AIRED IN"
+msgstr ""
+
+msgctxt "#32227"
+msgid "A MOVIE BY"
+msgstr ""
+
+msgctxt "#32228"
+msgid "Active"
+msgstr ""
+
+msgctxt "#32229"
+msgid "FORMED"
+msgstr ""
+
+msgctxt "#32230"
+msgid "DISBANDED"
+msgstr ""
+
+msgctxt "#32231"
+msgid "BORN"
+msgstr ""
+
+msgctxt "#32232"
+msgid "DIED"
+msgstr ""
+
+msgctxt "#32233"
+msgid "Refresh information"
+msgstr ""
+
+msgctxt "#32234"
+msgid "Take screenshot"
+msgstr ""
+
+msgctxt "#32235"
+msgid "Switch off"
+msgstr ""
+
+msgctxt "#32236"
+msgid "Switch on"
+msgstr ""
+
+msgctxt "#32237"
+msgid "Written by"
+msgstr ""
+
+msgctxt "#32238"
+msgid "Directed by"
+msgstr ""
+
+msgctxt "#32239"
+msgid "SET"
+msgstr ""
+
+msgctxt "#32240"
+msgid "VOTES"
+msgstr ""
+
+msgctxt "#32241"
+msgid "EPISODES"
+msgstr ""
+
+msgctxt "#32242"
+msgid "UNWATCHED"
+msgstr ""
+
+msgctxt "#32243"
+msgid "Setup"
+msgstr ""
+
+msgctxt "#32244"
+msgid "Libraries"
+msgstr ""
+
+msgctxt "#32245"
+msgid "Motion"
+msgstr ""
+
+msgctxt "#32246"
+msgid "Welcome to Aeon Fuse"
+msgstr ""
+
+msgctxt "#32247"
+msgid "Library backdrop"
+msgstr ""
+
+msgctxt "#32248"
+msgid "Pick a palette"
+msgstr ""
+
+msgctxt "#32249"
+msgid "Skin theme"
+msgstr ""
+
+msgctxt "#32250"
+msgid "Skin style"
+msgstr ""
+
+msgctxt "#32251"
+msgid "Home menu items"
+msgstr ""
+
+msgctxt "#32252"
+msgid "Spotlight transition"
+msgstr ""
+
+msgctxt "#32253"
+msgid "Corner boxes"
+msgstr ""
+
+msgctxt "#32254"
+msgid "Titles or logos"
+msgstr ""
+
+msgctxt "#32255"
+msgid "Extra fanart"
+msgstr ""
+
+msgctxt "#32256"
+msgid "Spoilers"
+msgstr ""
+
+msgctxt "#32257"
+msgid "All set"
+msgstr ""
+
+msgctxt "#32258"
+msgid "A few quick choices make the skin yours. Every step shows a preview, and everything can be changed later in Skin settings."
+msgstr ""
+
+msgctxt "#32259"
+msgid "What fills the space behind the library views. With Neutral the next step lets you pick a palette."
+msgstr ""
+
+msgctxt "#32260"
+msgid "The palette colours the neutral backdrop, the focus bar, the boxes and the strips (Aeon theme)."
+msgstr ""
+
+msgctxt "#32261"
+msgid "Aeon draws solid panels with a bright focus bar. Aeon Glass lets the artwork shine through frosted panels."
+msgstr ""
+
+msgctxt "#32262"
+msgid "How settings, dialogs and side menus look: the skin theme's own menus, or Fuse, the rounded cards of this setup."
+msgstr ""
+
+msgctxt "#32263"
+msgid "Switch the items you want on the Home menu. Order, custom items (three are always free) and their lists: Skin settings > Home menu."
+msgstr ""
+
+msgctxt "#32264"
+msgid "Where the main menu sits on the Home screen."
+msgstr ""
+
+msgctxt "#32265"
+msgid "The backdrop of the spotlight at the top of Home."
+msgstr ""
+
+msgctxt "#32266"
+msgid "How one spotlight title gives way to the next."
+msgstr ""
+
+msgctxt "#32267"
+msgid "The clock box, the item count and the strip boxes in the corners of the library."
+msgstr ""
+
+msgctxt "#32268"
+msgid "Small markers on posters: a dot for unwatched, a check for watched, a bar for in progress."
+msgstr ""
+
+msgctxt "#32269"
+msgid "Show a title's clear logo where the skin has room for it, or its name in plain text."
+msgstr ""
+
+msgctxt "#32270"
+msgid "The chips under a title in the libraries and on the information page. Switch the ones you want."
+msgstr ""
+
+msgctxt "#32271"
+msgid "Titles with more than one fanart can take turns showing them in the background."
+msgstr ""
+
+msgctxt "#32272"
+msgid "Unwatched episodes can keep their thumbnail and plot to themselves."
+msgstr ""
+
+msgctxt "#32273"
+msgid "Slides and fades when views, menus and dialogs open."
+msgstr ""
+
+msgctxt "#32274"
+msgid "On small boxes Kodi keeps memory it no longer uses. The skin's helper can hand it back to the system."
+msgstr ""
+
+msgctxt "#32275"
+msgid "Your choices are saved. Run the setup again any time from Skin settings > Motion, memory, reset."
+msgstr ""
+
+msgctxt "#32276"
+msgid "Kodi restarts to show the new look"
+msgstr ""
+
+msgctxt "#32277"
+msgid "Then restart Kodi once"
+msgstr ""
+
+msgctxt "#32278"
+msgid "Close the setup"
+msgstr ""
+
+msgctxt "#32279"
+msgid "A new theme or palette needs Kodi to start again; it takes a few seconds."
+msgstr ""
+
+msgctxt "#32280"
+msgid "The new look shows at once. Restart Kodi when you can: until then some settings may read wrong."
+msgstr ""
+
+msgctxt "#32281"
+msgid "Enjoy Aeon Fuse."
+msgstr ""
+
+msgctxt "#32282"
+msgid "ends"
+msgstr ""
+
+msgctxt "#32283"
+msgid "Nothing unwatched fits before midnight tonight."
+msgstr ""
+
+msgctxt "#32285"
+msgid "of"
+msgstr ""
+
+msgctxt "#32286"
+msgid "watched"
+msgstr ""
+
+msgctxt "#32287"
+msgid "unwatched"
+msgstr ""
+
+msgctxt "#32288"
+msgid "Nothing unwatched fits this slot. Try Films for everything."
+msgstr ""
+
+msgctxt "#32289"
+msgid "Nothing here yet."
+msgstr ""
+
+msgctxt "#32290"
+msgid "Current"
+msgstr ""
+
+msgctxt "#32291"
+msgid "Rec"
+msgstr ""
+
+msgctxt "#32292"
+msgid "Remind"
+msgstr ""
+
+msgctxt "#32293"
+msgid "Archive"
+msgstr ""
+
+msgctxt "#32294"
+msgid "Edited"
+msgstr ""
+
+msgctxt "#32295"
+msgid "About"
+msgstr ""
+
+msgctxt "#32296"
+msgid "Group"
+msgstr ""
+
+msgctxt "#32297"
+msgid "Nothing here yet"
+msgstr ""
+
+msgctxt "#32298"
+msgid "Tracklist"
+msgstr ""
+
+msgctxt "#32299"
+msgid "born"
+msgstr ""
+
+msgctxt "#32300"
+msgid "formed"
+msgstr ""
+
+msgctxt "#32301"
+msgid "minutes of music"
+msgstr ""
+
+msgctxt "#32302"
+msgid "Start now, done by"
+msgstr ""
+
+msgctxt "#32303"
+msgid "The music stops at"
+msgstr ""
+
+msgctxt "#32304"
+msgid "OK for the controls."
+msgstr ""
+
+msgctxt "#32305"
+msgid "Go to"
+msgstr ""
+
+msgctxt "#32306"
+msgid "Sleeps when this ends  ·  bedtime"
+msgstr ""
+
+msgctxt "#32307"
+msgid "RESULTS"
+msgstr ""
+
+msgctxt "#32308"
+msgid "track"
+msgstr ""
+
+msgctxt "#32309"
+msgid "tracks"
+msgstr ""
+
+msgctxt "#32310"
+msgid "option"
+msgstr ""
+
+msgctxt "#32311"
+msgid "options"
+msgstr ""
+
+msgctxt "#32312"
+msgid "item"
+msgstr ""
+
+msgctxt "#32313"
+msgid "album in your library"
+msgstr ""
+
+msgctxt "#32314"
+msgid "albums in your library"
+msgstr ""
+
+msgctxt "#32315"
+msgid "film"
+msgstr ""
+
+msgctxt "#32316"
+msgid "person"
+msgstr ""
+
+msgctxt "#32317"
+msgid "people"
+msgstr ""
+
+msgctxt "#32318"
+msgid "episode"
+msgstr ""
+
+msgctxt "#32319"
+msgid "episodes"
+msgstr ""
+
+msgctxt "#32320"
+msgid "film watched"
+msgstr ""
+
+msgctxt "#32321"
+msgid "films watched"
+msgstr ""
+
+msgctxt "#32322"
+msgid "episode watched"
+msgstr ""
+
+msgctxt "#32323"
+msgid "episodes watched"
+msgstr ""
+
+msgctxt "#32324"
+msgid "Midnight"
+msgstr ""
+
+msgctxt "#32325"
+msgid "The extra items Aeon Fuse adds to Kodi's context menu: which of them show and in what order."
+msgstr ""
+
+msgctxt "#32326"
+msgid "Kodi lists these after its own items (and before those of other add-ons that come later). Pick one, then use the buttons on the right."
+msgstr ""
+
+msgctxt "#32327"
+msgid "Shows or hides the selected item in the context menu."
+msgstr ""
+
+msgctxt "#32328"
+msgid "Moves the selected item one place up in the context menu."
+msgstr ""
+
+msgctxt "#32329"
+msgid "Moves the selected item one place down in the context menu."
+msgstr ""
+
+msgctxt "#32330"
+msgid "The backdrop of the widget screens (Up on a Home item) slowly zooms in with every title. Reduce motion stops it too."
+msgstr ""
+
+msgctxt "#32331"
+msgid "A font family for each part of the skin: Home, the libraries, headings, the settings pages and the player."
+msgstr ""
+
+msgctxt "#32332"
+msgid "Film"
+msgstr ""
+
+msgctxt "#32333"
+msgid "Resume now: done by"
+msgstr ""
+
+msgctxt "#32334"
+msgid "Start now: ends"
+msgstr ""
+
+msgctxt "#32336"
+msgid "Down for the films"
+msgstr ""
+
+msgctxt "#32337"
+msgid "Down for the cast"
+msgstr ""
+
+msgctxt "#32338"
+msgid "Story"
+msgstr ""
+
+msgctxt "#32339"
+msgid "split"
+msgstr ""
+
+msgctxt "#32340"
+msgid "died"
+msgstr ""
+
+msgctxt "#32341"
+msgid "Resume at"
+msgstr ""
+
+msgctxt "#32342"
+msgid "added"
+msgstr ""
+
+msgctxt "#32343"
+msgid "season"
+msgstr ""
+
+msgctxt "#32344"
+msgid "seasons"
+msgstr ""
+
+msgctxt "#32345"
+msgid "Aired"
+msgstr ""
+
+msgctxt "#32346"
+msgid "Resume now and you're done by"
+msgstr ""
+
+msgctxt "#32347"
+msgid "Start now and it ends at"
+msgstr ""
+
+msgctxt "#32348"
+msgid "after midnight"
+msgstr ""
+
+msgctxt "#32349"
+msgid "Start now and you're done by"
+msgstr ""
+
+msgctxt "#32350"
+msgid "still to watch"
+msgstr ""
+
+msgctxt "#32351"
+msgid "aired"
+msgstr ""
+
+msgctxt "#32352"
+msgid "rated"
+msgstr ""
+
+msgctxt "#32353"
+msgid "With"
+msgstr ""
+
+msgctxt "#32354"
+msgid "Progress"
+msgstr ""
+
+msgctxt "#32355"
+msgid "to watch"
+msgstr ""
+
+msgctxt "#32356"
+msgid "No channels. Enable a PVR client add-on in PVR & Live TV settings."
+msgstr ""
+
+msgctxt "#32357"
+msgid "No recordings."
+msgstr ""
+
+msgctxt "#32358"
+msgid "No results."
+msgstr ""
+
+msgctxt "#32359"
+msgid "No timers."
+msgstr ""
+
+msgctxt "#32360"
+msgid "updated"
+msgstr ""
+
+msgctxt "#32361"
+msgid "Setup wizard"
+msgstr ""
+
+msgctxt "#32362"
+msgid "Theme, palette, backgrounds, Home"
+msgstr ""
+
+msgctxt "#32363"
+msgid "Widget screens: slow zoom"
+msgstr ""
+
+msgctxt "#32364"
+msgid "Kodi shows these after its own items, in this order (items of other add-ons can follow). Update and Clean library show in the libraries and on Home, Refresh information on films, shows, episodes and music videos, Take screenshot everywhere."
+msgstr ""
+
+msgctxt "#32365"
+msgid "PICTURE"
+msgstr ""
+
+msgctxt "#32366"
+msgid "Smart playlist"
+msgstr ""
+
+msgctxt "#32367"
+msgid "Source"
+msgstr ""
+
+msgctxt "#32368"
+msgid "fps"
+msgstr ""
+
+msgctxt "#32369"
+msgid "AR"
+msgstr ""
+
+msgctxt "#32370"
+msgid "Dynamic range"
+msgstr ""
+
+msgctxt "#32371"
+msgid "Decoder"
+msgstr ""
+
+msgctxt "#32372"
+msgid "Pixel format"
+msgstr ""
+
+msgctxt "#32373"
+msgid "Deinterlace"
+msgstr ""
+
+msgctxt "#32374"
+msgid "Display"
+msgstr ""
+
+msgctxt "#32375"
+msgid "Audio output"
+msgstr ""
+
+msgctxt "#32376"
+msgid "Interface"
+msgstr ""
+
+msgctxt "#32377"
+msgid "memory"
+msgstr ""
+
+msgctxt "#32378"
+msgid "FILE"
+msgstr ""
+
+msgctxt "#32379"
+msgid "SIZE"
+msgstr ""
+
+msgctxt "#32380"
+msgid "TAKEN"
+msgstr ""
+
+msgctxt "#32381"
+msgid "STATE"
+msgstr ""
+
+msgctxt "#32382"
+msgid "until bedtime"
+msgstr ""
+
+msgctxt "#32383"
+msgid "Fits before bedtime"
+msgstr ""
+
+msgctxt "#32384"
+msgid "fits before bedtime"
+msgstr ""
+
+msgctxt "#32385"
+msgid "Nothing unwatched fits before bedtime tonight."
+msgstr ""
+
+msgctxt "#32386"
+msgid "right at your bedtime"
+msgstr ""
+
+msgctxt "#32387"
+msgid "past your bedtime"
+msgstr ""
+
+msgctxt "#32388"
+msgid "before your bedtime"
+msgstr ""
+
+msgctxt "#32389"
+msgid "after your bedtime"
+msgstr ""
+
+msgctxt "#32390"
+msgid "Continuing"
+msgstr ""
+
+msgctxt "#32391"
+msgid "Ended"
+msgstr ""
+
+msgctxt "#32392"
+msgid "Cancelled"
+msgstr ""
+
+msgctxt "#32393"
+msgid "In production"
+msgstr ""
+
+msgctxt "#32394"
+msgid "Planned"
+msgstr ""
+
+msgctxt "#32395"
+msgid "Upcoming"
+msgstr ""
+
+msgctxt "#32396"
+msgid "Pilot"
+msgstr ""
+
+msgctxt "#32397"
+msgid "Now playing in"
+msgstr ""
+
+msgctxt "#32398"
+msgid "Films of a set"
+msgstr ""
+
+msgctxt "#32399"
+msgid "Versions of a film"
+msgstr ""
+
+msgctxt "#32400"
+msgid "Grid"
+msgstr ""
+
+msgctxt "#32401"
+msgid "One at a time"
+msgstr ""
+
+msgctxt "#32402"
+msgid "Fused Glass"
+msgstr ""
+
+msgctxt "#32403"
+msgid "Next hours"
+msgstr ""
+
+msgctxt "#32404"
+msgid "This week"
+msgstr ""
+
+msgctxt "#32405"
+msgid "No weather yet. Choose a weather service in Settings > Services > Weather."
+msgstr ""
+
+msgctxt "#32406"
+msgid "Recent searches"
+msgstr ""
+
+msgctxt "#32407"
+msgid "In Fused Glass the music playing always sits beside the clock on Home; this setting is for the other themes."
+msgstr ""
+
+msgctxt "#32408"
+msgid "Focus highlight"
+msgstr ""
+
+msgctxt "#32409"
+msgid "Pill"
+msgstr ""
+
+msgctxt "#32410"
+msgid "Flat"
+msgstr ""
+
+msgctxt "#32411"
+msgid "Frosted"
+msgstr ""
+
+msgctxt "#32412"
+msgid "Outline"
+msgstr ""
+
+msgctxt "#32413"
+msgid "Tight"
+msgstr ""
+
+msgctxt "#32414"
+msgid "How the item in focus is marked in lists and menus. Changing it reloads the skin."
+msgstr ""
+
+msgctxt "#32415"
+msgid "Navigation animation"
+msgstr ""
+
+msgctxt "#32416"
+msgid "Pop"
+msgstr ""
+
+msgctxt "#32417"
+msgid "Grow"
+msgstr ""
+
+msgctxt "#32418"
+msgid "Fade"
+msgstr ""
+
+msgctxt "#32419"
+msgid "Glow"
+msgstr ""
+
+msgctxt "#32420"
+msgid "Nudge"
+msgstr ""
+
+msgctxt "#32421"
+msgid "Lift"
+msgstr ""
+
+msgctxt "#32422"
+msgid "How the highlight moves when it lands on an item. Pop is the default."
+msgstr ""
+
+msgctxt "#32423"
+msgid "Font combination"
+msgstr ""
+
+msgctxt "#32424"
+msgid "A heading and text font combination, shown before you pick it, or your own font for each part of the skin."
+msgstr ""
+
+msgctxt "#32425"
+msgid "Home menu: only the focused item's name"
+msgstr ""
+
+msgctxt "#32426"
+msgid "On: the other items of the Home menu show only their icon and the focused item shows its name."
+msgstr ""
+
+msgctxt "#32427"
+msgid "Segment skip button placement"
+msgstr ""
+
+msgctxt "#32428"
+msgid "Tab"
+msgstr ""
+
+msgctxt "#32429"
+msgid "Glass"
+msgstr ""
+
+msgctxt "#32430"
+msgid "How the skip button sits on the player controls and the small seek bar: a white tab on the card's edge, or a capsule of the card's glass above it."
+msgstr ""
+
+msgctxt "#32431"
+msgid "Available in library"
+msgstr ""
+
+msgctxt "#32432"
+msgid "In library"
+msgstr ""
+
+msgctxt "#32433"
+msgid "Random %s"
+msgstr ""
+
+msgctxt "#32434"
+msgid "Recently added %s"
+msgstr ""
+
+msgctxt "#32435"
+msgid "Recently played %s"
+msgstr ""
+
+msgctxt "#32436"
+msgid "Top rated %s"
+msgstr ""
+
+msgctxt "#32437"
+msgid "Most played %s"
+msgstr ""
+
+msgctxt "#32438"
+msgid "Newest %s"
+msgstr ""
+
+msgctxt "#32439"
+msgid "%s by title"
+msgstr ""
+
+msgctxt "#32440"
+msgid "Scroll through channels"
+msgstr ""
+
+msgctxt "#32441"
+msgid "Auto-fix art with the wrong shape"
+msgstr ""
+
+msgctxt "#32442"
+msgid "Check library art now"
+msgstr ""
+
+msgctxt "#32443"
+msgid "Library art"
+msgstr ""
+
+msgctxt "#32444"
+msgid "Now uses a picture from the same folder that fits"
+msgstr ""
+
+msgctxt "#32445"
+msgid "Wrong shape, nothing in the folder fits"
+msgstr ""
+
+msgctxt "#32446"
+msgid "Every picture has the right shape."
+msgstr ""
+
+msgctxt "#32447"
+msgid "Fixed in the library: %d"
+msgstr ""
+
+msgctxt "#32448"
+msgid "After a refresh or a library scan, a poster, banner, landscape or fanart of the wrong shape is replaced by a picture of the same name in the same folder that fits. Your files stay as they are."
+msgstr ""
+
+msgctxt "#32449"
+msgid "Checks every picture Kodi has shown and fixes what it can. A list shows what was replaced and what is still the wrong shape."
+msgstr ""
+
+msgctxt "#32450"
+msgid "Slot left empty: the skin shows the show's picture until season art is added"
+msgstr ""
+
+msgctxt "#32451"
+msgid "Only Kodi's library changed. Your files are untouched."
+msgstr ""
+
+msgctxt "#32452"
+msgid "Mosaic"
+msgstr ""
+
+msgctxt "#32453"
+msgid "Ledger"
+msgstr ""
+
+msgctxt "#32454"
+msgid "Bridge"
+msgstr ""
+
+msgctxt "#32455"
+msgid "Tab slab"
+msgstr ""
+
+msgctxt "#32456"
+msgid "How the menus join their boxes: Mosaic, Ledger, Bridge or Tab slab. Fuse uses rounded cards and needs Kodi to start again."
+msgstr ""
+
+msgctxt "#32457"
+msgid "Aeon Glass keeps its own menus. Fuse uses rounded cards and needs Kodi to start again."
+msgstr ""
+
+msgctxt "#32458"
+msgid "Library options"
+msgstr ""
+
+msgctxt "#32459"
+msgid "Strip"
+msgstr ""
+
+msgctxt "#32460"
+msgid "Box"
+msgstr ""
+
+msgctxt "#32461"
+msgid "Left at the edge of a view or the Menu key opens the side strip, or a big box in the menu style."
+msgstr ""
+
+msgctxt "#32462"
+msgid "Skippy: skip button style"
+msgstr ""
+
+msgctxt "#32463"
+msgid "Box pair"
+msgstr ""
+
+msgctxt "#32464"
+msgid "Clock dock"
+msgstr ""
+
+msgctxt "#32465"
+msgid "Aeon theme: a palette tile and a label box at the bottom right (above the player controls when they are open), or a row at the top right that ends in the clock box."
+msgstr ""
+
+msgctxt "#32466"
+msgid "Use the palette for"
+msgstr ""
+
+msgctxt "#32467"
+msgid "Menus and library views"
+msgstr ""
+
+msgctxt "#32468"
+msgid "Menus only"
+msgstr ""
+
+msgctxt "#32469"
+msgid "Library views only"
+msgstr ""
+
+msgctxt "#32470"
+msgid "Colors: the colour of the artwork; in the library with the Neutral backdrop and a palette other than Aeon, the palette's own darker box colour. Neutral: always the palette's box colour. Fanart: a window onto the fanart. Backdrop: as the library backdrop. View settings sets it per view."
+msgstr ""
+
+msgctxt "#32471"
+msgid "Colour of the highlight, the boxes, the strips and the settings pages, for the menus and the library views, the menus only or the library views only. The library background takes it with the Neutral backdrop only."
+msgstr ""
+
+msgctxt "#32472"
+msgid "Band under the Home menu"
+msgstr ""
+
+msgctxt "#32473"
+msgid "A dark band from the Home menu down to the bottom of the screen, with a thin line on top, over the spotlight pictures. It follows the menu: middle or low."
+msgstr ""
+
+msgctxt "#32474"
+msgid "Toasts expand from clock pill"
+msgstr ""
+
+msgctxt "#32475"
+msgid "A notification widens the clock pill to the left and shows itself in it, instead of a capsule of its own. Library views and full-screen video keep the capsule."
+msgstr ""
+
+msgctxt "#32476"
+msgid "Clearlogo in Now playing"
+msgstr ""
+
+msgctxt "#32477"
+msgid "Live"
+msgstr ""
+
+msgctxt "#32478"
+msgid "Fused Glass player: the clearlogo of the show or film in the Now playing pill at the top left, instead of its title. Off: the title."
+msgstr ""
+
+msgctxt "#32479"
+msgid "Overview"
+msgstr ""
+
+msgctxt "#32480"
+msgid "File and season"
+msgstr ""
+
+msgctxt "#32481"
+msgid "In this file"
+msgstr ""
+
+msgctxt "#32482"
+msgid "File"
+msgstr ""
+
+msgctxt "#32483"
+msgid "Size"
+msgstr ""
+
+msgctxt "#32484"
+msgid "Playing on"
+msgstr ""
+
+msgctxt "#32485"
+msgid "Cast photos in the information screen"
+msgstr ""
+
+msgctxt "#32486"
+msgid "Fused Glass player: the information screen shows the cast as round photos with the name and the character under each, in one row you scroll through. Off: the names as chips."
+msgstr ""
+
+msgctxt "#32487"
+msgid "Up"
+msgstr ""
+
+msgctxt "#32488"
+msgid "Down"
+msgstr ""
+
+msgctxt "#32489"
+msgid "Kodi running for"
+msgstr ""
+
+msgctxt "#32490"
+msgid "Box up for"
+msgstr ""
+
+msgctxt "#32491"
+msgid "Nothing is playing"
+msgstr ""
+
+msgctxt "#32492"
+msgid "Sleep"
+msgstr ""
+
+msgctxt "#32493"
+msgid "Restart Kodi"
+msgstr ""
+
+msgctxt "#32495"
+msgid "Reboot to Android"
+msgstr ""
+
+msgctxt "#32496"
+msgid "Shut down"
+msgstr ""
+
+msgctxt "#32497"
+msgid "OK again to confirm"
+msgstr ""
+
+msgctxt "#32498"
+msgid "Log off"
+msgstr ""
+
+msgctxt "#32499"
+msgid "Exit Kodi"
+msgstr ""
+
+msgctxt "#32500"
+msgid "When this ends"
+msgstr ""
+
+msgctxt "#32501"
+msgid "min"
+msgstr ""
+
+msgctxt "#32502"
+msgid "Health"
+msgstr ""
+
+msgctxt "#32503"
+msgid "All good"
+msgstr ""
+
+msgctxt "#32504"
+msgid "Running warm"
+msgstr ""
+
+msgctxt "#32505"
+msgid "Memory almost full"
+msgstr ""
+
+msgctxt "#32506"
+msgid "Processor"
+msgstr ""
+
+msgctxt "#32507"
+msgid "Shortcuts"
+msgstr ""
+
+msgctxt "#32508"
+msgid "Recently used add-ons"
+msgstr ""
+
+msgctxt "#32509"
+msgid "Library jobs"
+msgstr ""
+
+msgctxt "#32510"
+msgid "All episodes"
+msgstr ""
+
+msgctxt "#32511"
+msgid "to the tile"
+msgstr ""
+
+msgctxt "#32512"
+msgid "{n} min left"
+msgstr ""
+
+msgctxt "#32513"
+msgid "{episode} airs {date}"
+msgstr ""
+
+msgctxt "#32514"
+msgid "{n} more waiting in season {season}"
+msgstr ""
+
+msgctxt "#32515"
+msgid "1 more waiting in season {season}"
+msgstr ""
+
+msgctxt "#32516"
+msgid "Search your library"
+msgstr ""
+
+msgctxt "#32517"
+msgid "Films, shows, episodes, music, people"
+msgstr ""
+
+msgctxt "#32518"
+msgid "You're on {episode}"
+msgstr ""
+
+msgctxt "#32519"
+msgid "Last search:"
+msgstr ""
+
+msgctxt "#32520"
+msgid "Also search"
+msgstr ""
+
+msgctxt "#32521"
+msgid "TMDb, not in the library"
+msgstr ""
+
+msgctxt "#32522"
+msgid "People"
+msgstr ""
+
+msgctxt "#32523"
+msgid "Online"
+msgstr ""
+
+msgctxt "#32524"
+msgid "Next 7 days"
+msgstr ""
+
+msgctxt "#32525"
+msgid "Shows you watch"
+msgstr ""
+
+msgctxt "#32526"
+msgid "View settings"
+msgstr ""
+
+msgctxt "#32527"
+msgid "Background"
+msgstr ""
+
+msgctxt "#32528"
+msgid "Nothing out"
+msgstr ""
+
+msgctxt "#32529"
+msgid "{n} this week"
+msgstr ""
+
+msgctxt "#32530"
+msgid "1 episode"
+msgstr ""
+
+msgctxt "#32531"
+msgid "{n} episodes"
+msgstr ""
+
+msgctxt "#32532"
+msgid "1 film"
+msgstr ""
+
+msgctxt "#32533"
+msgid "{n} films"
+msgstr ""
+
+msgctxt "#32534"
+msgid "Week: seven days side by side. Day: one day at a time."
+msgstr ""
+
+msgctxt "#32535"
+msgid "Episodes, films or both."
+msgstr ""
+
+msgctxt "#32536"
+msgid "Only the episodes of shows you have watched before."
+msgstr ""
+
+msgctxt "#32537"
+msgid "Colors: the colours of the selected title's artwork. Neutral: plain. Fanart: the picture itself."
+msgstr ""
+
+msgctxt "#32538"
+msgid "The first day of a week. Today: always the next seven days."
+msgstr ""
+
+msgctxt "#32539"
+msgid "This week"
+msgstr ""
+
+msgctxt "#32540"
+msgid "Next week"
+msgstr ""
+
+msgctxt "#32541"
+msgid "{n} in progress"
+msgstr ""
+
+msgctxt "#32542"
+msgid "{n} unwatched"
+msgstr ""
+
+msgctxt "#32543"
+msgid "All watched"
+msgstr ""
+
+msgctxt "#32544"
+msgid "Episode combined"
+msgstr ""
+
+msgctxt "#32545"
+msgid "Season buttons, the episodes in a card and the one in focus beside it"
+msgstr ""
+
+msgctxt "#32546"
+msgid "{time} of {total}"
+msgstr ""
+
+msgctxt "#32547"
+msgid "Frost"
+msgstr ""
+
+msgctxt "#32548"
+msgid "Raised"
+msgstr ""
+
+msgctxt "#32549"
+msgid "Clear"
+msgstr ""
+
+msgctxt "#32550"
+msgid "Library view theme"
+msgstr ""
+
+msgctxt "#32551"
+msgid "The glass of the frosted panels: library views, Home panels and the Home bar. Menus and dialogs follow Menu theme. Frost: lighter. Raised: lit rim, deep shadow. Clear: thin, no blur. Dark: darker."
+msgstr ""
+
+msgctxt "#32552"
+msgid "Earlier days"
+msgstr ""
+
+msgctxt "#32553"
+msgid "Also show what aired on the days of this week before today (episodes in your library)."
+msgstr ""
+
+msgctxt "#32554"
+msgid "Menu names in capitals"
+msgstr ""
+
+msgctxt "#32555"
+msgid "Fused Glass: the Home menu names in capital letters instead of sentence case."
+msgstr ""
+
+msgctxt "#32556"
+msgid "In cinemas now"
+msgstr ""
+
+msgctxt "#32557"
+msgid "Airing today"
+msgstr ""
+
+msgctxt "#32558"
+msgid "Airing tomorrow"
+msgstr ""
+
+msgctxt "#32559"
+msgid "Save lyrics next to the song"
+msgstr ""
+
+msgctxt "#32560"
+msgid "Lyrics that CU LRC Lyrics finds are also saved as a file next to the song (.lrc or .txt), so they are there next time and for other players. The music folder must be writable."
+msgstr ""
+
+msgctxt "#32561"
+msgid "Home spotlight: recently watched sets"
+msgstr ""
+
+msgctxt "#32562"
+msgid "The spotlight of a Home item that shows movie sets (Sets, for example) lists the sets you watched last, newest first. Off: all sets, as its spotlight settings say."
+msgstr ""
+
+msgctxt "#32563"
+msgid "Progress rings"
+msgstr ""
+
+msgctxt "#32564"
+msgid "Season list combined 1"
+msgstr ""
+
+msgctxt "#32565"
+msgid "Seasons, episodes, facts"
+msgstr ""
+
+msgctxt "#32566"
+msgid "Season list combined 2"
+msgstr ""
+
+msgctxt "#32567"
+msgid "Poster with episode stills"
+msgstr ""
+
+msgctxt "#32568"
+msgid "Smooth song progress"
+msgstr ""
+
+msgctxt "#32569"
+msgid "Fused Glass Now playing: the song's progress behind the waveform glides instead of jumping 1 % at a time. Uses a little more processor time while the screen is open."
+msgstr ""
+
+msgctxt "#32570"
+msgid "Progress bar updates per second"
+msgstr ""
+
+msgctxt "#32571"
+msgid "Screen"
+msgstr ""
+
+msgctxt "#32572"
+msgid "How often a second Smooth song progress moves the fill. Screen: as often as Kodi draws the screen. Fewer updates use less processor time; on a long song even 10 looks smooth."
+msgstr ""
+
+msgctxt "#32590"
+msgid "Season poster wall combined"
+msgstr ""
+
+msgctxt "#32573"
+msgid "Dark"
+msgstr ""
+
+msgctxt "#32574"
+msgid "Dark: dark panels. Clear: thin glass that shows more of the backdrop. Frost: light frosted glass over the blurred backdrop. Fused Glass: the System screen's menus, full screen with thin rules and a white bar on the row in focus; Kodi starts again."
+msgstr ""
+
+msgctxt "#32575"
+msgid "Home bar"
+msgstr ""
+
+msgctxt "#32576"
+msgid "Bar"
+msgstr ""
+
+msgctxt "#32577"
+msgid "Keys"
+msgstr ""
+
+msgctxt "#32578"
+msgid "Shelf"
+msgstr ""
+
+msgctxt "#32579"
+msgid "Frosted glass behind the Home menu, in the material chosen under Look. Bar: one capsule. Keys: glass under each icon. Shelf: a band across the screen."
+msgstr ""
+
+msgctxt "#32591"
+msgid "Add item"
+msgstr ""
+
+msgctxt "#32592"
+msgid "Puts a new item at the end of the menu: one of the skin's items that is not on it yet, or a custom item with its own path, Spotlight and lists.[CR][CR]OK opens the list of types."
+msgstr ""
+
+msgctxt "#32593"
+msgid "Reload EPG"
+msgstr ""
+
+msgctxt "#32594"
+msgid "Aeon accent colour"
+msgstr ""
+
+msgctxt "#32595"
+msgid "Gold"
+msgstr ""
+
+msgctxt "#32596"
+msgid "Slate"
+msgstr ""
+
+msgctxt "#32597"
+msgid "Teal"
+msgstr ""
+
+msgctxt "#32598"
+msgid "Moss"
+msgstr ""
+
+msgctxt "#32599"
+msgid "Side"
+msgstr ""
+
+msgctxt "#32600"
+msgid "Vignette shape"
+msgstr ""
+
+msgctxt "#32601"
+msgid "Round"
+msgstr ""
+
+msgctxt "#32602"
+msgid "Round darkens the edges all round. Side darkens the screen from the left and fades out to the right, under the Home text. The row above sets how strong it is."
+msgstr ""
+
+msgctxt "#32603"
+msgid "Heavy"
+msgstr ""
+
+msgctxt "#32604"
+msgid "All themes"
+msgstr ""
+
+msgctxt "#32605"
+msgid "Next episode"
+msgstr ""
+
+msgctxt "#32606"
+msgid "{t} left"
+msgstr ""
+
+msgctxt "#32607"
+msgid "Home menu underline"
+msgstr ""
+
+msgctxt "#32608"
+msgid "Library fanart look"
+msgstr ""
+
+msgctxt "#32609"
+msgid "Dimmed"
+msgstr ""
+
+msgctxt "#32610"
+msgid "Ratings shown as"
+msgstr ""
+
+msgctxt "#32611"
+msgid "Text"
+msgstr ""
+
+msgctxt "#32612"
+msgid "The accent line under the focused Home menu item, as in Fused Glass."
+msgstr ""
+
+msgctxt "#32613"
+msgid "The fanart behind the library views: dimmed under a dark veil, or light with a frosted colour tint."
+msgstr ""
+
+msgctxt "#32614"
+msgid "Show the rating providers as their icons or as their names."
+msgstr ""
+
+msgctxt "#32615"
+msgid "Media info from sidecars"
+msgstr ""
+
+msgctxt "#32616"
+msgid "Off: only what Kodi's library knows (the chips above). On: also the source (UHD Remux, Blu-ray, WEB-DL, DVD...), the edition, the audio and subtitle tracks and the chapters, read from a mediainfo sidecar next to each video file: <name>.cmm_mediainfo.xml from Curator Media Manager (used first) or <name>-mediainfo.xml from tinyMediaManager. Without sidecars nothing extra shows."
+msgstr ""
+
+msgctxt "#32617"
+msgid "Commentary"
+msgstr ""
+
+msgctxt "#32618"
+msgid "Chapters"
+msgstr ""
+
+msgctxt "#32619"
+msgid "In cinemas now: films from"
+msgstr ""
+
+msgctxt "#32620"
+msgid "Everywhere"
+msgstr ""
+
+msgctxt "#32621"
+msgid "In cinemas now (the screensaver and the widgets) is what TMDb Helper's country has in cinemas: the United States unless TMDb Helper's language is set to another country. Pick your country to keep only films made in the United States or there; Everywhere keeps them all."
+msgstr ""
+
+msgctxt "#32622"
+msgid "Getting Home ready"
+msgstr ""
+
+msgctxt "#32623"
+msgid "Home rows"
+msgstr ""
+
+msgctxt "#32624"
+msgid "OK or Back skips"
+msgstr ""
+
+msgctxt "#32625"
+msgid "Live TV guide"
+msgstr ""
+
+msgctxt "#32626"
+msgid "Tint"
+msgstr ""
+
+msgctxt "#32627"
+msgid "Picture"
+msgstr ""
+
+msgctxt "#32628"
+msgid "blurred"
+msgstr ""
+
+msgctxt "#32629"
+msgid "Newest folder"
+msgstr ""
+
+msgctxt "#32630"
+msgid "Folders, newest first"
+msgstr ""
+
+msgctxt "#32631"
+msgid "photos"
+msgstr ""
+
+msgctxt "#32632"
+msgid "photo"
+msgstr ""
+
+msgctxt "#32633"
+msgid "videos"
+msgstr ""
+
+msgctxt "#32634"
+msgid "video"
+msgstr ""
+
+msgctxt "#32635"
+msgid "OK plays the folder as a slideshow · Down for the folders"
+msgstr ""
+
+msgctxt "#32636"
+msgid "All pictures"
+msgstr ""
+
+msgctxt "#32637"
+msgid "sources"
+msgstr ""
+
+msgctxt "#32638"
+msgid "source"
+msgstr ""
+
+msgctxt "#32639"
+msgid "No pictures yet"
+msgstr ""
+
+msgctxt "#32640"
+msgid "Add a folder of photos as a picture source in the Pictures window. OK opens it."
+msgstr ""
+
+msgctxt "#32641"
+msgid "Photos"
+msgstr ""
+
+msgctxt "#32642"
+msgid "OK opens the photo · Up for sort, slideshow and view"
+msgstr ""
+
+msgctxt "#32643"
+msgid "View"
+msgstr ""
+
+msgctxt "#32644"
+msgid "waits until loading is done"
+msgstr ""
+
+msgctxt "#32645"
+msgid "Media info chips"
+msgstr ""
+
+msgctxt "#32646"
+msgid "Which chips the information page, Home and the library panels show. The sidecar chips need Media info from sidecars."
+msgstr ""
+
+msgctxt "#32647"
+msgid "Resolution"
+msgstr ""
+
+msgctxt "#32648"
+msgid "Aspect ratio"
+msgstr ""
+
+msgctxt "#32649"
+msgid "HDR and Dolby Vision"
+msgstr ""
+
+msgctxt "#32650"
+msgid "Dolby Vision profile"
+msgstr ""
+
+msgctxt "#32651"
+msgid "Audio format"
+msgstr ""
+
+msgctxt "#32652"
+msgid "Audio channels"
+msgstr ""
+
+msgctxt "#32653"
+msgid "Source format (sidecar)"
+msgstr ""
+
+msgctxt "#32654"
+msgid "Container (sidecar)"
+msgstr ""
+
+msgctxt "#32655"
+msgid "Bit rate (sidecar)"
+msgstr ""
+
+msgctxt "#32656"
+msgid "File size (sidecar)"
+msgstr ""
+
+msgctxt "#32657"
+msgid "Subtitles (sidecar)"
+msgstr ""
+
+msgctxt "#32658"
+msgid "Chapters (sidecar)"
+msgstr ""
+
+msgctxt "#32659"
+msgid "Commentary (sidecar)"
+msgstr ""
+
+msgctxt "#32660"
+msgid "3D (sidecar)"
+msgstr ""
+
+msgctxt "#32661"
+msgid "chapters"
+msgstr ""
+
+msgctxt "#32662"
+msgid "commentary"
+msgstr ""
+
+msgctxt "#32663"
+msgid "Combine multi-episode files into a single row in library"
+msgstr ""
+
+msgctxt "#32664"
+msgid "Episodes stored in one video file (a double episode, three cartoons) show as one row: 1–2, one title, the file's running time. The season's list then comes from Aeon Fuse Helper."
+msgstr ""
+
+msgctxt "#32665"
+msgid "Video source (sidecar)"
+msgstr ""
+
+msgctxt "#32666"
+msgid "Video codec (sidecar)"
+msgstr ""
+
+msgctxt "#32667"
+msgid "Version (sidecar)"
+msgstr ""
+
+msgctxt "#32668"
+msgid "Panel shadow"
+msgstr ""
+
+msgctxt "#32669"
+msgid "How high the glass panels seem to float: their shadow grows and drops. Mild: close to the page. Medium: as before. Strong: higher. Heavy: highest."
+msgstr ""
+
+msgctxt "#32670"
+msgid "Mild"
+msgstr ""
+
+msgctxt "#32671"
+msgid "Heavy"
+msgstr ""
+
+msgctxt "#32672"
+msgid "Expert settings"
+msgstr ""
+
+msgctxt "#32673"
+msgid "Shows the rows below for fine-tuning the glass panels and the fanart behind the library views."
+msgstr ""
+
+msgctxt "#32674"
+msgid "Panel opacity"
+msgstr ""
+
+msgctxt "#32675"
+msgid "How solid the glass panels are, around the Skin style's own value. -2: most see-through. +2: most solid."
+msgstr ""
+
+msgctxt "#32676"
+msgid "Panel blur"
+msgstr ""
+
+msgctxt "#32677"
+msgid "How strongly the panels blur the picture behind them. Off: no blur."
+msgstr ""
+
+msgctxt "#32678"
+msgid "Panel tint"
+msgstr ""
+
+msgctxt "#32679"
+msgid "The colour of the panels' glass, around the Skin style's own. -2: darkest. +2: lightest frost."
+msgstr ""
+
+msgctxt "#32680"
+msgid "Library fanart opacity"
+msgstr ""
+
+msgctxt "#32681"
+msgid "How much of the fanart behind the library views shows, on top of Backdrop strength. -2: faintest. +2: strongest."
+msgstr ""
+
+msgctxt "#32682"
+msgid "Library fanart blur"
+msgstr ""
+
+msgctxt "#32683"
+msgid "Blurs the fanart behind the library views: -2 a little, +2 the most; 0 is the default. Off: sharp."
+msgstr ""
+
+msgctxt "#32684"
+msgid "Library fanart tint"
+msgstr ""
+
+msgctxt "#32685"
+msgid "The colour tint of the Frosted fanart look. Off: no tint."
+msgstr ""
+
+msgctxt "#32686"
+msgid "Reset expert settings"
+msgstr ""
+
+msgctxt "#32687"
+msgid "Puts every expert setting back to its default."
+msgstr ""
+
+msgctxt "#32688"
+msgid "Expert settings are back to their defaults."
+msgstr ""
+
+msgctxt "#32689"
+msgid "Menu background"
+msgstr ""
+
+msgctxt "#32690"
+msgid "Screen"
+msgstr ""
+
+msgctxt "#32691"
+msgid "Menus and dialogs in the Fused Glass style. Fanart: the item's fanart behind them. Screen: the screen they opened on, dimmed."
+msgstr ""
+
+msgctxt "#32692"
+msgid "OK runs it  ·  Back closes"
+msgstr ""
+
+msgctxt "#32693"
+msgid "OK chooses  ·  Back closes"
+msgstr ""
+
+msgctxt "#32694"
+msgid "Its own library views and menus: rounded glass cards with soft shadows float over the artwork, in Dark, Clear, Frost or the Fused Glass style."
+msgstr ""
+
+msgctxt "#32695"
+msgid "Use the defaults"
+msgstr ""
+
+msgctxt "#32696"
+msgid "The chosen theme as it comes, at once. Everything can be changed later in Skin settings."
+msgstr ""
+
+msgctxt "#32697"
+msgid "Customise"
+msgstr ""
+
+msgctxt "#32698"
+msgid "Go through the look, libraries, Home and backgrounds page by page. Every row shows a preview of its choice."
+msgstr ""
+
+msgctxt "#32699"
+msgid "Keep my current settings"
+msgstr ""
+
+msgctxt "#32700"
+msgid "Leave every setting as it is: only the theme you picked changes."
+msgstr ""
+
+msgctxt "#32701"
+msgid "Aeon with glass menus: the same layout and library views as Aeon, with see-through glass menus and dialogs instead of solid ones. No palettes."
+msgstr ""
+
+msgctxt "#32702"
+msgid "The Planner of upcoming episodes and films, online rows and extra ratings."
+msgstr ""
+
+msgctxt "#32703"
+msgid "The Next up row: the next episode of every show you are watching."
+msgstr ""
+
+msgctxt "#32704"
+msgid "Lyrics on the Now playing screen, line by line or word by word."
+msgstr ""
+
+msgctxt "#32705"
+msgid "Artist pictures behind the Now playing screen."
+msgstr ""
+
+msgctxt "#32706"
+msgid "Box colours taken from the artwork."
+msgstr ""
+
+msgctxt "#32707"
+msgid "Skip intro, recap and credits buttons in the player."
+msgstr ""
+
+msgctxt "#32708"
+msgid "Thumbnail previews on the seek bar."
+msgstr ""
+
+msgctxt "#32709"
+msgid "Studio and network logos in the libraries and on the information page."
+msgstr ""
+
+msgctxt "#32710"
+msgid "Record label logos for albums."
+msgstr ""
+
+msgctxt "#32711"
+msgid "Language flags in the video information."
+msgstr ""
+
+msgctxt "#32712"
+msgid "The skin's own screensaver: library pictures with a slow zoom and slide, and what is playing."
+msgstr ""
+
+msgctxt "#32713"
+msgid "Aeon: solid panels in a palette you pick. Aeon Glass: the same Aeon layout and views with glass menus, no palettes. Fused Glass: its own library views, rounded glass cards over the artwork."
+msgstr ""
+
+msgctxt "#32714"
+msgid "Its own views, glass cards"
+msgstr ""
+
+msgctxt "#32715"
+msgid "Take the theme as it comes, or go through its look step by step. Everything can be changed later in Skin settings."
+msgstr ""
+
+msgctxt "#32716"
+msgid "How the settings strip of the library views shows: over the view (Overlay) or always beside it (Permanent)."
+msgstr ""
+
+msgctxt "#32717"
+msgid "How much the edges of the Home screen darken behind the menu and the text."
+msgstr ""
+
+msgctxt "#32718"
+msgid "The colour of the clock box and the corner boxes with the Aeon palette."
+msgstr ""
+
+msgctxt "#32719"
+msgid "Optional add-ons that give the skin more to show. Install the ones you want; the rest can wait."
+msgstr ""
+
+msgctxt "#32720"
+msgid "The disc art spinning beside the poster on the player controls: for videos, for music, for both, or off."
+msgstr ""
+
+msgctxt "#32721"
+msgid "What the text under a title shows in every library view: the plot, the tagline (when there is one) or both."
+msgstr ""
+
+msgctxt "#32722"
+msgid "Libraries"
+msgstr ""
+
+msgctxt "#32723"
+msgid "Information"
+msgstr ""
+
+msgctxt "#32724"
+msgid "Screensaver & backdrops"
+msgstr ""
+
+msgctxt "#32725"
+msgid "Export skin settings"
+msgstr ""
+
+msgctxt "#32726"
+msgid "Import skin settings"
+msgstr ""
+
+msgctxt "#32727"
+msgid "Save"
+msgstr ""
+
+msgctxt "#32728"
+msgid "Load"
+msgstr ""
+
+msgctxt "#32729"
+msgid "Saves every Aeon Fuse setting, with the theme, palette and fonts, to a file in a folder you pick."
+msgstr ""
+
+msgctxt "#32730"
+msgid "Loads a file saved with Export skin settings. Your current skin settings are replaced."
+msgstr ""
+
+msgctxt "#32731"
+msgid "Folder for the settings file"
+msgstr ""
+
+msgctxt "#32732"
+msgid "Settings file to load"
+msgstr ""
+
+msgctxt "#32733"
+msgid "Saved: %s"
+msgstr ""
+
+msgctxt "#32734"
+msgid "Load the settings saved on %s? Your current skin settings are replaced."
+msgstr ""
+
+msgctxt "#32735"
+msgid "This file does not hold Aeon Fuse settings."
+msgstr ""
+
+msgctxt "#32736"
+msgid "The file could not be written."
+msgstr ""
+
+msgctxt "#32737"
+msgid "Kodi restarts to apply them."
+msgstr ""
+
+msgctxt "#32738"
+msgid "The skin reloads; restart Kodi afterwards so every setting is read again."
+msgstr ""
+
+msgctxt "#32739"
+msgid "These settings are already in use."
+msgstr ""
+
+msgctxt "#32740"
+msgid "Soft"
+msgstr ""
+
+msgctxt "#32741"
+msgid "Home gradient"
+msgstr ""
+
+msgctxt "#32742"
+msgid "Beside the clock"
+msgstr ""
+
+msgctxt "#32743"
+msgid "Left corner"
+msgstr ""
+
+msgctxt "#32744"
+msgid "The fade from the bottom of the screen up to the Home menu: off, soft (the look so far) or strong."
+msgstr ""
+
+msgctxt "#32745"
+msgid "Where the Now playing capsule sits on Home while music plays: beside the clock or in the lower left corner."
+msgstr ""
+
+msgctxt "#32746"
+msgid "How the skip button sits on the player controls: a white tab on their top edge, or a glass capsule above them."
+msgstr ""
+
+msgctxt "#32747"
+msgid "How strongly the picture behind the menus and dialogs is blurred. Off: sharp, as before."
+msgstr ""
+
+msgctxt "#32748"
+msgid "Left / Right: choose an option. OK: set it. Up, Down or Back: keep the one in use."
+msgstr ""
+
+msgctxt "#32749"
+msgid "Start on"
+msgstr ""
+
+msgctxt "#32750"
+msgid "The Home menu item that has the focus when Kodi starts, once the splash has gone."
+msgstr ""
+
+msgctxt "#32751"
+msgid "Ratings shown in"
+msgstr ""
+
+msgctxt "#32752"
+msgid "Media info shown in"
+msgstr ""
+
+msgctxt "#32753"
+msgid "Library views"
+msgstr ""
+
+msgctxt "#32754"
+msgid "Information pages"
+msgstr ""
+
+msgctxt "#32755"
+msgid "Widget & Spotlight screens"
+msgstr ""
+
+msgctxt "#32756"
+msgid "Home spotlights"
+msgstr ""
+
+msgctxt "#32757"
+msgid "Player info"
+msgstr ""
+
+msgctxt "#32758"
+msgid "Screensaver"
+msgstr ""
+
+msgctxt "#32759"
+msgid "Live TV"
+msgstr ""
+
+msgctxt "#32760"
+msgid "Where the ratings (IMDb, TMDb, Rotten Tomatoes, Trakt) appear. OK opens the list: tick the places."
+msgstr ""
+
+msgctxt "#32761"
+msgid "Where the media info chips (resolution, HDR, audio ...) appear. OK opens the list: tick the places. Which chips: Media info chips."
+msgstr ""
+
+msgctxt "#32762"
+msgid "Recommended add-ons"
+msgstr ""
+
+msgctxt "#32764"
+msgid "Installed"
+msgstr ""
+
+msgctxt "#32765"
+msgid "Not installed"
+msgstr ""
+
+msgctxt "#32766"
+msgid "%s needs the %s repository. Install that repository first?"
+msgstr ""
+
+msgctxt "#32767"
+msgid "White weather icons for the weather forecast."
+msgstr ""
+
+msgctxt "#32768"
+msgid "The playback info button in the video controls."
+msgstr ""
+
+msgctxt "#32769"
+msgid "The Inter (Copacetic) font set."
+msgstr ""
+
+msgctxt "#32770"
+msgid "The Roboto CJKSC font set for Chinese, Japanese and Korean."
+msgstr ""
+
+msgctxt "#32771"
+msgid "Update and clean on another Kodi"
+msgstr ""
+
+msgctxt "#32772"
+msgid "Address"
+msgstr ""
+
+msgctxt "#32773"
+msgid "User name"
+msgstr ""
+
+msgctxt "#32774"
+msgid "Password"
+msgstr ""
+
+msgctxt "#32775"
+msgid "Test connection"
+msgstr ""
+
+msgctxt "#32776"
+msgid "Library update and clean from this skin (Home, the library panel, the context menu) go to another Kodi, a headless one for instance, instead of this one."
+msgstr ""
+
+msgctxt "#32777"
+msgid "The other Kodi's web address and port, for example http://192.168.10.10:8080 (there: Settings > Services > Control > Allow remote control via HTTP)."
+msgstr ""
+
+msgctxt "#32778"
+msgid "The web server user name and password of the other Kodi."
+msgstr ""
+
+msgctxt "#32779"
+msgid "Asks the other Kodi for its version: checks the address, user name and password."
+msgstr ""
+
+msgctxt "#32780"
+msgid "Not set"
+msgstr ""
+
+msgctxt "#32781"
+msgid "Library update sent"
+msgstr ""
+
+msgctxt "#32782"
+msgid "Library clean sent"
+msgstr ""
+
+msgctxt "#32783"
+msgid "Could not reach %s: %s"
+msgstr ""
+
+msgctxt "#32784"
+msgid "%s answers: %s"
+msgstr ""
+
+msgctxt "#32785"
+msgid "Wrong user name or password"
+msgstr ""
+
+msgctxt "#32786"
+msgid "Library update finished"
+msgstr ""
+
+msgctxt "#32789"
+msgid "Failed"
+msgstr ""
+
+msgctxt "#32790"
+msgid "Could not install the repository"
+msgstr ""
+
+msgctxt "#32791"
+msgid "Pick the add-ons you want: OK ticks one, Next installs the ticked ones while you go on. The picture shows what each adds. Later: Skin settings > System > Recommended add-ons."
+msgstr ""
+
+msgctxt "#32792"
+msgid "Will be installed"
+msgstr ""
+
+msgctxt "#32793"
+msgid "Installs the ticked add-ons"
+msgstr ""
+
+msgctxt "#32794"
+msgid "Installed: %s"
+msgstr ""
+
+msgctxt "#32795"
+msgid "Delete %s? Its name, path, icon, widgets and submenu are removed; the items below it move up one place."
+msgstr ""
+
+msgctxt "#32796"
+msgid "Custom items only"
+msgstr ""
+
+msgctxt "#32797"
+msgid "A calm, thin waveform on the Now playing card, drawn in the skin's own box and smoothed so loud passages do not spike. The build for this device is installed."
+msgstr ""
+
+msgctxt "#32798"
+msgid "More by the artist"
+msgstr ""
+
+msgctxt "#32799"
+msgid "Intermission at"
+msgstr ""
+
+msgctxt "#32800"
+msgid "Your languages"
+msgstr ""
+
+msgctxt "#32801"
+msgid "All others"
+msgstr ""
+
+msgctxt "#32802"
+msgid "In your library"
+msgstr ""
+
+msgctxt "#32803"
+msgid "Sort and show"
+msgstr ""
+
+msgctxt "#32804"
+msgid "Sort by"
+msgstr ""
+
+msgctxt "#32805"
+msgid "Show only"
+msgstr ""
+
+msgctxt "#32806"
+msgid "OK again flips the order"
+msgstr ""
+
+msgctxt "#32807"
+msgid "Several versions"
+msgstr ""
+
+msgctxt "#32808"
+msgid "Decade"
+msgstr ""
+
+msgctxt "#32809"
+msgid "Clear all"
+msgstr ""
+
+msgctxt "#32810"
+msgid "Never played"
+msgstr ""
+
+msgctxt "#32811"
+msgid "Played"
+msgstr ""

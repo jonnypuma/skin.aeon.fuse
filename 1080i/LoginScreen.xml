@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Profile login screen. Kodi shows it only when profiles exist and Settings > Profiles > "Show login screen on startup"
+	is on (and for System menu > Power > Switch user), so without extra users it never appears.
+	Aeon look: the page header, the clock box, a centred row of profile pictures - the focused one in the middle with a
+	white frame - and the Power button below. Left / Right = profile, OK = log in, Down = Power.
+	Kodi ids (GUIWindowLoginScreen): profile container 52, power button 20.
+-->
+<window>
+	<defaultcontrol always="true">52</defaultcontrol>
+	<backgroundcolor>ff000000</backgroundcolor>
+	<include>Anim_WindowOpenClose</include>
+	<controls>
+		<include condition="!$EXP[FGS]">Login_PageClassic</include>
+		<include condition="$EXP[FGS]">Login_PageFGS</include>
+	</controls>
+</window>

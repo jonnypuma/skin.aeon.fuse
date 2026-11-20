@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Fullscreen info - information on demand during playback, in the Video OSD's look (0.28.1): the player top bar
+	(time of day on the left, Skippy's next episode, clock box and weather box), a dark scrim at the bottom with the
+	season / show poster, clearlogo or title, episode line, bedtime line, plot, media chips with the aspect ratio,
+	language flags and every rating, and the seek line with the OSD's marker. Opened by Kodi's Info action in
+	fullscreen video, by the OSD "Info" button and by Up on the OSD seek bar; Info again or Back closes it
+	(GUIDialogFullScreenInfo.cpp).
+
+	Id contract (Estuary Omega DialogFullScreenInfo.xml): 999 = full-screen invisible focus button
+	(default, always): Left/Right step seek, Up/Down chapter or big step, OK opens the OSD.
+-->
+<window>
+	<include>AGOSD_BedTickOnload</include>
+	<defaultcontrol always="true">999</defaultcontrol>
+	<onload condition="Skin.HasSetting(aeon.fglass)">ClearProperty(fgpage,fullscreeninfo)</onload>
+	<onload condition="Skin.HasSetting(aeon.fglass)">RunScript(script.aeon.helper,playerfacts)</onload>
+	<include>Anim_OSDSlideUp</include>
+	<controls>
+		<include condition="Skin.HasSetting(aeon.fglass)">FG_FullInfo</include>
+		<include condition="!Skin.HasSetting(aeon.fglass)">FullInfo_Classic</include>
+	</controls>
+</window>

@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Aeon 2 style music library view (id 513): artists, albums, songs, genres. Reference: ../AEON2_DESIGN_NOTES.md
+	"Music library". Whole page tinted by the artwork colour (Fanart.Color1); a grey translucent band holds a
+	header row ("MUSIC LIBRARY" / folder name) and the list; the artist's fanart fills the right; a small cover
+	sits under the list. Focus = off-white row. Left past the list = Library panel (1160).
+-->
+<includes>
+	<variable name="AeonM_Title">
+		<value condition="ListItem.IsParentFolder">..</value>
+		<value condition="String.IsEqual(ListItem.DBType,song) + !String.IsEmpty(ListItem.Title)">[UPPERCASE]$INFO[ListItem.Title][/UPPERCASE]</value>
+		<value condition="String.IsEqual(ListItem.DBType,album) + !String.IsEmpty(ListItem.DiscTitle)">[UPPERCASE]$INFO[ListItem.DiscTitle]$INFO[ListItem.Album,  |  ][/UPPERCASE]</value>
+		<value condition="String.IsEqual(ListItem.DBType,album) + Integer.IsGreater(ListItem.DiscNumber,0)">[UPPERCASE]$INFO[ListItem.DiscNumber,$LOCALIZE[427] ]$INFO[ListItem.Album,  |  ][/UPPERCASE]</value>
+		<value condition="String.IsEqual(ListItem.DBType,album) + !String.IsEmpty(ListItem.Album)">[UPPERCASE]$INFO[ListItem.Album][/UPPERCASE]</value>
+		<value>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</value>
+	</variable>
+	<variable name="AeonM_Sub">
+		<value condition="ListItem.IsParentFolder"></value>
+		<value condition="String.IsEqual(ListItem.DBType,song)">[UPPERCASE]$INFO[ListItem.Artist]$INFO[ListItem.Album,  |  ]$INFO[ListItem.FileExtension,  |  ]$INFO[ListItem.SampleRate,  ,  $ADDON[skin.aeon.fuse 32212]]$INFO[ListItem.BitRate,  ,  $ADDON[skin.aeon.fuse 32209]][/UPPERCASE]</value>
+		<value condition="String.IsEqual(ListItem.DBType,album)">[UPPERCASE]$INFO[ListItem.Artist]$INFO[ListItem.Year,  |  ][/UPPERCASE]</value>
+		<value condition="String.IsEqual(ListItem.DBType,artist)">[UPPERCASE]$INFO[ListItem.Genre][/UPPERCASE]</value>
+		<value>[UPPERCASE]$INFO[ListItem.Label2][/UPPERCASE]</value>
+	</variable>
+	<variable name="AeonM_Icon">
+		<value condition="String.IsEqual(ListItem.DBType,album)">aeon/ring_circle.png</value>
+		<value>aeon/icons/music.png</value>
+	</variable>
+	<variable name="AeonM_Header">
+		<value condition="Container.Content(songs) + !String.IsEmpty(Container.FolderName)">[UPPERCASE]$INFO[Container.FolderName][/UPPERCASE]</value>
+		<value condition="Container.Content(albums) + !String.IsEmpty(Container.FolderName)">[UPPERCASE]$INFO[Container.FolderName][/UPPERCASE]</value>
+		<value>$LOCALIZE[31346]</value>
+	</variable>
+	<variable name="AeonM_Fanart">
+		<value condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),1) + !String.IsEmpty(ListItem.Art(fanart1))">$INFO[ListItem.Art(fanart1)]</value>
+		<value condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),1) + !String.IsEmpty(ListItem.Art(tvshow.fanart1))">$INFO[ListItem.Art(tvshow.fanart1)]</value>
+		<value condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),2) + !String.IsEmpty(ListItem.Art(fanart2))">$INFO[ListItem.Art(fanart2)]</value>
+		<value condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),2) + !String.IsEmpty(ListItem.Art(tvshow.fanart2))">$INFO[ListItem.Art(tvshow.fanart2)]</value>
+		<value condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),3) + !String.IsEmpty(ListItem.Art(fanart3))">$INFO[ListItem.Art(fanart3)]</value>
+		<value condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),3) + !String.IsEmpty(ListItem.Art(tvshow.fanart3))">$INFO[ListItem.Art(tvshow.fanart3)]</value>
+		<value condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),4) + !String.IsEmpty(ListItem.Art(fanart4))">$INFO[ListItem.Art(fanart4)]</value>
+		<value condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),4) + !String.IsEmpty(ListItem.Art(tvshow.fanart4))">$INFO[ListItem.Art(tvshow.fanart4)]</value>
+		<value condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),5) + !String.IsEmpty(ListItem.Art(fanart5))">$INFO[ListItem.Art(fanart5)]</value>
+		<value condition="Skin.HasSetting(aeon.extrafanart) + String.IsEqual(Window(Home).Property(aeon.fanx),5) + !String.IsEmpty(ListItem.Art(tvshow.fanart5))">$INFO[ListItem.Art(tvshow.fanart5)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.fanart))">$INFO[Window(Home).Property(aeon.fart.fanart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(artist.fanart))">$INFO[ListItem.Art(artist.fanart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.thumb))">$INFO[Window(Home).Property(aeon.fart.thumb)]</value>
+		<value>$INFO[ListItem.Art(album.thumb)]</value>
+	</variable>
+	<variable name="AeonM_Cover">
+		<value condition="!String.IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.thumb))">$INFO[Window(Home).Property(aeon.fart.thumb)]</value>
+		<value>$INFO[ListItem.Art(album.thumb)]</value>
+	</variable>
+
+	<expression name="AeonM_HasLogo">Container.Content(artists) + !Skin.HasSetting(aeon.nologos) + !String.IsEmpty(ListItem.Art(clearlogo))</expression>
+	<variable name="AeonM_Logo"><value>$INFO[ListItem.Art(clearlogo)]</value></variable>
+	<variable name="AeonM_ArtistAlbums">
+		<value condition="Container.Content(artists) + !String.IsEmpty(Container(513).ListItem.DBID)">musicdb://artists/$INFO[Container(513).ListItem.DBID]/</value>
+	</variable>
+	<variable name="AeonM_CycleCover">
+		<value condition="!String.IsEmpty(Container(5131).ListItem.Art(thumb))">$INFO[Container(5131).ListItem.Art(thumb)]</value>
+		<value condition="String.IsEqual(Window(Home).Property(aeon.fart.dbid),Container(5131).ListItem.DBID) + String.IsEqual(Window(Home).Property(aeon.fart.type),Container(5131).ListItem.DBType) + !String.IsEmpty(Window(Home).Property(aeon.fart.thumb))">$INFO[Window(Home).Property(aeon.fart.thumb)]</value>
+		<value>$INFO[Container(513).ListItem.Art(thumb)]</value>
+	</variable>
+	<!-- 0.56.16 aeon_lib_round3: the track count overlay centred on the row (18 px up) -->
+	<include name="AeonM_Row">
+		<param name="focused">false</param>
+		<definition>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>1200</width>
+				<height>100</height>
+				<texture border="4,0,0,0" colordiffuse="$VAR[Aeon_RowFocusCol_L]">$VAR[Aeon_RowFocusTex]</texture>
+				<visible>[$PARAM[focused]] + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="image"><left>-16</left><top>-28</top><width>1232</width><height>168</height><texture border="56" colordiffuse="$VAR[FG_ShadowCol]">fg/sh16.png</texture><visible>[[$PARAM[focused]] + $EXP[Aeon_FGlass]] + $EXP[FG_FocusShadowOn]</visible><include>FG_LandShadowFocus</include></control>
+<control type="image">
+				<left>24</left>
+				<top>6</top>
+				<width>1152</width>
+				<height>88</height>
+				<texture border="16" colordiffuse="ffffffff">$VAR[FG_FocusTex]</texture>
+				<visible>[$PARAM[focused]] + $EXP[Aeon_FGlass]</visible>
+			<animation effect="zoom" start="100,100" end="102.069,113.636" center="auto" time="0" condition="$EXP[Aeon_FGlass] + $EXP[FG_FocusFlat]">Conditional</animation><include>FG_LandFocus</include></control>
+			<!-- 0.56.17 aeon_lib_round4: the track number for songs; albums and artists have no icon, their names start at 104 -->
+			<control type="label">
+				<left>84</left>
+				<top>0</top>
+				<width>80</width>
+				<height>100</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>lb_cap_20</font>
+				<textcolor>66ffffff</textcolor><selectedcolor>66ffffff</selectedcolor>
+				<label>$INFO[ListItem.TrackNumber]</label>
+				<visible>!$PARAM[focused] + String.IsEqual(ListItem.DBType,song)</visible>
+			</control>
+			<control type="label">
+				<left>84</left>
+				<top>0</top>
+				<width>80</width>
+				<height>100</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>lb_cap_20</font>
+				<textcolor>$VAR[Aeon_OnBarInk3_L]</textcolor><selectedcolor>$VAR[Aeon_OnBarInk3_L]</selectedcolor>
+				<label>$INFO[ListItem.TrackNumber]</label>
+				<visible>$PARAM[focused] + String.IsEqual(ListItem.DBType,song)</visible>
+			</control>
+			<control type="label">
+				<left>200</left>
+				<top>16</top>
+				<width>760</width>
+				<height>40</height>
+				<font>lb_ui_24_bold</font>
+				<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+				<label>$VAR[AeonM_Title]</label>
+				<visible>!$PARAM[focused] + String.IsEqual(ListItem.DBType,song)</visible>
+			</control>
+			<control type="label">
+				<left>104</left>
+				<top>16</top>
+				<width>856</width>
+				<height>40</height>
+				<font>lb_ui_24_bold</font>
+				<textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor>
+				<label>$VAR[AeonM_Title]</label>
+				<visible>!$PARAM[focused] + !String.IsEqual(ListItem.DBType,song)</visible>
+			</control>
+			<control type="label">
+				<left>200</left>
+				<top>16</top>
+				<width>760</width>
+				<height>40</height>
+				<font>lb_ui_24_bold</font>
+				<textcolor>$VAR[Aeon_OnBarInk_L]</textcolor><selectedcolor>$VAR[Aeon_OnBarInk_L]</selectedcolor>
+				<scroll>true</scroll>
+				<label>$VAR[AeonM_Title]</label>
+				<visible>$PARAM[focused] + String.IsEqual(ListItem.DBType,song)</visible>
+			</control>
+			<control type="label">
+				<left>104</left>
+				<top>16</top>
+				<width>856</width>
+				<height>40</height>
+				<font>lb_ui_24_bold</font>
+				<textcolor>$VAR[Aeon_OnBarInk_L]</textcolor><selectedcolor>$VAR[Aeon_OnBarInk_L]</selectedcolor>
+				<scroll>true</scroll>
+				<label>$VAR[AeonM_Title]</label>
+				<visible>$PARAM[focused] + !String.IsEqual(ListItem.DBType,song)</visible>
+			</control>
+			<control type="label">
+				<left>200</left>
+				<top>54</top>
+				<width>760</width>
+				<height>30</height>
+				<font>lb_small_20</font>
+				<textcolor>66ffffff</textcolor><selectedcolor>66ffffff</selectedcolor>
+				<label>$VAR[AeonM_Sub]</label>
+				<visible>!$PARAM[focused] + String.IsEqual(ListItem.DBType,song)</visible>
+			</control>
+			<control type="label">
+				<left>104</left>
+				<top>54</top>
+				<width>856</width>
+				<height>30</height>
+				<font>lb_small_20</font>
+				<textcolor>66ffffff</textcolor><selectedcolor>66ffffff</selectedcolor>
+				<label>$VAR[AeonM_Sub]</label>
+				<visible>!$PARAM[focused] + !String.IsEqual(ListItem.DBType,song)</visible>
+			</control>
+			<control type="label">
+				<left>200</left>
+				<top>54</top>
+				<width>760</width>
+				<height>30</height>
+				<font>lb_small_20</font>
+				<textcolor>$VAR[Aeon_OnBarInk3_L]</textcolor><selectedcolor>$VAR[Aeon_OnBarInk3_L]</selectedcolor>
+				<label>$VAR[AeonM_Sub]</label>
+				<visible>$PARAM[focused] + String.IsEqual(ListItem.DBType,song)</visible>
+			</control>
+			<control type="label">
+				<left>104</left>
+				<top>54</top>
+				<width>856</width>
+				<height>30</height>
+				<font>lb_small_20</font>
+				<textcolor>$VAR[Aeon_OnBarInk3_L]</textcolor><selectedcolor>$VAR[Aeon_OnBarInk3_L]</selectedcolor>
+				<label>$VAR[AeonM_Sub]</label>
+				<visible>$PARAM[focused] + !String.IsEqual(ListItem.DBType,song)</visible>
+			</control>
+			<!-- duration (songs, albums) -->
+			<include content="Aeon_Dur"><param name="left">1058</param><param name="h">100</param><param name="ink">ccffffff</param><param name="ink2">66ffffff</param><param name="vis" value="!$PARAM[focused]"/></include>
+			<include content="Aeon_Dur"><param name="left">1058</param><param name="h">100</param><param name="ink">$VAR[Aeon_OnBarInk_L]</param><param name="ink2">$VAR[Aeon_OnBarInk3_L]</param><param name="vis" value="$PARAM[focused]"/></include>
+		</definition>
+	</include>
+
+	<!-- music top menu: Artists / Albums / Songs / Genres left, "Menu: view, sort" right. Reached with Up from the A-Z keys or the first item.
+	     Icon, label and underline share one centre per item (125 / 255 / 385 / 515). -->
+	<include name="Aeon_M_Menu">
+		<definition>
+			<control type="image"><left>102</left><top>31</top><width>46</width><height>46</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/aeon_ic_person.png</texture><visible>Container.Content(artists) | Control.HasFocus(9801)</visible></control>
+			<control type="image"><left>102</left><top>31</top><width>46</width><height>46</height><texture colordiffuse="55ffffff">common/aeon_ic_person.png</texture><visible>!Container.Content(artists) + !Control.HasFocus(9801)</visible></control>
+			<control type="label"><left>65</left><top>78</top><width>120</width><height>26</height><align>center</align><font>lb_cap_20</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$LOCALIZE[31298]</label><visible>Container.Content(artists) | Control.HasFocus(9801)</visible></control>
+			<control type="image"><left>90</left><top>103</top><width>70</width><height>4</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/white.png</texture><visible>Control.HasFocus(9801)</visible></control>
+			<control type="button" id="9801"><left>82</left><top>12</top><width>86</width><height>88</height><label></label><texturefocus /><texturenofocus /><onleft condition="!Skin.HasSetting(aeon.kiosk)">ActivateWindow(1160)</onleft><onright>9802</onright><ondown condition="Control.IsVisible(513)">SetFocus(513)</ondown><ondown condition="Control.IsVisible(530)">SetFocus(530)</ondown><ondown condition="Control.IsVisible(531)">SetFocus(531)</ondown><ondown condition="Control.IsVisible(532)">SetFocus(532)</ondown><ondown condition="Control.IsVisible(533)">SetFocus(533)</ondown><ondown condition="Control.IsVisible(534)">SetFocus(534)</ondown><onup condition="!Skin.HasSetting(aeon.kiosk)">ActivateWindow(1160)</onup><onclick>Container.Update(musicdb://artists/)</onclick></control>
+			<control type="image"><left>232</left><top>31</top><width>46</width><height>46</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/aeon_ic_disc.png</texture><visible>Container.Content(albums) | Control.HasFocus(9802)</visible></control>
+			<control type="image"><left>232</left><top>31</top><width>46</width><height>46</height><texture colordiffuse="55ffffff">common/aeon_ic_disc.png</texture><visible>!Container.Content(albums) + !Control.HasFocus(9802)</visible></control>
+			<control type="label"><left>195</left><top>78</top><width>120</width><height>26</height><align>center</align><font>lb_cap_20</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$LOCALIZE[31299]</label><visible>Container.Content(albums) | Control.HasFocus(9802)</visible></control>
+			<control type="image"><left>220</left><top>103</top><width>70</width><height>4</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/white.png</texture><visible>Control.HasFocus(9802)</visible></control>
+			<control type="button" id="9802"><left>212</left><top>12</top><width>86</width><height>88</height><label></label><texturefocus /><texturenofocus /><onleft>9801</onleft><onright>9803</onright><ondown condition="Control.IsVisible(513)">SetFocus(513)</ondown><ondown condition="Control.IsVisible(530)">SetFocus(530)</ondown><ondown condition="Control.IsVisible(531)">SetFocus(531)</ondown><ondown condition="Control.IsVisible(532)">SetFocus(532)</ondown><ondown condition="Control.IsVisible(533)">SetFocus(533)</ondown><ondown condition="Control.IsVisible(534)">SetFocus(534)</ondown><onup condition="!Skin.HasSetting(aeon.kiosk)">ActivateWindow(1160)</onup><onclick>Container.Update(musicdb://albums/)</onclick></control>
+			<control type="image"><left>362</left><top>31</top><width>46</width><height>46</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/aeon_ic_note.png</texture><visible>Container.Content(songs) | Control.HasFocus(9803)</visible></control>
+			<control type="image"><left>362</left><top>31</top><width>46</width><height>46</height><texture colordiffuse="55ffffff">common/aeon_ic_note.png</texture><visible>!Container.Content(songs) + !Control.HasFocus(9803)</visible></control>
+			<control type="label"><left>325</left><top>78</top><width>120</width><height>26</height><align>center</align><font>lb_cap_20</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$LOCALIZE[31343]</label><visible>Container.Content(songs) | Control.HasFocus(9803)</visible></control>
+			<control type="image"><left>350</left><top>103</top><width>70</width><height>4</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/white.png</texture><visible>Control.HasFocus(9803)</visible></control>
+			<control type="button" id="9803"><left>342</left><top>12</top><width>86</width><height>88</height><label></label><texturefocus /><texturenofocus /><onleft>9802</onleft><onright>9804</onright><ondown condition="Control.IsVisible(513)">SetFocus(513)</ondown><ondown condition="Control.IsVisible(530)">SetFocus(530)</ondown><ondown condition="Control.IsVisible(531)">SetFocus(531)</ondown><ondown condition="Control.IsVisible(532)">SetFocus(532)</ondown><ondown condition="Control.IsVisible(533)">SetFocus(533)</ondown><ondown condition="Control.IsVisible(534)">SetFocus(534)</ondown><onup condition="!Skin.HasSetting(aeon.kiosk)">ActivateWindow(1160)</onup><onclick>Container.Update(musicdb://songs/)</onclick></control>
+			<control type="image"><left>492</left><top>31</top><width>46</width><height>46</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/aeon_ic_genre.png</texture><visible>Container.Content(genres) | Control.HasFocus(9804)</visible></control>
+			<control type="image"><left>492</left><top>31</top><width>46</width><height>46</height><texture colordiffuse="55ffffff">common/aeon_ic_genre.png</texture><visible>!Container.Content(genres) + !Control.HasFocus(9804)</visible></control>
+			<control type="label"><left>455</left><top>78</top><width>120</width><height>26</height><align>center</align><font>lb_cap_20</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$LOCALIZE[31344]</label><visible>Container.Content(genres) | Control.HasFocus(9804)</visible></control>
+			<control type="image"><left>480</left><top>103</top><width>70</width><height>4</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/white.png</texture><visible>Control.HasFocus(9804)</visible></control>
+			<control type="button" id="9804"><left>472</left><top>12</top><width>86</width><height>88</height><label></label><texturefocus /><texturenofocus /><onleft>9803</onleft><onright>9805</onright><ondown condition="Control.IsVisible(513)">SetFocus(513)</ondown><ondown condition="Control.IsVisible(530)">SetFocus(530)</ondown><ondown condition="Control.IsVisible(531)">SetFocus(531)</ondown><ondown condition="Control.IsVisible(532)">SetFocus(532)</ondown><ondown condition="Control.IsVisible(533)">SetFocus(533)</ondown><ondown condition="Control.IsVisible(534)">SetFocus(534)</ondown><onup condition="!Skin.HasSetting(aeon.kiosk)">ActivateWindow(1160)</onup><onclick>Container.Update(musicdb://genres/)</onclick></control>
+			<control type="label"><left>860</left><top>32</top><width>660</width><height>44</height><align>right</align><aligny>center</aligny><font>lb_ui_26</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>[UPPERCASE]$VAR[Aeon_ViewHead]: [B]$VAR[Aeon_SortName][/B][/UPPERCASE]</label></control>
+			<control type="image"><left>1564</left><top>34</top><width>40</width><height>40</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/aeon_ic_view.png</texture><visible>Control.HasFocus(9805)</visible></control>
+			<control type="image"><left>1564</left><top>34</top><width>40</width><height>40</height><texture colordiffuse="66ffffff">common/aeon_ic_view.png</texture><visible>!Control.HasFocus(9805)</visible></control>
+			<control type="label"><left>1534</left><top>78</top><width>100</width><height>26</height><align>center</align><font>lb_cap_20</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$LOCALIZE[31011]</label><visible>Control.HasFocus(9805)</visible></control>
+			<control type="image"><left>1552</left><top>103</top><width>64</width><height>4</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/white.png</texture><visible>Control.HasFocus(9805)</visible></control>
+			<control type="button" id="9805"><left>1544</left><top>12</top><width>80</width><height>88</height><label></label><texturefocus /><texturenofocus /><onleft>9804</onleft><onright>9806</onright><ondown condition="Control.IsVisible(513)">SetFocus(513)</ondown><ondown condition="Control.IsVisible(530)">SetFocus(530)</ondown><ondown condition="Control.IsVisible(531)">SetFocus(531)</ondown><ondown condition="Control.IsVisible(532)">SetFocus(532)</ondown><ondown condition="Control.IsVisible(533)">SetFocus(533)</ondown><ondown condition="Control.IsVisible(534)">SetFocus(534)</ondown><onup condition="!Skin.HasSetting(aeon.kiosk)">ActivateWindow(1160)</onup><onclick>SetProperty(aeon.curview,$INFO[Container.Viewmode],home)</onclick><onclick>ActivateWindow(1164)</onclick></control>
+			<control type="image"><left>1650</left><top>34</top><width>40</width><height>40</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/aeon_ic_sort.png</texture><visible>Control.HasFocus(9806)</visible></control>
+			<control type="image"><left>1650</left><top>34</top><width>40</width><height>40</height><texture colordiffuse="66ffffff">common/aeon_ic_sort.png</texture><visible>!Control.HasFocus(9806)</visible></control>
+			<control type="label"><left>1620</left><top>78</top><width>100</width><height>26</height><align>center</align><font>lb_cap_20</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$LOCALIZE[31010]</label><visible>Control.HasFocus(9806)</visible></control>
+			<control type="image"><left>1638</left><top>103</top><width>64</width><height>4</height><texture colordiffuse="$VAR[Aeon_Accent_L]">common/white.png</texture><visible>Control.HasFocus(9806)</visible></control>
+			<control type="button" id="9806"><left>1630</left><top>12</top><width>80</width><height>88</height><label></label><texturefocus /><texturenofocus /><onleft>9805</onleft><onright>9806</onright><ondown condition="Control.IsVisible(513)">SetFocus(513)</ondown><ondown condition="Control.IsVisible(530)">SetFocus(530)</ondown><ondown condition="Control.IsVisible(531)">SetFocus(531)</ondown><ondown condition="Control.IsVisible(532)">SetFocus(532)</ondown><ondown condition="Control.IsVisible(533)">SetFocus(533)</ondown><ondown condition="Control.IsVisible(534)">SetFocus(534)</ondown><onup condition="!Skin.HasSetting(aeon.kiosk)">ActivateWindow(1160)</onup><onclick>ActivateWindow(1160)</onclick></control>
+		</definition>
+	</include>
+	<include name="Aeon_M_Nav">
+		<param name="icon">common/aeon_headphones.png</param>
+		<param name="cid">530</param>
+		<param name="base">53000</param>
+		<param name="scroll">true</param>
+		<definition>
+			<control type="image"><left>1820</left><top>0</top><width>100</width><height>1080</height><texture colordiffuse="$VAR[Aeon_StripBg_L]">$VAR[FG_Rail100]</texture></control>
+			<control type="image"><left>1820</left><top>0</top><width>100</width><height>108</height><texture colordiffuse="$VAR[Aeon_BoxCol_L]">$VAR[FG_BoxTex]</texture></control>
+			<include content="Aeon_BoxFan"><param name="box" value="tr"/></include>
+			<control type="label"><left>1820</left><top>14</top><animation effect="slide" end="0,12" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation><width>100</width><height>44</height><align>center</align><font>lb_ui_30_semibold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[System.Time(HH)]</label></control>
+			<control type="label"><left>1820</left><top>56</top><animation effect="slide" end="0,12" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation><width>100</width><height>40</height><align>center</align><font>lb_ui_28</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$INFO[System.Time(mm)]</label></control>
+			<control type="image"><left>1820</left><top>972</top><width>100</width><height>108</height><texture colordiffuse="$VAR[Aeon_BoxCol_L]">$VAR[FG_BoxTex]</texture></control>
+			<include content="Aeon_BoxFan"><param name="box" value="br"/></include>
+			<control type="image"><left>1846</left><top>984</top><animation effect="slide" end="0,-18" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation><width>48</width><height>48</height><texture colordiffuse="ffffffff">$PARAM[icon]</texture></control>
+			<control type="label"><left>1820</left><top>1030</top><animation effect="slide" end="0,-18" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation><width>100</width><height>40</height><align>center</align><font>lb_ui_24_semibold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[Container.NumItems]</label></control>
+			<control type="group" id="$PARAM[base]00">
+				<left>1820</left><top>130</top>
+				<control type="button" id="$PARAM[base]01">
+					<left>0</left><top>0</top><width>66</width><height>30</height>
+					<label>#</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup condition="Window.IsActive(music)">9801</onup><onup>$PARAM[base]27</onup><ondown>$PARAM[base]02</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]02">
+					<left>0</left><top>30</top><width>66</width><height>30</height>
+					<label>A</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]01</onup><ondown>$PARAM[base]03</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,A)">Action(JumpSMS2)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]03">
+					<left>0</left><top>60</top><width>66</width><height>30</height>
+					<label>B</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]02</onup><ondown>$PARAM[base]04</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,B)">Action(JumpSMS2)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,B)">Action(JumpSMS2)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]04">
+					<left>0</left><top>90</top><width>66</width><height>30</height>
+					<label>C</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]03</onup><ondown>$PARAM[base]05</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,C)">Action(JumpSMS2)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,C)">Action(JumpSMS2)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,C)">Action(JumpSMS2)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]05">
+					<left>0</left><top>120</top><width>66</width><height>30</height>
+					<label>D</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]04</onup><ondown>$PARAM[base]06</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,D)">Action(JumpSMS3)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]06">
+					<left>0</left><top>150</top><width>66</width><height>30</height>
+					<label>E</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]05</onup><ondown>$PARAM[base]07</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,E)">Action(JumpSMS3)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,E)">Action(JumpSMS3)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]07">
+					<left>0</left><top>180</top><width>66</width><height>30</height>
+					<label>F</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]06</onup><ondown>$PARAM[base]08</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,F)">Action(JumpSMS3)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,F)">Action(JumpSMS3)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,F)">Action(JumpSMS3)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]08">
+					<left>0</left><top>210</top><width>66</width><height>30</height>
+					<label>G</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]07</onup><ondown>$PARAM[base]09</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,G)">Action(JumpSMS4)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]09">
+					<left>0</left><top>240</top><width>66</width><height>30</height>
+					<label>H</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]08</onup><ondown>$PARAM[base]10</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,H)">Action(JumpSMS4)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,H)">Action(JumpSMS4)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]10">
+					<left>0</left><top>270</top><width>66</width><height>30</height>
+					<label>I</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]09</onup><ondown>$PARAM[base]11</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,I)">Action(JumpSMS4)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,I)">Action(JumpSMS4)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,I)">Action(JumpSMS4)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]11">
+					<left>0</left><top>300</top><width>66</width><height>30</height>
+					<label>J</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]10</onup><ondown>$PARAM[base]12</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,J)">Action(JumpSMS5)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]12">
+					<left>0</left><top>330</top><width>66</width><height>30</height>
+					<label>K</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]11</onup><ondown>$PARAM[base]13</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,K)">Action(JumpSMS5)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,K)">Action(JumpSMS5)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]13">
+					<left>0</left><top>360</top><width>66</width><height>30</height>
+					<label>L</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]12</onup><ondown>$PARAM[base]14</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,L)">Action(JumpSMS5)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,L)">Action(JumpSMS5)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,L)">Action(JumpSMS5)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]14">
+					<left>0</left><top>390</top><width>66</width><height>30</height>
+					<label>M</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]13</onup><ondown>$PARAM[base]15</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,M)">Action(JumpSMS6)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]15">
+					<left>0</left><top>420</top><width>66</width><height>30</height>
+					<label>N</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]14</onup><ondown>$PARAM[base]16</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,N)">Action(JumpSMS6)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,N)">Action(JumpSMS6)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]16">
+					<left>0</left><top>450</top><width>66</width><height>30</height>
+					<label>O</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]15</onup><ondown>$PARAM[base]17</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,O)">Action(JumpSMS6)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,O)">Action(JumpSMS6)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,O)">Action(JumpSMS6)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]17">
+					<left>0</left><top>480</top><width>66</width><height>30</height>
+					<label>P</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]16</onup><ondown>$PARAM[base]18</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,P)">Action(JumpSMS7)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]18">
+					<left>0</left><top>510</top><width>66</width><height>30</height>
+					<label>Q</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]17</onup><ondown>$PARAM[base]19</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,Q)">Action(JumpSMS7)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,Q)">Action(JumpSMS7)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]19">
+					<left>0</left><top>540</top><width>66</width><height>30</height>
+					<label>R</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]18</onup><ondown>$PARAM[base]20</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,R)">Action(JumpSMS7)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,R)">Action(JumpSMS7)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,R)">Action(JumpSMS7)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]20">
+					<left>0</left><top>570</top><width>66</width><height>30</height>
+					<label>S</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]19</onup><ondown>$PARAM[base]21</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,S)">Action(JumpSMS7)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,S)">Action(JumpSMS7)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,S)">Action(JumpSMS7)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,S)">Action(JumpSMS7)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]21">
+					<left>0</left><top>600</top><width>66</width><height>30</height>
+					<label>T</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]20</onup><ondown>$PARAM[base]22</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,T)">Action(JumpSMS8)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]22">
+					<left>0</left><top>630</top><width>66</width><height>30</height>
+					<label>U</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]21</onup><ondown>$PARAM[base]23</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,U)">Action(JumpSMS8)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,U)">Action(JumpSMS8)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]23">
+					<left>0</left><top>660</top><width>66</width><height>30</height>
+					<label>V</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]22</onup><ondown>$PARAM[base]24</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,V)">Action(JumpSMS8)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,V)">Action(JumpSMS8)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,V)">Action(JumpSMS8)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]24">
+					<left>0</left><top>690</top><width>66</width><height>30</height>
+					<label>W</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]23</onup><ondown>$PARAM[base]25</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,W)">Action(JumpSMS9)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]25">
+					<left>0</left><top>720</top><width>66</width><height>30</height>
+					<label>X</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]24</onup><ondown>$PARAM[base]26</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,X)">Action(JumpSMS9)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,X)">Action(JumpSMS9)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]26">
+					<left>0</left><top>750</top><width>66</width><height>30</height>
+					<label>Y</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]25</onup><ondown>$PARAM[base]27</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,Y)">Action(JumpSMS9)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,Y)">Action(JumpSMS9)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,Y)">Action(JumpSMS9)</onclick>
+				</control>
+				<control type="button" id="$PARAM[base]27">
+					<left>0</left><top>780</top><width>66</width><height>30</height>
+					<label>Z</label>
+					<font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx>
+					<textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor>
+					<include>FG_LetterBtnTex</include><texturenofocus />
+					<onup>$PARAM[base]26</onup><ondown>$PARAM[base]01</ondown>
+					<onleft>$PARAM[cid]</onleft><onright>$PARAM[base]50</onright><onback>SetFocus($PARAM[cid])</onback>
+					<onclick>SetFocus($PARAM[cid],0,absolute)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,Z)">Action(JumpSMS9)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,Z)">Action(JumpSMS9)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,Z)">Action(JumpSMS9)</onclick>
+					<onclick condition="!String.IsEqual(Container($PARAM[cid]).ListItemAbsolute(0).SortLetter,Z)">Action(JumpSMS9)</onclick>
+				</control>
+				<control type="scrollbar" id="$PARAM[base]50">
+					<left>72</left><top>0</top><width>18</width><height>820</height>
+					<texturesliderbackground colordiffuse="$VAR[Aeon_SBTrack]">common/white.png</texturesliderbackground>
+					<texturesliderbar colordiffuse="$VAR[Aeon_SBBar_L]">common/white.png</texturesliderbar>
+					<texturesliderbarfocus colordiffuse="$VAR[Aeon_SBFocus_L]">common/white.png</texturesliderbarfocus>
+					<textureslidernib colordiffuse="$VAR[Aeon_SBBar_L]">common/white.png</textureslidernib>
+					<textureslidernibfocus colordiffuse="$VAR[Aeon_SBBarFocus_L]">common/white.png</textureslidernibfocus>
+					<orientation>vertical</orientation>
+					<showonepage>true</showonepage>
+					<onleft>$PARAM[base]01</onleft><onright>noop</onright><onback>SetFocus($PARAM[cid])</onback>
+					<visible>$PARAM[scroll]</visible>
+				</control>
+			</control>
+			<include content="FG_AZBubble"><param name="vis" value="ControlGroup($PARAM[base]00).HasFocus() + !Control.HasFocus($PARAM[base]50)"/><param name="label" value="$INFO[System.CurrentControl]"/></include>
+		</definition>
+	</include>
+	<!-- 0.48.0: Fused Glass loads its own view (FG_V513_View, _src/fg_lib_lists.py) -->
+	<include name="Aeon_513_View">
+		<include condition="Skin.HasSetting(aeon.fglass)">FG_V513_View</include>
+		<include condition="!Skin.HasSetting(aeon.fglass)">Aeon_513_ViewAeon</include>
+	</include>
+	<include name="Aeon_513_ViewAeon">
+		<control type="group">
+			<visible>Control.IsVisible(513)</visible>
+			<include>Anim_FadeVisible</include>
+			<include>Aeon_V_Bg</include>
+			<include>Aeon_M_Menu</include>
+			<!-- top row rule -->
+			<control type="image"><left>0</left><top>107</top><width>1820</width><height>1</height><texture colordiffuse="30ffffff">common/white.png</texture><visible>!$EXP[Aeon_FGlass]</visible></control>
+			<!-- right column: the artist's picture (album: cover), its facts under it -->
+			<control type="image">
+				<left>1200</left><top>108</top><width>620</width><height>864</height>
+				<texture colordiffuse="lib_x_deep_cc">common/white.png</texture>
+				<visible>!$EXP[Aeon_FGlass]</visible>
+			</control>
+			<!-- Fused Glass: the list and this column as two frosted cards -->
+			<control type="group">
+				<visible>$EXP[Aeon_FGlass]</visible>
+				<control type="image"><left>12</left><top>116</top><width>1176</width><height>948</height><texture border="28" colordiffuse="fg_frostb">fg/r28.png</texture></control>
+				<control type="image"><left>12</left><top>116</top><width>1176</width><height>948</height><texture border="28" colordiffuse="$VAR[FG_Edge]">fg/e28.png</texture></control>
+				<control type="image"><left>1212</left><top>116</top><width>596</width><height>948</height><texture border="28" colordiffuse="fg_frostb">fg/r28.png</texture></control>
+				<control type="image"><left>1212</left><top>116</top><width>596</width><height>948</height><texture border="28" colordiffuse="$VAR[FG_Edge]">fg/e28.png</texture></control>
+			</control>
+			<control type="image">
+				<left>1200</left><top>108</top><width>620</width><height>620</height>
+				<aspectratio>scale</aspectratio>
+				<fadetime>350</fadetime>
+				<texture background="true">$VAR[AeonM_Cover]</texture>
+				<visible>!$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="image">
+				<left>1212</left><top>116</top><width>596</width><height>596</height>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<fadetime>350</fadetime>
+				<texture background="true" diffuse="fg/m596x596.png">$VAR[AeonM_Cover]</texture>
+				<visible>$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="group">
+				<left>1224</left><top>744</top>
+				<!-- 0.39.8: the facts (formed / born, disbanded / died, years active, genre) show whatever the Biography option -->
+				<visible>!$EXP[Aeon_FGlass] + ![$EXP[Aeon_M_HasLogo] + !Skin.HasSetting(aeon.nologos)]</visible>
+				<control type="label"><left>0</left><top>0</top><width>572</width><height>40</height><font>lb_ui_24_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$VAR[AeonM_Title]</label></control>
+				<control type="textbox"><left>0</left><top>46</top><width>572</width><height>170</height><font>lb_cap_20</font><textcolor>ccffffff</textcolor><label>$VAR[Aeon_M_Meta]</label></control>
+			</control>
+			<!-- 0.56.14 aeon_lib_music: the artist's clearlogo over the facts -->
+			<control type="group">
+				<left>1224</left><top>744</top>
+				<visible>!$EXP[Aeon_FGlass] + $EXP[Aeon_M_HasLogo] + !Skin.HasSetting(aeon.nologos)</visible>
+				<control type="image"><left>0</left><top>0</top><width>572</width><height>96</height><aspectratio align="left" aligny="center">keep</aspectratio><fadetime>200</fadetime><texture background="true">$VAR[FG_M_ArtistLogo]</texture></control>
+				<control type="textbox"><left>0</left><top>108</top><width>572</width><height>110</height><font>lb_cap_20</font><textcolor>ccffffff</textcolor><label>$VAR[Aeon_M_Meta]</label></control>
+			</control>
+			<!-- Fused Glass: title and facts inside the right card (24 px padding); artists show their clearlogo (0.35.0), the
+			     name when there is none -->
+			<control type="group">
+				<left>1236</left><top>732</top>
+				<visible>$EXP[Aeon_FGlass] + $EXP[AeonM_HasLogo]</visible>
+				<control type="image"><left>0</left><top>0</top><width>548</width><height>96</height><aspectratio align="left" aligny="center">keep</aspectratio><texture background="true">$VAR[AeonM_Logo]</texture></control>
+				<control type="textbox"><left>0</left><top>110</top><width>548</width><height>200</height><font>lb_cap_20</font><textcolor>ccffffff</textcolor><label>$VAR[Aeon_M_Meta]</label></control>
+			</control>
+			<control type="group">
+				<left>1236</left><top>732</top>
+				<visible>$EXP[Aeon_FGlass] + !$EXP[AeonM_HasLogo]</visible>
+				<control type="label"><left>0</left><top>0</top><width>548</width><height>40</height><font>lb_ui_24_bold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$VAR[AeonM_Title]</label></control>
+				<control type="textbox"><left>0</left><top>48</top><width>548</width><height>264</height><font>lb_cap_20</font><textcolor>ccffffff</textcolor><label>$VAR[Aeon_M_Meta]</label></control>
+			</control>
+			<!-- the free space under the list: biography (album: review) -->
+			<control type="textbox">
+				<left>104</left><top>748</top><width>640</width><height>194</height>
+				<font>un_lb_small_20</font><textcolor>ccffffff</textcolor>
+				<label>$VAR[Aeon_M_Bio]</label>
+				<autoscroll delay="8000" time="3000" repeat="10000">true</autoscroll>
+				<visible>[$EXP[Aeon_VOBio]] + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<!-- grey band behind header + list -->
+			<control type="image">
+				<left>0</left>
+				<top>108</top>
+				<width>1200</width>
+				<height>620</height>
+				<texture colordiffuse="88202020">common/white.png</texture>
+				<visible>!$EXP[Aeon_FGlass]</visible>
+			</control>
+			<!-- header row -->
+			<control type="image">
+				<left>104</left>
+				<top>148</top>
+				<width>40</width>
+				<height>40</height>
+				<texture colordiffuse="88ffffff">aeon/icons/music.png</texture>
+				<visible>Container.Content(songs)</visible>
+			</control>
+			<control type="label">
+				<left>200</left>
+				<top>138</top>
+				<width>680</width>
+				<height>60</height>
+				<aligny>center</aligny>
+				<font>lb_cap_20</font>
+				<textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor>
+				<label>$VAR[AeonM_Header]</label>
+				<visible>Container.Content(songs)</visible>
+			</control>
+			<control type="label">
+				<left>104</left>
+				<top>138</top>
+				<width>776</width>
+				<height>60</height>
+				<aligny>center</aligny>
+				<font>lb_cap_20</font>
+				<textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor>
+				<label>$VAR[AeonM_Header]</label>
+				<visible>!Container.Content(songs)</visible>
+			</control>
+			<control type="label">
+				<left>900</left>
+				<top>138</top>
+				<width>250</width>
+				<height>60</height>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>lb_cap_20</font>
+				<textcolor>66ffffff</textcolor><selectedcolor>66ffffff</selectedcolor>
+				<label>$INFO[Container.CurrentItem] / $INFO[Container.NumItems]</label>
+			</control>
+			<control type="list" id="513">
+				<onback condition="String.IsEqual(Skin.String(aeon.backmode),home)">ActivateWindow(home)</onback>
+				<left>0</left>
+				<top>228</top>
+				<width>1200</width>
+				<height>500</height>
+				<orientation>vertical</orientation>
+				<pagecontrol>5130</pagecontrol>
+				<focusposition>3</focusposition>
+				<movement>0</movement>
+				<viewtype label="535">list</viewtype>
+				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(genres)</visible>
+				<scrolltime tween="cubic" easing="out">220</scrolltime>
+				<onup condition="Integer.IsEqual(Container.CurrentItem,1)">9801</onup>
+				<onup condition="![Integer.IsEqual(Container.CurrentItem,1)]">Action(LastPage)</onup>
+				<ondown>Action(FirstPage)</ondown>
+				<onleft condition="!Skin.HasSetting(aeon.kiosk)">ActivateWindow(1160)</onleft>
+				<onright>51301</onright>
+				<itemlayout width="1200" height="100">
+					<include>AeonM_Row</include>
+				</itemlayout>
+				<focusedlayout width="1200" height="100">
+					<include content="AeonM_Row"><param name="focused" value="true"/></include>
+				</focusedlayout>
+			</control>
+			<!-- cover under the list; for artists it cycles through their albums (5 s) with the album count -->
+			<control type="wraplist" id="5131">
+				<left>0</left><top>0</top><width>1</width><height>1</height>
+				<orientation>horizontal</orientation>
+				<itemlayout width="1" height="1"/>
+				<focusedlayout width="1" height="1"/>
+				<content browse="never">$VAR[AeonM_ArtistAlbums]</content>
+			</control>
+			<control type="image">
+				<left>956</left>
+				<top>728</top>
+				<width>244</width>
+				<height>244</height>
+				<aspectratio>scale</aspectratio>
+				<fadetime>300</fadetime>
+				<texture background="true">$VAR[AeonM_CycleCover]</texture>
+				<visible>[Container.Content(artists)] + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="image">
+				<left>956</left>
+				<top>728</top>
+				<width>244</width>
+				<height>244</height>
+				<aspectratio>scale</aspectratio>
+				<fadetime>300</fadetime>
+				<texture background="true">$VAR[Aeon_M_ArtistThumb]</texture>
+				<visible>[!Container.Content(artists)] + !$EXP[Aeon_FGlass]</visible>
+			</control>
+			<control type="group">
+				<left>790</left><top>804</top>
+				<visible>Container.Content(artists) + Integer.IsGreater(Container(5131).NumItems,0) + !$EXP[Aeon_FGlass]</visible>
+				<control type="image"><left>40</left><top>0</top><width>40</width><height>40</height><texture colordiffuse="ccffffff">common/aeon_layers.png</texture></control>
+				<control type="label"><left>0</left><top>44</top><width>120</width><height>40</height><align>center</align><font>lb_ui_24_semibold</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$INFO[Container(5131).NumItems]</label></control>
+			</control>
+			<!-- Fused Glass (0.35.0): the foot of the list card, a little lighter, under a hairline: the biography (album: review)
+			     on the left; for artists the album-stack icon with the album count and the album cover that cycles (list 5131),
+			     for albums the artist's picture -->
+			<control type="group">
+				<visible>$EXP[Aeon_FGlass]</visible>
+				<control type="image"><left>12</left><top>744</top><width>1176</width><height>320</height><texture border="28,0,28,28" colordiffuse="0dffffff">fg/rb28.png</texture></control>
+				<control type="image"><left>12</left><top>744</top><width>1176</width><height>1</height><texture colordiffuse="$VAR[FG_Edge]">common/white.png</texture></control>
+				<control type="textbox">
+					<left>44</left><top>772</top><width>700</width><height>264</height>
+					<font>lb_small_20</font><textcolor>ccffffff</textcolor>
+					<label>$VAR[Aeon_M_Bio]</label>
+					<autoscroll delay="8000" time="3000" repeat="10000">true</autoscroll>
+					<visible>$EXP[Aeon_VOBio]</visible>
+				</control>
+				<control type="group">
+					<left>772</left><top>860</top>
+					<visible>Container.Content(artists) + Integer.IsGreater(Container(5131).NumItems,0)</visible>
+					<control type="image"><left>40</left><top>0</top><width>40</width><height>40</height><texture colordiffuse="ccffffff">common/aeon_layers.png</texture></control>
+					<control type="label"><left>0</left><top>44</top><width>120</width><height>40</height><align>center</align><font>lb_ui_24_semibold</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$INFO[Container(5131).NumItems]</label></control>
+				</control>
+				<control type="image"><left>900</left><top>776</top><width>256</width><height>256</height><texture border="16" colordiffuse="14ffffff">fg/r16.png</texture><visible>Container.Content(artists) + Integer.IsGreater(Container(5131).NumItems,0)</visible></control>
+				<control type="image">
+					<left>900</left><top>776</top><width>256</width><height>256</height>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true" diffuse="fg/m256x256.png">$VAR[AeonM_CycleCover]</texture>
+					<visible>Container.Content(artists) + Integer.IsGreater(Container(5131).NumItems,0)</visible>
+				</control>
+				<control type="image">
+					<left>900</left><top>776</top><width>256</width><height>256</height>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true" diffuse="fg/m256x256.png">$VAR[Aeon_M_ArtistThumb]</texture>
+					<visible>!Container.Content(artists)</visible>
+				</control>
+			</control>
+			<!-- album track counts, one label per screen row (the helper reads the rows: Window(Home).Property(aeon.tc.N)) -->
+			<control type="group">
+				<visible>Container.Content(albums) + Control.IsVisible(513)</visible>
+				<control type="label"><left>820</left><top>262</top><width>184</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_ui_22_semibold</font><textcolor>66ffffff</textcolor><label>$INFO[Window(Home).Property(aeon.tc.0)]</label><visible>!Integer.IsEqual(Container(513).Position,0) + !Integer.IsEqual(Window(Home).Property(aeon.tc.0),1)</visible></control>
+				<control type="image"><left>1014</left><top>265</top><width>26</width><height>26</height><aspectratio>keep</aspectratio><texture colordiffuse="66ffffff">aeon/icons/music.png</texture><visible>!Integer.IsEqual(Container(513).Position,0) + !Integer.IsEqual(Window(Home).Property(aeon.tc.0),1)</visible></control><!-- 0.56.10 the song icon -->
+				<control type="label"><left>820</left><top>262</top><width>220</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_cap_20</font><textcolor>66ffffff</textcolor><label>[UPPERCASE]1 $ADDON[skin.aeon.fuse 32308][/UPPERCASE]</label><visible>!Integer.IsEqual(Container(513).Position,0) + Integer.IsEqual(Window(Home).Property(aeon.tc.0),1)</visible></control>
+				<control type="label"><left>820</left><top>262</top><width>184</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_ui_22_semibold</font><textcolor>$VAR[Aeon_OnBarInk3_L]</textcolor><label>$INFO[Window(Home).Property(aeon.tc.0)]</label><visible>Integer.IsEqual(Container(513).Position,0) + !Integer.IsEqual(Window(Home).Property(aeon.tc.0),1)</visible></control>
+				<control type="image"><left>1014</left><top>265</top><width>26</width><height>26</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_OnBarInk3_L]">aeon/icons/music.png</texture><visible>Integer.IsEqual(Container(513).Position,0) + !Integer.IsEqual(Window(Home).Property(aeon.tc.0),1)</visible></control><!-- 0.56.10 the song icon -->
+				<control type="label"><left>820</left><top>262</top><width>220</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_cap_20</font><textcolor>$VAR[Aeon_OnBarInk3_L]</textcolor><label>[UPPERCASE]1 $ADDON[skin.aeon.fuse 32308][/UPPERCASE]</label><visible>Integer.IsEqual(Container(513).Position,0) + Integer.IsEqual(Window(Home).Property(aeon.tc.0),1)</visible></control>
+				<control type="label"><left>820</left><top>362</top><width>184</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_ui_22_semibold</font><textcolor>66ffffff</textcolor><label>$INFO[Window(Home).Property(aeon.tc.1)]</label><visible>!Integer.IsEqual(Container(513).Position,1) + !Integer.IsEqual(Window(Home).Property(aeon.tc.1),1)</visible></control>
+				<control type="image"><left>1014</left><top>365</top><width>26</width><height>26</height><aspectratio>keep</aspectratio><texture colordiffuse="66ffffff">aeon/icons/music.png</texture><visible>!Integer.IsEqual(Container(513).Position,1) + !Integer.IsEqual(Window(Home).Property(aeon.tc.1),1)</visible></control><!-- 0.56.10 the song icon -->
+				<control type="label"><left>820</left><top>362</top><width>220</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_cap_20</font><textcolor>66ffffff</textcolor><label>[UPPERCASE]1 $ADDON[skin.aeon.fuse 32308][/UPPERCASE]</label><visible>!Integer.IsEqual(Container(513).Position,1) + Integer.IsEqual(Window(Home).Property(aeon.tc.1),1)</visible></control>
+				<control type="label"><left>820</left><top>362</top><width>184</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_ui_22_semibold</font><textcolor>$VAR[Aeon_OnBarInk3_L]</textcolor><label>$INFO[Window(Home).Property(aeon.tc.1)]</label><visible>Integer.IsEqual(Container(513).Position,1) + !Integer.IsEqual(Window(Home).Property(aeon.tc.1),1)</visible></control>
+				<control type="image"><left>1014</left><top>365</top><width>26</width><height>26</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_OnBarInk3_L]">aeon/icons/music.png</texture><visible>Integer.IsEqual(Container(513).Position,1) + !Integer.IsEqual(Window(Home).Property(aeon.tc.1),1)</visible></control><!-- 0.56.10 the song icon -->
+				<control type="label"><left>820</left><top>362</top><width>220</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_cap_20</font><textcolor>$VAR[Aeon_OnBarInk3_L]</textcolor><label>[UPPERCASE]1 $ADDON[skin.aeon.fuse 32308][/UPPERCASE]</label><visible>Integer.IsEqual(Container(513).Position,1) + Integer.IsEqual(Window(Home).Property(aeon.tc.1),1)</visible></control>
+				<control type="label"><left>820</left><top>462</top><width>184</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_ui_22_semibold</font><textcolor>66ffffff</textcolor><label>$INFO[Window(Home).Property(aeon.tc.2)]</label><visible>!Integer.IsEqual(Container(513).Position,2) + !Integer.IsEqual(Window(Home).Property(aeon.tc.2),1)</visible></control>
+				<control type="image"><left>1014</left><top>465</top><width>26</width><height>26</height><aspectratio>keep</aspectratio><texture colordiffuse="66ffffff">aeon/icons/music.png</texture><visible>!Integer.IsEqual(Container(513).Position,2) + !Integer.IsEqual(Window(Home).Property(aeon.tc.2),1)</visible></control><!-- 0.56.10 the song icon -->
+				<control type="label"><left>820</left><top>462</top><width>220</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_cap_20</font><textcolor>66ffffff</textcolor><label>[UPPERCASE]1 $ADDON[skin.aeon.fuse 32308][/UPPERCASE]</label><visible>!Integer.IsEqual(Container(513).Position,2) + Integer.IsEqual(Window(Home).Property(aeon.tc.2),1)</visible></control>
+				<control type="label"><left>820</left><top>462</top><width>184</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_ui_22_semibold</font><textcolor>$VAR[Aeon_OnBarInk3_L]</textcolor><label>$INFO[Window(Home).Property(aeon.tc.2)]</label><visible>Integer.IsEqual(Container(513).Position,2) + !Integer.IsEqual(Window(Home).Property(aeon.tc.2),1)</visible></control>
+				<control type="image"><left>1014</left><top>465</top><width>26</width><height>26</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_OnBarInk3_L]">aeon/icons/music.png</texture><visible>Integer.IsEqual(Container(513).Position,2) + !Integer.IsEqual(Window(Home).Property(aeon.tc.2),1)</visible></control><!-- 0.56.10 the song icon -->
+				<control type="label"><left>820</left><top>462</top><width>220</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_cap_20</font><textcolor>$VAR[Aeon_OnBarInk3_L]</textcolor><label>[UPPERCASE]1 $ADDON[skin.aeon.fuse 32308][/UPPERCASE]</label><visible>Integer.IsEqual(Container(513).Position,2) + Integer.IsEqual(Window(Home).Property(aeon.tc.2),1)</visible></control>
+				<control type="label"><left>820</left><top>562</top><width>184</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_ui_22_semibold</font><textcolor>66ffffff</textcolor><label>$INFO[Window(Home).Property(aeon.tc.3)]</label><visible>!Integer.IsEqual(Container(513).Position,3) + !Integer.IsEqual(Window(Home).Property(aeon.tc.3),1)</visible></control>
+				<control type="image"><left>1014</left><top>565</top><width>26</width><height>26</height><aspectratio>keep</aspectratio><texture colordiffuse="66ffffff">aeon/icons/music.png</texture><visible>!Integer.IsEqual(Container(513).Position,3) + !Integer.IsEqual(Window(Home).Property(aeon.tc.3),1)</visible></control><!-- 0.56.10 the song icon -->
+				<control type="label"><left>820</left><top>562</top><width>220</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_cap_20</font><textcolor>66ffffff</textcolor><label>[UPPERCASE]1 $ADDON[skin.aeon.fuse 32308][/UPPERCASE]</label><visible>!Integer.IsEqual(Container(513).Position,3) + Integer.IsEqual(Window(Home).Property(aeon.tc.3),1)</visible></control>
+				<control type="label"><left>820</left><top>562</top><width>184</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_ui_22_semibold</font><textcolor>$VAR[Aeon_OnBarInk3_L]</textcolor><label>$INFO[Window(Home).Property(aeon.tc.3)]</label><visible>Integer.IsEqual(Container(513).Position,3) + !Integer.IsEqual(Window(Home).Property(aeon.tc.3),1)</visible></control>
+				<control type="image"><left>1014</left><top>565</top><width>26</width><height>26</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_OnBarInk3_L]">aeon/icons/music.png</texture><visible>Integer.IsEqual(Container(513).Position,3) + !Integer.IsEqual(Window(Home).Property(aeon.tc.3),1)</visible></control><!-- 0.56.10 the song icon -->
+				<control type="label"><left>820</left><top>562</top><width>220</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_cap_20</font><textcolor>$VAR[Aeon_OnBarInk3_L]</textcolor><label>[UPPERCASE]1 $ADDON[skin.aeon.fuse 32308][/UPPERCASE]</label><visible>Integer.IsEqual(Container(513).Position,3) + Integer.IsEqual(Window(Home).Property(aeon.tc.3),1)</visible></control>
+				<control type="label"><left>820</left><top>662</top><width>184</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_ui_22_semibold</font><textcolor>66ffffff</textcolor><label>$INFO[Window(Home).Property(aeon.tc.4)]</label><visible>!Integer.IsEqual(Container(513).Position,4) + !Integer.IsEqual(Window(Home).Property(aeon.tc.4),1)</visible></control>
+				<control type="image"><left>1014</left><top>665</top><width>26</width><height>26</height><aspectratio>keep</aspectratio><texture colordiffuse="66ffffff">aeon/icons/music.png</texture><visible>!Integer.IsEqual(Container(513).Position,4) + !Integer.IsEqual(Window(Home).Property(aeon.tc.4),1)</visible></control><!-- 0.56.10 the song icon -->
+				<control type="label"><left>820</left><top>662</top><width>220</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_cap_20</font><textcolor>66ffffff</textcolor><label>[UPPERCASE]1 $ADDON[skin.aeon.fuse 32308][/UPPERCASE]</label><visible>!Integer.IsEqual(Container(513).Position,4) + Integer.IsEqual(Window(Home).Property(aeon.tc.4),1)</visible></control>
+				<control type="label"><left>820</left><top>662</top><width>184</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_ui_22_semibold</font><textcolor>$VAR[Aeon_OnBarInk3_L]</textcolor><label>$INFO[Window(Home).Property(aeon.tc.4)]</label><visible>Integer.IsEqual(Container(513).Position,4) + !Integer.IsEqual(Window(Home).Property(aeon.tc.4),1)</visible></control>
+				<control type="image"><left>1014</left><top>665</top><width>26</width><height>26</height><aspectratio>keep</aspectratio><texture colordiffuse="$VAR[Aeon_OnBarInk3_L]">aeon/icons/music.png</texture><visible>Integer.IsEqual(Container(513).Position,4) + !Integer.IsEqual(Window(Home).Property(aeon.tc.4),1)</visible></control><!-- 0.56.10 the song icon -->
+				<control type="label"><left>820</left><top>662</top><width>220</width><height>32</height><align>right</align><aligny>center</aligny><font>lb_cap_20</font><textcolor>$VAR[Aeon_OnBarInk3_L]</textcolor><label>[UPPERCASE]1 $ADDON[skin.aeon.fuse 32308][/UPPERCASE]</label><visible>Integer.IsEqual(Container(513).Position,4) + Integer.IsEqual(Window(Home).Property(aeon.tc.4),1)</visible></control>
+			</control>
+<!-- right strip: clock box, scroll bar, count with headphones -->
+			<control type="image"><left>1820</left><top>0</top><width>100</width><height>1080</height><texture colordiffuse="$VAR[Aeon_StripBg_L]">$VAR[FG_Rail100]</texture></control>
+			<control type="image"><left>1820</left><top>0</top><width>100</width><height>108</height><texture colordiffuse="$VAR[Aeon_BoxCol_L]">$VAR[FG_BoxTex]</texture></control>
+			<include content="Aeon_BoxFan"><param name="box" value="tr"/></include>
+			<control type="label"><left>1820</left><top>14</top><animation effect="slide" end="0,12" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation><width>100</width><height>44</height><align>center</align><font>lb_ui_30_semibold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[System.Time(HH)]</label></control>
+			<control type="label"><left>1820</left><top>56</top><animation effect="slide" end="0,12" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation><width>100</width><height>40</height><align>center</align><font>lb_ui_28</font><textcolor>ccffffff</textcolor><selectedcolor>ccffffff</selectedcolor><label>$INFO[System.Time(mm)]</label></control>
+			<control type="scrollbar" id="5130">
+				<left>1892</left><top>130</top><width>18</width><height>820</height>
+				<texturesliderbackground colordiffuse="$VAR[Aeon_SBTrack]">common/white.png</texturesliderbackground>
+				<texturesliderbar colordiffuse="$VAR[Aeon_SBBar_L]">common/white.png</texturesliderbar>
+				<texturesliderbarfocus colordiffuse="$VAR[Aeon_SBFocus_L]">common/white.png</texturesliderbarfocus>
+				<textureslidernib colordiffuse="$VAR[Aeon_SBBar_L]">common/white.png</textureslidernib>
+				<textureslidernibfocus colordiffuse="$VAR[Aeon_SBBarFocus_L]">common/white.png</textureslidernibfocus>
+				<orientation>vertical</orientation>
+				<showonepage>true</showonepage>
+				<onleft>51301</onleft><onright>noop</onright><onback>513</onback>
+			</control>
+			<include content="FG_AZBubble"><param name="vis" value="ControlGroup(51300).HasFocus() + !Control.HasFocus(5130)"/><param name="label" value="$INFO[System.CurrentControl]"/></include>
+			<control type="group" id="51300"><left>1820</left><top>130</top>
+				<control type="button" id="51301"><left>0</left><top>0</top><width>66</width><height>30</height><label>#</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>9801</onup><ondown>51302</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick></control>
+				<control type="button" id="51302"><left>0</left><top>30</top><width>66</width><height>30</height><label>A</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51301</onup><ondown>51303</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,A)">Action(JumpSMS2)</onclick></control>
+				<control type="button" id="51303"><left>0</left><top>60</top><width>66</width><height>30</height><label>B</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51302</onup><ondown>51304</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,B)">Action(JumpSMS2)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,B)">Action(JumpSMS2)</onclick></control>
+				<control type="button" id="51304"><left>0</left><top>90</top><width>66</width><height>30</height><label>C</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51303</onup><ondown>51305</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,C)">Action(JumpSMS2)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,C)">Action(JumpSMS2)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,C)">Action(JumpSMS2)</onclick></control>
+				<control type="button" id="51305"><left>0</left><top>120</top><width>66</width><height>30</height><label>D</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51304</onup><ondown>51306</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,D)">Action(JumpSMS3)</onclick></control>
+				<control type="button" id="51306"><left>0</left><top>150</top><width>66</width><height>30</height><label>E</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51305</onup><ondown>51307</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,E)">Action(JumpSMS3)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,E)">Action(JumpSMS3)</onclick></control>
+				<control type="button" id="51307"><left>0</left><top>180</top><width>66</width><height>30</height><label>F</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51306</onup><ondown>51308</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,F)">Action(JumpSMS3)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,F)">Action(JumpSMS3)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,F)">Action(JumpSMS3)</onclick></control>
+				<control type="button" id="51308"><left>0</left><top>210</top><width>66</width><height>30</height><label>G</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51307</onup><ondown>51309</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,G)">Action(JumpSMS4)</onclick></control>
+				<control type="button" id="51309"><left>0</left><top>240</top><width>66</width><height>30</height><label>H</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51308</onup><ondown>51310</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,H)">Action(JumpSMS4)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,H)">Action(JumpSMS4)</onclick></control>
+				<control type="button" id="51310"><left>0</left><top>270</top><width>66</width><height>30</height><label>I</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51309</onup><ondown>51311</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,I)">Action(JumpSMS4)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,I)">Action(JumpSMS4)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,I)">Action(JumpSMS4)</onclick></control>
+				<control type="button" id="51311"><left>0</left><top>300</top><width>66</width><height>30</height><label>J</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51310</onup><ondown>51312</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,J)">Action(JumpSMS5)</onclick></control>
+				<control type="button" id="51312"><left>0</left><top>330</top><width>66</width><height>30</height><label>K</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51311</onup><ondown>51313</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,K)">Action(JumpSMS5)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,K)">Action(JumpSMS5)</onclick></control>
+				<control type="button" id="51313"><left>0</left><top>360</top><width>66</width><height>30</height><label>L</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51312</onup><ondown>51314</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,L)">Action(JumpSMS5)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,L)">Action(JumpSMS5)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,L)">Action(JumpSMS5)</onclick></control>
+				<control type="button" id="51314"><left>0</left><top>390</top><width>66</width><height>30</height><label>M</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51313</onup><ondown>51315</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,M)">Action(JumpSMS6)</onclick></control>
+				<control type="button" id="51315"><left>0</left><top>420</top><width>66</width><height>30</height><label>N</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51314</onup><ondown>51316</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,N)">Action(JumpSMS6)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,N)">Action(JumpSMS6)</onclick></control>
+				<control type="button" id="51316"><left>0</left><top>450</top><width>66</width><height>30</height><label>O</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51315</onup><ondown>51317</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,O)">Action(JumpSMS6)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,O)">Action(JumpSMS6)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,O)">Action(JumpSMS6)</onclick></control>
+				<control type="button" id="51317"><left>0</left><top>480</top><width>66</width><height>30</height><label>P</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51316</onup><ondown>51318</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,P)">Action(JumpSMS7)</onclick></control>
+				<control type="button" id="51318"><left>0</left><top>510</top><width>66</width><height>30</height><label>Q</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51317</onup><ondown>51319</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,Q)">Action(JumpSMS7)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,Q)">Action(JumpSMS7)</onclick></control>
+				<control type="button" id="51319"><left>0</left><top>540</top><width>66</width><height>30</height><label>R</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51318</onup><ondown>51320</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,R)">Action(JumpSMS7)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,R)">Action(JumpSMS7)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,R)">Action(JumpSMS7)</onclick></control>
+				<control type="button" id="51320"><left>0</left><top>570</top><width>66</width><height>30</height><label>S</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51319</onup><ondown>51321</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,S)">Action(JumpSMS7)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,S)">Action(JumpSMS7)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,S)">Action(JumpSMS7)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,S)">Action(JumpSMS7)</onclick></control>
+				<control type="button" id="51321"><left>0</left><top>600</top><width>66</width><height>30</height><label>T</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51320</onup><ondown>51322</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,T)">Action(JumpSMS8)</onclick></control>
+				<control type="button" id="51322"><left>0</left><top>630</top><width>66</width><height>30</height><label>U</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51321</onup><ondown>51323</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,U)">Action(JumpSMS8)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,U)">Action(JumpSMS8)</onclick></control>
+				<control type="button" id="51323"><left>0</left><top>660</top><width>66</width><height>30</height><label>V</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51322</onup><ondown>51324</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,V)">Action(JumpSMS8)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,V)">Action(JumpSMS8)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,V)">Action(JumpSMS8)</onclick></control>
+				<control type="button" id="51324"><left>0</left><top>690</top><width>66</width><height>30</height><label>W</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51323</onup><ondown>51325</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,W)">Action(JumpSMS9)</onclick></control>
+				<control type="button" id="51325"><left>0</left><top>720</top><width>66</width><height>30</height><label>X</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51324</onup><ondown>51326</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,X)">Action(JumpSMS9)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,X)">Action(JumpSMS9)</onclick></control>
+				<control type="button" id="51326"><left>0</left><top>750</top><width>66</width><height>30</height><label>Y</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51325</onup><ondown>51327</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,Y)">Action(JumpSMS9)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,Y)">Action(JumpSMS9)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,Y)">Action(JumpSMS9)</onclick></control>
+				<control type="button" id="51327"><left>0</left><top>780</top><width>66</width><height>30</height><label>Z</label><font>lb_cap_20</font><align>center</align><aligny>center</aligny><textoffsetx>0</textoffsetx><textcolor>$VAR[Aeon_StripTxt]</textcolor><selectedcolor>$VAR[Aeon_StripTxt]</selectedcolor><focusedcolor>$VAR[Aeon_StripFocusTxt_L]</focusedcolor><include>FG_LetterBtnTex</include><texturenofocus /><onup>51326</onup><ondown>51301</ondown><onleft>513</onleft><onright>5130</onright><onback>513</onback><onclick>SetFocus(513,0,absolute)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,Z)">Action(JumpSMS9)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,Z)">Action(JumpSMS9)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,Z)">Action(JumpSMS9)</onclick><onclick condition="!String.IsEqual(Container(513).ListItemAbsolute(0).SortLetter,Z)">Action(JumpSMS9)</onclick></control>
+			</control>
+			<control type="image"><left>1820</left><top>972</top><width>100</width><height>108</height><texture colordiffuse="$VAR[Aeon_BoxCol_L]">$VAR[FG_BoxTex]</texture></control>
+			<include content="Aeon_BoxFan"><param name="box" value="br"/></include>
+			<control type="image"><left>1846</left><top>984</top><animation effect="slide" end="0,-18" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation><width>48</width><height>48</height><texture colordiffuse="ffffffff">common/aeon_headphones.png</texture></control>
+			<control type="label"><left>1820</left><top>1030</top><animation effect="slide" end="0,-18" time="0" condition="$EXP[Aeon_FGlass]">Conditional</animation><width>100</width><height>40</height><align>center</align><font>lb_ui_24_semibold</font><textcolor>ffffffff</textcolor><selectedcolor>ffffffff</selectedcolor><label>$INFO[Container.NumItems]</label></control>
+		</control>
+		</include>
+</includes>

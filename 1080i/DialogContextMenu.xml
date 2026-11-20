@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Context menu (long-press OK / Menu key) - M4, Builder E.
+	Id contract (Estuary Omega): Kodi clones button template 1000 into grouplist 996, resizes the
+	background image 999 to fit (keeping the gap between the grouplist's bottom and 999's bottom)
+	and centres the window. 999's texture carries the shadow AND the mood fill (dialogs/panel_<mood>.png,
+	picked by $VAR[AG_PanelTex]) because Kodi only resizes that one image.
+	Rows: 64px, accent fill + ink text on focus (always visible, independent of the outline setting).
+-->
+<window>
+	<defaultcontrol>996</defaultcontrol>
+	<!-- Options reach v2 (docs/OPTIONS_REACH_V2_BRIEF.md): Kodi's item menu is left alone. Button 990 is the first
+	     child of grouplist 996, so Kodi appends its own buttons after it and keeps focus on its first one (Resume /
+	     Play): OK still plays, and Up reaches "View, sort, filter...". It shows only in an item menu of the
+	     video / music windows (one of Kodi's buttons reads Add to / Remove from favourites, 14076 / 14077), never
+	     in the resume prompt, the select-action chooser or Play using.... Its click closes the menu and opens the
+	     Library panel 1160 on a 0 s alarm, after the menu's modal loop has returned (opened from inside the
+	     menu it would nest, and a Kodi action picked later would run twice). -->
+	<include>Anim_DialogOpenClose</include>
+	<!-- <origin> stops Kodi centring the menu on the focused control (in Aeon's half-width lists that put
+	     it off to one side); the panel group below centres itself instead. -->
+	<coordinates>
+		<origin x="0" y="0"/>
+	</coordinates>
+	<controls>
+		<include condition="!$EXP[Aeon_MS] + !$EXP[FGS]">Ctx_Classic</include>
+		<include condition="$EXP[FGS]">FGS_Ctx</include><!-- 0.56.32 fgs_dialogs -->
+		<include condition="$EXP[Aeon_MS_mosaic]">MS_Ctx_mosaic</include>
+		<include condition="$EXP[Aeon_MS_ledger]">MS_Ctx_ledger</include>
+		<include condition="$EXP[Aeon_MS_bridge]">MS_Ctx_bridge</include>
+		<include condition="$EXP[Aeon_MS_tabslab]">MS_Ctx_tabslab</include>
+	</controls>
+</window>

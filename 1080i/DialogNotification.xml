@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Notification toast.
+	Aeon: a white bar (like the highlight bar) slides out of the clock box at the top right, dark text,
+	icon on the left. The clock box is redrawn on top so the bar really comes out of it.
+	Home (Aeon): the bar is 100 tall like Home's own clock box and comes out from under it.
+	Glass: a dark fade that rises from the left into the top right corner, white text right-aligned; as tall as the clock
+	box beside it (100 on Home) and coming out of it the same way.
+	Fused Glass: a frosted capsule beside the clock capsule (top 40, ending at x 1576), icon, heading over message, left-aligned.
+	Id contract (Estuary Omega): 400 icon, 401 line 1 (heading), 402 line 2 (message).
+-->
+<window>
+	<zorder>3</zorder>
+	<controls>
+		<include condition="!$EXP[FGS]">Notif_PageClassic</include>
+		<include condition="$EXP[FGS]">Notif_PageFGS</include>
+	</controls>
+</window>

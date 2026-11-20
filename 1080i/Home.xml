@@ -116,9 +116,12 @@
 	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.24,off)</onload>
 	<onload condition="String.IsEmpty(Skin.String(aeon.menu.init))">Skin.SetString(aeon.menu.init,1)</onload>
 	<!-- 0.56.20 splash: while the start-up splash shows, its button holds the focus (OK / Back: the menu) -->
+	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.splash.keep))">ClearProperty(aeon.splash.min,home)</onload><!-- 0.56.55 back from the helper's font reload: wait again -->
 	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.splash))">SetFocus(9999)</onload>
-	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.splash))">AlarmClock(aeonsplashto,SetProperty(aeon.splash.to,1,home),00:40,silent)</onload><!-- 0.56.53 40 s (user: "Wait for 10s more") -->
-	<onunload>ClearProperty(aeon.splash,home)</onunload>
+	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.splash))">AlarmClock(aeonsplashmin,SetProperty(aeon.splash.min,1,home),00:08,silent)</onload><!-- 0.56.55 at least 8 s on screen -->
+	<onload condition="!String.IsEmpty(Window(Home).Property(aeon.splash))">AlarmClock(aeonsplashto,SetProperty(aeon.splash.to,1,home),01:30,silent)</onload><!-- 0.56.55 90 s cap (rows and spotlights can take a minute) -->
+	<onload>ClearProperty(aeon.splash.keep,home)</onload>
+	<onunload condition="String.IsEmpty(Window(Home).Property(aeon.splash.keep))">ClearProperty(aeon.splash,home)</onunload>
 	<include>Anim_WindowOpenClose</include>
 	<controls>
 		<include>Aeon_Home</include>

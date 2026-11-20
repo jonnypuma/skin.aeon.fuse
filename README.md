@@ -63,7 +63,7 @@ All taken on a CoreELEC box with the skin as built. Click a picture for the full
 | `skin.aeon.fuse` — Aeon Fuse | The skin. |
 | `script.aeon.helper` — Aeon Fuse Helper | Required. Library counts, ratings, artwork colours, fonts, the context menu items, the Planner list, memory hand-back on small Linux boxes, the setup wizard's finishing step. |
 | `screensaver.aeon.fuse` — Aeon Fuse Screensaver | Optional. The skin's screensaver (library slides with zoom and slide, now playing). |
-| `visualization.aeonwave` — Aeon Fuse Waveform Visualizer | Optional. The thin waveform on the Now playing card. Builds for Linux ARM64 / ARM 32-bit / x86-64 and Windows x64 (`aeonwave/dist/` of the source tree). |
+| `visualization.aeonwave.<platform>` — Aeon Fuse Waveform Visualizer | Optional. The thin waveform on the Now playing card. One add-on per platform, from the Skippy Repo: `linux-arm64` (64-bit ARM, OpenGL ES: CoreELEC / LibreELEC 64-bit, Raspberry Pi 4/5), `linux-armv7` (32-bit ARM, OpenGL ES: 32-bit LibreELEC / CoreELEC images), `linux-x86_64` (x86-64 Linux, OpenGL: desktop Linux, LibreELEC Generic), `windows-x64` (Kodi for Windows, DirectX 11; it also fixes the stock Waveform drawing at twice the offset and width there). The Recommended add-ons list installs the one for the device. Source and build script: <https://github.com/jonnypuma/visualization.aeonwave> (folder `source/`). |
 
 ### Required from elsewhere
 

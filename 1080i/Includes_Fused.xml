@@ -13560,9 +13560,9 @@
 	<expression name="Aeon_SplHold">!String.IsEmpty(Window(Home).Property(aeon.splash)) + !String.IsEqual(Control.GetLabel(1),$LOCALIZE[13123])</expression>
 	<!-- 0.56.43 splash steps (_src/splash_05642.py): done, or not shown -->
 	<expression name="Aeon_SplLib">[Library.HasContent(movies) | Library.HasContent(tvshows) | Library.HasContent(music)]</expression>
-	<expression name="Aeon_SplMov">[![Library.HasContent(movies)] | Integer.IsGreater(Container(9301).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.movies.in))]</expression>
-	<expression name="Aeon_SplTvs">[![Library.HasContent(tvshows)] | Integer.IsGreater(Container(9302).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.tv.in))]</expression>
-	<expression name="Aeon_SplMus">[![Library.HasContent(music)] | Integer.IsGreater(Container(9303).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.music.in))]</expression>
+	<expression name="Aeon_SplMov">[![Library.HasContent(movies)] | [[Integer.IsGreater(Container(9301).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.movies.in))] + !Container(9301).IsUpdating + !Container(93911).IsUpdating + [Skin.HasSetting(aeon.nosp2.movies) | [Integer.IsGreater(Container(9421).NumItems,0) + !Container(9421).IsUpdating]]]]</expression>
+	<expression name="Aeon_SplTvs">[![Library.HasContent(tvshows)] | [[Integer.IsGreater(Container(9302).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.tv.in))] + !Container(9302).IsUpdating + !Container(93912).IsUpdating + [Skin.HasSetting(aeon.nosp2.tv) | [Integer.IsGreater(Container(9422).NumItems,0) + !Container(9422).IsUpdating]]]]</expression>
+	<expression name="Aeon_SplMus">[![Library.HasContent(music)] | [[Integer.IsGreater(Container(9303).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.music.in))] + !Container(9303).IsUpdating + !Container(93913).IsUpdating + [Skin.HasSetting(aeon.nosp2.music) | [Integer.IsGreater(Container(9423).NumItems,0) + !Container(9423).IsUpdating]]]]</expression>
 	<expression name="Aeon_SplTv">[![System.HasPVRAddon] | PVR.HasTVChannels]</expression>
 	<expression name="Aeon_SplWx">[![!String.IsEmpty(Weather.Plugin)] | Weather.IsFetched]</expression>
 	<include name="Aeon_Splash">

@@ -6,6 +6,7 @@
 	(default Home), like Estuary, so "Settings > Interface > Startup window" keeps working.
 -->
 <window>
+	<onload>ClearProperty(aeon.splash.min,home)</onload>
 	<onload>SetProperty(aeon.splash,1,home)</onload>
 	<onload>AlarmClock(aeonstartup,ReplaceWindow($INFO[System.StartupWindow]),00:01,silent)</onload>
 	<controls>

@@ -274,8 +274,8 @@
 	</timer>
 	<timer>
 		<name>aeonsplashend</name>
-		<description>0.56.20 splash: the start-up splash ends when the library, the Movies / TV shows / Music rows and the TV channels are in (weather is not waited for) or 40 s after Home opened (_src/splash_05620.py)</description>
-		<start>!String.IsEmpty(Window(Home).Property(aeon.splash)) + String.IsEmpty(Window(Home).Property(aeon.splash.ending)) + String.IsEmpty(Window(Home).Property(aeon.splash.hold)) + [[[Library.HasContent(movies) | Library.HasContent(tvshows) | Library.HasContent(music)] + [![Library.HasContent(movies)] | Integer.IsGreater(Container(9301).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.movies.in))] + [![Library.HasContent(tvshows)] | Integer.IsGreater(Container(9302).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.tv.in))] + [![Library.HasContent(music)] | Integer.IsGreater(Container(9303).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.music.in))] + [![System.HasPVRAddon] | PVR.HasTVChannels]] | !String.IsEmpty(Window(Home).Property(aeon.splash.to))]</start>
+		<description>0.56.20 splash: the start-up splash ends when the library, the Movies / TV shows / Music rows and the TV channels are in (weather is not waited for) or 90 s after Home opened (_src/splash_05620.py; 0.56.55 rows and spotlights really loaded, at least 8 s: _src/splashmin_05655.py)</description>
+		<start>!String.IsEmpty(Window(Home).Property(aeon.splash.min)) + !String.IsEmpty(Window(Home).Property(aeon.splash)) + String.IsEmpty(Window(Home).Property(aeon.splash.ending)) + String.IsEmpty(Window(Home).Property(aeon.splash.hold)) + [[[Library.HasContent(movies) | Library.HasContent(tvshows) | Library.HasContent(music)] + [![Library.HasContent(movies)] | [[Integer.IsGreater(Container(9301).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.movies.in))] + !Container(9301).IsUpdating + !Container(93911).IsUpdating + [Skin.HasSetting(aeon.nosp2.movies) | [Integer.IsGreater(Container(9421).NumItems,0) + !Container(9421).IsUpdating]]]] + [![Library.HasContent(tvshows)] | [[Integer.IsGreater(Container(9302).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.tv.in))] + !Container(9302).IsUpdating + !Container(93912).IsUpdating + [Skin.HasSetting(aeon.nosp2.tv) | [Integer.IsGreater(Container(9422).NumItems,0) + !Container(9422).IsUpdating]]]] + [![Library.HasContent(music)] | [[Integer.IsGreater(Container(9303).NumItems,0) | !String.IsEmpty(Window(Home).Property(aeon.pl.music.in))] + !Container(9303).IsUpdating + !Container(93913).IsUpdating + [Skin.HasSetting(aeon.nosp2.music) | [Integer.IsGreater(Container(9423).NumItems,0) + !Container(9423).IsUpdating]]]] + [![System.HasPVRAddon] | PVR.HasTVChannels]] | !String.IsEmpty(Window(Home).Property(aeon.splash.to))]</start>
 		<stop>true</stop>
 		<!-- 0.56.53 one second more, so the last steps' ticks show (they used to land in the same moment it ended; user:
 		     "why does tv shows and music never get checkmark on the splash screen?"); aeonsplashfin ends it -->
@@ -293,5 +293,6 @@
 		<onstart>ClearProperty(aeon.splash.to,home)</onstart>
 		<onstart>ClearProperty(aeon.splash.fin,home)</onstart>
 		<onstart>ClearProperty(aeon.splash.ending,home)</onstart>
+		<onstart>ClearProperty(aeon.splash.min,home)</onstart>
 	</timer>
 </timers>

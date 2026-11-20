@@ -1,5 +1,12 @@
 # Aeon Fuse changelog
 
+## 0.56.55
+- The start-up splash stays until Home is really loaded: each section's row and its spotlight must have their items and
+  have stopped loading (it ended at once after a skin switch, when the helper's "row in" flags were already set, and
+  never waited for the spotlights); at least 8 s, cap 40 s -> 90 s (_src/splashmin_05655.py).
+  The skin reload the helper does once after an update (your fonts into the fresh Font.xml) no longer ends it either:
+  the splash stays over the reload and waits again (helper 0.3.125).
+
 ## 0.56.54
 - TinyPPI is a CoreELEC tool: addon.xml no longer imports it (Kodi for Windows listed it among the skin's
   dependencies); in the setup wizard and Skin settings > System > Recommended add-ons it now says "CoreELEC only" off
